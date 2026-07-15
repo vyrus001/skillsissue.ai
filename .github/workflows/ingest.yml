@@ -1,0 +1,214 @@
+name: Ingest skills
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: Maximum skills to ingest
+        required: false
+        default: "100"
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: skillsissue-ingestion
+  cancel-in-progress: false
+
+jobs:
+  acquire:
+    if: >-
+      github.event_name != 'workflow_dispatch' ||
+      github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    outputs:
+      artifact_ready: ${{ steps.stage.outputs.artifact_ready }}
+      artifact_name: ${{ steps.stage.outputs.artifact_name }}
+    steps:
+      - name: Check out source without a write credential
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          persist-credentials: false
+      - name: Build rootless ingestion worker
+        run: docker build --file containers/ingest.Dockerfile --tag skillsissue-ingest:run .
+      - name: Snapshot typed indexes
+        run: |
+          mkdir -p .baseline/data
+          cp data/skills.csv data/discoveries.csv data/ingest_rejections.csv .baseline/data/
+      - name: Prepare credential-free worker filesystem
+        run: |
+          worker_root="$RUNNER_TEMP/skillsissue-ingest-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
+          mkdir -p "$worker_root"
+          rsync -a --exclude .git --exclude .baseline --exclude publication ./ "$worker_root/"
+          echo "WORKER_ROOT=$worker_root" >> "$GITHUB_ENV"
+      - name: Poll supported platforms
+        id: poll
+        continue-on-error: true
+        env:
+          LIMIT: ${{ inputs.limit || '100' }}
+        run: |
+          docker run --rm --read-only \
+            --user "$(id -u):$(id -g)" \
+            --cap-drop ALL \
+            --security-opt no-new-privileges=true \
+            --pids-limit 128 \
+            --memory 3g \
+            --cpus 2 \
+            --env "SKILLS_INGEST_RUN_SEQUENCE=${{ github.run_number }}" \
+            --tmpfs /tmp:rw,nosuid,nodev,size=2g \
+            --mount "type=bind,src=$WORKER_ROOT,dst=/workspace" \
+            skillsissue-ingest:run once --limit "$LIMIT"
+      - name: Stage only indexes and newly addressed objects
+        id: stage
+        if: always() && steps.poll.outcome != 'skipped'
+        env:
+          PUBLICATION_MAX_BYTES: ${{ vars.INGESTION_PUBLICATION_MAX_BYTES || '268435456' }}
+          PUBLICATION_MAX_FILES: ${{ vars.INGESTION_PUBLICATION_MAX_FILES || '4096' }}
+        run: |
+          case "$PUBLICATION_MAX_BYTES:$PUBLICATION_MAX_FILES" in
+            *[!0-9:]*|:*|*:) exit 1 ;;
+          esac
+          test "$PUBLICATION_MAX_BYTES" -ge 1
+          test "$PUBLICATION_MAX_FILES" -ge 1
+          mkdir -p publication/data
+          for kind in skills discoveries ingest_rejections; do
+            docker run --rm --read-only \
+              --user "$(id -u):$(id -g)" \
+              --network none \
+              --cap-drop ALL \
+              --mount "type=bind,src=$GITHUB_WORKSPACE,dst=/source,readonly" \
+              --mount "type=bind,src=$WORKER_ROOT,dst=/worker,readonly" \
+              --mount "type=bind,src=$GITHUB_WORKSPACE/publication,dst=/publication" \
+              --entrypoint skills-state \
+              skillsissue-ingest:run \
+              diff "$kind" "/source/.baseline/data/$kind.csv" "/worker/data/$kind.csv" "/publication/data/$kind.csv"
+          done
+          mkdir -p publication/corpus
+          rsync -a --compare-dest="$GITHUB_WORKSPACE/corpus/" "$WORKER_ROOT/corpus/" publication/corpus/
+          publication_link="$(find publication -type l -print -quit)"
+          test -z "$publication_link"
+          docker run --rm --read-only \
+            --user "$(id -u):$(id -g)" \
+            --network none \
+            --cap-drop ALL \
+            --security-opt no-new-privileges=true \
+            --pids-limit 64 \
+            --memory 1g \
+            --cpus 1 \
+            --mount "type=bind,src=$GITHUB_WORKSPACE,dst=/source,readonly" \
+            --mount "type=bind,src=$GITHUB_WORKSPACE/publication,dst=/publication,readonly" \
+            --entrypoint skills-state \
+            skillsissue-ingest:run \
+            validate-artifacts /source /publication/data/skills.csv /publication
+          actual_bytes="$(( $(du -sk --apparent-size publication | cut -f1) * 1024 ))"
+          actual_files="$(find publication -type f -print | wc -l | tr -d '[:space:]')"
+          test "$actual_bytes" -le "$PUBLICATION_MAX_BYTES"
+          test "$actual_files" -le "$PUBLICATION_MAX_FILES"
+          echo "artifact_ready=true" >> "$GITHUB_OUTPUT"
+          echo "artifact_name=ingestion-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT" >> "$GITHUB_OUTPUT"
+      - name: Upload acquisition result without repository write access
+        if: always() && steps.stage.outputs.artifact_ready == 'true'
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: ${{ steps.stage.outputs.artifact_name }}
+          path: publication
+          if-no-files-found: error
+          retention-days: 7
+      - name: Preserve acquisition failure after state upload
+        if: always() && steps.poll.outcome == 'failure'
+        run: exit 1
+
+  publish:
+    needs: acquire
+    if: >-
+      always() &&
+      needs.acquire.outputs.artifact_ready == 'true' &&
+      (github.event_name != 'workflow_dispatch' ||
+      github.ref == format('refs/heads/{0}', github.event.repository.default_branch))
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write
+    concurrency:
+      group: skillsissue-repo-publisher
+      cancel-in-progress: false
+      queue: max
+    steps:
+      - name: Check out clean publisher workspace
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Download acquisition result
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: ${{ needs.acquire.outputs.artifact_name }}
+          path: ${{ runner.temp }}/skillsissue-ingestion-publication-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Validate and publish corpus changes against latest
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+          PUBLICATION_ROOT: ${{ runner.temp }}/skillsissue-ingestion-publication-${{ github.run_id }}-${{ github.run_attempt }}
+        run: |
+          test -f "$PUBLICATION_ROOT/data/skills.csv"
+          test -f "$PUBLICATION_ROOT/data/discoveries.csv"
+          test -f "$PUBLICATION_ROOT/data/ingest_rejections.csv"
+          publication_link="$(find "$PUBLICATION_ROOT" -type l -print -quit)"
+          test -z "$publication_link"
+
+          published=0
+          remote_ref="refs/remotes/origin/$DEFAULT_BRANCH"
+          for attempt in 1 2 3; do
+            worktree="$RUNNER_TEMP/skillsissue-ingestion-publisher-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT-$attempt"
+            git fetch --no-tags origin "+refs/heads/$DEFAULT_BRANCH:$remote_ref"
+            git worktree add --detach "$worktree" "$remote_ref"
+            docker build --file "$worktree/containers/ingest.Dockerfile" \
+              --tag skillsissue-ingest:publisher "$worktree"
+
+            tracked_link="$(find "$worktree/data" "$worktree/corpus" -type l -print -quit)"
+            test -z "$tracked_link"
+            docker run --rm --read-only --network none --cap-drop ALL \
+              --user "$(id -u):$(id -g)" \
+              --mount "type=bind,src=$worktree/corpus,dst=/repo/corpus,readonly" \
+              --mount "type=bind,src=$PUBLICATION_ROOT,dst=/staging,readonly" \
+              --entrypoint skills-state skillsissue-ingest:publisher \
+              validate-artifacts /repo /staging/data/skills.csv /staging
+            if test -d "$PUBLICATION_ROOT/corpus"; then
+              while IFS= read -r -d '' source; do
+                relative="${source#"$PUBLICATION_ROOT"/corpus/}"
+                destination="$worktree/corpus/$relative"
+                if test -e "$destination"; then cmp -s "$source" "$destination" || exit 1; fi
+              done < <(find "$PUBLICATION_ROOT/corpus" -type f -print0)
+              rsync -a --ignore-existing "$PUBLICATION_ROOT/corpus/" "$worktree/corpus/"
+            fi
+            for kind in skills discoveries ingest_rejections; do
+              docker run --rm --read-only --network none --cap-drop ALL \
+                --user "$(id -u):$(id -g)" \
+                --mount "type=bind,src=$worktree/data,dst=/data" \
+                --mount "type=bind,src=$PUBLICATION_ROOT/data,dst=/input,readonly" \
+                --entrypoint skills-state skillsissue-ingest:publisher \
+                merge "$kind" "/data/$kind.csv" "/input/$kind.csv"
+            done
+            git -C "$worktree" add data/skills.csv data/discoveries.csv data/ingest_rejections.csv corpus/
+            if git -C "$worktree" diff --cached --quiet; then
+              published=1
+              git worktree remove --force "$worktree"
+              break
+            fi
+            git -C "$worktree" \
+              -c user.name="skillsissue-bot" \
+              -c user.email="skillsissue-bot@users.noreply.github.com" \
+              commit -m "data: ingest discovered skills"
+            if git -C "$worktree" push origin "HEAD:refs/heads/$DEFAULT_BRANCH"; then
+              published=1
+              git worktree remove --force "$worktree"
+              break
+            fi
+            git worktree remove --force "$worktree"
+            echo "default branch advanced during publication; retrying ($attempt/3)" >&2
+          done
+          test "$published" -eq 1

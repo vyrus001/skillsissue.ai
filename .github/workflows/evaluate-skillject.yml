@@ -1,0 +1,189 @@
+name: Evaluate SkillJect fixtures
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: Bounded number of labeled SkillJect scripts (1-8)
+        required: false
+        default: "4"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: skillsissue-skillject-evaluation
+  cancel-in-progress: false
+
+jobs:
+  evaluate:
+    # This label must map to a fresh VM that is destroyed after the job.
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: [self-hosted, linux, x64, ebpf, disposable]
+    timeout-minutes: 180
+    steps:
+      - name: Check out source and pinned SkillJect
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          submodules: recursive
+          persist-credentials: false
+
+      - name: Verify bounded inputs and disposable eBPF host
+        env:
+          LIMIT: ${{ inputs.limit || '4' }}
+        run: |
+          case "$LIMIT" in ''|*[!0-9]*) echo "limit must be an integer" >&2; exit 2;; esac
+          test "$LIMIT" -ge 1
+          test "$LIMIT" -le 8
+          test -f /sys/kernel/btf/vmlinux
+          test -f /sys/fs/cgroup/cgroup.controllers
+          test ! -e "$HOME/.aws/credentials"
+          test ! -e "$HOME/.config/gcloud/application_default_credentials.json"
+          test ! -e "$HOME/.kube/config"
+          test ! -e "$HOME/.docker/config.json"
+          if test -d "$HOME/.ssh"; then
+            private_key="$(find "$HOME/.ssh" -maxdepth 1 -type f -name 'id_*' ! -name '*.pub' -print -quit)"
+            test -z "$private_key"
+          fi
+          for name in AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN GOOGLE_APPLICATION_CREDENTIALS KUBECONFIG; do
+            test -z "${!name:-}"
+          done
+          docker info >/dev/null
+          scripts/verify-skillject.sh
+          commit="$(git -C SkillJect rev-parse --verify HEAD)"
+          test "${#commit}" -eq 40
+          echo "SKILLJECT_COMMIT=$commit" >> "$GITHUB_ENV"
+          echo "EVALUATION_LIMIT=$LIMIT" >> "$GITHUB_ENV"
+
+      - name: Build trusted evaluator, acquisition, supervisor, and target images
+        run: |
+          docker build --file containers/evaluator.Dockerfile --tag skillsissue-evaluator:eval .
+          docker build --file containers/ingest.Dockerfile --tag skillsissue-ingest:eval .
+          docker build --file containers/sandbox.Dockerfile --tag skillsissue-sandbox:local .
+          docker build --file containers/detonator.Dockerfile --tag skillsissue-detonator:eval .
+          docker build --file containers/analyzer.Dockerfile --tag skillsissue-analyzer:eval .
+
+      - name: Synthesize isolated labeled fixtures
+        run: |
+          mkdir -p evaluation/results
+          docker run --rm --read-only \
+            --user "$(id -u):$(id -g)" \
+            --network none \
+            --cap-drop ALL \
+            --security-opt no-new-privileges=true \
+            --tmpfs /tmp:rw,nosuid,nodev,size=64m \
+            --mount "type=bind,src=$GITHUB_WORKSPACE/SkillJect,dst=/inputs/SkillJect,readonly" \
+            --mount "type=bind,src=$GITHUB_WORKSPACE/config,dst=/inputs/config,readonly" \
+            --mount "type=bind,src=$GITHUB_WORKSPACE/evaluation,dst=/evaluation" \
+            skillsissue-evaluator:eval prepare \
+            --skillject-root /inputs/SkillJect \
+            --config-root /inputs/config \
+            --workspace /evaluation/workspace \
+            --manifest /evaluation/results/manifest.csv \
+            --skillject-commit "$SKILLJECT_COMMIT" \
+            --limit "$EVALUATION_LIMIT"
+
+      - name: Ingest fixtures without executing them
+        run: |
+          docker run --rm --read-only \
+            --user "$(id -u):$(id -g)" \
+            --network none \
+            --cap-drop ALL \
+            --security-opt no-new-privileges=true \
+            --pids-limit 128 \
+            --memory 2g \
+            --cpus 2 \
+            --tmpfs /tmp:rw,nosuid,nodev,size=256m \
+            --mount "type=bind,src=$GITHUB_WORKSPACE/evaluation/workspace,dst=/workspace" \
+            skillsissue-ingest:eval ingest-path /workspace/fixtures \
+            --platform-id fixture:skillject \
+            --allow-unregistered-platform \
+            --source-url https://github.com/jiaxiaojunQAQ/SkillJect \
+            --revision "$SKILLJECT_COMMIT" \
+            --limit "$EVALUATION_LIMIT"
+
+      - name: Detonate fixtures with required eBPF capture and no target egress
+        continue-on-error: true
+        run: |
+          docker run --rm \
+            --read-only \
+            --network none \
+            --tmpfs /tmp:rw,nosuid,nodev,size=64m \
+            --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock \
+            --mount "type=bind,src=$GITHUB_WORKSPACE/evaluation/workspace,dst=$GITHUB_WORKSPACE/evaluation/workspace" \
+            --mount type=bind,src=/sys/kernel/btf,dst=/sys/kernel/btf,readonly \
+            --mount type=bind,src=/sys/fs/cgroup,dst=/sys/fs/cgroup,readonly \
+            skillsissue-detonator:eval \
+            --repo-root "$GITHUB_WORKSPACE/evaluation/workspace" \
+            once --limit "$EVALUATION_LIMIT"
+
+      - name: Replay telemetry into isolated assessment ledgers
+        continue-on-error: true
+        run: |
+          docker run --rm --read-only \
+            --user "$(id -u):$(id -g)" \
+            --network none \
+            --cap-drop ALL \
+            --security-opt no-new-privileges=true \
+            --tmpfs /tmp:rw,nosuid,nodev,size=128m \
+            --mount "type=bind,src=$GITHUB_WORKSPACE/evaluation/workspace,dst=/workspace" \
+            --workdir /workspace \
+            skillsissue-analyzer:eval \
+            --policy-config config/policy.toml \
+            --discovery-config config/discovery.toml \
+            once --limit "$EVALUATION_LIMIT"
+
+      - name: Score expected verdicts and finding categories
+        if: always()
+        run: |
+          docker run --rm --read-only \
+            --user "$(id -u):$(id -g)" \
+            --network none \
+            --cap-drop ALL \
+            --security-opt no-new-privileges=true \
+            --tmpfs /tmp:rw,nosuid,nodev,size=64m \
+            --mount "type=bind,src=$GITHUB_WORKSPACE/evaluation,dst=/evaluation" \
+            skillsissue-evaluator:eval evaluate \
+            --workspace /evaluation/workspace \
+            --manifest /evaluation/results/manifest.csv \
+            --output /evaluation/results/evaluation.csv \
+            --confusion /evaluation/results/confusion.csv
+
+      - name: Validate bounded evaluation evidence
+        id: stage
+        if: always()
+        env:
+          ARTIFACT_MAX_BYTES: ${{ vars.EVALUATION_ARTIFACT_MAX_BYTES || '67108864' }}
+          ARTIFACT_MAX_FILES: ${{ vars.EVALUATION_ARTIFACT_MAX_FILES || '4096' }}
+        run: |
+          case "$ARTIFACT_MAX_BYTES:$ARTIFACT_MAX_FILES" in
+            *[!0-9:]*|:*|*:) exit 1 ;;
+          esac
+          test "$ARTIFACT_MAX_BYTES" -ge 1
+          test "$ARTIFACT_MAX_FILES" -ge 1
+          test -d evaluation/results
+          evidence_paths=(evaluation/results)
+          for path in evaluation/workspace/data evaluation/workspace/telemetry; do
+            if test -d "$path"; then evidence_paths+=("$path"); fi
+          done
+          evidence_link="$(find "${evidence_paths[@]}" -type l -print -quit)"
+          test -z "$evidence_link"
+          actual_kib="$(du -sk --apparent-size "${evidence_paths[@]}" | awk '{ total += $1 } END { print total + 0 }')"
+          actual_bytes="$(( actual_kib * 1024 ))"
+          actual_files="$(find "${evidence_paths[@]}" -type f -print | wc -l | tr -d '[:space:]')"
+          test "$actual_bytes" -le "$ARTIFACT_MAX_BYTES"
+          test "$actual_files" -le "$ARTIFACT_MAX_FILES"
+          echo "artifact_ready=true" >> "$GITHUB_OUTPUT"
+
+      - name: Upload attack-only evaluation evidence
+        if: always() && steps.stage.outputs.artifact_ready == 'true'
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: skillject-evaluation-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            evaluation/results/
+            evaluation/workspace/data/
+            evaluation/workspace/telemetry/
+          if-no-files-found: error
+          retention-days: 7

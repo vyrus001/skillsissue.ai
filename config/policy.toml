@@ -1,0 +1,30 @@
+schema_version = 1
+policy_version = "skilldetonate-v2"
+
+# These files contain synthetic #data_* values inside the sandbox. Host secrets
+# are never mounted into the target.
+sensitive_path_globs = [
+  "/home/detonator/.ssh/*",
+  "/home/detonator/.aws/*",
+  "/home/detonator/.config/gcloud/*",
+  "/home/detonator/.env",
+]
+
+# Agent runtimes routinely open these non-persistent device/diagnostic sinks.
+# Keeping the exceptions exact avoids treating ordinary stdio and tracing
+# probes as persistence while preserving the rest of /dev and /sys as hostile.
+allowed_write_roots = [
+  "/work/skill",
+  "/tmp",
+  "/dev/null",
+  "/dev/tty",
+  "/sys/kernel/debug/tracing/trace_marker",
+]
+trusted_egress_domains = []
+marker_prefix = "#data_"
+
+# Value-level taint is adapter-specific. The portable baseline combines marker,
+# process, and inode provenance and records that coverage in data/runs.csv.
+require_source_to_sink = true
+flag_untrusted_download_exec = true
+flag_persistence_writes = true

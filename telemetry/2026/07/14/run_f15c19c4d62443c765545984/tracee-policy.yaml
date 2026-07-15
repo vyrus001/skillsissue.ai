@@ -1,0 +1,31 @@
+apiVersion: tracee.aquasec.com/v1beta1
+kind: Policy
+metadata:
+  name: skillsissue-detonation
+  annotations:
+    description: Per-container skill detonation evidence
+spec:
+  scope:
+    - container=908b1dbc1a65bcb9b024b816bd473d96a22f24ee9719896ee25399a05cca0f89
+  rules:
+    - event: sched_process_exec
+    - event: sched_process_fork
+    - event: sched_process_exit
+    - event: security_file_open
+    - event: openat
+    - event: read
+    - event: write
+    - event: pipe
+    - event: pipe2
+    - event: dup
+    - event: dup2
+    - event: dup3
+    - event: close
+    - event: renameat
+    - event: unlinkat
+    - event: chmod
+    - event: connect
+    - event: security_socket_connect
+    - event: net_packet_dns
+    - event: dropped_executable
+    - event: file_modification

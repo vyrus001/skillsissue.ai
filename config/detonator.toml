@@ -1,0 +1,35 @@
+# Schema version 1. GitHub Actions runs this only on disposable Linux eBPF runners.
+tracee_image = "aquasec/tracee:0.24.1@sha256:cfbbfee972e64a644f6b1bac74ee26998e6e12442697be4c797ae563553a2a5b"
+sandbox_image = "skillsissue-sandbox:local"
+timeout_seconds = 900
+memory = "1g"
+cpus = "1.0"
+pids_limit = 128
+max_attempts_per_run_key = 3
+
+# `none` still records attempted destinations from execve argv while preventing
+# an untrusted skill from reaching the public Internet.
+network_mode = "none"
+max_telemetry_bytes = 4194304
+max_agent_output_bytes = 524288
+max_skill_entries = 4096
+max_skill_bytes = 67108864
+max_single_file_bytes = 16777216
+max_skill_depth = 32
+# The mutable target workspace is a kernel-enforced tmpfs, never a host RW
+# bind. These limits cap both data growth and inode exhaustion during a run.
+max_workspace_bytes = 134217728
+max_workspace_inodes = 8192
+max_closure_lifts = 32
+instruction_extensions = ["md", "txt"]
+agent_adapter = "deterministic-closure-harness"
+agent_model = "none"
+agent_relay_image = "skillsissue-relay:local"
+# For `codex-cli` or `claude-cli`, keep `network_mode = "none"`, set a model,
+# and use the fixed loopback URL backed by the harness's per-run Unix-socket
+# forwarder. The target gets only a fixed dummy key; never mount host credentials.
+# agent_base_url = "http://127.0.0.1:8787/v1"
+agent_timeout_seconds = 120
+agent_max_turns = 8
+agent_max_budget_usd = "1.00"
+skillject_commit = "6598997b76044fa00abe0a4416064fbd2eab33ff"

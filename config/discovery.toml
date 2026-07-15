@@ -1,0 +1,17 @@
+schema_version = 1
+analyzer_version = "platform-discovery-v2"
+candidate_confidence_threshold = 0.75
+
+# Candidate rows are always inserted disabled. A human must verify the site and
+# choose an adapter before ingestion can touch it.
+auto_enable_candidates = false
+skill_path_indicators = ["/skills/", "/skill/", "/registry/", "/marketplace/"]
+download_indicators = ["curl", "wget", "fetch", "powershell"]
+execution_indicators = ["bash", "sh", "source", "python", "node"]
+ignored_domains = [
+  "github.com",
+  "raw.githubusercontent.com",
+  "gitlab.com",
+  "localhost",
+  "skillsissue-relay",
+]

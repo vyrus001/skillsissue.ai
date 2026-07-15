@@ -1,0 +1,22 @@
+[package]
+name = "skill-ingest"
+description = "Safe, deterministic acquisition worker for the SkillsIssue corpus"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish = false
+
+[dependencies]
+anyhow.workspace = true
+clap.workspace = true
+libc.workspace = true
+reqwest.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+skills-core.workspace = true
+tempfile.workspace = true
+url.workspace = true
+walkdir.workspace = true
+zip = { version = "8.6.0", default-features = false, features = ["deflate"] }

@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rust:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out pinned source and fixtures
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          submodules: recursive
+          persist-credentials: false
+      - name: Verify pinned SkillJect corpus
+        run: scripts/verify-skillject.sh
+      - name: Check formatting
+        run: cargo fmt --all --check
+      - name: Test workspace
+        run: cargo test --workspace --locked
+      - name: Lint workspace
+        run: cargo clippy --workspace --all-targets --locked -- -D warnings
+      - name: Validate worker CLIs
+        run: |
+          cargo run --quiet --locked -p skill-ingest -- --help >/dev/null
+          cargo run --quiet --locked -p skill-detonate --bin skill-detonate -- --help >/dev/null
+          cargo run --quiet --locked -p skill-analyze -- --help >/dev/null
+          cargo run --quiet --locked -p skill-eval -- --help >/dev/null
+          cargo run --quiet --locked -p skill-relay -- --help >/dev/null
+
+  containers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Check out source
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: false
+      - run: docker build --file containers/ingest.Dockerfile --tag skillsissue-ingest:ci .
+      - run: docker build --file containers/sandbox.Dockerfile --tag skillsissue-sandbox:ci .
+      - run: docker build --file containers/relay.Dockerfile --tag skillsissue-relay:ci .
+      - run: docker build --file containers/detonator.Dockerfile --tag skillsissue-detonator:ci .
+      - run: docker build --file containers/analyzer.Dockerfile --tag skillsissue-analyzer:ci .
+      - run: docker build --file containers/evaluator.Dockerfile --tag skillsissue-evaluator:ci .
