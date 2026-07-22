@@ -1,0 +1,903 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:543e85063330291314ffb730475adeb6570cd76c277fbcec12f9da4b5e079b1a",
+  "sha256": "543e85063330291314ffb730475adeb6570cd76c277fbcec12f9da4b5e079b1a",
+  "blake3": "b3ba23e076b9bfff13635e0832f468b1c3085ea337d9a7e407592f39f5f2847f",
+  "size_bytes": 275399,
+  "file_count": 92,
+  "entries": [
+    {
+      "path": "AGENTS.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4158,
+      "sha256": "27bae9dd8bd9aea085181f0065a62e78cd682190403c8720e4f72548d13c1bd0",
+      "blake3": "de5ab9a5fc18564f6421e73bb8fdc5c3399aac2c0beba667e0bfed85937b2fff"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12894,
+      "sha256": "2abb3ab143260bdfeab271b230786f75987d89a009312a409dca809017d22a1d",
+      "blake3": "ec9199a250aa5ea6e130a2002f0574392d7514ac12d29c9f0b481c58ba0a697c"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1349,
+      "sha256": "12aade3667dada34a4985580f742c5c30f870f6b4e01db406f9e1006bb91f519",
+      "blake3": "cb659209359ecdf86e5a04f486639f60d27cf150d267e1af6e0f3cc015e3e5c3"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5079,
+      "sha256": "bbbb215fdbb691c8ca67fb5ef6f60b05203978861b6a1bb3fdc9e45a505a8e26",
+      "blake3": "e736e6ad38a97cbff1c2e30e4b671576bd39cff2eba44073d5014ce093f32a9d"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2090,
+      "sha256": "00664afbbab544cb188e465792e51ae83a59d89f0c3f6f97c2259b87cc4355c0",
+      "blake3": "cf3218b9b4669330410a03f9642de142116667f6d9a614f392f84c89a1d89633"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 139,
+      "sha256": "c1c58fa8744e85e1f46944b41366c30d5cfd731322d0645659da211b1abb08dd",
+      "blake3": "28c4edebb7e8414b62dc55d5687db42ac3df5aca82657adac22f3ac1a5e8774a"
+    },
+    {
+      "path": "biome.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1401,
+      "sha256": "91e9da24561cbb70659edb3295fcd8fd36e797d8b76de56fc877a700acfb1253",
+      "blake3": "9d7e97d5374cd01d70536c7575b7bb58747c4241ed1806ed6d5ed562e92c4be3"
+    },
+    {
+      "path": "docs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/policy-administration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6701,
+      "sha256": "8c550af95f75e90857218ef0e34a39eafab3e48bc0951f2930e9b5e3f6a9724a",
+      "blake3": "da9ea2a9e9a47888d181227d569d3d189357f4c3fbfecea35308a2f7a0b07c20"
+    },
+    {
+      "path": "opensea-api",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-api/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 37768,
+      "sha256": "b2a9a6f72dfa9a7e94e274ed7ca0dde91248d44373bdcf2d108f124fc5710aa1",
+      "blake3": "49ae51d66db14e6a42e5a5dccb86a0e2f2a81f41fa906857cc3a4f31f4fa1ac8"
+    },
+    {
+      "path": "opensea-api/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-api/references/authentication.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4548,
+      "sha256": "236a416907269fe2602a3a9ec709bcbe7d30c4281e96d48c6d495c02d5ca78ef",
+      "blake3": "f32455009b47c6e560f887b39b2cc74ba58b5f2c45a1fb47a379e4246d89c75f"
+    },
+    {
+      "path": "opensea-api/references/rest-api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9714,
+      "sha256": "b22bc72a02da26a4be33fe88a323aec3f568ac1e046d5d49cb8c1ed7fabc0689",
+      "blake3": "d374c9180b5975116d491c10ba43a46a3f3c3de3f280d6be1e1da11a6f9c1c4d"
+    },
+    {
+      "path": "opensea-api/references/stream-api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 667,
+      "sha256": "0816ae8fcd12f328a365d0ccc3d98699fc2b10f616fda164849946632c473164",
+      "blake3": "6ef8db66e5c0087b3410d0532523da117cc73be870752d083671d343edca70f9"
+    },
+    {
+      "path": "opensea-api/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-api/scripts/_response-markers.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 592,
+      "sha256": "740332ad7f2b7b7a61400c5d100c18bdf7cf22c73016583f46705ad6a7f78804",
+      "blake3": "9d4f68cefc7e3c0a874a12db97d17934dea28e1093cd01b5589cc891b2113b99"
+    },
+    {
+      "path": "opensea-api/scripts/accounts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-api/scripts/accounts/opensea-account-closed-positions.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 509,
+      "sha256": "b61d1ecc8b457b036225cb7d54f512f0b32769fb45688021564cf4db957d1060",
+      "blake3": "a55dc462fcc5e2694baf174feb52672936dc96342e37465a7701a024871e2a29"
+    },
+    {
+      "path": "opensea-api/scripts/accounts/opensea-account-collections.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 478,
+      "sha256": "29a04b11614c2d2d673e792415bd89f34af01de2742ee10d1c0b9425de8434e2",
+      "blake3": "7b709513af42939d4ea8d1a62c34b662de79282ca326f5b4dae2b282d960f773"
+    },
+    {
+      "path": "opensea-api/scripts/accounts/opensea-account-favorites.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 667,
+      "sha256": "031f26893aa9f0c09fd2c55d01f36c206ecc3b672e11515bb58c82da20afdf5d",
+      "blake3": "e66ce765ea9d88349d1da2c22057d9610df881469db9d147a7c6abe07737dc4e"
+    },
+    {
+      "path": "opensea-api/scripts/accounts/opensea-account-listings.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 791,
+      "sha256": "5806b6ea5e0723246c90a34a494d66b19b479ef81b190cb079b6d58c608e4750",
+      "blake3": "b6794ffbf144c228484a9efb4e318218c9b7b81d9c5216f7b2b9d08944408aeb"
+    },
+    {
+      "path": "opensea-api/scripts/accounts/opensea-account-nfts.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 486,
+      "sha256": "b779289a9b6ada805813bf35415bf39ab86a3df9109483b4157dc6a554ed923d",
+      "blake3": "b2553bef0ee0b75e061686fc3cc16d5d170c97468a2c37be6558cbc063af7a85"
+    },
+    {
+      "path": "opensea-api/scripts/accounts/opensea-account-offers-received.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 804,
+      "sha256": "38a94d99e698b7503f0c697dcebc62e992bd004f91fd0bc53033cfa8fe70b2ed",
+      "blake3": "6f554dbeab42e24806c4c310f3ae192ce1a876fba23b3e2f0af1bfa829251814"
+    },
+    {
+      "path": "opensea-api/scripts/accounts/opensea-account-offers.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 789,
+      "sha256": "a9766735d61b695e54b4bb4fe941dbc7d6fee121e0db143730c00beff9ebfa50",
+      "blake3": "6b5dc6f7eb85520a382d1227ab9cf1a9159a90e3ea05daf1a8b63fb4a2ffbb19"
+    },
+    {
+      "path": "opensea-api/scripts/accounts/opensea-account-pnl.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 292,
+      "sha256": "cc0a6090c496861bd2a2ed512c467fe0d2658a058e1218197f8e1e01deeb6a6b",
+      "blake3": "592a657e7c7be1a6eb105926fa0bc91a385ecd3b235f5ad0634ba5c0d84bf240"
+    },
+    {
+      "path": "opensea-api/scripts/accounts/opensea-account-portfolio-history.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 434,
+      "sha256": "9a77281bbae8ed91b436c2bdd3e0ab8f7874da7ef909d0a412eef291975eda80",
+      "blake3": "da797aa1f1ae99f0c9e2aea71ab8992905ac81ebc2271dae56ca68a7f1d6e43d"
+    },
+    {
+      "path": "opensea-api/scripts/accounts/opensea-account-portfolio.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 423,
+      "sha256": "1738dfe250ef3901ef56a8d5a75e105089ef62019219d1b7f64e6532bdc88f16",
+      "blake3": "da95bc20a0a34cb75a552c65a094997b20757cf8e381f4358a3583ddae287d3f"
+    },
+    {
+      "path": "opensea-api/scripts/accounts/opensea-account-token-transfers.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 556,
+      "sha256": "e28780f76714994d7ebdada0d2b7dc96f4354ea4898d24425df1745828aa0a29",
+      "blake3": "681ea0ce18a72c908eb5b986ad138ee60a5acbce173da143550cbc3b6fd6a8fb"
+    },
+    {
+      "path": "opensea-api/scripts/accounts/opensea-resolve-account.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 361,
+      "sha256": "2c8cf7fa858b01ac6db6e5f334a738d241811aabe5aa3b642d208b08217ae1ab",
+      "blake3": "98b4f4de51bb3b855883f577cb691a21e4d454aa497fe8f4ecb741f1d32e362a"
+    },
+    {
+      "path": "opensea-api/scripts/assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-api/scripts/assets/opensea-assets-transfer.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 491,
+      "sha256": "cd445df3ae9e175fc6dafefcf1a08136b95672e5239a7d05367255e920b2ec45",
+      "blake3": "35811b338e1122b8487417e043013dc451b9353c24331dccd32c2c3803ffac43"
+    },
+    {
+      "path": "opensea-api/scripts/auth",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-api/scripts/auth/opensea-auth-request-key.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1027,
+      "sha256": "3a5a691fd43b38440fb868184a533fd615310dd01bd451e0e4b91d600109a560",
+      "blake3": "f579af1b14532b0e6a3098218ce77cf011f1eba1eb1222033b0a42df56d5f73c"
+    },
+    {
+      "path": "opensea-api/scripts/auth/opensea-resolve-key.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3121,
+      "sha256": "8dd23a0ee6452e6492df2db934b014b3f499ae2f9fdc028081f90fd1b6053e6d",
+      "blake3": "9c3d88d39e9713caf3c4b7f9db34fb26de6e262a07cd03a26ebd097d92d6b4c7"
+    },
+    {
+      "path": "opensea-api/scripts/collections",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-api/scripts/collections/opensea-collection-floor-prices.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 691,
+      "sha256": "c4c09ce9363d366ef8c4f96cfd9b98baebb12ea6cca759c0b42a09c6a5459f79",
+      "blake3": "1246a356dea6298c70bd33115ffe33b8940ed978875b5e69ea2cb517bafa58a2"
+    },
+    {
+      "path": "opensea-api/scripts/collections/opensea-collection-holders.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 659,
+      "sha256": "94b0822c7dd77158d0f3473d7a0fd61ef24a760c3d7426db5827ed4ea8d8f3f8",
+      "blake3": "fd536eef36f9d237111eeffce8a5b76bf86c5fbc30ee3aae8a4dec5eec881634"
+    },
+    {
+      "path": "opensea-api/scripts/collections/opensea-collection-nfts.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 453,
+      "sha256": "565374114b6d06cdaa6959df5da6d798e77404842fbea93ad5bb3e18d84e50ff",
+      "blake3": "aee41ca570efd9c958b2f1ec85d1e8e6a34b637f12343771c71d3b3f7480ed8e"
+    },
+    {
+      "path": "opensea-api/scripts/collections/opensea-collection-offer-aggregates.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 583,
+      "sha256": "b430da573479ccdf858751aa9619519bf0dd70a915580a0de8fd75b6838ddc21",
+      "blake3": "24c8199edd3b9e55f603268b078cdc27b7e82993e8376b94833c6d25b1091375"
+    },
+    {
+      "path": "opensea-api/scripts/collections/opensea-collection-stats.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 293,
+      "sha256": "4bf8ab7a72e0365b2bd47482593a540aaf119740123b8082ca7f2147bc652243",
+      "blake3": "ac46d9adbed7e8413892b0171c731109d74063fbb79f15ab6e6e0e7dfb3e6f99"
+    },
+    {
+      "path": "opensea-api/scripts/collections/opensea-collection.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 213,
+      "sha256": "a191ab094b49c0a17d150875884dffd29a8690f452752f36937b15e8c246ad08",
+      "blake3": "eaffc3641a1a1b827c5c96060d5bb16657b5eec837f55f340f5047e28aaa2f4c"
+    },
+    {
+      "path": "opensea-api/scripts/collections/opensea-collections-batch.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 570,
+      "sha256": "48b43d252d9069c004ea07fb894665fa0f5d9d06c20755af3eaa40cb03df552f",
+      "blake3": "0d0c222cc059850a2aeb947fa2758c4750e0319f41c66153493fb9beb16bd11b"
+    },
+    {
+      "path": "opensea-api/scripts/collections/opensea-collections-top.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 634,
+      "sha256": "130bf8b6ee042848db3f7ca80430faae3fd67850fc92c38c3a02ae31dad9fdf5",
+      "blake3": "31690217bd423ea611bcfe903aec546655a056821509881e89c94420cf7c7ca2"
+    },
+    {
+      "path": "opensea-api/scripts/collections/opensea-collections-trending.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 644,
+      "sha256": "5a6f2aa895e9a733c9e7392be28e9c7bc3e3f7bfd8f4a12134e7f15c263e7ba8",
+      "blake3": "9f210ca1bd0d0112ff150d8939be0151dd52ee2299a09c4108961b077d5ffe91"
+    },
+    {
+      "path": "opensea-api/scripts/drops",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-api/scripts/drops/opensea-drop-cross-chain-mint.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1814,
+      "sha256": "20c10fabbf9a561b4d7cab8c933b7caf0f8155a49b6fe5fca002bfd33847c1f3",
+      "blake3": "ee8f6c9043fdb07d4280a4cb47067597c7df48433c773686c05832be1f59b169"
+    },
+    {
+      "path": "opensea-api/scripts/drops/opensea-drop-deploy-receipt.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 336,
+      "sha256": "e88540b9fe4531bde71eb1945c3bd11fc1efca6a4fb25f0858aff2516565bf37",
+      "blake3": "651290102806d27f3cab696a11e69304d4acbc36aae8c2b542dd72331919a2b9"
+    },
+    {
+      "path": "opensea-api/scripts/drops/opensea-drop-deploy.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 941,
+      "sha256": "503d033245b8435398df8238f228eb21a1c277223ee450f2faa12781291e660d",
+      "blake3": "f6d268143b7c968af3fe66b6883543283f47d43951335d07e2dc0666f64d1b60"
+    },
+    {
+      "path": "opensea-api/scripts/drops/opensea-drop-mint.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 893,
+      "sha256": "9d45130b264a2c028a05d032dca9c9511cb9c093884d4d91b0e79c19b812695d",
+      "blake3": "4de5078cf7f65a7cea9b3e35ff69c216595317c81c9c04eb77b972d32e141bde"
+    },
+    {
+      "path": "opensea-api/scripts/drops/opensea-drop.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 249,
+      "sha256": "4419a67aa74ab2602c1a9e3ec437f203830aae1c312e4603cc142b330f494335",
+      "blake3": "84a426b6abb0737bcdbf008f36ba6b9f7bd33b78b8c98ea200d20200fb61f024"
+    },
+    {
+      "path": "opensea-api/scripts/drops/opensea-drops.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 481,
+      "sha256": "a8d81e701b2e191586527df93f7126529dba59f5dbe19a9d16bf66026828c1bf",
+      "blake3": "85fb13ae257cc5b57a4ed5c57760141d7af22b5772c6ab412d6ab71408bca92c"
+    },
+    {
+      "path": "opensea-api/scripts/events",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-api/scripts/events/opensea-events-collection.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 628,
+      "sha256": "b91cf6d59909fbd3f7d8bd0fc2caaece20598d2fc6b9362c9353390d3ca63803",
+      "blake3": "1345d644521b261602874273fe9d73339a5142b7a81302870608c4e287e75227"
+    },
+    {
+      "path": "opensea-api/scripts/listings",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-api/scripts/listings/opensea-best-listing.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 339,
+      "sha256": "926c08eec2b7afa9c21eddec1b2390bab4bbbd4e01d59852e1ff2442320800cf",
+      "blake3": "0fb8d66fefc8ef0b6d2cac960ddc411d19e6cffd6a89b5d9d24466570c4f8d0d"
+    },
+    {
+      "path": "opensea-api/scripts/listings/opensea-listings-actions.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 522,
+      "sha256": "759a865682bb3eb339f959630aabb7d5526316b77c1967158f8ba3336dbc1d6e",
+      "blake3": "9e4a82422ec71d2cd1d9d2764b8f4b8604848c36fec533bb4fdaa53af18f6789"
+    },
+    {
+      "path": "opensea-api/scripts/listings/opensea-listings-collection.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 465,
+      "sha256": "02e7fb2dbaa7843dad1d5feb45231150d7a69f1f8f8c6b25fbe7121831ff69f3",
+      "blake3": "0f89e5816c00c39d139dfb2fda97076af6c835dc0398c8a71575ef0953f732cf"
+    },
+    {
+      "path": "opensea-api/scripts/listings/opensea-listings-nft.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 479,
+      "sha256": "70846e67988e2cd5049b6b4d69e633bb6b56c75fec763db8bf6c76d245dc800d",
+      "blake3": "4b89496e0cb1d877999b1989de3e552fa5e4d92c833295ec8249f564934a16ce"
+    },
+    {
+      "path": "opensea-api/scripts/nfts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-api/scripts/nfts/opensea-nft-analytics.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 368,
+      "sha256": "d3edf020ddd47a25a74f6ad87f4161c339377a4d59e6425401cdab0b2174d8fa",
+      "blake3": "b3b649632ac14c5ac7af1921ca0b62cea35d73e404c4911a501d890853836073"
+    },
+    {
+      "path": "opensea-api/scripts/nfts/opensea-nft-owners.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 490,
+      "sha256": "63428460c182eca9953acbfbcb55a52a6f2f537fbc02734c95b536139fb82c70",
+      "blake3": "63983b09aa0b45632c66ddc7a8b18df2777b9f695b4a663b9bd7d6b0f31aa13b"
+    },
+    {
+      "path": "opensea-api/scripts/nfts/opensea-nft.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 288,
+      "sha256": "603eefe068cc899d672843f5d84f1f3890f06e168291e60aa8dfa105585f7670",
+      "blake3": "adf360c2443b627cc6f98784f6a716aeaa2031a4e466f10561369330fba1a3b4"
+    },
+    {
+      "path": "opensea-api/scripts/nfts/opensea-nfts-batch.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 344,
+      "sha256": "b3594dcec78db96f2749ca3938fdefd1f05817ae6747b0c151c7968c5c74e3e9",
+      "blake3": "09c3df8039b207378d64d71d268b8eef1b678c1d63e6979f78f54f9b42576454"
+    },
+    {
+      "path": "opensea-api/scripts/offers",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-api/scripts/offers/opensea-best-offer.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 333,
+      "sha256": "7750f6dc6f7a441726b99057f054d5c16a14aeeacf5eaf2f71cf076afe01a451",
+      "blake3": "0db555a3cfec4f89ea852f7b4cec19c5504a1d6aee3189064594f0772c452d8c"
+    },
+    {
+      "path": "opensea-api/scripts/offers/opensea-offers-collection.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 461,
+      "sha256": "42a120e2d3d9e36b724c4549736025041656b05da133bb514ed02d13b39d84bf",
+      "blake3": "8c0f84e9ada3ab7b05a2643dec6cc624e318c408a659c9fe0afff8bd17ee6eb7"
+    },
+    {
+      "path": "opensea-api/scripts/offers/opensea-offers-nft.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 473,
+      "sha256": "8b65edcadb3000a310a64b20b8435ea82a97ca470b66491d1cdba1f5b5659dbd",
+      "blake3": "fed4708ef4a05430827ba96428fa08da6031d65eb4e15f09a945325d6c226400"
+    },
+    {
+      "path": "opensea-api/scripts/opensea-get.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1492,
+      "sha256": "3599db518ca35255d49d4c2cbedf1909dac9e41b4ede98f2c8b6d773512b689d",
+      "blake3": "6d662a17e09989e174a31b0bedd6e631e33cbb4b878aaa32a7287794d2204ac8"
+    },
+    {
+      "path": "opensea-api/scripts/opensea-post.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1143,
+      "sha256": "727aeb4acb4675f4c8012910d8e62e39266c38f476ba98b3155b0fbd21f5dcdf",
+      "blake3": "792cec011bc28b5e53a29f1f6ecffb52dc47755e43bf00086f0b9a54536b9694"
+    },
+    {
+      "path": "opensea-api/scripts/orders",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-api/scripts/orders/opensea-order.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 377,
+      "sha256": "046fe79c0ba31fd2c2c3b3ff8019d068d2c9f7caba7092ea4c2f76cb3eae20a0",
+      "blake3": "b89b8859c182faed4172489df5058436be237b73d9077b85e4c1d057be08f26d"
+    },
+    {
+      "path": "opensea-api/scripts/stream",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-api/scripts/stream/opensea-stream-collection.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1129,
+      "sha256": "3e16db3a19d2f9c0f16b6e83c032a9007d07bacb85fb07a2eeb52f089b332899",
+      "blake3": "0beaaf0d453dc08c7c691d0926728221066aeb310c5701c48267d7abb5d202fc"
+    },
+    {
+      "path": "opensea-api/scripts/tokens",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-api/scripts/tokens/opensea-token-activity.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 459,
+      "sha256": "3e4ec8e816cdd8b9d44e6f8648645d336d9d1a5c2ea74dabc06360e268dba365",
+      "blake3": "0305cadd5f29030a49de7fb0fa6b123498dfeabf5582a94eb583ca754a154715"
+    },
+    {
+      "path": "opensea-api/scripts/tokens/opensea-token-group.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 253,
+      "sha256": "f4707767b87ca729b6f64ca2f6552cc6da09230df4e179541cbe025d3e688b3e",
+      "blake3": "0a2f4b2f3222ffb0c2c3c53e8d5fb1be51adab22abacc756278f48bd900ca127"
+    },
+    {
+      "path": "opensea-api/scripts/tokens/opensea-token-groups.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 396,
+      "sha256": "84544b997b1c03fc96a3fa5032faf903ec9e7761d4c597c8aa244d856f2a725d",
+      "blake3": "c75a99668793a974619a7fd972d0d43d3495fc411c42353133c56a7b0d1008ce"
+    },
+    {
+      "path": "opensea-api/scripts/tokens/opensea-token-holders.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 730,
+      "sha256": "89a3123f9557b5efcdece5f061ac1ecd8b89055237276dbc854810d3277264d9",
+      "blake3": "0118dfb6018a408bfc6e264b231a3fd6fb0edaed696eea01ec3c7133169e5e17"
+    },
+    {
+      "path": "opensea-api/scripts/tokens/opensea-token-liquidity-pools.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 417,
+      "sha256": "bcfdc59e321623429748036e0f0fc114709b9a09b9520abcc0fc0dec708f8e5d",
+      "blake3": "5cc42c99819f0bba0b300cf748d654cd8708ec10febaf4f6a9850369fdfc1963"
+    },
+    {
+      "path": "opensea-api/scripts/tokens/opensea-token-ohlcv.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 681,
+      "sha256": "2dda078c8a46d1d30a1d11dc57823203e1c4eb3e417b2f7c0beeaf7bbc66bad0",
+      "blake3": "548721d560fd07745d6c3aac0f64ae8b41d3470f1f40ce765177a9bec4ebfc62"
+    },
+    {
+      "path": "opensea-api/scripts/tokens/opensea-token-price-history.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 627,
+      "sha256": "bf036c1ee470c4a48f736d469a8d5477aba40055ed664d12ef051d69d7ad3b7c",
+      "blake3": "0b6b0523e859e9f89fa88a177a3ba94906fb1f00501a0cc97214d7cf758cf6dd"
+    },
+    {
+      "path": "opensea-api/scripts/tokens/opensea-tokens-batch.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 386,
+      "sha256": "fb04a5b716c6d9607b65abdba7fd31d63f67942d8e82a6063524bd1ddc3eddd2",
+      "blake3": "fb7520c8e2fde0acee6fec7dbd2d6a7c0a4edd322320e9dbe3c62a92bf75be37"
+    },
+    {
+      "path": "opensea-marketplace",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-marketplace/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7064,
+      "sha256": "a3d0641708d5276e2af54acb0a3ccd7de6e40de97a1b4a0f43e387b021cc7bbb",
+      "blake3": "14b07371239f79bc89271aa0b8129e8924c264f4950e7a8be07912bb0f43f250"
+    },
+    {
+      "path": "opensea-marketplace/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-marketplace/references/marketplace-api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15105,
+      "sha256": "7062b846607d00fcf7361ba39b3bf560b18da4e5d131d0ac1382ab7108b4cb14",
+      "blake3": "db8cabdfac0c2246caa9e2de5e16bcbe3f8aefabfff821f38721ee68dd0123f9"
+    },
+    {
+      "path": "opensea-marketplace/references/seaport.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7435,
+      "sha256": "5a00e129ac43b5058d27b0cfb86b2621520febe8285cf9f287dcc2c1fb621da2",
+      "blake3": "caee9139d7f0dba9c20b8b523658b3015bff0c24ba67ea3f153d2706993279ca"
+    },
+    {
+      "path": "opensea-marketplace/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-marketplace/scripts/opensea-cross-chain-fulfill.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4037,
+      "sha256": "8b976e6c4faa0cda8c84dcfaf1f84feb149bcd8a9dbc3bb45dedf01f94375c80",
+      "blake3": "8cebbbd0d0bc241de4f4fd232515bbdb8079e88e02bab64e1d06873e1707928e"
+    },
+    {
+      "path": "opensea-marketplace/scripts/opensea-fulfill-listing.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1195,
+      "sha256": "032ada96920422f14e2bdf3a58da439a3ac429d796586c4a8f46a55b98601b63",
+      "blake3": "902b3aceff0edf72e96b4571b00000b2a7ad4d5b3c71fc78ebaf213112c8bceb"
+    },
+    {
+      "path": "opensea-marketplace/scripts/opensea-fulfill-offer.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1666,
+      "sha256": "15892f37e073722cf1d8dc61df98a070b99ecff8d25060bbfb7a69d1025ee541",
+      "blake3": "da3e43de0dcd1c1b4197d517944192726ba3a2fa407fe50649746a08ec82b504"
+    },
+    {
+      "path": "opensea-swaps",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-swaps/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5331,
+      "sha256": "349c3a7c09422d6222b25dfc133fb3079ae3873de2112bdfea59dab8d278c76c",
+      "blake3": "198206c5e1543aa1194a069285b0265d4fead441a4ee66e79c23560a7858a306"
+    },
+    {
+      "path": "opensea-swaps/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-swaps/references/token-swaps.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4695,
+      "sha256": "6c21a3bcd015064ea47ed8bf4e0d1f480c6b50a3052f234be3ed379dfacb6066",
+      "blake3": "0f751f318428cde195931876c43860dff4fdbe59a6f7c8387ed273dafb4d7e52"
+    },
+    {
+      "path": "opensea-swaps/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-swaps/scripts/opensea-swap.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3850,
+      "sha256": "f39011aa514185cf6ae49d6dbfb9d4b8dcd0e1e9119362f166f0c79c923debd2",
+      "blake3": "010c8a4a5cdacc90d514e8613c21aec11125d2739a064d8a26a1e8fdd2fbc7d0"
+    },
+    {
+      "path": "opensea-tool-sdk",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-tool-sdk/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25446,
+      "sha256": "7efa39df9bb7fd27fed49af1087461e16a5e770194a492e572f0ba59bf8c270c",
+      "blake3": "b654e77ee92106b6d2b7941bea6f21953b80b7adb0067b214ff08b13e51a8804"
+    },
+    {
+      "path": "opensea-tool-sdk/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-tool-sdk/references/known-predicates.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16617,
+      "sha256": "7809a02351429df23908f6dc781e7b0f5739262dceedeb8ff162e604677ce609",
+      "blake3": "f308510009abbe14c0fd21da3df5ef66274b5c3eeb25d02742d66cdb32ed9ac6"
+    },
+    {
+      "path": "opensea-tool-sdk/references/predicate-gating.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11434,
+      "sha256": "321aed60d40a4cd286f5cca2a7abe1534168da0b9966f04fbbc7679ee99b409f",
+      "blake3": "912941c9490c865b4a09939d137fbbf7341ae9922b2684520faefe283e304327"
+    },
+    {
+      "path": "opensea-tool-sdk/references/x402.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7139,
+      "sha256": "c549483e380e6d55b63e774c88897c3be214d2e71e978bf2f1b8ab08fc48a56f",
+      "blake3": "863e7142a903374787e3b4575ce20701865c8e071271714ca54e87ed32103a99"
+    },
+    {
+      "path": "opensea-wallet",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-wallet/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9091,
+      "sha256": "f627f4305565efba68e2b2c17aee19ba3bfeab9df9150766ba497a2614b49388",
+      "blake3": "d713121380cd946fc89eb1af981aae303f50c44f3879a4a8e6a789e501c03c7c"
+    },
+    {
+      "path": "opensea-wallet/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "opensea-wallet/references/wallet-funding.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4621,
+      "sha256": "8f549506a438a07627b72a50ce19739e2f3a835447c9c1869b260abaeb4b62a1",
+      "blake3": "4f995ef24ff79ef1db2dda2e2aa2d82b5e4ee38b1f2766af179e83784f6038e5"
+    },
+    {
+      "path": "opensea-wallet/references/wallet-policies.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6182,
+      "sha256": "d93634c636086a2b2b7de146b6675aee2e4dbb9f03eb08af6e7cc954c26cf3bd",
+      "blake3": "4a96097d111e2aabd7da01fad443bf74c768e8a49d7cd061cba2d3b0cb003756"
+    },
+    {
+      "path": "opensea-wallet/references/wallet-setup.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18381,
+      "sha256": "b791c4a02c364d0edb672defe0205b08a016f21f4dfee513b6320ef4ed19c88a",
+      "blake3": "1ff5de01485c941c884b68697e1fd2f7538c77027c76d53307ab5ecbfcdac68c"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 576,
+      "sha256": "7aeb2b96ba1a4c25efdd17b024d1fedb073edc5a519e2a913e9cdb9b54c6059d",
+      "blake3": "56c790ac45562c749166e887690a3ade686e4e8b13ebea78a9cb67820d15ef3d"
+    },
+    {
+      "path": "renovate.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 173,
+      "sha256": "811029644cd83bee6d4d0688fd5524e38b9500658bbc3a64dec9d82ac67b4531",
+      "blake3": "a1d6fb5ba0a82bceb0433716cc911f7e0655a1189b3e5b708242347a7757dede"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3159,
+      "sha256": "afd8b0db47cf17b887494644cb9f6bbe97f4d85362e0b786c6bc22ddd74ac01c",
+      "blake3": "6814d80b4d3703a02bf5cf97f7e0cd87c4afc24785aff37a77e33fb0658e7d35"
+    },
+    {
+      "path": "tsconfig.base.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 323,
+      "sha256": "c68f4c1c508fbcc76b28aba81c4afd10b829a68d1b7d52551d3e9fa759319838",
+      "blake3": "9addda0d99d21b4ee291cc3b6dd77314e4bb005f9bda85e16b4e6ab9242b3b46"
+    },
+    {
+      "path": "tsconfig.node-cjs.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 362,
+      "sha256": "aeaa2a366b6b51fd5a59bb2df09ea88b68a12ff1b5462752697bbf9d91f22d7a",
+      "blake3": "5f71acecb6dff75172fd491edd3bff68db72e50de984833fa9d2c5fb5c142128"
+    },
+    {
+      "path": "tsconfig.node-esm.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 151,
+      "sha256": "365ecd5c139b33100388078e458a2b9ed112999e5e865d41829ca5738411e725",
+      "blake3": "71264d017cb6c7963f6936b190003d7c05551f30a9a68b47e25889aef5f6ca97"
+    },
+    {
+      "path": "tsup.config.base.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 190,
+      "sha256": "f6beb6ee1c3af4ae9879cf8f98b692a713d4591b296f6051f1ed40c1fe49c96c",
+      "blake3": "58eff708d62d638bc6236a5ebfc3fa8dd44880f07353275354c35a71d0c552d0"
+    },
+    {
+      "path": "vitest.config.base.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 113,
+      "sha256": "19916ba9b9a9a8789b62d56ac0eee6447dfa17a57b403e02f02cb2c4c46fc7d1",
+      "blake3": "87c479af7fd379b237ed381b507e76708b8c1b42c07bc7b3480a9df141e163e0"
+    }
+  ]
+}

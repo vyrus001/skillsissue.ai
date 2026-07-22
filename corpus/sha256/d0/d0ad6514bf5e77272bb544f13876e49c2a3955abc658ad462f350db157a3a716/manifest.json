@@ -1,0 +1,559 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:d0ad6514bf5e77272bb544f13876e49c2a3955abc658ad462f350db157a3a716",
+  "sha256": "d0ad6514bf5e77272bb544f13876e49c2a3955abc658ad462f350db157a3a716",
+  "blake3": "d827bf3e9c6370d730a29fab87a9b79f75109685858ee694e49a8de8d8d3f101",
+  "size_bytes": 314068,
+  "file_count": 52,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12193,
+      "sha256": "abdd8a66ea09b78533018ea63529474441d30493704c0dd7dc7bfaa09f417d83",
+      "blake3": "d2c07d17d0b0a3573604e6a8070fe662bea4f0aec94ab24b54f70fac930ab4f0"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 127,
+      "sha256": "719832185e296f87fb9a6f438427886e5d587c07e32231e6b6b6ce0725d60f11",
+      "blake3": "1bb83d7340a1d4246e7fe51c54a0e94bc65e27c8818c2d983c2f2d450f84a3a7"
+    },
+    {
+      "path": "ib-account-overview",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ib-account-overview/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3210,
+      "sha256": "2a0a96e15fe34cd8ec4ed681af75b8ccaeec2554e33813c9e0937f8ae242c54c",
+      "blake3": "7fda0aa949b52d64bdb657208435be6cc5b3eb89e0b34204d895c923f0d798f5"
+    },
+    {
+      "path": "ib-account-overview/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ib-account-overview/scripts/account_overview.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7265,
+      "sha256": "e981c85098559d67e06aa2792cdfac4de92a821de511b3fcdf6dd9e4e28c3536",
+      "blake3": "a5ab85571d8f8b9431b8d7af1c2ca892e3b5ea78ac4bc502decce1758c85dea0"
+    },
+    {
+      "path": "ib-common",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ib-common/config.example.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2574,
+      "sha256": "76defdd81d0b7c3d0f9676182107cd3ff4b0a3fd1ccfb1b0fdf23bac9da141c1",
+      "blake3": "4e4021c3b043cb5e2dc67111139fe3cd30f68bfaa17588a97e8f64eb699c7a48"
+    },
+    {
+      "path": "ib-common/ib_common",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ib-common/ib_common/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "ib-common/ib_common/charts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ib-common/ib_common/charts/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "ib-common/ib_common/charts/render.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 929,
+      "sha256": "12a0799c5a4fff913877a4f9388d4ba9fc95c92aa399ac8fc1b7d7e2c5b6b6a7",
+      "blake3": "5398be111cbd44e2b002410f81ff6ffee972cb048bcbd75bb9c0a0bc580997e3"
+    },
+    {
+      "path": "ib-common/ib_common/config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3648,
+      "sha256": "0ac121d8814d954cc86a92f8cebca4608f2bdd3472eee70e7bcd6180bbd1a136",
+      "blake3": "218a61355541527aab1d3cb1ad69eed14ba48e40eaac3fa7abfb0590382fa3af"
+    },
+    {
+      "path": "ib-common/ib_common/dividend_income.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 50816,
+      "sha256": "4e64ba157187c3357426eedb26c144d57217dd6dff2978d4baf8c4d1bd592f90",
+      "blake3": "f28d6ddc85ca770c779fdac793f9ec21e69d921a68f4685ccf41d9eb860bc466"
+    },
+    {
+      "path": "ib-common/ib_common/flex.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4223,
+      "sha256": "f33c5408de29a76e58d262d36d324370596965d2b2d90d36be2d97d150fc6de7",
+      "blake3": "a022409728da788b099e69c96218eb9290a6121d6241958d009ba6934ce7d680"
+    },
+    {
+      "path": "ib-common/ib_common/metrics",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ib-common/ib_common/metrics/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "ib-common/ib_common/metrics/returns.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1770,
+      "sha256": "9403383c816d54a323b2d472bb26dc17740962af866bd525030d5c74ae086c04",
+      "blake3": "ce5211c3ac6048e9a34f7c443e3fbded550bcf2f1d2c6401d217283bd2350e62"
+    },
+    {
+      "path": "ib-common/ib_common/metrics/risk.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1701,
+      "sha256": "6c990654f98268a0d44e340f16100b56654954a5130c8f405e78c17d3f4075c4",
+      "blake3": "41fe4c5ec1c42b7f456c1f888271b63084b45a22602adf850344ee7be4ee3a46"
+    },
+    {
+      "path": "ib-common/ib_common/redaction.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 596,
+      "sha256": "fd390d838c42e6f83216f35cb434deb1989b5db17435cd85ccfc92445e474bcf",
+      "blake3": "43b779cdd78d28e46bfaabbb2ed60a237d9be1ddbf520823e544165f1693c206"
+    },
+    {
+      "path": "ib-common/ib_common/schema.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20317,
+      "sha256": "f40b175e16c0e7fe26ac7ebe78a01a1e977ef1f34dc841513c3371554ed36f72",
+      "blake3": "0e87e1f8889392a556d770f86d7f39df23924b1a13073889453627bfeaa4ae53"
+    },
+    {
+      "path": "ib-common/ib_common/storage.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1760,
+      "sha256": "5cf8f4e3acda79531120a656aa352885bc8dd325210b5f1173a1cbea51bdbc46",
+      "blake3": "3ccd07d795d2dbc00bb056bde1888153e61d759f4e26b98b32cb827265511936"
+    },
+    {
+      "path": "ib-common/pyproject.toml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1126,
+      "sha256": "6acce7a1c03f46c3534a7edf3e939969c97fe5b4f6a6de48e67d7aa37f379fad",
+      "blake3": "5099ffe235a292de4e8485c51634b39ec4d6ca9d67c9e36b6703595646fab005"
+    },
+    {
+      "path": "ib-common/requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 58,
+      "sha256": "10760c8a8c5018bc0e7dbe63cd2a1bb948ea06c2d9a33c33c3f263147dedfd40",
+      "blake3": "5763d78950e88af441a3de2a714f7f3afc4d7462445d8ad35c7fb342fe33a42f"
+    },
+    {
+      "path": "ib-daily-pnl",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ib-daily-pnl/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5289,
+      "sha256": "25ddcc7f8575b75b132f3854764e6922bb08d4b29b13c66abb56244b5774beac",
+      "blake3": "7e79fdbc5fef2b426f91790114ccf63501067d5b354f89fcff6418d1e354e66f"
+    },
+    {
+      "path": "ib-daily-pnl/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ib-daily-pnl/scripts/daily_pnl.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11593,
+      "sha256": "538812a0e15a4c27a2d6cbd6c4f46e7f0efa2be2ffcb036be9029032202cbf5c",
+      "blake3": "994d919a18579e8589fd0db5735aa985edf8eb032299a237fdc6c56ed960b521"
+    },
+    {
+      "path": "ib-dividend-income",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ib-dividend-income/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6625,
+      "sha256": "1445f91800e9a5e1bcac97424fdda4a835afb2c99e60eaf0284ea4aa8cf60445",
+      "blake3": "68ede5aa186c4d29c22d23a15ebe57790845bb5e3c65beed694fa0ae15ada87e"
+    },
+    {
+      "path": "ib-dividend-income/flex-query-setup.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12057,
+      "sha256": "9d49ea02721c56796156e88b077dc4d48eb561c11beea2da7dc36f1cfe649b7c",
+      "blake3": "31aa4bd5ed91a57433b2e69483f0d045cdeafedfdd6703988a0466c0ffbe1d64"
+    },
+    {
+      "path": "ib-dividend-income/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ib-dividend-income/scripts/dividend_income.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11776,
+      "sha256": "cdf80493b5bccc05560f72a50098c7ad6bb3c9022db5048f13081c9f4354bcba",
+      "blake3": "421572dcb8bd2df1ab20a3e0d27ed89103e321b448eb930e473c87bcc221b492"
+    },
+    {
+      "path": "ib-gateway",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ib-gateway/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1825,
+      "sha256": "495979aa474855690def20e3785cd03f8e2a23142c8e31da74c4f9fa38ec48e9",
+      "blake3": "b65885f511f189f139f67207e00213231ee31c201795d58b1d4a1f1e5be09ffe"
+    },
+    {
+      "path": "ib-gateway/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ib-gateway/scripts/flex_fetch.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 26650,
+      "sha256": "41db5e42c4d962db421e4f265229178b017197849ee99a9292ddb976bbdcc200",
+      "blake3": "1d65aa43272d1273cfe95e48b884a5388986e510bac5f7af3efd39a1db856234"
+    },
+    {
+      "path": "ib-gateway/scripts/ib_sync.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9265,
+      "sha256": "802f8e9778059386775ed7b6a70d4aeace8848de6edb29faf7c060049b77dd3a",
+      "blake3": "de3cbe27eeac97bab7e180a70b43c10ed95c5f65ca1f061296f95b8d0ae324e9"
+    },
+    {
+      "path": "ib-options-overview",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ib-options-overview/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3544,
+      "sha256": "d409b6320d07e8594abd9606eaa4fbc0cc556dd8949a74eefc2d83e87ac900cc",
+      "blake3": "1efbcdfb0e611171898b4cee741cdf581b8fca1690539c7a18a3b06199ce65ec"
+    },
+    {
+      "path": "ib-options-overview/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ib-options-overview/scripts/options_overview.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24975,
+      "sha256": "9d4ff9d74b2ce474db7cfe08de9c92388a559d0a64919cbdce404dbaa903afd1",
+      "blake3": "efa30e99e45d52dd2e4df234db2c55f2abed894d8376175f811fbcc356941c91"
+    },
+    {
+      "path": "ib-portfolio-analyst",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ib-portfolio-analyst/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2968,
+      "sha256": "26184898ed1343194d484afba53a138433489f738313f400cd6ace5da790cf46",
+      "blake3": "67397d9dd9ff19faa9cabbe5a0c566ebfec4847aa4414e9bacfd7e38e5385c39"
+    },
+    {
+      "path": "ib-portfolio-analyst/ib_analyst",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ib-portfolio-analyst/ib_analyst/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "ib-portfolio-analyst/ib_analyst/account_health.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2356,
+      "sha256": "b18ae988245db847b7888db565cc30a735df1ef8ae222bdcade110845c8f9a86",
+      "blake3": "b8700bc239051ecbd1adaa6d0ea7dcf8c7824863fba2f37e4a3d1d7f6b8b097a"
+    },
+    {
+      "path": "ib-portfolio-analyst/ib_analyst/concentration.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3500,
+      "sha256": "19b5e1fa0b26a1378fea15d77c5322b52989f9369b8e7a6acbb33c04c15d8254",
+      "blake3": "c0addb89783bdac4334950f3631aae0f70e30412f6a63dca0a4f354c993cc944"
+    },
+    {
+      "path": "ib-portfolio-analyst/ib_analyst/dividend_analysis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3785,
+      "sha256": "e0402bf7c7dce516abbaf30ab1560ddf8603a6eb6179129200ebe49c31aac687",
+      "blake3": "8a8a9940ae279cb940b8d771fd6ee5ddba20030e35afc7dc83446122cb669074"
+    },
+    {
+      "path": "ib-portfolio-analyst/ib_analyst/dividend_report.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 988,
+      "sha256": "cd79c7e9e61e413cd4911ac6fd0ac8bc10ae988b62417ab3729ae4de24539302",
+      "blake3": "23d9e6faa6763e138d56300472b4ff70029a1440f739be268fdce2d5e4ef321a"
+    },
+    {
+      "path": "ib-portfolio-analyst/ib_analyst/dividend_store.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1095,
+      "sha256": "e526d09a08dcdb121bdf9e25346802834830ccd9d462fca5afcff3cb0c8c5726",
+      "blake3": "5a8e1bc28538648a5103687d4da8e5bf4b843632a2c572c318be58bb382959f2"
+    },
+    {
+      "path": "ib-portfolio-analyst/ib_analyst/findings.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1439,
+      "sha256": "842416e7978fe841270a86326a3f74239490edd79cfb4e64ad7cb9f751a9de18",
+      "blake3": "38f55caf52c54e23541c1570f80e65ba713f11c32f01f87f66416badfc6f4b75"
+    },
+    {
+      "path": "ib-portfolio-analyst/ib_analyst/pnl_attribution.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3402,
+      "sha256": "7f082f724632f2aedee4a4128c27e1f9b469f5c2911e311ba9494bedf9fb4d7e",
+      "blake3": "505e2e6fed65154311e7f9e3fd900a8b9248733fe231d23d2b448ea596914d6d"
+    },
+    {
+      "path": "ib-portfolio-analyst/ib_analyst/portfolio_risk.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3479,
+      "sha256": "3f33f31adef2453ed3bf8c5c725ae994cc6e0bdca119c0f39370dfdc1ae77b3d",
+      "blake3": "e946680dd6114c1f4edd7f4eb17d0add0a24909714bba1ee8030706de84e8238"
+    },
+    {
+      "path": "ib-portfolio-analyst/ib_analyst/pretrade_check.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2822,
+      "sha256": "6197daab2811e2ba908062dfef5f34d80823e65dae7eabb9613e9b577a48b56e",
+      "blake3": "64494159df95a42956595d4f9b4ccbba5f89393f0cf0d7e96cdbdc75a655b3ae"
+    },
+    {
+      "path": "ib-portfolio-analyst/ib_analyst/report.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2715,
+      "sha256": "a141378ebf1611274fc0f01caad9157ff311d3d9c6adac98669c1c3ced5bc797",
+      "blake3": "b5425d2a97bfc81558eb81390ad98c0d63016aaff976abffc7f5f1bb89019ea6"
+    },
+    {
+      "path": "ib-portfolio-analyst/ib_analyst/trade_review.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2054,
+      "sha256": "fb586ffe049f6532f782b201fe0ba66fc03aa7a80397c60a728dea85efad61d6",
+      "blake3": "c5745a5b12ae61969e28bd69aeb366bfbba25758ac7cbb7c171ff66404b660ad"
+    },
+    {
+      "path": "ib-portfolio-analyst/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ib-portfolio-analyst/scripts/analyze.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3556,
+      "sha256": "9fca2187fd9f5f97ef93aa0f9a06b5e837dc68c1daefff367431a8b65ef338a1",
+      "blake3": "7dd508dbeb7cdbee69b0fc66b80f0d660e6a243e8544c0c83e4f2d3a9fac17f6"
+    },
+    {
+      "path": "ib-positions-overview",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ib-positions-overview/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4668,
+      "sha256": "1dcf35954a1bc7dc2bdf4d79cd7baeaddc5dba051c83de1fe58cce983bd1f220",
+      "blake3": "3ffe1d3e5da6ed5cfba629a1b7440b13c7ba0a28217f73096ad32bc8da12d09b"
+    },
+    {
+      "path": "ib-positions-overview/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ib-positions-overview/scripts/positions_overview.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9662,
+      "sha256": "d4e1fdd0fdb68f4f738393be22d197605fa0ee9e1b43fc076eda5dfcca27b36e",
+      "blake3": "5be10a721614d1ead8210db75051fad479b31333854e0d7b37553ce95153b7cd"
+    },
+    {
+      "path": "ib-trade-history",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ib-trade-history/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5398,
+      "sha256": "20bfbb41bccc9974fc3be06eea1f0cc6d599dd2f1fa943b6aee5f581cddb7821",
+      "blake3": "988f02ded6f60ea7dee21b64afe9f50ab7fbebf8753b4826c8626c02d880dcdb"
+    },
+    {
+      "path": "ib-trade-history/flex-query-setup.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12592,
+      "sha256": "0649813571cea7dcfcb7d858e2eb6ec6ca68260f0056acf40d7b032201cf9b9d",
+      "blake3": "db74f23ac62572849365e673db7217d7ec8b9c895548df490773d82246407ad6"
+    },
+    {
+      "path": "ib-trade-history/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ib-trade-history/scripts/configure_flex.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6041,
+      "sha256": "66c4a418c87e3f40cad3cd803ea283d7775bb0585b11c6b17b69cae2cd539576",
+      "blake3": "d52f631d3173d2a7594af686a7df2d2efe9c664564961cb1eccefb6169406887"
+    },
+    {
+      "path": "ib-trade-history/scripts/trade_history.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9482,
+      "sha256": "f873ec7b8d9b389b60e57686f944dc3fc4803419eb989c04316d85b9de4f7608",
+      "blake3": "3b54e7523ce3265ce95f18d40fc3cf8ebe9bec40404519c92ffc7a17c2c1a684"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/init_config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2485,
+      "sha256": "f93ba62f97725aa821671187f984337135c40b9c3a4849c09cbe5129967d8214",
+      "blake3": "42d863f5a4228ea5972c9c25458048a7b2558d6636f1b1b3821ad405575a8f72"
+    },
+    {
+      "path": "scripts/setup_venv.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1137,
+      "sha256": "0b3ef011820039f4c1db2f3b5e7ce8f7cca86a29bc5083fc525efe38cbdf02ba",
+      "blake3": "94701b4de8b31b8d6b98d2dead6d19be1d83a2e2da742a7c60bb6d082888077e"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2532,
+      "sha256": "857cedc769f0a40da02e958135ae7d81c41a632c498b94fdba806f7f6e528ace",
+      "blake3": "648ca672cc4bd29abcec745a7833d7eff0bbf58db36c89758bf3279047575aad"
+    }
+  ]
+}

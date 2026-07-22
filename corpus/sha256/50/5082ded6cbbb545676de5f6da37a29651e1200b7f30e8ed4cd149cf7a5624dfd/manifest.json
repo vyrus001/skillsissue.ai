@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:5082ded6cbbb545676de5f6da37a29651e1200b7f30e8ed4cd149cf7a5624dfd",
+  "sha256": "5082ded6cbbb545676de5f6da37a29651e1200b7f30e8ed4cd149cf7a5624dfd",
+  "blake3": "1f89545f3693aa9445d0cbce819f7c8f4940e4b67b37e97e0b4d502f7c41cd25",
+  "size_bytes": 187950,
+  "file_count": 21,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11752,
+      "sha256": "6ca5cde8608a95f3eaa6078b1bdd10fd93e704d702cf52e306ab6abe03c0b485",
+      "blake3": "c7894c3b30f198702378629869a582f93a97c3b90663724dfe8df6fa9516c3bf"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 130,
+      "sha256": "e4b2d9f0139b4b3391a8e80bce651f32331a69456a7949a82f8c1d66193f729d",
+      "blake3": "d8c9b972d4426ea1d797ce7835231fb5698c8f1dcfc04ba6b153c33bb7890511"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/sample_leads.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 263,
+      "sha256": "3d40bf194551ae8565c647b48fa15047b1d38729875fdd0eee6ed43b9d04142a",
+      "blake3": "92243c1f194221117e729379564243acaa240052ad0c3295ca176294b16af614"
+    },
+    {
+      "path": "assets/site",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/site/confirmation.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7458,
+      "sha256": "2c104a2e4402b9b36bcc0106bf1e75fa28dc8064d3f4a4cc1d3f69c268351862",
+      "blake3": "cf9a2bb98fdd42a78f3fe44af3ba0a99624a825864eb4aa4e7a5c6ae188e4f93"
+    },
+    {
+      "path": "assets/site/unsubscribe.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6910,
+      "sha256": "c5cb88744f9f84417a0453c5ebbc5d2d3248c6890ca023e6e9f0a9b474e7397b",
+      "blake3": "8917abf7d0b4e57f5b2c113b4e31df49da2f70e3b2a245712a8b51a3520b4d7f"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/email-campaign.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4901,
+      "sha256": "f4e6fa3276734db23e63670c1eb5a8ffe074b5de9b5bf915f75e5c20eb9ec2ed",
+      "blake3": "bbdcd29872332f4b4a7f541fcdfc5865f6a4890ce377ddbef2ae490df8235629"
+    },
+    {
+      "path": "references/event-page-setup.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3967,
+      "sha256": "34ba8e0e7c2a4d27467d767c4827dce954b766aa041a84cd787fa8dd0789e0a4",
+      "blake3": "f70ab58c8975cf79fcdcfc0d6537f32ffda41c45429db317cf7951fb868c5c0e"
+    },
+    {
+      "path": "references/order-entry-backoffice-api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6112,
+      "sha256": "99424e0e9d1d5699c94e01dece11dec590cac685cac654f7dca256ac087590f5",
+      "blake3": "2b17c033d31b8e38a3fab71f22fb3ae9bbd7726d8de9c20e3deec4fbfc741fbf"
+    },
+    {
+      "path": "references/supabase-setup.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3275,
+      "sha256": "77d973cea0b0f01951ef7810ee86ed7ef5ea24285088f14ab2c2f09f32cb4149",
+      "blake3": "2c8d8387258b77fb1c6c1821e0bd67b69ac6b4cf072ebb8a49d4d5f84d019dee"
+    },
+    {
+      "path": "references/workflows.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7614,
+      "sha256": "dea3ac832565e82de95575b794efa5b5b945eb2ef90d2554f68178fc9688d02a",
+      "blake3": "bbcd377a1c241e49c39168420f99844fe722e5c19540b45a6c760aab2a72de2a"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/add_event.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11276,
+      "sha256": "5fb756901730dc98d7e3dd28e42ea7181e788cde7f3e02c99aa3f6b45ef8fe74",
+      "blake3": "a8f560838e6244ecfe6c8306608a9cd188be7e52ac1428853548ec547c0eafa0"
+    },
+    {
+      "path": "scripts/config_loader.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7396,
+      "sha256": "ce6152561b6f0c80a147122fc2527351545c34b82ccb0a1e2c1053e995dc5ac2",
+      "blake3": "3ab54b84727dfc1c2378fa912ea0eb1683274981db29345e7ccb676e4193bb89"
+    },
+    {
+      "path": "scripts/generate_calendar.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9141,
+      "sha256": "63cecbe0a48bd286d117077c468f465e323320dd4c0e3bf7a9bb3e2be31840df",
+      "blake3": "619605f7adf36d350c5dfd39288ad40629c037084db0e78415728598e3f3847c"
+    },
+    {
+      "path": "scripts/generate_email_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21843,
+      "sha256": "8982522a96a4392984834fa8caad34ea5c1779e66f6d32ed1346e7f7743714c7",
+      "blake3": "a46bf0708d50e995f7b6be8c77fd7414d14b303ebc4aa43190da84ad0b4e5c2d"
+    },
+    {
+      "path": "scripts/generate_event_page.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 26753,
+      "sha256": "39404326bb28e32e3ab17ed2041582c3e133b5c4d1bf8e822d4f442b793973eb",
+      "blake3": "a0c958e0240a2e1563d44e46cdda68c3aa6b1061c871d1545c5ef7ee7baa1043"
+    },
+    {
+      "path": "scripts/renatus_delete_lead.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10067,
+      "sha256": "d3076a19e52b3de9bc586c61be88d7a55b1f0cbab3e13fb6615e1226b99a63d3",
+      "blake3": "41d5e31f7d6bd50cecd7131977ae3021b3405e08df7b3c14dce0359abe11d75b"
+    },
+    {
+      "path": "scripts/renatus_leads.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8915,
+      "sha256": "cc93c03bb637a65abc1ec8dd558525e74667a6d8c0a11678a2b8f9923bf89bf0",
+      "blake3": "5b3bae389094ea8705fba79f1920a711b99f50b48c7dd3d2fcb9e113e0179cb2"
+    },
+    {
+      "path": "scripts/renatus_register_guest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18183,
+      "sha256": "cef7e39029cc9a5410239acf028653f725d6e77b531ca34b300d01e200f630fc",
+      "blake3": "220b342eaf2963176993b23e7a3d9b6662e5e86ce875c6f724a406ad509a8901"
+    },
+    {
+      "path": "scripts/send_commercial_email_batches.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10803,
+      "sha256": "27d440278e7c3862f6b8b4376cec5ce00a3767fa2db681e8e59bf73301eb4b73",
+      "blake3": "f82e176f62dbdfef78dee174a4a517f14364dc16ab2dc8e65c313511bf715cf8"
+    },
+    {
+      "path": "scripts/weekly_unsubscribe_sync.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8115,
+      "sha256": "65db522be79efbaf9f849ebeb7d44a46aee1fd62cd07919f76fcae8f6c0eac35",
+      "blake3": "f8e7d4c7ebc9c3380060fa9a99d472446e00b2e2ab30664b28c3810cb4053fbf"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3076,
+      "sha256": "66e80b6b589adcb9c9d8f16c8992013b65104e3b14a8f5b4ca470f2bd6dcff1e",
+      "blake3": "419df4bb76898a1ba36470ddfb149debe16413a8c19104878a7746e0c1194d30"
+    }
+  ]
+}

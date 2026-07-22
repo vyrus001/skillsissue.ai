@@ -1,0 +1,689 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:e16d2197fd5051de09082c0e266b9b69cfbf52a1775a7d1872f6ae30a3f789b0",
+  "sha256": "e16d2197fd5051de09082c0e266b9b69cfbf52a1775a7d1872f6ae30a3f789b0",
+  "blake3": "58663eb8faae5ad9c4c4ab37b285bafb5d0afbfd620abc5d99e0a1cf00383b52",
+  "size_bytes": 3920485,
+  "file_count": 81,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 348395,
+      "sha256": "7b07c72c205d9de74e652be7ae86c6a70689739506ebfa22fbc2e39ffa4592f0",
+      "blake3": "23e0739bd2d1235b6f4e4c498c5041a58bada9a9f9b137001b305274c9d14520"
+    },
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1069,
+      "sha256": "952f719c3ee70f7c8a6758594d79acd468f0ce1857b09f6ac7f4cd1b07988262",
+      "blake3": "49a87c1d49493a89f9bd9880e97fe1215b8d00978787e43a6fa065e7fc764d85"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10302,
+      "sha256": "84c1e2c404ac3a388dd9b5282984ecdfae587756eb6e36f84bd58fee8c8385d2",
+      "blake3": "bc3c8565a48fc5bec8171702c4f2b5f674233b2fe3110a3d970b5119e2018fac"
+    },
+    {
+      "path": "SECURITY.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3532,
+      "sha256": "13dcdeba0e02eaa9cacc59b01ec013b434e5cdb56f1e37f1afac8890f5d25fd0",
+      "blake3": "f10829ce236c3b50706b42e9026416d29c5b4201978c99a5e22ac06a930e186f"
+    },
+    {
+      "path": "SECURITY_MODEL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24011,
+      "sha256": "e359e74c7cf23e3bc3793431a1d7be75cbdeec68982b2221db1c7c2caf75596c",
+      "blake3": "c33880e42468497c03dca9e97a547269f517d9d88045b1d312b17582d6bf68d6"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 63677,
+      "sha256": "b91e0c563ce93eafe1684ead83f4c6018e95013d7f418fb2f8ce6b3d76e4abbf",
+      "blake3": "a14faebff4805afa9cf16dae099ba38154458b8a69428735a615047ef9092ba4"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 132,
+      "sha256": "fb1d064cf7a773a994e596641b885c705c9ba79a0ce4bde5c3d585a0bb212c12",
+      "blake3": "96cbdec5e15f2f44cec5a6045f8a267515da840475af3d935e70b0abcdd360c3"
+    },
+    {
+      "path": "audit.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 563,
+      "sha256": "ef745746768c5420a812be813acc29eec046f7536a2a9ef00c38f2c889137126",
+      "blake3": "73ea1e92ea4db8aee5b19dfc57fc3e976dc8ea6c1d242ec39913bd4f0b62d8f5"
+    },
+    {
+      "path": "clawseccheck",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "clawseccheck/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4711,
+      "sha256": "1401c2b9da3d5592183e0314c585ef184b01ba9790870f3217a075840c8e5bc4",
+      "blake3": "c676b217547fc54a0ddbfc69fd1cde5401f90b83036f4909105f0bdbc79bf380"
+    },
+    {
+      "path": "clawseccheck/__main__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 91,
+      "sha256": "3291f640c97326e36509914ecb2349577c3fc40f11c880a4e790e4b8c1d5476d",
+      "blake3": "a6165a409e1065f55fdad528dd1c840782391ea4fbf5a9a386d658d8908c95b5"
+    },
+    {
+      "path": "clawseccheck/adjudication.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 43619,
+      "sha256": "ab678925c235ed2313d9daf74050a9bac5ee09ef5752a4e992777398daccf9b2",
+      "blake3": "8278226e916155cdab20398e50c9db59fbe335e56e9280885cfef9b955f837a8"
+    },
+    {
+      "path": "clawseccheck/ansi.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2929,
+      "sha256": "7b96e4e5dfd465243f732a2facf8ffe458b3f66e3e0174d8bc46c1199a7c2af2",
+      "blake3": "d4468d98e282b4689309032f74362550b1786d5626349970f13e8b459b0aad4c"
+    },
+    {
+      "path": "clawseccheck/attest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20413,
+      "sha256": "f22def72062a046bfd6c9a68c4f5475ab7377822455e59f622d0180cfde135e8",
+      "blake3": "96c1d041b8af3c699ce1e14e4434e09ded162030a47419854aa91929d2ceab95"
+    },
+    {
+      "path": "clawseccheck/baseline.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4596,
+      "sha256": "bd15a1659548aa13cba53deaeb0d34163dd44175a49843d32f818b083f2c9df6",
+      "blake3": "914c3997d2d243d03239740f513c565cea4703c5e6d5470deeabf23b77f7f777"
+    },
+    {
+      "path": "clawseccheck/behavioral.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 49421,
+      "sha256": "82a9e6a8c8336f62783fe47d3396043cfe4227886cad0d2a6f768f9be92b349b",
+      "blake3": "1a87500976f54d1d3789c853ca19b75da9bbbeb5c52f7510d6e096c4c97dc706"
+    },
+    {
+      "path": "clawseccheck/brand.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9230,
+      "sha256": "3c5795c561528d094413f7ff000b0928b7b7025e40a2cd3991c66ef0be843625",
+      "blake3": "1c408f16f986bdcd8982753f372467295657ece1465b03d6e6dda512eafc54f1"
+    },
+    {
+      "path": "clawseccheck/canary.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6106,
+      "sha256": "35433b861264064e28fa19af522e0db6ac79648f6170d5d3d95bede7545743f1",
+      "blake3": "3e6600db7aa3181ab1dbaaaca7c1941d5ecbbb8300c7c26b4683f9691488ca20"
+    },
+    {
+      "path": "clawseccheck/catalog.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 126184,
+      "sha256": "a433de6f461b71a8d76e86ad9439f0dfe05dc62115eb636face8a1b4b61c495b",
+      "blake3": "4abe9099d880597add89dc29a8d23ba4b57aa39139f7222d2540d1394b9d80a7"
+    },
+    {
+      "path": "clawseccheck/checks",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "clawseccheck/checks/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 52204,
+      "sha256": "5c317be02a5a2e729b9ef43069424ac764ca3468e17963ec274cd619640ced7c",
+      "blake3": "d03d9bcbff396790c9be3c0728ad875ffd8043131d812935da749dae5d9fd7ca"
+    },
+    {
+      "path": "clawseccheck/checks/_agents.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 52612,
+      "sha256": "b8c79127eb8a50393a85f5ce37728a529037af8b8627c2159dabc693a27d5f8b",
+      "blake3": "a3798e588b0e84942521cc19604c47fd405a6fd80478698fb9d1de3ae98796f7"
+    },
+    {
+      "path": "clawseccheck/checks/_capability.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 47975,
+      "sha256": "ea43638a4d49f974095485a43aee114897c97938a9ef74b232aac6c0756e9483",
+      "blake3": "e57813222759847e9711bed06b8ed17a545cf73e7fab3badbbe52dc623513c80"
+    },
+    {
+      "path": "clawseccheck/checks/_config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 150209,
+      "sha256": "cfdbb0087d28dbb0a9b1afb7e786dd650abdf204172be7e72033575d07a95b92",
+      "blake3": "39a5167b8599ae1ca07bd072faa1be91dc5dca3a47dd10a43562e4bbed1db1e2"
+    },
+    {
+      "path": "clawseccheck/checks/_content.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 474851,
+      "sha256": "7ae80aac9732e5ff234e7b6bf81339f5ad0fed5277e5e733b248967f1fee8875",
+      "blake3": "d72dc6c2b8267559984c81a40b3131e9c7b2113b3985b0f58a1b4677096c1ed2"
+    },
+    {
+      "path": "clawseccheck/checks/_egress.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 97245,
+      "sha256": "f924e323e911103146029bb98d4ba2c1cac2d91e14b978772aa66158a0c31c91",
+      "blake3": "64caf88325ab521a5197805a6d4b1642a83a781e6e6e4adbc50b10f0eceda797"
+    },
+    {
+      "path": "clawseccheck/checks/_host.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 56601,
+      "sha256": "ced64e2015b7110050d97b095e7c75b0d237a8f57d614354f9c095d5db9a8581",
+      "blake3": "ae3b920bb55764bf7da8e702ae8287cf25c5f6c7998f25f80b015a3083bad17b"
+    },
+    {
+      "path": "clawseccheck/checks/_lifecycle.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 200954,
+      "sha256": "6059c1dd20242f5de09b36c1c899ee5c83c8686ae011144c8c1af5f5520d78a3",
+      "blake3": "5a96b8cfcea8b21877b74d464a4b92dd834debcdf9dd910dc16e3b04a53ece36"
+    },
+    {
+      "path": "clawseccheck/checks/_mcp.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 157621,
+      "sha256": "da854bf31a8ae2d90a81b3eb4fabcee6c3c8afece2f9068f1dd499111e2ccacf",
+      "blake3": "ebc81601f234728bcb73c43be9763c4fd09837a89e6b7934b6f18c680c984815"
+    },
+    {
+      "path": "clawseccheck/checks/_shared.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 104617,
+      "sha256": "38a654ed81545f457b141d97f7bc9c1bbc6240b2654bf503f7d325571fdc85de",
+      "blake3": "f2f62b14fbf9f5322b5a955d265e2564bde2b9be7d655932c5f6c84437f83e44"
+    },
+    {
+      "path": "clawseccheck/checks/_vet.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 240587,
+      "sha256": "bb956a40641fbb6456de0880b3857c65b954edf8adbf7ae35f12949559d4f3e9",
+      "blake3": "70e68b7ec969c5b8b3797c5bce3dd2d660096a9b2d0e14452b76e9a040c3682b"
+    },
+    {
+      "path": "clawseccheck/cli.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 77140,
+      "sha256": "aea14e90c8df27fe35287914caab41293371c339513608d39bf47d5c7b43b91a",
+      "blake3": "f0cbc113f4e1ef1b698ed7851f8825e250006dd23d16bc2d2b7845b03ef3b741"
+    },
+    {
+      "path": "clawseccheck/collector.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 216442,
+      "sha256": "676da47772288417e842078f8c08ef4183e2751e2b02fbe9447d3e8e0a8e0de5",
+      "blake3": "dd976c776b57f2f188b6b81688e3f5ef182bad36469c263a7b82620c7ad18446"
+    },
+    {
+      "path": "clawseccheck/configloader.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11318,
+      "sha256": "ec6608e154720fbeca874fe391b520bb21701a7a44919e76fcc49c096ab3bdbb",
+      "blake3": "836878f9edbe91c00430d15570c97811034d4feddc2c8146ce1c7960b5d35b2a"
+    },
+    {
+      "path": "clawseccheck/coverage.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7038,
+      "sha256": "45dad9fb629f9a08834df162487f1d11449612b7f4c4821e809c0d9323531d06",
+      "blake3": "8f78ee6fb930cdd814eda8d4458dc6429be4bf105c9a28149ec125d3f156be56"
+    },
+    {
+      "path": "clawseccheck/dedup.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5091,
+      "sha256": "0da40acb437ab976bb47fe96fbc6220578fed1df6907051b6bd7ed8d002ef160",
+      "blake3": "2f61097b7f0898147d236fcd743ce7d099889ab11c8b20f32bd1a51154919261"
+    },
+    {
+      "path": "clawseccheck/dossier.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23482,
+      "sha256": "30afdf5159dc6e49f998221d06e3fd6560e37762b88143318ccbe0c85349763e",
+      "blake3": "66c07dee01bdb2ca2601403f797a272b2de9bfd9347e18828e5cfaa81a1a777b"
+    },
+    {
+      "path": "clawseccheck/dryrun.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12989,
+      "sha256": "c632650e38a9233baac38bca563cd80699442af0690a8d659830dfd6f50cd58a",
+      "blake3": "cb92017bad0ee80245ead558a6ceb5302272e120c51824b23eac3f7f80f69da6"
+    },
+    {
+      "path": "clawseccheck/guide.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5370,
+      "sha256": "f8c92c716305fbfe59239964e3c1dd6c219c2e6d8a446436a21ba84f9fb285c3",
+      "blake3": "fcb9c390c9f231b6f1dd6a7a9aa12c6eac2a0078c50968aaeb85b4c9b4e6a1c9"
+    },
+    {
+      "path": "clawseccheck/history.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11602,
+      "sha256": "43d6038e1854c92d81937137f8a141170add19a6a705b13265ce3d0865bd3bdc",
+      "blake3": "a665583a5b1740e229c2c120a616500abf03eb18a96f1f2f28ec1c45d657cc29"
+    },
+    {
+      "path": "clawseccheck/hostwatch.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25306,
+      "sha256": "38bb4dacfb091ba5f52e50bb0e2123655197a1a9ac917178b8e0f6f917e0eedf",
+      "blake3": "c71075307a552ebc470fb40a54a52e53e69d07e84856bf3d75697180cbfc3a35"
+    },
+    {
+      "path": "clawseccheck/incident.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6007,
+      "sha256": "e981918f9ffc4daf77c553105fc5758799957fcaeeddf490cd857d9eac71c800",
+      "blake3": "f5a78086032c0dc304a656754c9d98d2fe6ed17fe09a516339b8d1205a98a243"
+    },
+    {
+      "path": "clawseccheck/integrity.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4485,
+      "sha256": "787a074dd77516002d600c9de4aedda1a5ca397b3d07fec1a1d0b81a269bc8b6",
+      "blake3": "9028ab5d5ae55166d775c19a88dee0b64c3dbaf1814db763fc103bb61c3ee4bf"
+    },
+    {
+      "path": "clawseccheck/ledger.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8153,
+      "sha256": "33d02d21db3ced1f0a34f2980166616f32d1d0b060fe0a015312dcaf85f4040b",
+      "blake3": "cc5805ec7f71e8d9034e1ae51f44f2a5c921ea0c48c879b75908f43a3f3c5389"
+    },
+    {
+      "path": "clawseccheck/locking.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3139,
+      "sha256": "87f12c38b7269c109ef9cb2f09ded336990a036b74983964ab1ecedb44bb9411",
+      "blake3": "41eefcaca16696da1c023125fe16826165d514bbfe384f1d08ceab205e6ad18b"
+    },
+    {
+      "path": "clawseccheck/logdiscovery.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12368,
+      "sha256": "966d8df09f9421cb2c9d6509f70672cc0154c74951cc15109feca808dcd5d3a3",
+      "blake3": "332113896022792034e0ca1ff1b78f8134f59efb0ad7afe2b2b0064090b59ead"
+    },
+    {
+      "path": "clawseccheck/logsafe.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10498,
+      "sha256": "99d5c769120f3db68138d18a2c88dca53a9c0bb3566bb139fed68995672432b4",
+      "blake3": "b145146b9726b165846ad0e3fcdeef697d93ce6c86f599d7fec819e214df4210"
+    },
+    {
+      "path": "clawseccheck/logscan.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 41570,
+      "sha256": "3f31a546b707b27f2078f57749b24670bd78e91bdbbaff1b56f5959cb68302c5",
+      "blake3": "4a19919907195360a6773787b4771bb4d105fd23b440d1d0f3e5f9b950ff920e"
+    },
+    {
+      "path": "clawseccheck/menu.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5773,
+      "sha256": "331b7293dd82801b701a25280b57b9673adde1c2e5c2e4b906b730ec003294a1",
+      "blake3": "f0f2c129987ae2a02ac4fc2d8f8465960d1937c1712f9afcc01e55749cbee8ce"
+    },
+    {
+      "path": "clawseccheck/monitor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 140447,
+      "sha256": "ee83e42df1d09c19f4ce53d81bd5ace790d5e44b0fcefd9cd55c03b74a76e9a9",
+      "blake3": "8684995eb57f1973b15b06f373385cfe6cdc2a86dd15c97745a059f2ae2f03ab"
+    },
+    {
+      "path": "clawseccheck/multiturn.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18516,
+      "sha256": "3526a835370f797c70fe063cfc55521efa0f2ba94de0a8f2f6c60065170ced06",
+      "blake3": "2f347e5b651845baf9d0beedc3c0169d50af5bf66a074c6fafd5f46644994012"
+    },
+    {
+      "path": "clawseccheck/native.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5931,
+      "sha256": "1938bf9a3506fa8ebf0c33f8c58eff53116100d967c943bfd3fdd34cf49546fa",
+      "blake3": "456e7b87153074c2aba628f9da4f05e76130f7c165078b38e79a15d4b28a4edf"
+    },
+    {
+      "path": "clawseccheck/palette.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13242,
+      "sha256": "2cb30d881e28fc5297ba9ad03ff08a64ee0bb393138b553248715f5ccf9901b3",
+      "blake3": "e367ada213a9834a6f5aa0ed8c92a94bc3c270d85a5af63b721b05a3e2017e05"
+    },
+    {
+      "path": "clawseccheck/percentile.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4188,
+      "sha256": "ff82aa2165d994aaf96709508bbba9bdd0b0ec2ea893eb34b27f735febf2c6d1",
+      "blake3": "f84ead3455074caca69d34a7a397b423be9f70c610598cad82b38447833b4df5"
+    },
+    {
+      "path": "clawseccheck/prescan.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3641,
+      "sha256": "fa2dbd5dfc131110b244b804b563f0692df0bd95b8ce981d60a73e04b1beec15",
+      "blake3": "45a613739f83992da166dd17bd3a96335836574cca33166a807c1a69afb40c06"
+    },
+    {
+      "path": "clawseccheck/redteam.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21639,
+      "sha256": "9b4f7b6b73cdd8eab1dedac835dbbd56001d32cc436da53b663024cb4230410d",
+      "blake3": "f107a3020a1a6bd507121f025bb238966255bddc69907fe204fdd36489dff239"
+    },
+    {
+      "path": "clawseccheck/report.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 125995,
+      "sha256": "24ebbb129c6e8a45d61a5fe5adf2b9ae7cb3312c6d3c3baebe8878d7f743516e",
+      "blake3": "e4700cf2449378b765af95bd7690b8a85a424b4d6efdf3705b50697c83e51663"
+    },
+    {
+      "path": "clawseccheck/risk.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 82275,
+      "sha256": "aafdc8f5e84dabc581413381d3952696700f0c88babf8a7befeba31e8762d2d8",
+      "blake3": "7a6ee3e9c6c73c0d1bf4d2e674824404c30284f5d21a9d11f74168a83c863cf0"
+    },
+    {
+      "path": "clawseccheck/safeio.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13173,
+      "sha256": "26aab5815cef7ad4b15c9e1c48b9e15524718988e3356282aeb9801f5fdc246e",
+      "blake3": "6ce8a070f0679adf7dc6f859214a012da85d3b9e05a83e9668c44ed2bb9cc755"
+    },
+    {
+      "path": "clawseccheck/sar.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6626,
+      "sha256": "a3a277dbcb8cbb7f4507d99653e345c23fcb969cdf1cd2276bc681e1fc0f2ea6",
+      "blake3": "6a9792bdc372634634ac189ea4213c13945f3b4dc450a8700488814723fed53a"
+    },
+    {
+      "path": "clawseccheck/sarif.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11870,
+      "sha256": "9af7b97392d5e86c852293a06dd083fa6bbb50630861a613a04db267005aa8b0",
+      "blake3": "40aa19d76045ef1c4c163bd059991858a7f43ac71028e57808c1ed3c7be88d06"
+    },
+    {
+      "path": "clawseccheck/sbom.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3170,
+      "sha256": "c3dd78fb7ad956a3a36bee3421c7f6bf0264c5e0f83461da4a5ebed417e1ee7c",
+      "blake3": "58af68e297427c28aeab93ae34fc28a6d12643d885a6192df443398670996e1d"
+    },
+    {
+      "path": "clawseccheck/scanbudget.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3608,
+      "sha256": "88522c791ffbb1e1fd071b04dcd783b279471c9f71732d2a844551670bb973ef",
+      "blake3": "d22961d26f5f6083535a886a0206f9cf2289f3ed86dce1a00ac262a5d686296e"
+    },
+    {
+      "path": "clawseccheck/scoring.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24809,
+      "sha256": "6af011f5ee848e6a250cafd5214fbc781697f670da72a091f47a4875b6721ff5",
+      "blake3": "212d94f8243e261012757ca7559ff06e55e64d5c531ad49c5b59e2a57aefdb72"
+    },
+    {
+      "path": "clawseccheck/skillast.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 185294,
+      "sha256": "638d9d57bd0d3766846c4d400946c4e0d80f63ec1e21d5f55d74dfc948b759c8",
+      "blake3": "16f4312f2ff8192b78bf35bbdfd3e85c885b202792dd9ecc7b5ff4bcb26f0687"
+    },
+    {
+      "path": "clawseccheck/skilldiscovery.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4147,
+      "sha256": "1298ed5eca515735ff449e126817c1c7b1b3cde79b686e0d8819af663a568f30",
+      "blake3": "222b71348a7d37be9271a34fca43b1cc3b15a7a6edce79bacd4a62fe39be515f"
+    },
+    {
+      "path": "clawseccheck/tamperscore.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6173,
+      "sha256": "85b009aa6021c69fb6e628a18d6530fd1816d8fe5c333003905d3f928ef2ec55",
+      "blake3": "828688e23b3127909347f9eaa8266593c11e4c02768ec24a62215b1144ac779b"
+    },
+    {
+      "path": "clawseccheck/textnorm.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17352,
+      "sha256": "d9be831f17cc02c9a0ce7ff3c3fe129c89cb3b4f3035921a5c011bc1bb6c34ce",
+      "blake3": "2d1843c4585c2bb102ecde3bf1d8e7069c72d03cf97f482dc240d22fba11a4d3"
+    },
+    {
+      "path": "clawseccheck/trajaudit.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 48735,
+      "sha256": "36857e9e9b42a4de8d53336fc0a3a5d8b012f4e88ff37aed2fa01a3f548dc307",
+      "blake3": "6848aa8f77da53fa25f6671aae786d701779844b69944eb4da33f7c304ce5ee4"
+    },
+    {
+      "path": "clawseccheck/trajectory.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30767,
+      "sha256": "8871457f6555141efc1928bb1befb57488011a0beb87fe51790966379fb309b4",
+      "blake3": "39054c3c45e0f3013aefba1552a868de0a5e246e6c3c7dbb9924a0349c027923"
+    },
+    {
+      "path": "clawseccheck/update.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4694,
+      "sha256": "2692e3afe8147275baa305e33f61d2dbc30f204de1ef73f12f58eb84c514bf41",
+      "blake3": "26b8b6c35325c9e9d733aafbe2bf87ce91a907da28da3f38b123cc4045523ea3"
+    },
+    {
+      "path": "docs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/ATTESTATION.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8641,
+      "sha256": "62fd8718afad1cc82a0b25cf7f33c63238b067b37e0880ca2d09c59564207b7f",
+      "blake3": "6148401643fe02cdb086495d638dab230ea45f5dad65d1f0252ea8114c4f2ce4"
+    },
+    {
+      "path": "docs/CHECKS.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 72898,
+      "sha256": "2c14bdfc41e2558f818c64bdbd6a1abf0cc064141b31ca4fc40bf05784405452",
+      "blake3": "b9f08dcfcfbb6797cf20612b5fd1bbcc19a43c005d16cbbf3511c984775e3fdf"
+    },
+    {
+      "path": "docs/CHECK_AUTHORING.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5703,
+      "sha256": "7813cf7ad34e806f5419780a96fe41f0735c47296984a1a9ee492e67deb3ca22",
+      "blake3": "6428db1c21d3da6bb20f7252eb650ea524351dc9be72f16bd75a066e13b85a27"
+    },
+    {
+      "path": "docs/FAQ.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17760,
+      "sha256": "05688e4e75903e0cfe8667b4438ecb5aa18bf94f9a016a22386b03146c15a074",
+      "blake3": "5db1250bae340417eb412964a7e1994af9a3ea606f7cafe2a584e3620d075896"
+    },
+    {
+      "path": "docs/OUTPUT_SCHEMA.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 51812,
+      "sha256": "600b103a972d03e0d08a6281723d66cd4a005bb5c01ea75b66e530d3a959390e",
+      "blake3": "3183051e0e5b9a77231eb9cb0fccde0718a886d93f53a799353afb31407fc61b"
+    },
+    {
+      "path": "docs/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1595,
+      "sha256": "551eff313904b1a9c81379f2f208a1e0d99fd53ce71e4ec142a1bd4d4398e766",
+      "blake3": "a764b32a287fb1e8960ed7156b0f4ae72f50ad1c2a3d1d596302bdc7024dd222"
+    },
+    {
+      "path": "docs/RELEASING.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2514,
+      "sha256": "476893ef3499497950e0ef9d5d81b4295d867a7a6766ad02e61522469d4781d0",
+      "blake3": "93c40ce16fda8d3708429f741d3b2f0fa1c36b9296427ae6e4054d7dcaa78e25"
+    },
+    {
+      "path": "docs/THREAT_COVERAGE.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 62734,
+      "sha256": "d4b93353108e2dfe3696ec8d39ea142f5304a91bc9c5e0a19524234c5ca151c8",
+      "blake3": "bed2636107565beaa118d610927bfca71e3023e9b8bc3a91913a82b60bb844eb"
+    },
+    {
+      "path": "docs/USAGE.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 51977,
+      "sha256": "83b4f2a371999e136945754d6baf9465ded164849225aa1ad98e29432b9ece33",
+      "blake3": "4ca7992bc6cb655dbd3f74034cc7cf9c0c95e81af63a8e2dd98970e566961040"
+    },
+    {
+      "path": "docs/design",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/design/severity-separability.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20983,
+      "sha256": "a0d6a66d666efa419927c014e3b370150ea8938b9510a8e0daea6e41c8c8e280",
+      "blake3": "ab02d636321a1106bb5713072c88b6fa9d2b684e269e033aacf08dd2dcf2d68b"
+    },
+    {
+      "path": "pyproject.toml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2167,
+      "sha256": "04d7e9f6dfe2521f6f58fa355ab66d5d7ce02599da9fe29f708419a8d240965b",
+      "blake3": "ad77902d02d765d012e622f6ad5b754391bbfac8b69c2d4b995133c695c38c83"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/cli-flags.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3181,
+      "sha256": "31e1300099dcf4e36148c4b0b58ab991ad4c770d021707ba1d4bd17195d9c45f",
+      "blake3": "fe242a3abfbdea434fc69b66c7c061ca868eb0e369bd30bbad694b87ca969b61"
+    }
+  ]
+}
