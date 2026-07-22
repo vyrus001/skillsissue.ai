@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:1ba41bf6f95e42829b12a82a3d8997a088e551ebe8212420556291912e13657c",
+  "sha256": "1ba41bf6f95e42829b12a82a3d8997a088e551ebe8212420556291912e13657c",
+  "blake3": "1b4609240867750298cc584b5492f79cc5217a851bb38f2284bebb1aa698be35",
+  "size_bytes": 21391,
+  "file_count": 5,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3123,
+      "sha256": "345f4e621d770dd8fe2c8624d81cdb97fd9e0f8a2e9fe8ce9f5ba0b14136687d",
+      "blake3": "0d199085d4e68b65aadec351f1c7af4f11ebbcb59ee093a23bd862d3e6395461"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 137,
+      "sha256": "a1f91c8103146367847100d7d75fa627d8129d9ea38514f34fe8b929a4129dd7",
+      "blake3": "dfbcaa59a2d9ef22803124a556617e5c6d8da94e54d94119080a6f2be2837789"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/make_compare.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13979,
+      "sha256": "705772fe7e119b8f7e29a2b19aeb65e81f7d651685680669938fd4face238593",
+      "blake3": "5a28d418200b4fb316548ad0e41de63dc0f71a2de113d06086d7133ab015eced"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2125,
+      "sha256": "a44f9a844976e130af5b06faf98cfb5024df06cd468667c874d11f9292b6ecb2",
+      "blake3": "39d79551dd613e6182d1808f8a260c22956eab7740c70e178ccf99d1f02a9d3a"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/test_make_compare.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2027,
+      "sha256": "291e0c78992989de13d014e10c9619be8b677d5706606ca0922fb29b8b69c501",
+      "blake3": "2dbc245379587658f453baeacd4f748a339c8bcb6346dbc816190bfcb27d5fce"
+    }
+  ]
+}

@@ -1,0 +1,335 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:017eddc656e3365d2cf1da0c564e9bb773c929f8242e6ebc3926053b0ffd8f1d",
+  "sha256": "017eddc656e3365d2cf1da0c564e9bb773c929f8242e6ebc3926053b0ffd8f1d",
+  "blake3": "61d6efa5a1537c8bd10dcf847cfaf3d053e24ab7bf36f8f3ea227894cd1ba0cb",
+  "size_bytes": 208556,
+  "file_count": 36,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2681,
+      "sha256": "27633c3d5fef392e29645bd39f3aa5b789ca25b3e41b5a59bdf609587ada14d6",
+      "blake3": "2297e9fba6f763d89fd94e6d352499cbac081f43ec58df168ac35cc75a3cfef6"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 128,
+      "sha256": "df349789fb4ce57ebddf83e51ba09f0fca36fa60f6695c7143512c16f360e81e",
+      "blake3": "0d3a2ac66d8ebee511b17b7228ad3a787d23bc49d30f102eb496a20f512547f9"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/code-connect-rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1004,
+      "sha256": "5dbb6cd8a37f0c3eea4794688bbf6e5ace24d94ecbfde2858e5616f9c43fb875",
+      "blake3": "6eeef024e51f059f98081834145bf0e45148c719d3bd8081ca0aeecc8e250f52"
+    },
+    {
+      "path": "references/node-expansion-rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 905,
+      "sha256": "8727f06112d49d2fe89f3418bab11f1e95f508d207483c8dbd177878c2d563dd",
+      "blake3": "9f4b4a721045ac950f9da5a3a8ed6fbc9a3666785c84d35d31ee7ca1ba02e4b7"
+    },
+    {
+      "path": "references/output-schema.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2067,
+      "sha256": "08a24a73499539ff49e5375bdcb203c6251aed29dc9a81bf98774cb0f3ed5c4b",
+      "blake3": "f6cdbb26a5f5a0a2dfb4b621f8fb025a6ebbac38b24052ad341623bce3f1abb4"
+    },
+    {
+      "path": "references/repair-expert-usage.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1008,
+      "sha256": "290fd941c259ce9064a400729eac69025afd6bd05853a14fb7b77b29e77a65d0",
+      "blake3": "c835a2e5f426f88b95bdafe11930ea3547024cb6acad4790cb432f66cdebcf02"
+    },
+    {
+      "path": "references/style-extraction-checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1166,
+      "sha256": "e6c4161ed92822d2de6c68df972030fbaafd659af52a485ca4f88b14366c8af7",
+      "blake3": "97e733f82bed882d1488fbc183f72c238678514b154c5ffafa1fa998d9ea73b2"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/lib",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/lib/cli-args.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7301,
+      "sha256": "cba5abf3c5afb44f5ee415e046468005855c43540dba3eb7a2b38ca595403de9",
+      "blake3": "6a9d2ae30134a822ae54a1bb9cc285f9fa943a19bd601ddb463c89b66dec82ff"
+    },
+    {
+      "path": "scripts/lib/figma-artifact-writer.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15441,
+      "sha256": "3b1bcd9942165cefb30a853222f56551fd110de7cb7cc66d96b6a1ad4cbef725",
+      "blake3": "48c15015c230a04d7f4b6ea8ebef5183ef2ec9d9d737e393243d1a43a344acd5"
+    },
+    {
+      "path": "scripts/lib/figma-code-connect.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7379,
+      "sha256": "2787ae197d77de11d3bc9ca5cdf368bc048a76b7ffe9e5517cd953d5e865471a",
+      "blake3": "1de7c080faa8ad2b612d01280c6bda1dda2cc10f8760ad1c7c6044955267a85c"
+    },
+    {
+      "path": "scripts/lib/figma-node-expander.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5896,
+      "sha256": "96073baa9574fff07e40fa06fcdd524f293e9f27651a771bc90aaf477659bdea",
+      "blake3": "16649ff71b8ac1b5377c5fc441f68d6260222d83a6589af4e7dc63b3d7376048"
+    },
+    {
+      "path": "scripts/lib/figma-rest-client.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8161,
+      "sha256": "c66e0ad3bef344bca7eb601344dea7892ae16a37f357eb23ea1062a1248dda2d",
+      "blake3": "f01c23eaedb9339935f2e32db90dd6bdcdacacc44e6525c7ffacf16fe8ca18a3"
+    },
+    {
+      "path": "scripts/lib/figma-style-normalizer.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11766,
+      "sha256": "7b44718b845eeeb96d7068024b22abedaa496b4adc5f6435ba4ef755118973bc",
+      "blake3": "26e20d8e2b7221ea360f6e02bd7afdc48c89cbcd593797cde1fa9da7a8990d7e"
+    },
+    {
+      "path": "scripts/lib/figma-token-store.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10314,
+      "sha256": "08345f075f9eed3ca72ec0f3588629b11a37aa031dd4d2b354b6fdd9e5eb11fe",
+      "blake3": "ed6041c862ac8bea7dddaae7aed0dbf6c9a39e5b4dbc0b1fa09e87cf2823eabe"
+    },
+    {
+      "path": "scripts/lib/figma-url.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3369,
+      "sha256": "2a4b951b262d00092292a4f6f3aad5c187f052f9baaa595822f258151aebf904",
+      "blake3": "f1b3b105bedf75385689d2f2f18f9ab6f2b9b7074a2f70c59b89451724ec25a4"
+    },
+    {
+      "path": "scripts/lib/lock-dir.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2637,
+      "sha256": "26574e4f6fa6a9a982c4e3844b9d0080de1726d5bb4d6abc91bdc3f725e91efa",
+      "blake3": "113c5290ffbf1fa7fd22301488279fa31ef72eab3b297fdbd40c26468f171370"
+    },
+    {
+      "path": "scripts/lib/redact.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2354,
+      "sha256": "b0e61762cf4956ad71df485000cd8f57484b5c0bb376856d2060d1162cc29f25",
+      "blake3": "5c234c86533996b56325daf4f0c2007d85521524a8ae33e0fc56fd511789e12f"
+    },
+    {
+      "path": "scripts/read-figma-context.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19424,
+      "sha256": "8ed13b2f2af4847c5c239554bfe0bf147dccd3cfe65abd5a6243a0cb99b099a0",
+      "blake3": "ccc93ef6b4d0aa4f50443c9b9ee38079cfa92c8c70c6fcb65bf3715419b65bb6"
+    },
+    {
+      "path": "scripts/smoke-figma-context.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2182,
+      "sha256": "248ae754762c3f3ae54db31fad4550674e54961fcdc660b1e0c5da43fcf580f9",
+      "blake3": "cae93cc5f3b5f151e8461482f393f21a09fc13f1d68d422b73109c5c42cd9b9c"
+    },
+    {
+      "path": "scripts/validate-artifact.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4766,
+      "sha256": "57f3ee9f733defce20437f45eb9e7b32aeebb86d9ae04ec1cdf5c3b5d10e2ae2",
+      "blake3": "fd60b06fda9e92d3777c3ad841889a5da1946ea121a2972a276a59a17f27e98d"
+    },
+    {
+      "path": "skill-manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 414,
+      "sha256": "c96e9d49133961ce43027f29be4bb5141d9e10c47d8b8603ee6525fd7820ff48",
+      "blake3": "88116f3ad7b286711e8832f4433746f5d304d86dea023e2fbab228c576d7bc44"
+    },
+    {
+      "path": "templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/figma-context-summary.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1024,
+      "sha256": "faa8c41be0730e1c5a7932ea61cc190e0ba00d07b0ce3a80018683473468b7c3",
+      "blake3": "44bb0619d030f2f0f7dcd617535eba00cb52d98c3cb38debebbb719f94090870"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/cli-args.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5345,
+      "sha256": "119117069704b3a02172437c16737bdda2c3d5e0379dbd0b282095e1c685bc87",
+      "blake3": "2ec454b3f6480f32a53e3b6d25d4b8d35c3c9c331ce2358c9b3279257a28c3d0"
+    },
+    {
+      "path": "tests/docs.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2794,
+      "sha256": "40bf4b61ed0f817e55cab8145bfa3de1e41062f79aa592227cc618020ebdb301",
+      "blake3": "68888d8b2cfb510fa37215f3472089db33724b21fc507462a942c2a8f7b8746d"
+    },
+    {
+      "path": "tests/figma-artifact-writer.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15587,
+      "sha256": "a6e80d401f387061d1b2c7f2f9b29287af8799c79b993f0e2efbcfd22eec2574",
+      "blake3": "25d31fe98e535f6767a247162a65f22467964cc6a479e1f0d6a14d43e5975a74"
+    },
+    {
+      "path": "tests/figma-code-connect.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4780,
+      "sha256": "bf54e6f727349b0a5493b8b700c043a0d4f7a2f462bf5774e9786ceaee8f9145",
+      "blake3": "a1c8ea32f1e9581f5ed848544a5a78202b9bfd51474102a19d620e478d274039"
+    },
+    {
+      "path": "tests/figma-node-expander.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3609,
+      "sha256": "c934bddb1901bf4a1f7623886cf3660cdd1648932fab8e651cd4bbd1cd31e8d9",
+      "blake3": "67e6456a0f5426e618b2892a5b191bef6643168c4143893adfa3d76437662f08"
+    },
+    {
+      "path": "tests/figma-rest-client.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8838,
+      "sha256": "7b35463186c0bdc1d96e3de6a04f9b22682bd50a4b380b5aff0eab677d0758d4",
+      "blake3": "708547cf21667268cb17eb86ea183b7779244331cd52db9b107655dea0b04a82"
+    },
+    {
+      "path": "tests/figma-style-normalizer.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7955,
+      "sha256": "a8a8ba73b536dfa2e6e25a31aca8bad7b5c2d850bacb3b42fce8d7e30cbfc59a",
+      "blake3": "58a849fa593c7290ec0a8bbb03b2bd1cb733c49360b4e3bb7771d9f065361f9c"
+    },
+    {
+      "path": "tests/figma-token-store.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16002,
+      "sha256": "7dc5597043f2ee8ad4d7169f6142dfdb490803f8802f7c9be1a6deb7ef91ee8c",
+      "blake3": "7ca512e56c55b6c560675a738290c2387d8aba45a12db04eda068a55ae5a4bd9"
+    },
+    {
+      "path": "tests/figma-url.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5398,
+      "sha256": "7dfd604d1e3caf2cae127452b895501cf6f3b1faed5b24cee4b08c4e706b0580",
+      "blake3": "65e39c1a7bd427f49b92953cefb8b180ff12ff0f532c4e604869a9c01a8febc1"
+    },
+    {
+      "path": "tests/fixtures",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/design-node-sample.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3578,
+      "sha256": "bdf423bc70b23a793eb812872e21c7e21f93e40d0b155f2edff6a79fcba1f132",
+      "blake3": "1c5d1eab2ec1abd27f792277f40786b6d57cceaad290a367a1cb7401d77ac73c"
+    },
+    {
+      "path": "tests/lock-dir.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2621,
+      "sha256": "2c07ef499b9be788d7ca1242c9e3ece5be0599565db83b420bc22d94ef66fa93",
+      "blake3": "2d40117de2565ae3b1c33314c931bc8ab315ebcc3375c4034d533227cb0064c2"
+    },
+    {
+      "path": "tests/read-figma-context.integration.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15844,
+      "sha256": "212e358dbad60da47e91be7576c5e926a472480309e0183c3be26b1d29c86b88",
+      "blake3": "9800fde670eda85c311a9a364061ae3993407a01ed5a72e11473f142f2b5c228"
+    },
+    {
+      "path": "tests/redact.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1894,
+      "sha256": "59c4720cbe3fd1d41403f708146a8edcb29061863eb6193688b45d84d4f0c0f4",
+      "blake3": "6449983f384569982b910bf1aa481973f468c32b322ee904ae9c7b7d14415811"
+    },
+    {
+      "path": "tests/smoke-figma-context.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2924,
+      "sha256": "7c88d202b857dbdd5a42d1c000c001bcecfb34b8535d4a06fff72233c4af7034",
+      "blake3": "d530f99fc1700367bf7f4fa420193fe308e0cb101968f5421b4216fa2aabe092"
+    }
+  ]
+}

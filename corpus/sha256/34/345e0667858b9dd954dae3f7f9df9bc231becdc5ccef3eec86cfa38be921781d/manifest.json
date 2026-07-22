@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:345e0667858b9dd954dae3f7f9df9bc231becdc5ccef3eec86cfa38be921781d",
+  "sha256": "345e0667858b9dd954dae3f7f9df9bc231becdc5ccef3eec86cfa38be921781d",
+  "blake3": "d6c1446634ec81b1ddb8a83100633429057565750aaeab4d5c8f03a84be007e4",
+  "size_bytes": 127767,
+  "file_count": 17,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14326,
+      "sha256": "cd4474bff176b3b548fada4ca2d817cf36baebce958314b57f0dbb6d0703cc2c",
+      "blake3": "ee13cebe0ff75a85df549662394bfbeaa2132a7125f139a1201c47e385f9b7ac"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 128,
+      "sha256": "7e0b9974d4a7d087bb0786a337eb72797988f40c7fbe725c989b8e945e92d9a4",
+      "blake3": "3f9d304bc5f5f00210d2d2094e638a3183c6a05c4298a3833c5d6c3beaa5c091"
+    },
+    {
+      "path": "examples",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/edit_coarse.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6353,
+      "sha256": "8d9c86672928bf0e3ecbbf01e3874f6b2c30fb5aa85220811cbbaf9834abbd4d",
+      "blake3": "ab0d36c55f92bbe36c6f019beb31a3da8ca2575e6277c354c7425f671bd584db"
+    },
+    {
+      "path": "examples/edit_final.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 51177,
+      "sha256": "9b54f469348b6a4e1a30a71b4e09124f5c1ed5a771bf0f6cf7222eb1bb4f561a",
+      "blake3": "d26da467717f10d0b6c3993afaa948d71061fc8221172b34f9338183d9b013ae"
+    },
+    {
+      "path": "reference",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "reference/edit_coarse.schema.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5120,
+      "sha256": "7e81f6ddeadb9f4b747f58c226613b88d6f4df7af2d43fe673b6e5b8b91f79d2",
+      "blake3": "1fe1e90cac768be6312725bc6704da4eb77d1697df0c1b7123ddc063020e7a1a"
+    },
+    {
+      "path": "reference/pitfalls.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5397,
+      "sha256": "9f0abb335ac06678d4cf29498aa0819e420c5b87ed63b9eb55eba956b4e44739",
+      "blake3": "9b7640a51492687bee5e13a5142e521006b50f89e7b99e40cfedd04d0ffe4fe1"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/analyze.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4822,
+      "sha256": "e06cdebab8071655464075e56b8155f295d293e461ffb2b34f462ac0675e80eb",
+      "blake3": "772870d4fe693c280f877db07ff4e29470b5ff7a8b122800993fde4cb7855cec"
+    },
+    {
+      "path": "scripts/assign_speed.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10703,
+      "sha256": "da83a7f822f5be5a439b8c335f41e592e790ccec6caa505a4de99da6a2173bc5",
+      "blake3": "48a8043593d0e84cf3496ac4e2d20c6abf0216e24fcac7fea90717b8f0c6df22"
+    },
+    {
+      "path": "scripts/build_edit.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5470,
+      "sha256": "02a5a5073596624645a7fbeba78a3017b994c96f441bdd2eb10e4a32532f0f54",
+      "blake3": "7964de6153572ca5b3f7332b8b1013ee05c26d16d552c9d83933f8da2e3c5918"
+    },
+    {
+      "path": "scripts/check_project_protocol.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2281,
+      "sha256": "e2b4033e2f8977c75ff5313ee913193a951ba47be36cb4bdb69a318cee89d1aa",
+      "blake3": "96780530ea59a1f621da36225c4de5cf512794b03bbbd9e49e63ade89550e6a2"
+    },
+    {
+      "path": "scripts/cut_render.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4205,
+      "sha256": "42814ecf210ec06886ff11bc1f6a517ae776afc835a43dc391a9543a4559ca0f",
+      "blake3": "bc19b0f975de77dcd5665eb1fcfc1931e646c296e8d90972f427ee7cce68e4d6"
+    },
+    {
+      "path": "scripts/inspect_bounds.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2990,
+      "sha256": "4761bb0c1b21349820ac61f3151e48882a6c2e89bf51c096ef71edd4e11e0255",
+      "blake3": "235cb02b01259ad244c9be966196a01424e71d9c2078511008d9e18bf611506f"
+    },
+    {
+      "path": "scripts/selfcheck_frames.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2526,
+      "sha256": "8d4539f3a422febc86700121e529f425e00b97118603c64d42ec104756c283c5",
+      "blake3": "18731a21c90c57d833e811c2e0b934c8093ccf4315a86d42364b3b743405d05b"
+    },
+    {
+      "path": "scripts/transcribe.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 584,
+      "sha256": "f213ad1c8d8f643b57257c1d7948e2343c796cfad421c2de846d475a9e5ce180",
+      "blake3": "5480553a20abdfaa37e84151842a411f5a017e6cc76b798e0ebb3ae7527c0593"
+    },
+    {
+      "path": "scripts/verify_cut.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3616,
+      "sha256": "123235bcd93c60a23cdcf9adfb66d4db72ff5f52d7e98904bbb4ec394e5df612",
+      "blake3": "c596dc7cf0b6da8f80f16dd60125a241f26024c4ba7935f4dcdfefdd5c138403"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2348,
+      "sha256": "8fcfd8821da8a6c5177a5bf8773983f643d96372674cb0694300e28199be478d",
+      "blake3": "9fb247653291e5bef203579ea918e6a75226bacf604d0e99a19e4bf937377165"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/test_inspect_bounds.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5721,
+      "sha256": "76bc0755b5b2a964ba90d106b50fd9a3a2bc7d32f0e258eed92c15da07c51007",
+      "blake3": "c1f8eac8edfc3d27b85f03c8bcab5eac4636ef3f7516b838d8fac8b9b25241e1"
+    }
+  ]
+}
