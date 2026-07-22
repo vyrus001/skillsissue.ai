@@ -31,38 +31,44 @@ jobs:
           persist-credentials: false
 
       - name: Verify bounded inputs and GitHub-hosted eBPF VM
+        id: preflight
         env:
           LIMIT: ${{ inputs.limit || '4' }}
         run: |
+          fail() {
+            echo "::error::$1" >&2
+            exit 1
+          }
           case "$LIMIT" in ''|*[!0-9]*) echo "limit must be an integer" >&2; exit 2;; esac
-          test "$LIMIT" -ge 1
-          test "$LIMIT" -le 8
-          test "${RUNNER_ENVIRONMENT:-}" = "github-hosted"
-          test "${RUNNER_OS:-}" = "Linux"
-          test -f /sys/kernel/btf/vmlinux
-          test -f /sys/fs/cgroup/cgroup.controllers
-          test -S /var/run/docker.sock
-          test -z "${DOCKER_HOST:-}"
-          test ! -e "$HOME/.aws/credentials"
-          test ! -e "$HOME/.config/gcloud/application_default_credentials.json"
-          test ! -e "$HOME/.kube/config"
-          test ! -e "$HOME/.docker/config.json"
+          test "$LIMIT" -ge 1 || fail "limit must be at least 1"
+          test "$LIMIT" -le 8 || fail "limit must be at most 8"
+          test "${RUNNER_ENVIRONMENT:-}" = "github-hosted" || fail "runner is not GitHub-hosted"
+          test "${RUNNER_OS:-}" = "Linux" || fail "runner OS is not Linux"
+          test -f /sys/kernel/btf/vmlinux || fail "host kernel BTF is unavailable"
+          test -f /sys/fs/cgroup/cgroup.controllers || fail "cgroup v2 controllers are unavailable"
+          test -S /var/run/docker.sock || fail "Docker daemon socket is unavailable"
+          test -z "${DOCKER_HOST:-}" || fail "DOCKER_HOST unexpectedly overrides the isolated daemon"
+          test ! -e "$HOME/.aws/credentials" || fail "runner contains pre-existing AWS credentials"
+          test ! -e "$HOME/.config/gcloud/application_default_credentials.json" || fail "runner contains pre-existing Google Cloud credentials"
+          test ! -e "$HOME/.kube/config" || fail "runner contains a pre-existing Kubernetes config"
+          test ! -e "$HOME/.docker/config.json" || fail "runner contains a pre-existing Docker config"
           if test -d "$HOME/.ssh"; then
             private_key="$(find "$HOME/.ssh" -maxdepth 1 -type f -name 'id_*' ! -name '*.pub' -print -quit)"
-            test -z "$private_key"
+            test -z "$private_key" || fail "runner contains a pre-existing SSH private key"
           fi
           for name in AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN GOOGLE_APPLICATION_CREDENTIALS KUBECONFIG; do
-            test -z "${!name:-}"
+            test -z "${!name:-}" || fail "runner contains a pre-existing cloud credential variable: $name"
           done
-          docker info >/dev/null
-          test -z "$(docker ps --all --quiet)"
+          docker info >/dev/null || fail "Docker daemon is unavailable"
+          test -z "$(docker ps --all --quiet)" || fail "Docker daemon is not empty"
           uname -a
           df -h "$RUNNER_TEMP"
           scripts/verify-skillject.sh
           commit="$(git -C SkillJect rev-parse --verify HEAD)"
-          test "${#commit}" -eq 40
+          test "${#commit}" -eq 40 || fail "SkillJect checkout is not pinned to a full commit"
           echo "SKILLJECT_COMMIT=$commit" >> "$GITHUB_ENV"
           echo "EVALUATION_LIMIT=$LIMIT" >> "$GITHUB_ENV"
+          echo "ready=true" >> "$GITHUB_OUTPUT"
 
       - name: Build trusted evaluator, acquisition, supervisor, and target images
         run: |
@@ -143,7 +149,7 @@ jobs:
             once --limit "$EVALUATION_LIMIT"
 
       - name: Score expected verdicts and finding categories
-        if: always()
+        if: always() && steps.preflight.outputs.ready == 'true'
         run: |
           docker run --rm --read-only \
             --user "$(id -u):$(id -g)" \
@@ -160,7 +166,7 @@ jobs:
 
       - name: Validate bounded evaluation evidence
         id: stage
-        if: always()
+        if: always() && steps.preflight.outputs.ready == 'true'
         env:
           ARTIFACT_MAX_BYTES: ${{ vars.EVALUATION_ARTIFACT_MAX_BYTES || '67108864' }}
           ARTIFACT_MAX_FILES: ${{ vars.EVALUATION_ARTIFACT_MAX_FILES || '4096' }}
