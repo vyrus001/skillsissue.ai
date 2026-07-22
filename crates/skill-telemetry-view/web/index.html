@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <title>Telemetry execution graph</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <div>
+          <p class="eyebrow">skillsissue.ai</p>
+          <h1>Telemetry execution graph</h1>
+        </div>
+      </div>
+      <div class="run-heading">
+        <span id="status-pill" class="status-pill">Loading</span>
+        <div>
+          <strong id="run-id">Reading run…</strong>
+          <span id="run-window"></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="app-shell">
+      <aside class="controls" aria-label="Graph controls">
+        <section>
+          <div class="section-heading">
+            <h2>Trace</h2>
+            <button id="all-events" class="text-button" type="button">All events</button>
+          </div>
+          <div id="trace-stats" class="stat-grid" aria-live="polite"></div>
+          <p id="coverage-note" class="coverage-note"></p>
+        </section>
+
+        <section>
+          <h2>Density</h2>
+          <label class="field-label" for="bucket">Time bucket</label>
+          <select id="bucket">
+            <option value="0">Exact timestamps</option>
+            <option value="1000000">1 ms</option>
+            <option value="10000000" selected>10 ms</option>
+            <option value="100000000">100 ms</option>
+            <option value="1000000000">1 s</option>
+          </select>
+          <label class="field-label" for="group">Group activity by</label>
+          <select id="group">
+            <option value="target" selected>Operation + target</option>
+            <option value="operation">Operation only</option>
+            <option value="none">Nothing (one node/event)</option>
+          </select>
+        </section>
+
+        <section>
+          <h2>Filter</h2>
+          <label class="search-field" for="search">
+            <span aria-hidden="true">⌕</span>
+            <input id="search" type="search" placeholder="Process, path, endpoint…" autocomplete="off">
+          </label>
+          <div id="category-filters" class="check-list"></div>
+          <label class="field-label" for="transport">Socket transport</label>
+          <select id="transport">
+            <option value="all">All transports</option>
+            <option value="tcp">TCP</option>
+            <option value="udp">UDP</option>
+            <option value="unix">Unix</option>
+            <option value="unknown">Unknown</option>
+          </select>
+          <label class="field-label" for="direction">Socket direction</label>
+          <select id="direction">
+            <option value="all">All directions</option>
+            <option value="outbound">Outbound connect/send</option>
+            <option value="inbound-open">Inbound bind/listen</option>
+            <option value="inbound-accept">Inbound accept</option>
+            <option value="inbound">Inbound receive</option>
+            <option value="unknown">Unknown / ambiguous</option>
+          </select>
+        </section>
+
+        <section>
+          <h2>Legend</h2>
+          <ul class="legend">
+            <li><i class="swatch process"></i> Process image</li>
+            <li><i class="swatch file"></i> File activity</li>
+            <li><i class="swatch socket"></i> Socket activity</li>
+            <li><i class="swatch fd"></i> FD lifecycle</li>
+            <li><i class="swatch other"></i> Other event</li>
+          </ul>
+          <p class="honesty-note">Unknown labels mean the capture did not contain enough schema evidence to classify them. Numeric packet direction is not guessed.</p>
+        </section>
+      </aside>
+
+      <main class="graph-panel">
+        <div class="graph-toolbar">
+          <div>
+            <span class="axis-key"><i></i> occurrence time →</span>
+            <span class="tree-key">execution depth ↓</span>
+          </div>
+          <div class="toolbar-actions">
+            <button id="zoom-out" type="button" aria-label="Zoom out">−</button>
+            <button id="fit" type="button">Fit</button>
+            <button id="zoom-in" type="button" aria-label="Zoom in">+</button>
+          </div>
+        </div>
+        <div id="canvas-wrap" class="canvas-wrap">
+          <canvas id="graph" tabindex="0" aria-label="Chronological execution tree"></canvas>
+          <div id="loading" class="loading-card">
+            <span class="spinner" aria-hidden="true"></span>
+            <strong>Replaying telemetry</strong>
+            <span>Building process, file, and socket relationships…</span>
+          </div>
+          <div id="empty-state" class="empty-state" hidden>No nodes match the current filters.</div>
+        </div>
+      </main>
+
+      <aside id="details" class="details" aria-label="Selection details">
+        <div class="details-header">
+          <div>
+            <p class="eyebrow">Inspector</p>
+            <h2 id="details-title">Select a node</h2>
+          </div>
+          <button id="close-details" type="button" aria-label="Close details">×</button>
+        </div>
+        <div id="details-body" class="details-body">
+          <p class="muted">Choose a process or activity node to inspect its classification and the exact Tracee records beneath it.</p>
+        </div>
+      </aside>
+    </div>
+
+    <noscript>This viewer requires JavaScript to draw the interactive graph.</noscript>
+    <script src="/app.js" defer></script>
+  </body>
+</html>

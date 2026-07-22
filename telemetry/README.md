@@ -26,3 +26,17 @@ analyzer output.
 Do not place credentials here. The sandbox receives synthetic `#data_*`
 markers only, and output is capped before it is committed. All strings and
 compressed bytes in this tree remain attacker-controlled evidence.
+
+## Explore one run
+
+From the repository root, load a run directory directly into the loopback-only
+interactive viewer:
+
+```bash
+./telemetry-viewer.sh telemetry/YYYY/MM/DD/<run-id>
+```
+
+The viewer resolves the evidence filename declared by `run.json`, falling back
+to the supported completed/partial JSONL names in that same directory. It never
+follows a declared telemetry path outside the selected run directory. Use
+`inspect` instead of `serve` for a noninteractive validation summary.

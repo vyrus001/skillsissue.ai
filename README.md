@@ -86,6 +86,7 @@ crates/skill-ingest/      ClawHub API, local/git adapters, continuous ingestion
 crates/skill-detonate/    Docker supervisor and bounded agent/fixture harness
 crates/skill-relay/       credential-isolating provider proxy
 crates/skill-analyze/     Tracee parser, taint policies, platform discovery
+crates/skill-telemetry-view/ interactive chronological Tracee graph viewer
 crates/skill-eval/        bounded SkillJect fixture synthesis and scoring
 containers/               target, relay, and one image per trusted boundary
 config/                   detonation, policy, and discovery controls
@@ -257,6 +258,24 @@ The implementation therefore supports model-driven evidence collection plus a
 deterministic fixture regression path. It still does not claim full
 experimental parity: transparent runtime closure lifting, value-level taint,
 and independently measured LLM-context taint remain open limitations.
+
+## Interactive telemetry viewer
+
+The repository includes a local, dependency-free browser UI for exploring one
+run as a chronological execution graph. It accepts a run directory, `run.json`,
+plain Tracee JSONL, or compressed `events*.jsonl.zst` directly:
+
+```bash
+./telemetry-viewer.sh \
+  telemetry/2026/07/14/run_961e7f0d8181beac92ddb9fc
+```
+
+Open the printed loopback URL. The horizontal axis is event occurrence time and
+the process/exec tree descends vertically. Use time-bucket and grouping controls
+for dense traces; selecting an aggregate exposes all of its event IDs, while
+**All events** pages through every normalized record and its original Tracee
+JSON. See [`crates/skill-telemetry-view/README.md`](crates/skill-telemetry-view/README.md)
+for the data model, classification limits, CLI safeguards, and usage options.
 
 ## Quick start
 
