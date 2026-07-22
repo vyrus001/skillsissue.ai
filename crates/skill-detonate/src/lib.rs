@@ -663,9 +663,12 @@ pub fn detonate(request: DetonationRequest) -> Result<DetonationResult> {
             &run_dir,
             &tracee_policy,
             request.config.max_agent_output_bytes,
-        ) {
+        )
+        .and_then(|()| wait_for_tracee_capture(&tracee_name, &target_name, &uncompressed_events))
+        {
             Ok(()) => true,
             Err(error) if request.allow_untraced => {
+                stop_container(&tracee_name);
                 writeln!(
                     File::create(run_dir.join("collector-error.txt"))?,
                     "{error:#}"
@@ -674,10 +677,6 @@ pub fn detonate(request: DetonationRequest) -> Result<DetonationResult> {
             }
             Err(error) => return Err(error.context("start required eBPF collector")),
         };
-
-        if collector_started {
-            thread::sleep(Duration::from_secs(2));
-        }
         let stdout_path = run_dir.join("agent.stdout");
         let stderr_path = run_dir.join("agent.stderr");
         let target_outcome = run_target(
@@ -1384,6 +1383,56 @@ fn start_tracee(
         .map(|output| String::from_utf8_lossy(&output.stderr).into_owned())
         .unwrap_or_default();
     bail!("Tracee collector did not stay running: {logs}");
+}
+
+fn wait_for_tracee_capture(tracee_name: &str, target_name: &str, events: &Path) -> Result<()> {
+    // A running Tracee container is not yet proof that its eBPF programs and
+    // container-scoped policy are attached. Cold hosted VMs can take several
+    // seconds after container startup to finish that work. Probe from the
+    // still-gated target until Tracee records one attributable exec event,
+    // then release the untrusted workload.
+    let deadline = Instant::now() + Duration::from_secs(30);
+    loop {
+        if !container_is_running(tracee_name)? {
+            let logs = Command::new("docker")
+                .args(["logs", tracee_name])
+                .output()?;
+            bail!(
+                "Tracee collector exited before capture readiness: {}",
+                String::from_utf8_lossy(&logs.stderr).trim()
+            );
+        }
+        if !container_is_running(target_name)? {
+            bail!("gated target exited during Tracee capture readiness probe");
+        }
+
+        let probe = Command::new("docker")
+            .args(["exec", target_name, "/usr/bin/true"])
+            .output()
+            .context("execute Tracee capture readiness probe")?;
+        if !probe.status.success() {
+            bail!(
+                "Tracee capture readiness probe failed: {}",
+                String::from_utf8_lossy(&probe.stderr).trim()
+            );
+        }
+
+        thread::sleep(Duration::from_millis(250));
+        if fs::metadata(events).is_ok_and(|metadata| metadata.len() > 0) {
+            return Ok(());
+        }
+        if Instant::now() >= deadline {
+            let logs = Command::new("docker")
+                .args(["logs", tracee_name])
+                .output()?;
+            let mut combined = logs.stdout;
+            combined.extend_from_slice(&logs.stderr);
+            bail!(
+                "Tracee did not emit a target-scoped readiness event within 30 seconds: {}",
+                String::from_utf8_lossy(&combined).trim()
+            );
+        }
+    }
 }
 
 fn container_id(name: &str) -> Result<String> {
