@@ -176,7 +176,14 @@ jobs:
           test ! -e "$HOME/.aws/credentials"
           test ! -e "$HOME/.config/gcloud/application_default_credentials.json"
           test ! -e "$HOME/.kube/config"
-          test ! -e "$HOME/.docker/config.json"
+          if test -e "$HOME/.docker/config.json"; then
+            command -v jq >/dev/null
+            jq -e '
+              ((.auths // {}) | length == 0) and
+              ((.credHelpers // {}) | length == 0) and
+              ((.credsStore // "") | length == 0)
+            ' "$HOME/.docker/config.json" >/dev/null 2>&1
+          fi
           if test -d "$HOME/.ssh"; then
             private_key="$(find "$HOME/.ssh" -maxdepth 1 -type f -name 'id_*' ! -name '*.pub' -print -quit)"
             test -z "$private_key"
