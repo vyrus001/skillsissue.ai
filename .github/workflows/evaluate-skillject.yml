@@ -75,13 +75,43 @@ jobs:
           echo "EVALUATION_LIMIT=$LIMIT" >> "$GITHUB_ENV"
           echo "ready=true" >> "$GITHUB_OUTPUT"
 
-      - name: Build trusted evaluator, acquisition, supervisor, and target images
-        run: |
-          docker build --file containers/evaluator.Dockerfile --tag skillsissue-evaluator:eval .
-          docker build --file containers/ingest.Dockerfile --tag skillsissue-ingest:eval .
-          docker build --file containers/sandbox.Dockerfile --tag skillsissue-sandbox:local .
-          docker build --file containers/detonator.Dockerfile --tag skillsissue-detonator:eval .
-          docker build --file containers/analyzer.Dockerfile --tag skillsissue-analyzer:eval .
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@bb05f3f5519dd87d3ba754cc423b652a5edd6d2c # v4.2.0
+
+      - name: Build evaluator image
+        uses: ./.github/actions/build-cached-image
+        with:
+          dockerfile: containers/evaluator.Dockerfile
+          tag: skillsissue-evaluator:eval
+          cache-scope: skillsissue-evaluator
+
+      - name: Build ingest image
+        uses: ./.github/actions/build-cached-image
+        with:
+          dockerfile: containers/ingest.Dockerfile
+          tag: skillsissue-ingest:eval
+          cache-scope: skillsissue-ingest
+
+      - name: Build sandbox image
+        uses: ./.github/actions/build-cached-image
+        with:
+          dockerfile: containers/sandbox.Dockerfile
+          tag: skillsissue-sandbox:local
+          cache-scope: skillsissue-sandbox
+
+      - name: Build detonator image
+        uses: ./.github/actions/build-cached-image
+        with:
+          dockerfile: containers/detonator.Dockerfile
+          tag: skillsissue-detonator:eval
+          cache-scope: skillsissue-detonator
+
+      - name: Build analyzer image
+        uses: ./.github/actions/build-cached-image
+        with:
+          dockerfile: containers/analyzer.Dockerfile
+          tag: skillsissue-analyzer:eval
+          cache-scope: skillsissue-analyzer
 
       - name: Synthesize isolated labeled fixtures
         run: |
