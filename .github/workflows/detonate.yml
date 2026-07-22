@@ -176,14 +176,12 @@ jobs:
           test ! -e "$HOME/.aws/credentials"
           test ! -e "$HOME/.config/gcloud/application_default_credentials.json"
           test ! -e "$HOME/.kube/config"
-          if test -e "$HOME/.docker/config.json"; then
-            command -v jq >/dev/null
-            jq -e '
-              ((.auths // {}) | length == 0) and
-              ((.credHelpers // {}) | length == 0) and
-              ((.credsStore // "") | length == 0)
-            ' "$HOME/.docker/config.json" >/dev/null 2>&1
-          fi
+          clean_docker_config="$RUNNER_TEMP/skillsissue-docker-config"
+          install -d -m 700 "$clean_docker_config"
+          printf '{}\n' > "$clean_docker_config/config.json"
+          chmod 600 "$clean_docker_config/config.json"
+          export DOCKER_CONFIG="$clean_docker_config"
+          echo "DOCKER_CONFIG=$clean_docker_config" >> "$GITHUB_ENV"
           if test -d "$HOME/.ssh"; then
             private_key="$(find "$HOME/.ssh" -maxdepth 1 -type f -name 'id_*' ! -name '*.pub' -print -quit)"
             test -z "$private_key"
