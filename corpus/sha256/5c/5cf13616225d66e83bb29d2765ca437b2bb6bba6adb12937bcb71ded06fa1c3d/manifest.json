@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:5cf13616225d66e83bb29d2765ca437b2bb6bba6adb12937bcb71ded06fa1c3d",
+  "sha256": "5cf13616225d66e83bb29d2765ca437b2bb6bba6adb12937bcb71ded06fa1c3d",
+  "blake3": "d7e37c0b73a95c0078448112fe559e6990ea2c284b1948382021696ffbddd40f",
+  "size_bytes": 37932,
+  "file_count": 15,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6237,
+      "sha256": "62c9bc008ad93d493176e1ba4ff9de74a7d60c9b582cdca172880aa013007d74",
+      "blake3": "650b3a4b6e87be92deb5bbbf7bb786d021e70abf4c7ef8808ab07fb811906c17"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 139,
+      "sha256": "4fc97db655efb41eb9dd0c14322842be7718fffac218d84d6a53c509c6b584ae",
+      "blake3": "6c918c2adb1fdf10ac216a11db105e94742284e3833cae36fd2bc016a255219e"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/details.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11679,
+      "sha256": "095565137c51d62591976cd856586a989c39412dff849356d71f713b80c5c8a5",
+      "blake3": "def975e874752b8ff09162d40882be2670ce757061e184c2177a959f9f772dca"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/detect-os.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 267,
+      "sha256": "a9794e85edf448742124bdfcf746f318f9c0e2468fca6c664b51f0767e21e3ee",
+      "blake3": "4d882d5d5a65f3cbcbaa9f7f813903b466f82bda8580ad4baa54a814dced92ec"
+    },
+    {
+      "path": "scripts/wlcctrl-drag.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3328,
+      "sha256": "e1162b900681a289f088019e241b1d43e02b3b89115bbc05cd5cfd726211e36d",
+      "blake3": "3f03b26172a30f591625f787c9a99f8ab78c23b4f61fe7eb2d381fa802f3df1e"
+    },
+    {
+      "path": "scripts/wlcctrl-info.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 819,
+      "sha256": "de24875d0287ba5b2b6345a8a555070667b0ec92d1fa275ea97feb6b3fa60734",
+      "blake3": "f381093d9cb366ba465036b8e5c6e9c7232df5b297196935e149f5d33bb9afe2"
+    },
+    {
+      "path": "scripts/wlcctrl-move-window.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 702,
+      "sha256": "65759a3df3a74bf3e8bfd21ef2a58ed47379fc6c7f455049c5c43f566c62c3ab",
+      "blake3": "267feb2259959078b0d7862d353b0bdd3087db3739e69fca703d9f46db7f595d"
+    },
+    {
+      "path": "scripts/wlcctrl-window-click.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2409,
+      "sha256": "4ef56bac5003c4ae379e5571d768a6f7557495e3c497cc36288be37942497f88",
+      "blake3": "a394cb7012636627ac7dcbfc2b647a107ee57659037a2c90ad5b1f4d16542133"
+    },
+    {
+      "path": "scripts/wlcctrl-window-dblclick.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2746,
+      "sha256": "4c7612e868e1bb9312f1bb6749e4034d6be6ac1d600b26529f925cda6b2c0193",
+      "blake3": "828c7c3592acef5aa3b21621db6582dcaf2983b2a20117bccdbdb84eed1f6d25"
+    },
+    {
+      "path": "scripts/xdotool-drag.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2024,
+      "sha256": "cdb7757053446d4053dcded01f174df67114e2a28583d2faabc94fa6046accd9",
+      "blake3": "5a7ad82691e8f5ac6abca9c5d81131f5f8342c25048c7c1012e5e87ea0e1a60f"
+    },
+    {
+      "path": "scripts/xdotool-info.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1179,
+      "sha256": "8337aaaaf7d5b3695c41ccd1fb2c9a7de69b87c992766b77a554f3d394e0cc07",
+      "blake3": "9f3e723439b1b95dc719ad03026829d2d0c8229779bb080ad3bc44a702ca36f9"
+    },
+    {
+      "path": "scripts/xdotool-move-window.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 649,
+      "sha256": "db046e9e34439121636e54aa42a75f4cb79097421ed9221d09db4a27cfb1ba22",
+      "blake3": "ddbe286e6197db8c7ba2bdb376122a57a4be4c0d0a20f1641ecf1c8d8b963db4"
+    },
+    {
+      "path": "scripts/xdotool-window-click.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1519,
+      "sha256": "d5e8efac5322b793216d971498ebb60d4a5dc33b29ea0db3fd1520dc3457b037",
+      "blake3": "adb28751e7816f52b76f7a661fdb0d94bdaeee09e672c09ed2681d7d7e7061a3"
+    },
+    {
+      "path": "scripts/xdotool-window-dblclick.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1931,
+      "sha256": "5f662e6a4e95e8a0eda51128eff02ab85bedd0fcd36752e7108a04646a9c8a9b",
+      "blake3": "c7139fc67bdeb04f2e168cf5330fadf3fd8e6aae867bcee9de97369f3be77881"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2304,
+      "sha256": "c99baec43066984cec74013e09fc72f9f9571e4a2c28a00f6a5c7fe723beda48",
+      "blake3": "76f917d4b22ff4397bf6d0c12582fec0e41976c16c26dccdf73683ec74f2efec"
+    }
+  ]
+}

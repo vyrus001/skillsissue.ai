@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:5d334481dbaec31986d30fbfc5eed9f65c13a5675ce4840559a2e2b722727944",
+  "sha256": "5d334481dbaec31986d30fbfc5eed9f65c13a5675ce4840559a2e2b722727944",
+  "blake3": "6eeb3095b30265f21b820995d05a6755b1afcb21930cd9c0836adbeb9810bed9",
+  "size_bytes": 112883,
+  "file_count": 15,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5386,
+      "sha256": "f141acf7365d7103f8743a3f7c98103775dfdedb41960dfde4994280f026a074",
+      "blake3": "1b63662acb2170af3d4d41f334a86b31bcfa382ae84c6d07e2bcbd9eff401bbf"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3584,
+      "sha256": "6062dd5500b369cf5bb2684a1c13d900a09ea920cd956e4f6aa5dea89178ea84",
+      "blake3": "015ddeea9063793ebaed278916be80df5aecd2c7c0b1dd322a981cd555e02937"
+    },
+    {
+      "path": "SECURITY_CHECK_GUIDE.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2275,
+      "sha256": "3273fa9b25cf97dcde507ed4da9e3d76dc650e23057d72550a3f923415b3a1bf",
+      "blake3": "d2823516f7645d127689944337605ae9ab4de03647b1f92d8657c00406e1cdd9"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11700,
+      "sha256": "80ae7a25e2a0c464397cd9bbe38df3f773c598b9239d0698f000b2cb7ff3a9ae",
+      "blake3": "0911acb2400e777a44f372ae716be411bb17d27a4a607543ee27a6ce9ded563c"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 133,
+      "sha256": "1e94d43bd99370961f8db03c095c37a1b6be0941d244ab8c1d40d186f3531e00",
+      "blake3": "c3466e86c08afe8b0a5d8a93f97a0dc6b66550ac13c402e12aea39da173bc405"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1553,
+      "sha256": "2893aee29f349435239cdce9d8aad371ca84d391886fbffb3221c7a9185ba160",
+      "blake3": "f024c175ee14b768eb34b3168d6f4cc87153bf9f5295155a60136c9660fd5783"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/ccpa-law.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8932,
+      "sha256": "bc8843a50645a5f4f35e589da180237e4b35c8b4aebfbee0333afcb30d7c9828",
+      "blake3": "e6de192cc69d41a051c71a467647c92474594dfac7c6b34920fed3fd003ec5bd"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 585,
+      "sha256": "e862559269b6ec8045c3d0ec0f10a9b350f52ac7c3302c60eef4cf8f9fcb7cc7",
+      "blake3": "b82526ae8336ab1dc0857152017c7eeaf6a93af6f0872aecde5780bccaf6111c"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/ccpa-check.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15945,
+      "sha256": "a1061dc5b9bf110ba394bf9fdb0d0b4bd233c4f7d3355ba34797af3ca0398962",
+      "blake3": "493c664d34f957582257eb6d99216f722ff273c415e1a7858cd613dd24489c8f"
+    },
+    {
+      "path": "scripts/consumer-rights.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7600,
+      "sha256": "7a05d4074b07cf5faa0f6207877fa5bf14f63f3cc2c3e562445371134748705f",
+      "blake3": "a6561807b8c8da483788665aad079133a63207363a657ae1cc703f06d6cf4177"
+    },
+    {
+      "path": "scripts/opt-out-check.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8538,
+      "sha256": "378fc8518076d7f6d3de47e6138b2a723ef98c1e552c2cd82224e54437766a1b",
+      "blake3": "6f327abd5099e96edb1616166f6705a87bc7a10d85aaef8106ce46ea576a201c"
+    },
+    {
+      "path": "scripts/security_check_ccpa.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17442,
+      "sha256": "54d835fd275a19040101c921e9c4b520a9202522881a26f41d543fe00dcdd761",
+      "blake3": "363453a47f89c4075864c389eed93459731321b85aa3be45fd1c04042161431a"
+    },
+    {
+      "path": "scripts/utils",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/utils/ccpa_templates.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12085,
+      "sha256": "cf8aef878b7cfcc6ac081e28a86f00c3490c42054329841c9648cb183cc80ecd",
+      "blake3": "6f5efe4032883a404385ffda635dae202f21b10ccc993553d8212a2de1184077"
+    },
+    {
+      "path": "scripts/utils/ccpa_validator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14493,
+      "sha256": "9a07d6e4eb4b80386b672836e0929efcf09bbf11a7585d7177145d3762e140b2",
+      "blake3": "b974119edf0bf6c014624eda6428cb59c3dff3e64e9c8c1b10cb795afac5ef21"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2632,
+      "sha256": "40733f5d87ce95e9aebac9cd9c738572738270ac8d1f8d40873335f88d7b31d8",
+      "blake3": "a99cc7c375738ed99ac250789dbb14848bc399063d1d9b8c5eb05bcc6230cb85"
+    }
+  ]
+}

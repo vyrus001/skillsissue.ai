@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:aff4c9851c84a00b504fa818d07379f064a9b9a2a25376e8988e19fb1e13faea",
+  "sha256": "aff4c9851c84a00b504fa818d07379f064a9b9a2a25376e8988e19fb1e13faea",
+  "blake3": "f07a983dbb1f5f24351c84fde3f37b756dc7a7a92a47bb2060b814cd61078ac7",
+  "size_bytes": 128300,
+  "file_count": 12,
+  "entries": [
+    {
+      "path": "README.en.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4743,
+      "sha256": "3fe3bbb7c217964065b13a6b3a0f74426f368402dcb0dc1def88f5c1cf812912",
+      "blake3": "4373c5b7bc6f3bf9072535072c8bd88d483f6554a4435fdec1e9f8f6ad4218ae"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4342,
+      "sha256": "f3b1ecb5eb25b393cc2edbaf782c6341a20002bda32ef7cc7a09bdcce2fe8982",
+      "blake3": "5499a7197ec695b90286e7361a1ce3617bd45504a94a46e07f56963b112c990d"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11284,
+      "sha256": "a41cf7c33a885dca59c1baac033ef968c6154e9f826620bdb9b3b85ca2513ac8",
+      "blake3": "84eeb9cc42abb20a20f231c89c173c61b7deda4246a4ac5eb711df1ead14884e"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 138,
+      "sha256": "86bc1f118fbc2965420d5b06e4385e49b4a16950413696465cbaf2a520ab592f",
+      "blake3": "a48028fb97376c53406eb7a5f1c8d09364c12837a1ac2f20037aefebc0bb29ad"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/geo-metrics.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4935,
+      "sha256": "744f4f1ffa7fc2bbec5230db3efe799e705c4d434ace7d3ed850c7b5add75de0",
+      "blake3": "ad65b97ff0ff342ebb0a3435550bae0ee8c6010a4496f5ce29bec9106f01c82a"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/geo_analyze.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12384,
+      "sha256": "cb439960f9685acb8c07cc4ad90543bdb716d046b45dc8dd0804f73f05d46104",
+      "blake3": "5c7991d544d0b4f8ca5292b63b72bfce66ff0c9a266cf4788345443a5225aed5"
+    },
+    {
+      "path": "scripts/geo_report.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3157,
+      "sha256": "9c98677042aa0f1d59d6b13efc2b0e4658ef0b97003751db62b77c0cb72e34d0",
+      "blake3": "c0a58ae089ac0781d7627c99684675b446eaa6f96be1f39ae844fafbe6b31f96"
+    },
+    {
+      "path": "scripts/geo_search.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7883,
+      "sha256": "006caddb5af683a2c3056634e441d8f4e8ce510fba1c0f77a645567b31ee9b39",
+      "blake3": "f7e8a7ebed98ac5e81539670e22dd090b7fce099e66074aa8c7dec3b1a0701eb"
+    },
+    {
+      "path": "scripts/lib",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/lib/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "scripts/lib/analyzer.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20620,
+      "sha256": "d606959ed2c8c6d0f550beeb91af24fbe869138d1ce51730fefa6adabf2bad10",
+      "blake3": "9ec8916eceb659647e28fb58ed2f1b1d48663d95247f35b59d3fe203a496e16f"
+    },
+    {
+      "path": "scripts/lib/platforms.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8590,
+      "sha256": "f979a48cf5cfb6d73911f35b50c7e22c7a416c49877f6648c3d92410efdfe57f",
+      "blake3": "043db82e3aa56e68b058dd930ccbb79ffbde8d0891f9f8f281e98037801300b3"
+    },
+    {
+      "path": "scripts/lib/report_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 50224,
+      "sha256": "baeb9d2c577eae25cdd7fd0c61adfcc61d52bbb96a38a6d6f1e2f094313848b9",
+      "blake3": "929af28a13c8a9ef4a179329986fb423d76266aa5054762746762743835b91b6"
+    }
+  ]
+}

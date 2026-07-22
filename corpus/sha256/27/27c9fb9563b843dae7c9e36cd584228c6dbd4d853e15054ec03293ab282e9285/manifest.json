@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:27c9fb9563b843dae7c9e36cd584228c6dbd4d853e15054ec03293ab282e9285",
+  "sha256": "27c9fb9563b843dae7c9e36cd584228c6dbd4d853e15054ec03293ab282e9285",
+  "blake3": "5ef19f508858443b152835d4df8db484afba9218ed185815e5ef85dd5256a6b0",
+  "size_bytes": 94281,
+  "file_count": 14,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27035,
+      "sha256": "3859aa84ce06d41aa7c7a7d02b5f7f212cbdf215695b76ed88544c62005b1084",
+      "blake3": "1665b980d0acff5054a85092800906de0105c7885d4278b3596b683975da6c12"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 139,
+      "sha256": "7b457016d4590b25ea8bfc5666529cbe7c26500afcbf649c9f441a402d1be892",
+      "blake3": "bdc529b4b699e274677333f4491094a7e78a483894837dc402cbb139179a4315"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/arduino-api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10147,
+      "sha256": "2c9b10d0cab164a0986553f527cf4939465aa94d737bcb37e75004779a088631",
+      "blake3": "69d7ad231ee4230fcc105178d1a40e8b235f4fdaf95144b913c7f4cde8e791e0"
+    },
+    {
+      "path": "references/arduino-examples.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24136,
+      "sha256": "09e45caca909a3f4cbe7cd82f1441c6550fe6075e5763d24d06ab9d0db0bb7bf",
+      "blake3": "5a3c2c835cf94be24a7aa42d1eb78837a642e01f739053afb1551013d8b617a8"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/compile-ota.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3911,
+      "sha256": "5d9e54edd23bee38ae1a29d8b4f7099dcf020e5d26b6cd8557dfea07127d27ca",
+      "blake3": "ebd47f6e0eec18d8cee07a3a0694fd196b4983599538dbea82543c912cd8dd32"
+    },
+    {
+      "path": "scripts/compile-ota.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3792,
+      "sha256": "726d3791784efe0f27e387bc9996acba0b5700b3707ff7da82e3357943326f94",
+      "blake3": "530a6b71e643635d17f00e7303f4e1eba449bb06797eddba411979be9f2dc361"
+    },
+    {
+      "path": "scripts/doctor-offline.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1384,
+      "sha256": "5ab3c5b43e3bda387c09833aa2bc2fb43223d93881c1a488e8a2e76a250ec2ec",
+      "blake3": "d9b73928d2c0239d052e30fbf058113e3e438e467820689bc5bc229440f8790a"
+    },
+    {
+      "path": "scripts/find-port.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4307,
+      "sha256": "0a9f10dbd0faca8c9722329fa764b7e91258ce726d12fcb3186f5c5febeef027",
+      "blake3": "52807a9b1ae8a4566a9ad1844a2f778788a0a960eec855793f9121fd50a88a9f"
+    },
+    {
+      "path": "scripts/install-offline-bundle.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 995,
+      "sha256": "70fc4c921929c6bb1ce9c71104778246551763bdeaf941741b4350a98af6f92a",
+      "blake3": "42a42709f3267f3c1d12628441b6c4adda1c4a8cbc7fe3014d36f610cd7569d3"
+    },
+    {
+      "path": "scripts/prepare-offline-bundle.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2188,
+      "sha256": "7aac4bbab9946f1b43efce3c4e1d07a35711d0a243619ea88837a62f1af2b140",
+      "blake3": "78b1094a9fa15efee1a52125056e578af7ec285d3dc45a8bb168c0eb2969bb1c"
+    },
+    {
+      "path": "scripts/setup.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6346,
+      "sha256": "841699471e2110d22fbe61a53206db962d8f14b4a973281ec4978eb53327b623",
+      "blake3": "2a86222bfaec94ef7e17c6e1e0f4c667083a7d39b51e059d2b3da220d9578970"
+    },
+    {
+      "path": "scripts/upload-arduino.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3577,
+      "sha256": "ab30e2cf52ce955feb4cf8cc7e8a479f18f30a42bdef828eca96bf043ac18871",
+      "blake3": "d27f0e597e8cb84d540d1962cc1a8c6633e7a9779e3a4c0e26ffaf0268809765"
+    },
+    {
+      "path": "scripts/upload-arduino.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1738,
+      "sha256": "4d81f7edd07fd20d51b4a585dbd9fb01d91a2d60fdec08b650bcc787bf613aa3",
+      "blake3": "6c4632fe78476113c5e0e3ce33e51c938cd48beee6dd8fd20bd160f153f90c73"
+    },
+    {
+      "path": "scripts/upload_k10.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4586,
+      "sha256": "92fa59e0e7c39892862a18479385c6bd951fc736690c43eb6ada79523666dafc",
+      "blake3": "1decd80f2e02708fe3d0e10879106f97b81a8d23c0bfb70ff0f23daf2490ed5d"
+    }
+  ]
+}

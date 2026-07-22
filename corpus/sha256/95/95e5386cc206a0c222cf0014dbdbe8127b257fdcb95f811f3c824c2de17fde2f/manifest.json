@@ -1,0 +1,545 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:95e5386cc206a0c222cf0014dbdbe8127b257fdcb95f811f3c824c2de17fde2f",
+  "sha256": "95e5386cc206a0c222cf0014dbdbe8127b257fdcb95f811f3c824c2de17fde2f",
+  "blake3": "0efc7174f59659d969b7c398d76d2e92c32772eea5f3883763bbe5e84ad6598e",
+  "size_bytes": 402845,
+  "file_count": 57,
+  "entries": [
+    {
+      "path": "SECURITY.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21668,
+      "sha256": "385c3190c3200c1602b7b0f5ed772d07bbb83d27dba4e26e654c51b5d509aa80",
+      "blake3": "4a207b56535822ab9b0be6e4a650554957f8d27259495aa10060ef46fdf8dee9"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 36059,
+      "sha256": "0cf948d042db06e29efe1bbc921d2f97921b689be7d31808bd334c9778bbab91",
+      "blake3": "da9273fd38689e5a322061106811ba2f2f711a22bd42a306d8e4edc0fb964e26"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 126,
+      "sha256": "9ecf9acddf214ee19070f7fbc0fc360785db2e984b83c8fae660ac9244a36766",
+      "blake3": "a7c5647b288a58498942e9861b37237492d4c7cd95460955a13fc6bda62942ab"
+    },
+    {
+      "path": "clients",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "clients/js-eyes-client.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 67,
+      "sha256": "d3856665d6b035cdfd82b59368002a8f2270b6c91f29d6c0f3c07916147b1043",
+      "blake3": "068d236ac982863c0d5105c1c9fea3e044bb45a5631db59d8768e60dc05cf638"
+    },
+    {
+      "path": "openclaw-plugin",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "openclaw-plugin/actions",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "openclaw-plugin/actions/browser.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11813,
+      "sha256": "51426607207ae23ca2557620b2b1ef381507a6ef18f2c704d5fbe65f0655ba67",
+      "blake3": "305793599927a5efcbfc980e492fa44a4ef5e80e32ce79a5dde6bd20b61fc0a1"
+    },
+    {
+      "path": "openclaw-plugin/actions/management.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4281,
+      "sha256": "3c4d4f3cb3fefaf6b01e18d80859e03dc8a88b8f240c46ee9f2460f2ff15064a",
+      "blake3": "18ba05e60add4471bbbafd8e194039b508f3cc773b9a37818f82381b44306f82"
+    },
+    {
+      "path": "openclaw-plugin/actions/skills.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5850,
+      "sha256": "d5ea97599d324ff1f4451395010c0b804c441d6b8d887f571792cf488d039a2f",
+      "blake3": "4940d3c5d9f8694f36b3a206f8388ee913b1e699d4114aed73d91363ec7e8b65"
+    },
+    {
+      "path": "openclaw-plugin/auth.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1724,
+      "sha256": "7d4b98e208de8fc555934f3a5d0edb6ff35f5582706291c4ace086f430c02dd2",
+      "blake3": "af1c7ae63b5cce523f578f74463e1d73050fa3b3e51cbf36d988eb50a48534e9"
+    },
+    {
+      "path": "openclaw-plugin/cli-registration.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4493,
+      "sha256": "e7844168b451a1b9961e2db19a2a4cb9094b47f8d6392d843213dd23a38ee266",
+      "blake3": "78849aad597ef3a3bbb039b4efd621d5dca89e28e12cd7848169103fae80b1c1"
+    },
+    {
+      "path": "openclaw-plugin/fs-utils",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "openclaw-plugin/fs-utils/hash.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1798,
+      "sha256": "856ee6777f018779a1d406166e2e2b869423af0995c687bda3bf04ac708272b2",
+      "blake3": "8e526505af56b02aaae6623f3073e4660857ce48c412b3e37df675e7ed07d077"
+    },
+    {
+      "path": "openclaw-plugin/index.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7657,
+      "sha256": "bbc626bba748b5e1e6b983267ff75d0f2cb499ea55367bc0768dbdb1a1beab33",
+      "blake3": "7d1afade84d2b68bf1a748cc2fc885d60c22de8880b2cc2e45422a43f247ab5b"
+    },
+    {
+      "path": "openclaw-plugin/lifecycle.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2144,
+      "sha256": "35713dee05e6128eff268fd47e4d760cebe61745cc6d17aba2990cd6306f2778",
+      "blake3": "3689023f167ac336266ee3656113527a4dbea6841e5aada4e952b556b4e99340"
+    },
+    {
+      "path": "openclaw-plugin/native-host-setup.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6874,
+      "sha256": "50487a4db8f0639695541cb22308e87e360394891646114779ba1956cdf37f38",
+      "blake3": "84906820872425064826b636de678f8caf0d3c58f1fc3347dd906e9e261641e5"
+    },
+    {
+      "path": "openclaw-plugin/openclaw.plugin.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6491,
+      "sha256": "1b21760943e0eef624411309d08d9ebd333fd4da1a739d017f446d9114803f83",
+      "blake3": "9edfd66160cd61b3c48f7391cd56592ddaf258e1474fb8f2f67e4a51d5deb217"
+    },
+    {
+      "path": "openclaw-plugin/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 453,
+      "sha256": "02316b9beb4f5f6ee1d6ed06e9570553891c65bf7888b6e411feef405529a35e",
+      "blake3": "934e4dca1adc03180d642dd46042db96b57d31914366b1268143f4098661c3ec"
+    },
+    {
+      "path": "openclaw-plugin/registration-context.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1743,
+      "sha256": "327764c08bfe2dc2b0d89f9d6a9622de55cace5752a82e3f241659c916994c40",
+      "blake3": "0a9021698796815296720b7bd2fb46782daf38150ff08770af5537dbc7c2e307"
+    },
+    {
+      "path": "openclaw-plugin/server-service.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2448,
+      "sha256": "381c67ad1d1828703be176e9ce78944900e9dab391d0943bc2a016360e4b36d7",
+      "blake3": "013dd1e0fdf22ca39366d39951ee03d2d0efb9bfd55410a70848daabeb16c1df"
+    },
+    {
+      "path": "openclaw-plugin/shared-server.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1555,
+      "sha256": "e4dd13b811b763a73cea2f97740bdf173deab11fe0bed5516a541cf7523fb4c0",
+      "blake3": "f75a95d92c9a7921004714b2c07d45b8e6474c0256cd8127261ac38a407d76ef"
+    },
+    {
+      "path": "openclaw-plugin/tool-policy.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4368,
+      "sha256": "134ffc7eb691481e84aaf33721c5cd7beb174e578a8877a4e526feeb21d2ce3c",
+      "blake3": "f286733e197b482a7763955a17489f5ab97cbddabd919e5c99c9447b8414eba8"
+    },
+    {
+      "path": "openclaw-plugin/tool-router.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2224,
+      "sha256": "b72e3f6f5c302610f3a924201a7f362a05629164b8793590ac75c17867deedc5",
+      "blake3": "3338f5db9a37123f090717cd98365b1c3cb75d622c7d9e21ee06fdb7a1c35ed4"
+    },
+    {
+      "path": "openclaw-plugin/watchers.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4441,
+      "sha256": "2f1518e0c9070eaaf0ed30191fc27cba723c6b4367f9f0822bdae95ea6edf735",
+      "blake3": "d78e782c06ad41fb561b6e767726240d990e08b97103eabf7e8cc6de8cdc7d2d"
+    },
+    {
+      "path": "openclaw-plugin/windows-hide-patch.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2302,
+      "sha256": "61ade95cb2c756645284ef6736d94249afc0d3697a31a32b66f255a5ed6a0608",
+      "blake3": "74238e409a32faf28792e81d026d211acf7dc5ed07d24d88e14d495d12f8b135"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 378,
+      "sha256": "2331d37af4640c1909988c4bf5c7498932f312251ddfa73d85cbf3cb9707b068",
+      "blake3": "cdc2e5097be2ce4d128ee1606d4e7fa2963352c417a0b914836f948c86200cd0"
+    },
+    {
+      "path": "packages",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/client-sdk",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/client-sdk/index.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18545,
+      "sha256": "e93cdbb9bcaa7cac3076f03ce73414f753317bc8b45486205ac43d0ab2374be0",
+      "blake3": "f905aa01a07858365cb1cf001192bdac6e43174bc3b9d9c689061a98d4a07f90"
+    },
+    {
+      "path": "packages/client-sdk/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 836,
+      "sha256": "e8abadff930833e7cc5666fadf546ab6f7ddc06f96008c0f2dc56ee959f43149",
+      "blake3": "735aec1fc4586e619cbd6561c4b4cca7964600c0e8e13c160a24fe7cb4ed4ee2"
+    },
+    {
+      "path": "packages/client-sdk/policy",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/client-sdk/policy/egress.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3112,
+      "sha256": "836940e3409e97d1148ea6138995cfa85a7972a040668d09f6f71abef80d4e6c",
+      "blake3": "c598950923ec752b2756c35aec3f3de012ea2d1d5784d75798972bf5d0cf26a8"
+    },
+    {
+      "path": "packages/client-sdk/policy/index.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8649,
+      "sha256": "fd392b419ac4e3f3d9f38dc529d9fff28a476d037c51a893a85744befc6c5f34",
+      "blake3": "740dd8b12395176df3ba156f22dc93698b51d7b3b3643412ccd5a846f4c96756"
+    },
+    {
+      "path": "packages/client-sdk/policy/origin-utils.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2397,
+      "sha256": "102cf29b7bff12728f4c88e96ae193263cd43c4d226dbee6e55eb92b5459a9f2",
+      "blake3": "691f1044bd3280932addd2ece4f3c6179c374aba43506d2646ee0826f6b103c7"
+    },
+    {
+      "path": "packages/client-sdk/policy/taint.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2763,
+      "sha256": "ddda502ba2a94d8a4eb212aad11c388ea0ba2b72f44c4b2ab7c0801665f6d491",
+      "blake3": "da0570d80e8469d332131c5f24ac71ec18b526d88df9bdc3a7b2f2a98c19ae21"
+    },
+    {
+      "path": "packages/client-sdk/policy/task-origin.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2087,
+      "sha256": "77214a9ca8c1c4490ffbdedfe3c1d7a5becf6a89b608c3287bea159715a0cbe0",
+      "blake3": "442367e5ce0cb24d17ce9f78d362f3b8b9b2e2f9b3071c6fa4bdaa86011697b8"
+    },
+    {
+      "path": "packages/client-sdk/tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/client-sdk/tests/client.test.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21589,
+      "sha256": "72d9512e0c1b4f3266ab56e5e245710af6fb8dcca9175a4bd1805821a5a160fd",
+      "blake3": "1d701e16905ee270956fd1cc0bf5bde04b5098e1e91abdadb8c217b610f4c6c4"
+    },
+    {
+      "path": "packages/protocol",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/protocol/extra-integrity.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6032,
+      "sha256": "124c554cd8172e61e9f8802a80d4ab26be4dff8a3e7b21f37d4073926dc57288",
+      "blake3": "74bf4655a9ac95883404dce42acdaa3f2fe3ab6eb8a6c493b194371832236244"
+    },
+    {
+      "path": "packages/protocol/fs-io.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 873,
+      "sha256": "8bf21be73fb59e64f8562a7ffb58cd2d299991f8456629831685748bfb69596c",
+      "blake3": "b50ebd854ec06150910c618b0b31312a6bf9d4cbb4013dbbc64255b6668631f6"
+    },
+    {
+      "path": "packages/protocol/index.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8178,
+      "sha256": "7d362730ad9006c6c4eaa4e225896c6952c0e0c07b4e58adb7c3e6a36c7d076f",
+      "blake3": "b8941b0f0ef93b412e36f7edf00b2673bacbbde9b3fabb1169a7c28974322078"
+    },
+    {
+      "path": "packages/protocol/openclaw-paths.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1103,
+      "sha256": "cba49d15a6f01397c63d2628d44b7010b1cdb1219e514f7dea58225792ad4d3a",
+      "blake3": "6bda39bb540506a1bbc6d324c0708c9cc48e03c1faddd4bf209bee37422f79d0"
+    },
+    {
+      "path": "packages/protocol/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 904,
+      "sha256": "553478c2f2fd5961e6b9cb73889aefe75d2e54ed452f8b6f41e433beb22660d4",
+      "blake3": "f8a842c6e9f9e9127575bb270fef690ac5b947419d4b875e43b68824c81e6aed"
+    },
+    {
+      "path": "packages/protocol/registry-client.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1904,
+      "sha256": "4ca284e2c6f1ee6d9058b4b3ac9f896c7383039b0b92d8d8f8655a58367c5e33",
+      "blake3": "15c30f2f3c1959774373fcda4fd940687b0f8ecefc6a39b17a8dce462463795c"
+    },
+    {
+      "path": "packages/protocol/safe-npm.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5108,
+      "sha256": "c9710fc8fbac19c788ef6bf9f7dd5d5dd0ec58c2e05b42c8f1b9803f5200716f",
+      "blake3": "35c5c73f40f1bb60f1d054c24a06ceb24522ed54923528e3a66995f59dafa779"
+    },
+    {
+      "path": "packages/protocol/skill-registry.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27744,
+      "sha256": "06f3fbbdcdc56d8a7f20bb05c05f87c9f4895ff309a52c0baf39b2a7e8b7909d",
+      "blake3": "256a95f7015e65207f6a6802e69304710df48fe24dceef1b0e5a141ce817ae99"
+    },
+    {
+      "path": "packages/protocol/skill-runner.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1903,
+      "sha256": "349a0dd25d00bbc00ba7211618c0e93bb9e552eb80efaac2202de9c84528c8eb",
+      "blake3": "8203be541f4aa0c38dfb82864d512b7c74837dc705643d9a59991bcc74780aa5"
+    },
+    {
+      "path": "packages/protocol/skills.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24534,
+      "sha256": "20de9f2a1107a18555625a4bb5eb1803f38124cbe464979d892c56608d6e9aea",
+      "blake3": "7c621c381af524927038c01d4912766cbe91a252b3b026c249e89b543490be46"
+    },
+    {
+      "path": "packages/protocol/tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/protocol/tests/extra-integrity.test.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4943,
+      "sha256": "19a4c893147ddadff3dcdd3bd8241ae0da073254edc10261f7ee9f30f70bbf60",
+      "blake3": "0ce2ac5b74c873bcab986acf521144316ca8cfa8bdc64540424eab5c658e6497"
+    },
+    {
+      "path": "packages/protocol/tests/safe-npm.test.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3015,
+      "sha256": "5a789b576ace6968e69ec4e0ba62d2edc65f4acd06dba019bebc31bca7519787",
+      "blake3": "e1db598ebe726dedc9f503c8988ed5b02b5fe8a870536ff1bc8d8208ff54b7f3"
+    },
+    {
+      "path": "packages/protocol/tests/skill-registry.test.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21493,
+      "sha256": "73d7b1d96902f13842dfdb0f5ccd93ca39dd062f862c5de6f9c78963c92734b4",
+      "blake3": "a6208bcf336accd26875837442c86d530a11d645b9d9d5e55a30899354817898"
+    },
+    {
+      "path": "packages/protocol/zip-extract.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7160,
+      "sha256": "0a46aae9db068eaa1f3c945884654e0e5f43207571a64493d002e7c5b2a0b9ff",
+      "blake3": "b7fa67009cb3bdfd2c75e0469742024fe8b1874a032c19233add0198aff5ecf4"
+    },
+    {
+      "path": "packages/server-core",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/server-core/audit.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2254,
+      "sha256": "60d5a45d0f51217a8b6fafa89ae9ce0287425681d288deefb18e6f54e610799e",
+      "blake3": "d031170cf0f41333e80523c5b8173c34607f52704d29fd46c15b57a084491bb5"
+    },
+    {
+      "path": "packages/server-core/auth.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2631,
+      "sha256": "3adf5c8ad94377a5154c42729969d4082ce491eada8b2449ffb44c35ffe925b8",
+      "blake3": "83c0380c863d392523416d6e395d298638973ea95c3b5645170d5e04e3228d1d"
+    },
+    {
+      "path": "packages/server-core/index.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21344,
+      "sha256": "870afeab35b3ef0090f149e59888e83169ced93fc15b91ac02c3099edc94cd1e",
+      "blake3": "586cb9b72d76c1f3db1bdb6948c0d446a9210027a46ad4e5839015f043ff8e2d"
+    },
+    {
+      "path": "packages/server-core/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 910,
+      "sha256": "75eb1462dbb421120b31fa6e629bedb9415bef7f7eac6dffa1cf07d14d69e633",
+      "blake3": "94673052424e20a027b06701c182fd50d243b3116e4b131bc3c99707a90995e7"
+    },
+    {
+      "path": "packages/server-core/tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/server-core/tests/auth.test.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2370,
+      "sha256": "cf9e722132b176db39641b9719bd746de6d86db0f024ca02ff1abc8d6b277926",
+      "blake3": "eb13e3fd9754e10ba6d1fd74de13728b3b66e0a098c472849e4fa82e6e3183ea"
+    },
+    {
+      "path": "packages/server-core/tests/security-hot-reload.test.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10178,
+      "sha256": "2df3c1f0637984b7c6c881013c42e9d7cc2b24b4b57b113b065c76110b350924",
+      "blake3": "c22a3407a6c0ee000c4c0dbe6184045ee78cd648afdc26be57f93b8d63eef445"
+    },
+    {
+      "path": "packages/server-core/tests/ws-handler.test.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 31649,
+      "sha256": "be4125ebf31b3ede1a6aaa595023b2eb03da4f29ecacb5111d16bbfbece0067c",
+      "blake3": "0acd7bf681ab522659c82e831b263c93c809124f4e866d6b41cbabd7279985b8"
+    },
+    {
+      "path": "packages/server-core/ws-handler.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22789,
+      "sha256": "3478a4219cbba73cf6524e29d3c19b232489179c170a98354ce8ebf4c42c128f",
+      "blake3": "1d30d0abdb4edc726328a96efb369a9480a83f63683e60e1435eb79cbf55a4f0"
+    },
+    {
+      "path": "server",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "server/index.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 68,
+      "sha256": "c4efbf716695fefea7d69d58db4a01ebb6d98c5b20b6768b9c10410f1ec070b4",
+      "blake3": "395a257194204b6e0b5bce5cf6f84782c5e594839ae43aa00d6eddfab391fd00"
+    },
+    {
+      "path": "server/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 121,
+      "sha256": "5ef6f78ab7241d636414f2d92346db68e749d5218d8c2041721de590bbd05a86",
+      "blake3": "3bf799e1d7a3ab41ff636ba5bb81794d29daa1ca35185ed64a490296340ccfbc"
+    },
+    {
+      "path": "server/ws-handler.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 82,
+      "sha256": "63fb464b9643ffd8f8b4bb2b286cb017ec36ebfa6997b7660d4e19bd19d4d742",
+      "blake3": "b2274492dbc62089d5b94ea8d1f6dfaa330a62d4c2c83f42b77d6d26b0a5aece"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2620,
+      "sha256": "93b710b0a81647357ebaad7b6a2f076d192718ab190a3a0bbcf016c58b4d85d3",
+      "blake3": "599fe91c3614fcaf67515a0f165cb9ea094700fe8e77ca0f370998f704b560e7"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:cf2294a1b7afc41161021e3d63a1ef2fc5836b9ff39fc30bd4e5e72df0fedd32",
+  "sha256": "cf2294a1b7afc41161021e3d63a1ef2fc5836b9ff39fc30bd4e5e72df0fedd32",
+  "blake3": "e709cf3ab849999f7f3c483d46adad980995829bf6296bf26743dd3531f48013",
+  "size_bytes": 59594,
+  "file_count": 11,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1079,
+      "sha256": "01d6b4cd83ca809286aebe46368739cd7b7721a10cbf32a2724dd452474107c1",
+      "blake3": "2b0d5ab1f8f38b476d0bf14b4c2e6b3f2ce302131ce197784da5e8b4e5557ab3"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8097,
+      "sha256": "33b92cba0a8284638bb44905b9d279613b8e35efca7e059dc8a0e2af2ce71d9e",
+      "blake3": "c85ea09f301edda8d24dfbd2bfc1d06aca53691fddabdd58db633467567fe1e0"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16157,
+      "sha256": "e8ceaaf11c3c5d9d2b1d9a1597ac0707f3ed414275bb7cbc5063abaf0d28989c",
+      "blake3": "bb8b8fb0a850b02f47ab7d3c94a0712b2fc7927af70e516d033d18a5c89efdb7"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 124,
+      "sha256": "6a9ccbee50df9fb4fcde21081a0fce5d3ff54d2bc54b1cdd75d45fc04250d826",
+      "blake3": "811a914ca4327ebf409857fc25b9c2e460a105e5f4a39ee0a453d6cd7cf0f260"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/proxy_server.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9260,
+      "sha256": "a4f2727c80475e4a69cf41e60edad3644236ec7002292e3fcce8143d0ac227a2",
+      "blake3": "4a50858ffd0802ef9d115c24a288b4ec95f871b5921eb8724d9b87638e84ff7c"
+    },
+    {
+      "path": "scripts/render_pdf.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4099,
+      "sha256": "60066e8c3e37e6ed101bde9eca59efab199c5ea4e2455881a958767586de9aa5",
+      "blake3": "1f6f640d68b661bd50498f3eb04f7d0769db4d6429380b236cc3dad14031f3fb"
+    },
+    {
+      "path": "scripts/setup_fonts.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9103,
+      "sha256": "9045c405eb5001a7364add9b3a60759fd9d7e402b691e031497f3d164937acc3",
+      "blake3": "716aeb14957b0d1e0bd1fdf45cf5469ce030f80864918ddc905117f1b715f50e"
+    },
+    {
+      "path": "scripts/split_segments.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2247,
+      "sha256": "ce7c9b2feeb8ce768912b482208a0094c371edc7b6097b845c5300e17d329cc8",
+      "blake3": "f82e3107d1a609c0df0908fad805b3477546c44193f1e80c0192124bb3486bec"
+    },
+    {
+      "path": "scripts/translate_pdf.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5413,
+      "sha256": "8bbba99a3930b1362bd39e6af7a6683be9a40018d12b2d9ed04c795d5acac81e",
+      "blake3": "bd0558a44f891ef7fadd00fdc4211572a3c795ed434a1dca8087ebaebf05203a"
+    },
+    {
+      "path": "scripts/verify_pdf.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3154,
+      "sha256": "a03a320c8e1e0143f656d6913e8ccfe32f57ba4e4d1f770badf30043c7548063",
+      "blake3": "6807e6ba426473d343543ee08cb0da363a7377d6a89c813df2f10dfe619db670"
+    },
+    {
+      "path": "templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/glossary_template.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 861,
+      "sha256": "8e9e63484165ed391913f11cb97078076334eaa9b444b44a650234e6c6be16e8",
+      "blake3": "92a372d314df17719a10256015f558503f8cb0e5e77c660742c12e55afed3a21"
+    }
+  ]
+}

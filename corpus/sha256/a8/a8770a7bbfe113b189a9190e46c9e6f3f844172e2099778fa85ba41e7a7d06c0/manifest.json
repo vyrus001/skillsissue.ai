@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:a8770a7bbfe113b189a9190e46c9e6f3f844172e2099778fa85ba41e7a7d06c0",
+  "sha256": "a8770a7bbfe113b189a9190e46c9e6f3f844172e2099778fa85ba41e7a7d06c0",
+  "blake3": "5c29f5b94678d27887bc1f8570c08d6f3852a5ac113437b94e5d97dfb458ea51",
+  "size_bytes": 207361,
+  "file_count": 24,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11318,
+      "sha256": "55cf080f05504eb807a8d79e072b05ddb66e019326a91371c5130687745ce91c",
+      "blake3": "763b258e8aa2af452476af007359457383c4a0560f9fb5e58f52c066048cfd1e"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4103,
+      "sha256": "38ad203e357ac04f343f2a1055ffbfab6f7eb3457bac439c57410f57899075e6",
+      "blake3": "dcd15d174e21e4a701325ed8ce549158b8fb714afe57f6685c7755597b5693bc"
+    },
+    {
+      "path": "SECURITY.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13679,
+      "sha256": "9812bf468c3ce6e005043fd46e19c2a9e9356e90e4a4165d0af07aa84b3dd7cb",
+      "blake3": "450cd616ceb8f625912a7e67705b1fc3b2e8642e48886dad15f0830d2d09de95"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13297,
+      "sha256": "3c006f11e1e15835c09271b0af078b671dd337baee73ad7355288a62aaaf82c1",
+      "blake3": "b2e235a28b51b7ab5c16207ccb0fe3ff280af280bcfb74da042317445a08f0cf"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 135,
+      "sha256": "5631a4e462f2fffa834ca3330c60a279465be59b3e8daff7be583d2bacccf28c",
+      "blake3": "68d718bbccc2e67fcf5764c88f5b69c2709f8a805e2699c3ee3eb14102a8aa62"
+    },
+    {
+      "path": "install.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2408,
+      "sha256": "3b79c2b3b81d4fa2811b0e9a66db3f438c3af41df97b62c06f964a9013f4c699",
+      "blake3": "cd968969ba090961539a9e41144e24f1b3ac1cdcd280d4eec6bf2c5bd59f39e1"
+    },
+    {
+      "path": "polymarket_agent",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "polymarket_agent/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 458,
+      "sha256": "d4dd41a9009d8ebee9a6bd45d6ec9002241c4bccdd9d549023b47006be2df375",
+      "blake3": "ab90a6fbeadbdcd834b6ccc82ef4687aacecc063160c899ab3d95c18724ad8be"
+    },
+    {
+      "path": "polymarket_agent/alerts.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4760,
+      "sha256": "40458ada49bd9f0324f1a0380d777a0e5ef7ff7f99621873ff434423bdb3f2f2",
+      "blake3": "d5dc9f276fb71dc58b8fc880e9ff97dc6ded7bcb63246fea52226a4815d5321d"
+    },
+    {
+      "path": "polymarket_agent/cli.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 41076,
+      "sha256": "160eed50245fb6207f0fe86910aa3d1649557402023125170e05ef7f7542adc5",
+      "blake3": "98076b99a617a2c90652054af705875d0b7bc9f99253bd6fe647f611a0c933ce"
+    },
+    {
+      "path": "polymarket_agent/config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7906,
+      "sha256": "5cbd341a66cf4948b56a56f13bbc5a4166a5a214d7a836f66419dd7fd1f73e61",
+      "blake3": "874e72871e0409570203af03b0baf195cd4b6cbbfd1b5464ab033c4ea3a0c85e"
+    },
+    {
+      "path": "polymarket_agent/guardrails.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7671,
+      "sha256": "d853dcac9de9e32bdfcb14aa4ae04dea2bb9ff0fbf479b1a2401d46685b18f3f",
+      "blake3": "953a84669de620b77d0319bc30e0756226035ae7e4db0ff00eaeba96b9141638"
+    },
+    {
+      "path": "polymarket_agent/http.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3773,
+      "sha256": "052b5187ece16c9efc82b67cb47c3ea63f606fc8a325f6f80243b74d0a5e035e",
+      "blake3": "c1b85cf8a88c6a0b602a3b8347e7755c8cb64234e8245abecd29e68afbc04b2f"
+    },
+    {
+      "path": "polymarket_agent/journal.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9245,
+      "sha256": "90a392e5a5ec77d3901011de51af56e9b922b5ef60f0b8f447559df2d6527af8",
+      "blake3": "0bac1108f85970344e98a9733b78ac538772a85075bad2085e9bc8348d68655f"
+    },
+    {
+      "path": "polymarket_agent/keystore.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9195,
+      "sha256": "37b334add5b37b5a9f1f09fd750726a4b496f9fca8e551b6e31f9cf66a728ddb",
+      "blake3": "0d40e9eaa0f6639b0b2a3d2fb412b68f5cf629588fa9d910b73500b2e690c677"
+    },
+    {
+      "path": "polymarket_agent/markets.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8509,
+      "sha256": "51838963cd51c89b4249f44ae2ace9e0848862ca7db98c0a1e683db9e9ef0c9a",
+      "blake3": "468bc4598283eee4b2f7e3ec04e9fb8483b1ac7882ce0a2c5c649bf1775c93f3"
+    },
+    {
+      "path": "polymarket_agent/paths.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4546,
+      "sha256": "90beca1ead1f1c8dbfaedca01e920e44b01fed41322f709e58c9da2398d7b7f5",
+      "blake3": "e0d90067f07d68409b685b6528dbb511a1d6b9e52e587b5d604f0ccc212a5c7d"
+    },
+    {
+      "path": "polymarket_agent/trading.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12229,
+      "sha256": "7e0eb6a720f89fc1badde829271a4ea48df30557f6d38243b5ee1f6e01e6e06a",
+      "blake3": "8f55ffec2685f171759dd02bf38a8ae24d45623dddbdc1ede1c6c97233cec8e0"
+    },
+    {
+      "path": "polymarket_agent/whales.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10330,
+      "sha256": "68be7b70573dcb3386d9f50461b550ce63edd6897a87432e6a3b4dfadb8c6ce9",
+      "blake3": "108a29e4dae4b92f170d74eee8b75427015b93557aca47e3a94ecd770f053ab6"
+    },
+    {
+      "path": "pyproject.toml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1788,
+      "sha256": "8a8ef6337335e1bfa5bd6f4354fa3005280f8807d49ad36ce782b37782972c92",
+      "blake3": "fc444ff0e00f5533ec609cff8ea3d40041de454472d9e1ca8f9ea1ef344c55a5"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2103,
+      "sha256": "665a9e0d29ed4b9acb07a9452f3055ba28ac93a6a95776b18d2d3645087db274",
+      "blake3": "2731d2bb560643ed89610bc360351201d2b20d0baa8d5a13c954184cf9f68cfe"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2724,
+      "sha256": "eca77e8f04e5013eaf698b7bb06d04265da680b1ae6e5f9aba0ca862e80da345",
+      "blake3": "d3a0d47443a93197ae43160c08e5423234e597eb245c3c6fbaad22a9cbe36110"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/test_guardrails.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14429,
+      "sha256": "c25d7c481d0bd8156b831e5177bf1bb7e787a8d995000ec97c8deb7167e65365",
+      "blake3": "4e91453e878fe09d2acb258048a0843f26d68deaf4b0b371ecac3ca850786db5"
+    },
+    {
+      "path": "tests/test_journal.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8948,
+      "sha256": "a73e303d146a4505adadffee199a5964320e9ea33637ee5ea8dede4e8f9bbe59",
+      "blake3": "ea06be13fa570166de9a0f047a4afb79d1ba55fd504036e9c806f45aa175623e"
+    },
+    {
+      "path": "tests/test_whales.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12731,
+      "sha256": "14a1c6f3b2f6248f488ac4b6b3b04a79ec4b02624c3ec49bce7868237aacce1a",
+      "blake3": "98dcce6e4d1469f98c4e38e59140ed05320f4291fea846fa47b3b30a985ce73d"
+    }
+  ]
+}

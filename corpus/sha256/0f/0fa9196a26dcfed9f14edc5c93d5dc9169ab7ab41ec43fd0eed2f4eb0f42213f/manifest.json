@@ -1,0 +1,987 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:0fa9196a26dcfed9f14edc5c93d5dc9169ab7ab41ec43fd0eed2f4eb0f42213f",
+  "sha256": "0fa9196a26dcfed9f14edc5c93d5dc9169ab7ab41ec43fd0eed2f4eb0f42213f",
+  "blake3": "4bd8277437f80c2fa14d66524cade2552b9c6ecf685eb579e72d56ba84167b93",
+  "size_bytes": 623039,
+  "file_count": 83,
+  "entries": [
+    {
+      "path": "ADDITIONAL_SOFTWARE.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32487,
+      "sha256": "f9501aa15428f7817fa141478a3d061ebb642b626bb80dc94d8a3967ba10afee",
+      "blake3": "0469a359f847d34fb6d8a0318d3154576f60a2926e139fb62afd0d651898c717"
+    },
+    {
+      "path": "AGENTS.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3217,
+      "sha256": "05f90b07c403d69e7f0d1a3c7762ac4f5e8413dd90bcf53cd6c03aeebbc8ca6e",
+      "blake3": "458dc74bd8a0e8abc157ce3e908d7eb21f79723fbe754053225502967da96043"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 41121,
+      "sha256": "72fca2b63f8a049e5cce1df8cb9385408782825dac042a40933ea12ca7e29d9b",
+      "blake3": "48f144e1f41c6ac885c9b468be1f46e3e88b4b4da644ffbf27974a1bc67b67fb"
+    },
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1105,
+      "sha256": "d1db9ee2da820233a56eaf0d0b1bb28336ca0f320e89a1f35a42ae5cdaeb952a",
+      "blake3": "fb415a167e29fd5a38ccbe92c12a1a5fd7e10d2ad47c1c77a10287ce03acd919"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10524,
+      "sha256": "8d619fc4b14f7994e504624685da86f324f10712e0bd9275575352d5f78152de",
+      "blake3": "52ab7da643e8c7ce8073a29601e0c164b4e6dc025d7c767c049f9f1a036c0d8e"
+    },
+    {
+      "path": "README_zh-CN.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10713,
+      "sha256": "133d2659b89b5a05f1df7e26a5f4911a5d718d5e0a4524706a332ec7d2367b18",
+      "blake3": "8535be1c8bbf72327e7b9f843e5bd187e71efdf58048cbdbf35d75e2ca130e0a"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7180,
+      "sha256": "28edf949e1d886f1cd2d034aa9a56734defe310a4151a7a45ae3c88e8a8633ea",
+      "blake3": "7ffafced779ca86875455b3fe4e3124a2711791d10c2948df7785dc1e2288385"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 131,
+      "sha256": "2706940eb07859fb516561c222fa22c0fce71ad543413c781fa9ecfb39676680",
+      "blake3": "f2a082bca3b91d181fbca869341600e14764b2fc30f2031be6c855b2e1a62598"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/icon.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1601,
+      "sha256": "fee4913e58749ff43ebfcc57d51f83140a7677fbe522707c579074c3e8187a57",
+      "blake3": "537f86055e40d182fe1ff5ecd0dfc79638718702c7b2678857d2feafdfbc8191"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/command-examples.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14941,
+      "sha256": "56b1ba5203a09b5b7921e152cd0a63a2ae813322ed26113065c4f6ae69d053a5",
+      "blake3": "4d24f9799ba8496b6dd7ac560c2920e0df93313679f478053aeb6dd36878174c"
+    },
+    {
+      "path": "references/completion-prompts.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22007,
+      "sha256": "c81b6fcafe64b3dd0445f82e7ab261d376fa6aecd3e49a100b0f8da81a34864c",
+      "blake3": "f25751d7776b453e1733d1736699c46d010229d1717151bff9143e13559f3ee1"
+    },
+    {
+      "path": "references/config-templates.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8918,
+      "sha256": "06e66b630a195551f0a9af945e1ceefd5571a2a249506926f62e170a428bcd64",
+      "blake3": "0cc8d9f30a4e590c19be131c0b761cd777b3275c834e056209bf25c9905213f7"
+    },
+    {
+      "path": "references/platform-support.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1199,
+      "sha256": "117bf5877a3a87b9d34962df0ca9d983f30066592c28210224e60179d5886670",
+      "blake3": "cc48edf736855b438dd874d8e5e0fa44238b3086396797b6ae580a6e51d7140a"
+    },
+    {
+      "path": "references/trust-and-safety.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1015,
+      "sha256": "607cd0b342905411806fa27dbe31c1098549f18b5c40bc410ce27bbf7786c174",
+      "blake3": "8f11e6bd170c2c041929d9cef23e48f4b2d6886b4f3f7da0f8c37b34a7294817"
+    },
+    {
+      "path": "references/version-specifics.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14286,
+      "sha256": "2b63a1e6eacfb6cb5848a1ea1a06f21827f9ab6cd7bace89d2ead5d90b3df2cc",
+      "blake3": "3e465d1558bd24eea12149b0a18ef1cfe8be572b59fc8a147577897bd124c01a"
+    },
+    {
+      "path": "references/workflow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1292,
+      "sha256": "0a8b56e35e1931c1a8dc68c9db0f436e7d69a0225dfcef300107ee5ba4554bfd",
+      "blake3": "160431706cd6342db435b4c010f8f35280d4ff39c5926fc1a93c763b39e40ae6"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/common",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/common/write_config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6897,
+      "sha256": "e762cf1c8e0de4ec4cc53776919318383a98319b8ae8628163c3c662459751cd",
+      "blake3": "5dfe888a119dd762d415245a723328ab8b0a82277f1e07f622f023b733350219"
+    },
+    {
+      "path": "scripts/cross-platform",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/CmdStan",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/CmdStan/setup_cmdstan.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4092,
+      "sha256": "2236f54a0c10b2ed0699cdedea2e5be5497513feeaa531fb80e6e88642c11178",
+      "blake3": "cf23e83ad3284ab7d4810e5ada578d8635369184a7f3fc10b9866088d0e745cf"
+    },
+    {
+      "path": "scripts/cross-platform/CmdStan/statsoft-cmdstan.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11057,
+      "sha256": "b99c46e556dad2d3d7d9314e40f9f2e80505dc47ac454c9e6fbe7135ec96fc46",
+      "blake3": "9267538d2d8e8e8dcdbdb21ea8c5f9de6fe684499cb372129f0ee9d3fa3e9c5d"
+    },
+    {
+      "path": "scripts/cross-platform/GenStat",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/GenStat/setup_genstat.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3675,
+      "sha256": "69fc27f0510fe23e7edc81574f33e7d88e16a05e001aed77a42164f35202ef70",
+      "blake3": "82bdab20227f2b3ad75b26a548d81a41793a28adc02ea4933e4db9d5764d7a57"
+    },
+    {
+      "path": "scripts/cross-platform/Gretl",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/Gretl/setup_gretl.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8243,
+      "sha256": "92831d4424e3ca1e8ac7718d8541d022f02c33019e70e9cf580a8fa346418713",
+      "blake3": "4903f7695569f4aa94b2c0c9c625e4eacb77e8eb4ce114659346d5ebfb157e62"
+    },
+    {
+      "path": "scripts/cross-platform/H2O",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/H2O/setup_h2o.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4169,
+      "sha256": "c1ad13a5d0dda05b744e2cf39f2d45d4f7de1f1020656509e23e0fda4a5a8ef3",
+      "blake3": "6e7eb44b97b18fa01c828f2e8d681450788661b4d0e772c3bbb801a5f6a75f3b"
+    },
+    {
+      "path": "scripts/cross-platform/JAGS",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/JAGS/setup_jags.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3928,
+      "sha256": "ca2ba86a51978cb6ec9c888f6e39b767f63d190ca8161343f31c8ae5535cc72c",
+      "blake3": "9ee34a2b48602a8584aa99a7afd5047175ca015a262916f22369f5fd6387a429"
+    },
+    {
+      "path": "scripts/cross-platform/JASP",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/JASP/setup_jasp.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3130,
+      "sha256": "e5f63cf6cf06770166b1ed7811355d1c6983d5b010738b82b80b6396d2c804f6",
+      "blake3": "80ed1e360fc863b89d22a2599186256106093f568488aeb069150fc631c2dc03"
+    },
+    {
+      "path": "scripts/cross-platform/Julia",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/Julia/setup_julia.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9694,
+      "sha256": "6ed821df6bc95134a231aa1f5717b614a8b7dd0df64b005daef22630799c8afb",
+      "blake3": "81efb05b950eca0690c451dbfee50aba2d41fe9836f12be0f01a32fe8d5888cb"
+    },
+    {
+      "path": "scripts/cross-platform/KNIME",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/KNIME/setup_knime.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3070,
+      "sha256": "57854826612973bd6c6aaf370ab9f7176f615603318f9dc071849579cca17ff8",
+      "blake3": "4a4b1479409e676e8b7b6e109e4610d886b942d207d98fad3578d48036ae7d4a"
+    },
+    {
+      "path": "scripts/cross-platform/Mathematica",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/Mathematica/setup_mathematica.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7046,
+      "sha256": "5763882929641a84032e5f3df96dc341d221c22995c3394e8973961c2b7b615b",
+      "blake3": "b715452ab27c3b78631b5fda29eb6e4682fc308621586f8ce5f5f5d7eceec3f1"
+    },
+    {
+      "path": "scripts/cross-platform/Matlab",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/Matlab/setup_matlab.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10324,
+      "sha256": "13bbe29f4687bd44943c6eb6a7dd6222573b06e23086a8624049eb5d72d5ed84",
+      "blake3": "cbb810aa385ee07e6be920973df401814357966d9f484f1b2ef5554343d22d9b"
+    },
+    {
+      "path": "scripts/cross-platform/Minitab",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/Minitab/setup_minitab.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6832,
+      "sha256": "911fcc746fc748433cf4bd4a633e816a12fa55197dcb105ba4cc4fa10db40aab",
+      "blake3": "1690675a1f7bb472f5b3e74064c31ecc597d51b1d7fce13cfd5cb64b63dc3843"
+    },
+    {
+      "path": "scripts/cross-platform/Mplus",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/Mplus/setup_mplus.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2995,
+      "sha256": "7572057273f7927099408a9dc1f7a7f72afef01f8644cacf76963e3835652200",
+      "blake3": "6fbe278bb0e6c29157b1b560f47255142364362bb70c1034b5e4f8f94f9a6e8b"
+    },
+    {
+      "path": "scripts/cross-platform/OpenBUGS",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/OpenBUGS/setup_openbugs.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3953,
+      "sha256": "51350817c362ec26e5aa32eedd79d5c0d3385b4769e01c7cd97314c79981b19a",
+      "blake3": "0d797deed049daeead5b8a78919d22344e3edec37211ed1a6077f4e3aadd8971"
+    },
+    {
+      "path": "scripts/cross-platform/Orange",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/Orange/setup_orange.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4700,
+      "sha256": "9f950454a2a91d759b70967601df388da03e7ff34b427fc8c662cfdb71303d1f",
+      "blake3": "969f197a7bf310e58c84ffc472712f05f6b198ce41b6796f263554d43e115f12"
+    },
+    {
+      "path": "scripts/cross-platform/OxMetrics",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/OxMetrics/setup_oxmetrics.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3857,
+      "sha256": "cc0c0f8df7bf1555a9c6e5413af914c5140ab294e7ea4672a02cbdeccf55dca2",
+      "blake3": "959647541aad064ed5f2fef6b68c3b4484f828a590cceed0988bc2a51393c0d5"
+    },
+    {
+      "path": "scripts/cross-platform/PSPP",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/PSPP/setup_pspp.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3020,
+      "sha256": "0da748444f197f192c4ffb0c5d33252214c99f2c0090218a595c43804abd3351",
+      "blake3": "132203d5c0748fb72211ce8c140b9576ae5a15d1382c0ab8a9fc84fd6a853f06"
+    },
+    {
+      "path": "scripts/cross-platform/R",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/R/setup_r.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17033,
+      "sha256": "46a692d90b99c19c2d8275c10be9fdbf92f9fa3c8e6f0ed49cf6afac55157ed5",
+      "blake3": "d97e9e4f7e8730bb3e6a3365c36505ba18ff922d43c64e16113f218adbc016b1"
+    },
+    {
+      "path": "scripts/cross-platform/Rattle",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/Rattle/setup_rattle.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5604,
+      "sha256": "0ba7e2e6d95c1cafc8a81de9f1f46fc374dd6900fe18440046a508b2353ef066",
+      "blake3": "92a1f01f7d27639189548c64ff6e8d1f425f0f4bdec0162930ad552ec35ee0c0"
+    },
+    {
+      "path": "scripts/cross-platform/SAS",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/SAS/setup_sas.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12696,
+      "sha256": "f32dcd1a13cdce6afa40ed25ddcd23ce93f1759a3b5e92f84d10138a4301b583",
+      "blake3": "05c1b8c76f95bb48bf34b4e46ba8b988613528e64f6b5eb69203ddc7bde62ef7"
+    },
+    {
+      "path": "scripts/cross-platform/SHAZAM",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/SHAZAM/setup_shazam.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3858,
+      "sha256": "9cf632f4376d6a3e1216771eb42b947870cd4c8894187cc97a35998e395676fd",
+      "blake3": "518c7dfdb2027b0ba43068fc434b1a5839fdd8929e00a5b114a8d67a2a94ecdc"
+    },
+    {
+      "path": "scripts/cross-platform/StatTransfer",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/StatTransfer/setup_stattransfer.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11625,
+      "sha256": "44d93daec4761f4fa12c9218af4a6880fa6c3255c31cc61fcd8a88400a0c29c8",
+      "blake3": "d0893c75c16a1dbbe74fe3c7f3aaee0ee846e894e4793ced56e1263fb3a258ed"
+    },
+    {
+      "path": "scripts/cross-platform/Stata",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/Stata/setup_stata.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10877,
+      "sha256": "5a123995e9a656b89384cae49bcb40c0f1ae57de7a4b8ba72e15752e342d564b",
+      "blake3": "c6ca9736336a33d6f4e7865b79d67143eca0cdc85da9c933e60875ad4d4438b4"
+    },
+    {
+      "path": "scripts/cross-platform/TSP",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/TSP/setup_tsp.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3611,
+      "sha256": "e9db6bc3a1b0daf0a5e2e1a8f883d7dc68c7ecf63db97b7f5f671e7e2eee3c25",
+      "blake3": "7f55af5156f9698c92643513981bee6682cf926cce61e2b68965d57178cb3a12"
+    },
+    {
+      "path": "scripts/cross-platform/Tanagra",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/Tanagra/setup_tanagra.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3653,
+      "sha256": "f8c49eb070ff1b2b54686052d84ca3429043ec0c906b20e50d8dc506c606a016",
+      "blake3": "617e06012a5d17a3cf5f3b50d59a8ad03787adf6b83fe639a3a293e29734b79b"
+    },
+    {
+      "path": "scripts/cross-platform/Weka",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/Weka/setup_weka.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3384,
+      "sha256": "eb8280a4c07c0da4e86aebf0b24b2533f6e554963b4887096d9c53b20c7f682a",
+      "blake3": "ba73eacc4aa053d685daf6e1815f990cec808ae45f78a2b3497d81e140842aaa"
+    },
+    {
+      "path": "scripts/cross-platform/_platform-detect.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2032,
+      "sha256": "86d80be7967dcdaf88d5bf7c2c3e19d2d00ea7cf17a8628bcc82673047ce0e7b",
+      "blake3": "2ad12c2da731ceb9546343ada5f902e1987f18547efba6e08fdd10fdc2e43c86"
+    },
+    {
+      "path": "scripts/cross-platform/jamovi",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/jamovi/setup_jamovi.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3287,
+      "sha256": "d7049b48c9427e165f5db17ccd8d62acae4e75ba92ed3b22cb15bf83b773c5aa",
+      "blake3": "2677db8ccfc1d891cce3271a6905305dad190224dfb2f3a7e816fcf4d0c6f3f0"
+    },
+    {
+      "path": "scripts/cross-platform/scan",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-platform/scan/scan_all.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8883,
+      "sha256": "827c7d796678fedaf19667a9709e67787640c06a03c6cb5a4351a3972d31e315",
+      "blake3": "129fc7efa51130c1ef43629ec7ab9ba88c20beaa4420dbd149920fffa7507b0b"
+    },
+    {
+      "path": "scripts/windows-only",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/windows-only/AMOS",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/windows-only/AMOS/setup_amos.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8963,
+      "sha256": "0bf296045047ddcbcca4e4cd2551a382e3bdb832f6704c51319dbaa292f28c87",
+      "blake3": "4d35db4071202d931f08bfae7262a286a79073e2ee0b4b083be8cfc5c95a2737"
+    },
+    {
+      "path": "scripts/windows-only/AMOS/setup_amos.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6842,
+      "sha256": "f0403e33ab0c3ba080281460e2d19d1fdf8fb72fa710ecd5cdda99ca165b57f6",
+      "blake3": "7bc104bc8081e81e98e15a5eac9c13d6458d5ff033c4d50930b0ac6eaa6868d6"
+    },
+    {
+      "path": "scripts/windows-only/EViews",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/windows-only/EViews/setup_eviews.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4621,
+      "sha256": "4155c1b4859d9dc3bb6470d006497cbcbca6513b44154f8e4a4ebe0288291417",
+      "blake3": "e9f6ce3e742c2961fea0f246c872b8b60e91da09f0975854e4b2a5097458a068"
+    },
+    {
+      "path": "scripts/windows-only/EViews/statsoft-eviews.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3405,
+      "sha256": "04f7a400356dc9f94569efe9ec1d1b60b7ca909fba279df31f68d84e4b69fbf7",
+      "blake3": "2690e8260651f138f94f62eed48e810e75f4cfb419de52df940f05730361af3d"
+    },
+    {
+      "path": "scripts/windows-only/GraphPad",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/windows-only/GraphPad/setup_graphpad.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8357,
+      "sha256": "7e2766aeee8fdb2a9a8e12747cbbe76c4377dfcbc266a3ec3ac8e6fa88b2471b",
+      "blake3": "78e42c6993376a079d7da13d85e777d513ac41bc287b126330173beabca682c3"
+    },
+    {
+      "path": "scripts/windows-only/GraphPad/statsoft-graphpad.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4224,
+      "sha256": "fc769cc328e1cbdc60d5b8b6a69233ac9a279f63683940bf15e4db6e94e7a771",
+      "blake3": "59bed853c7188b7962cb00e95ee90d3633c5b6958d573fdd1d07eb51548e7af1"
+    },
+    {
+      "path": "scripts/windows-only/JMP",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/windows-only/JMP/setup_jmp.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7989,
+      "sha256": "daffd6ffd1f286e529091cab78a0f0f4fee623786ebc3bd18bf9c1eb2072da47",
+      "blake3": "3f4f6a9e0fe8c9eae14490a43e6e423d5b4021963eeeb9b8f5cb3d369a913713"
+    },
+    {
+      "path": "scripts/windows-only/JMP/statsoft-jmp.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7016,
+      "sha256": "85db31ea922552c819633537e1810e37e00493fa1739d5eb930f060a259b420f",
+      "blake3": "52c2a948d1b58e2c2ff24c66fe9ea1bbeab0732e74f1dbdbd9eb5d9f40fad263"
+    },
+    {
+      "path": "scripts/windows-only/Limdep",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/windows-only/Limdep/setup_limdep.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4699,
+      "sha256": "a3d8cfff3f4f018638f8b2713649af57e4852c7227186c9309a55080e3469f73",
+      "blake3": "19558824dbd3c469d8a68d3461f7930c295b6102a2d54370acc9df6b43edc921"
+    },
+    {
+      "path": "scripts/windows-only/Mathematica",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/windows-only/Mathematica/setup_mathematica.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6021,
+      "sha256": "48fef0610219cf93d9884fa77844fa958bd555d6e84d25554a715b51726c1bac",
+      "blake3": "11439f87b7cd24bb0f87f0253b9aba95af1690d3dfec66c679b4c4318c7f0a89"
+    },
+    {
+      "path": "scripts/windows-only/Microfit",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/windows-only/Microfit/setup_microfit.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4456,
+      "sha256": "943821f81c15fc082cb4161772d415eeb65d4ad3f5f2e3684c6a18b63fc5584a",
+      "blake3": "6cdaa6debc57cee8a48a3ecbe70c84a7d92697ed37c61341757bf55ef6808e11"
+    },
+    {
+      "path": "scripts/windows-only/Minitab",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/windows-only/Minitab/setup_minitab.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6289,
+      "sha256": "784c53828809e8e07ee30c22c556b00d539fe316526137125e66ee58d4187f1b",
+      "blake3": "37b29e21397ac01237fdf751096bc96b1f4c3fe1c91ce1c94d4450d8ffcdd218"
+    },
+    {
+      "path": "scripts/windows-only/Mplus",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/windows-only/Mplus/setup_mplus.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4315,
+      "sha256": "2611b2ae2213a4e421d73fd0391c6073037740d606217fd82f934ff8c6510000",
+      "blake3": "cb6221382683123326faad2b60373ae6973b396ee9ad9031474a0f74e9a9b0c1"
+    },
+    {
+      "path": "scripts/windows-only/NCSS",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/windows-only/NCSS/setup_ncss.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4934,
+      "sha256": "b24ad5b94f3745c15e2d8743f96f1f5bcc34f9a5506ce91b79f85af804a9f5b2",
+      "blake3": "f48e949d38c1ec43e3697de149e688f38aafd76df488838019fdcf074c5c5c9f"
+    },
+    {
+      "path": "scripts/windows-only/NLOGIT",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/windows-only/NLOGIT/setup_nlogit.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4101,
+      "sha256": "684acf5601a359e0766f6c3cc0bff731600562fa55491e7091fff8ba798f47a3",
+      "blake3": "06103f86d94818d5a0ac2dcb4463fa6a80e8a701ab40493ae97aac5e6fffac48"
+    },
+    {
+      "path": "scripts/windows-only/Origin",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/windows-only/Origin/setup_origin.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4897,
+      "sha256": "54d570f1f2dbbafe2b409c6f17efb242d6d6d98f721a40e1d626e6cc941512b2",
+      "blake3": "fe789fb64acfd62a498e08022d489f4ce6f1bdc15506617bab6a5bb8240740a9"
+    },
+    {
+      "path": "scripts/windows-only/Q_MRKS",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/windows-only/Q_MRKS/setup_q.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4851,
+      "sha256": "603a5178a8658e496fbc29d68b91d993e00ea9d1ef81c422d0243bc97580aa36",
+      "blake3": "550678da1e62764ac896458d9e91be7418e5d88aa0e7069206840a4618360f2b"
+    },
+    {
+      "path": "scripts/windows-only/SHAZAM",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/windows-only/SHAZAM/setup_shazam.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4498,
+      "sha256": "1a07a809f4a8238414db40b0dfae3b4795664623c76eab0b898b7f4c61a4730b",
+      "blake3": "2ec4572289a2529ce60408cad503c21d8f329bcd5b7dbc7db148b29d4983ee4e"
+    },
+    {
+      "path": "scripts/windows-only/SPSS",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/windows-only/SPSS/_data_info.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 980,
+      "sha256": "4881fdcf0af0ddaf68ac86aafbf42f4579066d91d316350698cdedfcadd56d56",
+      "blake3": "0dcc6728019fc4167aa2f1ae4e847cf84e761c8ba62e41efd7b8ecae0647af4f"
+    },
+    {
+      "path": "scripts/windows-only/SPSS/_spss_runner.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1325,
+      "sha256": "64898fb2a4a4983564144250f5545fc5be70643ea7fe52ccd4bcdfaca6f0d7c5",
+      "blake3": "395a05bfd3440dacdeaad8a0e2aba8f9181bd73e0c19e20a559c5485df89b308"
+    },
+    {
+      "path": "scripts/windows-only/SPSS/run-spss-internal.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6942,
+      "sha256": "a1482d339045ce0bdda37e1a801449da6ad28e05c690e1329cf4dd17fe9009a6",
+      "blake3": "dbe191715fca650a7fa1a1b221bcf7a5672705d53b732d27dee5cab0659f67f2"
+    },
+    {
+      "path": "scripts/windows-only/SPSS/setup_modeler.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5027,
+      "sha256": "2917313fc7abf6315e95a187204894d5716468460d805aa6c26f88755b231ee9",
+      "blake3": "e51b365418f8d2e5839832537722501233a5ab4f1c2e4cc67978ccf060321c64"
+    },
+    {
+      "path": "scripts/windows-only/SPSS/setup_spss.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17961,
+      "sha256": "1225daa173b4ad82e0f9aaa71dd780c361767f1dff8354e5a38da0225ec0d443",
+      "blake3": "83cfed7e9dfd5327603afa51a62add6d74042cf2eb4f266e502b2790f3e46046"
+    },
+    {
+      "path": "scripts/windows-only/SPSS/spss_helper.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25798,
+      "sha256": "474b351c19082baeb7d33b98050bb93d801fe8ab4b316148c338bc2ffe688b39",
+      "blake3": "bea6bcf987e181f97d271d61406211d99760125cc1ec19e1044c75559efa6fa3"
+    },
+    {
+      "path": "scripts/windows-only/SPSS/statsoft-modeler.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6848,
+      "sha256": "fef27700b7fa6bac5f0dca7e9dfb3aac995d5e626028705fa6baf88aaa0e3e2c",
+      "blake3": "a3e5f65527d28763cce6c92c070533a24983f9ff6b1b2904b49d74b0fbe37a83"
+    },
+    {
+      "path": "scripts/windows-only/SPSS/statsoft-spss.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19788,
+      "sha256": "a1d1b9409f7bd02c7179f9d6eb663524bdfed6f85105be8bbaf81f0481ccfe99",
+      "blake3": "a2f8cade8ca2ad26d80f513843b771b1d4ac47e93c27b250cbf4ab9edf71a6b8"
+    },
+    {
+      "path": "scripts/windows-only/StatTransfer",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/windows-only/StatTransfer/statsoft-stattransfer.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13209,
+      "sha256": "71e164e6bfc37fb523fa96f5e12673a67a653538ab64c1b786dd7caa8c747412",
+      "blake3": "a8d383dcbc36bec36649c6804bbb30f1ac5a9bf936e0e85680240457c6a47268"
+    },
+    {
+      "path": "scripts/windows-only/Statistica",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/windows-only/Statistica/setup_statistica.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6885,
+      "sha256": "e5b73296393b5066a509200099d374db4040b61edd081b0b179c3d8fb71ac825",
+      "blake3": "83306bbd1644bdcfbeeda09655dab17ab6ca03281fc7df83668dcc225df42301"
+    },
+    {
+      "path": "scripts/windows-only/Statistica/statsoft-statistica.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3668,
+      "sha256": "977fb71da2defb51c39bc87355f0f0042895a7f8fbfbd67b9a53e801876d9f30",
+      "blake3": "07b6f8c5860e1d61c740bd8ffcfb7c62121cf993d149c4462aade94a846ec9c8"
+    },
+    {
+      "path": "scripts/windows-only/scan",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/windows-only/scan/scan_all.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21822,
+      "sha256": "edb7c7a44a7e61ccf62218fb685a3693ece9df0711d5dca8c50c674d3758273c",
+      "blake3": "ed667b486c93636e18664eee3bc1834f55f0ef6f4af62dd3c4649134368afc2b"
+    },
+    {
+      "path": "scripts/windows-only/statsoft-r.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7537,
+      "sha256": "580a1dd567350409fc505ad67746e3c587811fda4e9e1e5deeed8c23d0ba1cd4",
+      "blake3": "25994df8d5a73c8839b17fe62d549364a14ade3f8a669ec5f8175b759984419b"
+    },
+    {
+      "path": "scripts/windows-only/statsoft-sas.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7298,
+      "sha256": "f6edaf69f65700a6fb996867a948a91a291e1c504c0926bb4e066b76a807e5f3",
+      "blake3": "642c407cce70e6a9935fa36fff9dd3c0af6a6d1da3d2a0a0afc7ed9dc023db50"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3189,
+      "sha256": "1b64c4b9e5d63d7e7d67fa2bc729be81d72cea6f9e4aaa57ec623db3099b6154",
+      "blake3": "913f62dcd9ed55c1ea2d85e89dd8ce736cc90265aafb475f2fc7ea726d73bc23"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3176,
+      "sha256": "c5c2c610504aace458c9c2eabadc78213808bd31bbcc5151d5e3211beca459a2",
+      "blake3": "abf7d9c2f62739637468895b114d06b9bcde1249c80b64f230ada1da658eb7a8"
+    },
+    {
+      "path": "tests/example_workflow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7923,
+      "sha256": "448e379901922b56d63a0501cf5ee39099784b09ffa93bee584af12bdb5553b9",
+      "blake3": "8df8184a092195214caad8573519dc74f5eee628e77478fd478d459da0f56402"
+    },
+    {
+      "path": "tests/run_all.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3596,
+      "sha256": "cdabd9e8a46bac889080733bcbfc4767267fc5b6bb35aa6d3302d01290298e3c",
+      "blake3": "b178835c4b46e540861cd4ad17be550aa331db2024ef66a1d8f0bdffebd7f12f"
+    },
+    {
+      "path": "tests/test_r.r",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 627,
+      "sha256": "64d6e5e861e1162c1d5e4ccc4ca81068097b368593dfc4efcf61625f0afcd457",
+      "blake3": "c970b7695b39879f27a1083ec1e53ee27474305a51ee4d3c45587f3df8e598e6"
+    }
+  ]
+}
