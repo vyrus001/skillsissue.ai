@@ -146,9 +146,14 @@ jobs:
       fail-fast: false
       max-parallel: ${{ fromJSON(needs.plan.outputs.max_parallel) }}
       matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
-    # Every matrix leg must map to a fresh VM with its own local Docker daemon;
-    # the VM is destroyed after the leg. Never attach these labels to a shared host.
-    runs-on: [self-hosted, linux, x64, ebpf, disposable]
+    # Full GitHub-hosted Ubuntu runners are fresh VMs with independent Docker
+    # daemons. Do not switch this to the unprivileged ubuntu-slim runner.
+    runs-on: ubuntu-24.04
+    # Store provider keys only in this environment and restrict it externally
+    # to the default branch. deployment: false avoids one deployment per shard.
+    environment:
+      name: hosted-detonation
+      deployment: false
     timeout-minutes: 90
     steps:
       - name: Check out the planner-resolved source and pinned SkillJect
@@ -157,8 +162,13 @@ jobs:
           ref: ${{ needs.plan.outputs.source_sha }}
           submodules: recursive
           persist-credentials: false
-      - name: Verify disposable eBPF host and isolated daemon
+      - name: Verify GitHub-hosted eBPF VM and isolated daemon
+        env:
+          HOSTED_DETONATION_ENABLED: ${{ vars.HOSTED_DETONATION_ENABLED }}
         run: |
+          test "$HOSTED_DETONATION_ENABLED" = "true"
+          test "${RUNNER_ENVIRONMENT:-}" = "github-hosted"
+          test "${RUNNER_OS:-}" = "Linux"
           test -f /sys/kernel/btf/vmlinux
           test -f /sys/fs/cgroup/cgroup.controllers
           test -S /var/run/docker.sock

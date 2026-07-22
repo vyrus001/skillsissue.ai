@@ -360,10 +360,11 @@ or disposable long-lived runners.
   publication caps before upload, then hands deterministic registry changes to
   a clean publisher.
 - `detonate.yml` plans a bounded matrix of 1-16 deterministic shards and runs
-  each leg only on a runner labeled `self-hosted, linux, x64, ebpf, disposable`.
-  Every leg needs a fresh VM and isolated Docker daemon. Capture jobs have no
-  repository write permission; they upload separate artifacts, and one clean
-  publisher validates shard membership, combines typed deltas, rejects run-key
+  each capture leg on a full `ubuntu-24.04` GitHub-hosted VM. GitHub destroys
+  the VM after the leg, and each leg has an isolated Docker daemon. Capture
+  jobs have no repository write permission; they upload separate artifacts,
+  and a clean publisher validates shard membership, combines typed deltas,
+  rejects run-key
   or telemetry collisions, and commits the aggregate once. The default is four
   shards with one skill per shard and at most four concurrent runners. Manual
   dispatch can process at most 32 skills for one harness (`16` shards times
@@ -374,9 +375,15 @@ or disposable long-lived runners.
   publisher after enforcing total publication caps.
 - `ci.yml` formats, lints, tests, verifies the pinned SkillJect corpus, and
   builds every container boundary. It never detonates pull-request content.
-- `evaluate-skillject.yml` is manual-only and runs a bounded attack-only
-  regression matrix on a disposable eBPF runner. It has read-only repository
-  permission and uploads results rather than publishing them.
+- `evaluate-skillject.yml` is manual-only and is the secret-free hosted eBPF
+  smoke test. It runs a bounded attack-only regression matrix on a fresh full
+  `ubuntu-24.04` VM, has read-only repository permission, and uploads results
+  rather than publishing them.
+
+Start by manually dispatching `Hosted eBPF smoke and SkillJect evaluation` on
+the default branch with `limit=1`. It needs no provider key and fails before
+executing a fixture if the current hosted kernel cannot support the required
+Tracee capture.
 
 The detonation controls can also be set with `DETONATION_SHARD_COUNT` (1-16),
 `DETONATION_MAX_PARALLEL` (no greater than the shard count),
@@ -396,10 +403,13 @@ reducers before pushing, rather than rebasing generated state. Acquisition,
 detonation, and replay containers never receive a repository write credential.
 
 Manual operational workflows fail closed when dispatched against a non-default
-ref. Because GitHub evaluates a manually dispatched workflow at its selected
-ref, the disposable runner group must also be configured outside the repository
-to allow only `detonate.yml` and `evaluate-skillject.yml` at the default-branch
-workflow references. See `SECURITY.md` for the exact boundary.
+ref. Before provider-backed detonation, create the `hosted-detonation` GitHub
+environment, restrict it to the default branch, and store the provider keys
+there rather than as repository or organization secrets. Set the environment
+variable `HOSTED_DETONATION_ENABLED=true` only after those controls are in
+place. The workflow's default-ref checks are defense in depth; the environment's
+deployment-branch policy is the external secret boundary. See `SECURITY.md`
+for the exact setup.
 
 ## CSV contracts
 
@@ -433,9 +443,10 @@ redistribute the submodule without permission.
 
 ### Bounded evaluation harness
 
-The manual `Evaluate SkillJect fixtures` Action selects scripts in deterministic
-round-robin order across the four upstream labels, with four fixtures by
-default and a workflow ceiling of eight. `skill-eval prepare` copies each
+The manual `Hosted eBPF smoke and SkillJect evaluation` Action selects scripts
+in deterministic round-robin order across the four upstream labels, with four
+fixtures by default and a workflow ceiling of eight. `skill-eval prepare`
+copies each
 selected script byte-for-byte into an isolated repository workspace, records
 its SHA-256 and pinned SkillJect commit in `manifest.csv`, and generates a skill
 that invokes it through the deterministic harness.
@@ -444,8 +455,8 @@ Each generated skill also contains a small category-aligned observability probe.
 The probe makes confidentiality, outside-write, or download/execute behavior
 visible despite the target's disabled network and the evaluation workflow's
 intentional use of the deterministic fixture adapter. Both the upstream payload
-and probe run only in the non-root, network-disabled target on a disposable eBPF
-host; fixture generation itself never executes the scripts.
+and probe run only in the non-root, network-disabled target on a fresh full
+GitHub-hosted eBPF VM; fixture generation itself never executes the scripts.
 
 After ingestion, detonation, and replay, `skill-eval evaluate` writes:
 
@@ -462,7 +473,9 @@ it does not reproduce the paper's model-driven benchmark.
 
 Read `SECURITY.md` before enabling scheduled detonation. In particular:
 
-- use an ephemeral runner that is destroyed after each capture;
+- use the full GitHub-hosted Ubuntu VM selected by the workflows, which is
+  destroyed after each capture; never substitute the unprivileged
+  `ubuntu-slim` runner;
 - expose only the selected provider key to the trusted supervisor/relay path;
   never mount host login state or pass real credentials to the target;
 - keep the target at `--network none` with only the read-only per-run relay

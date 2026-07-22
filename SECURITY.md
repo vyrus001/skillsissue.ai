@@ -10,8 +10,10 @@ Tracee event fields, URLs, and CSV strings are untrusted. Ingestion never
 executes them. Analysis parses stored telemetry without running target output.
 
 The Rust detonation supervisor and the digest-pinned Tracee collector are
-trusted infrastructure. The supervisor receives the Docker socket so it can
-create the target and sensor. The sensor is intentionally host-privileged, uses
+trusted infrastructure. For hosted workflows, GitHub's runner control plane,
+VM image, and VM isolation are also trusted infrastructure. The supervisor
+receives the Docker socket so it can create the target and sensor. The sensor
+is intentionally host-privileged and uses
 host PID and cgroup namespaces, and mounts `/var/run` read-only for container
 runtime metadata; a read-only socket can still be contacted. It therefore has
 `--network none`, no repository or Actions token, and must run only on a fresh
@@ -60,32 +62,35 @@ credentials, or broader mounts.
   workflows as control-plane principals. Protect `.github/workflows/`, the
   default branch, and publisher-bypass settings with required review and
   CODEOWNERS where available.
-- Never detonate pull-request code or use a persistent self-hosted runner.
-- Map the `disposable` runner label to a freshly provisioned VM with cgroup v2,
-  BTF, eBPF, Docker, and Actions Runner 2.329.0 or newer, then destroy it after
-  every capture job. Every matrix leg needs its own VM and isolated Docker
-  daemon; never register several shard runners on one shared host.
-- Put those runners in a dedicated runner group restricted to the two exact
-  default-branch workflow references, for example
-  `<owner>/<repo>/.github/workflows/detonate.yml@refs/heads/main` and
-  `<owner>/<repo>/.github/workflows/evaluate-skillject.yml@refs/heads/main`.
-  A manual dispatch can target another Git ref, and GitHub evaluates the
-  workflow definition at that ref. The in-workflow default-ref checks prevent
-  mistakes; the externally configured runner-group restriction is the actual
-  control against branch-modified workflow YAML.
-- If your GitHub plan or repository ownership does not support selected-workflow
-  runner groups, do not leave a self-hosted runner registered while privileged
-  `workflow_dispatch` entry points are available. Move the repository to an
-  organization with that control, remove manual dispatch, or provision a JIT
-  runner only from an external trusted scheduler.
+- Never detonate pull-request code. The capture and evaluation jobs use full
+  `ubuntu-24.04` GitHub-hosted VMs, not the unprivileged `ubuntu-slim` runner.
+  GitHub provisions a fresh VM and isolated Docker daemon for each matrix leg
+  and destroys the VM after the job.
+- Treat hosted eBPF support as a fail-closed runtime prerequisite, not a GitHub
+  service guarantee. Preserve the checks for BTF, cgroup v2, the local Docker
+  socket, an empty daemon, and `RUNNER_ENVIRONMENT=github-hosted`. If a runner
+  image update breaks Tracee, stop detonation until the pinned OS label works
+  again; do not bypass collector health or allow missing telemetry to produce a
+  benign verdict.
+- Before provider-backed detonation, create a GitHub environment named
+  `hosted-detonation`. Restrict its deployment branches to the default branch,
+  disable administrator bypass where available, and store `OPENAI_API_KEY` and
+  `ANTHROPIC_API_KEY` only as environment secrets. Set the environment variable
+  `HOSTED_DETONATION_ENABLED=true` after these controls are configured. A
+  manual dispatch can target another Git ref, so the workflow's default-ref
+  check is defense in depth; the environment deployment-branch policy is the
+  external secret boundary.
+- Run `evaluate-skillject.yml` with limit 1 before enabling the detonation
+  schedule and after any hosted-runner kernel change. It is the secret-free
+  end-to-end eBPF smoke test; inspect its uploaded evidence for collector health
+  and the required target exec and harness-completion sentinels.
 - Apart from a dedicated, low-privilege and spend-capped OpenAI or Anthropic key
-  supplied only to the trusted supervisor for the per-run relay, do not attach
-  cloud, package-registry, SSH, signing, provider, or repository write
-  credentials to capture jobs, including ambient VM instance metadata or
-  workload identity. The workflow rejects common credential files and
-  environment variables, but runner provisioning must enforce the broader
-  no-identity boundary. Rotate the relay key after any abnormal runner
-  termination.
+  released from `hosted-detonation` only to the trusted supervisor for the
+  per-run relay, do not attach cloud, package-registry, SSH, signing, provider,
+  or repository write credentials to capture jobs. Do not configure OIDC or a
+  cloud workload identity for these jobs. The workflow rejects common
+  credential files and environment variables. Rotate the relay key after any
+  abnormal runner termination.
 - Keep default-branch checkouts explicit. The serialized planner resolves the
   current default-branch tip when it starts, and every shard in that matrix
   checks out that same immutable commit. Capture and acquisition jobs

@@ -1,4 +1,4 @@
-name: Evaluate SkillJect fixtures
+name: Hosted eBPF smoke and SkillJect evaluation
 
 on:
   workflow_dispatch:
@@ -17,9 +17,10 @@ concurrency:
 
 jobs:
   evaluate:
-    # This label must map to a fresh VM that is destroyed after the job.
+    # A full standard runner is a fresh VM. ubuntu-slim cannot provide the
+    # privileged Docker and low-level kernel features required by Tracee.
     if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
-    runs-on: [self-hosted, linux, x64, ebpf, disposable]
+    runs-on: ubuntu-24.04
     timeout-minutes: 180
     steps:
       - name: Check out source and pinned SkillJect
@@ -29,15 +30,19 @@ jobs:
           submodules: recursive
           persist-credentials: false
 
-      - name: Verify bounded inputs and disposable eBPF host
+      - name: Verify bounded inputs and GitHub-hosted eBPF VM
         env:
           LIMIT: ${{ inputs.limit || '4' }}
         run: |
           case "$LIMIT" in ''|*[!0-9]*) echo "limit must be an integer" >&2; exit 2;; esac
           test "$LIMIT" -ge 1
           test "$LIMIT" -le 8
+          test "${RUNNER_ENVIRONMENT:-}" = "github-hosted"
+          test "${RUNNER_OS:-}" = "Linux"
           test -f /sys/kernel/btf/vmlinux
           test -f /sys/fs/cgroup/cgroup.controllers
+          test -S /var/run/docker.sock
+          test -z "${DOCKER_HOST:-}"
           test ! -e "$HOME/.aws/credentials"
           test ! -e "$HOME/.config/gcloud/application_default_credentials.json"
           test ! -e "$HOME/.kube/config"
@@ -50,6 +55,9 @@ jobs:
             test -z "${!name:-}"
           done
           docker info >/dev/null
+          test -z "$(docker ps --all --quiet)"
+          uname -a
+          df -h "$RUNNER_TEMP"
           scripts/verify-skillject.sh
           commit="$(git -C SkillJect rev-parse --verify HEAD)"
           test "${#commit}" -eq 40
