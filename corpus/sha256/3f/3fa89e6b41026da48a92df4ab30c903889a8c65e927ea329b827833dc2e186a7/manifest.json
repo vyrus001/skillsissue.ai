@@ -1,0 +1,747 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:3fa89e6b41026da48a92df4ab30c903889a8c65e927ea329b827833dc2e186a7",
+  "sha256": "3fa89e6b41026da48a92df4ab30c903889a8c65e927ea329b827833dc2e186a7",
+  "blake3": "d1187ff6f54dbeec55fbc5d17f916bc9a0430a57b40d9ea96970c66d650b02d0",
+  "size_bytes": 303259,
+  "file_count": 77,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13274,
+      "sha256": "fdf156f0f1767e716c18fa0a6b7143ca3c7f6e18cb48ba060e2643fa9b40f5f8",
+      "blake3": "25f4bb5362d0eb0fefb93541afbe31b9343f60306426aaf1837a6eaeafef0370"
+    },
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1065,
+      "sha256": "99b5319d3411fee1efd48b27625b061e6b62e8a85f12fa8b6682181d62629a46",
+      "blake3": "2561a620b3d1759ef6782ec50340c1414078fda33aba9a34ef8195ff24110947"
+    },
+    {
+      "path": "README.en.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4673,
+      "sha256": "2bfd8105874b7c56731fa41b037e1b7da8347e49cc7aa6a42a081bce15df4e0e",
+      "blake3": "46b6695534db98c0ee194f51fdcad61d5c9726f163d529ec708d9de1e054c5b2"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9504,
+      "sha256": "a88edf883659ebee19a4416710aa9f2ebe03ef8051fcbe7c8b2a1fbf6de26632",
+      "blake3": "ee54d9407a539a0487daaff408ed6ff7dbcc70aa3479e0a6923c088956c04120"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11736,
+      "sha256": "d3979fb318e0d2e304fbca1c37887ea4c2119d0b506564f20fdf8f6e56a0e4e3",
+      "blake3": "cd47bdc727c9ce14eeac2a34fae4b11d67614c5bfac02e0f7080853a73a3940e"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 138,
+      "sha256": "124ef51b466e3ff069461cbe4fdd446b44aaf388bc324885a3be020085d9a5be",
+      "blake3": "518e647f47add49e249bcea43162c0a595d5a87214199ca17284901b892716d2"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/compositions.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7164,
+      "sha256": "3a5ab5f919890f5c5881983ce3b5fe5a292e1cb49d78def7a50f4a72193d5e0f",
+      "blake3": "caf67601acd900248f4bad004a2797eace1a904069d0946a2e09a3463470c771"
+    },
+    {
+      "path": "assets/theme-kit",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/theme-kit/AGENTS.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1429,
+      "sha256": "43ba8f2823476578f7e8acbe2315c5bcb8659f8007e6a74307d394782c45cba4",
+      "blake3": "3cbd916bf24e4256068e72b7b2df7e6af91d21ce5cd34a8d1280a3f415199502"
+    },
+    {
+      "path": "assets/theme-kit/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3136,
+      "sha256": "7f0e39b360051f55eda48e7e6d10988019a1118d4bc8982223669c7326b96d7c",
+      "blake3": "883544f4b27c584edf541810f117f111ecb58eba88fad74743e9269e7acad013"
+    },
+    {
+      "path": "assets/theme-kit/assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/theme-kit/assets/backgrounds",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/theme-kit/assets/backgrounds/01-deep-space-blue.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1779,
+      "sha256": "4436f2a8257eb5175e314e6f927b04442d5f75adf2d7a75602231e7a16f9b106",
+      "blake3": "717e46ae658ac4f4fe89ecabf360ba2a69ba20142c3c6c43e34c0aa3ac1a053a"
+    },
+    {
+      "path": "assets/theme-kit/assets/backgrounds/02-emerald-gold.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1625,
+      "sha256": "d0b715cdfd0f678ab7e9fa05f0366418e9fc57e6f7375f6d5e5ff0529330b131",
+      "blake3": "ccae15774a051d85dfbaa19bac409b98f95516672f09a0e98b7e8350c1518d5a"
+    },
+    {
+      "path": "assets/theme-kit/assets/backgrounds/03-warm-gray-orange.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1721,
+      "sha256": "145b6e9246b9ecf0d6a80a316f0ee3510a55dddb90a08fdc050f53143de560c6",
+      "blake3": "6860c29b3f718c82e00cf2323dcf988b8e411ba8366e7cac455cc868a5949d33"
+    },
+    {
+      "path": "assets/theme-kit/assets/backgrounds/04-midnight-purple.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1626,
+      "sha256": "d9cdb492797b2db9487696e7143a8d6dab2120327c34e45ea09efd9ff78853df",
+      "blake3": "f3a2c6778a0951ae7b097fa3c56e4d08f76d4b0abba4cfcf3f60377195c223f3"
+    },
+    {
+      "path": "assets/theme-kit/assets/backgrounds/05-minimal-black-white.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1257,
+      "sha256": "6883782a483d5e56490f320615c2120758298515f25774f82ce0bb7aeadd0dcb",
+      "blake3": "8dbf801fe4507227c0294c85f1f5d6adde9f25bc7641701a1725eaa4b7c85f5d"
+    },
+    {
+      "path": "assets/theme-kit/assets/backgrounds/06-sea-salt-cyan.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1573,
+      "sha256": "4061ca08172f441b724cc26470ecece0a9911eb2b7eca62ce0711cd5581fe58b",
+      "blake3": "60c0488ec27b9f87950e5bf64d870121283f56d2df7737dfb1ead038757a3166"
+    },
+    {
+      "path": "assets/theme-kit/assets/backgrounds/07-earth-brown.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1379,
+      "sha256": "cf76201d7d2c50bb3ff042769ef14e15400ee43d5aba12c317e8ea17451e50a0",
+      "blake3": "e78b0351b004bff58280b729c8f860d557aec7e4d6f8aa4e3cab2e40a65ae0bd"
+    },
+    {
+      "path": "assets/theme-kit/assets/backgrounds/08-vitality-lime.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1664,
+      "sha256": "056402d1dab2d17d7162077ce1a88d0505b063d5b0198c6e18492eeb4ddf0b34",
+      "blake3": "f7b02473e4110533cf4637bcdf23b1cdb8a161f788355009b613226cc1ef8d00"
+    },
+    {
+      "path": "assets/theme-kit/assets/overlays",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/theme-kit/assets/overlays/safe-area.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 747,
+      "sha256": "48ed0f03800633bc2dd739432db9ab77b23e15feb72f1f58dddc8a31941539b4",
+      "blake3": "fa0e76ed08b4297636a74008dd9d40e40cd5062051c6beb1adc2ef6c96eaeb30"
+    },
+    {
+      "path": "assets/theme-kit/assets/overlays/speaker-placeholder.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 341,
+      "sha256": "ef581111ac1969802d73e7929ec8dbced9fc992f781ab0189c9e2951f7d109ca",
+      "blake3": "72c87749ee59ea106286fe4e2e68cf616f418bf17edb6eb50a1aaa357118e72b"
+    },
+    {
+      "path": "assets/theme-kit/components",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/theme-kit/components/portrait-talk-card.css",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12009,
+      "sha256": "341221ec6d6f68d963c607612631bcc2b8734673ea468d03d5f12079f6bd391e",
+      "blake3": "db4e42edd8fd07cf2f6653d06b4a477e22f3f4cc54730e50d88e40473710e758"
+    },
+    {
+      "path": "assets/theme-kit/components/portrait-talk-card.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 529,
+      "sha256": "57484811799932a195b1df9007986944dff9acd3af3183587e0a3d03c6c12f87",
+      "blake3": "351a5146fc52f8b6d017ef0cf76cb0cdaaaab5d621c9f4cdfb02a35c975fc1e2"
+    },
+    {
+      "path": "assets/theme-kit/components/portrait-talk-card.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6771,
+      "sha256": "81f7ed659fa4a6be39b220df0d4079dbe534a19e728f7c659929f72a8206251b",
+      "blake3": "6bf49f739c1e078ecad9b064e8d1effecac40707ad86d25d9ff8143e16e2dab9"
+    },
+    {
+      "path": "assets/theme-kit/docs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/theme-kit/docs/codex-prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1278,
+      "sha256": "e7d86efa03c87c8d3263f98de5307614abceb34fe721cf1ee0e792d76b2ddca5",
+      "blake3": "f1b2270aff07c0174daf5d48d46e206dff4985b9551000baca3f8a7fa81504ef"
+    },
+    {
+      "path": "assets/theme-kit/docs/layout-spec.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1436,
+      "sha256": "6597f8149f4007f75eb198a7234911618ef338a90cefa3f2be60d3d7b8f32e1a",
+      "blake3": "bb1062bb94366c6946ce4e3fd8179d872e023ecff9a59a8e6909ecfc9885dc4d"
+    },
+    {
+      "path": "assets/theme-kit/docs/theme-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1647,
+      "sha256": "75eeec00c33bc3bfc3582c417488fb5314e1d8088b680918ae72ad2c13de3fc1",
+      "blake3": "289685bb6a69a3b16e04ad27d4223c515297b3e007a09b0cd66d0d8435205814"
+    },
+    {
+      "path": "assets/theme-kit/examples",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/theme-kit/examples/PortraitTalkCard.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1358,
+      "sha256": "2c0a4a56cc75aabeb93c8c98ee19d793e317abe27dfcab98faf5310ee2f3e8b6",
+      "blake3": "d3d1cdd4670ce4984e6106c812a8fd1d3177e44517b9a0fddf70921f5f84bb51"
+    },
+    {
+      "path": "assets/theme-kit/examples/demo-data.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 435,
+      "sha256": "970b85d23084360917b38ac04f0bc2a08c18069f97ce269fe8731c8693d74725",
+      "blake3": "56bcd983b7aabda36d61b07c6002651867def4a5d4d43ca32e1ef77f0d329ee4"
+    },
+    {
+      "path": "assets/theme-kit/examples/single.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4578,
+      "sha256": "d9fae6092f84968a1e26f6ad7b8c2d9e0bdfe35d59e05426c3c2032d5c0522e4",
+      "blake3": "841e1bac9688a1ab7dbbabee8d2a105f7ca251eb5f66ef2e61b3d64fbcefe374"
+    },
+    {
+      "path": "assets/theme-kit/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4361,
+      "sha256": "7ca77a0e0198b5e9633ed350c0dcdea842efa71b4a75fe12028a87d78dc9662b",
+      "blake3": "444779f32b9f8d99a08304e41ab16e6584d415887d738d619c3ce12fdec190aa"
+    },
+    {
+      "path": "assets/theme-kit/manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2232,
+      "sha256": "ab7408cda5f3c045cabdefaf2fe32e5ed01d7f3a10406307cf98a8906802aa8e",
+      "blake3": "fe6780a8516f849e595ad214791a4258291c3ced5d8ae6f48035693dfa9d2e48"
+    },
+    {
+      "path": "assets/theme-kit/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 278,
+      "sha256": "39c9ff25184b8d52bafb20eb5d938c2af29a4bd6444e759979834959e67676a1",
+      "blake3": "f3c5170db35713d7e24a5f35718b1c3ecefb2c27a3347468546560f829a0d107"
+    },
+    {
+      "path": "assets/theme-kit/playbooks",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/theme-kit/playbooks/01-deep-space-blue.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2496,
+      "sha256": "5ea972e284f9d0fae3315d7a3f9618cb98ef1f8c6f654fdf942865f894c19cd3",
+      "blake3": "7ee584d69b7e910acbc66d6cd9a715ac558c7713225d989613f37df1d5426aac"
+    },
+    {
+      "path": "assets/theme-kit/playbooks/02-emerald-gold.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2320,
+      "sha256": "f497537db03e479a4b944bef57b097b7645afc144301f7d7225e0e922e0b75e2",
+      "blake3": "e353a6228447f1f17cab3fe67125aa816d4f88e08583770eca77917b2dfde323"
+    },
+    {
+      "path": "assets/theme-kit/playbooks/03-warm-gray-orange.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2327,
+      "sha256": "ff7b6e9f1f4df2562b4de05656c8531136ffe2b671c313676ce8c1518516816e",
+      "blake3": "32c196a6fb70f49661795abe23c4bc70c87e0b6d4c9ad348a08b4ec6ffab3615"
+    },
+    {
+      "path": "assets/theme-kit/playbooks/04-midnight-purple.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2192,
+      "sha256": "ca608c4b253acee143f73e75bdab6455112939459b06832010a39c1eb0fba22e",
+      "blake3": "874c94564cd0c4598afd5f20576f2a5ed4b5d727fd165bb92a94c7695cb7c26d"
+    },
+    {
+      "path": "assets/theme-kit/playbooks/05-minimal-black-white.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2219,
+      "sha256": "a505284f40019ac2cdf73ef0da0bdfff32da8e745442069f1585a5f2d3d4bd09",
+      "blake3": "91b31869e2c2e327b2d9834ee2245abdf85d1684d8cbca9c4e5469cb99d231cf"
+    },
+    {
+      "path": "assets/theme-kit/playbooks/06-sea-salt-cyan.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2454,
+      "sha256": "53b0efaf63a04b0f9bfdfd447b5ac04f37dd1790be8294160481b8e54cf5cb92",
+      "blake3": "ae2a3b3b767d7b5ccce7b1e74a46145dfc9b81972f9b802d30727e812456bebc"
+    },
+    {
+      "path": "assets/theme-kit/playbooks/07-earth-brown.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2230,
+      "sha256": "6fc66221953ae8447f49eef3e701be4174097767d01378a483bf8943cade354c",
+      "blake3": "562bc6788b785a11cc843aa5bdac0861f28feb8dd73d1f42e636fd35e840ef1f"
+    },
+    {
+      "path": "assets/theme-kit/playbooks/08-vitality-lime.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2312,
+      "sha256": "8106a2a858fc7325430d43e6c67d8117329b6e5cceb4973b9e1566ccacf59b0a",
+      "blake3": "ab9a74656343444c6ad43881b1c43893e510e040782ad26305d6ff53736e7f39"
+    },
+    {
+      "path": "assets/theme-kit/requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16,
+      "sha256": "cfdbb02a0e6bcbd5299a1884551b2bd0f6ade7950604f0b34dcb4282bfaa9509",
+      "blake3": "8c890a239b8e82ee47d349f4f01d46d0c12685a95af1f9f4e77ae63ed3b27922"
+    },
+    {
+      "path": "assets/theme-kit/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/theme-kit/scripts/check-contrast.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1340,
+      "sha256": "04f633d9f906d256b2a4328d2b7d5df08c54eb4d3d7ae7d7e986fb071df5b689",
+      "blake3": "030828c9905b5ebd45629b5c782ff6c085e3d73d889003259d8fec1250eaf2e6"
+    },
+    {
+      "path": "assets/theme-kit/scripts/render-backgrounds.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 406,
+      "sha256": "40c0444a43fcc3abcdcf7aac56fb4d4eeaa8b2211c86b216ad48b0b8c47aea5e",
+      "blake3": "0d325a5e6f567f694c2f937bc0d2905a3c256e64f01116e4c1c09badced4cccb"
+    },
+    {
+      "path": "assets/theme-kit/tokens",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/theme-kit/tokens/layouts.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8785,
+      "sha256": "d0543e3a21d8a54eb693d2a399b213c588eb5cc11a244b370127617224540fac",
+      "blake3": "5e6b6d3887ff545735e23a88288c612bc2316d0a2535375fd60e39476df8a2fc"
+    },
+    {
+      "path": "assets/theme-kit/tokens/themes.css",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5272,
+      "sha256": "f2be7bfe68bca410f3fba4b43a5d18efa9710c9772555992d4cb5b31c75f3828",
+      "blake3": "730026b2d7e0b04cc58119473ff4e1a3da5273dc37a660f97f920b951cacfd7e"
+    },
+    {
+      "path": "assets/theme-kit/tokens/themes.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13963,
+      "sha256": "046732e59480789a5a5b314f42260bb7e2dbca574f526daa1585793d50c746d7",
+      "blake3": "711887798354d16ad846cd114340078e2b5578559f6321580c0d6706b6f020d3"
+    },
+    {
+      "path": "assets/theme-kit/tokens/themes.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2357,
+      "sha256": "635a882b68bd3ab645b2b88a2e406e5f99b78405209011d2e612d3fe3029278a",
+      "blake3": "f3b51a451229e383b77f8c0fd346afc8e25b7d206b5f0d7bd9dda8eec65d0a38"
+    },
+    {
+      "path": "assets/theme-kit/tokens/themes.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15023,
+      "sha256": "9be27c22ae2c9db850ac7a469b8c593761934d82794852a119511b84bae89fca",
+      "blake3": "534fe97d1890a54cbc0b2f41e1dcba196a108dbff79394d20bffb227ba1e32fa"
+    },
+    {
+      "path": "docs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/architecture.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7477,
+      "sha256": "dbe364e62fb0e00791bbf324dfbbbb569b6e2e5fae965a4ff8c600f3611f3a71",
+      "blake3": "3fb7e5051b8c534920c10e99ab02b26c43e0df6491f1253cc9af972143963fb3"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 292,
+      "sha256": "4b16dbed63cb7894dd5b61b0a48f0f703680bb49869a29a912c5898570a71d6f",
+      "blake3": "bf1ef6d811e5ec8288a7e2673b0c228ae940b554d31d9027626cd9db4a5fa0f7"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/captions-terminology.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7556,
+      "sha256": "5e4151bdb8900db8aceae9a7d4496b1023e7dd0b0f7ec2911aea502cb30864b2",
+      "blake3": "8613bba01be10396fc47dccc024d34cf9b3c44d407122126a803154f30a33717"
+    },
+    {
+      "path": "references/chatcut-field-notes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8753,
+      "sha256": "18d4de1550360601dc481eba5cf7786e3797e76d13dd4ab9bac4bfea0c11d90f",
+      "blake3": "013e69ec164b48abebcd69a4c06827d71bc3cbf2878ca5af938929cbb6739fce"
+    },
+    {
+      "path": "references/dual-frame-layouts.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8635,
+      "sha256": "71edbe27c146f6b74c8c6faede0a34cb54b60f397bfa57ac9375e4e52882cd46",
+      "blake3": "1b8d43b8c7a85b67e473ccfa51125bdcddeaa2b243d5af6eb37696a43952d151"
+    },
+    {
+      "path": "references/face-reframe.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7944,
+      "sha256": "4bf9564eb37bf13c660ceb8d4833faf5d5f5b57b7cf5bb243d987b7592a871a3",
+      "blake3": "50bb9f3f3e3c8aa5a8d2cdfcf223c245aa843484db34f55fd8765ab383122e9b"
+    },
+    {
+      "path": "references/graphics-blocks.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5453,
+      "sha256": "2166c50097176b98eae64ac75d45b1364d80c30f3b717c99ab8664ab64bb392e",
+      "blake3": "8b1c0049b4bcfc2383d39ce367410612d57e5f064e832c69af665cec0960936b"
+    },
+    {
+      "path": "references/motion-transitions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7453,
+      "sha256": "f6b54dc18813fe3e3a27dd012a34510f2d1546525563f9a6c6f5277c728372f4",
+      "blake3": "3411da1a4617016c44b8a01b8f2bbeb8268e671631181d34f9d681644124443e"
+    },
+    {
+      "path": "references/operating-manual.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12418,
+      "sha256": "2759b28eaafc3c96289820520f80c0095b2c5374ea5bbf0179cd2f2ac5840f7d",
+      "blake3": "84f52120a3be265b6466bb73e9e2954e4391cef004e23628f8ee2dcce201a5a7"
+    },
+    {
+      "path": "references/recovery.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4528,
+      "sha256": "9baaff50adcbb14427d35135e892dd6c6f9c517e0a502cc1942e4f88b8ca374a",
+      "blake3": "f20d7d5e833ce4f6838f7c4f3913fbb2529e085f87d0709b6256eea012e34ee7"
+    },
+    {
+      "path": "references/retention-structure.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7572,
+      "sha256": "0fc107da4910d03e7e276a6421ad72968c34c82416e71191156a00d4799d4dc4",
+      "blake3": "bad5167957160aa81b9930d6a8b2f6a3c91abb3de739d00e6684f36e6fdb15f1"
+    },
+    {
+      "path": "references/theme-palettes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6801,
+      "sha256": "8f387dad37318f79d564cb0facf8a80c379a55b6934fa46f521598b0ecf75c95",
+      "blake3": "90fd7318a8ccc9d8ac470f7a420f87aa4f2cc8bda73edde6e39b2f65c58905e5"
+    },
+    {
+      "path": "rules",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "rules/policy.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1550,
+      "sha256": "653528e9f3da88fc51c9c08045dc0132c0240266f54000162fc17944cb1ed994",
+      "blake3": "948afd6c26165ab1d978a839a13daa293ffb51d770157d6fc82cc16774094c8c"
+    },
+    {
+      "path": "schemas",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "schemas/captions.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2143,
+      "sha256": "abfc104f9817ab6a359e23a6e927bfcdfb265a7d352909171bd7d604f3fa02c2",
+      "blake3": "519ec76e4a97bd37b1bde9cadbe4763dfac69b6f676b238c263109229b3959ec"
+    },
+    {
+      "path": "schemas/compatibility.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1859,
+      "sha256": "8c03bc10ce8e98f6ecbe12c6e810df0d7f94c8917b4fcb19ddb45681249365ba",
+      "blake3": "44d991ad8695dd8c571acb53d17d4a0e6de0a3accb64725da65f0fdc6e4c6ebc"
+    },
+    {
+      "path": "schemas/policy.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1156,
+      "sha256": "87369ed502381567f6ee0d9687363420eba1def1e73d0e30b565cff9066a0990",
+      "blake3": "e60037eaf40b75643a2fb195840800ab3646b00e8a69607c7f9c12b57d87c816"
+    },
+    {
+      "path": "schemas/profile.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2110,
+      "sha256": "ec9eef5d6de89d1badc32046f2af50bf20244a6d86e07deb971d67ac201b2823",
+      "blake3": "1019eb90d92f4ebbf0bce098deda466420159302c48355c75d592a4601549939"
+    },
+    {
+      "path": "schemas/terminology.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1425,
+      "sha256": "509cf679f8cc759b2365a27ab99ba3d3d4848b1e9157f6ef4d15f309b4681795",
+      "blake3": "168d7397d451a91c776394e45b70efbfc822314341787d7b88d4df547378ca2a"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/validate-caption-pages.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13409,
+      "sha256": "4071e794dca7a962acf07317a3efef0a8b16597d554653213025ca3568460d60",
+      "blake3": "996e8ac44919f29e375444037506391e4176949a3943e55673fff3364da99495"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2979,
+      "sha256": "6e12046f64a4b8cae3c87b798da36a74dc0f2bebe4f05b7aebe2b3775fa59ea8",
+      "blake3": "63f87d3ce1a10f4719dee775c6b945e58517770038d3c42c3b9dcaeaf0dbffe3"
+    },
+    {
+      "path": "templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/compatibility.template.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 943,
+      "sha256": "cc2fca82c5beff13fd4254cd0f2253ea01c0fa6a4be1923f9a06265366ec0899",
+      "blake3": "491493e4f4001163514e7a1f0ceca892fcc72f96a892e0d979d0a46593dff51c"
+    },
+    {
+      "path": "templates/examples.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2418,
+      "sha256": "33c7e0dcf824ae96d2e3dd3607b96f255f960f06fd4813f40c3a892910ddf8ca",
+      "blake3": "e3dc50fbdf754605f45a55f24e4d5d2cfbd02d8848843857bef78a121b448de6"
+    },
+    {
+      "path": "templates/local-config-example",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/local-config-example/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1662,
+      "sha256": "21e1083b73bd97b434a56fb4fc1cdf46db9c1bb60f5022f9219bd072e6273ef8",
+      "blake3": "90fac946ef5edc8a065a9f295a740e5915ea1d55be64fc92a0bf19067dd36b99"
+    },
+    {
+      "path": "templates/local-config-example/aesthetics.example.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1490,
+      "sha256": "2065cdc23c069cfe9bce1fe8bf3c32fffd250f9213a8a457d2502f9cc748a662",
+      "blake3": "6a114e141e47ced693c199595d6a4161ba42fc9cc28763a0a849ab7f78157528"
+    },
+    {
+      "path": "templates/local-config-example/local-notes.example.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 906,
+      "sha256": "13479f98abab4a77cc1c9bfbe53620b01dc2dfb9e92a15c244b28db3d76c9b7d",
+      "blake3": "161c3f3042b3ad100ec4c4ba2123a82013ffba948c515d4db344fc046dcbdfec"
+    },
+    {
+      "path": "templates/local-config-example/profile",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/local-config-example/profile/landscape.example.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2218,
+      "sha256": "fc0c4d994b0eb7d8dce61c05d81ac30577f1852b16abf7996920689f6c1969cc",
+      "blake3": "e7f7eeba25ce988ea835f52eca41ccd239e9f79c02c8136cfe98889448661a53"
+    },
+    {
+      "path": "templates/local-config-example/terminology.example.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1137,
+      "sha256": "378b0bc2d799daaa95ead083f77c7870e2bb12afd45412e22e0206cecac9e8cb",
+      "blake3": "4b12a3887bd380416775ff782e04f1c0d468d3074caa6ef39b069ed3893f3187"
+    },
+    {
+      "path": "templates/operating-profile.template.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2789,
+      "sha256": "7c89294b992553db77581338310f3bb9e5fb26eb798cdb1f52818f88e018f6f1",
+      "blake3": "8e4235f64aa64ce594bd815d4013afd2be666e71a65560ffe4f64a2aaa5fa598"
+    },
+    {
+      "path": "templates/terminology.template.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1972,
+      "sha256": "860d1a0d3d9b282dc20abe7a6abbe04b826092bfef56dc00af219d421622e6f4",
+      "blake3": "294438b4de1a5e11eecd05b48d5d715fbcd59dafa6acaee09d233407482c5ec8"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/caption-validator.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7756,
+      "sha256": "d6cfe19302730537893f57c1f2fb7431d3df7acbbcd9efe83e94dafc0d9f728f",
+      "blake3": "6346a5895463049f4c3dc50bef2f07c64822983e2b88b2b89c6d330e463e46c5"
+    }
+  ]
+}
