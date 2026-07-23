@@ -1,0 +1,627 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:325e53d8a905a03e336df0731d25a69e2b3fba6858640a45ce6202b4a5629754",
+  "sha256": "325e53d8a905a03e336df0731d25a69e2b3fba6858640a45ce6202b4a5629754",
+  "blake3": "d3ab43d234084411d6fadfeba858a20c384075264a6754e627fb0140c58a97fa",
+  "size_bytes": 634047,
+  "file_count": 47,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10395,
+      "sha256": "987371f6486ace7afe72de32a8d4e5ae6c8a17ca37d13e4008a5b7f155722644",
+      "blake3": "a1862dedbfa47624fdc0a6d9cb721dbfc1ea9dbb5e00c91fc1076c6701ebd84c"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 125,
+      "sha256": "022d90ee1cb9bed2c8fc09219d1eb5ee846de0af86dd7736105ca42d64941241",
+      "blake3": "b7e0b4f653b0cc57dbce339c3200e4e4f73c80142ec63de5d3e08bc024dbdeb1"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 189,
+      "sha256": "f3a39c0d0ee45c9dbd6c84e9148272f95a9564612bc2f5b9ac4b0d595d2bdce4",
+      "blake3": "e419ac3120ececc5bc728cfc9d7ef85e727575c9657ed666ee051d5609a13bbc"
+    },
+    {
+      "path": "bundle.lock.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 442,
+      "sha256": "22faed7c7cb4922491420a9751991c01fbdbfb413e7d8267215eb2cae7742fe4",
+      "blake3": "122d3608bff207bc1de308840a9f71ab50bda2ac9c78f98fdabc7fa4dede68c8"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/itpay.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 698,
+      "sha256": "d8c8eaf4e562b818dbce9993216415f3d013691b46c89461a76e376b81e4700b",
+      "blake3": "665c09be11421e6fb63976870934f7c74fe272cbe644301811c61a1ab048ebba"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2583,
+      "sha256": "5eb77139dabe58ac4a54e29345b835ef0addbbd751421406e5f335aec977b529",
+      "blake3": "77be175311018f83c7cfaf11c8f6b72473676fbf8728084120e0402191a9894b"
+    },
+    {
+      "path": "vendor",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/docs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/docs/agent",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/docs/agent/buyer",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/docs/agent/buyer/cart-checkout.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3020,
+      "sha256": "72e62c77f5540a4009715306b1ce5e922754fd2a892a6d5ef0e70f7ce7423e73",
+      "blake3": "ad7975b421eff7c78418adcb22ff53c1aade57c4787ec034de08e6071e1287fa"
+    },
+    {
+      "path": "vendor/itpay-cli/docs/agent/buyer/catalog-list.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2692,
+      "sha256": "44e052aa1be8fad6b744ae014fcb186ff4e68fb50b8e7480fe4baa237537147a",
+      "blake3": "3cad0e2d57ffedaf650f9156481d3913a0938caff34a09f4f4615e6baacaff8f"
+    },
+    {
+      "path": "vendor/itpay-cli/docs/agent/buyer/identity-and-sessions.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4918,
+      "sha256": "e17ad6b666391f2d591106e5699329e5f4f552a1dbf62615c9514655478b1e73",
+      "blake3": "11f6c87207ebf3da7c450e62c1b7fc18c1a4ccb81cebc1b94e5ca5612600e7b2"
+    },
+    {
+      "path": "vendor/itpay-cli/docs/agent/buyer/install-and-setup.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3811,
+      "sha256": "971df7d52296b2566cfebd85b0e2d3e1e557bf6f09e077b8e92698e9c521ba75",
+      "blake3": "65af34acef949bf9c481e5c739fba61c3116cb07307ddf9158d6b32c1704255e"
+    },
+    {
+      "path": "vendor/itpay-cli/docs/agent/buyer/orders-refunds.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2993,
+      "sha256": "f4fcdccc8873d3606e87b33cfb6554d702f655b11126e951561be26170f417dd",
+      "blake3": "b80ad9998f76af0bbd04e31871d84634361d81bfbbc43e12d801fbbc30923e17"
+    },
+    {
+      "path": "vendor/itpay-cli/docs/agent/buyer/payment-flow.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3317,
+      "sha256": "d5edb0e21b8cc523289548c3b056b54f7d6ed49ce1cc3c00ee1381b78444be38",
+      "blake3": "86f0fe3c782d2fe6249fb370e42c9de2e29ffdec68c472155c52df69617fb031"
+    },
+    {
+      "path": "vendor/itpay-cli/docs/agent/buyer/quickstart.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5190,
+      "sha256": "6be232b462a16b53e22d5b2bd0869350e0999fbd70906791fc4af6ec386c21fe",
+      "blake3": "040de335cbfeea20ea1656b47b977fc6dea7e1edfa01c3bb8c881f85e5b7cb39"
+    },
+    {
+      "path": "vendor/itpay-cli/docs/agent/buyer/render-hosts.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3713,
+      "sha256": "33fae1f6c4977a50ad1b13669e9bd0483284652b0891c9d6ee87a76a49178b24",
+      "blake3": "b9f81646d19d87448b8515580f2fe5e4be8a4260b3e9519818e4515c1c41e40b"
+    },
+    {
+      "path": "vendor/itpay-cli/itpay-cli.bundle.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 546359,
+      "sha256": "39560f565d914122142aa658c6cbe4f16e4f1479ca8dbff25a774596fa9e7218",
+      "blake3": "31e4f233f1cd23f428d3ac3d8cd2ad7ecbc4d8e50cf0624340d790539c5231b8"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/@itpay",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/@itpay/cli",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/@itpay/cli/LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1068,
+      "sha256": "34c55ebe2e8b213f3839537131d9365ba918dd9d16ac41432e95c87044722384",
+      "blake3": "5ab68198206f18aa6c5463148cdc73e380dcd1a0ac64738de18f3a416952e4cd"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/ansi-regex",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/ansi-regex/license",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1109,
+      "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0",
+      "blake3": "124fc11ab3a22d930a601a68eb6d512ee19400089b964172aca921f4d742b737"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/ansi-styles",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/ansi-styles/license",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1109,
+      "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0",
+      "blake3": "124fc11ab3a22d930a601a68eb6d512ee19400089b964172aca921f4d742b737"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/camelcase",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/camelcase/license",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1109,
+      "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0",
+      "blake3": "124fc11ab3a22d930a601a68eb6d512ee19400089b964172aca921f4d742b737"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/cliui",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/cliui/LICENSE.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 731,
+      "sha256": "2dc0465729366c3a7890dfa9e972a1ba7048a26c02116fb8b419a6a1ac110149",
+      "blake3": "eaa8950192494462f0f3d9776e7e5ce4ec6b40dcb096daf0e0d0d6cc3e93bd42"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/color-convert",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/color-convert/LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1087,
+      "sha256": "693866fc419c6f61c8570438ec00659d156ec2b4d4a4d04091711f5f11a365d4",
+      "blake3": "cd6966af36d359633acc2800312f538b23c5f87af3e47a4d19b3f8ac8abc84bd"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/color-name",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/color-name/LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1085,
+      "sha256": "c064f7a3e353bc1bc977f3c897941c75ef763f44f41677e0a15370ca0853d6e2",
+      "blake3": "4cf01cf78759ffc6a126bb062503c99620a132968929faedcaaf206768eb97cd"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/commander",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/commander/LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1098,
+      "sha256": "04512a63dce4d2d506ad612dc0bd7681ccf6e3655f7b6eaef7dfac8323d1ec0b",
+      "blake3": "2d113976494f6486c4026e114492d95fbbf0bfbefaa95d41796f451e80d00388"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/decamelize",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/decamelize/license",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1119,
+      "sha256": "6fb9754611c20f6649f68805e8c990e83261f29316e29de9e6cedae607b8634c",
+      "blake3": "879b478032e3b55ad3372598d4cf54c4f5bf80b5ad71f1a6e6bd10ee2dc8edb0"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/dijkstrajs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/dijkstrajs/LICENSE.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 714,
+      "sha256": "c46324e45a005413535a6fb7a97e9eacd3cc6bf30335b7d5c10b8ee3af9e60c2",
+      "blake3": "301380cb46ccac642469e0b0cbfb67bb4eb3389aff21f41b4614ff441ebf674d"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/emoji-regex",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/emoji-regex/LICENSE-MIT.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1077,
+      "sha256": "483acb265f182907d1caf6cff9c16c96f31325ed23792832cc5d8b12d5f88c8a",
+      "blake3": "94ce08b027d053acef056c60d1593fa86d309501485c0a7bc2d1956453095ac7"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/find-up",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/find-up/license",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1109,
+      "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0",
+      "blake3": "124fc11ab3a22d930a601a68eb6d512ee19400089b964172aca921f4d742b737"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/get-caller-file",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/get-caller-file/LICENSE.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 745,
+      "sha256": "902dbb4154679fb2b8d7c33878183f45b268d01eae5e5033dddaa8852d45f213",
+      "blake3": "71c86c7837c5dedd91e5b566a6f17c9aa45d8e2a42a4d36d8c51fdba6aa55d04"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/is-fullwidth-code-point",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/is-fullwidth-code-point/license",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1109,
+      "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0",
+      "blake3": "124fc11ab3a22d930a601a68eb6d512ee19400089b964172aca921f4d742b737"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/locate-path",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/locate-path/license",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1109,
+      "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0",
+      "blake3": "124fc11ab3a22d930a601a68eb6d512ee19400089b964172aca921f4d742b737"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/p-limit",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/p-limit/license",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1109,
+      "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0",
+      "blake3": "124fc11ab3a22d930a601a68eb6d512ee19400089b964172aca921f4d742b737"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/p-locate",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/p-locate/license",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1109,
+      "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0",
+      "blake3": "124fc11ab3a22d930a601a68eb6d512ee19400089b964172aca921f4d742b737"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/p-try",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/p-try/license",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1109,
+      "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0",
+      "blake3": "124fc11ab3a22d930a601a68eb6d512ee19400089b964172aca921f4d742b737"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/path-exists",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/path-exists/license",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1109,
+      "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0",
+      "blake3": "124fc11ab3a22d930a601a68eb6d512ee19400089b964172aca921f4d742b737"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/pngjs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/pngjs/LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1151,
+      "sha256": "176b07a18c0bb3836aaeb61088fd0bf11a38f66e6f15e3fbda85faa225250d6e",
+      "blake3": "5e25051c5a39e08b643b97dbc5eaeb13f9c4ec577d4b44e13e4160e39e05067b"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/qrcode",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/qrcode/license",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1076,
+      "sha256": "8df47c6ad9ac2c41eb9b2a72def9908959da0ede8dadd56c7b249c1bdb0c5ce6",
+      "blake3": "b09918d17e93000fa1427c92b4de0d32f2fa9b1d1be9630a12a643f5c5966bac"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/require-directory",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/require-directory/LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1099,
+      "sha256": "a92e52eb1fa7cd746e3827bf01d3a3589bbc8e1e51348b1da042aad165525ad1",
+      "blake3": "301e7dcda44ea59e623051a03bdbef4a85d926a692888f7676a00ea984532879"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/require-main-filename",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/require-main-filename/LICENSE.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 731,
+      "sha256": "365496ca1f56da40b23c9815fc40fa9005847b2f8f8fd1c1a4929ef25ec8cd1d",
+      "blake3": "534c6dc6d7cb31928c20191646c512d39d0f1a6bd76b380ecb22fb36a554df08"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/set-blocking",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/set-blocking/LICENSE.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 731,
+      "sha256": "365496ca1f56da40b23c9815fc40fa9005847b2f8f8fd1c1a4929ef25ec8cd1d",
+      "blake3": "534c6dc6d7cb31928c20191646c512d39d0f1a6bd76b380ecb22fb36a554df08"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/string-width",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/string-width/license",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1109,
+      "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0",
+      "blake3": "124fc11ab3a22d930a601a68eb6d512ee19400089b964172aca921f4d742b737"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/strip-ansi",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/strip-ansi/license",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1109,
+      "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0",
+      "blake3": "124fc11ab3a22d930a601a68eb6d512ee19400089b964172aca921f4d742b737"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/which-module",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/which-module/LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 731,
+      "sha256": "852bf81203aa93aa89afc9f881ebb035322dc7334aaceff435c557634c94a815",
+      "blake3": "ae1ad2645796d4fc2cd8a9e1c039a81f114c1453075f1d9e6ab38cae49b042bd"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/wrap-ansi",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/wrap-ansi/license",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1109,
+      "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0",
+      "blake3": "124fc11ab3a22d930a601a68eb6d512ee19400089b964172aca921f4d742b737"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/y18n",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/y18n/LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 731,
+      "sha256": "2034cce3b6fafcddd642c4175e01d3ddfc332a53b9f20fdc46b1466dc89ac469",
+      "blake3": "6caf28532ca847f637771cf2bbc24658526eec573c8ab6e65cbcc7141a81d7ed"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/yargs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/yargs-parser",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/yargs-parser/LICENSE.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 731,
+      "sha256": "365496ca1f56da40b23c9815fc40fa9005847b2f8f8fd1c1a4929ef25ec8cd1d",
+      "blake3": "534c6dc6d7cb31928c20191646c512d39d0f1a6bd76b380ecb22fb36a554df08"
+    },
+    {
+      "path": "vendor/itpay-cli/licenses/yargs/LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1146,
+      "sha256": "2f1a503bfab84b3ba7393627308b3274501e459e3b5185bbb56bbf16cb1602d4",
+      "blake3": "c718fc61a5413f9e1ccced0c6900fbd9b118b64fa58160866cb0192a2a9e964b"
+    },
+    {
+      "path": "vendor/itpay-cli/package-lock.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12334,
+      "sha256": "a10bf4f696e1b9ee1c20a900a0e87ccc252660ed997bd0cd2c6962e42c19ebb1",
+      "blake3": "a13865704afa56d4c1a01793a7907a5d77eef00d778f60442c80eb4631e53b63"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:ada3eb118bd2b6b7f8d20cb00d546ea8941ce5fdc8189fec5093379e2db53a78",
+  "sha256": "ada3eb118bd2b6b7f8d20cb00d546ea8941ce5fdc8189fec5093379e2db53a78",
+  "blake3": "ffc12acf66c439a9df8fb8c68dfdc8c4c0a4ca306c646f99930cb59ab17b880d",
+  "size_bytes": 41438,
+  "file_count": 13,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3308,
+      "sha256": "09fcef6faba2101aca1f64e0b468d71a8290e763f01a8307d8d795673e2d4639",
+      "blake3": "3931c98c7d15860d3182d298f1eb395b89b6ebb9aa031efa4abf04795b64470d"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 146,
+      "sha256": "547a7628d9de12c087b825735a42902bb5d898b349cfa92b4578f9246826412f",
+      "blake3": "c6d363a6599977874b43190804a04c8c71810c0f6055c45bc909c280cbeb0b66"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/anomaly-rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 981,
+      "sha256": "4a509510d53036251ac7740c4caef7e059b456f4c00a02dd506b94d22d09d5f2",
+      "blake3": "e31fda618610c82eae82e9d18f5477a70eac76656ab80543b1b9914ab6c3c0d6"
+    },
+    {
+      "path": "references/inspection-port-listening-reference.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2158,
+      "sha256": "ccc4a1ac94187023a517f6a3dc2ef9ad52ee6da7674e3270058f4b58165debb0",
+      "blake3": "174b0ec73878114cadf77afda5db9db680619db5cabd69bc00fed9a0676714a4"
+    },
+    {
+      "path": "references/inspection-requirements-confirmation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1741,
+      "sha256": "7f31f8becc4ec1475366340d3923792fdbd28366bbc50d3a917d37056af327df",
+      "blake3": "66aa8a66c11458185c31e6743d2cd99b540624b5ad6a8608d8be8feac4b5e85c"
+    },
+    {
+      "path": "references/metric-types.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1547,
+      "sha256": "e65bfa1041a72f37fa6c502d4527ded95ecf35015dd575fa9e2e1065afec7fab",
+      "blake3": "f069541ae8a968b7f06cb82c5dcb69e130e908530c14825862c020ca7a4d711f"
+    },
+    {
+      "path": "references/output-rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1388,
+      "sha256": "a93abedc17709448bd0b5a49f567c98d5c224fd623e8c8500c8d80be2b704411",
+      "blake3": "4d4d548fe09981fadc5e67b9f95ee51b3d69044212114b57acfe4c7d4bc313cc"
+    },
+    {
+      "path": "references/report-template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1859,
+      "sha256": "e34b16cf095b835bff03b36c06c268dddcfcc9882e23305e65781cb0804405bc",
+      "blake3": "1db1b52e5b8982d05cdacfc95abe01a4090894049166ba22d104040cf30a65ec"
+    },
+    {
+      "path": "references/statements-script-usage.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2496,
+      "sha256": "2c3eb35307a0273d1e51ed0fc7886891eb91de5f62443c29963072562b175da9",
+      "blake3": "2ef3652d4ba0421ff7ea500b71b3c61d7839070db9371dfb6e1385c94b09845e"
+    },
+    {
+      "path": "references/ts-metrics-script-usage.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1068,
+      "sha256": "0bc130e3ab8461e74a911842e0f232ed08c112e9299544c7bdb381319190e0b3",
+      "blake3": "a5df6fec079e26e3e366a753711435b0f7ad8480eee5e46bba1035754ad6f575"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/get_kwdb_statements.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7393,
+      "sha256": "d178a0fe870141e360e522e0ec465c721b2348dc08501ebbeb6f333ab9f22337",
+      "blake3": "04d9b1cb91fd9245ea605d93dee1c42d440b530af7a993833ac75329d387c7f5"
+    },
+    {
+      "path": "scripts/get_kwdb_ts_metrics.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14612,
+      "sha256": "fd78db05d3b670799109b9f9dbc2470845558100f222c7b69b866fddbee37663",
+      "blake3": "bf2ac0b1e9a4e1374c1c6671fa3a8a119d6c29b04244f0a953166d01282b610a"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2741,
+      "sha256": "6a42c014728c759a57cd8766db41b145af211962790e55047b50e7044ec7cbbc",
+      "blake3": "991d0bffb115b1fb87415601536a0eea951ffbc9693afb3a97c42f16e07d03d0"
+    }
+  ]
+}
