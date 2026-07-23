@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="dark">
     <title>Telemetry execution graph</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <header class="topbar">
@@ -17,6 +17,7 @@
         </div>
       </div>
       <div class="run-heading">
+        <a id="index-link" class="index-link" href="../" hidden>Scan index</a>
         <span id="status-pill" class="status-pill">Loading</span>
         <div>
           <strong id="run-id">Reading run…</strong>
@@ -36,7 +37,7 @@
           <p id="coverage-note" class="coverage-note"></p>
         </section>
 
-        <section>
+        <section id="density-controls">
           <h2>Density</h2>
           <label class="field-label" for="bucket">Time bucket</label>
           <select id="bucket">
@@ -131,6 +132,7 @@
     </div>
 
     <noscript>This viewer requires JavaScript to draw the interactive graph.</noscript>
-    <script src="/app.js" defer></script>
+    <script src="./config.js"></script>
+    <script src="./app.js" defer></script>
   </body>
 </html>

@@ -64,6 +64,18 @@ button:focus-visible, select:focus-visible, input:focus-visible, canvas:focus-vi
 
 .brand, .run-heading { display: flex; align-items: center; gap: 12px; }
 
+.index-link {
+  padding: 6px 9px;
+  border: 1px solid var(--line-bright);
+  border-radius: 5px;
+  color: var(--accent-2);
+  text-decoration: none;
+  font: 600 10px ui-monospace, SFMono-Regular, Menlo, monospace;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.index-link:hover { border-color: var(--accent-2); }
+
 .brand-mark {
   width: 26px;
   height: 26px;

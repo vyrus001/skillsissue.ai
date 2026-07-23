@@ -6,6 +6,10 @@ const context = canvas.getContext("2d");
 const shell = $(".app-shell");
 const canvasWrap = $("#canvas-wrap");
 const scrollSpacer = $("#scroll-spacer");
+const VIEWER = Object.freeze(window.SKILLSISSUE_VIEWER || { mode: "server" });
+let staticSnapshotPromise = null;
+let staticEventMap = null;
+const staticEventPagePromises = new Map();
 
 const LAYOUT = {
   rowHeight: 88,
@@ -52,9 +56,7 @@ async function loadGraph({ preserveView = false } = {}) {
   const bucket = $("#bucket").value;
   const group = $("#group").value;
   try {
-    const response = await fetch(`/api/graph?bucket_ns=${bucket}&group=${group}`);
-    if (!response.ok) throw new Error(`graph request failed (${response.status})`);
-    state.model = await response.json();
+    state.model = await graphPayload(bucket, group);
     renderHeader();
     renderStats();
     renderCategoryFilters();
@@ -71,6 +73,89 @@ async function loadGraph({ preserveView = false } = {}) {
     return;
   }
   $("#loading").hidden = true;
+}
+
+function staticRunId() {
+  const runId = new URLSearchParams(window.location.search).get("run") || "";
+  if (!/^run_[0-9a-f]+$/.test(runId)) {
+    throw new Error("This graph link is missing a valid run identifier.");
+  }
+  return runId;
+}
+
+async function staticSnapshot() {
+  if (staticSnapshotPromise) return staticSnapshotPromise;
+  staticSnapshotPromise = (async () => {
+    const root = String(VIEWER.dataRoot || "../runs").replace(/\/$/, "");
+    const response = await fetch(`${root}/${encodeURIComponent(staticRunId())}/graph.json`);
+    if (!response.ok) throw new Error(`published trace request failed (${response.status})`);
+    const snapshot = await response.json();
+    staticEventMap = new Map();
+    return snapshot;
+  })();
+  return staticSnapshotPromise;
+}
+
+async function staticEventPage(page) {
+  if (staticEventPagePromises.has(page)) return staticEventPagePromises.get(page);
+  const promise = (async () => {
+    const snapshot = await staticSnapshot();
+    const root = String(VIEWER.dataRoot || "../runs").replace(/\/$/, "");
+    const response = await fetch(`${root}/${encodeURIComponent(staticRunId())}/events/${page}.json`);
+    if (!response.ok) throw new Error(`published event page request failed (${response.status})`);
+    const events = await response.json();
+    for (const event of events) staticEventMap.set(String(event.seq), event);
+    return { events, total: snapshot.eventCount, pageSize: snapshot.eventPageSize };
+  })();
+  staticEventPagePromises.set(page, promise);
+  return promise;
+}
+
+async function graphPayload(bucket, group) {
+  if (VIEWER.mode === "static") return (await staticSnapshot()).graph;
+  const response = await fetch(`./api/graph?bucket_ns=${bucket}&group=${group}`);
+  if (!response.ok) throw new Error(`graph request failed (${response.status})`);
+  return response.json();
+}
+
+async function eventSelection(ids) {
+  if (VIEWER.mode === "static") {
+    const snapshot = await staticSnapshot();
+    const pages = [...new Set(ids.map((id) => Math.floor((Number(id) - 1) / snapshot.eventPageSize)))];
+    await Promise.all(pages.map(staticEventPage));
+    return ids.map((id) => staticEventMap.get(String(id))).filter(Boolean);
+  }
+  const response = await fetch(`./api/events?ids=${ids.join(",")}`);
+  if (!response.ok) throw new Error(`event detail request failed (${response.status})`);
+  return (await response.json()).events || [];
+}
+
+async function eventBySequence(seq) {
+  if (VIEWER.mode === "static") {
+    const snapshot = await staticSnapshot();
+    await staticEventPage(Math.floor((Number(seq) - 1) / snapshot.eventPageSize));
+    return staticEventMap.get(String(seq)) || null;
+  }
+  const response = await fetch(`./api/event?seq=${seq}`);
+  if (!response.ok) return null;
+  return response.json();
+}
+
+async function eventPage(offset, limit) {
+  if (VIEWER.mode === "static") {
+    const snapshot = await staticSnapshot();
+    const firstPage = Math.floor(offset / snapshot.eventPageSize);
+    const lastPage = Math.floor((Math.max(offset, offset + limit - 1)) / snapshot.eventPageSize);
+    const pages = await Promise.all(
+      Array.from({ length: lastPage - firstPage + 1 }, (_, index) => staticEventPage(firstPage + index)),
+    );
+    const events = pages.flatMap((page) => page.events);
+    const start = offset - firstPage * snapshot.eventPageSize;
+    return { offset, limit, total: snapshot.eventCount, events: events.slice(start, start + limit) };
+  }
+  const response = await fetch(`./api/events?offset=${offset}&limit=${limit}`);
+  if (!response.ok) return null;
+  return response.json();
 }
 
 function renderHeader() {
@@ -504,12 +589,9 @@ async function inspectNode(node) {
 
   const ids = node.eventIds.slice(0, 100);
   try {
-    const response = await fetch(`/api/events?ids=${ids.join(",")}`);
-    if (!response.ok) throw new Error(`event detail request failed (${response.status})`);
-    const selection = await response.json();
+    const events = await eventSelection(ids);
     if (state.selected !== node.id) return;
     loading.remove();
-    const events = selection.events || [];
     body.append(sectionTitle("Aggregate evidence"));
     body.append(detailGrid(aggregateEventFields(events)));
     appendCategoryEvidence(node, events, body);
@@ -553,9 +635,8 @@ function appendNodeEventButtons(node, list, offset, eventMap = new Map()) {
 }
 
 async function inspectEvent(seq) {
-  const response = await fetch(`/api/event?seq=${seq}`);
-  if (!response.ok) return;
-  const event = await response.json();
+  const event = await eventBySequence(seq);
+  if (!event) return;
   shell.classList.add("details-open");
   $("#details-title").textContent = `#${event.seq} · ${event.name}`;
   const body = $("#details-body");
@@ -748,9 +829,8 @@ function nestedValues(value, key) {
 }
 
 async function browseEvents(offset = 0) {
-  const response = await fetch(`/api/events?offset=${offset}&limit=100`);
-  if (!response.ok) return;
-  const page = await response.json();
+  const page = await eventPage(offset, 100);
+  if (!page) return;
   shell.classList.add("details-open");
   $("#details-title").textContent = "All events";
   const body = $("#details-body");
@@ -959,5 +1039,12 @@ new ResizeObserver(() => {
   clampPanX();
   draw();
 }).observe(canvasWrap);
+
+if (VIEWER.mode === "static") {
+  $("#density-controls").hidden = true;
+  const indexLink = $("#index-link");
+  indexLink.href = VIEWER.indexUrl || "../";
+  indexLink.hidden = false;
+}
 
 loadGraph();

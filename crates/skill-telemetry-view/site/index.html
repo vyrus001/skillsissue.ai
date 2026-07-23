@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="description" content="Dynamic threat intelligence for agent skills, backed by isolated eBPF-observed execution.">
+    <title>skillsissue.ai · Agent skill threat intelligence</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="skillsissue.ai home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>
+          <strong>skillsissue.ai</strong>
+          <small>agent skill threat intelligence</small>
+        </span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a class="active" href="#database">Database</a>
+        <a href="#methodology">Methodology</a>
+        <a href="https://github.com/vyrus001/skillsissue.ai">GitHub</a>
+      </nav>
+      <span class="live-indicator"><i></i> repository-backed</span>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">Detection pulse · dynamic analysis</p>
+        <div class="intro-copy">
+          <div>
+            <h1 id="page-title">Recently scanned agent skills</h1>
+            <p>Each verdict is evidence from one isolated run—not a promise that a skill is safe.</p>
+          </div>
+          <a class="outline-link" href="#methodology">How scanning works <span>↘</span></a>
+        </div>
+      </section>
+
+      <section class="stat-grid" aria-label="Database summary">
+        <article class="stat-card">
+          <span class="stat-icon">◇</span>
+          <div><small>Scanned skills</small><strong id="stat-scanned">—</strong></div>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon">◎</span>
+          <div><small>Source platforms</small><strong id="stat-platforms">—</strong></div>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon">▣</span>
+          <div><small>Latest assessment</small><strong id="stat-latest">—</strong></div>
+        </article>
+      </section>
+
+      <section id="database" class="database" aria-labelledby="database-title">
+        <div class="section-label">
+          <span>⌁</span>
+          <h2 id="database-title">Execution intelligence database</h2>
+        </div>
+        <div class="search-bar">
+          <label class="search-field">
+            <span aria-hidden="true">⌕</span>
+            <input id="search" type="search" placeholder="Search by skill, platform, hash, or verdict…" autocomplete="off">
+            <kbd>Ctrl K</kbd>
+          </label>
+          <button id="export" class="action-button" type="button">↓ Export CSV</button>
+        </div>
+        <div class="filter-bar">
+          <label>Verdict
+            <select id="verdict-filter"><option value="all">All verdicts</option></select>
+          </label>
+          <label>Platform
+            <select id="platform-filter"><option value="all">All platforms</option></select>
+          </label>
+          <label>Show
+            <select id="row-limit">
+              <option value="10">10 rows</option>
+              <option value="25" selected>25 rows</option>
+              <option value="50">50 rows</option>
+              <option value="all">All rows</option>
+            </select>
+          </label>
+          <span id="result-count" class="result-count">Loading repository data…</span>
+        </div>
+        <div class="table-shell">
+          <table>
+            <thead>
+              <tr>
+                <th>Platform(s)</th>
+                <th>Skill</th>
+                <th><button id="sort-detected" type="button">Detected ↓</button></th>
+                <th>SHA-256</th>
+                <th>Scan verdict</th>
+              </tr>
+            </thead>
+            <tbody id="skill-rows"></tbody>
+          </table>
+          <div id="empty-state" class="empty-state" hidden>
+            <strong>No scans match this view</strong>
+            <span>Try a different search or filter.</span>
+          </div>
+          <div id="loading-state" class="loading-state">
+            <span></span><span></span><span></span>
+            <strong>Fetching scan database…</strong>
+            <small>Reading the latest committed intelligence</small>
+          </div>
+        </div>
+      </section>
+
+      <section id="methodology" class="methodology" aria-labelledby="methodology-title">
+        <p class="eyebrow">Methodology</p>
+        <div>
+          <h2 id="methodology-title">Behavior before reputation.</h2>
+          <p>Skills are acquired without execution, detonated inside a bounded container, observed with Tracee eBPF telemetry, and replayed through source-to-sink policy analysis. Select a skill to inspect its published process, file, and socket execution graph.</p>
+        </div>
+        <a href="https://github.com/vyrus001/skillsissue.ai#the-three-loops">Read the technical workflow ↗</a>
+      </section>
+    </main>
+
+    <footer>
+      <span>skillsissue.ai · repository-native threat intelligence</span>
+      <span id="data-status">Data sync pending</span>
+    </footer>
+
+    <noscript>This database needs JavaScript to load the repository-backed scan index.</noscript>
+    <script src="./app.js" defer></script>
+  </body>
+</html>

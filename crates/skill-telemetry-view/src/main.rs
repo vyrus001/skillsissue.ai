@@ -39,6 +39,20 @@ enum Command {
         #[command(flatten)]
         limits: LimitArgs,
     },
+    /// Build the public scan index and static telemetry snapshots.
+    BuildSite {
+        /// Repository root containing data/, telemetry/, and Cargo.toml.
+        #[arg(long, default_value = ".")]
+        root: PathBuf,
+
+        /// Destination directory uploaded to GitHub Pages.
+        #[arg(long, default_value = "target/site")]
+        output: PathBuf,
+
+        /// Largest telemetry run published into a browser-readable snapshot.
+        #[arg(long, default_value_t = 25_000)]
+        max_published_events: usize,
+    },
 }
 
 #[derive(Clone, Copy, Debug, Args)]
@@ -96,6 +110,15 @@ fn main() -> Result<()> {
                 transports: graph.facets.transports,
                 directions: graph.facets.directions,
             };
+            println!("{}", serde_json::to_string_pretty(&summary)?);
+            Ok(())
+        }
+        Command::BuildSite {
+            root,
+            output,
+            max_published_events,
+        } => {
+            let summary = skill_telemetry_view::site::build(&root, &output, max_published_events)?;
             println!("{}", serde_json::to_string_pretty(&summary)?);
             Ok(())
         }

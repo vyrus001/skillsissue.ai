@@ -11,6 +11,7 @@ use crate::model::{GraphSettings, GroupMode, NormalizedEvent, TraceData};
 const INDEX_HTML: &str = include_str!("../web/index.html");
 const APP_JS: &str = include_str!("../web/app.js");
 const STYLE_CSS: &str = include_str!("../web/style.css");
+const CONFIG_JS: &str = "window.SKILLSISSUE_VIEWER = { mode: \"server\" };\n";
 const MAX_REQUEST_LINE: usize = 8 * 1024;
 const MAX_HEADERS: usize = 64 * 1024;
 const MAX_PAGE_SIZE: usize = 500;
@@ -100,6 +101,12 @@ fn handle_connection(stream: &mut TcpStream, trace: &TraceData) -> Result<()> {
             200,
             "text/javascript; charset=utf-8",
             APP_JS.as_bytes(),
+        )?,
+        "/config.js" => write_response(
+            stream,
+            200,
+            "text/javascript; charset=utf-8",
+            CONFIG_JS.as_bytes(),
         )?,
         "/style.css" => {
             write_response(stream, 200, "text/css; charset=utf-8", STYLE_CSS.as_bytes())?

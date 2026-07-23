@@ -261,9 +261,25 @@ and independently measured LLM-context taint remain open limitations.
 
 ## Interactive telemetry viewer
 
-The repository includes a local, dependency-free browser UI for exploring one
-run as a chronological execution graph. It accepts a run directory, `run.json`,
-plain Tracee JSONL, or compressed `events*.jsonl.zst` directly:
+The public threat-intelligence site is generated entirely from the committed
+CSV registries and telemetry. Its front page joins each latest assessment to
+the skill's platform provenance, detection time, SHA-256 identity, and verdict.
+When the assessed run has a bounded committed capture, the skill links to a
+GitHub Pages-hosted execution graph. Static graphs load event evidence in
+bounded pages; no local server or public telemetry API is required.
+
+Build and preview the exact Pages artifact locally:
+
+```bash
+cargo run --locked -p skill-telemetry-view -- \
+  build-site --root . --output target/site
+python3 -m http.server --directory target/site 8000
+```
+
+The same dependency-free graph remains available as a local viewer for any run,
+including captures that exceed the static publication limit. It accepts a run
+directory, `run.json`, plain Tracee JSONL, or compressed
+`events*.jsonl.zst` directly:
 
 ```bash
 ./telemetry-viewer.sh \
@@ -396,6 +412,9 @@ or disposable long-lived runners.
   publisher after enforcing total publication caps.
 - `ci.yml` formats, lints, tests, verifies the pinned SkillJect corpus, and
   builds every container boundary. It never detonates pull-request content.
+- `pages.yml` builds the searchable scan table and one static, paged execution
+  graph for each latest assessed run whose committed telemetry fits the
+  publication limit, then deploys the artifact through GitHub Pages.
 - `evaluate-skillject.yml` is manual-only and is the secret-free hosted eBPF
   smoke test. It runs a bounded attack-only regression matrix on a fresh full
   `ubuntu-24.04` VM, has read-only repository permission, and uploads results
