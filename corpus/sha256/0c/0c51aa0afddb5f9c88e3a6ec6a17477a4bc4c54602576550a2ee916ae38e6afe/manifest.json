@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:0c51aa0afddb5f9c88e3a6ec6a17477a4bc4c54602576550a2ee916ae38e6afe",
+  "sha256": "0c51aa0afddb5f9c88e3a6ec6a17477a4bc4c54602576550a2ee916ae38e6afe",
+  "blake3": "42f0a31b0b4bbf7acc5169382628b18274e667081d0f95be6630c83e372b1b44",
+  "size_bytes": 83945,
+  "file_count": 16,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2871,
+      "sha256": "e839ab1dd199106b532a54062231bfd9ac1ca2a65936f9fe60e61e4697e2fe99",
+      "blake3": "61d4a737986ef5428af91648540c861aa9ff7b1c70fff59830ae28d5d1a1205f"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3561,
+      "sha256": "c8a177548add5c9c0887b7392a61c839f5adfba647464e21d93c8e50e50b6c4e",
+      "blake3": "9e39c8bcb1d585ceb03012c036b69388e07ed96c77992e5d9b17d9b6b4583570"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 147,
+      "sha256": "6047608ee857fa0d74becfd97c16e78e6a9c1125ec595fa72a98c4ee1d69d4df",
+      "blake3": "09fe4bebb51760b3c96e1b1a2e9f30a05e5bd311fbbe479647aa694031d89c23"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/report_template.xlsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9743,
+      "sha256": "151410949f33c518b3d0020e0f62474c78c577ca61fc5e14faa80ad6e582ffe5",
+      "blake3": "c5c3d57b9d1fc7b1339368f8ca14d472420018ba7fbf9ec4e941349338e70d4e"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/business_glossary.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3041,
+      "sha256": "266eab388f27dca032d67cc083191bcee168c0a064bedc8a9d720393b960f839",
+      "blake3": "81c64d1748262fafc72436072c6e4889add805497f253a875ed39fb003bc5e32"
+    },
+    {
+      "path": "references/rule_parsing_examples.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1873,
+      "sha256": "b9174057eeeec22d55edd45b575eb3343189dc4152840bf5f02de82e0341c032",
+      "blake3": "17f348f52e3c8aae0f4c90d95e0e53eceb721914c8c4a2f8815f62fded569e6f"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/calc_rules.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1042,
+      "sha256": "9baa10c6b0d6e4868b23cff6e53899ea3e3220d427703cf9c95e8d36cf56db0f",
+      "blake3": "d55d383b888a53dae3d637629a6082e0bc874a5decb043dcb6b20ebfbcd90e4c"
+    },
+    {
+      "path": "scripts/code_sandbox.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5485,
+      "sha256": "736b89f734bfaad78c6212f2c9c71b6599ed1337eed8228ce7ccbe221c60d412",
+      "blake3": "0df85dfa7c580c3a2606391b2326a75cba178272ffbf81205d5cefc799667484"
+    },
+    {
+      "path": "scripts/data_merger.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4032,
+      "sha256": "d66c48d683faf56da48730c5dba9dc634dd1535744cd2421ecb2d16a0972f54b",
+      "blake3": "b6d51664a2aba9cd5175ceb96a995868fc53b4e9a51884b510f0885405345684"
+    },
+    {
+      "path": "scripts/formula_engine.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8661,
+      "sha256": "5e1e34cf63bfc53f3f706a8c866ac7be1df9b974e510ed01723c68ccbf2f517e",
+      "blake3": "c3715c2f0864d84e10d0997638623c8b439dd3cad8f159ef018f0d32d2720438"
+    },
+    {
+      "path": "scripts/helper.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10079,
+      "sha256": "251855519ab48be2d3b25fb084a4161b3434cbaf7417a587b0eb2dd495c022d1",
+      "blake3": "e00a509fe56d3eb645cf0198a32ca1f224235d46b6219b92bd96ed60bb4f0f1e"
+    },
+    {
+      "path": "scripts/save_summary.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 396,
+      "sha256": "644da00b41229a75b1a6a0e50611f39b05e0bebd3522f17afc5884abe7d7c278",
+      "blake3": "55dc1402bb3ae0dd6a37ba3d241383f0ec20fc069174350e35b9bba890ea8e80"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2551,
+      "sha256": "6210cf3355944549ac4fb2df88d846e511fe707477eed7ba4a8614026de35d27",
+      "blake3": "247f585ff1e5d9036b1c58d3ecc692365a16bf23feb48acd4c3cd59dc658b997"
+    },
+    {
+      "path": "testdata",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "testdata/客服工作量统计.xlsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11583,
+      "sha256": "7e6b648fbee80e25cc464eef1ebd6ef0b96e2339ed860bc3c41b70973b3ce114",
+      "blake3": "48a25f54d6d6ffeac86b4c850ace6ec3ba4c788581e9f3fc21eb9c9c77240136"
+    },
+    {
+      "path": "testdata/客服工作量统计_performance_result.xlsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8217,
+      "sha256": "8677d7b2497dd45ca0af37ff3b7433e05a126c64a5878147c42d132784328877",
+      "blake3": "4fd3b242a9e0c9d34212cb5af18946545318883f9bf4e16bdd1602f1fdf0675c"
+    },
+    {
+      "path": "testdata/客服绩效评分标准.xlsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10663,
+      "sha256": "c059ea8d68150878dbd57bdcff478a23d6f038e2f5529c351fdb599cebb61802",
+      "blake3": "d714c5ee68af83244591216974f71e09fc44a8395bf62216757d81c420e43adf"
+    }
+  ]
+}

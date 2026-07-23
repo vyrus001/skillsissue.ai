@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:ec35dc110b9925af374af18024f3df7b9f6a9639436459707bc6b2f457d5add7",
+  "sha256": "ec35dc110b9925af374af18024f3df7b9f6a9639436459707bc6b2f457d5add7",
+  "blake3": "0fbde23ddabea2ddb9d5b12c44535aea6063d153b14cfbb7c1c6c818de7e33f8",
+  "size_bytes": 53953,
+  "file_count": 14,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4850,
+      "sha256": "b81275bce3466aac9eff9fa6e430c6b0fc13776701423df6a5f65eb4bc9372d6",
+      "blake3": "53807a371eb4cac69acf638eed6bf723b466a65b6bccaf068228104f221eb0e7"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 139,
+      "sha256": "808a135e9d0ef83f7c15995ae128e63cf7e40c7879ce97eb9c3174b535d00b49",
+      "blake3": "86ae781138667a511a08f6bcd5170c30b02b542119980b54d3fc76e5033344ff"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/addressing-workflow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2231,
+      "sha256": "4a95b0713cc6d1ffac31da73233bc088c4dab03bb8171d0116ddcb219c0affe4",
+      "blake3": "ceed8029e96c9005436e95db485ad9cdc770912632fe642fd33ef1c3bef43006"
+    },
+    {
+      "path": "references/conventions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1364,
+      "sha256": "8bf89a1e8b46af55dbb3ef4ba0e9a9c8a2666570fa8ed2bd25ede4d2f4f34246",
+      "blake3": "6b9cec4eed41938323d7a2d8af5976248a830d840294a901882da87b7b623635"
+    },
+    {
+      "path": "references/iac-checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3679,
+      "sha256": "bc10d309f24c45f47142ce5e87ac2a60ec54921157b4121162cb9cef6c9eef42",
+      "blake3": "1ed9649edb6b8c368d31e967710a31f2e0f0ad4823f4c71f7c94d5ce530aab92"
+    },
+    {
+      "path": "references/lobster-integration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4645,
+      "sha256": "6f3bbebbfb32d0dc360d5f52190ce23c3314fca008ee14cd688b6cef9906b797",
+      "blake3": "746d472716218f4d2f13fe3e3bc928b93518783cbec62f37d8de4d3e6fce96a3"
+    },
+    {
+      "path": "references/review-layers.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3568,
+      "sha256": "a6ea0b51f137009138b7e0bafd64d5c180a3322e5ddce35dddb958e05555a48a",
+      "blake3": "31985a6c7de4105c0a093baa0aa20de7ba316df066d9b194123036ddef1684a2"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/fetch-ci.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5676,
+      "sha256": "c3ce40d95b2a10eef6511d1fbb1c60aa1f4c4c1b87714780c9d57cc1a0426799",
+      "blake3": "3d30e8d28f79893ee58868f76b222ce5d3e0875a37416cacb29a37a1a20e96ef"
+    },
+    {
+      "path": "scripts/fetch-pr.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4340,
+      "sha256": "4b565d339bdea673f0b89fa1e04baf1a9ca2e7ebe009332438b3d3cb21c57b8f",
+      "blake3": "9bd8f51228ab5825287afc0462646869661d969d15c4ee6e5636f7a554f16b15"
+    },
+    {
+      "path": "scripts/fetch-reviews.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6020,
+      "sha256": "315c654f2bf0460ad51b855b0c1137ff92d8d34a9e7e2ba0417e019cc8c9c989",
+      "blake3": "7de3466315bd7bed82a3d6f0cb65079ab79aea56c93db442f0277378aea043ec"
+    },
+    {
+      "path": "scripts/lobster-safe-run.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1117,
+      "sha256": "52a2f857289e861b05db1559c99f34377b6be753b03d95b1c6833f7fb42e5359",
+      "blake3": "000a47b549bf4201aec9acc17cf13d228997716ffe4dcd914f8bdac0e5f261e9"
+    },
+    {
+      "path": "scripts/merge-pr-context.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5169,
+      "sha256": "a5c846a6b3db97a9d7a60fbacd5041f661d4094084b6a29ac7966ea0a8c3c6cd",
+      "blake3": "481888992e1fd596974b95545fa3247c5bb19f2e34cf350fb190db0cf883a82e"
+    },
+    {
+      "path": "scripts/run-pr-review.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8381,
+      "sha256": "daeb0e5f8286ef2df8d94b4dbd7aa18f6fa3fd5d5d4d4cf6fd22f842eabeb5b9",
+      "blake3": "8971109c906256f55716e4c732d9ba3dc96ee22011262a7c53e1e838643fe2b4"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2774,
+      "sha256": "15af30e8a252355d7022296445976f3dedea2d4305727c084dadc273bb068d25",
+      "blake3": "aa089128e464c28fb0102466b5bdbf540ca5bee68e584f310a3b03553d712444"
+    }
+  ]
+}
