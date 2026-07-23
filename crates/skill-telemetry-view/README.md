@@ -50,10 +50,11 @@ basename of its declared `telemetry_path` inside that directory.
   TCP/UDP. Connect is outbound; bind/listen is inbound-open; accept is
   inbound-accept. Missing family/type and unlabeled numeric packet direction are
   reported as unknown rather than guessed.
-- The x coordinate is the Tracee nanosecond timestamp on one shared axis. IDs and
-  timestamps are serialized as decimal strings to avoid JavaScript integer
-  precision loss. Source sequence provides deterministic order for equal or
-  missing timestamps. Process relationships descend along the y axis.
+- Event time descends through discrete, scrollable rows. IDs and timestamps are
+  serialized as decimal strings to avoid JavaScript integer precision loss.
+  Source sequence provides deterministic row order for equal or missing
+  timestamps, while process relationships branch horizontally by execution
+  depth.
 
 The current detonation policy records connect/security-connect and DNS but does
 not record bind, listen, or accept. A run produced by that policy can therefore
@@ -66,9 +67,18 @@ events, the normalizer classifies them.
 The default UI groups matching activity within 10 ms by operation, process
 image, target, transport, and direction. Controls can change the bucket, group
 only by operation, or render one node per event. Category, transport, direction,
-and text filters affect the view without deleting data. Aggregates retain every
-underlying event ID; node inspection and the **All events** browser retrieve the
-full normalized record and original Tracee JSON through paged local endpoints.
+and text filters affect the view without deleting data. **Refresh layout** packs
+the currently visible nodes into adjacent chronological rows after filtering.
+Aggregates retain every underlying event ID; node inspection and the **All
+events** browser retrieve normalized arguments and original Tracee JSON through
+bounded local endpoints. Exec nodes surface captured command lines; file nodes
+show paths, FDs, and byte totals; socket nodes show transport, direction, and
+endpoint evidence. Read/write content is displayed only when Tracee captured a
+payload argument. A buffer pointer is reported as a pointer, never reconstructed
+or presented as file content. All event and process nodes use one consistent
+shape. The graph is virtualized into the visible scroll window, and fit-to-width
+is the minimum gesture/keyboard zoom: long runs remain vertically scrollable
+instead of being shrunk into a single viewport.
 
 Loading fails instead of silently truncating when a limit is exceeded. Defaults:
 

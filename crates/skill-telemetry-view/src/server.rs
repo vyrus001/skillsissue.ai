@@ -14,6 +14,7 @@ const STYLE_CSS: &str = include_str!("../web/style.css");
 const MAX_REQUEST_LINE: usize = 8 * 1024;
 const MAX_HEADERS: usize = 64 * 1024;
 const MAX_PAGE_SIZE: usize = 500;
+const MAX_EVENT_SELECTION: usize = 200;
 const MAX_BUCKET_NS: u64 = 60_000_000_000;
 
 pub fn serve(trace: TraceData, host: IpAddr, port: u16) -> Result<()> {
@@ -135,6 +136,26 @@ fn handle_connection(stream: &mut TcpStream, trace: &TraceData) -> Result<()> {
         }
         "/api/events" => {
             let params = parse_query(query);
+            if let Some(ids) = params.get("ids") {
+                let requested = ids
+                    .split(',')
+                    .filter_map(|value| value.parse::<u64>().ok())
+                    .take(MAX_EVENT_SELECTION)
+                    .collect::<Vec<_>>();
+                let events = requested
+                    .iter()
+                    .filter_map(|seq| trace.events.iter().find(|event| event.seq == *seq))
+                    .collect::<Vec<_>>();
+                write_json(
+                    stream,
+                    200,
+                    &EventSelection {
+                        requested: requested.len(),
+                        events,
+                    },
+                )?;
+                return Ok(());
+            }
             let offset = params
                 .get("offset")
                 .and_then(|value| value.parse::<usize>().ok())
@@ -214,6 +235,12 @@ struct EventPage<'a> {
     limit: usize,
     total: usize,
     events: &'a [NormalizedEvent],
+}
+
+#[derive(Serialize)]
+struct EventSelection<'a> {
+    requested: usize,
+    events: Vec<&'a NormalizedEvent>,
 }
 
 #[derive(Serialize)]

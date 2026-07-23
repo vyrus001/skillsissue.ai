@@ -233,6 +233,7 @@ pub struct GraphNode {
     pub depth: usize,
     pub label: String,
     pub sublabel: String,
+    pub command: Option<String>,
     pub process_key: String,
     pub process_name: String,
     pub pid: i64,
@@ -242,6 +243,10 @@ pub struct GraphNode {
     pub direction: Direction,
     pub transport: Transport,
     pub count: usize,
+    pub byte_count: u64,
+    pub file_descriptors: Vec<i64>,
+    pub success_count: usize,
+    pub failure_count: usize,
     pub event_ids: Vec<u64>,
 }
 

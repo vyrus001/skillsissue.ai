@@ -4,6 +4,18 @@ const $ = (selector) => document.querySelector(selector);
 const canvas = $("#graph");
 const context = canvas.getContext("2d");
 const shell = $(".app-shell");
+const canvasWrap = $("#canvas-wrap");
+const scrollSpacer = $("#scroll-spacer");
+
+const LAYOUT = {
+  rowHeight: 88,
+  top: 70,
+  bottom: 76,
+  nodeWidth: 196,
+  nodeHeight: 64,
+  timelineGutter: 88,
+  rightPadding: 34,
+};
 
 const COLORS = {
   process: "#e6f7ef",
@@ -17,11 +29,14 @@ const state = {
   model: null,
   positions: new Map(),
   visible: [],
+  layoutNodes: [],
+  layoutCompacted: false,
+  visibleIds: new Set(),
+  nodeById: new Map(),
   zoom: 1,
   panX: 0,
-  panY: 0,
-  worldWidth: 1800,
   worldHeight: 900,
+  maxDepth: 0,
   categories: new Set(["process", "file", "socket", "fd", "other"]),
   search: "",
   transport: "all",
@@ -43,8 +58,7 @@ async function loadGraph({ preserveView = false } = {}) {
     renderHeader();
     renderStats();
     renderCategoryFilters();
-    calculateLayout();
-    applyFilters();
+    applyFilters({ resetLayout: true });
     if (!preserveView) fitGraph();
     else draw();
   } catch (error) {
@@ -123,38 +137,36 @@ function renderCategoryFilters() {
   }
 }
 
-function calculateLayout() {
+function calculateLayout(nodes = state.layoutCompacted ? state.layoutNodes : state.model.nodes) {
   const model = state.model;
-  const width = $("#canvas-wrap").clientWidth || 900;
-  state.worldWidth = Math.max(1800, width * 2.15);
-  const maxDepth = Math.max(0, ...model.nodes.map((node) => node.depth));
-  state.worldHeight = Math.max(760, 210 + (maxDepth + 1) * 155);
-  const duration = durationNumber(model.minTimestampNs, model.maxTimestampNs);
+  const width = canvasWrap.clientWidth || 900;
+  state.maxDepth = Math.max(0, ...model.nodes.map((node) => node.depth));
+  state.layoutNodes = nodes;
+  state.worldHeight = Math.max(
+    canvasWrap.clientHeight || 640,
+    LAYOUT.top + Math.max(0, nodes.length - 1) * LAYOUT.rowHeight + LAYOUT.bottom,
+  );
   state.positions.clear();
+  state.nodeById = new Map(model.nodes.map((node) => [node.id, node]));
 
-  for (const node of model.nodes) {
-    let x;
-    if (node.timeOffsetNs !== null && node.timeOffsetNs !== undefined && duration > 0) {
-      x = 145 + (Number(node.timeOffsetNs) / duration) * (state.worldWidth - 260);
-    } else if (duration === 0 && node.timeOffsetNs !== null) {
-      x = state.worldWidth / 2;
-    } else {
-      x = state.worldWidth - 70;
-    }
-    const equalLane = Math.min(node.equalTimeOrder, 8) * 5;
-    const y = node.kind === "process"
-      ? 105 + node.depth * 155 + equalLane
-      : 174 + node.depth * 155 + (node.order % 4) * 16 + equalLane;
-    const radius = node.kind === "activity" ? Math.min(15, 5 + Math.log2(node.count + 1) * 2.2) : 0;
+  const left = LAYOUT.timelineGutter + LAYOUT.nodeWidth / 2 + 16;
+  const right = Math.max(left, width - LAYOUT.rightPadding - LAYOUT.nodeWidth / 2);
+  const laneWidth = Math.max(0, right - left);
+
+  nodes.forEach((node, index) => {
+    const depthRatio = state.maxDepth === 0 ? .5 : node.depth / state.maxDepth;
     state.positions.set(node.id, {
-      x, y, radius,
-      width: node.kind === "process" ? 154 : radius * 2,
-      height: node.kind === "process" ? 45 : radius * 2,
+      x: left + laneWidth * depthRatio,
+      y: LAYOUT.top + index * LAYOUT.rowHeight,
+      width: LAYOUT.nodeWidth,
+      height: LAYOUT.nodeHeight,
+      row: index,
     });
-  }
+  });
+  updateScrollExtent();
 }
 
-function applyFilters() {
+function applyFilters({ resetLayout = true } = {}) {
   if (!state.model) return;
   const query = state.search.toLowerCase();
   state.visible = state.model.nodes.filter((node) => {
@@ -162,14 +174,34 @@ function applyFilters() {
     if (node.category === "socket" && state.transport !== "all" && node.transport !== state.transport) return false;
     if (node.category === "socket" && state.direction !== "all" && node.direction !== state.direction) return false;
     if (query) {
-      const haystack = [node.label, node.sublabel, node.target, node.processName, node.operation, String(node.pid)]
+      const haystack = [node.label, node.sublabel, node.command, node.target, node.processName, node.operation, String(node.pid)]
         .filter(Boolean).join(" ").toLowerCase();
       if (!haystack.includes(query)) return false;
     }
     return true;
   });
+  state.visibleIds = new Set(state.visible.map((node) => node.id));
+  if (resetLayout) {
+    state.layoutCompacted = false;
+    calculateLayout(state.model.nodes);
+    $("#filter-layout-note").textContent = `${formatCount(state.visible.length)} visible nodes. Refresh removes empty rows.`;
+  }
   $("#empty-state").hidden = state.visible.length !== 0;
   draw();
+}
+
+function refreshFilteredLayout() {
+  state.layoutCompacted = true;
+  calculateLayout([...state.visible]);
+  canvasWrap.scrollTop = 0;
+  $("#filter-layout-note").textContent = `${formatCount(state.visible.length)} visible nodes packed chronologically.`;
+  draw();
+}
+
+function updateScrollExtent() {
+  const viewportHeight = Math.max(1, canvasWrap.clientHeight);
+  const scaledHeight = Math.max(viewportHeight, state.worldHeight * state.zoom);
+  scrollSpacer.style.height = `${Math.max(1, scaledHeight - viewportHeight)}px`;
 }
 
 function resizeCanvas() {
@@ -189,49 +221,122 @@ function draw() {
   resizeCanvas();
   const rect = canvas.getBoundingClientRect();
   context.clearRect(0, 0, rect.width, rect.height);
-  context.save();
-  context.translate(state.panX, state.panY);
-  context.scale(state.zoom, state.zoom);
-  drawGrid();
+  const view = visibleWorldRange(rect.height);
+  drawTimelineRows(rect, view);
 
-  const visibleIds = new Set(state.visible.map((node) => node.id));
+  context.save();
+  context.translate(horizontalTranslation(rect.width), -canvasWrap.scrollTop);
+  context.scale(state.zoom, state.zoom);
   for (const edge of state.model.edges) {
-    if (!visibleIds.has(edge.source) || !visibleIds.has(edge.target)) continue;
+    if (!state.visibleIds.has(edge.source) || !state.visibleIds.has(edge.target)) continue;
+    const source = state.positions.get(edge.source);
+    const target = state.positions.get(edge.target);
+    if (!source || !target || !verticalSpanIsVisible(source.y, target.y, view)) continue;
     drawEdge(edge);
   }
-  for (const node of state.visible) drawNode(node);
+  for (const node of state.visible) {
+    const position = state.positions.get(node.id);
+    if (position && position.y >= view.start && position.y <= view.end) drawNode(node);
+  }
+  context.restore();
+  drawDepthHeader(rect);
+}
+
+function visibleWorldRange(viewportHeight) {
+  const buffer = LAYOUT.rowHeight * 2;
+  return {
+    start: Math.max(0, canvasWrap.scrollTop / state.zoom - buffer),
+    end: (canvasWrap.scrollTop + viewportHeight) / state.zoom + buffer,
+  };
+}
+
+function verticalSpanIsVisible(sourceY, targetY, view) {
+  return Math.max(sourceY, targetY) >= view.start && Math.min(sourceY, targetY) <= view.end;
+}
+
+function horizontalTranslation(viewportWidth) {
+  return state.panX + (viewportWidth / 2) * (1 - state.zoom);
+}
+
+function screenX(worldX, viewportWidth) {
+  return horizontalTranslation(viewportWidth) + worldX * state.zoom;
+}
+
+function drawTimelineRows(rect, view) {
+  context.save();
+  context.lineWidth = 1;
+  context.font = "10px ui-monospace, SFMono-Regular, Menlo, monospace";
+  const firstRow = Math.max(0, Math.floor((view.start - LAYOUT.top) / LAYOUT.rowHeight));
+  const lastRow = Math.min(
+    state.layoutNodes.length - 1,
+    Math.ceil((view.end - LAYOUT.top) / LAYOUT.rowHeight),
+  );
+
+  for (let index = firstRow; index <= lastRow; index += 1) {
+    const node = state.layoutNodes[index];
+    const position = state.positions.get(node.id);
+    const y = position.y * state.zoom - canvasWrap.scrollTop;
+    context.strokeStyle = "rgba(81, 118, 108, .17)";
+    context.beginPath();
+    context.moveTo(LAYOUT.timelineGutter, y);
+    context.lineTo(rect.width, y);
+    context.stroke();
+    context.fillStyle = state.visibleIds.has(node.id) ? "#78928a" : "#405751";
+    context.fillText(formatNodeTime(node), 9, y + 3);
+  }
+
+  const depthPositions = depthScreenPositions(rect.width);
+  for (const { x } of depthPositions) {
+    context.strokeStyle = "rgba(81, 118, 108, .09)";
+    context.beginPath();
+    context.moveTo(x, 0);
+    context.lineTo(x, rect.height);
+    context.stroke();
+  }
   context.restore();
 }
 
-function drawGrid() {
+function drawDepthHeader(rect) {
   context.save();
-  context.lineWidth = 1 / state.zoom;
-  context.strokeStyle = "rgba(81, 118, 108, .16)";
+  context.fillStyle = "rgba(7, 16, 15, .94)";
+  context.fillRect(0, 0, rect.width, 29);
+  context.strokeStyle = "rgba(81, 118, 108, .22)";
+  context.beginPath();
+  context.moveTo(0, 28.5);
+  context.lineTo(rect.width, 28.5);
+  context.stroke();
   context.fillStyle = "#69837c";
-  context.font = `${10 / state.zoom}px ui-monospace, SFMono-Regular, Menlo, monospace`;
-  const ticks = 8;
-  for (let index = 0; index <= ticks; index += 1) {
-    const x = 145 + (index / ticks) * (state.worldWidth - 260);
-    context.beginPath();
-    context.moveTo(x, 65);
-    context.lineTo(x, state.worldHeight);
-    context.stroke();
-    const duration = durationNumber(state.model.minTimestampNs, state.model.maxTimestampNs);
-    const label = formatOffset((duration * index) / ticks);
-    context.fillText(label, x + 5 / state.zoom, 58);
-  }
-  const maxDepth = Math.max(0, ...state.model.nodes.map((node) => node.depth));
-  for (let depth = 0; depth <= maxDepth; depth += 1) {
-    const y = 105 + depth * 155;
-    context.strokeStyle = "rgba(81, 118, 108, .11)";
-    context.beginPath();
-    context.moveTo(80, y);
-    context.lineTo(state.worldWidth - 70, y);
-    context.stroke();
-    context.fillStyle = "#526c65";
-    context.fillText(`depth ${depth}`, 82, y - 12 / state.zoom);
-  }
+  context.font = "9px ui-monospace, SFMono-Regular, Menlo, monospace";
+  context.fillText("time", 9, 18);
+  const compactLabels = rect.width < 760;
+  let previousLabelX = -Infinity;
+  depthScreenPositions(rect.width).forEach(({ depth, x }) => {
+    const minimumGap = compactLabels ? 34 : 52;
+    if (x - previousLabelX < minimumGap) return;
+    const label = compactLabels ? `d${depth}` : `depth ${depth}`;
+    context.fillText(label, x - (compactLabels ? 7 : 20), 18);
+    previousLabelX = x;
+  });
   context.restore();
+}
+
+function depthScreenPositions(viewportWidth) {
+  const positions = [];
+  if (!state.layoutNodes.length) return positions;
+  const representative = new Map();
+  for (const node of state.layoutNodes) {
+    if (!representative.has(node.depth)) representative.set(node.depth, node.id);
+  }
+  for (let depth = 0; depth <= state.maxDepth; depth += 1) {
+    const id = representative.get(depth);
+    if (id) positions.push({ depth, x: screenX(state.positions.get(id).x, viewportWidth) });
+  }
+  return positions;
+}
+
+function formatNodeTime(node) {
+  if (node.timeOffsetNs === null || node.timeOffsetNs === undefined) return "no time";
+  return formatOffset(Number(node.timeOffsetNs));
 }
 
 function drawEdge(edge) {
@@ -240,14 +345,27 @@ function drawEdge(edge) {
   if (!source || !target) return;
   context.save();
   const isProcess = edge.kind !== "activity";
-  context.strokeStyle = isProcess ? "rgba(185, 245, 106, .48)" : "rgba(109, 214, 232, .18)";
-  context.lineWidth = (isProcess ? 1.35 : .8) / state.zoom;
+  context.strokeStyle = isProcess ? "rgba(185, 245, 106, .52)" : "rgba(109, 214, 232, .30)";
+  context.fillStyle = context.strokeStyle;
+  context.lineWidth = (isProcess ? 1.45 : 1.05) / state.zoom;
   if (edge.kind === "exec") context.setLineDash([5 / state.zoom, 4 / state.zoom]);
+  const sourceBottom = source.y + source.height / 2;
+  const targetTop = target.y - target.height / 2;
+  const bendY = Math.min(targetTop - 8, sourceBottom + Math.max(12, (targetTop - sourceBottom) * .42));
   context.beginPath();
-  context.moveTo(source.x, source.y + source.height / 2);
-  const midY = (source.y + target.y) / 2;
-  context.bezierCurveTo(source.x, midY, target.x, midY, target.x, target.y - target.height / 2);
+  context.moveTo(source.x, sourceBottom);
+  context.lineTo(source.x, bendY);
+  context.lineTo(target.x, bendY);
+  context.lineTo(target.x, targetTop - 6 / state.zoom);
   context.stroke();
+  context.setLineDash([]);
+  const arrow = 5 / state.zoom;
+  context.beginPath();
+  context.moveTo(target.x, targetTop);
+  context.lineTo(target.x - arrow, targetTop - arrow * 1.5);
+  context.lineTo(target.x + arrow, targetTop - arrow * 1.5);
+  context.closePath();
+  context.fill();
   context.restore();
 }
 
@@ -256,46 +374,48 @@ function drawNode(node) {
   if (!position) return;
   const selected = state.selected === node.id;
   context.save();
-  if (node.kind === "process") drawProcessNode(node, position, selected);
-  else drawActivityNode(node, position, selected);
+  drawEventNode(node, position, selected);
   context.restore();
 }
 
-function drawProcessNode(node, position, selected) {
+function drawEventNode(node, position, selected) {
   const x = position.x - position.width / 2;
   const y = position.y - position.height / 2;
   roundedRect(x, y, position.width, position.height, 7);
-  context.fillStyle = selected ? "rgba(185, 245, 106, .18)" : "rgba(17, 36, 32, .96)";
+  context.fillStyle = selected ? "rgba(101, 229, 194, .17)" : "rgba(17, 36, 32, .97)";
   context.fill();
   context.lineWidth = (selected ? 2.3 : 1.2) / state.zoom;
-  context.strokeStyle = selected ? "#b9f56a" : node.processKind === "observed" ? "#779088" : "#d8eee6";
+  const color = COLORS[node.category] || COLORS.other;
+  context.strokeStyle = selected ? "#ffffff" : color;
   context.stroke();
+  context.fillStyle = color;
+  context.fillRect(x, y, 4 / state.zoom, position.height);
   context.fillStyle = "#edf7f2";
   context.font = "600 11px ui-sans-serif, system-ui, sans-serif";
-  context.fillText(ellipsis(node.label, 20), x + 10, y + 18);
+  context.fillText(ellipsis(node.label, 28), x + 11, y + 17);
   context.fillStyle = "#78928a";
   context.font = "9px ui-monospace, SFMono-Regular, Menlo, monospace";
-  context.fillText(ellipsis(`pid ${node.pid} · ${node.processKind}`, 27), x + 10, y + 34);
+  const primary = node.command || node.sublabel || node.target || "details unavailable";
+  context.fillText(ellipsis(primary, 34), x + 11, y + 35);
+  context.fillStyle = "#607c74";
+  context.font = "8px ui-monospace, SFMono-Regular, Menlo, monospace";
+  context.fillText(ellipsis(nodeMetadata(node), 40), x + 11, y + 52);
 }
 
-function drawActivityNode(node, position, selected) {
-  const color = COLORS[node.category] || COLORS.other;
-  context.beginPath();
-  context.arc(position.x, position.y, position.radius + (selected ? 3 / state.zoom : 0), 0, Math.PI * 2);
-  context.fillStyle = color;
-  context.globalAlpha = selected ? 1 : .84;
-  context.fill();
-  context.globalAlpha = 1;
-  if (selected) {
-    context.lineWidth = 2 / state.zoom;
-    context.strokeStyle = "#ffffff";
-    context.stroke();
+function nodeMetadata(node) {
+  if (node.kind === "process") return `pid ${node.pid} · ${node.processKind}`;
+  const parts = [];
+  if (node.category === "socket") {
+    parts.push(node.transport === "not-applicable" ? "transport n/a" : node.transport.toUpperCase());
+    parts.push(formatDirection(node.direction));
+  } else {
+    parts.push(node.operation);
   }
-  if (state.zoom >= .72 || selected) {
-    context.fillStyle = "#c9d9d4";
-    context.font = `${Math.max(8, 9 / Math.max(.8, state.zoom))}px ui-monospace, SFMono-Regular, Menlo, monospace`;
-    context.fillText(ellipsis(node.label, 32), position.x + position.radius + 5 / state.zoom, position.y + 3 / state.zoom);
-  }
+  if (node.byteCount) parts.push(formatBytes(node.byteCount));
+  if (node.fileDescriptors?.length) parts.push(`fd ${node.fileDescriptors.join(",")}`);
+  parts.push(`${node.count} event${node.count === 1 ? "" : "s"}`);
+  if (node.failureCount) parts.push(`${node.failureCount} failed`);
+  return parts.join(" · ");
 }
 
 function roundedRect(x, y, width, height, radius) {
@@ -304,45 +424,46 @@ function roundedRect(x, y, width, height, radius) {
 }
 
 function fitGraph() {
-  if (!state.visible.length) return draw();
-  const rect = canvas.getBoundingClientRect();
-  const points = state.visible.map((node) => state.positions.get(node.id)).filter(Boolean);
-  const minX = Math.min(...points.map((point) => point.x - point.width / 2)) - 55;
-  const maxX = Math.max(...points.map((point) => point.x + point.width / 2)) + 55;
-  const minY = Math.min(...points.map((point) => point.y - point.height / 2)) - 70;
-  const maxY = Math.max(...points.map((point) => point.y + point.height / 2)) + 70;
-  state.zoom = Math.max(.12, Math.min(1.35, Math.min(rect.width / (maxX - minX), rect.height / (maxY - minY))));
-  state.panX = (rect.width - (minX + maxX) * state.zoom) / 2;
-  state.panY = (rect.height - (minY + maxY) * state.zoom) / 2;
+  state.zoom = 1;
+  state.panX = 0;
+  updateScrollExtent();
+  canvasWrap.scrollTop = 0;
   draw();
 }
 
 function zoomBy(factor, centerX = canvas.clientWidth / 2, centerY = canvas.clientHeight / 2) {
   const previous = state.zoom;
-  state.zoom = Math.max(.1, Math.min(5, state.zoom * factor));
-  const worldX = (centerX - state.panX) / previous;
-  const worldY = (centerY - state.panY) / previous;
-  state.panX = centerX - worldX * state.zoom;
-  state.panY = centerY - worldY * state.zoom;
+  const next = Math.max(1, Math.min(4, state.zoom * factor));
+  if (next === previous) return;
+  const viewportWidth = canvas.clientWidth;
+  const previousTranslation = horizontalTranslation(viewportWidth);
+  const worldX = (centerX - previousTranslation) / previous;
+  const worldY = (centerY + canvasWrap.scrollTop) / previous;
+  state.zoom = next;
+  state.panX = centerX - worldX * next - (viewportWidth / 2) * (1 - next);
+  clampPanX(viewportWidth);
+  updateScrollExtent();
+  canvasWrap.scrollTop = Math.max(0, worldY * next - centerY);
   draw();
 }
 
+function clampPanX(viewportWidth = canvas.clientWidth) {
+  const maxPan = Math.max(0, viewportWidth * (state.zoom - 1) / 2);
+  state.panX = Math.max(-maxPan, Math.min(maxPan, state.panX));
+}
+
 function hitTest(screenX, screenY) {
-  const x = (screenX - state.panX) / state.zoom;
-  const y = (screenY - state.panY) / state.zoom;
+  const x = (screenX - horizontalTranslation(canvas.clientWidth)) / state.zoom;
+  const y = (screenY + canvasWrap.scrollTop) / state.zoom;
   for (let index = state.visible.length - 1; index >= 0; index -= 1) {
     const node = state.visible[index];
     const point = state.positions.get(node.id);
-    if (node.kind === "process") {
-      if (Math.abs(x - point.x) <= point.width / 2 && Math.abs(y - point.y) <= point.height / 2) return node;
-    } else if (Math.hypot(x - point.x, y - point.y) <= point.radius + 5 / state.zoom) {
-      return node;
-    }
+    if (Math.abs(x - point.x) <= point.width / 2 && Math.abs(y - point.y) <= point.height / 2) return node;
   }
   return null;
 }
 
-function inspectNode(node) {
+async function inspectNode(node) {
   state.selected = node.id;
   shell.classList.add("details-open");
   $("#details-title").textContent = node.label;
@@ -352,32 +473,72 @@ function inspectNode(node) {
     ["Kind", node.kind === "process" ? node.processKind : node.category],
     ["Operation", node.operation],
     ["Process", `${node.processName || "unknown"} (pid ${node.pid})`],
+    ["Process identity", node.processKey],
+    ["Execution depth", String(node.depth)],
+    ["Command", node.command || "not captured for this node"],
     ["Timestamp ns", node.timestampNs || "unavailable"],
+    ["Relative time", formatNodeTime(node)],
     ["Target", node.target || "unavailable"],
     ["Transport", node.transport],
-    ["Direction", node.direction],
+    ["Direction", formatDirection(node.direction)],
+    ["File descriptors", node.fileDescriptors?.length ? node.fileDescriptors.join(", ") : "unavailable"],
+    ["Transferred bytes", node.byteCount ? formatBytes(node.byteCount) : "unavailable"],
+    ["Results", formatOutcomes(node.successCount, node.failureCount, node.count)],
     ["Events", formatCount(node.eventIds.length)],
   ];
   body.append(detailGrid(fields));
-  if (node.eventIds.length) {
-    body.append(sectionTitle("Underlying Tracee events"));
-    const list = document.createElement("div");
-    list.className = "event-list";
-    body.append(list);
-    appendNodeEventButtons(node, list, 0);
-  } else {
+  if (!node.eventIds.length) {
     const note = document.createElement("p");
     note.className = "muted";
     note.textContent = "This observed-process anchor is derived from process context; its non-exec events remain attached as activity nodes.";
     body.append(note);
+    draw();
+    return;
   }
+
+  const loading = document.createElement("p");
+  loading.className = "muted";
+  loading.textContent = "Loading normalized arguments and raw Tracee evidence…";
+  body.append(loading);
   draw();
+
+  const ids = node.eventIds.slice(0, 100);
+  try {
+    const response = await fetch(`/api/events?ids=${ids.join(",")}`);
+    if (!response.ok) throw new Error(`event detail request failed (${response.status})`);
+    const selection = await response.json();
+    if (state.selected !== node.id) return;
+    loading.remove();
+    const events = selection.events || [];
+    body.append(sectionTitle("Aggregate evidence"));
+    body.append(detailGrid(aggregateEventFields(events)));
+    appendCategoryEvidence(node, events, body);
+    body.append(sectionTitle("Underlying Tracee events"));
+    const list = document.createElement("div");
+    list.className = "event-list";
+    body.append(list);
+    appendNodeEventButtons(node, list, 0, new Map(events.map((event) => [event.seq, event])));
+    if (node.eventIds.length > ids.length) {
+      const note = document.createElement("p");
+      note.className = "muted detail-limit-note";
+      note.textContent = `Aggregate evidence summarizes the first ${formatCount(ids.length)} of ${formatCount(node.eventIds.length)} events; every event ID remains available below.`;
+      body.append(note);
+    }
+  } catch (error) {
+    loading.textContent = `Could not load detailed event evidence: ${error.message}`;
+  }
 }
 
-function appendNodeEventButtons(node, list, offset) {
+function appendNodeEventButtons(node, list, offset, eventMap = new Map()) {
   const end = Math.min(node.eventIds.length, offset + 50);
   for (let index = offset; index < end; index += 1) {
-    list.append(eventIdButton(node.eventIds[index], `event ${index + 1}`, node.operation));
+    const seq = node.eventIds[index];
+    const event = eventMap.get(seq);
+    list.append(eventIdButton(
+      seq,
+      event?.name || `event ${index + 1}`,
+      event ? eventButtonDetail(event) : node.operation,
+    ));
   }
   const existing = $("#details-body .load-more");
   if (existing) existing.remove();
@@ -386,7 +547,7 @@ function appendNodeEventButtons(node, list, offset) {
     more.type = "button";
     more.className = "load-more";
     more.textContent = `Show 50 more (${formatCount(node.eventIds.length - end)} remaining)`;
-    more.addEventListener("click", () => appendNodeEventButtons(node, list, end));
+    more.addEventListener("click", () => appendNodeEventButtons(node, list, end, eventMap));
     $("#details-body").append(more);
   }
 }
@@ -402,16 +563,22 @@ async function inspectEvent(seq) {
   body.append(detailGrid([
     ["Classification", `${event.category} / ${event.operation}`],
     ["Process", `${event.processName || "unknown"} (pid ${event.pid})`],
+    ["Parent PID", event.ppid === null ? "unavailable" : String(event.ppid)],
     ["Entity", event.processEntityId || "unavailable"],
+    ["Normalized detail", event.detail || "unavailable"],
     ["Timestamp ns", event.timestampNs || "unavailable"],
     ["Source", `line ${event.sourceLine}, item ${event.sourceIndex}`],
     ["Target", event.target || "unavailable"],
     ["FD", event.fd === null ? "unavailable" : String(event.fd)],
     ["Bytes", event.bytes === null ? "unavailable" : String(event.bytes)],
     ["Transport", event.transport],
-    ["Direction", event.direction],
+    ["Direction", formatDirection(event.direction)],
+    ["Success", event.success === null ? "unknown" : String(event.success)],
     ["Return", event.returnValue === null ? "unavailable" : String(event.returnValue)],
   ]));
+  appendCategoryEvidence(event, [event], body);
+  body.append(sectionTitle("Tracee arguments"));
+  body.append(argumentTable(event.args));
   if (event.notes.length) {
     body.append(sectionTitle("Normalization notes"));
     const notes = document.createElement("ul");
@@ -423,11 +590,161 @@ async function inspectEvent(seq) {
     }
     body.append(notes);
   }
-  body.append(sectionTitle("Original Tracee JSON"));
+  const rawDetails = document.createElement("details");
+  rawDetails.className = "raw-details";
+  const summary = document.createElement("summary");
+  summary.textContent = "Original Tracee JSON";
   const raw = document.createElement("pre");
   raw.className = "raw-event";
   raw.textContent = JSON.stringify(event.raw, null, 2);
-  body.append(raw);
+  rawDetails.append(summary, raw);
+  body.append(rawDetails);
+}
+
+function aggregateEventFields(events) {
+  const names = unique(events.map((event) => event.name));
+  const fds = unique(events.map((event) => event.fd).filter((value) => value !== null));
+  const targets = unique(events.map((event) => event.target).filter(Boolean));
+  const argumentNames = unique(events.flatMap((event) => Object.keys(event.args || {})));
+  const requestedBytes = events.reduce((total, event) => total + numericArgument(event.args, "count"), 0);
+  const returnedBytes = events.reduce((total, event) => total + (event.bytes || 0), 0);
+  const successes = events.filter((event) => event.success === true).length;
+  const failures = events.filter((event) => event.success === false).length;
+  const sources = events.map((event) => event.sourceLine).filter((value) => value !== undefined);
+  return [
+    ["Tracee event names", names.join(", ") || "unavailable"],
+    ["Targets", summarizeValues(targets)],
+    ["File descriptors", fds.join(", ") || "unavailable"],
+    ["Requested bytes", requestedBytes ? formatBytes(requestedBytes) : "unavailable"],
+    ["Returned bytes", returnedBytes ? formatBytes(returnedBytes) : "unavailable"],
+    ["Results", formatOutcomes(successes, failures, events.length)],
+    ["Argument fields", argumentNames.join(", ") || "none"],
+    ["Source lines", sources.length ? `${Math.min(...sources)}–${Math.max(...sources)}` : "unavailable"],
+  ];
+}
+
+function appendCategoryEvidence(subject, events, body) {
+  if (!events.length) return;
+  if (subject.category === "process") appendCommandEvidence(events, body);
+  if (subject.category === "file") appendFileEvidence(events, body);
+  if (subject.category === "socket") appendSocketEvidence(subject, events, body);
+}
+
+function appendCommandEvidence(events, body) {
+  const event = events.find((candidate) => argument(candidate.args, "argv") !== undefined);
+  if (!event) return;
+  body.append(sectionTitle("Process invocation"));
+  body.append(detailGrid([
+    ["Command", formatCommand(argument(event.args, "argv"))],
+    ["Executable", argument(event.args, "cmdpath") || argument(event.args, "pathname") || "unavailable"],
+    ["Working directory", argument(event.args, "pwd") || "unavailable"],
+    ["Interpreter", argument(event.args, "interpreter_pathname") || argument(event.args, "interp") || "unavailable"],
+    ["Standard input", argument(event.args, "stdin_path") || "unavailable"],
+    ["Previous image", argument(event.args, "prev_comm") || "unavailable"],
+  ]));
+}
+
+function appendFileEvidence(events, body) {
+  const ioEvents = events.filter((event) => event.operation === "read" || event.operation === "write");
+  if (!ioEvents.length) return;
+  const pointers = unique(ioEvents.map((event) => argument(event.args, "buf") ?? argument(event.args, "buffer"))
+    .filter((value) => typeof value === "string" && /^0x[0-9a-f]+$/i.test(value)));
+  const captured = ioEvents.flatMap(capturedContent);
+  const requested = ioEvents.reduce((total, event) => total + numericArgument(event.args, "count"), 0);
+  const returned = ioEvents.reduce((total, event) => total + (event.bytes || 0), 0);
+  body.append(sectionTitle("File I/O evidence"));
+  body.append(detailGrid([
+    ["Operations", unique(ioEvents.map((event) => event.operation)).join(", ")],
+    ["Resolved paths", summarizeValues(unique(ioEvents.map((event) => event.target).filter(Boolean)))],
+    ["Requested bytes", requested ? formatBytes(requested) : "unavailable"],
+    ["Returned bytes", returned ? formatBytes(returned) : "unavailable"],
+    ["Buffer pointers", summarizeValues(pointers)],
+    ["Captured content", captured.length ? `${captured.length} payload value(s)` : "not captured in these Tracee records"],
+  ]));
+  if (captured.length) {
+    const contentList = document.createElement("div");
+    contentList.className = "content-list";
+    for (const item of captured.slice(0, 12)) {
+      const content = document.createElement("pre");
+      content.className = "content-preview";
+      content.textContent = `${item.name}: ${formatArgument(item.value)}`;
+      contentList.append(content);
+    }
+    body.append(contentList);
+  } else {
+    const note = document.createElement("p");
+    note.className = "evidence-note";
+    note.textContent = "This capture records buffer addresses and byte counts, not the bytes stored at those addresses. Content cannot be reconstructed from a pointer alone.";
+    body.append(note);
+  }
+}
+
+function appendSocketEvidence(subject, events, body) {
+  const families = unique(events.flatMap((event) => nestedValues(event.args, "sa_family")));
+  const types = unique(events.map((event) => argument(event.args, "type") ?? argument(event.args, "sock_type")).filter(Boolean));
+  const endpoints = unique(events.map((event) => event.target).filter(Boolean));
+  body.append(sectionTitle("Socket evidence"));
+  body.append(detailGrid([
+    ["Transport", subject.transport || "unknown"],
+    ["Direction", formatDirection(subject.direction)],
+    ["Socket family", summarizeValues(families)],
+    ["Socket type", summarizeValues(types)],
+    ["Endpoints", summarizeValues(endpoints)],
+    ["Transferred bytes", formatBytes(events.reduce((total, event) => total + (event.bytes || 0), 0))],
+  ]));
+}
+
+function argumentTable(args = {}) {
+  const table = document.createElement("dl");
+  table.className = "argument-grid";
+  const entries = Object.entries(args);
+  if (!entries.length) {
+    const term = document.createElement("dt");
+    term.textContent = "—";
+    const value = document.createElement("dd");
+    value.textContent = "No arguments were captured.";
+    table.append(term, value);
+    return table;
+  }
+  for (const [name, rawValue] of entries) {
+    const term = document.createElement("dt");
+    term.textContent = name;
+    const value = document.createElement("dd");
+    value.textContent = formatArgument(rawValue);
+    table.append(term, value);
+  }
+  return table;
+}
+
+function capturedContent(event) {
+  const values = [];
+  for (const [name, value] of Object.entries(event.args || {})) {
+    const lower = name.toLowerCase();
+    const payloadName = ["content", "data", "payload", "payload_data", "buffer_data"].includes(lower);
+    const bufferValue = ["buf", "buffer"].includes(lower)
+      && !(typeof value === "string" && /^0x[0-9a-f]+$/i.test(value));
+    if (payloadName || bufferValue) values.push({ name, value });
+  }
+  return values;
+}
+
+function argument(args, name) {
+  const entry = Object.entries(args || {}).find(([key]) => key.toLowerCase() === name.toLowerCase());
+  return entry?.[1];
+}
+
+function numericArgument(args, name) {
+  const value = Number(argument(args, name));
+  return Number.isFinite(value) && value > 0 ? value : 0;
+}
+
+function nestedValues(value, key) {
+  if (Array.isArray(value)) return value.flatMap((item) => nestedValues(item, key));
+  if (!value || typeof value !== "object") return [];
+  return Object.entries(value).flatMap(([name, item]) => [
+    ...(name.toLowerCase() === key.toLowerCase() ? [String(item)] : []),
+    ...nestedValues(item, key),
+  ]);
 }
 
 async function browseEvents(offset = 0) {
@@ -501,6 +818,62 @@ function sectionTitle(value) {
   return heading;
 }
 
+function eventButtonDetail(event) {
+  const parts = [event.processName || `pid ${event.pid}`, event.operation];
+  if (event.target) parts.push(event.target);
+  if (event.bytes) parts.push(formatBytes(event.bytes));
+  return parts.join(" · ");
+}
+
+function unique(values) {
+  return [...new Set(values.map((value) => String(value)))];
+}
+
+function summarizeValues(values) {
+  if (!values.length) return "unavailable";
+  const visible = values.slice(0, 6);
+  return `${visible.join(", ")}${values.length > visible.length ? ` (+${values.length - visible.length} more)` : ""}`;
+}
+
+function formatArgument(value) {
+  if (value === undefined || value === null) return "unavailable";
+  if (typeof value === "string") return value;
+  try { return JSON.stringify(value); } catch { return String(value); }
+}
+
+function formatCommand(value) {
+  if (!Array.isArray(value)) return formatArgument(value);
+  return value.map((part) => String(part)).join(" ");
+}
+
+function formatDirection(value) {
+  const labels = {
+    outbound: "outbound",
+    "inbound-open": "inbound open/listen",
+    "inbound-accept": "inbound accept",
+    inbound: "inbound receive",
+    unknown: "unknown / ambiguous",
+    "not-applicable": "not applicable",
+  };
+  return labels[value] || value || "unknown";
+}
+
+function formatOutcomes(successes = 0, failures = 0, total = 0) {
+  const unknown = Math.max(0, total - successes - failures);
+  const parts = [];
+  if (successes) parts.push(`${formatCount(successes)} succeeded`);
+  if (failures) parts.push(`${formatCount(failures)} failed`);
+  if (unknown) parts.push(`${formatCount(unknown)} unknown`);
+  return parts.join(", ") || "unavailable";
+}
+
+function formatBytes(value) {
+  const bytes = Number(value) || 0;
+  if (bytes < 1024) return `${bytes} B`;
+  if (bytes < 1024 ** 2) return `${(bytes / 1024).toFixed(bytes >= 10 * 1024 ? 1 : 2)} KiB`;
+  return `${(bytes / (1024 ** 2)).toFixed(bytes >= 10 * 1024 ** 2 ? 1 : 2)} MiB`;
+}
+
 function formatCount(value) { return new Intl.NumberFormat().format(value || 0); }
 function formatIso(value) { try { return new Date(value).toLocaleString(); } catch { return value; } }
 function shortSource(value) { return value.split(/[\\/]/).slice(-2).join("/"); }
@@ -523,15 +896,21 @@ function formatOffset(ns) {
 canvas.addEventListener("pointerdown", (event) => {
   canvas.setPointerCapture(event.pointerId);
   state.dragging = true;
-  state.dragStart = { x: event.clientX - state.panX, y: event.clientY - state.panY };
+  state.dragStart = {
+    x: event.clientX,
+    y: event.clientY,
+    panX: state.panX,
+    scrollTop: canvasWrap.scrollTop,
+  };
   state.pointerStart = { x: event.clientX, y: event.clientY };
   canvas.classList.add("dragging");
 });
 
 canvas.addEventListener("pointermove", (event) => {
   if (!state.dragging) return;
-  state.panX = event.clientX - state.dragStart.x;
-  state.panY = event.clientY - state.dragStart.y;
+  state.panX = state.dragStart.panX + event.clientX - state.dragStart.x;
+  clampPanX();
+  canvasWrap.scrollTop = state.dragStart.scrollTop - (event.clientY - state.dragStart.y);
   draw();
 });
 
@@ -548,6 +927,7 @@ canvas.addEventListener("pointerup", (event) => {
 });
 
 canvas.addEventListener("wheel", (event) => {
+  if (!event.ctrlKey && !event.metaKey) return;
   event.preventDefault();
   const rect = canvas.getBoundingClientRect();
   zoomBy(event.deltaY < 0 ? 1.12 : .89, event.clientX - rect.left, event.clientY - rect.top);
@@ -559,9 +939,7 @@ canvas.addEventListener("keydown", (event) => {
   if (event.key === "0") fitGraph();
 });
 
-$("#fit").addEventListener("click", fitGraph);
-$("#zoom-in").addEventListener("click", () => zoomBy(1.25));
-$("#zoom-out").addEventListener("click", () => zoomBy(.8));
+$("#refresh-layout").addEventListener("click", refreshFilteredLayout);
 $("#all-events").addEventListener("click", () => browseEvents(0));
 $("#close-details").addEventListener("click", () => {
   shell.classList.remove("details-open");
@@ -573,11 +951,13 @@ $("#group").addEventListener("change", () => loadGraph({ preserveView: true }));
 $("#transport").addEventListener("change", (event) => { state.transport = event.target.value; applyFilters(); });
 $("#direction").addEventListener("change", (event) => { state.direction = event.target.value; applyFilters(); });
 $("#search").addEventListener("input", (event) => { state.search = event.target.value.trim(); applyFilters(); });
+canvasWrap.addEventListener("scroll", draw, { passive: true });
 
 new ResizeObserver(() => {
   if (!state.model) return;
   calculateLayout();
+  clampPanX();
   draw();
-}).observe($("#canvas-wrap"));
+}).observe(canvasWrap);
 
 loadGraph();

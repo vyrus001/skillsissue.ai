@@ -100,15 +100,24 @@ pub fn build_graph(trace: &TraceData, settings: GraphSettings) -> GraphModel {
                         event.process_name.clone()
                     }
                 });
-            nodes.push(process_node(
+            let command = command_line(event);
+            let mut node = process_node(
                 &id,
                 process,
                 "exec",
                 event.timestamp,
                 event.order,
                 vec![event.seq],
-                Some((label, event.detail.clone())),
-            ));
+                Some((
+                    label,
+                    command.clone().unwrap_or_else(|| event.detail.clone()),
+                    command,
+                )),
+            );
+            node.target.clone_from(&event.target);
+            node.success_count = usize::from(event.success == Some(true));
+            node.failure_count = usize::from(event.success == Some(false));
+            nodes.push(node);
             consumed.insert(event.seq);
             process_anchors.push(Anchor {
                 id,
@@ -243,6 +252,7 @@ pub fn build_graph(trace: &TraceData, settings: GraphSettings) -> GraphModel {
     }
 
     let mut activity_index = 0_usize;
+    let mut activity_chains = BTreeMap::<String, Vec<(usize, String)>>::new();
     for (key, mut group) in groups {
         group.events.sort_by_key(|event| event.order);
         let first = group.events[0];
@@ -258,6 +268,24 @@ pub fn build_graph(trace: &TraceData, settings: GraphSettings) -> GraphModel {
         let id = format!("activity:{activity_index}");
         activity_index += 1;
         let count = group.events.len();
+        let byte_count = group.events.iter().filter_map(|event| event.bytes).sum();
+        let file_descriptors = group
+            .events
+            .iter()
+            .filter_map(|event| event.fd)
+            .collect::<BTreeSet<_>>()
+            .into_iter()
+            .collect();
+        let success_count = group
+            .events
+            .iter()
+            .filter(|event| event.success == Some(true))
+            .count();
+        let failure_count = group
+            .events
+            .iter()
+            .filter(|event| event.success == Some(false))
+            .count();
         let label = activity_label(&key.operation, key.transport, key.direction, count);
         let sublabel = match target.as_deref() {
             Some(target) => format!("{} · {}", first.process_name, truncate(target, 100)),
@@ -274,6 +302,7 @@ pub fn build_graph(trace: &TraceData, settings: GraphSettings) -> GraphModel {
             depth: process_depth,
             label,
             sublabel,
+            command: None,
             process_key: first.process_key.clone(),
             process_name: first.process_name.clone(),
             pid: first.pid,
@@ -283,16 +312,35 @@ pub fn build_graph(trace: &TraceData, settings: GraphSettings) -> GraphModel {
             direction: first.direction,
             transport: first.transport,
             count,
+            byte_count,
+            file_descriptors,
+            success_count,
+            failure_count,
             event_ids: group.events.iter().map(|event| event.seq).collect(),
         });
-        edges.push(GraphEdge {
-            id: format!("edge:activity:{}:{id}", group.owner.id),
-            source: group.owner.id,
-            target: id,
-            kind: "activity".to_string(),
-            label: key.operation,
-            event_ids: Vec::new(),
-        });
+        activity_chains
+            .entry(group.owner.id)
+            .or_default()
+            .push((first.order, id));
+    }
+
+    // Activity for one process image is a chronological event chain. This avoids
+    // a dense owner-to-every-event star and gives the vertical timeline a clear
+    // continuation path through each recorded operation.
+    for (owner, mut chain) in activity_chains {
+        chain.sort();
+        let mut source = owner;
+        for (index, (_, target)) in chain.into_iter().enumerate() {
+            edges.push(GraphEdge {
+                id: format!("edge:activity:{source}:{index}"),
+                source,
+                target: target.clone(),
+                kind: "activity".to_string(),
+                label: "next event".to_string(),
+                event_ids: Vec::new(),
+            });
+            source = target;
+        }
     }
 
     for node in &mut nodes {
@@ -352,9 +400,9 @@ fn process_node(
     timestamp: Option<u64>,
     order: usize,
     event_ids: Vec<u64>,
-    override_text: Option<(String, String)>,
+    override_text: Option<(String, String, Option<String>)>,
 ) -> GraphNode {
-    let (label, sublabel) = override_text.unwrap_or_else(|| {
+    let (label, sublabel, command) = override_text.unwrap_or_else(|| {
         let label = if process.name.is_empty() {
             format!("pid {}", process.pid)
         } else {
@@ -365,7 +413,7 @@ fn process_node(
         } else {
             format!("pid {} · observed process image", process.pid)
         };
-        (label, sublabel)
+        (label, sublabel, None)
     });
     GraphNode {
         id: id.to_string(),
@@ -378,6 +426,7 @@ fn process_node(
         depth: 0,
         label,
         sublabel,
+        command,
         process_key: process.key.clone(),
         process_name: process.name.clone(),
         pid: process.pid,
@@ -387,8 +436,21 @@ fn process_node(
         direction: Direction::NotApplicable,
         transport: Transport::NotApplicable,
         count: event_ids.len(),
+        byte_count: 0,
+        file_descriptors: Vec::new(),
+        success_count: 0,
+        failure_count: 0,
         event_ids,
     }
+}
+
+fn command_line(event: &NormalizedEvent) -> Option<String> {
+    let argv = event.args.get("argv")?.as_array()?;
+    let parts = argv
+        .iter()
+        .filter_map(|value| value.as_str())
+        .collect::<Vec<_>>();
+    (!parts.is_empty()).then(|| truncate(&parts.join(" "), 1_000))
 }
 
 fn process_first_order(process: &ProcessInfo, trace: &TraceData) -> usize {
@@ -567,7 +629,7 @@ mod tests {
     #[test]
     fn graph_relationships_descend_and_represent_every_event() {
         let trace = trace(
-            r#"{"timestamp":1,"eventName":"sched_process_exec","processId":1,"processEntityId":10,"processName":"parent","args":{"pathname":"/bin/parent"}}
+            r#"{"timestamp":1,"eventName":"sched_process_exec","processId":1,"processEntityId":10,"processName":"parent","args":{"pathname":"/bin/parent","argv":["/bin/parent","--serve"]}}
 {"timestamp":2,"eventName":"sched_process_fork","processId":1,"processEntityId":10,"processName":"parent","args":{"child_ns_pid":2}}
 {"timestamp":3,"eventName":"sched_process_exec","processId":2,"processEntityId":20,"parentEntityId":10,"processName":"child","args":{"pathname":"/bin/child"}}
 {"timestamp":4,"eventName":"openat","processId":2,"processEntityId":20,"processName":"child","returnValue":3,"args":{"pathname":"/tmp/a","flags":"O_RDONLY"}}
@@ -577,6 +639,8 @@ mod tests {
         assert_eq!(graph.represented_event_count, graph.event_count);
         let parent = graph.nodes.iter().find(|node| node.id == "exec:1").unwrap();
         let child = graph.nodes.iter().find(|node| node.id == "exec:3").unwrap();
+        assert_eq!(parent.command.as_deref(), Some("/bin/parent --serve"));
+        assert_eq!(parent.target.as_deref(), Some("/bin/parent"));
         assert!(child.depth > parent.depth);
         assert!(graph.edges.iter().any(|edge| {
             edge.kind == "spawn"
@@ -638,14 +702,48 @@ mod tests {
         );
         assert_eq!(graph.activity_node_count, 1);
         assert_eq!(graph.represented_event_count, 3);
-        assert_eq!(
-            graph
-                .nodes
-                .iter()
-                .find(|node| node.kind == "activity")
-                .unwrap()
-                .event_ids,
-            [1, 2, 3]
+        let activity = graph
+            .nodes
+            .iter()
+            .find(|node| node.kind == "activity")
+            .unwrap();
+        assert_eq!(activity.event_ids, [1, 2, 3]);
+        assert_eq!(activity.byte_count, 3);
+        assert_eq!(activity.file_descriptors, [3]);
+        assert_eq!(activity.success_count, 3);
+        assert_eq!(activity.failure_count, 0);
+    }
+
+    #[test]
+    fn activity_edges_form_a_chronological_chain() {
+        let trace = trace(
+            r#"{"timestamp":1,"eventName":"sched_process_exec","processId":1,"processEntityId":10,"processName":"p","args":{"pathname":"/bin/p"}}
+{"timestamp":2,"eventName":"read","processId":1,"processEntityId":10,"processName":"p","returnValue":1,"args":{"fd":3}}
+{"timestamp":3,"eventName":"write","processId":1,"processEntityId":10,"processName":"p","returnValue":1,"args":{"fd":4}}
+"#,
         );
+        let graph = build_graph(
+            &trace,
+            GraphSettings {
+                bucket_ns: 0,
+                group: GroupMode::None,
+            },
+        );
+        let read = graph
+            .nodes
+            .iter()
+            .find(|node| node.event_ids == [2])
+            .unwrap();
+        let write = graph
+            .nodes
+            .iter()
+            .find(|node| node.event_ids == [3])
+            .unwrap();
+        assert!(graph.edges.iter().any(|edge| {
+            edge.kind == "activity" && edge.source == "exec:1" && edge.target == read.id
+        }));
+        assert!(graph.edges.iter().any(|edge| {
+            edge.kind == "activity" && edge.source == read.id && edge.target == write.id
+        }));
     }
 }

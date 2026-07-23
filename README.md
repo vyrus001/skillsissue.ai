@@ -270,11 +270,13 @@ plain Tracee JSONL, or compressed `events*.jsonl.zst` directly:
   telemetry/2026/07/14/run_961e7f0d8181beac92ddb9fc
 ```
 
-Open the printed loopback URL. The horizontal axis is event occurrence time and
-the process/exec tree descends vertically. Use time-bucket and grouping controls
-for dense traces; selecting an aggregate exposes all of its event IDs, while
-**All events** pages through every normalized record and its original Tracee
-JSON. See [`crates/skill-telemetry-view/README.md`](crates/skill-telemetry-view/README.md)
+Open the printed loopback URL. Event time descends through scrollable rows and
+the process/exec tree branches horizontally by execution depth. Use time-bucket
+and grouping controls for dense traces; selecting an aggregate exposes all of
+its event IDs and captured arguments. Filtered views can be repacked with
+**Refresh layout**, while **All events** pages through every normalized record
+and its original Tracee JSON. See
+[`crates/skill-telemetry-view/README.md`](crates/skill-telemetry-view/README.md)
 for the data model, classification limits, CLI safeguards, and usage options.
 
 ## Quick start
