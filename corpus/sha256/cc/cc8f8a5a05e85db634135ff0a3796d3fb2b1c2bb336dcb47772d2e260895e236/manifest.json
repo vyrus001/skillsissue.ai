@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:cc8f8a5a05e85db634135ff0a3796d3fb2b1c2bb336dcb47772d2e260895e236",
+  "sha256": "cc8f8a5a05e85db634135ff0a3796d3fb2b1c2bb336dcb47772d2e260895e236",
+  "blake3": "98fe9dbfa094e9a25d026d12b6796ab56b3231cfe02bf6d3b8db2a0eb032f84f",
+  "size_bytes": 52783,
+  "file_count": 15,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1071,
+      "sha256": "1c6d41b12f8fa5cba590e2ab0f952c43b826391f9f4e128e83c977ff58e29c5b",
+      "blake3": "e4e5ac99bd542e18e558c4110a8d719bb3f81ce6bb113925b097c1c2cb3182d1"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2228,
+      "sha256": "6f64ecc9602305d6ffc8ec794cad91b09f4aea502af962c4420998161bd2c62f",
+      "blake3": "0345becbc75fd38b799ea0f1914e74833b83b2fdcde7914011ecb4271b16d754"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1860,
+      "sha256": "0299e8066f571e993c31558eab194ec27a5588ed7f416546784d754f61a52cce",
+      "blake3": "64fa8b2befe3425fec67e806962a322c49043a892aa8995ab22eab3d18e612d7"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 145,
+      "sha256": "a5f080c1727c22e735694848241284e75d94fcd838728ff76e9aac2a9f031a53",
+      "blake3": "56c0030084809131a94aa518deb5e33b05953e8075ded92b3232a6c57ca0205c"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 156,
+      "sha256": "2015bd496bdb939e0604e661d6cbfaa88f380a94816611384c10789f468a187d",
+      "blake3": "69e3f8063a70e30e3206e704f7fb1de9af0ef9667262138c2a0fa8094ac789de"
+    },
+    {
+      "path": "pytest.ini",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 125,
+      "sha256": "9024eb52b07a0ae4471be8219bdb57948721e4932387e9bb152d8fc52af28952",
+      "blake3": "e69801775d7a8cccbb9e895b2fb441a6d67416299c41f71f198923fecec7e668"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 62,
+      "sha256": "36e48c863a1752690079a4f0e7e1bd27c3126d1a6e1234b004f79124289b11da",
+      "blake3": "794111a6aee19a8d70fff7176d4176858c76c818fa79d34eb9302e185bc9ad53"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2432,
+      "sha256": "9598e45306f84c7b5f29d25b94a2a0501994d5b6316d4dd9c58aab99c315d37a",
+      "blake3": "a518058820c1d676eac4aa50aa24236b04b970d96e6e2b2b947f611a58d2d52a"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/conftest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1781,
+      "sha256": "4a5306cd605631c16a5ed6322f2a9601caa4c888f13fd266541f660959b2e408",
+      "blake3": "a991fee58a42d07957b6fb634c38d0c570d55c048f66465b248bf7c5a865fbdc"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3769,
+      "sha256": "79d42501f9b0d1556c89d483c3711889589e65deedaba31ec1c19fec68b57938",
+      "blake3": "b8cb8bc11a276d2100c48f754f88bab7f8912024fdf8efee505e02ece50143ba"
+    },
+    {
+      "path": "tests/test_download.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6806,
+      "sha256": "f16ab4d18a0bc22962e11d77b53756b18333109946f02a392d73b2f7e509acf0",
+      "blake3": "37923327432559096c4af251141a3d46bb95dc01614da1ca9e8677b7d4f9f82c"
+    },
+    {
+      "path": "tests/test_integration.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7022,
+      "sha256": "d2ac303a0fda17e7f5872e2d1d98f3d3095c43ceeb6b8175ef2005d56917a77a",
+      "blake3": "e52c53f451f1514110b06a472a189f18f03714c52fb6bc9c3bac5e71954d700a"
+    },
+    {
+      "path": "tests/test_search.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6765,
+      "sha256": "fe59085a1cd7f7d4ea9895cba712766ae39134d3f13dae67ec205fbf7e3bb114",
+      "blake3": "9269dfaae7ee98ad0b877c98d55a1c7e50d5b1a19ee9f683cc46d7589c29a604"
+    },
+    {
+      "path": "tests/test_security.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4030,
+      "sha256": "448fa86902005ab43963a5eaf3a015f16fde51150349e1593d3549205fcef80e",
+      "blake3": "ea21d9fb22ec8e0bd18a88bbf720217f357f8a926b2d849227d42d29302e864f"
+    },
+    {
+      "path": "viirs-nightlights-download.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14531,
+      "sha256": "86d2f2caec176ba9a207df49a42dcac9b4fbc6425206b529bafcd44d18f34c14",
+      "blake3": "8e035685f9f31835ef7345b2bbd0bd3ecccc3726aeca8c9ec5719e5176d678ce"
+    }
+  ]
+}

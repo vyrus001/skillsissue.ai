@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:970ede5cbffa61cb9f7c9602b65cb55e26e4118a877950d7c799b59c6f6a65e2",
+  "sha256": "970ede5cbffa61cb9f7c9602b65cb55e26e4118a877950d7c799b59c6f6a65e2",
+  "blake3": "29a7c9b9a5dc311eb5c0f37f1e362c2949e623aa6519b32d57049e9deb2e287b",
+  "size_bytes": 156025,
+  "file_count": 8,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29657,
+      "sha256": "bbd7b8d5da6175e798a6d26f73194a33fe28ae150c609bdf56a2ff9371d6fa29",
+      "blake3": "d6ce4e611df12fdeffdff03d49f181471fbfd428e380354c0514d71c1fe9df96"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 132,
+      "sha256": "7f9558322a6558931877aa5e9b24fa1595035f137b1850395661826ac87c7c33",
+      "blake3": "82dc84ab8752a28d286916ee793c8fa4c5082a3f445e8a3b43c8bcace573cdf3"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/anti-ai-writing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 36483,
+      "sha256": "24117587d22a9d4453e9e5a86593b1240841ab6eb89e2af04ce2d12512083700",
+      "blake3": "daede0b60502cfe4a4b52a570661007cf32a245945b4c435825761d344e6156c"
+    },
+    {
+      "path": "references/banned-words.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9106,
+      "sha256": "7d4472601809b890f9f13ab32f07030e787dd52672e4d0ed19e2ac8044901483",
+      "blake3": "8b7027d46a4dc557f0603baf9c0ab40ee486c8c6c4e546d16af18582ef5da131"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/check-ai-patterns.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 55635,
+      "sha256": "0749f683e26dc9dc545699209aede798a2f88424bd251f314d060729e8ec6910",
+      "blake3": "ddbfbfdb0b2957d6f12e3aa06962a5d34f6ff0fd0382680a20e56c3ec5ad7878"
+    },
+    {
+      "path": "scripts/check-degeneration.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13991,
+      "sha256": "edad5d1693334fe98688323db89da0385c9bc827cbe0fbc50a1e5e28f71bdfb8",
+      "blake3": "e62f1f0391c5a3e742253fcd45282074d7a22f47c1157403cfa4d9c97ddf916f"
+    },
+    {
+      "path": "scripts/normalize-punctuation.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8722,
+      "sha256": "398179e1480ea7e5c5dfb8ee3557deef01ec6949814cc7a495da3fa6607fba24",
+      "blake3": "b500659d723bcbb89a0b54ff3c1eb2e84b744c8c7b547759c3dd3d404713f76d"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2299,
+      "sha256": "32ae9df434e06dda2a7b65dbbfa781a53f9c9a701b7caf8387feac24deb1cd13",
+      "blake3": "f1c293643e1bb1ed73929b23ad0e8c8400c523d5cff4065861925a742f8dc385"
+    }
+  ]
+}

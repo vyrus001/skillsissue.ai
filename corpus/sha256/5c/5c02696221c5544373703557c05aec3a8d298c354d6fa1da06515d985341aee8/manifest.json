@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:5c02696221c5544373703557c05aec3a8d298c354d6fa1da06515d985341aee8",
+  "sha256": "5c02696221c5544373703557c05aec3a8d298c354d6fa1da06515d985341aee8",
+  "blake3": "927bf8e1dbcc03d7e46d11a4fe4214be0a2e0afe16668c4f8b3fda6171a6c0ba",
+  "size_bytes": 121172,
+  "file_count": 20,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5178,
+      "sha256": "951a74e6c814cbb8f4f63424fd3ce664f99ebd82fa1e18050fb3a739b09eeecf",
+      "blake3": "4d1c226249ca51ae1ab34d9f162dfa4ad2e7d4b272b419c932736dacfce283c5"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25300,
+      "sha256": "d215f7f943908ed5c50009a5ba9a258ef76568376bfd1b1563f393c8b0a9c7e5",
+      "blake3": "12182fb3d98dca2b9e46ffeec8bf99d30c0e22c7e0cdbb0980985cb968070dc6"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 151,
+      "sha256": "d3e5a4b54e4b424ae828a881782a9f6e9cbc3d067a58f9c4f3ed5d87b37a4abe",
+      "blake3": "857c3b3385ebf034df0a03d7c5154840a16dcf2a9cd6336fd6c49107710b52a5"
+    },
+    {
+      "path": "config.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 352,
+      "sha256": "8942db230a0590eb9441b89657cb03eefd6de5ac7b54ae90d39cc138595b1497",
+      "blake3": "44bd925feb34117e77b0574ad87bb01d3dfa0be4eaa771539ec4a9a771c0ea73"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 216,
+      "sha256": "ae109dd3ae73d15b69d357492604af33623b66a9120eba9b5925cefcc618503d",
+      "blake3": "999bb15e2afd4983cbca14ef4ca07573782b104ee201482ad87105f88d5dc884"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "scripts/checks.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8043,
+      "sha256": "7879e6a15ac53cbf294a14f059f0724a4fbdd8863156e8d2935933b5889416f9",
+      "blake3": "7d8935a85f401be606de71855f8124fb47dccba40cdca73208f3c3e4bcd6cfe7"
+    },
+    {
+      "path": "scripts/config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 982,
+      "sha256": "7c3e0348d20f3186f5f2af314713e7acbde3287fd751fdbe4ff6c85ee9e6a87d",
+      "blake3": "3052bccf5a1645343626b88044010e358f9b6b1991e50e47be7ef46678f2755a"
+    },
+    {
+      "path": "scripts/evidence_pipeline",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/evidence_pipeline/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "scripts/evidence_pipeline/cache.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2366,
+      "sha256": "30d658e380cf0beecfd90f6147a9cc9865458ccdd44cbbbd4ac56c27fe6e5c7b",
+      "blake3": "7b6223f2e894aaca784004a04a9bbbb51033cdab38eee55e62c3c079e222bb42"
+    },
+    {
+      "path": "scripts/evidence_pipeline/calculations.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4355,
+      "sha256": "26edd5bb975be939fee9da323a01efbb05371cfe1773180ffda7b226b5ee6030",
+      "blake3": "5c78f9929ac87858797dcb33e96f1685d655686bc505da75c2eb76bb32ccb966"
+    },
+    {
+      "path": "scripts/evidence_pipeline/inventory.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2997,
+      "sha256": "f219ce7b0d4597abba8173afa48f463324b4db67ad35890b98cac42d1aae6036",
+      "blake3": "164f50ccff7059484b80512dcd62ca61b095ff583cbd5defeeedc11e770df6bf"
+    },
+    {
+      "path": "scripts/evidence_pipeline/pdf_extract.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2901,
+      "sha256": "4bd04cb7252c86735bbd0c2928e10207500defebe6cfee7bb57b623c38019425",
+      "blake3": "9e686307e970b2ab94d4abc250f7f89c2e59e62ef5e7ebb37332ef5e7a9f7236"
+    },
+    {
+      "path": "scripts/evidence_pipeline/search.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5860,
+      "sha256": "fbbf546d8ee248f5e8ad6c59d7eecca118c85cd5b966627faeca551df02b5120",
+      "blake3": "5dc6bfc97368015bb96df1cdee85f13d9761ca3562ad80d60247f1c86321dca1"
+    },
+    {
+      "path": "scripts/evidence_pipeline/validator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5453,
+      "sha256": "8c905d3c6f3d30de49ff264fe37dcfd10827861be81d39db9db95fe0d7c7c5ea",
+      "blake3": "3f6b7a33e55b365936aa908df7d3cbae80be31492790e870bf9c26dc2997ffd4"
+    },
+    {
+      "path": "scripts/evidence_pipeline/workbook_extract.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4782,
+      "sha256": "fe2411d02dc7a002b34988498efd2263a6702dfb5b76307f8c38a3989d3b3d9b",
+      "blake3": "300833d5ccfa4d12762beac46101a3d8cfe9deadf76befd591157f515aedc0de"
+    },
+    {
+      "path": "scripts/generate_report.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19798,
+      "sha256": "b92d3f41c80f8b89e4a4ddfeae1ee1a4c66112597ef95875d99c46f4feab4ff3",
+      "blake3": "2faf41a9270f86a3c4e2ebee672bbcff3291dc403ee23fc3268f47994e9f1ee1"
+    },
+    {
+      "path": "scripts/generate_report_input.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15706,
+      "sha256": "6347e4408f845fae7d2fa73f423e80f49d60b854f51a546e84d22b95e1cb337d",
+      "blake3": "7076549be123b91681d5c1bda76925efd6ad33f423ef11225e6307635559fa31"
+    },
+    {
+      "path": "scripts/product_evidence.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14440,
+      "sha256": "40cbafdc700c84832df471a71954cd0e4f5bebb1c9f504a005ae632fe1c32468",
+      "blake3": "510d8ac3ce164da084cca93787e513aa31947672dcb8b7fc9dbc890deaecce83"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2292,
+      "sha256": "a98f6e426dce92b954d66686d2d78cc4cf61db8a52a03fde84ab99ac12600d9f",
+      "blake3": "740240878306fe095e6dfc88b6256f61add0943afa2ecb20e04464f9791b3601"
+    }
+  ]
+}

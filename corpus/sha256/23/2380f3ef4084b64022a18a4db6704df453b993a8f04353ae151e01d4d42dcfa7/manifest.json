@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:2380f3ef4084b64022a18a4db6704df453b993a8f04353ae151e01d4d42dcfa7",
+  "sha256": "2380f3ef4084b64022a18a4db6704df453b993a8f04353ae151e01d4d42dcfa7",
+  "blake3": "b1caebe2127ed45b3636989986158fb490d8a27272f9ed85201aae873019fe85",
+  "size_bytes": 102296,
+  "file_count": 13,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 949,
+      "sha256": "bfbca6e4386f4160537d7042845b0772b55703955ba47e3fe1331b589e2a93b6",
+      "blake3": "a2a4c72cd38c0c7535c62f35474b1dc3ef82a674c7fe261cec13493629282840"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9703,
+      "sha256": "af36d0f3cd078d680c688eda3bbdf208efa550b9d2aceada1a24a7adebe46bb5",
+      "blake3": "dd199a6a578bc02abd126788b88549b272cd1947b4f4cf55da5d2b4eceb43317"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6970,
+      "sha256": "5499f408310c0a869acae9bdd4b7ca77254f7bb4b5fe8f1dd9f2e87eaa9002a4",
+      "blake3": "ebeb6d643545da8b979479fad2abd930716a36c79d4212bffadfb6348908f5f5"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 140,
+      "sha256": "b612ea9978b34330dbc50dda6057a56c72abe365ebb473f9401f98c1dbe0c426",
+      "blake3": "4be2844fc619bab8581b0b943b1d2ddcd6817e60750a1ae195a1084d55143a77"
+    },
+    {
+      "path": "affine.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8560,
+      "sha256": "b5d299bdded700486ca6baf99ee320e2a05653a291f6e61b6d11319caa300709",
+      "blake3": "f373e614336fda42b6360fe7ad9deced4a052efe7a747351377a61cc11f442ca"
+    },
+    {
+      "path": "cli.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12475,
+      "sha256": "3fdbeeed12eb415a1b26ed888180a6a89c42638177f751639c3d5f9ba7372b8f",
+      "blake3": "129b57d77b874c59cab1565fe3a4785daf20546d1ee6b556c0635c270e759b6a"
+    },
+    {
+      "path": "examples",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/controls.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 349,
+      "sha256": "68e1c7a482466383db65e7255acb6ead7808d30763cf7dc84fc657ad3e72320a",
+      "blake3": "64d2540966c67b61bbe9c52de57465bd05e89a86a19b8139a3bd923bf56b6240"
+    },
+    {
+      "path": "examples/points.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 391,
+      "sha256": "af1e540942b4c5f81338e7e619ef990e566b59bd850a2281d336da4bee68ccd9",
+      "blake3": "1ca03a92191705ee1727e79e493565976572de438cbd626e33a0288bee3f4e29"
+    },
+    {
+      "path": "helmert.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18113,
+      "sha256": "dc6877b1cef3e0401560dec159ffe3254ef7f62715fc1c3455266eecf14397d6",
+      "blake3": "f500120306842cbf2135bfadcb2ffd6caf9c82da4c6e5c22a3952ad9f1531b19"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2424,
+      "sha256": "4b518476e3c26b1a6e68ba7539672df80d64df0a667c41526cc3afdd0cc45c80",
+      "blake3": "6c1b1fddb186c92253de596a0241dd52de200de3c83418f79f8e1f6d7a38cba5"
+    },
+    {
+      "path": "test.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24329,
+      "sha256": "2f16d923d3545930a1b9bd546d641b62844f4cfcbc1b9d0dfb6dac2c77139cf6",
+      "blake3": "cd24e8e0de45e2a885d8a2f55d2cf32e8ed286ad2f5b9ef5032bc569c649d9b2"
+    },
+    {
+      "path": "transform.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5933,
+      "sha256": "50995b38856d141432f04d522239640ac6ff7592b31fa9fe3654a3be1c797d61",
+      "blake3": "046f29bf74329158e419c267460c1d32d1e47035073654bc2c23dc1abe3ced40"
+    },
+    {
+      "path": "vector.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11960,
+      "sha256": "b8ef386e95b4d983ba7f4b125690dee481b51b9948264b975cbe7ef9e5cf9d60",
+      "blake3": "79392b9f19d92738e7418db37677bf4c8ec44f3768008847c8fb938427230f3c"
+    }
+  ]
+}
