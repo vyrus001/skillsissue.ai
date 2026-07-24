@@ -568,12 +568,21 @@ fn resolve_ambiguous_variants<T: HttpTransport>(
 
     let mut owners = BTreeSet::new();
     for matched in ambiguity.matches {
-        if matched.slug != slug || !valid_owner_handle(&matched.owner_handle) {
+        // ClawHub can include similarly named suggestions in this list. They
+        // are not variants of the requested slug and must not influence the
+        // publisher-qualified lookups below.
+        if matched.slug != slug {
+            continue;
+        }
+        if !valid_owner_handle(&matched.owner_handle) {
             bail!("ClawHub ambiguous skill response contained an unsafe publisher match");
         }
         if !owners.insert(matched.owner_handle) {
             bail!("ClawHub ambiguous skill response repeated a publisher match");
         }
+    }
+    if owners.is_empty() {
+        bail!("ClawHub ambiguous skill response contained no matching publisher");
     }
 
     let mut variants = Vec::with_capacity(owners.len());
@@ -1576,7 +1585,7 @@ mod tests {
                 status: 409,
                 content_type: Some("application/json".to_owned()),
                 location: None,
-                body: br#"{"code":"AMBIGUOUS_SKILL_SLUG","slug":"shared","matches":[{"ownerHandle":"beta","slug":"shared"},{"ownerHandle":"alpha","slug":"shared"}]}"#.to_vec(),
+                body: br#"{"code":"AMBIGUOUS_SKILL_SLUG","slug":"shared","matches":[{"ownerHandle":"beta","slug":"shared"},{"ownerHandle":"suggested","slug":"related"},{"ownerHandle":"alpha","slug":"shared"}]}"#.to_vec(),
             },
         );
         transport.add(
