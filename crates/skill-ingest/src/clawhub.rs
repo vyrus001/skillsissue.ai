@@ -21,6 +21,7 @@ const CATALOG_PAGE_SIZE: usize = 200;
 const MAX_CATALOG_BYTES: u64 = 8 * 1024 * 1024;
 const MAX_DOWNLOAD_BYTES: u64 = 128 * 1024 * 1024;
 const MAX_HANDOFF_BYTES: usize = 64 * 1024;
+const MAX_AMBIGUOUS_MATCHES: usize = 100;
 const MAX_PAGES: usize = 10_000;
 const MAX_CURSOR_BYTES: usize = 8 * 1024;
 const MAX_ZIP_ENTRIES: usize = 100_000;
@@ -118,13 +119,16 @@ where
 {
     limits.validate()?;
     let base = validate_clawhub_base(locator)?;
-    let clawhub_policy = FetchPolicy {
-        hosts: &[CLAWHUB_HOST],
-        max_redirects: 0,
-    };
-    let github_policy = FetchPolicy {
-        hosts: GITHUB_ARCHIVE_HOSTS,
-        max_redirects: 3,
+    let settings = ScanSettings {
+        limits,
+        clawhub_policy: FetchPolicy {
+            hosts: &[CLAWHUB_HOST],
+            max_redirects: 0,
+        },
+        github_policy: FetchPolicy {
+            hosts: GITHUB_ARCHIVE_HOSTS,
+            max_redirects: 3,
+        },
     };
     let mut stats = ScanStats::default();
     let mut cursor: Option<String> = None;
@@ -136,8 +140,12 @@ where
             bail!("ClawHub pagination exceeded the {MAX_PAGES} page safety limit");
         }
         let list_url = catalog_url(&base, cursor.as_deref())?;
-        let response =
-            fetch_with_redirects(transport, list_url, MAX_CATALOG_BYTES, clawhub_policy)?;
+        let response = fetch_with_redirects(
+            transport,
+            list_url,
+            MAX_CATALOG_BYTES,
+            settings.clawhub_policy,
+        )?;
         require_success(&response, "ClawHub catalog")?;
         if !is_json_content_type(response.content_type.as_deref()) {
             bail!("ClawHub catalog response was not JSON");
@@ -168,15 +176,15 @@ where
                     continue;
                 }
             };
-            let source_url = skill_detail_url(&base, &slug)?.to_string();
             let version = item.latest_version.and_then(CatalogVersion::into_version);
             let updated_at = item.updated_at;
-            let provisional = match version.as_deref() {
-                Some(version) if valid_version(version) => ClawhubObservation {
-                    source_native_id: slug.clone(),
-                    source_url: source_url.clone(),
-                    source_revision: hosted_revision(version, updated_at),
-                    source_path: slug.clone(),
+            let source_url = skill_detail_url(&base, &slug, None)?.to_string();
+            let variant = match version.as_deref() {
+                Some(version) if valid_version(version) => CatalogVariant {
+                    slug: slug.clone(),
+                    owner_handle: None,
+                    version: Some(version.to_owned()),
+                    updated_at,
                 },
                 Some(_) => {
                     let observation = ClawhubObservation {
@@ -193,13 +201,14 @@ where
                     }
                     continue;
                 }
-                None => ClawhubObservation {
-                    source_native_id: slug.clone(),
-                    source_url: source_url.clone(),
-                    source_revision: catalog_revision(updated_at),
-                    source_path: slug.clone(),
+                None => CatalogVariant {
+                    slug: slug.clone(),
+                    owner_handle: None,
+                    version: None,
+                    updated_at,
                 },
             };
+            let provisional = variant.observation(&base)?;
 
             let catalog_key = (
                 provisional.source_native_id.clone(),
@@ -209,161 +218,60 @@ where
                 continue;
             }
 
-            // Hosted skills expose their exact semantic version in the list.
-            // Version-less entries can be GitHub handoffs, whose immutable
-            // commit is learned from the small descriptor below.
-            if version.is_some() && updated_at.is_some() {
-                match classify(&provisional) {
-                    KnownDisposition::Discovery => {
-                        stats.skipped_discoveries += 1;
-                        continue;
-                    }
-                    KnownDisposition::Rejection => {
-                        stats.skipped_rejections += 1;
-                        continue;
-                    }
-                    KnownDisposition::New => {}
-                }
-            } else if matches!(classify(&provisional), KnownDisposition::Rejection) {
-                stats.skipped_rejections += 1;
-                continue;
-            }
-
-            let download_url = download_url(&base, &slug, version.as_deref())?;
-            let response = match fetch_with_redirects(
+            match process_variant(
                 transport,
-                download_url,
-                MAX_DOWNLOAD_BYTES,
-                clawhub_policy,
-            ) {
-                Ok(response) => response,
-                Err(error) => {
-                    if !visit(ClawhubCandidate::Error {
-                        observation: provisional,
-                        message: format!("download request failed: {error:#}"),
-                    })? {
-                        return Ok(stats);
-                    }
-                    continue;
-                }
-            };
-            if let Err(error) = require_success(&response, "ClawHub skill download") {
-                if !visit(ClawhubCandidate::Error {
-                    observation: provisional,
-                    message: format!("download request failed: {error:#}"),
-                })? {
-                    return Ok(stats);
-                }
-                continue;
-            }
-            let download = match decode_download(response) {
-                Ok(download) => download,
-                Err(error) => {
-                    if !visit(ClawhubCandidate::Rejected {
-                        observation: provisional,
-                        reason: format!("download payload rejected: {error:#}"),
-                    })? {
-                        return Ok(stats);
-                    }
-                    continue;
-                }
-            };
-
-            let candidate = match download {
-                DownloadPayload::Zip(bytes) => {
-                    let Some(version) = version.as_deref() else {
-                        if !visit(ClawhubCandidate::Rejected {
-                            observation: provisional,
-                            reason: "version-less catalog item returned ZIP bytes".to_owned(),
-                        })? {
-                            return Ok(stats);
-                        }
-                        continue;
-                    };
-                    match extract_skill_archive(&bytes, None, limits).and_then(|mut extracted| {
-                        validate_hosted_metadata(&extracted.skill_dir, &slug, version)?;
-                        extracted.observation = Some(provisional.clone());
-                        extracted.into_downloaded()
-                    }) {
-                        Ok(downloaded) => ClawhubCandidate::Downloaded(downloaded),
-                        Err(error) => ClawhubCandidate::Rejected {
-                            observation: provisional,
-                            reason: format!("hosted ZIP rejected: {error:#}"),
-                        },
-                    }
-                }
-                DownloadPayload::GitHub(handoff) => {
-                    let handoff = match ValidatedHandoff::new(handoff) {
-                        Ok(handoff) => handoff,
+                &base,
+                &variant,
+                settings,
+                &mut classify,
+                &mut visit,
+                &mut stats,
+            )? {
+                ScanControl::Continue => {}
+                ScanControl::Stop => return Ok(stats),
+                ScanControl::Ambiguous(observation) => {
+                    let variants = match resolve_ambiguous_variants(
+                        transport,
+                        &base,
+                        &slug,
+                        settings.clawhub_policy,
+                    ) {
+                        Ok(variants) => variants,
                         Err(error) => {
-                            if !visit(ClawhubCandidate::Rejected {
-                                observation: provisional,
-                                reason: format!("GitHub handoff rejected: {error:#}"),
+                            if !visit(ClawhubCandidate::Error {
+                                observation,
+                                message: format!("ambiguous slug resolution failed: {error:#}"),
                             })? {
                                 return Ok(stats);
                             }
                             continue;
                         }
                     };
-                    let observation = handoff.observation(&slug, &source_url, version.as_deref());
-                    match classify(&observation) {
-                        KnownDisposition::Discovery => {
-                            stats.skipped_discoveries += 1;
-                            continue;
-                        }
-                        KnownDisposition::Rejection => {
-                            stats.skipped_rejections += 1;
-                            continue;
-                        }
-                        KnownDisposition::New => {}
-                    }
-                    match fetch_with_redirects(
-                        transport,
-                        handoff.archive_url.clone(),
-                        MAX_DOWNLOAD_BYTES,
-                        github_policy,
-                    ) {
-                        Err(error) => ClawhubCandidate::Error {
-                            observation,
-                            message: format!("GitHub archive request failed: {error:#}"),
-                        },
-                        Ok(response) => {
-                            if let Err(error) = require_success(&response, "GitHub source archive")
-                            {
-                                ClawhubCandidate::Error {
+                    for variant in variants {
+                        match process_variant(
+                            transport,
+                            &base,
+                            &variant,
+                            settings,
+                            &mut classify,
+                            &mut visit,
+                            &mut stats,
+                        )? {
+                            ScanControl::Continue => {}
+                            ScanControl::Stop => return Ok(stats),
+                            ScanControl::Ambiguous(observation) => {
+                                if !visit(ClawhubCandidate::Error {
                                     observation,
-                                    message: format!("GitHub archive request failed: {error:#}"),
-                                }
-                            } else if !looks_like_zip(&response.body) {
-                                ClawhubCandidate::Rejected {
-                                    observation,
-                                    reason: "GitHub source archive response was not ZIP data"
-                                        .to_owned(),
-                                }
-                            } else {
-                                match extract_skill_archive(
-                                    &response.body,
-                                    Some(&handoff.path),
-                                    limits,
-                                )
-                                .and_then(|mut extracted| {
-                                    extracted.observation = Some(observation.clone());
-                                    extracted.into_downloaded()
-                                }) {
-                                    Ok(downloaded) => ClawhubCandidate::Downloaded(downloaded),
-                                    Err(error) => ClawhubCandidate::Rejected {
-                                        observation,
-                                        reason: format!("GitHub source ZIP rejected: {error:#}"),
-                                    },
+                                    message:
+                                        "publisher-qualified ClawHub download remained ambiguous"
+                                            .to_owned(),
+                                })? {
+                                    return Ok(stats);
                                 }
                             }
                         }
                     }
                 }
-            };
-
-            if !visit(candidate)? {
-                return Ok(stats);
             }
         }
 
@@ -382,6 +290,334 @@ where
     Ok(stats)
 }
 
+enum ScanControl {
+    Continue,
+    Stop,
+    Ambiguous(ClawhubObservation),
+}
+
+#[derive(Clone, Copy)]
+struct ScanSettings {
+    limits: SecurityLimits,
+    clawhub_policy: FetchPolicy,
+    github_policy: FetchPolicy,
+}
+
+#[derive(Clone, Debug, Eq, PartialEq)]
+struct CatalogVariant {
+    slug: String,
+    owner_handle: Option<String>,
+    version: Option<String>,
+    updated_at: Option<u64>,
+}
+
+impl CatalogVariant {
+    fn observation(&self, base: &Url) -> Result<ClawhubObservation> {
+        let source_native_id = self
+            .owner_handle
+            .as_deref()
+            .map(|owner| format!("@{owner}/{}", self.slug))
+            .unwrap_or_else(|| self.slug.clone());
+        let source_revision = self
+            .version
+            .as_deref()
+            .map(|version| hosted_revision(version, self.updated_at))
+            .unwrap_or_else(|| catalog_revision(self.updated_at));
+        Ok(ClawhubObservation {
+            source_native_id: source_native_id.clone(),
+            source_url: skill_detail_url(base, &self.slug, self.owner_handle.as_deref())?
+                .to_string(),
+            source_revision,
+            source_path: source_native_id,
+        })
+    }
+}
+
+fn process_variant<T, F, K>(
+    transport: &T,
+    base: &Url,
+    variant: &CatalogVariant,
+    settings: ScanSettings,
+    classify: &mut K,
+    visit: &mut F,
+    stats: &mut ScanStats,
+) -> Result<ScanControl>
+where
+    T: HttpTransport,
+    F: FnMut(ClawhubCandidate) -> Result<bool>,
+    K: FnMut(&ClawhubObservation) -> KnownDisposition,
+{
+    let provisional = variant.observation(base)?;
+
+    // Hosted skills expose their exact semantic version in the list or in an
+    // owner-qualified detail response. Version-less entries can be GitHub
+    // handoffs, whose immutable commit is learned from the descriptor below.
+    if variant.version.is_some() && variant.updated_at.is_some() {
+        match classify(&provisional) {
+            KnownDisposition::Discovery => {
+                stats.skipped_discoveries += 1;
+                return Ok(ScanControl::Continue);
+            }
+            KnownDisposition::Rejection => {
+                stats.skipped_rejections += 1;
+                return Ok(ScanControl::Continue);
+            }
+            KnownDisposition::New => {}
+        }
+    } else if matches!(classify(&provisional), KnownDisposition::Rejection) {
+        stats.skipped_rejections += 1;
+        return Ok(ScanControl::Continue);
+    }
+
+    let response = match fetch_with_redirects(
+        transport,
+        download_url(
+            base,
+            &variant.slug,
+            variant.owner_handle.as_deref(),
+            variant.version.as_deref(),
+        )?,
+        MAX_DOWNLOAD_BYTES,
+        settings.clawhub_policy,
+    ) {
+        Ok(response) => response,
+        Err(error) => {
+            return Ok(
+                if visit(ClawhubCandidate::Error {
+                    observation: provisional,
+                    message: format!("download request failed: {error:#}"),
+                })? {
+                    ScanControl::Continue
+                } else {
+                    ScanControl::Stop
+                },
+            );
+        }
+    };
+    if response.status == 409 && variant.owner_handle.is_none() {
+        return Ok(ScanControl::Ambiguous(provisional));
+    }
+    if let Err(error) = require_success(&response, "ClawHub skill download") {
+        return Ok(
+            if visit(ClawhubCandidate::Error {
+                observation: provisional,
+                message: format!("download request failed: {error:#}"),
+            })? {
+                ScanControl::Continue
+            } else {
+                ScanControl::Stop
+            },
+        );
+    }
+    let download = match decode_download(response) {
+        Ok(download) => download,
+        Err(error) => {
+            return Ok(
+                if visit(ClawhubCandidate::Rejected {
+                    observation: provisional,
+                    reason: format!("download payload rejected: {error:#}"),
+                })? {
+                    ScanControl::Continue
+                } else {
+                    ScanControl::Stop
+                },
+            );
+        }
+    };
+
+    let candidate = match download {
+        DownloadPayload::Zip(bytes) => {
+            let Some(version) = variant.version.as_deref() else {
+                return Ok(
+                    if visit(ClawhubCandidate::Rejected {
+                        observation: provisional,
+                        reason: "version-less catalog item returned ZIP bytes".to_owned(),
+                    })? {
+                        ScanControl::Continue
+                    } else {
+                        ScanControl::Stop
+                    },
+                );
+            };
+            match extract_skill_archive(&bytes, None, settings.limits).and_then(|mut extracted| {
+                validate_hosted_metadata(&extracted.skill_dir, &variant.slug, version)?;
+                extracted.observation = Some(provisional.clone());
+                extracted.into_downloaded()
+            }) {
+                Ok(downloaded) => ClawhubCandidate::Downloaded(downloaded),
+                Err(error) => ClawhubCandidate::Rejected {
+                    observation: provisional,
+                    reason: format!("hosted ZIP rejected: {error:#}"),
+                },
+            }
+        }
+        DownloadPayload::GitHub(handoff) => {
+            let handoff = match ValidatedHandoff::new(handoff) {
+                Ok(handoff) => handoff,
+                Err(error) => {
+                    return Ok(
+                        if visit(ClawhubCandidate::Rejected {
+                            observation: provisional,
+                            reason: format!("GitHub handoff rejected: {error:#}"),
+                        })? {
+                            ScanControl::Continue
+                        } else {
+                            ScanControl::Stop
+                        },
+                    );
+                }
+            };
+            let observation = handoff.observation(
+                &provisional.source_native_id,
+                &provisional.source_url,
+                variant.version.as_deref(),
+            );
+            match classify(&observation) {
+                KnownDisposition::Discovery => {
+                    stats.skipped_discoveries += 1;
+                    return Ok(ScanControl::Continue);
+                }
+                KnownDisposition::Rejection => {
+                    stats.skipped_rejections += 1;
+                    return Ok(ScanControl::Continue);
+                }
+                KnownDisposition::New => {}
+            }
+            match fetch_with_redirects(
+                transport,
+                handoff.archive_url.clone(),
+                MAX_DOWNLOAD_BYTES,
+                settings.github_policy,
+            ) {
+                Err(error) => ClawhubCandidate::Error {
+                    observation,
+                    message: format!("GitHub archive request failed: {error:#}"),
+                },
+                Ok(response) => {
+                    if let Err(error) = require_success(&response, "GitHub source archive") {
+                        ClawhubCandidate::Error {
+                            observation,
+                            message: format!("GitHub archive request failed: {error:#}"),
+                        }
+                    } else if !looks_like_zip(&response.body) {
+                        ClawhubCandidate::Rejected {
+                            observation,
+                            reason: "GitHub source archive response was not ZIP data".to_owned(),
+                        }
+                    } else {
+                        match extract_skill_archive(
+                            &response.body,
+                            Some(&handoff.path),
+                            settings.limits,
+                        )
+                        .and_then(|mut extracted| {
+                            extracted.observation = Some(observation.clone());
+                            extracted.into_downloaded()
+                        }) {
+                            Ok(downloaded) => ClawhubCandidate::Downloaded(downloaded),
+                            Err(error) => ClawhubCandidate::Rejected {
+                                observation,
+                                reason: format!("GitHub source ZIP rejected: {error:#}"),
+                            },
+                        }
+                    }
+                }
+            }
+        }
+    };
+
+    Ok(if visit(candidate)? {
+        ScanControl::Continue
+    } else {
+        ScanControl::Stop
+    })
+}
+
+fn resolve_ambiguous_variants<T: HttpTransport>(
+    transport: &T,
+    base: &Url,
+    slug: &str,
+    clawhub_policy: FetchPolicy,
+) -> Result<Vec<CatalogVariant>> {
+    let response = fetch_with_redirects(
+        transport,
+        skill_detail_url(base, slug, None)?,
+        MAX_CATALOG_BYTES,
+        clawhub_policy,
+    )?;
+    if response.status == 200 {
+        return Ok(vec![decode_detail_variant(response, slug, None)?]);
+    }
+    if response.status != 409 {
+        require_success(&response, "ClawHub ambiguous skill lookup")?;
+    }
+    if !is_json_content_type(response.content_type.as_deref()) {
+        bail!("ClawHub ambiguous skill response was not JSON");
+    }
+    let ambiguity: AmbiguousSkillResponse = serde_json::from_slice(&response.body)
+        .context("decode ClawHub ambiguous skill response")?;
+    if ambiguity.code != "AMBIGUOUS_SKILL_SLUG" || ambiguity.slug != slug {
+        bail!("ClawHub ambiguous skill response did not match the requested slug");
+    }
+    if ambiguity.matches.is_empty() || ambiguity.matches.len() > MAX_AMBIGUOUS_MATCHES {
+        bail!("ClawHub ambiguous skill response contained an unsafe number of publisher matches");
+    }
+
+    let mut owners = BTreeSet::new();
+    for matched in ambiguity.matches {
+        if matched.slug != slug || !valid_owner_handle(&matched.owner_handle) {
+            bail!("ClawHub ambiguous skill response contained an unsafe publisher match");
+        }
+        if !owners.insert(matched.owner_handle) {
+            bail!("ClawHub ambiguous skill response repeated a publisher match");
+        }
+    }
+
+    let mut variants = Vec::with_capacity(owners.len());
+    for owner_handle in owners {
+        let response = fetch_with_redirects(
+            transport,
+            skill_detail_url(base, slug, Some(&owner_handle))?,
+            MAX_CATALOG_BYTES,
+            clawhub_policy,
+        )?;
+        variants.push(decode_detail_variant(response, slug, Some(&owner_handle))?);
+    }
+    Ok(variants)
+}
+
+fn decode_detail_variant(
+    response: HttpResponse,
+    expected_slug: &str,
+    expected_owner: Option<&str>,
+) -> Result<CatalogVariant> {
+    require_success(&response, "ClawHub publisher-qualified skill lookup")?;
+    if !is_json_content_type(response.content_type.as_deref()) {
+        bail!("ClawHub publisher-qualified skill response was not JSON");
+    }
+    let detail: SkillDetailResponse = serde_json::from_slice(&response.body)
+        .context("decode ClawHub publisher-qualified skill response")?;
+    if detail.skill.slug != expected_slug
+        || !valid_owner_handle(&detail.owner.handle)
+        || expected_owner.is_some_and(|owner| owner != detail.owner.handle)
+    {
+        bail!("ClawHub publisher-qualified skill response did not match the request");
+    }
+    let version = detail.latest_version.and_then(CatalogVersion::into_version);
+    if version
+        .as_deref()
+        .is_some_and(|version| !valid_version(version))
+    {
+        bail!("ClawHub publisher-qualified skill response contained an unsafe version");
+    }
+    Ok(CatalogVariant {
+        slug: detail.skill.slug,
+        owner_handle: Some(detail.owner.handle),
+        version,
+        updated_at: detail.skill.updated_at,
+    })
+}
+
 #[derive(Debug, Deserialize)]
 #[serde(rename_all = "camelCase")]
 struct CatalogPage {
@@ -398,6 +634,41 @@ struct CatalogItem {
     latest_version: Option<CatalogVersion>,
     #[serde(default)]
     updated_at: Option<u64>,
+}
+
+#[derive(Debug, Deserialize)]
+#[serde(rename_all = "camelCase")]
+struct AmbiguousSkillResponse {
+    code: String,
+    slug: String,
+    matches: Vec<AmbiguousSkillMatch>,
+}
+
+#[derive(Debug, Deserialize)]
+#[serde(rename_all = "camelCase")]
+struct AmbiguousSkillMatch {
+    owner_handle: String,
+    slug: String,
+}
+
+#[derive(Debug, Deserialize)]
+#[serde(rename_all = "camelCase")]
+struct SkillDetailResponse {
+    skill: SkillDetail,
+    latest_version: Option<CatalogVersion>,
+    owner: SkillOwner,
+}
+
+#[derive(Debug, Deserialize)]
+#[serde(rename_all = "camelCase")]
+struct SkillDetail {
+    slug: String,
+    updated_at: Option<u64>,
+}
+
+#[derive(Debug, Deserialize)]
+struct SkillOwner {
+    handle: String,
 }
 
 #[derive(Debug, Deserialize)]
@@ -480,7 +751,7 @@ impl ValidatedHandoff {
 
     fn observation(
         &self,
-        slug: &str,
+        source_native_id: &str,
         source_url: &str,
         catalog_version: Option<&str>,
     ) -> ClawhubObservation {
@@ -492,7 +763,7 @@ impl ValidatedHandoff {
             None => format!("github:{};content:{}", self.commit, self.content_hash),
         };
         ClawhubObservation {
-            source_native_id: slug.to_owned(),
+            source_native_id: source_native_id.to_owned(),
             source_url: source_url.to_owned(),
             source_revision,
             source_path: format!("github:{}/{}", self.repo, self.portable_path),
@@ -548,7 +819,7 @@ fn catalog_url(base: &Url, cursor: Option<&str>) -> Result<Url> {
     Ok(url)
 }
 
-fn skill_detail_url(base: &Url, slug: &str) -> Result<Url> {
+fn skill_detail_url(base: &Url, slug: &str, owner_handle: Option<&str>) -> Result<Url> {
     let mut url = base.clone();
     url.set_query(None);
     url.set_fragment(None);
@@ -556,16 +827,28 @@ fn skill_detail_url(base: &Url, slug: &str) -> Result<Url> {
         .map_err(|_| anyhow!("ClawHub base URL cannot hold path segments"))?
         .clear()
         .extend(["api", "v1", "skills", slug]);
+    if let Some(owner_handle) = owner_handle {
+        url.query_pairs_mut()
+            .append_pair("ownerHandle", owner_handle);
+    }
     Ok(url)
 }
 
-fn download_url(base: &Url, slug: &str, version: Option<&str>) -> Result<Url> {
+fn download_url(
+    base: &Url,
+    slug: &str,
+    owner_handle: Option<&str>,
+    version: Option<&str>,
+) -> Result<Url> {
     let mut url = base
         .join("/api/v1/download")
         .context("build download URL")?;
     {
         let mut query = url.query_pairs_mut();
         query.append_pair("slug", slug);
+        if let Some(owner_handle) = owner_handle {
+            query.append_pair("ownerHandle", owner_handle);
+        }
         if let Some(version) = version {
             query.append_pair("version", version);
         }
@@ -625,6 +908,19 @@ fn valid_slug(slug: &str) -> bool {
             b'.' | b'_' | b'-' => index > 0,
             _ => false,
         })
+}
+
+fn valid_owner_handle(owner_handle: &str) -> bool {
+    !owner_handle.is_empty()
+        && owner_handle.len() <= 100
+        && owner_handle
+            .bytes()
+            .enumerate()
+            .all(|(index, byte)| match byte {
+                b'A'..=b'Z' | b'a'..=b'z' | b'0'..=b'9' => true,
+                b'.' | b'_' | b'-' => index > 0,
+                _ => false,
+            })
 }
 
 fn valid_version(version: &str) -> bool {
@@ -1193,7 +1489,7 @@ mod tests {
                 br#"{"items":[{"slug":"fresh","latestVersion":{"version":"2.1.0"},"updatedAt":2}],"nextCursor":null}"#,
             ),
         );
-        let fresh_download = download_url(&base, "fresh", Some("2.1.0")).unwrap();
+        let fresh_download = download_url(&base, "fresh", None, Some("2.1.0")).unwrap();
         transport.add(
             fresh_download.clone(),
             zip_response(hosted_zip("fresh", "2.1.0")),
@@ -1242,6 +1538,93 @@ mod tests {
     }
 
     #[test]
+    fn resolves_ambiguous_slugs_into_owner_qualified_downloads() {
+        let transport = FixtureTransport::default();
+        let base = validate_clawhub_base("https://clawhub.ai").unwrap();
+        transport.add(
+            catalog_url(&base, None).unwrap(),
+            json_response(
+                br#"{"items":[{"slug":"shared","latestVersion":{"version":"2.0.0"},"updatedAt":22}],"nextCursor":null}"#,
+            ),
+        );
+        transport.add(
+            download_url(&base, "shared", None, Some("2.0.0")).unwrap(),
+            HttpResponse {
+                status: 409,
+                content_type: Some("text/plain; charset=utf-8".to_owned()),
+                location: None,
+                body: b"Ambiguous skill slug".to_vec(),
+            },
+        );
+        transport.add(
+            skill_detail_url(&base, "shared", None).unwrap(),
+            HttpResponse {
+                status: 409,
+                content_type: Some("application/json".to_owned()),
+                location: None,
+                body: br#"{"code":"AMBIGUOUS_SKILL_SLUG","slug":"shared","matches":[{"ownerHandle":"beta","slug":"shared"},{"ownerHandle":"alpha","slug":"shared"}]}"#.to_vec(),
+            },
+        );
+        transport.add(
+            skill_detail_url(&base, "shared", Some("alpha")).unwrap(),
+            json_response(
+                br#"{"skill":{"slug":"shared","updatedAt":11},"latestVersion":{"version":"1.0.0"},"owner":{"handle":"alpha"}}"#,
+            ),
+        );
+        transport.add(
+            skill_detail_url(&base, "shared", Some("beta")).unwrap(),
+            json_response(
+                br#"{"skill":{"slug":"shared","updatedAt":22},"latestVersion":{"version":"2.0.0"},"owner":{"handle":"beta"}}"#,
+            ),
+        );
+        let alpha_download = download_url(&base, "shared", Some("alpha"), Some("1.0.0")).unwrap();
+        let beta_download = download_url(&base, "shared", Some("beta"), Some("2.0.0")).unwrap();
+        transport.add(
+            alpha_download.clone(),
+            zip_response(hosted_zip("shared", "1.0.0")),
+        );
+        transport.add(
+            beta_download.clone(),
+            zip_response(hosted_zip("shared", "2.0.0")),
+        );
+
+        let mut observations = Vec::new();
+        scan_with_transport(
+            &transport,
+            "https://clawhub.ai",
+            SecurityLimits::default(),
+            |_| KnownDisposition::New,
+            |candidate| {
+                let ClawhubCandidate::Downloaded(downloaded) = candidate else {
+                    panic!("publisher-qualified fixture should download");
+                };
+                observations.push(downloaded.observation);
+                Ok(true)
+            },
+        )
+        .unwrap();
+
+        assert_eq!(observations.len(), 2);
+        assert_eq!(observations[0].source_native_id, "@alpha/shared");
+        assert_eq!(observations[0].source_path, "@alpha/shared");
+        assert!(observations[0].source_url.contains("ownerHandle=alpha"));
+        assert_eq!(
+            observations[0].source_revision,
+            "version:1.0.0;catalog-updated:11"
+        );
+        assert_eq!(observations[1].source_native_id, "@beta/shared");
+        assert!(observations[1].source_url.contains("ownerHandle=beta"));
+        assert_eq!(
+            observations[1].source_revision,
+            "version:2.0.0;catalog-updated:22"
+        );
+        let requests = transport.requests();
+        assert_eq!(requests.len(), 7);
+        assert_eq!(requests[5], alpha_download.to_string());
+        assert_eq!(requests[6], beta_download.to_string());
+    }
+
+    #[test]
     fn follows_documented_public_github_handoff_with_bounded_redirect() {
         let transport = FixtureTransport::default();
         let base = validate_clawhub_base("https://clawhub.ai").unwrap();
@@ -1259,7 +1642,7 @@ mod tests {
             ),
         );
         transport.add(
-            download_url(&base, "github-skill", None).unwrap(),
+            download_url(&base, "github-skill", None, None).unwrap(),
             json_response(
                 format!(
                     r#"{{"sourceRef":"public-github","repo":"acme/skills","commit":"{commit}","path":"skills/github-skill","contentHash":"{content_hash}","archiveUrl":"{archive_url}"}}"#
@@ -1334,7 +1717,7 @@ mod tests {
             ),
         );
         transport.add(
-            download_url(&base, "redirected", None).unwrap(),
+            download_url(&base, "redirected", None, None).unwrap(),
             json_response(
                 format!(
                     r#"{{"sourceRef":"public-github","repo":"acme/skills","commit":"{commit}","path":"skills/redirected","contentHash":"{}","archiveUrl":"{archive_url}"}}"#,
