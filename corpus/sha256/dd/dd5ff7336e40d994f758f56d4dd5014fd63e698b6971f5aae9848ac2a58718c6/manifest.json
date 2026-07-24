@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:dd5ff7336e40d994f758f56d4dd5014fd63e698b6971f5aae9848ac2a58718c6",
+  "sha256": "dd5ff7336e40d994f758f56d4dd5014fd63e698b6971f5aae9848ac2a58718c6",
+  "blake3": "bf977df52bc9d7bdc2c5ce30237249ede0691e2e7fff443fda44b5b2d0303ef3",
+  "size_bytes": 113386,
+  "file_count": 14,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2046,
+      "sha256": "e4646d1668c2f6c423029146be989e6a319016cc8ac38fd2150c8d0dcfcea4da",
+      "blake3": "0bc942876f9768f38f1128ed40542b6c060674a817a73a93bedd88b1dc297713"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 143,
+      "sha256": "b4f130f84a5a1f273a8ac15560e717f6edd81a435cda8efd18c238d8e0a54e50",
+      "blake3": "6455b11814e1df4612f79b423d5c75236086dea1b4e63b56347f6de5c502f34b"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 223,
+      "sha256": "bba2eed053915239fc5b6b48aabe74841b83ed3e41dcd9c84641dd942c5aabe4",
+      "blake3": "20d1b70a63cf8ce0913a329df192005daf59b977f006d32ce87b8c3a708ae90a"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13,
+      "sha256": "21798b3ce130ad4fb136b67021d5dcfefc7e84e6f871a6c813fea0da5378c6aa",
+      "blake3": "b872d4db02c0c9f30d9287c0bf73786421149a83e0141dffe5dcd9147d47bd18"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cli_analyze.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 572,
+      "sha256": "3b0b5584531fa811435b979416e129fc063cdce297811957fb89198e098e049d",
+      "blake3": "41821852b8057660ebd9f9d651ee163728282ec2e9916a744bbabeec2676a6fa"
+    },
+    {
+      "path": "scripts/market_analytics.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7873,
+      "sha256": "81fcf7b22643dfecb474c8962b4e3fb92d692b933e3e5e433063aaf34572645b",
+      "blake3": "f0f144540c081ce57cc6c277572729c35e953b218b7d0ced5f34c58ec33045ab"
+    },
+    {
+      "path": "scripts/market_context.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5615,
+      "sha256": "8f6e85468ce952224ac8702566ac39deed630c79d7d743195668868e30e923a1",
+      "blake3": "400166ccef8fc2936fecd2a49b7a7720fb2134acc8916a18511710dd6a47dcba"
+    },
+    {
+      "path": "scripts/market_models.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19546,
+      "sha256": "d48f3d8444fe4f688336454784f126c95847e5213e7d15f727e0fcaafb76ac1f",
+      "blake3": "fcfbfdc6b4d832eb263cf9801b7332993258999953d034bbb9d7daa1aae48f01"
+    },
+    {
+      "path": "scripts/mcp_server.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 33633,
+      "sha256": "c50858900a05cdc90cf0546bfc147cdcca7d745216e693cc5229a7f98e0152c7",
+      "blake3": "be06cbcea18c8ec771136af949c600a447160f5e9307823b1feca98b7f764767"
+    },
+    {
+      "path": "scripts/polymarket.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11834,
+      "sha256": "c1e7c2811815b247a8c0a577f05bd6ff6e444d7fe18be6b783d11d6c9f84557d",
+      "blake3": "026c84953e15cbfc9d827c2377199e7a9227bed15cb8775dc82c26c447c74128"
+    },
+    {
+      "path": "scripts/snapshot.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7016,
+      "sha256": "4c4baa164908ec269bc923c22cc7300fee31f53172e4b2dcaf182859e3b918e0",
+      "blake3": "a7cbd79d29757752995d77ef685b78b8470b0aa79aa158854cc01f4fdf898749"
+    },
+    {
+      "path": "scripts/strategy_engine.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16399,
+      "sha256": "e0ff194af1ac3b7b663faa2aca50625d96e09377675b50a841b374cac7b242a6",
+      "blake3": "085a10e528f92ebf256100dcf6a89c6105e3ec04061671f2ccc2632cac02d4e2"
+    },
+    {
+      "path": "scripts/strategy_library.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5163,
+      "sha256": "e1e1ac17813860c7c92b34553d0c6dcd870f42d2dc3765a715ea04edc673be24",
+      "blake3": "62d5a50b7d7cc5b682b05addc83207302166d85b803bd3468ac2a11e2d6c1137"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3310,
+      "sha256": "039ac13463ee5e6c43918171466672b1dfd048d373dbc6a4f92315c817c3a115",
+      "blake3": "a9bb7bf0eedb5f33a792bb3b3afc3464ab071e97ed1c15b8f497dd13cbb79852"
+    }
+  ]
+}

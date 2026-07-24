@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:b84d58d67b01026d2eb07cab71c5c0e4922c168be82a702b0c069b360610eed1",
+  "sha256": "b84d58d67b01026d2eb07cab71c5c0e4922c168be82a702b0c069b360610eed1",
+  "blake3": "c0b21594358a88a839e94217daddc766f6b8cf01f6b2d2f6f756c1162d3d6696",
+  "size_bytes": 99591,
+  "file_count": 13,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9757,
+      "sha256": "8375ec1873ff7e1ce9d9041cc2da8cd486fb18d32398424f75abb13f0a253b48",
+      "blake3": "55b78797188898a852b2e9dd2f6d7428b60e966869aeaefc6edfdb190040dc5b"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 153,
+      "sha256": "e3a6d093946182da55fbb191eff0b48b816771a6b403e5b53a805a9fcc849b66",
+      "blake3": "cab0b5526b0597992d0d669d522f70eb237a1ddde55d0905d3ad6d6364bf6eed"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 397,
+      "sha256": "1ad58b53d3690425f9f73a2be0b1c4ab6488c2a3287c4332c794d0f127706f9c",
+      "blake3": "eaaeccdc1d22474ad78173f27d2b994e5978a8acf831495a914698c02e3fd53e"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/academic-literature-review.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3744,
+      "sha256": "a5bb55117a8570536b2d73289d3ec0f6d698eb0bd00209f493e0bd50735d2469",
+      "blake3": "0595a2c7d3717280dd28a2827db876078b112f7b78c4a3e9d03d8218571e9b91"
+    },
+    {
+      "path": "references/academic-proposal.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3803,
+      "sha256": "883bf0dfd86e372ef91e25b377d30590b5033229fad66aaac0574c776fcb7d73",
+      "blake3": "32bf1a5942d6c4fa78e352d07fb47e6bab32335c63d2561b20f4a8fd8aac3091"
+    },
+    {
+      "path": "references/academic-writing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4170,
+      "sha256": "b6e35531ece7457290c79f76f691c3f0d2c8c1fad5bf90fe98c6dd039244ab3e",
+      "blake3": "ea212bdd6513395962eb1c90830dc99fa37726c304077fe1044a9168fa749e73"
+    },
+    {
+      "path": "references/anti-ai-writing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4492,
+      "sha256": "0054f60eb578c3263857895c2ab437edb3091c34ad3e2d6b7aa0c2f9c2dd0072",
+      "blake3": "ecef29c3714f5042fc11e6b647fee5c2051ff0f157c2d1391a6de4cdc8da083d"
+    },
+    {
+      "path": "references/citation-research.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7254,
+      "sha256": "883cf61e42124171727bba7f6868c6e442031339974cd103155a4b0dcce8c46a",
+      "blake3": "71ae9ab90037dbd77570a8ff46549f411d2e87ef6c6fd49ce6897b7b86336bf8"
+    },
+    {
+      "path": "references/long-form-consistency.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6336,
+      "sha256": "749561b4d42cb7c47b403ffdc6220b63752c9e715ab648169c591717ad98ae0b",
+      "blake3": "bce00362e1d74a27417f497d5edb73824b9b94757e69ec066b6b10e6c27d8035"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/citation_audit.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13966,
+      "sha256": "cb39e959dc20b1d45adf25c1939a9c42383ac880a2082140e4c851f7baef188d",
+      "blake3": "23289d422d8d2faf79f022a888083400efbcd86a3b30fa7353d3b312da3926d9"
+    },
+    {
+      "path": "scripts/manuscript_audit.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12534,
+      "sha256": "cbcffaa1acb41b66e556366319aa37c6c43d6934e583691c5699a6817bb803d5",
+      "blake3": "1aaba7a438e77c1b325a82fa416805248b3e973c19a25402fa70532693827c8c"
+    },
+    {
+      "path": "scripts/prose_lint.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29630,
+      "sha256": "10a15cad3ffbd9292f391f4188af484370c9c37049b9f6c95d3d56ec55549999",
+      "blake3": "225385e1bfb52c92576d038c66edd95b9fab9a632f7cbdc86851805be4cd6b9d"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3355,
+      "sha256": "5bb118a1aef3b24f5a0d452ea2e47be1157f01c14f3c02e4a368e91fa6498ce3",
+      "blake3": "246e7d2890d5395648255925c3b955270b2cc1064a1538db40c52c672181322c"
+    }
+  ]
+}

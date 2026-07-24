@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:a2211e09e6f55b8520790f99c2c3f212013e33271aafab6ba5f3e612806dc154",
+  "sha256": "a2211e09e6f55b8520790f99c2c3f212013e33271aafab6ba5f3e612806dc154",
+  "blake3": "a7f5535795f3e5a2b4575fedfd7f7bca8d6d46b2309ac58a5be381163eafef0b",
+  "size_bytes": 64950,
+  "file_count": 16,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4055,
+      "sha256": "82994c50fbfa7c183373315e11136b8759200fb0fd9e5e28a1d2f39d52e0f22b",
+      "blake3": "0cb75e50bbdc28693bc4414604aaac0b678d2e65ba269af60a8eb83dbaac4982"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3941,
+      "sha256": "886199be990fd3ac5ccd7d663f6f18c559497b24c87b8e2070e303d2bd783ef3",
+      "blake3": "b0e234a8c745da4c769b2a5e50fc3db2179c6115d951140a9fe425360b2288b9"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 132,
+      "sha256": "18d57a792c4ffe5d63459ddc3e6018acfc2d409d0d90e5178fca10e34afe7f2a",
+      "blake3": "4971981382c6f7a26f7a7b93cd5460ded7a421e93582b567066ab442ca8b77cd"
+    },
+    {
+      "path": "config.example.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 574,
+      "sha256": "c883e4046a466608e9efba2d88f3c7be367b96914f694aa2c57fb5327af4e6bf",
+      "blake3": "a0f8efab28d2576ab4fcd6df66dfe3880c5cf0ee8809cd2205037a57bba1995c"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/add_pubmed_task.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2169,
+      "sha256": "dbaf17b22e8e64731fc6475f692ad3420ae64269edda30e7f99c540d843adb09",
+      "blake3": "6333f3d5047988c1a2ef3399204aa2066a4546dc697d03d46bd5d1f33f05277b"
+    },
+    {
+      "path": "scripts/pubmed_followup_handler.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11197,
+      "sha256": "7ad5eda92e85d3fa54bb5c93d665147c528b3027e6cba9940f65d4a321911dbc",
+      "blake3": "9d37f7dcd5b3f15d8a0a6b6082a3283526cfec1838f2af282e9a2ba8551895e9"
+    },
+    {
+      "path": "scripts/pubmed_intent_handler.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11824,
+      "sha256": "9e8817accd530afa56b1d1d4dc9a9a6c4f19953a6df83bf7cb324bc24cccddec",
+      "blake3": "06ab6154a4d9c8d34f65c5978b92967eaf0b490ee25d3604a3772b9c5be1abac"
+    },
+    {
+      "path": "scripts/pubmed_intent_prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2815,
+      "sha256": "a37f7f9460bd12021e60f934e95068b9f26af2a2be0fc9124e25a56519edce7b",
+      "blake3": "e94e3b42f9da1432c915af753c26812b442c09b4a925c23f895e235431677cc5"
+    },
+    {
+      "path": "scripts/pubmed_llm_summarize.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7797,
+      "sha256": "6dcfc01ad364cf26d55aa7f2921d0791cb462eaef1722e35c43b917075eb7cba",
+      "blake3": "c84d78daf1c2b1f7bb6a6e40228fad56acabb50b1ef29b181f14fb2301247f8d"
+    },
+    {
+      "path": "scripts/pubmed_medical_dict.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 554,
+      "sha256": "cf2d9f2650aaf53f67b825199bceb63e1c16118f734ffe50d71e8e904a0c64c9",
+      "blake3": "9575b5350d6a5718f0e797aa8f8bbc26582ac186433a316953519b8abbb9b0f6"
+    },
+    {
+      "path": "scripts/run_processor.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1017,
+      "sha256": "3e30d88661c0168ac4154c2aa217b010e46f74f8bde367704f68f5603221d984",
+      "blake3": "75851576e87bb04ba0290a04c052cd7faf69114d445b31c552dcbb6e62105e90"
+    },
+    {
+      "path": "scripts/run_pubmed_review.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7201,
+      "sha256": "4d1154bbcfffa76c3175948d58e30d0f9c2335c8fed2b4aa42136d2ff9c5365b",
+      "blake3": "4ac4ddc228ad108f4b4980c2236403f612c465f44d6650520f0c43414229c6bb"
+    },
+    {
+      "path": "scripts/run_pubmed_summary.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3041,
+      "sha256": "5b8a6397b2c1c436e72b351b626c89916f94e5d30b34a395ba494d71a4e054cf",
+      "blake3": "22fd3a1c6211cb17912606d9befdcf01fedac240dc94f6eb93d7eb3c97360de4"
+    },
+    {
+      "path": "scripts/task_dispatcher.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3901,
+      "sha256": "cc9d57bb44ee6c0d2dd3b66f52720381f12c2e2bfc52b1d265b7124eb1080b31",
+      "blake3": "71bc0ae854d436e4346aaf100b7917b66fdcf52db794b8d5c4e9e5bc6b3c4e17"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2711,
+      "sha256": "8e80f7f7476cf1beddc233322d50895acf5561e18c9079a608b3665050b7ae72",
+      "blake3": "175c8426f9ac17147688ce75958eb84a2f96b1928423dbbb4324cf3e7f9416bb"
+    },
+    {
+      "path": "skill.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2021,
+      "sha256": "521df022fedf004e4420d55f7920504fbc19b51d7fed94be19b4a3d7c612b867",
+      "blake3": "75d63805d5eb4ec0f35af63e90e2eaef1e6cbf63608f8d506f32d8135c9f1451"
+    }
+  ]
+}

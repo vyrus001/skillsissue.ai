@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:495224d595b94fbe54d1a6810013f19904b0fc6cfc1d15ab78446518eafac23f",
+  "sha256": "495224d595b94fbe54d1a6810013f19904b0fc6cfc1d15ab78446518eafac23f",
+  "blake3": "5d470f62a3fab858164c4014f666c25131189c93496f4ec9a909e8a923f83276",
+  "size_bytes": 53838,
+  "file_count": 8,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19737,
+      "sha256": "53aa1626b7ee140ccaaaf6a987d45f3a4c43434bbda2fef3a6ae3532b47f7bac",
+      "blake3": "2868f30986f4e93031f107459a5783fcf96a85ed21278b46107247e83a49d470"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 142,
+      "sha256": "ee1944d8b1b151612ffa23929e1e85c9e9c9b77a2c903ff362e190a16221b2ef",
+      "blake3": "7af8a5be3dd3c5520f6d121f1c05195221af4bcfb31d162eb56c130f8133f0af"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/init_skill.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14169,
+      "sha256": "77c0613224af189038b3533b0425f827e528adda72783a88cc133cb37ba4c2a0",
+      "blake3": "ef879fc20abc2faf85bf4b66ddda789111bddf52d9bb8b0d63fd3bf296d5b091"
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4398,
+      "sha256": "f290101073ee6a167f46edadda164d2c88affc03c554135fe101a4e422c44c22",
+      "blake3": "4061afba4f24c80e493346636a54fdc1ec40cfa742066722d4f9c89dced0c877"
+    },
+    {
+      "path": "scripts/quick_validate.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5189,
+      "sha256": "3e3cdceba2daa893e260551c8c5f09937f94be1153307185c7fc7c24c0896750",
+      "blake3": "45d382a8a95d603674d8803f3d287c3519a347c0e200788200e4a86e1507d7de"
+    },
+    {
+      "path": "scripts/test_package_skill.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5866,
+      "sha256": "6b261a50fe632846e59e96b1c3e1f6787ffd534f7204d14bd7df8784873ac691",
+      "blake3": "68cbc541c7983c9486393822f29b3da3410f1359cadd095acf45ba5ec308be9b"
+    },
+    {
+      "path": "scripts/test_quick_validate.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2077,
+      "sha256": "2be00c164cb61020637d0364dc8387a8085522b6bfff7606f734a5274046be44",
+      "blake3": "39b144c23eaf0f65d96e7ea9cb7a63d269fbf791b1baa50739110f4bbf03d367"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2260,
+      "sha256": "e72828d1b74ffb340bf2e64cdbb9cb861fdac7a437566cc801897e7fa9681f9d",
+      "blake3": "12c005dc7d9cf8c16536b287933241286a5aa9ebb0900c674c56b13c6a96753b"
+    }
+  ]
+}
