@@ -325,8 +325,11 @@ impl CatalogVariant {
             .unwrap_or_else(|| catalog_revision(self.updated_at));
         Ok(ClawhubObservation {
             source_native_id: source_native_id.clone(),
-            source_url: skill_detail_url(base, &self.slug, self.owner_handle.as_deref())?
-                .to_string(),
+            source_url: match self.owner_handle.as_deref() {
+                Some(owner_handle) => owner_skill_url(base, owner_handle, &self.slug)?,
+                None => skill_detail_url(base, &self.slug, None)?,
+            }
+            .to_string(),
             source_revision,
             source_path: source_native_id,
         })
@@ -831,6 +834,17 @@ fn skill_detail_url(base: &Url, slug: &str, owner_handle: Option<&str>) -> Resul
         url.query_pairs_mut()
             .append_pair("ownerHandle", owner_handle);
     }
+    Ok(url)
+}
+
+fn owner_skill_url(base: &Url, owner_handle: &str, slug: &str) -> Result<Url> {
+    let mut url = base.clone();
+    url.set_query(None);
+    url.set_fragment(None);
+    url.path_segments_mut()
+        .map_err(|_| anyhow!("ClawHub base URL cannot hold path segments"))?
+        .clear()
+        .extend([owner_handle, "skills", slug]);
     Ok(url)
 }
 
@@ -1607,13 +1621,19 @@ mod tests {
         assert_eq!(observations.len(), 2);
         assert_eq!(observations[0].source_native_id, "@alpha/shared");
         assert_eq!(observations[0].source_path, "@alpha/shared");
-        assert!(observations[0].source_url.contains("ownerHandle=alpha"));
+        assert_eq!(
+            observations[0].source_url,
+            "https://clawhub.ai/alpha/skills/shared"
+        );
         assert_eq!(
             observations[0].source_revision,
             "version:1.0.0;catalog-updated:11"
         );
         assert_eq!(observations[1].source_native_id, "@beta/shared");
-        assert!(observations[1].source_url.contains("ownerHandle=beta"));
+        assert_eq!(
+            observations[1].source_url,
+            "https://clawhub.ai/beta/skills/shared"
+        );
         assert_eq!(
             observations[1].source_revision,
             "version:2.0.0;catalog-updated:22"
