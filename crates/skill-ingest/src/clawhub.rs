@@ -316,7 +316,7 @@ impl CatalogVariant {
         let source_native_id = self
             .owner_handle
             .as_deref()
-            .map(|owner| format!("@{owner}/{}", self.slug))
+            .map(|owner| format!("{owner}/{}", self.slug))
             .unwrap_or_else(|| self.slug.clone());
         let source_revision = self
             .version
@@ -1619,8 +1619,8 @@ mod tests {
         .unwrap();
 
         assert_eq!(observations.len(), 2);
-        assert_eq!(observations[0].source_native_id, "@alpha/shared");
-        assert_eq!(observations[0].source_path, "@alpha/shared");
+        assert_eq!(observations[0].source_native_id, "alpha/shared");
+        assert_eq!(observations[0].source_path, "alpha/shared");
         assert_eq!(
             observations[0].source_url,
             "https://clawhub.ai/alpha/skills/shared"
@@ -1629,7 +1629,7 @@ mod tests {
             observations[0].source_revision,
             "version:1.0.0;catalog-updated:11"
         );
-        assert_eq!(observations[1].source_native_id, "@beta/shared");
+        assert_eq!(observations[1].source_native_id, "beta/shared");
         assert_eq!(
             observations[1].source_url,
             "https://clawhub.ai/beta/skills/shared"
