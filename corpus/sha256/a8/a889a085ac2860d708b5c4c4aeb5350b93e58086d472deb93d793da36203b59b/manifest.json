@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:a889a085ac2860d708b5c4c4aeb5350b93e58086d472deb93d793da36203b59b",
+  "sha256": "a889a085ac2860d708b5c4c4aeb5350b93e58086d472deb93d793da36203b59b",
+  "blake3": "77b69fdc5a0fe74e10b4dfe0aa6d3823201f8f9b19de86e8146649d8900320a1",
+  "size_bytes": 63751,
+  "file_count": 14,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 911,
+      "sha256": "86c81ef6fcb5c95a2d0c2b6e62831d9baeb6c24d7e194a75d0ebd3f3ebd6fbff",
+      "blake3": "835868ed77d7eb80afcea0628ddfaf41f3986098a77e5b9d11412f454ef37925"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2341,
+      "sha256": "9861e452740139ad2bf4f2213b0e99086083fb509534e116fe0a5e663dd0d967",
+      "blake3": "350386680a4fa24b9d62204285e3cb0c84937073ae454fc8b9083de3306bbecd"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4947,
+      "sha256": "134caf3b0e6cb873f9f8653c6244f67e86572a44c1badd4df3b2d6aadfabb5d7",
+      "blake3": "5241f34febdc71ae35ebd9f1e2639bfd3489211d53f092b91d4fdc0c9d63a5a8"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 132,
+      "sha256": "ac1a2915a245aa20e66641ab2e0767c68a7e1c640ba965b4b76d7eb355e0e197",
+      "blake3": "dd9227ade7c21d4ec85f3f901b99b043912eff987ee4c5f1f99d040449eadda2"
+    },
+    {
+      "path": "era5-download.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19103,
+      "sha256": "fcf29130ba0b5bed8ca9f125ce547fff65fe24b777a3f0738afe4e183823e568",
+      "blake3": "69c099634df33e3179114dd231812b95f6dbcf252befd39ec16db312639b982c"
+    },
+    {
+      "path": "pytest.ini",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 131,
+      "sha256": "2a4ddf205f57c9dc715ee2d8a01ccbec0a0cffbb8321d4122371b89ef691bf62",
+      "blake3": "ebd203769894836bd3bccd0126f636d44cba67ac3e9c435fa4da443d4e39c64c"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 84,
+      "sha256": "d50a810dd47d1844ebd15d0a2f43f04e6006d1fc4bd3910983fb5d430abaf2e0",
+      "blake3": "8e21a8958e6adf6da4bd29e8cec02ee3bc7793be30c55db23930acfa3db8bea7"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2422,
+      "sha256": "e2712aa0e8bb2d139cbc99636f13e6bb05b4678069504e344182869e219a40dc",
+      "blake3": "4c8b2a05d1959269827f29f684d8301f182e508795320c0216bf4225940ebc9c"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/conftest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2984,
+      "sha256": "28f7e97014d856439fffa0a74b4558bfe8f366ac6a6593ffcff73d34ae2be6eb",
+      "blake3": "346c8960b6f176a8c1e8c9b74609a18312373bb6fd81a5d2f6064047fdc30046"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4416,
+      "sha256": "3991cfaae9cd4de778747ee08d2b6d00434cf518e9442b02b06df19a1a258b44",
+      "blake3": "148c02c3dc595b9025c5156ac4f45777dc642b28dfc0aa28dff6b801b4f81ec4"
+    },
+    {
+      "path": "tests/test_download.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9357,
+      "sha256": "74e4df4382ce9776440320a5dbf697231ebf1db621ecad6c66c0dc9b7e7bd008",
+      "blake3": "efe428c5df7ab66e5416ae6b8c9db38d362ff2e5a7a47249c123b2043db59ae6"
+    },
+    {
+      "path": "tests/test_integration.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5677,
+      "sha256": "29b402ecafe9a8227e094f77f8fe6dc35b3d5902b3b22a4dd54db2cd2e34b5df",
+      "blake3": "4573cf1699defdd37dda2e1c5a0b40ee37ad4f5f2306caca27c664d58339117c"
+    },
+    {
+      "path": "tests/test_search.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5818,
+      "sha256": "6320e2e11c84497c7bf8cf398b9ef64556578a0a2a2cdbf9cb4bfa7b421f6e97",
+      "blake3": "b0279735625f050bcf799135c47070aa22f72c933976c48e0dbb69c6393519fe"
+    },
+    {
+      "path": "tests/test_security.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5428,
+      "sha256": "83013f7aa9a41d082d3d57f493d02c1c390c9d9c5e3325927bbbf9ae5cd238d9",
+      "blake3": "7e950e6dd8cbd89f295d3b76dbc46d607c64aaee4d9731bfafd880866e6253b3"
+    }
+  ]
+}

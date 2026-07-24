@@ -1,0 +1,319 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:e2a3ae318dabd76bb81751bfaf76ff0ec7d8d38250a1405f02b7512525fb4724",
+  "sha256": "e2a3ae318dabd76bb81751bfaf76ff0ec7d8d38250a1405f02b7512525fb4724",
+  "blake3": "a77674c5be0a8ea7ba86adb8984c26a0d4b210bdeca4dd2ae48e537731684f5d",
+  "size_bytes": 220080,
+  "file_count": 34,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3797,
+      "sha256": "e21a2ffdadde922e33d02030f31fd132b7cf978455c0e8a19aaac749b7d8a091",
+      "blake3": "1539dfaa5c254e114eec01738397396a31e23ee8baf8354b7ed3a8fb2716c367"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7705,
+      "sha256": "8a0e2136d68d04d3ae6c79866bb6a02e3258e4332d757abfea18c98237925223",
+      "blake3": "007d5a12d3af3e8234d7d12cdbed59e4079c06bd9f6693c9054c1047984282ad"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 141,
+      "sha256": "17f9de81c9ec682c49fca9f298562a03141ba767064f432b06f43c14abaa8b88",
+      "blake3": "bc84c8e3c59d4f09c271dbe901e8d133495f9eb64175b40041e4cd456ebca135"
+    },
+    {
+      "path": "docs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/DATA_SOURCES.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5395,
+      "sha256": "c77fd638ce8341ed8ca36dc3273b19c93ed294e3a4837437987f2ffc989aed23",
+      "blake3": "3089490aee148747ce54109509a00cf0fcedca8a577d6e616cbc9629bb2cd7a1"
+    },
+    {
+      "path": "docs/DESIGN.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13312,
+      "sha256": "039bf8b4e4976fecc652312da9252a5438eade6033ba54dca63ca63cac4999ab",
+      "blake3": "6481647352da43326b36163967deef111101714a459e8b538f7db0c2ee7f3b39"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/core",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/core/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 427,
+      "sha256": "25b2f03b0e3bf0c725034ba251bf471bdaf12a4b9b26119bc2ff0c74721d0f45",
+      "blake3": "20dd05e38f67597378666933247f16cfbd1733c21ef4bd21793a5673c8bbcb2e"
+    },
+    {
+      "path": "scripts/core/cache.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4706,
+      "sha256": "3da6d2510a00e36b720f09c3dd742f7a5ddebb174b69d33becaa2dcb2af36888",
+      "blake3": "552c5be5cc39d28c0b9a46620f4071b2e484ccb8e079950e20e644ced47c5d80"
+    },
+    {
+      "path": "scripts/core/exceptions.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1253,
+      "sha256": "82955652406d7aeb1ef8b637f7df79b8cfe4cd19606d207c5c27ede8e63610ad",
+      "blake3": "cae21a0b63edbb05a0dcb420c6ac1f6d1924dd33b08cde117c3d1fc41f839d63"
+    },
+    {
+      "path": "scripts/core/format.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11746,
+      "sha256": "46cdff920e349c30e44848f1ae910994edd0ee6332a80be7a693fffb65253229",
+      "blake3": "d58a07632ad01b274595826f26b6c7a7cbd982bc98a3f422a9dcd629af18d561"
+    },
+    {
+      "path": "scripts/core/gadm.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8027,
+      "sha256": "ccb584f4049cf90813a150018bf8aa5b8e292d00ca001470505a51fbda35f6a3",
+      "blake3": "9b593c93f0942cee655a4392a51c0636abe90378fcba54d887cf6dbbf8144188"
+    },
+    {
+      "path": "scripts/core/geoboundaries.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11035,
+      "sha256": "fc0a7f1c604707c4b9ad7acad3470d5d18810b8af2c798aa5097a9e8ba0bdc61",
+      "blake3": "6a796866082391589bd338e81f6101bf1f06c4d47e31235c4b8f7ec3964d904e"
+    },
+    {
+      "path": "scripts/core/geometry.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3819,
+      "sha256": "3aa6a4b952a7ebd285b9a0952861127c6f9b01e16e77a2e3f4322d41524c8744",
+      "blake3": "a1df61729756fa97ca823c374bf2839a4223934a8785aab42e9d61d1f499b612"
+    },
+    {
+      "path": "scripts/core/iso_resolver.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11586,
+      "sha256": "e4cdd1f58f613b185c27f823574f1574aa9879f2f17d3b465d4441b194ff01e6",
+      "blake3": "a1e92e5a72131a4a3bf3523ef9bdd3eda0b1f321696df570d73fd6f7ab3eece8"
+    },
+    {
+      "path": "scripts/core/natural_earth.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4618,
+      "sha256": "7218303dac1afa39b8d0f43120502b91fd2569c7c80e933c097cda15ba7cee85",
+      "blake3": "9d9fe5048b8b5cceac2c1c8a511f8ee6ccf3ca56501e276f8faddc572a143a6f"
+    },
+    {
+      "path": "scripts/core/sources.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7725,
+      "sha256": "1e0f6aaa9e5d09153cadd32428c421c94742e410e0ace4ddbd3bb6969be5406b",
+      "blake3": "4c143e649d71fc394aa572709848a35cc18099b963e8140008cac92aae296725"
+    },
+    {
+      "path": "scripts/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/scripts/core",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/scripts/core/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 427,
+      "sha256": "25b2f03b0e3bf0c725034ba251bf471bdaf12a4b9b26119bc2ff0c74721d0f45",
+      "blake3": "20dd05e38f67597378666933247f16cfbd1733c21ef4bd21793a5673c8bbcb2e"
+    },
+    {
+      "path": "scripts/scripts/core/cache.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4706,
+      "sha256": "3da6d2510a00e36b720f09c3dd742f7a5ddebb174b69d33becaa2dcb2af36888",
+      "blake3": "552c5be5cc39d28c0b9a46620f4071b2e484ccb8e079950e20e644ced47c5d80"
+    },
+    {
+      "path": "scripts/scripts/core/exceptions.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1253,
+      "sha256": "82955652406d7aeb1ef8b637f7df79b8cfe4cd19606d207c5c27ede8e63610ad",
+      "blake3": "cae21a0b63edbb05a0dcb420c6ac1f6d1924dd33b08cde117c3d1fc41f839d63"
+    },
+    {
+      "path": "scripts/scripts/core/format.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11746,
+      "sha256": "46cdff920e349c30e44848f1ae910994edd0ee6332a80be7a693fffb65253229",
+      "blake3": "d58a07632ad01b274595826f26b6c7a7cbd982bc98a3f422a9dcd629af18d561"
+    },
+    {
+      "path": "scripts/scripts/core/gadm.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8027,
+      "sha256": "ccb584f4049cf90813a150018bf8aa5b8e292d00ca001470505a51fbda35f6a3",
+      "blake3": "9b593c93f0942cee655a4392a51c0636abe90378fcba54d887cf6dbbf8144188"
+    },
+    {
+      "path": "scripts/scripts/core/geoboundaries.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11035,
+      "sha256": "fc0a7f1c604707c4b9ad7acad3470d5d18810b8af2c798aa5097a9e8ba0bdc61",
+      "blake3": "6a796866082391589bd338e81f6101bf1f06c4d47e31235c4b8f7ec3964d904e"
+    },
+    {
+      "path": "scripts/scripts/core/geometry.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3819,
+      "sha256": "3aa6a4b952a7ebd285b9a0952861127c6f9b01e16e77a2e3f4322d41524c8744",
+      "blake3": "a1df61729756fa97ca823c374bf2839a4223934a8785aab42e9d61d1f499b612"
+    },
+    {
+      "path": "scripts/scripts/core/iso_resolver.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11586,
+      "sha256": "e4cdd1f58f613b185c27f823574f1574aa9879f2f17d3b465d4441b194ff01e6",
+      "blake3": "a1e92e5a72131a4a3bf3523ef9bdd3eda0b1f321696df570d73fd6f7ab3eece8"
+    },
+    {
+      "path": "scripts/scripts/core/natural_earth.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4618,
+      "sha256": "7218303dac1afa39b8d0f43120502b91fd2569c7c80e933c097cda15ba7cee85",
+      "blake3": "9d9fe5048b8b5cceac2c1c8a511f8ee6ccf3ca56501e276f8faddc572a143a6f"
+    },
+    {
+      "path": "scripts/scripts/core/sources.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7725,
+      "sha256": "1e0f6aaa9e5d09153cadd32428c421c94742e410e0ace4ddbd3bb6969be5406b",
+      "blake3": "4c143e649d71fc394aa572709848a35cc18099b963e8140008cac92aae296725"
+    },
+    {
+      "path": "scripts/scripts/world_admin_download.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22059,
+      "sha256": "a818b7825fea348897e9beb22655fbe99362f02fef5c2eae5e1b39145303e470",
+      "blake3": "c54689e0e66b06b5ec60f004d80917f59f909d981e3e4e9876d137dd67fcc12a"
+    },
+    {
+      "path": "scripts/world_admin_download.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22059,
+      "sha256": "a818b7825fea348897e9beb22655fbe99362f02fef5c2eae5e1b39145303e470",
+      "blake3": "c54689e0e66b06b5ec60f004d80917f59f909d981e3e4e9876d137dd67fcc12a"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/conftest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 964,
+      "sha256": "7b1230cfb0e9115f809f7905b9df8dd7ca395af92ba11dc4b93bc213e43688e3",
+      "blake3": "a4b381748c1b54a3a2b1774b6ab2e350e99735225cbc0e105208f4ae6c0c7df8"
+    },
+    {
+      "path": "tests/test_cache.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2053,
+      "sha256": "786122d54fc9952f6d759898ec09713a2005a0792be6e3eb86b221779809cd54",
+      "blake3": "23ddd4f99f4ee8a42b677963ccef7f6a0597085c217521653f887bdde16d2c92"
+    },
+    {
+      "path": "tests/test_format.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1441,
+      "sha256": "173b7ac3e3bb8cd644cf3d14af104c5a3bc7b5df9470624e5b1db47b6c4c6c05",
+      "blake3": "bb16b2ab0608668ffca2b48d9b93ad8e6badf28bd9f869f17183571888c511cd"
+    },
+    {
+      "path": "tests/test_format_integration.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2425,
+      "sha256": "e9d25d69d142b9f6ebc6be647423bd0f16c784e5b650c2bda884351b36b822cd",
+      "blake3": "02483e40586bbf81b47d40bca5d54448d366ffdbe72e27711a006d2a08c9109d"
+    },
+    {
+      "path": "tests/test_geoboundaries.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2884,
+      "sha256": "00805a26c17b592ad12c3ee596c874642407004cb3b660a0ba40fed5a1bc8007",
+      "blake3": "ce5b43aa31c3e226d7881767cadf7e25f5840ea555272991f2baa5644dcf0be5"
+    },
+    {
+      "path": "tests/test_geometry.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2551,
+      "sha256": "eb66ecb60794a32258d4f67abf050da2fe077177c3eea8613d9f3036efc1db99",
+      "blake3": "15230f43025cf377c92b616d3e79b26af3b4b8daa851e627362c421a70fe00ca"
+    },
+    {
+      "path": "tests/test_iso_resolver.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3410,
+      "sha256": "6764743441ae64ad7eddbdef20e70eef7a1374e91989d5d29a08035b61d1ff7d",
+      "blake3": "2a98aa1c814e9f54aaf843a77d360d72d806499f202874b2177f459f4c22b665"
+    }
+  ]
+}

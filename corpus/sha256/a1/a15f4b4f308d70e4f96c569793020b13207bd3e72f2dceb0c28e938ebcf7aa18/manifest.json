@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:a15f4b4f308d70e4f96c569793020b13207bd3e72f2dceb0c28e938ebcf7aa18",
+  "sha256": "a15f4b4f308d70e4f96c569793020b13207bd3e72f2dceb0c28e938ebcf7aa18",
+  "blake3": "0e1ec8ee0fbc00b9da6683562ff8ec6c29a80e983d5742c9e01b66b2ca737676",
+  "size_bytes": 153663,
+  "file_count": 19,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2018,
+      "sha256": "de9690e38c9676bbfa7b47fc7bfbf9354ddddfe75a5f46501ac9b982ff265eed",
+      "blake3": "12c521d3d96dbd87cbf22f243fa7aab0c6f3f54729f248ffbcc65f71907b5f1e"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5783,
+      "sha256": "969adc54a436433810e8c4874da84564caa1b871889fdb2ede589c0d9615c41c",
+      "blake3": "6bb7cb99948f416f8bcbdf1962a284b78df1a332e3b412ac18c1b06e38ee75f4"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 138,
+      "sha256": "874dbfffc0fa30c259cbcdb6e52a09ffc56ea690794ed4ca1acaac5050626a78",
+      "blake3": "7ba5a9c1ee4565f0859f06d8accd68aaffe127786c8514d40d607db45bd968ad"
+    },
+    {
+      "path": "install.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3635,
+      "sha256": "38ae07b210eec97c2748bee1db5c567b38958b6921187a7c940191cc57f95b49",
+      "blake3": "1bd0ac010a5c4c6efe35e44a9cc7014d49fa44469aec52d7d506290e8bf3606f"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 363,
+      "sha256": "86e38e872333656b142372153b24cfb00c1a1d72322ba8788423a7d4996dee8a",
+      "blake3": "8135ce4430e12478bce9d0e63955c910bc16f252ba4de63adc7c3b60a15b85ec"
+    },
+    {
+      "path": "run.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1384,
+      "sha256": "d4074836d17b8fcfd987cb275bf87488d57c0e27aeded5fc3b35a4db32e38ba3",
+      "blake3": "305f251b0c319ed992df3d9db596954f36b155da75eab1a5092e3197416701ce"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/auto-commit-memory.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1093,
+      "sha256": "6fdfacb9f6b95f42ee64bcb1a7f50a2b5fdfe27efdd26e159f42d8425d1b0e20",
+      "blake3": "05bc110235bf6863144a0c3fdf3fd3d67aeb2c0057e4df6805dc020b96a6127d"
+    },
+    {
+      "path": "scripts/build_memory_index.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3955,
+      "sha256": "06e716c66351bcbbeeb05c0099fc693295f8439b60200b97cecb393874c50706",
+      "blake3": "f3fe57b7f8321d8359098c66d24eb12b95c29343e3049404f54a2da3713d8fda"
+    },
+    {
+      "path": "scripts/conflict_detector.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14754,
+      "sha256": "33c8eeab74c8a339de7b2d3a582f7918b1a11c207421dbdc079b2c3dfb2e717e",
+      "blake3": "b3600a0e8ef15890c41f92bec2bca028c7963cc221c7dc62a3cca224ebb17562"
+    },
+    {
+      "path": "scripts/emotion_tagger.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22197,
+      "sha256": "d3fafc9b8788d66c9f50d96067b0f5e9285bd335f3b9f2fb2c736e0ee130b92a",
+      "blake3": "87f64d2de641c026a61a3eca4bda28f7b660f1041c0653d97ef18d79c6f06530"
+    },
+    {
+      "path": "scripts/knowledge_graph_builder.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12705,
+      "sha256": "bcff474d81b6b7e23c8db0860cce823d9385524ff40518e83c186724bd3b61e4",
+      "blake3": "3bfbd407f3253b9d53e1b98f2cb2cce451e3b8420e7153d27807bc44421d4c1f"
+    },
+    {
+      "path": "scripts/multimodal_processor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23043,
+      "sha256": "9ab5cc6f3cb72ebc6fa78cc1c9e818471cc00c3301a3c2ac21dba081a927fcec",
+      "blake3": "71a45786f7c7a8644a645f7f53e2d3a53c94d2aa2fe5ef775c25529e6c97bb9f"
+    },
+    {
+      "path": "scripts/search_memory.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2910,
+      "sha256": "16cfd14fda252d4afea66e7561000986fc64d60d2a5d1d7dc09f32901b8a36bb",
+      "blake3": "1c8875915673fc9a480ad470c7a5b1406951e38f65e537a296f6d65a6e85a8fb"
+    },
+    {
+      "path": "scripts/self_evolution_engine.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23363,
+      "sha256": "a8f761ccc8d540a56a85c76414c4e9328038cd0e6ca26d3260d6e28b14588a8f",
+      "blake3": "f780e598fccf6b4e7c20517c51733a9d38b47baa4eb48c7034d9800be822fd66"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2350,
+      "sha256": "8769025948aae0922a98986bffd9b0452eacf7c8c773011e5e46009d83dbb816",
+      "blake3": "ded7a1969e1732caef24a1e84b5c31d34ae9fe3128ad0bf6c9f125c6159f1638"
+    },
+    {
+      "path": "workflows",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "workflows/memory-activerecommend.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17977,
+      "sha256": "9d51a1bf280d9bcec1e2c68e589291fd92264c949c675055d3f25ec91a53baf3",
+      "blake3": "b127b9fb8cb1d5d0636f34a3722904004787ca26d2548ecd45573970f0d0e604"
+    },
+    {
+      "path": "workflows/memory-knowledgegraph.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4658,
+      "sha256": "ebb2b3d72dd0c7e571b427d841362be35f0f29ea80554254961434ba4c814e25",
+      "blake3": "9d185eeb1cece5c6849e8ab725f2276a34b3efacf73f2c541d5eded1f216bebd"
+    },
+    {
+      "path": "workflows/memory-multimodal.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6996,
+      "sha256": "b99b35c0ba2029cccf7c504852872acd23c924e33d5ac26375e2d185578747d3",
+      "blake3": "09bdf895afc629ae5a4f9447527017d2ae5322fd8e735e6103de550fcd8597fe"
+    },
+    {
+      "path": "workflows/memory-sync.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4341,
+      "sha256": "f76b4341d6a0747156062196e260e4a2f47d65c3df0aad0d0ed1d3c20f1c3b1f",
+      "blake3": "6e593e186cb325d5c6f576ecd6fa568bc81429439af0fb480e55b7d55de3b417"
+    }
+  ]
+}

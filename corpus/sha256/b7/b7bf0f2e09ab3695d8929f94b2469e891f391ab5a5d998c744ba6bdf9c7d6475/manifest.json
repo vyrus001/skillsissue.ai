@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:b7bf0f2e09ab3695d8929f94b2469e891f391ab5a5d998c744ba6bdf9c7d6475",
+  "sha256": "b7bf0f2e09ab3695d8929f94b2469e891f391ab5a5d998c744ba6bdf9c7d6475",
+  "blake3": "69734645c4b0a677f888be0ada279d7d76ba891317c4be1bd2436254b812835b",
+  "size_bytes": 288862,
+  "file_count": 20,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21110,
+      "sha256": "f84c14eae730cf1e39081a97c397d8185ad93adcc5b5d04402029a4b8ec85430",
+      "blake3": "42de2f82cafbaa6983b6763978462768393232fd04bdb552f1fb9e2da176cf91"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 137,
+      "sha256": "ca504d5237be5d713cd165b21d30016ba4890bc3433f9dfeb6743abda7019e27",
+      "blake3": "fdce64bb684a6c84d978faab387ad4e1e10b2f8388ff14af027e4a13d7c1ec41"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/public-repo-readme-template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3015,
+      "sha256": "ce5f85a75f10ef7e90771e2034a8b8aed275a6afe246b80d7bafcef72362fb85",
+      "blake3": "cb41ad3d4ae1e4c05a3e6817e86c11d2275a5632478d0ee64ee8527f94f9b971"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/ide-paths.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7466,
+      "sha256": "f23803f3edb5c7bc15094e780d5118028a433e2ffa557b1ef92c8efd502250ad",
+      "blake3": "a6712e82f4eb197eb2dc5ccbd346f6fdc5ae0a59651e3d06db3b6bc752322f5b"
+    },
+    {
+      "path": "references/ide-registry.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 35414,
+      "sha256": "cf13767c8b863e7112a3b2018fab2f5fa6180e886ae0346643bfd9ab4cf1f2cd",
+      "blake3": "03abc5cdec265dfa944b09b846ec9c3ce6fbffd6efa7d5c7bc2f02c832e58656"
+    },
+    {
+      "path": "references/openclaw.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17182,
+      "sha256": "9bc024d4336a9f63d6bcb0aaa1f23bd78b5020dab935739fbc6debd10c1819b1",
+      "blake3": "4842cc34639b008aa3246e0fe1c2cc59d0b443f45e37fb431cc5f03c1682a6c3"
+    },
+    {
+      "path": "references/publishing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1403,
+      "sha256": "99ccc7c7752a764773d3414f85a27e56fe8960835383a767c49b351aed7c0b61",
+      "blake3": "4fc25a5bf2aa7bcfcdc9ec339f6964d284b069a8eae5cf30cb6e0800260d57cb"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/auto-configure-openclaw-skills.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32345,
+      "sha256": "6ecbabb5049b14b16daf954359037781493bd10c79704ee30727bae0e984cf91",
+      "blake3": "c31e73181c366e5979d47001426bf52c38eb590fcdbe42da860353724819756f"
+    },
+    {
+      "path": "scripts/export-public-skill.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3597,
+      "sha256": "11464bf4485f53b626ce89e84cf387b9091c321e50d51d797d2adcd49fc1c2ab",
+      "blake3": "eea4b819c286b8c8000c934da2adbe7ba71fd78421ff81a372f99f4417d0d83b"
+    },
+    {
+      "path": "scripts/prepare-clawhub-release.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4315,
+      "sha256": "ea8fae18611f055b79a50226e35b8a137a24d2c428bf420d0cbb6f143ec688de",
+      "blake3": "d6c59ac717cddfce69ea537444349eb7a6ee05dc984539e0120b5ebab4ec2799"
+    },
+    {
+      "path": "scripts/smart-ide-migration.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 88333,
+      "sha256": "2fe076c304842a6e8f4aeadd95c7a6e02c796ecc1055ec7e495ba9701fd7fe9e",
+      "blake3": "99e350287a0e1282f5518f8ded0e42a07872703ab19dede1a380d1f95b00c88d"
+    },
+    {
+      "path": "scripts/sync-global-skills.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7787,
+      "sha256": "9d56a9672f0c1e3cc8da0632823a93333c733d25205597ffd7c63d86bba36c24",
+      "blake3": "902c05f4e11016b0d95bdc5db02427e29a2dae846dc4498ba4f763d53635159a"
+    },
+    {
+      "path": "scripts/test-ide-paths.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4450,
+      "sha256": "e6d1366004848b8d33d33c9aa7d95da75ef1f872c90af9b645283d1b526ab183",
+      "blake3": "6c62cec03e932f75bd233c5867e7f82ad3bdcb15784d9d153f67d0b8144f2ab8"
+    },
+    {
+      "path": "scripts/test-mcp-secret-redaction.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 26371,
+      "sha256": "7497c7555601f47cbcaa0e8e72664a2d66613b96187ab8ade5d0f574b9ba8a1a",
+      "blake3": "81affb21fe59c117c61ce5005e8f7487af6906abcc212a8c2f698b479455f63d"
+    },
+    {
+      "path": "scripts/test-migration.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16459,
+      "sha256": "81cf11c07dba6e5534637f112bab6701ce96d1b744ff7e8f63d322f18bc122f8",
+      "blake3": "e3f4d0d8d3875730ff909173b61010c3c542c7edba88c7fd9170902d8bcc6750"
+    },
+    {
+      "path": "scripts/test-openclaw-support.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5855,
+      "sha256": "2634c04215e0e6980e0975fd179d014e73bbd7c5b5cc2bac7c7e81ba5735ece2",
+      "blake3": "2c49f3ba1b466f5d624fd93e9ba72090a288e4e46d261a784d03cb79a6f786de"
+    },
+    {
+      "path": "scripts/test-smart-ide-migration.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1222,
+      "sha256": "69d13b8f180ad79aea8aebed9c012ea093387b16e2c356a3bbb858b42cd0db8e",
+      "blake3": "1ac1b474954a35c25653ef301579f11d89528905785801e9aa74f32960a9b08b"
+    },
+    {
+      "path": "scripts/update-openclaw-skills.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7207,
+      "sha256": "0b4051b367d4fe7a8b22095f47c3b227c162c32ac982d8bc2007db14919deb63",
+      "blake3": "13ef6ba2145f41b03f905acc115f151632f8fe1cef9d580e54e43f7e1eeec8d9"
+    },
+    {
+      "path": "scripts/verify-ide-config.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2503,
+      "sha256": "9c7972c9378e2f66bc37f4be1200cb84d502523b1f6bdaaed19403e9fd548c09",
+      "blake3": "99d4babca4319ff97a7c9678dd370b700dab130aed51b54de68943f7e05b19ef"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2691,
+      "sha256": "67113ff0ae443edcdf22ff7879f066c37cf0c9aeb591c6dd240e82272cf8bd40",
+      "blake3": "4129c52f1929e65f049b18aab2f289e707d0979cd95212ceee65b0bde086a877"
+    }
+  ]
+}

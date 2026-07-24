@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:f66d420e3d5202c4c240e48d9a83bed499f94d05b0c6e12161ac4effbb7dee39",
+  "sha256": "f66d420e3d5202c4c240e48d9a83bed499f94d05b0c6e12161ac4effbb7dee39",
+  "blake3": "8b927103ccf27e7a54d67e7de9131e6449a592a72a4be1237397dcc01f693047",
+  "size_bytes": 66008,
+  "file_count": 14,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1018,
+      "sha256": "d600a19ba603dbc44f9c6c2964ddcd577cc4cf51ccee0e9a25422d44af511132",
+      "blake3": "8bf9af1c7feded68531f1a23633c4f017a3a316129deedb23ca7cfe35eb44656"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8232,
+      "sha256": "2af5464f96d12779aafc52701240598b1cd4ceb7484b052a8aac7ac235fa25d7",
+      "blake3": "274ce8563cf45dfabb77caf3071afef913749e3ac1b4a691b934f940cf4fbd9b"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5202,
+      "sha256": "e1f4c357342bc559790a3e295b09806246706353d85a72279087c8f3945d4524",
+      "blake3": "0990e976c43e762360441a8f60327f935379bf864e867c21c490583fb18be277"
+    },
+    {
+      "path": "TESTING.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5532,
+      "sha256": "21da06117ad2fe7a12062f4c76de3e910c39e462f0bcc82877f52e2c73e4cc52",
+      "blake3": "58d787ac97e89b89f33b69ca5e1d7585bb233834f1519435d92d154978d82c30"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 130,
+      "sha256": "10df58b13fd3fd0636bf83d60387b8d39a3a297b6420de98f43b32a62beac89a",
+      "blake3": "72406c2e0430f7f58d3a249c04acc61dd690559196d7702c20b9cc728b54ec2a"
+    },
+    {
+      "path": "docs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/detection-prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6142,
+      "sha256": "a7d581a33bf78459462f8195346e85e592f7a22458baf8dd1e12d58cf95ceb07",
+      "blake3": "03c9fa0ea1cff7390886c0df9ab32fe5128730add63b01fbc49390a5d796b26f"
+    },
+    {
+      "path": "evals",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/cases.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6747,
+      "sha256": "75e7909c0ac2d91db7185be6727e438605f1467f5b9fd21fecb716ad04f53cbd",
+      "blake3": "2804374b060a7924215264f2c07d01bb61aa331ccea829f0751fbe804bf0e8d5"
+    },
+    {
+      "path": "evals/run.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6650,
+      "sha256": "f23163ac835ebc77cdb4282afd708db40be91022f3ee7b83463926a2e0ffb4ac",
+      "blake3": "56bbb2fd08147de6d6bd124cde91d5c4a19a082e99ba1d1c421aa806b1a55e92"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/memory-scan.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15869,
+      "sha256": "5b4f822d6377b87b92f11526c4db29a785bc54c94f0b851a8e7b229ab0c27915",
+      "blake3": "1ce7937b9335509b81cd4952c1f72e3b4ba1c5a4c545292967aaeeea145cbfd8"
+    },
+    {
+      "path": "scripts/quarantine.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4535,
+      "sha256": "8c47e73ac0fc78229c7b59802db44d5cd1c94ab29f796204d38f430fe65a272e",
+      "blake3": "1415fca46360b610ca825a00203accba51ccda81df4f4aedf560e11d579eb048"
+    },
+    {
+      "path": "scripts/schedule-scan.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1300,
+      "sha256": "2ff1a3224fb64998dfc34d046928800dd880d2dd50108e7f14dbf25bbe9feede",
+      "blake3": "868d1d8417c62b483ce886da0b1231a218198096ccd8468da726f187287b7c2b"
+    },
+    {
+      "path": "scripts/setup-venv.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 691,
+      "sha256": "e975e07aeb655ebb2651c8f04d1b298fe28836a7606f2f01a5a0083b7a4da053",
+      "blake3": "02beea0e7120a86b5c9bfc1d6315b7b74893395b39abf693e5648e57a26fe461"
+    },
+    {
+      "path": "scripts/test-scan.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1333,
+      "sha256": "79e483e367ef9dd7b12b76114d50a79e8eacd612b8433ce87fff038d0a405fa3",
+      "blake3": "0a66e5f78f9130c85616658a8607ed933bf3412778b743af8d9b2a12b2ce2a0c"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2627,
+      "sha256": "3d57601474d94c846f5b9a3a57c8d3711bdd290ad6eb9ca6ff6b0369f0143674",
+      "blake3": "b15d85cb817fdba2a90179a466380fc7b15edca175acaee89e5dfafa81bc5022"
+    }
+  ]
+}

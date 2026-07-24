@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:a9bc8a21ff6db0f53ac75c39c886eacf80b52c9ce36586fb969cdb07037f635b",
+  "sha256": "a9bc8a21ff6db0f53ac75c39c886eacf80b52c9ce36586fb969cdb07037f635b",
+  "blake3": "84dfc57ae2d993a085e5e8a30c99158da07a76efdb4116da0ec1a86939d5f72b",
+  "size_bytes": 77145,
+  "file_count": 13,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1074,
+      "sha256": "158dd1e3d114ac4572bf207dafb524b87e603809da456ea06036e3038ab22c8e",
+      "blake3": "9fe3274219faecc2a34259585ea57adccf38226da4e266c553471e1a6fe96762"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5749,
+      "sha256": "ccaad0572192d7faddd051fa35587221eb70457b34c7fa3afabd2f469de4c6bd",
+      "blake3": "a3030370352cf6d7b57d7d7c340c1d454aa8ba01c996939441e36debe6cf6ab8"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3356,
+      "sha256": "f5166441978d80c9113e26306adaee2cb246dae67bc8906d4be5a3ce811c7c45",
+      "blake3": "102583bdfc33405263120c53fd2b82b69e767f73e118119b8f2eea843762d439"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 138,
+      "sha256": "698405458c2ad6179a34f479e755d278634798df4041eba636d8e29cefa087e9",
+      "blake3": "5640df39f55856609a819d943a8b3e5e7bcf152a9c6c1914cc1e24f06c3adde2"
+    },
+    {
+      "path": "pytest.ini",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 125,
+      "sha256": "9024eb52b07a0ae4471be8219bdb57948721e4932387e9bb152d8fc52af28952",
+      "blake3": "e69801775d7a8cccbb9e895b2fb441a6d67416299c41f71f198923fecec7e668"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17,
+      "sha256": "252804c315dc8bd7a3ac9da4dd060f96ea7a5fb70fe1b0f7cc2a8e19dd012ed7",
+      "blake3": "0f4d511731d3e2f9490d803eddb4ace4a67a6626d892d78d939e62a59cc1af40"
+    },
+    {
+      "path": "rs-metadata-crawler.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25416,
+      "sha256": "31785ed79f2344c9a9f0696f3537416343e39743b70d1f16411fb0c7d293a00f",
+      "blake3": "c61824340c24965419627a57e31dcf227c794bce8406e076fa85bf4269dcee85"
+    },
+    {
+      "path": "test_merged.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 662,
+      "sha256": "e5a02231450ffdb091df5231d2d51f094e8f8c31ebd04894e44e142a411b9ddc",
+      "blake3": "8ec6878ab6e28bc87017beb8ecfb32ef698d64cf24eac0cdf0d2cc132c657904"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/conftest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6725,
+      "sha256": "767f6c8deff5635337cacdbc4b8adb0ad8163095e34634e2fe4714f987d7550a",
+      "blake3": "147fb8917b3a1d44ca950df4d069e2ea8643d6269954e8ec026efe3e1ad0b87c"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7984,
+      "sha256": "365da11f5a8d061f041876b85bcbb6dab5f7fe7d606a3e8399a42b15f4877b4f",
+      "blake3": "d67866caae2072ea4cda778eab46ca072d1927334a8a584cd6104aaa484ede9e"
+    },
+    {
+      "path": "tests/test_crawler.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11052,
+      "sha256": "fa757d264c39c1fcf9534f408cfbc32c5aa1bd0bff798b7cc9eeabe7d4218862",
+      "blake3": "f709a913a333b54b3cedc7439cf9d1e8635b6ee9fa0775975c849057bd76cdaa"
+    },
+    {
+      "path": "tests/test_integration.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11602,
+      "sha256": "a3eb9c4c3f1c75d8967b6a009a9c7adfa17203c83dc1f5b75529a4e28998f2f7",
+      "blake3": "29da69e6c421ad5ec1969d7cee8d6558cad0c30b500f1244b8dbebfffbbee8ea"
+    },
+    {
+      "path": "tests/test_security.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3245,
+      "sha256": "058bd8faf6f446d1ed3f2d6b6d7dcba137c503d07c92b30caedfbb02d60fc03f",
+      "blake3": "28c3cc2c7ee5bda7cd4ca365023e8f3a969cad49329fc809f9bff111738cd417"
+    }
+  ]
+}
