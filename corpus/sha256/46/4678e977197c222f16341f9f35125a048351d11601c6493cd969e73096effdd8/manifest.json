@@ -1,0 +1,591 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:4678e977197c222f16341f9f35125a048351d11601c6493cd969e73096effdd8",
+  "sha256": "4678e977197c222f16341f9f35125a048351d11601c6493cd969e73096effdd8",
+  "blake3": "92a78cc47c84432452e1874588bb11ba14cfa8940c573d14837610658cc67d23",
+  "size_bytes": 726517,
+  "file_count": 68,
+  "entries": [
+    {
+      "path": "INSTALL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5572,
+      "sha256": "b3a1a1e178a56e9a9b35847cfceb085adb8021e77725acaacd1fcc0b748ff5da",
+      "blake3": "a44f09b8e788e2a27b432f1692efe8750a646180d6c3a1d64c0b33053861dc0f"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12986,
+      "sha256": "c27b56df0d743fbbe3fbd4dac23c0c8144893c44d40815631cf6267ed793effd",
+      "blake3": "e3e8d97611bf904f75350afa7c21506aa752bce83486d57e15dc79009499c018"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11125,
+      "sha256": "51ec576de7f9ff2418e723eaf9e1a797b52d5de43beff5c3f0b0699df4179567",
+      "blake3": "a05a9fc7013e301a635f7c5452bbe5a9b8bf617aa8bd51eb56a0d477d9b77a17"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 142,
+      "sha256": "affa56a4280d35d0912245a960e13a690e10b10c280b627145068a79a29ca903",
+      "blake3": "c305e7858f9f8d338aa9cfc909fc136b182b7959c9a6923e18cc54713e421325"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/obsidian",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/obsidian/_专利解读索引.template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1867,
+      "sha256": "e47b2fbdfebfe51932bd5d09e9bdcd038de6297c8492ee86ebc8bfac5111dba5",
+      "blake3": "c57da283262b368e7976a4680d2e608d4a858e1b1a58a96965913f65cb402e0c"
+    },
+    {
+      "path": "assets/obsidian/glossary.base",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 573,
+      "sha256": "f6939b8d14590a03ecdfd48932e71adf58a3f3001a11c4e7927a6b97ce534e2e",
+      "blake3": "abdd9942c49b1ead9a4e7f9af1b2ed5947908ff1a76083e5acc80a1fbe26c072"
+    },
+    {
+      "path": "assets/obsidian/graph_color_groups.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 796,
+      "sha256": "c991401b459168502d333e6301b6b38ff943fb340dc36e3181fbdfad163bc415",
+      "blake3": "00e1b334ab95030f866c4615975075cb62faafb874b53b8a50d9d78d3417995f"
+    },
+    {
+      "path": "assets/obsidian/patent-reader.css",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1630,
+      "sha256": "409b60716ba13080b02b4ffff89a2c320ac9be76f5349927fe2e8d6f987dcf1d",
+      "blake3": "e4f93b7c7874f7cdbdd3d1a3a242324aaf309304a0984a6dda9db6b32bcaa227"
+    },
+    {
+      "path": "assets/obsidian/patents.base",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2070,
+      "sha256": "76ed26b7a0eee88b4e31a1319a98bdcac0b67764aa9801d64d993e70a06eea15",
+      "blake3": "ee990dee1afd88a01c72a94666a50812ba56007be759be4cdbed5c908c7b5159"
+    },
+    {
+      "path": "assets/patent_note_template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3649,
+      "sha256": "183e9d0c30fc8ccb143fd846ed94f67ff14fb384942a332c9ca5d6522a41de1b",
+      "blake3": "6f44ced3b7554812408753dc039ac8225bc5d50e37227fb353a0c322b7922c8e"
+    },
+    {
+      "path": "prompts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "prompts/correction_handler.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2882,
+      "sha256": "3ad1566efddcbb3117e7ad4983960c9de07fdd868b4aa82dc8b9b6d6a3297658",
+      "blake3": "fc9e98d842fb503169de43949339ff128cec1dec61498a4b48851fda1df14113"
+    },
+    {
+      "path": "prompts/disclosure_builder.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12072,
+      "sha256": "1763e0d359a77a99580b37b2485e17bba252a03ed72c062430205536d268d245",
+      "blake3": "974b4fb519f0921ebd5d14e46167148ef0004133aa38ec7e7e9e247ac0db7a9a"
+    },
+    {
+      "path": "prompts/disclosure_preview.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 941,
+      "sha256": "8cc695b60d573dd058747e8a66fe236044851d1538429b94741d89c627fd8a0e",
+      "blake3": "928c73356d86e6543dc33dddcf9a56bc5f617bb69dd879457ced3942ea8192a0"
+    },
+    {
+      "path": "prompts/disclosure_self_check.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6123,
+      "sha256": "0471f2ff3111eb1fc54115ba86e37b40e6d0b422c2b916a46770c92f40a7694e",
+      "blake3": "5bfd18065ced108d60469a5642c840b973c9ff96ca6c22b64de06ef87d273bfd"
+    },
+    {
+      "path": "prompts/intake.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 978,
+      "sha256": "510b6f9e3e88a30f4bbfc2ee5bf0643facc113be36c793793427f0f578291d0a",
+      "blake3": "ccd8dd4405828745f6e01b2c68e2ff616cfc0725a9852b7d0a1efa778c9e7245"
+    },
+    {
+      "path": "prompts/iteration_context.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4463,
+      "sha256": "dff7a593a3e4ae1cbee23dba606f406a1642720c607946520916e0d9c98e7a3a",
+      "blake3": "e62f7fc62e4d05ee82a722c0ed5a699a4cf39ab1b26f60dd0239d50056a89d47"
+    },
+    {
+      "path": "prompts/merger.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3450,
+      "sha256": "508b1fe2fe566bb92ceb17ceddf5282969983be77ec1acb0167ebebacd16aae1",
+      "blake3": "0ae6227cd2101f8b05c0e2d61effc3f2ab4bc2d0b38abbc05789681776c82905"
+    },
+    {
+      "path": "prompts/obsidian_ofm_companion.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2386,
+      "sha256": "3abb2b68221c88015d335f90be30416249a96dd5f27472b06d9abe55a6d448b9",
+      "blake3": "68eb7e589a526e739b8a4d0ac35dab1bd5c2e4a26b356f0b0f487e06274c8546"
+    },
+    {
+      "path": "prompts/obsidian_plugin_guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1694,
+      "sha256": "edf552dd3d91125922087fe4fc9869d64416f743286a585bbc5212be40c9539c",
+      "blake3": "a4d26d886d04663e0e683b33349bef5ba51c00d3055d487158c5f58445cea93e"
+    },
+    {
+      "path": "prompts/patent_plain_reader.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18983,
+      "sha256": "064d665490a821047385f74d4f1b1d655af7873a8c0e88399cb9efe6519ae16e",
+      "blake3": "10d944475e18ff009721ec13c1645748ceea1ea22c17e4400eeddc455eff8eef"
+    },
+    {
+      "path": "prompts/patent_points_analyzer.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 981,
+      "sha256": "f98baaaddc3b136c35989bfde1c34f11f99264a0bd2ea1bde6781732bdb6c936",
+      "blake3": "0303f93b22debb604aae603ea8b045f67f43799f2789f26355647a9fc437c280"
+    },
+    {
+      "path": "prompts/patent_reader_self_check.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1326,
+      "sha256": "d55ab110d4e6e8b0df765d0e1a8fa0d01902653b3ec5acf41003718cab6803c2",
+      "blake3": "83b89a9552d9d1f3dab99919dbcd86e1762332cecef6267c620ff27fabdb8f85"
+    },
+    {
+      "path": "prompts/prior_art_search.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10847,
+      "sha256": "6a266fa9111826ceca54b239e6e8e6d189f838b8ac483d9216dd97fcad829bb2",
+      "blake3": "da0abbba3590da7b480f856aa274706f9a8e07d36c79292ca0475696a02edbcc"
+    },
+    {
+      "path": "prompts/project_scan.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4332,
+      "sha256": "3cb3fb46ad4ba04bfc9c75f8192c3e4e4047dde9e628be338e693d0372d38f9c",
+      "blake3": "979f313ece18cc8877405d532ea71139c22bed1aa06c7a4efa13a75c9d183667"
+    },
+    {
+      "path": "prompts/template_reference.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8985,
+      "sha256": "9acd02dddd7bbce80964828e8c2c5878697125a1cac90ab3f74dc7adcc30826e",
+      "blake3": "91ce2b44164fc87886ed7ee3078d54c4148665354d08bae94c45d441d3301005"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/ipc_application_hints.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3730,
+      "sha256": "db68d8a9de77d218d01af10e76dedb9fe379a3fc31f775a61814c90fc2470109",
+      "blake3": "102746e6bab1250c1a454ee7587152e4fc67a51c1b1b21b83372e4b34f1cae9c"
+    },
+    {
+      "path": "references/patent_domain_rules.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1081,
+      "sha256": "a188bfb733556ca5a73afd517d0682904b90355416c4d60ccbde301354b300e2",
+      "blake3": "cd84223bf8264c1185b0bb5eb891b09f6741e407412775eed9b570abae35b050"
+    },
+    {
+      "path": "references/patent_obsidian_format.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8233,
+      "sha256": "e3a38e8ba531f3cfa460181a3c4f0e214bf6ccab51b99e59fbb0f83d4e5a4786",
+      "blake3": "f25b6a6d1918adccfff5e5288e7829e73bf2df706086c7a37ae5a18751fd17a4"
+    },
+    {
+      "path": "references/patent_pdf_sources.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2716,
+      "sha256": "0b07c18c8f79854874bf8683fc56facde19a1bdf58183c5bca8d5e3187dd4332",
+      "blake3": "20c31eb81421b1ae89a0482e7fd593fd1410d70e5392ef80d502d288cfe9a00f"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 494,
+      "sha256": "d39d72a4c80b7c0f05e9febbb44ae477341b84a935f4c05c1743ccccf04cd564",
+      "blake3": "5102e13073f29fef10ab09813e8f8467a2ba55f57a5b00314a30c568ceb0ed5e"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3328,
+      "sha256": "3818daf6c3782b83eeaee2cc4eeb9fde5f4fd1702310708a2d8b71974e069419",
+      "blake3": "9a958a85d7dd30968c8e90f7551ed67d3f643ad6dad87bd3318e7078c33e3a96"
+    },
+    {
+      "path": "tools",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15797,
+      "sha256": "768c194a1e341badce3fdf69d8f7968b1a3af7afce2a1884b53a4683f5a8c704",
+      "blake3": "b75541ef286af792ab4e28424557bfe17e180266d2badb6a3c03db56f032a15e"
+    },
+    {
+      "path": "tools/cnipa_epub_crawler.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11991,
+      "sha256": "7d8cd6e3e9366ab980c3b7e665242e99d2f7c7bf82f72b275c9b4e83add68506",
+      "blake3": "22724d044687c7d85681d63c80d137c5d9ec7eb25be27d45003a608db1b49f18"
+    },
+    {
+      "path": "tools/cnipa_epub_parse.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9086,
+      "sha256": "672124d2428b809bd9ebe4103b7ea86084442ac0a396bf509a0b1772e5d6ee3a",
+      "blake3": "fc4f9a31044be5a687ec141e97d963dfc11daeb1ff414ad5726999e3d441c092"
+    },
+    {
+      "path": "tools/cnipa_epub_search.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5954,
+      "sha256": "09bf37ddc6b8dc73b25ef43f9ffd249ee53e1dbf07ae4be99033c9fb5dbbc8b7",
+      "blake3": "713e5a591df94a9376ca9fe1d861c1ed9d148659db3b2286421c850203f75f82"
+    },
+    {
+      "path": "tools/docx_to_md.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3956,
+      "sha256": "d87bcfcfc71c734d5a01095d5f3c3d4c4e7cef729173fe8d72da66fda03bc693",
+      "blake3": "ba4590127aa450fd62ebeed164b07a28ee71157fa1411439f6aede76a721db87"
+    },
+    {
+      "path": "tools/iteration_dialog_log.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3341,
+      "sha256": "bed725af43fed1480f52b8856c1b341fb97db6314ac0193d6e84e35f0c4642dc",
+      "blake3": "c92b2675782562c95de619a544b731130b2e305f23a81f3558ee9994dac7ee53"
+    },
+    {
+      "path": "tools/math_render.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13300,
+      "sha256": "7dae72c0673d3e1abc1959803f19193630655246f9eda23cf8d4f788b836430c",
+      "blake3": "ce2aadbbcb9845143f0010e7c48899208ffe1fbd02b7e6198d2d9f428b3b225c"
+    },
+    {
+      "path": "tools/md_to_docx.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 33812,
+      "sha256": "0b3b13852c93215c3823dd3395841ef0cd7809b51f22823952ad6030073ffeb0",
+      "blake3": "dabb46eb6e72d32547500719c383ed6fa07538972f6cf43f210896176893bb66"
+    },
+    {
+      "path": "tools/mermaid_render.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16636,
+      "sha256": "ffeb50461fbfd05683785705c681b38abfe42bf56fbd448f439eee9cf3ce7b78",
+      "blake3": "8f0d5951b266b88099204812425bde88e78780d4288c9e86adffa291dee84d28"
+    },
+    {
+      "path": "tools/package-lock.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 90165,
+      "sha256": "f92eb074d747a32c560fb1020c29119868c4ae213ddba0e4e962f0516c2b50ab",
+      "blake3": "4e1d9a0cccf4e505203dd8d431964de41f0e0a42d67825affccb68d8818d311a"
+    },
+    {
+      "path": "tools/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 278,
+      "sha256": "91b865046171a0c799aeb546633e920a74e22de891e7d6e73811883d9b1399ae",
+      "blake3": "74465a861e04f4fa4a60c40f4a5ad0a82c9b3df2d54bab94367c0589e9745d43"
+    },
+    {
+      "path": "tools/patent_reader",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/patent_reader/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3715,
+      "sha256": "abeb8b35041aa07312e405857388dc8173d5bc882136f9eca749efdd9db4ec4d",
+      "blake3": "c1ac0cfe62f0ac0db086cf26ba25a9f1c1c9edff947d2e3c0694ee425a653415"
+    },
+    {
+      "path": "tools/patent_reader/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 64,
+      "sha256": "4538b3bae00e66a53224dd4a9620dd8ec184e58d5807ed4cadca4eb3a90d0f12",
+      "blake3": "868ad40da8369a25df58c570b8a0efa44f26618d4645276708e7e3d2e6ecac92"
+    },
+    {
+      "path": "tools/patent_reader/build_claim_mermaid.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1351,
+      "sha256": "e6a59a451b9bf6dc02c559afb0d141063a1fd31ecd504c9f1cff3119381e31c9",
+      "blake3": "10bc377362be99ffd7c09f985d0059657e26762d9047b9d0f2fcc9bb2d7484df"
+    },
+    {
+      "path": "tools/patent_reader/build_context_anchor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8367,
+      "sha256": "0a41de24f626747b8f99972213743446e3c48a8ac8378a8535e8a81f8b6a8de0",
+      "blake3": "af4e336e06b237294d39ac7b24f286a8ed5c63ba44d6f8fe225d723e775737cc"
+    },
+    {
+      "path": "tools/patent_reader/build_patent_canvas.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6241,
+      "sha256": "b106f5af3c993e1d473b00d5fa34a6f0067891a71be81a841d611d4d1bece042",
+      "blake3": "843ebaf80ab3d1a34a42b497173b56e985be76fb7854e8b9c283c876f8ec9328"
+    },
+    {
+      "path": "tools/patent_reader/check_obsidian_env.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6529,
+      "sha256": "2a6b7fb41f5c6ad0d048fe6b931d079dd9b61a98215619c2a1cfbf1ed362449c",
+      "blake3": "f5a2f8db95ba34f84d2e6e9e0f7bd77fbccae361e90c6180606d00ec0a79aa00"
+    },
+    {
+      "path": "tools/patent_reader/clue_vault.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 63192,
+      "sha256": "d0ad25462fbd95bd79d6c80b017b387bf644c41ecfdfc1253451b517c5dccc25",
+      "blake3": "76d267a1f08a99eaff5b2e9b9342d0bd8373fd92661578e00d9ada14a8b42215"
+    },
+    {
+      "path": "tools/patent_reader/common.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28054,
+      "sha256": "2ec291d801f30b56cfd9c062ee80811aa55ebe1bb56a812a24efe49ffd4a34b3",
+      "blake3": "d7ad33879c22c18eccdb9b0b22fb963cf9da33c557cd1b777d002041b47b3036"
+    },
+    {
+      "path": "tools/patent_reader/desc_paragraphs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13281,
+      "sha256": "b7b8706df395260d19dc4044560acba3198bc79ff9c3bec5168f653e8e77d668",
+      "blake3": "860c28a042dbb9dafca01779f193e71c17cba526122149a09fa0931ae8594146"
+    },
+    {
+      "path": "tools/patent_reader/extract_patent_figures.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2722,
+      "sha256": "335574fc7ad7f2d11bfe2d590e2384ec436e0708f600159d8917ef8ab5e846bc",
+      "blake3": "feb57593c9507ab4411b733ff9dc229adf0f7cbcc6a589ee44289312426c63f2"
+    },
+    {
+      "path": "tools/patent_reader/extract_patent_text.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13484,
+      "sha256": "7cb848331ed737b7db58eb74abbff247a525c236537458944bf1558615306520",
+      "blake3": "26c88b0c06919efce75555ed6c63cca041ea5a34bd1edbf2fceb04ab4eb3029c"
+    },
+    {
+      "path": "tools/patent_reader/fetch_patent_pdf.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10722,
+      "sha256": "54b4af609e1980b1e6014b85b0b5a483eaa37389180699cd71898aaa12d7616e",
+      "blake3": "bdb9d3337601c9bb1d63d02be914b2c9312140ff50694b6b121248c592a6d6fc"
+    },
+    {
+      "path": "tools/patent_reader/figure_extract.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19310,
+      "sha256": "bcbd958f29d1c23a10b431152e3e756b283e85f62a7dd9bfff504c72b51465ff",
+      "blake3": "e0e6c26e472b4cbf22139513be681b2ebf5a95b3d44841abccc98b2c5f38994e"
+    },
+    {
+      "path": "tools/patent_reader/link_patent_notes.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4180,
+      "sha256": "0c5b6929a7bde2dcfa5ffbba2f21879e309f675c792ceccf2051465b01840f70",
+      "blake3": "cf5a583affc1fd8267b73f74c10205d35b9ed8123a67a2e3a22579e9d2a36ba7"
+    },
+    {
+      "path": "tools/patent_reader/lint_patent_note.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8729,
+      "sha256": "12e42e3052d19c516df924a7bf5626d99e9251b453289ae5c75e3904e1259e4a",
+      "blake3": "254a3134e17681d2fd761533ccf8dc5b30df925b96f3b39b6ed623fb55643112"
+    },
+    {
+      "path": "tools/patent_reader/materialize_public_clues.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7256,
+      "sha256": "cd6eb1812c6666ea84bf5bf24dc10d6db0d68ec719edfacf8c5374c9cee2025b",
+      "blake3": "5e1547eb64e1377003cc62425721f517d545cc63009612c1bf0df86804bc0c11"
+    },
+    {
+      "path": "tools/patent_reader/note_cites.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14765,
+      "sha256": "8f379fb5a9b8a8403cfd229da5ccad69bf3e77ed23eac76057f21002ebe9e16e",
+      "blake3": "9e1b9d845cf1685c861f17742dd131991b1b7be6b096214b0bbe165d034ff2db"
+    },
+    {
+      "path": "tools/patent_reader/obsidian.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 79120,
+      "sha256": "b7bc9585473ec88083d5d4842d168003746415e968806b7346e8e6f2c74a30b1",
+      "blake3": "31e632f245dfdd6b2f45fe95dd45d174e50bf783108d0fa1f2b2c233f7d77186"
+    },
+    {
+      "path": "tools/patent_reader/patent_link.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28727,
+      "sha256": "31a9585b61f50a0f498e51266c9f71d102ba96c9204fe388876848e63b711bdc",
+      "blake3": "58063663708b72747a35d34ca0d274d4caf86f329e6036aaa140ea4c6132579e"
+    },
+    {
+      "path": "tools/patent_reader/requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 82,
+      "sha256": "3086defdc5ef825ee302e786c691fed077ae35af6e65521a540fca5b81012c71",
+      "blake3": "94dec2112f41e3219e2378965f46bb48a760236540ab6644d94acaeb3396f776"
+    },
+    {
+      "path": "tools/patent_reader/setup_obsidian_vault.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2495,
+      "sha256": "b7741188d3a8a14577e9e3d5649c9235ecf03ec92b8d621b220f83d6e57eb8f8",
+      "blake3": "82c6f5b8a079937cf0b26729ae11fae24d31bf10852a73c91629a2badc1f68a8"
+    },
+    {
+      "path": "tools/patent_reader/validate_claim_tree.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3777,
+      "sha256": "d5fc89f080b48008639300c261d5e978c5e53ebe6ab3f8c67bda534fc9578258",
+      "blake3": "8ce963a73ff04d8fc4797fee86d232d48f5923f07258446e052334f81bfa5da4"
+    },
+    {
+      "path": "tools/patent_reader/validate_public_clues.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6166,
+      "sha256": "13e8ac0726ce7f4bfc86d67ffa7f3d2c889f7c65397af629cbdc9414d0036c70",
+      "blake3": "67761e1df361fecb135e3f6c8f91613ac8bf9902d1f1e91a9a4d3a7e282ead33"
+    },
+    {
+      "path": "tools/patent_reader/write_patent_obsidian_note.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 44083,
+      "sha256": "a01b8d7c61ed29c9875425810bab4f94d0381540d13cfbeaec2efd7b498a1eac",
+      "blake3": "8df5a8b784e96b2273f92709984b980667ca773a7a8fbc7b9edf9c09584c6802"
+    },
+    {
+      "path": "tools/pptx_to_md.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5193,
+      "sha256": "c21def55a7ab7a0ccc6bbd46df9667038b576fec056108476cf9998040d8ca63",
+      "blake3": "1c0ae1540f24a18ff95daf7af5f85ccaa0f3987b267012c5c4b9972902af5d57"
+    },
+    {
+      "path": "tools/requirements-cnipa.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 161,
+      "sha256": "bd319ef78f40b0409d6563a8a15a214ad9e3e24a5dd6ff39aa00796b17949dce",
+      "blake3": "773941ffe9f60b31d5955089f783051e53e376d6d590a0196d7873efe38d8aa9"
+    }
+  ]
+}

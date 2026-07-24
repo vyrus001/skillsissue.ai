@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:fd2ba4f244a7711fb939500d461aa5ecfa58f19d8c622531dc0b6655fc4fe2be",
+  "sha256": "fd2ba4f244a7711fb939500d461aa5ecfa58f19d8c622531dc0b6655fc4fe2be",
+  "blake3": "023f37834033df6a3f1c6a0085dc4c8dd2237103073b62317b4f1410ef109269",
+  "size_bytes": 23456,
+  "file_count": 5,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5899,
+      "sha256": "73cdd2381dc7f4c4d204b2b8ce9ef3f7663fecdefeda5a880cb96d3d94367a49",
+      "blake3": "d5e921a74d1ced723148aa3fa093a55739ebeeaf4ec7a35d9d12bb52e0581d5a"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 147,
+      "sha256": "e6105519a90d17fe907b6207da3e4f3a53c9f4cc6fe5d5c495979066dc3a48ca",
+      "blake3": "857ef396c82eea6072c2112c85fa94cae957d072bb6117f262e77d5e4ed7f958"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 313,
+      "sha256": "653d9788796b243b88e94dc06eaac88ed977443660078a9e7cec7eae1efb11cf",
+      "blake3": "d044c9d03307a22e2b64fc0aa3ff7487e916bc60093c2adc4215432bfe469150"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/knowledge-mate.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14577,
+      "sha256": "5ce8c348c92bc3fb76670cd7a35aa77c8bcf051e8500d3945e0db859ba436b97",
+      "blake3": "477dfb1b3df5f1e0e921e20f6b44e8918006963e5b9712547b3613e2ac178d12"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2520,
+      "sha256": "3af3e9ad77879320e529cab77ca88bb1a92988f43993ae103f0528af677258ab",
+      "blake3": "c997a7ad7f4a3254ae3323dd0e595bb838ad13c6330c08c899e6beca5b76f2ea"
+    }
+  ]
+}
