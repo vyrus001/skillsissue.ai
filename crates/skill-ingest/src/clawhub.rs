@@ -27,6 +27,7 @@ const MAX_CURSOR_BYTES: usize = 8 * 1024;
 const MAX_ZIP_ENTRIES: usize = 100_000;
 const MAX_ZIP_PATH_BYTES: usize = 4 * 1024;
 const MAX_COMPRESSION_RATIO: u64 = 1_000;
+const MAX_TRANSIENT_HTTP_RETRIES: usize = 3;
 const CLAWHUB_HOST: &str = "clawhub.ai";
 const GITHUB_ARCHIVE_HOSTS: &[&str] = &[
     "api.github.com",
@@ -1092,7 +1093,7 @@ fn fetch_with_redirects<T: HttpTransport>(
 ) -> Result<HttpResponse> {
     for redirects in 0..=policy.max_redirects {
         validate_https_url(&url, policy.hosts)?;
-        let response = transport.get(&url, max_bytes)?;
+        let response = fetch_with_retries(transport, &url, max_bytes)?;
         if !(300..400).contains(&response.status) {
             return Ok(response);
         }
@@ -1108,6 +1109,24 @@ fn fetch_with_redirects<T: HttpTransport>(
         url = next;
     }
     unreachable!("redirect loop is bounded")
+}
+
+fn fetch_with_retries<T: HttpTransport>(
+    transport: &T,
+    url: &Url,
+    max_bytes: u64,
+) -> Result<HttpResponse> {
+    for retry in 0..=MAX_TRANSIENT_HTTP_RETRIES {
+        let response = transport.get(url, max_bytes)?;
+        if !transient_http_status(response.status) || retry == MAX_TRANSIENT_HTTP_RETRIES {
+            return Ok(response);
+        }
+    }
+    unreachable!("HTTP retry loop is bounded")
+}
+
+fn transient_http_status(status: u16) -> bool {
+    matches!(status, 408 | 425 | 429 | 500 | 502 | 503 | 504)
 }
 
 fn require_success(response: &HttpResponse, operation: &str) -> Result<()> {
@@ -1494,6 +1513,70 @@ mod tests {
         assert!(ReqwestTransport::new(Some(0)).is_err());
         let transport = ReqwestTransport::new(Some(60)).unwrap();
         assert_eq!(transport.minimum_interval, Some(Duration::from_secs(1)));
+    }
+
+    #[test]
+    fn retries_transient_http_statuses_before_returning_success() {
+        let transport = FixtureTransport::default();
+        let url = Url::parse("https://clawhub.ai/api/v1/skills/aws").unwrap();
+        transport.add(
+            url.clone(),
+            HttpResponse {
+                status: 503,
+                content_type: Some("application/json".to_owned()),
+                location: None,
+                body: br#"{"error":"temporarily unavailable"}"#.to_vec(),
+            },
+        );
+        transport.add(url.clone(), json_response(br#"{"slug":"aws"}"#));
+
+        let response = fetch_with_redirects(
+            &transport,
+            url.clone(),
+            MAX_CATALOG_BYTES,
+            FetchPolicy {
+                hosts: &[CLAWHUB_HOST],
+                max_redirects: 0,
+            },
+        )
+        .unwrap();
+
+        assert_eq!(response.status, 200);
+        assert_eq!(transport.requests(), vec![url.to_string(); 2]);
+    }
+
+    #[test]
+    fn transient_http_retries_are_bounded() {
+        let transport = FixtureTransport::default();
+        let url = Url::parse("https://clawhub.ai/api/v1/skills/aws").unwrap();
+        for _ in 0..=MAX_TRANSIENT_HTTP_RETRIES {
+            transport.add(
+                url.clone(),
+                HttpResponse {
+                    status: 503,
+                    content_type: Some("application/json".to_owned()),
+                    location: None,
+                    body: br#"{"error":"temporarily unavailable"}"#.to_vec(),
+                },
+            );
+        }
+
+        let response = fetch_with_redirects(
+            &transport,
+            url.clone(),
+            MAX_CATALOG_BYTES,
+            FetchPolicy {
+                hosts: &[CLAWHUB_HOST],
+                max_redirects: 0,
+            },
+        )
+        .unwrap();
+
+        assert_eq!(response.status, 503);
+        assert_eq!(
+            transport.requests(),
+            vec![url.to_string(); MAX_TRANSIENT_HTTP_RETRIES + 1]
+        );
     }
 
     #[test]
