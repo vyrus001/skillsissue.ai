@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:c47005a4e955188ba0715ccd655f301085a079634591cc75794413b9703f65d6",
+  "sha256": "c47005a4e955188ba0715ccd655f301085a079634591cc75794413b9703f65d6",
+  "blake3": "9ce5a58f69d23051d3a0c400bd7ebca57fceeb77e5485bfaf674989094afa0b1",
+  "size_bytes": 66592,
+  "file_count": 27,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1067,
+      "sha256": "2ec00481e14c1bf16281d8d54a6b86db21f1117574616796b5d7c2eddef1a1d1",
+      "blake3": "cc77f6594239171bd59ce45c7420642068337518923635194fb3cd53cbe11f9a"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5182,
+      "sha256": "68c05dc15624ed5c5b5d3ec3dadbbc885ca88e0dea4360603fe3096fb67a23f1",
+      "blake3": "0cb5d6d3492e25deea25acf16d6b23766b5f1c047c415c2191edfafade45ae01"
+    },
+    {
+      "path": "SECURITY.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 979,
+      "sha256": "d134eabd3e66de8d6c8a2e9952583c5c57bb7bd19f974b7a9aed30568f0bf9a0",
+      "blake3": "e3f379a4d6b6403a00ce4f3b24ebbf1c31d4bad5bb9f23df6eff2b1aff936e7c"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3040,
+      "sha256": "4588f2114475929e734f9a15167fae914f40880c9ed74eda6605687b80cf08c9",
+      "blake3": "735eda55438376dcc3e03c19821665c3e4d0d285ff993813dfafdad956eb6e92"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 134,
+      "sha256": "6b594038c5a1e9d31ac5ea637cf243764637fdb0b344d212b3a54574c3ba4e1f",
+      "blake3": "8a829b393257ab69bbbc5676fd370686235875305e9b1b7c6559b577c0d91f9e"
+    },
+    {
+      "path": "client",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "client/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17,
+      "sha256": "8e9759e3a41e223625908a67e244ed4bedbbff4f9ae0271ff8b1af868948949f",
+      "blake3": "33e7549f346fd48fe1b1cd24dbde8c23092f18e356143968acdf915d0fa09bf9"
+    },
+    {
+      "path": "client/client.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5135,
+      "sha256": "b902b02415b8030422a18dcdafd821af8ebc8a6bd9acd7d92739c5362b601e34",
+      "blake3": "1665183ba78e252832f488601d616b2d074e091f2e12393d476c22d008ffae53"
+    },
+    {
+      "path": "daemon",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "daemon/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17,
+      "sha256": "1ba82a31493624e40c89df7735d9ef4ecf351a20fb05077eb316e7950e70197c",
+      "blake3": "b5f61b8d72c558512eb8bf7199f83b038f879b0ef42b238c53e0f1f3cdc4e984"
+    },
+    {
+      "path": "daemon/handlers",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "daemon/handlers/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18,
+      "sha256": "59ef9affb7e30b71823bce18b661bcfa1207c1b0bf32882a083e3c406a4ef3f6",
+      "blake3": "c213c011c8e183ab0841d5282ebff6ae601afe4ab57d731906f2ff9354faba47"
+    },
+    {
+      "path": "daemon/handlers/keyboard.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1297,
+      "sha256": "89c13ec2c532bbd52842db49e5b254019265bc7aa65b7848f772d0d03c4ac38b",
+      "blake3": "bf3bcf46f547c40c8e550244461531a82c219d603bf70fa4a848c9e4df246250"
+    },
+    {
+      "path": "daemon/handlers/mouse.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1537,
+      "sha256": "9f7deb47e5d16cacab1af4b5be2aa77973fde798e4ecc4c6800f85f5400c6638",
+      "blake3": "a5ad44f2bc3e44b06d9fd0f94f1cc121cdba1c3d409f50a0e358e59389503113"
+    },
+    {
+      "path": "daemon/handlers/screenshot.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1418,
+      "sha256": "1b532aa1aac3583b1f0f735728feee5f49e7d633524cb6fa5fcac5959b175735",
+      "blake3": "09a530ab9eb5b67049562e1743b848e6a64bd88389800139ce51de66c25dcecb"
+    },
+    {
+      "path": "daemon/handlers/uia.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7379,
+      "sha256": "6c3397c331fbe71be7e945a8e08ba2f4841e9e85bc594f3f3d9064579ff80d74",
+      "blake3": "0d255e2a3b9595cdb54baf6e21d3e15169ad663e2cc0bec4d1dfbaf6da0f6aed"
+    },
+    {
+      "path": "daemon/handlers/window.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3993,
+      "sha256": "8be7940477d871d18e52b73824f0b5e6908a483eb14254bc2438045afe7e9871",
+      "blake3": "4d1521361cd35c370d5c3892fa948b8d9cca8a2f0b09b945d8b3c1ab548c9973"
+    },
+    {
+      "path": "daemon/main.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1507,
+      "sha256": "eda717220c588bcd29566c68e37d1bd6303a5354e7cb1461ba7b6b97008441cc",
+      "blake3": "bee798747b889b96e1f5781084f0087349c22f756246de4ad53c12b7a1ad619a"
+    },
+    {
+      "path": "daemon/server.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6226,
+      "sha256": "12617166299e6a68c5b7991515ad5ae9da128a345fbe4f1de9a31f4da2261754",
+      "blake3": "86d06b14173fc1d88e9025170dbc764f0dfd89d8dd396ba2659152a72aee17d0"
+    },
+    {
+      "path": "daemon/utils",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "daemon/utils/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16,
+      "sha256": "ed0dc1c725c44e4b77b66e6dae1b8b4f22fc3e810238ad1088afb42945404764",
+      "blake3": "7bd97052ed0d1f1707f62c1af30fdb0a3edf89878b227f7d1c9c5a4407ab7003"
+    },
+    {
+      "path": "daemon/utils/lifecycle.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3479,
+      "sha256": "ab58c8c30a848535fe3fdb9dbfb1dc66b00f43b5f9566b25fa806de6bc985495",
+      "blake3": "965efad08595f84788b270ee0565053341a3b86b2e4815742667fcdd2259ebc9"
+    },
+    {
+      "path": "daemon/utils/sendinput.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7586,
+      "sha256": "9b1b3fb8a9aad96a145b9bf9ddd12d8dde2b03272d0c99b75606a45c86efaaac",
+      "blake3": "e9428f9564b1f609614ed5e65b8da84de5158c4bc718aaf15ce94fe30b705efd"
+    },
+    {
+      "path": "daemon/utils/uia_threadpool.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1190,
+      "sha256": "1b3e0b370e8e3986e0c69e44482c5fc446419f2c33ec5c4e4c0ac2e4997c5b5f",
+      "blake3": "0eb22268b148a3108a3861c1bca47ed0b7bf46ec4a3f517334469dfb6e0e6421"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 72,
+      "sha256": "c2c7ec2e209020ca2374ed1ed157100431aef0c927cf3e4a085ddf3d9e1ef0e5",
+      "blake3": "e24314a499ea5233fb413b3cbbbb0a8520f900d29137a35be073712aa1978fab"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/install_deps.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 385,
+      "sha256": "cb1b17ad7eaafa2eab35d503b629f4bd717d440585e80c2d26ed2dd7ed99b40e",
+      "blake3": "75a8336d46d6d0cf2814e1362ff2dd7904b42f92996b6df37c61ca33bbbad75d"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/test_all.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1733,
+      "sha256": "76722ccfa192dc2ab6afd7526cc6c947d5e5a5dd7a84415dd29df57613585105",
+      "blake3": "298419f04e0d3b7cbb2c392b33ad508b38dade3a8d1bceff66242bc4c0b99571"
+    },
+    {
+      "path": "tests/test_e2e.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1863,
+      "sha256": "abe63934c437bcebac36885f65364969fa0e9373c2760aadc538113be0f01594",
+      "blake3": "3d1f6afa3263f77c1e82e7a86f93f843779deff4c59b24dfde002c25ff420dd5"
+    },
+    {
+      "path": "tests/test_full.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5981,
+      "sha256": "3927b05de814a918c16e3cb775694b5098a273c43e46af58f8aa5dd26b5c1a96",
+      "blake3": "6fe35e2e040e0baacc44f0fa8a67b1e7caa177bedefbd981e6b5ca2d95083c03"
+    },
+    {
+      "path": "tests/test_robustness.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2875,
+      "sha256": "f19db8b915917a5c9c7e1cc06bfdadb7a71b18dfba149920d712a259835d5158",
+      "blake3": "818c989bacf0cbac047584b974416478bca9b5fe435e1742fe0caf255f660d83"
+    },
+    {
+      "path": "tests/test_uia.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2466,
+      "sha256": "ba6656ac4ccfe196f5d89e5ed7c658da162ec8c50ec1c647f55d6b0d580edc09",
+      "blake3": "21ffb32ab439ffdb06f68e9f568d8fd49543fa2205911c7ab2337c29d78aa7ef"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:cec238ee1e1b67f2f2c4b7b5e519cd578d0b3100e41d172ff01b224121ba5e33",
+  "sha256": "cec238ee1e1b67f2f2c4b7b5e519cd578d0b3100e41d172ff01b224121ba5e33",
+  "blake3": "76823fa5c89e3f6bfdade0bfa919a4530dcf1331368f48a6f48c656d66317d65",
+  "size_bytes": 16047,
+  "file_count": 5,
+  "entries": [
+    {
+      "path": "LICENSE.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1071,
+      "sha256": "991aac6e7c444988553c941865c538ced878bcd8da72bc38df8a2fc739ffbf35",
+      "blake3": "bdfb38903f5d48ad5c2f7f286a9fa4add6250e3d21b657ce121197284ac615e8"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8896,
+      "sha256": "d0bb41289831ca89e26979a157b88803ea18cc77286cf0bc43001ea9a30b9bb2",
+      "blake3": "6e802be87951660de20705602bf5b055808e479717bdd7861e84caf02a146789"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 139,
+      "sha256": "802309ff1c015f180b824ff729eabf6edfca6567a14cfe719a169a3112f8c4fc",
+      "blake3": "2c53f5b736768d1e2a9c000573757bfaa165964ab1bfa16c532628d189a2b862"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/security_checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1203,
+      "sha256": "4dc1c20b4b6e1b82e46b0780c74651425b237be8dbf12e959fa971a3f59bba88",
+      "blake3": "1aaa418a82cc08d7da8118834f475cb161e9bb33e59128cde7501a9af552e346"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/audit.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4738,
+      "sha256": "ca66f9a57d0031f7fb40feddce4872458a32dd67c4f5a03f91c31f1569fc481d",
+      "blake3": "05877fe53a07c5131e900ce08bc52bcbb682c780ddd22aff9d6e9cff9795410e"
+    }
+  ]
+}

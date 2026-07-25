@@ -1,0 +1,307 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:90007e1aa54e7373dff8e38ca1b7fcfb2e295b900bd4ba0488321713c2fabb2a",
+  "sha256": "90007e1aa54e7373dff8e38ca1b7fcfb2e295b900bd4ba0488321713c2fabb2a",
+  "blake3": "ac52aa3f86bc2fb4c1a64809d17009205fe4e9788e951df5420aa731e4eceae2",
+  "size_bytes": 145550,
+  "file_count": 34,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1068,
+      "sha256": "fce07cdae72cccdd6ab0c3f7eaf84f44f65278cd0c0dbfafce36e7271bb622b4",
+      "blake3": "a81751ba156ae61bc9020dbda5da202acdaf5d58a30626a0d58ea376bccf0dbe"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12051,
+      "sha256": "5fe51bc76a91d37cc00b0bbe845e94fa64bc5673d96f76bd175d71d17fb82b15",
+      "blake3": "55d365f8abc57c178da0c0f5ae28f857742ea49dc0056254a542c5e7c975e821"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 127,
+      "sha256": "cfa2d43fc40462d4946269bb2af4f672bc831e56b4a0fda982d3521db5e13673",
+      "blake3": "5b25de25a4b023b177a3dc4ae2d6f341b4d1d2166e76d89839b26c86d50adb6e"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 238,
+      "sha256": "af33796ce32c9e68c1bf46354cfc542d46817c2eedbe293ae54ceaec32ea305b",
+      "blake3": "14100fd83f99793f6a03720eb2e780b85ab666155f98c77b0bd2c83aa7ea63d3"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/check_api_key.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1921,
+      "sha256": "64d298f6d324fc596e87a487a1de88170243fde7cbd5857c03d99de8bef41509",
+      "blake3": "bfcbe928a49df532e3c1587382ead97ef0ff7073bede5dbe4f73639cbb3f473b"
+    },
+    {
+      "path": "scripts/comment_list.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3437,
+      "sha256": "274b74d6a34d0f81203c82755db8b8c58731ff0e4eab9469d338a72c917244a0",
+      "blake3": "997e23f836985809464eb9f467dedad215f0c28c8b01ca21f59e30617a3e0b3d"
+    },
+    {
+      "path": "scripts/comment_resolve.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4986,
+      "sha256": "c1cd7d3595d226495ce5a58e8743eeb3430902fa03e52686ae3d96e93c39871c",
+      "blake3": "5739878d93212c5f842e0979cdfac83394b052f5ef381f1462413605c794f483"
+    },
+    {
+      "path": "scripts/create_guest_key.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2104,
+      "sha256": "90e83445e8087eb1265d4617fa5ad973e9ef827f1ca52e2a74c6cc7f49fd7130",
+      "blake3": "a7cf8c5dab0aded95f62ca5d398bfe5c8613df33209c16e232f2ccad43304643"
+    },
+    {
+      "path": "scripts/delete_api_key.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1260,
+      "sha256": "5e08c0d930aa82e5918bfbc3eaaa6cf0c8226f88faa8ae603f10ac9333e59475",
+      "blake3": "97d1fd8e0c6906d3c350fa3f1f28346cae489c3f94c6d94722ec6dd44891d799"
+    },
+    {
+      "path": "scripts/delete_share.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2500,
+      "sha256": "0d13af8a87cbef7d18c46400bc1582f349001b006f9d3d3bde6d2bb3be096851",
+      "blake3": "1e72cdb1457f551dd5e4fd519acad5a674028fb579cef4c6c8736194ef4947ea"
+    },
+    {
+      "path": "scripts/download_share.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6865,
+      "sha256": "da322f4ba5628cc33a9b32e82a903f0e25325d5af08db37a097aed3c9a3b9a9b",
+      "blake3": "390d2e364fb06e744488c5687c3a01ef794e1f689ce6f4346ef60766ec00182b"
+    },
+    {
+      "path": "scripts/ensure_credentials.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8375,
+      "sha256": "c907c7f5fba7513c7f1c3dc5a954ac6639ab6fd1c11aad9841f054b7abf1d6a7",
+      "blake3": "83fe3426785d046d6ac0739a559d02afb7cb0dd5b942d15c3bb98a1f89297182"
+    },
+    {
+      "path": "scripts/manage_collaborators.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4314,
+      "sha256": "bba459d1664ebdd941ac65c9814242a6cd4ce46502ff282b47806febff17f031",
+      "blake3": "60790f3ccb371fc0c4d9f874c144cedf39a6a5ddb04e9340a1cb33089ac7a67c"
+    },
+    {
+      "path": "scripts/publish.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4557,
+      "sha256": "f027fdeced0d70d338dbb076b2f6cdacf6e1e5dd0768a62c9c20713439615273",
+      "blake3": "ffa6006e0785368264975e4c1396113648389a6f4aed3f8fe60fa35a4f2314e8"
+    },
+    {
+      "path": "scripts/refresh_share.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2751,
+      "sha256": "b19462c60e839c3e3c5492fff61e7c80f03f52ec4db05f0c0908e8dbfe88e0c2",
+      "blake3": "0c37e29a635c5d084c646b09a5fbadbbdc88f9eb938ff16631176169f94873f8"
+    },
+    {
+      "path": "scripts/save_api_key.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1455,
+      "sha256": "011aa1972b5989f7b94069e7f00b794f342c9a49753e02116ed4279c0f816b76",
+      "blake3": "a96a0a3b81418ab5ed9073a91eefac825e26aff908671554fd61342bac1930d3"
+    },
+    {
+      "path": "scripts/shareone_api_request.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3432,
+      "sha256": "228562c18dede51115d562225ffb370494e605b4992d39e580cc11c12534c166",
+      "blake3": "93cf9f87b86029d2860c27360b3b8bd01cbf3552bb382769f6f97e5d725dabef"
+    },
+    {
+      "path": "scripts/shareone_client.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14701,
+      "sha256": "7bcf85b4be4426349f344794e0c17600a5946b4550774143e13c6555b553c3ac",
+      "blake3": "f46e878462d919ae5950e980b9cc1ba4a138635fc1c985c766bf7d74979063d9"
+    },
+    {
+      "path": "scripts/shareone_upload.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8018,
+      "sha256": "9f89a0f384df38adeca9aef3becf7bd7b7e4b88b1f83f3a5c8d23e0d7b7e7bdd",
+      "blake3": "1eead4914fdf3fc86080f7dc0534478620e23050c7fa8953aea80ae3acd3bbcd"
+    },
+    {
+      "path": "scripts/update_share_settings.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6147,
+      "sha256": "76a6bb498852d054e32f8c0a27e3740c44e813549c3e179760a92955385ac577",
+      "blake3": "a1b24db44a8cd09c27ba2aac00e5a7c75e277a0ac51ba64646e01ad289da8aa8"
+    },
+    {
+      "path": "scripts/upload_page.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7117,
+      "sha256": "b44d83c6e2624ba622492223b5840bc86472366229c9cff7535a0f90507d0ea1",
+      "blake3": "8e8808bd7c5b0ea456810b2d07cb071318671345d5ae981537f6c13de8fe1d79"
+    },
+    {
+      "path": "test",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "test/redirect_follow.test.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4236,
+      "sha256": "4e5d1858482e4df261a214ecb5a9711e1dc9067ade29ff5a13ef0814b0cbf645",
+      "blake3": "47324415cddf2610acfe9edf6e1d3962a79def1b1c704017a985741b60e50857"
+    },
+    {
+      "path": "workflows",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "workflows/comments-process.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8234,
+      "sha256": "724a2f490102b2e646b5c3d79d6c94aeda7249ead51637f0ada1f06d622e6000",
+      "blake3": "f4dab256e9d20f74a790f50baf014f86a26ed7915a2dd9b725ca54f85a882deb"
+    },
+    {
+      "path": "workflows/comments-view.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2289,
+      "sha256": "3efb056694169af52e3f7e4d70fccd98f92c19f84f8a1fd69b1a2d9a4bed94b6",
+      "blake3": "f667accc130781804e61505141d4bc85b7924eafe10e1bc342b8327e3fe3b57c"
+    },
+    {
+      "path": "workflows/delete-api-key.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1084,
+      "sha256": "727741868078041263e62773dc403253bccc31eaef6213ac69b105b6f7e6ee49",
+      "blake3": "d29f25cd9082a44fe39b8f1b6fa54b1fe7cdca08020b970b6cf4e2c8a8508524"
+    },
+    {
+      "path": "workflows/delete-share.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1569,
+      "sha256": "bfba825f991aad4ff742d40fcb7bb7b5225cf556c1142643c2cd496f813e33d1",
+      "blake3": "070b50b3acd46c05712945f92c01a233e2f2f05feb06101a6cc2e9f0c12a4ad3"
+    },
+    {
+      "path": "workflows/download-file.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2958,
+      "sha256": "31e732b06eba17350a3b37fb087adcfaef3a63a37bc6c848c84f9a203d4f9b35",
+      "blake3": "96a760ae3607be7de5c761457e38b557ce5197b668480c72cabd248ef2ce6e38"
+    },
+    {
+      "path": "workflows/environment-and-credentials.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3265,
+      "sha256": "f76c54179cfbf7d54c5007423febe0b6f04a243959ada60be66ececf6b4f29a1",
+      "blake3": "6982f7ad1e11caac4d2970346486d1fa00acfab4e3e29fe7a8b40991d5838793"
+    },
+    {
+      "path": "workflows/manage-collaborators.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2230,
+      "sha256": "5c8e0df822919d5fa994b7da5d29dfef2cfe25bfa035c8fb1af745aabe34afbe",
+      "blake3": "279edab251e255df228ded5de2f8da3f38b26bc35ef6aa928335877d979efffa"
+    },
+    {
+      "path": "workflows/publish-binary-file.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3645,
+      "sha256": "2578603e7153f09ecf061efb8b377b850f0fd268b8f7fed44de78b8933c4e5c9",
+      "blake3": "14f723d88bb702265e338e4124387bfb30e0f9814ade4368561644b39c0a6e8d"
+    },
+    {
+      "path": "workflows/publish-text-page.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8981,
+      "sha256": "0f2a86ee5c28bb4e3672097d9a461aeb8cbdb1f5e650524aeb30dff052224f23",
+      "blake3": "9b77c3308b67efaa8ee99704ea3ba74bf7319f24eb1e33c98d5f783d70b762d7"
+    },
+    {
+      "path": "workflows/refresh-remote.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1732,
+      "sha256": "6298f6ba0d1b66c867b7f67dd440c5129c396b43cc7c6ecc8373d168bd10edbe",
+      "blake3": "7e0d5186a936824f412bc44c8ffc4640be3e4642ffab0209aedfc5e6b7940abc"
+    },
+    {
+      "path": "workflows/result-and-errors.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5263,
+      "sha256": "814775fc4fc133184b5e603d56e5314937e66169b373bcccf463680fe35b6f2b",
+      "blake3": "2315866b85f5ee82eab91af34a874958d03cd82ead189d837bc82d6e708d04fb"
+    },
+    {
+      "path": "workflows/update-share-settings.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2640,
+      "sha256": "f11fb3c18e8f2de1821928c7ee55a3ab1a4d19ae40d4bc13114bc43689bb50bd",
+      "blake3": "f85560d8d915a1cb7882abfeda32e1ae585a5beb21ddf61dc77c86407f4635f4"
+    }
+  ]
+}
