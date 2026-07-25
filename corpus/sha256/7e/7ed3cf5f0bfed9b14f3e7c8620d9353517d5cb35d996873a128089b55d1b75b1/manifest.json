@@ -1,0 +1,743 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:7ed3cf5f0bfed9b14f3e7c8620d9353517d5cb35d996873a128089b55d1b75b1",
+  "sha256": "7ed3cf5f0bfed9b14f3e7c8620d9353517d5cb35d996873a128089b55d1b75b1",
+  "blake3": "2cd18c7df1dae92348b295775af0d3af7e656bc8dad16e175685475026609912",
+  "size_bytes": 639053,
+  "file_count": 72,
+  "entries": [
+    {
+      "path": "AGENT.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18750,
+      "sha256": "59fd31045e6bd0de334f483b41e19add1aa7709571badfbbffe11ab959da49e2",
+      "blake3": "6a4aa10a521631adf1d5ae5dc11ebbef1fd76c2ffe69db67d6d2a11cf02eb5ad"
+    },
+    {
+      "path": "AMBER_SKILLS_SPEC.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20389,
+      "sha256": "f6f20e495bd265c686f64d50ad4afe559ba73dd03e8e9dd5001994b4eef22d62",
+      "blake3": "b45b1fb3faa83f1640cc7fc5fdd4d7f5208ae9f94732db04b27b98a6df355b38"
+    },
+    {
+      "path": "ASTERISK-IMPLEMENTATION-PLAN.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13874,
+      "sha256": "e78892844b25d6b61b983ff4991e868dcac357379e61c76b28d83fe854b065bd",
+      "blake3": "1b5a44f7b5de3588e0eae2105f04bccea34be1943372754135c0ba182db43e50"
+    },
+    {
+      "path": "DO-NOT-CHANGE.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2036,
+      "sha256": "ee3bd1766dfcf7331e7f0b521df1b216065ebe8e16cf5a30b2ef3e693c072c46",
+      "blake3": "6321bbf01cebb4c66e879da88214ed89cd1818e55a56e0de8f1c4a4c66bd893d"
+    },
+    {
+      "path": "FEEDBACK.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1431,
+      "sha256": "f6ba187109ee2757aa263d3ca7ac57d76fd5f0cca847619bc24c87988d6276b7",
+      "blake3": "29ee94ddc8f4a4e31b55bca791fc17944d7ccb69fb5ddd6f03878dd024e25c3b"
+    },
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 911,
+      "sha256": "98c375007aa374bfe5498b3dea9e5ef97350df5d1aec170f417fc1f86876e77a",
+      "blake3": "a773f48564dd967c251c8b5b09555b443a5a119c7bbf77392a191fdc72fa5fe9"
+    },
+    {
+      "path": "NOTICE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 158,
+      "sha256": "b6d4fb89808631aef92808332be2621977a413dbb163a22961641d7610e4f55a",
+      "blake3": "c410167eeb0496b18ac14244d03e299e750912a226f107270f9d1fb36d143b50"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11718,
+      "sha256": "cfc993a402bfc2f0288d9b711583b23c5ecef2d263dad79be48abb3f9e34bd04",
+      "blake3": "f6457eaad6f2cea61595156c1b8515270c70cce8e13b302a91838db560bfb027"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16052,
+      "sha256": "2554d0463f8d83f6bda82935bb02892017f8ebd3e124446837dd1551fd735e94",
+      "blake3": "02723aee91adf89c3378cd046369c00d959e53396865a50f962d77e657ebe5b8"
+    },
+    {
+      "path": "UPGRADING.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2706,
+      "sha256": "685336110b0afaf9a50a961855af36daab0f30248912d96c132e0ca94917906e",
+      "blake3": "c58aaea79a69f9abb28ec1bbf979e3224616a2c2082cbf0381bd6f55c87b8526"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 137,
+      "sha256": "0b6505385ecc8fc0a3c95929ca1aa9e62581833f6b4e6d47eb93b162f59e27fd",
+      "blake3": "d0ec4c17efde2fbb2ae61bce3caed9ee7516e5cea03d19239c4985aa0a7d9a5a"
+    },
+    {
+      "path": "amber-skills",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "amber-skills/SKILL_MANIFEST.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 255,
+      "sha256": "dea9428e4ea64a221afb8eadea83c8771bccc5ef2f8c9bfa71cb86ae0faf0f15",
+      "blake3": "a6750483f3d7f544a28b98d9fc14dfddb6390192463cb7807b15c3e6da001203"
+    },
+    {
+      "path": "amber-skills/calendar",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "amber-skills/calendar/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3989,
+      "sha256": "ff4da8bcbf15a7f5fb9c8fa68243b807bb64c59010de673a545baf82df16aed0",
+      "blake3": "6d6496013c04346ee0671c9c6d92d7da0b0e4a5e6f8c115367eddda52c3dc75c"
+    },
+    {
+      "path": "amber-skills/calendar/handler.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8722,
+      "sha256": "5a7a7fc62744c6c345cc241e0c29249b57daadeae11887f740c74e1d54aeeb37",
+      "blake3": "5d8d90e9948ce2b01f99f8291d6ab20b4e42793d1e69e0d6d9476acf35b19708"
+    },
+    {
+      "path": "amber-skills/crm",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "amber-skills/crm/DESIGN.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21222,
+      "sha256": "575f539248817e387258f6173f594ce254cf0bdf543aed863822b9b5a4ad6a63",
+      "blake3": "cab11438effb67d18dad81d850bd9cfde111c8381f5c3827dab21c32a9f9ab69"
+    },
+    {
+      "path": "amber-skills/crm/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6080,
+      "sha256": "c9652c62250fbd06d258f8028ce04952d273166ad106b42c7299096d3d3d8c3b",
+      "blake3": "58cd4af06aef5ba1a0c7cc8b3b459960dbd272a7f6c99eecb17df5de166f517a"
+    },
+    {
+      "path": "amber-skills/crm/handler.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16723,
+      "sha256": "44f3703333cb953a2d29e8b3782cd5453d405fd83026435120221a49da61c05d",
+      "blake3": "fff84832c4d946954b5556e495f9466c8350a18cd4040e5dab3bc0e23b106ff4"
+    },
+    {
+      "path": "amber-skills/crm/package-lock.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16674,
+      "sha256": "e47fb40ff65bd9df0441a95115a44e3f5f3dc20325a2b699c8c751b530908ece",
+      "blake3": "c5abbe54882951198629e83554a5a60f78cf581c3276cbed784f4b58089dac06"
+    },
+    {
+      "path": "amber-skills/crm/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 300,
+      "sha256": "9f03a5a034c6be2f63f16b455a555c42b9fd9d49d7861ab1b72040fa1f250a2f",
+      "blake3": "29cf5d1e6bbd9786cd360d682cdf314aada1acb307e821a79f135f74177b0031"
+    },
+    {
+      "path": "amber-skills/send-message",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "amber-skills/send-message/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2792,
+      "sha256": "f6c494114b6681323fa90179254ca2b6612c5658896ae8aae5efe87d83b6a401",
+      "blake3": "86f307383decbc1b23f3052620edbedec87fb9bd279473a5a3b9ef436e6660f5"
+    },
+    {
+      "path": "amber-skills/send-message/handler.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3323,
+      "sha256": "20e900500ec07e38a5f2e572a631377a684a0bba780525bfe024312ec4864c7e",
+      "blake3": "84b1abd30df118ce295e9d90936d4d8c40a30c7df6457b8af562a7fc657f2e10"
+    },
+    {
+      "path": "dashboard",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "dashboard/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7653,
+      "sha256": "7fb0a72c53ed30cbbee4b0f9d411604871f97e5b7388f9516a9f1afc06d59ed3",
+      "blake3": "2c4de1ad760290a08674d9d2c0a25d48ae3cc9ba1995c2a9d999915516bcffee"
+    },
+    {
+      "path": "dashboard/contacts.example.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 132,
+      "sha256": "e95a42ddfba5c0cbb4a6d9d14c4cfd8f226ca8550c4d128a2d402654bfbb6be5",
+      "blake3": "86fd09e889d802cf76cc6ed17c72bae3f3b28ab8bc6ed82c098b86eb4db79c71"
+    },
+    {
+      "path": "dashboard/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 38610,
+      "sha256": "c7048ca271b49e8d3ffc3e23ba53757cfcd4907c876dffd818bab7b78bda7c8c",
+      "blake3": "ef31cc18de3e2040c2d739353ade9c7ebb407af5da180fb68c035d24cbbf45fd"
+    },
+    {
+      "path": "dashboard/process_logs.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30483,
+      "sha256": "9039c03792de8e9abdc75bd948bba7617f01e18e4f711890a809851972cf1c39",
+      "blake3": "2fd88d832d2e9708e084cb33a0d4de10469e2de5cf3d13d450be62e94e6ddcac"
+    },
+    {
+      "path": "dashboard/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "dashboard/scripts/serve.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8417,
+      "sha256": "97d866f7c8cd2a580c1c28d87f4ccbde2b9779cb69e139ca98e9014674ab0fff",
+      "blake3": "59b90fdb6b0218a53a2096d9b0ff47d349920a50ce4d8aacc039e94d36d74747"
+    },
+    {
+      "path": "dashboard/scripts/watch.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4032,
+      "sha256": "3e1b8f5b9909e855a573e07db3c526c3374f51f1c493dcdf629dca8a58908fa5",
+      "blake3": "b32b588132b5a0e6250fa4075dba0ba6da6a1d4ace305eeaf576687afd4aaca0"
+    },
+    {
+      "path": "dashboard/update_data.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 609,
+      "sha256": "2bbece0b0f3182d3e4577f86ccdd3edb3eecd68cf5d7ffa50cf86dcb62b21448",
+      "blake3": "198c1fe44b6f80793acc57c48705ab7d0ce8cfda18787c64033d68f60a47b023"
+    },
+    {
+      "path": "demo",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "demo/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4327,
+      "sha256": "18c3ef1b4efdf169066d45a6d18a353cab85c73a8511a3a84e14788be003629e",
+      "blake3": "5542df4166c5c80b9be510410a9360d0e3ebaa37122803ea3d2c4dd2e4b02811"
+    },
+    {
+      "path": "demo/demo-wizard.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6641,
+      "sha256": "06c29141e0a2216922af7d3f1df55d25077685ff61e538fbd4a41255de073a74",
+      "blake3": "26987fa71b2641d1515908c99f8d316be05eeaf11eb970963aa9bb9964247a98"
+    },
+    {
+      "path": "packaging",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packaging/cowork",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packaging/cowork/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3014,
+      "sha256": "fd6f699820fed14d69c3c928873a7e4efb9356602717d1df5bf0789535f7059e",
+      "blake3": "475410b94a79a3fc8fa5c50d9f747d72e2a9229adbe714d2cfd3ab2c090622bd"
+    },
+    {
+      "path": "packaging/cowork/commands",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packaging/cowork/commands/call.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1118,
+      "sha256": "998bc9016784b0e200289f99ad438a42aec3a41e6162644d89c009465a61698a",
+      "blake3": "943a3dc1d32a497be9bd0a959ff37c279e542302a21685e1c74f80311a45d353"
+    },
+    {
+      "path": "packaging/cowork/commands/calls.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 659,
+      "sha256": "09036a1205cfc843a810d0b21f4c22027c1730f15e3b6879061eef5f425b36f0",
+      "blake3": "5f8baec7866773311bffa47b446bd8a588dc0f7eb4228d4115c0d68847efa044"
+    },
+    {
+      "path": "packaging/cowork/commands/screen.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 875,
+      "sha256": "f2b69539005ca0667af10ff27dca56919818d0753ec82a61dcd549bacfbed450",
+      "blake3": "91e012eb1afeafcc5a04f595b2c445819c6f8d558bcaf9b23b12afadbc1b5aa4"
+    },
+    {
+      "path": "packaging/cowork/commands/voicemail.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 515,
+      "sha256": "27f63119a123c9322b013d16871683fdbc7364cc2a2b0066861c5aac8c933fd7",
+      "blake3": "3ffd20b75e6e5ef1b2f86d50cca1ba75a39f2125ebe572f037aaa1df71fcd27d"
+    },
+    {
+      "path": "packaging/cowork/skills",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packaging/cowork/skills/calendar",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packaging/cowork/skills/calendar/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1178,
+      "sha256": "594ddf3b18e643d8b81e090cdd9a8a17a7a118d324815ee846cb1220e5f2024e",
+      "blake3": "709b2d401c3bbf200cc71ac083d7ec6427627249d7d23328649e4b1d721933ff"
+    },
+    {
+      "path": "packaging/cowork/skills/call-screening",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packaging/cowork/skills/call-screening/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1624,
+      "sha256": "9784d8f2cb127ed9d27d3fd893ad6e80734a7211538fd265515875006f543a7c",
+      "blake3": "db21817dba13fc68f2c089404f2c9847f7e724bce00743de047c1787900e81d0"
+    },
+    {
+      "path": "packaging/cowork/skills/contacts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packaging/cowork/skills/contacts/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 755,
+      "sha256": "ecc48fb0c15cf53f143d104f983bdacdeb81e7a71209ccf34555defa7471fc0c",
+      "blake3": "ba23b0c6ca76637745aed4f7d4f06357c98d74f90ffc9cc43e1d8d62b2dc0142"
+    },
+    {
+      "path": "packaging/cowork/skills/crm",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packaging/cowork/skills/crm/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1471,
+      "sha256": "7721f958f44a0ecbb8f7857c6caf4b8d46bb6ca9c2071f89c34f35d292a17b22",
+      "blake3": "53dbfee500d4cad6e8dc3ff6da00753ca08eb95971ea7bc1cf42fee0908df37e"
+    },
+    {
+      "path": "packaging/cowork/skills/phone-calls",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packaging/cowork/skills/phone-calls/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1652,
+      "sha256": "24e9eb4c8de38706112a8613a4ea9bd92807559f059aa239e48a28b46375a570",
+      "blake3": "3dd4064945bde30c0732e568f5775536c9464f8e6f315b0ed77edea2ff70083f"
+    },
+    {
+      "path": "packaging/hermes",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packaging/hermes/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1264,
+      "sha256": "f3a99145179c482de8673eeecf0a677c31d0bb1f5d40b5783b6edfd188195e63",
+      "blake3": "074d824bd76dcb065f817543675f76ecd90cb1669da3bba44b1e86be0de0b1fc"
+    },
+    {
+      "path": "packaging/hermes/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4932,
+      "sha256": "5bcd50d724bf2f0be4aa52de45d259b3ff237b555c3a16d4a0c0080f398a47f6",
+      "blake3": "39586195d0e79979f808310344b756db5d83edf3dcb49e7a883f8038e8694432"
+    },
+    {
+      "path": "packaging/hermes/mcp_servers.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 407,
+      "sha256": "111dd2eeaeb6bb6bd78b786a100043e8af3a3e2b8f614ab6c19baa12b807d9d0",
+      "blake3": "5c3a03633f53b294a7e76bbea5c91cd823ebd75d1b1d4c95d509732da971333f"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/architecture.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1509,
+      "sha256": "5ea68c7ab6cb8449bc4c98b7c8f76a460dd20295935bc753a575c0b94a1bc393",
+      "blake3": "ce0c2442ff4692c36e87dd3d89929ffba78cc5afec8baaad41ef0fb91c236fdb"
+    },
+    {
+      "path": "references/positioning-backup-2026-04-18.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1333,
+      "sha256": "8e9c7afe953824864ab69066faf9d6ab0ab129077145c6ee5ac2b829f295f8bf",
+      "blake3": "943090e7e108e80ad908dadbef6a27ca35c5efde5c294a65f6b2e0eb991534c0"
+    },
+    {
+      "path": "references/release-checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1152,
+      "sha256": "32182ac8330ba2a2bffc7ff69a7109922c9af9122ab1f97ae46f159d18450f53",
+      "blake3": "30c4b2cb1081f5404a88d94e08c6dde9146638f2a30ae1da98c7ac558fd401f1"
+    },
+    {
+      "path": "runtime",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "runtime/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8083,
+      "sha256": "c6b23486c9a2fbfc7ffb566f3d9c52afabb81ac4fcc0615c0ba124d292dd6f71",
+      "blake3": "2fae7917f020c9583da8049bc035b7db3cbb4334dbc908eca31eb1e671649b15"
+    },
+    {
+      "path": "runtime/package-lock.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 112576,
+      "sha256": "6f1e206136435b859847a4f0b86f03570cc60170d2511fe371560b672a7f3ef7",
+      "blake3": "e5ab6d22c6a89c8bffa3050561a6dc67245cf508575f216f58f7b02585cad306"
+    },
+    {
+      "path": "runtime/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1062,
+      "sha256": "191e61ca622c3e8eb710f450a6a4f1791bb5ad5d4545887987f143e129f8a094",
+      "blake3": "204e6999e56923e6699929623269129506a8c1df7a8966d25da67d2b1a0c8e03"
+    },
+    {
+      "path": "runtime/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "runtime/scripts/dist-watcher.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3547,
+      "sha256": "21348ea54d73e145597cafe6de337f1cad02778f54d15404b85ddb600a08c9cd",
+      "blake3": "c33f4e137d681db156f58d5972e2ec6a57ec973a54c8a75021f519fcd14ece9e"
+    },
+    {
+      "path": "runtime/scripts/sync-contacts.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6764,
+      "sha256": "62ec5c510670540dffb62e26cdd1aaefaf4b4447878ceec47057d3ffee0b51fe",
+      "blake3": "ad6257fbe36e5e4ce733eae26ba2ef4785aea8448c95a4365145005d0f2927a1"
+    },
+    {
+      "path": "runtime/setup-wizard.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20227,
+      "sha256": "bd518dd53b16ef3f60db86021c5bd7acdd6ba8556a8b2e15691b0220532d216b",
+      "blake3": "3c33901d635d999cd37f041d332a4f569903a00894431c986572870107db983e"
+    },
+    {
+      "path": "runtime/src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "runtime/src/config.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3545,
+      "sha256": "efa30e5f3a594b45fb8f153ad4613138cb553ce79bb7025a379465cb4796b965",
+      "blake3": "ec831c88b87e6f965a453fb02177257b58b23b8cdd35f92a1a00cb46118f8902"
+    },
+    {
+      "path": "runtime/src/contacts-lookup.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5818,
+      "sha256": "9eaa78d3289e46e58f4c434a37e61d33e63cfd4fc0a6c26cda5bed407bb3c744",
+      "blake3": "b18d7bd5c616fccd30fc4033b7da52f7890edf7b72188fa55dfc30c6b572966b"
+    },
+    {
+      "path": "runtime/src/contacts-query.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7581,
+      "sha256": "2743498be0c4ee359239442510b15354ebdaeed3485de528472d56303752e51d",
+      "blake3": "89b1380fef0acaeaab3d56cffdb9717f5cf06f3fc3592ab55df61dddc6cfc1aa"
+    },
+    {
+      "path": "runtime/src/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 95026,
+      "sha256": "c4cca655d82570d205164ddf8641e27f25f6e429cf51e07410220c23f47e7275",
+      "blake3": "899d0539b70dc183d1af680467ace4617e613b3bd12548a8c67f5cdcc93ba43e"
+    },
+    {
+      "path": "runtime/src/local-helper-runner.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1481,
+      "sha256": "3b3ccd786526f301a3a556091b013191bf2a6442a86e369828a7d658a94d060e",
+      "blake3": "8ba5d5d78082f324401b720cddaddd28dcfbaad96d3a5f5d4fdd4aff490046d1"
+    },
+    {
+      "path": "runtime/src/mcp-server.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29776,
+      "sha256": "285acccc19cb6eda5f0961e1d252d4c7ef09cf4099638950f44ddc522cf04494",
+      "blake3": "7f17d45463703a32f8dc6010262f2fa1161a69601f2b911498d91957c70c893f"
+    },
+    {
+      "path": "runtime/src/providers",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "runtime/src/providers/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2302,
+      "sha256": "4677f9fe2ccd0ed1cb400c6216e53f9e02c5b978d196436bbf48a8074bc43ad9",
+      "blake3": "425cac1c6b4d00f6bab4a83019abb1614bf6e49148d5a5afea425699a9b0d8c5"
+    },
+    {
+      "path": "runtime/src/providers/telnyx.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6969,
+      "sha256": "0fe8b3d40a7659c8fb16648f15022f62f5f61dd5d0b15f5148027bb9e5644a2b",
+      "blake3": "6574024a5961e42e62a5d429f9797e5bddb124ffdbec44293d8b9b6a1de2ff0b"
+    },
+    {
+      "path": "runtime/src/providers/twilio.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4746,
+      "sha256": "57e4c6d90403b735f44b57ac5c9cb9df1ebd35b0655f08e69e2984ff91d7df0b",
+      "blake3": "9d95af69441bb5c1be4198878b79053a3636e1ee72a006b3c4bdca326f84325e"
+    },
+    {
+      "path": "runtime/src/providers/types.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4510,
+      "sha256": "af95617e5da171614de4b764235cd0e0e3169f1c9791d8559a9cf00b6d27ca0e",
+      "blake3": "2d6be4982d7a09df4fb96f6136b792382afb27329005c7f8b8beea986a5bce47"
+    },
+    {
+      "path": "runtime/src/skills",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "runtime/src/skills/api.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5349,
+      "sha256": "23c1a5d20a1d20514a940169abb1ef29ae3be5d0da81cd7389b215a18250eaee",
+      "blake3": "c101d778477f0310438ec096decec781a7c2324e17df926ba5247a7bb69588e1"
+    },
+    {
+      "path": "runtime/src/skills/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 349,
+      "sha256": "af4c6c43e6585aec5abca5a943158d549338854541acd42b9bceb0a15a8b12f5",
+      "blake3": "2b4a91136f2161c330ba9aa8e905d23158182a0b675aa2d12349fceded7ecf8a"
+    },
+    {
+      "path": "runtime/src/skills/loader.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6412,
+      "sha256": "51a61a813162e6a53b5b412ed83bc0b8fc96c7aa319c6a43cfd2a4d4a6798871",
+      "blake3": "4ed058aac0721135960e236f4346b9ff2d81f44efb624f24f95afea364b9ba9b"
+    },
+    {
+      "path": "runtime/src/skills/router.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8031,
+      "sha256": "b01de27fd514409911efc47949b7f4dc3cd76c4c44399918443d6b8f4d3b028c",
+      "blake3": "f7b7343164a8ebb792a048a99b6c5cea6ef74381e8136b15fa95df112531c705"
+    },
+    {
+      "path": "runtime/src/skills/types.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1527,
+      "sha256": "aa847480b9d5a2600ddaae0bcca878fb0fb9ed5906e1e83d6a0792d8397ce2ce",
+      "blake3": "e4f038ab5a41b9c8909350a0255bb2f818011cfa583770e85db9eec984c7c009"
+    },
+    {
+      "path": "runtime/tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 431,
+      "sha256": "9dbb7cd170c752ef92cb63a950d4a0eddc8269e4d92659d1ed6a01713f98c631",
+      "blake3": "8a2200dfd1de22c34cfe819c59ee274e2110dad34e4dfd7e383390b15dd84adc"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/setup_quickstart.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 826,
+      "sha256": "67485a106b259fd70f4b295d501c51b7e740a833fc62dcd8607060322b650c20",
+      "blake3": "e4d7b6c24cf45bd3731463ec6cb18f14567c52740000c72e9f5adc642526cd84"
+    },
+    {
+      "path": "scripts/validate_voice_env.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1327,
+      "sha256": "8686554ed085fb3b46a99fec01ec4fb6d35036cc1824f46144f0a784b4d8c6f2",
+      "blake3": "c99fef6aebbb68d98eb8bc69f7259b355fa30605d6107c19393dbb058881959f"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3252,
+      "sha256": "3e06c874c51ab1819e266cd51df16df7700524916b252fb0de4075035ae30198",
+      "blake3": "b50fe82f2f7fabae9e56b4dddbe6dfca8aeba368c9eb7f9681660d067dfb0e13"
+    },
+    {
+      "path": "skills",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "skills/amber-phone-agent",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "skills/amber-phone-agent/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4932,
+      "sha256": "5bcd50d724bf2f0be4aa52de45d259b3ff237b555c3a16d4a0c0080f398a47f6",
+      "blake3": "39586195d0e79979f808310344b756db5d83edf3dcb49e7a883f8038e8694432"
+    }
+  ]
+}

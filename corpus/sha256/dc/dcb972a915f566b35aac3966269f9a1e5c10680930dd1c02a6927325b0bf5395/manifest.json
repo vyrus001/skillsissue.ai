@@ -1,0 +1,307 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:dcb972a915f566b35aac3966269f9a1e5c10680930dd1c02a6927325b0bf5395",
+  "sha256": "dcb972a915f566b35aac3966269f9a1e5c10680930dd1c02a6927325b0bf5395",
+  "blake3": "adffafc4942d73104307ccc991a92b8e98b00fc1486930fa344fdbea4e255f13",
+  "size_bytes": 293169,
+  "file_count": 34,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1084,
+      "sha256": "17aa3d64e178c776c94621ff5818e89963af0c988c0917a208756b516f5989f7",
+      "blake3": "e489a5356f878fb2e74afb37b46f5bc5e3e9bf7fb145aacc4c91316bc63852e8"
+    },
+    {
+      "path": "README-zh.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7193,
+      "sha256": "1ec792cf4e81ac869cd9d90eff83cf83c802e3d98462079e702925aa52200d32",
+      "blake3": "559388cefbe24f44fc96cbd77af4fa80c52678028a2315a99943b5fb8fdbb020"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3608,
+      "sha256": "687a7170c122802049fac701afc48b36797cd656fbc616f9babc7dfddd250498",
+      "blake3": "f293f1ffad3347f6cb27242acea232dc923bd327bd82944531fd68b32450915c"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13603,
+      "sha256": "e330fca8e6096469c8a18120a3f94cb381e3069a825665fe7e767511181545fd",
+      "blake3": "da3063c6866622bbdd30de3d4864a105919e6ecaf11e08a71ffcbff519de0c0f"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 134,
+      "sha256": "4e21ff7274fada0adf794678152508253371d0b683c25dbe19edafe18682f73a",
+      "blake3": "cae9c408d4c511231aaa9cbe7a3736431298b176d5d7ed4fafeb98159454cbcf"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/compose-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23941,
+      "sha256": "dda1381078e104269d4972fd13c35c5eade6cac7476bdc04e90a79059123581e",
+      "blake3": "be3298089bd484ebbfabaac82181485e7c9c92788c96bbaea3f65b533bf2260b"
+    },
+    {
+      "path": "references/figma-interpretation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8637,
+      "sha256": "60a630ece430a40a2633c2bf1bfe7160a14adbe3d64e32d0d7c91cbe0a926524",
+      "blake3": "c7ba56e223a953b2ceb5a8ea52d4269ee7283178e9a49d398cac00de9705b9de"
+    },
+    {
+      "path": "references/generation-rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5275,
+      "sha256": "b9227816761ccb21a75825430dc73a1cf80fca313d584605773be71cca932269",
+      "blake3": "aaeb76eb322b3f35ac3a8766e24dbadccd90b9f6afa9e4ada4decd32aa1b45b8"
+    },
+    {
+      "path": "references/scan-usage.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4022,
+      "sha256": "f21af354773899901a2851700e9d0f1d31aef147b1d65ce48b5cae8356567730",
+      "blake3": "d8801b14f814ebe4a3bc7a73423a1971a02438daa6351dc56aa7b53a673f0f66"
+    },
+    {
+      "path": "references/swiftui-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12454,
+      "sha256": "9a9fa42fe9051d020433ab0d852d6b55d51049f348a1113a72b72501ea5b2019",
+      "blake3": "a6d1f893d74636cf8224d14686ab65b07889843d336b1679181ebc5dbb727b19"
+    },
+    {
+      "path": "references/uikit-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14135,
+      "sha256": "e832792769af45580f863920f1527e1451395acd7b13e01f69039e43a1b0c44e",
+      "blake3": "36b0e569e8ee26c245c4cb3d78720a6e077c51e0d862a5538402105d6b8bcc2e"
+    },
+    {
+      "path": "references/xml-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24007,
+      "sha256": "e5d21665529646dbf7817b7a09d9900d5271d9c221c4d82a85b4faa9e9c14657",
+      "blake3": "afb4f554101cc54613b303e8825b885ad66d89168ea1c521984b72307cb6150b"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/feedback_analyze.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6420,
+      "sha256": "7d458548b685f55ddabb6f5142bac11f18518aba0a00588cc2792b825ab0b8b4",
+      "blake3": "2492f190c061da7eaab29655632f50990fed14cb2e6816c8528c104809dd0da3"
+    },
+    {
+      "path": "scripts/figma_fetch.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 26437,
+      "sha256": "095caafbd04aad42b7290525c17fb4313241c1da216f84cbd6c0ab30da2b9d18",
+      "blake3": "5d60f7d3a6a766305480ffe45bdb2fd9b6ddb946fb9e4d7f348d26bc82475d21"
+    },
+    {
+      "path": "scripts/project_scan.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7850,
+      "sha256": "ee16bd134ea6941de74f08c7fcf600ab47f2c4dff7276e3284af278e6791a61d",
+      "blake3": "6f3c27f24435c141d9aedd7e2c3a6eaed8e033cf0c1a90644cc5ce749eeab8af"
+    },
+    {
+      "path": "scripts/scanners",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/scanners/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1504,
+      "sha256": "6a362b72fed7bacc469ba5324e2093d743f6cbd529184a622db07eb99ebb4b63",
+      "blake3": "9cdb665aad0880cbcf9004606f0d8d5d67389ba1d9f38fcbcf9b75cc4a4af0ce"
+    },
+    {
+      "path": "scripts/scanners/android_deps.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2485,
+      "sha256": "d9429f439b72989c90c6a8b4c8861b17be7acbeaeb19275c4459a70e958f531f",
+      "blake3": "2ac9a4219f0939a4eabf7b136c1d7dac78f88e8190c606bc3e3bfea399fa17c9"
+    },
+    {
+      "path": "scripts/scanners/android_drawables.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13181,
+      "sha256": "dfec7234cde8917f2360f2846f4bab239d0b3cf25ad98540b022ae1f0be2db82",
+      "blake3": "f2f2f5aa27b48e881e28728379b570984c7a1813a8c0a5173d948a3865923735"
+    },
+    {
+      "path": "scripts/scanners/android_layouts.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5030,
+      "sha256": "a1995ab6fc0531b59e44702999f02c531cea2ab9e95a2394e1121e52ee8f7fd8",
+      "blake3": "c2e0a6d33b05b60faa36a00bb0da32beee32b74d948ee3c7c53f21b5b97b8d97"
+    },
+    {
+      "path": "scripts/scanners/android_modules.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4061,
+      "sha256": "7acda3208cc526bf0ff871d65c94cba7944afe932a11a2205445e2facf33cfd2",
+      "blake3": "dda47404b3ce8e6853846590d9fa50e4d340a91fc7f6e8745390604126ca9341"
+    },
+    {
+      "path": "scripts/scanners/android_resources.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11356,
+      "sha256": "8e24b3293d8c16121c729883f7b0d4f5e8df20812b6b3ed7c51bf8ea703927fc",
+      "blake3": "be145d1bdf87d71b0d68c59e5dd6b28c5768285fd35825d290521d6035cf6dcd"
+    },
+    {
+      "path": "scripts/scanners/android_scanner.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19508,
+      "sha256": "04fb01766ee2ecd23d24a37352756270e1e0d1aefb723bb77686cd1a891dac59",
+      "blake3": "53546d7f919c0308bac412227f2e7b6f6f9c0b9ad6e2bc056c58278cd0ea42fa"
+    },
+    {
+      "path": "scripts/scanners/android_views.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6321,
+      "sha256": "d6a6e95ea88ea915b8acf50a8c87c956e6e09995f9998bfb688052e855ebc9c2",
+      "blake3": "59a4fe0218f35c4424d20d2ded410861675a5b808751ee40228a42b3905e2ce0"
+    },
+    {
+      "path": "scripts/scanners/base.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12022,
+      "sha256": "c9924225c18b57e5c4556dd6bfdb90cec8ca3ae4f4458823cc6c520476474aa7",
+      "blake3": "edd4d94c149374a99632c64c39985cd55894c6852e1e199e605826a0a2e41eec"
+    },
+    {
+      "path": "scripts/scanners/flutter_detector.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 452,
+      "sha256": "54a513c6041882a8d9f7e0992bf13f5e100988c11d22aa6ca7b6311b99b1ad06",
+      "blake3": "2b63ef9a6ec81f86bd33e0bd6f7cf2328c037826bd0e8f16bc85430c0ffbbccf"
+    },
+    {
+      "path": "scripts/scanners/flutter_scanner.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15776,
+      "sha256": "a0f4b2df4c4f1fefab00d827c108bf4814ac8a0b98c93cb8a14d820cfb49d2df",
+      "blake3": "60e7bb018667979e9246d3a82c859532978f611f5f45732c4000fb3343b4c311"
+    },
+    {
+      "path": "scripts/scanners/ios_assets.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1858,
+      "sha256": "140be90bb28ce338cdecc9d288c97c430a3ee49f3bd5216b381ca2a6c9afc4c3",
+      "blake3": "3b0f1f2d3030a3b267b2ff4c2b96eca3681dd32561d008e4c3eef2de0aa242d7"
+    },
+    {
+      "path": "scripts/scanners/ios_detector.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 815,
+      "sha256": "9cf5fb008673abc730efb607d603ada8d9fd77161b63dacb6c115dec8baeafe2",
+      "blake3": "8dad6730d2a5b0e3f0479ea24c3d4e856feeb5bb2677144c6d98222e009c866e"
+    },
+    {
+      "path": "scripts/scanners/ios_resources.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5804,
+      "sha256": "10364b972c87ff624752fc19b3e7802df91c8595668c714995663a06e37345d1",
+      "blake3": "0d805f0cf62690c6398e2905b6234565352d6e721b9d84a5ddc927338860d73c"
+    },
+    {
+      "path": "scripts/scanners/ios_scanner.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8028,
+      "sha256": "acc0516fb430fcf3ed72a50909312c9a72e99b5e19adf6905a803fcf090e7198",
+      "blake3": "b4449c62b66812ffb3b571f02c5a251ef70a5684bdf52462ecc4ce3fcc8d9ecb"
+    },
+    {
+      "path": "scripts/scanners/ios_swift_scan.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4962,
+      "sha256": "9dc2643054972fcb98a3a683937909baaddbcf01a5a9d9fc748b985cb55c404a",
+      "blake3": "3b5d25809cf26a2ff84ca0c7ce6ca1426f3f7b4f88f159bf2619f4367770186d"
+    },
+    {
+      "path": "scripts/scanners/ios_views.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3148,
+      "sha256": "36826f2dee3ca412d6b90ad19328cbeaa75de3fd16988ac472bb080f098803f5",
+      "blake3": "6f28ff6603aa2443c3fe98909de19c901c4c4add8562fefc0645456516097e5f"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3051,
+      "sha256": "7b3bbcf29f45570b27ea073273ff6172c9daeea4873f64483cc8de419e4cc946",
+      "blake3": "0583343401236ef41b29f0c98c823bec6495fe1df9772a09666e2c777d753515"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/test_project_scan.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15007,
+      "sha256": "37b24fa5fdf5a6ade23e45fa190365dcecf3ff172edafd09894d5f1e4eaac803",
+      "blake3": "99d3c4f648d500fd1a4cc8c338c3392ed873e55d0be2bed5ae76efac17bb1690"
+    }
+  ]
+}

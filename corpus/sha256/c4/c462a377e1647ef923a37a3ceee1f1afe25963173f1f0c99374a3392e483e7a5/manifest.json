@@ -1,0 +1,395 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:c462a377e1647ef923a37a3ceee1f1afe25963173f1f0c99374a3392e483e7a5",
+  "sha256": "c462a377e1647ef923a37a3ceee1f1afe25963173f1f0c99374a3392e483e7a5",
+  "blake3": "4a871e612bd137f2bed57743fae331c2b08989cb3892792538a46355c57c88dc",
+  "size_bytes": 398908,
+  "file_count": 45,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1124,
+      "sha256": "b03702160239ffa99de8b8592e8a72896608bf2f7572609baa5e666728b84eb6",
+      "blake3": "d9102376edb237b7d7e273cd7efed9f4320a646f60cc8ce0dc8a2fa9aa232ce0"
+    },
+    {
+      "path": "PUBLISH.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9862,
+      "sha256": "2ad64d0eb1bf49e8331783112b20e55be9389b428005b2c400f8b07a28e47218",
+      "blake3": "fcf8266ab21617c843bb2798280c508a704d498fbba05d9af63a2671c2e28b08"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9280,
+      "sha256": "beb3283676c3991985756f3dc48546b3cbb5ef5e0c4aeb52b16b7297b100a8ed",
+      "blake3": "69c0af975562cbd184b582c96a30cc9b081747a1540400f008bde56a797f1485"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 138,
+      "sha256": "8b4106a29218eb06c7d93bb1205d2d552592e9b7210e9a15f7a6fddc0baeca75",
+      "blake3": "7bc9dfbe9fa5295d9af685cd4bd6bf8adb2a33b33d111d6889d8470d42140c1b"
+    },
+    {
+      "path": "examples",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/example_interaction.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3358,
+      "sha256": "b8e125fae5c8eb20ad7a2d4e05c24a0167ad66a6bb2e3601aa9eed4670295056",
+      "blake3": "f67d35f60f387d64f3b2590b1cf7673ca6772f65f9bd80799d34d6a4b410dc3e"
+    },
+    {
+      "path": "knowledge",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "knowledge/generic_mss_framework.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6804,
+      "sha256": "30094f1ee837712134bd13000ba17a75241e5e1a703250d730db5455cdafdaeb",
+      "blake3": "41ca77a0c9d827cc10ed647d6bd13cdb6d375799f764ce2b191629814827eaa8"
+    },
+    {
+      "path": "knowledge/generic_mss_templates.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10550,
+      "sha256": "cfdfeb98c0a7510ea97059ef2240a08bd0f66d04d2db0ed25ad4953469ac34c4",
+      "blake3": "d40d65fd74b9a30346bb847f4ea5e387e0a4636c71cc507a233cac11b63cc0de"
+    },
+    {
+      "path": "knowledge/iso13485_framework.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3545,
+      "sha256": "51e89e4662d0157ad2fc8e6e0af2f131166325dce9089388cb6533eacd371832",
+      "blake3": "7326a8f31db1e2df16faf3aef65142ec34318223e2c89b69fe7cec643a72aa43"
+    },
+    {
+      "path": "knowledge/iso13485_templates.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3702,
+      "sha256": "9f7a0f97479a2592c9906cecaa6633e4c0890560865d93825b83d2d163d58d41",
+      "blake3": "6d8883448c797f7de93d4d1af4b0b36c0d85aa77d0ca584d2232a76e6ba9cdb3"
+    },
+    {
+      "path": "knowledge/iso14001_framework.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8086,
+      "sha256": "af8152002c7308f048ef6f8e816837681c37c428893e7659763a34fa9da7c149",
+      "blake3": "136b070c8d3fafabcc24211ea322241e66e750435da70eda8beab2f99b3f1568"
+    },
+    {
+      "path": "knowledge/iso14001_templates.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12543,
+      "sha256": "8797346e18d90ddd8938ddcd4f90426a6bc8f6334e789fe63fc7109072cae552",
+      "blake3": "df484c1783bdcb9cd2c62a078f0f3133db614f85f6e738cc063ea30a39fb21da"
+    },
+    {
+      "path": "knowledge/iso17025_framework.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3607,
+      "sha256": "6189da549e801065cde6411585312f0d82bb8fac3d4c06487021cad6d76f7f9d",
+      "blake3": "92007520601fdec496ee36396c86efbd0d48b21bec842f375bb121922aaf80f9"
+    },
+    {
+      "path": "knowledge/iso17025_templates.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3405,
+      "sha256": "1575cfcc2820ac2ec9849e671155c595fa0fe7519d2efc91b54b8527424b2b7e",
+      "blake3": "41ac6f55e912510fa66aaf9c9c4629cc0f34f3097d13b5351d1d52035a09ba0e"
+    },
+    {
+      "path": "knowledge/iso20000_bilingual_templates.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 82688,
+      "sha256": "8a1fc495a8f61e08baabd1337b10ce734a46f052d9e2848b68a113a9806345b3",
+      "blake3": "f0bbed353d822f9053ba3c7b7bc06e7b44a8533992dcb234bafbd33a6640c717"
+    },
+    {
+      "path": "knowledge/iso20000_framework.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11037,
+      "sha256": "bf18b02988624f2eeb697b443265030b2ee0e4edc8ef27527af5be946e2e97a5",
+      "blake3": "47b4a049bd130c2dc92da9b2f1025475ee326ca1284fad9190909ba446e41175"
+    },
+    {
+      "path": "knowledge/iso20000_templates.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 42314,
+      "sha256": "6b46ac2caf39b3f3c2961d6d5b7f5f4d23d852a064d87ace6ef7349f02110da3",
+      "blake3": "bd7cd5160ac6992da7c76a2f75e4ec75c7c154e4b5984e5147670a8b79f7e03f"
+    },
+    {
+      "path": "knowledge/iso21001_framework.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2807,
+      "sha256": "345fdfb88acc1e542d9307b9019a766c1062f14f2202e613e21d8095b6f6d65f",
+      "blake3": "83e0840e2be7fbe7f06bce8d418d23a9947db9e97a5117a3790bfbbcd7ee1a4a"
+    },
+    {
+      "path": "knowledge/iso21001_templates.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1772,
+      "sha256": "99c6b8085f8bed64428cd897e90c4a236c3ee3cacca8555126c1895cbfe065ea",
+      "blake3": "1d0ca3199ee1192268d0a58052cc800e1ba6fe8d85a08eeb400e2f16a4c3df30"
+    },
+    {
+      "path": "knowledge/iso22000_framework.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4369,
+      "sha256": "e16c633064d0d0e247b336626e971e12dafb01564e17af2d89dfcdd3e4769f4c",
+      "blake3": "a13420cdf02b3c17e628f18bf6e48fad21cb88e4dda84c451cc0a1bceaf0dfdc"
+    },
+    {
+      "path": "knowledge/iso22000_templates.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3857,
+      "sha256": "eaf592ec431674e17c31376bc7480a8a2e415b6037ff88d4f4bd0ac3d6a4dac2",
+      "blake3": "267f94efab42af90492870729a97985e569ad043cc12c0057286fd2fbaf1e86f"
+    },
+    {
+      "path": "knowledge/iso22301_framework.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3459,
+      "sha256": "51bf3f62e259447288278efab3b69024a77ee4d43943d04b0eae170aef09752a",
+      "blake3": "16dcafac6afffc65ecb9c987188c138f8ef93662c4663f23112aca6c693c89a7"
+    },
+    {
+      "path": "knowledge/iso22301_templates.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2669,
+      "sha256": "80a5274ab9919a0e28bfd65f56384ad058c7e4f4c09e13e84a45c08b15dac5d3",
+      "blake3": "044a8a52e4d5093e0912b17f5232d2b882b6e2dfc7318b397b9fc4e0dd10839b"
+    },
+    {
+      "path": "knowledge/iso27001_framework.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8029,
+      "sha256": "9e8b44a4987a906ba1644a1c20ca786626e18c5b670c757f18eb7ee6d7cdb217",
+      "blake3": "7ae2b9d09a13d37b87317188c17ce20d88851ce055eef423a8d64212173229a2"
+    },
+    {
+      "path": "knowledge/iso27001_templates.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12302,
+      "sha256": "d832d70ba481012c45d17fbad9a843f7d9c48df389432cf85ec56ad4d7ad453f",
+      "blake3": "74e767f9dd259ba09d6ca21a170ac7008e19ab5f7214480b3055fbddd88b00b7"
+    },
+    {
+      "path": "knowledge/iso27701_framework.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3477,
+      "sha256": "a223587fe318fa2ab63655b7c0c6deb6bd378febde90f8c5060926e0dc495af7",
+      "blake3": "5db49577e12b5957193c0e7b761f6c838e6a5305d3902300344ae0c3adf8ff3a"
+    },
+    {
+      "path": "knowledge/iso27701_templates.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2695,
+      "sha256": "7cec870cf875b28f093986a67c6c52f54ecf6c83878a4aa2da10e5fc63ab8f4a",
+      "blake3": "e8c0d22cce7bd5803d628a8bababbb22eb1c0b81c58abe63f5c054063a5f5b89"
+    },
+    {
+      "path": "knowledge/iso37001_framework.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3438,
+      "sha256": "ef8f9627946831b97ca2bb77cb74b0b44a6068f4993c40a7bb119fe5f5c7934f",
+      "blake3": "94f434dd44718bb56dd5c35a77a4b4511d5ef02ab51e1df72456ec16d5216ef0"
+    },
+    {
+      "path": "knowledge/iso37001_templates.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2600,
+      "sha256": "31c98ece7763969e3d1b9eabb18651eb2f627800350a9ffc6459670cc264e176",
+      "blake3": "2096a5a8e2cb5f1b246f3dfc2cc59866cec2010c1822106ec22e0b96edfc6b19"
+    },
+    {
+      "path": "knowledge/iso37301_framework.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3375,
+      "sha256": "ee6708c010c2fc0bed5ce88506806b27157e47bf51c248c4145531448bddeb00",
+      "blake3": "2d1343cdeeeacfbe94c39b5c8d96367e31e7bfe4fdeefe18acb689b0798d2370"
+    },
+    {
+      "path": "knowledge/iso37301_templates.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1870,
+      "sha256": "c667aa3b3e7e2d5270eeb347f6718481675ee2ab89238c7c9f11da0ac70726f2",
+      "blake3": "3e9bfcc9968f0ceff62bdf2e0ad4ea3287b33498bff4a3eee9a11b328961ac14"
+    },
+    {
+      "path": "knowledge/iso45001_framework.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9211,
+      "sha256": "27c03fe4d3d82e8ee7290906e3380090c4a342776ddeb5d398e38f99acfabb8b",
+      "blake3": "85e1d3a16cb87e3015556a0375125dbb810ebcf5252980fcc589ed7462d17171"
+    },
+    {
+      "path": "knowledge/iso45001_templates.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13050,
+      "sha256": "e92555182b636411a6e558456d945a697fdb4b9238cafe6ef124868ccbbb7502",
+      "blake3": "88e5974f98413373ef5799d73fae49bd10932737a0dfc93d569ab439e5301083"
+    },
+    {
+      "path": "knowledge/iso50001_framework.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3568,
+      "sha256": "f1911c39cbffee71050ffe187b0083e45f7f7b28ba19fe0a6dd0556d6bf9bcb6",
+      "blake3": "0685ea29a32ba06a665ecd389d06b6991f15167a6e502bf0246856d8afa297bd"
+    },
+    {
+      "path": "knowledge/iso50001_templates.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2867,
+      "sha256": "d3a03840e77c6adc51884c99406b8e7813a015acb5b7b5b646e1af6d41409485",
+      "blake3": "09441c78335f5e82b4afe4bc073d5bdde81c65abd4a5b5197bd13dc23ceb7594"
+    },
+    {
+      "path": "knowledge/iso55001_framework.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2964,
+      "sha256": "9abdb61d4570a2bc717c3ed6bb13a8c7edb3bb47328416fca2a5d3f2c02df0fa",
+      "blake3": "e97aa895253b5fa433d1a21e7c75d4362dba35f6c75feacf28ccbaa10e71102b"
+    },
+    {
+      "path": "knowledge/iso55001_templates.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1793,
+      "sha256": "fb9eef6bc5cdfca5311e12818f9186a82ba5e8f6da5fac0d9bf49d327318f6e2",
+      "blake3": "ce76f6a4b8e142b2130dac6cd1089847c21454af249bf086e5bb6f4c8cb52b1b"
+    },
+    {
+      "path": "knowledge/iso9001_framework.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10613,
+      "sha256": "2cfbc8fc1ec5605d28964d307a4595cd53bea1fdfc7db196237e17462f91a4d7",
+      "blake3": "1104b0332f3f50a515a5b62ab1f151ae07bce8c5c0b1f9f0c63a8da029eb6651"
+    },
+    {
+      "path": "knowledge/iso9001_templates.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20233,
+      "sha256": "3cb77a137c3586f72c71715547dd31f24c6fe96a93915e84e0e6cdc833848c9a",
+      "blake3": "a641f6a00fd9c30a4cc4ac87469161e8ee328f0f8e0df9cca555f03c69bf9768"
+    },
+    {
+      "path": "knowledge/standard_index.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17249,
+      "sha256": "9fe0fb28e4e497d605f7d018866150298e6c1cd33ca748bb98efe9a77b1c12cc",
+      "blake3": "3566c8e617943de307b1f8e7ac71f5cbef4ce4dbe9437d0e381a28eafb71462c"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/__pycache__",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/__pycache__/parse_docx.cpython-312.pyc",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12345,
+      "sha256": "7272dcfe7cc7ff292148571e80a7fd9dc39d45309a426d73303385b65e3eb76b",
+      "blake3": "cbdd89704d6ec363e5d644628c07d8bd74510c7cc18dede1b6d6b0296db1d445"
+    },
+    {
+      "path": "scripts/analyze_gap.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7483,
+      "sha256": "2f47e70a89ab06b4779637627cad902baf12fb68f08bae0f927c6f42ae17ca89",
+      "blake3": "be6dcb4157ecd3fbb7ad1a43a51d3528d358c770301494aa8137b3f1fc5a0d53"
+    },
+    {
+      "path": "scripts/convert_document.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12309,
+      "sha256": "59646c6300c57c5109bbe7f073777b77bb59e585cfbfe3f42673d427405ecead",
+      "blake3": "cc851c8d33784416febeb9a4bb9165e09555e1c7e5e667d7aeb4a286ad943feb"
+    },
+    {
+      "path": "scripts/generate_document.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6197,
+      "sha256": "e4a92442b09d0f78f5100f5f178777505af290a310f9e88442a182d6d6e8ae29",
+      "blake3": "10e1f386946a92cf19316bc0140882650af8ac48b8876378f7e75eb53cfcd5d6"
+    },
+    {
+      "path": "scripts/parse_docx.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7498,
+      "sha256": "e020f8425568dce7f61471a3c9a58470af9ade17d46d6e3e1723ba495de2e405",
+      "blake3": "29a4d6b7fbd789689fcdbaee067a3ecdf06da50d464d0670d82c12e1e10eaeae"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2766,
+      "sha256": "14414e876a4ceb0ecf9a1884815aca2b4a68e53f04039a8d2d2cbea28b336326",
+      "blake3": "cdafcf0b12a78f95ef3a81ab18b311e9c8972393da2c08cf5da91948575fa75e"
+    }
+  ]
+}
