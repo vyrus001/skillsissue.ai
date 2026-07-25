@@ -47,14 +47,12 @@ function appendOptions(select, values) {
 }
 
 function renderStats() {
+  $("#stat-known").textContent = formatCount(state.catalog.totalKnown);
   $("#stat-scanned").textContent = formatCount(state.catalog.totalScanned);
-  $("#stat-platforms").textContent = formatCount(state.catalog.platforms.length);
-  $("#stat-latest").textContent = state.catalog.dataUpdatedAt
-    ? shortDate(state.catalog.dataUpdatedAt)
-    : "No scans";
+  $("#stat-pending").textContent = formatCount(state.catalog.totalPending);
   $("#data-status").textContent = state.catalog.dataUpdatedAt
     ? `Data through ${formatTimestamp(state.catalog.dataUpdatedAt)}`
-    : "No completed assessments";
+    : "No indexed skills";
 }
 
 function renderTable() {
@@ -75,7 +73,7 @@ function renderTable() {
   const body = $("#skill-rows");
   body.replaceChildren(...shown.map(skillRow));
   $("#empty-state").hidden = rows.length !== 0;
-  $("#result-count").textContent = `${formatCount(shown.length)} of ${formatCount(rows.length)} matching scans`;
+  $("#result-count").textContent = `${formatCount(shown.length)} of ${formatCount(rows.length)} matching skills`;
 }
 
 function searchableText(skill) {
@@ -118,7 +116,11 @@ function skillRow(skill) {
   const skillName = document.createElement("strong");
   skillName.textContent = skill.name;
   const linkType = document.createElement("small");
-  linkType.textContent = skill.graphAvailable ? "Open execution graph ↘" : "Local viewer instructions ↗";
+  linkType.textContent = skill.graphAvailable
+    ? "Open execution graph ↘"
+    : skill.verdict === "pending-scan"
+      ? "Execution graph pending ↗"
+      : "Local viewer instructions ↗";
   skillLink.append(skillName, linkType);
   skillCell.append(skillLink);
 
@@ -144,9 +146,11 @@ function skillRow(skill) {
   const verdict = document.createElement("span");
   verdict.className = `verdict ${verdictClass(skill.verdict)}`;
   const verdictName = document.createElement("strong");
-  verdictName.textContent = skill.verdict;
+  verdictName.textContent = titleCase(skill.verdict);
   const detail = document.createElement("small");
-  detail.textContent = `${formatRisk(skill.riskScore)} · ${skill.maxSeverity}`;
+  detail.textContent = skill.verdict === "pending-scan"
+    ? "Awaiting isolated run"
+    : `${formatRisk(skill.riskScore)} · ${skill.maxSeverity}`;
   verdict.append(verdictName, detail);
   verdictCell.append(verdict);
 
@@ -182,12 +186,15 @@ function csvCell(value) {
 }
 
 function verdictClass(verdict) {
+  if (verdict === "pending-scan") return "pending";
   if (verdict === "malicious" || verdict === "benign") return verdict;
   return "unknown";
 }
 
 function formatRisk(score) {
-  return Number.isFinite(Number(score)) ? `${Number(score).toFixed(0)} risk` : "risk n/a";
+  return score !== null && score !== "" && Number.isFinite(Number(score))
+    ? `${Number(score).toFixed(0)} risk`
+    : "risk n/a";
 }
 
 function formatCount(value) {

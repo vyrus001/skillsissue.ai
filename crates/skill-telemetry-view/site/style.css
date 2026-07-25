@@ -294,6 +294,8 @@ td { color: var(--muted); }
 .verdict.malicious strong { color: var(--danger); }
 .verdict.benign { border-color: rgba(185, 245, 106, .38); background: rgba(185, 245, 106, .05); }
 .verdict.benign strong { color: var(--accent); }
+.verdict.pending { border-color: rgba(232, 189, 109, .42); background: rgba(232, 189, 109, .06); }
+.verdict.pending strong { color: var(--file); }
 .verdict.unknown strong { color: var(--file); }
 .loading-state, .empty-state {
   position: absolute;

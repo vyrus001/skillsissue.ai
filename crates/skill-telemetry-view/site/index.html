@@ -30,8 +30,8 @@
         <p class="eyebrow">Detection pulse · dynamic analysis</p>
         <div class="intro-copy">
           <div>
-            <h1 id="page-title">Recently scanned agent skills</h1>
-            <p>Each verdict is evidence from one isolated run—not a promise that a skill is safe.</p>
+            <h1 id="page-title">Recently indexed agent skills</h1>
+            <p>New skills appear as pending; each published verdict is evidence from one isolated run—not a promise that a skill is safe.</p>
           </div>
           <a class="outline-link" href="#methodology">How scanning works <span>↘</span></a>
         </div>
@@ -40,15 +40,15 @@
       <section class="stat-grid" aria-label="Database summary">
         <article class="stat-card">
           <span class="stat-icon">◇</span>
-          <div><small>Scanned skills</small><strong id="stat-scanned">—</strong></div>
+          <div><small>Indexed skills</small><strong id="stat-known">—</strong></div>
         </article>
         <article class="stat-card">
           <span class="stat-icon">◎</span>
-          <div><small>Source platforms</small><strong id="stat-platforms">—</strong></div>
+          <div><small>Scanned skills</small><strong id="stat-scanned">—</strong></div>
         </article>
         <article class="stat-card">
           <span class="stat-icon">▣</span>
-          <div><small>Latest assessment</small><strong id="stat-latest">—</strong></div>
+          <div><small>Pending scans</small><strong id="stat-pending">—</strong></div>
         </article>
       </section>
 
@@ -96,12 +96,12 @@
             <tbody id="skill-rows"></tbody>
           </table>
           <div id="empty-state" class="empty-state" hidden>
-            <strong>No scans match this view</strong>
+            <strong>No skills match this view</strong>
             <span>Try a different search or filter.</span>
           </div>
           <div id="loading-state" class="loading-state">
             <span></span><span></span><span></span>
-            <strong>Fetching scan database…</strong>
+            <strong>Fetching skill database…</strong>
             <small>Reading the latest committed intelligence</small>
           </div>
         </div>

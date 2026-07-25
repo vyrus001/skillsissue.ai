@@ -44,6 +44,7 @@ pub struct BuildSummary {
 struct Catalog {
     data_updated_at: Option<String>,
     total_scanned: usize,
+    total_pending: usize,
     total_known: usize,
     published_graphs: usize,
     platforms: Vec<String>,
@@ -58,11 +59,11 @@ struct PublishedSkill {
     detected_at: String,
     sha256: String,
     verdict: String,
-    risk_score: f64,
+    risk_score: Option<f64>,
     max_severity: String,
     coverage_state: String,
-    assessed_at: String,
-    run_id: String,
+    assessed_at: Option<String>,
+    run_id: Option<String>,
     platforms: Vec<PublishedPlatform>,
     detail_url: String,
     graph_available: bool,
@@ -100,10 +101,6 @@ pub fn build(repo_root: &Path, output: &Path, max_published_events: usize) -> Re
     let runs: Vec<RunRecord> = read_csv_records(data.join("runs.csv"))?;
     let assessments: Vec<AssessmentRecord> = read_csv_records(data.join("assessments.csv"))?;
 
-    let skills_by_id = skills
-        .iter()
-        .map(|skill| (skill.skill_id.as_str(), skill))
-        .collect::<BTreeMap<_, _>>();
     let platforms_by_id = platforms
         .iter()
         .map(|platform| (platform.platform_id.as_str(), platform))
@@ -127,14 +124,13 @@ pub fn build(repo_root: &Path, output: &Path, max_published_events: usize) -> Re
 
     let mut published = Vec::new();
     let mut published_graphs = 0_usize;
+    let mut scanned_skills = 0_usize;
     let mut platform_names = BTreeSet::new();
 
-    for assessment in latest.values() {
-        let Some(skill) = skills_by_id.get(assessment.skill_id.as_str()).copied() else {
-            continue;
-        };
+    for skill in &skills {
+        let assessment = latest.get(skill.skill_id.as_str()).copied();
         let platform_rows = discoveries_by_skill
-            .get(assessment.skill_id.as_str())
+            .get(skill.skill_id.as_str())
             .map(Vec::as_slice)
             .unwrap_or_default();
         let published_platforms = public_platforms(platform_rows, &platforms_by_id);
@@ -144,13 +140,39 @@ pub fn build(repo_root: &Path, output: &Path, max_published_events: usize) -> Re
                 .map(|platform| platform.name.clone()),
         );
 
-        let graph_available = match runs_by_id.get(assessment.run_id.as_str()).copied() {
-            Some(run) => publish_graph(repo_root, output, run, max_published_events)?,
-            None => false,
+        let graph_available = if let Some(assessment) = assessment {
+            scanned_skills += 1;
+            match runs_by_id.get(assessment.run_id.as_str()).copied() {
+                Some(run) => publish_graph(repo_root, output, run, max_published_events)?,
+                None => false,
+            }
+        } else {
+            false
         };
         if graph_available {
             published_graphs += 1;
         }
+
+        let (verdict, risk_score, max_severity, coverage_state, assessed_at, run_id) =
+            if let Some(assessment) = assessment {
+                (
+                    assessment.verdict.clone(),
+                    Some(assessment.risk_score),
+                    assessment.max_severity.clone(),
+                    assessment.coverage_state.clone(),
+                    Some(assessment.assessed_at.clone()),
+                    Some(assessment.run_id.clone()),
+                )
+            } else {
+                (
+                    "pending-scan".to_string(),
+                    None,
+                    "not-assessed".to_string(),
+                    "pending".to_string(),
+                    None,
+                    None,
+                )
+            };
 
         published.push(PublishedSkill {
             skill_id: skill.skill_id.clone(),
@@ -160,18 +182,17 @@ pub fn build(repo_root: &Path, output: &Path, max_published_events: usize) -> Re
                 .unwrap_or_else(|| "Unnamed skill".to_string()),
             detected_at: skill.first_seen_at.clone(),
             sha256: skill.sha256.clone(),
-            verdict: assessment.verdict.clone(),
-            risk_score: assessment.risk_score,
-            max_severity: assessment.max_severity.clone(),
-            coverage_state: assessment.coverage_state.clone(),
-            assessed_at: assessment.assessed_at.clone(),
-            run_id: assessment.run_id.clone(),
+            verdict,
+            risk_score,
+            max_severity,
+            coverage_state,
+            assessed_at,
+            run_id,
             platforms: published_platforms,
-            detail_url: if graph_available {
-                format!("./graph/?run={}", assessment.run_id)
-            } else {
-                README_VIEWER_URL.to_string()
-            },
+            detail_url: assessment
+                .filter(|_| graph_available)
+                .map(|assessment| format!("./graph/?run={}", assessment.run_id))
+                .unwrap_or_else(|| README_VIEWER_URL.to_string()),
             graph_available,
         });
     }
@@ -182,14 +203,20 @@ pub fn build(repo_root: &Path, output: &Path, max_published_events: usize) -> Re
             .cmp(&left.detected_at)
             .then_with(|| left.name.cmp(&right.name))
     });
-    let data_updated_at = published
+    let data_updated_at = skills
         .iter()
-        .map(|skill| skill.assessed_at.as_str())
+        .map(|skill| skill.last_seen_at.as_str())
+        .chain(
+            assessments
+                .iter()
+                .map(|assessment| assessment.assessed_at.as_str()),
+        )
         .max()
         .map(str::to_owned);
     let catalog = Catalog {
         data_updated_at,
-        total_scanned: published.len(),
+        total_scanned: scanned_skills,
+        total_pending: published.len().saturating_sub(scanned_skills),
         total_known: skills.len(),
         published_graphs,
         platforms: platform_names.into_iter().collect(),
@@ -201,7 +228,7 @@ pub fn build(repo_root: &Path, output: &Path, max_published_events: usize) -> Re
         output: output.display().to_string(),
         scanned_skills: catalog.total_scanned,
         published_graphs,
-        fallback_links: catalog.total_scanned.saturating_sub(published_graphs),
+        fallback_links: scanned_skills.saturating_sub(published_graphs),
     })
 }
 
@@ -381,8 +408,10 @@ fn write_json<T: Serialize + ?Sized>(path: PathBuf, value: &T) -> Result<()> {
 
 #[cfg(test)]
 mod tests {
-    use super::{public_http_url, safe_run_id, safe_telemetry_path};
-    use std::path::Path;
+    use super::{README_VIEWER_URL, build, public_http_url, safe_run_id, safe_telemetry_path};
+    use serde_json::Value;
+    use skills_core::{SkillRecord, write_csv_records_atomic};
+    use std::{fs, path::Path};
 
     #[test]
     fn static_publication_accepts_only_repository_telemetry_paths() {
@@ -407,5 +436,55 @@ mod tests {
             "https://clawhub.ai/"
         );
         assert_eq!(public_http_url("file:///tmp/data", None), "#");
+    }
+
+    #[test]
+    fn unassessed_skills_are_published_as_pending() {
+        let temporary = tempfile::tempdir().expect("temporary directory");
+        let repo_root = temporary.path().join("repository");
+        let data = repo_root.join("data");
+        let output = temporary.path().join("site");
+        fs::create_dir_all(&data).expect("data directory");
+        write_csv_records_atomic::<SkillRecord, _>(
+            data.join("skills.csv"),
+            [SkillRecord {
+                schema_version: 1,
+                skill_id: "skill_pending".to_string(),
+                sha256: "a".repeat(64),
+                blake3: "b".repeat(64),
+                canonicalization_version: 1,
+                name: Some("Pending example".to_string()),
+                publisher: None,
+                declared_version: None,
+                entrypoint: None,
+                license: None,
+                size_bytes: 1,
+                file_count: 1,
+                bundle_path: "corpus/pending/bundle.tar.zst".to_string(),
+                manifest_path: "corpus/pending/manifest.json".to_string(),
+                first_seen_at: "2026-07-24T01:00:00Z".to_string(),
+                last_seen_at: "2026-07-24T02:00:00Z".to_string(),
+            }],
+        )
+        .expect("skills CSV");
+
+        let summary = build(&repo_root, &output, 100).expect("site build");
+        let catalog: Value = serde_json::from_slice(
+            &fs::read(output.join("skills.json")).expect("generated catalog"),
+        )
+        .expect("catalog JSON");
+        let skill = &catalog["skills"][0];
+
+        assert_eq!(summary.scanned_skills, 0);
+        assert_eq!(catalog["totalKnown"], 1);
+        assert_eq!(catalog["totalScanned"], 0);
+        assert_eq!(catalog["totalPending"], 1);
+        assert_eq!(catalog["dataUpdatedAt"], "2026-07-24T02:00:00Z");
+        assert_eq!(skill["verdict"], "pending-scan");
+        assert!(skill["riskScore"].is_null());
+        assert!(skill["assessedAt"].is_null());
+        assert!(skill["runId"].is_null());
+        assert_eq!(skill["detailUrl"], README_VIEWER_URL);
+        assert_eq!(skill["graphAvailable"], false);
     }
 }

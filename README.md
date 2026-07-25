@@ -425,6 +425,19 @@ the default branch with `limit=1`. It needs no provider key and fails before
 executing a fixture if the current hosted kernel cannot support the required
 Tracee capture.
 
+After configuring the `hosted-detonation` environment described below, use the
+guarded launcher for a minimal provider-backed run. It validates the branch
+policy, enable flag, selected provider secret, and latest eBPF smoke result
+before asking for confirmation and dispatching one skill on one runner:
+
+```bash
+scripts/run-hosted-detonation.sh --check
+scripts/run-hosted-detonation.sh
+```
+
+Run `scripts/run-hosted-detonation.sh --help` for bounded shard, concurrency,
+adapter, non-interactive, and no-watch options.
+
 The detonation controls can also be set with `DETONATION_SHARD_COUNT` (1-16),
 `DETONATION_MAX_PARALLEL` (no greater than the shard count),
 `DETONATION_BATCH_LIMIT` (1-2 per shard),
