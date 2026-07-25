@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:60a11d39b7837457a40187687d1d20c2e4a0dd87686a7a1b1d4fdb25f9a911b3",
+  "sha256": "60a11d39b7837457a40187687d1d20c2e4a0dd87686a7a1b1d4fdb25f9a911b3",
+  "blake3": "c46413f2aee44e66120c6502586457e1a6170e614949c1ce52712d27e246323c",
+  "size_bytes": 235485,
+  "file_count": 12,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14511,
+      "sha256": "1736286501ac958fc359ff78471359c82a235ab33d6fe6ad230239bd02891ea1",
+      "blake3": "a9ed42bc32057f207b5da01b86b06234e533c4d8b771f42b7f8b85044537ac79"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 137,
+      "sha256": "b681af581137317a99b225cfa28adc92b46279e90f51f4d53d697e576a32088b",
+      "blake3": "ae9025a5b5b4e3455add2bfd7eef97bec6349a85e7c3d99f6c1761777d424818"
+    },
+    {
+      "path": "config",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "config/init_agent.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8067,
+      "sha256": "02208a9748f0ddee5efa4c8c96aa124044f10bd3cec7983eb6e1d40f112ec2b7",
+      "blake3": "e889fad70cb87699351a670c820100318c87974c5745bfe135dd8cfc220988b4"
+    },
+    {
+      "path": "config/mcp_client.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 34247,
+      "sha256": "a99351f8ed06276b3c999a8bb6de685a65ad081629baec00def4459f714d9671",
+      "blake3": "2f76a5f3ba9019d98be5c630b435bc8bea61d7f932d37bb75f75e8f931ad442d"
+    },
+    {
+      "path": "config/mcp_stdio_server.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5871,
+      "sha256": "d4ceed12e16f1543c287aca736dd23e63a0056a0a1c9c0427817890ede9eaec3",
+      "blake3": "92787c74ed81076e5896c3c9a453d514bcb6fc89a3716a7ea6ee373c10d2020e"
+    },
+    {
+      "path": "install_matrix.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10790,
+      "sha256": "11166d1efb0cf74c66cff6828353a9f14acdf4d8eff93411632e4d08913d035c",
+      "blake3": "0e2a6d2660a7578f461948fa1aeac3bc7a2b37e457b4584910b9a08a56fbdbec"
+    },
+    {
+      "path": "matrix.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 57078,
+      "sha256": "dc5fc92bb027a3043310668f2790c344be4f3621088e7d81e18ad3bb3edfb1b7",
+      "blake3": "b453eb51e4e984d83bf482f19dbdbbbf3ab12464ef06dc087243555fb515d7df"
+    },
+    {
+      "path": "matrix_router.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3341,
+      "sha256": "69fb89d77821cb030f887d4e594bc63cf8bb6215b4eaa26fbc65d551da4b44b0",
+      "blake3": "0d33ebb69f4012a5bf73503c16f215c4a5543b240bd1214a84253245adf9e48e"
+    },
+    {
+      "path": "offline_workflows",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "offline_workflows/offline_fallback.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3286,
+      "sha256": "2cab4a6b983ec5b38389e70a9d7642bc1169643d0ae46bcdd95eb8f3bb87068e",
+      "blake3": "a671c20ee9ab62b3af8bb139f8290281d1579e346058268b093980a5e5ca69dd"
+    },
+    {
+      "path": "offline_workflows/tax_compliance_workflow.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8285,
+      "sha256": "cb441abdea9ee145c2309547ff12f4c0a54f07ebdb44ce64e2dfd41bcae8b76c",
+      "blake3": "307f8943cf6335d2f90468a2c070fc4fb6fa83f8d14c2d84f88f628ac16c958c"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2749,
+      "sha256": "37b08495ef04abf125c62bd77c8be1c19ab29e997f0b384ae05d2cb7b683faab",
+      "blake3": "136b6de1bfcf02d95642bb53c712ae752856066ebe0085a6abe6cb99b4935a20"
+    },
+    {
+      "path": "web",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "web/topic_workflow_construction.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 87123,
+      "sha256": "39bfe8afe9622741e05e44d4ca612f29f5df87ace40c255f6423b7450b8320da",
+      "blake3": "9be085626a73c28d922720081dc9e20dca276de4a27757a9e6ce9f58cc906b63"
+    }
+  ]
+}

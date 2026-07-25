@@ -1,0 +1,513 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:8cdccc36388c2e80cf51330bcc9914bf99388ef0f0d8d3dd7a3e435a02b9cdf6",
+  "sha256": "8cdccc36388c2e80cf51330bcc9914bf99388ef0f0d8d3dd7a3e435a02b9cdf6",
+  "blake3": "758af18dd0200083b63c5fe147145db70d5c5834dd05cd3450ab34a1a07ad6c6",
+  "size_bytes": 624136,
+  "file_count": 59,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1071,
+      "sha256": "7bd91c49090c2a15e098f82ebb0a3a0386264d99bb47973eec2b9967e331d3d3",
+      "blake3": "24ce7222f2fd7f7d575c8ea0d7bb06903f9c576e5422e659ab468a5a6f4431ea"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29203,
+      "sha256": "033e519a0b6dfe85cf0fe506453f3b070f2be7ce43335d00e2c13820a82b703b",
+      "blake3": "f1998675c2ab46d09b555a28bd8daa6e6376c3027bf7599d0ef9dec82819f97d"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7664,
+      "sha256": "ccbf49f26e5ee53029bc98a42b367f6c1faf4e7438958e693291c3ef46522ce5",
+      "blake3": "59b8ed492286cc04af54854a0f5a2cdb3255bf1e0d45cb03c08d13cfed90deb5"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 145,
+      "sha256": "dd3958920f08de0bf05747b2e70fd062c87cb3722af56c25232f196aab5afa95",
+      "blake3": "78cef1cfdbc6c4ff6940de25f750f5fa5bcd9492a7519800f15d8fd5b9b63192"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/special_cases_template.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1911,
+      "sha256": "3aa87845f57360337e94fd56972a5873bf4faa9e5a15f9d8baffabea9736bf5f",
+      "blake3": "fd65bcf75a016b544f4392a38b241aa9912370a2134c1f8339da18aca70e9ae3"
+    },
+    {
+      "path": "changelog.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 117,
+      "sha256": "2b4fe9c666589b445f6813e114eeb778fc941bee8160e50174035ebce74d2306",
+      "blake3": "a71eccbe7a0c136c23827aee97c0c5af489d5db2d9547a42517320213f284786"
+    },
+    {
+      "path": "pytest.ini",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 219,
+      "sha256": "0cb2686037f5225a13b9dfa62bcea0446f5e90556ed08a575f9cea7b3073c5a0",
+      "blake3": "3fb9cd2d00fe3c238f6b9476fa92c914742ea9461a1fcda2d7650b6990d3df54"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/troubleshooting.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 234,
+      "sha256": "1635f03c4c97af881ae8ef991d6ab13cdf144ab3cc904326e7a56e12fc49d866",
+      "blake3": "e752b113893062e8aa8698b4c417523ca32687a12a4c4e56616666002b82170e"
+    },
+    {
+      "path": "references/workflows.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 638,
+      "sha256": "9f4edf0f35595f4870f7e356c589941ea14632c8d00699035ec94edcdcf09ff3",
+      "blake3": "b62e6c8da5b59a0e4c517557df26cc102e410ad897ed53e5a305736582277077"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8,
+      "sha256": "ec72420df5dfbdce4111f715c96338df3b7cb75f58e478d2449c9720e560de8c",
+      "blake3": "cf4025cbb37217dae462d13f1aaafdb65641870ada1907a4c03a4e12d2263332"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/calculate_stats.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 72055,
+      "sha256": "523c2b9ec932ea9408b743414a0dba9a66c32c2dc334055de1b3962515f994fe",
+      "blake3": "a1688d442d161980813ef66275ec3e970e44638d56bee035b1f5753744fdab54"
+    },
+    {
+      "path": "scripts/cli.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 139381,
+      "sha256": "57e20729735dd659631cb9780029c3a0edc3e1879c86e7f08556e0064d7e54c7",
+      "blake3": "93c6b65f6d190cfccfe1c24a58b596d2fa9673621ccd7ecc8abfb444bf8a7ddc"
+    },
+    {
+      "path": "scripts/data_parser.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 64860,
+      "sha256": "1d9f9849e6f4594b9dc0297b93ae01e8d43724666abc81e5b78a83ec17f9cb1e",
+      "blake3": "9ee2f44c1767b3b65a94f5752319d31cf2643362bfd965c992651053cf277232"
+    },
+    {
+      "path": "scripts/database_handler.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 36743,
+      "sha256": "38bcb4c26da1b268543fbd628f0ed904b08d56084bba6e5a678d7f65bff2d490",
+      "blake3": "2ecbc4858e8cca1a3e268d0e0731e829289de9d4e4b33e6d31b34f0d2b2f7ab3"
+    },
+    {
+      "path": "scripts/risk_calculator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29854,
+      "sha256": "391c3b46d74e315cf307d009f1153fe87b392fa3c378099de90082bb56c11a79",
+      "blake3": "9d53e979123a250b0d23015128c2d9d2f6bea8867a6dff8a253b595d047160fb"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2454,
+      "sha256": "17fb1f97dcf45bbfb7890b51836e4e684f0f20c781508d6f7976b0ccae0ee444",
+      "blake3": "35013e142e474cbc233a57fbee62c3e4c6945cc4e76c7b5566cd857d7748ec6e"
+    },
+    {
+      "path": "test",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "test/conftest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1091,
+      "sha256": "31a4c07a4b6b0c22f5d29e1d83dd5986549fd3904914d6e6ebf24048f16a4bc6",
+      "blake3": "7158d768e3f38d0e21ab6090769642e0e2d504c5df0e41842f386f44dfef65b5"
+    },
+    {
+      "path": "test/data",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "test/data/asset_deposit.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 311,
+      "sha256": "4ae18a92f6f7d12f720b1c877f5dd5497f26006021fd2fd71c6415fc2dff80fe",
+      "blake3": "36f846daec436e6de2bf5e97ab966404a56285238001e03e15c19a3036fd511f"
+    },
+    {
+      "path": "test/data/fraction_writeoff.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 352,
+      "sha256": "255c7d2c3a646bf0da289ed5daf6a4dcbc51eb1a54a3a8f54592760d38020632",
+      "blake3": "b80ad2bfd8c2b8ceff71e4976556e4a2438ae6a7edefd97ca993ebbada4d0b9c"
+    },
+    {
+      "path": "test/data/interest_fees.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 601,
+      "sha256": "3eeb4b89dc505a4fa211f9a2c54ac84b63c473806be7e1af86ffbaa4da5b4b2c",
+      "blake3": "c971c2d294ac5273a424fd2b49baf69c1e32e56a5b918774ccb748ca30f7a8b1"
+    },
+    {
+      "path": "test/data/listing_change.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 610,
+      "sha256": "7a64a56fd794bbdf8cff0daff4a03433e3a7ce4aa38bd62545a4dbc34662c027",
+      "blake3": "0ec91a57eca5d785505252aebeecbf547379c586be1c6cd2c8c0867ca8ee5b9a"
+    },
+    {
+      "path": "test/data/multiple_transfers_same_day.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 565,
+      "sha256": "de85cf3f745e4e68a6627fcf2d672f53bd1a4cf0fb35896e2a292b5f697f6c17",
+      "blake3": "86ca701954aee67cce4bd532f33a32f41fd01a96e1a282f883fdbceb8ea93e74"
+    },
+    {
+      "path": "test/data/new_format_data.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 537,
+      "sha256": "6e8b339b3c19cd48d52bbcf34117292c2fef2f1b55fc6d7616175be79ed9e28f",
+      "blake3": "5f5cdce397b08bd916b799274990e0d595ec211e502949262cdcb0472b00cfef"
+    },
+    {
+      "path": "test/data/new_transaction_types.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 571,
+      "sha256": "3cf856b2e1b7eba8bb4bc9a5ce0db2c57b5d1b16e0ebe8925216ea5869ef26f3",
+      "blake3": "206928ed3f3198c95dede36395c903953508687936693bb4c8bdbbe5d6a4d3df"
+    },
+    {
+      "path": "test/data/reordered_data.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 716,
+      "sha256": "8f36f642bc24effcbd990b32c4d72ab177538bb365a7fbd879980adc31b3b2a6",
+      "blake3": "7b6c4318a1fcd52b0d8aa8d8db76eefefeaf65ee23dabfe8306ec281ba966952"
+    },
+    {
+      "path": "test/data/small_data.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 716,
+      "sha256": "ad975678a292f096d8fde5fcf497051ed2bb16f7dfc28609a921a4cce2cb5334",
+      "blake3": "bd7b6f874a4ff04d6d41b22c4429eec90f76199963d1f3f05acd1699ccd2d359"
+    },
+    {
+      "path": "test/data/small_data_diff_accounts.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1258,
+      "sha256": "f05331115b1d4645ab4e3c39b0030f5e7a30c3b18a7eedfb7d4b9454cd08818f",
+      "blake3": "3db65486bf1ed2d41c154fbbae436dcb3c56715540e768234ffb896fbab3b525"
+    },
+    {
+      "path": "test/data/small_data_plus.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1251,
+      "sha256": "ed0a3cb9b0ea618f45510a89109a19f2c5f46fa594e0ff45c9f9be72ed9b9bb5",
+      "blake3": "a2fb15ec99a6a3f0bab9ec2cfaf39d5b5855d23cabaf749e35d92cef1cdb43aa"
+    },
+    {
+      "path": "test/data/small_data_wrong_accounts.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1258,
+      "sha256": "51ca9db377c974898c3b292f79b454d6f1224acd0048109aa068f1f08a4335d0",
+      "blake3": "8144e9235adc621824a2ea57080b5319939297626bd94f10cedff2fb109a612d"
+    },
+    {
+      "path": "test/data/special_cases_test.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1024,
+      "sha256": "838c2dd49579d13edc30694f13ad51f415578fe07d55e3e229e4dac25cae8094",
+      "blake3": "f521e760c473cdc2c23b6197055d14b1a9cb8c6003a63a5d45e33024240a60eb"
+    },
+    {
+      "path": "test/data/transfer_attribution_single_account.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 359,
+      "sha256": "533aa5cb94561d5e665a6eb07c0a5c96ed367d270f38f13a8cb34094b9371ba8",
+      "blake3": "c288ff76ff7ceaf5e5e1da3f99ddd42c527ea5b77c0a1d92b8a19110a2eb7402"
+    },
+    {
+      "path": "test/data/transfer_attribution_two_accounts.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 578,
+      "sha256": "6bb7d9cb28595e4c6ae78f62b5e5efd5319a434afed57135f52e1966d0fe07dc",
+      "blake3": "07462856c7ecc1bb9d1e67a74762d863c86dd34825273b31296ad00232405d8f"
+    },
+    {
+      "path": "test/data/transfer_deferral.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 663,
+      "sha256": "83551bcf86bd15e561e1c7a9375fa5653671c1f153783b7405513dc2c82b8d15",
+      "blake3": "d6b196d63f3572249061e5042d2e076c7bd7fd31b676080d26253dd23755933c"
+    },
+    {
+      "path": "test/data/transfer_proper_order.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 663,
+      "sha256": "d88bbe77098c3ef22355d9e51110579376ff8f7c2c57de38be8bd855f63f164e",
+      "blake3": "313e5692d55f3c60c29a421eb7f024e580b6272e5c229741c9e6064d2d297476"
+    },
+    {
+      "path": "test/test_account_apy.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11114,
+      "sha256": "e54ac812ea52433bfb586fdeecd002120f5ee7cf6474d49dc6556e7b2a378abd",
+      "blake3": "93434919bb40858234f66fc8ace54dc67bb289096006d8868e9395b73531eb53"
+    },
+    {
+      "path": "test/test_accounts.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 55206,
+      "sha256": "9164fece640e3094103153fa57909c252a212f680b3b84417b5ae666369c1311",
+      "blake3": "b40b1ca7255045afca2c746e3269a15ca9380e49738656c40258ee8b6358b0f8"
+    },
+    {
+      "path": "test/test_add_data.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5128,
+      "sha256": "6f4e30598297c99fa5a89a72ac13bf1a455e3dac19e433511bb517c5f1141795",
+      "blake3": "7403a91369512ef69b002c94094c036e435f52100c747209c3748f529b8a25d6"
+    },
+    {
+      "path": "test/test_asset_deposit_issue.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4602,
+      "sha256": "ebbcaf65779bb1e19403e35145e7c194233049b588843cbfbe2edf06fb8683b4",
+      "blake3": "9e30f0b530a1217415d387f026d103bbce9a18a9e73022f74a68463a6d434196"
+    },
+    {
+      "path": "test/test_database_handler.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4623,
+      "sha256": "de2ca3bf3eb596d7d83a5a9dcee6ccaaa20cd53802d5fefe81d51e6769a08c82",
+      "blake3": "9e39cba9ffd4fe2519228845d3396419638175aa026b8b8af6a5a85ca72c31fd"
+    },
+    {
+      "path": "test/test_delete_tx.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5958,
+      "sha256": "b522bfdd8ab605293d89ca748c199ba3cc0fd5fd433c0f806cdbff1a438076a2",
+      "blake3": "79a4219a4a74239409e5a84509be090c51faeaf78e6742426968ef1001954679"
+    },
+    {
+      "path": "test/test_export.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4672,
+      "sha256": "6719691f3463a6464000fda8b34b9d6b771d4bc56de61fbd044bbe7de542b3f8",
+      "blake3": "7c93463edc6a547f1d2c954b2657ce10a13533967da2fb3efd1bc6824437f2de"
+    },
+    {
+      "path": "test/test_fx_conversion.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16660,
+      "sha256": "8618b4f5930902b1d82db11abf29594597c10c077b57e00ed28286641de8b579",
+      "blake3": "edc17c968397a643144b04f4f8517bcf6889d362f89440c771eca03b3660811f"
+    },
+    {
+      "path": "test/test_historical_prices.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22477,
+      "sha256": "06e395b5f7f75a402f87978a025f5559431fe84b69b6c983f3943f459f99513e",
+      "blake3": "1493365daac024e96944b5216a411ab71a87b050ac589a967341c77b7d390bd5"
+    },
+    {
+      "path": "test/test_import_normalization.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3047,
+      "sha256": "a7cf80da4eb42adb0ef0cc8a39c143440571eb376c551d5a062a4fdb2083948b",
+      "blake3": "dcc217a8319edacaaa2236c6b7e693a4f4798f3de4dd4e1d4ed92f23b3883780"
+    },
+    {
+      "path": "test/test_import_unsettled.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2616,
+      "sha256": "847a65bfaef235bc9903917ad62852c888cf6d5a47c908238b97e8b645de5e24",
+      "blake3": "03406dca8b137c7a8518b4f56bcd332093c25b5f8b48611840ef6b8a5952776c"
+    },
+    {
+      "path": "test/test_modified_dietz.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3608,
+      "sha256": "1adc24f4889eafe58e6573344740f1f1e756218b19d7fabb25b0cee646efb78f",
+      "blake3": "23f1738108b0c205c9ee310334b949d4781f97a19c83274b5b6fbfe8e50d881e"
+    },
+    {
+      "path": "test/test_parse_data.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8129,
+      "sha256": "0c4f445d16ea514d567a0e2007e420aa712e550a13ca72f144b84836593109ec",
+      "blake3": "411d338e4db162187dd9e592bc7bf3b5eb9e4faad970150daf9aa641b4c4c53a"
+    },
+    {
+      "path": "test/test_parse_special_cases.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2042,
+      "sha256": "65956f9fcd679108214b16c68ab62dad5d6f72217808503d846f87118789aaa3",
+      "blake3": "8a60da6d9e0aae382c6f46590d92e7ff15700b02086ad57c191e75b8c0fed9dd"
+    },
+    {
+      "path": "test/test_per_account_asset_tracking.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11926,
+      "sha256": "587c218e301341aca6e03aff2c9409c76e4710d0a02f8f20176a4fafffae6755",
+      "blake3": "936e542f81b5bc02227c8b53e6d7ea486f9abcb94619c7e7f943e89c2709784e"
+    },
+    {
+      "path": "test/test_portfolio_holdings.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6187,
+      "sha256": "105b483c4ac967f2c5515113238d841d7f4ab645b28f0a4e39e5f1bcf3c70efd",
+      "blake3": "8c06873eec6380c708cb41f3c94b01edcb59268dabe378e5aa7e3bc7041afd19"
+    },
+    {
+      "path": "test/test_price_interpolation.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6143,
+      "sha256": "53a9fa39a92ef9bb7566ef94d4d3ffec58c67be8bcee8b07b1756a25401c68e6",
+      "blake3": "6c767d3b21ba1c93e2d226f6cc3cb4ed64e36e53c4cd6a1d58c6445a2c343b2b"
+    },
+    {
+      "path": "test/test_price_staleness.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5412,
+      "sha256": "543477cf2ae7d56c924a3d12732e07aa4324d90e078a18f5e976846b22d78937",
+      "blake3": "0ec02630a17007d687ba3daa7049f344ff642202ea975d7de46bd42455c862f3"
+    },
+    {
+      "path": "test/test_price_updates.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2398,
+      "sha256": "438752ac102c16ecee1e472d5b959c4ef4866c3ba84c45d41cc19c660571d7a3",
+      "blake3": "d7cd0acb9efebb34752022cba31bad7679fac441e502a6bed6216dfa1f205bac"
+    },
+    {
+      "path": "test/test_process_data_attribution.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4242,
+      "sha256": "7d98d5c3255f5a1294497a58effb69290e416b08ba25727051054373a690e26f",
+      "blake3": "d5e8b1d4c388effce6b0bed5e2f028c81c1b28bdb856bfc518aa97df087a847d"
+    },
+    {
+      "path": "test/test_process_data_deferral.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3929,
+      "sha256": "36ca7a233637fe66c363e42c30f14de84b5deed1832568c5a2530ebe10f6fb36",
+      "blake3": "d6ce717c959d79e4411d6f6b047073eab5171f9f8aa8a1173bf83857d7afccfa"
+    },
+    {
+      "path": "test/test_retroactive_updates.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4460,
+      "sha256": "c030ea9e5dfc6355ec61cef792aa880cc14a5351251d70e8d1f5a8c05addd3d9",
+      "blake3": "c3155e93b1c76534f895982b4ee0dbae5e5e6f5bc5e8355dc95d95e4d3eca49b"
+    },
+    {
+      "path": "test/test_risk_metrics.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11534,
+      "sha256": "85dba03b2b16bca2257506342eb238273704f1c1e8c46a8951b570f93d7ed7eb",
+      "blake3": "88423944aee4f5cc838aebb4ce5721e26b484e97807be6ed3782e989bec97c62"
+    },
+    {
+      "path": "test/test_stats_positions.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13316,
+      "sha256": "1935a6074ff22d8cfe0713c886f87f68b511ed9ffc9e638759912b906b646fe2",
+      "blake3": "787b39dac9d8c850b85f5b74b0b684d14847f852918e2eeb80666fd15f19431a"
+    },
+    {
+      "path": "test/test_twrr.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5026,
+      "sha256": "8a64dae0947d8fe3755acc7408da7162882dbb115d12e35f844064dc30f82229",
+      "blake3": "a90ae3fae4a7058b4567cae7730f18476bfadde2e0a213bf7e997ead2094bf5d"
+    }
+  ]
+}

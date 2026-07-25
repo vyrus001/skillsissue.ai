@@ -1,0 +1,767 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:725dfc9b091a33026ef5a45ea0745707cd23b5992e2e2657a60fd30dede61bea",
+  "sha256": "725dfc9b091a33026ef5a45ea0745707cd23b5992e2e2657a60fd30dede61bea",
+  "blake3": "b0154d971f91973baa3b8cad768f508bc8ca95a4302e059762d6ec154b49355d",
+  "size_bytes": 598606,
+  "file_count": 78,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 33426,
+      "sha256": "d5481eb6601f139a4ba79470f14f651ae4554f6cc9e1b3a0db625d9f7e4d64b6",
+      "blake3": "90572c0cdcbe40a7cd896ef675253d0d7a54bc5ebf2a2b941febe3486298468c"
+    },
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1081,
+      "sha256": "62f78cc2169dbb46f6d9e26d2275af20cb8c44c2c90f2916e7fd6342bf896952",
+      "blake3": "64dddbc29b2f4a061d277e9823b60b1b4f063f48d41f5ce96b69ccc34da91a9d"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4409,
+      "sha256": "9efc8c3a0bfcdd0b0201d8804351357fbcec92cb2bd349f219e98d65360f0458",
+      "blake3": "7961dd544440960cd17c4d0b84533bc10d441e63c70736f07c49f701d176cc3e"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21457,
+      "sha256": "658de94dc4afad03e2a08bf89df22e11e02ae72a07abf8edac8e7422fd0e69cf",
+      "blake3": "83b5d181e9b53a4bd7ea66a76e0eb842efcb2a8093a9b1ef36116459afeec9cd"
+    },
+    {
+      "path": "VERSION",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6,
+      "sha256": "077ee5b3a3a7fc2622ceff6466fea0c28f3fb08b24653dcc7f4baab29b9aef36",
+      "blake3": "c512e41ca746a1eef69ad8936cbc50d45a9b77b896a3ee5e52eed2dd5232f257"
+    },
+    {
+      "path": "WORK_LOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 521,
+      "sha256": "5993568b0a5a35e36e2a1859ea575794fade16d4fe54996865f7c4f7af06f357",
+      "blake3": "248fbb9f09860256dd84e576e87a6441e4d06d71ce7c6ddb92b24f2f519784b6"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 141,
+      "sha256": "7840c848e6ac39e51fc870556481ba25a3b7bb8fe962307785a3eb56386dc795",
+      "blake3": "7dc311ce72338b6e5461e173de2878cfcd06e048b5a0722bc137e3aec82562dc"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 342,
+      "sha256": "f0da96f4463cf9bcac72bc1c93d0c4ee49cbdc5da07a82c7f4c7e016841b1113",
+      "blake3": "4fe13cdfb29674c63260dce167b3835f79cd13c3da36fa25de6366fcdd0057a9"
+    },
+    {
+      "path": "config.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19988,
+      "sha256": "15e4fbf27cd4b120c2190646f80d442c4601484fefd80bf36cf48ab3d5360132",
+      "blake3": "6b6aa2e372a75f23c8b74de4a9dfb7fe606340474a31529edf65d23ea0d546b2"
+    },
+    {
+      "path": "install.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2796,
+      "sha256": "489c8c015e05828458cda1d800271c7dbc3e721e152fb5dfe459430f09d3514f",
+      "blake3": "8a8b99f1125dc43b4c11281a6c11e88c4f742673e563955663ec2dc55dc6602a"
+    },
+    {
+      "path": "install.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2142,
+      "sha256": "34967504c5f6111d82a865e92ae841ac74d1fa83e531d664ee492abbfd03ea37",
+      "blake3": "462787a59838895f31a326d7c2ed19853bc0e2284596c11830c3f8e4e46462f9"
+    },
+    {
+      "path": "platforms",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "platforms/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 663,
+      "sha256": "e20e39e197008ea29f0eba0fb2dca70cbbde45c2c2f001cddf920fd6c866ff9d",
+      "blake3": "3c4ea1d5f388c5ce31a57c440bda37234be7fa3909900687f0ed5ffd07f133d8"
+    },
+    {
+      "path": "platforms/claude.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 440,
+      "sha256": "a9d999b69b3c3b27295727cd5d1f1efafc5fa78da8e17e22e620b53da14609c6",
+      "blake3": "6729e32721bf5fe3a3fc121b2c20691d2b90bc9a968cab9988fba41daea2aea8"
+    },
+    {
+      "path": "platforms/codex.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 565,
+      "sha256": "f458dd8c98ed0ada3f1d7a7530487ea0e47a0502cdbc6b59f44e4c50397ec97e",
+      "blake3": "2428914388708a3ab39185e713b87a35581d1a3dd113ea2adebe0a3d27aa0755"
+    },
+    {
+      "path": "platforms/cursor.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 574,
+      "sha256": "d01b09f72c472a93268599cbc9dea1a22a672907a487958055bc43c116a6f1af",
+      "blake3": "daec01075f477689fd2b601bb44c0d67b62cc01fb0f167bbd71c1e342560c433"
+    },
+    {
+      "path": "platforms/default.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 256,
+      "sha256": "488b85b6e62597a7a921a4688a975b089dc7748ecded05dec745ccdefa6cc354",
+      "blake3": "10e08bb5c1c47f1d37796e88acf31ea95f2510b6e15fdef1264411e5515b83bb"
+    },
+    {
+      "path": "platforms/workbuddy.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2386,
+      "sha256": "cc4e833411bc7b43146cfe92f4fd8b0e774b2e751461744e053ef0de3ffdd0bd",
+      "blake3": "4faa248fe86847d91b9873300b895a84fe1e091d2f1dadc8425651eeb45808ca"
+    },
+    {
+      "path": "platforms/zcode.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 237,
+      "sha256": "0cc96a042328c17d88f6092cb6ba74f53a83d77d2f6d206fe338f2af0e7fcb39",
+      "blake3": "f0a47d681b585a8c1e95d09ea4fd4cf9a5fa757abac302c0859a5883a869f9b1"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/actions-schema.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2545,
+      "sha256": "322a4681c48c576f5659bc7b9770c58e39772a1667fc9a05ca3f20de74604788",
+      "blake3": "f47f74bb1e36b7616a1ad4bf28a931d7995cfd40efb7d23216200b6b216081ff"
+    },
+    {
+      "path": "references/agent-dispatch-ambiguity.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7739,
+      "sha256": "fb34d88c09124cf80d8c260fa27bf2681fc8fa415cb9e1ed5cf821d3854feb15",
+      "blake3": "3ac26fe3d87dc44ac2bd8b960cdeee524ab90abacec34944550832cf27a44987"
+    },
+    {
+      "path": "references/capability-dimensions.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14863,
+      "sha256": "83071aea203404f837ecb8a5949ffa75da3d3ee8b1d092d834e8e50d80e00e9c",
+      "blake3": "d4cca14383066712d92825d6fc03e18a54a0110dc042474373ed8862ae483a87"
+    },
+    {
+      "path": "references/ci-github-actions.yml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3899,
+      "sha256": "7ff84f47605255b5e960c9a46c0d1831453222535bfb21ed7b60f73f3124d4dd",
+      "blake3": "7efa68394cc167f71023eb261fd3e8b9188fa689e0d31b623e7674c84b3fa59e"
+    },
+    {
+      "path": "references/ci-output-schema.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3368,
+      "sha256": "4fe53d00dfd35b6e3cca5a3bc8aff38cc0adae74ba85cc7a60c07e0b8eec3335",
+      "blake3": "c3cf19109da4c7c0c7693feb9f0292d84c6cd6b28ca0a276a5b1c226e895d21b"
+    },
+    {
+      "path": "references/codex-ui-zh-glossary.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5165,
+      "sha256": "06d3790c2fcf55ec423d8542e8f7d72046785041f6294a1d11a51f32c0adb865",
+      "blake3": "9024f50de41f312955c51134a5efecb33f51a55cce2f88883572ee8361f4d87c"
+    },
+    {
+      "path": "references/config-candidates.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1095,
+      "sha256": "b2706eb5dd8de19d07ef70c067610d4138f0f6b70974ec36577cf505a6edbece",
+      "blake3": "60a92d025844090909546c5ea360799cdb3641b22373e01e1d6ceadd07f8300d"
+    },
+    {
+      "path": "references/conflict-detection.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9741,
+      "sha256": "b33824bf751b4a151c8f408d8d923026a633181ce4b03b11f26d559aaa46addc",
+      "blake3": "108aa88be4056c4460724489b841870f0d93808f795bfdd388a11eee9fcc7668"
+    },
+    {
+      "path": "references/context-pressure-assessment.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7690,
+      "sha256": "e783891236878a0d39ea3a3056192bf2842e6a3267eb065051f97c9331022486",
+      "blake3": "af6cfe6175088d184707105ba22ca178ebe1bbb4a6b9a41f036c627eefdc6c5c"
+    },
+    {
+      "path": "references/deep-analysis-template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1972,
+      "sha256": "60fb70ee843e61a89bcb4fc0433f961687c5a304d9ace17fc1832d0fc09e83a2",
+      "blake3": "815848b81068df4e22fef833b37fb28ca80d99755d69388cc9284467d6ee8b20"
+    },
+    {
+      "path": "references/description-quality.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9030,
+      "sha256": "d2b122ce3428712376a76cd0f9840b72022602405917399689ee28e3561bf53c",
+      "blake3": "381003160b5342e69a3af87ff368a2f3131b764386dd243ae39d573b9ad62758"
+    },
+    {
+      "path": "references/display-source-map.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12000,
+      "sha256": "aa6194aab6a46b3d9221c77e9881ed90a8e13e513fed6ef9d1be902fbb853772",
+      "blake3": "10fb9ee9ce499705d51be7464bfe31bb8fc54ed6b7abb33ec8b94a7b91844901"
+    },
+    {
+      "path": "references/ecosystem-optimization.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7170,
+      "sha256": "9aabd8ad1bbaf2e07bc3644992261143486e3d9290180d7043edc56f2336c988",
+      "blake3": "efc3052d63aaac9eef6bf67a29655fb15831656c4037b394fc3d51266aa1cc10"
+    },
+    {
+      "path": "references/execution-flow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1450,
+      "sha256": "59c42a3262366e01ea5b2ae13e685f4a549c7d649e3425a85374c3d6b9a3d392",
+      "blake3": "4573a2ca736180b39f32a1eb6f77fe55dd0333ba0c8926ffccb565e183134aee"
+    },
+    {
+      "path": "references/health-checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14990,
+      "sha256": "00c99c074c0ee11c09bc1ae72b32d260631bce809512d8e12d60ae569f76ab19",
+      "blake3": "327851db9dddf2a8a170e3d3bbac18512ccfc475fda5b96a493c49ed2b4dcdf6"
+    },
+    {
+      "path": "references/lifecycle-guidance.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15180,
+      "sha256": "9d174e7dcc0bb78f44e06511b38814283c3b12c1c518f4fe9a12a2a364f03d8f",
+      "blake3": "686948ccecbcf1f55653ca48d0d0f05ac299c808982ba44bf75fdaff6a58c08e"
+    },
+    {
+      "path": "references/mcp-health-checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8398,
+      "sha256": "8e9e4470208a3c79a7a00efd30ad71f51075ff88cc9f4d7e37008700e8768524",
+      "blake3": "6886b624d17fa3d6aa88b276427fda0e37d15d38601b20bdcebaa52895b9623a"
+    },
+    {
+      "path": "references/mcp-marketplaces.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8830,
+      "sha256": "bbb42e82ae3d0f79ea59cd9637611007fe54dead41ad0dbc11eca76c300fbd4b",
+      "blake3": "c834ceeff1ac1a13c9b5b5706861642915dd92a0f051939a331d1fd6aa5003a7"
+    },
+    {
+      "path": "references/output-contract.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1945,
+      "sha256": "11e92d55fabe13ae9042d1216915477ce309d134c340cf052770b8f893e93a4c",
+      "blake3": "21b3e49837122207106714b3197da5c38214ff39ee13fa49bd523e6bff930681"
+    },
+    {
+      "path": "references/project-types.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32353,
+      "sha256": "d04f578887d00f797ef6e0e23ba0fa310a1601863c65c762613d49d83fd039c6",
+      "blake3": "b029589b9fbbeb720d4eb48b2c8cc8529b09d0e98994e7ced75ef2f2227d216d"
+    },
+    {
+      "path": "references/recommendation-examples.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4288,
+      "sha256": "8ddce5007fc86d828d77b9e61f62933b4c08a907ae8edde926ef6ac96f6fd367",
+      "blake3": "9847d30c17c320eb704959c61667ea79ca4fb59ff9ded51458aeea51a2ac1776"
+    },
+    {
+      "path": "references/recommendation-framework.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12727,
+      "sha256": "63a506e326490cb920c8439fe2a886c73d2f0b0e3c6fb42310a9c080e8ccdd03",
+      "blake3": "9debafcd8d73f551ac45e638ab7284397d5330fdb94e9c535122d08fd69a2228"
+    },
+    {
+      "path": "references/release-checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 902,
+      "sha256": "b64939eef7cfc7d6af37365b9f2a6b2d2b18f2de537a7c98d2c5f5e7abe82a96",
+      "blake3": "836219de28283ca6bbfca7b3ceefec22b334a1ecd5bd7019b5cba430d4b75b30"
+    },
+    {
+      "path": "references/report-template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5802,
+      "sha256": "e539fb3a2851bad8766ce8e06242e06966af6cac08b3c384db20199d779f4fcd",
+      "blake3": "2b074fa9d5d2587538d63ef57a2b373c2c8d5519b3e04f304c03be1b25628a8d"
+    },
+    {
+      "path": "references/security-rules.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5784,
+      "sha256": "282078b1810961dd69e8036e8b7182188e410d4dfc5734a445d10d1852b8f977",
+      "blake3": "70b21ce600ff0689027d596afb5db4c1b972c594433ef236f5f1f3661de5a01b"
+    },
+    {
+      "path": "references/skill-marketplaces.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9349,
+      "sha256": "e026a6248d047e5fab00b6eaff6f00b9f0a90e0103a5c95f00de969220a2b4e5",
+      "blake3": "c8e60b63437f8442bccdfd9fb10c507e0c18c4b573d4471e20d97eb963a6865e"
+    },
+    {
+      "path": "references/skill-plugin-issue-audit.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2138,
+      "sha256": "eef881a6ea36284c6840bfc6ae8509a143f389ef71b6a664ae54d92007c16cfc",
+      "blake3": "04ebdb1e20afb6ec79532d2191a2d125bfc06ffe171df09133af09e970ff377e"
+    },
+    {
+      "path": "references/skill-registry.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18352,
+      "sha256": "ea1404014e7c23beb84e8e884fbcc0fbb2b3041690e6eb76a6caef41ba697e52",
+      "blake3": "4db852e376a20274eff607587e0bf36f8f459d0942c27d1643b89454c91f580f"
+    },
+    {
+      "path": "references/source-divergence-report.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2759,
+      "sha256": "128b727864a329a84db4902bbd5680860d7cb8a7709091a293a10f6f031684d0",
+      "blake3": "9c2c275057c1c374a8e485c3d82040799bf4ef20fc2ec7cc3d7cf8c211c35922"
+    },
+    {
+      "path": "references/tech-fingerprints.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28007,
+      "sha256": "07bd8d58fdc7f99495f08cef891b3b3e6499c514ab8d9840e39cf807021c9735",
+      "blake3": "203e5cfef414c69b84a365aeb0fc5c8a19cf545b668a6a733e3384ba7ed03b88"
+    },
+    {
+      "path": "references/translation-quality.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12085,
+      "sha256": "146c37526f6be221f8ad43cf5a3cec7d11d38d9dcb088bce04bac6268457bbba",
+      "blake3": "30af8faf84a1356267d36ea6ba653a91e1d5d496e5387f4a09d00899a9056283"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 84,
+      "sha256": "3e3c8f9d45c8ddc795db1adbba969d69f151b4f4b775b90e7d6ca935aefd8b41",
+      "blake3": "ba3c958adbe3da60c1deeb5eb1d1873027ba0d20fc9e0b3cf5bf5b7b9ac6c1b1"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/analyze_project_profile.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10123,
+      "sha256": "62762b771ffa3899c9683cb8cc68c1046d2a6038dd422ff1d0377f5bfc4c9907",
+      "blake3": "2ef9b1e8dcd6daf2e39231bdb250a87c0bbe796e497dcb27c3a50b349c16254b"
+    },
+    {
+      "path": "scripts/audit_skill_plugin_issues.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 64483,
+      "sha256": "32006f68cac8f7369e9e4c8fed269e36060d229cd9714f67016b077e24764a18",
+      "blake3": "944617c260cf5ade82c607c11a7ab5eb9e9275ac81e52b478da63928be37c17b"
+    },
+    {
+      "path": "scripts/collect_codex_display_candidates.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 33482,
+      "sha256": "12d32a18fa96e8f254f34bddc856749d5d2458940c55d7918a8e21f041752e38",
+      "blake3": "ace843d93ce4b2350900ca57d22385b679b23563f5ec22f58a100e9b5d1fea1b"
+    },
+    {
+      "path": "scripts/compute_value_scores.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6021,
+      "sha256": "4e7fd3f49ae1df83af1c829e6046569bcc5dde9ff2b586a28bc07316d2f1328b",
+      "blake3": "3c2486a1a1302ef6b09739a96d7d5a3af4f90c3fb914c27d1097b66563bad7ed"
+    },
+    {
+      "path": "scripts/extract_usage_signals.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 48801,
+      "sha256": "5a9a3ed91e696106c8ebc08d0725559472374ca3b8c63a54a172ea37f518642f",
+      "blake3": "40da24d6376857188cd68367a21bcfdaf0e0b00baf954718e971d1b524b42db9"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2739,
+      "sha256": "d5343e1ebf03bc706a8e88f146c0b417d78a61f7769e73fe3b44fe2b77ecad84",
+      "blake3": "c1493173b552594cc35072c7e21b8865696009ef365c51103074edf8925fe991"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1045,
+      "sha256": "9007a7dc87dc1774df1e0d9a58b3d9d5097580639fcfb23e1f994d8f781e2ea0",
+      "blake3": "15c22d3b9459f7e4adbfa0d8e397ff979d8fed360125f12c6b892b65bfc8e1d9"
+    },
+    {
+      "path": "tests/fixture-data",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixture-data/codex-display",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixture-data/codex-display/config.toml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 57,
+      "sha256": "04ffa8e200978b35953ad241801f66924750668a2b32fe799c57c91b874ff1da",
+      "blake3": "90dfd4c0d04be45ef2d01c63a42559b445292c45917c917241b5b68050b2abeb"
+    },
+    {
+      "path": "tests/fixture-data/codex-display/plugins",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixture-data/codex-display/plugins/cache",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixture-data/codex-display/plugins/cache/fixture-market",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixture-data/codex-display/plugins/cache/fixture-market/fixture-plugin",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixture-data/codex-display/plugins/cache/fixture-market/fixture-plugin/0.9.0",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixture-data/codex-display/plugins/cache/fixture-market/fixture-plugin/0.9.0/skills",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixture-data/codex-display/plugins/cache/fixture-market/fixture-plugin/0.9.0/skills/fixture-plugin",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixture-data/codex-display/plugins/cache/fixture-market/fixture-plugin/0.9.0/skills/fixture-plugin/SKILL.fixture.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 113,
+      "sha256": "c58ec2845172f212fed9cfd85d236f3e154c55d46330655576cda63d9e0bd2cc",
+      "blake3": "03a37e891ad7b895bbcbd26395616f8173f25c22568fc5c585c55a266b5a6e10"
+    },
+    {
+      "path": "tests/fixture-data/codex-display/plugins/cache/fixture-market/fixture-plugin/1.0.0",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixture-data/codex-display/plugins/cache/fixture-market/fixture-plugin/1.0.0/skills",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixture-data/codex-display/plugins/cache/fixture-market/fixture-plugin/1.0.0/skills/fixture-plugin",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixture-data/codex-display/plugins/cache/fixture-market/fixture-plugin/1.0.0/skills/fixture-plugin/SKILL.fixture.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 101,
+      "sha256": "2d82f6e460f97a61cf6e69411e1a2e6c1445741f83876bf0b5c9e16c16db9def",
+      "blake3": "2b1361f5c65b1babdc1af474452f3863b782fab23f1d513667aee0f69d41701e"
+    },
+    {
+      "path": "tests/fixture-data/codex-display/plugins/cache/fixture-market/fixture-plugin/1.0.0/skills/fixture-plugin/agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixture-data/codex-display/plugins/cache/fixture-market/fixture-plugin/1.0.0/skills/fixture-plugin/agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 127,
+      "sha256": "864cad165c13de0bd2da3f115c3c1e418433994c0c1ff371aaac64ec4fe3dc97",
+      "blake3": "f55e9fc0b24d428bb8b57ea48c9750ca5b2b28b0f54994580fe7119d24f65abb"
+    },
+    {
+      "path": "tests/fixture-data/codex-display/remote_plugin_catalog",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixture-data/codex-display/remote_plugin_catalog/fixture.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 373,
+      "sha256": "37b437f483ada843274671182ec75a8d6333ff6607b365a2557a0869a6b813b4",
+      "blake3": "be073b81b4c894f763c26973979ec55e127878548dacc1bbbb8bc720321a5420"
+    },
+    {
+      "path": "tests/fixture-data/codex-display/skills",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixture-data/codex-display/skills/fixture-global",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixture-data/codex-display/skills/fixture-global/SKILL.fixture.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 106,
+      "sha256": "a854a82626987941f5b521291dc449279700ea8062b28f3dcec93dd336a8dc75",
+      "blake3": "e0d6756f9c9d93b63a741894c4fdd868e480e85585f35997c5a606d98b15a8ae"
+    },
+    {
+      "path": "tests/fixture-data/codex-display/skills/fixture-global/agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixture-data/codex-display/skills/fixture-global/agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 114,
+      "sha256": "d427e1beb6816267e84b8f6847f2976eca04a8823eac45f260225c2bb43084fd",
+      "blake3": "3ecc19d792bea3ca2874fcd881cb02d44ecc781600cf4ee419f070a05cf21d3a"
+    },
+    {
+      "path": "tests/test-capacity-calculation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1808,
+      "sha256": "10afd00f6eb5784936a9decacae0a4b93c4fd76d7e2fb21d56b09d8ac7812c75",
+      "blake3": "4bd5925d89daf27fb25fa038697417f6f9488e72016ddfcbc43949e72abbd05e"
+    },
+    {
+      "path": "tests/test-platform-yaml.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 887,
+      "sha256": "02ae32e11d0cde070fac0bc2caf65485e9406db0c847f2b0f09644f4353c21ef",
+      "blake3": "5810d13f241d0485455d24a720e8c0fc9a45dadcd374cf40cbe1eca4ebc23d63"
+    },
+    {
+      "path": "tests/test-rollback-flow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1694,
+      "sha256": "0cb5a15b4617bfe4a58e31b41aef45994fa2b6426725269aea964a42db323aa2",
+      "blake3": "ee50916cd17ffe46f8e1a31ea2653767e91e80bbe9f6b37374095bb0f2b22432"
+    },
+    {
+      "path": "tests/test-tier-classification.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1479,
+      "sha256": "439f2c367c747c6efbcd0652a737e601f009dc694f7769cf6d32a7fb4c54716d",
+      "blake3": "3ed08aeacc833b7ff8e0dc610bc46ded06d7d75d195b27645971403d097513d8"
+    },
+    {
+      "path": "tests/test-version-sync.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 704,
+      "sha256": "06cf10c4fc9b240e1385ae4739daff9717256d50be5ef7c75e048db9db94167d",
+      "blake3": "e890fbf12dae690851d1c969cd4558c02f74da38524d82465e97990e14b65f94"
+    },
+    {
+      "path": "tests/test-weight-sum.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 750,
+      "sha256": "54fc1454cca13be784c96bffe925342da0d75a9d8dd2199d9c389c5a02a2f7a8",
+      "blake3": "aaa57cf1838f4656ecff5c1e372427f7198fb74d22c05957e7fca594c513bba5"
+    },
+    {
+      "path": "tests/test-yaml-parse.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 944,
+      "sha256": "54b3b4f4b6fc2611f868c26c577380de284d6af69b3c973072c7f8cd08857f05",
+      "blake3": "8e378ae85afbb929d23a2be1f5cf7d806f4f8472e03c228013413a82b8ca517e"
+    },
+    {
+      "path": "tests/test_analyze_project_profile.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2520,
+      "sha256": "1f9c39a0c5f9900d735d44900411a1b696172bd7eac99b6af0ca53af9abcb487",
+      "blake3": "995d74660a8090b037ecbe996ac7f45325a07647ab519e8c878c0cf4db227942"
+    },
+    {
+      "path": "tests/test_audit_skill_plugin_issues.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5198,
+      "sha256": "ab4d6b820b1b31654af7288dcf48181cfde61bb262a726d0481c4157b4e8eedb",
+      "blake3": "d48852acb7fbdce25feee38d510378084cf8638069b27239dd40251ffb47f11c"
+    },
+    {
+      "path": "tests/test_collect_codex_display_candidates.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8168,
+      "sha256": "84951a9e288a3dc550bbc6eb61f4b2444f789a468d4799c897a1695d5899e594",
+      "blake3": "ad0fec6747cae9b9de33f6172501a730f55ccc40b911ab53f9a23613eb4b88b9"
+    },
+    {
+      "path": "tests/test_release_resources.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1077,
+      "sha256": "53707330c79c5b8d7869659de164597e70de5ea5510fae39b503d6e86e41e1e0",
+      "blake3": "423b6aaf076b41764d5f9a0e449d813e4254d45c365920085803d6387469a18f"
+    },
+    {
+      "path": "tests/test_v9_ecosystem.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19416,
+      "sha256": "cbc84f01fa1daa53aedc17e138a8b1daa43240751828f06ca57defadc6328dc0",
+      "blake3": "11b6ffa8cf5404bd1a72380ca2c4f62a6ef8c51469980da271474059c917419a"
+    },
+    {
+      "path": "tests/validate.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21418,
+      "sha256": "e957667f38d8c1ff73d46f8b292e2489f25739f683174cdc13069646d94812ce",
+      "blake3": "daf5342515cc9bf24eaffe06dfe33f73aac11bcb5f361bd3f352f849455acee4"
+    },
+    {
+      "path": "user-profile.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1728,
+      "sha256": "1e985c9f172ca495ee09cbd48b922750abe999dd2e787013fab60a885b7a63c8",
+      "blake3": "d141def3b435d24fe99f701bd3c9df65f0795f58548dba6a90d1d2abde2355ec"
+    }
+  ]
+}
