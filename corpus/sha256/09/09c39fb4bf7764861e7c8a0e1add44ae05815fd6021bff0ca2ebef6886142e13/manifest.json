@@ -1,0 +1,333 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:09c39fb4bf7764861e7c8a0e1add44ae05815fd6021bff0ca2ebef6886142e13",
+  "sha256": "09c39fb4bf7764861e7c8a0e1add44ae05815fd6021bff0ca2ebef6886142e13",
+  "blake3": "5677bfd7f90d3da01271c637fe0cafdc44a5e11a93c359dabea10e64ab54864b",
+  "size_bytes": 320458,
+  "file_count": 38,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 39220,
+      "sha256": "cd2b7f828f868a77438938faac65f422786540ca93b325700a8c7d1e53218d22",
+      "blake3": "711e3c1488390ffa75db39e07ed5472e96360b8e6aeae894ae3c810112e24f62"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 131,
+      "sha256": "3857fc014d61e775b36af06ecfce12e244227b3167024d8cdf02af45eae2b8c5",
+      "blake3": "7ebfc7e35a7c8d8357dc6651f651692f86ec1cbbdf980a24b3a1b5d12a0c8358"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/background_removal.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15105,
+      "sha256": "420a0a955059243ac9fff79019b6ed6e5f5efc9e0fec320679561d609d40581a",
+      "blake3": "1692776a0d3b9de17f234ff6e665ec0ba595454b148d13987c3dc8f48f4337aa"
+    },
+    {
+      "path": "assets/bark.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6974,
+      "sha256": "660d49ff33074272dd398476ff0103b10d4724f93d06d2f18658f5d41b7972e6",
+      "blake3": "ae76143250dbb15801e71a65bc49b4c39ef04ab2f8c5f7dadcadd19b4bbe7692"
+    },
+    {
+      "path": "blueprints",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "blueprints/aura.blueprint.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6951,
+      "sha256": "d3db12eed07825d9914eee951fb1b6b6c3b2930ce9887f3c8c5979c0a4bb235b",
+      "blake3": "49d50a18187a47089163eb86dfe3c7e87f79890cd62c937f29dcb4b7ab170593"
+    },
+    {
+      "path": "blueprints/knight.blueprint.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3028,
+      "sha256": "72347ea2d2b782cfa91b7bb34abdb4071f5adf85a1e177ad84a752c138d2009c",
+      "blake3": "fcfc431491b3e6bc4d9af3662bb1042f30ed5c78e3c4f927e9a7b180cf674021"
+    },
+    {
+      "path": "blueprints/paired-sprites.blueprint.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2490,
+      "sha256": "b4c9f145f3d48544f4300c66cd80f4f45bb5e0467e469f7844ce5c30d7e31928",
+      "blake3": "815d3c6d449e40240a9a10cbc9d4b168b24949d54224cd6ac9963e333e302af8"
+    },
+    {
+      "path": "blueprints/portable-sprite.blueprint.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1794,
+      "sha256": "0ec6dafdb6533c0b742904aba339c30ee78c1a26b755e2f53514579056578572",
+      "blake3": "b24ff4029dd35a6084bb7e740d3d9090c4662f0d15b438aaefde77ad2a3b30a8"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/animation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8479,
+      "sha256": "986478be7530b9fa1718faa0020142549ce1fd9c53e85678a6668b097a5369ac",
+      "blake3": "549d521497723bf518a8120de1c976b0218a4a8aa38c7ef0c54232e8a9ec91f6"
+    },
+    {
+      "path": "references/aseprite-cli.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27850,
+      "sha256": "b2e094416e849a992c63a2fa3735b3df7f656af06c99e56891aecf04188e9d99",
+      "blake3": "674be1001fbe296bdf824a87b81c350d83f2f82e3dc79aa7edc1499550822892"
+    },
+    {
+      "path": "references/aseprite-mcp.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1860,
+      "sha256": "e75af7a8c28e6add22441b9cd03a5555ac81889ade00a0e96fb235a1a4e3f7d8",
+      "blake3": "d62fe2b8cd3927d08379588a6364c1872b944aac833a2251950a40bb0203518e"
+    },
+    {
+      "path": "references/auto.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6874,
+      "sha256": "cac0b5530a8f60b2662f4f5ee3eca74881ef73396d44837741787d718eddff5e",
+      "blake3": "20e8b62f0a81b9056cbcbaea8d3f21cb6bdefb225bab3bc037fd106553d08741"
+    },
+    {
+      "path": "references/background-removal.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4378,
+      "sha256": "2efe0010733eaee7b14aaa9b36e2f789880b212b046013786825cf780e27204f",
+      "blake3": "139b9d7f44d8e38777205585b04ea3d4c46f7aad452d0fd9b63ea939a813f92b"
+    },
+    {
+      "path": "references/bark.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5749,
+      "sha256": "127c2fdafb6a2dac8c7a94da31c142e1ec99f19a3b8c9490a35e4712f6d5f074",
+      "blake3": "fc4c65b526c07069b26581eba05c1f219eeeded85f742fecca13ac2b88173d7d"
+    },
+    {
+      "path": "references/blueprint.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19252,
+      "sha256": "7efac32b966c15aab23c5ca4b60272a50de2bb1be24b1ef5391fd7547b0af99a",
+      "blake3": "fa06473f4968e0437a90431f78e99947d31b2cd24dab9283f09acc613334bfef"
+    },
+    {
+      "path": "references/cinematic.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19710,
+      "sha256": "dbbe10035adb7ffdd0710029e0b15e86f39b61b9b87c0696800cf19100c7c859",
+      "blake3": "753f6737aba3aa4f89264b8aa276d52072516f3064602292093a78d2022fcd2d"
+    },
+    {
+      "path": "references/cost-routing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4992,
+      "sha256": "c1070c2abf6024e84372a3d15fd2765313654c15c63d6335f14548d8a353b434",
+      "blake3": "96414f234bfb185453cf8308a8c2f80935e09fdf655ef43179d6f1e4015bab99"
+    },
+    {
+      "path": "references/create-image-pro.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7521,
+      "sha256": "f7d75b07ccc0441385e60185e7016cc9ff7d15331c6246ef03783383b4b8f089",
+      "blake3": "7ba853b8616eb11236016f6c53b8258ea42796b968dcf8cb53478f52c703e4dc"
+    },
+    {
+      "path": "references/credentials.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6797,
+      "sha256": "f462ac58e8f417b403db1f1b7ee719f4297549b6b7f4c02e73211c5582128cc0",
+      "blake3": "2cfbbc373bee5eaf8d9da1c5ac10cabb2c4899214eaf7a4bbd8d6245319bbe5e"
+    },
+    {
+      "path": "references/editor-only-utilities.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2251,
+      "sha256": "76467538236c0e48ace23d3c2791139f5132eb6bde92035be425618eb820cbfa",
+      "blake3": "78897f3bc09c6d96225d7565be5149e7d3e76af7fb91c2bcead0c08bca8ecb4d"
+    },
+    {
+      "path": "references/icon.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9095,
+      "sha256": "5b1faba76fd4a55c73f944ec63b4c651c72d0e663586ed113cb7583b383da0f2",
+      "blake3": "5cf71c46223ab777d0b24c35ed244bc90a106b0b1f786424476777c2394e1187"
+    },
+    {
+      "path": "references/image-input-roles.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7962,
+      "sha256": "520d49d0de78710fa3e04d1d22ec1e6d4cbc0956856713505ac88ae5f9de9f57",
+      "blake3": "8ddfec00e317eeb4a830659e6ed213e6924a29016b6b7a9d12d4d30bc45a8e99"
+    },
+    {
+      "path": "references/job-lifecycle.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6291,
+      "sha256": "c10bd26404e24667392e274cdf72dbe142e3ba1192dfc9c5edb45581c35a40b1",
+      "blake3": "d061dfe6e92711c4cf2f67abe3f5deeb0dce7e725eff5557fcc18fe33bb84561"
+    },
+    {
+      "path": "references/local-asset-assembly.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4559,
+      "sha256": "80302796cbcae5249abb220a45a90277043360cf0c0176a3d4dcdb79dadf4065",
+      "blake3": "6f0eae02a66325a36ca74615923f66acbd51cefcb963c2641117948ca515c329"
+    },
+    {
+      "path": "references/localization.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2789,
+      "sha256": "530e8bea3af712d3aa0dbf5df138a7ec403440e61e544cb80222a4f2dec427cd",
+      "blake3": "cc3d1df43e6eb88c6c01b7a36371f20485d21c230621858f8da74241466e7e79"
+    },
+    {
+      "path": "references/mcp-platform-tools.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2171,
+      "sha256": "be7e4e6c53291c6d68a80a83901078c44c0ce65881a49f360491c41ec56e4069",
+      "blake3": "0193431f3275f0e637cdc599a22b14c0117b0eb7fd00e920942be607273dc42d"
+    },
+    {
+      "path": "references/official-pixellab-documentation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5358,
+      "sha256": "2b7dbc91ef35b5c5685c5aa1567922b9546135a504055e110ea44fbfcd97b145",
+      "blake3": "63b75e0296629a19af970377c5cf68b6f0bdddf6320f1ff5cee13baa59820d31"
+    },
+    {
+      "path": "references/paperdolling.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10804,
+      "sha256": "a8daaf5095eec8d6a176a782acc49f8bc8e6931194ca2a323c0a8a2053247a60",
+      "blake3": "d0ff0a527bf8ab7deb600d5aa79fa12aeeffa8a7eddea8e369e579ab4bc89bcf"
+    },
+    {
+      "path": "references/preset-skeleton-template-animation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21233,
+      "sha256": "9521b00e031e1611a2c77f4c5cd34e26b715b48e44c77efbd8e014e4b59dc78d",
+      "blake3": "997a8e7f8bfe24ca859dc58cf10db1049022c235f811adc9baefc1b54b54e81b"
+    },
+    {
+      "path": "references/prompt-limits.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2717,
+      "sha256": "afde1e9b4f955140201c34a55efc57a8f81ca60ebd4b0332089d1006b996be6d",
+      "blake3": "38b7efa7982dda759d9aab4ddabe080e2566ceab228a266a5ea2eea25d448f40"
+    },
+    {
+      "path": "references/reviewable-candidates.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3319,
+      "sha256": "017263807a4d2de2236d10f113c8b71d6c33aa823f0b8339b0a53c7cdfaa4c5b",
+      "blake3": "47549e9a3a529f1ccfffd02ad53162696b9a8ad6e939443875d45cfc68d482d2"
+    },
+    {
+      "path": "references/setup.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18268,
+      "sha256": "efae28078546e0c2327cc56a198ffc5bb7cf703f1b7557ed7747271110f82bb1",
+      "blake3": "46326b8ff6d921f91db1c72c516405ff5ffb1a7f70d6afbf9ba1296babf1f515"
+    },
+    {
+      "path": "references/style-reference.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3557,
+      "sha256": "c79a3e467d061fb5716d6162680c842a968a859948a9606356dc7a2a33351dc1",
+      "blake3": "2fd0f2bd40c02949ec9f18ddd42d71ed910f05fcffcc76997cbc89a63c82b65f"
+    },
+    {
+      "path": "references/tileset.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11685,
+      "sha256": "73b5b4bd49452ab715e722d80e01a1d63d84ab546cc3715dc4ef32642b1d5d71",
+      "blake3": "4c60c533f5a88de5188c39ffd9f4781e97e790c176836641765c18b2aaa74670"
+    },
+    {
+      "path": "references/uninstall.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6117,
+      "sha256": "393f7975e9ed23766bc6974d0205d3b74fcb3f29487ee894992244c3ed1388bf",
+      "blake3": "21291549f15155be15267c420e5ebb7f086ac6a0b5015c0928747bb280152972"
+    },
+    {
+      "path": "references/update.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4292,
+      "sha256": "edcc9d31cafc591e70ddec34bdfae35e41e3a4127afe558bf0327db7a0eab898",
+      "blake3": "c79a3ad3a82f320e3aa391b51e846ad67159596d813c1da25118df079f3db50d"
+    },
+    {
+      "path": "references/usage-reporting.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5397,
+      "sha256": "daac70d6110f849f273b166bfef7c75a7aa8564a0053efd00587ba78b2945d7d",
+      "blake3": "11ca971b5f80d6a2a44b4c1e4760a9fe0b35f86f575001a8847998690506fb4d"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3438,
+      "sha256": "6502cdd3a3e3d8a26e048b62104ac708d6a747df663cc986cf2568633dedf490",
+      "blake3": "15aca694ee97eb7e429c4949e7e4f07c132a645c6640f769bf736cbdcb0925bf"
+    }
+  ]
+}

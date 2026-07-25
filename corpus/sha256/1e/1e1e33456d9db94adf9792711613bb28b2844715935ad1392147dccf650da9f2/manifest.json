@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:1e1e33456d9db94adf9792711613bb28b2844715935ad1392147dccf650da9f2",
+  "sha256": "1e1e33456d9db94adf9792711613bb28b2844715935ad1392147dccf650da9f2",
+  "blake3": "75247c4fea55413d3a82a47cff796265906ee4a85d188d5734f2bc69d7854e53",
+  "size_bytes": 26502,
+  "file_count": 5,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4140,
+      "sha256": "8a7935a53116b753e84607d666ee23a78cd051cbb8250e5be5b64f1e32d47c15",
+      "blake3": "b3638a1fad6c65d0558a23c3484179249ab764a7fa058a2ac49a7927c24ff6df"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 154,
+      "sha256": "c44fde05cb180c1efc4b85e1ca1980f1be9c068b87f132cb65704eaa33605d30",
+      "blake3": "b1e955054d3a6c00441b0274764db57c268d4e305329efcd95fc7968f8e0d7dd"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/summary-workflow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10289,
+      "sha256": "38d390f2fac6d7f3d0c4b80755a1ef1c7095d0c824e7652100259b1eb20ab59e",
+      "blake3": "42b47f47ee098b3c4d85865abfd8d9549081dd7d654e69fc81454366c0822a8f"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/calc_duration.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2198,
+      "sha256": "7e4813701225ee53f4e641289ba2753cc09040c016b6ddf5fb54d3319aae8c3e",
+      "blake3": "1edd54a6f1c23c13d389ad7973cda54719f63f0a660cf9a0ef8833e0778e9af7"
+    },
+    {
+      "path": "scripts/match_exercises.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9721,
+      "sha256": "c20287b23ae0c5338301542bc9f34233367c590d3b770b31dbe3702ce87fedcf",
+      "blake3": "27e5c2717e7b9b42f138194aff605e5fdd7b16bbc5145fde21dc22a26f8cf4bc"
+    }
+  ]
+}

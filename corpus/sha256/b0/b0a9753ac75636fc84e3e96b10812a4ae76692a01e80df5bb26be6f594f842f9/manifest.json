@@ -1,0 +1,1437 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:b0a9753ac75636fc84e3e96b10812a4ae76692a01e80df5bb26be6f594f842f9",
+  "sha256": "b0a9753ac75636fc84e3e96b10812a4ae76692a01e80df5bb26be6f594f842f9",
+  "blake3": "0bcc9280493bf3a68712f3c33355aa1ee97fbd8c762484a2a61efff1bd1e3556",
+  "size_bytes": 954770,
+  "file_count": 143,
+  "entries": [
+    {
+      "path": "BENCHMARK.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22630,
+      "sha256": "d77d3129aebd6559896e85161297aad649f1bbfc4e2b8774e0e6dc805ad1152c",
+      "blake3": "2893416eb1a8988bb98937e982d5347789721c65d0ddf9228b2c627ede92237c"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18006,
+      "sha256": "8a71b023ee7d99c1d5b057319e3b69f90e03841c3e9b56d525b336f9bb2e2618",
+      "blake3": "680994ad7411fea1461b1eeb3d68ec91ca92b7426b2e1c0bc4d669f81afc2d83"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 402,
+      "sha256": "031213cbb95fc0d1a1ee377396271367f234c83aff63a5ed5e0562f173fa857b",
+      "blake3": "bcf9858282d7c70474ece0a6cd6e2650ec9037ac534b573876aeaf88367de52f"
+    },
+    {
+      "path": "evals",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/evals.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9258,
+      "sha256": "9877a5bc855ecf123c15a846c1ff221f233652d8102fdcdca5a638d28aa2d4e1",
+      "blake3": "3613dc5682142055bf95d550751e1e468e8eb89523e3162acf1c77340fe41665"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/cad-conversion",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/cad-conversion/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2577,
+      "sha256": "355a2be7120e147295c7ba2eb5d9e3c273bafb4237976a6721c6c3bd229a14b4",
+      "blake3": "2108af0945ee13824e8917d611d7f9a8ec5964ef6239d9ccbba71993d5d941c7"
+    },
+    {
+      "path": "references/cad-conversion/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/cad-conversion/scripts/conversion-report.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1321,
+      "sha256": "85bff6162e697e979251f1bb5be2f87b4715790e9e44e26a2d929ebbd2ab3fae",
+      "blake3": "aa5d63857b46a460395021a8a83cfd1af0eb788287cd8f5dfc015aed0f4f3555"
+    },
+    {
+      "path": "references/compare-profiles",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/compare-profiles.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2662,
+      "sha256": "a1d5895841671f5f083f7640ca33a4295ce3d3ee05e374bd3fb40e95c0980071",
+      "blake3": "16cc5e6cfe2ea2123feaf661b00cb45394660c1c1d68f916d7778b4bcb72a8ca"
+    },
+    {
+      "path": "references/compare-profiles/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9948,
+      "sha256": "425992e8080dea09e1c4fa42aee4bbd72dd419eec2f75a01686423821eeb9b19",
+      "blake3": "3e11909ce1238e13401b16a02d8113f35309c10ef6e351d09d7c1a667dd6c724"
+    },
+    {
+      "path": "references/omniverse-authentication",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/omniverse-authentication/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3883,
+      "sha256": "ee4dcb30534dc94e709cc251296740933fbd1673749083a1d84a8bbeece7f271",
+      "blake3": "50e7849eff4a5349fd66f35470b960600f2947fcd62ecae25e81714bb8ac30f5"
+    },
+    {
+      "path": "references/operations",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/operations/CLASSIFICATION.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4580,
+      "sha256": "2f625a11131801b1c03365a93bbcf7d4a95f97b3654a545f37fc0250b7fd4be0",
+      "blake3": "0756fdbd72d04642740fbe4b844a2b42d31dddd20fdf0c0d3636fd39d73ea6df"
+    },
+    {
+      "path": "references/operations/EXECUTION.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5617,
+      "sha256": "02e26a797150a5eed96c1a7752315e49c881b93e58862828f85aedc015d1f4f5",
+      "blake3": "da26d9d2d5e85590898163c4ff0847bf04f0c966366731476000a0334117d255"
+    },
+    {
+      "path": "references/operations/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8212,
+      "sha256": "a19d56e5b4b9d51ee671e0ed5bd047ac741fa7eaed9871c0c04a9aaafd5cd2d8",
+      "blake3": "0cdae2218be5354d8316c05166ea447e20ee3499c405c99a8c3e70999616a9c7"
+    },
+    {
+      "path": "references/operations/_curation.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16029,
+      "sha256": "6be6deb942376654100d21edd3f1ed5cc309b049c97a28a5366dc50905f09f0f",
+      "blake3": "feb35d24da19534cdd498363e19799dc8b090e6cae114cd60c576ac5d58e8c68"
+    },
+    {
+      "path": "references/operations/_template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1545,
+      "sha256": "208d126dc579abd3b740af5a6487945297c8e8431f60009947590b965524b5ca",
+      "blake3": "7a7a7cb940504844374b12520ea388242becf05a9253b8a02f019966e943949d"
+    },
+    {
+      "path": "references/operations/boxClip.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1059,
+      "sha256": "8082a58b93237ab8c33f99b50b8df636979444aafbeae6d8cc77d7393d6b9634",
+      "blake3": "83c23024b7125abd890957d2c85bc252a351493c960beca5602580f1ecd9aa1e"
+    },
+    {
+      "path": "references/operations/computeExtents.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1152,
+      "sha256": "53135f4ee73fe85c9e01cdf89d4ef5ad388cead9be3ea6b87a317d87ceafbd83",
+      "blake3": "7a40b435be8dc997990f6957fde3513a0e270fec4f4a535d4f06e7c5ac2f75b9"
+    },
+    {
+      "path": "references/operations/countVertices.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1083,
+      "sha256": "864221d3ee5c225a7941dfed6925407057a70bd0c8aac656d8c5491ef8556c66",
+      "blake3": "dc8c8f726c0b9e75a77e971d6e497fd5f34fc78e345a24ac021103c2d2185a80"
+    },
+    {
+      "path": "references/operations/decimateMeshes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2621,
+      "sha256": "b13a6daaa7b42af0a92b83e63e6e3908f860d2065a82d0ae1b2384983808b3dd",
+      "blake3": "c5cc3bda19d6af6d7e73002687bfc7c6913ff0151b317b7219e11f0f2e7f603c"
+    },
+    {
+      "path": "references/operations/deduplicateGeometry.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1161,
+      "sha256": "4bd5c75a97b91aa16e2edd8a094528dab5ae99b5390de2bb25226f2fd9531e1c",
+      "blake3": "1e3f2ce4f088f1c2e9e31738d69819fe17d70becaccb92186e555f0bc2bc621f"
+    },
+    {
+      "path": "references/operations/deduplicateHierarchies.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1581,
+      "sha256": "7337cf7a08fcb93d7bd9d562b48316000b25840e1b76bc4cc2d3b6992b9a1f15",
+      "blake3": "ceb007e9c5d78cf306013b3d3e0084e020fb6ac15a76fe1281e140d61f09e531"
+    },
+    {
+      "path": "references/operations/deleteHiddenPrims.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1099,
+      "sha256": "53ae8b72f6b10b7fa9d8b9070f08805fda69199b2524d24f673eb666fe4113a7",
+      "blake3": "083a28ffc1559a307a2d9047fb5a6539e6ec3b996bf34f280cbcf50e2d521bc7"
+    },
+    {
+      "path": "references/operations/deletePrims.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1067,
+      "sha256": "e55ccc6a78801ce67e99810e7ac1b7a7b81c3ee8f516ac760a952ba1db582fb7",
+      "blake3": "61518a0cb15de3c5488d7a97f21aed0f5df1cfc75f81c5c376a91bec8ca0cef0"
+    },
+    {
+      "path": "references/operations/diceMeshes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1077,
+      "sha256": "c3b358f0b1f09f492e1acc245ca20c44d4f003caa7323f1075cf291d145c43d8",
+      "blake3": "217d2366db9c0079f23e35e01a3b0f5e48645f199f3c0135ec3e47c9ed1b0c3f"
+    },
+    {
+      "path": "references/operations/editStageMetrics.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1111,
+      "sha256": "a83d8e016f104d41164c00b6e1d12bfcbdc12a009c83e9716152b039dc39d39d",
+      "blake3": "6816ce5c4d5c4f61d900c983a8d6d6bd93be16a3475cb693735d0d6b22484bed"
+    },
+    {
+      "path": "references/operations/findCoincidingGeometry.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1133,
+      "sha256": "b651d0c5b87d465e5f4ed0b709e6d9abda92f723c7285d92d2ec572c924f0e49",
+      "blake3": "2198a2b99056ab93fc312710cd27de2ab1ea79f24f90300cbcc59d81ea17206d"
+    },
+    {
+      "path": "references/operations/findFlatHierarchies.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1124,
+      "sha256": "3da43921d4c9b6125c8bb1b0a045e45c9c5c2fe54856d50eaa90517e5edaefdf",
+      "blake3": "d8d2cc50d1da2c25e2da5ddb0bb544fdb20e8628fbe0be8a0a50957bc9a478ed"
+    },
+    {
+      "path": "references/operations/findOccludedMeshes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4903,
+      "sha256": "c5f215138983a9304c5db3224f31777b92a84d47665caeacb941222872322aaa",
+      "blake3": "60dd0aa573476a86d4e17c6c29ec886492174bd7be2b0c8dc1a5dcd9b1bb08ce"
+    },
+    {
+      "path": "references/operations/findOverlappingMeshes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1136,
+      "sha256": "ab4324972e8a4a4e13b114e90a21f1934337422726a6dd0eca43e61028624659",
+      "blake3": "29c3972481a556239c2c1743d2e3449810a9e4c976d1c7403f6ed494281a7545"
+    },
+    {
+      "path": "references/operations/fitPrimitives.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1098,
+      "sha256": "2093ff3dfcf05e6f6033965b27c64bff41c97b3daf783d78aeb3b8228e97e13a",
+      "blake3": "f42a5305ec360786d56eac117208519c894219924a784657ae2fd485fad74d06"
+    },
+    {
+      "path": "references/operations/flattenHierarchy.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1096,
+      "sha256": "7364ac60661e8047728feb7f6d1748cb9d643525258114ebe473a7f3c686c9e4",
+      "blake3": "a2970bb5ae94a1a75ba970561aadaef812e6e35ec709d90eb3a61d02becdbeec"
+    },
+    {
+      "path": "references/operations/generateAtlasUVs.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1082,
+      "sha256": "e7c48e0ddd8473779f1053bc448a2bbad3dfaa5e5c9d173e6367c36fed2953da",
+      "blake3": "b0d8a74ea56505a315a6062f7024e330144880551691ade11b9fb59677a62a56"
+    },
+    {
+      "path": "references/operations/generateNormals.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1113,
+      "sha256": "ec9c1e04592319ce30f793c1f64951dc42cd13a9c6f463d3dcd36f5caaa66c12",
+      "blake3": "403f3982087cd96b8ada59d957e15b90700e7c503b1492afaefc59f191002741"
+    },
+    {
+      "path": "references/operations/generateProjectionUVs.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1113,
+      "sha256": "d488e05dd283a9d40b9249724f4813adb7945862cf0995d7d95128b559d7444f",
+      "blake3": "b90272ed93ec08918a90f296ca90d65c8e85b830b266baf0b0e7b95a24570ed5"
+    },
+    {
+      "path": "references/operations/generateScene.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1085,
+      "sha256": "b8f81bd83ca3abeda3d00fbadc75c3ca2ea4cd4a0e4a0128b05a2f297c6458be",
+      "blake3": "a8f6648173da9d89a2ffe021365c30e5e10afa73a534b482b2350b41fcdecf21"
+    },
+    {
+      "path": "references/operations/manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 39568,
+      "sha256": "4d9464ddd35f33a9e6713d81b11dcc4a9b381f2d795a4ffee14f96da179d3790",
+      "blake3": "a2054e1ef53844735a02e756993c82e631e29fe3bbb043597a3149d71030efc3"
+    },
+    {
+      "path": "references/operations/manifoldMeshes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1094,
+      "sha256": "40932e9e48942eea186c3ff96bfa68c1d22591b0db5a467ebd07ec4ff402858f",
+      "blake3": "6b2cd47438a8e99d594ead006f2cc6ac378d5b5082ef8167977f6d686963c6e7"
+    },
+    {
+      "path": "references/operations/merge.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1086,
+      "sha256": "ff9db53993ac1c38d2fe175e4c0b371cfdc39336eb744c1b3a00c2d48dfc245e",
+      "blake3": "cdc4065b293288148e6ae55764721946abb51dfc365027c31b6bfdebee16500c"
+    },
+    {
+      "path": "references/operations/mergeVertices.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1078,
+      "sha256": "a7aca33cc866e15731ad6260d4c6cf040e1202d40e876d7111971f3863e739e4",
+      "blake3": "7f4c89ce7d5abfb9f414db0641eb5d8c4b70fc901a983eab2dcd497fdaf5ed99"
+    },
+    {
+      "path": "references/operations/meshCleanup.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1127,
+      "sha256": "7db5bc0f1bc99241e192454eb2c839b5bde994c4d6bf5a2d38300b0ee33b0906",
+      "blake3": "5cd897cfe59f9fc8dda5f474c82ebfac4224fa23ba518720f31cb423717ed3a5"
+    },
+    {
+      "path": "references/operations/optimizeMaterials.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1156,
+      "sha256": "76391205882d6509e0ae48963f2ff20d6ff019e3716b63205a4fdec15a1861a4",
+      "blake3": "73a1805780688db97df2e7c70e21cd6a7d85b884ec6a5c2303ab0085caeeef99"
+    },
+    {
+      "path": "references/operations/optimizePrimvars.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1104,
+      "sha256": "52fefbdfbd30e31b250901b5c9316193ccf54f876052c03139c8d2c040e1ab4b",
+      "blake3": "4730ef173006150a86efd4c54d79986de2307be4ba072e40c41c609a8bb54e65"
+    },
+    {
+      "path": "references/operations/optimizeSkelRoots.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1116,
+      "sha256": "3d0d4d5174b606979521943a695e7fa89ed54ab263713c166fd3c2223a4ee204",
+      "blake3": "085baa4321fe3099bcf3f4ad53521b1c1af76edc375b3dc666475c42f421b9a8"
+    },
+    {
+      "path": "references/operations/optimizeTimeSamples.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1155,
+      "sha256": "caf608a16d3eddab3253c2d46d7ceb1c034ab7f24db817637cbd6c78838e0729",
+      "blake3": "9519cd3074dea480e091d651d50c21bd6f0efed42a0c46097e112c37710ae5f8"
+    },
+    {
+      "path": "references/operations/organizePrototypes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1119,
+      "sha256": "7faf74b38bc1b96bc5c9df583efb47a54d286e38a7647f1e7c17e31e79ac95c5",
+      "blake3": "08af7c0ea970dc1eb63ec98c26ed2b0255e3f21a02a598fb8c8d4cefbf00cce8"
+    },
+    {
+      "path": "references/operations/pivot.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1052,
+      "sha256": "a356770e7b38318014293911721efca7cbbcf649cdf63697b7122792a2cbac4a",
+      "blake3": "e717d3ea4f9484dc84017d4d93541db2fd15d5c0556345ec7a22db809f688265"
+    },
+    {
+      "path": "references/operations/primitivesToMeshes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1108,
+      "sha256": "d65cc34cbba3454b1958b11210378bd4e69c262fa196817c75e592a83fbc7594",
+      "blake3": "e9093cad9790b5473654bd4f6175bb8498ce09ccf5f815fca97d6306e6d288e7"
+    },
+    {
+      "path": "references/operations/printStats.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1067,
+      "sha256": "5d611c4484bb4681b8670a0a2369b626168bc588883785aa6c4e4125f8fd03ab",
+      "blake3": "d21f666621f6fbd1318989de5b9bcfaf3a5d443a1495a702d8187675c00b8a55"
+    },
+    {
+      "path": "references/operations/probe-snapshots",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/operations/probe-snapshots/so-110.0.4.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1794,
+      "sha256": "92e3f647b00897f4e5573185775a72176212af24cc2990419ae43f00dc745edc",
+      "blake3": "b393dd4d7e6cabdb9b26bd9dd4730eea52425fafbd96929c8e7e0b839aca104f"
+    },
+    {
+      "path": "references/operations/pruneLeaves.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1118,
+      "sha256": "cb7c204a7a12fe520aad62cad3d8ae4bd9f7c6ffa087c1d6feb73790383d335a",
+      "blake3": "e0171a3b1597011a0495086c5acce9d6bf2ff49b04323c63e68002497aec2449"
+    },
+    {
+      "path": "references/operations/pythonScript.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1073,
+      "sha256": "47510ea1e5fcf38df100c8b4154090a5168faa7efeb69cfe719e6b9b076bba4c",
+      "blake3": "4de1e40b5cda5c3d197523d05e22888408d14f718a391de204011f0987923402"
+    },
+    {
+      "path": "references/operations/remeshMeshes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1078,
+      "sha256": "2a06d9005460b0c70e21e74aa8879079ba7d1caa2f3316c927cae803e6f68b27",
+      "blake3": "204fe5d6a718986c558096ff69e036397f0143eb50fb7475652ca28626cdde91"
+    },
+    {
+      "path": "references/operations/removeAttributes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1104,
+      "sha256": "df71fb74d1fae5b17ce76e3626f908d2c3f0e508e99439bda69a42564c883ecf",
+      "blake3": "d34f8324e2a419d1ade31be7ca3ce1226df09e995aacc7cd889cf063d03c0498"
+    },
+    {
+      "path": "references/operations/removePrims.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1076,
+      "sha256": "6ea78cc96ea8ef778f1e03e09a51ecb0ac2f10e5468264528384afee33789e73",
+      "blake3": "63e873e79ef3631fe9f2e4952f36053ea0732b80a29958b1e311970c7eb716e8"
+    },
+    {
+      "path": "references/operations/removeSmallGeometry.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1145,
+      "sha256": "695ae88f2f03249d94a18846afd430b3ddad4f06b9a01b70acc24723daae2d71",
+      "blake3": "83938d2def338a8b61eb3b419fe9d8a481d4abebcbe98b07baa7795b0b410744"
+    },
+    {
+      "path": "references/operations/removeUntypedPrims.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1098,
+      "sha256": "cc0aa3a1ec78cbc212cbe30997fb7d347705d89d1bbf93cb3fbb654f68cd3f95",
+      "blake3": "583665f2eb532e5582dbb760423867548ab42aa5dcde693feb120d503af02f07"
+    },
+    {
+      "path": "references/operations/removeUnusedUVs.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1079,
+      "sha256": "87188bc66640247f5756a2f1236b90d6278c8ede3aec26c406d36035464c6a27",
+      "blake3": "d9d58050ada8516a44a93490762772cb3fcb3dbe74954120d3425f4d9b71138d"
+    },
+    {
+      "path": "references/operations/rtxMeshCount.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1082,
+      "sha256": "96d534fead155c94c773d536c22b0cfda5a2f5364ec6374b62d6a6764bca8154",
+      "blake3": "c568a6c8b1a52e1f4705b5fdd61f46aa79f33c0bc9d6e481d924f1f5e9b38152"
+    },
+    {
+      "path": "references/operations/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/operations/scripts/operation-curation.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1234,
+      "sha256": "52687cd85b0b00e78cb30447702b20df88eec105fd7a7b877bec971990c0d8c7",
+      "blake3": "0766a8c3ab93cdd3700aa220838f5239b437b7a995bd174b2459e2e82c99b842"
+    },
+    {
+      "path": "references/operations/scripts/operation-manifest.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1889,
+      "sha256": "2c97b4ce0920635952fba3ba4f2c3ea9fbce2a6de5916cf8bc215b3d558fb145",
+      "blake3": "e5efe420cd7366e93c3bf7a5a88760264c92528c377e17da2929736a768bb586"
+    },
+    {
+      "path": "references/operations/shrinkwrap.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1061,
+      "sha256": "2406becd9f1c9329ca9d4bded39d06628477b3d1d6da936007c3d2a9d2973c1f",
+      "blake3": "6283ebd030790a7be602ad28eb10d86758774756442b0d4801c65cc73bf8dec9"
+    },
+    {
+      "path": "references/operations/sparseMeshes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1081,
+      "sha256": "6b8c515773610894a40bab47b750297aba9781f4d43ff8616a5a6b191ac17b2c",
+      "blake3": "b08bf202ddbaa8e250ad2b974ad143d4d5d9ad2b446915b9c71c524c0c483e2b"
+    },
+    {
+      "path": "references/operations/splitMeshes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1070,
+      "sha256": "525c70d5004f0501a9e5079ef870e9c35d427edc5688aa66765b2046156aa392",
+      "blake3": "13d688124dedad2e94c04a17c0c75d964cf2f18cbcd57ddb96360cdbc86b4d37"
+    },
+    {
+      "path": "references/operations/subdivideMeshes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1089,
+      "sha256": "27ba2f5751a04a3bbcb5e2a00ebcf718f19e2e009ac7a1c28c6364fa5d9c2a50",
+      "blake3": "c696c8a602c55ca105f18767989e44d97b2425bf5ac8dab0b6c14174245435a7"
+    },
+    {
+      "path": "references/operations/triangulateMeshes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1097,
+      "sha256": "52c84a826d6ee2720859675495fc8e230a637fdb7cd80ef940dff225747a2d93",
+      "blake3": "4f7f61b42e232d2527ea4b3f447564edadf898a7aa28878b116a1280f50f51da"
+    },
+    {
+      "path": "references/operations/utilityFunction.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1081,
+      "sha256": "ed45b5e08da3eb96b0b287bc282a88f5af88b0662f6d65e4a86157a739b8209a",
+      "blake3": "d32a8b75dff7bae62b15b0586387546faa0b6a5de67110fd3a1df78635cd5eb4"
+    },
+    {
+      "path": "references/optimization-report",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/optimization-report/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19708,
+      "sha256": "721420690707945042034eac6758d2fd27bed3f8bf27fc3ecc21def6413f788a",
+      "blake3": "67a3ba38845784f4a1480613420d2143d86c6af87223cb6fbec51244cad51627"
+    },
+    {
+      "path": "references/optimization-report/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/optimization-report/references/optimization-report-template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11598,
+      "sha256": "2a4a1bd9b9b889dbfb6384fb92ffcddc0dce89bf1beee7d70bce837faa880852",
+      "blake3": "6183d65fafa566d10fa3c6bca399358c81458201688aa38f8f8f95843e3516a9"
+    },
+    {
+      "path": "references/optimization-report/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/optimization-report/scripts/optimization-report.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15106,
+      "sha256": "2bd9e443030230848640a3fb385c3c0da266fac3df1b06f794bbeb4e07124a90",
+      "blake3": "4f71cd6fa6a87b87293e5c6ecadf3879ddbaeea03780e43fb8e45b45f2a0c3ec"
+    },
+    {
+      "path": "references/optimization-report/scripts/validate_report.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15320,
+      "sha256": "ec9d7eb0eb44f3173bef50aee7acb8a0625aaf17708e022fba9e20dee5169d1e",
+      "blake3": "11234230b6cc150cbc6e19f92960daf7deddbdb1be684b5d2b48ed176320cd0d"
+    },
+    {
+      "path": "references/output-workspace.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3279,
+      "sha256": "1fcbb29f90ed0e32399b197fe983e5f99967e705d755eeec7d76303af8a8ecfc",
+      "blake3": "a8378c90f8d132ae124b163e42a52c4c765a8581e53574c664d7e949f43c214f"
+    },
+    {
+      "path": "references/profile-stage",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/profile-stage/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14109,
+      "sha256": "730aa88608228a819dfb161b5dd394310a0ffca6d73ce75ebe6d3f3ba7795960",
+      "blake3": "622cb01afab2656f6e3e38887c8f12e04bfb447b11e9418665a38378ffa9f088"
+    },
+    {
+      "path": "references/report-templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/report-templates/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1453,
+      "sha256": "47a26472d12a447c73d1b104c069ee54e4b3421e1f47070eba0e48e4f6445f23",
+      "blake3": "ed21bac321544cfa5443a6e0b6cd4b24730d8a140620408db0fb444c1b9aaa5d"
+    },
+    {
+      "path": "references/report-templates/optimization-report.design-fixture.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7454,
+      "sha256": "3a72725e5b01bcf8c3a9690b75b2c7af7226afb3a89bc4ee021686ba6ccd56eb",
+      "blake3": "a5c9f259b37541f37803b0da8356de04817051823ffc991633155804689b1cab"
+    },
+    {
+      "path": "references/report-templates/optimization-report.design-fixture.manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 595,
+      "sha256": "4312f8ac99ecd9a8678d952911d2b875852e0306423252f47e7e6edd0a520708",
+      "blake3": "96f3d26f4b5d051c191e76695e60fe129b97598f5b5a8858f026805fc520d039"
+    },
+    {
+      "path": "references/report-templates/optimization-report.html.template",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8823,
+      "sha256": "2e4eadbc1513e452f1d45e5fcdf2c02fcd5dcd55132ad49279a5a899a25e7b95",
+      "blake3": "89384ec4e7e53f9bb15c61cb23c25f785b30f42ddede3277bc67e9ea76c6fa70"
+    },
+    {
+      "path": "references/report-templates/optimization-report.md.template",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2323,
+      "sha256": "7fa23252539406eb58ff4831ad75823769e67c6add4b2c3d2be5421113e79ba7",
+      "blake3": "b0c02e95128c0ac9261f2096484b942343f0231af657d089b003c0820b82be0e"
+    },
+    {
+      "path": "references/report-templates/optimization-report.structural-only-fixture.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2995,
+      "sha256": "e9cc05f5a1fc66e21456a4710559e056ab283cd6e181e4ed9690c639083e1772",
+      "blake3": "916e1f928916dcd06adb908c7e21e52dab95944c66c8fa16aa42a87492dee162"
+    },
+    {
+      "path": "references/report-templates/render_preview.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8420,
+      "sha256": "b13efc4b120e09ef58f21a576b49e043039390ee79be3a81a7dd84511460c094",
+      "blake3": "acad72485fc6dde5ea4b0b60e62c0738fc05d17daf449e276ae437b4a51d695e"
+    },
+    {
+      "path": "references/runtime-artifact-token-budget.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3915,
+      "sha256": "42ca593461ccbdd9cdbe7684af4deea53058ac5c189be893a03833860320cb88",
+      "blake3": "1578a0f5c3f449a2d71057cbf0ef08fa256fec51dd55eb406cad53ea991d75a1"
+    },
+    {
+      "path": "references/setup-usd-performance-tuning",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13822,
+      "sha256": "90db915febfec14f3c1fe6c7ce9cd278c54f7eae77b7001f04fa631cc3cd17bd",
+      "blake3": "0c4ac0eccc631bcced172da98a53d9dfc8e3749a60fee06404faeb2c7a078b16"
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references/install-asset-validator-standalone",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references/install-asset-validator-standalone/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3973,
+      "sha256": "9d701f5c85e18079a7772b57c8e5d9b4c965ceafd043c58f28044a080eca2ab3",
+      "blake3": "28e9bc5d793537d66a98c4e8a2bce6a7cb59c22bfc8c3f9967e2bd06edd6d3ec"
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references/install-kit",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references/install-kit/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2622,
+      "sha256": "3574482b2a50376c14e64be35934c32caee93ef42acb310fb825af01ffee98d7",
+      "blake3": "3e7bfb5816ebb49696625e75c75cc82c16ca9d0da883012b8be94714256e369c"
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references/install-so-standalone",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references/install-so-standalone/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11507,
+      "sha256": "56cdc4684e3de6088d6a6248fab420dc11dd567fc69bf4fffe687cd7be9e4e08",
+      "blake3": "c71a2b9b119da5a6c553a8ea7ed48512d74fa04ddc5b3e5bb320105453362b3b"
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references/install-so-via-kit",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references/install-so-via-kit/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3738,
+      "sha256": "42c709ad33e07d8e6707d73b6f424a8f6b0e33bbf0144366ba0184170435e11c",
+      "blake3": "1e13f30f10fb6e9d4eadd71c9a519d9a7f45b6f478baa5af460d456649015ad7"
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references/kit-discovery.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3403,
+      "sha256": "f0c820b483d5f0ba5433f643abb99f8424e380c10b577e247faa605cd2fe1f21",
+      "blake3": "b4bf7a6058fb382aa3b567e04adaa338d4433b02f04deaff9e7789280ddaa961"
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references/runtime-context-header.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14397,
+      "sha256": "21209945a2aa41cdadf7dded4dc9fe97cdabf2de9c8eb32426023a82486e259c",
+      "blake3": "c3a861110606cff64b8a45d1f01752f49c04c29ec500cd2bb27b77cbd4b3e8e1"
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references/runtime-probe.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4583,
+      "sha256": "6763515df6d9017bdaae69f392ea8e33b4c801d9cb90777b234110e2ea0bcd10",
+      "blake3": "7f85af212f97727b43d8d870e124c5af221227690e3ffd0c02a4a32f55c563b3"
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references/standalone-runtime.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2779,
+      "sha256": "12bd46dd3b62a2a1450c70d51348ef294451aaac359b0a5afd0996ccd2ddf669",
+      "blake3": "c8b621d2c7b100bebb7c24ccd7001d3877ff5a4c4817fa415636a071ad7f6749"
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/scripts/probe-snapshot.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1767,
+      "sha256": "e89025afd79e07064df84f3c17e80871067769434355094140a39260dd64ca48",
+      "blake3": "ee07e591ae0c5d1c8b83fcd723fb6a7941a18295ea7f57cc980ba3584a9f4595"
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/scripts/setup-preflight.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5156,
+      "sha256": "25b05f60c50b8e38c4733ab81ce960fb1cff2c48c2d6463102d7f455dc5b751f",
+      "blake3": "08276cfaebb9ff65b7f797431eb514e4325998f699cd82c3c481417a683f92a8"
+    },
+    {
+      "path": "references/skill-map.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6443,
+      "sha256": "041493859e88a4eac6dcea887b2ee93bb1e3051095bee4b5f2b3d3820902327a",
+      "blake3": "da0dc072377176cad6bbf1ee466764889217d9bd1f57c2bbcee1b705ca3f6b93"
+    },
+    {
+      "path": "references/so-run-operations",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/so-run-operations/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3674,
+      "sha256": "174b9e5f6120d0d9b60744382a1b511449a3892fbd58590ac01acc1a34833b39",
+      "blake3": "1c176cfafe9ea2aabe0637abdc983a546a116164d361fde8bcb0b5c4bf0f50cc"
+    },
+    {
+      "path": "references/so-run-operations/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/so-run-operations/references/batch-mode.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4942,
+      "sha256": "4febfbb53ba70563cef867c6843cc318c96baed43ff6b4b5a782ecbe7ed05558",
+      "blake3": "d0d41a26393b696a897e235b1c4e7c5e25792952a40b967df1010b561e65c422"
+    },
+    {
+      "path": "references/so-run-operations/references/config-from-evidence.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4541,
+      "sha256": "a2b50fcb3d1a16186708b444c03ef891b3567f28ed31ef2cd64bea1e4b4c8ae2",
+      "blake3": "7f3c6a034fef60c4eee7deb30fca61ba5514321f2aea56dbd241e2ace52a95cc"
+    },
+    {
+      "path": "references/so-run-operations/references/invocation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6386,
+      "sha256": "1f5d54a89ac49b04767f453ee31363d371bc30a5e6214670a7ebb0ac3afe87c3",
+      "blake3": "7a737bb7180d4b2ad1099012b0e1ad4d63bb4677df50625a2e18cb083b6089f1"
+    },
+    {
+      "path": "references/so-run-operations/references/operation-safety.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8909,
+      "sha256": "e3d5d00c4a3ebc169752722b06e7316529f954760a6c1ed70ce379dfe9b23705",
+      "blake3": "9a016348c9f28dd2f7f2662897859089621ac01a5bde765dc884a018193fb5ac"
+    },
+    {
+      "path": "references/so-run-operations/references/pipelines.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2409,
+      "sha256": "f70442666e1f64c11ec164cd626be92d865ad86e187ad9462802711fc877f7ad",
+      "blake3": "533cbb17cdde660f4736ccb8804155891c2267fb38a61a3496fa03f2db97e304"
+    },
+    {
+      "path": "references/so-run-operations/references/so-create-proxy",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/so-run-operations/references/so-create-proxy/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1774,
+      "sha256": "db4b2d3ba6277980c26f5eb0128a5a6da84d0c107d0d549cf92e3c546cea8a0b",
+      "blake3": "2539afb1361de97df5f98381a97afb0de95ebd94ab37a0dc73ccba026328d4ce"
+    },
+    {
+      "path": "references/so-run-operations/references/so-create-proxy/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/so-run-operations/references/so-create-proxy/references/bounding-box-proxy-modes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1558,
+      "sha256": "eb2d304edff2bee7131b22cd0ac77737e357d1569fd3a1d99f2d2f64a9dcd0de",
+      "blake3": "7eaa97e2bae6905a3355650d579e11b1d19413b1b234543dfa59a3de1e25e74b"
+    },
+    {
+      "path": "references/so-run-operations/references/so-create-proxy/references/decimate-step-recipes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1530,
+      "sha256": "57ee8de94532a78992eb5179067e2341963a36b9b35c6f1e4f1b9cb03ce4f6ff",
+      "blake3": "6684242e625b78feb92d2b3cea27884ac19144b32a778e3890820f13de0e13e1"
+    },
+    {
+      "path": "references/so-run-operations/references/so-create-proxy/references/decimation-tuning.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1541,
+      "sha256": "3797768255f92b55509c02a03178aabea48faf7d5f79b3f0a3d991f48304f822",
+      "blake3": "8843c73ef133a1080e2b9ade7adcb1d8a6d7a09bc5bf84781e760649ad62dc92"
+    },
+    {
+      "path": "references/so-run-operations/references/so-create-proxy/references/proxy-config-recipes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1289,
+      "sha256": "9d38cbcf2c15fe8f3d29e232026133b4f904ec9a7cc42918b25a9e3dfe8a6977",
+      "blake3": "b761ecf9294c73693805950a39a4445e8d0074d678cc610a29c0ba834939b06e"
+    },
+    {
+      "path": "references/so-run-operations/references/units-and-tolerances.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3914,
+      "sha256": "960c4b085e1d87371c0689e5cf4772a283813fafde4dea8c6632f91f5ec50378",
+      "blake3": "6ed95c1a559ef51ed3c7f26d03bc668a07043e656cdd88f0527210e522f12bee"
+    },
+    {
+      "path": "references/upstreams",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/upstreams/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1095,
+      "sha256": "789aa8e0ad396763575ae96170a8adf9b86c0e9a5e19b8eb8f48a1fe2e156e20",
+      "blake3": "87c4ff48e1c8d57b56b2571a350ef07dcc527ade0454d0c03d65be03d600201b"
+    },
+    {
+      "path": "references/upstreams/usd-optimize.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3178,
+      "sha256": "91addaab85930896741490c30f79c2d4ad0e6950e43dcf30d7d0f002cd04666d",
+      "blake3": "38473f25c8315d68b5b52f475ef90bb5551304a6b03b0184bfbfea9dfe88e456"
+    },
+    {
+      "path": "references/usd-structure-assessment",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25269,
+      "sha256": "6fad670df271b17e129f7e635f948d451615487d54afa9241d34ed5c5a1f44b3",
+      "blake3": "493db3279f35d47965b7c7e3a78483acc32810d9bac6c162df7d412fb20f6336"
+    },
+    {
+      "path": "references/usd-structure-assessment/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/apply-restructure",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/apply-restructure/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15543,
+      "sha256": "3dac1138eeb997cde9550ee5f9237ef4e1f88c0b0ed17f0166c8ed8f4bcd5f53",
+      "blake3": "f34866f9aa59b7323d0bedb492f7dfea3e8df39c91d005e3435cac5bb43f4467"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/apply-restructure/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/apply-restructure/references/hierarchy-dedupe-rewrite-tool-spec.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8716,
+      "sha256": "7530190c9074c402908a6c8a30274e884a5437d6c82bb27508bfc4a8d0e07252",
+      "blake3": "bf4c43002e3dfcb5442a35baed6e94f4e0e9c6499595266fc6635aca3c30d824"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/apply-restructure/references/ref-remap-mode.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2497,
+      "sha256": "d42f50e05024092b7c3c333d36cab98c1d050a77015bc3749a8d142507c9b0a1",
+      "blake3": "53226c0945251eaf58690eb33c5336b26b79863bc583a0bce0b95085f331b55a"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/apply-restructure/references/restructure-mode.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8531,
+      "sha256": "300a8a875fd6fcd9d1b79c40264b77bdd7a33b93eb11beeb5397daf935df0627",
+      "blake3": "a3849b9731c07865461409cd7dcbb0636f729f83448106cecedae21fc0809ad6"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/apply-restructure/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/apply-restructure/scripts/apply-restructure-manifest.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3726,
+      "sha256": "b965c041e8755b5eb0cb201806e980ae2b2317ea52115e5bc20b91778a0477c6",
+      "blake3": "c7a95455f4056af4ff819bc3a5bcb2cc0a87ce39ab1cfbbc2b9112c70f1fc90b"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/asset-structure-principles.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 61518,
+      "sha256": "12061a816db217e06ab8d0ee5b25ada99bf141bccaae116bd3d2c654f1d7fe46",
+      "blake3": "83a6da3d054fdf3debde27ac9e1db8e25afd64756ef79b05d9f8b2ad8f20039f"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/composition-audit.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4929,
+      "sha256": "c7b6a9e07a7c522d584afe33ec97a6d7dc6eee3532c268a8aefa056c0bd3393f",
+      "blake3": "f6b4ff112431a3b701d56fa328536104f21ed7bd82cb4a23c289fd23f463e249"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/factory-level-structuring.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24625,
+      "sha256": "2621a69a3ebcea4eeaf9db7c32ef04cc3c625e0d005704a2547a524cd6b954a5",
+      "blake3": "7b0921987362c89dc2edf5ddc5cc222e89d96231bbd3d62abc2b875813b19cf4"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/instancing-readiness",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/instancing-readiness/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8745,
+      "sha256": "5b393ef0213deabf3a57dfc627cd9013e5a28f6bb11328d110fa77368cb19f62",
+      "blake3": "1b60c1abcfaf121af48d7237629631966cb2eb7190cfbf46a2360c327fad43db"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/instancing-readiness/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/instancing-readiness/references/instancing-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 46076,
+      "sha256": "5c2c5c35d7eb9b6234126ce430d0920fcf8270914c79491695a77e3dd3360bcd",
+      "blake3": "ee0557c1f2eddac6048f50ada40a92be61390b4f50b4d0de7e99a125c7013eb7"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/instancing-readiness/references/instancing-tradeoffs.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5712,
+      "sha256": "7553859ee15c57d9499dd6ceca316702e540903ec0b33a3a55167ab7deb36009",
+      "blake3": "d802e50305550bfbbda6fbe9964e47ab2d927e3ca78d917a7e99c23eec1a700d"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/layer-health.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3224,
+      "sha256": "83ac4ecccf1b5cd77d8dd9c05d1db262517415eae44933043ccc3c2f67ea71d0",
+      "blake3": "1c02a528f0eaedee0dc877b8537b52bb1d059b5eb582a259bfc601b98a974a34"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/optimization-tradeoffs.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8831,
+      "sha256": "3bc9a4486c1dc574ff5f36c2a4bb42e9592b4e26ce597da478527625830ba29d",
+      "blake3": "d51a7e42b04690e19273e01e56477acd70594d38d383456d1695e324fa9224fd"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/restructure-decision",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/restructure-decision/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16918,
+      "sha256": "612a6bab13a0b28d9b3fd5879c7311067f5321c799166f8051cb6cd65f32ac3e",
+      "blake3": "4c9e16737758936d35ae6c6e25d93e04045eb5b988ca8b36d183139f927d87af"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-edit-target-planner",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-edit-target-planner/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6478,
+      "sha256": "64df2a96008acc2b84a980ce5cfdcd79f602c521a0faeadf1bc35fd1aaf8b44d",
+      "blake3": "92dc23a40bff65e329334ccbf9c84671c5d7040721eab25876d304b79b1884e3"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-edit-target-planner/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-edit-target-planner/references/output-saving.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2163,
+      "sha256": "5c01e3eaa536cf11b307340916a99d2b5533635940bb124657cf68fe6e82fa6d",
+      "blake3": "f22af85c8a9a4199e76fa7d52793a082dec11b6119d2df1871267133391309d1"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-edit-target-planner/references/variants-payloads.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4253,
+      "sha256": "eb2211b323418af37be8ea20763d9ba4b7de61562f8395ac683f98de3186059c",
+      "blake3": "5ae1ae2dcbaf37e4cab48280372c308e7c55d422e91a43d9e6cc081541c72e6e"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-hierarchy-dedupe-candidates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-hierarchy-dedupe-candidates/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5830,
+      "sha256": "3184cb370eb7043e61e4637ff4f70bd89d2a228a635e36ad8f3d729fd84f86d5",
+      "blake3": "015f8696641f8a2a18f23a49f2153ba430d4f8bb90ec9c9f585635f0ada46915"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-hierarchy-dedupe-candidates/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-hierarchy-dedupe-candidates/references/instance-candidate-finder-spec.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 35044,
+      "sha256": "f17f54a5085337d7155eaf28e075c79b481ff2a4cf44a390b8cdc44c939c16f4",
+      "blake3": "7e84472277d5780879f3f6a5a105b0ef3054759853b1f842bb08dfcffe3a7e45"
+    },
+    {
+      "path": "references/usd-structure-assessment/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/scripts/audit-report.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2395,
+      "sha256": "2651ff46d8fbfceea8aa2a790897963680dda92939d3f64e104ac835dcd06d1b",
+      "blake3": "1bfa9fd7b926a4c652ded310f488555e437c2e5a97519d2478f6371fbbe7b532"
+    },
+    {
+      "path": "references/usd-structure-assessment/scripts/optimization-plan.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1503,
+      "sha256": "1c8f89c501f27144b18c4f6af3ba31cf5c779a16ca22b95492e552624c3adfc5",
+      "blake3": "12f5283cfac25aa02ae2d2a2850e9126e7b56fa80098b1eedd0d52cccfc7a839"
+    },
+    {
+      "path": "references/usd-structure-assessment/scripts/usd-structure-assessment-report.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9769,
+      "sha256": "d3ebef411152dcaaec1b7ee6419c2d428aacae6b5e939153c5a28fd0c2e13e76",
+      "blake3": "677a05ccd92bba081f2ab90dfc6e59968d47dc29414080acc8fcd05c69590de5"
+    },
+    {
+      "path": "references/usd-validation-runner",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-validation-runner/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28391,
+      "sha256": "682a3f8eb49e25128054563f05b5755f1a059abb03b5b5dbce2da9bfff3ffe92",
+      "blake3": "125010526f6a04078db12a350f7b4f94dbb08737761840499ab15ea0c4feadab"
+    },
+    {
+      "path": "references/usd-validation-runner/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-validation-runner/references/so-interpret-validators",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-validation-runner/references/so-interpret-validators/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3692,
+      "sha256": "bd70b94d065545d0481cdc0dc3beae9a106a9bbc1c2d543ee225610b361dab27",
+      "blake3": "50c9a01c795b4fcde8e97159d8d305e8474578e5f3a9fcac97f5e6436d967e1c"
+    },
+    {
+      "path": "references/usd-validation-runner/references/so-interpret-validators/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-validation-runner/references/so-interpret-validators/references/follow-up-queries.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5109,
+      "sha256": "e94c79122b6796b1a183f0d64551341c2d00bfdd011d76bde3a0797db420b5a0",
+      "blake3": "f2ef81eecb65a1bd154e9d9ce7f7db49792bfd505666dc3883a5f0ba8231d1cd"
+    },
+    {
+      "path": "references/usd-validation-runner/references/so-interpret-validators/references/rule-reference.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8973,
+      "sha256": "b3034c42c5ee64cbff7b7bb8f4b399e4584745d412a77dae1f48b208528e57f0",
+      "blake3": "0ee6a871abaa9b679c2ae1d84a777870a73530673c8865c84863c7aef3377fdd"
+    },
+    {
+      "path": "references/usd-validation-runner/references/so-run-validators",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-validation-runner/references/so-run-validators/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3006,
+      "sha256": "3b33f0a68a17d826994d7b73d7978180934ea756d2accf7770be1b6ce9e82ec6",
+      "blake3": "362ac99b9763c8f963cdba7d06ceb8b293423fc16ec17999472ed1e327f4c162"
+    },
+    {
+      "path": "references/usd-validation-runner/references/so-run-validators/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-validation-runner/references/so-run-validators/references/infrastructure.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1683,
+      "sha256": "f614422156b7b044675bc8c50e0f43b1674176dc306389a6f0ff876c14269bb6",
+      "blake3": "da84eba8361c9679358020d864c7753bfed7c69adec2b866a98db84e2b0c4796"
+    },
+    {
+      "path": "references/usd-validation-runner/references/validate-usd-asset-validator.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5470,
+      "sha256": "e53e6857655600dc4ac1852193a62efbf339103f6dc5da56f6f9ea79eb44fbec",
+      "blake3": "12b0bfc2992f52b7b46fa94082ce0d97901fd365d59bfd1a2dc208d61a15ebe6"
+    },
+    {
+      "path": "references/usd-validation-runner/references/validator-concepts.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 31384,
+      "sha256": "f88a4d3eda299d867030800f74b1d806ff2b8d2d03553b72ba231605d3ceb05b",
+      "blake3": "50c546d0370624422764b306c931aca4b60f8ec0642c26b66f4e8235ce76e5c5"
+    },
+    {
+      "path": "references/usd-validation-runner/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-validation-runner/scripts/usd_validation_executor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23684,
+      "sha256": "2fdaa43f2873de6136540db9e506c7eb26b4ef05fd0696f9b0d21f72d7663310",
+      "blake3": "5f1f10e16d359af87554d5f377251d33b14268b16cee9d0a4cbbe4db38566b5c"
+    },
+    {
+      "path": "references/usd-validation-runner/scripts/validation-report.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3622,
+      "sha256": "9c99af279e2d30f870ff295dd77fdc0b6054af3012a2d27edd8fde62f043a408",
+      "blake3": "6276f7badaec32965bbca4545e855365e05fcbffb35c66d5d2c091b6e84811fd"
+    },
+    {
+      "path": "references/usd-validation-runner/scripts/validation-scope-note.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2355,
+      "sha256": "f5cb4ae7d9d795f3b80aab2bd1cbb6c37773bc2f15de636af173bd18b44aca01",
+      "blake3": "ce92d6ad2da1e5565baafe00815890fe2d1fed98490d85e38eb600ef9dcedba6"
+    },
+    {
+      "path": "references/usd-validation-runner/scripts/validator-concepts.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3268,
+      "sha256": "cf525ed630ffc3a02c8090bd4755d4d340fa127be0325b2bf79900a6a781dca7",
+      "blake3": "7d4d2451dd8bd304bad9328081dd9b930a71e36ea806e5d625c41effe3147829"
+    },
+    {
+      "path": "references/workflow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30522,
+      "sha256": "e729613bac4cfddff2cf76764013f6df08d28f6f2aaec33995554d58519e575e",
+      "blake3": "22329cb41188fe0e5cb167608950210d4b9fc6bfc37b397220ff028e5d81f1e1"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3456,
+      "sha256": "775ef9322d330b2def03e3c74c8dc33cfda411cd9494ba3bf84518d81d75e484",
+      "blake3": "84dea13f33d9be1559b61f76c80e87772d6ba39ff8a8a0930fb2a8ef66c19f7f"
+    },
+    {
+      "path": "skill.oms.sig",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 43189,
+      "sha256": "e3d2d4522324707a2ef521b6d9ec5f003a2433273af62ccfc2711e6130426956",
+      "blake3": "dca5544b3cf1b5f6a2c61237394d6e89a5ed4a732c99889ed649b88fe15dcd52"
+    }
+  ]
+}

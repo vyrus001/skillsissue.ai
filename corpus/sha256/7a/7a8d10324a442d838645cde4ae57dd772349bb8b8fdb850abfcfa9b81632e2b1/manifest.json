@@ -1,0 +1,283 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:7a8d10324a442d838645cde4ae57dd772349bb8b8fdb850abfcfa9b81632e2b1",
+  "sha256": "7a8d10324a442d838645cde4ae57dd772349bb8b8fdb850abfcfa9b81632e2b1",
+  "blake3": "f034bf92aceeaeb6d50ed0ed0b6d574039fac2317ab9e85ffb772304dd3f419c",
+  "size_bytes": 329352,
+  "file_count": 31,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 31598,
+      "sha256": "2176b90470fe5cb7bc1f0ea08b97faf3521515edbbb60a5183194863ed191dd3",
+      "blake3": "563c4a808d9c9efd0d47da582aa1ad4748bc8eafcf203ec37e2583ab99e9d421"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 131,
+      "sha256": "9fc317384e06e84408f78aef36d676074fd3dc927e965782fea8deee0911f6d4",
+      "blake3": "1fcf1e58ec9e16a6ccfa48543b9db3dce9cd9873ec1e6beb5d63a5fdb657bb1b"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/code-vocabulary.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15773,
+      "sha256": "efd76abdd614edf8d63c7d301eee791378dcc07945637a72860e5f5647cc730a",
+      "blake3": "fb624f6ef4cdddb2ef0f4afdc1c3e97613010eea086a476c3e81abf370680b90"
+    },
+    {
+      "path": "references/cut-catalog.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12761,
+      "sha256": "9efbade2be5b9b2acb7793a313cda8a63b11781400c05f4705e49096f1f27c3f",
+      "blake3": "e4bf15dc2de7eee1606d716c66d1a775ce4b1977ca3abc483ff83664ea4a3acf"
+    },
+    {
+      "path": "references/motion-language.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15818,
+      "sha256": "13be565b49eb1632c183d9d409973393111bce1289f321eddca36cf90133e581",
+      "blake3": "f8905e472b1848a6304d124d7e2f67e916fede931fd18fc5ec3c7dac1afe4969"
+    },
+    {
+      "path": "references/story-design.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28741,
+      "sha256": "99a38b7b5813337b6b234639b01a67ffa530d9296ec6f124f63e15f1250f6af5",
+      "blake3": "bbdd25f7eadbfafe6e117ece08525a177c543a02a60712905f3a042b9cc09900"
+    },
+    {
+      "path": "references/visual-design.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19977,
+      "sha256": "fd380ea892a0a45a08ae5641688b0aacda6122b0947890f5bfb548300c486e83",
+      "blake3": "e77a7fb9cef49c66e0963a7e72c37f7759606fc23218e959c76d969b2cfb5a12"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/assemble-index.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25273,
+      "sha256": "a9bcd053ec47fef2b0180f34e8a0b1f52e2fb8bacd7b1c1aed79829cecddb696",
+      "blake3": "c8cd6f05eaef1afc9a56b2e3fc73afd1d6355be827ad33c5551d7cb483aaa2b7"
+    },
+    {
+      "path": "scripts/audio.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11659,
+      "sha256": "02b492be79d71df9f1fd2088b28c6a413c16cf3be9f65a1ff453fa3bf3f2535f",
+      "blake3": "8e7e852d942191c51ec085007a51391a59ad2780bbb34152d04577899d1b374c"
+    },
+    {
+      "path": "scripts/build-frame.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27013,
+      "sha256": "415479581225e44fa53782018f8ed6f7c6263fd8788a998161a33ca9b3f48f0f",
+      "blake3": "37afdecc047d0df9c46f60e7544da7565ec28fbcd6489b556d782a0c9b3bc89d"
+    },
+    {
+      "path": "scripts/captions.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23489,
+      "sha256": "01ebf8d12cd99f3ab47c51c869b366e2a88778f9d39d9b88f95387911b7be5e2",
+      "blake3": "f721b845fa36eb73f7e0d804d46dcbcca10f2a900d260b92b014fca784d2b22d"
+    },
+    {
+      "path": "scripts/captions.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1720,
+      "sha256": "4e6bfb3736e928ce1ef3bc9808633f84f997a14462b09f219cdf29404e46f0d5",
+      "blake3": "c7b87e907b6b4cb8584aa23c0d5df13b5ec2da00ae750f95bff1dadd07910d76"
+    },
+    {
+      "path": "scripts/fetch-people-avatars.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6183,
+      "sha256": "c93e2554f697697d0f55e9b619c5acca87ce07c9c1b154855895ec1da0905184",
+      "blake3": "427ae70232b23613db739fa5ea82a859c4efe4384b013007ab7c988ee3e77f52"
+    },
+    {
+      "path": "scripts/fetch-pr.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9239,
+      "sha256": "64fe269e884058f05d3744d14eeac6c93041e0d74e9d91c1c32ad4a9fd9347ce",
+      "blake3": "c0d7688b73a62cb726d01063e2efae4a5d467e29d50f0933204b4bb4c117c46e"
+    },
+    {
+      "path": "scripts/frame-contract.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7456,
+      "sha256": "c6216b0aa7edd18ee9c267fe1d352d8ed54e3c8246cb7444dc65ead3c9ddf509",
+      "blake3": "d9fe97d82a9c6f79506edd81f334daf3f3e86a0b6af284b0226d97119f686e91"
+    },
+    {
+      "path": "scripts/frame-packets.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2517,
+      "sha256": "ab57ce331d57bf81bb30c8be8e02409df1016c9ddfe1b70b8e052dc9963b1c87",
+      "blake3": "50f394155b91e9b7e2a46690572d001f05b37c01d910f48ae698f0b2dd2c040a"
+    },
+    {
+      "path": "scripts/ingest.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22412,
+      "sha256": "4b41fe9d7f6f9e5fc7a541018442b186fb1ccb430e1c6e05b8e6cb41d87f185d",
+      "blake3": "f5e743c09e01594fb5d44b2dc9abf5b723aad9e57c5ebc18eefe913e6eca3b48"
+    },
+    {
+      "path": "scripts/lib",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/lib/assets.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2115,
+      "sha256": "bc3a9bdfa56035cfd85391251ca7c80ae575376c0d726d0fd449b3d235cd5546",
+      "blake3": "7d68685b80a44bab8cd88fdc09ac1f629b1e9bdf9ea1bb528e1f009befb24918"
+    },
+    {
+      "path": "scripts/lib/dimensions.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2279,
+      "sha256": "6d4b9603cfb212a8ebd65d74b1b1955636b49cdeaaf9763add02ff16d753b2d3",
+      "blake3": "256b6e5da0425f6d8c87f6e4d249bb92213ea1673fef7cd6d90321b9fde4393c"
+    },
+    {
+      "path": "scripts/lib/frame-contract.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2427,
+      "sha256": "1c7f7e97692ec66af59867cb6a6aedc7546b3f916f107ce20abd918ab16c954b",
+      "blake3": "b52dcabb5dd5a355842879316c8c32231adb7c9393e1817b1a0be7e8d69c07d1"
+    },
+    {
+      "path": "scripts/lib/pad-frame-duration.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1628,
+      "sha256": "733de1b9109c9db9963c6c083db54b2c045c6aba9dfadeb3188f1c456ee9b2c1",
+      "blake3": "da12adc835aacf7d9f838240feafc59a775a2416f8551e141bda36e1b2b112b0"
+    },
+    {
+      "path": "scripts/lib/storyboard.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8249,
+      "sha256": "351d22701a115165b99695fbba880caf652dce92d436815236a430db2da94039",
+      "blake3": "a67f72c5e32b544fae475eaf405e3216d4b644d4fac46a3b4353b4a9dcb4fb41"
+    },
+    {
+      "path": "scripts/lib/tokens.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9883,
+      "sha256": "48d23cdd744d8ea70479573aaecaca45dc5f15f6f7c24dd6c3007a5be631e67a",
+      "blake3": "9ff64ca5f2628c5d94e8b1db6acd13317f9c11fa5d493fb15f2c9a11653321ba"
+    },
+    {
+      "path": "scripts/lib/transition-registry.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1588,
+      "sha256": "a8baca4d865e20a8a0b713a303ea2228f1f82a7bee4eb581568782fe661add8d",
+      "blake3": "cbd02ef58100707f11145b6835602977bce13828c63cbf4ac4d29c4997d7cce8"
+    },
+    {
+      "path": "scripts/lib/transitions.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3905,
+      "sha256": "6fc520869fb41fbbf6a5291ef221186a64c3daa66dd8ebe612c782e01368e1e9",
+      "blake3": "b9c6d8d0c3cd2e4b87b6ea4286d5a3080da918ddfc322a38ed36b79148b3608a"
+    },
+    {
+      "path": "scripts/preflight.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1719,
+      "sha256": "adc660d7dcf7d87a8c1b2eeeef3c86131b1fb8e56800076f15e30304ff7e0c48",
+      "blake3": "2909059f5cdd739c89084e614ad77fc05f1030068df1a8a22cd6ef48bf97d15d"
+    },
+    {
+      "path": "scripts/project-dir.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2754,
+      "sha256": "8b95c616a710b63be3226437a56e4f10251aca2834493615f05d0d0ebfb4c3eb",
+      "blake3": "fd7992ae88db8076940c900e13ed49794eed6caaa25bbac0292801e9c6b9e0dc"
+    },
+    {
+      "path": "scripts/transitions.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15623,
+      "sha256": "0a53387d6c2f3a3d997b6f4003e2d4f905567e3dcae7cf5df9d41cc9d10103da",
+      "blake3": "a6caed644d20467521d502f57b22b857519eae356d8e4d46b278362441cd0ec0"
+    },
+    {
+      "path": "scripts/workflow-guardrails.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6044,
+      "sha256": "7e03a0264c2e0460029ebb755ff0f7bee6109329a55083297816038a8d684205",
+      "blake3": "45f184195873b920283076df2c600c9d32e358ca43c5e56c2269be0dcff9078c"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2419,
+      "sha256": "8ae1ff39adc7d3f01b6bfbddf1ca1080edad08ebd656a6614b48cc1e928a4ec1",
+      "blake3": "0bc06c27eb1625ede8e867b3b15a7f840218696bade26adb7f1851242a18e25c"
+    },
+    {
+      "path": "sub-agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "sub-agents/frame-worker.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6959,
+      "sha256": "f079fa0bc10b6c68874ad70a327e628f7c0a9f56daa79748f658e03b48e307f8",
+      "blake3": "ead36d0d71638571dc3ad14c46b8ebc9ec1773f88c53182be151b378444c7707"
+    }
+  ]
+}
