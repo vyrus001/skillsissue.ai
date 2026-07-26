@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:a89d31f9593acbe4e34e3408e434258e8952c02d9b4c582989529538d7a7782b",
+  "sha256": "a89d31f9593acbe4e34e3408e434258e8952c02d9b4c582989529538d7a7782b",
+  "blake3": "caea9528dfc15b31e8c23eb7275a22688eb88a84917bee83facae0cdf9ab8fc6",
+  "size_bytes": 139397,
+  "file_count": 13,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6817,
+      "sha256": "c35f45d9ff33561d1cb6bede85ba73b1a825639cbbe3d835d33d12660e42cc5a",
+      "blake3": "8db4ea5dfde5ba5d359897116f0c64f4f6ec820e88083ac1e04ed11b8646410f"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 124,
+      "sha256": "7e786cbd831d41f5b8bc18806a7867ac80df0a7fad000be077c5b4a85fbf6600",
+      "blake3": "6d213f4b1e217ace94189467418e3d347b44154c718195e4ca8ae0a92e85a9d8"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/templates/brand-guidelines-template.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1738,
+      "sha256": "bee509bba8666761efd94b875a8564c444274a209d256370c0b62ac1d60cdfbb",
+      "blake3": "300d1246c0d58e2f017c4684e54a2d5d585a61d7debae36af4cc0a6ef90c30a8"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/accessibility-guidelines.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12850,
+      "sha256": "2b42060ac1d508608e0690964e54f85b264fa252c5ca3f79c6aaf26444caf2fa",
+      "blake3": "5bcdce93e927731e3911bb067ec11aed6809802992a787be7893fc428c292b92"
+    },
+    {
+      "path": "references/design-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10108,
+      "sha256": "29a878af22781b1d9f992cac1c575aaf48177b376d0ba70afd2f428d5b2ffd1d",
+      "blake3": "2b1936c8d8b00f9565a9cb5ac69b5348d8fada399036bd5c319302500c08f76e"
+    },
+    {
+      "path": "references/export-formats.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11163,
+      "sha256": "43fae29e8d7ea16acf295a47dfa47bbef35db381b11c96891db2d25e148142d8",
+      "blake3": "55a2dfefdbbe802142cf87b6d06d765efa2eb6383729678d0fc7fc095946f60f"
+    },
+    {
+      "path": "references/figma-api-reference.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7256,
+      "sha256": "9edc0d6741af8066d1a0de52b8ff27ceffa3c4b1c0d55c363cb4cd62a4c9801e",
+      "blake3": "cf9b7275e3c253cb80464f3608822615b41cac59c6348b41bedd5e5a6d3d35a9"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 39,
+      "sha256": "9b4e65f5ec3c043848c901e7e46e7a1bf480cc5042f1866c4a20bd7468be7844",
+      "blake3": "4c172843a08aa455574e0b29ec350e5a43ae3993bb6dbea672ec373833d50edd"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/accessibility_checker.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22014,
+      "sha256": "5c0c2a43462a7ffeb16d2c32d77e757e22834b9243f99ac37da47e57bc91bc42",
+      "blake3": "e51a5a0d8ce666fd8bd19cc360589315103d3948a1b4976e7d8e16451f13a097"
+    },
+    {
+      "path": "scripts/export_manager.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22132,
+      "sha256": "b9510f830d10844a2e8cee97cacdc62811b7f93f72d1795506097efeb76994cc",
+      "blake3": "3b149468f748e579d89d601c4e17fa28a3af22e31f3528eaa3c798848e947df6"
+    },
+    {
+      "path": "scripts/figma_client.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12360,
+      "sha256": "e034e92891ef0b3afe5bd45cd313758cd94c21084121a03e7aa3b86a3d850c73",
+      "blake3": "8adc4252d5357e2997c60940d0366e9759179aeb83b522a8e016e42d873c8fa6"
+    },
+    {
+      "path": "scripts/style_auditor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30444,
+      "sha256": "89d2ca1ed92ec771a6433d8acf0739983133c2eccd9ebc885811d5e7540c0d88",
+      "blake3": "9cb0b65ab3be1866e32dcd38971b481fb1b4047fe255270cbdb58bcc21d3a36c"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2352,
+      "sha256": "df283bbffaef18652419dc69c4f6ff61ea5bfb7659624e0262bebb6a0e40e464",
+      "blake3": "2b92ff0f42fb8c1bb5d1b402bf3d62382cebce51ce3c8c5285bcd418f8ad2ea0"
+    }
+  ]
+}
