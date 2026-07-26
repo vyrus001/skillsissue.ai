@@ -1,0 +1,283 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:13d75a71b2f7e6d680ca1b460994498ce54f2824ed96132139528c22a86c9324",
+  "sha256": "13d75a71b2f7e6d680ca1b460994498ce54f2824ed96132139528c22a86c9324",
+  "blake3": "646788fcc77aa7e625f183bba113359856d1c198149fdc248a2f907f82d54b1b",
+  "size_bytes": 208943,
+  "file_count": 31,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7639,
+      "sha256": "0ce5e8d60f208f74ace33e717e3335bd4ee4d2c4b5060929f277d6aa5bd97640",
+      "blake3": "10e669e61862d83588c8169dbf63933de99f0a7b2ae405d371de570d2e42e43e"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20740,
+      "sha256": "849e47b7875923423f6b4c6804ffb13c41efd3032697a5697968d89136c7d606",
+      "blake3": "7798e2a737c798567f600111272148a7bc978bf8051450e0769e60fe39ba5f78"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 133,
+      "sha256": "ae096bbcf62f1cdb0369469c8aa035cd8c26e404ea2fa67685ff0025cbc755de",
+      "blake3": "2bf1df90e9be9a5cf5923fc70a04ae4ea22c1f024248763dd5e490fe59a2edd4"
+    },
+    {
+      "path": "odoo_skill",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "odoo_skill/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1698,
+      "sha256": "8cd346ff520dd3e6ba9d76e1ab56314e9e4631f5d2c27cbcc15c2e00d254756a",
+      "blake3": "80a4abe16cf6187b8e7c7635b651631371f1856d736ec8d90c8fa27b8cf70c7c"
+    },
+    {
+      "path": "odoo_skill/client.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12398,
+      "sha256": "86f77de3ce8d5f783a6f49ad6fb120867970753388669fd7e71d4efb8f8923fa",
+      "blake3": "aa82d994f2db7acc025253d80a94cdd7c809016875c2a265de6c0d2983fbd9cf"
+    },
+    {
+      "path": "odoo_skill/config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5724,
+      "sha256": "0742e4a176c417f5a6f3a0ed26e528313a43af0b4092a7839cd5af092f826a57",
+      "blake3": "60b9bf1ac0dbea24d9ff1b9e1c0a8db3d59b7cc5acfc369cd4cd87cdd8d99a95"
+    },
+    {
+      "path": "odoo_skill/errors.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4228,
+      "sha256": "e2b9b756b45aacd04c9ebbb88bb78aabdbf3b72e8dcc5db7b880c82626f687e3",
+      "blake3": "226433205b20facdfb81f3ae3fdb172c10222a8c67dccc9f765999c55d083e97"
+    },
+    {
+      "path": "odoo_skill/models",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "odoo_skill/models/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 680,
+      "sha256": "3bc59981003c86225d2ec2e1c2cb52ef4b1db17a348db8f7182dc4b9e658aa7b",
+      "blake3": "8ce0b6390ba8fc9515e472732f24dbb796214602c889a15c460876b2d72c7e45"
+    },
+    {
+      "path": "odoo_skill/models/calendar_ops.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6737,
+      "sha256": "8b6a6a4f5a40f5a245eb5293112975d67c8cab97da741ac3a52b0db2032016b7",
+      "blake3": "27e9dec1f257afe03bbe7723661cc1e3c56631dc75c40ba98835f5a36410dba3"
+    },
+    {
+      "path": "odoo_skill/models/crm.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6885,
+      "sha256": "fc503f9847c9240824a773c69762e7f30ae2dcd741fef88b479abbea6c04448d",
+      "blake3": "f03115038d2c9a4e6e8894257c706aea35161940edd573a0f2a8732a8665492a"
+    },
+    {
+      "path": "odoo_skill/models/ecommerce.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4706,
+      "sha256": "643a54f579169954098dc7556345a2d97323be191108c8b0fe835c2dc8329133",
+      "blake3": "2c2be50562e306d2ce7373e3670bacde213e9c83e8916fd86738dc5508ea4832"
+    },
+    {
+      "path": "odoo_skill/models/fleet.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9289,
+      "sha256": "4fc0451bab1e1812816fd47d617cbf9fec0e59f746d999d62fd9bb6ce2640aa0",
+      "blake3": "7f9e78f731c5acf5a5e5073e58a85a9e293a3de29d82eb0ec6860dc1b52fc702"
+    },
+    {
+      "path": "odoo_skill/models/hr.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13211,
+      "sha256": "1d2b8dc580a9fdcca37cfac5e34bf791dac70c8696e672ceb7d9651120ae7a7b",
+      "blake3": "2e3c5ccd44d957af40ce8e114d56c7775597929f89f3a3d85ece3740a94bfdda"
+    },
+    {
+      "path": "odoo_skill/models/inventory.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5284,
+      "sha256": "6f6dc9ea669f4b132af97414598ef8615a4538674dcf2dec306acada7142fa76",
+      "blake3": "435167c0014d3f229c92cf8a0d8b388c4cef4a86ae5e6173c5d9246659e19899"
+    },
+    {
+      "path": "odoo_skill/models/invoice.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5498,
+      "sha256": "678a432e80ee5a84d0e4f3cf74ddf877555b90a1b6c26c493a41b596befac4be",
+      "blake3": "4d5ff6dcdb99230fb2f8eb97002dcb3c81cc8cb03c15c9cb4257fff6921a8adf"
+    },
+    {
+      "path": "odoo_skill/models/manufacturing.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8939,
+      "sha256": "4b96e90ebb99760ed200859288cc1f68e89ba0fe2315d8629ddedc5d974f04b2",
+      "blake3": "c02c121487770e2e5c0602af9a99a31de2a3535780294fcf3a668cf69dabb7c5"
+    },
+    {
+      "path": "odoo_skill/models/partner.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5280,
+      "sha256": "fa51222c6e51f77a3839c8f5bf5c03374a092bec91cf4029546d9c46843a9fcb",
+      "blake3": "b1a6d9d5da340781ded1e2d9034e202a7a878c98daf674648bc1529b45af8e31"
+    },
+    {
+      "path": "odoo_skill/models/project.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10715,
+      "sha256": "21eedf10448183e2ed123c08a291f078cc53647beaee6031a578792e4db69ec3",
+      "blake3": "a4f116fbcaba93ac191cd2c2d76f3f29de57c5f76c416803360f4d4ad843de1f"
+    },
+    {
+      "path": "odoo_skill/models/purchase.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8670,
+      "sha256": "df4800e569631f3cc6f8bb201ba002230d84fde2049b9b3f510fb76f5f6a8b01",
+      "blake3": "fca58cc21a4147931ccd116355c01b9ce5378818c992dc8ec9fab9f5b628039c"
+    },
+    {
+      "path": "odoo_skill/models/sale_order.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5802,
+      "sha256": "c2da5db5e77c67c32ba8f131ac739f93310058260a5f1ccfc4db3b7bc661b3e1",
+      "blake3": "f4735d638ccd807f62ea4fe39bf3c96c2971deb11f38eddddf374466da27d2f8"
+    },
+    {
+      "path": "odoo_skill/retry.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3463,
+      "sha256": "f6740c64657c7ef81a3f2a1ea26b3f77c075ca830b09352a485034de28a67514",
+      "blake3": "ddc514f48e14314bedd9fd6d95b37d07f8e2ca301b6c37585c8afcf953e5aac4"
+    },
+    {
+      "path": "odoo_skill/smart_actions.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23219,
+      "sha256": "9094e00f52ae50388137e5e9438cb5453a20280e4425a55f7c73d4e4f3184db8",
+      "blake3": "c897fce4d9a6686d799345b7730f68a9d7057b09b36e42eff746f3cfc7a74900"
+    },
+    {
+      "path": "odoo_skill/sync",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "odoo_skill/sync/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 180,
+      "sha256": "2a76b3d5211861a8e6c6cfb1beeee8fbd33aeb174a7bf1e56bfbceafa636ef06",
+      "blake3": "f08bbed00b6d4f79a5aeec0a03e7ea1054af7d78ee8e550d6864578f25eab60a"
+    },
+    {
+      "path": "odoo_skill/sync/poller.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7646,
+      "sha256": "077ed62bbe73589e4937d82f085dbee769974cb8b27c7208c823610e80e393f1",
+      "blake3": "51028c6aca03d356dcf902913e2ad921d2ece7d7bebc4a55b0939e2640e293f1"
+    },
+    {
+      "path": "odoo_skill/sync/webhook.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6415,
+      "sha256": "bbf56c2dce108510aa48da5b4658fd6fa9f2cf1da5333704f92eb278b9296016",
+      "blake3": "c02619993c4251b0e29c0adbc85a7df398c02c9cbd2ab72f5dc0142b27877d89"
+    },
+    {
+      "path": "odoo_skill/utils",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "odoo_skill/utils/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1084,
+      "sha256": "1ab6da813ed5929cbbea72bd2dacd7a29888ee200e0c9bf8991de68a3485c3e8",
+      "blake3": "324b3a482cc73f213b2f919f1148593960a7c9190660bd9dc752ab9309e8d314"
+    },
+    {
+      "path": "odoo_skill/utils/formatting.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13765,
+      "sha256": "955e1d4f88c28cb6774f9d74a5682fd36030f666f69ac33c018df4a0d9f89b99",
+      "blake3": "2715cdad827e0679d615084fe39174b681cd97fb17f7ec623260d88d63f24018"
+    },
+    {
+      "path": "odoo_skill/utils/validators.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5854,
+      "sha256": "b30d6d782d14cb0507d0249d1bdd0b00298b7fbea0332d8fc961d81a9e426c7d",
+      "blake3": "fa5515735f6b25e1f41b3ff3e26ee56d105145bc4f9ff8901e805459bd90b3c4"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 643,
+      "sha256": "e95c61859b3ca87c7b4f8c1e0d8bc3742a67b2147786261494aca6be8602cb07",
+      "blake3": "866c96c9070d3bf00229668e366229475b8ec7e7e18511327c0662abc2cafff4"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 288,
+      "sha256": "e0e272a30c9ad0bbe3b9d1f3c600a712f81914ad55745c645aa64dfadfbfcf68",
+      "blake3": "92d4ed3e1b8fc0e629d1273a65e5c581f4ccfd8a112f7258910139b219a443fa"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2130,
+      "sha256": "9334f663fe6c5083c267bd17c64a782a5e0e8a46a4f9d6d7e66c20df6f16a63f",
+      "blake3": "ac3861ad255b524e9d8e77a802b0596a8fb7218d101c2488656b9532e8cf793d"
+    }
+  ]
+}
