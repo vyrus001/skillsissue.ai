@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:fe20e8c8177053615ef23815d5ad32b9638cb10b84056de26b83268367aa05c6",
+  "sha256": "fe20e8c8177053615ef23815d5ad32b9638cb10b84056de26b83268367aa05c6",
+  "blake3": "1ebe4d18bc301db56130ef84105b90aa3cf6f8b05ff898d7391ffbd42fe17228",
+  "size_bytes": 122269,
+  "file_count": 15,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12130,
+      "sha256": "4ee8bf6b3abe39607e0897445e8ae5d11ae39a18896676485481f293e4157cc2",
+      "blake3": "cfd9b40c160bb0fb556c4897edc25ab34454be6e161113275031053d4f65bd42"
+    },
+    {
+      "path": "README.en.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4145,
+      "sha256": "73a138cc424487782150dac306e3d22e1ce0798281de06ac1250d04e8c6df7d2",
+      "blake3": "39b29ace0eacd73049ec2abb264c8045a5598ab7ce8fbdbae6ac001c4318f4b5"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4836,
+      "sha256": "cbde3b2c80220315a95f7c309f6d0590b58a274d63d0eb8eb86511c511c3909d",
+      "blake3": "10ef9908cbb69cc321f41b43f15d453da16073a04484b9b286413244a857a0a3"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23166,
+      "sha256": "198adef28c577370d1e925d09b6f30ece3adba3acb14fcb25ff64a9c4b7df6f0",
+      "blake3": "7e7f2c5beffccbb3e42c7c025b3333683763ce9cdbde46120488cdbc7aaa6180"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 129,
+      "sha256": "423a259cf39f28cd93de49b135713835983ab13a7811f473445fb7d3e7107333",
+      "blake3": "22284523c1562c00fb4d41af0c642f6f55867f5316faa1b0cd948792a8b08ec3"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/feishu-blocks.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3972,
+      "sha256": "4356a28466da1380dfe682162f98a34ed99130e6a018a1029bf33b90dcf06fc0",
+      "blake3": "d9bf1faef623119366382ba671f38c08ad5be74c6e973c025710121a2ce3f907"
+    },
+    {
+      "path": "references/feishu-setup.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1840,
+      "sha256": "7faf55e102f75f9b9dfa2df4b339a8cb7f790928c4d1e6ec8e6f9ea58d59e469",
+      "blake3": "85a7ada3e6754ac4288cf68c3737a1025e9584f7c240673d42bb3762dd275b7c"
+    },
+    {
+      "path": "references/ima-setup.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6751,
+      "sha256": "57b8a8631c9ec053d980aba5e064638d08fdc4eec6c048097229aed39cb685f4",
+      "blake3": "8eefff45dc41a34b312dc09a3d30f5f450e99376d5afc9beda139e1c86ca9862"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23,
+      "sha256": "14f5346d7bb45230e2fc28905f6089b160b5c772587ca8372f7e996b6d8f964e",
+      "blake3": "50e978cd81ab5391136da7c1f7c7e69ce4ec95cebbac0333130fb42652e2bf3f"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/feishu_client.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9744,
+      "sha256": "90280a9c0ac8f31ddd3b8ec1007b1e8c83e26b2935daa8461f96d8dfbfaf8e9d",
+      "blake3": "f1269daaf95b334ab0dde7f7b8c0c1454049db9da54a70603a723c520e08cd27"
+    },
+    {
+      "path": "scripts/ima_client.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13813,
+      "sha256": "fc0187935a1b20f15518283990ef6de2e479ac39c398144fa3bb8f4bf2b40c48",
+      "blake3": "53d0b3a98c4675f86d6b7cfa790863f656c34665eccbdcfeb71d9db0ef1c0764"
+    },
+    {
+      "path": "scripts/save_fetched.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3964,
+      "sha256": "451bcafbb872de2c550a64a74ec78ee6481956c446c573e350c1cdc14b033ef8",
+      "blake3": "ee79cc64f2e94081acd2a03008a0c448050038012e1b8d229b7f6d0668b717d6"
+    },
+    {
+      "path": "scripts/web_to_all.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22928,
+      "sha256": "318f483c882d3372716764ec065bff809d81cd2633d62821a1a63a27bcf0276c",
+      "blake3": "18e6cafb360e48a2f092f05f89a9c1e48dd31b3c6b86ea354dab75c37720fa17"
+    },
+    {
+      "path": "scripts/web_to_md.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12245,
+      "sha256": "d1256b387d94ea7c8f8916a78808beb90a75917a265bd8339738f83a99efeaf9",
+      "blake3": "c5987111bbed8888fc16ba7302bd4cf8320e6307448a96f926586ddda5c0bf8b"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2583,
+      "sha256": "c44b3e032b227c7bc7e2e4b983621a7082c29f0157a447c4d5c02a987e29a6ee",
+      "blake3": "8c7cd119efb5180d3642f501b49ae9efb76b15bfaf1c30b8d634b102892e387e"
+    }
+  ]
+}

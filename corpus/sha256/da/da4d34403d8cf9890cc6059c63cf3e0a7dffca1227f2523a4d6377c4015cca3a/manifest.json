@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:da4d34403d8cf9890cc6059c63cf3e0a7dffca1227f2523a4d6377c4015cca3a",
+  "sha256": "da4d34403d8cf9890cc6059c63cf3e0a7dffca1227f2523a4d6377c4015cca3a",
+  "blake3": "1cd6ba32a3d6bd1d772c1839bab540a8662d17c756bf4cceb035718d66875a00",
+  "size_bytes": 132881,
+  "file_count": 20,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3165,
+      "sha256": "04d32555e65dfce6cfb231d82c529839fab77608256cf829831815bef3b449aa",
+      "blake3": "107c2d6fc59af56cc74ab80da3efd9635c964c99fb891b1615733a5c543a1c01"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 141,
+      "sha256": "ff110a4c82d5b1f81fd8ef2a83d443e0e74930d980521930286dd248cb3fc423",
+      "blake3": "42bd910cd5f6448fc1d066911e660db4a6d518baa8a34bacdfeb9c275bf43728"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 212,
+      "sha256": "865f2cae98d296ae2112f6b23be1624219c2f75f815666aab6f41fbfb1db2f64",
+      "blake3": "ad4845f95f03d27ef2090032d5a74f6e2e3686b139f70539899d8281ad34b948"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/semantics.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5329,
+      "sha256": "eeeb6ceca1c233454d2d8aad86cdf99d5f77b7cf216a8c5d3e014f26fd9689aa",
+      "blake3": "eb6bafd2d57c2794de056c8e6a4d507bd3e4f6645accf79445215347d395751d"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/codex-schedule",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 176,
+      "sha256": "c495b385d6ab9a694d86206834e3000b76319bc4677d04e1526e0c4e5254c08b",
+      "blake3": "a73a844b6e1cafc7d0fdd22f0ce4a5ceb3d847eedccfd6a3fd2af5e8c4ca7a7d"
+    },
+    {
+      "path": "scripts/codex_scheduler",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/codex_scheduler/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 128,
+      "sha256": "446a0ce99228b2aa0eb159992e309aadbe0021c40ba5da2ae5d20166d60d5bc7",
+      "blake3": "e1fe508524271e00516c309e06076c62e7c29617281391338a039b09da6624b8"
+    },
+    {
+      "path": "scripts/codex_scheduler/backends",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/codex_scheduler/backends/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 817,
+      "sha256": "3ef5c8a5a22163dc2d15c2a52fb39dfdfdfd8983ddcea6a52a34e28b4fd4d7e9",
+      "blake3": "4d83bcc350c572b9c36485b00f3eff5cedafc736371eb89627a3606a9cfffdfe"
+    },
+    {
+      "path": "scripts/codex_scheduler/backends/base.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1461,
+      "sha256": "19da98873f7ca25004a27d15c34c9e9bc6544df59803fe1a2973044dbfcdea57",
+      "blake3": "170d81e0b952d49f4d96a1e74c3352dee31a14df6ebd998d5846c255da8c93c2"
+    },
+    {
+      "path": "scripts/codex_scheduler/backends/launchd.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5346,
+      "sha256": "7f4e629f3a1b8385efad953b1f867c350d3dd11c02c807becaea5407a31179be",
+      "blake3": "2a7dbe97625f56e399e5c596d9bb150223b44878e777e24a72f7a54aec6cceae"
+    },
+    {
+      "path": "scripts/codex_scheduler/backends/systemd.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6187,
+      "sha256": "7b932f440cc68892c82609591bfe8418ad864356dc0cc750f22dcc0184dd7dfd",
+      "blake3": "8ea6fee99392673fbc83284444323fb2a30c83abd635f0243a1418c8c99d56c3"
+    },
+    {
+      "path": "scripts/codex_scheduler/backends/windows.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7176,
+      "sha256": "dfcd31bc73983150873fb17cae21644d2d8bbd15ed5dfdf6fc56952cb220f854",
+      "blake3": "900fd1c11f34cc3910533a1e1e60e30c630302ae86b9c3f0f744cac95cacaefb"
+    },
+    {
+      "path": "scripts/codex_scheduler/cli.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23571,
+      "sha256": "8ca5f99aaa656f0db19875eaeac3ab17c31fe1b89f9239e8b024f0b552185795",
+      "blake3": "d7cea8958cd7357ece060bb4b2a4325fea8d81044d5b9315dfa411ca8b1d8199"
+    },
+    {
+      "path": "scripts/codex_scheduler/errors.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 274,
+      "sha256": "98a0a1e89afdbd0cd103b7bbc6c03fc705a4381bb8acc6510504aa2c7967e48a",
+      "blake3": "c461c42b41331ff7f120f974c37c0d5f7047d610a0a67498930c084dde2dd4ff"
+    },
+    {
+      "path": "scripts/codex_scheduler/jobs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10796,
+      "sha256": "ea0154ff679a07365a539cd9b59d66e047931d96117c1cfb675e1b67bab7306d",
+      "blake3": "743e4beea309687996233454bd7c3ede128a9cf823127b589327cf2c39de0897"
+    },
+    {
+      "path": "scripts/codex_scheduler/runner.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23178,
+      "sha256": "8c0298e1bc96152ec6843eaa287237670544ae8abee8048ea464b2e4611528b4",
+      "blake3": "2882bcf91d861d9670d029bafb084988d8ff775318db72b82d26272de65e19e0"
+    },
+    {
+      "path": "scripts/codex_scheduler/schedules.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6678,
+      "sha256": "9e90f4e78e6bc5f1940fe1620b76c02e26b1c79db9bd010ae78315500a63e662",
+      "blake3": "29aae4c2a85211ed3fba80232a9a0bb5f45f4bef8f57e2d484bc63b9910849ab"
+    },
+    {
+      "path": "scripts/codex_scheduler/storage.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15011,
+      "sha256": "9bf34c8c0a56b89c89f8dc1e3786888a6a085d3664a6af76edc85f36e056fcb9",
+      "blake3": "5a6381c0977f0efb6cd6ff27832b73b80d6de4de4d52f2b8e54c910e3e65bd80"
+    },
+    {
+      "path": "scripts/codex_scheduler/util.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12480,
+      "sha256": "d71261d71ceafef9992d6fbbf6625605e45a5f555dca25e72177889a9399719a",
+      "blake3": "baa41a21d559b99e5a6d5a690556a2d2fa58be6c7152eedd40e0323354c2c791"
+    },
+    {
+      "path": "scripts/codex_scheduler/workspaces.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8337,
+      "sha256": "0308cab18cd7c7596a1eb6f5a45b77215b0517fc56e50dd2439b03e116e965ed",
+      "blake3": "67126afe85fb53a4105c207b13ea29d5708e7d58012eee386558e8021b2a7ad7"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2418,
+      "sha256": "4db69c5dd3713cba18dd3c711580f48b917ced3cf6685d24fa12eefe52b89342",
+      "blake3": "852152d3e5daa4a65939a2f79247cf66376b08e3e0b6aabd7f452650c437b0c9"
+    }
+  ]
+}

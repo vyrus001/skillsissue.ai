@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:1d18e29bea1adfeea03450bd78eee8ab866ada628c848011d173bc0f2735dbbf",
+  "sha256": "1d18e29bea1adfeea03450bd78eee8ab866ada628c848011d173bc0f2735dbbf",
+  "blake3": "cbe0e0e6f4913d44e5dc72ca2229c649c2120845b14f538c5328938ba5d876c7",
+  "size_bytes": 2403908,
+  "file_count": 15,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9313,
+      "sha256": "ea95911fe5904da3035dbbd023ff1470d4d5a167657955e67827e35aaf213266",
+      "blake3": "ebffd63cc57d574f5c2b4690f0fa1dd1e743afeb3fc593032cf1f1a477f60f97"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 136,
+      "sha256": "f2f9a395ea5be086c6dd3be10bf640d0caceaf3e1261a0e92d536298486f705f",
+      "blake3": "bb7c20195e07a0b2eb8848c6805827e7dc18016df12f1306bfd1b1861294f82b"
+    },
+    {
+      "path": "plugin.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1797,
+      "sha256": "641365beb5b885b64a0ec40e8796ecaca23189465e76638254ebf613ecaa66e4",
+      "blake3": "51137362d8df520bdbf425f76e217307d080bf09671ce04fd42aef74534448b2"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/amd_data.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 56535,
+      "sha256": "180258eaa528f071af55c80f6701b0c5aa94b49d599e7364f2a210a274078be1",
+      "blake3": "7c2b9e6599f985d02bef3c01ebbbf58c28525f8e1703163b333a59a6fa4def90"
+    },
+    {
+      "path": "references/data-contract.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4020,
+      "sha256": "3984e78c1a54c7a91c0f4559e47722182c68e4b2250eae93680f7be319ab2577",
+      "blake3": "4cf282a4bfe7d9acc3ffd7a30dd60a81fa5752256eba66791b9b1ccb9399b337"
+    },
+    {
+      "path": "references/exception-handling.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2417,
+      "sha256": "2632a75ee48d68c73258bfdfe4436d80b79c86fcc4194b9d9a4e15e058614d89",
+      "blake3": "d9b8890b6b08502fc8c64ac9b0f7645af67267516f11584d99fab3ebc63495d6"
+    },
+    {
+      "path": "references/nvidia_data.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1215350,
+      "sha256": "c23a27afbb173275e726b1136f3b4bee63453288b8de50cd9a975e4f7bc5b8e5",
+      "blake3": "6586bd997aa196ed04d8daa89eda10d8f31492f47de5b28690c7c3187aefe201"
+    },
+    {
+      "path": "references/product-forms.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5089,
+      "sha256": "c787c0fa50c4cf539c78621bdad9b719bf1af23625257b8fa44036c4b4c86fb0",
+      "blake3": "9792d89a6a9db568bed2a98dddc9f61a7d62ab199b017957d9d6bd3857a33830"
+    },
+    {
+      "path": "references/responsive-spec.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2122,
+      "sha256": "f271419f2aa0d70702f596cacded133bb2dc2f0ffca451ae032fe813a1cf7508",
+      "blake3": "b0af923481dd5349b8f777ac0315f75ea77ee70e7f8b7170a7ccaebd0e3b07a0"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/build_html.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15381,
+      "sha256": "6592515e44761a896a1bbfeae0ad8052e1c037565bc3feedacbd19ba83e1e725",
+      "blake3": "6a2013cd2d632a33a50034cdc7f4dea3e1b8a073da27ab8d710a233430d88d14"
+    },
+    {
+      "path": "scripts/extract_nvidia_data.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15462,
+      "sha256": "401822ecd8f990687c55306bebd50c941252e83395f7e81b3ac08138746af8e4",
+      "blake3": "7b3f6255d22e34084738eb329e4bc2b2f2a71dfd11240b9672ab982fd41321f9"
+    },
+    {
+      "path": "scripts/validate.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5971,
+      "sha256": "c5268c5009592703501e48965dd79195a32e77d9dbae0b0de44e051631937058",
+      "blake3": "44f305fa6f96fa6c38442f385a0d94ea6c2303568b61797456b3abf8050ee7b7"
+    },
+    {
+      "path": "template",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "template/echarts.5.5.0.min.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1029248,
+      "sha256": "d2e86aedf20056e80d88ba224f309ffbf1777a8807fd602cb2292225df3640d1",
+      "blake3": "b7af7687bc9b9a827ecbfbe9775b91d2a3ffb8bc8cd24ac44b5aa2268f1919bb"
+    },
+    {
+      "path": "template/pixel-font.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2222,
+      "sha256": "ba1e2d44710cc24ca22cef0cfe7a94c2c0e3e571ed915b3e948d472a523445ca",
+      "blake3": "54c2cf681c8601bb55a11aa44b136091b9417759843abdc13e9deb15d52c3f42"
+    },
+    {
+      "path": "template/template.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 38845,
+      "sha256": "85ec6d4930668386a2a3e56c12b5cff2561b1f19601a55a703e33154b7196352",
+      "blake3": "aeddc821459e7182ad60b6ddccba8b9eb4302bf8632ae76faaeb5aa62afe01fd"
+    }
+  ]
+}
