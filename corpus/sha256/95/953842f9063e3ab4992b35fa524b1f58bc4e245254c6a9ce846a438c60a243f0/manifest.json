@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:953842f9063e3ab4992b35fa524b1f58bc4e245254c6a9ce846a438c60a243f0",
+  "sha256": "953842f9063e3ab4992b35fa524b1f58bc4e245254c6a9ce846a438c60a243f0",
+  "blake3": "8247263389461db444ba0cb606b67b735705231c2c9067614d048737cd343fb6",
+  "size_bytes": 101161,
+  "file_count": 14,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16304,
+      "sha256": "e1a719c0dc3920b858e7b8b3d51582ca3b5d7e6f12133a040b4b19ee3bf3512d",
+      "blake3": "66a137e256a913d07865bd0bc77b5d1c03f28e04ed42e103da692dc982af0139"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 141,
+      "sha256": "e4e21b24000a92911126b4f77bf293c3c913e7997714010f249d017c2066a71b",
+      "blake3": "737901697b8bd263e871ea9e1f56f4289a5076762668a423efe9ab70fdd7308b"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/scan-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4671,
+      "sha256": "b8e35e5b8c380e0ef6d2065aa1a69a90a260f3f093deb6648cefcaadd43513bf",
+      "blake3": "5d2d70d3a0bc0f1ce6c59a371df806d91e453e393af45c6698659c5f55e22ec2"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/audit.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 51826,
+      "sha256": "9ddc6c10fad7080e93dda582b3d0d65200c6c58b14e073c4f08b75293ce166ce",
+      "blake3": "27b946d34db22bb0ac75e963b45761f988e5605e4858328f4d4bf069300e9c4d"
+    },
+    {
+      "path": "scripts/sandbox",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/sandbox/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 954,
+      "sha256": "a08201d634c1a59a617ba85d40350d0259c50239b5665aeea6be9ba3166ec8ff",
+      "blake3": "f8171807b63e053def7b0b437ed7e84bf4e5119c7b452c40590fd820b9748454"
+    },
+    {
+      "path": "scripts/sandbox/backends",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/sandbox/backends/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1185,
+      "sha256": "377959ff452f870a22ffe619862c3f917bca7456278737e58765147e6faec540",
+      "blake3": "4ecaa7e376d6bdef47a914e6d09bff360b4ae26a88773ca63727c3902f9e81ce"
+    },
+    {
+      "path": "scripts/sandbox/backends/degraded.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 619,
+      "sha256": "0086951d0910516f4df0f23fcd5b04184d241ea782a31dd3f5620e49825b7592",
+      "blake3": "67eb28cb5b4823e0833fd4fe64dcb59f87e370340d509c5469785f750d3bd0e1"
+    },
+    {
+      "path": "scripts/sandbox/backends/docker_backend.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4178,
+      "sha256": "dc6c8f413e2d926f57ffb6f63d7f90db010d55a5edbe7d20b7b108e467ff0cb6",
+      "blake3": "d27bc14f08e56bde98cb2e9503a283bada67c5fd4d28c480de9bbf49aef535da"
+    },
+    {
+      "path": "scripts/sandbox/backends/winsandbox_backend.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3800,
+      "sha256": "be7d9d0ba18dc6284246eda08fe2b6a74c11c9c7695e50c0a35fc051b80430a7",
+      "blake3": "1febd9bc92ad26f6c91c9903199223a4159cf942802f51160772ef346bc95960"
+    },
+    {
+      "path": "scripts/sandbox/monitor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4215,
+      "sha256": "13af20656e61f46980c8609eff4ad3a884b62be6737c1bb05fa664f4d77db299",
+      "blake3": "c5e37075392c4e8f98ad0a61c8371ea51ff53a3081d51bf402903112b9110d71"
+    },
+    {
+      "path": "scripts/sandbox/report.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 695,
+      "sha256": "fdb3e0361418d19964c4d53ffa11914b08068ec0766da98e973d9121d466c880",
+      "blake3": "4380a088d0bedd4148dccceb8661debe9b6481b2d3566941e8f97b7442af11d8"
+    },
+    {
+      "path": "scripts/sandbox/rules.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5375,
+      "sha256": "329bb8b66b67708ddbe8c8cc78858bfbce246720192d62c15e6d05fd6484c1dd",
+      "blake3": "a950c6957fbc1ce6ff58b2a034d188bbf2048cc875065f9d769e7953bee312c4"
+    },
+    {
+      "path": "scripts/sandbox/runner.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5028,
+      "sha256": "cd28269d1ee3c727c943ec493f4277008a101289624d6bb4351fea73b8c6b0b5",
+      "blake3": "515818910fc6c58661f200cee1cd7a36934b3cf569923f18f0b22a4bbc15c63e"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2170,
+      "sha256": "b81104d17061d8fd112353aec3417484a7c23fec6389d2f3ac2d6b4bda4f5dcf",
+      "blake3": "06ccdcec6ed2d82a5b05ab373b9254562f5b4be6b8b59204da4a5c4383245c9d"
+    }
+  ]
+}

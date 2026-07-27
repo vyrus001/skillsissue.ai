@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:234e3be137b1b0f3538317263d3ca19b6f4826762dc51205144020d1218666fa",
+  "sha256": "234e3be137b1b0f3538317263d3ca19b6f4826762dc51205144020d1218666fa",
+  "blake3": "5c8e23dd296e9c9422696d3248c8f38de4b7addcd7e960a7261d63443ea7ba1d",
+  "size_bytes": 15703,
+  "file_count": 5,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6571,
+      "sha256": "39d5123e5ee09689967a9ac27af7c365c431dac4db9809b47df2d5b7c7da941d",
+      "blake3": "9d3be2727949ce66ef12e2d50cc3e1c2e28719ec8b46f9a4a65b79d56ac13949"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 142,
+      "sha256": "47924e800cc97eb0eda6d7146cbb79d8b868e70a97933aa77937dd77c8479b31",
+      "blake3": "b2557ad90cbf698173035294a68955e0ab94ae7118d483a63bac02a0d9aba7f0"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/create_order.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3728,
+      "sha256": "f8d2f75d9a8abaf379194b71ceed93f488cb2426880f2f60dc2d6abdf961c38e",
+      "blake3": "61ca21b320182b6826104a7e6a18907dedc48b1fa9f45de1b7e99f766eea1b2b"
+    },
+    {
+      "path": "scripts/file_utils.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2170,
+      "sha256": "969c99a69dfe089fe35495d5045ac48862c45fefbcedf135e23ab37a5cec6733",
+      "blake3": "739388c29cf6db860f9102c73da9ee21420b4d26d82cea8327ca2a1bc303d881"
+    },
+    {
+      "path": "scripts/service.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3092,
+      "sha256": "5763c5f811bd6bb9ac8fbb557cda9f39218c3f15aa31693bb0033e1d387fa7d7",
+      "blake3": "13e4e3755477c22639d43e44426ff67aee94d20055a99ba6c2111c43c9c48ccd"
+    }
+  ]
+}

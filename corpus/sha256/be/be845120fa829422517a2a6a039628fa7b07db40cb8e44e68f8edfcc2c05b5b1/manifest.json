@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:be845120fa829422517a2a6a039628fa7b07db40cb8e44e68f8edfcc2c05b5b1",
+  "sha256": "be845120fa829422517a2a6a039628fa7b07db40cb8e44e68f8edfcc2c05b5b1",
+  "blake3": "6cb15d131e117f653c416ea04ffe5f9b061195a39a7d41705d1dc6e544a9af43",
+  "size_bytes": 166521,
+  "file_count": 23,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16207,
+      "sha256": "6dc18f41e6c4eb7b1c1263d14172f6a8bf55e613ba2404b9c2930fb496c6970d",
+      "blake3": "2766acdb80bd2faf01759afcba2d506b2259aa28cb22340000974dd4b849cbd9"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 129,
+      "sha256": "01246837dcab955245f6c7a4b8163d94160fcfa1139ae554652c8c7e5bc2c379",
+      "blake3": "e37df4cfcc863713ef428f0045ece07c0cbc9db1683bac5a0ac584b62c5f5419"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 130,
+      "sha256": "78165ef8166b39563bf5346bd4b63cfb653f2bfe03a3751eba7f2803b5ddaf2b",
+      "blake3": "308cdf5886818fda5b664f274ff75545565ebf66a9af355c82b3f1e16ce03b72"
+    },
+    {
+      "path": "scripts/backup.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7007,
+      "sha256": "342243c09699b8e9ded74e40565821a072031917a697af196ec371ae634b9b76",
+      "blake3": "50f621b309617e708565bac7b7787e6b1abaa37f58937f05a87b806d4c2bcbe8"
+    },
+    {
+      "path": "scripts/cli.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12557,
+      "sha256": "8123e97c5d83d29737736f0c087fc50e5abccf895d995400609f2972053fa1ab",
+      "blake3": "4df9be56c845a8078a50484aba320e50c803a68d3163f1fc8cf3ad526f76ee7f"
+    },
+    {
+      "path": "scripts/config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2921,
+      "sha256": "91bc58a46a9d43338128c93bc8b7cd34c6c6de2360e38b0aa242b0788b2efdd4",
+      "blake3": "5f6dbfcc4217d694b35c8319027a066053f40dfded14d0d0bddab29f9f24457a"
+    },
+    {
+      "path": "scripts/deposit.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8076,
+      "sha256": "fa4142406275b6beba128752baab3641efef1abe4c0fe87dbed41e72bce4a1fe",
+      "blake3": "1baa8fd4e572e9599b2bdc0f4fb6a0c65b906510512660b42287bd7092c0c8e3"
+    },
+    {
+      "path": "scripts/embeddings.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4991,
+      "sha256": "784785aa0a2705e53e63a95837beb1b249e2e4f8981e9e8d64897b224f47e501",
+      "blake3": "53136ccb9a846b48efb06bd25652e47b3746823b622e82fff7790b6e7fd9c62a"
+    },
+    {
+      "path": "scripts/graph.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7240,
+      "sha256": "2704b2c46618c69897c1eea0ad15629e4c9022a023f2cbef7496570d5ae74f4a",
+      "blake3": "95c508ddd7b387c8da2fd50a2e483637c2a723709e8b0ed65ef8fb2b8db09d27"
+    },
+    {
+      "path": "scripts/hardware.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5527,
+      "sha256": "922578af24f56629e522a8b7c37a05ba5c6f42eb6b1327a65e231d513ffe70b1",
+      "blake3": "0064dbf77a8df8e5d649ce3cb877db19c7ac26c4542e4d5e5c770b0026fdf6ef"
+    },
+    {
+      "path": "scripts/health.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6592,
+      "sha256": "d030f4b1b435a1bc288c34b544eaa7d31a24cc67efbbc193c79db0a84edb8e08",
+      "blake3": "278c2dc2206588fe4ed307a97d2f4eede5d07853dce6ecc9e874a9417936f484"
+    },
+    {
+      "path": "scripts/legacy.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12193,
+      "sha256": "73436c3e1e7f3ca2e5533471c4f24eb15ff0e9c051e290c078e72a80f1123425",
+      "blake3": "6b36db0daf91207c17943fbf5a55d36d5b02c4d7e0a19627a3f5a742610ddc54"
+    },
+    {
+      "path": "scripts/retrieval.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4145,
+      "sha256": "233acfc7c3934698dc0cbacaee35f3511d9c79e92947fb480188f08fe807ab48",
+      "blake3": "bff8487391d1c2a2de3d344d6b4cbf2c983d63b8b3b7d75b8ba8bcf5dc5fe64c"
+    },
+    {
+      "path": "scripts/setup.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4956,
+      "sha256": "cd84def077cba3c158594cc1fea7f8f52ca3badd360dfbb8d43983c88e0231cd",
+      "blake3": "72427aaa649770f986c82f5c145d39f8ccab95fec7ddf0b12f317afd575b651a"
+    },
+    {
+      "path": "scripts/store.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16536,
+      "sha256": "510fd7a71eaa24df98387251686296deb30cda2e13229e35c9e8a93f0cd6e362",
+      "blake3": "aa32eaedb95881b45da6a8774c51ac33c6b99500a9d4ddd3d4090d4bdc08413c"
+    },
+    {
+      "path": "scripts/update_check.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3899,
+      "sha256": "672eeeb50e231c06b1d803786bc00f410f4d4d7b2a33e495d2a5409d2afa6d49",
+      "blake3": "2dfd4028220bad7e16cf3504ba04b167d90831d38272e600fb16056a9c4836d9"
+    },
+    {
+      "path": "scripts/version.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 222,
+      "sha256": "e50d0f7de1061696bcdbf919d9fe493883131e806702becd0089d5168c9cc2a4",
+      "blake3": "403f779a9b2d1c7dc7bf205d039ad32337ecd6cd0490cc837b015506e4d9f1a6"
+    },
+    {
+      "path": "scripts/web_server.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18110,
+      "sha256": "9ca37262281f077c39b95ed17a8d72f43227624c383984db4e978367613e0dc9",
+      "blake3": "f0bfdef55290b4fbd6213923060da5048acd38b3e3ac2dd6ff5eca3412c9c612"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2823,
+      "sha256": "8a2b64f6a764f539a2e2b39dc5f5717fabe6d9c379d247a42003b4c05a9f0c91",
+      "blake3": "e394156863506631f02910cf1f9bad29c08fa2a27aff4e75ac935262b6d829e1"
+    },
+    {
+      "path": "version.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1665,
+      "sha256": "7a1f8b1054f8b2e87386bdd67309142d4cc296b338d560bbba1c35361833748a",
+      "blake3": "5d46d67c2f4cb13b5501f73f8b9c1a984f65713374e2321e7351954074306609"
+    },
+    {
+      "path": "web_ui",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "web_ui/css",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "web_ui/css/style.css",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6034,
+      "sha256": "7dfffc94e8f06d8b0e8b52e35c9bf423e9d9c488e56f246ee362bd832f53360e",
+      "blake3": "7b59ce4e77cf9dc784cee14a54368e74d8e3e4084000c2fa093d63e230816119"
+    },
+    {
+      "path": "web_ui/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4580,
+      "sha256": "9f56890ea995641e5962514379986e719aeeb650d53c4c05bc67f885255b117c",
+      "blake3": "321ad6c40d2f367e109c064c7bb9dfec72ca41358fa2798c58c74497cce9814e"
+    },
+    {
+      "path": "web_ui/js",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "web_ui/js/app.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19981,
+      "sha256": "7938ed13b69591164e09066f7df48e2e90a8c48c1800ad6e34680503f6e545f4",
+      "blake3": "a6a3b9229926384f030cccf410722beed9272e05f8fc049a951b588120ce27a3"
+    }
+  ]
+}

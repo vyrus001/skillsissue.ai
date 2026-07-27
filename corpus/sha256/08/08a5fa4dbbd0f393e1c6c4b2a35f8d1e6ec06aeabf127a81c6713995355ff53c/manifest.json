@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:08a5fa4dbbd0f393e1c6c4b2a35f8d1e6ec06aeabf127a81c6713995355ff53c",
+  "sha256": "08a5fa4dbbd0f393e1c6c4b2a35f8d1e6ec06aeabf127a81c6713995355ff53c",
+  "blake3": "fa397a2f895fa80617528c44dea80945f9b59e385eafe38c4072e7236a61ce69",
+  "size_bytes": 41879,
+  "file_count": 11,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3245,
+      "sha256": "8ecf966bd1b4b0a08f6670e8bb9f7343eb5a8dd0ed76d5b9510756428c9662ec",
+      "blake3": "730b199735918e9cb50dc4521fc5f81d4c4ea8a7422bb983c9fad7124d87e323"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 132,
+      "sha256": "cbbe549a792e271fc78838626d1a8c80cf4ff816891bbfa9d2788fa33df3f297",
+      "blake3": "0a3bed1b743e21ed5c28fc2aada97685367c03765d0135912cfeee8678198088"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/tax-rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2836,
+      "sha256": "668ef4c9f1d78f8b0cc6408999c5d3c1c93da69d193c234bb5df65c1e6d4d650",
+      "blake3": "3c7a2939b95476a7c5425e4db6375904e1b44b2ee7cec80429775bed11fca0c1"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/calc",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/calc/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "scripts/calc/constants.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1535,
+      "sha256": "5e43cb6999691ec08ce720ac2793d8ccaad56ccd5ed0408b4d1968bf81a9842e",
+      "blake3": "afd046a6355ae4e38614c460ccff67f82157da06279d50649365682700227b9d"
+    },
+    {
+      "path": "scripts/calc/remuneration.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6479,
+      "sha256": "6ce44a201048207ce045f527108f6caf10b28d32e3dabeed33560c667c435ee0",
+      "blake3": "f4a468d524b1156e154c2a78de7d9463199272fc3114431260d1211a0472f122"
+    },
+    {
+      "path": "scripts/calc/salary.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4807,
+      "sha256": "97f98356d994b8268f9035b26b9332457b626255771515b983c9e86297b495d7",
+      "blake3": "aa1e0c4f3f45e05c69dc046a9345f71ecad325e9c31501ccbbf6d2f03d1a7fed"
+    },
+    {
+      "path": "scripts/calc/util.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 257,
+      "sha256": "068b787cd46a10fed59aec822142707eec484e12d54aeb62c8adfef55f73ead6",
+      "blake3": "d62cdaa9664925a093d626035930132a228cdfc621bebcfc831e2ec9a2890fa8"
+    },
+    {
+      "path": "scripts/hr_calc.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5879,
+      "sha256": "7a2f98dcbcf5ac519b75ac8e7964171b432f02fdc4ae54c6e770579a7c2f0a77",
+      "blake3": "f3eba4cab434d1a768671d5eb4ec5ae35dd987519a16c13641c11b2c581a3b8b"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2298,
+      "sha256": "ab6d4532ed8a34a02b8dd3b158132b0eeb38b072ef255cfbde1bc66c444ef842",
+      "blake3": "5729e13b8ed4831e51dedfdae1a2677aacd25ec413283ce16cefce4377725658"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/test_calc.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14411,
+      "sha256": "18e7ea9d001ec8fcc69dbc4e5efc0a2fa79b9bb0de50a2bc305ba0b6878c79c5",
+      "blake3": "f47b1fad9c0b50120196cdd0586efbe4124fbb0078cbf34e7b90626cf78a506a"
+    }
+  ]
+}

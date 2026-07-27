@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:02e565df9b969e826c8b3c3a87dcf08362fe8b35172c27baccb8cc4a7467f731",
+  "sha256": "02e565df9b969e826c8b3c3a87dcf08362fe8b35172c27baccb8cc4a7467f731",
+  "blake3": "3d3b7a3087f881e9e80853aef7eeb41c0b7335302c5650a3a7ddc8d01fd3de71",
+  "size_bytes": 59523,
+  "file_count": 14,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5730,
+      "sha256": "57f129b2da2792421808df2ff23caea9e6e85167f8c2acbc1a3deaa465c29ab5",
+      "blake3": "661cf2cfadab74f4d074e7159a4cf26dfbe63e1dd88a4b3f5a9e456822aea9db"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5452,
+      "sha256": "f9549c95f388bddd5e2387bb306eecbd8d8a11a68831966b72bcbda879ce9286",
+      "blake3": "361662c8bfc6b8abf4dc9fa76ea751bb7eb3bca827129c6c9ab62006cefc0726"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 129,
+      "sha256": "9f5f519c881243833aeb58b52be2fd4710c1b9f9027d02c67ac51988ec043288",
+      "blake3": "d9a07da0d487b51e95039de6ce524fdb810af35de96d3fa851e3ce504d2a4d4f"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/cert-note-template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 668,
+      "sha256": "ff95277152e6dc38658650302f241a5ec2b356002e5535564472e74cc1da8c36",
+      "blake3": "836f651ffb58b51468693ce6566a7d989c7b7ff33298db7ab5aeae1ee6fab049"
+    },
+    {
+      "path": "assets/rfq-note-template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1340,
+      "sha256": "dc5b289a82fa2e69e96f98d1489f68bd0b90192b1bbb8ccb37597ae065f176d2",
+      "blake3": "775ceadea7a28905c7d49f97194d27cc8d7c27c64f0dce7747e85a6faa2ca3f3"
+    },
+    {
+      "path": "assets/rfq-response-template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1362,
+      "sha256": "69bf1907b52160b0ad55fecc9cd7f3ddd3c66d4012013dd80a9bf536f86e3b89",
+      "blake3": "3076b0829d027da98941d01cdcf8bab3590898ecd65e4a9423651711a7968790"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/email-conventions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1683,
+      "sha256": "6ac132fb6f9699d05d47789268e8b712feb32297c72e63cfc73abdbe1d04417c",
+      "blake3": "0fc9ade367c556d9eadecacc0495b1f2314016e0bc1809e54d4eb7e9ec578e3b"
+    },
+    {
+      "path": "references/telegram-conventions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1393,
+      "sha256": "3bda3124177cb476c642d803e20159f4284a7270f8e4dea7e03cc4776ad58163",
+      "blake3": "b468e3b022661cb88ae0a8540d4e09fab3dbe2cda2445a8bd4a63f2f472e5fe5"
+    },
+    {
+      "path": "references/vault-schema.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1865,
+      "sha256": "c888ff854f26b11a4f5cf4358ef8e2e2e5452c7db44a88a62f6e916e0f08ad28",
+      "blake3": "dff13eb563504331eb3c0fc3eb488575ec6e74afa3b7c7a69f45a2ff8fede97c"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/compare_quotes.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7132,
+      "sha256": "ab762e06da0adf0621f9fff8848644554755b6e60fe43dd5cb48a7b5611d1d46",
+      "blake3": "79936ee84fa3122d4da5f4ba38c0937cbddaa16dcb6110fd92a06638dc952217"
+    },
+    {
+      "path": "scripts/pricing_model.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5715,
+      "sha256": "9c700d30dfd5ecfad7274b56201213982411f3b54747adaac0bd3f0bd89ae98d",
+      "blake3": "a33e9fd7107cb4c92745a020b423d3e45dec68cb788b2fd7dd61911b62e594d4"
+    },
+    {
+      "path": "scripts/pricing_strategies.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17137,
+      "sha256": "35f581bd6c485d88f266774464c3986d90bc01d688f6eb42d378200d60df5c9d",
+      "blake3": "3b2d80096d9b3466e5cbd6c2dd1c96518699d95bd2a7554db835d0358dcda542"
+    },
+    {
+      "path": "scripts/validate_package.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7302,
+      "sha256": "20eafc5ec00a783b62d12c3b3e72ad2bbaa4148e10fb77c43c3c276705b0c606",
+      "blake3": "668fc191229688e7488b8102719d4ac414d6360462b2e635fc1a9aa00d98fcbb"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2615,
+      "sha256": "1f5bfabc204f59748ad74f343e2dce08de9f2614706ee52e0579ee8e21a93689",
+      "blake3": "047def41d33f406207ef4d57ff3837081485c7871f32fb6ac5205c05fc29823d"
+    }
+  ]
+}

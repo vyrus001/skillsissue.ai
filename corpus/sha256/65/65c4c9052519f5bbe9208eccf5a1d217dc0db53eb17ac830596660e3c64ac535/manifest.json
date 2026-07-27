@@ -1,0 +1,595 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:65c4c9052519f5bbe9208eccf5a1d217dc0db53eb17ac830596660e3c64ac535",
+  "sha256": "65c4c9052519f5bbe9208eccf5a1d217dc0db53eb17ac830596660e3c64ac535",
+  "blake3": "44aa91100305bea5bf706ec885a02fe20c1614d7013c2c6b965c0165b2fa2bcf",
+  "size_bytes": 607277,
+  "file_count": 64,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11295,
+      "sha256": "b6e53f94825a7713f1e14dd5bc880c9b552f6dd3486a736f26f87609b6faabbc",
+      "blake3": "8286b20eeeaa76a86eadce3806ef607fb409ba5d90ab840746b7af9c9e22db87"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8458,
+      "sha256": "314e122a8ae1227c1c905443a9c663ebefb0d305849625eab2dcb6d8f88685c5",
+      "blake3": "86cb066ed2ce72eed2a2b07b33b889c9e17924f6a614d9c952259d2410540d3c"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 127,
+      "sha256": "709d6f176f1916931562260bf94095481369b3fe26fc3c5e991e7b0cf867a26e",
+      "blake3": "baa730242c672e2c43b096ab621f1cf340d3912742a123acf76b741665a8d0d9"
+    },
+    {
+      "path": "agent.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19165,
+      "sha256": "9fbf13c3363cb228f2817af22d16786d6c9e17151f0f725a661304bdbe682e27",
+      "blake3": "a525b6b6e6d40dbb49f99094c92a45ef74f1d962107094616b7ec122cf4a329e"
+    },
+    {
+      "path": "config.example.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5921,
+      "sha256": "c42102d408f5a8c8d9b76af1122d0b1a432761371e22b5426d066868404dbb75",
+      "blake3": "89f5a41f80479658c1c8e6440f53dbb5b7bea8051aa665ad1cdf007217a2041f"
+    },
+    {
+      "path": "core",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "core/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "core/config_loader.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11956,
+      "sha256": "ce731dd23fe5b0bb0a042564293e3a3ca30feea6a11502868652245dbea49290",
+      "blake3": "fc672baa04dd9d8f43bd9d14330ec67bbd8b94afa4bf4f7b97e69610b8f7be21"
+    },
+    {
+      "path": "core/keychain_secrets.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5632,
+      "sha256": "58303e3632b1617d78dd6b5babc9130b41bf7822242525be1dc804de255b1113",
+      "blake3": "404b16ba7d4bcd6601dd3467ba67b9a33c3f75e7aabc47cabd9a6f0e6145dce9"
+    },
+    {
+      "path": "core/reauth_google.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6474,
+      "sha256": "75e6e2c0261037dbad66329534e8e1978d730071f761f75daedf6904c9dfa297",
+      "blake3": "44689faf8b1fb0272cb7ade86474a15c30bfdc1f3aeeb48ad3717018f1319cc8"
+    },
+    {
+      "path": "features",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "features/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "features/briefing",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "features/briefing/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "features/briefing/briefing_preflight.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9679,
+      "sha256": "c99e52b522a4526e83b9f6fe7d4cf3b0b350a49ac00b36177473fb7bd3f7ad3d",
+      "blake3": "591c57c3ac4f466414a761b4b7c12e3150c1d6fc91f0058bcbd3e63cab24d85b"
+    },
+    {
+      "path": "features/briefing/morning_briefing.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11206,
+      "sha256": "6e13e79fef6bde8fe7eff7b8b92a240aa9f7781db96d893df8843d8c70628dd8",
+      "blake3": "7aeeca1ff124e953f9dde8dbbb036686709c4dd2c25c5b355bd9876d0256ba58"
+    },
+    {
+      "path": "features/briefing/weather.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7881,
+      "sha256": "c77107de4ce6e100057d40a4ec7f1fd3c9209e3698f4426f50db9c31f361d6a3",
+      "blake3": "8f2ec130c62819f25ed392ce051644d201bce748cec0b4f82b90ea1aabc91b8f"
+    },
+    {
+      "path": "features/calendar",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "features/calendar/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "features/calendar/calendar_aggregator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15860,
+      "sha256": "dc6e7c73ec1c540f4ecfa7a97d52f4d070c26d9cd351b6cbd797c291ca42e98a",
+      "blake3": "04fdf6fbbf0a316485ce5fb1814a489e9247c73ae6924e5674480a5c6d098509"
+    },
+    {
+      "path": "features/calendar/calendar_manager.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13601,
+      "sha256": "2d4d5805a7484c66e34c85521441266ba544f94aaae3bb2c797b81d68b34a310",
+      "blake3": "c832715859ecd13f3a74b18f504a3e2e88a541cc04ccac3cd73318abd4e444bf"
+    },
+    {
+      "path": "features/club_studio",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "features/club_studio/CRON_PROMPT.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11461,
+      "sha256": "c93cad3485f706aa7f55008c20f514059e566e63f4a03bfae0d9f33c662e720f",
+      "blake3": "5e59daefe3e7acfe0bdc9b53343c03cde3ec158e931a090eff304b63b06f11b5"
+    },
+    {
+      "path": "features/club_studio/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "features/club_studio/recommender.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4226,
+      "sha256": "0f7d3d9834b960eea9507f54cb0e7a17859a86a00e89cef344fe1b1e0e11a47b",
+      "blake3": "65ca9fc4faebe3c6932a075350597cc99858bd2d5115be1d325f54fe952c4b08"
+    },
+    {
+      "path": "features/club_studio/scraper.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3180,
+      "sha256": "4819c696d8cee0e48cbb9de3ad32a94aa34ea6bb3bd39702d40db6b36fd5fb1b",
+      "blake3": "9105670bb2300ab995be976596ace14f5f5498206afd45591e9eff5b980fae43"
+    },
+    {
+      "path": "features/club_studio/watcher.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15335,
+      "sha256": "501d9bbf1b0693262d15d51a19c61e911ba6adeaa40972cb13169d66403db7e6",
+      "blake3": "195257e5e1d9e480653c3c2376cf152f3c443f859f6d31f3a30f77c2b0626b9e"
+    },
+    {
+      "path": "features/dining",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "features/dining/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "features/dining/media_watcher.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11566,
+      "sha256": "aeea471bb4a3441e53642cc3b2dbb18486f71adb1862c956058be1476895f056",
+      "blake3": "1edd2d8fa78f870eb0c6735da80b0bf42aeb78e3f225b62f47d918a8dc3a0a7e"
+    },
+    {
+      "path": "features/dining/restaurant_tracker.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17385,
+      "sha256": "38096a99419e25a748c827e383a3124d0103850f44e546d916ea1d9afd3362fa",
+      "blake3": "9358625c780491d5250061b538f5a75805a2685f971cc92d63c25eac8344429e"
+    },
+    {
+      "path": "features/health",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "features/health/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "features/health/health_tracker.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 31899,
+      "sha256": "a2e07a8114b42d6370e85b5d6d01fe40b0b63d522afdcb140b6f4aaecef302b4",
+      "blake3": "500232367309f65cef31a6bcb462b6b9263587c114efa0b018928e42c33026c4"
+    },
+    {
+      "path": "features/meals",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "features/meals/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "features/meals/meal_tracker.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22424,
+      "sha256": "d8be2fd14249b9b7124d27b365315ce26d41606b98bfe8a5b03883a95c10457e",
+      "blake3": "41d311a81321c453986fbc509cf33207e6ffda548b702d13307eed8790d31db3"
+    },
+    {
+      "path": "features/meals/weekly_meal_planner.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12754,
+      "sha256": "90591ec1f36c3fbdb9e6e38b07a03dba8ed7cd5b8da5905c63fec35a6365f416",
+      "blake3": "b9f63c425f7b19fdb1746bb186166cdbd5b00b12379a30846f918594f2886246"
+    },
+    {
+      "path": "features/school",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "features/school/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "features/school/school_calendar_sync.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5491,
+      "sha256": "0192af19ce5eb5982284d5d4453987fc0f00ad17521c3229cbeb4f76145fe6f2",
+      "blake3": "6fe3a6f24dd8c310001b06204167b974f59ce6f2e0a55bab72a7d0ac250fd10e"
+    },
+    {
+      "path": "features/school/school_email_monitor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14823,
+      "sha256": "8d193f662132529c768adee0901fa84be74f734b2e837d6fe3860eb2009952ba",
+      "blake3": "61a94bbbe546cd3a4428040d780a8610e466a4e1193e24d96de45157d5582952"
+    },
+    {
+      "path": "features/school/snack_manager.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5397,
+      "sha256": "e7c815deabecd7f665e9c7e470c7573208baf2dcf98065ecb4d8f8a493bfdeab",
+      "blake3": "9e301530ee12eef51375064a30d42266092bd4bb32bc4e3443c837cda34fda48"
+    },
+    {
+      "path": "features/shopping",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "features/shopping/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "features/shopping/shopping_list.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10799,
+      "sha256": "caf45ecd6324e153004c11b7dbe9d07d0d7e6911082e7a4f2c2e6eb5934273a0",
+      "blake3": "0fa5e871002589c15618aab5a3685860ed10094069cd11cee735d123941c3329"
+    },
+    {
+      "path": "features/trips",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "features/trips/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "features/trips/trip_detector.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17567,
+      "sha256": "abe8e2dbf2fbe4d7893df1ac03bedda867065a7d9a1633482c4d5e45497d32a5",
+      "blake3": "73210732b7cc7ac96813d0836625d1bf671cbc37d192894c2ffa0242a6c4e6a9"
+    },
+    {
+      "path": "migrate_to_keychain.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4070,
+      "sha256": "753c19843d364f891a1edb5791e32560e136c7ab63a27b1073fa23cf0427f166",
+      "blake3": "5466deeb497f9503f535565b41e7b44d0344e475b44a304ef767a8573b952d83"
+    },
+    {
+      "path": "pyproject.toml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1748,
+      "sha256": "8e03f1409bced617b613e63b4f515c5bcf45e988ae5a59db459ec20cb85c9da4",
+      "blake3": "0a4e170e5b027fdeffa30f0aead5016ef344354ff4f4da36f85d912eadb738e9"
+    },
+    {
+      "path": "pytest.ini",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 224,
+      "sha256": "b911e9f387dfbb0c259c64a98c95e234e7ef045c10e434fac8fec73483b06590",
+      "blake3": "fd20019a4d5f5cfee1d558559a3a28de364610e4db78a290cc941203f399c66d"
+    },
+    {
+      "path": "setup_check.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8066,
+      "sha256": "5a70d96f030f2c4fe14e2e80be5be86c99d95d049b28b8febd58a2fe0f359613",
+      "blake3": "0a26cae1b1f3ee802d2879dcc453e21a55dae587308f065dfee824ffdf374cdc"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2641,
+      "sha256": "16fa89f976349f58568cbd19462c16ddef9dab2ba6e9b31a68e4a31fdfc7abab",
+      "blake3": "dd4121302a76dc213087a2edb732142575cd660f505aabc21a77abc3b358b48e"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16,
+      "sha256": "735469839c842bc3fbc34792d87ecca2fb190d80bc5c631024bb850a07b5bbfb",
+      "blake3": "ba7ccd03b0ae1e29ab90fde8c3c24913b03b47a6e7e792269288dbb61d48e077"
+    },
+    {
+      "path": "tests/conftest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10594,
+      "sha256": "a8ce179b4c7a19ae41ca011122482410c74ad898561fc22d1dd7cd9b3cb558de",
+      "blake3": "ab39f1d87eebe4e08ace45f8cd6fd525103aa82e1a66927c77a229a79aef1c79"
+    },
+    {
+      "path": "tests/test_briefing_hardening.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16234,
+      "sha256": "44e526267ca23d6b5e39182981fdeaa9f6f5562912714c9a8889c759a3e4cc80",
+      "blake3": "636c4bb8f741a735c11402650ccdb1e6c7415ec3b0c57f988ae3cd8a3f577130"
+    },
+    {
+      "path": "tests/test_club_studio_watcher.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20670,
+      "sha256": "439a7369bf8280d5dd2e4b4a2e12d956874899600b482de58d548ea584344a5d",
+      "blake3": "9324eae370c6f0d6d3aca4b4f30e9f1086b6b8553a1c70d4e498b05fe5aee938"
+    },
+    {
+      "path": "tests/test_config_and_meals.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17439,
+      "sha256": "38d9bb1b1028a924a76ca367dd081621ebd9817b73b8e850c7a24a53fd92f89b",
+      "blake3": "ead8d4db68386614a5efa9c7fc87b4c37f73c8257fb96b5e0895318839d16912"
+    },
+    {
+      "path": "tests/test_get_events_for_date.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3375,
+      "sha256": "d29f295034fc073a75f5c69860252322e0fe79ddac78f9768f6a89b346ee09dc",
+      "blake3": "c947ae15ad5290b42eeda3dd53212e3aa9fbd1c574f696d43ac739a9355b9516"
+    },
+    {
+      "path": "tests/test_health_tracker.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10340,
+      "sha256": "1d503256700ec11d3b67f9f93faf026ad5c25b7cb72dbe83aee532618102fd12",
+      "blake3": "93d30d2fd7aa04176811d36a5deffe2e3128092ba4d2780db522407ba028d29c"
+    },
+    {
+      "path": "tests/test_integration.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14597,
+      "sha256": "94edd0985995e837e410767a1457c9dd4368e2bf6a0758c4ddc81fcac5755746",
+      "blake3": "18465ad5be6e568d63a5ba88c1eedd7cb83befedbc283b13f0fb0c72d9340102"
+    },
+    {
+      "path": "tests/test_keychain_secrets.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7242,
+      "sha256": "e966bbb461c99b5306c30f40c6fbab58978320a4f895064ecd2e24feb9c893c7",
+      "blake3": "c6b9e8c852390f5cdf247c202128a3297c2a1ba00bc17056136b1db287697601"
+    },
+    {
+      "path": "tests/test_media_watcher.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10123,
+      "sha256": "48cdb8cef547f20812cbc68f5bbafedc499b01654860f81a97ece5d21c160b66",
+      "blake3": "60cf3de53a53cc30432e4c1753ebe9f35b0a042e777571dd48a71f273100bfdd"
+    },
+    {
+      "path": "tests/test_morning_briefing.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13624,
+      "sha256": "30971084be234f78235fef7be1cecdb828647d414d14030146ecf820b36554a8",
+      "blake3": "5e1e88f5e2811ade045893879bfdafd17cfa4fa525fbf7e005911dc22ac08761"
+    },
+    {
+      "path": "tests/test_restaurant_tracker.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15079,
+      "sha256": "6b4a71f440b2304578a3c4b7588348d7169f8df3b688920e3c4604f4a923859f",
+      "blake3": "6ca06532d1e3850e5433d964aa4cbd73e9f672c403de40e8522212f61c075d2f"
+    },
+    {
+      "path": "tests/test_school_calendar_sync.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6370,
+      "sha256": "4f72a4f02ffb422bfa5cdd08029286c67e865322686831453d4733bcf87f8e36",
+      "blake3": "829048e806ddeea2a9a864a43800e98ee7e4f9634761f1ad3fe0cfcb2c14c9ea"
+    },
+    {
+      "path": "tests/test_school_email_monitor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17786,
+      "sha256": "20b6bee3feb42caa73619ae550f88f10aa84e6ccc5b10c7c0b13375194a8931a",
+      "blake3": "7951b7cf04ffb3548044167bc6035f2d10076e8be33c52880b8332c59b05ea1c"
+    },
+    {
+      "path": "tests/test_school_pending_queue.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12662,
+      "sha256": "2984ef62dd694d9351446a88377b7e9667b8fe3225fbe79b15659a03d7de407f",
+      "blake3": "0f90c1e530f220c3f36ad449d313d436b7dea673bdf7b6a8566e3f4ab79276e3"
+    },
+    {
+      "path": "tests/test_shopping_list.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8733,
+      "sha256": "90973e521522f6f9eee92383443db20bc0d99e7d20d0ecdc4c70a6d55bb07c1e",
+      "blake3": "0a16cb9c73d52a061a02633b88d269afb7b96df700bafedd4770d0cab8e2ebc3"
+    },
+    {
+      "path": "tests/test_trip_detector.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12803,
+      "sha256": "4b096f18c2208b8617460398ead2ddecd31b23e445b9539131b14733583c796e",
+      "blake3": "b6e2c29c5e93559221a29ee5be381a41fac867195873de4e308cbba0671da194"
+    },
+    {
+      "path": "tests/test_weather.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13326,
+      "sha256": "2681d7c1521b1a98a70db0b84edeb6f4e796b9bb091bfbe6da6b79966d0990ba",
+      "blake3": "b62c301445ac25973704250ed258d3e4f094296fe5ca3f9cfe615e65b98583fe"
+    },
+    {
+      "path": "tests/test_weekly_meal_planner.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17002,
+      "sha256": "400ecc3055e146c0f1454d1b983289c0e9ac5c612c0f0d35b8ab57dd4291383f",
+      "blake3": "4b4fc337a17f1aa68f37de259acb863c73bdbb81e457513e9510ae508c048d15"
+    },
+    {
+      "path": "tools.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 46289,
+      "sha256": "546b524a3b56a8ad40d4966291d17c13d2dd04840d985c9c31217d92b849f384",
+      "blake3": "44c9bc08c1414f1c23f595344f905cc9b3f75bd32748d3f303412b1b4a697f2d"
+    },
+    {
+      "path": "utils.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4662,
+      "sha256": "62ae2feee26b242aa4404033356d2f3834fbdbddddaf95c43e9e9d6eef619e1c",
+      "blake3": "7fafa1d0591e2e5d623b5a0f97af08960c306bc645f36283fbdd8e0915497459"
+    }
+  ]
+}

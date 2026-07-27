@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:1e6902a76d571a2f433c815b5c5c085f3ea604c531f980b5b4fd84cb1e20070d",
+  "sha256": "1e6902a76d571a2f433c815b5c5c085f3ea604c531f980b5b4fd84cb1e20070d",
+  "blake3": "119e54ed42ffb428d21e975ca73c8a49a5246b29e5ee8fc3962f761aeffd238a",
+  "size_bytes": 78742,
+  "file_count": 12,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8420,
+      "sha256": "08f04833a3a41dbd29809ecaca1aad7ecb61a53b1ada5a15843abf2b812f42cf",
+      "blake3": "e46b95c5b875e12dda1525451c68f4a3c026229d13ee314870693b53034e274e"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 143,
+      "sha256": "3c3893ef2405771ebdfea51b9970d87184f2d1eaa7d0c4fb18545ecc967f8a58",
+      "blake3": "a2fd380fb795dbc1e3d07251e6e0c91f8211e62e547da5cd446e7c0bc74fa751"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 361,
+      "sha256": "8f7f6e5d1dfe22fc3f7c1ce002430b8c72b5084a2fbbd6cfad07593d7691679f",
+      "blake3": "70d0e7e20db073520bb03f780befeb698c79bb8310d2db8d6da6c2a5bc2d11dd"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/business-field-map.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6357,
+      "sha256": "54787e16a17051b44edaa010cfe4bf280369882f6fd1a0283415b76ec1b7e118",
+      "blake3": "9b1ef932b750faeecd1d311a907fb983a8ba37357d2048b231595c837e3118de"
+    },
+    {
+      "path": "references/market-lang-setup.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10229,
+      "sha256": "a93c801ca1ef7857b74f061550108642635801e1f3c55304962bf7f511880f94",
+      "blake3": "8c21bbd6ece922545b63a8080517557d855cdf3fd2ac65c1413197a180b55812"
+    },
+    {
+      "path": "references/onboarding-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4602,
+      "sha256": "52938d63ad0e423c86e312013585061dd5bbf3b53c2e7fcadc06f38a4c27ab83",
+      "blake3": "9e510757081610e7403a602837072a4a7aba4b3e0a9d0066278f88d937e7a5fe"
+    },
+    {
+      "path": "references/translation-api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1745,
+      "sha256": "1fce4320e3b93b195e8f84eb8894b1312d0ed0adddbbcb0a9dd0246841ccbeed",
+      "blake3": "f2bd605671320f9f127c5bf522534fcb648d67889e0cfc6454b20cd585350464"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/lib",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/lib/shopify-cli.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4371,
+      "sha256": "1b1f210f0cfc2b4c41f452e6142e7dd39fa0f1ee67c79167e1fd9b54d60caf18",
+      "blake3": "3e33867d9cfd2e41aed5c2790dc955a02752fb2d6fed220c2fc3bd834dcd1a85"
+    },
+    {
+      "path": "scripts/lib/shopify-dev-dashboard-auth.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4183,
+      "sha256": "8a928a1e3a20c3895f80e765b10e359a00e5713cce39d90eaa0234da8c07e0b0",
+      "blake3": "d1fe9af1f70b2fbca2e27ce919f224ca502abe914800945b9a3dd46d7da720c7"
+    },
+    {
+      "path": "scripts/shopify-market-lang-check.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7953,
+      "sha256": "2d90232b736e4d463d42de3dac94793ff42df12b1f780cad9c8c430749a2f5ea",
+      "blake3": "84de048312757b64cf715c9b6eae83ec97d30f38c6eed09cb0669794724d1338"
+    },
+    {
+      "path": "scripts/shopify-translator-admin.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27011,
+      "sha256": "f7cd00dedc59d61b4c180590ca9ed8e28964faf4582ce3227d30ce90f5baca98",
+      "blake3": "7211f3a4a8b01f188f23808878a38ee87976d909ddc9986866b5f3567f36164a"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3367,
+      "sha256": "7fce655f0ea12b1a92617f068d8a34f97ad6c70065c293780357eeb01d7d461e",
+      "blake3": "5eef20e15cacb6b51a01b47807ec4fefd815e3ef7023db4523a48052e9c8aba4"
+    }
+  ]
+}

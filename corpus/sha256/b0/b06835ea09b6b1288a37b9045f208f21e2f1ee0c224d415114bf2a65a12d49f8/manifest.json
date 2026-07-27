@@ -1,0 +1,865 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:b06835ea09b6b1288a37b9045f208f21e2f1ee0c224d415114bf2a65a12d49f8",
+  "sha256": "b06835ea09b6b1288a37b9045f208f21e2f1ee0c224d415114bf2a65a12d49f8",
+  "blake3": "f32b7934d4a9abb11ed772ed8e269c1135094ca9b03ce9e8ace05b0e8eb426cd",
+  "size_bytes": 512952,
+  "file_count": 67,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17633,
+      "sha256": "f83d0fca4eca702b79755685d01937a8b139a6d76063de6103a68965561261f4",
+      "blake3": "621176580dbcdc977817f3e807df93845ff80d0d962eaaa0235e6054634c0fce"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 133,
+      "sha256": "a97af259b1301b8d69a08c343a9e63cc4838448976a6b034025e89abfed93051",
+      "blake3": "78a401fd8189891f7d5bf3f31ef66b58050f0c1fee2970e7984edf4bba853b7b"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/frame-skeleton.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6584,
+      "sha256": "b3645755b72257076ae8b0ca733f0c2ede1a6556b20325f0a29d42b93d5e86c7",
+      "blake3": "5be842ff419230940ff89f75eda1ba3ee1fed14900789a31c912e976c78391f1"
+    },
+    {
+      "path": "references/montage.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3430,
+      "sha256": "ed18fa27afdffb82fcddc7ac38c37cd646d4bb47fe125f86652877cf61bc70fe",
+      "blake3": "2c7770d019a1329014d8527f98f740c7ad1242c3b30ebdd85768e52539cc6ac2"
+    },
+    {
+      "path": "references/motion-primitive-catalog.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9885,
+      "sha256": "92a67a68c99d7a894a5208ab86a6ca9979c3ef1459011c7a7be07d545e46b1f8",
+      "blake3": "335fbeefe066d60204cb8c0c5946bd50a08a968c7c342d64b47857304e39d4be"
+    },
+    {
+      "path": "references/motion-primitives",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/3d-card-flip",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/3d-card-flip/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4213,
+      "sha256": "2b26580cde05d9c228c1ad55c40a0075d8369e32cf0bdae63243d301cfc46f0f",
+      "blake3": "18c72b6235240f3f12365c08fb71ebd02f0b69d61332b22798bb3193cb720065"
+    },
+    {
+      "path": "references/motion-primitives/assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/assets/gsap.min.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 72927,
+      "sha256": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb",
+      "blake3": "0a705954bbbe95f3a0c82d91f20af16b181e87a5f427e54d9be67d9dcec5231f"
+    },
+    {
+      "path": "references/motion-primitives/bg-flow-field",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/bg-flow-field/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12078,
+      "sha256": "29bce6fe18a1420a50ad1884eecafea165fdd6858181bed94a7a90d553a74ff4",
+      "blake3": "766791eb325a7dd378beda6259e7d644740d5ed821c12ab5a9d7ccf15f78d9e0"
+    },
+    {
+      "path": "references/motion-primitives/binary-decrypt",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/binary-decrypt/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3507,
+      "sha256": "6b9d90d222fe51a75df7375931c0fc83d1ccbdb127cba897e915ff9811c8f5ed",
+      "blake3": "34fd82cfacb49f63ee04f8ff92e743d78a63c2437d0a6fde67f862c8d67b44e2"
+    },
+    {
+      "path": "references/motion-primitives/blur-resolve",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/blur-resolve/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2462,
+      "sha256": "9a48099d7fc5a9091cc664416d3f151c4e243315e009212e09490cd24d90a2d0",
+      "blake3": "888d29184694e28b5ba894f99f2eb612c2b09d97a35c8f4b956cfd2191d44086"
+    },
+    {
+      "path": "references/motion-primitives/braam-punch",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/braam-punch/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3518,
+      "sha256": "20009fb3ac86997c85c511dc812f40b69bf91d4b793bb2aba5bba2b07a3b9c26",
+      "blake3": "f0ec8ee2083188caacf3aa857b074f679f6809bf201e7aacfb4290a62ff92a1b"
+    },
+    {
+      "path": "references/motion-primitives/chromatic-split",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/chromatic-split/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4279,
+      "sha256": "8a2d99f81b7316a8332afac21dbab51ddb444b7ff761cb2528f2f33bcab50e91",
+      "blake3": "afef77e34830b7adbdb7664002f71c9c1a7563d017cc976c949637ad7ae3eb8e"
+    },
+    {
+      "path": "references/motion-primitives/chrome-sweep",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/chrome-sweep/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2596,
+      "sha256": "370817d6e14a390904982e034cc3aa779c221a83c0305376aa7d0a13b51455a5",
+      "blake3": "8fc90615af1fb5f730065b2b0414289a9d7b675252bc8ae93b6372746d206bdb"
+    },
+    {
+      "path": "references/motion-primitives/counting-punch",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/counting-punch/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3998,
+      "sha256": "52b17af7db444e9d81bac996f1e0590fb47e88a8a200cdc9d5cefb85e1dc42fb",
+      "blake3": "1c43e32bfac62e948a6c79a0f1ab58ad8a4dc9e836ffbae06beedb564c175faf"
+    },
+    {
+      "path": "references/motion-primitives/crash-zoom-in",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/crash-zoom-in/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4164,
+      "sha256": "3033ea34231347c1463c14e4d470757d32b0fa3bb35120094f1e90e3fdff0fa2",
+      "blake3": "a7c8a80fb5b1a9a4ce1cbaa6ace9a9569e71d153758e1ce667a3420a6f765eb6"
+    },
+    {
+      "path": "references/motion-primitives/datamosh-smear",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/datamosh-smear/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4311,
+      "sha256": "40008888197aacd9292ec101dfd250885a90987ffbd4e9fc575c0858fb5192fd",
+      "blake3": "539f519ff262db1ced3ae6f55e3adcd29de95217d527520a17c4e4ad702ffb53"
+    },
+    {
+      "path": "references/motion-primitives/directional-fill",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/directional-fill/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3566,
+      "sha256": "1c1f17792f9e80e8dc6d62ea1c5dc8f4271e42e04055f8c97e67c5831a030fcf",
+      "blake3": "e419f7f3a6172d26b1db5859d920ac1e96f344f5a9c5eefac9d1330709e0dddd"
+    },
+    {
+      "path": "references/motion-primitives/dolly-zoom",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/dolly-zoom/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4074,
+      "sha256": "5f880691b03b091d42a74c4f7ff187197e56bbb41103417288be1c7bb139a4dd",
+      "blake3": "11dda0755d53243649aa9f7ec33d118067f117fcca641a7296c6c8f93668dfe7"
+    },
+    {
+      "path": "references/motion-primitives/electric-arc",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/electric-arc/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4153,
+      "sha256": "a5d931c1952049235c56ce075ded16d910782ed75a2a8a004acb0f713f7fc13c",
+      "blake3": "6b111357c0f343a4771d00b703763dafd0b47298405b5853e80d154783254725"
+    },
+    {
+      "path": "references/motion-primitives/flash-cut",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/flash-cut/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3944,
+      "sha256": "05f76dc5fc4da23bd2de65f3aab754cb2bf58a4a5b4df9f2d2d826acb8ef5232",
+      "blake3": "c09fb357b2a3ec72defaf23c8e9f48e77083393a09891defcea41b9b262cef69"
+    },
+    {
+      "path": "references/motion-primitives/gooey-metaball",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/gooey-metaball/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5770,
+      "sha256": "5819a487314ee710c1bc1479223d7fb494e6176f17ded188825149b9deb8317a",
+      "blake3": "e122c875cc752c9f5018566cdf8d061acc7c2ad3611ee6e40fcf55f999377ffd"
+    },
+    {
+      "path": "references/motion-primitives/hard-cut",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/hard-cut/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3482,
+      "sha256": "d34752afe7745206d08b6cf0e0f61e94d47b75aaf1318cd06f133511bcbe3b19",
+      "blake3": "bb1e1b3b92acf3c3f62a35eb79c63afda7d13fe2fc98be7ca0344d8591dc516a"
+    },
+    {
+      "path": "references/motion-primitives/hypercut-whip",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/hypercut-whip/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1999,
+      "sha256": "9048cdd93ec6494998c03bf2e92ca5d5ccc80a0fabd4ca768b474a26e1f8a083",
+      "blake3": "35586f332191ba89ed60f6c3be3da3e9de6e63d9402933a2621707dc4d42d1e9"
+    },
+    {
+      "path": "references/motion-primitives/iris-open",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/iris-open/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2805,
+      "sha256": "8bf26be3cc3eabebbdd7ecaeffadda488db61d23a473aaceef4d927e64ff332b",
+      "blake3": "b97cf5745a6de07bdcddfeb2bc13ae01b5c265efb416811938ef435c833c4be9"
+    },
+    {
+      "path": "references/motion-primitives/kinetic-letter-in",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/kinetic-letter-in/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2917,
+      "sha256": "962ec9ac7aa6b391f9cb5e3d66816336b0170550c50a194f6bdc9bd16eaccf2b",
+      "blake3": "41194971f729494edeeb68f9061bc45c84a7334f80b1dbcd4d948e65a9664abd"
+    },
+    {
+      "path": "references/motion-primitives/liquid-morph",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/liquid-morph/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3768,
+      "sha256": "a2a98514166502350d0737f5cee01b6189e1ff7c4eea8b541ea3a07be6794ec1",
+      "blake3": "2790eb1606f2f87b8d8c52ec0bbe4da245befa32ea10d4c79c2d62794e3f2c9d"
+    },
+    {
+      "path": "references/motion-primitives/mask-reveal",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/mask-reveal/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2880,
+      "sha256": "fe0c1e4538ccab949c8bd954a2cd6e2d454887afbbc2a32ee80738434cacbfce",
+      "blake3": "4f6b40bd6426b5f7a5989e8f37a13eeaf013b2f5ea1b378f80f175dc73b98942"
+    },
+    {
+      "path": "references/motion-primitives/mosaic-pack",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/mosaic-pack/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3607,
+      "sha256": "7f2975afcee9c1c6ff7e0f03b02790aeec8bedd40834bf4129a29ae02eae931a",
+      "blake3": "8accac556a8bfe15c54492412c4fb058d897c7952187542792bb78c76c27d237"
+    },
+    {
+      "path": "references/motion-primitives/neon-flicker",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/neon-flicker/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2755,
+      "sha256": "26a5e950abe8e3434ad69efe97b89b9a565f7859f61764266caff9c1bfbb40dd",
+      "blake3": "b6cbe15a88475b41b77e1790570107af60b4ab6e18f25b163ce0b59cadcdc290"
+    },
+    {
+      "path": "references/motion-primitives/outline-to-fill",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/outline-to-fill/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3072,
+      "sha256": "279ea438384e364f9529dff342caa1641126d03e3dd753d100ea2743b17d2665",
+      "blake3": "bef793f9ee520da2791c560444342a95c3b5620daeea7f2e5d11420e54868f00"
+    },
+    {
+      "path": "references/motion-primitives/palette-flip",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/palette-flip/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3624,
+      "sha256": "c03696cfd77331f83cc006d0512e27be8a663670e2a37103d994ae112fbb73eb",
+      "blake3": "89f5cfcd0e2b0f0f66e792379ef2bec797f2eadb5c12a2b7c480487e4c5ceab4"
+    },
+    {
+      "path": "references/motion-primitives/particle-burst",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/particle-burst/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3957,
+      "sha256": "574bcef6f8c1c2eba8a7a15227de8f01d0135af97b8763aa93c58e3649f6eb72",
+      "blake3": "967db3b4ef265f00a9d10e14221a3e1791985dc3c2108c96369b77edcc33e6de"
+    },
+    {
+      "path": "references/motion-primitives/pixel-dissolve",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/pixel-dissolve/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3417,
+      "sha256": "4ff37db19f215f505c1b8de420dd5e3ddd2c75e87a85e577e7f39444a9db85a6",
+      "blake3": "d95e2070f1f54d0197d2699722df6e0990b13a91910814fca7347521976b3e93"
+    },
+    {
+      "path": "references/motion-primitives/radial-burst-lines",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/radial-burst-lines/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4487,
+      "sha256": "5022379e0d66d108a665377ea90ffc90e9d1d06e6144817f6b0695114a74cc95",
+      "blake3": "84c692b769456cadbfed3eb9c13ab5ae3c2d81f8483207e3a41a19acf6aaf1b4"
+    },
+    {
+      "path": "references/motion-primitives/screen-shake",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/screen-shake/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2973,
+      "sha256": "ffab022425f8c5f5aed6ef6b8533b62041b09ea0032e65edda77c5b893b8d873",
+      "blake3": "a4448a54042787de38ce4a3e4a1fa542a888a74e6851c4ad571330f2fbd74c41"
+    },
+    {
+      "path": "references/motion-primitives/slot-machine-reveal",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/slot-machine-reveal/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3591,
+      "sha256": "fe5c83695b6c1358fff5a01400a5bab728e58ae362266aa57467a2add3298ab4",
+      "blake3": "62b8bd18a29b0c561d0c93c307ac689ff0af1cd1bd30d960aae0191872861046"
+    },
+    {
+      "path": "references/motion-primitives/spotlight-sweep",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/spotlight-sweep/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3787,
+      "sha256": "c2f27aeb84f46a7bbae66307bb9da6c5b866de84705b34c78a7513fc63f4cf63",
+      "blake3": "52483c97d4eb085c1f97bf57bb5513146062cf6a15261bdfdaade272373c918c"
+    },
+    {
+      "path": "references/motion-primitives/staggered-exit",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/staggered-exit/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3219,
+      "sha256": "1463d62f72c428a76ad64a45411e8f55db0e3f7c672540dcf5a7d807771d55e1",
+      "blake3": "6231fc2933205e60a1e7e9b3e6e2957832b5c69e6ca5923174e4da17bf702ead"
+    },
+    {
+      "path": "references/motion-primitives/text-spectral-rays",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/text-spectral-rays/USAGE.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2401,
+      "sha256": "bb2cae8966c4eef4b381244097f7995b7ec4b02dd9dbfd5f3fd6473d9a5c7c11",
+      "blake3": "c87fcedc2507964d98b22d29f74230925c473434021ab7dcfc586afa5a1f4c9a"
+    },
+    {
+      "path": "references/motion-primitives/text-spectral-rays/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12248,
+      "sha256": "5f8dd911524ffea34f13254235c2939b989a43fbb0e22afb5b21a175195fe1be",
+      "blake3": "8addce905f0393ad423f72bfcb42627f1b0f888e569ba04c96485670bca7eac7"
+    },
+    {
+      "path": "references/motion-primitives/text-wave-distort",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/text-wave-distort/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3762,
+      "sha256": "9e40b743c70c73ee5fbc3bbfc1f4cd6f402664a6d8fbcc65648173f6faf0e02b",
+      "blake3": "2eda0a22fea149c1f23cf3f1866d726f8b0f5db4e743d1bd533bfe7ec8214542"
+    },
+    {
+      "path": "references/motion-primitives/tile-mosaic",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/tile-mosaic/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3845,
+      "sha256": "6c8bce28d90411d459d6fa71c350ce17521aeb9bacd2afc1f489853e7814f772",
+      "blake3": "7ab860ef5be2260cef0c74d8e5c6ff36cf1192e335977d0c187dae2e179618fe"
+    },
+    {
+      "path": "references/motion-primitives/typewriter-reveal",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/typewriter-reveal/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3418,
+      "sha256": "5387baba4095545024dbcc582396210eeda6d26f82ec11e96b12922ad40aa0ac",
+      "blake3": "6dfdf3d6cdb789c75d4583ce596d3acd381f4a500ebee98549fcd8a6eaae9db2"
+    },
+    {
+      "path": "references/motion-primitives/word-grid-burst",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/motion-primitives/word-grid-burst/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3514,
+      "sha256": "c1456e605d1e905379894b31e178a2f3f126e8cc3a7163f74fe45516efd476eb",
+      "blake3": "d4c29ff1e240322c18129a9e52268157586370fee5d0c4927ce4191c496c43c4"
+    },
+    {
+      "path": "references/planning.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6152,
+      "sha256": "49425a505e805f982d9383989225a20e20bc7e3b42ea77387455309df4d2a7fe",
+      "blake3": "f58f5448896704e2cf8c9f5f180a7df0cc8ded8513b611ff5b800521b70a9649"
+    },
+    {
+      "path": "references/storyboard-format.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6208,
+      "sha256": "2e343fa5288002e307486888de87b94746f50e5ce93a8372e8c199bb031fe760",
+      "blake3": "3e119f8302ab02539efd47af5c89f960e50b2bcb802b4bde656115f6d40d97a0"
+    },
+    {
+      "path": "references/template-catalog.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8517,
+      "sha256": "7ce847407b6195f0aab68a960b1de69433cd0c178f4325a4b67c002f8b7c84f1",
+      "blake3": "a3d19ceb07417784ff842a1bb76c578e3460f1aa26ac50dc8426431f697eb946"
+    },
+    {
+      "path": "references/templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/templates/card-flyby",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/templates/card-flyby/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20652,
+      "sha256": "22ee2bdc2eca84c124356e7b7d3e8d73f2db65641d5cbf1c7667a14d2ec457a4",
+      "blake3": "bda4df0ec35b3e3941300cbfae007e6a733635d654fa0d96a871d6322b60ca59"
+    },
+    {
+      "path": "references/templates/card-flyby/program.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 642,
+      "sha256": "0bf66d1c680f5668794bc03939ced411164b0650803b1288dadfed9147bdc975",
+      "blake3": "ec640a61de50125708eada4a0510e52259994805bed5e5d62a105a2f530d7881"
+    },
+    {
+      "path": "references/templates/held-message-living-field",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/templates/held-message-living-field/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17334,
+      "sha256": "6cb86b99a3734cf41baccce4914907866ea74746577d5f912f280d3f266e4ea5",
+      "blake3": "b62511e41db32edfaebfdf5b68a2904d523d5d0e9d8d5d21a35a5b9af1bf8a5f"
+    },
+    {
+      "path": "references/templates/held-text-strobe-burst",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/templates/held-text-strobe-burst/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11430,
+      "sha256": "aa11432608a2672b62da03b19758f297c4dc3cda98dc7c74ffa22aee30030490",
+      "blake3": "8e80670f86e96b7da1cf4401623f8734d727bd8a2442ac465fac4d298e0aa9b7"
+    },
+    {
+      "path": "references/templates/intro-kinetic-cascade",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/templates/intro-kinetic-cascade/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22224,
+      "sha256": "7a69edbfd3cae461f233c934430d66791c11cb8d00d2979d9e15ff842159ab23",
+      "blake3": "c196afc07ad92ae9a791044350138571cfa9a62af83dca56d6936a464394e6ba"
+    },
+    {
+      "path": "references/templates/intro-kinetic-cascade/program.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1522,
+      "sha256": "e2f9a2a5de8e0fd659181d0ee545524aee245c0b0f24c891427217e749041ce5",
+      "blake3": "e7c0324cf799e79f7a4cff7f49b965bb703335813df800add9dd940fca07b518"
+    },
+    {
+      "path": "references/templates/logo-split-lockup-pulse",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/templates/logo-split-lockup-pulse/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 26531,
+      "sha256": "ec2c97b761011d0fe044ba0983b7ce4ec9943c2997b153b9029de414b9664511",
+      "blake3": "ea0d21687046eea9e8be4ee0692304999d13ed1cd2141e6555c35431bfb41f50"
+    },
+    {
+      "path": "references/templates/poster-tile-mosaic",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/templates/poster-tile-mosaic/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24320,
+      "sha256": "5d4d85c626f79bf443ad8d76ac98b1b106ffc99408128b767475ce91a5cac85f",
+      "blake3": "e41051f1fd2efdcddde4966f0e9d628174697501a1b1c43af8b6e23b95dc5888"
+    },
+    {
+      "path": "references/templates/poster-tile-mosaic/program.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 558,
+      "sha256": "99d840406246a1237c602362579b19c6d7e88d41607bfe6c5190221abec15519",
+      "blake3": "7d254fbcdce2987d1f2ad2cce359ca25436ceb3ecfdaf2cbffec45cdecc4f2b2"
+    },
+    {
+      "path": "references/templates/roll-flipbook-word-cycle",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/templates/roll-flipbook-word-cycle/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11154,
+      "sha256": "fecd97e92610cc30f38e563ea2152727de8f82fed810debf5df64284f273fb61",
+      "blake3": "2edd11aa07b3f8d379167a9735861adad1996528faa6fae0ee237fd09cdfe271"
+    },
+    {
+      "path": "references/templates/split-anchor-word-slot",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/templates/split-anchor-word-slot/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25085,
+      "sha256": "dbd8dba3ca08d9ea2a8eca7cd23b9f2c9da27a4b8c092271534e1377270f0b83",
+      "blake3": "8359118ce77f9a8d70b0b7b3718c0ca4a3ee57820ab17dbe9062dd31358378c7"
+    },
+    {
+      "path": "references/templates/split-anchor-word-slot/program.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 707,
+      "sha256": "90096a51480803d04dc5a163fe1abfd4efeb936bb55d59b8e4a60f0bab98f955",
+      "blake3": "cc874974a8e5ba6fc634fc35e9c712712078414521a1c88e9e1225a79e80671a"
+    },
+    {
+      "path": "references/templates/typewriter-phrase-keyword-shuffle",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/templates/typewriter-phrase-keyword-shuffle/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10046,
+      "sha256": "4c794931d075ca2e525c6023e5856ed36b29097d1454f69a1eb8dfaf24c2e88d",
+      "blake3": "e34ae857741ba0e0db0bc15fd981f8c1ab1fba5be2fc1090f45f74a719620134"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/analyze-beatgrid.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23457,
+      "sha256": "ed4032a948cb234291e27aefb83ec2d4f16929d080c6b216641e2872f1302279",
+      "blake3": "d3b0f4ede453000764704964ae87a3c26656454b6d53f6e21c73e097379c1d0d"
+    },
+    {
+      "path": "scripts/assemble-index.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8687,
+      "sha256": "955b715f58952b1c32e8cb29fab55fa2387c571ccca6ec9b8d58716f012e78bf",
+      "blake3": "675b5440be9b5518000b60b9e7a89f8aed57a288e5008a3ab67501b657dac656"
+    },
+    {
+      "path": "scripts/lib",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/lib/storyboard.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8249,
+      "sha256": "351d22701a115165b99695fbba880caf652dce92d436815236a430db2da94039",
+      "blake3": "a67f72c5e32b544fae475eaf405e3216d4b644d4fac46a3b4353b4a9dcb4fb41"
+    },
+    {
+      "path": "scripts/stage-assets.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2154,
+      "sha256": "50a4f20cf71a638cdeeb6625d5a6d75b203c20109ad703e12df538f03ec8730b",
+      "blake3": "916ffb7bdc8051fd62dfd06c7afbdac62a685aaa6fdc60f4f4396f4e1a7aef04"
+    },
+    {
+      "path": "scripts/validate-plan.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6698,
+      "sha256": "c0883b116ea0030a94cecac826e1bf464f92622166813032f75163cb261d0b6f",
+      "blake3": "d4e6c71c9d3df4d4474966d6c7c36eaff8139e3e5a3293e375d12a9fe1ef486c"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2868,
+      "sha256": "f3daa84e6dcadc41e47819029c38b01ab10d0372b7400e53e6559090e5ecda80",
+      "blake3": "8e5cb29eb375108d3f0569eb6d315cf444c8fafbcdc8d2183b6c66c7a872aaca"
+    },
+    {
+      "path": "sub-agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "sub-agents/frame-worker.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5004,
+      "sha256": "b4712990ae379c571a6d8190587adfa6c9b8cebb982b59edc42e94a04978d45f",
+      "blake3": "5fdcd6769c7f1f249add20bdd1a5ff47abf060e12db1cb6dee8c278a63714dd8"
+    }
+  ]
+}

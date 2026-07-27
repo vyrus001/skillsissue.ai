@@ -1,0 +1,381 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:29edff1b0a94aa107ceee3b02c422e3a3c6c75cfc2d6ffc8b48d0ae7556978b5",
+  "sha256": "29edff1b0a94aa107ceee3b02c422e3a3c6c75cfc2d6ffc8b48d0ae7556978b5",
+  "blake3": "3a4c83c108b2b57b88cb7bbe676274ad21a86a3caa8a72578f6ff2e0469bd536",
+  "size_bytes": 293751,
+  "file_count": 38,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2714,
+      "sha256": "5d43d1e3f7c65895ecad24ec9fa78636843caf17e56189be57906289110c5e68",
+      "blake3": "3684d804a35af045aece59f84a53a812ebbe38c47f7cd7098deeecc1b966e2e7"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 142,
+      "sha256": "aa8d1d0d7800f48f8583ce0c0488853f6910b870679ee273c5e5f04ae1e571e0",
+      "blake3": "5f4bb66089e6876b7598bc13eb7e0cca939826388c11f6c7a2cb8a0f1ca3cad9"
+    },
+    {
+      "path": "evals",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/evals.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 622,
+      "sha256": "32e15632c81fe56263ddf6f99aed6a0bdb716e8af24a70bbcb5e1a599d0cc8eb",
+      "blake3": "40c577e74f862205fe405b9474854403dade391f9359de996227f526d1d6c68e"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/PROMPTS.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2000,
+      "sha256": "4435668fb3521e3ef71db54ef2c9cb87fd52c67bd95e48518932caab7f22887e",
+      "blake3": "ac1430ff4ea488a8c5a435e862346a582e49f166ba0605d2a7210eaa0570012d"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "scripts/fin_agent.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4270,
+      "sha256": "385dd4caef8c83ed77f58683d77c0bfe23af1ca30e02318477d68d233cab79cb",
+      "blake3": "e5af6668220bfb13a5448306ace80187ae096f8e81f5c39c54dfc2af234b29cf"
+    },
+    {
+      "path": "scripts/prompts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/prompts/fin_agent.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6710,
+      "sha256": "a30cb03a7264b344142a6a6c20f187658d2ba87ff5bb13965aad228eae501f72",
+      "blake3": "58660f9632337fd6cdf7ef4460660b9e39c9d9e7865c95595666681207acdcf7"
+    },
+    {
+      "path": "scripts/prompts/forecast_analyst.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1904,
+      "sha256": "93bd57ad3dac37ce8975feb8b66dde859279e23cb7db1ce3dad99232ddbfbd00",
+      "blake3": "2b5f163ccec127b1feb832440e8326dcf7828477b11bc010d177aad72d4958d3"
+    },
+    {
+      "path": "scripts/prompts/intent_agent.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2240,
+      "sha256": "525c69e8c377e358035c636c285acc1448fd9a59166816740309a804d91a1c2a",
+      "blake3": "66525ce429749ab9c8b417cc1bb730579cc9badcd87b9bba6419c3fb7c8742b7"
+    },
+    {
+      "path": "scripts/prompts/isq_prompt_generator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1821,
+      "sha256": "38b3f53f2dbada2776fd8ada8cae9add20e7413355a4613ce4055f307bacaa97",
+      "blake3": "42fda70ac451ba27801ba79ed764270db767fc04dc9051c0863cd0b8979cf3db"
+    },
+    {
+      "path": "scripts/prompts/report_agent.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18529,
+      "sha256": "fa0c4ad1d6b0960c77faf75dea8e8498e229007476571c6a575c73560a55ff7e",
+      "blake3": "4843fbffa50f29588fd2f238214050a1498e14c60806e0290447f488362830ea"
+    },
+    {
+      "path": "scripts/prompts/trend_agent.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7534,
+      "sha256": "73c12f7198857ba0f779bb1045b73ab9653d143806d37ff2801ef36b2151a4a9",
+      "blake3": "633cfea6d29746056ff4d80466ba5468f0e41ce4b3c5e0e01c8cf87c7d052dae"
+    },
+    {
+      "path": "scripts/prompts/visualizer.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2028,
+      "sha256": "3770fb21c1a8d1dd34c1ff5d614061e4194ad18d020ef89c7be116ccab7012c3",
+      "blake3": "d55e7e077f16186f401584a8a9305fbba4e42919a4bf60bff32104b9fec5d0ce"
+    },
+    {
+      "path": "scripts/schema",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/schema/isq_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13967,
+      "sha256": "2bf63b07a6b53600301a933535fa803a851e535c4686ee838b7dcfaae079dabc",
+      "blake3": "a274aa3bd1b85b65f5157d687f3d0d26f21c99de6adbe8524ee93369b7cf0d85"
+    },
+    {
+      "path": "scripts/schema/models.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6252,
+      "sha256": "c7c1738a8dfe643db928a93dfd5e92b3276aac25a3faf1618fd38ea45c96e015",
+      "blake3": "08379b5d86deb360ccbd6ee67f37580d7c77bf9aa60e3de6570ad3f13250560b"
+    },
+    {
+      "path": "scripts/tools",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/tools/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 448,
+      "sha256": "83f4ec38eccd05df5026bcb3d43315b4af625ab462ff0feb6c6d8999dee73bb5",
+      "blake3": "5aa4da46c9629a328f276c7e5a99c5bfc107a6b849cc920bf9a7269bdc001d8b"
+    },
+    {
+      "path": "scripts/tools/toolkits.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19182,
+      "sha256": "9c5d38290575344b62f574b3c6c971c9a00685b5ebf003d1d718865d5e5e8d4a",
+      "blake3": "5fdc3d2c5cdcdf6f7ee26d15de041c6253e33f2a52da2b4e32406ecebbfe7991"
+    },
+    {
+      "path": "scripts/utils",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/utils/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25,
+      "sha256": "75c902eae79c725f91cb7c974d6c7711dc5a412996c67a56660e328b85321a35",
+      "blake3": "d8c7e237414343fcacaa7336b2357e79f61ddde835f7fa6e6a4e966c5b6f08ca"
+    },
+    {
+      "path": "scripts/utils/content_extractor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4858,
+      "sha256": "4a363c22dd62440a8bd25c9793008d5d7c37148a641933b223fd21ba13462a6e",
+      "blake3": "36639821d91612a86a0a6774aaf32e726ec8461edef6309bdcbb48c33d4db8b4"
+    },
+    {
+      "path": "scripts/utils/database_manager.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21840,
+      "sha256": "5344226bed657c9c2d6915385371004ea1abd143dce243fd727e96dbd854bf11",
+      "blake3": "dfcbda15b58f252f85d2cdb29f253039e9469c651f1bd8693701b1fcac8fd415"
+    },
+    {
+      "path": "scripts/utils/hybrid_search.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8207,
+      "sha256": "b2771655e6d54e526586b2c0bc2d12e6e332e452832d23382d012892116998a6",
+      "blake3": "6e6566bee70b9929017db7bb401479773b697adb9acee175512d3e2018e73985"
+    },
+    {
+      "path": "scripts/utils/json_utils.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6300,
+      "sha256": "2ec52de0a706f64b3466f490dc3f12ad8241f20fa316e858f7e3393afb3062d9",
+      "blake3": "9464394cc576f99c2373f66fb65278ed32c3b75abb008077c1189d99ef9b9502"
+    },
+    {
+      "path": "scripts/utils/llm",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/utils/llm/capability.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2863,
+      "sha256": "40b215695e2b7519224773ec4b280d115770670d1ddfc37e3eea2d23e085e171",
+      "blake3": "1d8b9e322b853040eff6e0ea2a8b34ab93cdeee0bf12ba0b7740728847358d0d"
+    },
+    {
+      "path": "scripts/utils/llm/factory.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3717,
+      "sha256": "85065ea8a843075f86a2532d455e64dca2207b657b758196d89cff9fad9e67b0",
+      "blake3": "4b813b589f460823f3e41f961c48e526a872c9cdd28b1821fd0419d0000509ce"
+    },
+    {
+      "path": "scripts/utils/llm/router.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2875,
+      "sha256": "0a8dbfa1a9d8d2a5b62ca77bc5a78bbbb1e53706be9cf18a7290e7608649927a",
+      "blake3": "71404bfc217931a0bd7c1c1bf72c1bb39405412419f3a7cafc992cf37bae6c51"
+    },
+    {
+      "path": "scripts/utils/logging_setup.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1072,
+      "sha256": "2b0e1a87da39920ed0958e5f9915cf481dccc8016874c91acaf2a0403916eadc",
+      "blake3": "69725d9be2069e3038b02f395e31e2177dc6a65cf36a92c62fbaf0b8e835d635"
+    },
+    {
+      "path": "scripts/utils/md_to_html.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4954,
+      "sha256": "55293fa28824cedee9b7ab80e84c01605f84a336882d5b6504216da7e142d200",
+      "blake3": "3e9d0b955b144bd5b71fe28de9169ee6927ee13bd39440072aafbd383a10b9de"
+    },
+    {
+      "path": "scripts/utils/news_tools.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10109,
+      "sha256": "85e5b0a3a57f1cb5ed9105404fbb2de527639a4bda9d433af42a3a48ff1f71eb",
+      "blake3": "fbddcf3664e5575de587f745855b68fb05997d52132e850baff0a69c09fd13ab"
+    },
+    {
+      "path": "scripts/utils/predictor",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/utils/predictor/evaluation.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5723,
+      "sha256": "c00bbac8132e737bf81917ad79dbc1dfe902f66c9d8b1813649d4bad6cbec78d",
+      "blake3": "929dc842f8370038113689a4390dcbff8c350c1638a3b5f81fc1f5510fe573fe"
+    },
+    {
+      "path": "scripts/utils/predictor/kline_generate.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7821,
+      "sha256": "83139d1249d2d797969be1207d0dab9f59f9d2563f28799da83b3d0918b39952",
+      "blake3": "d24bacb61a7e336641384d151ac255dcd0db72300b3d72f43464d79432cc696d"
+    },
+    {
+      "path": "scripts/utils/predictor/model",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/utils/predictor/model/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 394,
+      "sha256": "14193881034a621332145ee900e18cda79f72f65b2a2dc98059f8da5305ed336",
+      "blake3": "e9a2ee3d1c0fe37e5f5c22aa7fa94d1f7fe6e65822b887a2994fb9f63f42f966"
+    },
+    {
+      "path": "scripts/utils/predictor/model/kronos.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 31093,
+      "sha256": "b339c8685f40322663eb6c3f0d56dc91e64b65fae1f9cc22e414d6c76b9c7b78",
+      "blake3": "c9f1de8d50c812f7e5c936d67f2d3f9376a63f1448c5f456af9d45dbbe256f21"
+    },
+    {
+      "path": "scripts/utils/predictor/model/module.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22847,
+      "sha256": "91e8ff4ea1d77a95e39be79a217c360165e585d90475c7a8369c2833953ba181",
+      "blake3": "31e31d763237b5cde1f0f8982377abef1b372d1680c32008f0123689d4407dbc"
+    },
+    {
+      "path": "scripts/utils/predictor/training.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18696,
+      "sha256": "8cbc820f3142abce635dc9b8baf680434a3947219476cc5d430ed799549905a9",
+      "blake3": "8a8c95da88e3b7e08399fc82a3deeee901fcc9f5c4e08ced8593b0bb29661023"
+    },
+    {
+      "path": "scripts/utils/search_tools.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29258,
+      "sha256": "839c578de49ee139f9c7a4d36cdcafddc833ef407f73fdb0e38e0c02abac6ad9",
+      "blake3": "f252e10b535b2f1392c215ea1881c48110c32f26563e3160323a4b0064e518c0"
+    },
+    {
+      "path": "scripts/utils/sentiment_tools.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10099,
+      "sha256": "2a4221712b70b2034b1da71b9b711519a4e70a67d5fe5899ee7e0081ae1b2977",
+      "blake3": "88510bb20fad1c25e7742e755508afb0db7012d02f805908e0051bc44da6cd7b"
+    },
+    {
+      "path": "scripts/utils/stock_tools.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10072,
+      "sha256": "8db165681a6faf28a55767ed2409869cd20467a7b01f9fdb462a9bfa84b85c95",
+      "blake3": "bd3b6f209c8c53318f53a035e97873a0eaa85b2216d34f3afec3a75586ef9a55"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/test_tracker.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 565,
+      "sha256": "2dd9977e4a57a7ad4d4a30c4931299f1571343897b43a82f17c14dc0ab70431e",
+      "blake3": "78f2f5b90a6ef75d91cacba932151a4185d4cd95edad23b2a64fd53250437dd9"
+    }
+  ]
+}

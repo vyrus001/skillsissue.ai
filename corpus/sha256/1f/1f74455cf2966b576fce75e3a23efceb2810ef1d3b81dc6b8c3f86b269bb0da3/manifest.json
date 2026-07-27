@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:1f74455cf2966b576fce75e3a23efceb2810ef1d3b81dc6b8c3f86b269bb0da3",
+  "sha256": "1f74455cf2966b576fce75e3a23efceb2810ef1d3b81dc6b8c3f86b269bb0da3",
+  "blake3": "26b76942c6587c0ba0e92b702ba3ca96a113f9ab769d1039f2a1dd7604819d65",
+  "size_bytes": 110503,
+  "file_count": 13,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15892,
+      "sha256": "9fea503faee02ff5dee4d578f877656b14a847e5ea31c0efa5270b978d5de046",
+      "blake3": "efb705ce8737209a6729bc8e05157944725e3128db39ad1c0639eb93890d04dc"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 131,
+      "sha256": "43d6216bf30b25fdd218f852648440b9a0260be14b91338bd36bb95b07216737",
+      "blake3": "90f1f391171f5d3145578352b926dcfb7422f9164ed4edbed821e182422c12b7"
+    },
+    {
+      "path": "evals",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/evals.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2117,
+      "sha256": "a10b13d510e7466067d22554f2d9c8590dd84e012477d8d1b9ca4ca2d0b9423f",
+      "blake3": "7b63b10ab78c3471b64fb2aa9d86abd7f814aad847a59677aacd0135af0eac07"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/agent-guardrails.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9007,
+      "sha256": "565273be2c651adfbd201e062c5628bbe9aab33afdb5285c62aca5d65a366f8a",
+      "blake3": "7203df0344514d7dfcbdc10ce4a54c51cbda6ac51ca61582f2c71fc98fbac162"
+    },
+    {
+      "path": "references/capabilities.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6373,
+      "sha256": "6bad5cf65c6c40f937dbad01a1c862f5ee4c10a4542a3971297288a8259d523a",
+      "blake3": "3a256d4e7caf2ffa3fbe263ff6c55b5e61467dec26af590978eac8e20577b8bb"
+    },
+    {
+      "path": "references/cli-reference.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5122,
+      "sha256": "9056407f1d42dd6061ca4ed8f81671c4026a47267097bf4d0f3968fa25594522",
+      "blake3": "c04872d1a5f8e0f0c64819ece1d0a52a49f97281ecd4f32dfb66d3b468f51c35"
+    },
+    {
+      "path": "references/integration-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13619,
+      "sha256": "eb0df8e05b2b16abf5bf6a327ae862f364425deba30921cb8ed14faead486cc6",
+      "blake3": "69682ae8e923252bf113e08020962c5bd6afe0143c211de4d263a57eebfd5555"
+    },
+    {
+      "path": "references/setup-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6665,
+      "sha256": "7e07010771ba64203a541b3b3330f475d4e803351f9d115dae68f6787eb83401",
+      "blake3": "dd42022eeb7f296304ac6b80305b0cc9e6b97d4f741aecb9b5f635512b89e6d8"
+    },
+    {
+      "path": "references/templates.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18582,
+      "sha256": "a305b46c38d9681ec8c92bede3991b206c33bf76fbc0ea2437db514aef29f514",
+      "blake3": "7632cc0259ca56a5c18961c889163ecbca5347e7bdb07d4a52b9b4cee11ae2bb"
+    },
+    {
+      "path": "references/workflow-design.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12755,
+      "sha256": "6037bf252238393de3f481ef9846dd7b48437b15d58c8f53cf74cf9eb6a0b28d",
+      "blake3": "f59edb6493dbaa8573c5a9a526ba3c357e693f37961953e3a7d5b80f2c748a0d"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/list_available_tools.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8813,
+      "sha256": "474a145434b64cd8554e11dca602121385917c19853af1228901b14746925945",
+      "blake3": "bfe6d58b3311e958b285b65a28b52fbdbedc2165880a96cbdbcde63a9fc1f4e0"
+    },
+    {
+      "path": "scripts/validate_workflow.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8113,
+      "sha256": "19f3d3c53ad92d73825fda061958b07b202441b86120610ebaff56ef695a7300",
+      "blake3": "047186d957552d9f724ef4b7973a750fbdef207ee830bdfdce3a568c62ef51b8"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3314,
+      "sha256": "62e009527ed3743ba98060e2c21572dff51adb71cce261fa1ae4d27e9746b84e",
+      "blake3": "c83667bd1610a11eb785f5f0771fa7dbf939b4253d82b6e51d673a7200fc1994"
+    }
+  ]
+}

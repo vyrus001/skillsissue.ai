@@ -1,0 +1,801 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:85f9eed8613776645a681834e2514cb134df3a9983d030f25ed2196935e4883e",
+  "sha256": "85f9eed8613776645a681834e2514cb134df3a9983d030f25ed2196935e4883e",
+  "blake3": "536ed3056c7c995518bb0f4a788512e5bb07f60f957680fb2557a9d9c6a99af0",
+  "size_bytes": 271320,
+  "file_count": 86,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7537,
+      "sha256": "5e786966992ce30a930519b4f8cdb090eb04cdbd7e188d2c88acac212851c3fe",
+      "blake3": "888fda802a8d9f0d596516f8ee44b66657e112738bc3b76aef676cb6b652bf11"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 54856,
+      "sha256": "ebc3d2d989fff43b50a5d78dc5215a82fe2be1df7d8b5218dd17f76a66b8a440",
+      "blake3": "681646bb4c6a9485d3a081b13c01a92b576aae57f87a7341d7bc1b2016bfa2c5"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 125,
+      "sha256": "fcd6e362ac9df69ea739b422894b2a6db6369e8b60a623cd3385cc74589d8c02",
+      "blake3": "8bb4d9bcd5c6f4c57735975079dbc26a2e4658203b8858550752852bcdd0ad3f"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/templates/aida-classic-16x9",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/templates/aida-classic-16x9/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 842,
+      "sha256": "37a8bdb82923e2f9ab1176b92737b1113a1aea54e5362166fa84bf02fbe1e757",
+      "blake3": "49d0d94663cda3cf54c543d7748e99c2f966763bfcc9ff61be276ad39a6a2c5a"
+    },
+    {
+      "path": "assets/templates/aida-classic-16x9/remotion.config.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 115,
+      "sha256": "0c7262a2b854440e6cbd58eb08cae65a27d5b15357d1b9eb9eb3a120b954c19c",
+      "blake3": "cf026c9a3af2623f5f3828835d881d7bea7fe672817847b0942c9e97b4b301f4"
+    },
+    {
+      "path": "assets/templates/aida-classic-16x9/src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/templates/aida-classic-16x9/src/ProductAidaVideo.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3484,
+      "sha256": "28638edf780981e1d16f2cdb213a0ad196d39cfd9b97065d5da0cc0c04fb82d6",
+      "blake3": "7bc20cbf4ea875c8db68dc64d50a1a5de5a17c16a5ce78cffdbabc9cc710c953"
+    },
+    {
+      "path": "assets/templates/aida-classic-16x9/src/Root.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 508,
+      "sha256": "adff6fcce8a7529a12cdeea806d2689c0b10e3e021f6dcfa64fcadddcddb9493",
+      "blake3": "7f33322f968c26fc25ee7af19d39498c115f7f8afe6ba2ad8ad61a5d202b1684"
+    },
+    {
+      "path": "assets/templates/aida-classic-16x9/src/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 105,
+      "sha256": "855e23f5a7473a90b919295047a8b2a81e9634b68a9893dbb3b7dae377e4687d",
+      "blake3": "90ac5800f017d9a3d000cfc9a5c7d7e06fe3c7cd427a3ac228347e313296c567"
+    },
+    {
+      "path": "assets/templates/aida-classic-16x9/src/sample-plan.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2640,
+      "sha256": "5dca106a5b94e124471f43ce47456cb8fbb7f998f2556790f9633fc2d24046c9",
+      "blake3": "d9eb1fc45e4a2561709c5caca3c556137cdcf82c6bf772e451fe5d4c33388406"
+    },
+    {
+      "path": "assets/templates/aida-classic-16x9/src/scene-types.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 430,
+      "sha256": "ca3149aee8e6231e847a3a65212b1dc1cc7b89a2c57470dfbfbee984b1a4cc44",
+      "blake3": "6ea103e241eed03cfdaec941006179c1a1e9198e659a9a4e936a9cfea0b518d6"
+    },
+    {
+      "path": "assets/templates/aida-classic-16x9/tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 330,
+      "sha256": "0b2a200fc13b4d083cc4a2d8f60a541d2bbc00b2afe8fc546d282d12616e2eee",
+      "blake3": "0a0f40b3f6405371cc99179310690fe10a8103597c5698b099d5c9d909b4ad37"
+    },
+    {
+      "path": "assets/templates/blank-16x9",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/templates/blank-16x9/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 830,
+      "sha256": "eeb536c3f6bb3360c78cbd5f023c4d46e42ef4870dd83c7da4b1ace321e2f5b8",
+      "blake3": "2ce4978a0f728a9fccbd289fe74c8a3964391750437eebc29170a93024c409e7"
+    },
+    {
+      "path": "assets/templates/blank-16x9/remotion.config.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 115,
+      "sha256": "0c7262a2b854440e6cbd58eb08cae65a27d5b15357d1b9eb9eb3a120b954c19c",
+      "blake3": "cf026c9a3af2623f5f3828835d881d7bea7fe672817847b0942c9e97b4b301f4"
+    },
+    {
+      "path": "assets/templates/blank-16x9/src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/templates/blank-16x9/src/BlankVideo.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 877,
+      "sha256": "dace22d96a4b3d3ce24d20aa3b543195d2dea1c04abb2a71f282c1183f147483",
+      "blake3": "f7d43a7c0ec0617dd91cc6d511bd842b8c9549a5e6c0a3b0d8fc18d5590a351b"
+    },
+    {
+      "path": "assets/templates/blank-16x9/src/Root.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 322,
+      "sha256": "6248c83bfb5870cd4bcc528a1b1abaf4048a89ed016278bdb6b35b41b1cab7d8",
+      "blake3": "b1c1a0d8ff81374f664526e83312274312b2a282f29f183c6febc80ead316641"
+    },
+    {
+      "path": "assets/templates/blank-16x9/src/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 89,
+      "sha256": "6b83f700a1c9bf9bcb582b06d2a7a614de28faee7ed30c805b6bfe0fad3b710b",
+      "blake3": "bf4a64d8c6006aadddb30c03a2830aa58e3046be627524e1c454ca99c529acde"
+    },
+    {
+      "path": "assets/templates/blank-16x9/tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 330,
+      "sha256": "0b2a200fc13b4d083cc4a2d8f60a541d2bbc00b2afe8fc546d282d12616e2eee",
+      "blake3": "0a0f40b3f6405371cc99179310690fe10a8103597c5698b099d5c9d909b4ad37"
+    },
+    {
+      "path": "assets/templates/cinematic-product-16x9",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/templates/cinematic-product-16x9/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 731,
+      "sha256": "d034b642d94f995956cec3ecb59779ee025432d550cd1e5282075d045570aa7d",
+      "blake3": "f0fecb662cb77323cf4cb195b1385c2fcd46721a3b78fed5de9d8acdd879d706"
+    },
+    {
+      "path": "assets/templates/cinematic-product-16x9/remotion.config.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 115,
+      "sha256": "0c7262a2b854440e6cbd58eb08cae65a27d5b15357d1b9eb9eb3a120b954c19c",
+      "blake3": "cf026c9a3af2623f5f3828835d881d7bea7fe672817847b0942c9e97b4b301f4"
+    },
+    {
+      "path": "assets/templates/cinematic-product-16x9/src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/templates/cinematic-product-16x9/src/Root.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 323,
+      "sha256": "b9ce8697c6a318a029286d16d485b964d19ea512497187a7e231112261fcf274",
+      "blake3": "eaf78ed6a258e1304905a9faa9965556257345abdce961127a4b2185f52fc72f"
+    },
+    {
+      "path": "assets/templates/cinematic-product-16x9/src/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 105,
+      "sha256": "855e23f5a7473a90b919295047a8b2a81e9634b68a9893dbb3b7dae377e4687d",
+      "blake3": "90ac5800f017d9a3d000cfc9a5c7d7e06fe3c7cd427a3ac228347e313296c567"
+    },
+    {
+      "path": "assets/templates/cinematic-product-16x9/src/template.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3027,
+      "sha256": "24682dc1c9cafbc56476ad6c33e12fe8918200e968fd41fe49edcabdebb9d4cb",
+      "blake3": "504ed056730868d0f2a9a932bc4393100ea058d8cdf6446a72802f69fcc2a9a3"
+    },
+    {
+      "path": "assets/templates/cinematic-product-16x9/tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 330,
+      "sha256": "0b2a200fc13b4d083cc4a2d8f60a541d2bbc00b2afe8fc546d282d12616e2eee",
+      "blake3": "0a0f40b3f6405371cc99179310690fe10a8103597c5698b099d5c9d909b4ad37"
+    },
+    {
+      "path": "assets/templates/explainer-16x9",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/templates/explainer-16x9/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 850,
+      "sha256": "0077101f3867376ab1d10ec4c0caf380f5c81e9b5bbab4604e666896d994ca51",
+      "blake3": "46e352bc7c83da827c1c4e2656e5edffaa1da394714c0873b172986ffe310850"
+    },
+    {
+      "path": "assets/templates/explainer-16x9/remotion.config.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 115,
+      "sha256": "0c7262a2b854440e6cbd58eb08cae65a27d5b15357d1b9eb9eb3a120b954c19c",
+      "blake3": "cf026c9a3af2623f5f3828835d881d7bea7fe672817847b0942c9e97b4b301f4"
+    },
+    {
+      "path": "assets/templates/explainer-16x9/src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/templates/explainer-16x9/src/ExplainerVideo.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4678,
+      "sha256": "adbd0fe40e736e160bed086add06ecef28140c8407c06b2034abba15d7c33697",
+      "blake3": "c45ac7490aac2da7abe88fb1401655b62c09a900bbe10fac0dc7788c95c80822"
+    },
+    {
+      "path": "assets/templates/explainer-16x9/src/Root.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 531,
+      "sha256": "f45e4468a0e00bc84fad536cb1e2ef4fc3fd6e612ab06580fc85a3759f5a3ad0",
+      "blake3": "52c08f98711a51481745af870f3a1dd413790ebb84eee1ca9bb80f42c57a368d"
+    },
+    {
+      "path": "assets/templates/explainer-16x9/src/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 89,
+      "sha256": "6b83f700a1c9bf9bcb582b06d2a7a614de28faee7ed30c805b6bfe0fad3b710b",
+      "blake3": "bf4a64d8c6006aadddb30c03a2830aa58e3046be627524e1c454ca99c529acde"
+    },
+    {
+      "path": "assets/templates/explainer-16x9/src/sample-plan.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2508,
+      "sha256": "078ea8bf7c744473ea993486143903f10f1e33fddf33ae3f9722b6ae9858313d",
+      "blake3": "524b4b52e49efee8f2c7dd3af83877b01bad94005d9c23af414a92bf9b0c86de"
+    },
+    {
+      "path": "assets/templates/explainer-16x9/src/scene-types.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 501,
+      "sha256": "7586005aa7738fea70c00d07e8151088b1ef5116fff85f966ec5f65119516ae7",
+      "blake3": "98f43dc64250b69b1f31775c4586fb0f74643552d9104eeedabc256f9e07dbef"
+    },
+    {
+      "path": "assets/templates/explainer-16x9/tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 330,
+      "sha256": "0b2a200fc13b4d083cc4a2d8f60a541d2bbc00b2afe8fc546d282d12616e2eee",
+      "blake3": "0a0f40b3f6405371cc99179310690fe10a8103597c5698b099d5c9d909b4ad37"
+    },
+    {
+      "path": "assets/templates/mobile-ugc-9x16",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/templates/mobile-ugc-9x16/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 710,
+      "sha256": "98c8afceadc1d81912a99df64c9a71189270563f3b0ec1f3bc00eab74545fd51",
+      "blake3": "7ad81df28338f7648282ff180309ffffa68df125663dc315821eba8c2cce44f2"
+    },
+    {
+      "path": "assets/templates/mobile-ugc-9x16/remotion.config.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 115,
+      "sha256": "0c7262a2b854440e6cbd58eb08cae65a27d5b15357d1b9eb9eb3a120b954c19c",
+      "blake3": "cf026c9a3af2623f5f3828835d881d7bea7fe672817847b0942c9e97b4b301f4"
+    },
+    {
+      "path": "assets/templates/mobile-ugc-9x16/src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/templates/mobile-ugc-9x16/src/Root.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 302,
+      "sha256": "437544ccf17d99e9960f0d34faabb4b0618a23cc8d5e62a9bf6f70d49d5fdde0",
+      "blake3": "246cee35f41b9af2c365a0ca9a86ea8441bf7dec7b820162e1b39b8dbfcdcc17"
+    },
+    {
+      "path": "assets/templates/mobile-ugc-9x16/src/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 105,
+      "sha256": "855e23f5a7473a90b919295047a8b2a81e9634b68a9893dbb3b7dae377e4687d",
+      "blake3": "90ac5800f017d9a3d000cfc9a5c7d7e06fe3c7cd427a3ac228347e313296c567"
+    },
+    {
+      "path": "assets/templates/mobile-ugc-9x16/src/template.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2336,
+      "sha256": "e40a77208909c9ff6598aee627724d5bd42f68cb0a09e62e2c7186a4813a3444",
+      "blake3": "46b2f4965dfd8e7fe04ff9976898ffd820698e9a3b727db2fc25cd1713289c75"
+    },
+    {
+      "path": "assets/templates/mobile-ugc-9x16/tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 330,
+      "sha256": "0b2a200fc13b4d083cc4a2d8f60a541d2bbc00b2afe8fc546d282d12616e2eee",
+      "blake3": "0a0f40b3f6405371cc99179310690fe10a8103597c5698b099d5c9d909b4ad37"
+    },
+    {
+      "path": "assets/templates/saas-metrics-16x9",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/templates/saas-metrics-16x9/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 716,
+      "sha256": "7fe6c085050b1f7d0e9c1436bfee7847e42182872990e8e8bd51afaba1e6f36f",
+      "blake3": "3defda5ef7c621f472be99a3956f4641ddabab65494eac84de56ce16795a5184"
+    },
+    {
+      "path": "assets/templates/saas-metrics-16x9/remotion.config.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 115,
+      "sha256": "0c7262a2b854440e6cbd58eb08cae65a27d5b15357d1b9eb9eb3a120b954c19c",
+      "blake3": "cf026c9a3af2623f5f3828835d881d7bea7fe672817847b0942c9e97b4b301f4"
+    },
+    {
+      "path": "assets/templates/saas-metrics-16x9/src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/templates/saas-metrics-16x9/src/Root.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 308,
+      "sha256": "e2a559bd9ec6607e0f0647ef0cfe47abdfc0fdaab9979d7807393c05435a9d8f",
+      "blake3": "ce5eb52e675b05439c78a629912e895349feff81ac4bc6b05fd12bc5bea48c8a"
+    },
+    {
+      "path": "assets/templates/saas-metrics-16x9/src/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 105,
+      "sha256": "855e23f5a7473a90b919295047a8b2a81e9634b68a9893dbb3b7dae377e4687d",
+      "blake3": "90ac5800f017d9a3d000cfc9a5c7d7e06fe3c7cd427a3ac228347e313296c567"
+    },
+    {
+      "path": "assets/templates/saas-metrics-16x9/src/template.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2779,
+      "sha256": "2aceff735a0dd221a3e79b98f4bb10a29109f99997400f0a7747b4f020eb0c39",
+      "blake3": "6ad27c382b9b977f81fe3bad7decdf19bd0f37d3f1bf015b9267603cddc020dd"
+    },
+    {
+      "path": "assets/templates/saas-metrics-16x9/tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 330,
+      "sha256": "0b2a200fc13b4d083cc4a2d8f60a541d2bbc00b2afe8fc546d282d12616e2eee",
+      "blake3": "0a0f40b3f6405371cc99179310690fe10a8103597c5698b099d5c9d909b4ad37"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/ancillary-assets.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3893,
+      "sha256": "91191e05f4e56e6841ceb24c9debf6900e800b9342d669b0543618003fcc577d",
+      "blake3": "cd111f83c0a6c91b1a12c7c5af391d81f2e6074422f1273e171b26bd902d4563"
+    },
+    {
+      "path": "references/command-reference.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30166,
+      "sha256": "4bc40700579865b3f07c21e307f861807ce036a91053833b5b5bfd844dd824c4",
+      "blake3": "747380aca26bbd98ffdbd4ed953ce9043397f32b0ac17ca3731e80a5206843b1"
+    },
+    {
+      "path": "references/creative-guidelines.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3041,
+      "sha256": "f595ef6d58bdcb19fc28cf3ad2321d76004ffc80e7068dd9e139c3bbfec5b77f",
+      "blake3": "a3348bce002aee70d1e11a25667845f0add10409831b1dba3e3de30381107585"
+    },
+    {
+      "path": "references/prompt-cookbook.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14050,
+      "sha256": "b0f4b9104cc342d995d3caefd31de6978d3c9b6b0b365eb677d18b149f06903c",
+      "blake3": "8420b6b3026d869381313ab1eb4ecbbed46a94a8a449e9841e7144fd51db2349"
+    },
+    {
+      "path": "references/remotion-playbook.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5830,
+      "sha256": "2d85170befeecb33eecb2a9b04851d4b744e202e1a06f988ae4238b820c73d17",
+      "blake3": "0998fa1bd71b827d33bb792cae8a6310a85e9e2aab1170db7739790e477253be"
+    },
+    {
+      "path": "references/remotion-rules",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/remotion-rules-index.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1410,
+      "sha256": "b004557dc5718141043281080b268b84389544f217b6a77abb410068c10fc34c",
+      "blake3": "88b12fbae4b2a3d02b64ae312d37ea29003bbbe350e0fb0dc9dabc0954c54d04"
+    },
+    {
+      "path": "references/remotion-rules/3d.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2290,
+      "sha256": "2a5b1a72de35168bba08c7e78153fccd408ec7882fdd1778f2751162e1661378",
+      "blake3": "210198660a0e53bba3a4061c9dcca974a0faf6530d5855e35d488d3d06d4f3b7"
+    },
+    {
+      "path": "references/remotion-rules/animations.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 790,
+      "sha256": "99a6377d64061af5f7fcd1a179c0c8f6d7bcd0a515060a46db117a757ac3387a",
+      "blake3": "7ea0bba3617ef754518740dcae17dfac28781ed3e63df285e0b35790fcdc1a4b"
+    },
+    {
+      "path": "references/remotion-rules/assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/remotion-rules/assets.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1590,
+      "sha256": "664160a48fe6ef76c9b25ea51b3796d39d371cb3632f380b014492412902ad42",
+      "blake3": "4d0f9803d2092a658974fe639d169e6fb6db9017ea6c828703035294b1c95eb1"
+    },
+    {
+      "path": "references/remotion-rules/assets/charts-bar-chart.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3429,
+      "sha256": "6e5e219c596c8515336570a5bc89c233e32e695d5816dec88eb929e798eeea61",
+      "blake3": "76068e74ac58158cd1719e965876c78f2dfa7bf1cba96f358788dc424e376715"
+    },
+    {
+      "path": "references/remotion-rules/assets/text-animations-typewriter.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2183,
+      "sha256": "92b5f47d6d18387a0aa008ce9dceefd30f673ae5879e16892bd4b4ea97f5dddb",
+      "blake3": "444e3be3b3bc84cc87cc44f7b99011337460d7d8cc3b87e3461db29e5b45e28d"
+    },
+    {
+      "path": "references/remotion-rules/assets/text-animations-word-highlight.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2387,
+      "sha256": "5dbba688b875baaa62555c7a243f54739e81edbf34148c87048594a210c3ec2c",
+      "blake3": "dd5d76f54686262c60ac781b549e6dc28e25e873482561af05e5d65ed0981e54"
+    },
+    {
+      "path": "references/remotion-rules/audio.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3822,
+      "sha256": "06d859b2f463d0e0e823655548e314b59a1d6321377857fca52a09c629170b12",
+      "blake3": "914c32b14e953deda8d3793cfe68f5f837078be99852439aa15cf9e47fc6f03a"
+    },
+    {
+      "path": "references/remotion-rules/calculate-metadata.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2920,
+      "sha256": "b258c788fb3337187245c814f2fd4ddf10f7330ec97cb8117202a0145d4d27a6",
+      "blake3": "7b576b46e760e71bc8ef774dc4caf279ce95a592422aa1b316f1cd7a036c735c"
+    },
+    {
+      "path": "references/remotion-rules/can-decode.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1587,
+      "sha256": "fb3f9933e45103d72530915b72a844b3454c6acc03289db5efe8f4541b088fad",
+      "blake3": "9213ae0a9321325de38b65224a5f259c2b07f90eca40a31ff129b62ec55fbbf1"
+    },
+    {
+      "path": "references/remotion-rules/charts.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1751,
+      "sha256": "2430705a627c468e0922e2f78ca1a2379537d378b5fe76292b69f44659a5d66e",
+      "blake3": "cb3362556e1ba87766edd74628151c5576f673f8ac8d1b88ae92d73fcddd4e7e"
+    },
+    {
+      "path": "references/remotion-rules/compositions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3445,
+      "sha256": "58d92350fecc1cb57567615fd5e65f35df3e2893ea58e82768050d051e6e692d",
+      "blake3": "7303dff8292f333f7d3cbc884d9c23837798220995aa8a54dc330cc99a57107d"
+    },
+    {
+      "path": "references/remotion-rules/display-captions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3698,
+      "sha256": "96abde72e0bcb88cdc5871b80b5d6eb0c6aedf0ea9611e6c5157cb0ee980ba99",
+      "blake3": "6812df5c0340dd97b01ec8bda268685908c8b8d3557a00509c6c2c4f31fa93a8"
+    },
+    {
+      "path": "references/remotion-rules/extract-frames.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5496,
+      "sha256": "b7a63f6509a1a33d624f36d3f6772abbc364b0c883520803f3701c26541e7cd7",
+      "blake3": "166123d729a1faf9840f68840ca1bd468de6c687403c4bcf7c98de0367fdc203"
+    },
+    {
+      "path": "references/remotion-rules/fonts.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3484,
+      "sha256": "1749e4cf82e8b157d4b0a26f46721152d3ef9e5e9a1686753b8bb6a1be83ddbc",
+      "blake3": "65cc286d86e5585d3f3bd1af208d30b8b832be5dc0c95842ba6c06168d4ffa24"
+    },
+    {
+      "path": "references/remotion-rules/get-audio-duration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1354,
+      "sha256": "d5098e8d20b227464e3519c761cba1e03396c77da636d1893c7be3061a0a8e40",
+      "blake3": "692a599051d284d07189a14309f4079281b3782e8b3915195412ad2c67eecc5a"
+    },
+    {
+      "path": "references/remotion-rules/get-video-dimensions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1627,
+      "sha256": "839867aa115e09a719096a902a6ad5e304135f2053cce9928776fb4fcb5bf3e1",
+      "blake3": "463dbb785f21715b433040100926344feadd92378be4784f90377e496faf8b1b"
+    },
+    {
+      "path": "references/remotion-rules/get-video-duration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1341,
+      "sha256": "7b31fab3cbf9b0771bae41e2c41c9abed2b59d495ffac7160e562fdf86848726",
+      "blake3": "ade3754544755be4f2e1f8f8d54bdbf200d3ac39f6c6c1f62cbdcdc34711e819"
+    },
+    {
+      "path": "references/remotion-rules/gifs.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3868,
+      "sha256": "53d9d658e3093dba4a798945d5c1b7004688ed96a09521cfb22b4cec418a8ae7",
+      "blake3": "b10ff1a6e25b64d479444a0cac87f24c874976ebb17c7697fb86bea7b5690c35"
+    },
+    {
+      "path": "references/remotion-rules/images.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2783,
+      "sha256": "91d32f6e528b1f1cddc9a0cf70d0faa74491e3a2fe4a32933da0e21010e9aa74",
+      "blake3": "b2a42b9c8a32b2849531fa5135ccbb83a2173c01b403eed37982b1dabda590b7"
+    },
+    {
+      "path": "references/remotion-rules/import-srt-captions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2113,
+      "sha256": "38d33be5439714a2ddb577d8c8a6b7bf09bd10f66c0540415fb70536d4374e87",
+      "blake3": "2f28c267617355c92aa943c3c242bda4ad714ffb6cf529d10ef75d6bf22fce5f"
+    },
+    {
+      "path": "references/remotion-rules/lottie.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1779,
+      "sha256": "6c0cb4babcff94e35ecc22ac63a44d2131db26e7e30b53bbae0a1eb0828c74a0",
+      "blake3": "8beee70127f69d1c31e015c91b46169f4d126d853726964af1f73e709daa5c97"
+    },
+    {
+      "path": "references/remotion-rules/measuring-dom-nodes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 974,
+      "sha256": "5270db465cb9eed1942b9970de101211f954b7802dfd92e957bdc7e3eebe6c5c",
+      "blake3": "94ebe1f04d08190586db55e0fbb9583ed25b0af3d5a54fff552daf987eced06b"
+    },
+    {
+      "path": "references/remotion-rules/measuring-text.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3000,
+      "sha256": "88905cbd701e247306645c19f18e01aebe27c4eb0178a4e5d0377687f5ac1478",
+      "blake3": "9adef362f69c151f03b4269ada62bad53f61151a524e59aff3482113627a0553"
+    },
+    {
+      "path": "references/remotion-rules/rendering.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5847,
+      "sha256": "4630b82b206e09760abf507d6942d7bc6a5af4cf0ac97dde2e3e2e5710147a0b",
+      "blake3": "71a8b955af1f802e4a6e988ce6fd05ec9793e2974282c2e4397a2bca125e0041"
+    },
+    {
+      "path": "references/remotion-rules/sequencing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2389,
+      "sha256": "ecb74589c87da53d15230ffc669ca8de197c9748de2be7720acd54c1f777950c",
+      "blake3": "ea9c57f50d61f8766d1ab8498205fe8d8cae408b6a2b2e504e0c71736ad54368"
+    },
+    {
+      "path": "references/remotion-rules/tailwind.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 422,
+      "sha256": "bdd5162400cd20c6faebdc9d6d2ff9380f4f213f791b38eeb536c5231be34586",
+      "blake3": "24a7fff99b2d8a03feab9354267aad46ddcf5f73288bd16cc67924c1ab79023d"
+    },
+    {
+      "path": "references/remotion-rules/text-animations.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 700,
+      "sha256": "40ac6b1bccf1c57d9edd46c74e847ec6e86fe775d3ef4fd14e1338f4a2606171",
+      "blake3": "485d6e5a0cdc8472ee12a3ae67cb010f6221d0dc1407419fce94d24a681a8121"
+    },
+    {
+      "path": "references/remotion-rules/timing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3939,
+      "sha256": "f639ed8452767a7458a480c7d33b7126b57c70c3b5e061aeaaba382420fd8ad2",
+      "blake3": "0b9631de61edb663c945f1bfcf9a4078513a8a29c963d6bd060d1010de07c9ea"
+    },
+    {
+      "path": "references/remotion-rules/transcribe-captions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 850,
+      "sha256": "e7d3edf667e3b1f3c3ed93431cc7caf5e28786c7d1e547f33ee926480a01c0d0",
+      "blake3": "fbc843600231d28300a7581f30e2eb40bae6b3656bd2ac14d8a1fd9c60367f6d"
+    },
+    {
+      "path": "references/remotion-rules/transitions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3730,
+      "sha256": "a42100803a1e5e679617ae7fb72e91431be2a0ca53e15437fa10bdd651921bfa",
+      "blake3": "d446def9818ae87c57b76fdf3d3ef781c8138e37f06c548f8c617e4ece3ff73b"
+    },
+    {
+      "path": "references/remotion-rules/trimming.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1210,
+      "sha256": "40727aefd5939a42925f1ee1fcdfaf733f7fc098c26d7676f7fb69b418913375",
+      "blake3": "5b156623a77aebd81538d3d87549a00bb01ce0ae55b66b88e1cb6d4c975a2bb2"
+    },
+    {
+      "path": "references/remotion-rules/videos.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3509,
+      "sha256": "d9d3032a57f92c759daf0bd60b3282f6810ecc9958e9093a6b828de623b05328",
+      "blake3": "12bdfe41ae3abcf1017c40b9a8bbffd68f8dd10d63ac45b72a8cdf80b9169932"
+    },
+    {
+      "path": "references/seedance-logo-motion.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8421,
+      "sha256": "08e9a6bc6482e4a0ca9629a335015409947f27b9761ca423b14d082de6cc02c1",
+      "blake3": "12c46907c1fe1c2661a8241933d7c6f5f64581bd147f187138201611462b3b3b"
+    },
+    {
+      "path": "references/seedance-playbook.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17701,
+      "sha256": "227eff1799a46f6667e40374a28c077582a4af8129a79986c922d6c7fb7d591d",
+      "blake3": "4a11ec968e338d7b619c880fed80cafc0d86870f7a792b60343606b9d52805b9"
+    },
+    {
+      "path": "references/template-showcase.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1727,
+      "sha256": "de827c45a56c353be117828aad335a65958e0ff97da219595ae6dddbe3485c4c",
+      "blake3": "aa5211207c9d71038c32ff7d63b375f3e133153430bb6d014885372d8d85a0b1"
+    },
+    {
+      "path": "references/workflow-recipes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5847,
+      "sha256": "e2f3dd4571c4ba50828a1b6a6f7183652b60f792e3c3b2d9576f523e2bf7ee6c",
+      "blake3": "1c66401c691049e0bfddd5ea6dfc49cc8a94149e62c36d135b02599962c904e2"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2908,
+      "sha256": "6bb448d6f38794009168235f6544d0ad737196996355f46ad0a37221ce1fbeb5",
+      "blake3": "85a2bd6998657f261647a8a46bc2548c49687a5947640c1780accffd0098828a"
+    }
+  ]
+}

@@ -1,0 +1,3305 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:ce1cacad7d9f2fe88607c0f57fa0250d5082bb0670bbcf0aa9a8b6376f89c49c",
+  "sha256": "ce1cacad7d9f2fe88607c0f57fa0250d5082bb0670bbcf0aa9a8b6376f89c49c",
+  "blake3": "1e4285330704861ae08a6dcfa8bfb2d861c3430a8d1ce8852c24b00d677bf40a",
+  "size_bytes": 1275318,
+  "file_count": 363,
+  "entries": [
+    {
+      "path": "README.en.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11837,
+      "sha256": "4b4a5f9ed6b552c6d714d088b77498dec96d8b5d50f2e07361d7e82fa20f05e5",
+      "blake3": "c132000eedc474b60a17e35f575a1e2c7767ccd789f3c7208207d559297ec10a"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8556,
+      "sha256": "3443a042dbe895658398248a2420c300dddfe2109befccacfd349664ba92acfc",
+      "blake3": "a16bf2d85d5703df85bf821f793b54ecc7ce2005cea40bac953041b440afb519"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12023,
+      "sha256": "f1901107994edd90eac60a3934e70e0497667d4039721162a9fa8fe7a964148e",
+      "blake3": "0a9768a58f12ef346d1fd0aa2d9f11ed3f4447bea175ccef659e684f8cab7953"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 138,
+      "sha256": "f7ead77772eee54bd7a7f4cc9d99d9e5c31c3a766d5950dfc54e18c0032bec05",
+      "blake3": "7fc517ffbc1c42673a3532b1bd60de64f2eb4c17b7b764053b70ce62ca5a09f9"
+    },
+    {
+      "path": "builders",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "builders/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 379,
+      "sha256": "7d7d62c398f36b11529fc8924235bbbf94ec5560a77d357caf3d6318574ae866",
+      "blake3": "ac86e76129aca826bd882c555e709b61306363c00b85ea0a56be9d4e7d9ace60"
+    },
+    {
+      "path": "builders/base.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2761,
+      "sha256": "1fa91f3c092cc7a7a6837fcdbf62275e69db44cd9040052f0789b48c58ad22fb",
+      "blake3": "3e0447252ed2163259c6122b6199d48551c8065ae02e4eaab89dc0d9c7beebbb"
+    },
+    {
+      "path": "builders/custom_adapter.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1506,
+      "sha256": "dec4bbc75d9a620d61a3c37d641792eff5df2c95d91004f29f9eea07ee5dfc7e",
+      "blake3": "f870ae1a762719abc5296d5d702f7e22fc40e7b13fc7d397f66176df1db401ed"
+    },
+    {
+      "path": "builders/html_svg_adapter.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1692,
+      "sha256": "be58ca35e012ffe5503986f2d81be4223b44fb69c0f4b56737d79adf776b4492",
+      "blake3": "1e121e3b400908da51d413d06bdad8e8fc20e2cab3d5cceed0008396bbb7fc05"
+    },
+    {
+      "path": "builders/officecli_adapter.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1681,
+      "sha256": "50cc22a9c90ac5adf058edce04c06d8b62ee0620f2c7e3ce0e27811041e69ebf",
+      "blake3": "e037c720f7ab930e9ec9c2aba791bb4a5d0bcc8b24ad2536a4e7bc89dbb0d507"
+    },
+    {
+      "path": "builders/pptxgenjs_adapter.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9626,
+      "sha256": "d91d7daa4bccace99a5f3abc1ab1deabfec1c02ad1c70fbe98398fd7f80e7479",
+      "blake3": "b266343c2107d73bc4960bcd7151c0ab76d98c09f1de8f385b2c37c6df11fffb"
+    },
+    {
+      "path": "builders/python_pptx_adapter.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22114,
+      "sha256": "d6c1844f33aef0a426b23607090aa4d2ba9972a802237c83d7a6e0a42227baeb",
+      "blake3": "cb543d1308d511595ddd2daf6727eb5f49748bd0206ba50cf81918760ec1a18c"
+    },
+    {
+      "path": "builders/registry.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 904,
+      "sha256": "9548985c8510eb9f52929911a301afe086cb3498472c6c505f448d6df3f024b8",
+      "blake3": "6e25d42ab9aff8e4eb2ec926ebf50ed482cad548e3f26580d8446baa731978b6"
+    },
+    {
+      "path": "builders/selector.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12170,
+      "sha256": "584bf8465ba11b63702cb57f9c6378f8f61cf5bf495206a0268532c0179ee8b3",
+      "blake3": "21ef9d72fe6a9bf8e3291d6a2ef6757b1469c2d0aef78def32db7906bc57a3f5"
+    },
+    {
+      "path": "docs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/benchmark-report.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1089,
+      "sha256": "a4033a6d102b4631d62a48d9f22e2eb7b9e2ee6ebddee4d941be2e3da5fb51b6",
+      "blake3": "02cb4d8ee0d9cbd8d382dad9019880f36d518a8509fedc39d3b8db693f08c53c"
+    },
+    {
+      "path": "docs/migration-v1.1-to-v1.2.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5151,
+      "sha256": "299b93ea7101a44c67e47e62c109834c7951165508b54dfc85552e7c9b358825",
+      "blake3": "415705015bc28bbb8ffca6f545303e6ba18379faa6ab8c88b1f62de7e78510c3"
+    },
+    {
+      "path": "docs/v1.5-v2.0-closeout-checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6049,
+      "sha256": "56d55c784bc69fe8fde8c82d13cb4ee168793a96ffd14013bd9bd5c294d30040",
+      "blake3": "c568f3a29630bdf6b3ee7cfdbc1c92bb7def8269265d32a2e83b9f216ed57049"
+    },
+    {
+      "path": "docs/v2.0-acceptance-report.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5648,
+      "sha256": "4061ec3ff4ad3043f6104e0f0abee966497ad36cca8c99f5112c786040935443",
+      "blake3": "14f036f659cab4fcaa11756d54d036e0513f9c26a0447188c992dac95585b7f1"
+    },
+    {
+      "path": "examples",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/contracts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/contracts/invalid",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/contracts/invalid/build-output-missing.build-manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 582,
+      "sha256": "2243b3e1fb439ddf4f132ffb16f2127c85762806ace3ac578dec92801d619c32",
+      "blake3": "61bf81a4877520859dc149c232e3b702cf5ad4b7c5161a76857c6e9d87094651"
+    },
+    {
+      "path": "examples/contracts/invalid/diagram-edge-missing.diagram-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1071,
+      "sha256": "c09b0d879923a51e546629e3b9f254b139189daa349395093865f092d6769b0b",
+      "blake3": "d44c35125a499a657d48e9d50acedf1c6ab0f55e06c8ef9ed7c28420ca777c8d"
+    },
+    {
+      "path": "examples/contracts/invalid/illegal-enum.ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 484,
+      "sha256": "0a4bbeb8e51a322e986b37fb3bc29ab0d75cd1b123df9768ebe6e7f8309ce813",
+      "blake3": "19940c55c9fe670f1555b100472176274b83a336dcce77b999bcc50086b41ab0"
+    },
+    {
+      "path": "examples/contracts/invalid/judgment-missing.ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 865,
+      "sha256": "b4872eafde9f0ef73002f36b3964146bc8097db6944a8a9bd8268562dc5e10bf",
+      "blake3": "e02fd150cbbb341e47f65ccb40dbf472b8aa678592013a7c0057b38b779a852d"
+    },
+    {
+      "path": "examples/contracts/invalid/missing-required.ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 477,
+      "sha256": "061d3b837d787779fdf388682c7ac1e47fb9528eae29f42cac7e019626003e80",
+      "blake3": "f5d3830bcc32d60f0ce58a86d78e6c6ab48fa2f0092b8b636b0c0055a7efce4e"
+    },
+    {
+      "path": "examples/contracts/invalid/non-judgment-with-judgment.ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 894,
+      "sha256": "346ccbea6bdb63e317abccdb38305f2c52745f8fc7136ecb3e6a28de9b0475b0",
+      "blake3": "80fb76579a7136a37906ba851d8c394ab971fdd6fdb896afb2ced58e01bafcc0"
+    },
+    {
+      "path": "examples/contracts/invalid/qa-slide-missing.qa-report.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 580,
+      "sha256": "cc62a1b8b84e98e69a37f851243aca1da6446e36f25babccafc408e2b9cd3597",
+      "blake3": "7cd0117dd5b78a5974af69c06bd9fb070f35cf5550c824a18ba456ca33d52227"
+    },
+    {
+      "path": "examples/contracts/invalid/raster-undeclared.ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1095,
+      "sha256": "58c7e3fc4342f6078e646a47ca5571d1d0be9c47e880826b79f8b813c57b2c56",
+      "blake3": "02d49209a7e9d3dfe59af320b7125e1f6416b4729bffb52702072b10da1fe15f"
+    },
+    {
+      "path": "examples/contracts/invalid/source-ref-missing.ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 981,
+      "sha256": "584b33632910a3ffc1caeb032ca4d3feeaf9647392e3596c0337afea099ae34a",
+      "blake3": "d6f6732f0f0b491e54b767c3963c42a5e84f2e3c8624eecc2f1fd9d35bf6a555"
+    },
+    {
+      "path": "examples/contracts/invalid/undeclared-color.style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6794,
+      "sha256": "8ee0f472cafe88541615131546a260af35124bb10337d0d794c54c13e9ad943f",
+      "blake3": "56f3459ce7bf476790f8cb5d77a3a2029e3778ff7416e36a790eae00df2850a6"
+    },
+    {
+      "path": "examples/contracts/v1",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/contracts/v1/slide-manifest-v1.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 462,
+      "sha256": "a5e8c359b9032f5648d5bb6c14219fec515f009217899aab3c6f0b6fe5d5a626",
+      "blake3": "c1192837393913695beffc04b8b882a28e2be03f68bba79dfe0a8b4ccf90eb95"
+    },
+    {
+      "path": "examples/contracts/valid",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/contracts/valid/asset-manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 409,
+      "sha256": "e90285522a100ffba7646dc774dcf86a659915817b21fa0ec37948025068ba7c",
+      "blake3": "396b49c43526600192534f1f87c98c82c85957be22976f95ba8ac3dc3d1f586a"
+    },
+    {
+      "path": "examples/contracts/valid/build-manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 700,
+      "sha256": "3b7e9ec3c3231d407bc06bedf70a54ef4dd51a45c88000e867ca04412e8caab7",
+      "blake3": "11cbaf35b265f3546681561142a9b69782db15dec89d305448f71503fdcd862e"
+    },
+    {
+      "path": "examples/contracts/valid/diagram-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2648,
+      "sha256": "fe0777b94e4d1a07c4452c390a78e954851c74026a061da8c92c190641a6e073",
+      "blake3": "e3d48e75595d521cff0da1053bff322b67c8d288c7361c10e3b4426842813043"
+    },
+    {
+      "path": "examples/contracts/valid/ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2543,
+      "sha256": "aa6d8f0c8814d18f562e6775f4d6bf5a62a80232975ef262bad6f42b309c3cd3",
+      "blake3": "bb7eae2fbc16465ae263808e6f24cd202bcb6c64003413021a288f1f02cb026e"
+    },
+    {
+      "path": "examples/contracts/valid/qa-report.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 608,
+      "sha256": "60b5a05f046e805dd76b33123a81d9236a9493d4ec100c8ff0909733901cfa0a",
+      "blake3": "545eae45231bb20278efdeecaa3eab01e8a350d65e729d3e2e38cec3c1ab54bc"
+    },
+    {
+      "path": "examples/contracts/valid/style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6784,
+      "sha256": "4cf9a286c59c15673d923ce0b71e087fcee2757693b0d9cc54fcb6cf0d4dbba6",
+      "blake3": "5fd6f46f7f326c7c277ccac91aab8688f49002441f7a2d49f638950a577df163"
+    },
+    {
+      "path": "ppt_qa",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ppt_qa/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 481,
+      "sha256": "415459758d3e12f2737168db41c767195ce2a86cf8c6d6a4e97faa4f8dfc718a",
+      "blake3": "94cd9d26634d122b76615346768edb944c283d6c7fb29c3e8fd4447df95129d4"
+    },
+    {
+      "path": "ppt_qa/auto_repair.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4590,
+      "sha256": "3d1566e625fc9ad0c5ec7b8e4a09d02bf4e8cce2844526e3df4392ef6be608f7",
+      "blake3": "acd95ab96aa7ca2fb061df3023269d7e723df2477298834d76c49e1edd9f4c8b"
+    },
+    {
+      "path": "ppt_qa/models.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3285,
+      "sha256": "695f24c285fb90640d7d8331224cf818cd606edd91dfbe3ca8216bd94c73b551",
+      "blake3": "655948f6255dd48413ea8eb187a0bcfe351497d603c559aa7b40fbc3c5419b74"
+    },
+    {
+      "path": "ppt_qa/package_inspector.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9272,
+      "sha256": "f8dde301f67139b908becd1e09f42e16bb84c8481c6a39a7dd99475911356af0",
+      "blake3": "faacb2c984f90c8f0316139bc4807b9e8d30eaee848cb8657245e24a6de15163"
+    },
+    {
+      "path": "ppt_qa/render_report.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5708,
+      "sha256": "25243d33091380db090e876df769a3fd6ea6fa514bb2cc2ff4228d5a58cbf1a1",
+      "blake3": "dbc0fa87552b6431fb55802d960fca2f485919b3cd8f15b418be26c7bbd29bb8"
+    },
+    {
+      "path": "ppt_qa/renderers",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ppt_qa/renderers/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 205,
+      "sha256": "bb7c5d8f0bca7a93ab7b156e144d974104eb5bd3d9130b4fc4e5c08f3a35c78a",
+      "blake3": "bebb7c8c2018bc77947ad34ca559743c3a735979020e256b95ff499540d4b8bb"
+    },
+    {
+      "path": "ppt_qa/renderers/analysis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1646,
+      "sha256": "cc9ee8af788503d4a4a412fb353bd79c11b9131b38e17327a76c162c1361a85d",
+      "blake3": "bda7bcabca4b316e524805e074b4b1b64c556b4fddd24c7234b1a86862a8e3ed"
+    },
+    {
+      "path": "ppt_qa/renderers/base.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2380,
+      "sha256": "311cdf7b48291c9a318ea490c3c206fb1f133cd7131737831f83aef40d466518",
+      "blake3": "34655a00d6bc153d91a305015dd4aff58f9e1c6db97a3bd3015423f75a4364c3"
+    },
+    {
+      "path": "ppt_qa/renderers/libreoffice.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3576,
+      "sha256": "1393e41039aea9967551a90dad11be0aafb0c7f6f6d8522a124691184ab9abea",
+      "blake3": "227fdbac5cc62ba87f2a2a18fd9e4872b7d0698d08fc9329ffcfe851019bc2fa"
+    },
+    {
+      "path": "ppt_qa/renderers/pdf_tools.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1841,
+      "sha256": "33e104a911568097f42991af7af5ff1649c227bee5d50d4c15e90c92e3396599",
+      "blake3": "28b82192e69c969a94e3e0d88287094b46b08bc000bead4b2333eacd5eb4a891"
+    },
+    {
+      "path": "ppt_qa/renderers/powerpoint_macos.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3307,
+      "sha256": "625d64b2f51cfd64044061d465c222ffdd66bac3f724bedb88cf3295e356fc04",
+      "blake3": "56040c45b64c08a4713654e2ece03acba73ed01a3425810f2f0ab72eb3bf3325"
+    },
+    {
+      "path": "ppt_qa/renderers/powerpoint_windows.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2777,
+      "sha256": "02f7f445a9d12548b1fed55f323ee4bedc3fcb8b0322e413953ab5a8e4ecd98c",
+      "blake3": "33edd61725206cdf370a43d120f236f1e30529700984e7d35501a955a4a8bd40"
+    },
+    {
+      "path": "ppt_qa/report.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2387,
+      "sha256": "12efa410b7c27fd8d2e078eb2c5ed2ee090eff27104c6c2b51017a08da26e611",
+      "blake3": "6de18cae60fec865319f018a1728c0bb26dce330e172f3dce702339d6d91a7b0"
+    },
+    {
+      "path": "ppt_qa/slide_inspector.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28387,
+      "sha256": "473a29a9b29d61ddbaed3c02113077a615cbbb644455229187c2ba4da34c00f9",
+      "blake3": "18184053fe19794efd94c1690c3250317b5040f4b0a295a4741579a091fb4de7"
+    },
+    {
+      "path": "ppt_qa/verifier.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15306,
+      "sha256": "10471754daa67d4961cc4a11b1b91890f3f4cacdcb08d4d4e0d2b897fcdb4cfe",
+      "blake3": "01b543dd6c2e699cda33e8dd1a08b59a046d6fc0c38f424e72dc609946f191b0"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/anti-regression-examples.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3444,
+      "sha256": "49c51ef6316be930c687036af120c2d3b1eb6720383f081c9417ba20d5217213",
+      "blake3": "b944106174148126bd8796e1e6ba9a8f23caae612a015f75d744387713490e35"
+    },
+    {
+      "path": "references/benchmark-methodology.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2854,
+      "sha256": "814897512c0bc36e18b6e637a368f81e061c923be0d94d52cb524bdce084f6ff",
+      "blake3": "448178c9d98c353891b792a2772d07787f8c0997893a6aabc0909957fe25f196"
+    },
+    {
+      "path": "references/builder-adapters.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3846,
+      "sha256": "bc3ec3f62580edb3ca9b396eab25a2382391e021cc8394c52ca2fa157437b5b9",
+      "blake3": "996fc4b288ffb0ad48d8ac84ad440327dcd51db5278d9d808911715d661a3103"
+    },
+    {
+      "path": "references/component-craft-checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2892,
+      "sha256": "7b4db435d541a8dfe3b4be3ece3d9b60c9076596fa976339f4854b621e676493",
+      "blake3": "d79cf84d44e2b64b31cfa4e2a0275fe4ac2576fa5cb88810e975d74eb1e457bf"
+    },
+    {
+      "path": "references/component-raster-fallback.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4408,
+      "sha256": "e1d5733bb95e8dbcdb0c62b36f81158f62d9a370f38e78afd7ed1e7f188a2c50",
+      "blake3": "92aced13a3a24fad17b712f96b1b167fbc7621a5f7a9e4081f1a742bac02ce13"
+    },
+    {
+      "path": "references/component-registry.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 44072,
+      "sha256": "057e99a0e2df4c578a8264b660055934802b4d937f115ec69b4946cc04b9a22a",
+      "blake3": "f7892a17e64cec7f38d2ab6f419b817e9a89ced3f9bfdbf6d8e97779eb526628"
+    },
+    {
+      "path": "references/component-registry.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2685,
+      "sha256": "f83fada17b30bcb3b8f8b579a53823d435b00e35a509f2db048c8a171ae4ef27",
+      "blake3": "59e585a05365fca99144250617ef8047388448a809583ec8d57fda9a3e317f25"
+    },
+    {
+      "path": "references/connector-routing-and-topology-gate.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1806,
+      "sha256": "b371af835e04eb19595801fbb3cb6701929a50d5ebcae26407bf8e997261686f",
+      "blake3": "4b8506581b2349d03210cce2d8aa923cec0ffaf26e0925962a2c86e78fdb5744"
+    },
+    {
+      "path": "references/design-token-contract.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3720,
+      "sha256": "e955bb2b6e479fb649dfac33d1551c4b8942f2953c186e28f35a576c1fd0a93c",
+      "blake3": "14f6825d6cb1917bfcda0a6e66a7313361f14bdcf084e244c32dd6cb806aa8e8"
+    },
+    {
+      "path": "references/diagram-auto-repair.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1602,
+      "sha256": "d940cb2499fb4e14d6e707776dc71742e0017989323f64e34e77a11537304029",
+      "blake3": "9ed6f9e1d1a2341231843ec9eb6c380bb69e2c703bbf6c2d58efd3a5944cafe4"
+    },
+    {
+      "path": "references/diagram-ir-and-layout.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3779,
+      "sha256": "f703c12f9288528cbde80453fae65178e8da8ddc5bed9dee6dc448f3fb0a54e3",
+      "blake3": "6180f185f56c9023a178c2e7a9576f1ee327fb417afe850ab22389934f0f4470"
+    },
+    {
+      "path": "references/export-pipelines.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2306,
+      "sha256": "f176dfd6f666466bc90670ce1ef61b6f2dd35a07a2643fee161aadf06d1821b9",
+      "blake3": "46a0442bf7d6b223aa6159af480d4135f6b9ab2dc05f873067d13182b5573455"
+    },
+    {
+      "path": "references/expression-mode-gate.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8269,
+      "sha256": "ec5791774f606a3b45fb181705ccd666f792ea660186cdee7f083041052008a6",
+      "blake3": "45356aadd5a50069f0370389f4ba4ae95631305783a9c86083f6aae427496618"
+    },
+    {
+      "path": "references/five-style-master-systems.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7658,
+      "sha256": "e8606e577a291f51979fd540b7b733d4451e0e8b96e3bf17627e8c107462e606",
+      "blake3": "1ff91f01f8d09a87df83fce48398e7c6fb8f1c1aa1bd5cc86bf83aaf43af0604"
+    },
+    {
+      "path": "references/master-ppt-design-rubric.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5059,
+      "sha256": "5cba20e10f04c1d2fcbf1c9b5ee92dc04a362f3cf93e4a330a333d32f8840d8c",
+      "blake3": "402df20f1d0cc4a233099f3d67150ccd53432a4374156b8457e08684067be140"
+    },
+    {
+      "path": "references/master-presentation-design-language.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1926,
+      "sha256": "37cf5424f36ab8595a1d8ec45c8cd8156091dc762b53e9b3c2333f6246b0b8cf",
+      "blake3": "4acdc7d05d2e9d9bd09d91a38a11bb40d03293801cfe24c6fd72c9954ead55cc"
+    },
+    {
+      "path": "references/migration-v1.1-to-v1.2.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1629,
+      "sha256": "6f1d0552d254c9562c9a98c0c1e279f4d68f440f41d607a4cfb17ab95e901229",
+      "blake3": "5ec52c897ade6ce2dd45819e6f405322dc5a5eb01ba3ea3b535e42ff18bf6d5a"
+    },
+    {
+      "path": "references/native-connector-and-visual-quality-gate.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1556,
+      "sha256": "19d4deb5f375a11a5fd2e8b4d218aa8949709fc93a2ee663eb208831513deefb",
+      "blake3": "879a26a4c16679c3743f9398835cb566387c9985e6b1a68a47ee4f47fb3b0894"
+    },
+    {
+      "path": "references/premium-page-archetypes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1566,
+      "sha256": "ad8de1472e391afbb501ba9ef149993d4362e3785f59d6558b4c3d150f755885",
+      "blake3": "44b5152c39ad2e40d3c66e4bf8940569df786bd6e6d6987093db39590c703938"
+    },
+    {
+      "path": "references/production-profiles.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5496,
+      "sha256": "02c54bcb7f2978c73d804e02c5af686cb98fcffa04e66b5170cb17b74f85652b",
+      "blake3": "43861d9617e1c5e1426cba07c4307d3bdeb1d6879a9e1e7a0eede7fb6f10f04c"
+    },
+    {
+      "path": "references/production-readiness-gates.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10438,
+      "sha256": "7a8bfc3a30f95cf6c9039d07be753b6a0cf4c569b032be50421b38a071d329a5",
+      "blake3": "45e7a58ebbad62f34741c7bfdef19a02a6d23855a1137bb94e70123b8ffb5c47"
+    },
+    {
+      "path": "references/spec-to-deck-visual-priority-gate.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1521,
+      "sha256": "62464808de5f40209b67553a355675c7033d503cb2f93e4a0f464caa10949656",
+      "blake3": "5c4a0f6d2c821720b6b69e784cb26b9a946e9a0558db421c3712f069179990d9"
+    },
+    {
+      "path": "references/style-palette-options.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2575,
+      "sha256": "93886e613f7b1f525d28a60d9a70698b00d4315988a71f0160b9cfd82bbe0842",
+      "blake3": "e75b13dff1ef42a1d47c6496a8961eb5d75e3526242c6a7cc3b9a0da44e05941"
+    },
+    {
+      "path": "references/template-packs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/template-packs/editorial-knowledge.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7117,
+      "sha256": "914fdd2264b141a0ccae857591dea0c70af251ccad486b8280d8abedf401c9af",
+      "blake3": "69f781f87318092c7b702d1e31ff51ed3445e8b260a37a12bf81dd6a4db6a55e"
+    },
+    {
+      "path": "references/template-packs/technical-blueprint.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7460,
+      "sha256": "8af364dc097a320ee137e9e480cc2b8ead7a9ce7bf070596ae423b2ebd2adf0c",
+      "blake3": "5cfbb830d2c341294ea2e94f8e4c9a0e80b4998548f798829b8ebfbb2e53be88"
+    },
+    {
+      "path": "references/verification-harness.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3621,
+      "sha256": "1d238a56248fe3724057ea5f0fe1b85e3aee6c476ef7eb580392203d2657fdd9",
+      "blake3": "0ded847deaeee90bced503d2c394aa778eb1ed83a67b946144545de219001115"
+    },
+    {
+      "path": "references/visual-design-archetypes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3275,
+      "sha256": "dcd5e07a154cdb5e256911ddec7053d3eb9675ba363df00410d101849f510d46",
+      "blake3": "2ea190a8cc2ecaf4a4ce8986fcd442c3dfa41df36b9e4ff9e4466cfed2586677"
+    },
+    {
+      "path": "references/visual-systems.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2745,
+      "sha256": "06d78142f1491a755329d7d092dfdca4247d5fe10e2d960848292359acac3115",
+      "blake3": "94512531162868be114a4f53d679df1bb22639e83598b997aedcc3ec1ceb9db6"
+    },
+    {
+      "path": "runtime",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "runtime/pptxgenjs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "runtime/pptxgenjs/build-deck.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15536,
+      "sha256": "667b42f3c63ae63cf3755bce99a427dca3fbcc6267fe2219a3b163a1a0791df9",
+      "blake3": "a6d4310f4693ba7c1fcb6d226275b5c713f987f83fce25b2ffc506ffc7bb35a6"
+    },
+    {
+      "path": "runtime/pptxgenjs/package-lock.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6832,
+      "sha256": "45e1d2f706ed9b41db2594ca1afb13ebd3ff45303126f486bee55d349a203423",
+      "blake3": "d6067128524bf0591d75120cf9163c32e582fae1563b1e55a578a8c75d3a3ea3"
+    },
+    {
+      "path": "runtime/pptxgenjs/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 246,
+      "sha256": "d420249a6afeb8bd8aa56c9e0da16f9e2c701fcc7cd06b0c1e10e722b4999883",
+      "blake3": "e1c47dbd7ad0aba411d8ebeb79f2185ff087a8d0aa302cde622eef3d36957ff0"
+    },
+    {
+      "path": "schemas",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "schemas/asset-manifest.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1412,
+      "sha256": "d1b1727eaf1771686f43d8ea81520f45e4ca1d5448af2c3656ed5d044baa96f3",
+      "blake3": "885256db58e98cb4afc061e772493d66fd2de4fa6cc8c13caa1a5ff840e7cce5"
+    },
+    {
+      "path": "schemas/benchmark-case.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1616,
+      "sha256": "e0b91db80ee264a360a04e1759d028f0dffa49079e6eaa881bb610f2a6889741",
+      "blake3": "460df93db5486e1d41622461c2aa5d9066c8ae7409dfed945b60f030d31bceb8"
+    },
+    {
+      "path": "schemas/benchmark-report.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2611,
+      "sha256": "13ed92169ab66234029aa1fdd6e0c0fded14676ef1dffaf7a9195d92497f0639",
+      "blake3": "6366f0d38a5c1667ddbdc6405a7d21ae9a84d7d84c02b068afa618ba693e7eb0"
+    },
+    {
+      "path": "schemas/build-manifest.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4077,
+      "sha256": "5e80af3e60abb6d42fb04534e6d7e3aac74922bbdc8c98d003d430dd04fd91d8",
+      "blake3": "1f11c19eee17a0f37052e5ca26c237a7e19982f7e72b7e816c0138ea6fddf186"
+    },
+    {
+      "path": "schemas/builder-adapter.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1678,
+      "sha256": "ba0fff771a737c14e9055741f72a6e3dc7bbeb29cd0403cd40e6b494091ace35",
+      "blake3": "28a61f11f2699bb711d433413272b13b52681af44b153d511e625a55c62af9ee"
+    },
+    {
+      "path": "schemas/capability-report.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3414,
+      "sha256": "76f017bdac059077eecc63054ed4e52624d0bd113b12e375134360b064da58c2",
+      "blake3": "a94b9e8cdbe0bb2926766577fc7795ac9174140beff714f0494a68f60c5d5f8d"
+    },
+    {
+      "path": "schemas/component-registry.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3996,
+      "sha256": "f592db1ab23319278b46d7d76e891949ac3e90e5f06e3dff27a95aaca4918a4c",
+      "blake3": "121f6a480f81f50659d80388cd30039460eeba12698fb84dc67650da55f1856d"
+    },
+    {
+      "path": "schemas/delivery-manifest.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4448,
+      "sha256": "e85c05f15491be29c79f79d3ae25c613222dc40da26aac7003dc9a6dced5107d",
+      "blake3": "a2e1dff58aa37012277f52c444bd848f4619d6c0b28e7b770aee5ee046a7ccfe"
+    },
+    {
+      "path": "schemas/delivery-plan.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4956,
+      "sha256": "5446ef6fd22abada899a57b0592016d7ba3664f7d66c8e4b6dff9b4a04937d01",
+      "blake3": "c5ff4a5b87cabe100316352059a92015422db4b5c651a38349bbd760d6a86ee5"
+    },
+    {
+      "path": "schemas/diagram-ir.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10693,
+      "sha256": "221850b9a52d19a4742d3ad05ebfe02ce5dee88244a7011ded28f3038498d4ce",
+      "blake3": "c021c262ea6bcbcd8a13bbef4bb0850f29ab24022d8cad95aaf065cd5092b090"
+    },
+    {
+      "path": "schemas/ppt-ir.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7030,
+      "sha256": "6892fd68a8ebb8360260f3ceebd662c34f8c414f044cd157f721430f7d1ecf69",
+      "blake3": "60900e70bf677b06309ee1999400dda2de872abe0d786b09aaa01f42d9b5895d"
+    },
+    {
+      "path": "schemas/pptx-inspection.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4009,
+      "sha256": "aaab014394d91d24b96460f94ea3c6fcc179ad220694f06755883ea8d373d407",
+      "blake3": "b80420caa7f1a45cd0953f611713f5e9da9e6a0fb8e8532ff40616ba2d666a64"
+    },
+    {
+      "path": "schemas/qa-report.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2414,
+      "sha256": "6f4a84512febe0b8f222905f7d0ffdea14683572169aa3ede09d7a98615ebff9",
+      "blake3": "f71aec40a3d6d5b605530458a078f8fc1fabe7139448be17936759ed05e100cd"
+    },
+    {
+      "path": "schemas/render-report.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2224,
+      "sha256": "378b6aed9c938699636c3075fa7f5037472e3ac3fc9e4b66c79ee428f67405f1",
+      "blake3": "51c7a4606caac573545c380b6900fe3466fba401cd28912bdc3d9e25d4fcba59"
+    },
+    {
+      "path": "schemas/rubric-score.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2528,
+      "sha256": "2b6a9d237343853708235c3655d1a46e1bf8e131c899c6d90d27202f18b65e60",
+      "blake3": "cb27e5dde89c9682034cf49c90394d680d2521eb31d84688de0057551535eb8d"
+    },
+    {
+      "path": "schemas/style-contract.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7012,
+      "sha256": "1fb9df246168b791cfeef0284255e4f12d1ff53284c83027c67c089369c66dcb",
+      "blake3": "b8cc93bd7f860011245e500dbeeb5f1fd7e797518e92c7294d744dff89c4a408"
+    },
+    {
+      "path": "schemas/template-pack.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5991,
+      "sha256": "55d884c6f1b65aafc45e25734cde7cb4a51c7b385d6d701c65b5613fbac13758",
+      "blake3": "60820a5b406fb449a0e1d958ad01847367a845f91134642be3fc22606fefe19b"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/analyze_diagram_complexity.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1047,
+      "sha256": "49d67b69fb2e2de1555bdccdd3a9459509da71af0284929b47cc3a82c4f6a351",
+      "blake3": "6af8da79e6bf9a0f5aa6c73d23091de35121c60d6ff062da0c00a456ec746d3f"
+    },
+    {
+      "path": "scripts/benchmark.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9370,
+      "sha256": "81c3e93f37ca63cb23d9383943bee36925ad4aebfb519f7dce85d9364f3f780f",
+      "blake3": "582f430d812ccd8ecc4d97ebee5b097840e69d760df918a18d240825f82112b0"
+    },
+    {
+      "path": "scripts/build_deck.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5958,
+      "sha256": "523b02bb04c7a15c911147f0ea4eedc88185763670ad792792eed58c5587a9c3",
+      "blake3": "65814e82389213f63adaec1bebeea2b6cd8cb50a5131bdbc26f1759fac04c390"
+    },
+    {
+      "path": "scripts/capability_probe.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20067,
+      "sha256": "cb9615e5fb1392e5ae1800c901ef4aec5f5455a75f4500750eb2abab521f2548",
+      "blake3": "6edf552d796812a62872b56054281a80013277ef5ec5820c715158966815ac47"
+    },
+    {
+      "path": "scripts/compare_benchmark_runs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5143,
+      "sha256": "276c6b1a413dd32be0dd6f44396206f2e730f646d00823f875258f09610f8381",
+      "blake3": "6bea5dd0e8cfc5d70034c3baa55eafb502f05ba1c4419435d103d4731c1574c4"
+    },
+    {
+      "path": "scripts/diagram_ir_tools.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22629,
+      "sha256": "03a74e346eac4a40b0b1579b4ad595d9e8551537dd0c83086814563b0d81d3cc",
+      "blake3": "778e0ed136f2821268746c58e1d06a990c383ab1e91f5012b621d559a4703981"
+    },
+    {
+      "path": "scripts/inspect_pptx.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7595,
+      "sha256": "b61f0c7f00375b889fcbf260411436df7f24462b00d855e88a993a3255c43a7e",
+      "blake3": "39611b6ce48822ff5672c3e9c35cadbdba112410cad76ad8fd8e2d96604ee048"
+    },
+    {
+      "path": "scripts/migrate_manifest_v1_to_v2.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7451,
+      "sha256": "8b2a86040c55a4b299db58f1ce4dc3755b527d5ae11fbb875eea84a4b065446d",
+      "blake3": "d0b203c454241750010e142d8070321b236739515b2d154cf33ca6e7e7750fae"
+    },
+    {
+      "path": "scripts/migrate_style_contract_v1_to_v2.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10522,
+      "sha256": "a0ea889a6c71c840243da1472ea82dbe5e0497f41ee68e7b24a542517291214b",
+      "blake3": "d4a836935d3f8d2085f7ac6392cc7eb1356af8b87a74a425b62090ed4eed02bc"
+    },
+    {
+      "path": "scripts/normalize_diagram_ir.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 937,
+      "sha256": "f17a07ac9cce4ee71eec8b0363fc483bcaa2b562cc5086162ad5ee01e12918dc",
+      "blake3": "502c37a9d432296ffe9fd189e05cd3d80e23247b64df8faf6e2edc0c70f03ae0"
+    },
+    {
+      "path": "scripts/package_delivery.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23243,
+      "sha256": "515113c78229b233f5398c4fb6a9a51dd753c4311b52ffcff8c7aaeb2e4a9065",
+      "blake3": "0b708a81b238e4556623069e6f1ebb2f0546ba7585570408ef9c18183ac4c621"
+    },
+    {
+      "path": "scripts/recommend_diagram_layout.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 971,
+      "sha256": "091c48ad859790806b48c1c6053a7759ba4e1135e0e56024a978f0b5e812fe6c",
+      "blake3": "246f77dd099f2829eba874da4ae2c53f0d047d4be7ffebbec35307860c45443f"
+    },
+    {
+      "path": "scripts/render_pptx.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5785,
+      "sha256": "7fd59f9d1f920ef8c83ebe84c766e3eb8eebf94161ffa03cd557c6d9ba262b56",
+      "blake3": "a7b6e4cb4217e931ee70148335d1359d2cfc0c2749bb5f14ca3b3e1b8403237f"
+    },
+    {
+      "path": "scripts/repair_deck.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4716,
+      "sha256": "d16a2e5015d9553673f2323bc20d0f4bcddab6b26bdce5a78b24f60680ec9af1",
+      "blake3": "acb64e90a0d6314310df6fd046218afa82dcbbc5d2e0ce898bc9576d235fdfaf"
+    },
+    {
+      "path": "scripts/resolve_component_delivery.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17508,
+      "sha256": "4603b85a7bb6ab87e3f9b8693f8df5717505b3696a99393ac2f65849b3af9a42",
+      "blake3": "59329cd9d94635133eb02ca6da10b781b0173fa1f76d2ee7c63a255795ef812a"
+    },
+    {
+      "path": "scripts/resolve_production_profile.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10122,
+      "sha256": "02466430b8001f3fbd7f3c27bf6d865d1660ef96d783b9cac7f4da67b4236c7d",
+      "blake3": "ac3db0fcbe0ca8edef24eaba2f2e0d928a8946faeabcde86a03ec59e9ecaf280"
+    },
+    {
+      "path": "scripts/run_pipeline.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24645,
+      "sha256": "513effbf42447db6207348cd47e0e991a617c599f9b60c6ef3e3c982f48d35b2",
+      "blake3": "43fae9c78ac86d975157ca80762adbce1b3f41f00b9339d9a70dd20a53f63fd0"
+    },
+    {
+      "path": "scripts/score_deck.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25184,
+      "sha256": "f3c36e3221ef4462467d8757fc85217164224629084b9fff7737a01bd3c919cc",
+      "blake3": "2bb0689b46c6e46e5f8ac0ebafa7fdc26650019129b652f391e43365cd6aded5"
+    },
+    {
+      "path": "scripts/validate_contracts.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 39961,
+      "sha256": "0a797ac68aedb6d574031f9501cae403142e0d971301505a1fae0b033d5f6248",
+      "blake3": "b414b4d894f87534bfd7a557d8bbdf1e950e369bf9cbf0e6d6c831579950f68a"
+    },
+    {
+      "path": "scripts/validate_diagram_ir.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1699,
+      "sha256": "161b3815346006b90944520a5a53f3f77025628f4371830507680fe6e8afdd30",
+      "blake3": "998bb3ea14a79d1669ecd58c03e9691a5deca5d845dc7a1880b771d7990392ad"
+    },
+    {
+      "path": "scripts/verify_deck.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10383,
+      "sha256": "b4df5b988b98c1c9bd052fba70244a964abe53f56982f48fd66af255172dfd8b",
+      "blake3": "e3d4a5dbe23405a233293c0b9469fed1170374d730e0107b5b25a84a36b16ab6"
+    },
+    {
+      "path": "templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/benchmark-case-example.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 910,
+      "sha256": "8aab2e40d03ddeffc3990f80891c7a599314ef29c48951a584993562bea300c7",
+      "blake3": "7c5d59c0293752c7ece3f4238bc4d18758d6c299d1b7701a90ddf4cc9031ae22"
+    },
+    {
+      "path": "templates/build-manifest-example.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1733,
+      "sha256": "85936a8e041a18f5d32ebbbb2f2b40fde8147c085c52b104a593d69d9f3a2c21",
+      "blake3": "7a6fa3ef056a7432e6a0ba781cda511bf19a1925dd542ea9f5f926c6b9a61ac3"
+    },
+    {
+      "path": "templates/capability-report-example.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2920,
+      "sha256": "3c9c80fdc4e6b05f2ab4c7dc4472f76a2bf2fcadd8bbd184b0d3103302411c95",
+      "blake3": "177f42c75da522dd9365bc0764ebd33c8c2e3b09cda2eec9641cc3325baf8949"
+    },
+    {
+      "path": "templates/component-registry-example.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1219,
+      "sha256": "eef9cf00455f1dfa528123e2f4038df4c1bac3f224773d9efba5132172a8a46f",
+      "blake3": "85746010baead3933574bc14f0c65f75cac4ff80bf4f708ea1623af48a4b8bb9"
+    },
+    {
+      "path": "templates/content-lock-template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3201,
+      "sha256": "b8297026fbc5790d2749a4f89bf95e342c441ef8a0e9d866eb4fe3ccf4f16e3c",
+      "blake3": "a2e8f15003d8ce7646f32ada94062c0644a29344a0ec0c5521adbcc7c605af09"
+    },
+    {
+      "path": "templates/delivery-manifest-example.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1627,
+      "sha256": "0ebaa4daa755b16342f372420ce02db7b126f2e8d252c4be97989a14a892a346",
+      "blake3": "a0ebc50d951929129316716cec1ae2f551356e7f70def77bcfbc88827312a38e"
+    },
+    {
+      "path": "templates/delivery-plan-example.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1694,
+      "sha256": "0b912ac311449bd9828764e9e51902a2eb784ec9d903f7e87fcf1caeaff07d93",
+      "blake3": "48e2d262eb5cd50a85714bcf7b76b7c958f5d2efbcd7ef1d13b7916d373c2ad1"
+    },
+    {
+      "path": "templates/design-language-schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 318,
+      "sha256": "53c6b87d519f52ae4d38c19f0ae8ec855bf66d71886e39edec6158ad6499cbbf",
+      "blake3": "99d9e436edb6adfdec31d2e7c2f51e690149e0d14ecee3bf803ea595e8577ffc"
+    },
+    {
+      "path": "templates/diagram-ir-example.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2681,
+      "sha256": "d75b965b66937ff4719fd4ad8135ba333e34de4922494f25048ee32bf9ef7344",
+      "blake3": "a324bb941bad0f16cc903d81fb9318cd1ea3d5be5472bb1bd0ac6bc5b4641fde"
+    },
+    {
+      "path": "templates/ppt-ir-example.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3135,
+      "sha256": "fe16e68b0229c0e591993da1bd5a942d28ff187735f1869242cf3a4ee43dac1f",
+      "blake3": "347f2370d1aef80a416856da81922c5ffbac8393ad967a2d986877bb6fc0f889"
+    },
+    {
+      "path": "templates/ppt-production-artifact-checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2609,
+      "sha256": "6558dd093760b79489ffae37dc2e9d92d61b906ecd5c8914f82f1490d75cf59d",
+      "blake3": "66b81065b63823365983de7939e3a282d2ca2b15b15e73fbd6007cf2898cdbf1"
+    },
+    {
+      "path": "templates/qa-report-example.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1782,
+      "sha256": "6896686365e89e9364f6858b30ed7d054621b2ed2199805eb774e59fcb472aef",
+      "blake3": "b7040d01c14f152fe81cd977b5afda2a4fdbb324be96b88c3db491d53161afb3"
+    },
+    {
+      "path": "templates/rubric-score-example.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2175,
+      "sha256": "719da3a7226641ed16a11b3ee67495b1a78c827a49a191b2abed20a753eb636f",
+      "blake3": "32c9d797415a54667dabfa15020985c78683d18c095a2f63e7fd2ebfd3468551"
+    },
+    {
+      "path": "templates/slide-manifest-template.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3268,
+      "sha256": "dd7569675ac0442dec1bee0bc7ed766e6e7b6ece4370e5843d94fb69bfb14fce",
+      "blake3": "8cd7bcf9fdd17806314d973548de90d5c5aacec9da10e4ff658b09d68d0eacfb"
+    },
+    {
+      "path": "templates/spec-implementation-priority-schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1185,
+      "sha256": "40f7365cef6380d9140ad7499c8d0507cfdad7401586951d509e10a31848d2ea",
+      "blake3": "7ed242930a7d8afaf511de673e99ff51bc2118bc36c70ecdc0d91fa6aa8e2cc5"
+    },
+    {
+      "path": "templates/storyboard-template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3939,
+      "sha256": "5086c9d67cbebac4ea849cb3fbdb32dd5d49fe29640bfc68f59e73906e0d7ae7",
+      "blake3": "838f3bcaaa95b17b70bae93085689b215735172dd1f9cdda0b7f6330e020dce1"
+    },
+    {
+      "path": "templates/style-contract-example.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7072,
+      "sha256": "f1fdc2b94d53069e8069db76d79231d6c2f85b80c9a564888ff5db154c06d3e9",
+      "blake3": "cfc1ac26d8a34ecf578eae532e3b3ca6d5b4c58597f7623ca5b4bb92adb6dbc9"
+    },
+    {
+      "path": "templates/visual-qa-gate-template.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 696,
+      "sha256": "17de3eb02bab9fcac9b4c911c1c334d1bed31c483d5ed9e88617424b10ae05ef",
+      "blake3": "bd96bd96f632367c75b53d58cc6e534143b8f5a7604058fc956c5cd0a6865f57"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/benchmark",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/benchmark/anti-regression-card-overuse",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/benchmark/anti-regression-card-overuse/anti-patterns.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 64,
+      "sha256": "79dfee0acb30e72256f5af8477e61eb19de9eaab817b4783aba9de87c6abc103",
+      "blake3": "3c48ed0ff94f806d54f5c6d2d296ce048e9f5d094cc56b75498fa1a1303230ea"
+    },
+    {
+      "path": "tests/fixtures/benchmark/anti-regression-card-overuse/case.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 716,
+      "sha256": "dfaf926fad5de8e815fcd41f44ed595ee043a77b74abf819b8cc02d43d9e2da7",
+      "blake3": "9795df930cd1ad0e3df600d10387db187454c0f5d5c89dd1ae50dd3112c39efd"
+    },
+    {
+      "path": "tests/fixtures/benchmark/anti-regression-card-overuse/expected-content-lock.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 137,
+      "sha256": "2c46e4c7e0126ce2816331caa11d1414f4aeb82fae5c5fb8ae93de9ec029451d",
+      "blake3": "fae83378f3b3c336273e4fcebc294a906342a2dc4685077e1b98d411a5854dce"
+    },
+    {
+      "path": "tests/fixtures/benchmark/anti-regression-card-overuse/expected-metrics.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 82,
+      "sha256": "ddb5c8187c6398b63ba5c22b51386aec909c74e670e5135b1f7bf1456d28148c",
+      "blake3": "b08fe79b33e6f05e3cb732e9abc0cd989629a65335d265a3050364202fbfb886"
+    },
+    {
+      "path": "tests/fixtures/benchmark/anti-regression-card-overuse/expected-ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1860,
+      "sha256": "d2f05496fa39bdc84a460ae40f2bfbdf2747065cf5f86e38d974c614a3d7f363",
+      "blake3": "275b04a3bc62ebaed061c076a9770d300b9111ade465c240d9e9db342a8fc43c"
+    },
+    {
+      "path": "tests/fixtures/benchmark/anti-regression-card-overuse/expected-style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3097,
+      "sha256": "95bc7c994d066f95bbcfe6a3c93024d3713a682749d11847ae8a16ab90b3be0c",
+      "blake3": "b05185fea9894ef700ca6ee73d762ee4c69ae3c3205a97d67111f7893483edca"
+    },
+    {
+      "path": "tests/fixtures/benchmark/anti-regression-card-overuse/reference-rubric.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1435,
+      "sha256": "fe5e7e9513d15d996614b551e7c614448db05244b3bc3155d79a6fa58f722e23",
+      "blake3": "cdee9cdd99cf6b6d4c69756e3929025851c72702db95eedf5d8e5a43c3a98a29"
+    },
+    {
+      "path": "tests/fixtures/benchmark/anti-regression-card-overuse/requirements.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 239,
+      "sha256": "7f342eefced204b0fad3aa9d5a31c5e1d41bc970517556ee495b3124cbafc559",
+      "blake3": "31ff3d3654c27b154b79055449e969f8c943b6c4e7628c3ec9098783c1eb03e8"
+    },
+    {
+      "path": "tests/fixtures/benchmark/anti-regression-card-overuse/source.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 63,
+      "sha256": "0560e8718beecc89f280f4f1cde43e9e7f9f36ba16fe1b5b96316546c1d736fe",
+      "blake3": "8e7855a43bd5e5038a2792f0c127fc459279220bc618a56a40f60e1e3533d819"
+    },
+    {
+      "path": "tests/fixtures/benchmark/anti-regression-whole-slide-raster",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/benchmark/anti-regression-whole-slide-raster/anti-patterns.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 78,
+      "sha256": "fb50f1f17bce58a48c0b425ad96a3e28b7439c6acd52c031e824fcfb0e164b31",
+      "blake3": "c297f59b3f35c2d9b30e6124345baf31095b59d9873abc09199a3d2953a4375c"
+    },
+    {
+      "path": "tests/fixtures/benchmark/anti-regression-whole-slide-raster/case.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 714,
+      "sha256": "c2f8ae15e4f209771746fd287904e059bd6d50799cfe1b4edede631f7ba55cea",
+      "blake3": "23b2a01e753cd73e6c630d2f5049b2ea02d48a62ff310ce0650ca28b6eda6c66"
+    },
+    {
+      "path": "tests/fixtures/benchmark/anti-regression-whole-slide-raster/expected-content-lock.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 140,
+      "sha256": "721083bca007ef59f004954eb67243073fb505a38ff8f9177b18a9793eefd791",
+      "blake3": "0a86b3b1fdf17138c755329d30c2016fad0e545639ab1c2021a86527042c6617"
+    },
+    {
+      "path": "tests/fixtures/benchmark/anti-regression-whole-slide-raster/expected-metrics.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 68,
+      "sha256": "ea5750e9a25f658b69f8ce81d29208f9e352c2acd1d8689c2c0b93a4cafef13c",
+      "blake3": "afb87ccb10723e68ade284a04c3cab4da7106f90c436458fd1454331735f2de5"
+    },
+    {
+      "path": "tests/fixtures/benchmark/anti-regression-whole-slide-raster/expected-ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1869,
+      "sha256": "62342fc7502266132324d02c712b41f8b90fcb48c09846fa4d1c22dc7f45939e",
+      "blake3": "f0ae5e8d4fb4f6f9f91ff4a49639cac03e4735bcea6af2f869134af0134cfa42"
+    },
+    {
+      "path": "tests/fixtures/benchmark/anti-regression-whole-slide-raster/expected-style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3097,
+      "sha256": "95bc7c994d066f95bbcfe6a3c93024d3713a682749d11847ae8a16ab90b3be0c",
+      "blake3": "b05185fea9894ef700ca6ee73d762ee4c69ae3c3205a97d67111f7893483edca"
+    },
+    {
+      "path": "tests/fixtures/benchmark/anti-regression-whole-slide-raster/reference-rubric.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1441,
+      "sha256": "31288055061b10a57b20ac215a33db47aecbf866773e0401f377ff595dd914f1",
+      "blake3": "499eb3db30d1cef37538f547e6dabac2a09287c912ca35309092b5b372e76423"
+    },
+    {
+      "path": "tests/fixtures/benchmark/anti-regression-whole-slide-raster/requirements.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 241,
+      "sha256": "35c47c753f51c45154af405a6f2b28011d27a909256875875d84ddfbbbb4ba84",
+      "blake3": "45e16927087ad941547cbbb654a123948e51132997bddedd6bb15d08431a02b5"
+    },
+    {
+      "path": "tests/fixtures/benchmark/anti-regression-whole-slide-raster/source.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 86,
+      "sha256": "feaceb1941b020312492c8c9f91173147784399326445f47bacb752168e4c25c",
+      "blake3": "31a7e0427e74f55a27c76b52ed841cf269f7b6cce6aaefb2af274a076539a2a1"
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-product-template",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-product-template/anti-patterns.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 77,
+      "sha256": "e2e9654173fbb0b452751dedee96590f597fe6cf5dfaaebe07183891665e4164",
+      "blake3": "88460518c31da0f7b9f4890a38ed42eda913918b28046a754da54719fe6ac53a"
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-product-template/baseline",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-product-template/baseline/build-manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 736,
+      "sha256": "d11f132b95c66551663341cb75a308532aeeb351fdea31ac066aec40253d8d21",
+      "blake3": "9a0eaed031e63d9b2e65170c32dcb9c0e6c10c32fd2b1266a77e907209533d41"
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-product-template/baseline/qa-report.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5639,
+      "sha256": "319f035b34a2f3fe589d5afc1cceb41af3595e2dc19d9bce8dc8ff0f49b10e19",
+      "blake3": "d6ce2931fc5ad9b69ae771985f4d3b4019df90a339716fa1ca8e9306960daa46"
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-product-template/case.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 863,
+      "sha256": "87bf9253ec227a55dafdebd1d301666ffcfee55ce0e709812736dd3c43af4a78",
+      "blake3": "878f28cc1e7b4cd01bcf0bb438952a6e2fb7eb216660c8ab2f9752ced0498a25"
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-product-template/expected-content-lock.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 134,
+      "sha256": "2af9d6748addd9911df076ef99638b5da718ff3eff5d7acc1a465fdeab863f3f",
+      "blake3": "4b5a8beb0cb4c43286f3d5c98c0cbf5892ad5eac1e2c805186224091c30730ee"
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-product-template/expected-metrics.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 76,
+      "sha256": "fba8d1ed5684d7ac9cf5227d25035b9c0dcf258bf9c8e953ede808b6f91b9b5f",
+      "blake3": "41cd0469e9662c368511c90989dc615501c6c9891561acef4b819795ccb87cc8"
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-product-template/expected-ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1862,
+      "sha256": "1da75f6b00d757e4428651c7273d3ace8625dad66888e9f92d220407b07f05d7",
+      "blake3": "580f455efd3b45cedd8293ef18e882b8aa7c88e5d3d594dc70862a273333fb3f"
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-product-template/expected-style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3105,
+      "sha256": "2546998527712f0c2fcb9ade5d0168c83e45ad89b6712e4ae73c1ee600a80fb3",
+      "blake3": "7a77cec6acbcd571e8fefa6ea66d3a16aa2b6e6ed5986beabca57b2514d5ed96"
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-product-template/reference-rubric.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1435,
+      "sha256": "5d17055ef5bff70c9927ccf0ebe0d4ab4f8d44e7038b573381e477b2d98a6358",
+      "blake3": "c4d82e5f4af0c6558b84641f5c6168b2e3bc1073386cd60c0265a4d42592b6ce"
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-product-template/requirements.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 213,
+      "sha256": "4306bd65dc365c6855f7d3b9305e26131cd12c0ea3a5f7417a6df366b60c7c71",
+      "blake3": "d941a9ba161fc9f32a94bf16ad779fab939002845681409af38e153e15e2edd0"
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-product-template/source.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 65,
+      "sha256": "36f394c50cbce4eb646e56594b5622b7342be3aa43737417e79df02aa86ed818",
+      "blake3": "eecc83552b075455d3d26b183513400fa1249208bf7c5766bd719da3345c63fb"
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-technical-blueprint",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-technical-blueprint/anti-patterns.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 77,
+      "sha256": "e2e9654173fbb0b452751dedee96590f597fe6cf5dfaaebe07183891665e4164",
+      "blake3": "88460518c31da0f7b9f4890a38ed42eda913918b28046a754da54719fe6ac53a"
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-technical-blueprint/baseline",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-technical-blueprint/baseline/build-manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 745,
+      "sha256": "6ccff0c7e9c674c7ee1f2fa165637ec8c8c7a4b947a938d5600409e6f3bdffda",
+      "blake3": "4bc0899c524e457c5c339acd9bbe3c3bfea8f49623dd0fdc2a3d049d9783068e"
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-technical-blueprint/baseline/qa-report.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13305,
+      "sha256": "9663dd604c508e86b5a39be840e0672695f3f29cce1fec44bad55e80bc98dcb4",
+      "blake3": "1c0c0921a08d38f3153557c82a9958afe1f9817f022b439dc35a9143d7f200f4"
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-technical-blueprint/case.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 862,
+      "sha256": "49c240c617ed6fbe00bca1ac1528d7b6ff101bf67f24cfdae66445929fb5823e",
+      "blake3": "c959e8b796bafb11fe192c457b34b29d3df64489bd8103edb3c38585aa25876d"
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-technical-blueprint/expected-content-lock.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 140,
+      "sha256": "699ff917373370dd2de326745ecbb8a4ed1866d99c975c99ddf31b7ac45bfa01",
+      "blake3": "5053d831e1ccb31ac976b311007b004d7613df8b802360d4a6e5ffc2a998cba0"
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-technical-blueprint/expected-metrics.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 76,
+      "sha256": "fba8d1ed5684d7ac9cf5227d25035b9c0dcf258bf9c8e953ede808b6f91b9b5f",
+      "blake3": "41cd0469e9662c368511c90989dc615501c6c9891561acef4b819795ccb87cc8"
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-technical-blueprint/expected-ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1864,
+      "sha256": "bec7506d1df5958e7d02150570b1f12cc40874b1d1e0b3e27c78bbba120ae08d",
+      "blake3": "84ae5f87e270ee892c0abb17b948d82c8c0d66abca358fd0ac86b2f26843d0fd"
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-technical-blueprint/expected-style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3108,
+      "sha256": "2248cc1a97612eedfc4f4e32de93259da4bdcc984f05dd6d4b8cfce4b4266a67",
+      "blake3": "e933f1914513f23135f506ab894a7e04b86dac022ff5a9fb36d85e259a5178bc"
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-technical-blueprint/reference-rubric.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1438,
+      "sha256": "53f3f258f5e4cfb31a9e062ca410f9be03104e36716f26452bacbe970faad30b",
+      "blake3": "35a57428b29f1437a98b43c91cf78d3492158398d95cf83ae50ae75af2f3fc75"
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-technical-blueprint/requirements.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 192,
+      "sha256": "ca66778f4cfcc769d386e9494e47fabda8c23f13cb72b32659ec437633424c66",
+      "blake3": "8aace92bae781eb61ed87a0a7699e866e2c9014f48033f05575e19638c80fa67"
+    },
+    {
+      "path": "tests/fixtures/benchmark/design-spec-technical-blueprint/source.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 69,
+      "sha256": "977e75d3494273339c27d132a004913cb8f9b04bdaffad537304df998706817d",
+      "blake3": "4329e3a1d886dcc826b9a9be4ad114efe5a8e8ddbd0b4c858d71d26fa6637ed4"
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-longform-opinion",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-longform-opinion/anti-patterns.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 77,
+      "sha256": "e2e9654173fbb0b452751dedee96590f597fe6cf5dfaaebe07183891665e4164",
+      "blake3": "88460518c31da0f7b9f4890a38ed42eda913918b28046a754da54719fe6ac53a"
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-longform-opinion/baseline",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-longform-opinion/baseline/build-manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 730,
+      "sha256": "0f5c8e3e8908bfd472a0abe1a5c59029d6300bd836cde0dffd2ffdd8a709e68a",
+      "blake3": "acf727038f1d12af7604ef3fd5eeabca4edfe315cc4cb31ee4c1c8edd012bfee"
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-longform-opinion/baseline/qa-report.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5625,
+      "sha256": "0f43618c1d8aba7ceab0f32172b0ffc3c75e1169c78328e3628cb83fa276b525",
+      "blake3": "efdb285dd8f89e58734dd43ead2aab8fee1e06f6760707750cda2a86b796c919"
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-longform-opinion/case.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 865,
+      "sha256": "9efdaedfe54d7d7fb35992d75a7e03b4f8d310a7e5ee34f79b25a7bad30b13ec",
+      "blake3": "58878db0579616d63e0484912211f60b823b6adf9d909f871aea8cbf5c39f25b"
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-longform-opinion/expected-content-lock.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 132,
+      "sha256": "e82b55f3aedd4d91dbab957b5f27cf0782f932c76efca15828d3e7dc8af3e392",
+      "blake3": "ca02ead1fd56e4f39c6a70b13ada687417246feec4a5cbb22fe11861c6aaa57a"
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-longform-opinion/expected-metrics.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 76,
+      "sha256": "fba8d1ed5684d7ac9cf5227d25035b9c0dcf258bf9c8e953ede808b6f91b9b5f",
+      "blake3": "41cd0469e9662c368511c90989dc615501c6c9891561acef4b819795ccb87cc8"
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-longform-opinion/expected-ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1858,
+      "sha256": "61d51cb98102b4f0d817ac6d52d5aff0b4aab23a940237d146d23922e9dded30",
+      "blake3": "156dfdf33939a61b648c7a996b6025964462acb968edbc43e333585718a3e558"
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-longform-opinion/expected-style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3108,
+      "sha256": "5d1dfc07f5c106584485b4de28d0735dbcd62de75d129de0fd227dfcaadc50f7",
+      "blake3": "827b4d1a4f090ca036ad79b250758092df84e9f0a01ebe4f3ca5ef86c250a829"
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-longform-opinion/reference-rubric.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1433,
+      "sha256": "eaca756386abf63ef3d1e672e0c629eafcef88a962bd43c6d012636524b9db60",
+      "blake3": "479cbc763335949d14b69a6c75e09852b889cf61ce5afc5b0d1a0bf0eaec925e"
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-longform-opinion/requirements.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 184,
+      "sha256": "f8f896d8ab46fc7cb35ce9ad6bdb4858f60fc9857ea55d6251ba9a468d1346dc",
+      "blake3": "5962b233ba9a2f1be128e38cfe66a0d0ffe3285b8d4a49af49cb14fa7df2bf68"
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-longform-opinion/source.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 78,
+      "sha256": "48dfb2d11c1bd10fdde981a29ed2c0d4da2e1571af0ad329246eb0819bf61b20",
+      "blake3": "f9ba7101479bd9197f427d462181ab5c611ad72571589a9ff27eed097eccc491"
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-skill-article",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-skill-article/anti-patterns.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 77,
+      "sha256": "e2e9654173fbb0b452751dedee96590f597fe6cf5dfaaebe07183891665e4164",
+      "blake3": "88460518c31da0f7b9f4890a38ed42eda913918b28046a754da54719fe6ac53a"
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-skill-article/baseline",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-skill-article/baseline/build-manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 721,
+      "sha256": "a655bea1a22fd2be0e68d50cfc8e4bdec39ff4e9eba5515fd7e876d006f8fafb",
+      "blake3": "01c01825e2475949baad09f440698d91e6a621ce140f31baafe9437576b02991"
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-skill-article/baseline/qa-report.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5604,
+      "sha256": "aea7ae7e64db342d2a252e5b10cfaa8f0c5f246e16cbd8819a0962d74b8a6017",
+      "blake3": "f65c0e556b78c646ff10e0d93b8cbb891f807c5ff959788d56f520217d20f75d"
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-skill-article/case.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 864,
+      "sha256": "7a2d1deb6bca06935bc9c8799365018a6736c32690fb8927b4d45db4082f0afd",
+      "blake3": "fff4a9e4209c78b606f70f03cfe58c54363d12917877a0a52f107226660cb19a"
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-skill-article/expected-content-lock.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 129,
+      "sha256": "107953927f017c0322120a3813ed003d62bfda18f77dd881125ec51e06ee395a",
+      "blake3": "c9828976514cca686689026623114e1dd7ea5b73a54d30a216e08d42f262777e"
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-skill-article/expected-metrics.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 76,
+      "sha256": "fba8d1ed5684d7ac9cf5227d25035b9c0dcf258bf9c8e953ede808b6f91b9b5f",
+      "blake3": "41cd0469e9662c368511c90989dc615501c6c9891561acef4b819795ccb87cc8"
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-skill-article/expected-ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1857,
+      "sha256": "23fadadb969e2849319438c3830e0469fb5a1e665fafc6c14e106826edf23f64",
+      "blake3": "b5f65e05311a7153bdcb66aeb4bb8905157d63290fbbb66deeb83229b639aaea"
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-skill-article/expected-style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3108,
+      "sha256": "5d1dfc07f5c106584485b4de28d0735dbcd62de75d129de0fd227dfcaadc50f7",
+      "blake3": "827b4d1a4f090ca036ad79b250758092df84e9f0a01ebe4f3ca5ef86c250a829"
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-skill-article/reference-rubric.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1430,
+      "sha256": "b828a35021d6de6790bd3a7d127262c13c0c75d5c3fc08e5bf9f741b9f9e870a",
+      "blake3": "027f28c67ed031ee131573588973d1b3082380f2d43a8cdd6c23b690bd8376ed"
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-skill-article/requirements.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 220,
+      "sha256": "5d2b3093f546ecffe643d823d72eed3753e47718cc0798c4577d09ef8909d3a3",
+      "blake3": "88c5ed4bd708f70d4ced3a365286396369484861a766eefbb77005832fa9fb8f"
+    },
+    {
+      "path": "tests/fixtures/benchmark/editorial-skill-article/source.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 95,
+      "sha256": "997d925896ae3422967c0a495077a948b33b35af8a63694197220894a734d48c",
+      "blake3": "879defed35b7c761c4f190730220c775841a043c1ca8469044828cb57c0c40af"
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-quarterly-review",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-quarterly-review/anti-patterns.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 77,
+      "sha256": "e2e9654173fbb0b452751dedee96590f597fe6cf5dfaaebe07183891665e4164",
+      "blake3": "88460518c31da0f7b9f4890a38ed42eda913918b28046a754da54719fe6ac53a"
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-quarterly-review/baseline",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-quarterly-review/baseline/build-manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 724,
+      "sha256": "51c3805303dc90165d3608f8798625faffe44543cdcbd886fd36b0f59eb048d6",
+      "blake3": "6e430a191ea075ba3ea624343091989cea4888c6343f3f3f46f76ed380c79cc3"
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-quarterly-review/baseline/qa-report.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5611,
+      "sha256": "b5010ad5d6be14831c254cf9db0ec72e6c5f872accf744a6631f382a91c23182",
+      "blake3": "4e6599d418539d42f796877b4fcd6942525593c9a613a60127920ca03ab99cfe"
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-quarterly-review/case.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 858,
+      "sha256": "76aca11c8c7961e29aa196fa13564c13e73f4024906e68023ccd785652b90a8f",
+      "blake3": "37b964665181f48ef330b848edc061726afc86288e4a4a794a50c009abdbff28"
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-quarterly-review/expected-content-lock.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 125,
+      "sha256": "bc16d87b435502674bb704f7e7e63d9c8fa1eeef3228d13c7f8eb6e3a8c96dfc",
+      "blake3": "6e9dd14860f5fa17630a41e467784d99300f2cd5e18b6425ad339fe5c32a337d"
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-quarterly-review/expected-metrics.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 76,
+      "sha256": "fba8d1ed5684d7ac9cf5227d25035b9c0dcf258bf9c8e953ede808b6f91b9b5f",
+      "blake3": "41cd0469e9662c368511c90989dc615501c6c9891561acef4b819795ccb87cc8"
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-quarterly-review/expected-ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1849,
+      "sha256": "df770e6522d13d939fd066a44463b7b95b9426788c50ebe7f6790ca88232fa3c",
+      "blake3": "e6badb04b24d4295d584f34067d7379b2d48005cd3d0e64a70833c96f9b7dfac"
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-quarterly-review/expected-style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3103,
+      "sha256": "1ebe785129ffc247ab46ff05e5c5b0b715223ee1a4d5bdc45719568885c99114",
+      "blake3": "997ca45831e3fac0693f194e00f55ed7a76dd18964fcdf58ccdf6a63930dfbc2"
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-quarterly-review/reference-rubric.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1431,
+      "sha256": "da6827f2d99da81601eac733a69e902282cb4992e6d4f8b6596e4dc48de907d4",
+      "blake3": "271925e13c8e00a8426334fc0d1862a24f104ada74209b30e2561bf8e40f324a"
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-quarterly-review/requirements.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 201,
+      "sha256": "f2ad51f1dea720885eff6c20760e108d2fc6eb11fde20c7e8a59372691382669",
+      "blake3": "439a45138b15cb182eae2a806e2f4ac3faad895cd8b4044e140cf8da96859718"
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-quarterly-review/source.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 94,
+      "sha256": "40114ab09428dccde8cd0b0a5a66b1a51b1ce11916f8462e4daf5f4b14eaa8dc",
+      "blake3": "c497d5610a5d7fc6cb645ed6250bfab13a989629f077f8ea8d159743fcf18681"
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-roadmap-decision",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-roadmap-decision/anti-patterns.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 77,
+      "sha256": "e2e9654173fbb0b452751dedee96590f597fe6cf5dfaaebe07183891665e4164",
+      "blake3": "88460518c31da0f7b9f4890a38ed42eda913918b28046a754da54719fe6ac53a"
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-roadmap-decision/baseline",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-roadmap-decision/baseline/build-manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 724,
+      "sha256": "e5f697ec5527ef86fb5dc3f44812fdc52fe4121d395b7ad64ed258ecd09af061",
+      "blake3": "e00dc8c1a45c1764b81d0af7ee47f5bb8e1a1ae386bcc3daf2552d73808ec90b"
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-roadmap-decision/baseline/qa-report.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5611,
+      "sha256": "246a11865d459023be16b30ab3dd40354ad60a49bcdeb5629e77ececc8d4e75a",
+      "blake3": "f0da3ed65bc9c8001b1fcc1b3ad91237ada537c44d7769ab411c8246d2c13134"
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-roadmap-decision/case.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 855,
+      "sha256": "9db98c402a47e790a076b649b24094091d43cfeefbd6bcad784f14a8236443d9",
+      "blake3": "c1d0691771e160cdda018343998e8c1603f0975b303c429158115030f41aa0e6"
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-roadmap-decision/expected-content-lock.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 126,
+      "sha256": "5e24acb1ba824528c7b9bad97e78fe7c43f4be94fac7c0cb97a190994ae93ff1",
+      "blake3": "e48608d3be65f66061dfc71ba2becf7705d89de89a1d2f68a7c25861b5a056dc"
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-roadmap-decision/expected-metrics.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 76,
+      "sha256": "fba8d1ed5684d7ac9cf5227d25035b9c0dcf258bf9c8e953ede808b6f91b9b5f",
+      "blake3": "41cd0469e9662c368511c90989dc615501c6c9891561acef4b819795ccb87cc8"
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-roadmap-decision/expected-ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1847,
+      "sha256": "545ef1f1d557c525313445dbdb6a39e8ee5b9fb7a5742980f84799e34491abf3",
+      "blake3": "1202a29c0d88cb0c784d6d0e9388f7a2fc76a41b98766d280300f7388e53a4d0"
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-roadmap-decision/expected-style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3103,
+      "sha256": "1ebe785129ffc247ab46ff05e5c5b0b715223ee1a4d5bdc45719568885c99114",
+      "blake3": "997ca45831e3fac0693f194e00f55ed7a76dd18964fcdf58ccdf6a63930dfbc2"
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-roadmap-decision/reference-rubric.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1431,
+      "sha256": "79b0ec9c38a92b174ba57a70ec3e1ee7aa9ddb91d74a5cf51a6d938ddd3b012f",
+      "blake3": "748f0cbf458fa30862ef737d2307bd51d9fcec25d0801de3ca93d7ff166f4352"
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-roadmap-decision/requirements.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 193,
+      "sha256": "9d1248f8bf31fca6a2af795807892678de362e33df5f522f5a0c1388d6a6e7f3",
+      "blake3": "f814705d9dc029f9eb88e7d63af0a8c2f1949d0ed543c2b57cb745c79bd79832"
+    },
+    {
+      "path": "tests/fixtures/benchmark/product-roadmap-decision/source.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 79,
+      "sha256": "779537e235ca23e21886d11d3cae03dd0971413ea590e74af20d5f8cd5e966a0",
+      "blake3": "025c28057a348739dfefba3eebe8fe4418c3940e7326406a9a5a70b416ac90c6"
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-agent-architecture",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-agent-architecture/anti-patterns.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 77,
+      "sha256": "e2e9654173fbb0b452751dedee96590f597fe6cf5dfaaebe07183891665e4164",
+      "blake3": "88460518c31da0f7b9f4890a38ed42eda913918b28046a754da54719fe6ac53a"
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-agent-architecture/baseline",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-agent-architecture/baseline/build-manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 736,
+      "sha256": "f3fc4d9f57d2d65226c3d76b50ecc46be370654875bb356d4ec5f03288b234ec",
+      "blake3": "30a05e99bc3675e7512ca773438e5595105307c6b4dc65b3b48df987fe548d6f"
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-agent-architecture/baseline/qa-report.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13284,
+      "sha256": "d61941f08b8463f8a7874b93b51feeb2d4cd746e9092243ec8f029484752ed78",
+      "blake3": "23e8a0caff5bb3f50b9e2e8c018c0dd620a4c6af57fe21f69f920ac3589159fb"
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-agent-architecture/case.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 864,
+      "sha256": "fee375f3ddca96c1ee0dc5da2c52326aaf6a4bf1a0cbb187d298c43a3b96fb13",
+      "blake3": "4eb8327135a589bf8dea205c0efa226868d6028fa04cff6ab8120fa847d1f262"
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-agent-architecture/expected-content-lock.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 137,
+      "sha256": "8550490696331663aca6a230a71a86f29311fb4e56dcaf7a347542b774e27a2b",
+      "blake3": "ed1778aedfc9ad64d2a3cf419ef2030aebbb745a1bec1c610065018af1825995"
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-agent-architecture/expected-metrics.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 76,
+      "sha256": "fba8d1ed5684d7ac9cf5227d25035b9c0dcf258bf9c8e953ede808b6f91b9b5f",
+      "blake3": "41cd0469e9662c368511c90989dc615501c6c9891561acef4b819795ccb87cc8"
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-agent-architecture/expected-ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1862,
+      "sha256": "8f3ba686028257fba00448c1c60de8a1b7833be1a2f84a17df340aa97f50372e",
+      "blake3": "154e2be762b750e7004a1a4602fc609d68484a9ed0516d6d3767068fc57ae0f2"
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-agent-architecture/expected-style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3108,
+      "sha256": "2248cc1a97612eedfc4f4e32de93259da4bdcc984f05dd6d4b8cfce4b4266a67",
+      "blake3": "e933f1914513f23135f506ab894a7e04b86dac022ff5a9fb36d85e259a5178bc"
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-agent-architecture/reference-rubric.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1435,
+      "sha256": "f66fb3c448c4f50b6562749b3d393fe2010b2fb68ca7065d1f299d4616f1fb20",
+      "blake3": "5fff472bec9098ae556cc167ad2bd17a1634813d2a8ce652762312d720678fd0"
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-agent-architecture/requirements.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 205,
+      "sha256": "5381865af2ee518a4c824282bdd7775fd40905efb73d1930753ca0b5bdd028b6",
+      "blake3": "0107dfce9aaa504ee5acff05aa6976852b973b9346b5885f43300e944d4b679a"
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-agent-architecture/source.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 102,
+      "sha256": "b8d2583128a1d41d8213a13116683a43a471eb1a6606a817e424fe8f79953e46",
+      "blake3": "65d8f9eb21caf706bdf22db72a4a54ae8dbadb8c056c16d846780f699d747913"
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-harness-failure-recovery",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-harness-failure-recovery/anti-patterns.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 77,
+      "sha256": "e2e9654173fbb0b452751dedee96590f597fe6cf5dfaaebe07183891665e4164",
+      "blake3": "88460518c31da0f7b9f4890a38ed42eda913918b28046a754da54719fe6ac53a"
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-harness-failure-recovery/baseline",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-harness-failure-recovery/baseline/build-manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 754,
+      "sha256": "b546522b06fb33333d9498f551b6a36b7c0addd54cf950809f5c7756cc7889ee",
+      "blake3": "990fd1ccf118ec5b5344b28aeecb9572f8796b72467c219244722bb7c0bc692c"
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-harness-failure-recovery/baseline/qa-report.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13326,
+      "sha256": "9acb8f6316051039128ee3acff1dd5b4db79a175752ac63ba162b60b6adb5e43",
+      "blake3": "abd2e16d52d997f4031ba515701f93f91f644147893e5b54c57f75168dd86f66"
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-harness-failure-recovery/case.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 869,
+      "sha256": "f259ec4a4b978de0451651c6aeabaf3056bde0e8d12b0f944e94e9e968f6dac8",
+      "blake3": "3e694958367b954d9abd7ba44066846399c40c6994942c1e26d34ffe8bebfab5"
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-harness-failure-recovery/expected-content-lock.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 143,
+      "sha256": "96296f8025061e8b76d4f15d845bb960f8e6be4270f499937371b3ff607d47ad",
+      "blake3": "0fbe624fc664f0e528b86c4bb9a76e1e8a1f63fcc21f22f5a1404f110963a92f"
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-harness-failure-recovery/expected-metrics.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 76,
+      "sha256": "fba8d1ed5684d7ac9cf5227d25035b9c0dcf258bf9c8e953ede808b6f91b9b5f",
+      "blake3": "41cd0469e9662c368511c90989dc615501c6c9891561acef4b819795ccb87cc8"
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-harness-failure-recovery/expected-ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1867,
+      "sha256": "0b8ccb9b58f93f213e4cde431b9d1880338fadc7b9213489836b9e6b62d2b058",
+      "blake3": "b49557e10966a2002d0ba0baf96241b977707d6d49ada854a1cd3d4a0b6683de"
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-harness-failure-recovery/expected-style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3108,
+      "sha256": "2248cc1a97612eedfc4f4e32de93259da4bdcc984f05dd6d4b8cfce4b4266a67",
+      "blake3": "e933f1914513f23135f506ab894a7e04b86dac022ff5a9fb36d85e259a5178bc"
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-harness-failure-recovery/reference-rubric.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1441,
+      "sha256": "ba3f868decafe5ba90d6f3f270952f7417ce3ae86874fab121cab4e7ddbbcd45",
+      "blake3": "2c06559d3de5959529514904ca14dc6b67dd7f376030a04ecb03475d37a945c0"
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-harness-failure-recovery/requirements.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 220,
+      "sha256": "8eaa40934c8780fdfc971043e7dae464f9e45195919c875566de336246e298f5",
+      "blake3": "9bf63945b2a51e7690236c2cf47627f9015f62e8977f883e58df82b812e7e184"
+    },
+    {
+      "path": "tests/fixtures/benchmark/technical-harness-failure-recovery/source.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 104,
+      "sha256": "4e3ff7f2847a61deb02cd745db0cb301894be58539db29490a25b3e5d77f56b2",
+      "blake3": "304ee524744a0918c9142d38ffe20836d14c0f7c3118389c2783f93ac29e29f0"
+    },
+    {
+      "path": "tests/fixtures/capabilities",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/capabilities/broken-builder.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2294,
+      "sha256": "8d0b8a50adf2ff1c92ec5c65140e88522cf95def1f19b8bafa1ac0ccf7346c60",
+      "blake3": "7d45f6de45f51971454fedcc1075f6950941eab400c905ad9fd11f8632f225df"
+    },
+    {
+      "path": "tests/fixtures/capabilities/linux-libreoffice.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2402,
+      "sha256": "5c0b7ce14fd4e5b5cbea375d2f0985150da5963a08830710e137651e0f317d2d",
+      "blake3": "3af1132142c7ecd26a9d34f0c8a8f4a28b55837758f300efab0a1a14f3ba8474"
+    },
+    {
+      "path": "tests/fixtures/capabilities/macos-full.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2973,
+      "sha256": "67f676c19c3ecbd6e055ee8a40f831bbc897b7e39240a2ff8f165a2fb6bdcfee",
+      "blake3": "a0679ff71ad7da3838b9044645f03feeac009e46f961c491e49e40d8bbbc4853"
+    },
+    {
+      "path": "tests/fixtures/capabilities/missing-fonts.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2350,
+      "sha256": "00cef6bfc88f2412507c8b016db1e0a3319a5ad341db9334ae208d9196ac0039",
+      "blake3": "f7d912c8bbb8daad578b22fad3c0607a14effe916030f9314ce91b5a13f2ff74"
+    },
+    {
+      "path": "tests/fixtures/capabilities/no-renderer.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2375,
+      "sha256": "26c2a9cf2a5adc5d25bb9d40f0041ff473546ff42d4517fc01ec3bcc3b82f8a5",
+      "blake3": "34006b17f5f771f64bd6f26eaed7ffa1b8f61f2d4c77484f4b6c9c20ea47c5ee"
+    },
+    {
+      "path": "tests/fixtures/capabilities/node-only.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2318,
+      "sha256": "40af73060e27637d94d804822d21cf48402d32557f1b317588ac859263193e0f",
+      "blake3": "49e78f05908589345159bc25246a868e898fcc495bb5ec741b64867326b6fba5"
+    },
+    {
+      "path": "tests/fixtures/capabilities/python-only.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2331,
+      "sha256": "76298f91a9ebbd524f59a1499f6b9e067d3b28c2453d6e7ec7e7154f01842dfb",
+      "blake3": "018eccca01d001124fb542ac7e5d312578242e1dfc6d49c862ddda2487887573"
+    },
+    {
+      "path": "tests/fixtures/capabilities/unknown-builder.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2246,
+      "sha256": "90d55bbcbefa4d2784d8308e676348d49c4585a1717af36b57626337e3408dd9",
+      "blake3": "4296e995a125cbdc2942f6bb246521cb0f5129ce026471518c9de0588a2fb661"
+    },
+    {
+      "path": "tests/fixtures/components",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/components/capabilities.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2770,
+      "sha256": "25439091d6969a639e272aca6fd4e3e75ca857226cc47c236a2984d5761528e8",
+      "blake3": "2ecf7f13fda5e995a8b4cded11bd131b5f6c217b09923b4ac934248c815a6361"
+    },
+    {
+      "path": "tests/fixtures/components/sample-ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5220,
+      "sha256": "a41a2729f193d1dd6ea274ae8b8dd76cf62db586c27774f498e392507b5a0d2e",
+      "blake3": "bd467ef1bf61fa1da15fbfdd4a1d93413fb90ddf8f67d8b7a1ba704fd3b6d89a"
+    },
+    {
+      "path": "tests/fixtures/diagrams",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/diagrams/capability-landscape.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2565,
+      "sha256": "da1a8d3609fd43512ab0b5be01b4b1f5d30a51b8f53c884d371d2ed9442a21f8",
+      "blake3": "2d898d9d540dfa1242bb0524b52d8183a7ad7f1dc4a767547119d2197ac454a7"
+    },
+    {
+      "path": "tests/fixtures/diagrams/causal-chain.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2096,
+      "sha256": "c527e24794a22c33a6eaf4858aafcae9a8063d05f8d3c8b66c9f22272c16abac",
+      "blake3": "84335efe6d5b12531576bf88a657b5aaa6cb7bcbdfaf91d0ab74da142a000015"
+    },
+    {
+      "path": "tests/fixtures/diagrams/data-flow.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2040,
+      "sha256": "9b7726fe12536d50ff61728cfb7f659f4e231db3b54c69f6dd92d6dc9cb02e8e",
+      "blake3": "2ee1f3a748b997c32c17895dbe8213db2a0633600677f8e60f20fd7094b6c37f"
+    },
+    {
+      "path": "tests/fixtures/diagrams/decision-tree.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2124,
+      "sha256": "871c6ac5cd401839b2730b39097f05c9e569d584f3745221329f175caa68c377",
+      "blake3": "858b8b0d5dc1011b5a2f34b16597e5d08a0fac8efe7dd37a6efbab1ea498dd4c"
+    },
+    {
+      "path": "tests/fixtures/diagrams/dependency-cycle.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2265,
+      "sha256": "6b453ee0c9c3e993fb3e7f6389cb34854a2d2d6be83c0fa9d4d55059d66e1b5b",
+      "blake3": "106a310c606d831211de18b071968b4cbdbb6cb384d2e749d58a686507128f3b"
+    },
+    {
+      "path": "tests/fixtures/diagrams/ecosystem-complex.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4989,
+      "sha256": "9a2dc34ae1d63720ebfba9eb0b6df8eba5e87accbd21f29e8cc641475f26ff0f",
+      "blake3": "453a1b0f3e5e4cad40b43665e12db12792b1a38c1d10ce94d0f03e2494f1d211"
+    },
+    {
+      "path": "tests/fixtures/diagrams/flywheel.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2201,
+      "sha256": "7b6788765fd9b4f96731cd395b24642b1db65091aa2a8d8c4d5bd6e57f084992",
+      "blake3": "9abb4f43d7d2f91150d014febed07b35ad7c53aa47bdb5c9b490e3bb96506123"
+    },
+    {
+      "path": "tests/fixtures/diagrams/hub-spoke.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2050,
+      "sha256": "272e889a2a3cf5e03073440401829949a776791faf413fb29110ee5624b83cd2",
+      "blake3": "b5ffaf1a454585afa438069d34fda04a81ebf6a6a050acc511a1e841a9124016"
+    },
+    {
+      "path": "tests/fixtures/diagrams/invalid",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/diagrams/invalid/all-primary-edges.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1596,
+      "sha256": "cdb1260774fe9e75a3ad515320c4e68c3d6917222390f430951293d18d455abc",
+      "blake3": "8cf580ac01f0a524b764ad2ee8f44ff18aee3ebebd196ea1883d160e0f2bffe8"
+    },
+    {
+      "path": "tests/fixtures/diagrams/invalid/broken-main-path.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1501,
+      "sha256": "978ba83db08b538eca0f5e298c9064164720c94e2d631ce5562ecbbb3d9b5000",
+      "blake3": "2b76e447d3598b3624555581d1b08e2bd94ec2d73f9f862496c5fe8c9fd4915b"
+    },
+    {
+      "path": "tests/fixtures/diagrams/invalid/connector-web-risk.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2970,
+      "sha256": "a2e23c6d1c244f1a9eebc694a334ab44474736cc6d0eb87e65b7593183308f51",
+      "blake3": "98415d0b97817933eb9ecf08e025c818511c61f5773c1382236d3aa1d989370a"
+    },
+    {
+      "path": "tests/fixtures/diagrams/invalid/empty-boundary.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2277,
+      "sha256": "e2eef9837b0660012a087852757bbcda6d36a4b426ca4bfdb7fa66fa740a6952",
+      "blake3": "76f152281446338e3bcf1938bc5ba6d53bf8d9e811d9d88a06a56a6ce0b29ebd"
+    },
+    {
+      "path": "tests/fixtures/diagrams/invalid/invalid-swimlane.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1499,
+      "sha256": "bbd30bf703695e181675ef40e08ad4df5eb6a659e681283d11dd191b229470c6",
+      "blake3": "de771fc0ceb43ec344f66e03ca107b4de39fd348f4deeccd77f6ab1b061455d7"
+    },
+    {
+      "path": "tests/fixtures/diagrams/invalid/unknown-node.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1317,
+      "sha256": "5d5b440904eb4c074121f7825c55f3ccea3f22593dd99ecae91d58098d0e376f",
+      "blake3": "2812cd8004f647eb625a750686d77a612714416221df5096c79420a583e00742"
+    },
+    {
+      "path": "tests/fixtures/diagrams/issue-tree.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2085,
+      "sha256": "aa85bf2da8d03746cfae333efea550bf9637240b7dd344aee3f6f056810ca69a",
+      "blake3": "b104e8c31ec2cd212ffdef76b32df2c5fc82fa476bc8b1eb43fd44f04fbdcbc0"
+    },
+    {
+      "path": "tests/fixtures/diagrams/layered-agent-architecture.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3869,
+      "sha256": "d345cdab1686b0f6e844f0a69762327d5bf65fa02d88d16cc0e9cbf8e5d02dbc",
+      "blake3": "f5b13578db2715b4f56d25ef30c1a8cd38afb26cdb71f29963069bea657e935b"
+    },
+    {
+      "path": "tests/fixtures/diagrams/process-simple.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2467,
+      "sha256": "5d707e150280c46240fefea3918221971730ca9e026cef9cc5ecbb7c3af9419a",
+      "blake3": "620e02f7f9f43d99b5155474c346cac3ca5c10f1292ed343151d6df34d5856b6"
+    },
+    {
+      "path": "tests/fixtures/diagrams/process-with-branch.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2238,
+      "sha256": "4664d51c77310c1dcca6807ec2977b179c93ef4d90ed148da08b4ee48f9eafc0",
+      "blake3": "c03dd97c220c1dc16eca45ab3f20a869e815c2ffde277f1d62e99240aa0b6eb8"
+    },
+    {
+      "path": "tests/fixtures/diagrams/state-transition.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2440,
+      "sha256": "87d8436a19395d2c460db61ddbfd9042fd0b0530e33e942b530b55d41463b4db",
+      "blake3": "16571ed2eea0ffc2ed827c80355c914e9985cf9a217dbb969a2749e08f6bdcf4"
+    },
+    {
+      "path": "tests/fixtures/diagrams/swimlane-approval.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2822,
+      "sha256": "c669028b8ed21162bddcdb515b173bbd20f27d975a1c184f43270f6f7e874c21",
+      "blake3": "93e222307a6bdb41edfa3d3cb726763df6ce259d2d96a3d63266d003d038e8ef"
+    },
+    {
+      "path": "tests/fixtures/profiles",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/profiles/public-premium",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/profiles/public-premium/ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 921,
+      "sha256": "39fe688a835910490f30816cc7a275dcedcc4c73ea58ace6e2b6491ba5a66e9f",
+      "blake3": "f51a0be998ee353d0c7b33d86f5052c8083cfe8c142babc491a98f605ef40a6c"
+    },
+    {
+      "path": "tests/fixtures/profiles/public-premium/requirements.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 346,
+      "sha256": "2e20fb165f5da63621232e4fb214a055b913855e954a732fb0648ba5edffe6c8",
+      "blake3": "6f57612996e6f5bda817eee4baed58551ab9e5952bb01c58be55f94c125ca784"
+    },
+    {
+      "path": "tests/fixtures/qa",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/qa/blank-slide",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/qa/blank-slide/delivery-plan.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1015,
+      "sha256": "e37620ed817d5d65475c2809a1a30518528746c4606d09059108bcb78a018f6d",
+      "blake3": "0c4e42f1a26d9789c5a3bdb4cc115092e03eb3224a0973871443fd2af98e0c12"
+    },
+    {
+      "path": "tests/fixtures/qa/blank-slide/expected-issues.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25,
+      "sha256": "b4a2c4228e17d87ef3ada6c2fa6b0daa50c4009a7db2b5b8bb25c4a2e9dddb76",
+      "blake3": "de4b8b1c20c686ea83ae6ba9812564af8b0db37a9c824474901a14ddb7cecb28"
+    },
+    {
+      "path": "tests/fixtures/qa/blank-slide/ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1827,
+      "sha256": "cac66641eca9fce7f4007f91cca095462788bc9de0f07ef27b31d788d5060e61",
+      "blake3": "53b57ea896520743dcc40e9a31006dbdfad23ac799cfe10689e043deef74a5c8"
+    },
+    {
+      "path": "tests/fixtures/qa/blank-slide/style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3082,
+      "sha256": "00c5dfa124a3cf7fd953c4cd793b34b535bd5730a76a4436fe24b130e0f56928",
+      "blake3": "2e7674ebe31125b6dda2f27c8ead144f301af23d62b7f61a5fdb7ec4945765b8"
+    },
+    {
+      "path": "tests/fixtures/qa/broken-relationship",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/qa/broken-relationship/delivery-plan.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 979,
+      "sha256": "c0892a23ef57c95971266d01baeffde9bdb95c244a91a6c2dd92b16d5248e8ae",
+      "blake3": "7e8298b49b98b22b5606141b22fea6a3cbf2ff06517d256fcd814d2e6ce0cb92"
+    },
+    {
+      "path": "tests/fixtures/qa/broken-relationship/expected-issues.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27,
+      "sha256": "b85992d1cbf8e2cb2cfae739a20b7f547a931100d5da04d756b289a7f34bf183",
+      "blake3": "593932d864a9a0a0815cccbe1b3d4168cbd9135d27a22c4d9396cb4ce82d4e58"
+    },
+    {
+      "path": "tests/fixtures/qa/broken-relationship/ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1904,
+      "sha256": "24f995796996f4aa627020b1e24f768c4f146dc6026933aafd0383bda51f2e49",
+      "blake3": "8dabdce5abb5fae10d8921c0a83c2930fb18d8d15a1ae673a72a50e426c240c1"
+    },
+    {
+      "path": "tests/fixtures/qa/broken-relationship/style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3082,
+      "sha256": "00c5dfa124a3cf7fd953c4cd793b34b535bd5730a76a4436fe24b130e0f56928",
+      "blake3": "2e7674ebe31125b6dda2f27c8ead144f301af23d62b7f61a5fdb7ec4945765b8"
+    },
+    {
+      "path": "tests/fixtures/qa/color-drift",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/qa/color-drift/delivery-plan.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1015,
+      "sha256": "e37620ed817d5d65475c2809a1a30518528746c4606d09059108bcb78a018f6d",
+      "blake3": "0c4e42f1a26d9789c5a3bdb4cc115092e03eb3224a0973871443fd2af98e0c12"
+    },
+    {
+      "path": "tests/fixtures/qa/color-drift/expected-issues.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 26,
+      "sha256": "ad173038ef1f8ff119cae36b51601e1f2b4410e75b0fbafa10e25a6c9f8d6736",
+      "blake3": "1b8e5ca868eb8acc314f4e35a0fb38801193a1ed32335f8698d22f225f0f5063"
+    },
+    {
+      "path": "tests/fixtures/qa/color-drift/ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1827,
+      "sha256": "cac66641eca9fce7f4007f91cca095462788bc9de0f07ef27b31d788d5060e61",
+      "blake3": "53b57ea896520743dcc40e9a31006dbdfad23ac799cfe10689e043deef74a5c8"
+    },
+    {
+      "path": "tests/fixtures/qa/color-drift/style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3082,
+      "sha256": "00c5dfa124a3cf7fd953c4cd793b34b535bd5730a76a4436fe24b130e0f56928",
+      "blake3": "2e7674ebe31125b6dda2f27c8ead144f301af23d62b7f61a5fdb7ec4945765b8"
+    },
+    {
+      "path": "tests/fixtures/qa/complex-diagram",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/qa/complex-diagram/delivery-plan.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1025,
+      "sha256": "65958478a1ac4c3df0f7c786f8b341898f2017893b08e51b72be55cc1414e31e",
+      "blake3": "4ee82453f4498c8e1434069c7e00a233177f6dcb2e232f4a5ff60c2ff6f77272"
+    },
+    {
+      "path": "tests/fixtures/qa/complex-diagram/expected-issues.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "blake3": "9fa8dc9570625be2be53d308f958332981ec8fb8137d3dd7ba0ae5da317eaa7d"
+    },
+    {
+      "path": "tests/fixtures/qa/complex-diagram/ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1827,
+      "sha256": "cac66641eca9fce7f4007f91cca095462788bc9de0f07ef27b31d788d5060e61",
+      "blake3": "53b57ea896520743dcc40e9a31006dbdfad23ac799cfe10689e043deef74a5c8"
+    },
+    {
+      "path": "tests/fixtures/qa/complex-diagram/style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3082,
+      "sha256": "00c5dfa124a3cf7fd953c4cd793b34b535bd5730a76a4436fe24b130e0f56928",
+      "blake3": "2e7674ebe31125b6dda2f27c8ead144f301af23d62b7f61a5fdb7ec4945765b8"
+    },
+    {
+      "path": "tests/fixtures/qa/font-too-small",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/qa/font-too-small/delivery-plan.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1015,
+      "sha256": "e37620ed817d5d65475c2809a1a30518528746c4606d09059108bcb78a018f6d",
+      "blake3": "0c4e42f1a26d9789c5a3bdb4cc115092e03eb3224a0973871443fd2af98e0c12"
+    },
+    {
+      "path": "tests/fixtures/qa/font-too-small/expected-issues.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 37,
+      "sha256": "bd27e8f4d87f840ebb71840c91974a6038fc52ee1a1468b83129449f43a8d3b7",
+      "blake3": "b02c77762d76840e05489753e4528f00b3706b1d0666375b109bda79a536d1df"
+    },
+    {
+      "path": "tests/fixtures/qa/font-too-small/ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1827,
+      "sha256": "cac66641eca9fce7f4007f91cca095462788bc9de0f07ef27b31d788d5060e61",
+      "blake3": "53b57ea896520743dcc40e9a31006dbdfad23ac799cfe10689e043deef74a5c8"
+    },
+    {
+      "path": "tests/fixtures/qa/font-too-small/style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3082,
+      "sha256": "00c5dfa124a3cf7fd953c4cd793b34b535bd5730a76a4436fe24b130e0f56928",
+      "blake3": "2e7674ebe31125b6dda2f27c8ead144f301af23d62b7f61a5fdb7ec4945765b8"
+    },
+    {
+      "path": "tests/fixtures/qa/fragmented-svg-conversion",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/qa/fragmented-svg-conversion/delivery-plan.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1015,
+      "sha256": "e37620ed817d5d65475c2809a1a30518528746c4606d09059108bcb78a018f6d",
+      "blake3": "0c4e42f1a26d9789c5a3bdb4cc115092e03eb3224a0973871443fd2af98e0c12"
+    },
+    {
+      "path": "tests/fixtures/qa/fragmented-svg-conversion/expected-issues.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 34,
+      "sha256": "9803d31256533d7e1655f3bf90a7a9dee8dffbe43e577d8f12c1f0cdb053aefc",
+      "blake3": "16f8688a77a3b383467216bd007dd913ce7e127a492574be68f8f45e2be71d36"
+    },
+    {
+      "path": "tests/fixtures/qa/fragmented-svg-conversion/ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1827,
+      "sha256": "cac66641eca9fce7f4007f91cca095462788bc9de0f07ef27b31d788d5060e61",
+      "blake3": "53b57ea896520743dcc40e9a31006dbdfad23ac799cfe10689e043deef74a5c8"
+    },
+    {
+      "path": "tests/fixtures/qa/fragmented-svg-conversion/style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3082,
+      "sha256": "00c5dfa124a3cf7fd953c4cd793b34b535bd5730a76a4436fe24b130e0f56928",
+      "blake3": "2e7674ebe31125b6dda2f27c8ead144f301af23d62b7f61a5fdb7ec4945765b8"
+    },
+    {
+      "path": "tests/fixtures/qa/generate_fixtures.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17188,
+      "sha256": "45437ca65b7e3982a4fc7d767b666eff8fd0ac2939db359caf90436593380d17",
+      "blake3": "7350c10e9be4e41a78b13ca1efc4d579edee7b79c81f3e9192a6977c75d9e105"
+    },
+    {
+      "path": "tests/fixtures/qa/missing-media",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/qa/missing-media/delivery-plan.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 979,
+      "sha256": "c0892a23ef57c95971266d01baeffde9bdb95c244a91a6c2dd92b16d5248e8ae",
+      "blake3": "7e8298b49b98b22b5606141b22fea6a3cbf2ff06517d256fcd814d2e6ce0cb92"
+    },
+    {
+      "path": "tests/fixtures/qa/missing-media/expected-issues.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27,
+      "sha256": "b85992d1cbf8e2cb2cfae739a20b7f547a931100d5da04d756b289a7f34bf183",
+      "blake3": "593932d864a9a0a0815cccbe1b3d4168cbd9135d27a22c4d9396cb4ce82d4e58"
+    },
+    {
+      "path": "tests/fixtures/qa/missing-media/ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1904,
+      "sha256": "24f995796996f4aa627020b1e24f768c4f146dc6026933aafd0383bda51f2e49",
+      "blake3": "8dabdce5abb5fae10d8921c0a83c2930fb18d8d15a1ae673a72a50e426c240c1"
+    },
+    {
+      "path": "tests/fixtures/qa/missing-media/style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3082,
+      "sha256": "00c5dfa124a3cf7fd953c4cd793b34b535bd5730a76a4436fe24b130e0f56928",
+      "blake3": "2e7674ebe31125b6dda2f27c8ead144f301af23d62b7f61a5fdb7ec4945765b8"
+    },
+    {
+      "path": "tests/fixtures/qa/object-out-of-bounds",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/qa/object-out-of-bounds/delivery-plan.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1015,
+      "sha256": "e37620ed817d5d65475c2809a1a30518528746c4606d09059108bcb78a018f6d",
+      "blake3": "0c4e42f1a26d9789c5a3bdb4cc115092e03eb3224a0973871443fd2af98e0c12"
+    },
+    {
+      "path": "tests/fixtures/qa/object-out-of-bounds/expected-issues.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32,
+      "sha256": "07e09eae5bce95855c48677eaf2cbd9ad66b918266b6962ec88d9c6bb5eaa3ec",
+      "blake3": "09233915517f0ac28aeff70dbbeeb3b0f660d21631c361c9f166015d09a33b66"
+    },
+    {
+      "path": "tests/fixtures/qa/object-out-of-bounds/ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1827,
+      "sha256": "cac66641eca9fce7f4007f91cca095462788bc9de0f07ef27b31d788d5060e61",
+      "blake3": "53b57ea896520743dcc40e9a31006dbdfad23ac799cfe10689e043deef74a5c8"
+    },
+    {
+      "path": "tests/fixtures/qa/object-out-of-bounds/style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3082,
+      "sha256": "00c5dfa124a3cf7fd953c4cd793b34b535bd5730a76a4436fe24b130e0f56928",
+      "blake3": "2e7674ebe31125b6dda2f27c8ead144f301af23d62b7f61a5fdb7ec4945765b8"
+    },
+    {
+      "path": "tests/fixtures/qa/rasterized-chart",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/qa/rasterized-chart/delivery-plan.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 971,
+      "sha256": "3a029754ecc342dc90dd8c7ac93aa53bd6349c37ee2a3bb59d1cc5d1583307fb",
+      "blake3": "f0cbb5a22e2be63376de643ed97f4bd7c6237e7534cbf8391f749235017b0728"
+    },
+    {
+      "path": "tests/fixtures/qa/rasterized-chart/expected-issues.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30,
+      "sha256": "74fb3f3a1e2bea5dcc2cdca32438daf5151be49aa73094dadd72a92993c3777e",
+      "blake3": "3d891ab63b975a0903b681a7ca331867b3020aa46a5e06a4d3f2479819d006cf"
+    },
+    {
+      "path": "tests/fixtures/qa/rasterized-chart/ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1900,
+      "sha256": "e016e213ed148f4d0988c87d844dc44a4e767ba1c97c1aa6e560abb6a66b97c6",
+      "blake3": "3fdffb9616d69355ce067e4de4b52c0de7abdb0fa63a377758ac087c2dc33877"
+    },
+    {
+      "path": "tests/fixtures/qa/rasterized-chart/style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3082,
+      "sha256": "00c5dfa124a3cf7fd953c4cd793b34b535bd5730a76a4436fe24b130e0f56928",
+      "blake3": "2e7674ebe31125b6dda2f27c8ead144f301af23d62b7f61a5fdb7ec4945765b8"
+    },
+    {
+      "path": "tests/fixtures/qa/rasterized-table",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/qa/rasterized-table/delivery-plan.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 971,
+      "sha256": "0ee89e7d4984f5fac8fc20305247a2480bb327e7e83ea67f82ec1a0a93ee4a26",
+      "blake3": "0a7dc1d190dc0c94ee7756a2a58cdda17e45473a5d6081e0aa92fc181cd853c2"
+    },
+    {
+      "path": "tests/fixtures/qa/rasterized-table/expected-issues.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30,
+      "sha256": "467b9c1a061aba702e3bd04bd4efde822ec9141e02a10a7aa2a122b6e98f443f",
+      "blake3": "9fe91fec48c7d47d1db8a3d9b088ea802c62eec924bc0fe3fa048adcd9ce6cd2"
+    },
+    {
+      "path": "tests/fixtures/qa/rasterized-table/ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1900,
+      "sha256": "f56951b143265636ef475f0ea4e6ef9525fe885bd459279fe5c9983d9b88501b",
+      "blake3": "114992b9323223187101e9ff65c80cac8c291283a5b21347e7a6f12bcd7936f7"
+    },
+    {
+      "path": "tests/fixtures/qa/rasterized-table/style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3082,
+      "sha256": "00c5dfa124a3cf7fd953c4cd793b34b535bd5730a76a4436fe24b130e0f56928",
+      "blake3": "2e7674ebe31125b6dda2f27c8ead144f301af23d62b7f61a5fdb7ec4945765b8"
+    },
+    {
+      "path": "tests/fixtures/qa/route-deviation",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/qa/route-deviation/delivery-plan.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 971,
+      "sha256": "3a029754ecc342dc90dd8c7ac93aa53bd6349c37ee2a3bb59d1cc5d1583307fb",
+      "blake3": "f0cbb5a22e2be63376de643ed97f4bd7c6237e7534cbf8391f749235017b0728"
+    },
+    {
+      "path": "tests/fixtures/qa/route-deviation/expected-issues.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 37,
+      "sha256": "aca270db4e4426327cb55b2f27e05b810501c1d163f6c7e395c754aec670fed5",
+      "blake3": "16b643b8f81599f61c2b7f4c7986422ffe0605b6bf06356460802c6126336af8"
+    },
+    {
+      "path": "tests/fixtures/qa/route-deviation/ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1900,
+      "sha256": "e016e213ed148f4d0988c87d844dc44a4e767ba1c97c1aa6e560abb6a66b97c6",
+      "blake3": "3fdffb9616d69355ce067e4de4b52c0de7abdb0fa63a377758ac087c2dc33877"
+    },
+    {
+      "path": "tests/fixtures/qa/route-deviation/style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3082,
+      "sha256": "00c5dfa124a3cf7fd953c4cd793b34b535bd5730a76a4436fe24b130e0f56928",
+      "blake3": "2e7674ebe31125b6dda2f27c8ead144f301af23d62b7f61a5fdb7ec4945765b8"
+    },
+    {
+      "path": "tests/fixtures/qa/text-overflow",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/qa/text-overflow/delivery-plan.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1015,
+      "sha256": "e37620ed817d5d65475c2809a1a30518528746c4606d09059108bcb78a018f6d",
+      "blake3": "0c4e42f1a26d9789c5a3bdb4cc115092e03eb3224a0973871443fd2af98e0c12"
+    },
+    {
+      "path": "tests/fixtures/qa/text-overflow/expected-issues.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27,
+      "sha256": "a7373460bc1af07bb9002f527e2cb8970214abd6e33cb7d41bbfc20aef279695",
+      "blake3": "c990bc14c5ec3316a912b4284b8d8cc304ce8f9d0be4cff4f596e0071f982408"
+    },
+    {
+      "path": "tests/fixtures/qa/text-overflow/ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1827,
+      "sha256": "cac66641eca9fce7f4007f91cca095462788bc9de0f07ef27b31d788d5060e61",
+      "blake3": "53b57ea896520743dcc40e9a31006dbdfad23ac799cfe10689e043deef74a5c8"
+    },
+    {
+      "path": "tests/fixtures/qa/text-overflow/style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3082,
+      "sha256": "00c5dfa124a3cf7fd953c4cd793b34b535bd5730a76a4436fe24b130e0f56928",
+      "blake3": "2e7674ebe31125b6dda2f27c8ead144f301af23d62b7f61a5fdb7ec4945765b8"
+    },
+    {
+      "path": "tests/fixtures/qa/valid-native-deck",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/qa/valid-native-deck/delivery-plan.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1015,
+      "sha256": "e9b1c28ad992077d5327a1fbd6b120cc53caad6da8c50bf78933df49921d3149",
+      "blake3": "172c0f53e8acf8873bc6bab17f3528367f5007ab1702e7e7296deff8be5d05b7"
+    },
+    {
+      "path": "tests/fixtures/qa/valid-native-deck/expected-issues.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "blake3": "9fa8dc9570625be2be53d308f958332981ec8fb8137d3dd7ba0ae5da317eaa7d"
+    },
+    {
+      "path": "tests/fixtures/qa/valid-native-deck/ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1822,
+      "sha256": "ac7924d0a3b5354163a5cd58e49eedb7a235f0d21ba7e5cce7d6a798c1437f7a",
+      "blake3": "d1ea79c77fd44bfb868a8776f85b0b2ca6543f77a0ec3dfbed6382b53f037fd7"
+    },
+    {
+      "path": "tests/fixtures/qa/valid-native-deck/style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3082,
+      "sha256": "00c5dfa124a3cf7fd953c4cd793b34b535bd5730a76a4436fe24b130e0f56928",
+      "blake3": "2e7674ebe31125b6dda2f27c8ead144f301af23d62b7f61a5fdb7ec4945765b8"
+    },
+    {
+      "path": "tests/fixtures/qa/whole-slide-image",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/qa/whole-slide-image/delivery-plan.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 979,
+      "sha256": "c0892a23ef57c95971266d01baeffde9bdb95c244a91a6c2dd92b16d5248e8ae",
+      "blake3": "7e8298b49b98b22b5606141b22fea6a3cbf2ff06517d256fcd814d2e6ce0cb92"
+    },
+    {
+      "path": "tests/fixtures/qa/whole-slide-image/expected-issues.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32,
+      "sha256": "ea240c5558ef4ec2ffabfc8ae4d04ad72e804ebfd27bc1aa4df7008b12f2f73f",
+      "blake3": "b27642c4779124a431f7c5d9aa29fdd6dfa1b3b9f163ceaae0a0e72f7ce62f5a"
+    },
+    {
+      "path": "tests/fixtures/qa/whole-slide-image/ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1904,
+      "sha256": "24f995796996f4aa627020b1e24f768c4f146dc6026933aafd0383bda51f2e49",
+      "blake3": "8dabdce5abb5fae10d8921c0a83c2930fb18d8d15a1ae673a72a50e426c240c1"
+    },
+    {
+      "path": "tests/fixtures/qa/whole-slide-image/style-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3082,
+      "sha256": "00c5dfa124a3cf7fd953c4cd793b34b535bd5730a76a4436fe24b130e0f56928",
+      "blake3": "2e7674ebe31125b6dda2f27c8ead144f301af23d62b7f61a5fdb7ec4945765b8"
+    },
+    {
+      "path": "tests/fixtures/styles",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/styles/consulting-blueprint-hybrid.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6784,
+      "sha256": "4cf9a286c59c15673d923ce0b71e087fcee2757693b0d9cc54fcb6cf0d4dbba6",
+      "blake3": "5fd6f46f7f326c7c277ccac91aab8688f49002441f7a2d49f638950a577df163"
+    },
+    {
+      "path": "tests/fixtures/styles/consulting-light.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6723,
+      "sha256": "b0f9442ae16b1af94c2cdd7ecac519377903bfe74f2a2edebb8d5f53e76b8c9a",
+      "blake3": "48fa2574c796497fd4612c22185a8da705cd2b9c2f77c725d6f0e64599a4350a"
+    },
+    {
+      "path": "tests/fixtures/styles/editorial-knowledge.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6738,
+      "sha256": "d53ea191bc4bb97b39deaf6d36878043024bcab123dc89ec170d394830678f48",
+      "blake3": "dc81ffefc64edd0197fcf4cd8a551704561cfd208beba7c14d310e939343cae6"
+    },
+    {
+      "path": "tests/fixtures/styles/product-report.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6727,
+      "sha256": "108a51f82af6d7c8ff124c767ac84afa2e98024d4d832fc5422007af7bb27d58",
+      "blake3": "a5b45c641f551dd1396aac3cc4191aa109c7569a804969098a5633b5603b7979"
+    },
+    {
+      "path": "tests/fixtures/styles/technical-blueprint.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6746,
+      "sha256": "71a0d27c7e79a839b3005c5ac0425dc4691021cade7a6e8467ff796fb887d4c9",
+      "blake3": "a856f1e97667f0211fba555a436804e65551b9f1fed77bf5e744808adcb0be0a"
+    },
+    {
+      "path": "tests/fixtures/technical-agent",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/technical-agent/ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2191,
+      "sha256": "710b43db9c62a52e565b5f53b4452094b22125b3ca954a72d5f51fb155fe41fc",
+      "blake3": "74301fcd30d866ef920ddf52b9ec6569e2a44c39639555690c146f84f7b471ab"
+    },
+    {
+      "path": "tests/fixtures/v2-acceptance",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/v2-acceptance/delivery-plan-shared.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6372,
+      "sha256": "9967d19cb525e3e426d049b19c1fa1cc624c64bfba7912e2a0838e10fec538d5",
+      "blake3": "7d4c83c059c634e28e3e957ba038e427c76b9a92271593f7e971ff1eb164e329"
+    },
+    {
+      "path": "tests/fixtures/v2-acceptance/ppt-ir.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14840,
+      "sha256": "044d9990071393f8f33dcbe141d070c5a466457fd24645a59ea8ba222b6992c6",
+      "blake3": "f19327f97b6d3f00be054964ee06eef2973d8ce7c145112abdd8b9328027535b"
+    },
+    {
+      "path": "tests/fixtures/v2-acceptance/premium-rubric",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/v2-acceptance/premium-rubric/case.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 248,
+      "sha256": "f9c91a77e519c4dbddb50815dbd05a7c8d4f2c1aaea97823dfbc88c20bc2fc15",
+      "blake3": "78549e91af35ae48a052740ab43ad3a10c053fa670215af0343854fd3a9eacf3"
+    },
+    {
+      "path": "tests/fixtures/v2-acceptance/premium-rubric/reference-rubric.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3858,
+      "sha256": "192b5879e1288c5ac0880560632f8e10c9d2da52dba61b38a50aed0d64e43788",
+      "blake3": "3e5cdc0fb857f6b31fde2f39edafdc7a2918b0edcdb45565c9b289f52e23a5c8"
+    },
+    {
+      "path": "tests/fixtures/v2-acceptance/requirements-fast.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 92,
+      "sha256": "2fcf4d85cbedb928d4c2f7e7ac59a05ad117b377a13898605262c0b80ae0e67f",
+      "blake3": "35bcf6b3e8c2545f5aa134b569efbefd532e1abbc4964de946fc1081f558307e"
+    },
+    {
+      "path": "tests/fixtures/v2-acceptance/requirements-premium.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 98,
+      "sha256": "6255d28df1c439f5f338695223786fd90f6f092497bf68f4297085cfafce7476",
+      "blake3": "becc82dafc91b3df3c6a04eca53ea51e9bbcf744e2e588b25a99aa00e8b575bd"
+    },
+    {
+      "path": "tests/fixtures/v2-acceptance/requirements-standard.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 100,
+      "sha256": "c862ad017a706691780494f274ac318d56d1caa47bfd5733e6f1e41bd6b03ea9",
+      "blake3": "b2faf170b65847e00dcd2ebd62d01169c3e45e3ca6c8150fef4a236ce07bddf5"
+    },
+    {
+      "path": "tests/fixtures/v2-acceptance/style-contract-editorial.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6738,
+      "sha256": "d53ea191bc4bb97b39deaf6d36878043024bcab123dc89ec170d394830678f48",
+      "blake3": "dc81ffefc64edd0197fcf4cd8a551704561cfd208beba7c14d310e939343cae6"
+    },
+    {
+      "path": "tests/fixtures/v2-acceptance/style-contract-technical.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6746,
+      "sha256": "71a0d27c7e79a839b3005c5ac0425dc4691021cade7a6e8467ff796fb887d4c9",
+      "blake3": "a856f1e97667f0211fba555a436804e65551b9f1fed77bf5e744808adcb0be0a"
+    },
+    {
+      "path": "tests/integration",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/integration/test_benchmark.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3744,
+      "sha256": "9a5deaf8c4f3339fc5eaecce28b7694b25d5bd7c16ae7f04dd887e4a1b083e7c",
+      "blake3": "73e50b9508df32b89216a0fa27167d4f82a3459bb46e136b2667449c85b94626"
+    },
+    {
+      "path": "tests/integration/test_v2_builders.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10154,
+      "sha256": "ca8c18a011d93e1ff61cbe193c1026574033f7c2c7902b87492c819517719a11",
+      "blake3": "b9170490dd6962039f4736c4b3e3507a39806e62dedb464ef24a890970b0e72e"
+    },
+    {
+      "path": "tests/integration/test_v2_pipeline.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16079,
+      "sha256": "7519cc68060b03035c82951aabe63ba271b3f3394c56ed48e84ada370c4eccd3",
+      "blake3": "fd4c3a324367d91630723823469772690a5b45a3ade6bb4390647c429aaf2977"
+    },
+    {
+      "path": "tests/schemas",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/schemas/test_diagram_ir.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2154,
+      "sha256": "ea04684ee0a4f3c7d2bb6acd2764c48d44e1410a69ac94171f982d213c534d38",
+      "blake3": "1940d97c955bc73c745d645d01443518d5bb37e78d871f175fc62757c153d48e"
+    },
+    {
+      "path": "tests/schemas/test_style_contract.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6061,
+      "sha256": "482effc9384fb9efef337094c7ba25cd65d574bc2563de1c4fc59937c98bbf6a",
+      "blake3": "ee8062109aa1c4db970950438f2a2b94566230e3dd1b3ad366d638dec39c91bd"
+    },
+    {
+      "path": "tests/schemas/test_template_pack.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6725,
+      "sha256": "8046f5e4d23301b5bdd69589574187d4f13840752b7bf00622975cdaf99da8c9",
+      "blake3": "65d428d5e5ebd419a1ed30d9333bbd1305b8486b282a46791aa99284b3d42100"
+    },
+    {
+      "path": "tests/unit",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/unit/test_builder_selection.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3673,
+      "sha256": "db55ee3b61997128e0717f47911b10574d5785fbb27be8a5526fd05046e0f457",
+      "blake3": "72a0df07c95fe85f34779292ba7f652bc3aa2f7716acb975dc3fc59b8f166126"
+    },
+    {
+      "path": "tests/unit/test_capability_probe.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4409,
+      "sha256": "6ff79ede2ae207ad245ceba6ad1bdbf8f15fd56009f86bcbb5713039d0ab2d24",
+      "blake3": "b043004b72b4291cafca94f96f510edd63001ac9091c592e52700637a5289de6"
+    },
+    {
+      "path": "tests/unit/test_connector_routing.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3397,
+      "sha256": "858647f2ac0f9268868dcdf2b2ffebabea17fa57cca6ad492524a4ee8497a28f",
+      "blake3": "b8975296241f86db7dce7c95ddc4413cece4caca7b47063204ecb684835802a6"
+    },
+    {
+      "path": "tests/unit/test_delivery_resolver.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8236,
+      "sha256": "d772f6779fd4bb08241878aa75c68d84ddbcea7ecc3ed4f4c9f3ea6b4f7dbb23",
+      "blake3": "37b97d64cb1cc5f4dd5f705568370c2c763884df6ff339239983790ebe9d9b50"
+    },
+    {
+      "path": "tests/unit/test_diagram_semantics.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3799,
+      "sha256": "3eb6390d5a072dde42f769138ae9033f9cbe1d131b7580d41a3d4cf276ed7b2c",
+      "blake3": "d311c1d7cf97ea597cecbe3298aff4c38903fa9766792166762df62b77027875"
+    },
+    {
+      "path": "tests/unit/test_pptxgenjs_builder.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11678,
+      "sha256": "906c0ffd4e999471f3fee071424b4f046c2985c1796baf3c8ecaca0059c930c5",
+      "blake3": "59a3dd77ca40e93969b69c35ccf3ef2efd13133c9c6b9b9a7c49217ce19e5c8b"
+    },
+    {
+      "path": "tests/unit/test_production_profiles.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8231,
+      "sha256": "c4b1ee7461859761046ed80c5a134706f83a6e8454369e962bc4cd207aad7819",
+      "blake3": "abc35a93b2aba814399235accd0a7c3132bab64d00fb9c1157db1bbbb2b65e38"
+    },
+    {
+      "path": "tests/unit/test_python_pptx_builder.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14621,
+      "sha256": "8cd991e586473cae2d00bbbd26ecc0c7836f77158f2c1ffd732da6f75ffffead",
+      "blake3": "2cf966adfad94825041f211109da707044ffafe501a9a858d0764d151de22b01"
+    },
+    {
+      "path": "tests/unit/test_render_report.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5152,
+      "sha256": "57b88f70563c34b5028c057768945c6ec9988fbc1b00a797699cd87d605d08e3",
+      "blake3": "dbfb80d889452f6483e2ee091af1b2a6dfd0462c478195a09f4c7d174206e73a"
+    },
+    {
+      "path": "tests/unit/test_verify_deck.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5044,
+      "sha256": "b5584fc3f878146fb1a184894ba7005baad219280ba0e52b7c90ac65e40f0fde",
+      "blake3": "24818e4d1628a5b9e2e954ec6c02098a050ff01f673bfcbcee69125f14303490"
+    },
+    {
+      "path": "tests/unit/test_visual_delivery_gates.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2900,
+      "sha256": "fd3685c00fda3debcedc9ab19bb26f96ee2ed96a7df7a472a490737a134e7ac0",
+      "blake3": "b77c790782334dc31ef748632356d43ea36e8e9d5c96010d5c0847e880f8bfcf"
+    }
+  ]
+}

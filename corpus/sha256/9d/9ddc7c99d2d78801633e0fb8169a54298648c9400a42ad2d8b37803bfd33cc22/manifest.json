@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:9ddc7c99d2d78801633e0fb8169a54298648c9400a42ad2d8b37803bfd33cc22",
+  "sha256": "9ddc7c99d2d78801633e0fb8169a54298648c9400a42ad2d8b37803bfd33cc22",
+  "blake3": "1577ec8633117dd96b2504009031ef56b12a20f2666e8d86eda52cec3127b37a",
+  "size_bytes": 151829,
+  "file_count": 17,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5866,
+      "sha256": "ec5b23905574f6c2a0045c3a21c48533e853beb6f341087ee378f4d9ab536eff",
+      "blake3": "200d54c47698221826f815e9d6f7185d34c9202ab6ce0f4f8d4f4bcc404a2097"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4033,
+      "sha256": "5faac42087585e88d53f1f2b64158447eac3f84aca037789eee07f3b49d0caa2",
+      "blake3": "17f70c2f1f9dd22e0292953d62f97c63b9f93eb831576d3b369bc09938c6f394"
+    },
+    {
+      "path": "SECURITY_CHECK_GUIDE.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8414,
+      "sha256": "a648468cba27be47a39c205ff37cedbe03008b2653c6ca604965dcf457bcdb51",
+      "blake3": "6fdc7907d7726a992ace5f25480c0dbedd3d8ed9e7ff55407f2a4d1cc6927a16"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17529,
+      "sha256": "ff1c35134b624e910a018b2c459becd56eb5239b8144766f6ceb0214b76da30b",
+      "blake3": "0c22c1651fb692d0c4cc9ff3f66452818d60f5d5a7a5a71d4d36986eef95b1c1"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 134,
+      "sha256": "a0cc9ccfc0e61858e2f92ea7b844058f5df64f5baa54dc0e26e88bdb10ac8e07",
+      "blake3": "1475543299497954782c1695daad72131be79eea672417bbd86afeaa98609264"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1958,
+      "sha256": "a49fba634929d24f62fce94ab6bea9df5cc17a20d7bd0cb4b9f02927244c2da6",
+      "blake3": "07ea3e725ce7c5804b308ff8be205273db9bb72f62504208e13ba96adc7dcde9"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/gdpr-regulation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9518,
+      "sha256": "bdad1a4744cef1c5a14734c349cf5e407601e112361a867576404e4d7f591f76",
+      "blake3": "641efa47d92d788a44eefb8bb261883cc72d1080fe4a91fd6b20babe95358745"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 334,
+      "sha256": "2f0a65fc7629413ba7cf10520051bb335d377fe03dbbfcdbbff06a0f3929bb21",
+      "blake3": "199e79ac1f5c08b3e3845a33149eb96ee86addcc05be3d7cd7461a7886bd6dc8"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cross-border-transfer.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8396,
+      "sha256": "6589d3a69454fbcbaaf321fca3910a58a43d125f3f8dbe5a2f4ac087989129ef",
+      "blake3": "88d9b7f8f549759ac000e997683737066a4462429f7e3ffafb7e0c9cac1ad6cf"
+    },
+    {
+      "path": "scripts/data-subject-rights.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8260,
+      "sha256": "ffb5abf18487e6b37610c8e6a1aa73aadbd4df515886f756839783c86223495a",
+      "blake3": "0aaafb761edf83d4e726951cd7836da080d9875d2994bd214cc688b2d7a3107d"
+    },
+    {
+      "path": "scripts/dpia-generator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7830,
+      "sha256": "44ba64d1d43fa715628435212b08df2e56177fd5d0a773d82af6c96d51ed5619",
+      "blake3": "157b773e3301fa9dc255888c86ab917d31f000542b668962c0efc622978b4687"
+    },
+    {
+      "path": "scripts/gdpr-check.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17233,
+      "sha256": "94a40f30cd027ee8ae2197516a61209a4269c8c39b7653801dfdcf16e9484f0b",
+      "blake3": "40156ee1959ab888e60b770ebbe302d85ae89273c758475eccc9ba81566b2290"
+    },
+    {
+      "path": "scripts/security_check_gdpr.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16016,
+      "sha256": "0013d995ad5b3900e62a74a9a4e125b0a8c004fefb63cbee03531e1be0d565bc",
+      "blake3": "b4fc43825fe2c82ce0cc7efff817412e60504fe68b40890d7f38f2fe0448cd00"
+    },
+    {
+      "path": "scripts/utils",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/utils/gdpr_report_formatter.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18419,
+      "sha256": "9c991b55f8089cc94f6835549f6cc2f05f53c833601c6bb194e71dda3723f153",
+      "blake3": "01f59dd40553fa2ee9c953ccc6506252198c6db5ffd27670ad4b2e3a5601f474"
+    },
+    {
+      "path": "scripts/utils/gdpr_templates.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14249,
+      "sha256": "dee97d70311a1f28e19d05f0177819270e1bf164bbddd1a129679136a560a955",
+      "blake3": "f60f90e6509231f5413fc2a47520e7d43bdda8cb1985d2f0579bcde312dae4b0"
+    },
+    {
+      "path": "scripts/utils/gdpr_validator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11039,
+      "sha256": "b3f5d6968965d9e853991b37941bf20f940e67671854af6ad673a2ce07c72eea",
+      "blake3": "e0f819fbbf251be97d26590fc358b1c4cbc2f3f406e9a811628c659dddd2ff7f"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2601,
+      "sha256": "52593da33b013d20fdf786317f8a217cd438a32d773846e16d6835c063b9eb96",
+      "blake3": "790dd2a85e8724951e4cc61bda83a62a339dfe5c21a8dab8faf348bb40e4c722"
+    }
+  ]
+}

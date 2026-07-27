@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:9250cd7adf9364052514315b0726de1430604e621cc3b72a672eea2cd9ab9565",
+  "sha256": "9250cd7adf9364052514315b0726de1430604e621cc3b72a672eea2cd9ab9565",
+  "blake3": "334742c052767b717cc02d4c29ab3443eab5468cbf380e66e25268845237f04f",
+  "size_bytes": 322011,
+  "file_count": 19,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 63255,
+      "sha256": "19f5b397b1400a0f16b5482e6dea69c83f87ff0a64d480f4153ed850dd4db253",
+      "blake3": "2c9e67c0b7fc3bcd8aa258791241d4bef853f44573244cc2e441e9b55304c4d8"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 127,
+      "sha256": "cf618b82d51ed1defcdb0a846c0ea1968dbf543ee8d222ad71eeed150bc541d9",
+      "blake3": "949b611a92398cf77bbce6f59bce8e61420ae6d772ffea0b301a1f7450463919"
+    },
+    {
+      "path": "_test_clear_config.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27,
+      "sha256": "a04c3131d5d2d6a794281b2525967934811d733be6dfce8658ac90f520f8a14f",
+      "blake3": "72f355c57d308c8a6957623b55f2ef87104211a22778a8ad0f9b447c4367f1d9"
+    },
+    {
+      "path": "_test_timeout.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1338,
+      "sha256": "67d6c95b62d2b9a1b2cf0bb71c6848c2e148d868c421ee6cb4466daa78860a88",
+      "blake3": "ee92164d195c258872a8c183b7f59e8c9a759b18089898986abffd1a6b93c15d"
+    },
+    {
+      "path": "data",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "data/600600_data.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 43418,
+      "sha256": "b66162290194308278e2722c0fb67a12a79ece74814f4170880f375cf09e3ebd",
+      "blake3": "fc3a8884c4ead1f2dce1aab8c9baf5a7bd6cd94ebdd44d74513c7890321e9c72"
+    },
+    {
+      "path": "ghdata",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ghdata/afterhours.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12265,
+      "sha256": "72dc7535a2cd5c12e0a469aa83833927add0e61b84888b8b6407bac048d6bceb",
+      "blake3": "d0435581bddac381d950641c5608050d81d4b006927fd2e2c6b2da03dd7d2d63"
+    },
+    {
+      "path": "ghdata/analyzer.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5820,
+      "sha256": "340d7ce108f92f981b034a35950d310ca3a669f955af8285113d97addba68a8b",
+      "blake3": "3b65720b0ce6478caabb6ee75f996ffea7cba3acd22948295857b28a6acf3a0e"
+    },
+    {
+      "path": "ghdata/chart.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5920,
+      "sha256": "a8f54f14f4511a8fda561a6c438fff593e1549b5e1c28c67cd571d1c13035197",
+      "blake3": "dc45c16addfeea59b5f92738b4e24b58332bb73b673c71fa34b963a67eb6e75a"
+    },
+    {
+      "path": "ghdata/config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7687,
+      "sha256": "1d26e14ce7d3140c0dd960e0608fde52abc8facf4122483670bb7c16dc797075",
+      "blake3": "5ca732ccb5cb28a367be2d31cd374366b03f88c9008cd3b7d6aca75b40d7f7a2"
+    },
+    {
+      "path": "ghdata/data_fetcher.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23159,
+      "sha256": "1ecb2d90d3d5b114aed34c4a0a85c02406ab8077b0849f6b2c09ac827d4fee2d",
+      "blake3": "e7bbcdb7668be8a2a04ed9d0ddc53c8e8cdbac35fc9b6e86a9ae882a82c37c3b"
+    },
+    {
+      "path": "ghdata/db_manager.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29335,
+      "sha256": "8f9b8d2cada16639e9d2e6530939b47187bb37da5dd4c8a4bbe5eb71e42134b7",
+      "blake3": "faa9a373d24fbf0291d7f5ac7b6ccfb29db94a91f28b0bf6751a79e38bea23f9"
+    },
+    {
+      "path": "ghdata/eval_engine.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10220,
+      "sha256": "38040d6aa818338749d7c1d6207520709f10b07df28716d8ec4768f9147da356",
+      "blake3": "b2a75f7b9ee7d6826c350cc4059e99f140ccd457a3375288726e64d757b8c9e7"
+    },
+    {
+      "path": "ghdata/pattern_miner.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6238,
+      "sha256": "11d43b070b45eb2c5e36d340057bc96abb59b4a86513574e79fcf026fbaf0918",
+      "blake3": "67422a40daddea3e1ffbe360aad5f329a3b0cb489661a54a2e3ba71075a57494"
+    },
+    {
+      "path": "ghdata/reporter.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 91237,
+      "sha256": "2b86c53e064367547d973225c2b98d59ab44f1a9785883a4fc4d563f653b3648",
+      "blake3": "3d8c05985cf687f926fa6c4e8351e1b0b761206b396b955771f8f748f790f363"
+    },
+    {
+      "path": "ghdata/research_utils.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13079,
+      "sha256": "b57eb6808283100764a853bc606a1f255f8e11d4dfeddcdc2dab185a177e494b",
+      "blake3": "6fe0b7d537a0bc55a0958208f9859b191b8e0b1cdf8bee4c4aaa6d7ec293148d"
+    },
+    {
+      "path": "ghdata/sanitizer.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5848,
+      "sha256": "16215fb491d61ae5d8e8560a7114a744ab3f5f8c5708561bd319e41b1426febb",
+      "blake3": "e23192c5139cd335444bdc7bf862f6098d06bc5a65763b43a88e9f8bd0f13665"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 81,
+      "sha256": "7bb435a827d8dddac9cd375f5bd7e03abcc0eceb87da7aa13381472f0f00ca95",
+      "blake3": "e7ac13dc37aec2ec3cdfccacdae9839bed776d35f90a18c5217042c7129a66fc"
+    },
+    {
+      "path": "settings.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 111,
+      "sha256": "b6ca10ed9b82e015216b0f7c0b4761751076c51b5683aa8cfb72b9098116e600",
+      "blake3": "25bfb47711dbdf3447ecd41f0fbe7a27ec77da7145648f975ba9e5030235e152"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2846,
+      "sha256": "77b97b5bbf7479d6e8c8327d471b854f869101364fd9938f922ff4fa6bc0ab7b",
+      "blake3": "33159851b0ace66721f012c93d1ad195bb2153a960af5262aa8665b2351ff35f"
+    }
+  ]
+}

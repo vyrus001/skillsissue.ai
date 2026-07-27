@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:7fb5f6ec98f69ad9cf05d437b8c65ef6d458d3007fce8bef4ac40305e74b52eb",
+  "sha256": "7fb5f6ec98f69ad9cf05d437b8c65ef6d458d3007fce8bef4ac40305e74b52eb",
+  "blake3": "00e6fcfb6b948f903586173e4751fd144eff33445679076836924fddd13d2ed3",
+  "size_bytes": 275568,
+  "file_count": 13,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17705,
+      "sha256": "88fe1860a4539ffcd53b2f12961f9f19998897646451d8f3293416978bf96bc7",
+      "blake3": "a3f266cd2a83b5be0e99bd815b68a3f475e6df7aa3f0e4fcc3802913c4faa9a6"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 132,
+      "sha256": "a35a57f9f1d689461e37e97665c959bfd9197b7117c39cff6f1170ba2c2c6d05",
+      "blake3": "6b4012d5dfff74c8d1aeab1cd56dd86568c1c9aac149581276c78d704c1f5ee8"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/dependencies.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2276,
+      "sha256": "f4fcc29aa998836a310a8b2ece40ecba02af665945b5c45a82bd09b604166e4c",
+      "blake3": "318f761a41ad81b038f69613caa36491edadb3c1fc4ace1a4b90a929ea7867ba"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/__pycache__",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/__pycache__/burn_subtitles.cpython-313.pyc",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13530,
+      "sha256": "3c9e3b6b4b2216defb6445edf16d9e7459fa43ae78fb168bed16b4f997e51934",
+      "blake3": "12e89684eb742e43f2bad59cf280ba50431fc2c2ea71220345e19bfb9496a535"
+    },
+    {
+      "path": "scripts/__pycache__/dashscope_api.cpython-313.pyc",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24952,
+      "sha256": "bb5e73a473ecd04420c08a9f983f01b83caae6276161b7c1bb3ac17b5f2984c6",
+      "blake3": "edf465d19e7c2d8654b7efb8a38c569f257115da2390529f10e167e116be5441"
+    },
+    {
+      "path": "scripts/__pycache__/generate_video.cpython-313.pyc",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 87241,
+      "sha256": "ed3451558cd024e2a152971cb5e3b54ded61cb25b647f1d24bf5c04e0712116c",
+      "blake3": "e624a4bcf4338b3444ed848479e91e845943526b0b93a816ce75dcb3ab91b0e3"
+    },
+    {
+      "path": "scripts/burn_subtitles.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10379,
+      "sha256": "f4896a1956957a4ea9472769b8705b41aa0aaac60124f6bdd1aba5aa3aa13c6a",
+      "blake3": "64e57210811f373e3ca24c8dc1bb1c0a4779cc3dfd22b0966741f78e2505dec6"
+    },
+    {
+      "path": "scripts/check_env.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2023,
+      "sha256": "bb1a5e0183fe5ed72ba37381b72a97e67979d2818ae86e10234ad958bd3a3d78",
+      "blake3": "d3a82716d4cdece4bebb61b934ec940f8ee9a339baab4007baff3f1f7c692b63"
+    },
+    {
+      "path": "scripts/dashscope_api.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29540,
+      "sha256": "e0e189e682fd269349a6e5634d813dc1b2472212bf9e23f710718a99ef4d66bf",
+      "blake3": "c112704ed7efd6a0bc1a8bf58d1d3ad9dde4952e49bc775b28e5ab66c60d8633"
+    },
+    {
+      "path": "scripts/enroll_my_voice.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5989,
+      "sha256": "a02f3345121844be5988fe1e4053378d4c9bce1353dd6ca09b1a50fc9581bd34",
+      "blake3": "76bad9367fab59f7d8b62c41b21238d37b9133f85f5f5fcc61edf82b56372581"
+    },
+    {
+      "path": "scripts/generate_video.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 78692,
+      "sha256": "2a5c610e4a8f016600b95689c97f7349f2fa6f7f8a5c4df5bb6b4bfab34803d2",
+      "blake3": "4bca04c1bdf8165ff8039bccd0deaa85db8c6b81564ad575121d7b145ec886b4"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3047,
+      "sha256": "475f35921d6677db59c9fb1b07067894c3ffb54e3a4660589e9288d39a774ed6",
+      "blake3": "ec07340df8ab5d3e08e40b33c7ba5596e08e0cd9e664ecd1d8759d30544c6fbf"
+    },
+    {
+      "path": "voice_config.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 62,
+      "sha256": "1ba2799b75532c408bf597f508906997e972b101c02e7ebab5e9b6d73dfba0be",
+      "blake3": "40fa3c0dfc9d554c7e08e2b7052a0e6009ce9490ee219fe5d54832ea9b6ea459"
+    }
+  ]
+}

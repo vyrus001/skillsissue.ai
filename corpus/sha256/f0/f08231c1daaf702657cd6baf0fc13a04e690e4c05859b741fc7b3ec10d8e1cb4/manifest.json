@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:f08231c1daaf702657cd6baf0fc13a04e690e4c05859b741fc7b3ec10d8e1cb4",
+  "sha256": "f08231c1daaf702657cd6baf0fc13a04e690e4c05859b741fc7b3ec10d8e1cb4",
+  "blake3": "a4af5769396343886c4a7564133a3eca4110f87fde52826a8abfb92a53df69be",
+  "size_bytes": 57028,
+  "file_count": 13,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 355,
+      "sha256": "a526504ea6c5c3783b33e6f40df997c12e03ad9a9eb4075c9e0ff8719c47aa17",
+      "blake3": "e4384057422fffbdabc90e3fcd301e9cf89e4e11a59621aa73f397e9c5727d1e"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6523,
+      "sha256": "b463999474c9212ea876f2b31adb170537f2752523597869bfe8e65ab5ddd674",
+      "blake3": "b4b3071d0d2811f7189c07fe5798057b491f588fc575de4d2e583e3fbd1ff292"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 147,
+      "sha256": "ed7e95aa9beae75c699a354175d6984c0d76a680970ef8bf6d40d5dad0fded43",
+      "blake3": "4f3f206519ec382e99ca8924801af41b6a7898f8734acd5ba2a95c50713d3950"
+    },
+    {
+      "path": "claw.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3002,
+      "sha256": "e0966a5d807c492a6741fa71643d35639907fdb090edd430dc97497c6ac2b014",
+      "blake3": "0c4aedd83c7dc63549a21a309fa0662058ca2e5095626be80517e477b03a6b6f"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/AGENT_CONTRACT.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 788,
+      "sha256": "fd2cf52b40a9269b1362e913e3c34cb0f3cacaedcd43adb069233cb702e58b3f",
+      "blake3": "17ccff63e170a4d783d7f299ff03c05ef6247ba6d077461c0419e3b71807404b"
+    },
+    {
+      "path": "references/SECURITY.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2105,
+      "sha256": "4b16bf6bd4f2704f26b12853cfe7ee09870de8df6b45c756954e27558e8f3720",
+      "blake3": "c9d8e1b3300beb2b2ee02a990db7618ec804ecaef795b02312c5056cda337abd"
+    },
+    {
+      "path": "schemas",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "schemas/public_verify_manifest.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1030,
+      "sha256": "e3481753931f4c63d2bd45019822cc54c8748464fc714943a88abb7ef4f99280",
+      "blake3": "dc62f749d0d49d82da041421ca1ed7d46bb3d3bf0734404cf733791c587bd134"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/_safe_invoke.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2575,
+      "sha256": "ab6a720ac8c2bf105dd2fc332a4799db1a051d10255a421d1198f840f9a52526",
+      "blake3": "3c6e97df4ecf21d24a049825f2388c93e523f6c6965fde085eadc89e265f7119"
+    },
+    {
+      "path": "scripts/build_public_verify_manifest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11050,
+      "sha256": "a34848537d69a1b8ffeed359b24fce944c36f611e015f5d69af9a26b94e139c9",
+      "blake3": "262485a617cbd644c4988acd1eaa2419d3a8c58cc41cf7928032681807a6414d"
+    },
+    {
+      "path": "scripts/map_eggs_to_star_chart.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7701,
+      "sha256": "734fbd475345168d5e4f3c302a9ac00c9c7c190736a41572b1e89cb79315df83",
+      "blake3": "e24c3dbb91e2a2ceadb0ce55a29cf8a8a9fbac613f772494e162c65b5bde9d72"
+    },
+    {
+      "path": "scripts/sync_external_plan.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5707,
+      "sha256": "9c9bc4af0ab546d377c5af1b963834bf43b69c4439f203938d5a3b529655939d",
+      "blake3": "e06a5b401692ad4f2e1dd4781a42c0525a96fe57ee3134531bbc741b5e0441c5"
+    },
+    {
+      "path": "scripts/verify_public_anchors.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8506,
+      "sha256": "4eff30854c16fa23cedc105d1dc1082bca37905c5a4e92b5236737cf096729f5",
+      "blake3": "4d55f043a116b55437eafcdc16134f9e41a5c122dce717b75cb8e96e9fba819a"
+    },
+    {
+      "path": "scripts/verify_world_lattice.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7539,
+      "sha256": "8b5f6b8f69fd03ffecd14b943aadd69ee1dbd02ab624ba44e0ca6ade789a4739",
+      "blake3": "bad428fdeb1ca39d146b332d3e8be47f45e2cc6f23b4adfa1314af691550832b"
+    }
+  ]
+}

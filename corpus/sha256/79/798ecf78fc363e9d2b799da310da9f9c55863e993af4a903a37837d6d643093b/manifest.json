@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:798ecf78fc363e9d2b799da310da9f9c55863e993af4a903a37837d6d643093b",
+  "sha256": "798ecf78fc363e9d2b799da310da9f9c55863e993af4a903a37837d6d643093b",
+  "blake3": "08416a05c1d0844d803a361913c2819e6cba56ecb941e739e5c7ce4c4f0dd368",
+  "size_bytes": 96730,
+  "file_count": 8,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12012,
+      "sha256": "346fcf10168f3da4547bb59c52f0b0d866f1892672df15e01df137c237116620",
+      "blake3": "d48f43289a48a2fea5f929065c3e5ca71b7e1e6230f95c6dde030b0a942838c2"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/launchwithaws-2026-06-15.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 34952,
+      "sha256": "9795a1ae0b3ada056333651a217e7b7f987c6577407fe7dc3aca7ed903ae797f",
+      "blake3": "57fb1e46bcd4b5e1831a4775fac61b3ba2895ad261514e8157261a7defd3d75a"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/archive.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10201,
+      "sha256": "6678152c211758befff7a8594154aeb71fb2ebae5d7767dcc90005902a21eb0e",
+      "blake3": "97ac40c9595f5ff559fc04e49d5f9bb46d64fab18e5a5f70396dc01e83fa7edc"
+    },
+    {
+      "path": "scripts/auth.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14810,
+      "sha256": "e4e5206678d214b22954307e388cd59caa87159c187c4c94fecc59c20ad391cf",
+      "blake3": "4063a0097e169d9183ec727fe34d5a2471641bc00a489941fb248236e469a5c3"
+    },
+    {
+      "path": "scripts/auth_callback_server.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2936,
+      "sha256": "731ce039143753a5ca8a573ccbeb2c8c2090ac0263a377bfa92bb6e1cb642cc8",
+      "blake3": "2f94d754b033d9b9dcfb9d078ba25fba6a4d08a6f3c68cf591eebb72e1fc8792"
+    },
+    {
+      "path": "scripts/launch_api_client.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9135,
+      "sha256": "31bd8d4d48bb566574a2653da0af0e340cc1e3b41adab3f79d51fa4b6f09a220",
+      "blake3": "d3420e7e5844453e5847f4d6661725b2bf142de098b43ec0a1d3d8186d6a7abd"
+    },
+    {
+      "path": "scripts/launch_config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4745,
+      "sha256": "207265c7b9580f45ef92b6dd0835a101d8d354a574eb97721b0b9f3f41de357c",
+      "blake3": "43b427eb04f910a378e5ade3c6ead1a45afec67522c1443b71f05aa67fd25b56"
+    },
+    {
+      "path": "scripts/launch_with_aws.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7939,
+      "sha256": "6661e48ca263d12165a1b8cc4ffeaa4ffaa482633c4c4f3571e0de0dbe7668f6",
+      "blake3": "8f98d51d5667413c518982d609d0e835efe6cbb7a30e38bc5d4601e5ad889532"
+    }
+  ]
+}

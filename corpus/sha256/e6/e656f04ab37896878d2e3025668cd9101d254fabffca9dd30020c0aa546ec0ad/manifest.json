@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:e656f04ab37896878d2e3025668cd9101d254fabffca9dd30020c0aa546ec0ad",
+  "sha256": "e656f04ab37896878d2e3025668cd9101d254fabffca9dd30020c0aa546ec0ad",
+  "blake3": "9ff34ff3b154ac16aac40da20c93c14cb6809e60c568c4b93a8fbe05222db6e2",
+  "size_bytes": 82957,
+  "file_count": 19,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1975,
+      "sha256": "6d922cef6391a58c37cc1c5086ebce4cc1de6984f8ce01b5d84fa400fd23b439",
+      "blake3": "cc217b0c125e98898815a6335d149072a3a6a45e446c7c5ca99130e892f66a36"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 137,
+      "sha256": "e09165662f6a90a774f7a8cfda30be960353fc427fdb019227e2cdf3bea3b7cd",
+      "blake3": "feb3879b1cf064e179aa229a3e0b43f60aa94cf0979696c96c1e16eac672dc77"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/cron-prompt-template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1491,
+      "sha256": "f36def976f5c83e455c33ca980dc8ce943eeacc12d0ae3fea3b848cff48ee01f",
+      "blake3": "a9e93df437f3d92ab2756d32fb57ffa1b45b714e0edbf46fa814c847dea49c4c"
+    },
+    {
+      "path": "references/data-collection-rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 725,
+      "sha256": "ac57cae98fcd188c0d08b6a768e5a4bf891999b76ab3fced1d3f421f50600243",
+      "blake3": "9682de5cd5f5ab548e9abf749ffc9a2b1c317e5557d919e3b83e5b9ccd735158"
+    },
+    {
+      "path": "references/push-format.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 490,
+      "sha256": "9a49aa98276e054a893f63710ea781cd80a6410fe527c2c582d35134d16a7612",
+      "blake3": "f9702f6f42703a44c8d3840d2baf6268859772bcada8436cca4b706e04b8486c"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/analyze.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4941,
+      "sha256": "e1c5178b21c71dd8e4e2cc1721fe18f2719e723ca76146769c7cd68723bb9a2f",
+      "blake3": "9bd466ac0ed7526d0147317c3806487edf96700c612961ffe1c517c769647005"
+    },
+    {
+      "path": "scripts/auto-daily-task.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3399,
+      "sha256": "f5abcf790178bac225edf2d73498d9331bd32a4d0b384927bd514a633ff90dd0",
+      "blake3": "eeb9456d3b519044d387ec2edbeeb19b17ca8c6da0714c19f0afca4b7fb95253"
+    },
+    {
+      "path": "scripts/cleanup.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1788,
+      "sha256": "4175f0143f798356c611dcc5896951eaa5f7f7d753ae29ac222e3b81df240536",
+      "blake3": "468b0a462048326b08b9246cc2ba7d0e63170b259615ab295a804a924c24c751"
+    },
+    {
+      "path": "scripts/collect-simple.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5557,
+      "sha256": "e9d096f3eac66b4e9e1f35cb421f80ce4bdcffd9034f0ee20a97dbb4b1dbc6d6",
+      "blake3": "ea6931448f3a8b3ba10e3222ff17526f8e3a6b6c1d58a2111909cf62c7b34763"
+    },
+    {
+      "path": "scripts/collect-twitter.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3837,
+      "sha256": "9c12e1d202d247fc334d1557d00b7b811f12aa61cf661abdf41a5076af60f329",
+      "blake3": "a85b2795ac9efe928d5be7f2201a9f04ae2b89dca0011077f65da4b214acb9fc"
+    },
+    {
+      "path": "scripts/collect-v2.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9802,
+      "sha256": "6bed21a79ceeaa976fb39286eca2b3ea8aa01345b208a63afac49c5907f79a48",
+      "blake3": "71ae6f0a780a948c9f89281d2faf064276da415751ed37148c9c900aabe7efc7"
+    },
+    {
+      "path": "scripts/collect-v3.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10642,
+      "sha256": "e9b902b3ce87f505a78a1f77a9e56a3e8d34fcd2fc1e1f8972e0174a0dbed608",
+      "blake3": "e2341d6cbac6cc6e5e08240f1cedb6b1e3ff7c3468b5bb6c7c5279456061f5bc"
+    },
+    {
+      "path": "scripts/collect-v4.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9778,
+      "sha256": "a448b27bbd9102bed2c7acd0606caf2ee419e2d519f61e1a01c61dae4c6f7d23",
+      "blake3": "eab723c1688f9af72bac17dc2b1d31283dc70c0faca670331fcfac6c050b8c54"
+    },
+    {
+      "path": "scripts/collect.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8589,
+      "sha256": "b558dcb53af1fc1c839811beae1a267b66fc8484de1005c6579c02259de938cd",
+      "blake3": "d9900a8f26f2caa008201e7bc97145f635ce7dde3bda6f09f51c7cc55463a463"
+    },
+    {
+      "path": "scripts/daily-ai-pipeline.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6942,
+      "sha256": "b6f3b957f4a39e4f11e824bc540377bf00161f9a7f8a20711e66a8733ddd301e",
+      "blake3": "c41438e8009ca44d47a25cc12d49f35cf1c8f394324da005655f0d16b0432839"
+    },
+    {
+      "path": "scripts/pipeline.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5326,
+      "sha256": "f5f1b70363e5730d994b098a48307af01fb3f942296ec0599c5b6af2c2a205a3",
+      "blake3": "9710e52e42e3e5871c96cf3d2cba14649faba632c3533dd88dd51aa33625c572"
+    },
+    {
+      "path": "scripts/stats.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3405,
+      "sha256": "49d40900dae088363ed92cc828de32849776d97c804313eb12cfc5adecf0127a",
+      "blake3": "6a59cc182d48606832c7be627308632e1429f4496ea06b1344d3fc2fd0a329c4"
+    },
+    {
+      "path": "scripts/twitter-browser-tasks.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1783,
+      "sha256": "6312a098cf801cf3fa4332c0d11fa9f073cffc5eebc50c248fc4a721a3ebacb7",
+      "blake3": "5ec26fc3c6469d6f823a63f347853719957a968c5730fe6304b190d36c992232"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2350,
+      "sha256": "54363d9d0bdad06ab58b61c03452e8a3c236abb028ea7b52586521ffde452b8d",
+      "blake3": "6283400e71b3d4edfd08fc407ccbdce9860450a022c01ccb0c6dd94b47647774"
+    }
+  ]
+}

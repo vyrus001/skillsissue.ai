@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:2606a14c460649afa4a48100f3c7bf25ea499f4eda0eb0d8cb471ccc9bd54ce2",
+  "sha256": "2606a14c460649afa4a48100f3c7bf25ea499f4eda0eb0d8cb471ccc9bd54ce2",
+  "blake3": "a436bffe7c38635d2e6b54bbb1d398521bccce7cc877025119a7461daf11fbf6",
+  "size_bytes": 112489,
+  "file_count": 18,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5748,
+      "sha256": "f902198f616ac65dfc9a0b31801152f98b04118427e386bc8b21191b4e3e144f",
+      "blake3": "afb99793879dd7c18124b4b84a1fc361481617ecb67c1096ee17209787c216cf"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3478,
+      "sha256": "6c896ceb95430431e0433a2acc14a1f649598e26f09e94d58ae123fdfaeb3df6",
+      "blake3": "96ce43d2db9a1f7cb2726897c648f6416a24f788acb52ffe2f620bdcf1baa03f"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11669,
+      "sha256": "6815af119de5c4751ea14b70a5f4c04e9f09c51f17eed933dcb9684a303dccbf",
+      "blake3": "a2790735379cc91a58545b69f23950841a6a8b6db895170f303930d4e10ceb54"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 134,
+      "sha256": "09b62358bdecc9f36c23a4c10496dd830c0a04868dbd2135651526037923ab82",
+      "blake3": "e922b2a09ac90f634325a06732bfcba20f89464a132727f88c2074d312f7b57d"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1413,
+      "sha256": "cfab1212e712397e5aa88c76bc3c3237c9163fd1a22fca8280d8258534a461e8",
+      "blake3": "3c57e085df51f3b11eb674e917cf7d30c66edd69751954e0a0ba49a0ff16ec1f"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/ccpa-law.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8932,
+      "sha256": "bc8843a50645a5f4f35e589da180237e4b35c8b4aebfbee0333afcb30d7c9828",
+      "blake3": "e6de192cc69d41a051c71a467647c92474594dfac7c6b34920fed3fd003ec5bd"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 131,
+      "sha256": "f060cbc0ce98c56140c1461afb1736cf1264bc102a000ea8ff438ae3d898a1ce",
+      "blake3": "023130b515e6f7c5aa433fa8606f051ea716cdd12a4b48e92e3c3d6082eb5d18"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/ccpa-check.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15884,
+      "sha256": "f2fe1018eb4f30acd5c56444c89030fc645c2bacd1f0d344ecb7daf6499e3e8a",
+      "blake3": "e97668d56ec7b240521794a57888182783d54f9230f016718e1f5837dad4dfba"
+    },
+    {
+      "path": "scripts/consumer-rights.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7600,
+      "sha256": "7a05d4074b07cf5faa0f6207877fa5bf14f63f3cc2c3e562445371134748705f",
+      "blake3": "a6561807b8c8da483788665aad079133a63207363a657ae1cc703f06d6cf4177"
+    },
+    {
+      "path": "scripts/core",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/core/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 251,
+      "sha256": "673749739843dbc0c0e2c3a1e6e77c01b72c4bd440f25619ef910a86de0ce974",
+      "blake3": "a949d5812d763e4c2ab12cfbece841ec7d5b64c33186264a02c1791e63d0a2c1"
+    },
+    {
+      "path": "scripts/core/check_engine.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3405,
+      "sha256": "febcc58132f243e56aed6ca5f2c5375336d8e759a97ad9f7603e496384ade5b1",
+      "blake3": "b6f49296d352b2e14259b3033560cc0ead079571578ca22492bc4551e7f576bb"
+    },
+    {
+      "path": "scripts/core/cli_base.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7086,
+      "sha256": "1af9be79a37b3c731d2cdd64fb3e203cdd9d27aa94edf3462884629210548e11",
+      "blake3": "7a7b2c0d6dfe980306ca27a3ee88c86a40f3398b986e59a46819a3ae1075ccd6"
+    },
+    {
+      "path": "scripts/core/legal_disclaimer.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4564,
+      "sha256": "2321c7f3f7b56cf747b9e79da674771e300f0e27aa9e1cb3fbe27c9f36b9244a",
+      "blake3": "c087f8e586a83a0e5e976190bc311a793bc6991c18372ffa6b816dfcd159c8e0"
+    },
+    {
+      "path": "scripts/core/report_core.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4591,
+      "sha256": "9ec2f3890178a10f1457da8ef89955b69a04ef891508d8b46dff6f36239f59fe",
+      "blake3": "172517c243df004fc17613d9c60b5c687c6e40c32701c04339702eaacb529139"
+    },
+    {
+      "path": "scripts/opt-out-check.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8538,
+      "sha256": "378fc8518076d7f6d3de47e6138b2a723ef98c1e552c2cd82224e54437766a1b",
+      "blake3": "6f327abd5099e96edb1616166f6705a87bc7a10d85aaef8106ce46ea576a201c"
+    },
+    {
+      "path": "scripts/utils",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/utils/ccpa_templates.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12085,
+      "sha256": "cf8aef878b7cfcc6ac081e28a86f00c3490c42054329841c9648cb183cc80ecd",
+      "blake3": "6f5efe4032883a404385ffda635dae202f21b10ccc993553d8212a2de1184077"
+    },
+    {
+      "path": "scripts/utils/ccpa_validator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14493,
+      "sha256": "9a07d6e4eb4b80386b672836e0929efcf09bbf11a7585d7177145d3762e140b2",
+      "blake3": "b974119edf0bf6c014624eda6428cb59c3dff3e64e9c8c1b10cb795afac5ef21"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2487,
+      "sha256": "47cb71aee563b40c04edf999f17a75718195a242889bde0582db7927b6f32a93",
+      "blake3": "f1892d943ee454b63be7de6f8dc5fd5b4137efc53e12c64e9de23343648dea32"
+    }
+  ]
+}

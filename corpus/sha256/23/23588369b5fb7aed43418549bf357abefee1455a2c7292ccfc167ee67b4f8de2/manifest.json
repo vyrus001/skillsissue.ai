@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:23588369b5fb7aed43418549bf357abefee1455a2c7292ccfc167ee67b4f8de2",
+  "sha256": "23588369b5fb7aed43418549bf357abefee1455a2c7292ccfc167ee67b4f8de2",
+  "blake3": "5760c6d9577db1ae94d927b001baef681bb43c3ff9059e9bb7a0928039060d5d",
+  "size_bytes": 52268,
+  "file_count": 17,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5355,
+      "sha256": "a4818f82c5f9b3b9db82b07ef18315fbefd9f1a635d029dcbe4ec200c01dc437",
+      "blake3": "db6c42936f61bdfc2782ce2e8cf544e65478d692659944fc5b78f18badf5bcfe"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 134,
+      "sha256": "863ae86b22c0a0f2aa2faad9fac8142568b6d33e793bd452169b7ff0735e1d3c",
+      "blake3": "a7cb15a44e86c6055c7cffd20db324d8f87d9242db9786dbfdca1f891b5e9b50"
+    },
+    {
+      "path": "config",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "config/guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3372,
+      "sha256": "7c7e24683ce896de56c56224b323030f83ccdbae2578cc365f9a50a2554931c5",
+      "blake3": "4e40e1fb3e9bd5a7dd2b3db44de546d77ba450f53860aa5a9cabc95ddbce6aaa"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/jd-methodology.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4406,
+      "sha256": "eecbea24c6b5046355558484bc6425728ce3785784e8941ad2bada5390668bde",
+      "blake3": "794dd8ac5e1221e798c452cf80def64c04cc3902aabd0027b22d715a1ff4e0f0"
+    },
+    {
+      "path": "references/mock-interview.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4448,
+      "sha256": "a49dfe43dc2a22e2b715dadff3dcf8e130b5a10f9c358900445f985c045e63b4",
+      "blake3": "d4e24916a735be6c233d124d43d16e8392a9f5dbe5d08115c6ce7764bc3861a9"
+    },
+    {
+      "path": "references/pdf-generation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1490,
+      "sha256": "5c268ddc7d3f3a39dfc49e4c51826395ca6132408495d381b320d24371985322",
+      "blake3": "1354e2affd4e4954710d850aa1fc4df5a8dad6a57df1ddb960962b7c1b715cd8"
+    },
+    {
+      "path": "references/resume-methodology.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4509,
+      "sha256": "5dabfbc628096018f65f21127d8bde08a124ca6870a8b5d75d4b1a0760836d84",
+      "blake3": "cfda26294b01f61dbf368be76908be098ea0d9cba2f3557d78d9a8f7c5a6908c"
+    },
+    {
+      "path": "references/resume-parsing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5644,
+      "sha256": "a626019dc224d1f59f1c7dc4e02fdaf61ac2de552e68c50a3cb8eee51b06908c",
+      "blake3": "3d5e3f15301b81dc49d396866ec2d191d3171b1a7b3e4be8e38f65f43aead94f"
+    },
+    {
+      "path": "references/tracking.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2820,
+      "sha256": "c0eb644013077a4435af21bf10adc72f332dc9f3cfab584bdbc2359ae5ef5e26",
+      "blake3": "5c58488829f95ab3d203f3bca9aab3a79375b605c9d5e3fffcb6ca6f157f8581"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/analyze-jd.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1253,
+      "sha256": "a03c1988ae6a182ed8999a5dc7ff51629f19ae949493a28bb907b78bc228378c",
+      "blake3": "d492529729aedd5c36721877daa8af94bd5e9cb72db6ca7e6a4b7eec6ff34351"
+    },
+    {
+      "path": "scripts/create-material-doc.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1176,
+      "sha256": "c9b81534750d3f08be6e6f065bb5a8d322d8e91f32bb4d7111331eb1876882aa",
+      "blake3": "8927eb7c57c29adc4611705e32adddbc02ea6661ea2fd63ba15cb42da2a74b76"
+    },
+    {
+      "path": "scripts/generate-pdf.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5428,
+      "sha256": "310fb75bd1a80ce4b98393c52920b3c778a7a253d48f11623aa5f0c3b63fd4ce",
+      "blake3": "e8d3f2271f7da09246727bf6f64c1aca3a0c15b75785e102f7bbcfe2c47e140c"
+    },
+    {
+      "path": "scripts/record-interview.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1069,
+      "sha256": "d9c4f1ded74ba5b305da4da00d76de52b77c81c3b1c2268128b1968eec2cfaf1",
+      "blake3": "6d4afc64b7bbdd2d4b8b9de25ef623c2617759638f6611fbeda65f3d2b9046a7"
+    },
+    {
+      "path": "scripts/set_chrome_path.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 773,
+      "sha256": "983b0ab23c283d9e0e29890038182bfddfee165bb4ff78c46662c2614d7ed461",
+      "blake3": "6bb319fbdd5bf1b0c32f19880d9c8039edcff26f8c57eebb640665015edf53fa"
+    },
+    {
+      "path": "scripts/setup.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2147,
+      "sha256": "fc1152c6c6b75e368490d7a12fc8443ad8c7094e9a8c2659f38e26a3a6886406",
+      "blake3": "7c8676aa6af888bb6d21916e67d52f472088c2a26497c824f16b51415fb6f170"
+    },
+    {
+      "path": "scripts/workflow.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5400,
+      "sha256": "589f87972ea9beaeaf98ed65c391fc3c9323afcb286a1025cccf016d54e652c9",
+      "blake3": "d663ef2dbe22157a4a50148b25b0fc41ed2bb54567154e78203527ac2234a344"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2844,
+      "sha256": "6bab5814686439b8592ede0477d47604e488f477e6d672ba95aaa34ba33b69c5",
+      "blake3": "af213e6a812883de2ba3d6dd5d620a6e4b16aa15573cdeeb56cf08d460ab21a9"
+    }
+  ]
+}

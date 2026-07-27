@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:effb5571790558b88eec0519a37907859c69676a04c95f409010459443bc89e9",
+  "sha256": "effb5571790558b88eec0519a37907859c69676a04c95f409010459443bc89e9",
+  "blake3": "10c38809a5753881356c9b18b415b580c21528d72a391c13d4f8336cca6c64c7",
+  "size_bytes": 262282,
+  "file_count": 28,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6700,
+      "sha256": "294843d044921b13322f154c7bee0012294e18e150413ccbff4b6fb7affcccca",
+      "blake3": "3528cf52aa78bc5e06257c15ce6a0c790d2ee14b1c443349cc6dfa454f3e87da"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32298,
+      "sha256": "0100fe9865d289192540f4bafa434410bb0c785e27fc4ccf6b87283de86d5210",
+      "blake3": "b0ab8b657a25feccf9f874d6f133866b25cfc6de4c38c8d8b3344ed7c368f971"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 136,
+      "sha256": "a4bb5defb3f12a0493bbbd3784cfc67336ece4199b299cff06382d0c90048871",
+      "blake3": "d5d97b9bff0d6f1ae1a4994f4a365c9dd26b19b8b621bc033b76922a4b08eeba"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/step_by_step_setup.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4604,
+      "sha256": "b167242c12ff85b4ffd96fc944b83d93034fa243064d0748998972bc2e3d63cd",
+      "blake3": "3cd3b682c996fc0f153579166433371aa2fc853f6676ccc6ea25da8229e4c92e"
+    },
+    {
+      "path": "references/wecom_bot_api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4576,
+      "sha256": "0f37dd07404215815539b3d129c24f3369878817ba230037bae0d2f44c54ebbf",
+      "blake3": "857ad2b2d7d808db846b37c2edc64dd8fe0761331aeec23e8c8faeee3d54a5b0"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/compliance.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18740,
+      "sha256": "d2cdfe3486b548d21893f32b911ba75f8a79780d820dd422fc1553191ac61cb7",
+      "blake3": "386839242a99b87540119c5c821ed362b1ce0bb14d35e29b3fac0eaab0bf9027"
+    },
+    {
+      "path": "scripts/detect_hardware.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4899,
+      "sha256": "624905b0703011080998afe87d5eb39fcf42bb6b98f3ef8432204a84f8b3e9d0",
+      "blake3": "1bd8e08c3e2b28039b1e335d92e77d008961dbf2f91a54412ec359a5b2934c5e"
+    },
+    {
+      "path": "scripts/emotion_analyzer.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 26333,
+      "sha256": "ff8c83d1626b0d9d34bc012441a798f7899b91b8b49ba062a8b4bac5b4c9324b",
+      "blake3": "1d4f9bfc4e059f02de45b09bf6d4b99c9fbceb734cff514ec01e8eb65b04a73b"
+    },
+    {
+      "path": "scripts/ivr_minutes.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15155,
+      "sha256": "0b26fde004cf8cb0b95ff6cfd018ade67f90e878e3196b2f4c9356ffa5c897fc",
+      "blake3": "b7b6cc14de3b0dee822665f4b7c34ca96b842dbda9977f78cabcbcbf974df6ad"
+    },
+    {
+      "path": "scripts/scheduler.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21398,
+      "sha256": "07e57cdead7163f88ce5c6f3e56572027739942d1c8edc83717a77f0e79e2793",
+      "blake3": "8c56ef1a084e00892f5ae9184dd4f3d8a41f28432c0bc783f4ec7c954cfc8a6c"
+    },
+    {
+      "path": "scripts/session_manager.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12517,
+      "sha256": "6cc24f3e13076685a637d63dca806250b5de0a2a410f6b7192b4cac53c143e7d",
+      "blake3": "bf1c5e1c3ef304e14a2f5b95278058323f4b0df8a8cb78759fe54afb552546c7"
+    },
+    {
+      "path": "scripts/state_machine.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17289,
+      "sha256": "48210175ab0873864383dcd994b14a3a29a07abeef4b534e72ba17b44c4d60d9",
+      "blake3": "f704eafe8b8221ea3ef4984a9ee8db89ad8fd456a9a4054e0995cc46256281b3"
+    },
+    {
+      "path": "scripts/stats.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17164,
+      "sha256": "a950153899b00f52802040484411cd9ce26c18196b16e998c13c7aee41275443",
+      "blake3": "0d2b6252eef69358322d560788222f294983ea22c7c0858b4335d71ef5b293c8"
+    },
+    {
+      "path": "scripts/transcriber.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16479,
+      "sha256": "30dee6508a0b68c00451fd4f2b4643a592c565a0eca586c7b18a290fd106e25e",
+      "blake3": "75ab95072d66b4dea27391aada0a6734285966a7f5b660da96f263e3855f8047"
+    },
+    {
+      "path": "scripts/voice_simulator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6881,
+      "sha256": "4fd380f053ebffc71edbcd033789097dfc1da83346c45177eb1847d4c3a19822",
+      "blake3": "abdc3455391bda49e2fbedcd77558f09ec57baabb72beba8f7f478773532374c"
+    },
+    {
+      "path": "scripts/wecom_webhook_server.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 42824,
+      "sha256": "ca63c5a7d621912be980968cf1263760ecb2128df3d625a6a00aded7c07564b0",
+      "blake3": "5d5ae7c6d8fd4aa8aa1141d292c4eff48923e0b501e715af09860dcbf242a7c7"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3040,
+      "sha256": "6dd2fac3bb0c68dd3c5251c36a6a34cb140c5414090aa86bf04e5e3047953e3a",
+      "blake3": "706c2d9f51163a66d61afa10f1d39b04a9a2b591d67d28a421db099d290b5b82"
+    },
+    {
+      "path": "temp_sessions",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "temp_sessions/call_c1.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 281,
+      "sha256": "e16f16a6cf94e892e730267b66e48f0f24a3cf67e99c1dc2fd5bd2f9ef1c7a31",
+      "blake3": "49452efb77f2fe479065df09d7c2fa4f755c29d15dc4a139d23c195bae3647e7"
+    },
+    {
+      "path": "temp_sessions/call_c2.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 281,
+      "sha256": "9eb8252f183344f13558ed757fa43876ae9291bc168dde3af41c0163d92af4e1",
+      "blake3": "9861a383684f20404edeaeb8ab9935bd5e44cbadf9ecf5e0d22975a691bbe960"
+    },
+    {
+      "path": "temp_sessions/call_c3.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 281,
+      "sha256": "b226a5643c1d3272d5340ffeb1221be049bf6b7af09854de8fefabb1e69c4cbb",
+      "blake3": "a5227fc52a0dfb0154372d1f47456f0340b55e0a9af97a63d4b5fe375ef1510e"
+    },
+    {
+      "path": "temp_sessions/call_e2e_001.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 598,
+      "sha256": "664d177cbb4a9d9d9fffa4adf03c5cd5efad1e8b3e9d80403ff14ab156c53755",
+      "blake3": "b9581106a30ff84e4f78a7d13e2dbe9fd92bfd67ff41cc860da55ae5b67caa1f"
+    },
+    {
+      "path": "temp_sessions/call_e2e_002.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 573,
+      "sha256": "8d528d401539bf0c83cabfcc591b9bc6a2eeb4e49d481c4cb7868523c6dfaa24",
+      "blake3": "77c3b51afe10edfcfeabd8ec939e4581d30420d153bfc90c08569003dad8222b"
+    },
+    {
+      "path": "temp_sessions/call_test_001.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 728,
+      "sha256": "90c8a62070d112208c3871dc891b941ef3e58cf88caec01fcf84c29c196cdab4",
+      "blake3": "a8159f74632c2d0a24a2ea1452de3270e683955637d70f4eef573b7e6ae97219"
+    },
+    {
+      "path": "temp_sessions/call_test_002.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 577,
+      "sha256": "17d90c66fb46b8faae73abe77031c47bcddda9c18ecaa615e70855d6adc280b2",
+      "blake3": "fba6a3cb91615c8f21996b38eec5f7afdbbb970b7e245a747a52e74f30708836"
+    },
+    {
+      "path": "temp_sessions/call_test_003.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 289,
+      "sha256": "c90a85196aa5ba0a3218e9b2fef075b9721bab5b6a6ef6ae989ca47f7f50e3aa",
+      "blake3": "4adaba367d09f6d343b0ef276158c478af46f06496aee6f196b3efe695ff0d5f"
+    },
+    {
+      "path": "temp_sessions/call_test_005.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 559,
+      "sha256": "e1495779747603b956c64811281225879d09e2a222d49092527c979861d3b40a",
+      "blake3": "6b3f850457b15dad1a53d34e4a6b9d4e555b345cd9083134bd1b9b819276dafa"
+    },
+    {
+      "path": "temp_sessions/d485f0fcb3f6d69a.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1148,
+      "sha256": "e6a8e88901a285fedc64ff45999edc49bceb63a8b51af7085fdac8e181c08f3b",
+      "blake3": "3aecfaea76c24291d87908261e71d68c5ce9f73b45b3b033a45199a65d822496"
+    },
+    {
+      "path": "templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/emotion_strategies.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5934,
+      "sha256": "1ee0bd5a48fbf9c459007de6d10ea7e13531027222d556c44a4769ed56ee3e24",
+      "blake3": "d6da97f7dec4f13e454a1dc02182b678f61a7ce1f0176798e7de43056f188bf7"
+    }
+  ]
+}

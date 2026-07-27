@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:47e98a3f4b1ca9c8d14cb1d3f41e8fbf609b93b6765ed387bf507dab568742cd",
+  "sha256": "47e98a3f4b1ca9c8d14cb1d3f41e8fbf609b93b6765ed387bf507dab568742cd",
+  "blake3": "718dcd61bca62a59115ed02df81b8038032f2b2cc6e13faa5c87fdb17ae179d4",
+  "size_bytes": 85370,
+  "file_count": 19,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3045,
+      "sha256": "fd57711cf32ec34ee45f734f9844fee0cfcf1967b5ae4bc2f2ac65cbb161cbab",
+      "blake3": "cb39d6b6b28eac5d6124602adf5573a3649c8c01e9f9a9c97791f436e3b9dd87"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22930,
+      "sha256": "1bcd4ba3d433730a500b3b64f3391794ca0a1475f3cdd39077c840f6c0c608e3",
+      "blake3": "3c0c26fc828c36cb05b9a8d695687fabf0adad6f26ba6f3c3d02a1f0a41267e8"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 131,
+      "sha256": "0828caef8378bb3540de79ed75250fb50d87ff77af9c3eb538aa46a3e19487e6",
+      "blake3": "ffbf13924becc72ce978fc3a1b9c0b7175de2fc33e34d25b1b447f487fabc350"
+    },
+    {
+      "path": "heartbeat.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7152,
+      "sha256": "f6ec2ef3fc95fc092cd90fb149f5346c554be9ad485bf4709e23a927f0b0cf83",
+      "blake3": "40d5fb6b28c4cfc7650f63257a5e709d3f364d3facca4137b6dd5385832577ef"
+    },
+    {
+      "path": "hooks",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "hooks/session-start.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1721,
+      "sha256": "f6893e0becd6fd5a90b7b423abb3c01c82532e0c52f499113343fac8eaedd722",
+      "blake3": "fe5d095c4cd9406d9dc14acbe923e1233103daba7b5bc13986d3d403ab5779c1"
+    },
+    {
+      "path": "judging.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7110,
+      "sha256": "bf7eebef759825e87e3519d7141b7b577e405835ffe3d4c63d8d98942d3f62ad",
+      "blake3": "1413775b49b41faab2178914ebb4621e82eec4b0e4b0a38bcdff6cc2d5fe9a19"
+    },
+    {
+      "path": "rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4866,
+      "sha256": "72d927c63befb52b2a686a2739bcf852db890a0c148806831bdda5dd2a125b60",
+      "blake3": "6076c7ce32c0adcebcb72e0bdfd48d6d49d958fbf86a2c9c78db56a8317b49c5"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/docket.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 333,
+      "sha256": "dc41982898f4785fdfb20ea719ff4ae2ee2a811e9b07458ccceaed0f317264b3",
+      "blake3": "4e5430f72c9de90e0a27153c7b0f9bb6631f95f8f5dc94bab170cca51021ead4"
+    },
+    {
+      "path": "scripts/heartbeat.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17063,
+      "sha256": "d3219671a3a38d3d1e4be82ceb6cbe124b471107e01de2947a8263cc474c1ae5",
+      "blake3": "eab50a7ce66c11e90853e148fb61e9095b37306d8044e98af9d94804a9c456b6"
+    },
+    {
+      "path": "scripts/pulse.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1604,
+      "sha256": "d28897e4b11d23c28f73c665ae898d7edf376af8460d35ff8fcb91542fd18b55",
+      "blake3": "b773e16a75c396933139ac9ac295f81fb4011360ebb46f168950f0c679c622c1"
+    },
+    {
+      "path": "scripts/register.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2265,
+      "sha256": "d6613542e9960e2ce76238fbc4b123328092efac7394c722977d13d8f1516057",
+      "blake3": "573f53e83abf4a0a29404b7f4db85a133e66d9f0d9922fe272a0b2532741fb87"
+    },
+    {
+      "path": "scripts/signal.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3578,
+      "sha256": "433bf98dbd180b1e5865ba82e44f42a2355886602edda2df53474a13a2535a49",
+      "blake3": "b4c07f92ef01d70121e2f64689f3d886f9740aed47e8c69b3d13852ab70384c3"
+    },
+    {
+      "path": "scripts/status.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 752,
+      "sha256": "09928e0b096c64f25a33d092660bed9c5e1d7a33c87d2bb9c1089c693f698f3c",
+      "blake3": "8752f22adc8c0dfb103a9e9356dfe10c95bd40f19c51c88170d6115411d0d226"
+    },
+    {
+      "path": "scripts/stories.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 807,
+      "sha256": "e9939fb73697deaad398d896acbdd051b5c5e6b23bc9ec1c8e5392c0963347db",
+      "blake3": "2e1f55b8d73430c1d4650bef1dcf6f19b87d7f26662cea9aef47d347f2353b7e"
+    },
+    {
+      "path": "scripts/submit.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2876,
+      "sha256": "5de6910b8f4088f419e7424ab9be1b390253d4f9357ac8ac33dd9806d0b1b71f",
+      "blake3": "684be61abf5e9f684ccaadd8551475eb621e498019228818ab7597a2ba66ebc2"
+    },
+    {
+      "path": "scripts/verdict.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 314,
+      "sha256": "6c6ee9ab489ec19b5c07de19a777d9ff19d4b7225f9515a30ad0aa6103229c81",
+      "blake3": "4d6dd3840cb23bc3bb99ebc6c5979e56777a57d53f86f1a7f845c3fac9d918a6"
+    },
+    {
+      "path": "scripts/vote.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2497,
+      "sha256": "ee1c2536360219ba2d0d47ab2d0c2cd5a10e94f24c00a769f9b2ef04652be724",
+      "blake3": "954eea0a2378da050ff2e7e527b62ef5025765c2961bec6f27f0a5593fdc5dc1"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2713,
+      "sha256": "7e49e60aed557c0b3f304e571f2b90b83fca11600d0982247619010db4f0514e",
+      "blake3": "91b828139142e2f61b1bc84e492dd5760295685341a1e907fc66a6c302a88cbe"
+    },
+    {
+      "path": "skill.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3613,
+      "sha256": "4b1df3c2e2e5fa4ac770f3dcf25a945cb2e76addcc4c60c72ba27c2047201833",
+      "blake3": "3e3614a2adb3556c3bced7766b4a1ac174a1f64e0c7625938cd68c9643e181e8"
+    }
+  ]
+}

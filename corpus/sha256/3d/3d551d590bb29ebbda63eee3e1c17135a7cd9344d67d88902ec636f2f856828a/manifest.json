@@ -1,0 +1,2237 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:3d551d590bb29ebbda63eee3e1c17135a7cd9344d67d88902ec636f2f856828a",
+  "sha256": "3d551d590bb29ebbda63eee3e1c17135a7cd9344d67d88902ec636f2f856828a",
+  "blake3": "e759275b7a45c5ec567e55e549e49ca053f84195ce111b2160f6a9b1b7114899",
+  "size_bytes": 2028422,
+  "file_count": 246,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1063,
+      "sha256": "f448691d44b165a34d79953400b2c8dd8ff313a9d88fec1bb00eb046eb2c1a13",
+      "blake3": "c0a746fd43c830a68ab0632c3829082238106cde8efe8f7b3b1e3d5582b31110"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3321,
+      "sha256": "b5a5e08e842c51916cc0e78ed41eea7acd69fb536cca452591db17efb83fbc07",
+      "blake3": "8e2dc535947f66fe892dedb14507b38e15370736d91af69123b697c1659b1a70"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4091,
+      "sha256": "3d0c75393d89dda92c87c04d54261cd856ae4dd3ef7e2c58526aa8d3c7ac0cfa",
+      "blake3": "3f9369c4bb62c18b50536c52d8a92e3832e15a58d324f79fa577e24d70b65fce"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 148,
+      "sha256": "2396796080d2381f5f6a59f01374ffe472fb3be0452cdbefde391d53e1830d08",
+      "blake3": "27ac362179b7350bee0377b36cb1fd11923b8a3d1c6ecefd24954b0e22ecfbf9"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/claude-code.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1134,
+      "sha256": "115cdbb6401cc8b9a3c882fef263e8b9bc1f4709a6e0d5418e1c7288f384af6d",
+      "blake3": "c8b5c58f26762501fb7612b03bc369746fa974ef89d407b3c23d00a670288d89"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 255,
+      "sha256": "5a3afafd521b0c5f8ad1a7feff6d7a7ea9faaa6bc909af113aa4b675353abed8",
+      "blake3": "ccf4cc02ae18e860a9eb416b2be62334b4524ab295416d071f23cda8cfdc6a51"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/00_expert_entry",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/00_expert_entry/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1936,
+      "sha256": "be8ef1e7d9ce68da241ba04f48281a2c5f682d93a4a3d7b994e2cd80eea742c9",
+      "blake3": "9ec5b89cb3405e12db62d1de5711ea3ccceece870121a02274216d2bef965309"
+    },
+    {
+      "path": "references/00_expert_entry/accuracy_check.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4068,
+      "sha256": "d6e688730f78e24600b10c5fb14112d7604f02ca4b8de134a9b8c5091b877c78",
+      "blake3": "5dfbee7311d4b28d67554bb6abc4e5637cdfe011e4287cc09dea596faa0d9a53"
+    },
+    {
+      "path": "references/00_expert_entry/change_log.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1568,
+      "sha256": "6ae3e67031b356871e6c85149482e64f61ada909a1245c1f7d51cdc7e26418bc",
+      "blake3": "14409c73c170466b0db52ab5e5261294aa64a5f50b5bcaa415e2a9c016031465"
+    },
+    {
+      "path": "references/00_expert_entry/debug_priority.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1587,
+      "sha256": "11af1c24785f11efb56e8f2abce4cca87bde2d8574d5a10f9e003a816b0e35d8",
+      "blake3": "8fbfab6f90ead02ff007df3560518143aa8743e9a4416132e9f6bcbf547efd15"
+    },
+    {
+      "path": "references/00_expert_entry/hard_rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2485,
+      "sha256": "f77aa3e0b425c7239517f13ab7305eb3e22a0f4ead557e0b645cf4e27d20af87",
+      "blake3": "539edef340d1b472a208c9de83d875beda3877dd24bf52615476982dca086622"
+    },
+    {
+      "path": "references/00_expert_entry/performance_priority.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1001,
+      "sha256": "07906c49de4fcf691ee76a6e759ee2d0f2b7505467a61f1ece6260f9b57bcff2",
+      "blake3": "fe8cfb7d650d2deea58fcb243f7cb1c16a4fe30d2a89e96cab1dede84680aafe"
+    },
+    {
+      "path": "references/00_expert_entry/response_formats.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3515,
+      "sha256": "ad013f362f36881aa3831c22fd89229b7f004e8a10956dd06cdfd80ac55cdd96",
+      "blake3": "8f8d17f0a6b212045fb248552befc4d5d187bd627f295b71cbc989ae58e98c26"
+    },
+    {
+      "path": "references/00_expert_entry/role.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1001,
+      "sha256": "46c31026035ddb5811fa023aff4abbb331e7a0c0765ce31b9f509515527fd8d6",
+      "blake3": "6c7ffbe2b898383d759e4ed2969eb5a88af8cab0af7298ddc3cfe1246eaaacf2"
+    },
+    {
+      "path": "references/00_expert_entry/task_classifier.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3914,
+      "sha256": "6542d9a754eab21f7dce393a140a6b87a1f197150a831762ad5d855ee7895bd7",
+      "blake3": "ef850f4222acfa75b176e22fab5c870b0a512acdbae4d58038e540339242aed2"
+    },
+    {
+      "path": "references/01_source_map_and_api_manual_strategy",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/01_source_map_and_api_manual_strategy/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1323,
+      "sha256": "b3ecaa7f4bac7e3e5297069a700e821ade87f45d288cb89f08d7467062c87058",
+      "blake3": "6bbbe4c88b3213a22884bc3777f506114b59c73e75bd68a0918e304ac48b58bb"
+    },
+    {
+      "path": "references/01_source_map_and_api_manual_strategy/api_card_template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2511,
+      "sha256": "14b46b0bd0df29187690e876f8fb564a627061bc324ea429e4257c24843f4e7e",
+      "blake3": "58cb6333e0bda02ffd3ca964d2b771ceb44cc10fb771204ce71c4e94d54dc6af"
+    },
+    {
+      "path": "references/01_source_map_and_api_manual_strategy/api_manual_design.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2640,
+      "sha256": "b09d978f5887b38f04b81a22f75b42d8a018d8b8ac96f84088ebf02edc9b3fe9",
+      "blake3": "13fd6bb4693b1b7cce669db072e1c04c79669368e59020c37389b66d67e5c05b"
+    },
+    {
+      "path": "references/01_source_map_and_api_manual_strategy/citation_rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2112,
+      "sha256": "773382197779814c77493c2a3deb81e8e36484f9d6421e4790b2c39439b69f7a",
+      "blake3": "24871c12b3aad7d50eb6ab46d9a26263b714a41fe4a6c8793708a8e2930837d3"
+    },
+    {
+      "path": "references/01_source_map_and_api_manual_strategy/source_priority.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3798,
+      "sha256": "a96e2e0689f626bb900b78b4777fdb35c7a96d28bbe8e100b26962e6b5e18459",
+      "blake3": "5ff956159862a51017f8e25a90c8e0364a3f6aa66ef5f0f4b5c66d5b8337dc37"
+    },
+    {
+      "path": "references/01_source_map_and_api_manual_strategy/source_tags.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2155,
+      "sha256": "9762b30273699a6f804d13204b6d2211f2166158aa6bae6fa515f08bd6a09064",
+      "blake3": "9323a71c8e9bdb7bdd2f7e33b5889711afc28549fe8225c81532d3bc22e4c0e4"
+    },
+    {
+      "path": "references/01_source_map_and_api_manual_strategy/trusted_sources.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2233,
+      "sha256": "b02be7c9cff61a830566b756bb05e70512afd4ecef77e8388dde3cc2aa67d408",
+      "blake3": "d97ed3f5d0367eecdd952c7974168a473b9657a38d5b983f0b41053000813875"
+    },
+    {
+      "path": "references/01_source_map_and_api_manual_strategy/update_policy.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1761,
+      "sha256": "768a56d47226ff28f46380f799fb34c7a33f2239045a205571b5bbc341b608bd",
+      "blake3": "b00b2a1892870250316a9d480a998e9f4b2e9c09db7cd59b2bbda0ea380f5936"
+    },
+    {
+      "path": "references/02_core_mental_model",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/02_core_mental_model/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1821,
+      "sha256": "24ce37085d4ff05966ef9dc950b7e17dbdd25d91d3b85a6e6a9f2643e7d074da",
+      "blake3": "beace7cac920f72cd1f74f9aed08f9e86b0107efb42f3fbc5cf5cc60ae8205e1"
+    },
+    {
+      "path": "references/02_core_mental_model/android_surface_swapchain_lifecycle.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3429,
+      "sha256": "dff11f0fe7a2d42745d5eec1d10515d0c78d8a80903c4576645abc237e042b48",
+      "blake3": "8d9e71e4518e96bbd0f46a716b06a0139120c1efdacd880d8f71f80d68f79d84"
+    },
+    {
+      "path": "references/02_core_mental_model/common_misconceptions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2399,
+      "sha256": "25930cde584d963648405423647807a4d8d550a0b844aaa3668c5cc09e33b1d3",
+      "blake3": "be60b923a77ad2a1e099393cd81816e9ffb3b5c10bb8777eb068a15a963c7330"
+    },
+    {
+      "path": "references/02_core_mental_model/compute_graphics_relationship.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2483,
+      "sha256": "768e3b89ccc70a49b76a74cbb51e6adf1c9fd64682be0b2fce58d31f5995df5a",
+      "blake3": "530db0583f924b900d2fe49bfe0ef51b141cfc4bd0f2f7892dcb0a587bfde494"
+    },
+    {
+      "path": "references/02_core_mental_model/frame_lifecycle.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2577,
+      "sha256": "a213f7578febaf3fa2a940d1da6c2da4cabefdb339b02a609ff5f745094907ce",
+      "blake3": "f65bc4ff0b587372a8847ce54050fe15638710cb59ab690dafeeb6b65fa1a3b8"
+    },
+    {
+      "path": "references/02_core_mental_model/mental_model_checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2434,
+      "sha256": "0e1bd5fd7ffe4c351bf33998867f1e7606ed4bc4683813fa4fa2bc9842119a58",
+      "blake3": "ae4583708ce13b4f033beed68b91074d4165a2335d8717602cb1ed8856466a98"
+    },
+    {
+      "path": "references/02_core_mental_model/modern_patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8796,
+      "sha256": "39626ef4e0610b6ad6c98255e61e1a66d4c99b2b80666f3766f11226e2b631ee",
+      "blake3": "2ba1983f4e0de526c108b0c6c1210be975e6c529ee99ec07becf2223f1eab108"
+    },
+    {
+      "path": "references/02_core_mental_model/pipeline_descriptor_relationship.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2924,
+      "sha256": "c9b0a238a3b093b2c4080c0092ba5407e5e31bf7a906b2fbe31fb795b213c68a",
+      "blake3": "acf1c85cdabdbfaa52383de7ed6db647a450aebc14562c274aa5e4719ba7939d"
+    },
+    {
+      "path": "references/02_core_mental_model/render_graph_resource_lifetime.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21355,
+      "sha256": "18f94693770c854d1981b212e3f9e083afa0bea45242b595fe774f8d54294fa1",
+      "blake3": "dab6421b662182a07a04273b79098c9377d2455aadec815a435cad977df1947c"
+    },
+    {
+      "path": "references/02_core_mental_model/render_target_model.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2450,
+      "sha256": "0d9cef17772f87dadc389207c738c6c36cc569782bd6dbe6b5a8752f832e076c",
+      "blake3": "652be440aa58ddcba1ef16c4a0bed5aafe83c7c50fc51468503f8eada30e0016"
+    },
+    {
+      "path": "references/02_core_mental_model/resource_lifecycle.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4952,
+      "sha256": "70628884c4d4ad9ed77ea1ce84549691e0c3be43f753e1f66ffd8f9c1b9002ab",
+      "blake3": "633497b0cf2628f7d72bef06b577baea9ed6b1ef72aec73e2235cdef32a29ebd"
+    },
+    {
+      "path": "references/02_core_mental_model/synchronization_lifecycle.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3735,
+      "sha256": "c0f6fd4b621cf6a7f3e2e1791ff077e27487059f254a5f4cfc3ec49778759a4b",
+      "blake3": "4390874cfa4fdfcff4bf901773a1859e05dab6df0ac6cc3b44ff51ca5a4a83cd"
+    },
+    {
+      "path": "references/02_core_mental_model/vulkan_1_4_overview.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18150,
+      "sha256": "bf319fb7183c8673faf842c4ae7942b8269b5b486ec542adad5ff95f84cf3457",
+      "blake3": "577c09641aa56c544fe1361cf17d7ed25bc2161f1848061f9bfe7ec6d49966f8"
+    },
+    {
+      "path": "references/02_core_mental_model/vulkan_object_chain.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2886,
+      "sha256": "fdfef8f381e4c715be43db94635d2ddfbffb311409bd8a888493bedacb3e8e79",
+      "blake3": "9adbd334d4637287b4cffd4ad99f006a9085a7b2c8fd89adb1ec15739b177705"
+    },
+    {
+      "path": "references/03_api_manual",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/03_api_manual/01_instance_device_queue",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/03_api_manual/01_instance_device_queue/instance.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7328,
+      "sha256": "5d76a49d0dacac1e94a961acf65d3e52e89b82d4f5bdafbe2d0adc64ceebd85b",
+      "blake3": "ffb62859d6a9d8e48ea7ce8cf45fc5b7cc1b19fe121ca49012eeb9b67b500546"
+    },
+    {
+      "path": "references/03_api_manual/01_instance_device_queue/logical_device.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7736,
+      "sha256": "2b8e6e16ca4f6d6c9584ae18f212d2e4cdd02142f5c71bded157ad070d630d95",
+      "blake3": "ddec121a15831aa7c379d4f464f0f554c26bc2ee981e5a9c915811bd7852c07d"
+    },
+    {
+      "path": "references/03_api_manual/01_instance_device_queue/maintenance_extensions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27224,
+      "sha256": "2862e7462ab69ba3769008ed6dbcb979cb2c5cdff32510e5fc7a94eed28567fb",
+      "blake3": "c46b693639793850781e9821892abcbd379d31b6bf04852ecae80d27c07cbf1b"
+    },
+    {
+      "path": "references/03_api_manual/01_instance_device_queue/physical_device.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19690,
+      "sha256": "2d9f869eb3613c285323d09d9978f0f13809704d6087c5431727bcb866b6d7d9",
+      "blake3": "24ebcecef282674c954463a7a787b2405ca92647e8bd29706ee84b86752e3e0c"
+    },
+    {
+      "path": "references/03_api_manual/02_surface_swapchain",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/03_api_manual/02_surface_swapchain/surface.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10513,
+      "sha256": "7d4b1c337ba14feb44789667a206e34db3fc65f22ae8dacd06f9540d33dd70bf",
+      "blake3": "2b3a540f7c5384c11ded6d7293dceca5e0937d44bba7ea1575820585e0e32909"
+    },
+    {
+      "path": "references/03_api_manual/02_surface_swapchain/swapchain.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12576,
+      "sha256": "1edd801c26b1949c4f026b36405eff07b876a56c8d62500f214ba82910ae4284",
+      "blake3": "2689273098f81de6218124aa15dd6945415e3a3a7e2fde44f1ef33c25d9518d9"
+    },
+    {
+      "path": "references/03_api_manual/02_surface_swapchain/swapchain_recreate.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11227,
+      "sha256": "7e1cb9721c3b4347233f666b3ea286c4f24b393fc650e8a1f3abb2614c3c690b",
+      "blake3": "fd6c91e1e9eb9c83773152c62eedcf37f6a3578827a8059b8a8666616169e875"
+    },
+    {
+      "path": "references/03_api_manual/03_command_buffer",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/03_api_manual/03_command_buffer/command_buffer.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10270,
+      "sha256": "e329e504083e645ef07632636436ddea173fd7ef26d92a3b52e787a620cefe90",
+      "blake3": "1984b94366de1a4dc946a12f5dd83a72b16a6bc826e5b1505854367cc267dd6f"
+    },
+    {
+      "path": "references/03_api_manual/03_command_buffer/command_buffer_lifetime.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8621,
+      "sha256": "be9bf07de3718a9c8c3ef1cd2984f67a72a3656edeae677cbb57246cf20f5ae6",
+      "blake3": "4ffe445c8cb20fd7fa056576c8258b93744a15e450570e0e081f5c5ebab88994"
+    },
+    {
+      "path": "references/03_api_manual/03_command_buffer/fence_semaphore.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12960,
+      "sha256": "569a7d37c33a2816d337a6806c10cf3e1ea91a0699219dd7a4db4440258bc64d",
+      "blake3": "9165c76d8dd12906fc42558381cd6266bf5d4876d21c7c07fcfd673709a746db"
+    },
+    {
+      "path": "references/03_api_manual/03_command_buffer/frames_in_flight.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20709,
+      "sha256": "7fd83f65848621b90800e6145bbdb2531f2259b1e9d554aaf0d11719db79727d",
+      "blake3": "0435e9057ff86b4f8d64bc216734991083381d9fbc9ea068e12704271bfafe7e"
+    },
+    {
+      "path": "references/03_api_manual/03_command_buffer/indirect_commands.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21107,
+      "sha256": "8eac79a3dfa932475cc6b8bd37031bfcc7a02af8bf31de94e0df478ae275d5e1",
+      "blake3": "870636723b24c80b2aa4f8e7633195d60c2543555dab1fb4852c5493b13968c8"
+    },
+    {
+      "path": "references/03_api_manual/03_command_buffer/queue_submit.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10419,
+      "sha256": "f5aa5e47c425f01dec45c060fe18c8866be695cc9ac263088da4bc99e4a560b7",
+      "blake3": "d4844baac97736a6c61a4ec6b1bc7d2591a9537e32bed3cc2c515d7c536ef895"
+    },
+    {
+      "path": "references/03_api_manual/04_buffer_image_memory",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/03_api_manual/04_buffer_image_memory/buffer.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8990,
+      "sha256": "5a050485a794350b427685ac81195f56d9331cd91877d27393e194cf9b2748c6",
+      "blake3": "d3e94e2f52a30856c6ca308fcad2aaa44f4a1bb16c78bf11bea47e9527a8a95a"
+    },
+    {
+      "path": "references/03_api_manual/04_buffer_image_memory/copy_blit_resolve.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17148,
+      "sha256": "f2feb296c583c52dcc0cbfe81bc015f2f65df419172325affa2bc164f8069abf",
+      "blake3": "aa7785bff1689424e3c0a26dd11869f1ac8aca4d7cf405df1c7d4947bc32d08a"
+    },
+    {
+      "path": "references/03_api_manual/04_buffer_image_memory/framebuffer.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7641,
+      "sha256": "f724536fba070a5c93fe63f6f4831ff7d7bce3f59a44194b3fce8812c61fcc4b",
+      "blake3": "a1857250a0aaf984434f42441a9205167e384aaa5d0a996e388ff40d30303c12"
+    },
+    {
+      "path": "references/03_api_manual/04_buffer_image_memory/host_image_copy.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20227,
+      "sha256": "b57a6b28a3d9ef7d2279ff0436cc21409798a55c8491dcc5287d5ffd70edfec0",
+      "blake3": "207c57d5de5fb934acf2bfd27ca5b3afa9b3fc1b7dcc34a895615c4fe6a019dd"
+    },
+    {
+      "path": "references/03_api_manual/04_buffer_image_memory/image.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10301,
+      "sha256": "4f7b57c8f067a18c864141ddb5e985c01b0dedc36404c2e9f8094d81f6c922a8",
+      "blake3": "dce7c3745bb76f48f7ffe3f8292f08d3b7075d2a35456a91e9c8f0241e24f480"
+    },
+    {
+      "path": "references/03_api_manual/04_buffer_image_memory/image_layout.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8012,
+      "sha256": "562fd10b10b9a7e8f323406499271da4083cd041d5691dc766230396fdac16fa",
+      "blake3": "9f89eda036ab412ce2a6dd523571c6bad253e23f4d6b45161434c0f2d48c960e"
+    },
+    {
+      "path": "references/03_api_manual/04_buffer_image_memory/image_view.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8468,
+      "sha256": "8f2c670c3af38e2a003e37869063e69ca86438311af1a13b369a7d6eea8b8107",
+      "blake3": "02e60cbc977de8d15ac9a42af756ed125df8b734d05a7b9bb56968faa9e9ca98"
+    },
+    {
+      "path": "references/03_api_manual/04_buffer_image_memory/memory_allocation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8544,
+      "sha256": "35337b745e50f2dd963fa13078427bc7b2480604a7c5d0748f1328aaab46149c",
+      "blake3": "c31db34ae425a682bd6eb309380053bbcdf05256042bc386ca078b6c6ebe564c"
+    },
+    {
+      "path": "references/03_api_manual/04_buffer_image_memory/query_pool.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16073,
+      "sha256": "6e083fbbfe6ccaed1d7dca2ba255dce0e7695ca7845afc935e423dd484722d52",
+      "blake3": "2304681f93e848cc106f81d97b5934164d49aae0a944b006d285e3c788209fc5"
+    },
+    {
+      "path": "references/03_api_manual/04_buffer_image_memory/sampler.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6851,
+      "sha256": "21deef865641c3d66a335a4b30f31fca2d0030c13c12a2c2598485f7f35692a9",
+      "blake3": "69ef28155d2b9b447b1a5a8be3e0f9468aeb8a1d9f2ac99a3c264becbc6091bd"
+    },
+    {
+      "path": "references/03_api_manual/04_buffer_image_memory/vma_usage.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16759,
+      "sha256": "31de67c93a8daa1e3009c71b39a3563a926c38b1e0510a3a346e4bc9e348ea2f",
+      "blake3": "4fb6668370363eb32ec889fbc12fc29da258e928793f2283e94dac5e82c4f2c2"
+    },
+    {
+      "path": "references/03_api_manual/05_descriptor",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/03_api_manual/05_descriptor/descriptor_buffer.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16171,
+      "sha256": "e705f310fbd0e0dee8c93e1df81c4d7c1f5f4c70d4a12bd2d6e4dce4eb4c29b2",
+      "blake3": "cb9dd2f01970d52e319594dcd6cc9dd0a8602cb944597eee9ac150946d10c5a3"
+    },
+    {
+      "path": "references/03_api_manual/05_descriptor/descriptor_indexing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21488,
+      "sha256": "a7399df2f5a3f9174b5bc320c136a8031849c307df73a61bbe46a4a1a6a4c972",
+      "blake3": "f30e86ac6675fa50389118729f51db3ad0ef5da0b6f5fc6e32b8254cd1edf916"
+    },
+    {
+      "path": "references/03_api_manual/05_descriptor/descriptor_pool.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8166,
+      "sha256": "75b6a77a90b9b16453a0f784e84ae92ceadbbc8310ebcaeacf5f3c358e9e1dac",
+      "blake3": "94e960c3cb5a466e16d34a67d41bb8a09c95238aa45caa505e4500e4faed2163"
+    },
+    {
+      "path": "references/03_api_manual/05_descriptor/descriptor_set.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8444,
+      "sha256": "2c0cf2cd183fd260d3db73d03203767eabd0c5763f3c9516c9fe3df62f20a18d",
+      "blake3": "5e8ce89df7b026dd80c63fefdc71b7b60db15f5e324af9e7285ba959b7643032"
+    },
+    {
+      "path": "references/03_api_manual/05_descriptor/descriptor_set_layout.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7072,
+      "sha256": "dca8a2e6dc81b8be1dcc402d54f46f0a16e9e4ec3ba94d31850f4e8a25b78d61",
+      "blake3": "c4f27d9603da2b8b2b5fd6f4680951463aff050ece497bdd78a7c265299ed3d3"
+    },
+    {
+      "path": "references/03_api_manual/05_descriptor/descriptor_update.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8237,
+      "sha256": "ca0aebc27d3d65555441190719c468521ba22ecf7617c21210a321905ad56a04",
+      "blake3": "b44900ab74530c29b923e341000b6b0072a079110e99528df6151ee0d7fe3815"
+    },
+    {
+      "path": "references/03_api_manual/05_descriptor/push_descriptor.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16192,
+      "sha256": "73ea4a50ceab9daf3ca21b82f58020a073ac8cb8ef4bf7eea107d27cba27bd22",
+      "blake3": "13d84aa40f21b3c1f5b66742c402d2ad212d9c0c4d2d75cb092f9b6aa7749f7d"
+    },
+    {
+      "path": "references/03_api_manual/05_descriptor/sampled_image_descriptor.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8164,
+      "sha256": "e45407c4b7274228377c2e162b9b8f15dccb13a1c2cfdf33f2ff0629f6d52699",
+      "blake3": "543f2057e6f22da25ac77241094ee9c76a45839666ab533a1f66643d3bf52f16"
+    },
+    {
+      "path": "references/03_api_manual/05_descriptor/storage_buffer_image_descriptor.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9052,
+      "sha256": "9eb6b6a9f84b563bf51a4f5daf621a6b20b3e0f4f8a14bf2b9d68eb58cf3a91f",
+      "blake3": "5ea8f495c95aaf84b592e4457d7c9ab147ea605c79af83e367f187fa136a0cd8"
+    },
+    {
+      "path": "references/03_api_manual/05_descriptor/uniform_buffer_descriptor.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8053,
+      "sha256": "6560b379de6e0e9160164124d73ff42397e8b59aaf857b9056b3846019e610c0",
+      "blake3": "58e7c0e8f242eb00b4d5a866d1761be273839d1e7a9c7dc5b22d66fb4e63c57c"
+    },
+    {
+      "path": "references/03_api_manual/06_pipeline",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/03_api_manual/06_pipeline/compute_pipeline.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9524,
+      "sha256": "3a098836c4b9debb6d3cdbc6541cb91c45493fd9c50a0738bc388c4c7dc5bd6c",
+      "blake3": "0ad70fce4a6a51160d621b00feb0fc086c05553342d6a069304306f6d67bc526"
+    },
+    {
+      "path": "references/03_api_manual/06_pipeline/dynamic_state.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17002,
+      "sha256": "ff2f8cc16359e3185f3acf090728b962164433dc1ac5fcf8fab690ca1ff8f364",
+      "blake3": "e7a68e2285ed1199ccfb68d50ce88b7136c9d8da4f4ded452e2ce5df2468f5be"
+    },
+    {
+      "path": "references/03_api_manual/06_pipeline/graphics_pipeline.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11119,
+      "sha256": "93af25f35e64c98dbf19c98f85aa4d65581da210297107f4d05176a8e7df0b43",
+      "blake3": "09a6bd3fec4db6ad0ddf7aa402ba2e43c8543b70085992c1785d9f77e82f8f3e"
+    },
+    {
+      "path": "references/03_api_manual/06_pipeline/graphics_pipeline_library.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8187,
+      "sha256": "3d406a2df8f13df232721fcde5ac5f7a7d9e4690144e3d346c4c41ad26d586cb",
+      "blake3": "2d721787c8d19d82462a8912a541328aa0ff4fe95393d72056c6352853e4ed55"
+    },
+    {
+      "path": "references/03_api_manual/06_pipeline/pipeline.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7569,
+      "sha256": "28bee9f73fc35979e4ab8bc71401d1954ef7c0e3d110ab8ef75012b96e6213b3",
+      "blake3": "79e5661df5232c62925bbdc686899b46499da87f7eb0d77b3090f316ef739da5"
+    },
+    {
+      "path": "references/03_api_manual/06_pipeline/pipeline_cache.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7272,
+      "sha256": "f1a528165f87a91eb21d046eeeb88f8baf4a34346eea5ad8e74cbaad987d396a",
+      "blake3": "3326e83354cfec02b0b24f35ba8bfde4719b9f10c000d5dceda2f4abb8eec557"
+    },
+    {
+      "path": "references/03_api_manual/06_pipeline/pipeline_layout.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8546,
+      "sha256": "92b817a682f046bbf1817a20c1282f7c235e6b996e41bdc6017f4947f7d26fb5",
+      "blake3": "11e53146369bac0414ee4a68cecf08d2c127771593b79b5d19c08a2661069399"
+    },
+    {
+      "path": "references/03_api_manual/06_pipeline/shader_module.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7860,
+      "sha256": "49e51d6e613db6f78aaef61395de6fe0b01349237b329f1f8535053e1fd033df",
+      "blake3": "e8ca675830eae6238ad06ddddc9524ec4ea3c93e5698ccfbb77b810d7815049b"
+    },
+    {
+      "path": "references/03_api_manual/06_pipeline/specialization_constants.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6912,
+      "sha256": "5b994b75059445c44d8378f0d34e77273a2a7bcaae451a366436d2f5da63afdd",
+      "blake3": "4866dcb8c6bbca543523a738e1bbaa491ce4da7cd5121d7c0049007093b368ac"
+    },
+    {
+      "path": "references/03_api_manual/07_rendering",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/03_api_manual/07_rendering/attachment_load_store.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7939,
+      "sha256": "8da5d528196f779b0bcdb51e0ba1fa6f85fbeb93f31c6873fef5b681bd123627",
+      "blake3": "ec079b8ea2fe643fda590cb1db90565779087f7e5425ebbdbc51df2f0e9d85d9"
+    },
+    {
+      "path": "references/03_api_manual/07_rendering/dynamic_rendering.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12133,
+      "sha256": "765a25bd5d83e9cc047fbcd6cdd06c10d1f83b4d396cca64600701a8b2b8edf1",
+      "blake3": "c728361b6074ab8183a0718ad69e3adf0b3fa27e4d3ef9637bf50f0e6f504dcc"
+    },
+    {
+      "path": "references/03_api_manual/07_rendering/render_pass.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10811,
+      "sha256": "31d7841dc81bae9d50e5253e06327ec48d4c01f4faf5399c72c5acc5296dcc01",
+      "blake3": "b918327c786062842c3dfef1423642055af1a55373b75896d87c7650e3c1b202"
+    },
+    {
+      "path": "references/03_api_manual/07_rendering/render_target_layout.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9654,
+      "sha256": "cab38c2beaf22084e0b263a2594c3a9330d286fa9fbc5fa66cffa8dcdc6add0e",
+      "blake3": "ff643add129b5eb2ab0ff7f9cdcca30e9abceb002a97f4afd7f1e1639cb1a34b"
+    },
+    {
+      "path": "references/03_api_manual/08_synchronization",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/03_api_manual/08_synchronization/buffer_memory_barrier.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8303,
+      "sha256": "9612ad3747a941da9b61d3a6dabfdfd59fa7d15a4f3e7caafc62324db058754d",
+      "blake3": "a0b79d8011897e03c91d589f1fd59894da1fa77303f06049a31400c80ba5dd66"
+    },
+    {
+      "path": "references/03_api_manual/08_synchronization/event.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7909,
+      "sha256": "398a10ca4c139d0b81302f369fae0a44c59b204bd897278d39e527b39ca3d069",
+      "blake3": "aca9a0fcd684b07b9385accfa2070a7cee73618b67e40649e118fd3233bd7ac7"
+    },
+    {
+      "path": "references/03_api_manual/08_synchronization/fence.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8041,
+      "sha256": "9ddd844394cba34ae50ac0d29116d4804dbc995a054202838e31384767afa208",
+      "blake3": "24a9247cad4ca6f08651642740c877edc8846d529dafa7fcf7a5c2881d4508aa"
+    },
+    {
+      "path": "references/03_api_manual/08_synchronization/image_memory_barrier.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12682,
+      "sha256": "7cd57ac064a0df10cb3a725d320c143ed31fb07b7ddc00f5a1fa36cb98d8e392",
+      "blake3": "1e509543f2d2cdcbe50d49cb7300ba3c14efe3d2c4055fcba54693a720c38408"
+    },
+    {
+      "path": "references/03_api_manual/08_synchronization/pipeline_barrier.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10431,
+      "sha256": "42e8b9081a35bbef75e4a069fff4e5d5498a34d879e6b8cd14158a0e95ad001e",
+      "blake3": "c55cc2c5f7731be088af7078d7c864019ddaecaf5c6f232d88fa6cab2ad31740"
+    },
+    {
+      "path": "references/03_api_manual/08_synchronization/semaphore.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10579,
+      "sha256": "a07043c0568c5708667510bbe31e7f06ddd855687ce472cbfa343aceb8f92027",
+      "blake3": "daf1d74b762bf03b2fe98cf33297aa63bf56cb5870983b96e3717beb2dfa1b19"
+    },
+    {
+      "path": "references/03_api_manual/08_synchronization/synchronization2.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12851,
+      "sha256": "582e6581866e57a6dcd5d346799041fdfd9bdc25fd68668bcc772d0830a08217",
+      "blake3": "da36349d033f958050324f90f1882565f1c280cac1c55bedf4e8576c8563e25a"
+    },
+    {
+      "path": "references/03_api_manual/08_synchronization/timeline_semaphore.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18542,
+      "sha256": "3f95b867a0276739b672b974444e8721ff3a8497c35ee5ae8ce80c8aa117fc9d",
+      "blake3": "9f1a120dbb41b1a86288c42fa60a621f5a49cdc6f8ac23f6aec9a3d9664e6b0d"
+    },
+    {
+      "path": "references/03_api_manual/09_debug_validation",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/03_api_manual/09_debug_validation/debug_utils.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9592,
+      "sha256": "fbf654039eb673ff729dee4033197277416db9eaa139e14d34f3f23ce8dde405",
+      "blake3": "d4fc778039cdbe8b95f4d88e063a129452f2c24b57f949d355cf08ca91eec5f0"
+    },
+    {
+      "path": "references/03_api_manual/09_debug_validation/validation_layer.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10735,
+      "sha256": "81a0c73d166451bdca32d9bb37a0d68e0b463298a122c748909afbd4cac3971a",
+      "blake3": "4d1026d44d8053e06c9f388426793b983f7214b819e1913b1d72814e5e5917d4"
+    },
+    {
+      "path": "references/03_api_manual/09_debug_validation/vuid_decode.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7550,
+      "sha256": "5891a9ef1b30cdf6afa2febd990ea0afef875e9a8317b948e78efa09336f3c3a",
+      "blake3": "36d4e2dbb01fae344b763f06cea32e64e464ef0ff0e8bc06ec3bcc638ccf5269"
+    },
+    {
+      "path": "references/03_api_manual/10_android_platform",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/03_api_manual/10_android_platform/anativewindow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7876,
+      "sha256": "2dd7cf8fa6a9a9d8ffcef23acafa1a61e4232c85c28e5fe44b0eaf3c5a609d87",
+      "blake3": "6a9afc8720045078251938f6e0e5e7cf569dac96540f0f0b3377117067270523"
+    },
+    {
+      "path": "references/03_api_manual/10_android_platform/android_surface.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7994,
+      "sha256": "ce22dc00522183c5dc3b51c128f4a0b4cced3e96db065ca398691c161883f5b1",
+      "blake3": "bfa08329670276d0f3a30ae116482c05920d963f7b584d79cd22c088611096b1"
+    },
+    {
+      "path": "references/03_api_manual/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2415,
+      "sha256": "0b98d3e67f34d7e93c9301c5b1326d9987b929fbe8d751a4b7194bb23db6c6a2",
+      "blake3": "132713fcdeb5310c7319bd87b72f0578a0251c98d66852520a23dc2c6d934f59"
+    },
+    {
+      "path": "references/03_api_manual/api_card_template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8200,
+      "sha256": "f430cdf67a0878a790c12a1d2588fab8818875b92a7c994620dafa10a713a7e2",
+      "blake3": "1e6cbdfb161bf20d1bd3bcfaf9d968e859ea4a0cf57c1316e4834d6a57082b94"
+    },
+    {
+      "path": "references/03_api_manual/api_card_writing_rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4588,
+      "sha256": "387692f80d2ac6ac825c2c2d8e21d5731ed3dc863943e7b9d7c17aa2cf4b7793",
+      "blake3": "9078208be9a18c8501a3855a9b0c436e5897783e689ed806b54f91490fdd15af"
+    },
+    {
+      "path": "references/03_api_manual/api_index.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6236,
+      "sha256": "a773ab716863b62322287531b677c75d133cb1c65afdb3aceb5380dcd4796e3b",
+      "blake3": "aa2f345ae9cc8dd64e48a458e1aa172b03dc2c0f29a46044305b2a98edc9f0d9"
+    },
+    {
+      "path": "references/03_api_manual/error_index.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6221,
+      "sha256": "3be02572f6b12f5b889e1979d78566f4ee056b76efd6b9419bdabac7e951acfa",
+      "blake3": "f9f50bd61deee2716097ee8ad27bcafb591d1462ebcc240506a46431a7d6c4ac"
+    },
+    {
+      "path": "references/03_api_manual/lifecycle_index.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4042,
+      "sha256": "9fbb03fddfbc746541d38adc154ddce928f76643ffa8ffe384a9c00c49604539",
+      "blake3": "1726d0dbe98ceb28b95b7a93e718aec64790cbfbc4a910cc1fb4959b8f543f14"
+    },
+    {
+      "path": "references/04_debug_playbooks",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/04_debug_playbooks/01_visual_issues",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/04_debug_playbooks/01_visual_issues/black_screen.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5638,
+      "sha256": "3c828372187d333aa139d1948bf90d0cc426b9e71e900434e10a0a72ecbd81f4",
+      "blake3": "5fea61724a51aa71cc43197d7e79fc66392cf7c9d4bcef513f96ef1dfb688ef9"
+    },
+    {
+      "path": "references/04_debug_playbooks/01_visual_issues/depth_test_wrong.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9954,
+      "sha256": "28cbac4c2d43f738b7d523ffbe7b1c1570672dc0c3209958629ae48237b91244",
+      "blake3": "c07264eed876022d26f2479788de59fd96633d3c5916c64d04d1d3d6aa536d5b"
+    },
+    {
+      "path": "references/04_debug_playbooks/01_visual_issues/flickering.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3335,
+      "sha256": "c78ebbe08372d39bd0e2ce9a99da77fe405af80dc10c928fc94ed94d1bc60d0f",
+      "blake3": "4ce1eb824594ad0c3c8e8850c13d93eebfb05020cba8d38052e26b8a30c58c67"
+    },
+    {
+      "path": "references/04_debug_playbooks/02_crash_hang",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/04_debug_playbooks/02_crash_hang/device_lost.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11903,
+      "sha256": "f86cd767c8a533e314515a47dd10db9e1cbcc23945162d1cacd1bc535f95d946",
+      "blake3": "5a7d04003b87ee60e0fe73c5b970ac57e83b6c0f48faf963d7439d2ed25f17f2"
+    },
+    {
+      "path": "references/04_debug_playbooks/02_crash_hang/gpu_hang.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10914,
+      "sha256": "30b8d1a5859722b32f25781a331aaa9b29ffdb6e8e9b3bfc947eb67c42ff835d",
+      "blake3": "58e62fa77171a02c11d1edda67da0caf12f7b6819f7413c8e1a65fae0f77a745"
+    },
+    {
+      "path": "references/04_debug_playbooks/02_crash_hang/swapchain_recreate_crash.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5274,
+      "sha256": "ff5173e954985b25b6e7b7bbb1d61cf44ba958327582f69c88a315811cbc05fe",
+      "blake3": "c6d440789de414ff1981ca5dc0bf21915f81d7492f415f617f2642b1606d6c8d"
+    },
+    {
+      "path": "references/04_debug_playbooks/03_validation_errors",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/04_debug_playbooks/03_validation_errors/descriptor_binding_error.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5028,
+      "sha256": "a1f585ea151c1317fab819008b095f0a0d12d5e5e43c07b7918bdea86a155b9f",
+      "blake3": "d0fddf8e1049222dcec33dc344a5f8de1e867d8123178adf5681cfbbb3b7d59a"
+    },
+    {
+      "path": "references/04_debug_playbooks/03_validation_errors/image_layout_error.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4725,
+      "sha256": "266fd0ca5ef1109e74246a9f32ec62567201b0688c89a61a9a1223bd0d524d1e",
+      "blake3": "1e3db8a0a066593db9611419052a62bc7b10b43b82f24c9c0461f772e86fb318"
+    },
+    {
+      "path": "references/04_debug_playbooks/03_validation_errors/memory_leak.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10159,
+      "sha256": "23e5140f1bdccfab345556a5ebc7776b0c1004f11c54184165746613a74bba7b",
+      "blake3": "660218ad47a7baef6df85de822b7c203931110adf5d7aa1bfceca0837cd1a9f3"
+    },
+    {
+      "path": "references/04_debug_playbooks/03_validation_errors/pipeline_layout_error.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10417,
+      "sha256": "d8d14c4cbf1aac2da52fb90a2461c2fe5c50a577555cd2b82468623540a32c80",
+      "blake3": "2fe8da077fade2b19bc7e7ef7fe77124490982ff75809ec145d89bf45b1766ec"
+    },
+    {
+      "path": "references/04_debug_playbooks/03_validation_errors/synchronization_hazard.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10917,
+      "sha256": "e323655ab7337fa99ea95f95009a976ae022612d4a2184a34ff350ed07505a10",
+      "blake3": "4a6f688d7d2c0b8101c32a64d81b6a6e9f6c442955b9bf546561a4c5bd3c6229"
+    },
+    {
+      "path": "references/04_debug_playbooks/03_validation_errors/validation_error_decode.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4309,
+      "sha256": "7357f0f24eb36e6b6d9b483688d08a6f55fcfbb194ca2520487de25b10789787",
+      "blake3": "6ac4e4cc19cfdbfcfe564b08fe338ba5037bdc38f2a450e568289f12fb6cb1ed"
+    },
+    {
+      "path": "references/04_debug_playbooks/04_resource_sync",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/04_debug_playbooks/04_resource_sync/compute_graphics_sync_error.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11977,
+      "sha256": "d87541aa5db1dcbf0a53a0e4ab1331232c30f0914e4a38324746b33cb4480a06",
+      "blake3": "8d37c0275e84016b8672c11d4c376792f48536ff5e9e99bd196f228b670d79b6"
+    },
+    {
+      "path": "references/04_debug_playbooks/04_resource_sync/compute_no_output.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4831,
+      "sha256": "dcc2ac6d86e230e046331afe73697299a8860fb31535c47e27f4591a088033f6",
+      "blake3": "221b0a18885ca39989e19bb3cd23ca67bf7c44def8dad8ad0ba045f1edafb889"
+    },
+    {
+      "path": "references/04_debug_playbooks/05_android_specific",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/04_debug_playbooks/05_android_specific/android_surface_lifecycle.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4813,
+      "sha256": "5c54b72374ad9c2e740e651a1279028d837a78e2d0071d97b6caeca5feea777c",
+      "blake3": "a5581dbc57f60638334afa6c4c9600ff1309b6447c125273baaba537ed9c1145"
+    },
+    {
+      "path": "references/04_debug_playbooks/06_performance_symptoms",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/04_debug_playbooks/06_performance_symptoms/bandwidth_high.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9963,
+      "sha256": "db1658afe1db59ef1a7d77f24e95f8f6c5e75d2eeca2902a60055e92d827b12f",
+      "blake3": "1474b4063715afbc3ac7ea1e34c4abee3c43cd057b4c5c36d9d48b9eaeacb05b"
+    },
+    {
+      "path": "references/04_debug_playbooks/06_performance_symptoms/barrier_overuse.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9687,
+      "sha256": "6cdc480c9e66a9e2da07663fb9cc2edbb1a7cfd0e627e5daddf80b2ee88b0715",
+      "blake3": "c65025801b06e8351d281b5e2184c51501b3f11733c4f0535fe39b3abf52d505"
+    },
+    {
+      "path": "references/04_debug_playbooks/06_performance_symptoms/cpu_frame_time_high.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9860,
+      "sha256": "11e719b6b5874e9d8328d21948d96c150cb8512290a27eac58a61be12ff8d0c8",
+      "blake3": "81fff1ea18db503657d6d931da7fd54c6a3cf7e01807815441c58e9c0b933c3c"
+    },
+    {
+      "path": "references/04_debug_playbooks/06_performance_symptoms/descriptor_update_overhead.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9877,
+      "sha256": "c5093dd389aebc15dc6dd194deb646055cbbd97d6059619f10ae03803a5d5b7d",
+      "blake3": "7fbcce1eed1b502e382de7f82ee5c77e5f00727184e1748e146f7e76e819d993"
+    },
+    {
+      "path": "references/04_debug_playbooks/06_performance_symptoms/draw_call_bottleneck.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9970,
+      "sha256": "ddc1cb2b83d778481fe7dc5ffeacd1eef054e0e370090afac4e05ae5b4aaec01",
+      "blake3": "ba1077ca2c607227274410bbea42aef332bad7fa8f4925388ea332dd4c4103c0"
+    },
+    {
+      "path": "references/04_debug_playbooks/06_performance_symptoms/fullscreen_pass_cost.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10167,
+      "sha256": "77af7edb191bec500dfd0e896ba2f09616751cecf6c0ab85996b2e9726962f7f",
+      "blake3": "2b5de22f76dace3be285089d20ac014ae28b4cc3664059540f4dc06399ed031d"
+    },
+    {
+      "path": "references/04_debug_playbooks/06_performance_symptoms/gpu_frame_time_high.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9601,
+      "sha256": "dd3cfbd9012e4856244d1410a7cab2dccb93c00c73f0d96449d51add1f2d3ed3",
+      "blake3": "da0c41e7c0f2db182778a012f11a5375ccf6ec20da0833ebcb35ef799ae079ae"
+    },
+    {
+      "path": "references/04_debug_playbooks/06_performance_symptoms/pipeline_creation_stutter.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9765,
+      "sha256": "b7300af94e48a86d1b2593fabc9d334319081429f95d50b2944ee5aa0cae73a0",
+      "blake3": "b1440e369f0022b5e2ee4d54520d5335f663caba13eac11ef7f239ca9a3e627f"
+    },
+    {
+      "path": "references/04_debug_playbooks/06_performance_symptoms/startup_time_high.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10086,
+      "sha256": "4274c2e233743659b1aacc8fb11f10fe22dbdc9e4d3130e74562cef36f862f3b",
+      "blake3": "618f118a17924331784a58b0f47bddf6933bf0e1c96a0624ad299ea3ab3ecb75"
+    },
+    {
+      "path": "references/04_debug_playbooks/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4806,
+      "sha256": "4f8d8dcc47c3e16a805bc87cb6c1713a0fdcc5326766bb38fcd78ecee46463ef",
+      "blake3": "d6892a265651cd06f3f34f6396db1ddeaae5717b030f41d525f5e6192ba6f6c3"
+    },
+    {
+      "path": "references/04_debug_playbooks/debug_playbook_template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3781,
+      "sha256": "c348dea5329ad78e90bce468ad2098d8bb62a06e8830f31f469b802e15f67828",
+      "blake3": "6088785c85c622c2870f001c8d6966f103f7ff959572708f75581c19dd9973bd"
+    },
+    {
+      "path": "references/04_debug_playbooks/debug_priority_index.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5774,
+      "sha256": "b761c6bcb37d23495879e29bec952b06bc88ab7fc6998f6b2c027bf966ab9694",
+      "blake3": "5bae282db339cae0e1c7ebf7d5c985c1d1f871222c68c7d93a62f39df335a9e1"
+    },
+    {
+      "path": "references/04_debug_playbooks/tool_usage.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2632,
+      "sha256": "44c59f2bcdcd1e3fec030352f0c8651157ee7aeb342f7a7e9293ce0c24230afa",
+      "blake3": "a0cf7b9699e2c346fde302bf2c81a2de5518219790e6000372536e8666cd0d0b"
+    },
+    {
+      "path": "references/05_workflows",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/05_workflows/01_renderer_setup",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/05_workflows/01_renderer_setup/create_renderer_from_scratch.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6027,
+      "sha256": "d76794d74cae08702da8004d0bb656d2c9bdb8d55f4149ae65bbf6a408d22e70",
+      "blake3": "f717c68aa582a64f96b90f9f4113fdebb6b608341de9cc1479c78319f9bc9444"
+    },
+    {
+      "path": "references/05_workflows/01_renderer_setup/setup_frame_loop.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4633,
+      "sha256": "c8f73e0451749b1165c641266f5b65d0e4fd4a869f1060ca045499552cedff23",
+      "blake3": "9293715d18eb924dd9a4f1501c3f20d90f6e27de8ab3ca91aa53fc1da52fd036"
+    },
+    {
+      "path": "references/05_workflows/01_renderer_setup/setup_instance_device_queue.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14396,
+      "sha256": "69e44f8c538ae62370c6c7f92ed7c8ea1b29e7421fb8f394c34aa4db7cc070b2",
+      "blake3": "0bdb48502c3c32454afbb7a1f045a1fd0a9208dd728dc28e6fec1bdbfb6036fe"
+    },
+    {
+      "path": "references/05_workflows/01_renderer_setup/setup_swapchain.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13419,
+      "sha256": "1e4f9efa0b7364ce87d1fb1c77133a6cc19a8db46b0cd67dc0cd9ff352aa45eb",
+      "blake3": "9378755d15258c9dc3e6a9caaa2cc2bc5ae8b1dbd6aa80bab1ca15a6b6a8a03a"
+    },
+    {
+      "path": "references/05_workflows/01_renderer_setup/setup_validation_debug.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13882,
+      "sha256": "5649d580550611bc1fbefff15038ba8e40aae40d02dba4f7c018601d21b066b0",
+      "blake3": "0b10a74be71dfb3ae67ccb512a493bec2f6aa9a1153ea73fdcc6aa3891edfc05"
+    },
+    {
+      "path": "references/05_workflows/02_render_pass_effects",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/05_workflows/02_render_pass_effects/add_depth_pass.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14418,
+      "sha256": "1b373255bb12b4e6ca147a27946b68cc937de0cdf9fcbd72df5c38f624e76b4d",
+      "blake3": "85b475aa5c9d25242a306664b876598bb3561bd1715c5c460b95ba53386d4e7b"
+    },
+    {
+      "path": "references/05_workflows/02_render_pass_effects/add_dynamic_rendering_pass.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13990,
+      "sha256": "0615476d78b8193496e6fe742506fdfd646fe6e948fd2311e9631baf9829ab02",
+      "blake3": "ba7b4e4222e8716cca6fbe00389ca585a20878925c6a9a9741da6ad6ba54cbc5"
+    },
+    {
+      "path": "references/05_workflows/02_render_pass_effects/add_fullscreen_pass.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5617,
+      "sha256": "4d35af8a09446d0e2a3908cf1ea93417547dc40c9588ef61dcff8e9669ed807f",
+      "blake3": "b7c6a39c930655382a735a5197388b73e2d8eb1b89e246a5898fecedb5094cfc"
+    },
+    {
+      "path": "references/05_workflows/02_render_pass_effects/add_offscreen_render_pass.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4895,
+      "sha256": "8c4a36a04c2c8af40a7e5f9ba4ead26423e8043f9d400b48160c3ac1d4da9cec",
+      "blake3": "2ba0f8bc0ba7cfcab24c6326b76f874863f39f19f57e74ed172fc7b828007d9e"
+    },
+    {
+      "path": "references/05_workflows/02_render_pass_effects/add_postprocess_pass.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14272,
+      "sha256": "832b1cb7b9cd1b7b11f4de5ac0e8ecd3679eeae31dc5c15dfdce46d3d031b7ac",
+      "blake3": "f71f5825620d19e24146bfe42981223c2509ca8b4c3b2127d97af9bda5414a75"
+    },
+    {
+      "path": "references/05_workflows/02_render_pass_effects/add_texture_sampling_pass.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15710,
+      "sha256": "d6d06e1e44d553c816e2a8d1f24b832abedfd1c7cbf0ef2b2d0b402bc7e1c9d8",
+      "blake3": "b2948534041d6372ba490a0f97ac3afa36fa26fc98fc6a2657c5a56fb966ac3e"
+    },
+    {
+      "path": "references/05_workflows/03_compute_workflows",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/05_workflows/03_compute_workflows/add_compute_pass.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5067,
+      "sha256": "cab939e4dc082da6d9bc1a8941a004b9a740f4850152804927937d11bc0d085c",
+      "blake3": "3b4474f3435dbde888033481f54d49592f81185b1080feb778e6438b3ff8e3fb"
+    },
+    {
+      "path": "references/05_workflows/03_compute_workflows/compute_blur_pass.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15119,
+      "sha256": "2c6b318174b18095b538211fe7e5b82c4e751fdc348881f9906769c101742510",
+      "blake3": "b3bc18415a20bbf398a7a739ae1e6e0a3df6f8a15cf988e404aef6ee0c4aff69"
+    },
+    {
+      "path": "references/05_workflows/03_compute_workflows/compute_to_graphics_sync.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4664,
+      "sha256": "01ae2cb23704258afd0891bcb20766a3125364358270897278bdaa055858b8ad",
+      "blake3": "ff65af146b692880f5306f8d04ec71066ed5e50d70bc68161fd5a4e08518756a"
+    },
+    {
+      "path": "references/05_workflows/03_compute_workflows/compute_write_storage_buffer.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13569,
+      "sha256": "d7de43e37812996f02e9efa5ac0cb14254775c0bbce8370a0095fc57ee0fdddf",
+      "blake3": "5be80c37403690adf51ebdcb5ab98e490e640c49f1cf4738c430199a587e9a3e"
+    },
+    {
+      "path": "references/05_workflows/03_compute_workflows/compute_write_storage_image.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13691,
+      "sha256": "de46f1b116db8210dd38be971501b5a83ee950d614114fc2bf33822a5f20b3ba",
+      "blake3": "c2f8bbbe0fa1d0ccb2ff33583d3156c421ec049ee2bc7975db08e165d17ddfdf"
+    },
+    {
+      "path": "references/05_workflows/04_android_integration",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/05_workflows/04_android_integration/android_validation_agi_workflow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14058,
+      "sha256": "85cf5a427c8d3b98443f06be36693167ff401e36fa2ca667ad40d0ae8e449aa6",
+      "blake3": "5dc872374081e9eed9cd2dfc6c62c37eb1db241401afdfd8f0dfe88085e9c8c1"
+    },
+    {
+      "path": "references/05_workflows/04_android_integration/handle_android_lifecycle.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13920,
+      "sha256": "7b4f05c206f5770c3d3366b551f9fd827a5cc5a5aeaf0c1ed1248d351b8b48de",
+      "blake3": "fcd391c2ffb8736dcaab6e83255c86c07cdbdc50918cfe09d54e81869a3f598b"
+    },
+    {
+      "path": "references/05_workflows/04_android_integration/handle_swapchain_recreate.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5465,
+      "sha256": "e019d88ecb6a000194e7bfe6c32e52c350c0cca0b025fc47bd4fed714b9e1917",
+      "blake3": "adce6ecb1ca94e542e17f5aae632bd8e45a2d16e5181ebb11519389fc7e3e079"
+    },
+    {
+      "path": "references/05_workflows/04_android_integration/integrate_surfaceview_anativewindow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4938,
+      "sha256": "2077b6f82400cfe6385688afa9be4843d38507789b42189aa86c5394269749f3",
+      "blake3": "9f087f833482ecf86ac460583e4a00f2f9660f41fa5f5109bc8b40d4dadc4e6c"
+    },
+    {
+      "path": "references/05_workflows/04_android_integration/pause_resume_render_thread.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13410,
+      "sha256": "d25eaeedf30631ac5d14c9786c60154ad67cacccd251b8cd10161c0758b8f45f",
+      "blake3": "f10ab680ad624aee3975a717dea5ac15ba7dc1b9bcc8830b808f701260c66da4"
+    },
+    {
+      "path": "references/05_workflows/05_resource_management",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/05_workflows/05_resource_management/add_offscreen_image.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12706,
+      "sha256": "9428dd19f8b20fab96748cc55d522f85c6999877e493b8e851eca57eef6427b4",
+      "blake3": "245eb11d31f7b87f05fead66fa8414016e49df8958a60ba72f4114f672c5671b"
+    },
+    {
+      "path": "references/05_workflows/05_resource_management/add_storage_buffer.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10918,
+      "sha256": "1d2b2decb78d36c505f6a14fbb104b2eef2a065afaf8e01dcd1df081f5edfc22",
+      "blake3": "7b1a3be71e915900d9ccd150b9a5cb04dee690d95b2c80953f077f4312a73ee4"
+    },
+    {
+      "path": "references/05_workflows/05_resource_management/add_texture_resource.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12291,
+      "sha256": "6e9313f562e1c0da341eb8d709c13e9647fe7529d6bc5987a109751ac11251b3",
+      "blake3": "cc5549c170fb6cde87f81a83ca2cf9f90b014b86c1c63933f44a90e6b8c86deb"
+    },
+    {
+      "path": "references/05_workflows/05_resource_management/add_uniform_buffer.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10795,
+      "sha256": "557d3ad9926608bc3806c7165f387d16a131f4321084999cd8ee193de52eb0d2",
+      "blake3": "8dfcab7f372ac8fda64e8e7a39e03252cc30d3f114e3f6017a5f92ad443bd7e6"
+    },
+    {
+      "path": "references/05_workflows/05_resource_management/manage_frame_resources.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10635,
+      "sha256": "e830da15744a925a3ed6a19c9c64b82bfca48d2fcd0ff7145b1ff713eb2d3c91",
+      "blake3": "0326068bc3338ad181decdffe676f85b6c26905db97ae2f98ecf9056d7343870"
+    },
+    {
+      "path": "references/05_workflows/05_resource_management/manage_resource_lifetime.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15105,
+      "sha256": "7eccaedffe311e298a45623f8794c974ad2d54bbd2ff2302aa1c9e9d709bb7c6",
+      "blake3": "3ab1a2f75aeac9fc04ad04571513be2f3d303eb978c220e23ed411c492a7da86"
+    },
+    {
+      "path": "references/05_workflows/06_pipeline_descriptor",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/05_workflows/06_pipeline_descriptor/add_compute_pipeline.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11558,
+      "sha256": "9e379d199252697af26747dced404f0c3bafc733df65fbfbca070a0b5fe7e943",
+      "blake3": "50ae06719673f064bb12cd63dd41239e713495f6bce1c45ceee325f223699882"
+    },
+    {
+      "path": "references/05_workflows/06_pipeline_descriptor/add_descriptor_set.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10893,
+      "sha256": "392a9e33cca6660b5224eebce9f12f1585fdfe8a060a27de4a1eedc698010405",
+      "blake3": "9195476856eafa625f99950a134c97c2ab60d98884cc1022b92498045687bc30"
+    },
+    {
+      "path": "references/05_workflows/06_pipeline_descriptor/add_graphics_pipeline.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12064,
+      "sha256": "660838107f5373e32ae25099ee5dbfd12ebf6cdeffe18062143300303c020e8e",
+      "blake3": "1c29b9a7afa0936f15b4fd99849517acf34f88ff8468142de91555f2f1fb06f0"
+    },
+    {
+      "path": "references/05_workflows/06_pipeline_descriptor/add_pipeline_layout.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10804,
+      "sha256": "3fcac5bb0c2cd5e6cee463d7596209aef099dd1e9c2d7d79ff4aec9cd9673463",
+      "blake3": "ee9bba2c37d9dcd1fc7570beb2895e0c090d1c1802f1e4e90f1ffc7d5d5423f5"
+    },
+    {
+      "path": "references/05_workflows/06_pipeline_descriptor/shader_binding_workflow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9924,
+      "sha256": "ad094d74e01a04c973af4b59057d0d27d2122fea3f642ef40a5d4138a34940c8",
+      "blake3": "45de8cc3a692961e00939e3d8db1df26130a571b8386372a7fa2eaf032735a88"
+    },
+    {
+      "path": "references/05_workflows/07_optimization",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/05_workflows/07_optimization/optimize_barriers.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10340,
+      "sha256": "6d24d4e8b8d42d341b47be1930569c10db66611621ab6535676d8b69c7f1274e",
+      "blake3": "37f4afc8e23f6b1835c38670ae5ceb05a86fa015754b8584e5d010939758aba6"
+    },
+    {
+      "path": "references/05_workflows/07_optimization/optimize_descriptor_updates.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11318,
+      "sha256": "634b97cb4362577f48419363d616d89e4b0c1cab4a1b2e3ba2ba3afdad6420c8",
+      "blake3": "8486ffff40fc66a34c67c74e8a42e2523ac90931d2b5ebbab20374ff5db8328e"
+    },
+    {
+      "path": "references/05_workflows/07_optimization/optimize_frame_time.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11346,
+      "sha256": "9f95ecd1c091fdf161577443d243a3a92251ad934779e0c0203f20e5845fc590",
+      "blake3": "f31c8431a1f7af642ed5a81ff95bc4bb0272670fba515f6455206dd9177ef253"
+    },
+    {
+      "path": "references/05_workflows/07_optimization/optimize_fullscreen_pass.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4957,
+      "sha256": "41d21e5ee34a4b58810de3c4891985155eb2f792ec7f6926d7041a6297b1dfa0",
+      "blake3": "1d00bfe57f8bd1aa9eec25312c5ee672ceb457ae170ef42b1744eb64746a8c2e"
+    },
+    {
+      "path": "references/05_workflows/07_optimization/optimize_mobile_bandwidth.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10812,
+      "sha256": "781b472331fe8edb7021ad14f243ea4652f0eaafd461eaae8655e51a0343ddb2",
+      "blake3": "b0440ddee4810c6c4cbe39ac0d743e3699708b1ac67b202b46b505c6ababc612"
+    },
+    {
+      "path": "references/05_workflows/07_optimization/reduce_pipeline_creation_stutter.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12194,
+      "sha256": "60a49e3749b87c1c0b5c94dca732141fc81513b2a8a893821b8b957372b23426",
+      "blake3": "abcce2d9dfe535b2b96b5d1973b4057afe92e5ae5993578be3ce719f8e497a9d"
+    },
+    {
+      "path": "references/05_workflows/08_migration",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/05_workflows/08_migration/convert_single_pass_to_render_graph.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13531,
+      "sha256": "8b48608ff2790f784edd9a60d90d884a655fa780008b9d494885226f7e3a45dd",
+      "blake3": "6431d86e530fc6d72876c67b31e4358aeb790592104ccd769e605e79e12b2472"
+    },
+    {
+      "path": "references/05_workflows/08_migration/port_glsl_effect_to_vulkan_android.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13863,
+      "sha256": "bad41b5142ed47d7767d00d5ed06ac14eb24a5a530eb7c9fb0d0709ea89cb510",
+      "blake3": "4c6cbd525ab0a793b98d84af0fb0998ef063f14ff9761992cb75dd79ebd0655e"
+    },
+    {
+      "path": "references/05_workflows/08_migration/port_opengl_to_vulkan.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13429,
+      "sha256": "aeb79aba059bf1aa1e0d4f6644e483a3deb0062f926f01fd5e9b33f8e346f9b0",
+      "blake3": "96cc4344a9777c69c9d9bdc32c1239723446e366ad6ed6450e68a1aea436a3b7"
+    },
+    {
+      "path": "references/05_workflows/08_migration/port_shadertoy_to_vulkan.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14526,
+      "sha256": "d9ae322ec106f8dca041caa451fa493ddfc10cb1b186827a949d9e9019c8092c",
+      "blake3": "b74df7d7bdae3dafebad04888c1db902bdea6ec92e6e06e155e8b70f81027fd1"
+    },
+    {
+      "path": "references/05_workflows/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5065,
+      "sha256": "a8b1aa6734902cc6864791019bc156b938284e247302a890652c1f3e494c04a6",
+      "blake3": "5f930afac14fd124169b4eb7955223e15b59bb88ec1e26eb423a21278c57881d"
+    },
+    {
+      "path": "references/05_workflows/workflow_index.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3920,
+      "sha256": "6eda21a765a69350c88c9276f6c9ba974b47a48c00f60015ecfacad017b4b4ab",
+      "blake3": "228504841b57d6b3cc5cecf9d1e63ae411756f095762b63ac48ace8d370f6b4a"
+    },
+    {
+      "path": "references/05_workflows/workflow_template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3518,
+      "sha256": "83539ce379e80c54fa849cb542ac7712dfaa50033bb369dd367f822211ac9642",
+      "blake3": "4004bda4f47aebfa1fce7e07d6dbd20b901ed7f1a5aaa29c696a67473c923fe5"
+    },
+    {
+      "path": "references/06_cases",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/06_cases/01_black_screen",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/06_cases/01_black_screen/case_black_screen_depth_cull.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7343,
+      "sha256": "4a99012ceb129133e12ec4683c49c89c21a4a116afe5b7ea2a7c6b91a08499fb",
+      "blake3": "0427b22d81752d5b31b5d718addcfe42c627c71248e2d3235571694b946374e4"
+    },
+    {
+      "path": "references/06_cases/01_black_screen/case_black_screen_image_layout.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5205,
+      "sha256": "c004abb052239fcded2f1f6dd3c80cd6c0172fe76b51dd10f587c01625feea4f",
+      "blake3": "36c7c0b89410409957ed1fd5a53d2d130136a930c1dfe01fa793406aab7efe01"
+    },
+    {
+      "path": "references/06_cases/01_black_screen/case_black_screen_no_submit.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7091,
+      "sha256": "12b30f4d1573fb19e2865cffc398605a57d933782dea73a9034ea11e54131887",
+      "blake3": "22755d3af2c7ab0817df77fdb8571ae18afab374af105ac44ac9808a11a2d84f"
+    },
+    {
+      "path": "references/06_cases/01_black_screen/case_black_screen_wrong_viewport.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6627,
+      "sha256": "6d3286038716b3215146e85159d10dbc907bbe1c7ab5f71ca7b9adc398f82276",
+      "blake3": "932ef6e0122cf795b0eaef717faa32133ecc1c27985472c7dcc681a77473fd86"
+    },
+    {
+      "path": "references/06_cases/02_descriptor_pipeline",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/06_cases/02_descriptor_pipeline/case_descriptor_binding_mismatch.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4600,
+      "sha256": "c7d7fe2d812a80c764ad9f07446d063aa844635328369bb21b3b288c7b573af8",
+      "blake3": "d5a20d6eb9bee83c981bda05b5dea54fe4d4726bdac280786c92a596806b459d"
+    },
+    {
+      "path": "references/06_cases/02_descriptor_pipeline/case_descriptor_old_image_after_resize.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7397,
+      "sha256": "112fc0db195b89324b0f6089a1a3b9985c8ab78f30fee467f1843c4d1f012b9d",
+      "blake3": "300332cee57a60251e744996c3c71aa910b467a4c7ac83e95185103e77439875"
+    },
+    {
+      "path": "references/06_cases/02_descriptor_pipeline/case_pipeline_layout_mismatch.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7591,
+      "sha256": "c1c4c35dcee5584ae95a8ef75fc9c6b3e3d7b2de3fdf48f9cc4d95d68ed1a3d7",
+      "blake3": "3eb446a30c74c6f7b22862aa8d88de78141c1b38f3e0c7399f6f5a098e9da200"
+    },
+    {
+      "path": "references/06_cases/02_descriptor_pipeline/case_uniform_alignment_error.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8169,
+      "sha256": "5cca1cbe70d83b6fc49780bd8c7faa0e53fe19c2455f72fa732647e32cce55ba",
+      "blake3": "82724de2e2a0313b1f5fdec187fb4718417acb8219afef6f9073ad8a4f1a6ebb"
+    },
+    {
+      "path": "references/06_cases/03_sync_layout",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/06_cases/03_sync_layout/case_command_buffer_reset_in_flight.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7181,
+      "sha256": "7d621a97fb1be932f6c44aaa57c250a76649e07232219562f5e8a60bfd4bbe50",
+      "blake3": "fff2c38a56760fb1ee2e2cb012618729f02e2dd548a31917c2fcd3443fc37c83"
+    },
+    {
+      "path": "references/06_cases/03_sync_layout/case_compute_to_fragment_missing_barrier.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4949,
+      "sha256": "38db7ed8b0274c916a2e78e3dc41c5defd2ddecaa4865c65da9e239fc4ff4d3d",
+      "blake3": "44632ebab07eaaae1397803c79d1f3d1ba447e2eacfe42e796a86bfe1d2af830"
+    },
+    {
+      "path": "references/06_cases/03_sync_layout/case_frame_resource_overwrite.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4244,
+      "sha256": "d01c297200c043883a2f5d7d3cbc21d79d8a7aa4da6d6e44d5aa0fc234ca4207",
+      "blake3": "3b85be76842f19bbc11dcd5e060613b9523f753d81b36a62580ecbf7e82a7144"
+    },
+    {
+      "path": "references/06_cases/03_sync_layout/case_transfer_to_shader_missing_transition.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7685,
+      "sha256": "0693061bd2b71ae216634a3ba1adb21b26949bcc7e06ce38c5e657c08046263e",
+      "blake3": "e3bf5a6bec18a8e969f7a58740d63da4575f71d534acce0b80ed28809cc28725"
+    },
+    {
+      "path": "references/06_cases/04_swapchain_android",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/06_cases/04_swapchain_android/case_android_rotation_old_imageview.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4865,
+      "sha256": "b89bf7a4c3e1d594116f664a529ba1159096d9d26f4d4c3c363050bda4e6fd0c",
+      "blake3": "dd569da4401356a0f51d07e734ebb58863849b186e027fcef2bf7fc1cca606be"
+    },
+    {
+      "path": "references/06_cases/04_swapchain_android/case_extent_zero_swapchain_create.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6913,
+      "sha256": "66bc6534c2c14dece73bdaf092838f559a4e497d3c467f4483f547796663941c",
+      "blake3": "7344ccd60f4b64ced853175249b7e790fd2e0f424e5378af7f9ae739729b93b2"
+    },
+    {
+      "path": "references/06_cases/04_swapchain_android/case_pause_resume_black_screen.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8326,
+      "sha256": "770634bee0db166ab3a179f8ed0cbd5b94880fb00a8d03306ce900348fb54741",
+      "blake3": "d3851175a5a16e8aa32ab00d10368b57182fed5dd25b3cdbee8433a9a61772b3"
+    },
+    {
+      "path": "references/06_cases/04_swapchain_android/case_surface_destroy_present_crash.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4476,
+      "sha256": "209444a2f91fac6bd890dbe45d2c1e90559955eb6c4e66c2a355e5fc73150c6e",
+      "blake3": "d51fb9e72ff409dbe6e5142d649441e93379ee60992820c32654ae7850b31e6c"
+    },
+    {
+      "path": "references/06_cases/05_compute",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/06_cases/05_compute/case_compute_dispatch_zero.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6374,
+      "sha256": "97c3c5047fe9a2d3d98c07ba472d2ebce091aa64f187d1080f504c7f15d96504",
+      "blake3": "5d454587ebf7d6d8809ded56b34b5c815fd169c63605f847a65dd671fe364386"
+    },
+    {
+      "path": "references/06_cases/05_compute/case_compute_output_overwritten.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8795,
+      "sha256": "a25890c123ced74dd66f9e1850c680b619cb0c7248aefdb82460e1cea5b1a267",
+      "blake3": "2fb1e4cded306b501c23700c3c3e128f1bcc20f5e717e063d255c22fee712557"
+    },
+    {
+      "path": "references/06_cases/05_compute/case_storage_buffer_not_visible.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10529,
+      "sha256": "69eb8c25a7711252c8a7f8c365f1d73529434f4e9695bd07cd8edb36b7d148c2",
+      "blake3": "5b02b9340b75037fbafc56730805d54d91ecef7744f2f09b385cfbd7ff2b8d58"
+    },
+    {
+      "path": "references/06_cases/05_compute/case_storage_image_layout_wrong.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7999,
+      "sha256": "c374002bbbf0d0b0ac3d9b2a5e63beb20986c68ddb2267bce5a12b310318e0c5",
+      "blake3": "d4a9b0ff6a07aeef8caf3f78775949939249bfd2c8af42edcc57046758aeeb63"
+    },
+    {
+      "path": "references/06_cases/06_performance",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/06_cases/06_performance/case_barrier_overuse_gpu_stall.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7790,
+      "sha256": "f43e605a3536a792060c029c33e67b69e55e3dcb91034a64e02d96101570a7bf",
+      "blake3": "1c75f48d08870938eea29ef2263f149662a3218856f26b06087ad173cebebb8d"
+    },
+    {
+      "path": "references/06_cases/06_performance/case_descriptor_update_cpu_overhead.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8080,
+      "sha256": "c410b518b010065817e469ebf299f004bea43cbb44f158cbdc3689067b9f1cf3",
+      "blake3": "02a105344e9288fbfc0c3467ec29898a780b58be2c3a64f03eb6377be1f4253c"
+    },
+    {
+      "path": "references/06_cases/06_performance/case_fullscreen_pass_bandwidth_high.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4643,
+      "sha256": "a3e632e1281cdc97467276ed429b0d07cd90cb4c05902b12efb41ed7a15dbc57",
+      "blake3": "3227c9ad468f02a8b3dee9ddd7e103c552a6ee58e5d7ed2802d401768f0ead7c"
+    },
+    {
+      "path": "references/06_cases/06_performance/case_mobile_tile_resolve_high.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8087,
+      "sha256": "7261d08abbf2e8b4f0fae00c7378e98b73d82517e33ee69018d37c3a9a0082e1",
+      "blake3": "9516905ab9f6bdf143074653357c580d0caee52c5e81a1e2d9b2b3e2b405e5dc"
+    },
+    {
+      "path": "references/06_cases/06_performance/case_pipeline_creation_stutter.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7761,
+      "sha256": "430560b43e0f47b498fd169f221e68b66eea9e1e624a96d6a56701c6dd81e040",
+      "blake3": "83f0910acb27f3cc08a4fd42d89ac6be28cab224b3995a768c9609447959cbc6"
+    },
+    {
+      "path": "references/06_cases/07_engine_architecture",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/06_cases/07_engine_architecture/case_per_frame_resource_design.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8377,
+      "sha256": "9e67ecea91d335badf91484fc76fc1ec161e8a5494eac684ee2e9814ed0cc195",
+      "blake3": "d020566359f0fd68af4940949a8d8549a4da0d9fccff1f81750b98a27d47d043"
+    },
+    {
+      "path": "references/06_cases/07_engine_architecture/case_pipeline_cache_strategy.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7896,
+      "sha256": "ff21c635681e2e32ffebf56d513f57e5275365b7ecb6d3035fb45de28166589d",
+      "blake3": "5d02eddd89171f208778ba0d98e667462d06098c7e65d4a1cec27be8ff3ca01b"
+    },
+    {
+      "path": "references/06_cases/07_engine_architecture/case_render_graph_resource_lifetime.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8095,
+      "sha256": "4243d44973f41c62e9e4947a424a26a3a10c027f2ef7b8b7f67b1d10511314a7",
+      "blake3": "f431ec73bc2a54678cb52f6fd69620bdd97fd60edeae265fd1dfcb1638653b17"
+    },
+    {
+      "path": "references/06_cases/07_engine_architecture/case_swapchain_dependent_resource_group.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8795,
+      "sha256": "f7159afc94cc5afcd874caee0be2044b4a87e8bbbd144dbdf49d292c8b57ac02",
+      "blake3": "0be26d3b24a7a256fbb78922066bbeff69323f13fb0d763a4c32f7c043c5ae5e"
+    },
+    {
+      "path": "references/06_cases/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4777,
+      "sha256": "da7a33e82012f53f8d494fc207b260442e919abc2c40b559fa5641e3207b5e1c",
+      "blake3": "ee1cff89ac5a0f3d7be40275ba1d147db9e477406019d1f2b8cb1714a53229e5"
+    },
+    {
+      "path": "references/06_cases/case_index.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4439,
+      "sha256": "06205f0beb2e5c7caaaa7abf9b6195e47d01d41b311594e9f4544a0ea7346456",
+      "blake3": "d51467eef7e36ec9f5b4ab6ef6f456268a44f447d35ba5e99fa018ff6bde3f4c"
+    },
+    {
+      "path": "references/06_cases/case_tags.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1461,
+      "sha256": "45d7be06483ec52ea9b8c5662cbe230caea0e7f73769c08d908ad163bf2783e6",
+      "blake3": "34405bb9f44cfe759b1bca9f7f9017030e58c148dc16060b1ca4201948378d21"
+    },
+    {
+      "path": "references/06_cases/case_template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3268,
+      "sha256": "407870e8b71d5bbdd48d4cf7fb8c5743b4ba800649f8173c773a43e708755037",
+      "blake3": "6ef4025025aa7dfaf5f41a672bda5c5a9863754862f80e752bed7d1e2394ec77"
+    },
+    {
+      "path": "references/07_integration_pack",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/07_integration_pack/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1654,
+      "sha256": "b461d12489795e194ab9a556d7db9f7bde1ea53c030e1c2a616f1e2b5b5a293b",
+      "blake3": "4d6ed1a2d036ab4535653e65a3def25a55723b25b4da6153eb62b05d9e4cbf32"
+    },
+    {
+      "path": "references/07_integration_pack/integration_test_plan.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4645,
+      "sha256": "d5576df41ff30baa0534332b59812ed06a3066abdd413a5c2d20fca1cfc9905e",
+      "blake3": "e4baee93f454d64bffea60fb9bbed87a880d29837e6e96a6e91e4e9248c3267c"
+    },
+    {
+      "path": "references/07_integration_pack/maintenance_plan.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1554,
+      "sha256": "9e30cf6becdf68fe18157f2ba6281f728c61d33010ab1b55486578fd20350e8e",
+      "blake3": "1e4d413ce13814a2cb2c7dc4f89e6ff1bf09ed990480b793b72fa7a939bb23e1"
+    },
+    {
+      "path": "references/07_integration_pack/module_dependency_map.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2271,
+      "sha256": "9ede8da7e4ca0162b90675313ae1697bde7a377d4fd9304a4992fb4b9c700d94",
+      "blake3": "265169294d18874dae69a3703f73b0f96b00062ed4656085fefaea7fd433d061"
+    },
+    {
+      "path": "references/07_integration_pack/release_checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1746,
+      "sha256": "0ab00a630701d64b7e45df250b07905056169df83e516640a79d101a8f824ad3",
+      "blake3": "17383f6821b36358ae7594402eaf8c1454d9d3fbfc561e9a73dfb44ea72ccfa1"
+    },
+    {
+      "path": "references/07_integration_pack/retrieval_policy.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2726,
+      "sha256": "59a1ae2cb65bb7da4e887a4f2d4ffb5570ba6f7eaa4dece3c4fd1916debe8d6b",
+      "blake3": "8c357ef3736174f353d9d7066e0fbe6c2dfb02e276bd1c8097de566e93d158ea"
+    },
+    {
+      "path": "references/07_integration_pack/task_routing_rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4685,
+      "sha256": "d9b7e3786c2b890a4971b66d0a8410969437726eac80d7d4b43edc301fc7ba38",
+      "blake3": "9a02f36e201a77ae64d7898b802dc778ba3cd6dad28112b185cc35ae0a2dba24"
+    },
+    {
+      "path": "references/07_integration_pack/token_budget_policy.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1372,
+      "sha256": "0648b8d848d3723a935ccb8d608b7ee668c6c46b17911bdfb6a1812c2b6192c5",
+      "blake3": "dac4d941c2ec9cce8e05ad514094c7e46a6447abaa7acce8bf9d35655ce68aa4"
+    },
+    {
+      "path": "references/MODULE_SUMMARY.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 277,
+      "sha256": "399bfde5b1b7a8780ca22725e020f3544d473b70be2e0154f6f85ff4f76a8b2e",
+      "blake3": "9a0ade329e6b38db3f84571f479a37a6725c5b9b548d10af52f5fa20c1814891"
+    },
+    {
+      "path": "references/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2125,
+      "sha256": "7baad86f64da47d58770c3a28a2fe5829b108e0228a86d277137111a941ccb3e",
+      "blake3": "ddd5f3d1f8e04ae5825504b6f941a8cd8b3f89335581ffe15c95293f2e808355"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 34742,
+      "sha256": "cf17e7c21b459c7a6615ecb84eb406097778f3476bbbd7cf9e1c7a8f0e3f17b9",
+      "blake3": "5a5cf7ce8323320e9333b051b13fefdf49d0db6ac310a0bbc96839af5f5cef15"
+    },
+    {
+      "path": "tests/conftest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 705,
+      "sha256": "6bebba1da7eab7dbd1acc62823056fc3804b13b33cbdd3e45ac9d34f405bd8c4",
+      "blake3": "5aadc88a2d3273f93d6695e6b13d27f3b18cb02446b7d26cd676306d0784b4af"
+    },
+    {
+      "path": "tests/prompts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/prompts/tc9_01_black_screen.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 276,
+      "sha256": "0306ea865e0db77b4ce6802db023b5779dece982922fe3b852869f16fc143a64",
+      "blake3": "5cab25c4276dabe12fbbd80c04dd60331040ed89aa81609f64694362a6c31c58"
+    },
+    {
+      "path": "tests/prompts/tc9_02_mobile_perf.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 303,
+      "sha256": "a3528860b59401d923fa9c832e261a9c7acce2483441d6421120da8f6b9b5a65",
+      "blake3": "44b4c20fcd83cfc836dc784cfaabd5495255f4523a92f80700c63f70b8e343b7"
+    },
+    {
+      "path": "tests/prompts/tc9_03_design_renderpass.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 231,
+      "sha256": "0b49ac0bc058c3d4151b454ea6c783fa54b7be9fa6e40dc4633b818b6fbfb58d",
+      "blake3": "e03ea15b834a2d8441da35a2dd9a1519ff85a24666b40ef978a6d7627509adc9"
+    },
+    {
+      "path": "tests/prompts/tc9_04_code_descriptor.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 341,
+      "sha256": "571bd34e267a3236667fa4f39fe66f2afd8d619c1d91d8c690a3899b43cd14c5",
+      "blake3": "547a1a50cc2f17bd7011a027b5583b634a9f76028a81a32c07cfd6b0420516b8"
+    },
+    {
+      "path": "tests/prompts/tc9_05_api_barrier.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 201,
+      "sha256": "3b9598e362903463cf394807d92a2d566986ce01bd3303296ece4b8c25e07b69",
+      "blake3": "8c29919fb114e1d83e1bb20b656070c1fae47bc78a847d0c552f42cb7c295844"
+    },
+    {
+      "path": "tests/prompts/tc9_06_android_surface.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 260,
+      "sha256": "cf4fe7b740d93b6ca27ea6c7d2b1cc82d8f980f6766ff04683a37a54203e73be",
+      "blake3": "fbcea6546c45cd37070f372479867d381c9563067f80188653dd5e876059866c"
+    },
+    {
+      "path": "tests/prompts/tc9_07_antipattern.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 163,
+      "sha256": "0e85225ef0a554c410dd547afb68c6ff2a0c4869a9bd5d84f97a8177ef1d3ede",
+      "blake3": "546f69fcee4eca5847e06946a68b1a3dea792130c59c883b307ea1bceebb8a1d"
+    },
+    {
+      "path": "tests/prompts/tc9_08_uncertain_api.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 216,
+      "sha256": "f1f4d34341bf90093fba350fc54a5767d2d5ec0856b65d95bd8d96911448f427",
+      "blake3": "3e7fc3332b719730a88688a1990620ec635ba55a27c02c9f63377f3b6cd71c39"
+    },
+    {
+      "path": "tests/prompts/tc9_09_source_tags.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 248,
+      "sha256": "4a8bbae92a7b69cda978a42412f8d87375ec943ddfed35747719748d296f5a48",
+      "blake3": "8c78aad08864da46f2a6a180a202369272d8d7b6a026abc1aaf92d6b47c519bf"
+    },
+    {
+      "path": "tests/prompts/tc9_10_flicker_sync.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 250,
+      "sha256": "fcff96c8a2008b7ad4024e12c025fb2937d7c75d10cf4759e253d5db9408cf4b",
+      "blake3": "1f7483034847b532dacaa0ed7fca4e22550860da90f15a0d0aaa684e89761225"
+    },
+    {
+      "path": "tests/prompts/tc9_11_architecture.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 219,
+      "sha256": "4df9496ecc97ec4cc38e33682d76eb3607168f5d46aafc7fc36408a76f011c69",
+      "blake3": "c86637587722ff3338c921cb9dca49e433ba4e210285d073934c59b4d1ffa93b"
+    },
+    {
+      "path": "tests/prompts/tc9_12_validation_error.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 281,
+      "sha256": "ee8cb5215fc0ad443075b93006e0c824666470277753078fc3db56a7a958bbcc",
+      "blake3": "9d8ecdad45e063ab014aa664665dd52218edf6271a33af248e6057a13f7a5dff"
+    },
+    {
+      "path": "tests/pytest.ini",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 35,
+      "sha256": "acb22644ba3234f55544d83737471e2317948ad5a0dc3d549725783eb7eef6b1",
+      "blake3": "fe775a82466bafd03fca5d3df1e0b74d73857e25e041e7686967cd76d6d06fc0"
+    },
+    {
+      "path": "tests/tc9_generate_and_check.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 98682,
+      "sha256": "8039cb153551c83405a641372990a1710af4d154b8a81beccd779fb0d2072970",
+      "blake3": "13bfcd8fda3425c6c0b65cb266cdd802c290ab0263d5a835538a8f014a65f42c"
+    },
+    {
+      "path": "tests/tc9_run_checks.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 36885,
+      "sha256": "281c7f79ea681acd3b09743023f21f515d0b97a999839b94da84344d09b1c347",
+      "blake3": "38e6f543ddf9a1279c9eeaa59406a582738de37f0e7bfb12b9d204c0999bc5e2"
+    },
+    {
+      "path": "tests/tc9_skill_trigger_spec.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 26603,
+      "sha256": "d390af174fb188543b4e57bfa5f030fbb0ec93184d6db3474b7808bb316cfcfb",
+      "blake3": "cff27b12fdb5889c3f403c9a6afdd4a6f3d480a4a1fa609d8509e767bcf3485d"
+    },
+    {
+      "path": "tests/test_content_quality.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4898,
+      "sha256": "1a10cdaa60c3ee02022aec3324e8a975c87d6ff44185b4fb1f9ba694d4d49b32",
+      "blake3": "8a41ab22c20524cff8a59da75f59d8259e40af1ddc04ce0562c3bd45de5f53db"
+    },
+    {
+      "path": "tests/test_hygiene.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2711,
+      "sha256": "5555f4ccce6b3a3af73eedf6305014806bea6c7487cd0dda9b8b8140b697fbf5",
+      "blake3": "15d5991bd677e604e386b3c00006b63b4ffc378cf1f36b05eae28a6260de5877"
+    },
+    {
+      "path": "tests/test_indexes.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3843,
+      "sha256": "c89c34edeb9bd0405ed793631a08a57267d37f9b9c8d2f37524aa647689a6499",
+      "blake3": "2ce298fbd506a0b0364f30061cc62b4ce727f7adf81ea92c6af583cbcc7fe4bd"
+    },
+    {
+      "path": "tests/test_metadata.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2814,
+      "sha256": "4f354e65e93c82e5fc484c8db4960e5e9019211b3f8c87898cbef51629689d22",
+      "blake3": "c1d85fea79b64125b72ba2a5a2e88b569e083880be11813cf9acce8c3c7c9645"
+    },
+    {
+      "path": "tests/test_references.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3470,
+      "sha256": "4d606dc3c9f169df5a9a9beb3084f21a71b47b99bff62ca8480291bec4480913",
+      "blake3": "5fd4d8128cb9a6e95c6b2b6ae8731494015ed1d4d488651c79fd24bb0ac48d2e"
+    },
+    {
+      "path": "tests/test_source_tags.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4132,
+      "sha256": "892a0739a8dc757cc49296f4d8285a24b55f57bdba297dd7b971e1d421bd9031",
+      "blake3": "c42f7a0cefdb19457a9d9aff76f318097b56ed374129b9ffff99c536e2433123"
+    },
+    {
+      "path": "tests/test_structure.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3680,
+      "sha256": "d377952b35e1fafe23cbdff2a1358d22e5fbd6860b5c22cd0892b922068d471f",
+      "blake3": "74014875a57247f17e5dbb7027506eaf075e4176a76ee6f20ed44c402f713656"
+    },
+    {
+      "path": "tests/test_templates.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6150,
+      "sha256": "3d38814179edc0b2b8d41e6fe08d429f39507600e5aed5aff3120d89c3b30608",
+      "blake3": "40f62f30ccc7fc8afd98f1a4ecc403a42499e99e99217e98d851e83af4948a09"
+    },
+    {
+      "path": "tests/test_v1_0_1_regression.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11606,
+      "sha256": "5b9cfeba90650994132a0717b5ac35a36559f4b723396e4ab0c9b9828ddb89c0",
+      "blake3": "b71430d1a9d2c3b401a4eb5280dd7f47ecd83ad24b8ce9a6c62e83111719cf53"
+    }
+  ]
+}

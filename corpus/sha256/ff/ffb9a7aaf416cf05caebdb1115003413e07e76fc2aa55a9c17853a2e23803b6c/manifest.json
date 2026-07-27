@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:ffb9a7aaf416cf05caebdb1115003413e07e76fc2aa55a9c17853a2e23803b6c",
+  "sha256": "ffb9a7aaf416cf05caebdb1115003413e07e76fc2aa55a9c17853a2e23803b6c",
+  "blake3": "72111950ed510edcf6b4c8eef40ff373bd92eca2b1061fd1bcda50ef5dbcb327",
+  "size_bytes": 127352,
+  "file_count": 12,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6843,
+      "sha256": "6d9ab4bc9fcd3aef74d59762f8cbade727d9b6899b48ac515cb584037121a0ee",
+      "blake3": "f38dae40404b30cc7fa6799aee9feeee1aa8aa878f67e8d88f4f606cdcb35d77"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 141,
+      "sha256": "6120f2d5929fa53cd52552ea243dd1bf658c3fb92c70eb8f08de5931f4e742e4",
+      "blake3": "c0b399e5f36be46a100e16f3cf8a8d721f065e119aa952efbc0e5218e3a902bb"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 275,
+      "sha256": "20e3d93a5900dcf2d68ddcfd047abdf4b45a222e9428686f50573fb8e7ca5d74",
+      "blake3": "ebeb2337e531307b8ee2fb069cffdf1fc6ff908bde38a5577f7c5739c7911d4f"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/report-template.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 31048,
+      "sha256": "92c5cdefc2e34e8f6ff8c7c814e361767ece67931b5bbb0210ea4122cee574a0",
+      "blake3": "afab121748905630aa0692b6ad48e3c1f9f95ad34e786bab3c6bfa9e895d0024"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/analysis-methodology.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4808,
+      "sha256": "9eb79c196263e9d941627278fb59b94b0a7652683392939c82f11b2981b007b4",
+      "blake3": "4ec4556c3e69dfb8f7e85aba735ab760db0f1f2dfce8426f8bd7385faeb42068"
+    },
+    {
+      "path": "references/analysis-schema.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4030,
+      "sha256": "eef4070c659b96673857d65ff2e58d902b0ab05a53a66478027386ee2d3a41f3",
+      "blake3": "26c326406612217e86843fc317191496bf5abc0e6cd59794008864121e4a4000"
+    },
+    {
+      "path": "references/reveyes-api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5187,
+      "sha256": "03092535e182c7fc9301d4c31a442d8ea2c6ea3d9251c76885cfdea9c6f51e6e",
+      "blake3": "2980dff075696261cb437522fecb17f364342851efa3ac248af37c6ab0864caf"
+    },
+    {
+      "path": "references/scenario-routing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3860,
+      "sha256": "5e5b40e147d8c91a91dda72f83a8bc8aa9a230b98be1494396bc2605446dd90b",
+      "blake3": "f0f1be88897054106f64fd0b65096bb1649445095eeb49ab95b341e5ec3cf062"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/report_renderer.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5532,
+      "sha256": "88eb93e5e74a999fb7dcc5cdf3f775d9e7c10ea878ac5496131a60d6a91baa22",
+      "blake3": "46032dc38789c1e48745cd9123cd139a672a698e684f538d25c277eac0d0b113"
+    },
+    {
+      "path": "scripts/reveyes_client.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9942,
+      "sha256": "f5fa5c9e88f50c40e37437556af7ece0a8d17cb7c3b706c0502eef8299966e20",
+      "blake3": "f04768c2292ac4ce991150ed6fb9bdb27d5f59f9e5d4609392b5de48405c655f"
+    },
+    {
+      "path": "scripts/review_pipeline.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 52532,
+      "sha256": "875042ad64e432f204021aecf340ce96f81d719d65f6f7a94142b5b7cf6f8d87",
+      "blake3": "3e1c8a22fd937f83939f6d64cc367a889380077c24cd942784b403f87bb5f56a"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3154,
+      "sha256": "0352efc56a716f71905229a132f0b60ea253731bfae4abd07d6b92eefd508ca1",
+      "blake3": "03b5f06d1a2e909090291ac3bd9b737c30a3c0714b08918b84ca837a6c899e47"
+    }
+  ]
+}

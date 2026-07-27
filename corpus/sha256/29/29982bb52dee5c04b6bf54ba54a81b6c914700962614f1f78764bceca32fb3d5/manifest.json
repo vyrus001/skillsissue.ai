@@ -1,0 +1,511 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:29982bb52dee5c04b6bf54ba54a81b6c914700962614f1f78764bceca32fb3d5",
+  "sha256": "29982bb52dee5c04b6bf54ba54a81b6c914700962614f1f78764bceca32fb3d5",
+  "blake3": "05616c2539203ed79ca72f90cf455859b9e8d77b07f8e3f64536361060be33c6",
+  "size_bytes": 317484,
+  "file_count": 55,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10217,
+      "sha256": "f87b160b6b5153919bbc4008cd3be4204d0426b2093a4af8411d15205513eec2",
+      "blake3": "40fcb78248abcdac4f9e5d0658d0b9ae310836dc1a770f1023e1c48562aa58c9"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 154,
+      "sha256": "9013b1b93a1c02f31f29753bf953f46656f5ad681346fca8075d5cd787fa89a4",
+      "blake3": "60b171f3d16ea47ed4cabb82ff550009cedd5cf1e3181a63854353f050b8872a"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/bss",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/bss/guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10741,
+      "sha256": "ff08c7f83f4b8ad1a05b098104da3b44f11664e90adf429ee916df67b970c3ce",
+      "blake3": "0e3eb0895a9f17f11f478f70d4fc42e5fbfaf3379b923fc4b1d366873abceeb5"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 205,
+      "sha256": "346118de356c59212cb5434a5aa2f3fda614d9196bc3d704bcd0c6932e3336c1",
+      "blake3": "7bab636c9fa68c92164854424dc87b92204d3b25fe5b8683c92246b1ff5eaa65"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/bms",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/bms/list_baremetal_flavor_detail_extends.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7081,
+      "sha256": "daf464d3c498dc157e71167741422e61f1d0f9a133c819d808e88ad077d4756d",
+      "blake3": "1c0fbde10401eedd402cc52f96c46acf144fab1e738abb1dff331e4bc313da70"
+    },
+    {
+      "path": "scripts/bss",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/bss/inquiry_dcs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4249,
+      "sha256": "1254fe9c2348b345c1f1fdec4bc78b60bb6bffa4fdf9c3680290a333c21ab0c3",
+      "blake3": "584f936f58504fcf1cdf2b3a4c6225dff4371b89f19d9746cfef1c07cc57130e"
+    },
+    {
+      "path": "scripts/bss/inquiry_elb.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6180,
+      "sha256": "86040ea27dd6eef9e42b59d44e9bde96b81eb4b141545bdf94c179f768e447e5",
+      "blake3": "e2577c45c1ca057f09c028852aa90a049d1c9e524c873187b429d746c402450d"
+    },
+    {
+      "path": "scripts/bss/inquiry_nat.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6566,
+      "sha256": "dcb4dd45aaefd6a02886b01d1bc22046bbd35c3d446552b4a8fdd6f2bda92344",
+      "blake3": "c2434a54b02b74c27adab386d666d57f92a91e947a0f32741e25b14b11816bce"
+    },
+    {
+      "path": "scripts/bss/list_cities.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2381,
+      "sha256": "4d26bb94fea7fb6200d8e009e8638ca7d629685869b873411880b649b5abc3d8",
+      "blake3": "ccfc2610733513d13e7a29ee3c9bc4c7a0383f3d6a17bbfaf00fccc43fe3cf4f"
+    },
+    {
+      "path": "scripts/bss/list_conversions.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2807,
+      "sha256": "ffe4ef779292dad04d275033929df467d0d51092ad659ca93ed17d83eb49a2e2",
+      "blake3": "53ba297606a6963299fb95722dea665178c350d56d695208d6d83f802be8d659"
+    },
+    {
+      "path": "scripts/bss/list_costs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5982,
+      "sha256": "22add634a227b7919b05d4c0af5d764bc1070e8e8e4ff3b2bc45856cd9086a38",
+      "blake3": "51bfe207e20295526ccad886ab9a30d7678bf7527b59aa3466c65e439d3f58c4"
+    },
+    {
+      "path": "scripts/bss/list_counties.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2467,
+      "sha256": "833522a8feab6ce9e09b53ba71c2c298334027f7ac93ea27c4baa193db626233",
+      "blake3": "732d1613e1c6f4428d7970cc5acf7c21056d62f15f5f1f078e77be56225359c5"
+    },
+    {
+      "path": "scripts/bss/list_customer_account_change_records.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5437,
+      "sha256": "5f9576dc1274d729ff0564494b19c3ba58c56163a1d2cb8c2c65441c0c9219bb",
+      "blake3": "502759638b9837e35633af777c4b6e4ba22444a8ef1ca367398e70c8174cc962"
+    },
+    {
+      "path": "scripts/bss/list_customer_bills_fee_records.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10351,
+      "sha256": "e5c716b8a64d64a1b3cc02002e7a0f22fd7e9dc91d849436a2af6791ef227213",
+      "blake3": "bcd2d87e3c28e10edaff09026f1601f76c653660535f2f0c336cc8f19aeda070"
+    },
+    {
+      "path": "scripts/bss/list_customer_bills_monthly_break_down.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10003,
+      "sha256": "fc7c190e695f48a7ace74caccb9d17efc0416f362030160f2317c42ac5b0ea6f",
+      "blake3": "ce59cfbea827b98479c1b6283877b021e1fe001e27da6ac21e26de7072158d1b"
+    },
+    {
+      "path": "scripts/bss/list_customer_coupon_change_records.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5140,
+      "sha256": "b649ecd52a0c157963274243afe228e0c031b39e27677d490958971ccdc7b120",
+      "blake3": "97adc4940ece1993dc9bffe0a3092c98035614f90ee4432376b14e1c23d92207"
+    },
+    {
+      "path": "scripts/bss/list_customer_orders.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6885,
+      "sha256": "b33ce66c951784c46678cd3f9f04b0ddfdb8074a660c1b4fccd2e98dba5d8e7c",
+      "blake3": "d406ee453d9090dd7c045f74ef1bdc0d3c83e9b6b696e5c1cee704af2824f042"
+    },
+    {
+      "path": "scripts/bss/list_customerself_resource_record_details.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10241,
+      "sha256": "f368c813810391f7f9299fbacd25c465e2581a8de108726f38c71a0fc7485a10",
+      "blake3": "bcd1fa1dc3aac1b719322e454b2bd92e5787b40a79fa03774033d8542030f3a8"
+    },
+    {
+      "path": "scripts/bss/list_customerself_resource_records.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9516,
+      "sha256": "98890c38509cbdae4d7f32d55945c23941d1b3adcb75883aa242fe0330d7e04b",
+      "blake3": "ee015ca043567f6a628bd5ccfecfacaf17439347e45e73bdce838b674494f7fe"
+    },
+    {
+      "path": "scripts/bss/list_enterprise_multi_account.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3168,
+      "sha256": "f52d13d7ab39ede74eb04d3a8c5d39a317ac15301ee44beefedef83e0efc054f",
+      "blake3": "7d75188cd2c8a02a0ff5eebb22f664707408665d38a68813a61395d8d119a1cc"
+    },
+    {
+      "path": "scripts/bss/list_enterprise_organizations.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2795,
+      "sha256": "aa7b7928bcfe1726fa7dcd85270231d72c4b9991524bbb89ff6f96e2b912f6d6",
+      "blake3": "e85c224bc3cef6da2a208a47b17262cc4136f2531a869fea6a98d7226658e5da"
+    },
+    {
+      "path": "scripts/bss/list_enterprise_sub_customers.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4044,
+      "sha256": "589031902e944144b0b5523133e34827b4e86896345a953f452ed8c35f629950",
+      "blake3": "45ee31947e5c02b8ccf0be160e622293100f87ae7929071cb34675b2e73accbe"
+    },
+    {
+      "path": "scripts/bss/list_free_resource_infos.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5800,
+      "sha256": "75eb9854c820ad9228b49130c7c2184441bc900e779efc67fdcd76e89c95e57c",
+      "blake3": "d849ffb433558a11e9648bdb866bab6ba68a887beb0d131711121922aa387927"
+    },
+    {
+      "path": "scripts/bss/list_free_resource_usages.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3185,
+      "sha256": "c00352b1ac6ac0746a8338c5776d3f2e0c4c993543f39a43b662e132870db803",
+      "blake3": "026025e1b7709e9fee82ffde220d25febdc5987e43013c2a50aee0050582cd01"
+    },
+    {
+      "path": "scripts/bss/list_free_resources_usage_records.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4954,
+      "sha256": "5a9fc81b7e48279457e7e3877f0560f4f44570adfff2776907803ad8a8bc06bb",
+      "blake3": "8c217c0ea23157b9d26b372d1c1ae4d214c4fc079daa69f1baad8a95d9dfd156"
+    },
+    {
+      "path": "scripts/bss/list_measure_units.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2199,
+      "sha256": "178f2ecd7657de41d805991054f785d17e48dd3a57f8238651c831695d517300",
+      "blake3": "a8371b87030c3a895e44774643dd3a47ef521701aad1b2e6f7a2f8af325611cd"
+    },
+    {
+      "path": "scripts/bss/list_multi_account_retrieve_coupons.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2916,
+      "sha256": "533c375c28c31b52aa1d1eea7faca7c69bc845d79155896ab5400314e48b80ae",
+      "blake3": "13589151aecf94e323126b4addbafc9be35496c7eea6768b2d1a0f4a3c819c7b"
+    },
+    {
+      "path": "scripts/bss/list_multi_account_transfer_coupons.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2624,
+      "sha256": "38a565407cb2b356d9ac2811a870e03436ec7490f6fafccecbc402968e7e409c",
+      "blake3": "a1e19840effeb4a11a04a9742a67ffb999066655b3689da7a910f3357ea9cca6"
+    },
+    {
+      "path": "scripts/bss/list_on_demand_resource_ratings.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19454,
+      "sha256": "53d90460fdcc9290c1e421c3a5a62f4f19ab535a5d8795adb7651c26854061bb",
+      "blake3": "98eab472f6d08bbeaeadd381f51f6bfc6b0a1e3f6a95d2fa618681db48e58248"
+    },
+    {
+      "path": "scripts/bss/list_pay_per_use_customer_resources.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6391,
+      "sha256": "595e637172e8ef7a8f135efaea8ae1ee924ed45a47ff6272f28055ceb8241757",
+      "blake3": "2d9db02c6b18d888b029456390cc7b6fd6b93b1765fb59708324fb7eb52eb662"
+    },
+    {
+      "path": "scripts/bss/list_provinces.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2372,
+      "sha256": "22693f217076fe21e40bd915aadb5157612c4d967b456d78072d698d98735f63",
+      "blake3": "4e09e51e69250b36328e2cb1136b84445d9245c5fa7ab83d94ad8573753d9f73"
+    },
+    {
+      "path": "scripts/bss/list_rate_on_period_detail.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24693,
+      "sha256": "c802c05f497a4a8620d4aa315f4bd0575acea6870a9f69aecd0dbda08fb3317e",
+      "blake3": "7ff074ed08423f1bfe56e120cde7372dbc00a1185f1bfb405623c03e36613afc"
+    },
+    {
+      "path": "scripts/bss/list_renew_rate_on_period.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4760,
+      "sha256": "3d677ed0100d2612e10b9d85e6a20226f7a0cce93f5e5cbca197b8e2107920fd",
+      "blake3": "7d1dec8270fe8f23ad623753cf8cc68f91d461efc7d8d9b81abdfa6c3559dd35"
+    },
+    {
+      "path": "scripts/bss/list_resource_types.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8719,
+      "sha256": "e53aff883ee718d5c651016151e31279e5cd7783ee02846622b91568801ef488",
+      "blake3": "9d2c97d0dea1afb96ac9cc9bad764215cf0eb08ff47d660a64e93b273e0b949a"
+    },
+    {
+      "path": "scripts/bss/list_resource_usage.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4498,
+      "sha256": "e8863b5911bf478c70ae72d40e9a400e8e470ead88f2df9edf0ef3b79672a4b0",
+      "blake3": "a0f49aac9642bece30cf5578c3f4f51ddace9c58bd0094eba598ebb48c604227"
+    },
+    {
+      "path": "scripts/bss/list_resource_usage_summary.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4046,
+      "sha256": "c7011fdd83fa4e6106fe2a18e95664c301c37de394af37c0e9cfce059863e8e6",
+      "blake3": "f81c5b3fd95aa20780356e7e6ea49075535c56a878e2c2816cf3a644ae553dd7"
+    },
+    {
+      "path": "scripts/bss/list_service_resources.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3179,
+      "sha256": "09795c79d24bacb110c8d529b8b10c4a5413d6b3a223e599e1a3b7989d580e25",
+      "blake3": "60e15ee3281d56cedba7c3407314a890209a351bdebc808746b1568df5b23c85"
+    },
+    {
+      "path": "scripts/bss/list_service_types.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3472,
+      "sha256": "7b9cac751aa16c987b6167394035dad0c18e0aaed2251c850053f5fd3692e976",
+      "blake3": "cb946d6134c08375ba70e79737a788f1d73c51e52245be6894cfddbc6c1f9d84"
+    },
+    {
+      "path": "scripts/bss/list_stored_value_cards.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2999,
+      "sha256": "93d0c161c3bd6504b0ae49a7cc1bd60458c22e7aea4cc9b9aa972cfa8f8013b1",
+      "blake3": "61c6feb4a32aa741b0e55784877d8c9fe48388be2a7b6f532e7272c78877fd13"
+    },
+    {
+      "path": "scripts/bss/list_usage_types.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3178,
+      "sha256": "d2793b6f9b15a99f287ca020afbf616b4c93b837a9a1cdffdf2b00b621a3bea8",
+      "blake3": "b1f438a45da453f83cc4578ce897481179186ecadf25e926f4e3673417529070"
+    },
+    {
+      "path": "scripts/bss/show_customer_account_balances.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3283,
+      "sha256": "ef927e07ae982eb58acfbd475e3f2ee83c4500da4b8538d1e086a8273400e6d3",
+      "blake3": "0feb8f07600bc48db9f53710ff4e16d6b9f81fcef601bd7e1d126de84b85c6dc"
+    },
+    {
+      "path": "scripts/bss/show_customer_monthly_sum.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7389,
+      "sha256": "6248deedf93ae6a34cafbbc6d8bb5c3c34e8c474095ffb4cac3aa7f26505cfeb",
+      "blake3": "4347aa16c513b48333d9a80fd6a7070c0d220bdf887a2b8b279c2b026e9d0e86"
+    },
+    {
+      "path": "scripts/bss/show_customer_order_details.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11692,
+      "sha256": "63c3cf88095ba5f68f07ef251a680f4d10c3e8c97794875885840e9f6b8a0a65",
+      "blake3": "8ebbf3ea241f920db56c25f85091ce8b57b4126a4080b9ac8e83602f8924fdfa"
+    },
+    {
+      "path": "scripts/bss/show_multi_account_transfer_amount.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2879,
+      "sha256": "dec6ecd9f446b023a0b16a4c9f6a40e091accc48dc1d880a9892a21b773ddde6",
+      "blake3": "959dbf493c25b71ed0998e6f4caf793b6787270517b4c6f476e475c14487ca1e"
+    },
+    {
+      "path": "scripts/bss/show_refund_order_details.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3420,
+      "sha256": "373c79d923698e2ec7bb9a6038a7e40b7221435af0e4fbcf3972ee259505f34e",
+      "blake3": "7a22a5a579f002281b9806f8ceff2269fb61049cdc9e60e876f4e094ac26c42b"
+    },
+    {
+      "path": "scripts/check_env.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2684,
+      "sha256": "f25ef7524670d4c9cedb8f765a612a79d5d14dc65b0e8b25155dc27daaa05cd5",
+      "blake3": "100319e42a029a07650f06c0dfa5d10f031a8331c9784b8e3ee9f403b4ef96b5"
+    },
+    {
+      "path": "scripts/check_env.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2586,
+      "sha256": "e9062d2bc6a1269bf3d6ffc742f12efb696ab7ee31058029efc8bd7bb44f827a",
+      "blake3": "f85417120c2eeb8df9420845fdedb71fff0348a1f014ea95e1e465d3c89b938a"
+    },
+    {
+      "path": "scripts/config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2075,
+      "sha256": "15fd1af7178c118f02f8bd7386233cfe8e810416ec2be40287a0e1cfebaf69e5",
+      "blake3": "0a7e52922e22e0ed37432d10ac70b0758554d76f15c64d9c762e1ccedac3a2f1"
+    },
+    {
+      "path": "scripts/ecs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/ecs/list_flavors.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9467,
+      "sha256": "5b927dc7f6ece8b88e26c56737f05ed826f59c52126e70322d6c45eae24c3606",
+      "blake3": "24d9849530925d63e9cdddcc1c101a2812484175c305fed79e441e9d27d3d38d"
+    },
+    {
+      "path": "scripts/elb",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/elb/list_flavors.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4603,
+      "sha256": "0edefa589be56a3fd6ad0ec1eca70f58319b936eff7f3947ea50bd4c76506740",
+      "blake3": "217e5d95f429850bfe4ba639dff39c4cc3aed8a75e3ea6cde7780db739f9deaf"
+    },
+    {
+      "path": "scripts/ensure_env.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17910,
+      "sha256": "1fe9cfb7bc1d34ac5435a62d8020bccfcc7784817866bcd3c0f9ff1c5d3218c2",
+      "blake3": "d0e235c87cde18c81f3bcadbfb59c2ee31243f8621a09e29517a81a6c7ab09be"
+    },
+    {
+      "path": "scripts/iam",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/iam/get_project_id.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1768,
+      "sha256": "cc069acf9928e50ea6f626a395c4650dfbccae8bcd438e550e3cae27813e9c71",
+      "blake3": "e496167d283ce140e62e3a4e9d132b1b03d4de7500af86dfe490c1b5cfb3f415"
+    },
+    {
+      "path": "scripts/nat",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/nat/list_specs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6499,
+      "sha256": "46d6840b1162bdb4d0f8bf1fdb5f790ee1e043f7ecc6a9b6dc153ab76f9da10b",
+      "blake3": "516197b222d356c535c732f61c3712ee5e1adc68d99993e411073366d14cb86e"
+    },
+    {
+      "path": "scripts/sfs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/sfs/list_share_types.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2454,
+      "sha256": "ac7706c82bb947c677bd5d42a89934a68194560b2fb0a81554b89af5cb4a9c6a",
+      "blake3": "676533a016bdc7d6881c31847688b7ee9a3c03fea0afb363fe1fda5505897bc0"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2726,
+      "sha256": "44cac1bb8c4a3d99339d9968e08fdba4b0f961b6457f4e7b062dcacc8b605474",
+      "blake3": "282db7e603ee68539fb05006c4bc851badc3787dddc49e2ed8667b24f5b5b67e"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:23334b0a315df840a13e1998d18c7d5ecf1e286ebcac091dd4db749a10c77bd0",
+  "sha256": "23334b0a315df840a13e1998d18c7d5ecf1e286ebcac091dd4db749a10c77bd0",
+  "blake3": "64b053601f9c2a64d2df3bef1b23eb0a00a3731051a98f5683a28a188e04a63a",
+  "size_bytes": 86171,
+  "file_count": 15,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17600,
+      "sha256": "3440a7ad352492ac992057f1cde2fd3ba1baa14f424650ac9c15160b22c7b9f5",
+      "blake3": "110f5a8a3fec22b37ad30376809099a0bca57d7594950b8f355f3d28a975b30a"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 136,
+      "sha256": "0bddc90ade069ce252934bb5b1110f46f499250970c9fab4d89b2f1fb4d76e3e",
+      "blake3": "8f88e7589824600077542eead889dc4585d84a8454eb1bb77d8cc4cc5a85ed4e"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 201,
+      "sha256": "598b7319691f6bb29e783d34f845f1e811e5e3c599ec3fedd7642a19dd72d187",
+      "blake3": "14664279f7afc913813dfdeee6ca91e64422be7f2a5c1315fb36665e5e54dffa"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/SETUP-CHECKLIST.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3048,
+      "sha256": "62213a0d67cdce8bda1f7e7ac88428dbc60e81c52839e7980eb3e71383baf545",
+      "blake3": "4fb06a64e669c8ba82f53557e8ac7e59a01e74870cc16c40147a44a2273ea547"
+    },
+    {
+      "path": "references/TROUBLESHOOTING.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13473,
+      "sha256": "9a9dadd3f49ede09a5abda49e5471f98e72da169aae912665abfba900a424f31",
+      "blake3": "4600d7242934ac0e5edc1e7f2eed23d821a21e43d5b0787cae3d55c89a1daa98"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/_common.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13098,
+      "sha256": "8bd820922ee612429259978b1d68cf0b176a352a56cdb3a7f585916daf017caf",
+      "blake3": "36eb380db92b43b73cd17000c9a1a5a8249de5c5933aeb49f6298f50dec7aeb7"
+    },
+    {
+      "path": "scripts/pexo-asset-get.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2403,
+      "sha256": "9735f1e443aa3e283f47ce886000862156a71e2e9f8da20a6c9121583ff29518",
+      "blake3": "45dd923d644a39a76e7ac0b8baf05122a5dc5688f2787686c748d85d95e18cab"
+    },
+    {
+      "path": "scripts/pexo-billing-confirm.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2949,
+      "sha256": "16820138d78641983238bf7ef0322fae9832a31f9442c0542c175c6795e8dda2",
+      "blake3": "1119d736e324a8d6d2281db5b26aca8579ba4d66349651be70ad7c18f3f8d743"
+    },
+    {
+      "path": "scripts/pexo-chat.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5538,
+      "sha256": "9dca2292c58d562beab77208e4d41d7075da06924d288bd067fc1a60a9c901f4",
+      "blake3": "6b6166f79f0f14e9ed7096ffe30f823d8efa6101c5d83a2a06591e1f4bd4994c"
+    },
+    {
+      "path": "scripts/pexo-doctor.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6409,
+      "sha256": "9d1e3fe3b661ac2b9f55a8615897fc9f48599436adb974e9e11fcf65326b267e",
+      "blake3": "1c320e48b7c513cf5761690d0df26be61acb3649e41ed1de26e2cfd325e9a254"
+    },
+    {
+      "path": "scripts/pexo-project-create.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1679,
+      "sha256": "ab27f89c721d80f34d68a26874bd81da8ad113874887e17a801fee1b5227d749",
+      "blake3": "1a97ff91ee2aeb9e964a6dfbc9052df03039e0c13c791ebc9698751ea7c48755"
+    },
+    {
+      "path": "scripts/pexo-project-get.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11750,
+      "sha256": "697b080c4e79dcb871b1bec9157fa617a056143a46ada4707b65424933ef28d0",
+      "blake3": "5ef46bbd4ae9c63461ba472e0344ad8cdf3f8acd1267a8cb4e10394181f3eacd"
+    },
+    {
+      "path": "scripts/pexo-project-list.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1693,
+      "sha256": "e9011a454abf1ee1ef12763aef9353afc8970fe505654cc602e6718fb11ada37",
+      "blake3": "e205e9cb20357ede51f97245388eb2a63a4390a1a8ae76d134ce5111ac6f9713"
+    },
+    {
+      "path": "scripts/pexo-upload.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3209,
+      "sha256": "8c032eec08ebe5fa82f6fba08bbd952ee62730d338d5bd355144e64bded211ee",
+      "blake3": "2785d764d646f5871c4cec92425582648715155c5be693dc8537e60cf94fb72a"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2985,
+      "sha256": "2438ce67aa62e36ee94e53f18e37fa060e4d3a59d5c328aa4283e81cff77f41e",
+      "blake3": "ab64ae123ece8eb9af8ad91878ba4995aa437088c3c28891270577ee06b9e568"
+    }
+  ]
+}

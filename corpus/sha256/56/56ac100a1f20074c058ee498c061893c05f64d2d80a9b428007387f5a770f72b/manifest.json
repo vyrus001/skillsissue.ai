@@ -1,0 +1,713 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:56ac100a1f20074c058ee498c061893c05f64d2d80a9b428007387f5a770f72b",
+  "sha256": "56ac100a1f20074c058ee498c061893c05f64d2d80a9b428007387f5a770f72b",
+  "blake3": "8b0c420e4af5e1ed77916811a4930ed6de2bd7748d7b48d06316d57b8283a7a1",
+  "size_bytes": 2109611,
+  "file_count": 84,
+  "entries": [
+    {
+      "path": ".skill-lossless-allow.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3174,
+      "sha256": "469c7c5d2897305ed4207ee10de0e844b511430c687181323c4e4402624b54ea",
+      "blake3": "40b8347a906063179e87c67edd65c6f72040cfe22402eb9a8818a1e236804bd2"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 155019,
+      "sha256": "8b7fb0dc3110f03df5e8846b24c7bba205f9c5dfa02b75751b119408eb25822f",
+      "blake3": "a3156f36295002e0c5967b492b31be9ac7319b7587446bbb4846051beab20138"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 130,
+      "sha256": "de10ccacaa345e703c49b996777473394e9c8588967bfd1998f4123f422d9d19",
+      "blake3": "1c14b675bad493711ec9ab4a7c6d8f67e3625f03ce32eec0f1780f9c0ed61ba5"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/arbiter.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11979,
+      "sha256": "8ea63be854d4e7891946e74e1c1bbc9c615690273baad5fa7fb1e42fb78ca908",
+      "blake3": "9ceb12b2306990358321520a59f500161e6b4b112343af9cd7b5a06eeaf750fa"
+    },
+    {
+      "path": "agents/asset-prep.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6460,
+      "sha256": "7b06aeda78ebfbfbf2a5f8a700c297a4096a09a156a10e4d942aa6283cfb48b4",
+      "blake3": "0d26d2384d165893497c44680f6024340095cc13ab012ebc951d73940ec543df"
+    },
+    {
+      "path": "agents/content-planner.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 59156,
+      "sha256": "f080facdd572bc72513521010ca687115d61a9ef75a70207a5b60e9dcfc9c55d",
+      "blake3": "3af9758ca8b34e500f16012a58635b0d211ffde24a110c29bbcac9071737e9e8"
+    },
+    {
+      "path": "agents/critic.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 93467,
+      "sha256": "e65f2bcb98c697068cb6d10f99b6f5a23bd41a4bf361a4def96d70c0fe2f3279",
+      "blake3": "77f0ce181c99a1d455598204acc3d8e01db0e0c1ddf93a07b3ab901d86266679"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 301,
+      "sha256": "13d0cb228d33ff582c05bedbb0370f3d4489d3ec465a57353d2f42c3ff43f457",
+      "blake3": "e088f013e70982196c18f3c01ce897916b2afc9827b796700b6fdc80689a243e"
+    },
+    {
+      "path": "agents/slide-design.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 77846,
+      "sha256": "bde2665484dbb33d629f7d816ec0ac3015e28a78e9d75894ad6b9dcb93be0bdb",
+      "blake3": "da5922cf27ca1bb8b3fa3f3efad0b5b2e8f8d5ca96901cd97ab341b755e9169b"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/animation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23185,
+      "sha256": "9d75570d090fa75543e185cb43680e5c1c4f576a5c40d9a10e62f4ff218ee57e",
+      "blake3": "21922781e8ed7f629b9fa443768154cb657d863a7922670557a8eee587c7e490"
+    },
+    {
+      "path": "references/asset-production.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24987,
+      "sha256": "6ca1d4e11ff8e5bd134369f4584b45b6569fc1dfd17186040f6f4c82b97de1ae",
+      "blake3": "20335addf89e9d46ba4da86fe4c3954a9abd402703db07967b75044cf33c93ae"
+    },
+    {
+      "path": "references/canvas-formats.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8468,
+      "sha256": "b43b5309132ebfe51b285e98574e77cbb2593db5cfd226abed0e1176cf2f7762",
+      "blake3": "edbbd657d6ccdaa025abd95a6226f4d1cc50bafb48e0a99c9b51471ddad49bf3"
+    },
+    {
+      "path": "references/checkpoint-convention.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10116,
+      "sha256": "1d5e532db4a2979aa3c978e1c93425e5f79d8a4eb2196001fac9b72d372d17d5",
+      "blake3": "ed87d5b8672e45a4ca689ed846c9958e4bb40b7d4347a4d21932c49591de75da"
+    },
+    {
+      "path": "references/collaborative-mode.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18613,
+      "sha256": "55889c71f3498821eecbeec5fe777e2e6f37a0f6464abf16f27e3d3d723275db",
+      "blake3": "371c9bc1264b8f24d301896bf4e38295dffd4b541ad9a23a18d1bef196ef3688"
+    },
+    {
+      "path": "references/content-plan-spec.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6879,
+      "sha256": "736b36519138b9b6cc740460cbd79b6befef171973ad2b6c89e224863cb4d76a",
+      "blake3": "0ca1cc6fbf5ed29c85e09da195d3969a85396c2dc8a0d05ff7b6b5e9ec0845a5"
+    },
+    {
+      "path": "references/critic-panel.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19014,
+      "sha256": "0e4609bfeb71d59d1d0f4af932899a12b33c2e4ff36284a8a0fe2cc8386b77f7",
+      "blake3": "6803e8ab85ab0fd85c8736f37ebc5de33fd5686fd25065d2df9624aa0d2be3bb"
+    },
+    {
+      "path": "references/data-viz.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22124,
+      "sha256": "b339107f526c506369b11a9834ab7fa8fc0769486ad67a80b1c419d900032e7c",
+      "blake3": "cbdcf6a488a05cfde01532c93f59c1781f1b30058131c37460b4696a702113b9"
+    },
+    {
+      "path": "references/deck-setup.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6098,
+      "sha256": "aad206cdcb5daf6b92c0f6837cb291df2acd63908265c502eb7d44d8c24d6656",
+      "blake3": "e1920071c775353b8b2d562fff7d47a38f92b727c83d249911782278db6e7f23"
+    },
+    {
+      "path": "references/design-by-purpose.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22628,
+      "sha256": "583fc07d24d21a9f4ed3aee6a596b4c7c85039c5ad23c2ab9480838154be3663",
+      "blake3": "fef65a7f86c9a16b13d24231341d7f09a5521effac112377a6a3eb529a0874c3"
+    },
+    {
+      "path": "references/design-gallery.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19695,
+      "sha256": "2e768c97ada8f3b6749a893a1fb3d425d93f15789c83555102d5b2c9a5f9a7dd",
+      "blake3": "4bf025383d022310f8f2fc318c6e9cdaae06a42717658eca5fc4860119317774"
+    },
+    {
+      "path": "references/design-intelligence-addendum.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32247,
+      "sha256": "60912f5062cc475515f27ec70e151bc24d479041f16115316ccebbafb796f015",
+      "blake3": "15b17d5762b78414bb4feb6ae048968f8412421909a9682ea9540472840fa8e4"
+    },
+    {
+      "path": "references/design-principles.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 76838,
+      "sha256": "cd261fb77e37077852ff6ef0b2044b35e5497304f26f52387bbd73b44164492c",
+      "blake3": "8236309361d371086c9af4fcfeee910902ab73908bff4282dfd0d0fdd399b786"
+    },
+    {
+      "path": "references/east-asian-aesthetic.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5758,
+      "sha256": "00b0e711ffa07b000bd16bb260bb8251e9ec201eda958f142186af168e65c5fb",
+      "blake3": "f4ca6468a8f0cbbb77b3fa7c9e7912308bd0e342186d77f1c6efb057c80b23ed"
+    },
+    {
+      "path": "references/examples",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/examples/build_example_generic.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7488,
+      "sha256": "d56e874b7afba8962b7f9739764d81798c9db1b9d2e978ae6ef389bde85f1573",
+      "blake3": "c6fb93c8bb350df8fd0c361e8b1b452f633e015a6af78440a23e35de315c7773"
+    },
+    {
+      "path": "references/examples/section_example.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3351,
+      "sha256": "00b41fdd4e047873dd263842565dce7265862e2a69f4712fd215bc093a19baa7",
+      "blake3": "0de06b42d0097b9f6e3a45002e772f68594017cfc0a133e31bae9283fca6b5e5"
+    },
+    {
+      "path": "references/examples/style_example.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2231,
+      "sha256": "2ae05f0b0aff6868296c5324715a2e75df9fa1ef11e3bc89a117bd1bf0cc5807",
+      "blake3": "cb334af7fd3e65ec0eff771edc7ee8c19200cc8a26e35c84f7abc9683f5c8106"
+    },
+    {
+      "path": "references/file-inventory.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12270,
+      "sha256": "8f02ad37faea3a5d45e591b2f8b52756311c87b82ffaafbe94ea6863a2aff4af",
+      "blake3": "34e100edd01a64f303e5ddbc5a69b3819e3433009b4b64a6c4e4e8b8a5d2ec43"
+    },
+    {
+      "path": "references/font-guidance.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6912,
+      "sha256": "5ae19ee65f3fba383fbe1a131f0308282393dd4e63ad07c06d35e5cbbddc1810",
+      "blake3": "bb5845099bb0488ca246bf0ca942b234dd96593305e26b7b2d273928282a9171"
+    },
+    {
+      "path": "references/form-selection.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20560,
+      "sha256": "8935f261e1485fe27ee4f36823b2879c06ea8a6800dc17e1b09269dc162fe6ca",
+      "blake3": "f11341e09e2b361133177f869aee1aef71864efc52823388da40fd3bd9baa3c7"
+    },
+    {
+      "path": "references/generated-template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 50714,
+      "sha256": "d3debeff42dd3421976972e3498296df6054a0f89d47fe435d46bdc53b91d913",
+      "blake3": "4478d4980a7f3011b1361b3e903c6e93c1f295be20f7cf924654ffe21f4e9a2e"
+    },
+    {
+      "path": "references/handoff-and-iteration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12955,
+      "sha256": "36d565f88a853dca2225ebd5ca139fea010a28f57d509f813dfea3ee395571d5",
+      "blake3": "5bbcb8d7ae984eecb24e10125328bc33f2e6c94e203435e6bd3aa0562cf0316d"
+    },
+    {
+      "path": "references/handoff-checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6637,
+      "sha256": "4a8aa9656e11338ae3233d537dbb8cf6acd204461e737d8b71345ba8793bc8a5",
+      "blake3": "8e4f8442e6d3908425aebeb6fffe233783b8e68c17c16dbeb01f62941feffdf7"
+    },
+    {
+      "path": "references/icons.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24768,
+      "sha256": "1aca74312289fa22c0e1a8ab0032d0302ce9771fe8c6046ddcdb1a9f6e10648a",
+      "blake3": "c4e5c558ccc43a3d11133aafb41f1453d270ab8475efd9047944d30f461cf075"
+    },
+    {
+      "path": "references/image-generation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 33728,
+      "sha256": "de5136bc066c655ac0153c702267369d844fce9fc372009f04dbaa817e991503",
+      "blake3": "74a1b86cf27d9ae5888c532b0aa5015535df5b526fbe25346d5974160f8082e3"
+    },
+    {
+      "path": "references/interview-protocol.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 41035,
+      "sha256": "1b871a09387f13dff05a4b8093890a57a7c573dddc7e271e3d2840ac97143b95",
+      "blake3": "6b738e8ce57242ed941dcdb0128657e52101ffa05249b81e0c8a93164a7666a2"
+    },
+    {
+      "path": "references/large-deck-orchestration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10226,
+      "sha256": "e2a9e5c7f9efd13e378a88e0c7e2fb0d60a2d79ad5e0c03e04d053c33e98401c",
+      "blake3": "0f20b941bb516bedb9d21c604755463110af9f533382b8e717132f2f1dcebe2d"
+    },
+    {
+      "path": "references/multilingual.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18106,
+      "sha256": "afc86250d152e4cd75c919b96fc64105ba7b65c2d1b07384e532247eee240d33",
+      "blake3": "a649e43260d7089c7cbac00767c9c781c1232da5f5f227a9427aee44ba825804"
+    },
+    {
+      "path": "references/redesign-existing-deck.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10097,
+      "sha256": "f0f16b228bf801a4f599ec945e06e63c6c8aa66b839ac22d0a761850762d65cf",
+      "blake3": "9ca501272b58244ba5cace0df7d2fde1273635cd2d4d3b7f1ccb8fcba8563acd"
+    },
+    {
+      "path": "references/review-rubrics.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 66329,
+      "sha256": "727349b7c2d11a8df93ce1b0fded16b122c2b6d35637d8c531c222635b73ab42",
+      "blake3": "ea49ae3abe8c0c4a3c1d836fed372975d4f9a9d26eb220b4490062f6701b836a"
+    },
+    {
+      "path": "references/schematic-diagrams.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21754,
+      "sha256": "df94f90c3389c967a4547a664857a11d5d6895c8d191bb330923d134377b969f",
+      "blake3": "a03d185d8fde95411ec1a8bde04bb27ef9900a3f7372217efbb43b5bccc6ab1a"
+    },
+    {
+      "path": "references/semantic-color-contract.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4404,
+      "sha256": "f235201abb0f383b1dd255c78d7d7965129bbc8f4e4bbc9c7e394d4b17f3158c",
+      "blake3": "8cc1a1ed115c1cd53399afe9ef794565ca3d702e9e0e99062ba30ce24e1307c2"
+    },
+    {
+      "path": "references/style-analysis.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6120,
+      "sha256": "5babb158f0cb71a9e6d84decaba0a34d72c33f8f0162dcbdaa1c8d71c8c72877",
+      "blake3": "79b509be28ef13048fda587ce92f07038dd8bff47d6ad79fdc7a181a52265acb"
+    },
+    {
+      "path": "references/troubleshooting-faq.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 26341,
+      "sha256": "dade579e05d764b621e4f508f50741a73a4a49afb12111fe82555018ee594016",
+      "blake3": "d8f20e5cb48b55d600c4bd9f9098148554ae6b9f94c6f7275e6b260d8d9225e3"
+    },
+    {
+      "path": "references/user-taste.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9834,
+      "sha256": "b04cec99530acce5bfa9ced12754d2e8011d18766c50bc49142c6ac26c2fcc1e",
+      "blake3": "624b5e95a899fb29964468034f4113f51a4f722b945eaa2843bcabbd6c772a9a"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 609,
+      "sha256": "63c3f7207e24899af65c5a3dcff1eaff8b148b7ee7d7fa66fcc4aa2be9a776ad",
+      "blake3": "7ca264c657d985c1557bb7a98fc648eed637a47d6392cbe3e2611e16c6ee24d0"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/anim.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7293,
+      "sha256": "15ceea4a4c12e5ad2fdb510a50aded95112ec4e81e541a501d1a486f7b530401",
+      "blake3": "b08fbbf4584eae48a1a02c356caacbdf7b85f12fc3803da7c4f5ab695fe0b515"
+    },
+    {
+      "path": "scripts/archetypes.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5475,
+      "sha256": "be904643732925e876693967328d70509c375b9973d19defe9762ea514a204c7",
+      "blake3": "bdb4b6e9e8bc005759502a435ec69352b71fda534a0f8c668b9cc0a53bdff27b"
+    },
+    {
+      "path": "scripts/archetypes_html.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 49203,
+      "sha256": "ef729ae3cc650c8c9fa4577317a234cd54127c159854f69d7e8f128c0b03e305",
+      "blake3": "a6f7dc47b9bc2e6f98fdd613d5f5b6b61cc150cd295bfac0faf0547d2385cb9c"
+    },
+    {
+      "path": "scripts/assemble.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4951,
+      "sha256": "e95c1d8c8684c07a683b5328a194335ff1d9c045eb56948d8f63aabb1ba4940e",
+      "blake3": "a9b92c0374dade40233f31b141f0e769423b5321a44ba5a1cb4f5dfa44aaf468"
+    },
+    {
+      "path": "scripts/check_env.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4150,
+      "sha256": "e060405ea1fcc5c2184e8dcdca7ad4ea07f7490008ca50e6e516c1241c472a2b",
+      "blake3": "fa79c873d091c0223ac7c585c22f52c01b5ff92c2c68ec260f89300d4a5adb77"
+    },
+    {
+      "path": "scripts/check_env.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 450,
+      "sha256": "1700947d8334503c7f2081dca3a5f77153965f807ea063bbde57659ff909a6b3",
+      "blake3": "9d01a9fb7424efe358ab7ea9fc1228c743f3479e64d0e9cd03ec574fec3c414c"
+    },
+    {
+      "path": "scripts/check_skill_lossless.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10206,
+      "sha256": "aec3ca9ff7bc5f4375c9c5850cde47d0994154abcc3f59b921dba2b722a7a3a7",
+      "blake3": "3279b4d38200a9cafe7655e92a2760939f84d5ebbcbc9e9bcea0cd8d768d3923"
+    },
+    {
+      "path": "scripts/component_audit.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18204,
+      "sha256": "ae1977193c93865ccea9076e2530fdac630d2c726392e21f0d2fa6389a71d8c3",
+      "blake3": "addf86ab62659b4d91f16c004e9f40981d51ff88f20dfe616cc99965ecd5d16c"
+    },
+    {
+      "path": "scripts/contact_sheet.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4281,
+      "sha256": "6c5e7ed126340b1c28308e4d7a15ff2fdde2d3f2dff211b60438a544d1dbfe31",
+      "blake3": "e527d2f52039df6e668cdb66325809ccec43a0638e11005225171f932ff2ab45"
+    },
+    {
+      "path": "scripts/crop_helper.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12685,
+      "sha256": "169e682125cd462229f80f18655be0f04f2727b22a0581bf900b7c27a9ca2dda",
+      "blake3": "6056418d84bcf2f56d5268ce26dfc40709e9dbcbaa605560a3c788b3031f8d39"
+    },
+    {
+      "path": "scripts/deckkit.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 378029,
+      "sha256": "f2d224043cddf618d10a4ffdb02ab3a3c7d3156b86e721fadfadc23a99f8a149",
+      "blake3": "149cc31c293f534d1a0a17199e3a053ce25c322803f40f90ab6e59dc0e2c997b"
+    },
+    {
+      "path": "scripts/designed_charts.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21955,
+      "sha256": "b858d15c13dcc23998bfac4fb605d3acdb218e4f057f68ae29f0171c533d3d3e",
+      "blake3": "eadcf8b77b438aafc99242a67ec545f68d6ac935e4635021c0609689906975e5"
+    },
+    {
+      "path": "scripts/directions_diversity.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7839,
+      "sha256": "882bf35471d2b0fe5a01c7bd9230a8ababebbe84b093da97efedeab5c5368f00",
+      "blake3": "a75e25539cbfd9c6d7f40e2b31821777434ad929b41ba9d824e47ac03d3e96d2"
+    },
+    {
+      "path": "scripts/export_notes.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1636,
+      "sha256": "b704bac10e658f09001cc22d28b6156c8b8d26bc275982437c632d9f3f2cae15",
+      "blake3": "ff6acae8fa78ab566e41b4cce83ab731f5f674315dce73459ccd39c8bd18edb5"
+    },
+    {
+      "path": "scripts/extract_deck.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3549,
+      "sha256": "a20b91780acf1f01a0cd0f3ebdfde15b49c99fbeb0f5a691cf9430abb3fb85c2",
+      "blake3": "272ff416221bb7ceb3afbde212d4ed2b53a5175cb74036b486b4e71b6b550ee9"
+    },
+    {
+      "path": "scripts/extract_pdf.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 43444,
+      "sha256": "cdb72be1709de1d8e14edfc918c597922aa77a3f1fc78853511b7cc9413e3edd",
+      "blake3": "206ee15251059893f4ca7f17755100e4b5bd504460ca546d6b70fa5a092c2f11"
+    },
+    {
+      "path": "scripts/formats.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8325,
+      "sha256": "4eec1190c09faf4a907e9143ccbe076e2d9843104567a177b988d34817dbb680",
+      "blake3": "3b2a274b7cfbb8df527c9a49d151df444c878bb4955525b3077e917d3779196b"
+    },
+    {
+      "path": "scripts/generate_images_codex.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9613,
+      "sha256": "8e6dece4aa533de982af77b9078bc9c5ae96c3f1d472dcf1449018a9f8e30bd7",
+      "blake3": "70be3460bd3ade259292d5e369fe27ce7afa119b746babc7fbdd66d3af0531dd"
+    },
+    {
+      "path": "scripts/generate_images_openai.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8570,
+      "sha256": "b6e5375e5a0c3de7057635469f6ab610e43b4c4fc160c4bb8085df978799291c",
+      "blake3": "d3b93d9f6ccd032afb4a0591f8d72d702aed902af1556550ebb3fba931e8f0ca"
+    },
+    {
+      "path": "scripts/icons.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20186,
+      "sha256": "c7852f8985da8866ed8fbef9d5c0e5b1c57c1f851944ec276a16b34d82c3f0f7",
+      "blake3": "1eb8f0fff3e7ec3336bf1f7d207fe8d6264f475e45d8071499de128a46ab2242"
+    },
+    {
+      "path": "scripts/image_fx.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5683,
+      "sha256": "c569a2c22c4e69a0e0efc3fd038d514f623fb5214d9f9a7dc510c22a847d3451",
+      "blake3": "4416db7f62c865b89a09240834091fbc0b3b48f85e6870945799fa328c95be8e"
+    },
+    {
+      "path": "scripts/image_prompts.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5798,
+      "sha256": "3dcc9c7af1d5306831f0285d35b5fc4b4ecb95bd06fb789bec4b91f7112782bb",
+      "blake3": "606d1fa1f94c4cf042b92261989b66c80e89e7d32fcfa3784e1201063e0cb3ed"
+    },
+    {
+      "path": "scripts/ingest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17565,
+      "sha256": "0517313606d0a4cec82831844681d24a94d677a51b048856e19fd73cc7e934c1",
+      "blake3": "98935727704627f02dbef895c17a4508a2d5ffcdb44305602d5f49201641da72"
+    },
+    {
+      "path": "scripts/inspect_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2333,
+      "sha256": "6828c7846af956d70d67f79500a8644751c378e2fe65e51187c738946a29401e",
+      "blake3": "2613cf16d42755724df7952bc71f89572dc6bc3e563ca30b830cf30b87ea2e7a"
+    },
+    {
+      "path": "scripts/install_skill.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4085,
+      "sha256": "a4dfc37ae1cc92c648bad98bd71a6bf544e610c1309b1747340ec182122d8ddc",
+      "blake3": "875f91a26b82c7949aece7e6d92a51c6edd71996f6cbdc071f09cf41ce58b940"
+    },
+    {
+      "path": "scripts/lint_deck.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 118773,
+      "sha256": "026110f56689a667771d772fd19d638385429ad258c15bcb4568d524eefee678",
+      "blake3": "c5f2e7632c89e6251d22f745a07f9f9912bead315edae49a3ee2e92e227ab7a4"
+    },
+    {
+      "path": "scripts/maps.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15688,
+      "sha256": "720de485c8211647f3e4c822dd2ae9154602061e21a730f0860305476b4d406c",
+      "blake3": "ad31dee5e5dbe3a3c13d6f13b6228e30fe78ad1172011c60857d99d4cbc9cd1f"
+    },
+    {
+      "path": "scripts/plan_wordcount.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3548,
+      "sha256": "274248d581ecb7df6541764f4786058376b589c4153c1b57c1d61098b416897f",
+      "blake3": "68f6f7cc0551535652a2924e5ac9d9a896f1250aa32b8a48de1eb5801dc2d723"
+    },
+    {
+      "path": "scripts/presets.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25503,
+      "sha256": "26a4ec0375e5cac5c26cee0ae8888bff3f37a95d97f50be0fc76ff13d1ff55e2",
+      "blake3": "e849b1e15899dc43cd87304eae38dffe920eda5738053656e4a8ac60f4927a51"
+    },
+    {
+      "path": "scripts/render_deck.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 54635,
+      "sha256": "a3d0a98770cc3179964c47c5749a4c4779356a44f7f2b778c602d6a499a9610a",
+      "blake3": "8140bd6cd9934c8a07b2e5294087a9580b17512ebadbdd8f13deaa3f1aa0c853"
+    },
+    {
+      "path": "scripts/render_deck.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 592,
+      "sha256": "36182398582d75bdc9b72772421a48e486af23ce8e9f97e57502c732105bce29",
+      "blake3": "cd50a2766d4a87b99488801d8eb1bb65bfedb1646f7b5726a5d8ff4a35f3b875"
+    },
+    {
+      "path": "scripts/smoke_component_audit.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6420,
+      "sha256": "87f8f4d94a116404d6eb425cd59ba39a5f0bf7d9c3182f8edc24a820accdbc2a",
+      "blake3": "b978701038cf23e5c5bc2ef6aaa930bb4efd8aad8c487eeb96df557d416a7274"
+    },
+    {
+      "path": "scripts/smoke_deckkit.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 50107,
+      "sha256": "33c752f78b0c161782764cef4e5641ed8fcb7deefeaccbb951094fac07d83b81",
+      "blake3": "dd6f576192b289f6cb1b837cf41c5e4cbbe79aeba1768d207e8684efdf213bfb"
+    },
+    {
+      "path": "scripts/smoke_directions.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15604,
+      "sha256": "b0a77bbab640b5cf83bd7d0b73d9de37babcf5ac01b333844e2a0d04b95322e8",
+      "blake3": "0c0f7e8478369599f3a74494c2ba2d11c805325692012b1b7003ef492574dfbd"
+    },
+    {
+      "path": "scripts/smoke_render_slides.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4906,
+      "sha256": "1a756d353c091e13e6b9b0bf4a11d6b7f24f96f872dccb1f9bc842d6d2204125",
+      "blake3": "bed50305dbac33e54ffe02ec59ee015c70e76f296b69762eaf2848edba7c4f5c"
+    },
+    {
+      "path": "scripts/validate_review.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22250,
+      "sha256": "ed1a27a0c5020a3e9dd079657fbae87500449ba12f8f49c3804e361109cf49ee",
+      "blake3": "fc1cc390a1bce35a4ed8233fae733831adf34ab7c11448ba32d612260c2b406b"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3493,
+      "sha256": "708a4797541d16cc56001ac628bb342a8fe63e4fbd4a4048d8d2ebc6a95a705b",
+      "blake3": "e718283c08ed1e665b3a060025cd9e4d74ead1898fb426ef05a85e061b85e0c5"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/lint_fixture.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14511,
+      "sha256": "a48f015b9dfdcdb402718530ced23f204c23a2767bb4c4912c434edeee8194f2",
+      "blake3": "817eb8cb131b9ec7718e43283b58548e06e57b9e2472e685b3d39fcf1f7c1e18"
+    },
+    {
+      "path": "tests/test_lint_regressions.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17422,
+      "sha256": "a7ce7c69b7f61a7b025503dcf26ff62bdd5180322c46b5df84da9e0e65084e41",
+      "blake3": "39bab6c4154f2a878829c331fad0f7f20b3d56c8f4e4598e0cfabb5346fbccf9"
+    }
+  ]
+}

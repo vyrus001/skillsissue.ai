@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:ea5e6bd54d5883bbc3ba18d5b145f2050ddb72780adb01d24013f486a0796f4d",
+  "sha256": "ea5e6bd54d5883bbc3ba18d5b145f2050ddb72780adb01d24013f486a0796f4d",
+  "blake3": "1769367a05c3df01e9a9437345764f882975c6efdef3b83322e6efc51326110f",
+  "size_bytes": 124270,
+  "file_count": 14,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18258,
+      "sha256": "7758eec4a024a5bb8ea37d724d52c3ae067f0c542e356284bc603858d4e3198b",
+      "blake3": "ea897ec2789949d94e76837cea0ead4ad7a1365d61dbaa296fec5d34368639f0"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 134,
+      "sha256": "c47d6f8870f1e7c81c64d95737001e956f9315584bb589813fa7164ea0bd8e78",
+      "blake3": "7e75794763452a76721fa9d67f850838401dfee3c277d5819bfd935705081f10"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/genre-trends.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7373,
+      "sha256": "1d60bc0ad86a510845c11d3b6b3320b446de938c038d9b636c694890cf1d90e6",
+      "blake3": "7652c1766c9858f0575f3710a5566c9a94714af4231affebc5d37a000159f651"
+    },
+    {
+      "path": "references/publishing-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5448,
+      "sha256": "e84bae7816a06ef0da4b0faa6e9947d35b6e3f9552cba084720f5eab63e19615",
+      "blake3": "b91597fbe70e3d18b0cb0e3f124d6b52f55546a51e6baac0b023235702406773"
+    },
+    {
+      "path": "references/reader-profiling.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4087,
+      "sha256": "713ad7db4df6ef10e0605fc7581545d288c09577d5890c724eb3f8efef414b75",
+      "blake3": "3a43e762f578983ff550fd780146e1bb711345dacd3763f8ec21895ee5cd8a20"
+    },
+    {
+      "path": "references/scan-output-format.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8835,
+      "sha256": "4df1f415ed339b766c1d7d408db69ef4958d73e35d34ee453e57f9b1e107ba7d",
+      "blake3": "aaf5755ed556fe853f1190cf3857f35cd11dbefb24fcd41c2ed1150c84913cf1"
+    },
+    {
+      "path": "references/topic-decision.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4037,
+      "sha256": "4e5a176a03dd3dea9ac1667c815656d80360d0b91130868c6b6bbd887b8752e2",
+      "blake3": "1e529677da6c3675350f5374de9cfee4be959492caff38d30f11c038e48b4b77"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cdp-utils.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2513,
+      "sha256": "6e0cf730a95948619c66fb3677d3f368acac6a9dfd00cf85e736fd732ab2ef30",
+      "blake3": "ef9734b1daa39494e22909dc12ddadd108973c33edbe36a0f06de5a294c39da4"
+    },
+    {
+      "path": "scripts/ciweimao-rank-scraper.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9694,
+      "sha256": "f08325b2b490a9ed6382cd4c2f05ad58fc3511b08cf812de52c9f39c33dbbfdf",
+      "blake3": "9b0a3d05196f06a9a5d66df4f60d4f1bdfb794cbe36656bb1985bd00edb29455"
+    },
+    {
+      "path": "scripts/fanqie-rank-scraper.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17094,
+      "sha256": "8d028325521f1ba3b4181592c383273d29f4ede290834d33ac3fd6774a49b479",
+      "blake3": "b39e60d9f0476c3bbc798305de9ce07acf12971215949a5c3f3fd3ca30477597"
+    },
+    {
+      "path": "scripts/jjwxc-rank-scraper.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14388,
+      "sha256": "8eff955429363e2d9db031434d49d16c32410041f5e5039ad9ff8c471c3e31b5",
+      "blake3": "c1719c148ee963b493a2cf50664723c85079cdea03b174d05b9b56f6e98e3a5e"
+    },
+    {
+      "path": "scripts/qidian-rank-scraper.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18467,
+      "sha256": "a4687996778c48ffee7c9a2eb0001ff88c21117809d8c32d03fb59fcff31d790",
+      "blake3": "2cb56716a21d4974211673824b9db4d43ab6419b523941259bff2f3358ce0572"
+    },
+    {
+      "path": "scripts/qimao-rank-scraper.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11265,
+      "sha256": "3835d0d21b590d3b7cfa0e06c5497ee387b685ce800cd92951430d4d31487bd4",
+      "blake3": "180c5a7a29d3be645402aae4f4911466e5c693d87bc1d0adfb2250e0bc45f3e7"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2677,
+      "sha256": "e83e3a7f03d79800a18bbf804025402178693f77e791fbdf6915a9b037ded428",
+      "blake3": "60d64dd2b4b6ca7eddb28161764f02e49f3f6d1748e073b54349cf7103dc6ed7"
+    }
+  ]
+}

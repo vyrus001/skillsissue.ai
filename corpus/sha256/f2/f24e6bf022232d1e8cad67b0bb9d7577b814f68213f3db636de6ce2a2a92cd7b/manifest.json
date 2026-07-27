@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:f24e6bf022232d1e8cad67b0bb9d7577b814f68213f3db636de6ce2a2a92cd7b",
+  "sha256": "f24e6bf022232d1e8cad67b0bb9d7577b814f68213f3db636de6ce2a2a92cd7b",
+  "blake3": "c04b1000e48f1ba31643518619ce8f370a8e09a4396979abafc6312257097458",
+  "size_bytes": 54706,
+  "file_count": 11,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7085,
+      "sha256": "d9ca70e2ff0bf51b5b5e6f5f37d094da3d61bc84d548e4c2b3bb83407c6f8216",
+      "blake3": "04c0915a6b905d0e34fa70bb292334affe89eb684f607792144641336ed83689"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 127,
+      "sha256": "316068435592aa14676b30555baf873f371df902e4310709d0b9edeab179ab1e",
+      "blake3": "f9671f122e7b0b80c0897e47eac58e5eaf8041f2d01a2c2736cc9e0fd4366ab5"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 191,
+      "sha256": "e3b279ee81ddc1d010a19bba67fa7aac0b3acc934ee37c768871666d9a4b7594",
+      "blake3": "69519a4938d2169a7ce7c15f10e592f2b6e77bc97eed2e825800a1923e410f20"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/open-platform-api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3059,
+      "sha256": "32d014917b164dc5b6c12a7542101fd6ad60587954dcbbafd5ab9394c499f809",
+      "blake3": "c2c224138d3769afd7cf3729c2c2f6c1e37b6fecc6efbfe8dc918d0fc92b2f2a"
+    },
+    {
+      "path": "references/video-model-endpoints.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2039,
+      "sha256": "b607a9f1b1f13ade06594f63f44d94d6bbfbd6458640ba6d297a318e97ba2e0b",
+      "blake3": "aac84e03dac605de3faa6718f03b02ac72a1cd3fb4aade249ae9f80c36ccc8b0"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/create_and_wait.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11732,
+      "sha256": "7a0f90fa20cdd1dc94bfc1f14d04536e1d746906c0b4f68207be49b3f3748d20",
+      "blake3": "fe1fb651e469456c4cd0517575afb00b6ae6a20cfc8ba0c7eaa4edcf723e9f13"
+    },
+    {
+      "path": "scripts/ensure_api_key.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1457,
+      "sha256": "db89af732345de3b4683dca77fd666829dc4cc22fb8906b57cdc5644395ca15c",
+      "blake3": "f959f91440855428370312819ecc756d60788461eabfc43e2c67492d4261e80e"
+    },
+    {
+      "path": "scripts/handle_runtime_error.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4590,
+      "sha256": "ed7e29bff6495347c1201861c5f4153897f7e0548f8e4909f2dfa7acb851f104",
+      "blake3": "70edccd19720b0d18d0429428b99e925932e2dc8d5514faad024b1dc9deffe1a"
+    },
+    {
+      "path": "scripts/inspect_openapi.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15895,
+      "sha256": "daec8b0b6fe65dfe175d9bc8ed6cc99363d2f49ad11c30bf3f48bf8d67b95b6f",
+      "blake3": "da4b5f4c51253c3456ba57c1124c5a1be5f611a0b66343acd0beb8d2f05f03da"
+    },
+    {
+      "path": "scripts/wait_generation.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6471,
+      "sha256": "883956a939ce38617e6f435966a5bd36c76dadd6e24d75aa04c2a097730d4ebe",
+      "blake3": "5bcbd8ff7865f117aaa8aa951eedd48dfff00e9e85a15b911f8d936a3f1521ff"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2060,
+      "sha256": "dd4f4d1e232cb8464e24f0bf9ce233a5df8cb4bfd37da727e7943c69f34ea066",
+      "blake3": "4684213f186d1aea26a16cd6c6b2048ee9e2d25cc2318bd4580a6896b14e88f1"
+    }
+  ]
+}

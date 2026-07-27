@@ -1,0 +1,249 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:a04ef6220eb6927b4d3e804093a6e4468162730d827ea2e2a4bb9c65962e55a7",
+  "sha256": "a04ef6220eb6927b4d3e804093a6e4468162730d827ea2e2a4bb9c65962e55a7",
+  "blake3": "f89b1bcd0e89a785e111108cebd36c6e2569f55ef1ec4dd0b72f09ec9d853940",
+  "size_bytes": 109340,
+  "file_count": 26,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8665,
+      "sha256": "2fdb5939179f1ac813780b6c14aad499638610660684a164eefdfe361049f43c",
+      "blake3": "ff7417b87dfbf8b9c4f69257cec50a1f2fbc546edf0e9a6bb75392969ef9d0c3"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7609,
+      "sha256": "a008952449bae6675a6e2c7cbdcc9e87062691b66c543c7cc0f8d32d44232cc1",
+      "blake3": "a9d874cd12c38181c93fb9978368a0b519172d2207661be1ae7717b463a9a66b"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7771,
+      "sha256": "af1ea1bf2b80d9979324dcaa35cfb9ef4d818f32d9039d2f33fe6b717f717db1",
+      "blake3": "4f6ea697a5c5a3e3d291091183f61518cf3d42ee811f18437ef188f31bdd005a"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 134,
+      "sha256": "1a1fe5e3774b7a6a29af187f5cac57cafbd44c8b589408864b67d1763d42bcee",
+      "blake3": "7a9c1d2ce90551f78c46f1d5fcaf64894d7c71e4e4ea15ff16c7b41297da9488"
+    },
+    {
+      "path": "archiver",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "archiver/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "archiver/notion_archiver.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15412,
+      "sha256": "04431161699946adde85b766081ca7d121e2a434f66d7d0a9c117473baae4d8a",
+      "blake3": "8fe291050c0306ce3e98a6b25e16fb75bab779762e5df30c692e2b941e6ba5dc"
+    },
+    {
+      "path": "archiver/obsidian_archiver.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4807,
+      "sha256": "b8c873a3bad711bc46d00eb93f702ea6a2df3b199025c443ac3178cf58920371",
+      "blake3": "e8c8815c2f41cfb6c5f319942c1b50a9db80b4f643ec44f1951c2d13c790ba8b"
+    },
+    {
+      "path": "config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3159,
+      "sha256": "81cdbee8de7938af5e3d835b6a1e593ca568216485a7ba1705fc5f3efc632bdd",
+      "blake3": "c209790bbf33d6e94c8d1570722c98b364245939d1e9e2d91fdaef6e75171f99"
+    },
+    {
+      "path": "detector",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "detector/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "detector/platform_detector.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1161,
+      "sha256": "b165278e53e6ee30f1216db38360f92daab25f580bd8eb5917d819dc9c83af6f",
+      "blake3": "915cd15b34da78ad91eb6bedf6169f5a4bb59ee7630bd01177159f3006d73cf9"
+    },
+    {
+      "path": "fetchers",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "fetchers/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "fetchers/base_fetcher.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3834,
+      "sha256": "26ee339b1d71f93329c72c7d2ca9ca4b286cee051aa8551649de71dd095b0c33",
+      "blake3": "e2818f74facb15f935c5bd53f01610bdc382b847cae53f57361b51cb5b026fe4"
+    },
+    {
+      "path": "fetchers/douban_fetcher.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5950,
+      "sha256": "bbd40e69dc7b36f93e2989dff010b5b0c6528679ad393c1262d3b71da6e113d7",
+      "blake3": "7164274f535cfd81e60900959eece8c3a146b88c30206b2269a4513405bb252d"
+    },
+    {
+      "path": "fetchers/wechat_fetcher.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6792,
+      "sha256": "fb5d4d2107843e87d51baf20047fba65b36c1c5f59fc7f7d561b42a0e5326c80",
+      "blake3": "73717f97f155376315ec73d6fa41a7e27119d8fbfa99597ef78da07e01cf7827"
+    },
+    {
+      "path": "fetchers/xhs_fetcher.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4159,
+      "sha256": "c99e721a680f29346b7fff7493dbb18d759605fd2dbda3a6672b6db70a6241b4",
+      "blake3": "ec8bc765d6167f09c9aa482eb106d8f1e7e479b2b7b49273996f2846e7818149"
+    },
+    {
+      "path": "fetchers/zhihu_fetcher.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10912,
+      "sha256": "7018d20d220603f918419b412579c975cb467e90be07e2d11ad1925828119e74",
+      "blake3": "76068800f5c0186994e88f9e19fb238c8929c65bf31efb1d41b3d59573d380eb"
+    },
+    {
+      "path": "main.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8396,
+      "sha256": "4d469ac6d1948372c4fcc9184feef714279d65fe0a007600584d78538b82171c",
+      "blake3": "0a23fee4f7691f32471ff62a7a25460f7dca4b7ebaa7958a80f66c2f6775eb99"
+    },
+    {
+      "path": "processors",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "processors/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "processors/image_processor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3943,
+      "sha256": "ce875d984603793cf56bd6fba84848b453d4eaae97158e2276b89dd5dfc6c2c8",
+      "blake3": "bc8c7ddbc1f55a2b81ee02393db0d0e70325d23c56f3788d05cc8b125eb4e919"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 184,
+      "sha256": "4c17e270c1a12798b5e2fdf305329b531b5409fd043e8c0ea00da6bcc4be7bb9",
+      "blake3": "dcdd00a9c842813500df3b99264fdb760d3e887429bcd6884cbfafa83cc81f02"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2508,
+      "sha256": "3b3f07e2f58f7e0d47fff925336d4ea48aefdc386e69701a0e70ee2db40500f2",
+      "blake3": "03b86533737a7bf8175b390f8cc6af1339e299e4b6b161003910e262bf90160e"
+    },
+    {
+      "path": "utils",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "utils/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "utils/http_client.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3047,
+      "sha256": "a6a879c8cfbf146a504a2dc76b3a62f0b8927bf4e6bf01d685aa5be183ed3e21",
+      "blake3": "7c29b4870eb0ceece82a0295ce8878012bce4d3661e65266b19ec39bc6e7e6fb"
+    },
+    {
+      "path": "utils/logger.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 748,
+      "sha256": "890489e7a58e40e77a4483a1fa6890f5b6a66438d3a4041673a584fc21da4c9d",
+      "blake3": "819336bc6cd33391f54d81b2d8ab4cb5c2cf9b4399ad92d37c4256cd9fd33cc3"
+    },
+    {
+      "path": "utils/tag_extractor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9700,
+      "sha256": "6a898d26292e0a9453705cb56fcd3f7931f0fc965008a28765e01e38be744411",
+      "blake3": "7e9f0ae58bf099e31bcf00273ca9939102d5b07a8e5c8d726db5652732e61145"
+    },
+    {
+      "path": "utils/word_counter.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 449,
+      "sha256": "4e3e763d34f29975c234df0362024a2ae34066cf4f2c3691bc44f819ded0d381",
+      "blake3": "5984783023c0ecc1d1c0924f10770a622eec2ad04b8a34c05f5df1b8bed74acc"
+    }
+  ]
+}

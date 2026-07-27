@@ -1,0 +1,1207 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:d1efefb52306e58e0206526b72bf33a73f4cc09875aa65ab0c9fd51d1746b66d",
+  "sha256": "d1efefb52306e58e0206526b72bf33a73f4cc09875aa65ab0c9fd51d1746b66d",
+  "blake3": "5ad294c3eeb647350126bd301e6e5247fb78bb8b461f718c621f7dbd07bf7679",
+  "size_bytes": 630788,
+  "file_count": 124,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4257,
+      "sha256": "f60bcec46a5b98646c514b95396dad280be1ca20f201578866e2cb22e36554a0",
+      "blake3": "e39c6a0f3f9c80c7f78012cad2d552a66c6503903efc003a4ae7fb5bc71b0864"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5098,
+      "sha256": "d76d209e8ef4164a3d8736f2511496e771c304bd30482b124c9855b1bd0d1825",
+      "blake3": "698ca8ca811d83dd2cf42cd1988364589afc821beb4bab6451ec35b2c1f81cd9"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 144,
+      "sha256": "0f965f2dccde45dd3a6f15481bcb8ed698c9dba3e91d7b5f65f5bed2aa9f8549",
+      "blake3": "8a85bae0dad22de13adbfdcc6fdb1d9b431c6b2705ea4d39664354b27f241418"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 367,
+      "sha256": "3fc9a8bf1089dbfad85fc445e2531c665f1b718f63eb7541d3b7e40d2611df3e",
+      "blake3": "120a14116902531ab3866dac14e92d3376a5aa02e0055bc3687ec51dc87df23c"
+    },
+    {
+      "path": "assets/examples",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/examples/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 222,
+      "sha256": "6439ee7ec5318f6fe5f98d2924c87d2de870e64a04cc9c1a9a2f8f5550c01539",
+      "blake3": "18fe658e25dd0863b07d9aeccbf15fbfa6ddf525b0e904cdbf891726ff267b6c"
+    },
+    {
+      "path": "assets/examples/log-get-response.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 343,
+      "sha256": "fd6405bfe78e578c29cc7edb8d178368e8540f7f64a618154dc743a2ee2b128e",
+      "blake3": "6c6b0febdaf3a63812dc3076be63d949b0ff5393259a9d366f81140ccae749d5"
+    },
+    {
+      "path": "assets/examples/version-response.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 59,
+      "sha256": "5daadf0a4f409d4d410112e9c59a3e9080ede44b81374e1cb069cb836c3ce462",
+      "blake3": "e3151cb7e955adbd2723be248098b427f2428ff9ac914317a766f327bf1276de"
+    },
+    {
+      "path": "assets/naming",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/naming/platforms.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 152,
+      "sha256": "6d516d193111e2a6083cedaa0a7abcb20fa603d893ebfd82cae61c5a2b99e5f7",
+      "blake3": "987e970e4db58cc9d434079d685513ea795a62613e435ba311e0f78131373ff8"
+    },
+    {
+      "path": "assets/naming/scopes.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28,
+      "sha256": "5719dc98e03767d37e15f08ad712b71ccf28dfe0da406d0620f2dcd0a08257bd",
+      "blake3": "c39676e1646ad0b9c5abf6e3fd87a86597d5be19568fbe63c567baa3abd25bb2"
+    },
+    {
+      "path": "assets/naming/verbs.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 207,
+      "sha256": "af515bfb98851c60392c31433f2fecd491dc3b508feacdbca7f135e56aad0c2e",
+      "blake3": "1ab82d1939ae72596666af28fc607e1b270ab950cb4ffb4f5271cc8748fb9bfb"
+    },
+    {
+      "path": "assets/schemas",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/schemas/task-log-record.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 884,
+      "sha256": "bbb449820ba2b9e6b40e64d11535781f902da224ac637ff16a14850cd6df4c11",
+      "blake3": "9a5115365bb140ee6197a6fb1e6af071435f0d5ccdc6eae8e88b008f99ac0429"
+    },
+    {
+      "path": "development",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "development/ADAPTER.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6647,
+      "sha256": "fded32bfbf69a7b8c276664494b0b467c1c00a23c0ffaaffe8aacf59eb547241",
+      "blake3": "967f74011db3afc6f9a626c7c4743d34e6df76249f070d0c2d217c1bc5cfc62e"
+    },
+    {
+      "path": "development/CONFIG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4607,
+      "sha256": "6d543c7c327f38a63784593d124d871051160f8e885e961a917436b28e8918e5",
+      "blake3": "6ca51561d4c033ac320b8f606ff1dce527aa01a0f3e61e2f6b9d7e7cb3c02a3a"
+    },
+    {
+      "path": "development/DEVELOPMENT.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 36699,
+      "sha256": "6565de3e80c3611099e44104eb700e3aa982b8633e93d6e003a6e9487ac6db99",
+      "blake3": "5d85e00ee0665b957e41fefade0dcdc6909903e6c3b6ada8a6a211928384c10f"
+    },
+    {
+      "path": "development/NAMING.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8341,
+      "sha256": "457b9dfd606749b0d6ec6e923439e288742ac65dc607054f5ffa68108e672427",
+      "blake3": "09ea57fb81333882fed174c336a451204486b4fc78bb917e95447043dfd1bdb9"
+    },
+    {
+      "path": "development/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1090,
+      "sha256": "498d907283df1e7740c606ee2e74e26a6d67fde3a49d0f304fc15c29a1e05a72",
+      "blake3": "bab8fc57858616d2dd785236cb9979e6ff6a4032050df77836ab7731c829c2c9"
+    },
+    {
+      "path": "development/REQUIREMENTS.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7014,
+      "sha256": "ddb660641ad0a3acea45a3337f398e6f3195c9e094480845a765059d35d5b8a4",
+      "blake3": "3dc5e82b1283575ca56ca3f39f0522c693feafa25aecbac689e2c08a4cd122d3"
+    },
+    {
+      "path": "development/RPA.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17687,
+      "sha256": "62cebd27a9a86c144bac17200b0af89a6cf92151fa4cf009c675412afed8c64f",
+      "blake3": "c445a2d4973e4653f8211eabd76cbee277fcb3e6e8a996877707ab71dbab5e62"
+    },
+    {
+      "path": "development/RUNTIME.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5718,
+      "sha256": "c82ea2e5f6bca64bf06097a8609f8aedd9f8490c505435f694030b434e23b377",
+      "blake3": "b00165c5f3aac6f035eec2ed2c1c8ace801ec357ed9228dbb2e29844954243f1"
+    },
+    {
+      "path": "development/TESTING.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13768,
+      "sha256": "613f3f9873daf2c1859a4ae009d32e6da83e07de82dce701c6c26a5a9d36588b",
+      "blake3": "d9f9ce7ec30e0d1bed1d8518ea0f8b172ff0be911a4df8854ae3a85e597ae5a8"
+    },
+    {
+      "path": "development/test-reports",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "development/test-reports/test-report-2026-07-20.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13362,
+      "sha256": "e9efe4264ff00459c825cffb6f3225d783900f708d2bcdc49e5f9d6c1d11135b",
+      "blake3": "1112cd4f7f08249923b0989edb786e847d6737138b1b381f37a09b60f7651088"
+    },
+    {
+      "path": "evals",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 167,
+      "sha256": "e35254a1ba515c842819e95b438b49ced83910b94c009ea3f952fa0b10778931",
+      "blake3": "ff4a8ad76d19cf0361546b20db5f87ceeacb1b1e873228d7b78f8dafbdecd307"
+    },
+    {
+      "path": "examples",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3858,
+      "sha256": "859cf8b325c4b8d0b2f0c690048b8f41d299c3fbde5c779a3b8e187863ad9c18",
+      "blake3": "40c626ee50dff4730ae2aa31b6ea3c0bf547291f08635b44ca8f2c73a466e41d"
+    },
+    {
+      "path": "examples/real_api",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/real_api/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1196,
+      "sha256": "44894507590316775727ac4393eea119f29b393bb2d30d4b319759c4a0f4754e",
+      "blake3": "a042ae7602b2e5ad368755b92506baa3ef3ea60a80f10e764cce49f1321aa44d"
+    },
+    {
+      "path": "examples/real_browser_rpa",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/real_browser_rpa/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10469,
+      "sha256": "41299281e054648a0accdb0a6c3163566e8dbd1ad0bc7d98a15f82e2cce5320b",
+      "blake3": "f1da7b8a133470defff4cf2146466b9ca457d70dde95bea17dbedf2d047168ef"
+    },
+    {
+      "path": "examples/real_browser_rpa/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/real_browser_rpa/scripts/service",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/real_browser_rpa/scripts/service/account_client.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7679,
+      "sha256": "9dced2252672085e506d36b62e818618a3b2188edc800729342e39f780d588ed",
+      "blake3": "552db6b760ee5eed7686f3112067430bd3f0f3c56374c258b69df9c8ab10ce26"
+    },
+    {
+      "path": "examples/real_browser_rpa/scripts/service/browser_session.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4263,
+      "sha256": "c28bd84d942fdc0649e5836d6d5bcf40b1c33ba05a551fa33774a7b85ced710f",
+      "blake3": "c1ba2d244fed9fe95778792f9334eca6c1ede86238b8953d50d13a5be0c06bbb"
+    },
+    {
+      "path": "examples/real_browser_rpa/scripts/service/human_verification.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15031,
+      "sha256": "7d266704138f52ef856568405783d101fe5bf792fad1d47030475fe50354b2db",
+      "blake3": "49c64c0db70f61575b9e9e44e33fbc2d770f9a269c06d61e972e21345d0931d7"
+    },
+    {
+      "path": "examples/real_browser_rpa/scripts/service/task_rpa.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21383,
+      "sha256": "4cf89e095fd400b2c0d5ce93b7dfcb83c0c1bc223c60bf74988a5f1f18d5b04e",
+      "blake3": "a3a6d2a028b7cc3d121438aefe086a8fc3c0175ffa7393d3d182c11a84ed421f"
+    },
+    {
+      "path": "examples/real_browser_rpa/scripts/service/task_service.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3922,
+      "sha256": "56283646422ca742b4fe47d6fa03fe7560d9d21deba050d3f116f4cda8ad5267",
+      "blake3": "eee01c150bb5ef2d486a2d4991b60c13a32078ec8f3534d1f97ef33560326d91"
+    },
+    {
+      "path": "examples/real_browser_rpa/scripts/util",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/real_browser_rpa/scripts/util/constants.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 980,
+      "sha256": "753ed9acf5bd1bd596ec7f621c23e634dff9cf6fb5d1d6fffa39a7b71a228f10",
+      "blake3": "9a8783e7d180acdb69d44021d8678e3142f38dabeb9e64b9ee31f4c7fbdcb90f"
+    },
+    {
+      "path": "examples/real_browser_rpa/scripts/util/logging.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 957,
+      "sha256": "a7d562050085a12b9c9a6273924348b893a86e3cec8bcab627b72ec0a34b9337",
+      "blake3": "43e58ab86df03c479ffd64a627fa311be259888aae567f0a4ebc6a73f67057ea"
+    },
+    {
+      "path": "examples/real_browser_rpa/tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/real_browser_rpa/tests/conftest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 302,
+      "sha256": "706934132953be379f9218a1cb30d3c3d223dcc5974b389e5dc8dedaa874cc02",
+      "blake3": "dd8de1a3930da73530dc93596392c9ea515e77d8ef3c8a17ffabe4b61818ae56"
+    },
+    {
+      "path": "examples/real_browser_rpa/tests/test_human_verification.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6161,
+      "sha256": "aed714d05abc0b77bc10d08aade642b1473d830a6ea8b3e1d00c434cc023274e",
+      "blake3": "fd2e9951844f4dd8fe93b5b2fc09405d50ea82020400de815b9f439347881ece"
+    },
+    {
+      "path": "examples/real_browser_rpa/tests/test_stop_reason.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1222,
+      "sha256": "cfc92777709a0375c2830db541c36a57eb74135d79b03b6a8b167b93c522f912",
+      "blake3": "ff901352c1a8dee6f084a795d6145cff4cbd507db74878e38b235c038cc2e7a5"
+    },
+    {
+      "path": "examples/simulator_api",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/simulator_api/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1232,
+      "sha256": "c0e1030a7a759669b86d0f359290c57ef845d5af1eea7531836a450ba43d4d1f",
+      "blake3": "8ba5fa03bb96d8ccbe83439caa7dcc927ca02dc7a931c33eede4bff8c8ce5564"
+    },
+    {
+      "path": "examples/simulator_browser_rpa",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/simulator_browser_rpa/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7772,
+      "sha256": "ae5aa9cb7c4b82228518eae9abd8b7f886dcf5d159ee5894494a57cbc16cccda",
+      "blake3": "39e37ebea472a1119053dab9df5ea9ccf4628bfe5faab36f8860f431977f6abb"
+    },
+    {
+      "path": "examples/simulator_browser_rpa/sandbox",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/simulator_browser_rpa/sandbox/demo_app.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6563,
+      "sha256": "51ed98aab820697e09e8572c53fb32313abfcd8624d57abac0f44d3629d66a2c",
+      "blake3": "f171fc85c9be23efa4addf5caefd3cc1bacfc4ae7d1a8e04c71d28d54ef49393"
+    },
+    {
+      "path": "examples/simulator_browser_rpa/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/simulator_browser_rpa/scripts/service",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/simulator_browser_rpa/scripts/service/account_client.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7399,
+      "sha256": "73ddfc1f7b6bc7a96ae228438a3606f1c46c577a4c870314ed767b8880e7dc6f",
+      "blake3": "d30771d06aead0a7dfc1c2b2d422158feb50e0b58e4cda99b09616e76fda534a"
+    },
+    {
+      "path": "examples/simulator_browser_rpa/scripts/service/adapter",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/simulator_browser_rpa/scripts/service/adapter/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1328,
+      "sha256": "a352471105e9a3433c286d652c89f17aa758e40cb162041f69545257630d2427",
+      "blake3": "3b32f1a1a6fa57a852bb0841c98445f0557955b1e2c6e61170b2a414cd9c6b1c"
+    },
+    {
+      "path": "examples/simulator_browser_rpa/scripts/service/adapter/base.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 721,
+      "sha256": "e326546faa062dc95252e1882c8e01d0fac36fd3cd07b39ae538d28241351f43",
+      "blake3": "fead958f75d665c4e1bfd24565356136e4dda9c8698737bf1ea3897c08d118f3"
+    },
+    {
+      "path": "examples/simulator_browser_rpa/scripts/service/adapter/mock.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1084,
+      "sha256": "8ea76d42c259d4225c8615c9e0cb567dcd84a1d9ddb73dbcc4222e8c8940cf83",
+      "blake3": "5ba8d23e923d17f980c23c8a0951e8175dd9a87cf7b2d0cd06414af8952e0949"
+    },
+    {
+      "path": "examples/simulator_browser_rpa/scripts/service/adapter/simulator_rpa.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3938,
+      "sha256": "c9a7cf7b25aabe0645ec0ac0cb161fe10314d72ac76f10a01f9a2c2fbb76de8a",
+      "blake3": "f80fc02af16f2410ef95df2733614af23b015c328640cb190fe639d22a205703"
+    },
+    {
+      "path": "examples/simulator_browser_rpa/scripts/service/browser_session.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3682,
+      "sha256": "0c50c5df43dd7e094e356e8eb31831a109b27a26f88a5b270c8539f333d62346",
+      "blake3": "e2c2385d941e85ad8a3ece8af1ff6dcfadf77f7cc677a218fa77a46b365f72fa"
+    },
+    {
+      "path": "examples/simulator_browser_rpa/scripts/service/simulator_playwright.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15226,
+      "sha256": "14dd36fc9e9f6d674d2373a7f27edd42ff38938f2b7ca16605f68b5493f858ba",
+      "blake3": "41286caaf4e4251e08f0aa1624a8e2d40811737960b3a740da7a81b9a8f5caf5"
+    },
+    {
+      "path": "examples/simulator_browser_rpa/scripts/service/task_service.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3338,
+      "sha256": "471a94b089e9e1d279e53877dc989ab53f2d4edb05e5fc355e821d31c133db0d",
+      "blake3": "ac99a1363871652325a99b4a815eabad71c306a93c1b308b931890ed41bce399"
+    },
+    {
+      "path": "examples/simulator_browser_rpa/scripts/util",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/simulator_browser_rpa/scripts/util/constants.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1528,
+      "sha256": "72ff195e998c321c47210a18e2185fd491b139adc0a606505da00ae9c163e451",
+      "blake3": "afada231209a99ba43ece1d214a2b4b2611d57b2578b324914a1800d54381b28"
+    },
+    {
+      "path": "examples/simulator_browser_rpa/scripts/util/logging.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1094,
+      "sha256": "177d9b790089afe024426029edcbe9d956868718eec6afc85c59480d2301cad2",
+      "blake3": "e61911ae3c91bc4b4b07fc29e515b2b678c6ca52cd7f81cb652e904371fd8476"
+    },
+    {
+      "path": "examples/simulator_browser_rpa/tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/simulator_browser_rpa/tests/conftest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 301,
+      "sha256": "40431c760d3373c1b59d42654d9fbeac723b610b2e11c7b4ee729b80d41ecd03",
+      "blake3": "9cef69d1618da399d920edfb66f376e8664f4144fd121ca1bb3d846596941886"
+    },
+    {
+      "path": "examples/simulator_browser_rpa/tests/test_adapter_dispatch.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2558,
+      "sha256": "cb7610a7ca347442648841ad20b62410c4d3c892096d3ca72d0ade3c76fa3ff2",
+      "blake3": "3b006b961b4104fc327bd098987382ed58f7ac18c80bcc4d2f3a02a322900a04"
+    },
+    {
+      "path": "examples/simulator_browser_rpa/tests/test_no_rpa_helpers_import.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1297,
+      "sha256": "755c3ccf8f568b9acc27c529d5954f27fa2d253854c9426ebbdf3b1818e4cf3e",
+      "blake3": "cd5033d3f794283fa6dd391d61c6d56720a4ad63ad244ee0d8e8b791dd85fd0a"
+    },
+    {
+      "path": "examples/simulator_browser_rpa/tests/test_simulator_rpa_unit.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5504,
+      "sha256": "80eae6a6d88cb2f489a9fa4c1a8cd3417d02bd174cb1e95692d6d9b817fde512",
+      "blake3": "40cf38aa8416259759633fa1fa9019f75ce11f004aeb0fb2dd5a183c6396e1d7"
+    },
+    {
+      "path": "examples/simulator_browser_rpa/tests/test_stop_reason.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3051,
+      "sha256": "4bc4be31339fabb345a451c9ee4a277e693de2e8d7e85002b6abc2942bff90ac",
+      "blake3": "572c21d1f30dc78d467eda294df5d7903fff3a324b92808bfbc91514e5bdcb17"
+    },
+    {
+      "path": "pyproject.toml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 666,
+      "sha256": "62a84d74d1aa05a5b0d01fcd2d7e8afa8320ffb6fe5ff0e8de60014ceff10b11",
+      "blake3": "a73b19f0a2caf9a8f3bfce112e3e6237bdc36565de5f33c885d8f3291815031b"
+    },
+    {
+      "path": "pytest.ini",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 273,
+      "sha256": "88bbf95faf12f262a672a5b0d21bc3b0998347188554c0d759eede9291bda2e5",
+      "blake3": "0f6f7c9f9b321f7536ca8a71029a1bae9594194d67d184690c9d163c6494085c"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/CLI.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6460,
+      "sha256": "66824a46c524a3f4f93f20edf9262d2c750dbefa52c362d5ac0c2e41cd3219e1",
+      "blake3": "50ff186c29b3284dcdc525e8a40f02dbbd1d0a0b9ead204a523c5954e75c8f0b"
+    },
+    {
+      "path": "references/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1074,
+      "sha256": "71d36981dd60576dbfd317439c14fe6e2e3a33b28cd83ce355b5f372c61e5bb5",
+      "blake3": "dc72d669e8819cbafb5a670d592d14cf03e5cf6a5a367eb13f91fc4daaed0f4d"
+    },
+    {
+      "path": "references/SCHEMA.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11906,
+      "sha256": "24043c25d92fe3ac6f3435843619e68d1994aae673e41c0088b3d3b7351981dd",
+      "blake3": "7077b3bc8d0324d7799953b4fd53bc63e34d181fd791797c88e27fb375a3c6d7"
+    },
+    {
+      "path": "release.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7573,
+      "sha256": "881950e543eb5e77ddfbddfa4a5f5d8f15633b8bd546ffee7f6abe9089aa450e",
+      "blake3": "adb90e537c448e7b44e4df8f21b0b4497b2a8e00b5162f8102bd6fdc73988223"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 93,
+      "sha256": "1c65c4420a46bd38af997d122d201ce8a05eab20f307dae6e5c507b06a1dc97c",
+      "blake3": "52f9f07780af51812d6b757c496da4d36fb9823f5f8d1e87033e54fa7752b978"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cli",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cli/app.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5230,
+      "sha256": "17411453990ac28e3230b14cd73aecddc52a1bfd7d3c817c19e436feeada9fe1",
+      "blake3": "e244d87a065523e6220cb566a6428da5256fbd53921ab8a8d558b6f2f556bd77"
+    },
+    {
+      "path": "scripts/db",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/db/answer_publish_records_repository.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4149,
+      "sha256": "06c246366039ba96bd7609f6f249b0a385659600bfca70aa9fbfdb70cc5f44af",
+      "blake3": "28c470b0fa86f07066397a88544b6b1df457c3b4d24a5549ee81e77743a0a606"
+    },
+    {
+      "path": "scripts/db/connection.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2359,
+      "sha256": "ffcf86bd768fba09b86194a58585f8f93af55937a8caa65794dbe4e81d47f0ac",
+      "blake3": "19d6670c3299c9c4d6cda6b1cc6c75e04022489829d52b71360d4e1e962ade50"
+    },
+    {
+      "path": "scripts/db/display_metadata.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11032,
+      "sha256": "24c9b0b705af516b6606731c883c9b6c874a33201e2358b9e028d95fd7e087a3",
+      "blake3": "4f731ef636fcceb87f35a3d12f9b2a2ff106d71a10cae672f642aedb80f070be"
+    },
+    {
+      "path": "scripts/db/display_metadata_validator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15349,
+      "sha256": "82788853e0c81aa7eaa508d021173dc11200d82d9f7b4f7b79e4ac67c7853837",
+      "blake3": "3ea11cbde50f57938cf1059dd1a5447f705aeb941e62a194bfa7056ae90eb156"
+    },
+    {
+      "path": "scripts/db/task_logs_repository.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2626,
+      "sha256": "a3d227fb15beae49be29ba8ece626f972b54e86f98e136587fefea0efca0e723",
+      "blake3": "f3a31d346efee83c94bf79d88a0d6dc99b0610d020549ad58149fb14e356a9f3"
+    },
+    {
+      "path": "scripts/db/timestamp_columns.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1776,
+      "sha256": "6a3867933388762a084fa15a2ddbdcd3fe4cf206d71260fd4a2a8a3bacb1df0e",
+      "blake3": "a8bdd0339af190ed3157407ece49bbaae33113c8dfe7e7febf70058e4d449321"
+    },
+    {
+      "path": "scripts/direct_rpa_run.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6523,
+      "sha256": "3d2b64f0180c2ff7c193790ec312e36a1859b6a7bcd81df35d88cc43f9e6f000",
+      "blake3": "a651060863a65b8ebb595e79663abb0e8d770135c2783c8ee3efbd799b95e258"
+    },
+    {
+      "path": "scripts/main.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1101,
+      "sha256": "d91f1be2fff337f2d90ee7c8375dee9bccf940bbae1127b70aa7c86edd01f9d9",
+      "blake3": "83715ef42285270a28825da3888b852a3cc09bcd0e12a712a5f71d5b79ed25bd"
+    },
+    {
+      "path": "scripts/service",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/service/account_client.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11199,
+      "sha256": "8bd6f02e2cd89f4a8723de11462902f8fb5c4fbf81b084ee2d0a246412e4dbb0",
+      "blake3": "41ec5a2cc048da6240e89b44cb04630c0e7816971160310f57dfbcb852ba9dda"
+    },
+    {
+      "path": "scripts/service/answer_optimizer.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12086,
+      "sha256": "a5930bbee08d833431991bac80f436ba3ff636b3183af034cf3cfb14105ca1ee",
+      "blake3": "eafea1922976f7736ea224427c1481537951011b15ec33a04beb20a7e2032f9f"
+    },
+    {
+      "path": "scripts/service/baidu_zhidao_rpa.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28110,
+      "sha256": "21d1d29f573f3e3032598ac2c1ddbbbec498e08cf29e598bb5a4c162adbd998b",
+      "blake3": "7685c7925c21e686895158adede9450e34b8267ac461f7e0d2bc67aed000b4b3"
+    },
+    {
+      "path": "scripts/service/browser_session.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4476,
+      "sha256": "b7e3cab138d2a8374429e680f8f973de077de8799719ac46e4915d754fd62901",
+      "blake3": "21169b30ac36a3d593314590a0f910816517e8fa91bd311c8e34109cc8f9ae83"
+    },
+    {
+      "path": "scripts/service/entitlement_service.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1722,
+      "sha256": "c9bcb11b18b6ff422d035df411fa6acd1f19c7f6867ba8cc62a1cd35e476a853",
+      "blake3": "5ea0ef05f598d41a583ab17cce1dc3dde21534796fed5e8765aa2cfd5177b56d"
+    },
+    {
+      "path": "scripts/service/human_verification.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15031,
+      "sha256": "7d266704138f52ef856568405783d101fe5bf792fad1d47030475fe50354b2db",
+      "blake3": "49c64c0db70f61575b9e9e44e33fbc2d770f9a269c06d61e972e21345d0931d7"
+    },
+    {
+      "path": "scripts/service/sibling_bridge.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1898,
+      "sha256": "84992c2accbc09781633debeb2db117b8e6ad8971f031e8d34d2a257d77408b8",
+      "blake3": "5d9eb5684f5d0b76183487e57228ce0a15e1f357ee3c77f646aae6736a049e03"
+    },
+    {
+      "path": "scripts/service/task_run_support.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3589,
+      "sha256": "7aba360ace9a83284583734794a3ccd254964499d2d6a8bc309fbf509b39fe56",
+      "blake3": "5cdc262d3a600480ff31112347866eb8bfe5e5be0b95d46ccc0f61b6eaeb84ab"
+    },
+    {
+      "path": "scripts/service/task_service.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17173,
+      "sha256": "a1f28a18919ffc7e916b02d6ff52a4cd8dd4f9cfbd4f40151afc046919dc9d41",
+      "blake3": "e78750b8910b423113b4a7fb57010c3e286bcb82c249b96cb10c0b48089c3b19"
+    },
+    {
+      "path": "scripts/util",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/util/argparse_zh.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 332,
+      "sha256": "7a55024befa6885f2eba134a6bc85fa7c01ffddf97ad239a8114404db81939f9",
+      "blake3": "58f1d6e19552307ffeebe4ff37c963728413ca67e3e1e85fa1d583f0ef370c34"
+    },
+    {
+      "path": "scripts/util/config_bootstrap.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 729,
+      "sha256": "c79a72d7718651d3c3ec4bba42385397667abe880f7cc2208dcc78ff208b7a63",
+      "blake3": "d26daaeaa33566479b13e68f2be74935c4930541fc42f4bf880d9a12e4676b9b"
+    },
+    {
+      "path": "scripts/util/constants.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6047,
+      "sha256": "1efa07e6b8701c38f81f18bd2be9ee8d0e675c17403d96ce685d5b8ec69ff787",
+      "blake3": "b334543eda5f7895164d1f0c4f071a6061897da0930ba547ec6866b9c6190f31"
+    },
+    {
+      "path": "scripts/util/logging.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 981,
+      "sha256": "e51c610f14c4f69663ca7cd59345390319532633ad1c6318a16cf24b994780a4",
+      "blake3": "d69f495e52db74e1bc1a833eddf3841fe9c39ec8397865c653de0273280ffb78"
+    },
+    {
+      "path": "scripts/util/logging_config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 586,
+      "sha256": "2f7cd044ae10bccd746d06cc3edd55fb957afa6fc9d2caa9e14255ba7e8dce9d",
+      "blake3": "b41698d0f51b22482d238b332d13dbe378291802b78003301305a6b8cfc54ffe"
+    },
+    {
+      "path": "scripts/util/runtime_paths.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 894,
+      "sha256": "3aa3baede9f57b72f2ac7e02a95f8e9d3d0910f267d160008064204f839b3ecd",
+      "blake3": "00cb84a5336efdcbc3bcabed073c27b65a3720e4137a519023ccb399936bef04"
+    },
+    {
+      "path": "scripts/util/slug_naming.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7260,
+      "sha256": "e2cd4d6a4765a6b3a30dd919b7b22419947d9ab607bd53ece2f5ddb4cccf9053",
+      "blake3": "9c7f51f426a8dbba8cbd7e05a27ead052a588e65996705c60b4021f32c557567"
+    },
+    {
+      "path": "scripts/util/timeutil.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 462,
+      "sha256": "00c98729b4793bd41875aabb1c2aed23f5c99414a6d0c82686108891b13044f3",
+      "blake3": "6635df55729ccbf0476e5c3deb8bfe17f66feca757855047c944f8226306e50a"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2369,
+      "sha256": "f6542554d20838c428e0442ba7f3646df94ce78d85d7c8b27e81c6928f668bdb",
+      "blake3": "79b37c2a27f06bfff15130e7a7dc37a82028477443d7a675865c71ffb7898940"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9676,
+      "sha256": "c58ffd83a3dc14e19d3c2a8511fe85ec722877c7fb4d6518131131680773acfa",
+      "blake3": "dde768ec468cda0cab8e16c4a359658dc13d7d969e0804d25d59dd0732b244f8"
+    },
+    {
+      "path": "tests/_support.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2532,
+      "sha256": "b80d7bd26f93336717e2bdb5a85479db132aee5299ed3a4576e8ddab752dbf2e",
+      "blake3": "70eeca210ef8ea61a918287f19302038ff6a277cb8827bab25eaa5f90da87480"
+    },
+    {
+      "path": "tests/adapter_test_utils.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4200,
+      "sha256": "dcc1e46ef41cb8bf2e259393c23ed3fa1348485f4c84b6e706587c1d35eacbfe",
+      "blake3": "39c841af56c702d1f4a8c88f63047c04e72fd7c6925e33c5f93919f8b5c6ba60"
+    },
+    {
+      "path": "tests/desktop",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/desktop/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3409,
+      "sha256": "36794792b7f2cd8cb8873761bf8c5fd59603aae932b64bea6e368e4ce0ecab33",
+      "blake3": "43bd9ec114366cc788e1c54d5c2048dd71051252b9083aeceef71c42378b92e4"
+    },
+    {
+      "path": "tests/desktop/conftest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3341,
+      "sha256": "5160593a2c75e7ca20ea6ed9984d6f297a958ac07b80c255ebe0d4f3d64ccc72",
+      "blake3": "178a0ad1dc46a85d45e95d5e7c4a50f1325cb61a45dd5026b80c5cf352acd760"
+    },
+    {
+      "path": "tests/fixtures",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1626,
+      "sha256": "c7b0f7ee4c3b14a48b43c6507180b50063e188aa3d5d626b1863c19a0f08b552",
+      "blake3": "02d8733902b76a9eae0b82a59de5df31f5c4d7db4d8489bc1f3a61f6d2f01e79"
+    },
+    {
+      "path": "tests/fixtures/adapter_profiles.sample.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 992,
+      "sha256": "40375beeac27bd7cb0ecf9826d076f9c2a13d63d03ed4cead8113e9cc97c62e4",
+      "blake3": "eb0f566b498f2f8acba5d0e7aba14e3d56cbc95b58b7e8e16f711023cf3315e1"
+    },
+    {
+      "path": "tests/fixtures/expected_response.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 64,
+      "sha256": "3a26d8910bae6ef4a972d56d7f19ca4c6c1fd5fcce1d6ad491457defca85f4a3",
+      "blake3": "589f8803725c33657d2633e8d47f72a83e3a5c1d460f52a2b572f42bdeabd40a"
+    },
+    {
+      "path": "tests/fixtures/sample_request.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 197,
+      "sha256": "bf74ed9fd3223cf27390a0919a2bacda4d6951fdf97e50f4d5dd3a5ed72f5829",
+      "blake3": "f516e75b1ea5a069680bf6efaba69b4088cb47ab3c3f90728736b1cb0ddc8677"
+    },
+    {
+      "path": "tests/integration",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/integration/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2699,
+      "sha256": "f0151cf0d812aacccaeb1746d7de52e196ce5b901aa00d30bfa0a2b72ebe9d58",
+      "blake3": "13de465e51f1cd7d9791e22fd4639ee7905858c43afc43a97460dc5e5c64f9f3"
+    },
+    {
+      "path": "tests/run_tests.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2115,
+      "sha256": "aad4981bcfc614eb235e54bf3bbac1cad60bb647bc08cedf189a80bd79685cd6",
+      "blake3": "7c6b4b3d05d4f53e7a8be2ba8731a42ecf7da4410bbf62a518a464280fad2e96"
+    },
+    {
+      "path": "tests/samples",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/samples/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5462,
+      "sha256": "88dfb937a4cf95962aded6b15c23ab5dcc780f451a03f65d8a40da5bb1ff1d04",
+      "blake3": "063d5b3606c44000df4ec1c5d53d492913360eea5ce26ef6d257df1f9fc8b8a0"
+    },
+    {
+      "path": "tests/test_adapter_profile_policy.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4344,
+      "sha256": "50ec25d28d3dd479f0679bf261a3b3d6b6bcdc54bdb39f705892ca41878f9418",
+      "blake3": "17a7121a705ca03a6dbc01760c5af3c4e1df737d2cdc150cead2da99f70e704f"
+    },
+    {
+      "path": "tests/test_cli_smoke.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3955,
+      "sha256": "5b6404dbb74ae91e04b2589d9bef3480344e196fefb4c1d7bc31696186a9581a",
+      "blake3": "f6ba21c7f320ecae571cd3d1be7be3c5525d2e5b191d0fc86e7648b6e93e4494"
+    },
+    {
+      "path": "tests/test_config_bootstrap.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5136,
+      "sha256": "308b23e8a121ae82bc8b67bc5a417c40dc7aff5792e8aa10230bc5f2189f7313",
+      "blake3": "220aebf1f3a96201087c067e983771bd97ba7e20dc3e10881f04835ee71ab33b"
+    },
+    {
+      "path": "tests/test_db_smoke.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1638,
+      "sha256": "ee194097fc71e35dd1a15c6676b1b09a58893a652806aba7829a276a93b969c6",
+      "blake3": "ef9912446c56a92d1de70447adbe6357f7e013b006f47e8bcc105d12e5356cbc"
+    },
+    {
+      "path": "tests/test_display_metadata.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13641,
+      "sha256": "360934897512851870d043a4d037e3e17077e2d5ac8c8e6982b45b4323bdc5fc",
+      "blake3": "5db4d75472d82e7ffdd164778a95e4f2efca87d9a0ea81339d72a771ace750a0"
+    },
+    {
+      "path": "tests/test_docs_standards.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17660,
+      "sha256": "a9bfc282764675a8804489c8a841ad90c281df14a61d7dd6075f5b5c525709f2",
+      "blake3": "0c24f7763e41d9e3c6abd521c216839dd683090110b8978821e0d6c757c89afa"
+    },
+    {
+      "path": "tests/test_entrypoint_subprocess.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2191,
+      "sha256": "60abea5180f6834585b84f9990cc3eafe65a2fde3dd493548278cc66e72f4eaa",
+      "blake3": "f14d16b8cfbfcd118b8dea23eeab698c892ca8a12abe511fd71b7a6c6fccb606"
+    },
+    {
+      "path": "tests/test_health_runtime.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7603,
+      "sha256": "ed3798292b4a49f08f33ea4849fef2c5a1e5936badf856e906f7355873889264",
+      "blake3": "b2bf3433d0d0e7f5cf7169a4705390d26ca1859eaea24a38330a26994c1aff45"
+    },
+    {
+      "path": "tests/test_no_rpa_helpers_import.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1377,
+      "sha256": "ae002025ae7cfe618be88f5b48987805211ecc9920a960b28b082f27aa9dd628",
+      "blake3": "ba0bdf4fb3c641706fbe9356af66809f7c234d33065e2481b00129e62bd3e143"
+    },
+    {
+      "path": "tests/test_platform_import.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4988,
+      "sha256": "46426b4a0204447370fdeb077a175ecab6ea3f02f613024381adb1ef25c82ef2",
+      "blake3": "cd01ba7bb4de724e3ef2e71698bca9f30d3cbdc639aa90347f190a40ae1ce036"
+    },
+    {
+      "path": "tests/test_release_packaging_constraints.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4763,
+      "sha256": "738330fc02b23fcad49104dcf5b0341ce18d5b6ab39d91233d2cc06259ffab7f",
+      "blake3": "07849ea14d83fe10d365b85191263b698283714b66aabe2e59004bd766581f04"
+    },
+    {
+      "path": "tests/test_runtime_diagnostics_integration.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2856,
+      "sha256": "6a154e9b2ad379c07694c2548ca86c46c9e1a99f9bf19b1527e301b0e7c45a43",
+      "blake3": "c9fcf6146c499615f33369857e93f332d678b33e3e9a53d0037d8b89b29095c6"
+    },
+    {
+      "path": "tests/test_runtime_paths.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3279,
+      "sha256": "4e27f1cabc1a63a2764a70605f0b2659a4c0f58298f3f299ed7345ca73e31447",
+      "blake3": "908dc5f350642720ea9f6baf320b3b267d9bda3d6ad2db03cc360636ea71cb92"
+    },
+    {
+      "path": "tests/test_scaffold_guard.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2432,
+      "sha256": "8973c551908b0fe62a1df88090581d226cdeb4a8251be84d3d59f32ce26e5b49",
+      "blake3": "90eae3a34444086ed2d99c2aaab1bea0c4c49c3e4984eee2429975171f86f21e"
+    },
+    {
+      "path": "tests/test_service_contract.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8743,
+      "sha256": "fbe172e554855a34240693941e6e0d90bf7cda4d87fc94d2f6be4d82bc362196",
+      "blake3": "1e851e479730c27c8659323133540f448520eba271871d7625e674c9632cf8be"
+    },
+    {
+      "path": "tests/test_skill_metadata.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1980,
+      "sha256": "99be4b5ab297663b2c12098c1d494a1763ffed71810386efdad790c7b328b1fa",
+      "blake3": "d9196a5d96cdf67337e22e949c80fe87fa1b602fd55aef019dd8fd30dc05d7e1"
+    },
+    {
+      "path": "tests/test_slug_naming.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3431,
+      "sha256": "28bf1b69b0e2d423b8db90ebd11460255e3c7fad6809333b8af0cd1fc599c38b",
+      "blake3": "a9827ffe48f6b8779802cb476ff2a3c009ba8702b7a3e14e2999e90029b80032"
+    },
+    {
+      "path": "tests/test_template_runtime_standard.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2822,
+      "sha256": "d98b453812160ac7adc83a34be628bce98041b0bea71e59b398327d7e707b63c",
+      "blake3": "58c4d5c61287b88ab25ee090d6b8b8b85a63d1b9de22072557b6e14f7f6ab90f"
+    },
+    {
+      "path": "tests/test_timestamp_columns.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13495,
+      "sha256": "3337cdfcb32cf43d19f42ed9a84b6f08f116d959586c9463904872858970a08a",
+      "blake3": "a32e0d72635278647183e81446275c4297a081a870275664d407e4697f155523"
+    },
+    {
+      "path": "tests/test_video_service.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6299,
+      "sha256": "4e26a51740bd6438abb01d2ce6144e13be01b240f992f01727b7c62661993e24",
+      "blake3": "d2b7bbb1caf30b8f802bcbb6f4daa0e651e75d137fb0c981b559bc1a520e01bb"
+    },
+    {
+      "path": "tools",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1542,
+      "sha256": "8365066ad9c6d6383c5456f296a5a8852665463ea256e4ac0e831e8c884fb561",
+      "blake3": "af3d6e7345c161902bfea1ba5b8497e281da4285be854e15b5584f81f5114375"
+    },
+    {
+      "path": "tools/highlight_answers.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6145,
+      "sha256": "e840af256e977b45ca2463b31fa8ba3bfabaf27e1b71cde36a3686c18b6f1828",
+      "blake3": "ed125488cdf585bdb836d74d4ded28cdc70adcdc30e5c7d8573225e6299fbd6d"
+    },
+    {
+      "path": "tools/scaffold_skill.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3452,
+      "sha256": "18efedfb74863b3eeae3395e8fcd80fa73aba27271f3d94af68ebcb4fdae6687",
+      "blake3": "4af71a98296c528f66e3e93a994a8f3984e5cada8e0a515a936c04c6f8f939bd"
+    },
+    {
+      "path": "tools/scaffold_skill.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3654,
+      "sha256": "6d4736c7f5a9fd5fa938ba306fd5c0b1d382db343022c4db62a5508cff5e10e8",
+      "blake3": "54f0d5af99d2e218f409693f7192c7f16757431b12942aa44f290f9d392fc44c"
+    },
+    {
+      "path": "tools/verify_highlight.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2015,
+      "sha256": "37e88b72dcb40db881760bffc851d4fe4121f0c94a3b596239eb713da68c4a39",
+      "blake3": "ec0ac1cbbf4bb6636f84ec216a2ff5b0223b89a11dda94daa2f958d2b7ce298b"
+    }
+  ]
+}

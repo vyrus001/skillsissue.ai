@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:19168a835dc0c9b77c7fc891eb2d7c9222adefb32dac9a36d29d1e8a14933afb",
+  "sha256": "19168a835dc0c9b77c7fc891eb2d7c9222adefb32dac9a36d29d1e8a14933afb",
+  "blake3": "d269c68595dbe22ca3d14209f60053426ef5198cad0af17e24bb6bba5f6df103",
+  "size_bytes": 81133,
+  "file_count": 15,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1723,
+      "sha256": "3960076beac7697a04803f3bdc91ee066741ce7c60911faa6105f06afc0836b4",
+      "blake3": "a270578cb1805f23c54d3f496bea14a75e6dd4fd7cfe5f023b357503779f3d69"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8593,
+      "sha256": "b2e85e12592468f219bd305fd064d125c1e04adef0ba2d89d9ca677eaebe48dc",
+      "blake3": "248c90c9513d87c03efff5b98de85a7792630277a41bb3f653dbdec7153b5cf0"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 139,
+      "sha256": "fb19e6107003cb99df7a8843fc0089914da67ff0c35fb9c3e376dbd7185f313c",
+      "blake3": "c97918f07ee04d8a1b2b104cdfb5f190798034436d7d392efc6d350048bf3737"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/changelog.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1487,
+      "sha256": "e27029312b703a6483480a905183655adebaaa98c05d3fafb63c0e8af5c993ea",
+      "blake3": "afb517b97e767286e2744167df517c69386c54331c50ae3450bdb726a6b3dcb8"
+    },
+    {
+      "path": "references/risk-checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1941,
+      "sha256": "7acdcdf52eea8fa52954f7b51396dac4b91316cd9b035584fa32c6fea128a9e9",
+      "blake3": "a587e92101971e82b759bace81fc5c81d58d3cf1c4de23fe0ca0948293013a4c"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 49,
+      "sha256": "70f3e3a8e773392edbaa2d95121127447657643f4ae184ee0c3b9aaf1cc58219",
+      "blake3": "2d71e0b01c69b57f366fd6cffe311f51975ae2598bea77327bb232b4b0345b53"
+    },
+    {
+      "path": "scripts/ai_extractor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11876,
+      "sha256": "4533dd2d1573ed639bec20e9674feae097d35159af1560324a087693a559b308",
+      "blake3": "31e0a7aa3207a4de192f3a894f48fc1b116a9ef2b9ab549be558457cf227408f"
+    },
+    {
+      "path": "scripts/contract_type_detector.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3311,
+      "sha256": "b5b5865e6b2bebccd0683774babb017e139f501458eb5bc2bf898fe41b557706",
+      "blake3": "0e4ab66c025808f984933a66ae12139d1edf708b5068c729f4f123d9a1f4726c"
+    },
+    {
+      "path": "scripts/feishu_notifier.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7446,
+      "sha256": "f0c148526cfcaa46ab586b3da0cf077c01aadc19fb18cb5e27672194a45911b8",
+      "blake3": "6fe568ec0957c02e9e0fe7c6ae493a6202a77f606ca4101d4d3892d5ecbc75ff"
+    },
+    {
+      "path": "scripts/main.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10400,
+      "sha256": "1022260b21a022680c1ac2018eeb8d93cadba6af2a55256a5de9c20064ed997d",
+      "blake3": "775d08dc844dc0d8ab4f3d7fff951d1dd6ba4e9a984cbd45a228ba68b936ce7b"
+    },
+    {
+      "path": "scripts/pdf_extractor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3113,
+      "sha256": "90a56a832d982b074cb04619a934e3e134403a462e51ec31de082801b6e1cac1",
+      "blake3": "0795d18ee9c8f16a6795b352625ded7c639c76eb366c374c2740f7585cd9a4c1"
+    },
+    {
+      "path": "scripts/report_generator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6900,
+      "sha256": "5cf1387877d8c649a68de75f2b8c736cfec4337e9a133d82accc9c70d2312dbe",
+      "blake3": "cd7e861cae828aa8d58952b37b514c14e9103425002709a352659449b5aed07e"
+    },
+    {
+      "path": "scripts/risk_analyzer.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10390,
+      "sha256": "5ee5d1726cf791bca9c46a9e1afdfc0685125572f0115e311e309d1f0def5fd8",
+      "blake3": "069597a92a2ced43dec98971241d2e11ea791f1199409e1d5128344f1944e1f2"
+    },
+    {
+      "path": "scripts/test_contract_analyzer.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10998,
+      "sha256": "553cab1abd48aa52e5afe1b72ff86015a49b100096c7b10a76c4ea2c2c73485c",
+      "blake3": "5cf44f0e1e59553f9f9e02339c1e98c13d6aabbe2058c12a7581713a05124507"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2767,
+      "sha256": "37aa5508e10d1cc243000429eae2ea655360bb04a8bc82b622cbe0c5be163d42",
+      "blake3": "bf845b2add7722fadaceac34f72bbd0bce822a3ac67adb42635c1c854c3cb20c"
+    }
+  ]
+}

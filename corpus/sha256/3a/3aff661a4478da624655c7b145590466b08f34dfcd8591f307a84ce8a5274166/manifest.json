@@ -1,0 +1,249 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:3aff661a4478da624655c7b145590466b08f34dfcd8591f307a84ce8a5274166",
+  "sha256": "3aff661a4478da624655c7b145590466b08f34dfcd8591f307a84ce8a5274166",
+  "blake3": "518ced7c19ababd9ca3fd5691ab5174d8f56ac3b7a5727ae0667f2fe08c60eb3",
+  "size_bytes": 73465,
+  "file_count": 26,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6425,
+      "sha256": "6d976b18b11dd86b51376a0bc8a9f521c25889d2639e6edb7dc85b4772d77e46",
+      "blake3": "8aa47ee92a2fdfff649e1e7ecdc3cdf4a54d7c758901c62305977ff5b71c5c0e"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 145,
+      "sha256": "948f8e813483697fd48ed35eb918907565c1c7067044fa53734bdad72be3821f",
+      "blake3": "07ca6974834ea74bac0203c96bc3cc6be9e77b0e2a5a006eb10d63b52139a3f6"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 323,
+      "sha256": "41ebae0825658a99f03022d553b2d0b68f5a5ceb39246c29b2dd784f078c3472",
+      "blake3": "4e55b41aa008de3f5291ead0e13e7bb56ee52688912fcd28f78549dabc453a1f"
+    },
+    {
+      "path": "examples",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/account-control-change.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 347,
+      "sha256": "1ff7d847faa507245c00ac8718b7b81953a8a1f49e09cfc9158e4ca631572503",
+      "blake3": "f271a0f0d3715ddadc899677cff53d42e887e3c08a4f926e483f4407379bec2f"
+    },
+    {
+      "path": "examples/loan-approval-agent.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 252,
+      "sha256": "0abc363aedd4686aa3c20831aafeb466a31b21406c59a7beeada020f81e79abd",
+      "blake3": "f8a14a5fe07de931937d690d5475aa7daed7846692fc58326465ba40a15c0fce"
+    },
+    {
+      "path": "examples/stablecoin-offramp-agent.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 305,
+      "sha256": "ef7dbce40e7f147c3e5ab5c7aa499f46ea2d6ae9cadb049bec078e70e3624854",
+      "blake3": "886f2754e07e935b3adeb146d3074985d2b3f892d2f5652c2f4384a2d5675fea"
+    },
+    {
+      "path": "examples/supplier-payment-action.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 922,
+      "sha256": "1c079fecf98ba7a89ba0b130adf752503477ce7b00d7c5f75344026f1ca7128c",
+      "blake3": "37928b0121d49ded9f9c853081eacaf40d5da7713777e60317b979af696df309"
+    },
+    {
+      "path": "examples/supplier-payment-agent.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1066,
+      "sha256": "0ce8032a80ddb74948649f81dc191ded5befe5169a380b1fb061012758f827dd",
+      "blake3": "e3b8958cedd32ab6a8e57d349aabf6ad58b0b87fe3032fa680d2290bd3662bdf"
+    },
+    {
+      "path": "examples/supplier-payment-decision.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2442,
+      "sha256": "4e869e3b2d1ad4557231ad8e34d5cfb228643f69fd978b14cf26c46a75ee3095",
+      "blake3": "3bc688f335ac71e6be1b279a1eae31ef4b8712dc5c1c3754a1e52853d9dfeabb"
+    },
+    {
+      "path": "resources",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "resources/agent-evaluation-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1680,
+      "sha256": "50c78d27a97ab502280726be6e00f97ce6dfb02ed301f56dbd9bbc2e28525519",
+      "blake3": "99e5b3285bc2a029a26444ad46c9c1e8be3dda94c4aa4d8aa47a606e8a0b4123"
+    },
+    {
+      "path": "resources/audit-evidence-checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1412,
+      "sha256": "cc34f260ceed61ba7e33d54e68a59d13b38ba3da81505f79f4408b21a9555860",
+      "blake3": "c56eb922871a60199cf2d42639816011c3ff094ce63339423fd92ee52b1152dc"
+    },
+    {
+      "path": "resources/human-gate-policy.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2149,
+      "sha256": "95b163c5dabe8769a7fc570f7d8e1093cc5e3b09b093bcaa180d5f1def01ceb6",
+      "blake3": "712a4d986262b22d6f8427f0aeb060879141388926874734a0dd4e09e0df7982"
+    },
+    {
+      "path": "resources/identity-verification-routing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1139,
+      "sha256": "810dad5b74628b72de9bd37f7bfa1bf68726eeab4758b5c6605f80ca13ff9950",
+      "blake3": "d22d05b56bf57ea6219415f7170d5bf8f5d29c8f3807907413a3f885106c98aa"
+    },
+    {
+      "path": "resources/regulated-finance-use-cases.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 754,
+      "sha256": "4d6a7e5934cce14403ef55b7def77fb1c15621be1bc0a74015f339ff28738954",
+      "blake3": "afc63bbf04510645321578722820870fe01ee0a29b1cc90fba1d153557fbd9a6"
+    },
+    {
+      "path": "resources/risk-taxonomy.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 976,
+      "sha256": "3377a3c6f17c74bb84695f89700840ff4b06455cc34fb7d050763193e45e2f8c",
+      "blake3": "bc6b3c0d8d43c874f9454d530fd4adc3cb6b83dff37bf45f11c60dfdc471a2d2"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/kya_receipt.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20682,
+      "sha256": "64c2dbff0d4446ead321528eb8162c6297e831e930bb5e2186369303029c31e1",
+      "blake3": "9c373802fba03924e04fc84c98c697a81f2d95254fb262ef0df303edb62de733"
+    },
+    {
+      "path": "scripts/test_kya_receipt.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6970,
+      "sha256": "0ba2cdda45cfca4b96407711b850bed58853a4a9ffe36b982cbe7e455ca3acca",
+      "blake3": "9caddcfdc4306db062804c9bc3235bfac82b4b8bae42cfaa01463c89865dca3b"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3275,
+      "sha256": "dff895616c73885656f237a3440b50d6bba685332562853217e15d7d21e08772",
+      "blake3": "fced3326dbcefeed9c2334bcbabc0856b7504d25f45c2b3a2915f9076b40b659"
+    },
+    {
+      "path": "templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/action-intent-schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2759,
+      "sha256": "ca7c31e11b01c2e601611f960ff39be90dd791d4f113a06d2f89350f606bb4a4",
+      "blake3": "1fd79c2fe6079bec15cf7a2caf87cbe4d6fdc2ad77a1e0404677852d45f79f52"
+    },
+    {
+      "path": "templates/audit-log-schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3304,
+      "sha256": "a11f2acc4bf71c641ad4eac7b7dfd93a31a72a5ea90e4851fc8b2d547eca1334",
+      "blake3": "4f83574683d31022de61efc84862130efa6429a18133b072dcc2302c4300049c"
+    },
+    {
+      "path": "templates/delegation-receipt-schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2820,
+      "sha256": "45de074c761002d1aba69d3d870d32450355692ed3eeabcd6d3f5f602b69cd43",
+      "blake3": "70f61f56d5a7bfae175d4da193b21df26dee767488508f6c3970066ce38df60a"
+    },
+    {
+      "path": "templates/evaluation-case-schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2524,
+      "sha256": "8765f04799f72d6b774092569fad6d84b0d84019ebfd7447345cf7bde22d3ba5",
+      "blake3": "b0876562f5ad0f08bd2344076011cc01acd339ffdeadfe079bea44ba873a8291"
+    },
+    {
+      "path": "templates/gate-decision-schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3104,
+      "sha256": "3f525a8fe1be8cf772bd1f8bcd34076930f2937fb20b6cfd39fc78b48d512039",
+      "blake3": "f406608d93186f13387d4fa3b7828c1a196d61a97f9f4347c237037489b126b7"
+    },
+    {
+      "path": "templates/mcp-tool-contract-example.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3559,
+      "sha256": "3797dfd047ba2cfaeeb946aa763edc9bc40ef2cb06f28db496e39ce9a3b8054b",
+      "blake3": "2d41901ad79688b355d83488bb196f220f0b2e1c5f8d240ba2ece78206e781df"
+    },
+    {
+      "path": "templates/policy-template.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2747,
+      "sha256": "a876184cddb753a6e06430459c9ed4967e314a136c2083251af0af920d5ed6f1",
+      "blake3": "5e0acb622362970ab225caf51bd3e69496354f143660867f2e366afc8ea9a23c"
+    },
+    {
+      "path": "templates/risk-control-matrix.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1384,
+      "sha256": "3a921e3d5fa0ea4b3779c49b3c5c9a6382939ae8f566128625b23d0e7eeb7de6",
+      "blake3": "4888e45a377622b5ca4e497fa433c16bfabf2521307fba92a5ad38180ec66184"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:04a803513fe35cfb158bd5d8aac14af70b904d8000eae83c915769416d4055d0",
+  "sha256": "04a803513fe35cfb158bd5d8aac14af70b904d8000eae83c915769416d4055d0",
+  "blake3": "ce95572c60bd3104c1fdffd7a2bcff2fc4205c1c6b59b1a90daa6a81bef6a8d4",
+  "size_bytes": 60842,
+  "file_count": 10,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7739,
+      "sha256": "743537d432f464552a1e663f3b503881c21aa18752e1b7706a754434e401fecb",
+      "blake3": "96110d9c7f216784318094ada39d7f44d0daca9d2e8c1188bbba3d9ee5783f8c"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8780,
+      "sha256": "ee338e1a26663172537c83367fa0e8e39fc5f428a49eb2208d4957400c714199",
+      "blake3": "0153e9e1b06ee9b746d47515cb0e41f49c012b4d406c7d5bb83126c3bcf22758"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 128,
+      "sha256": "88a50eb2d7aa6a76f74706cea6242e97a138410807b131b61d121802f51392a8",
+      "blake3": "970feeff175a0ae03a117fedd09d0eca37cd27e0ee3b476334bf2e5f71f534c5"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/REFERENCE.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32702,
+      "sha256": "ad90a759f02b2ed349b4a93ed2d73c4b68c216f6ed748d0cdecab145339d96bf",
+      "blake3": "d2fdaae8508ff3e21f5cdb07cfdb121b2daed3ab257b3746bdfbbde6d3ebea46"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/azure-resource-cleanup.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1793,
+      "sha256": "a6041faebab4cd9785c770d51864122e5d1d8d935f5f41d90caf2bde67e53d71",
+      "blake3": "af58e3732184221f880f6e8573892c343bdf0da349989a13fa83b274880cb7e6"
+    },
+    {
+      "path": "scripts/azure-rg-deploy.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2203,
+      "sha256": "d27e3332b9fe7412260e7e15c977d9246b5c098a035383ad151e3ff6790cc038",
+      "blake3": "42b067ab8dc2aa8d221da009b759efcfeb4b9addc6bde013836f629a1de4d399"
+    },
+    {
+      "path": "scripts/azure-storage-analysis.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2005,
+      "sha256": "f67a0eb957a355e103c4d01077b206fed1c53b7f9cfb941ce4b06ff7ca92f5f5",
+      "blake3": "60e53b95cbb9e2a693629242e010230279b25eb8de49f6c40f9238325876c134"
+    },
+    {
+      "path": "scripts/azure-subscription-info.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1503,
+      "sha256": "342e7bd9341f6ccead3ed17f8f8cffea6de183b7cac6b41664afeb241915841c",
+      "blake3": "63158d33b8e34e3540ff00381efc685efd6314caa2df37a15e1fd47d71e310e4"
+    },
+    {
+      "path": "scripts/azure-vm-status.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1267,
+      "sha256": "3807666c4bec1dcffde76c8c13b011728017760472980e4f1d8df879df91078a",
+      "blake3": "1b134da9e32b1af74b67e8229f2cf31026c9471c0e73823f12fb799ed0b0e4a1"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2722,
+      "sha256": "df307a48052a1aeed4faa5141fa56d0927960b3af32da5ac2caf8b5eb9e735ec",
+      "blake3": "dc7a3460ceb089976211260b1bb3cd30aacfcd711c6a6e549c1543e6f10a3392"
+    }
+  ]
+}

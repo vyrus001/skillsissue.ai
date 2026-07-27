@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:e208a426641f5b7293ff3cfa5a4702f2755dd3e4a77b3136e4febca4302c8331",
+  "sha256": "e208a426641f5b7293ff3cfa5a4702f2755dd3e4a77b3136e4febca4302c8331",
+  "blake3": "e14c85316f6650fcc2f364b938b11fe04f1870b92513b42d4726aaa53ac4500e",
+  "size_bytes": 80189,
+  "file_count": 15,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5068,
+      "sha256": "74c16cc98970d1274c20435e48165e4b4be69e04d184318b2d85dfa9b5131e35",
+      "blake3": "81eb455a924396d8964908ea0db9dc987570408da4232893a79addd2657d87a1"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 130,
+      "sha256": "a05a11e70def2ed46c8c53c22f5478c1833fa0fd7e96e90525fbb649d115efb8",
+      "blake3": "61fb26706c65f9320ffc9d590cccecb70df522ba16a91fd1035aefa729260468"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 310,
+      "sha256": "e7e67a858c7612dcb70880896cc479ae22ebce4b178d5d782541a5993af36577",
+      "blake3": "c530b8b3cf8fe855399b418119f7dd0329e2dea41d87bb40238f8beb8bcfdfaa"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/report_template.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9004,
+      "sha256": "cd5c34fdd4e338db8e4215f228edd9a7bd85adbfbf77b703cb069a3531f1ebe5",
+      "blake3": "16e5def43b0d9d189745a464df312bf9718ecad3efd8141f877aea0f90ec6eae"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/project-grouping.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1308,
+      "sha256": "5c98ea2d486b93297402d6504adffc6f5f8e9992d36e312093e045d28a0fe2b3",
+      "blake3": "bf3abde238c6062393cceb98d5d8782909a039f3589035316256471e5a96ec4f"
+    },
+    {
+      "path": "references/report-design.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2828,
+      "sha256": "1578690f7116112f83b9b5529ec6eaa63b2c532e8a93251e75e78bc5ca8b65df",
+      "blake3": "32792a2ed6d9f3a5d8b82e1adf481148d4a155f46da663021b5af56070d93eca"
+    },
+    {
+      "path": "references/troubleshooting.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1499,
+      "sha256": "264ad5b824246c73b6fdcbdbef8825e6643515b7ba640580c0383b74a3b8fae2",
+      "blake3": "b45b53755563ae24d63f9872d6ec4aa1e60b08bd35a4e17f5d90ea555d1acd06"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/adapters",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/adapters/codex.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10430,
+      "sha256": "5ce3b878a6dcfbade61bd42f8165ce40972751579b25f8456cea507540dbcc4f",
+      "blake3": "729a85987687feb76a1dc8f7f66910150175f7001d0c8a357fa87bfb00643678"
+    },
+    {
+      "path": "scripts/build_report.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18856,
+      "sha256": "c0d8326de51f2516803883168267e7124b1e7b6a61afbba0b9997c15dcd3c39f",
+      "blake3": "a36da462f90c90ccd4c6c0b62d3e093710ce440b56026145c1836602954e7285"
+    },
+    {
+      "path": "scripts/core",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/core/diagnostics.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 985,
+      "sha256": "196f86a71e51357462434f0b93daf459ab263ffb99d5a77d276bbca8e41e385f",
+      "blake3": "b76d1fe79a843357db1b7945f31bc9cbf1db2f8f2bdaf975d18c8eef74480256"
+    },
+    {
+      "path": "scripts/core/grouping.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11592,
+      "sha256": "aad45fbd5548ddf3401d8dbd0e31a08a2365692aa6d9369ffff078b08f565bc8",
+      "blake3": "9346fdedc53ed830a89b7a1029abc0f9b5281c43b6a6c186e713b6c1bafc7bee"
+    },
+    {
+      "path": "scripts/core/prompt-analysis.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7660,
+      "sha256": "c8de39189a1f3ce644bd6fbf1ec0d19738080fe23489f7807a9b31796af0be96",
+      "blake3": "d4b2d423e859bfbcddf9f1ee5f18896db3c1835acc7b924877e3f4f00cefe4f4"
+    },
+    {
+      "path": "scripts/core/report-schema.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2405,
+      "sha256": "b1f4829df6c5a68f3fc8cecada1dbeb5faf0ee99b6929cf6cd1f4ec1fa52e029",
+      "blake3": "5920d2f4ad876b19d1df0c92cbac5dad56745508d8b4190919613858f7183ac2"
+    },
+    {
+      "path": "scripts/scan_usage.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5162,
+      "sha256": "d146344d28317d616e96b5684f2df525542496179340d6ff33b654d40ed1d0a3",
+      "blake3": "6c4ddb198a449d0ea17342dfe8e1d8520bd5089ab1d07d7ba45a3c23add94598"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2952,
+      "sha256": "1dc1b0d1514ed154e17ca03792a8727468478f0490df5b3b755116b30ab2dd9e",
+      "blake3": "20582cd662922fa3abc856e714ad253a340aaf72bd77d3cc10db57e45774c218"
+    }
+  ]
+}

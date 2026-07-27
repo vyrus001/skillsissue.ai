@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:fe2a7a956c20c4dc2a87dc560c3194cf8ccbecbb35f838ed64aa4910aea9033c",
+  "sha256": "fe2a7a956c20c4dc2a87dc560c3194cf8ccbecbb35f838ed64aa4910aea9033c",
+  "blake3": "b2b38f6568b9719d19bff11fcb0d5ae82f5dfdb46bf2090854b0b700094a1003",
+  "size_bytes": 49761,
+  "file_count": 8,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 26688,
+      "sha256": "ac60ab01803f0ea6b1af2cd93eddb592c47267dfe39fd2781cb1499680a8e62b",
+      "blake3": "305f5aacb770a41f512a7df4a0002d409453cd86610cc993e103feb35bfcf929"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 138,
+      "sha256": "177474c8b0f8d88b9c84c38bc6e3c9bfe7edc7dfea738c21a0645c8404dcdffe",
+      "blake3": "aab03f74d2a1feb10b1bc3472caebe9fbf4efaa9776ba7e1c89871b6c6225a6d"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cron-message.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 773,
+      "sha256": "53bdfd42951a7e6559161686d7d949fe0962c58d9546999a3b5dd7d9b5f72b8f",
+      "blake3": "0735b3bce7ef3ab44dfd0d30cda0af3c96c00494afc49c7828f00636ce43ba85"
+    },
+    {
+      "path": "scripts/event-dispatch.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4668,
+      "sha256": "0678b8435cd768f30498d44f00a8419de6c318f20548ba25ec13ae59eb5a9b41",
+      "blake3": "5d8ae9e43ce7f9b303e6fbad9b94213a8d0835cceaddbc43a40779167285ae37"
+    },
+    {
+      "path": "scripts/oauth-expiry-check.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6279,
+      "sha256": "b8067827d4ea8c9b44980dfe07a27377f92383b9bdd08b80efa9c278d034a39a",
+      "blake3": "82d2cd76b3283492e705a6fc216dc980955fb491c300792bbc10eae8b6c7ee4d"
+    },
+    {
+      "path": "scripts/preflight-queue.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4257,
+      "sha256": "5d8dfac26667907463928f004f9f86f2d517c3e8213192496b5f0c608bd24ceb",
+      "blake3": "3894b22712db0808e035bd27fa9fb0a6a0fda0b014222f478af297f6a94204e5"
+    },
+    {
+      "path": "scripts/purge-retention.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4103,
+      "sha256": "cc577cd4932015b03e1e7fcf2dd808292c1588ec923bfcbcaf333e4855cf072a",
+      "blake3": "494c11f4bef5f835415ec7b57ad17e6185bc1e37f2d84fdc1ddac6ba0d9ba7ac"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2855,
+      "sha256": "67ba49d9ead9412e266a033029488953196322c747f9b07edf03fa5332d93ff7",
+      "blake3": "47e0220178e7e3d425dc2c391c915faec229d69e5c020fde81c12f524040b92f"
+    }
+  ]
+}

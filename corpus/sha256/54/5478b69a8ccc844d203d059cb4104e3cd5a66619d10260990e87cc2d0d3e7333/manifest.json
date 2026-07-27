@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:5478b69a8ccc844d203d059cb4104e3cd5a66619d10260990e87cc2d0d3e7333",
+  "sha256": "5478b69a8ccc844d203d059cb4104e3cd5a66619d10260990e87cc2d0d3e7333",
+  "blake3": "eb7c06be9a0a65d5651115cc458b3424331df406061dd288a6748031250ce3d3",
+  "size_bytes": 263511,
+  "file_count": 27,
+  "entries": [
+    {
+      "path": "LICENSE.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1499,
+      "sha256": "5c782ef0346e4fbfe0dc76fd435f181a0f1e4a1a7a6b13c169c6e74314ff5964",
+      "blake3": "6508ac4e960c02b890bf3f6021cb891ff9d56bb24943f6937992866b3ade0778"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24047,
+      "sha256": "46cb4d9eb1e847832be87c20c1737461ff4368f3fb592cf47f99bef7a51ebd09",
+      "blake3": "f6ea5be1cabe06a2f25ee321ab9a897966efd69428489b0edaf00614c726238f"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 138,
+      "sha256": "983d18119faff6c7fdc2af0066302b96b5939b6387be6f5c5daae9fd2a780d19",
+      "blake3": "0c805069e6d9646fd091abc10abceb59a441da35038a7b48f8d42720783570c0"
+    },
+    {
+      "path": "examples",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/01_fetcher_session.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 853,
+      "sha256": "05fdb45c20a304f0fc8c979eabe7eb78b467951219be7b0a6a45d44c05b3ff68",
+      "blake3": "b03336473e3ffc97edf6a4b4b8e9fcfd639decf5074cea46f10813fc896f8c83"
+    },
+    {
+      "path": "examples/02_dynamic_session.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 951,
+      "sha256": "9006f94a2648ef7a3c0c7365d636f8a962dc490d192550b9148b40e3c816a5c2",
+      "blake3": "61bfebd9773989c4cb3a224f9235573df931cccabdbedf1cb04f25a287f8a133"
+    },
+    {
+      "path": "examples/03_stealthy_session.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 952,
+      "sha256": "a461dd666b82ce478e4bfdb966724d1c1b8807a3a10ce6b918d449c4d553bd4d",
+      "blake3": "1807f8461add82568fabe7495b43e5eae577cb4d56e663d10aec3e1d510f74e8"
+    },
+    {
+      "path": "examples/04_spider.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1941,
+      "sha256": "2a899a24ebc827bec0b395f60d276813a99d27575255d28ede30e2cce38beac7",
+      "blake3": "1b5f2b1e75e805da400544c75808ba65272709fa61c10b76552c536c57bd1d1b"
+    },
+    {
+      "path": "examples/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1742,
+      "sha256": "88d0360bb84f8029d99a3bd3200766ce35343d850311c693e1d20de952d6fc17",
+      "blake3": "15d4c0dcefa34a011364370eff9601866e01c1af725c878ea316b7e8cbe1bf35"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/fetching",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/fetching/choosing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6472,
+      "sha256": "06005a324abd8e32e4e9782e6d1591626e3b39d01404a7323c59c33d77f5470b",
+      "blake3": "c3f9b9f58d2f319fd192e608bcb971d4a7fd2006da92054d52cdaa61d4ad8c73"
+    },
+    {
+      "path": "references/fetching/dynamic.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23827,
+      "sha256": "c17c7d4c051241cece36f46c304ae56e639a7cb4fce9c09a389ad8806fda6885",
+      "blake3": "df322d70f6459c16c8bf27a1072ac2e4675be65d01bfa4a7cafba87c50f3f1cf"
+    },
+    {
+      "path": "references/fetching/static.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17266,
+      "sha256": "93e1629ab6aa8cbf06f6e8b3b1da8845fde89fc3aab3b68f25393b20f70a6a2a",
+      "blake3": "c05bd6bd867dde9c9b40f35e6022686a78732b195073f67f54c3a42b8f9502a2"
+    },
+    {
+      "path": "references/fetching/stealthy.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22240,
+      "sha256": "ef77c87b2a957f96c18af49840a6796c704f5931149d39d60934733da616e3be",
+      "blake3": "1990bdc64c6584f106c3e374baf57229e44b25690a9cb2d670694875b3359328"
+    },
+    {
+      "path": "references/integrations",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/integrations/scrapy.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2975,
+      "sha256": "dafeb66ee73ffa4b88d28382f647d37124a91698a03c90fd4121cb229cc79f46",
+      "blake3": "a86af052a18c7917f1fc65cac74a2a4862339e1cab2703b5ac40724c3161f46d"
+    },
+    {
+      "path": "references/mcp-server.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19234,
+      "sha256": "4a2ca9397cbd256edd547af3189a038318e2d09c842af4867bb0f41ba0c39ad4",
+      "blake3": "75e9781cfd081dabcc8f2b47c8fdea8ee7710821857eba680dd2bcecbb5d4353"
+    },
+    {
+      "path": "references/migrating_from_beautifulsoup.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11264,
+      "sha256": "4d06027059185c16d4f8e2e130cd14f1e1b8612efa327d5bf3d0fee2f23199ac",
+      "blake3": "558dd3e85389f7fec947b502e236942c86c908fc8356d9f3a828d8c16309251a"
+    },
+    {
+      "path": "references/parsing",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/parsing/adaptive.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10648,
+      "sha256": "5f25a54c590700f8c821010733ae079b4edea2a2e8a48074f35c0ed4561c202c",
+      "blake3": "8d4001ae6686cb7bb2e82099345c3fc7d98eae180144a5991cf0b390e4bdb499"
+    },
+    {
+      "path": "references/parsing/main_classes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27300,
+      "sha256": "2e977b335bf270f1cc7760de6393e09ee9346a8e880c1e9a891a2a58541c3600",
+      "blake3": "5c5d618f28362a01c5ca8fbb56088b49f2daff79855dc3c93551024c7b46c969"
+    },
+    {
+      "path": "references/parsing/selection.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22615,
+      "sha256": "4975a4b43e1180826d8145efb129826c3206e1b3a91511ef60622841143184aa",
+      "blake3": "bf818e34551f87018133ee83a9b23cba2fb4cb78b90c25beffe84f7f0c8f829b"
+    },
+    {
+      "path": "references/spiders",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/spiders/advanced.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13531,
+      "sha256": "3a8d6c14a11294d73454c1449f3b0a6d12c1a329f5ffa42c95dbc7a5a41089b7",
+      "blake3": "61b1e108b9876ea8694ea860d6a46477cf7bbd755acff8709c71f7025c41f407"
+    },
+    {
+      "path": "references/spiders/architecture.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7499,
+      "sha256": "2be3fa107bba5fb6b6b6c8ac484bb9a6095ec11298c3bbd68c5079e6c81111a7",
+      "blake3": "4f94e1c5f1326cd01cfd81587e091a57e03811670f5fa99a394e9cde0f11c3eb"
+    },
+    {
+      "path": "references/spiders/generic-templates.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6997,
+      "sha256": "d8505ea06eacfd45a97c4d74ed11a7c6a2a66738a0a4e006bebd977363c229b8",
+      "blake3": "284fba605d3186e43caf74f5f72a2a62dc0124a2f907cd50043b38fc815bea04"
+    },
+    {
+      "path": "references/spiders/getting-started.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6027,
+      "sha256": "e21896b38192ab24352fb49454a054f3afba33dfc079ca8f40630cca3d28313b",
+      "blake3": "e811e0b99b08441706b4c989fc6ea48e3342a23159c2e00fb0b2cb2661e73a65"
+    },
+    {
+      "path": "references/spiders/platform-templates.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3599,
+      "sha256": "9692f6b9d246f9c0da3d6f712368099f0ac9217058a262ccfbd7c806a389a55b",
+      "blake3": "5e4aadb7390c666a1ca85352bb18e93bc5ef22fc1f297280ba66e2e3994c33d3"
+    },
+    {
+      "path": "references/spiders/proxy-blocking.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8947,
+      "sha256": "bd21204aeafc1b11ef935ed984bd445deaa92657151b29829787fced84261b5a",
+      "blake3": "316d10db53623da1adc153b177fe8c33595bee05ef5350265f755794b07aa8b1"
+    },
+    {
+      "path": "references/spiders/requests-responses.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9070,
+      "sha256": "938882dad9c6e90aea213f71a43024c676743399c7cf503eb6e436fe8b0369d0",
+      "blake3": "9436a77b591f3d7554ea3844290cf326a518f26cdde175c0eb8f5e9449af90c6"
+    },
+    {
+      "path": "references/spiders/sessions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8701,
+      "sha256": "e5d9736725dc01e72ce55b38bf6f9ce2672d7876d17c23151ee01145bbb489b4",
+      "blake3": "fb1388b6954745e0639c7cc1970a7e10708df04428fdf1625ef4c4a6851e62ad"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3176,
+      "sha256": "778f7864ef7da4fb289cabd35cc287ebc8df0d85d566f9eae1d9951106822e53",
+      "blake3": "e26f2a1bc497190d57dd664005473961b4c7915bcfd328a9676e68fc8041066e"
+    }
+  ]
+}

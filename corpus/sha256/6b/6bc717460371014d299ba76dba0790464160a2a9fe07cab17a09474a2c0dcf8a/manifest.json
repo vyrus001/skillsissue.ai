@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:6bc717460371014d299ba76dba0790464160a2a9fe07cab17a09474a2c0dcf8a",
+  "sha256": "6bc717460371014d299ba76dba0790464160a2a9fe07cab17a09474a2c0dcf8a",
+  "blake3": "bda4ab375f4d103c4099576b0548dcab951921b4fe1aac7bf15b34813265c837",
+  "size_bytes": 105045,
+  "file_count": 15,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19639,
+      "sha256": "ab510279b3e879a2beb51233628eae39cc739a0cac42f60cd7d0568f2636de02",
+      "blake3": "cb4b7696f8546c582a71b76aca54b317e8f4ae977548a029f0970228bf47b26f"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 146,
+      "sha256": "bb9425e5b8c68c8da420582c23b628adbd9105c165fee2b77eff415ff91a3602",
+      "blake3": "260de4e6d337b9b0040e25cd4eb2d5397192a7609c38c0c94a8863f0cfef34b5"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/acceptance-criteria.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4944,
+      "sha256": "65e203a805cddadbad4faac04f04c8222f40b5cfd1b4095590835255e1983d00",
+      "blake3": "f54e71ac386c4309e907d86615ddfdf7523069880b99af69f1801b7cd752515c"
+    },
+    {
+      "path": "references/certificate-management.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3927,
+      "sha256": "281eb4ee47f83dd27d0c37394808fd5956ae6103bda9c665594508c898d53349",
+      "blake3": "2f5bdb06e1c0a33e76e94b460814b32cfa5cab85fbb228cd1204202e2da18b8e"
+    },
+    {
+      "path": "references/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2908,
+      "sha256": "792c45aa1c803db1aa81af4305a3c54408adacd212b0dd0f8fc0583d8af64a31",
+      "blake3": "8d6d4bd8706113c09946d185ebebb1da0796dc0b0102352b859158763fa9d205"
+    },
+    {
+      "path": "references/device-queries.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2413,
+      "sha256": "a434390533a5358d1bb2005d52081787620afb0612353c52f1e12b1511b5c52d",
+      "blake3": "c6ebcc54f9e36b41d763b19423ff8423efa92cbabd7711d807fa62da0a49471f"
+    },
+    {
+      "path": "references/firmware-upgrade.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3197,
+      "sha256": "7a00f14e435521be0640be4319023e54cd38a0f021d6fbc399236e1704994676",
+      "blake3": "d10bf9f1db433d79550c2fdb8fc887168afd3d030f31e684d20ae0c4f4a4b962"
+    },
+    {
+      "path": "references/troubleshooting.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3719,
+      "sha256": "a055b4f1e8168c83ec8e82585c72bf4ac7c1bc88c922e9097c88414ccc59e34d",
+      "blake3": "2556b2eed721f287d2750e72ac69ff0cfb7e06b1a8557bf1b34f7cfa04ba5c32"
+    },
+    {
+      "path": "references/verification-method.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1829,
+      "sha256": "c4cca964a478fcdb784f7c0911a815672a007987ad457db823c49d00d5346e74",
+      "blake3": "00c2ef2f0628f0e8d2623c388cf7a1a15bb925d2d7889b9bc560a94b3cc95532"
+    },
+    {
+      "path": "references/virtualization.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3936,
+      "sha256": "152f44555a96e71730db55f158056a0fcfb0a06e369f59d2f126ffc96f254912",
+      "blake3": "1fe9e24e2042d9e6c0ba1a768784d7df5b91c68f49b7ae94e6e260609eef0f66"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 174,
+      "sha256": "694d9632d77266b96b1f4e2972d28ea47acb04f5b4212ffa5339aabd9036230d",
+      "blake3": "06d599352a9805f406e836c2ba244717f3251c292d8a9838bd949f5cdb391d66"
+    },
+    {
+      "path": "scripts/executor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30550,
+      "sha256": "739fecdf868af65aa87412bc902e564457496ee4a089510cba6a4e9bc7cbe49f",
+      "blake3": "cb48d67e31530c06192eec51c393023dd0f5593a9962a7f87c02c7670ccc44c9"
+    },
+    {
+      "path": "scripts/main.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4630,
+      "sha256": "57810bf117526bf9a58c0c779ba19b1d082d9cdb99d25430bcb3b45b35198958",
+      "blake3": "83a0811220365a0aaf47102bf0abfd5acda6ce81169f1944a7ffb5084ce11cbf"
+    },
+    {
+      "path": "scripts/npu_client.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19872,
+      "sha256": "bcdfc6dffcbb8b2373172cb422bd8da7958918f238896bcf8422c77e0e939d8e",
+      "blake3": "082864167b40349a95a527a8e806fc006b25385ff4513c2049141a15ec195eb6"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3161,
+      "sha256": "c26c980ce89901072af779d80e8f4ac6d1f88593469b80e6c3bc639249641b82",
+      "blake3": "6c40a2aa960a2caf35dd1602eb0666e348afb1cbc82fc4b30569242c046f175a"
+    }
+  ]
+}

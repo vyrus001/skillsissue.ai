@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:1de5b0385c9813121f1c7783a24d4c2273efc426ea88b4f61a6a20aa968fb738",
+  "sha256": "1de5b0385c9813121f1c7783a24d4c2273efc426ea88b4f61a6a20aa968fb738",
+  "blake3": "6fe70cc3da893cb9396bbf5600effaf1818809a79860e41c0ee0a192af59713d",
+  "size_bytes": 45937,
+  "file_count": 13,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8588,
+      "sha256": "788fd240fa4e5bffb93f56270360a6655a160695ae1f74bdbd59b95b7057787f",
+      "blake3": "e8e10f29125916212dcc6dee0cd67f288a5202907f2c06fbd7c2f6502f208223"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10563,
+      "sha256": "084f3315e0340bb161d3b5630d464f95c235203c4e031f447533cc4765548e4d",
+      "blake3": "a99c2467b67cf1ded836ed80912b7b7cadfa5923baae4611ac17d5fc1c75fcd5"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 138,
+      "sha256": "ef4f486e57668e1cd0ef2467058d9cf35ac7eec255e90a30bc8c614f80b0755e",
+      "blake3": "a9ad35f9c6b808a9be7ff44afe5c611f9d1c51ce0edd0082f31c914437a6723e"
+    },
+    {
+      "path": "bin",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "bin/memory-export.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 998,
+      "sha256": "21839f9ec45e2d7f8be2337bb7148a62beaee81884253adcb16c3dfb20eb0eaf",
+      "blake3": "d4ae65e08310870955facd6bd6b552410b8e960e8bf047d05fbecda9437d47ad"
+    },
+    {
+      "path": "bin/memory-import.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 962,
+      "sha256": "a980bacdd481f82e4ec11d4a0fd4f81d1dad19bf18a3d565c4554922e39021e4",
+      "blake3": "8b0debf6a19e1153ca4f9164eac6d5be89fcfa26f1d8def0c6a5a5f81b38d626"
+    },
+    {
+      "path": "bin/memory-init.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2178,
+      "sha256": "e88873d48722912496f0bfd01fad938ebc31346f81f1b66d0608da115ba86e3c",
+      "blake3": "f49660090fc1ad8e23b7edaf9849426e13021cd963a1edb0e314d07eca39749d"
+    },
+    {
+      "path": "bin/memory-list.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1339,
+      "sha256": "b46400297ac5d296076de7fa3200ac3b8e3685df2fd31b8530ddcb0588f14e09",
+      "blake3": "49cecf3f7f7c8e57a64f0e93edc300ee42c9c903300501ddaffb4f68246e713d"
+    },
+    {
+      "path": "bin/memory-search.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2017,
+      "sha256": "0a2429d3b196486246417846361c4aa83c5cef56dad25a09f0b2d0b9117c746f",
+      "blake3": "6522999a99782baee14cb6cda3a4f8a916f805a216567d13c2fd3f719c0a3c21"
+    },
+    {
+      "path": "bin/memory-stats.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3284,
+      "sha256": "29e39ea449440ee59e9e6cdfd156032be9c5ff583394fb57fd6aeff6dea68446",
+      "blake3": "618f25ec2d6118d19f92350c2ed8c8e2cf4d92b1886df03c392a9fb37459cc1c"
+    },
+    {
+      "path": "bin/memory-store.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2036,
+      "sha256": "c76c916fd4535cd642f0f3c5c9a03b5b52934bda5dae2a0569122066b6b2219c",
+      "blake3": "fb012db3b250d28b75578f579b0df35d442c0e4bdeb45728dcd2431c9ba8a0fd"
+    },
+    {
+      "path": "lib",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "lib/memory-core.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10837,
+      "sha256": "14290784e8db1adb3164edad69eba3ab0018c20ab916fbaabc3430078b18510f",
+      "blake3": "a68a0e63f48b69da8d36cd0f9b026a91f63b217745610d280aada5502df8db2f"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 878,
+      "sha256": "47955afa418a53d353648f574be22172618a6f50ebb6e9ada894c94ebf4282fd",
+      "blake3": "5849d99935f4a68b1eb1f4cb5101e82ccff4c5fa87349975dc0c6c034f3f3d7c"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2119,
+      "sha256": "cbfda3f1d14f8be5576bc731e0767e534d9a0b09ae85900d5b90fec480a101f8",
+      "blake3": "c49add3b1131dd4d7d433b3604b78048e0075cfec49f08caefb0910c82335841"
+    }
+  ]
+}

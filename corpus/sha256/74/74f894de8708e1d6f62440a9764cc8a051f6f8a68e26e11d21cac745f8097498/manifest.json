@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:74f894de8708e1d6f62440a9764cc8a051f6f8a68e26e11d21cac745f8097498",
+  "sha256": "74f894de8708e1d6f62440a9764cc8a051f6f8a68e26e11d21cac745f8097498",
+  "blake3": "46bc4ae83a4c93fd85a30c130b62526d520ed230fecc319072bf024ad438058b",
+  "size_bytes": 129296,
+  "file_count": 16,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18946,
+      "sha256": "19b29c64360f132afec0d7ff5d36db90cf29231278eecc639c32aa2856b7672e",
+      "blake3": "dd79e85b1c79334f398bc817a91d1b6aab97c38b094e4fc1e863ed666644190b"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 150,
+      "sha256": "8ede2391bbc375d3033baf4f4644926d6766932d325e8a2f31cf0a739ed5bbd5",
+      "blake3": "138e8369f24859531e9946e067c832197b9c1a8ee77caa724d167039dc137b9b"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/acceptance-criteria.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6320,
+      "sha256": "e9258dd1e5be222c3a6c18ece10f22871852fe0903b4b98e8d83af449b6a70a7",
+      "blake3": "d67315c2b86eb8e53c400b11b78107ea8256090735476e73fac89ac8e3c609ae"
+    },
+    {
+      "path": "references/cli-installation-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3773,
+      "sha256": "32bfd3e9c8d523628f1b954d1422cea1421e8e8a1a16c2104376acf6badec9e5",
+      "blake3": "86d3444b6b6f3ac7f4004e15346dfa573d9dc3521204d8d9dabe6b94dd3a4dcf"
+    },
+    {
+      "path": "references/eip-api-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5976,
+      "sha256": "538d8b2d22fb73b18dedcf6b01dcc7bea7560ace19c978834b83fc1395bff52e",
+      "blake3": "7634df2407d641385972906fe44c3feb244e573b021a957cbf62f22fad55b1ed"
+    },
+    {
+      "path": "references/iam-policies.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2939,
+      "sha256": "ab8a5fe07a4605700f2e8bcb30f906446b77e05acb653ea688f3d8e6165146df",
+      "blake3": "10b626e5a406d6f1832c1de01da49b25bc33bcf901b63d500f6a37d98129fd7e"
+    },
+    {
+      "path": "references/test-vars.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 401,
+      "sha256": "b6105e84ded50c7ebdcfed360dd919fbab6e9da52cb5ae9a4f426f8d63e7883b",
+      "blake3": "d1e20bc329e073d16fa37012a6cd01302dd5325c812a6c64f94fe74c572458be"
+    },
+    {
+      "path": "references/verification-method.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3628,
+      "sha256": "70c8c1eb556e94f13fa520bfc0ce6cf0a630f8701e247d5db3883f86ce196d5a",
+      "blake3": "da3cba1d1f74fa47f7a97fc4f4cdb3ac12446915c13374ab0ede23f27a388f78"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/analyze_idle_eips.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15793,
+      "sha256": "8681ff09da0f72987fc632bdb60cc53c319b250800dd52b2ccfce7e2324e8d3b",
+      "blake3": "961ae8e55ae017afeb4b12ba96d0e025d88d01b13eccfdd1ecd93b84fe433ec0"
+    },
+    {
+      "path": "scripts/check_env.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9271,
+      "sha256": "5a49e490910dbdc7cabaf21537229e7c439323eb6ba2b33d77e34928cc6842b8",
+      "blake3": "92b1604ff3a2da4ee55963571c0a25b1d60e4ef3baf7803d34e86723c88f6a4c"
+    },
+    {
+      "path": "scripts/config.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7302,
+      "sha256": "71ac78d6599f19cb481aec818a73900f55fe29b2348a3ff89c9c2ff2e86bcc9a",
+      "blake3": "dc47ce3fc25e95bbfbb055b905d693e07c4f832c11dcf678d5c5e73a8b8ff34e"
+    },
+    {
+      "path": "scripts/eip_audit_log.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8544,
+      "sha256": "1289022501e67416419ef6d0a16da8eb3124f25c573a79ba2cbeee8ae4e3c2ca",
+      "blake3": "3f051deacad96ff7d1da48a93140d9a61ae5a225316f16ee2a229bc2899a9f62"
+    },
+    {
+      "path": "scripts/eip_cost_report.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16767,
+      "sha256": "161354e1b9b24a994410bca2f75d0345a204b73a48afb6a89acc173e4c8f9c50",
+      "blake3": "4544a82fd9cfa9304e0185fe97922728cba663a130fe5342b1c5328dff0a6239"
+    },
+    {
+      "path": "scripts/list_eips.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12307,
+      "sha256": "46b54a7a618e4caa379336e684c5ca5f385d68e85d6a5d96be622559c0a82688",
+      "blake3": "d84aabe6bf43dc3bffd37c5562beca34daab4dc9b71682d37c430a5ee2c1685a"
+    },
+    {
+      "path": "scripts/monitor_idle_eips.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13701,
+      "sha256": "49543eb768f082f4c345f7a03efb55442e54b1755079e94578b90d6b19664cb3",
+      "blake3": "e7d12573438d18b1e26c27be0c2ff015da8bd347fda3d8374224110b408294bc"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3478,
+      "sha256": "9e88c134cfacd3e966c5f8a7dc365f2916d0f4e553589e9b71649cd49915d0fb",
+      "blake3": "f009c3e31d98dfc5ef78d5b8c69739fe086608b358d9ef906c035e6d3986dc2c"
+    }
+  ]
+}

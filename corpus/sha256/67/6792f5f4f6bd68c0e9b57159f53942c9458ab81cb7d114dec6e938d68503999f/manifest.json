@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:6792f5f4f6bd68c0e9b57159f53942c9458ab81cb7d114dec6e938d68503999f",
+  "sha256": "6792f5f4f6bd68c0e9b57159f53942c9458ab81cb7d114dec6e938d68503999f",
+  "blake3": "2896bd55d749d9da775bef6b32b2206872a87f63ba0692a3ebc452b8e94b00d8",
+  "size_bytes": 70195,
+  "file_count": 18,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 828,
+      "sha256": "ea0a722c326ebc8bb5a71dc2ef3c447ae5d189353e97a6457efa71dc6e76065b",
+      "blake3": "99d8e64b323fb42157286d65c7943bd8a096c9cafe5d8497768074c43c25d156"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2337,
+      "sha256": "b7620fda47a4db80531013a4350ee4473078cec0fc9556449dc825491a790126",
+      "blake3": "98e6f774e4770c05dda887793ce60490a171be881962532c60226f645fad543f"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7556,
+      "sha256": "6cc4cd4785d0d1445ed9fd01ba9f4d8124fbe878898bfc745709417d5e261071",
+      "blake3": "6e3b0ffc014afafea31ef69b65c7c26e03e97841de917a182cfd7d152c1ef3e9"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 146,
+      "sha256": "b6bd0e25e8568777e6c06b17c39f74b8328ae1fdbdfa8114aa62afe5956bc848",
+      "blake3": "af855825fe91672d3f822b81e5a29da379330540aa34371b964fd2380008bfc5"
+    },
+    {
+      "path": "bin",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "bin/init.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2643,
+      "sha256": "350e455db8758a54506075c410eea650fe3de38d034355a392933628200236a9",
+      "blake3": "f12fa2f3acd896e1f29b47777f94b903b7ca91cc18c44c36ab54b9c0220fb4d2"
+    },
+    {
+      "path": "bin/memory.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5922,
+      "sha256": "458b1272f15e283f96648c025abc46c63ca220fa761997abbf88bc0f47270e49",
+      "blake3": "7373654ab5cb9356b99a9315328702cca1e7239778e57a2e4c4984c65dde6541"
+    },
+    {
+      "path": "bin/test.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2744,
+      "sha256": "6e2cfeb16b69805dc3cb13fb1c77355d99477b2a0d3c4102b482fa1bfb9ebeec",
+      "blake3": "527c17a43c469a0d5e04efd5f8402fa08373d07616970502d8fcd2f008acd1a2"
+    },
+    {
+      "path": "index.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7123,
+      "sha256": "d598c279c592d8a43b1b37af863f240d26ca773094297f230763e55bcfe8f8ec",
+      "blake3": "3199b4e1397b97d97d1d4d04278e24c00bdf51b30028e0d0da5e9393a1696a8b"
+    },
+    {
+      "path": "lib",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "lib/kimi-embedding.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3552,
+      "sha256": "3574dcec8d9f9914710cc97b0f03b27c669fa7322c26ac4c4ba20a376f83f8d7",
+      "blake3": "ec53a03738daa5abb4f884762dc56dbcb82c518edf424853fa9d6a83e217bd6e"
+    },
+    {
+      "path": "lib/memory.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3484,
+      "sha256": "5cf73a5a28886e5c00ab294df1a88bff392a5eea69c5e1a07160b3a46c622837",
+      "blake3": "9e83674310f047149df26f2e22adab53939460adb3c72f75af4904b6861ccb73"
+    },
+    {
+      "path": "lib/onnx-embedding.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5858,
+      "sha256": "5e4ca6d5a36cccf4b1845bc6749cc7367d165a6484393d5c3cfb18fe5e1c8775",
+      "blake3": "adb38b83720955f0769d2616eee4c5fcfe22db06460738bfe92cfe38419e34eb"
+    },
+    {
+      "path": "lib/purejs-embedding.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3143,
+      "sha256": "88a43b970559748af8ee4661640f6c650fccf23b3618f1d9c59434836a1cd4cf",
+      "blake3": "e08ba744f1c00890ba3f227e580125968fb2550675cdc2f0a98b603635ebdc9a"
+    },
+    {
+      "path": "lib/simple-embedding.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1696,
+      "sha256": "18804c40cd9abb32540ad79296844408d5bc87258b5a30713a864eb4350c4b81",
+      "blake3": "5db31ac2ae4cc0364d698597592f7280be9b279aca01a8115eee1202523a5535"
+    },
+    {
+      "path": "lib/simple-memory.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3564,
+      "sha256": "eb967a042ea621103815ce2db07fc043fffdd92a9372277b9206f7ed0aa5f3e7",
+      "blake3": "583a1da4af69d35d974b2ec066375ecaafd2c5f468ca18a20aa70f73a62283ac"
+    },
+    {
+      "path": "package-lock.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15801,
+      "sha256": "cd6fc93ad3d462108b9859b6d3943d315c3aa3de57d77bb7fc3a63ccb1f9ea93",
+      "blake3": "bad612b785612b839adf9ed378aa07fcfbbb781725d70015dbac1cc333deff8b"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 831,
+      "sha256": "799c56c44659654d29fed8e9b5a766479db5124485ca558804208cf1e051f58c",
+      "blake3": "967532801732940f1f8fecd5d23a1e7736047301529014cc1e4b84e8ddbd4703"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2267,
+      "sha256": "6b95500a490f9fbe90696a2b03f0f6973853a7b4d4eb6836ba818f707fbfa6c6",
+      "blake3": "26493ba9f294ce917ba9024a38d14e25bfe5179161d31ba7540f250cab3e050d"
+    },
+    {
+      "path": "skill.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 700,
+      "sha256": "1ef453d143cff8755d17539be5efb324b0a2213c2e18b7752d32545d48a462f6",
+      "blake3": "bde1da202f4fae077a26feb5b19f5f4cc1e3aa8068179cd5522ee0b6c6656c82"
+    }
+  ]
+}

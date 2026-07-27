@@ -1,0 +1,927 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:3863a0b11c9b34032618aa127128aca517b073c8a6c07554fb126dc5a1592301",
+  "sha256": "3863a0b11c9b34032618aa127128aca517b073c8a6c07554fb126dc5a1592301",
+  "blake3": "b4e7cbbe807b60ba91cb76f26ccac74c4de384001c5350887ce89625ceaa1dd5",
+  "size_bytes": 1152785,
+  "file_count": 113,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 43612,
+      "sha256": "f75ec8c242de5b97d55527166a1df888a5f8f13777e9307d8cfe481a536e59fc",
+      "blake3": "38b86e67c6cce7ab5e2dd8886540730fed0490b82def8d5e71c26059c0962394"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 140,
+      "sha256": "1bba40af5b71fe6cc5c48253ae7708a701d98434d751f7b5ff63cf8323950cd8",
+      "blake3": "ce411970397a32d6109b6a596a84f9a86be176a82abb3ac96af5c0fcacd07f99"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 398,
+      "sha256": "ae3cef8698f1b35e40c97651db0ac8567bfd35465c5c36502a5d83a51951f978",
+      "blake3": "1d74fe283b370c80a7f6175de67f0252440a7c90756b41620fa7b3f60bf53412"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/aggregation-async-webhook.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7041,
+      "sha256": "d23d9a18f42c3d59f82ed7d72d7f69af955ffed71087bc5fa27d936a2a72690a",
+      "blake3": "c823102a14732a361e5025a4c87a8178203fd2130085ccc68ba76b78a5496dab"
+    },
+    {
+      "path": "references/aggregation-base.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3287,
+      "sha256": "6320c258ec3429199e3d6348b8ef57314c0ed2ff49edfe08e4207bc0917175c6",
+      "blake3": "3fcc5ba5ea855e7bb9c5b924b4a104c1a6a128bdc15dcf4eddd470cb88d4a1a1"
+    },
+    {
+      "path": "references/aggregation-common-params.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6256,
+      "sha256": "a3710f636debc3eb7f47c150692a76a652e02d9ca12adab40166adf324434c82",
+      "blake3": "543c2f7c0c5e7cd56c2e944d454138b00ce8f10b0f89994fb3fce531cf977b91"
+    },
+    {
+      "path": "references/aggregation-customer-preparation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10257,
+      "sha256": "aa4fd8865688fb57d90d0d8403bb19f0408f48a430f81ca5f310ecbf66731765",
+      "blake3": "3a06ce208ccf0912b2195015b30757a607ac49af36d7b78efaf838544ac8e43e"
+    },
+    {
+      "path": "references/aggregation-error-codes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4081,
+      "sha256": "5a2ad19fe2cce8ad97042788214c189f35b6040468e831e2f37fc27fca53ed7d",
+      "blake3": "82c3e4a09957962260dcc3eba750c9ae7fb1f401986ca94b731e67685cb1c685"
+    },
+    {
+      "path": "references/aggregation-faq.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5044,
+      "sha256": "54861e20b091009bc30856cecbe515efe3ca95d81d95d6677f74c32dd6660072",
+      "blake3": "73aecea050a0cfb35ab14ad8b780079f53e30f2f1a4a9ae932cf43d7b59b9910"
+    },
+    {
+      "path": "references/aggregation-java-adapter.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2239,
+      "sha256": "ceb256cb184cf2e3a7bdfcce45c4d8381cb16dc69b0eef08ce96a0958458f4bf",
+      "blake3": "0fe400372f4d91400e189a0f28434eec5251dc93423fe3b291abd0ed921cb769"
+    },
+    {
+      "path": "references/aggregation-java-sdk-quickstart.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8935,
+      "sha256": "32766f71acc30d76a43e9ebbb59fed1a79e74fa04bf837a16025c58eef403138",
+      "blake3": "57686534eeaee5f5b19a1aa23a108e97cf7d81bcd96006508bc749d05b2b33d9"
+    },
+    {
+      "path": "references/aggregation-java-tech-spec.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5258,
+      "sha256": "4fe0e71a0bb0c5326c105b98df898f7efa59cfbfbd7bfcb2bb688803a11a5c4b",
+      "blake3": "8837bfc01f069ec11410899251aefc95ef75fde7b575e06ab1407eba583ed59b"
+    },
+    {
+      "path": "references/aggregation-order-errors.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7063,
+      "sha256": "02eda9277e622d06971570efd67473b5c7966d64e279eb01a3bf78193afd1e8e",
+      "blake3": "c0e9f28122138346ea4b91e7fc7b7f7dd91d719043e98b09e55796daba792309"
+    },
+    {
+      "path": "references/aggregation-order-method-alipay.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7507,
+      "sha256": "7b770bbf42ad8eb90e58c30a94f9a8f16f4041d555affb39ad2ca190ef7d4247",
+      "blake3": "0fcb081830ab102d1d178c9e9100cd10b94dc1bddfbe68527488c630f3861ea1"
+    },
+    {
+      "path": "references/aggregation-order-method-unionpay.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3935,
+      "sha256": "8611e4808a1fb04e79a4903eccd717197bf8b47fadf5837d502e37f57dded6ca",
+      "blake3": "467583bae0b196d60e35a6e284086c5b22050b05d319a79f18a4f467b9861dcc"
+    },
+    {
+      "path": "references/aggregation-order-method-wechat.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7001,
+      "sha256": "1a8df12a31a2cd6303e39a360114d5f891a0dfd359e249ce354e932e4c0ef5dc",
+      "blake3": "c1e75f9d9eb9990e5829b1c420c2ee4a0237769dc21e9fee82ec1cf76ce61895"
+    },
+    {
+      "path": "references/aggregation-order-quickstart.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2701,
+      "sha256": "f1e9cd876649359e9cb7273de5b43fad9392fe66f71bcf21e6689700aec423f7",
+      "blake3": "d4a4d53f5a7ea324423463cd6a9834d207534cfd5309f8cad90c0f7fed1189d1"
+    },
+    {
+      "path": "references/aggregation-order-request.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10907,
+      "sha256": "d938feca037bd89d9e493bd3124e3c47115ad73eca18a485223b5ff689f5ebad",
+      "blake3": "610420563a4b799d0988cd0eec891e7723f1273abe309d4bbc14b36601cdbd3c"
+    },
+    {
+      "path": "references/aggregation-order-response.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10548,
+      "sha256": "d68846196ca559463fddeb633a4d657ca8542dc4bfb115218c6139dc1deade87",
+      "blake3": "11457972a3c35909544405d3d193ec962e815fc7a5134cdf943f2ef299b2bc51"
+    },
+    {
+      "path": "references/aggregation-order-tx-metadata.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11529,
+      "sha256": "87c9c82268365122337ca3cf0cc702f4cc4d98ef95460baa4870cb5374361be7",
+      "blake3": "95969ad531fb0f9a9f15230c1411343fceff787a8d88857d1b5320b5ef7d4bfc"
+    },
+    {
+      "path": "references/aggregation-order.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3407,
+      "sha256": "fa750cd22b19a13602342ab0407de10f027a245c7f15f41dbcfbb4b5433958c2",
+      "blake3": "7939987a1ed0f213efd9ddc8a1b0a8cda88635ea772f75882b5340582e0fd4ea"
+    },
+    {
+      "path": "references/aggregation-payload-construction.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10005,
+      "sha256": "d34d0663b150183b72c177a5f348b070c3807ec00502eab7f77ff058a9848b74",
+      "blake3": "e43fadfabfcfc30a940f08e1a880baf7e84cff659f32a8e2004f192df8be2bc8"
+    },
+    {
+      "path": "references/aggregation-php-adapter.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10209,
+      "sha256": "2288263e57d74e7df0af488b3e41a48d079ef8a3a955226f60421f7869d7dbf9",
+      "blake3": "4601f4d9cab83a81a5e05b854acdfe9dd40796e9f0e58550ed6d591699e7a60c"
+    },
+    {
+      "path": "references/aggregation-python-adapter.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7071,
+      "sha256": "1a8b5c3558ab02746cc3753329dc960168be1af54644de98e33cb354b775563b",
+      "blake3": "eb873909e9a2c3174b856f17bff799b35ef1ce223bc1479a07e04720d05db268"
+    },
+    {
+      "path": "references/aggregation-python-scenarios.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7929,
+      "sha256": "4c189749f588cff551ad241b42dae5dbee742f9f26cc2567fbddc69b2d462653",
+      "blake3": "dcfb981f9f142945ea3c03d9a37f7f2f06a1bad7927bb057b5ce1b045ffc2a71"
+    },
+    {
+      "path": "references/aggregation-query-close-query.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7479,
+      "sha256": "2b9659932c12b65da83d0e92334c9071e0b66f89b69dcf79788184095ef420b7",
+      "blake3": "3ac8efcf11ad2fd724b637b229e85a09470208145556bc34fef6826770aaa80f"
+    },
+    {
+      "path": "references/aggregation-query-payment-query.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19426,
+      "sha256": "b8d539297aa8db9319536343f38319dc19dd60b3a4a2a1d827edabc7c71c1cf8",
+      "blake3": "b93e924c07e19db367f9e3cb2f869fa40ccc51d779a833fdad434045e6a31840"
+    },
+    {
+      "path": "references/aggregation-query-php-scenarios.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8630,
+      "sha256": "199229ce8dc8477a4b8b73db8a3bc1c1286da3ff1654e833ddbc99a5252e8564",
+      "blake3": "1cfd3946c9dec25cb80971d85954f9fc72458515fe5831c3e453728342812fb2"
+    },
+    {
+      "path": "references/aggregation-query-quickstart.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1509,
+      "sha256": "07676d136cfd61bf39ea3b242f30fd4d14b1585102a6d649b6c53bad8280d49d",
+      "blake3": "a17c14b1879894896101c2c002d3d4060249c1037c7e8602787c06299aa6f18b"
+    },
+    {
+      "path": "references/aggregation-query-reconciliation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9027,
+      "sha256": "dbc62627c770fcb805d7d4bf258b27c7ab077f4abf72e424b925972aa57c2e41",
+      "blake3": "4919afe41b106071b5d1224fdf088cd7fa4899afa73f381d9c735f3b2e4ddcf2"
+    },
+    {
+      "path": "references/aggregation-query-trade-close.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7889,
+      "sha256": "b32845aadd1022ba829142fd3065af0b6fbf8b621b06d9ef95d0fce5dc4f354b",
+      "blake3": "16de867a0cfa8a2d090c7f8a84cf3aec5145e760fadce7e8884d087c7d01e830"
+    },
+    {
+      "path": "references/aggregation-query.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3522,
+      "sha256": "f583c03906686a293795bf55520c745690e6cb18c2b983b5591a1d44e1c250a0",
+      "blake3": "2dc17419ea72695c2b3be8d52db6277976d9c4227cc22caa17872433dd44f059"
+    },
+    {
+      "path": "references/aggregation-quickstart.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3419,
+      "sha256": "48d90b50682f024ccfb63e86b2e90e9d6b12a1f1c36fca461879e2115f455ef2",
+      "blake3": "84efe0e6836a2703e26219dccac0befd4eae99fe1f434d447df0e276d055c89f"
+    },
+    {
+      "path": "references/aggregation-refund-query.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8877,
+      "sha256": "c25b3f5f130af6b77869bc9c473c31ceac824b9c73f7ff0c34c9e32096acc220",
+      "blake3": "9380064283edb0d4c3a862e3a876c0125cb3b010a885794677fb193c1749b838"
+    },
+    {
+      "path": "references/aggregation-refund-quickstart.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1362,
+      "sha256": "51592dfdd30738d36fb7a2d3479553c5d742f7cb1b9f5741a2b273b64cfed1c7",
+      "blake3": "de80cc859b34777234540f4cff54d256140e4b2572eb0ac798d4c1f37098ef20"
+    },
+    {
+      "path": "references/aggregation-refund.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11808,
+      "sha256": "dd0b03b64e048865f0b4ff548b1847c1363f5a89d9ac43ba5230c10435fce69c",
+      "blake3": "dd32008eb7042d3fbbb76424aeb7b03e678009de4d2bcd24a454cf8a77d6febf"
+    },
+    {
+      "path": "references/canonical-regression-prompts.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3395,
+      "sha256": "cab74b734542bcad413a77af01bed547259cb0780c58c0f9a78cd098512d605f",
+      "blake3": "d632e15a241cf069265f647309867a277fb9702e47eb075fa4267df8729add25"
+    },
+    {
+      "path": "references/checkout-js-callback-and-confirmation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2350,
+      "sha256": "7bd00ded03f00faae9432130c0d191cdf91401ecf8194f08fbacb31386babc21",
+      "blake3": "cc38cc1b8a6e0e5d7399f68747b41c35c31b4a92728c78ddf0cd23073e9fc3d9"
+    },
+    {
+      "path": "references/checkout-js-component-modes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2664,
+      "sha256": "f67b42748d297924750b4e8f42347dce904412813284b9a95db491ed7439c225",
+      "blake3": "697097de6202cb69793f1dcd904eaa5a5409bdb947d37416b1faa637e97b4291"
+    },
+    {
+      "path": "references/checkout-js-create-preorder-contract.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3381,
+      "sha256": "0a9205b28365b2f174fd0c86ed47c086469c5e4c7bae321c82348944b21083ab",
+      "blake3": "3472a2c6eade81a1d852a30a9d466f3b5f83c6a382109bc4aa3fd7d0c9e30c05"
+    },
+    {
+      "path": "references/checkout-js-framework-integration-notes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1806,
+      "sha256": "f9ef39ac9531cd9ec88b52bf26776ade3a6ecbb20541f2423c994a8ea1a49f69",
+      "blake3": "a467b7b492859f19a119e771c553baab83ab65a7ce265b7626da978923f8d555"
+    },
+    {
+      "path": "references/checkout-js-integration-flow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3260,
+      "sha256": "4e7d8b4ec6b1bfecfbf64e38c18e8f748df3e6e83ebfa8e6a41b97158cc30a45",
+      "blake3": "6b39b5ca10aa97e6a2a212d467783e51206ed8b5afabfdc318ff2c9d09f4f747"
+    },
+    {
+      "path": "references/checkout-js-readme.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1549,
+      "sha256": "7d449f999f63cef159cbf64579791501c4a608234cea68ad64eba4bc2a513a7b",
+      "blake3": "f799269e1aa8b571795021f6cb8cb7626ce1c6d5d361152d479314e043cf9c41"
+    },
+    {
+      "path": "references/checkout-js.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2364,
+      "sha256": "ee80021f92393aa57255602ff325ed84264629e8219bcefc25f1c6ab15f23162",
+      "blake3": "e78bfe6dbb79e7496b54943655121e3dec0f83a13d8369141fc5ec66ac36e6f0"
+    },
+    {
+      "path": "references/copilot-existing-system.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4883,
+      "sha256": "c7ed29352e1636ab538dbf26f0e0a93480e1ef0762a95ef45d3f4a746188adf6",
+      "blake3": "2828cfc647be0f6ee54cd70d2ab8b6ff02e602318cbd662aff7c8f7add4390b7"
+    },
+    {
+      "path": "references/copilot-go-live-checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3136,
+      "sha256": "e6ce7fed9f76ae147eccb3d1f6d84225022fe7bc6d0357f045479915be597957",
+      "blake3": "ed2e8af94f1535ae8df7cd90d5cd7df87d4f4fffe165f0bb4153faa680d65856"
+    },
+    {
+      "path": "references/copilot-onboarding.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5174,
+      "sha256": "aad83ee4c66dc97aa2d1c17140facf5b6db420d6ac61daf66cd8f3d3291e2ee9",
+      "blake3": "990025ef199685d4e7918d673f39dba8495bb7103f0b72e8e44fc7dcd2725c75"
+    },
+    {
+      "path": "references/copilot-parameter-review.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2960,
+      "sha256": "ddb20e1c4d351d28007d1cdc2a6ad6360b152405b478510ae40938f01715bd32",
+      "blake3": "b909b823320b126006f5c7bf7cce83258027d37997b4c64944dbfa9237d79f00"
+    },
+    {
+      "path": "references/copilot-solution-cards.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8714,
+      "sha256": "89f2c75fc04b83862f680bf9fd284db0aec6517063ef63d006279b4a0def19dc",
+      "blake3": "1ce284183632811c1c0346e4c37c673a2afb1bba96a8be7fab0b9f19a4ea991f"
+    },
+    {
+      "path": "references/copilot-solution-selection.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3370,
+      "sha256": "2fd1ab8cd58cf2a2a37e5403a028c12bfd2e83c405f0328b7a5e9a53d917b182",
+      "blake3": "ce5bee3d8dcb1d87aabf4eddaa48cfaaf4aca4f095958e3c71c19544d9506711"
+    },
+    {
+      "path": "references/copilot-troubleshooting-playbooks.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8026,
+      "sha256": "c22e080314e36200369fd20faf2fb3862dfbeb4408930d1fdf9331f51b3a7af5",
+      "blake3": "033c6967601809f6fe2958fac38bf315c6c50dac57c2f91cc5542fde95e85177"
+    },
+    {
+      "path": "references/hostingpay-async-webhook.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11112,
+      "sha256": "59ca48f5f797cdea5b77a31ede13384a71bd8d7ffb1bb39f48976b0b4d2fb400",
+      "blake3": "7b5eeb1c35515171d8f418e043233faa5af0b95128170104a39e286d1ceefeb5"
+    },
+    {
+      "path": "references/hostingpay-base.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2218,
+      "sha256": "58a20ba7dc6104f3c078781962c9b024439725b502b7d2213f80d7eae6376e00",
+      "blake3": "504269d30af62b32e3d7c72c29cb1e1b903f398f8bf784659b155a57974241ee"
+    },
+    {
+      "path": "references/hostingpay-common-params.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6572,
+      "sha256": "3ab9e77b691e577b185dfb37c4ddb556c8dddaece2198bb6ba4645bf3dcf54ba",
+      "blake3": "d62276347a16a0125e31373c77a7f0a82f7cd13ecdda0037e00baffabfb3aa77"
+    },
+    {
+      "path": "references/hostingpay-customer-preparation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9974,
+      "sha256": "f35d9264414e5610c0a2a7aabf584f913973cafd52070893a104b5104f87ea84",
+      "blake3": "786b994824f23d7d4ed4107464635d8f85ee964a607ac48b84318f49ac5e1aa1"
+    },
+    {
+      "path": "references/hostingpay-error-codes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4294,
+      "sha256": "11244fbeef624606eb364328b5842d73c3f748fec991428297da8e24e6d3e434",
+      "blake3": "7d85df79d0e4fe2d614d2e10b2cfa013c5c49520c5f708797eb6a60082d030ee"
+    },
+    {
+      "path": "references/hostingpay-faq.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4983,
+      "sha256": "2ca8a38819b309d86b93820098130b1b44c959b9956b89b77d052146ead58ed9",
+      "blake3": "2b280bff96dabba416e0bdcc4fbc3fbdfb23c433796315db39e5c022523fc235"
+    },
+    {
+      "path": "references/hostingpay-java-adapter.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1879,
+      "sha256": "549bbd15d39e5b1eaa9f30d245846e85e6887d3e393419d733a12487bdcd266d",
+      "blake3": "2d39e8a7f19031c58b407b524fe1cb2e0d460dd88f00582416557ea11336191e"
+    },
+    {
+      "path": "references/hostingpay-java-sdk-quickstart.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6191,
+      "sha256": "1f916e602592798d0d10cf236c2fdf668b55ac663ef1be40f5d3e9e4363c6340",
+      "blake3": "10fc2fe3dd268a5dde30c73600c54e9118bd80f64602ae5874114145d5228b22"
+    },
+    {
+      "path": "references/hostingpay-java-tech-spec.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11425,
+      "sha256": "f0730ef4b024e56ec8692ef3b34f62081f71436c3eca177c9e3c9b6be781ce2f",
+      "blake3": "c6bd8f15b8c9e52d0ca75b60fd79890b2b5753b00ea0414588dcc664020ce9f1"
+    },
+    {
+      "path": "references/hostingpay-payload-construction.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7898,
+      "sha256": "620c02e3fc0d340651c08cf0d17bccd7a59e369d57d7997575273c35f1cace90",
+      "blake3": "6a33614b5f2d690f74bbbdb8261194b0effda20cd8a63d56ea7f23d2beba591f"
+    },
+    {
+      "path": "references/hostingpay-php-adapter.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11222,
+      "sha256": "198b34b55d5de02653d4603e868be80846424d95dc88df0606c3fcb598a8c7f9",
+      "blake3": "42a4300cfc811364e7eaec15716aa4fb87380f84c5e12340c799d4ccaf583a20"
+    },
+    {
+      "path": "references/hostingpay-preorder-alipay-mini.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22832,
+      "sha256": "fe5d8ec4c0ff3b5c3807cbc075b43ac0a7a4b17858ede976fc8da8bdb444c14a",
+      "blake3": "264d295cf9df44dc97d752cd4b368176a5e9ebad093184c9def8119265a901c8"
+    },
+    {
+      "path": "references/hostingpay-preorder-douyin-direct.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14753,
+      "sha256": "d5a88129abb8a67037a52e53bd937886012aecb35259805a3d7973ff40a67351",
+      "blake3": "ea479aca639c063e201e7a785f4bf446c53e040d13984861232e9a979831530a"
+    },
+    {
+      "path": "references/hostingpay-preorder-h5-pc-channel.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9875,
+      "sha256": "df26bc85128c8d8f34a5beb77bf29c0401a2a6fc03ba0e5ec8f5261c2519674e",
+      "blake3": "2c24baa0cda7634b445d401670147be42bff84496d588efc128d0e47ebed4f91"
+    },
+    {
+      "path": "references/hostingpay-preorder-h5-pc-errors.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1284,
+      "sha256": "d8e8cc9bb5fe76aa463371c67d16b0b340c85a367eff9c6c5c08854c243d34fe",
+      "blake3": "d4a46bf1b01f1cc94709da35392f46c11bf6d9f9c05f6e91b7b38cfd6bfdbfc9"
+    },
+    {
+      "path": "references/hostingpay-preorder-h5-pc-request.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9799,
+      "sha256": "bcb888ccd455dc16a37b68179b80df25bdbc50eaa5944454bd959bfd128703fd",
+      "blake3": "6aa69691675361ee35aabd79fb08738a1b8f5d9d7c0d8acbeb5b22e6d539fe2b"
+    },
+    {
+      "path": "references/hostingpay-preorder-h5-pc-response-channel.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11557,
+      "sha256": "8c0e8060ee093c1c286c61f9fa14020aa4a00b909114aba737effed36791e8ef",
+      "blake3": "266a9445d059561cf4d66f4521911185e79010f136d7fc0bc6c62573d7e504f6"
+    },
+    {
+      "path": "references/hostingpay-preorder-h5-pc-response.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6402,
+      "sha256": "080db745b175fb7d2cd01fcdb8d995757c1ca81af2bcd17fa711a9f38c99b475",
+      "blake3": "19998565ed02078d167014b5216a6e02a01fa2817959fd051605edbbf2db88be"
+    },
+    {
+      "path": "references/hostingpay-preorder-h5-pc.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9361,
+      "sha256": "a9238ce41ca2ef9f82225702e553779c3db71b6dc518d896075780a8e505e120",
+      "blake3": "34fd95f8f19f41ab54cd2fe5d7c5c395d5f42e88d1d02d0b3f3a25b7b68c021b"
+    },
+    {
+      "path": "references/hostingpay-preorder-php-scenarios.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9702,
+      "sha256": "bf2c7206545a91dd11ea49e4928e9e4dade26047dc828d20927e7889a40fd596",
+      "blake3": "a40c4ea38032880aa48b19b1c13e1b267fe93f1e39e0dba9d99789ff8914d8bd"
+    },
+    {
+      "path": "references/hostingpay-preorder-quickstart.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7869,
+      "sha256": "88ec0a7cb5246ce9a703edd87b97a049fafb3be36a6014ec4483c18af3bc8469",
+      "blake3": "4c3702f88c65b40015807055a7035d556830c37eb8be161d88a7077c44d08bbe"
+    },
+    {
+      "path": "references/hostingpay-preorder-wechat-mini.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 26779,
+      "sha256": "26266bd489ef0ed06af04763656762e4e04ae56dcddb88408916ba4dbffdea6b",
+      "blake3": "f565d7ed76cb68a5a980eb0f5fc97bf43c4df016253d91e4fd3064861ae17de4"
+    },
+    {
+      "path": "references/hostingpay-preorder.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3566,
+      "sha256": "681e9cc082b2b7c2210d19d8e1a01f25ae28e68b080309bc85cf4fdfe1f26995",
+      "blake3": "bddc148d6df65d75fac1c378d53c56d3fc1f3600752d1224e8a2af875ed82c72"
+    },
+    {
+      "path": "references/hostingpay-python-adapter.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7172,
+      "sha256": "852230f98d28ceec821aaea47ab361957b3235efc5dac1413c8093a3c1b4e8a0",
+      "blake3": "0b09b96598be487e7ea6d65837e72ce7f75d2e8410246cf24e20272ce304a50e"
+    },
+    {
+      "path": "references/hostingpay-python-scenarios.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9321,
+      "sha256": "1e8e04ae905a415d80431e1efe91f38f53303130895323d9dd4069b44b19e947",
+      "blake3": "63f50ff71b6a00a82ba48ea6af7bbaa18b5b79470083bcf449f5892bdf2ed3b7"
+    },
+    {
+      "path": "references/hostingpay-query-payment-status-query.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23697,
+      "sha256": "250fef880253facc34993cc8852db2573339a0824d4a263f4e3a66c94dd7aced",
+      "blake3": "4622f1ec1ff8c2f4eb4a0d4513a61aacbc673438b926f6e9f6a23c3db1f80cf6"
+    },
+    {
+      "path": "references/hostingpay-query-php-scenarios.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5495,
+      "sha256": "6db90ca8587059b85cbb41780387500e500ade2c463e3ff82e410f0fa4cd2afd",
+      "blake3": "9b11152b0b967a29a4dd7f32c605e7678836928ca55b1e0c287f9015bc0fcffe"
+    },
+    {
+      "path": "references/hostingpay-query-quickstart.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5206,
+      "sha256": "14206e3cc4e4150c681cdc2e73ad43bf7cf6e5e6534aec948a89890d97d34aa7",
+      "blake3": "c972f10a865f99788cc523ad36f25b60784281300701f5fef45ea3a25f3b0cc8"
+    },
+    {
+      "path": "references/hostingpay-query-reconciliation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12207,
+      "sha256": "66fbd144b65f1b66424ca87bbc812c0ba055b79d326f8ab1998236796ed568c2",
+      "blake3": "39fd3bf684a87da7087e323882695750f83a0b86e5858ba4d44300722628b706"
+    },
+    {
+      "path": "references/hostingpay-query-splitpay.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8652,
+      "sha256": "59fb2b7ba6e811bc0cb4a2ea175d1da82c329f42f6dadd8c7d27716c1f7e0ee9",
+      "blake3": "d4cf7dddb73de071063090617b6c46fb2713ba6930133cad01da06e1f76b1dc9"
+    },
+    {
+      "path": "references/hostingpay-query-trade-close.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7713,
+      "sha256": "dd1db5abc138d58b2a6867f9649cd6caf3be31c5cac8350422815b8b69485205",
+      "blake3": "f98a551fed730775240f57acc8682e7b60ace38ee87038f1fe42acbdde6fa44a"
+    },
+    {
+      "path": "references/hostingpay-query.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3182,
+      "sha256": "8d4bc719a90fbf67afb44e61ab23bf825c3666f1703a944d2c06517d3a82ec7c",
+      "blake3": "e74b7408701cf11090c10d1c06050b7a84c8612b60873f76592215a7494c0de6"
+    },
+    {
+      "path": "references/hostingpay-quickstart.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5676,
+      "sha256": "60a1fbbf4d437fb3734f572a84bc7c0273ed01c6a0e9a28b61938456c09af55d",
+      "blake3": "f7d37ad242b88e2e886ddc6474a37fa623a1a8ec5910f4420ce00462a06feb69"
+    },
+    {
+      "path": "references/hostingpay-refund-php-scenarios.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4778,
+      "sha256": "b21e2d1d2af29f97b865a78403c00ffc4d619a419c93c14e019e0463ce610f50",
+      "blake3": "40e1d6e73a1badafa1c86c5ae2e924889fa62dd6564e1a0fccaf4f97e27f98e9"
+    },
+    {
+      "path": "references/hostingpay-refund-query.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12439,
+      "sha256": "be72a75d5f09bc2d251327f809936bf73de26f60fab851f72e45b8181c06a070",
+      "blake3": "f9dffb98fc8e09a59afde5707da35e124ad7dba0227c1402730bbc4fecf258b2"
+    },
+    {
+      "path": "references/hostingpay-refund-quickstart.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4518,
+      "sha256": "b623fb4bcc5ed3ae4696a76ac85888a80d4d1172fa4c45abd739451eb46f6a08",
+      "blake3": "b775069682912eb31fe8e60da1299025408583309d8d6f85f4235cb9e570625a"
+    },
+    {
+      "path": "references/hostingpay-refund.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11197,
+      "sha256": "039ec5ee9ff04a874cb0d537af771c88ed7f59f45515436c3389354f94d580a4",
+      "blake3": "34b0be6928156e38723e954ff72374d03bc2b3f40683c014b3b41f224d7c7de2"
+    },
+    {
+      "path": "references/merchant-onboarding-application-status-query.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4667,
+      "sha256": "c2fa3ae62290d06d3b56ef24c7f7c4389dbd45eabb5cabbc0369487426967010",
+      "blake3": "1e3856fd6409cb782ea7fb3cd5dd035de5e3e8e7832e5e817db48c3873c67ae6"
+    },
+    {
+      "path": "references/merchant-onboarding-business-open.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7368,
+      "sha256": "254be282500c56b4d940fac9e8595ed40bbf611cb653ec28ac824cc177f71692",
+      "blake3": "c3fa413890ff4ffb1cfbf4195481bf8ac2fc3c60f278a01d1e1c9b89ff9f309d"
+    },
+    {
+      "path": "references/merchant-onboarding-complete-field-catalog.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 285868,
+      "sha256": "550715a08ec08f5c20a6119483d49dfb22700bc2d0366711faa8cb7b3b4b9acc",
+      "blake3": "2101050e978a343d958dc497f921d5e3967497b9b18e5a127585ffdead16f47b"
+    },
+    {
+      "path": "references/merchant-onboarding-detail-query.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3972,
+      "sha256": "098c42e1b0ba7c10af9e0157e98451b594c89489bc8c4148ea400b13b7277704",
+      "blake3": "5ca46b73fb2bedd21ef2f71a1c6aeba53b5248921a252939ec696e036ab4220a"
+    },
+    {
+      "path": "references/merchant-onboarding-enterprise.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6226,
+      "sha256": "c2562a084cebd5f0b2a7eef651290f5830c8847a69f8853d8397fa68e057c038",
+      "blake3": "5789d2fbccae54acc8b567553ae7fb706673fa1b22f6316c22464e3d6a1bb90c"
+    },
+    {
+      "path": "references/merchant-onboarding-external-resources.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17226,
+      "sha256": "dad33786cc91870bacaa1d17692c0d2e28b32d40512e4d4874e143da76787c7f",
+      "blake3": "c883b72d5e7813576860f57c879fead47efb78402d65822898d53cd8673943fd"
+    },
+    {
+      "path": "references/merchant-onboarding-faq.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10067,
+      "sha256": "5d88cebb15a1243f9e3a0a481d404e25347e2852d2b177b9f7db919eb7ebe0d6",
+      "blake3": "b49ad67bc173a86d6adbe2cb40fcdec51f540447579b5cdfbc2f3df1677bc1f9"
+    },
+    {
+      "path": "references/merchant-onboarding-field-contracts.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29318,
+      "sha256": "8266241f07be16b2f8ece5b5e5fcc6492384271915c59e8bc92777b31abcb542",
+      "blake3": "396253f12647e47315b1e0c4b0517dd7b1b70f344ee93c2b25206e29f92ec34b"
+    },
+    {
+      "path": "references/merchant-onboarding-image-upload.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9854,
+      "sha256": "1de8529cd62dd890bc17b6c4e36c8f0bfbb81cd25ebb05612bdb1946d41462c2",
+      "blake3": "7fabbe4f56059bcee61eb62bf6ad5ce1f9825c0bb38fd60056b322ecfe93b86b"
+    },
+    {
+      "path": "references/merchant-onboarding-individual.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5890,
+      "sha256": "f3aa967b50c7235458ab3ea59499389612d3fdf0e487dbdde8a90386adb13455",
+      "blake3": "d1916ef80ee804e372f13d9650d3e0e7ab6c626374c5c4ae8a9e2777583dcc99"
+    },
+    {
+      "path": "references/official-service-source-index.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19830,
+      "sha256": "55059a0a9f688a87fbd9683dde2868dae914b8eb4a055c988b02fd1e6344799c",
+      "blake3": "8361896ba51e05abd336cb137f44383e573cbada2bd3b0c40e3f45bf5f195a67"
+    },
+    {
+      "path": "references/shared-async-notify.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2643,
+      "sha256": "bd96e641689b8561e0e590e675e4213bdf92258c4676ca65b7b58cbb2db9dd2b",
+      "blake3": "b37be24f00262db173410dbfa767274a42a974e9b8777dcc91e132d650b5874c"
+    },
+    {
+      "path": "references/shared-copyright-notice.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1024,
+      "sha256": "9e4ac43b5fba8819e3a6eb3b11a8ea6a6b59f7e1f742deea7d565949c2237f15",
+      "blake3": "d55ec203fb499effde01a813b35f4b06762da57e1a3d33b6456338235aa34aec"
+    },
+    {
+      "path": "references/shared-credential-boundary.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2279,
+      "sha256": "cd9fc8704c7aa15a5628b03da462f4377770f4b7b0a3872593f3b7259fbda028",
+      "blake3": "aaa261f9de08f5bccb1765d4df65a81a2bd3600dbd98b38adaa93f69b76f593b"
+    },
+    {
+      "path": "references/shared-frontend-sdk-matrix.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1722,
+      "sha256": "34c9be9ff7192ea2bd3a5e73377cadf953b00dc6cc9558811c9e0870a8326df1",
+      "blake3": "a1da1c13f2e4ca0ec5d8d7af75046e488c9330531b62514265c54db3a3b7c9a4"
+    },
+    {
+      "path": "references/shared-local-sandbox.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14927,
+      "sha256": "d0a7a80bcc0aa5f2095f36342d467424fb3e4683a024291702340141cd0cad73",
+      "blake3": "20315a27f0f91342fd1b5366734f89032eb12d78daf56d2350264025ccfc4db9"
+    },
+    {
+      "path": "references/shared-overview.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8460,
+      "sha256": "533bf27ef1deab15975412846d81ca3df6b8bf2290bb0986c4edee6dbff043b3",
+      "blake3": "2c34908a4fc1f9d6cc8642025619d2493b11fdffaa2ce0e2c030cdd7ed89502f"
+    },
+    {
+      "path": "references/shared-release-checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8831,
+      "sha256": "c682c99ee7665140522de71b87a09da39aeb6ca80d9f134b848f5e9a66d36c3a",
+      "blake3": "bdc7d3409ff18f27a3645abd94886ff220486d92aeae708714729ac6b84cb8b6"
+    },
+    {
+      "path": "references/shared-request-field-preservation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6017,
+      "sha256": "17dac4251194511af183a283f45684fb76fdbede087e9475fc4a0db738033046",
+      "blake3": "c877c5d6ef1778651f2982f1589328d57bffb071e0383e7d387a495805947346"
+    },
+    {
+      "path": "references/shared-request-header-policy.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11252,
+      "sha256": "05d9a70d0597bd100834d43b11c42eacef56b3d65e46e2c8e878a0d545e4d651",
+      "blake3": "f74c169f77c022970608d7ee0af47c215c303381a47c4968145d9ee889e36ef5"
+    },
+    {
+      "path": "references/shared-server-sdk-matrix.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12384,
+      "sha256": "14f9276a2c668ce2471462462bb3c5b1ac98ab9e3449b9adae02a2f7cd61fffc",
+      "blake3": "b33bdea59004fe78ba4923715cc57f0cfa675d39abfeb6e18344daad33d7500c"
+    },
+    {
+      "path": "references/shared-signing-v2.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3171,
+      "sha256": "84b9d8ac3d930e7a020e0d1ac8e3a0ae1ae3f148ad071cb5c2a39a088c4cbc0b",
+      "blake3": "cc2c8c0543bdbbc6526aec657e6292ccc1cabbc092936642afa46da27625cfd2"
+    },
+    {
+      "path": "references/shared-versioning-policy.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3020,
+      "sha256": "df784ced9dede4c3d9ee47566f803dc6dcc66c9f02295422ffc0b9e5d565e87a",
+      "blake3": "2f89d7d2c34c55e189939c9b0bb8a11969e837c8cc916c583c77f32865067102"
+    },
+    {
+      "path": "references/shared-webhook-signing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3176,
+      "sha256": "3a69c84f83a984d2df50fc5467f4f444a6c0cf3940d5a84686d703589ab00727",
+      "blake3": "b1052c583a4b62a4c1a7cf748c91f46c8a61180b5561ea4b2b8c6a4afb560f52"
+    },
+    {
+      "path": "references/skill-version-policy.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4453,
+      "sha256": "d16825ceeb5e1af90edfcbb24259a33489bdbb8d0b007ccaeba3e101abaf34d2",
+      "blake3": "84d0fbb05ec9a278f13679b72a919e219a5e81160646ce54cdcc9321b5453aea"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:c6568a3bad57c9315b72a2629a8322932c5b60c50c701fa79a1931f16fd590d2",
+  "sha256": "c6568a3bad57c9315b72a2629a8322932c5b60c50c701fa79a1931f16fd590d2",
+  "blake3": "691e57da7b668d6731bcccdf6a4c2f79d391641d4d82c2e4b4ba94c4a981497a",
+  "size_bytes": 101686,
+  "file_count": 15,
+  "entries": [
+    {
+      "path": ".github",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": ".github/workflows",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1798,
+      "sha256": "97e8f22a63e20312c0c2056a9c1d059a4a1f1d705351f3acd65fb64674276b87",
+      "blake3": "53f164ce367aa27062a81db4dd1d699d3e24132240ef586f5423793680340869"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12252,
+      "sha256": "8a5dd210732c1b005c689c499bfc40d2b72db04bb85e81a71a7c0ed58628c9fd",
+      "blake3": "75050b8756e530b1d08e717bb1c59d5a82052470b9a280aa6afb07e8eff8183f"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15145,
+      "sha256": "a60d86d4cefbdc218ac90b59b200c3cbad2ddc77b514d1f8a9d45d0c75f87dbd",
+      "blake3": "03ee1d1d6b4d43787663c7ee6b08b9541299910acc0e9779e8a74ae464c1955c"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 127,
+      "sha256": "9d1248e75e813e45c821575cd4a25eb1fff0eaa1ddca18a768f70513ba5052ad",
+      "blake3": "76fffe9d44aa0d13d82a812696bab4c1655a28ca9c6165999a26921cc20d5e3c"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/perstate-commit.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3682,
+      "sha256": "605dc5db6aeef329816e9c4b939a0d08fbbb412fce978cc7c1d4425496bd3e92",
+      "blake3": "83bebf648a7d9ae293958bc350626892c88a5265c4fbb648a728a2ecfead4256"
+    },
+    {
+      "path": "scripts/perstate-fork.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3300,
+      "sha256": "7fc0a0e614bf58948c54e34c7e647ed5b919f78bddb924e9160eaeb120320557",
+      "blake3": "d8719f534229fd855e08a22d707b0237fbdc20ae61f6f166fb1c9e861dec2468"
+    },
+    {
+      "path": "scripts/perstate-index.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3010,
+      "sha256": "730d75c5fe3ab92197b3b524a1699c65abd525e0125099cb02b9dbf27a2fcda7",
+      "blake3": "403b7dfbf61282c7fe09dcc04f1745a3b79635ddbe5e7cc48f9ad80b7e2415f8"
+    },
+    {
+      "path": "scripts/perstate-info.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6825,
+      "sha256": "d232f4c093470d9c6af4f593318eecbcb0f087f72c3609f85f9daf03ff5eee8d",
+      "blake3": "046dcff55cd99ad5ca48abe8da5b16547112ca95ae25d2d190149914b6acb4f2"
+    },
+    {
+      "path": "scripts/perstate-init.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7891,
+      "sha256": "af60354825cc8b37883b58f557ef3c6f2968b629ac4ccb8c4b0b98477b4556bc",
+      "blake3": "543a97f64dd2076aedfb4a4b978caa850ef1ee6dced0887758e248062170308b"
+    },
+    {
+      "path": "scripts/perstate-prepare.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6975,
+      "sha256": "e81f370e98bf959ea29b748fa35967b3c26a8eb5d146e23221bcfeae9ff5c627",
+      "blake3": "5ed992e8aba4072a50c10cf5c84fa0909c8456a7b13f07aa22430d343bf73eec"
+    },
+    {
+      "path": "scripts/perstate-prune.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11054,
+      "sha256": "d3c229cda1def52d63a37628b27adafa34b7e5cbbdf1badb3343bd00a7d677d6",
+      "blake3": "74dc304a4dd726b5d862a53f991c561cb48dbdbf0f06d13613bddfa278e80597"
+    },
+    {
+      "path": "scripts/perstate-search.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8440,
+      "sha256": "3aa2020711feb7337ad56ecc479e4bdbef4eaa28b14ebdd69ee99b13d20be0ac",
+      "blake3": "3d345c913e9d12fd0f1cf34c9e915cca07b87da61e59a06c8ee57b9f1b710f7a"
+    },
+    {
+      "path": "scripts/perstate-switch.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2798,
+      "sha256": "04b24a6f924e4fa71614045d470a511e605a305a611d073015d43b1c305e20c3",
+      "blake3": "d17aecee8c9608930c7139241ff6acda39cd9b59d72898b8f71a1822232a688b"
+    },
+    {
+      "path": "scripts/perstate-view.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16131,
+      "sha256": "7356856b971c1353e020c53734af951f69be82a1236492d8cc1045bd634be6f2",
+      "blake3": "6d03a04bc474e10ea24dc9ec997e1a26c732bb56d7926c22f122499187602ba3"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2258,
+      "sha256": "187b3fadadbd3052fcbbf0b14386a47200438f6afcd7b600b5413c028864d7b6",
+      "blake3": "5ae2301500ed6aca49292cb335742245c99a300923e551adcd4fd0cae4402508"
+    }
+  ]
+}

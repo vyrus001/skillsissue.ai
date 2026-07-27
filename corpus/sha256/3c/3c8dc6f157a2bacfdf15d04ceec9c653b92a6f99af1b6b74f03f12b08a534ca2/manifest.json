@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:3c8dc6f157a2bacfdf15d04ceec9c653b92a6f99af1b6b74f03f12b08a534ca2",
+  "sha256": "3c8dc6f157a2bacfdf15d04ceec9c653b92a6f99af1b6b74f03f12b08a534ca2",
+  "blake3": "19d8db8278fbe34b3d92534b2deedd1d5293099a7a51f8e5e18108d5c12a9259",
+  "size_bytes": 128960,
+  "file_count": 12,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19197,
+      "sha256": "87aa58ca75748686cebb4a2cb3af58abe5e715526fb84a3bfd8b7083b06f0570",
+      "blake3": "78ceba8cf8d64f7ca04d05c4def6d29f4c08006b19258f236e0d424fc9ccaf7e"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 153,
+      "sha256": "c8762df0591091e8363aa9eba0c7490bfbc94746a36856899b75811c56937ed1",
+      "blake3": "2cde86ab848ba75c4ecb037d0eeccfb96a1f6a5b7e165b2cf054465349014f1a"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/iam-policies.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2700,
+      "sha256": "486dcc44457b61630c3a78c548dbf1b49b301c85fb6e05b181d3ec4b8a299975",
+      "blake3": "ebc478299102c19c66e7204eb77e1782118ee1cdccfe78d229134111cb8bba05"
+    },
+    {
+      "path": "references/troubleshooting.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3004,
+      "sha256": "461fd02a712f93e562e6c669c8eee2f41cae393d5a2bc13656d20e133c458c42",
+      "blake3": "6a6f6df9681d4f2e98c0b40fd66482014c64c76effcb10b95ad73b2a2eb92164"
+    },
+    {
+      "path": "references/verification-method.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3141,
+      "sha256": "4467ef6cfde9483e2b5e71e74d25d7206776f1d5c0b41bd3469bb2567ff6174b",
+      "blake3": "88b5ceda964cb66b21e934464d951b726a8c77fbf09ed6b6102644a62b56a3ed"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 363,
+      "sha256": "1dd5694676068e6f744dbfb17caea8b5ee08ebef1a40a3a29cca26a359c68fb1",
+      "blake3": "3bdac96c221684b00a9d1b6b031c9613a21de80bf5cd6ba495d314fd36640361"
+    },
+    {
+      "path": "scripts/command_validator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4406,
+      "sha256": "ed04af7e13252f97dd1046a9fb94dfd5aeb96d9553703c7fdd8c7a66b520c81b",
+      "blake3": "64befc73fb51072f9f279b87eb3a5240a41c7c16809aaaa5f0172bd581a27801"
+    },
+    {
+      "path": "scripts/executor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 55559,
+      "sha256": "b58d263a69341fa5e73d1be876753fb89f74c6938e2e5ac9a4b8887a3adb0dd9",
+      "blake3": "0017794bd3c57ee6b2a353cb84da8b8e1a21d6447ea14c90e11503e56a964231"
+    },
+    {
+      "path": "scripts/main.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11784,
+      "sha256": "bc44a1d639497a39dd836e6da5c4b4f871a5a1b90996c66ed9ffd3a062f9a2e6",
+      "blake3": "1e833eea29fd4c65ac3b3988a3dae635039866a5484b59207beb59eb77214a7f"
+    },
+    {
+      "path": "scripts/session_manager.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6005,
+      "sha256": "01d2f687d98218d6bb5f3fd90f59a3367c66e87f9ba6e36ede7e70309e4af2ae",
+      "blake3": "33ecd14a7959838ef134e3fcf5e475539376fe76a5304d1eedc0e9c192f1e988"
+    },
+    {
+      "path": "scripts/ssh_client.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20029,
+      "sha256": "719098c2ae8752f551cb0a4418f0eabe025d00e27b0236d8ec47faf88f39f434",
+      "blake3": "da9af3125e2dcd71873791212b2c0df00a15557e44244951b9de8c619e77ac50"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2619,
+      "sha256": "4f7c776f922beed7316b341b4aeadd4627f413a8f4bd5fcb0e8c96fba32cb4f9",
+      "blake3": "ba65f17e0e7e338443518f6817a715bb72c5c3f96ff7ad3855ab850eb3a13f81"
+    }
+  ]
+}

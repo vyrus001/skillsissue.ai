@@ -1,0 +1,373 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:304ea9e0e5ed07bfb99eb0745a37cb392352388b0d03bc00f487b6c18d371a9b",
+  "sha256": "304ea9e0e5ed07bfb99eb0745a37cb392352388b0d03bc00f487b6c18d371a9b",
+  "blake3": "e6484af9e4e75e7b50268e4f80b4019d371e8f9850f01349a5e56e910d1552fe",
+  "size_bytes": 795867,
+  "file_count": 40,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15000,
+      "sha256": "4cb7bbe946ebca040af618424e9f8b0a9d87c17f52c084393001bdd630fc5592",
+      "blake3": "069dc965a24f8e681d1e9729a0c2a0ff390c8c7ffdba92f30d9774b4386fea32"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 139,
+      "sha256": "8810a39def07782a7f6b2fc45f9c51cca0d34099c0020e831eae3c26a7de051c",
+      "blake3": "b15606d44a90095770607c0192510ff03f15b61b0e9898410eaefbefdcc46e47"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 326,
+      "sha256": "10f78a3e740c35dfc5157e4de38b3b38ae7aad20af8f54e7e12a773406a6dfd5",
+      "blake3": "f37fc92f3fa3091ee1d1463174f1ab2a3323fdfce37ff70adb4909b0666e4ccf"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/catalog",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/catalog/lighting-design-products.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 284234,
+      "sha256": "0011e0eb5d00c40acd4a85c01635b78c112fb1d8cec3b53c1254e18cbf4c95cc",
+      "blake3": "ddac2178c5b88d9880ab7631421c48cfc9b4cd9a5b082e10d9b941ae9b91da01"
+    },
+    {
+      "path": "assets/catalog/yeelight-domain.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 236141,
+      "sha256": "2aafd974574d15697763309cf1e38737b39ff0e6e84f284504f27fe5b4b76dfb",
+      "blake3": "3b51356e1e3cea3e7b1f781fe2629f23d51580925f28827f8a1ce78ccc172693"
+    },
+    {
+      "path": "assets/examples",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/examples/lighting-design-full-home.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14292,
+      "sha256": "059765d942e4afb4d24920b2ef2b1fae19dd9659f6402a185c23e10d17caf3a1",
+      "blake3": "3d03ba4f990b3d61e8aca2ce193fd4623240de726c88de7a1bdd89ee7eeb8acd"
+    },
+    {
+      "path": "assets/intent-catalog.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4971,
+      "sha256": "7e9b8df7ce8d89c231d59907bbfea2bd5b4ba5728b505af18a8f3c27e78d6ca5",
+      "blake3": "8d286fdb5da271b3251277285587fd89c84be2878724fa0d5068322e8b1da9ff"
+    },
+    {
+      "path": "assets/schemas",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/schemas/skill-request.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8059,
+      "sha256": "5a34df0b5e9a1439c1e6a0b23922df7d2258f431a18c81f8692bc16c79463896",
+      "blake3": "a65ba272b0c98fdba0e4696a3f70b479e18d36683acc23a4403f7443cbfd2b37"
+    },
+    {
+      "path": "assets/schemas/skill-response.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1542,
+      "sha256": "56a27fc56a3374558c1d45029c2de0e1ab13e9973303e933755b86915259e6f6",
+      "blake3": "fb7f2a2d26e2dc57e0d437f499e198ff3a642f1e8b68ec6eb78c15ad0291bb37"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3594,
+      "sha256": "7bcfa25132a73b92e2dedff1cb901e49accc629d0b546b226d156439cefec1bd",
+      "blake3": "1b186ad6166bca32d21139ccbfc63a3fb3415aa4371617b5af442e873f8e8253"
+    },
+    {
+      "path": "references/action-payloads.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1125,
+      "sha256": "e0020d85b319bf678ebde082a235d1c6951118a7352791b1702bc9fa95624af2",
+      "blake3": "2bf348d133c09d7e90043381bab9aeb18749f39027bb6e78eda136be7af18c9f"
+    },
+    {
+      "path": "references/automation-events.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7842,
+      "sha256": "fd62a283572e9925d46db5fa161f949065fd8269340e4c829273157c79e722d1",
+      "blake3": "ae729ea7d09868b1c8e63efb9f05da90a0852638b272dd9f8d49763d5667a464"
+    },
+    {
+      "path": "references/automation-recipes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2640,
+      "sha256": "78aac8100ba0ea01a00ca59356b5c284ad6b6efb0081e0980f1849a95bbf30d7",
+      "blake3": "a0cc5ad08c5c4f14aa4214dba73bf35b85a541386d08117a2be4ae16431fdb0f"
+    },
+    {
+      "path": "references/automations.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10186,
+      "sha256": "25aa588b4b79d15bff01f421c1b33d6edbc2a4c2002f98f814cfc8b35d8b015e",
+      "blake3": "bc38df708bd8b4c865bdaf1d41df9640a471f1f363057fe0d64181db672fdadc"
+    },
+    {
+      "path": "references/capability-boundaries.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4274,
+      "sha256": "d6f1dc4a468a5c94342eab542378d9ca3ac03d21c1f727bb2ba2f83f1ffc1df5",
+      "blake3": "20b5dc05158eaacf5be72e02457a9ec4d2f9929f9ba8ffe7cbc07fb02cec10b7"
+    },
+    {
+      "path": "references/device-control.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14676,
+      "sha256": "724c0edf1c69b3647596fd97960e4313a4a7106b22b0b3d5031b03bca33d4186",
+      "blake3": "b19a50f837fc26a373a5b650d1b7ca5d5b55b69c6e41cf50c400379b27013f90"
+    },
+    {
+      "path": "references/device-lexicon.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9380,
+      "sha256": "38a5217fda91a437956ec287767cb3fd572b3e107198e27d39cc391b01468c2e",
+      "blake3": "93b36000b889a6b1bac8ca5123d7ef290920bb639bf9f7e914b8023382a2e8c2"
+    },
+    {
+      "path": "references/diagnostics.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7706,
+      "sha256": "e1cab050bd3fff2c500807a0114de44deca3d5e25e202472fe9dd56db2fcfc61",
+      "blake3": "a4ee3c6b63018f832005bf6f3c1d027566f520b58db3426f42782bf937e14217"
+    },
+    {
+      "path": "references/groups.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4657,
+      "sha256": "f4660d9fe4c9d0aaa46bd27553860799b0dad404b0bd570096ef40dfd0d44e9b",
+      "blake3": "49e77614c7c0b0ab65b003f0e78ce2c4cc2a1ddbddd8eab32e3b295ff3439eba"
+    },
+    {
+      "path": "references/home-room-area.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15982,
+      "sha256": "01aedc89265ad7c26fd7ac1de5d016327a26496ceca64c33a37b3ad62ff0c1e5",
+      "blake3": "94544021bc8f8223c49b8d874fdab2a2e7fa5f75496726382e5095c736d60439"
+    },
+    {
+      "path": "references/lighting-design-import.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6916,
+      "sha256": "9d0948bff77cb3c7408dfd78d51070db5d87bf1b2a54771c46fc7437d17c6564",
+      "blake3": "ab5074140970d27aef0e27439157dd6eef588afcd959c26ff29aac0814bc6b45"
+    },
+    {
+      "path": "references/lighting-design.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9806,
+      "sha256": "badf8e95961b67dcdb7382dba3de70a70c3e7ea515289b069e3ee34400d4d777",
+      "blake3": "7b457b236beafce1377f2523543b8098084e5928b388cc04311e510933d726b4"
+    },
+    {
+      "path": "references/lighting-experience.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10384,
+      "sha256": "2510ec4558af016f0847ce6c1791fdfa6f1401023d2add9b79c3af965f8addd0",
+      "blake3": "0b6c692f6ab7a0d26a665622fdcc261b6be1b8a0e6f633edc11e1f51e5d42568"
+    },
+    {
+      "path": "references/lighting-product-selection.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4535,
+      "sha256": "09bdd5fdd50788fa617bee06702d19727e19be951fcdc382a1f3837e01c83975",
+      "blake3": "3c0c955111ddf345965d2bd02dd6963d82d767e4a701e40f478b596192e13651"
+    },
+    {
+      "path": "references/memory-and-personalization.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16721,
+      "sha256": "45cf66db01f2aeded8e33a1875c8955a52293d5c2ffe29cab6d6ffb05c01ad75",
+      "blake3": "56181600964b0d56ec121bd45d4bb270c733e90d0b845f8ec85ca11b728b7321"
+    },
+    {
+      "path": "references/operation-lessons.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16797,
+      "sha256": "b0c089f775f0cec6d7b1f736d3c8293b3302a2394472a4ca31936c9537edf4be",
+      "blake3": "510eeff2b632a5b8e02737bee6afae95b95b8c2d3ce4b978d0c3ed1009f5028f"
+    },
+    {
+      "path": "references/payload-shapes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5657,
+      "sha256": "a4db97dd7c8bd7e30aa4dc74c461a5055133409ebeab5ca71ec6ae721d47a576",
+      "blake3": "22d11fba5aaab226eb30d93a54c65a9ac22bb876f78852edf7582b84d3b5dfcb"
+    },
+    {
+      "path": "references/product-knowledge.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7073,
+      "sha256": "c396d7dfbf6d2a6ad48e8430541dc681bd9b37de6d108430588248c21fc62ca1",
+      "blake3": "16173e7f400c7caafe84e73718df9130e0801a5e1a51858dbeecf035260a3973"
+    },
+    {
+      "path": "references/recommendations.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7033,
+      "sha256": "87281d54930fd57200b050441152b49093903343a6ad2e4186ef5def4c76f4a4",
+      "blake3": "a1176f0f55e099ce5bc51dadd6c8bf6fa0337dcfd4cb1642d6e08b7812a41efe"
+    },
+    {
+      "path": "references/response-presentation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5073,
+      "sha256": "8a13ab7643becf18d76abc2a078b816c3ee326eff63a478e046f6cfbd77af8c1",
+      "blake3": "a3619d8082f1216c31d7704035af61900c0781705979b71330fd8bfbc8b1d0c0"
+    },
+    {
+      "path": "references/runtime-status-and-errors.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8026,
+      "sha256": "c21a2e6a72916f1d4fb79fb9ac158887cd260c7e2f7437fb0ab38bc533e4df68",
+      "blake3": "ee8063e63cdaded32e491c914ec3db33a2a4f4214a27b8a793173a1885a52671"
+    },
+    {
+      "path": "references/safety-and-confirmation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3009,
+      "sha256": "3ea6358f13592a90a3ff46af1cd917fd77761ffed8ae50ee86c5134d27392215",
+      "blake3": "59ffb012d583d1e71f4c8f7c6a5694446138722f2d5113bcfc06b2ed49c673c5"
+    },
+    {
+      "path": "references/scene-recipes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2258,
+      "sha256": "8522fbcf32eaa20bba552fdd8b2c5cabb284a166631b8b791a3a1a169449e0b0",
+      "blake3": "7948a3d482464ec3c8f7891ec0771af0171bcb4524fdf3abc235a46de63bee95"
+    },
+    {
+      "path": "references/scenes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7424,
+      "sha256": "dccc67e6fa5c146aa1c2abcfe3d74a00459885d9a8571ffee7737d53800dabde",
+      "blake3": "8fb009a76c6fdd71fe62ba8c105152160e72fd985f0e31885033f0600fd19e5f"
+    },
+    {
+      "path": "references/thing-model.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10995,
+      "sha256": "e97fde3fef36ca0c8b591fdaf2fa53caacc6b8a3d2b5304f16aad59aa21af4af",
+      "blake3": "6597c08d309e3a51450b5f465614de6a68514540d4c43a1430a06d64addc8547"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/invoke.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4120,
+      "sha256": "2312c31f41fee950455fab62ef6a752494abfa30704535bf154c56f955453049",
+      "blake3": "a0319ef7da435a1fa8a9394fa060b8205e3c7d2ecedd2f68bf55555a15656efe"
+    },
+    {
+      "path": "scripts/invoke.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3692,
+      "sha256": "d2ed975d2ac073fa2251c35b54df7da8174df31611cb5faa0ecaac9d4b9990bd",
+      "blake3": "3687d396667b5485f1a5a698e6b06f7f61a02a22b29269671e402b76e42370c7"
+    },
+    {
+      "path": "scripts/product-select.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15148,
+      "sha256": "b7c82ceca9375308a8f3cfef1192de0dfaa2570f55f07025bb6dae32402af539",
+      "blake3": "113d4d0feb57d9b9996832be04bcdb849ccee279ecfe79afaae9003c73cd68cb"
+    },
+    {
+      "path": "scripts/runtime-manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1543,
+      "sha256": "b1e9063108d37098ba905ee22b7193d5452073f0f2ef00f408cae716d00a4c36",
+      "blake3": "df3f8eb7301d6dd7ed10b2dce0341a1bb45cc2f9ce8374953799e38696ef8fac"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2891,
+      "sha256": "fe3aa0e95757a4d2d8e9908e0c92da6c0a977f9c1c5a26dd314a3e447281f05f",
+      "blake3": "8f4e911fcb3c23e4e8d05a19cb3d6eceef6e770c06ed1343989747d5bd901dfa"
+    }
+  ]
+}

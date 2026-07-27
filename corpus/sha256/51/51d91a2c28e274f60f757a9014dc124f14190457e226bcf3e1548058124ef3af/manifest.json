@@ -1,0 +1,281 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:51d91a2c28e274f60f757a9014dc124f14190457e226bcf3e1548058124ef3af",
+  "sha256": "51d91a2c28e274f60f757a9014dc124f14190457e226bcf3e1548058124ef3af",
+  "blake3": "35a90f3fc75cbafc70b8d29ffbb9b194c0eb87ab7bbb03cb7581d25824a8e409",
+  "size_bytes": 239173,
+  "file_count": 30,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 34522,
+      "sha256": "a01eb1060cbe3567ad447cb1137ed8062408c04d502ca96ef3c268e3a2700b34",
+      "blake3": "1ccccffe45495086a96c20e97e15a6c27ec17a9c3c37bdde36fb9ee879b29df7"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 133,
+      "sha256": "bac0b64de9333bd067e7cfba646537f28936116c2acc73f4547b33c2dfa61d91",
+      "blake3": "ae2fe63d34fccdfdfd01975542be01340da110f35eac9ec24765dd1bf7fe4607"
+    },
+    {
+      "path": "config.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "blake3": "a7c4d54776fcb179f048728766a52d75dc450cc2a5072b7e2c238aa9b2cff3b6"
+    },
+    {
+      "path": "ima_api.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7477,
+      "sha256": "6af49061dad020e4bcb185a968e507c5b4f9a7c79fcade89371920ec7a172e1e",
+      "blake3": "afa576fc75cd5771937beb81ec8b76f8b06d8852777bd926d0accd3d570e1552"
+    },
+    {
+      "path": "knowledge-base",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "knowledge-base/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 50941,
+      "sha256": "2fc719670ea5b1c3164e30f975525c2c91164f19db6e9cb1110998751a06b28e",
+      "blake3": "1d13294ab98b74432071f29c05a44dba5961828b5040a78a34585f62852c4924"
+    },
+    {
+      "path": "knowledge-base/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "knowledge-base/references/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27034,
+      "sha256": "6d0f134992257b07e5cbd5f602c1a8847bcc4ffd37b60938bae84d2015d4c8c4",
+      "blake3": "a2690c04985b65fb7f5c08d8536a3a25ed455a698f991e991bdede083731cc3c"
+    },
+    {
+      "path": "knowledge-base/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "knowledge-base/scripts/cos-upload.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5251,
+      "sha256": "fe46c020feb42269d2e4725fe5379ca7405490398e749ad0a27f5465b6bbc84f",
+      "blake3": "1cc39bff5173d1b137f7172879f7993d15561e8feb584db4f5f035807f694f87"
+    },
+    {
+      "path": "knowledge-base/scripts/create_folder.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3017,
+      "sha256": "2395c7e0edc3f3d48e78352c33f128201ea8114bd8c04f327a05e94007a132d9",
+      "blake3": "bf2452950df97e32a653429720ff27f7cf0c185f806cfe8416a51007a8de26b5"
+    },
+    {
+      "path": "knowledge-base/scripts/create_knowledge_base.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2365,
+      "sha256": "35f80c8ff884f6753213fefbe7367a308dd3324a8a8a0be4d98a3358c34e238a",
+      "blake3": "fd809148bc04db1f127e7dc8e54a2964b18b9d0925de05de2864e0481ff7af5b"
+    },
+    {
+      "path": "knowledge-base/scripts/export_kb_zip.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8628,
+      "sha256": "334babd9820bbfe34b0b4e84da29d78aa95f048ea668d238067304436b1950f6",
+      "blake3": "18f22e4d216df58f0961f604326e9d5698d9087c8e7a17f7411e513d1923118e"
+    },
+    {
+      "path": "knowledge-base/scripts/export_media.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2660,
+      "sha256": "46df7d4f8a00707811bbf40b59ed4550ae75799f273be5262f6d56440218c64f",
+      "blake3": "01a21f2eea5bcd0827f22420a24144dbca6409c82e703178d5797f7549b2d03f"
+    },
+    {
+      "path": "knowledge-base/scripts/join_knowledge.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1729,
+      "sha256": "a7357bf65f00dc1c0bb4c7fe4f306f245cb90a0a9310d46e26b4d8cf819f0148",
+      "blake3": "7ecb17d44bff662497758d0c17f859364fa1f03e4b4d0023aa4bc5d26b3ea7ae"
+    },
+    {
+      "path": "knowledge-base/scripts/list_all_files.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4544,
+      "sha256": "3c6770b2e7e3ae5dc9d273e71cff5df1bb682ed31852d92949748bcd927fb75a",
+      "blake3": "27036d6500d6777b474d57cedc91f08e2e088ab36e35198305ae23c45f579ef4"
+    },
+    {
+      "path": "knowledge-base/scripts/move_knowledge.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3509,
+      "sha256": "9fad1eaca84f7436e94778c067bdb3295a855d29beaaaa9b785837db827d1fb7",
+      "blake3": "6150dcc1b0adc81ba53d3ed0fc41aec624dc6977fae6a64da96e9309f1b0f733"
+    },
+    {
+      "path": "knowledge-base/scripts/preflight-check.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12074,
+      "sha256": "61eba5c062f2973c075ee555ef730c3287687dfbce673e8615676ef23991f18a",
+      "blake3": "e98cf916207f59f1c4a76d81451adccf5bdf8b397eb2c57b306c8b8b9a1daff2"
+    },
+    {
+      "path": "knowledge-base/scripts/rename_knowledge.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2821,
+      "sha256": "f4b4a1a71612d7ce726a68ffcd70d3d1db8aa9ae7c5fa21212cc4d87f39ab335",
+      "blake3": "cba39c3b1d441089d149e7729db3553b95d1dd5a0689473bb07a614d61b503fa"
+    },
+    {
+      "path": "knowledge-base/scripts/search_knowledge_base_in_square.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2210,
+      "sha256": "a468d14f63a5a4363665cc0470d62ebd76baf8805b24640e920e6093f81ed14c",
+      "blake3": "944eed77cf6c91c34093dcc4613da77c13323369a3fd98d5193161a6ec2d21e1"
+    },
+    {
+      "path": "knowledge-base/scripts/set_knowledge_top.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2764,
+      "sha256": "14301bbde0588af90581507dd7cfba4cae638e588c397d69f8b85530ab14d2cf",
+      "blake3": "28b6205b77d60ae3d3adbc5682cc2845d1433ea5f814e428d6f5269d99cb726b"
+    },
+    {
+      "path": "knowledge-base/scripts/tag_add.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2685,
+      "sha256": "b331874034515a0218db5e61909512c2582d8832d760dc35a1dc93646f374010",
+      "blake3": "da5254b79ae76caf9a251f9e1a8f89bcd3570137c981fe6f124c0813c7f26e8a"
+    },
+    {
+      "path": "knowledge-base/scripts/tag_delete.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2411,
+      "sha256": "f0529d041ef3cc6cada4b597122f3fcfc18dae139a8268d24b72b7d79702ed17",
+      "blake3": "98fe0f91e6f0c0ef994982795878ffb365b7de395b1283aca4b9280068cb0110"
+    },
+    {
+      "path": "knowledge-base/scripts/tag_list.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2539,
+      "sha256": "dcb1421f4cd44ddc8f3817b73927b7981d63a6c60589ed258ae888752887d38e",
+      "blake3": "8eb33a52f34a2e2bbdc711e36fd5a5574138ed627f3b3424f770edd473c99e43"
+    },
+    {
+      "path": "knowledge-base/scripts/tag_remove.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2514,
+      "sha256": "609a2d352b766185ed59d078584b1bc43b8f41489505ee1ee851cecd1453474e",
+      "blake3": "9eabe326073dbaaeff05afb61e66bfde8951664a81e9b8dfa8458a8d36cbeec5"
+    },
+    {
+      "path": "knowledge-base/scripts/tag_rename.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2714,
+      "sha256": "2e5cf0f66ad7dea04ee0da974cb34a2724c1332fa3bf7ae749f0e251ab5918a4",
+      "blake3": "5df378d40793596e98d869b1d576a1e4a8a98e43e9046b04a1cc41d1587683ca"
+    },
+    {
+      "path": "knowledge-base/scripts/update_knowledge_access_status.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3293,
+      "sha256": "17312370abec2b61bdedfdf4fa03fbab2c82003e58ff20850abe5c13d062f262",
+      "blake3": "901a1b851002b32f7846b72d17286b13d2b7f73c1f8d0de1aa71d1a62dc04958"
+    },
+    {
+      "path": "knowledge-base/scripts/update_knowledge_base_basic_info.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3352,
+      "sha256": "8234f9c8de02d014bf66b38d53b3a02f9810cf0664d0d874ddfebb1d5132408c",
+      "blake3": "5afc9eb2f8c572b96e89470d5a80afc313b6516b82c7dad0ffcdc8ec0c3b71b7"
+    },
+    {
+      "path": "knowledge-base/scripts/update_knowledge_base_permission.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3255,
+      "sha256": "f6560a5c2016b6afc56268bff20d4575c4796bde2e939a56981a453d2f8c0082",
+      "blake3": "a77440f578cb3b82c8b0de8077ba599cd363dd64d9547de05bc7290bf02afb1c"
+    },
+    {
+      "path": "knowledge-base/scripts/upload_to_kb.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7906,
+      "sha256": "48f67c325e3d75925286bfcbcb5077da8e7c4e076aae03ad075df41a258843eb",
+      "blake3": "80174192aa7c7fe067c1f3971828718fe5e0bf3d7d47dfcc8766e84293724bae"
+    },
+    {
+      "path": "notes",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "notes/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18511,
+      "sha256": "bc448467d55e6210cab7a40f7ec778073a0cab1d1bcfce81192e12c44da7c1db",
+      "blake3": "44f2afa7fde1c6501cc049ffabecba3065bb8c0f628add07c059dd6ce1b8ed34"
+    },
+    {
+      "path": "notes/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "notes/references/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15804,
+      "sha256": "cb21d0bc721a5abf30cb2758411904323a4b96f5cde2c0dd5c7e241a049435f0",
+      "blake3": "f727be45c3c69f59fa2109afc9803bac44d9e6c8ef6b74b4a50365fea83ea18a"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2507,
+      "sha256": "c0c9d9fbeacdde58e18665207c025ffc660f2116aeafea8960d67aa46c9d4069",
+      "blake3": "d83f9f9f9de8da59fc3fdedffe92d587dc9d24c2feead862fd064a58e442bfa1"
+    }
+  ]
+}

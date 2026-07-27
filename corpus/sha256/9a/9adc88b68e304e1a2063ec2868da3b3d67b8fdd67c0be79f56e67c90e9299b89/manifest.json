@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:9adc88b68e304e1a2063ec2868da3b3d67b8fdd67c0be79f56e67c90e9299b89",
+  "sha256": "9adc88b68e304e1a2063ec2868da3b3d67b8fdd67c0be79f56e67c90e9299b89",
+  "blake3": "d791768cf13f9331b8f9660e37b916e7856ce01d48b32223254b1673a178580b",
+  "size_bytes": 60038,
+  "file_count": 31,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12838,
+      "sha256": "db055b2c1d3b71d304b7ed2e30d9f72dec1f889bf4e4d8e904aaaa997c744d02",
+      "blake3": "68da65a1ac81c43168a4c88fbb83f8c9bdb1dcefd377b8837ef6fe1dfdd8ebba"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15382,
+      "sha256": "90daf9dc43c7f5bd904905687893f82751a0c56389e4d7021471b126ad2d1457",
+      "blake3": "fd612f25fd34e90ad2a8173879031ceeca837c40f5188fa0e53d5162cd25738a"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 128,
+      "sha256": "7806bcabd1ae6cfb13a3f1c4cc0565bd95a56daf41ae51897094cfd92dd5cf1a",
+      "blake3": "a03b05758654c3b0d8c257c994a7d7912f486f3b8cfcd2f3f372f944c6879d6e"
+    },
+    {
+      "path": "config.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 88,
+      "sha256": "69f15fc38bd623579942729f4f2bf4c6d76e5360bc7ecc6a2acc739ab71429be",
+      "blake3": "5ea08edaaf5b6ec9eb2638fbe70cfb40e7a44a1e0ec80ce1ebcce25e6e6d390c"
+    },
+    {
+      "path": "lib",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "lib/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25,
+      "sha256": "9552f854fcf77389160a08cfb4be2eb902cd9a0c0af76ab57df02cbf9125d369",
+      "blake3": "4533e17eff1ef4a16b7f6b3c0515331cd4195a48baf4bc7498f5bee8551bc64c"
+    },
+    {
+      "path": "lib/api_client.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5847,
+      "sha256": "292d2ed75fa986dbab2e35b8947b9261a84d72f566cec3784789a7c9a289795a",
+      "blake3": "c4d19abde0b01a7b9cc75c5d90b132ecb69408ad2aeeb86c5a9ef21679e146f6"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18,
+      "sha256": "c8420eac351a9df0a25beab7f0fc067bfb4e672a3c51cf8796fe2727e762e58e",
+      "blake3": "6a1744e70221ea0d2cec2927503419bdcae8e1415ed1f43d97153fd2be4146d3"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25,
+      "sha256": "9552f854fcf77389160a08cfb4be2eb902cd9a0c0af76ab57df02cbf9125d369",
+      "blake3": "4533e17eff1ef4a16b7f6b3c0515331cd4195a48baf4bc7498f5bee8551bc64c"
+    },
+    {
+      "path": "scripts/add_document.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1644,
+      "sha256": "70051b7e0be98eafe698a4dfe135603863139bcb9e9554584a38da35cee0d2b0",
+      "blake3": "b7cb376627df0e22bf6c6c16071b3f2b342762f925035c346108539a4c290e85"
+    },
+    {
+      "path": "scripts/check_garden_promotion_quota.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 411,
+      "sha256": "2c13323cc1775aff0a23301d4ce3cb1f0581954627d3dacb83cbbb6fa4f04053",
+      "blake3": "4779cc7e54a1937f5c439be4ac5b8ec452cb1f50a21da4deea27154b32f2de5c"
+    },
+    {
+      "path": "scripts/create_collection.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1349,
+      "sha256": "45ff7598473f7096fee3c310f22a445c3b8d2f46193ae53b5d7c8a7d45997819",
+      "blake3": "48734c99d7295ac6b95ba1567e2f1cef2f246d508683fb495562769152b0fc68"
+    },
+    {
+      "path": "scripts/create_image_group.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 639,
+      "sha256": "e90d3d9f144135ef8ab0bb1d568a147cd30a036be41c25644733c6784746e9f5",
+      "blake3": "f96331c6f9270b82454a8a2f35a03e3965ce6eb4d9cd42fe0f374a79d39013a0"
+    },
+    {
+      "path": "scripts/get_collection.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 896,
+      "sha256": "8f5c643ae05a019d30841debf36233fce9000ef11813fabe5e315fcbe78c81ae",
+      "blake3": "e58d96595dd9b912ae408c9ba6e6be80a5277cb559a0cce42b35719edf026a58"
+    },
+    {
+      "path": "scripts/get_document.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 678,
+      "sha256": "afe9e58824e140cf5d8db723a097ae23f8fe599477a4d6a83e32967e4375c6a9",
+      "blake3": "4aea984de56ac2c6a0b63be9ca0b1d79b94f7af6e0f9691b57ec82436a9bdbb5"
+    },
+    {
+      "path": "scripts/get_garden_limits_usage.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 466,
+      "sha256": "bf9972ff562d66b66a94de7cf10aa9611cb9c29e52d35433c833577eb08e85b6",
+      "blake3": "b1ac33776f6672bd2bfd516859a7d8faf0fe9268ec8ca53998f44b0396428afb"
+    },
+    {
+      "path": "scripts/get_image.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 668,
+      "sha256": "28f8ac10fae8af6d3ba4b2705bc4d21a559687a8bd842d47169e9566027dc939",
+      "blake3": "dd0fc076fc0e83af69bb8f7c2c602218fa2ab69580f7d8879a09eed1c2ef8b3f"
+    },
+    {
+      "path": "scripts/get_image_limits_usage.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 441,
+      "sha256": "9752feb64acdecf84d4dc77ae1e8a503677cbb1adf4621e19375f442957424a4",
+      "blake3": "a94b8bf24f68b031368d4d7daa5c902e26370c0e87573c521eba286af1a4ce2c"
+    },
+    {
+      "path": "scripts/list_collections.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 704,
+      "sha256": "5e053a7b0d526bf5aac98dc7dfb252455ab61648ada4940b4cf8aaf88f64024f",
+      "blake3": "d666ca1cba132f037c97af354047294df4a34c96dc1a89e635bfba6fa344e85f"
+    },
+    {
+      "path": "scripts/list_documents.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1217,
+      "sha256": "3eb3a4234664b71c092caa5045e1d88bf1fd182bdc4f6ee10dc5cbed3613417e",
+      "blake3": "73aef44b28790b8d04bf4a348832b43f1c61a5c4bae9a5b2593a4b7ddae98298"
+    },
+    {
+      "path": "scripts/list_image_groups.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 863,
+      "sha256": "7cea082778562acbdd185392b05f9691b73be51877b8dc06d0d1905803064eac",
+      "blake3": "9b72f450c1f2e2d82f6ab7b07dc1e4f84d220fa6ede684c78472c741994d4580"
+    },
+    {
+      "path": "scripts/list_images.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1221,
+      "sha256": "efd8ea2d6ea6a2dd9ae64f3a7c6c9b227187ecc76418f41da29d1a386286dc58",
+      "blake3": "a763efaa2d44f3ea6ba1fa0cf1446591e0a9c78ab8feb96685dbcd4606e6a996"
+    },
+    {
+      "path": "scripts/list_my_garden_promotion_requests.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 795,
+      "sha256": "bdcb2aeb06f4fe2028a2cc68b2e34a0d1a839855bd5c779ec59c96a8b965db62",
+      "blake3": "96a563cd615fbab9e780d1aa0047aae0480a8f57c922db30c72e86f0adac98b8"
+    },
+    {
+      "path": "scripts/move_document.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 997,
+      "sha256": "4ac684d7eb41db3a374d9ff0b9be04d7f9615efe4cc81676319c9885215a70cb",
+      "blake3": "41130f57d7f41625b0fb4c4e21abcc97f24189e91ec80d71a87af28b04414c31"
+    },
+    {
+      "path": "scripts/request_garden_promotion.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1809,
+      "sha256": "4a4c5178a9524ccce6da1079a76df044c5f5d7f3b75f31b08b39fff03d0bce98",
+      "blake3": "fc46227f54d95d26e85d11c10aa154abbdd29f45c6122c374d898fe8373b91ec"
+    },
+    {
+      "path": "scripts/retrieve_documents.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1325,
+      "sha256": "f7c128639ddc38db88835d3a45fe8c9c78b39b0f0dda6232d7fe95d58eb12f85",
+      "blake3": "ab03e95b460194fa3f55695bda9cc9f0ca535e385db832e90375e04d581fed03"
+    },
+    {
+      "path": "scripts/set_document_parent.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1263,
+      "sha256": "101d4d056da74794e8f6e94574815cb8d10fa66d3f46559af94c907e8182e812",
+      "blake3": "b4492dd21496203df11029e30dc06c64fe2de36e5441a272cf627a44e5d692ba"
+    },
+    {
+      "path": "scripts/update_collection.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1347,
+      "sha256": "09a0115d3eb6595fb51c0170e0ca58c52a90bef43eaf320afa7ca03804b61348",
+      "blake3": "8c4a264f807da401a0cf7f4d9fa537f784fab03f7b9cce50735f4804f1741134"
+    },
+    {
+      "path": "scripts/update_document.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1976,
+      "sha256": "90102b7a385460e30e91290de1ffd9e6e6ca21e53de940908f77818d91d6ff4f",
+      "blake3": "976cf3436b1c49faaf23f8266be4998301e455517c4edaf72578b9c03a588179"
+    },
+    {
+      "path": "scripts/update_image_group.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 754,
+      "sha256": "dd837b10754c0f4d98edd4e5431b3a92af7eee61ea6737d36080488c0c705fb3",
+      "blake3": "c30cc91901a355fc491cec39a12b012dc33822b9ee34e294de723b27d391a04f"
+    },
+    {
+      "path": "scripts/upload_image.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1605,
+      "sha256": "5bf6adc20ef8f21e6ca4f3383f857f773511024140d1ebd75ba933b9630a9e01",
+      "blake3": "6941077a39b69c981887f92c094080c785cc6fece73b60a16f0789cd9b1ef83f"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2619,
+      "sha256": "45143cf6e32be8b2d2d8e0522987030821cb3d4deabcf37786e79e0bf1a8ebe7",
+      "blake3": "b77b8dc83fb3d07d8732a3724dbeda04383ff1d95264f463a2a8ab54880690e6"
+    }
+  ]
+}

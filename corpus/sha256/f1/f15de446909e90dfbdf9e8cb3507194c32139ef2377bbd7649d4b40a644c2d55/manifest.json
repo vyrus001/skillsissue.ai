@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:f15de446909e90dfbdf9e8cb3507194c32139ef2377bbd7649d4b40a644c2d55",
+  "sha256": "f15de446909e90dfbdf9e8cb3507194c32139ef2377bbd7649d4b40a644c2d55",
+  "blake3": "fc433d713bd66019821cb8ca80b6f82305e3a740838fa84736a2408e94e2cde0",
+  "size_bytes": 402094,
+  "file_count": 11,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18544,
+      "sha256": "da59b2d04487d39dd7135b86369bdb472ec93d499fa663b9b2a83ca8e87eb23a",
+      "blake3": "0d4c64736c6a8818ff14ac3f7cb5a7373fd93a4300244d22e213c8bef0eadfe7"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 135,
+      "sha256": "0f70d8e50374928edde886cbea7dc3cddddb334404cafcfde0a4f3af3e7070c4",
+      "blake3": "ed57b481e61b333874076b09ef30662d5ed98212a771dcb18e017efe2a1edc02"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/broll-review.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6534,
+      "sha256": "9e4cd835bfb2c83b48df32bb98f04e421055ae939b1a0380891e5b450afb85c7",
+      "blake3": "f155695c7e731c2de92815c2476652d9c19863f830045afced2b2e7c450d8c86"
+    },
+    {
+      "path": "examples",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/example-broll-plan.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7521,
+      "sha256": "f5923d98be8982ac36d3532aa46396f4764fab119f26a48eb67579d5c88c9dbc",
+      "blake3": "9e39ab768dbd4f9897d809da3400dfb37a0b15901b2a0b7105e5d30a159a44b0"
+    },
+    {
+      "path": "reference",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "reference/broll-rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3983,
+      "sha256": "7ec3371f917d7056b635f3d3986d23f8ec2df4c1ae928ca87620562c84545816",
+      "blake3": "cb3d488ac81070ae0ff23f230fa8075434a9bb04fdb2ad098ca90c6ac53cc4c0"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/broll_plan.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 58477,
+      "sha256": "60ad36650a314e29c48afe7e66c365dad33e015907c7d34dee6d1b81b1d50df0",
+      "blake3": "8fe6d9a61b0f3587ec968bf783d0495a8370f33e3858c3a054c8e4a5a511177b"
+    },
+    {
+      "path": "scripts/build_review_page.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11450,
+      "sha256": "0b6001c5c23db416b2c708acfdda2e5ed72f931eec19927ac9a6f5ebcaa141b1",
+      "blake3": "7ffbfb5cec1c28f666094a6de927e1f43d3b0e42bae6350f1b65a91fa3829b61"
+    },
+    {
+      "path": "scripts/check_broll.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 38089,
+      "sha256": "97eb2442babb29882a432adc8d7e25f1b4c029ec51c9c52165167240739e9f7e",
+      "blake3": "d419b067951e4fa97b856cacfb5a2ca9632b2236d9c2c1af9d434fae762a23c1"
+    },
+    {
+      "path": "scripts/normalize_broll.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16887,
+      "sha256": "7d6eade2cea5140114274cc6ba297d2373e4064e8efd2a532698e3196abb883c",
+      "blake3": "46271b7a0551facde248e523af46ea91892ef549d5e77dd9036e6159569c7108"
+    },
+    {
+      "path": "scripts/pexels.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15654,
+      "sha256": "61cbb1e12170a9b313a2efbe9167ee052beda6625cee9d49b3a14febbe60a972",
+      "blake3": "5c953f64b18d9eeca365e5fc00719803757bf2e41e6cd6458136940f9c8a4dfd"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/test_broll.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 224820,
+      "sha256": "05a44bda1718e5e39a3ea05977b4545acbbb13be35ab612edb28cca1764352ea",
+      "blake3": "bcedfd8835f9b2489dd6f70aca29644e4c5d99268a4aa7d56ff3686ff5558ff2"
+    }
+  ]
+}

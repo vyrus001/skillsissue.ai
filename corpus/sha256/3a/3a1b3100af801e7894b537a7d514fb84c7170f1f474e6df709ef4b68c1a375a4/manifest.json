@@ -1,0 +1,833 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:3a1b3100af801e7894b537a7d514fb84c7170f1f474e6df709ef4b68c1a375a4",
+  "sha256": "3a1b3100af801e7894b537a7d514fb84c7170f1f474e6df709ef4b68c1a375a4",
+  "blake3": "6d67b1e2f9ae800b75c8582523b571e404a31196d1f08565e1fc1053257fd7b0",
+  "size_bytes": 710489,
+  "file_count": 96,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24527,
+      "sha256": "45f342f8f72088023694ae061f49ba1bbfca1cada0c8fac8d43fc420b16a0d1a",
+      "blake3": "8869985ed77bbc41b0dc27c0c68a3948428ef856f51e5707c8736876e8a6e2e3"
+    },
+    {
+      "path": "CLAUDE.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3030,
+      "sha256": "7635c0ac8628528d5484e29b76a12cb2005f7d784f700c7b73baeb1a5b87857e",
+      "blake3": "6cef99b56277d15dfc69d4ae0e2f4188cd6a302a5d1c1b9caa59e31e15e714bb"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24875,
+      "sha256": "1aeca1365e3290e366d4af55a1d97a3c6367ad750a8f0f12f8d3f7a58684eb89",
+      "blake3": "c6db297cc46247664f0f7dd75aacd285a13ad20f6ca414ac399c89d1a177258b"
+    },
+    {
+      "path": "RELEASING.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3071,
+      "sha256": "afea70795d17785909b73b9df9c39f4c8f5eafcbce0010599114d15d57022c9c",
+      "blake3": "c6273b9f171c7d6a6da3a8e28bc6b1d404b210789469edb1b9fb0c737376f21b"
+    },
+    {
+      "path": "ROADMAP.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15437,
+      "sha256": "f85a19a4a38f4e35d148a335c9d808551fd0221486dba33b2ab539ea635aa199",
+      "blake3": "38e598ca627f6f7e8cef06bf7457d85499e15074a4db0737a625567ab6b71120"
+    },
+    {
+      "path": "SECURITY.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1654,
+      "sha256": "14fb77f8f674f4f5bfd317d3963a412eed1efda5ec5e0e699d59d51ef23f6490",
+      "blake3": "0bf53f970150c4745a22a98790ed20b090422fe4df21e466e97c3fd1ba53f9e4"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8261,
+      "sha256": "f675f0df51ca0f003e1bb9bbc8acb8660ad28a9ce0308e02bdb370e9dd86a097",
+      "blake3": "dc779ed5c8bb83297aaec301e7d4b2a6066ac75565775c353a72b30aad336348"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 131,
+      "sha256": "a09940e6c061a6417a28bb678840a260773c08382444e617162ebe2999dacc6c",
+      "blake3": "09f34056ae9428558587e722842a533750b69f1aa91a0c35ee5e622a027c427e"
+    },
+    {
+      "path": "docs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/superpowers",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/superpowers/plans",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/superpowers/plans/2026-05-13-openclaw-outlook-native-plugin.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 44843,
+      "sha256": "52326ebd7f093e4bc6e0f17321dc8726309e922572c4f5abc4336aa0766e0dd6",
+      "blake3": "f5658355eb4423e9b3a85c8c8875a84aeebf767378700505218b4d19850ee931"
+    },
+    {
+      "path": "pyproject.toml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1899,
+      "sha256": "d0c88c198240df17590e8e36db46ad4e6b450e942f50d993f3df6bed43f182e1",
+      "blake3": "2243f041aeb0203d9898c0ab546d5c78c1f50ed00c3fb73acc391d40175e6f8e"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/preflight.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5130,
+      "sha256": "eaa2eb7aa351bb9f049f33fed7581bf10cdadd94be72ffc0b65973be0935837b",
+      "blake3": "1c04306cfdf52dde925e703095d075522b310ca08ce84242936fc2640d20db34"
+    },
+    {
+      "path": "server.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 683,
+      "sha256": "c507d7b9c689c21fc11b0e5d80afd7f4f8d430abb5c4f5948960defbfe5e6655",
+      "blake3": "c1a8b328af389ea5b437971dc2af07a5b7d196b04cbc30889a66cbae1fc3ca6c"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2993,
+      "sha256": "5730dbad3e4625427714b1fcccf03384a563200d1d6aca71322a38eeee9c3301",
+      "blake3": "781c55f6edc83f00c0c4767ca90b4356a8b89245c2b9425170a55aae74134c3d"
+    },
+    {
+      "path": "src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/outlook_mcp",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/outlook_mcp/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 252,
+      "sha256": "f849c5f06dac4291a5710de690065e54aea3a8945f48c89b9df48ad187da1b3f",
+      "blake3": "06643ffa6f75c25bb1d0755a63871e01fa3577d79ef3dd433152881e2a488627"
+    },
+    {
+      "path": "src/outlook_mcp/auth.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9360,
+      "sha256": "10ecf8b0ed9124665b99a419adc7fb29b911100d6242f2ed9c8427dfdf120b06",
+      "blake3": "bc00fda78cdaab7fb8d1123030a5daf7b5987e6c538ec07f587a6fef4e67b74a"
+    },
+    {
+      "path": "src/outlook_mcp/cli.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2863,
+      "sha256": "3816b286c7f77ea9c406e549756661c28641c7f9ebf2ee359868d12af8953571",
+      "blake3": "50c8bf413970ab2e0ff3e434e283b091b7da8d61b63247c10c2ee5cb1a5c7878"
+    },
+    {
+      "path": "src/outlook_mcp/config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3291,
+      "sha256": "b30ea83cab433908d054d0b92d6f7303b21e10dc4ed2a1d0799f52f2693d1db2",
+      "blake3": "d81972ad04acab1874f7a3eed4d1e24e2720588a9395cf8e96e4fafbaead9496"
+    },
+    {
+      "path": "src/outlook_mcp/errors.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6542,
+      "sha256": "f80e8addae1a0c6136c88eb19736f6bc0a6c82c8ebebca2eec29595c7dce4514",
+      "blake3": "5ddbeafcf556a4fe7a3d19972f2876c2a67650c1ff4ab609f9daf14bea885d00"
+    },
+    {
+      "path": "src/outlook_mcp/folder_resolver.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5883,
+      "sha256": "966386a1b8282e336327ea271b4effc7e68009a1ca415175750a9740af71053a",
+      "blake3": "9abb526d3ef9d6c11a4f5767b7d35c1fd3ac51d437267794a37436820f05f631"
+    },
+    {
+      "path": "src/outlook_mcp/graph.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1387,
+      "sha256": "b5385248e479012c8404d4e04c3eb1f3e128ef78bf7aebd5ac04a39e191ad5c9",
+      "blake3": "e553759784d8a904fef8ee88ac28acd97e7c14f156ecfa8eb3a183e68ba8085c"
+    },
+    {
+      "path": "src/outlook_mcp/models",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/outlook_mcp/models/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 48,
+      "sha256": "c5f79dcb87a791e01e18be40f0afba41f504c41c43a54436e4473cb3dea7d0fd",
+      "blake3": "a8f8192988925e6a77af4e6b52881ae2a8f2412b71a807591d6097ed0ecf06e7"
+    },
+    {
+      "path": "src/outlook_mcp/models/calendar.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2208,
+      "sha256": "26459f5324375ca1178fd0edde050dd05c0fbc4a26035fbd807c241fff610654",
+      "blake3": "d60227f32724e7040512f82732a731fe15ca9b7a06f253f7c71fc9571da9d2e6"
+    },
+    {
+      "path": "src/outlook_mcp/models/common.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 282,
+      "sha256": "11c20a9f589816d77f981c2adf4a65925e735f2e14b38f3ea420ee93c7caefc0",
+      "blake3": "3223d3bc8e8680995eb063d9d0e21d38fb8a8dc6e4aeb0f29ea703c2068e6c37"
+    },
+    {
+      "path": "src/outlook_mcp/models/contacts.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1324,
+      "sha256": "4f26b438c807771913544f853ce678882b2293501a3b2864090bcfe87a34148a",
+      "blake3": "bad8446a66d0e0a062ab16a0707fe7bb667a137beef72bd189b8b03bc379b581"
+    },
+    {
+      "path": "src/outlook_mcp/models/mail.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2637,
+      "sha256": "9160c124caae54e3100ec06c19c506a5ff0e17ba02126e77c657fe55b9488a0b",
+      "blake3": "f51b29862bd8d1519dc4cea6418cf61d712b868badc8485de2670c95bfdb4f63"
+    },
+    {
+      "path": "src/outlook_mcp/models/todo.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2075,
+      "sha256": "ac37e8ae9069da3a98123e0e4fe90c25a5ede9017e480c331e1ddc547d46fd94",
+      "blake3": "4ffaa35161778bbb28430b9804a34b1d65a7d290f32de9a6952da900a6eb7412"
+    },
+    {
+      "path": "src/outlook_mcp/pagination.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4097,
+      "sha256": "49b04d2c4c804b128461d30ee0566a09e08c1fddc9cc3f7039974d8c01409638",
+      "blake3": "07fc97f6672f462d8e0f3e316473ed98b0e0eedc5acffaaf9a59c7a1e35e3da5"
+    },
+    {
+      "path": "src/outlook_mcp/permissions.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2100,
+      "sha256": "e8632e173bfb8c07dc804dcdda5fef4dc3a5f9afd4c03677cdcfef89efb69001",
+      "blake3": "67e3dead30dec1fba98428ccc1f8a0dd95cda803f7c47fa559ef885b7715bfa6"
+    },
+    {
+      "path": "src/outlook_mcp/server.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 42400,
+      "sha256": "5c1ee19c807df7bc609c44da22d1bfceaf47db69a5b5f6cd28299527cd10ca09",
+      "blake3": "743f22044d7f2117bdcd1ded0083001338df9de7ff29f922a7ff490069dc42f1"
+    },
+    {
+      "path": "src/outlook_mcp/throttle.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5345,
+      "sha256": "f0f282d1ae2628221c6cd00e4236503468fd49c160d2aa36b31d213cbb85a363",
+      "blake3": "808caad038f057b846cecbba1d27b33c61571465ebb7ff2fdaa700c6c0482e9f"
+    },
+    {
+      "path": "src/outlook_mcp/tools",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/outlook_mcp/tools/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 41,
+      "sha256": "3d8d6ab3ce6d6b7eaebd0433bdb7a6290e4ae40464b8b2d33b21e03338adf798",
+      "blake3": "8f8192c3a24cd9fee67ccd0d6266dbdee939fa30488200acabc461858955d0b9"
+    },
+    {
+      "path": "src/outlook_mcp/tools/_delta.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6294,
+      "sha256": "83dc65afa74d848740d044ba37959c98c2479fe473ef0bc34586c3593bc880d3",
+      "blake3": "948a5d82d14a1fcda3c1e042524bb8d3b49469b24430376bfac528296781be47"
+    },
+    {
+      "path": "src/outlook_mcp/tools/admin.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2111,
+      "sha256": "31ccb45ee5a006addcbef16a0a5fc2d11252b1593663f7fb2386715c071042d4",
+      "blake3": "9057daaf952288c73118bab6052f6c03cdc8dd2c854afcdfe2bb77dc907f23c9"
+    },
+    {
+      "path": "src/outlook_mcp/tools/auth_tools.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 211,
+      "sha256": "164dec491794dbd560434d4a25034cb0f455970ff4157fcbea9435e9364617c2",
+      "blake3": "e74949a440773811413a754ec5f7afdcc229f0082e8c0268eabdd08d914c6dd2"
+    },
+    {
+      "path": "src/outlook_mcp/tools/batch.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5092,
+      "sha256": "ce1aab8886e260f0b0a38608dcd8ff5d8eb7b3307426548533db86dd0206222f",
+      "blake3": "bb86e6f62a7f8bfc50cac0760aa0233cf38285732f42aa5026220b0a38f8ab28"
+    },
+    {
+      "path": "src/outlook_mcp/tools/calendar_delta.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4514,
+      "sha256": "39e320920db80b78d50be2c72232b1c9ee026dc3df084d69126264a35c4c1cf3",
+      "blake3": "c46365404f34fc5a2d45980fc0b1bdcaad40fb9966712b6291425f48184e7d23"
+    },
+    {
+      "path": "src/outlook_mcp/tools/calendar_read.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7641,
+      "sha256": "7351e1a93c60cc723df745a632db81891b46f855f5f49bac64eafc999f630eed",
+      "blake3": "561a263a07e221671a24c16b6c0b2d8d4ef67e62b1f3799c48c474191e21270a"
+    },
+    {
+      "path": "src/outlook_mcp/tools/calendar_write.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6522,
+      "sha256": "a4a8c077e20dbbaee002a013e1edbcca05eaa879381bcc8ba6891e90f09cf25b",
+      "blake3": "c6ee45ae5e9ff536a255c7f98863f6bd6965308787627f370ed3209bcd2403b2"
+    },
+    {
+      "path": "src/outlook_mcp/tools/contacts.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7938,
+      "sha256": "7d968fe4a32f7b8d1edfc6cf46fc2fcf11f7058274a2111dbb247581751884f5",
+      "blake3": "b42118d987177fd4a91475a87d0a005fa2068c3af0b9606aa55c909e6cc4c96d"
+    },
+    {
+      "path": "src/outlook_mcp/tools/contacts_delta.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3810,
+      "sha256": "7d7c6946a98c50dc1742c7701627ce61c010636308d6cd04074f730808b8586b",
+      "blake3": "65e3f71b2610afa315956a6faa3f4f85fe3a59811a16b35892b8b9bc4c9432d5"
+    },
+    {
+      "path": "src/outlook_mcp/tools/digest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16674,
+      "sha256": "9cc91c3e392bbf36214d4ed449ce0a4c990277f97fc97c967356ac379ce85548",
+      "blake3": "0715ef93c6150622d351a1b117aaad27ddf04137bbceff4cba048e1f7cf97ad8"
+    },
+    {
+      "path": "src/outlook_mcp/tools/inference_overrides.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5031,
+      "sha256": "5c1329435bb147c200891dd12b171fccdd80c9537396830a63b39ddd8666c86d",
+      "blake3": "6890b5b74ebb772debe637b54240f87a08bc7c2a4e8046bf03fdd471f3a41739"
+    },
+    {
+      "path": "src/outlook_mcp/tools/mail_attachments.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12621,
+      "sha256": "1d0b3b39c818bec52be1f82d17f75236947f58620f5a3f3fe87a47d7f7e3247d",
+      "blake3": "900050182e7a57343290c3d7a3269613b4f8d4975d07c89a08e5375babb9566a"
+    },
+    {
+      "path": "src/outlook_mcp/tools/mail_delta.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5116,
+      "sha256": "1189b962cd8e4fcd6a284855f9c4028dc317c15e5a8271c6b0e07da567f0bec6",
+      "blake3": "8bb71d29299b3d282db72dc8378d6fbb4660e9daad049731cb2f561515994bf2"
+    },
+    {
+      "path": "src/outlook_mcp/tools/mail_drafts.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11295,
+      "sha256": "acb5d93c7bcfa0c67632c69ed337f31d2efacc9f44cd7b11457a63fdd0c4202a",
+      "blake3": "1f6d80b5d98f07983bc343a8102e2bbc930660b8a6921884ef1b155213282935"
+    },
+    {
+      "path": "src/outlook_mcp/tools/mail_folders.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2579,
+      "sha256": "8f8e84eee1b4a68c996bf3fb94f895d2a8ecfe907db830caf915543c3f6f2b0c",
+      "blake3": "136792216b4386fd3da9894546fa0455f8df82821b29a67e94c4b888fb5beabe"
+    },
+    {
+      "path": "src/outlook_mcp/tools/mail_read.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25942,
+      "sha256": "f238232ad1fd1faf193acc2187d425f5abeb9cbb158890b7b8d79d56ad443efb",
+      "blake3": "c518389b7b7c8f89d9eea7a0aa217c033a9aa2aedeca8d5e5d77d1a64d664ef0"
+    },
+    {
+      "path": "src/outlook_mcp/tools/mail_thread.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4459,
+      "sha256": "a1e0dc71620172a3ed763a85963d3ee92d98198257837f5f1db684351fe48b6f",
+      "blake3": "4d9b079e6b4b3689caf3803d3013ab31b0652cb561e80554917d89d6cfe16cc3"
+    },
+    {
+      "path": "src/outlook_mcp/tools/mail_triage.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4845,
+      "sha256": "bfb341ee6757f16a023fdffc3b739b9a0ad56104d1e34638c24fa4a892ead7b1",
+      "blake3": "eef45d82ce890bf3fc4896d23a12ec9c93bcd219cbfeb132d50cc7a3048975f4"
+    },
+    {
+      "path": "src/outlook_mcp/tools/mail_write.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5409,
+      "sha256": "4ba6d8279d79f49e59a26b8bb7de7c213312ba07f526ab242e3ab6fb6f6b71a6",
+      "blake3": "9637f629732be554f342fe7ebd2f216ac87095ed05908b5e37a9aa1ad138d157"
+    },
+    {
+      "path": "src/outlook_mcp/tools/todo.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14143,
+      "sha256": "3bd0d9cd0b44cc4d531e8689bb55a6f4fcaba6078164b4265da22a9862ed0f9a",
+      "blake3": "90f813d7aa8c23fdef2ef62b871c428974a7e921bbf683cb5e3f52ef2670661b"
+    },
+    {
+      "path": "src/outlook_mcp/tools/user.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1333,
+      "sha256": "e6f98668ec7d845315f346ef9781948a85a0bb93bde6b5eda2a529bcf876f2ce",
+      "blake3": "a38c86a481eff94710cd190b259fd55feffcab168a3bf8c58651b9f32838ae9e"
+    },
+    {
+      "path": "src/outlook_mcp/toolsets.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7448,
+      "sha256": "7a5f231b0d11272f35a96a4520e956679579f5098dfa0eb6a9ef2082927260f8",
+      "blake3": "5fdc30f562af7b9b7ff38a8ded031b54256f2ef7ee0fb18db5fb8310eb1ce8f8"
+    },
+    {
+      "path": "src/outlook_mcp/validation.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3815,
+      "sha256": "4789ae25d84b115c1aecd4f72367a9a0ad46cfe8039709739e513495fcdc0d42",
+      "blake3": "0685ddc03f56b9e00b1ac2c820a0d79ffc8b997813a51edc6932c5de34343e7e"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "tests/conftest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 165,
+      "sha256": "687eb3dc8efbae58c725c47b5bef866cbc07f2460549b6fac6584c7027d32a17",
+      "blake3": "e3e76e0df295ae214713cd833d7939bedbdf058db27c5719d32f5b774aa048ca"
+    },
+    {
+      "path": "tests/test_admin.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3929,
+      "sha256": "bb96d60d14d53f7d3b38162c073f6761ddea65697fa5b63643992d1e88f29d5b",
+      "blake3": "819f1f7f1b3832d68aad57caacc6c56e444604927b14f5546b30bf4c1db72859"
+    },
+    {
+      "path": "tests/test_auth.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5419,
+      "sha256": "208b557a7be13fb6b9417739948df109c5049be84594752f164631df2d9559c6",
+      "blake3": "bdaeb7fc8f76083e6e370396b186f64855fdab7a7d1fa3a2900e84404dc075b8"
+    },
+    {
+      "path": "tests/test_batch.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12165,
+      "sha256": "1fb7c6dcc4619170e4d0f7a40905b2a50849b76f1540c2eb2b792820653b100c",
+      "blake3": "b4e669ba8c57910c93a22de716e195dc2492c68798e818990b1f8a4b672bb4bd"
+    },
+    {
+      "path": "tests/test_calendar_delta.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9053,
+      "sha256": "2f3a8deb9a7bbd44482c452be4009eece0d410e8203cc2c2fc9e8ce41d81e4c5",
+      "blake3": "2ee0c202b4fc6285c11eacf4fb0ef88aae371482d8e40cd920c585367ef48ef7"
+    },
+    {
+      "path": "tests/test_calendar_read.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8332,
+      "sha256": "d6424f0d9b5ba86744e871d2a61dce72524589555542bb4895684265c85f44b2",
+      "blake3": "ab8ad41d382d123512db558784db56f566f032ae3bd8c1db396ffd911f38f04c"
+    },
+    {
+      "path": "tests/test_calendar_write.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6683,
+      "sha256": "513f7234b6153ac5200cb37f7400befd8959b3105c0ba3518d6a3c669e40987e",
+      "blake3": "df28388df301de8226e0b1cc745df2e10809fe3adfcd48218f16019b875310e7"
+    },
+    {
+      "path": "tests/test_client_reuse.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1599,
+      "sha256": "a8a5f957789f197518b61c9bc9a68d2b3280df707544973e6431cf714efcdd7e",
+      "blake3": "69fa0a3ff55540c5df61d7df4b383dd740093e79e98fbaae526f64afeb293e56"
+    },
+    {
+      "path": "tests/test_config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2719,
+      "sha256": "497af449a437b3218c5b915154d3d9821aeb63814d8db76963da416ec9d73f37",
+      "blake3": "9ee7e6a51eaf7b52d977f9ef87e04fbe3eb79404e83516aa4d03e01847db1b09"
+    },
+    {
+      "path": "tests/test_contacts.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14325,
+      "sha256": "8cc6ffdd942bad7f51b69fca939cdfcc183e4beacd5ca81b8651f9cdb3c8c287",
+      "blake3": "f75fa723537d202e11e891001ecac5da0d99850b04a20c32db895ddb35245134"
+    },
+    {
+      "path": "tests/test_contacts_delta.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7923,
+      "sha256": "4385a8fd5cad7cc01ff3d83a2ec814fa99f1827f966b84fc80f9fb0193450526",
+      "blake3": "a6dbd4e30237c91ce8117540fe3ec8b821684e62e1129fa577189e2d026fa9dc"
+    },
+    {
+      "path": "tests/test_digest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18785,
+      "sha256": "b0a565599d476c0cb977583c5184be359726ace0ad22ef18b9760ece34a0f5c8",
+      "blake3": "c97f4b856350fe5560a633c442844393530c41413b6621a183da355955f87037"
+    },
+    {
+      "path": "tests/test_error_wrapper.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4664,
+      "sha256": "28ec8080e3b365f42e2309df525b70875eb48dad558592195c82bfcb60e7dc64",
+      "blake3": "173fb012ea57456f3276af2d4ff2867e020698167e57d1afc63cec43a6dd8294"
+    },
+    {
+      "path": "tests/test_errors.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2956,
+      "sha256": "aa54bee5111a88d189803ca9ced877302915e2a75ee26425d143a055074e4bb5",
+      "blake3": "a9f97abedb75a288bb46c64e85e121b922388284256b3ed3eddfc3c97b01d558"
+    },
+    {
+      "path": "tests/test_folder_resolver.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9149,
+      "sha256": "b27d28615217722123aad748d8ef001dda09cab32a6e5817e50ec3b23e5d1038",
+      "blake3": "e9965db3cad95e7d8538e859d4bb0fd8820b039ae196cff7e7a882e64ba35011"
+    },
+    {
+      "path": "tests/test_graph.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 594,
+      "sha256": "90138cd71b9fff9e42a0dd526f75e3d73bb8832be43dd0c4414af85b885eb98b",
+      "blake3": "4e87c00227b8dd01238f2073994988ea7913ad3de044076ee6fda4f29f5ccdf9"
+    },
+    {
+      "path": "tests/test_inference_overrides.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11328,
+      "sha256": "fac2691d24894af5b0a83b2b610a047193d875557f988c38d36673ac72410114",
+      "blake3": "040387cd75460aa50a2f009aeafb1a57f2af62a8a6f17a0ff3636a3496347249"
+    },
+    {
+      "path": "tests/test_integration.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3446,
+      "sha256": "76fb38a3dac688024637dfdcf3a0ef5d5b60bca041a6f9c73602ffa4f504eb85",
+      "blake3": "18ee0b647df25a446bde7fec251103b0ec6efa5e83ab7a90ed7a24bfbcf4eca7"
+    },
+    {
+      "path": "tests/test_mail_attachments.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20178,
+      "sha256": "1815d6b5fb5ca1c3eba493834f7d11cb69302b3f5616ac03e7f5e11ddb24174d",
+      "blake3": "aca43b3b5294fd97eb4de25e25a3d51b0a365eada8ae32c0329309d0d7a63cf3"
+    },
+    {
+      "path": "tests/test_mail_delta.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9976,
+      "sha256": "98ddba39298c6dafc9ad5787aa5d04079802ac1d3a7c39928ffe4f793989e5e0",
+      "blake3": "c56096034e4c878903781e13d13366f4f1ba644deb62509ec3cc5873b1be980a"
+    },
+    {
+      "path": "tests/test_mail_drafts.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18275,
+      "sha256": "280d6ed91b2cb91b276a6b6096790abd290b41f48032c105479e9c610843d228",
+      "blake3": "6fd40d80087b3f90c1c5fc1ccd360d9b7b6ca95bd230c6c3ec69901db5b78e84"
+    },
+    {
+      "path": "tests/test_mail_folders.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5204,
+      "sha256": "21b0506deb985726be9437850cb23ce7e3326987c62731b91f90b63652cb79d0",
+      "blake3": "b632a3de7dc3412c80790d2b08726c14b83510c7f8182a0cc42b0c682f28e9e8"
+    },
+    {
+      "path": "tests/test_mail_read.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17435,
+      "sha256": "a70e8512934c2be1f0572d0c05e2509be64a8b5b11565065cd3b5dab2bb9d105",
+      "blake3": "f2bc4bc210fdbd4f1e375cf30da45843e02289feb32023c3035eae5b5d04c38c"
+    },
+    {
+      "path": "tests/test_mail_read_bulk.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16513,
+      "sha256": "a79537127c215afea3144200ac3a4f9a1dce67bedc6549e26d09ad6fc819e211",
+      "blake3": "0aad52f6934eb78e78ceeb7e3f0793e96a729c0fb1ab6c518cf7678839e56a03"
+    },
+    {
+      "path": "tests/test_mail_thread.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8389,
+      "sha256": "711d21b8c922aa3c0e596abdac8938a4ca776d66261dd71f9588740941190e9f",
+      "blake3": "042317d4524dca3b1a2721a193c3975cc8f5c18a5f47984fc4c79ca90a046dcb"
+    },
+    {
+      "path": "tests/test_mail_triage.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9314,
+      "sha256": "5671284dd8e052ed0678502a8893b8a74feac167319e391d6195f493a7a0d7af",
+      "blake3": "88b656a8be5ffd08f94d1a0a7a018069bcac9d88dab227281c428aef63095765"
+    },
+    {
+      "path": "tests/test_mail_write.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6033,
+      "sha256": "be43abf7a8d61d6759b60512baec794a0179707bb4769d271005eb648c95c123",
+      "blake3": "bc9b26e10a55ac71a08924e6cb6cf65acd852afbe9e2855be8af45a2893cdf9a"
+    },
+    {
+      "path": "tests/test_mail_write_tier2.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4420,
+      "sha256": "d2799e71456372210dc047c40b44694669b332f20dfdcfeb25b8b5d72514e524",
+      "blake3": "125fff390b2e2a32d6d8aeb720f395954ca7999e5aa644446c82f37129c50ca3"
+    },
+    {
+      "path": "tests/test_models.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2894,
+      "sha256": "5aabeab00bc30ff500102103074464dd922f10914efcaabd07fd91551a8b7f74",
+      "blake3": "3b41b91d0e23137788dbf6a6aa505b80d6f93f17b85d6f6b6de96ab3bb8e2077"
+    },
+    {
+      "path": "tests/test_models_tier2.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2478,
+      "sha256": "600afbec7257c885842ca1b003933eebf9e2a5a07acbe3d65f33b286695d1185",
+      "blake3": "39e64986612026a8271d7807bca0fd5d1f6e0bfec2b5d68796b335b7a303bf2e"
+    },
+    {
+      "path": "tests/test_multi_account.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4608,
+      "sha256": "4cc1385ff7ed63ce056a092fa94225cfe06c575bf15e400e4e87fa6aa0ece5b8",
+      "blake3": "5e3733f55a34b7cee8b3176fa98594eb5113b50e03124f79fde9bdcdeaace178"
+    },
+    {
+      "path": "tests/test_pagination.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2355,
+      "sha256": "5c5750d098bb908c448c497ab71ebe32846aaaeda55dad15793c7aca6353b0f8",
+      "blake3": "0a8eb45dc6b7ecdcf3dfe770ba8d5da9d5419421a7ad87d5aa116502a959bbab"
+    },
+    {
+      "path": "tests/test_pagination_integration.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7724,
+      "sha256": "59be2bbd0d61ca54691c00157cf6c4efd32d2c3ad8b5146023eb08a9e087c740",
+      "blake3": "73a8b0d4e8358b9818290d2793b06c7d57bf9014174bd3ff26c7b83c5e192cc6"
+    },
+    {
+      "path": "tests/test_permissions.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8082,
+      "sha256": "baa2e95fb9baf5caebb7a3f9e0626b73a7b571b0e3b1ae44a9884035abfa8151",
+      "blake3": "fcd5453882155ec2475b4b5bda08b516454fad97913ed0384bce6a969bae5115"
+    },
+    {
+      "path": "tests/test_preflight.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3213,
+      "sha256": "bc1f1781454efcdb66fa4f89dc5de31a58819a8a0d4cad33152cdcba1c5a4fa1",
+      "blake3": "07d00eee6821fa972a9291e9dd6c9f9d8313b301112f5a1e82fb0a5dad12644e"
+    },
+    {
+      "path": "tests/test_server.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9316,
+      "sha256": "d1e357234da7e3e89154e2d8229eee93584e2854227ce06b3796ae1df238cfd4",
+      "blake3": "8fe597474d3bf9d4e0574e288e2f83dc10d65b0796d0ed0e0297e52a79436394"
+    },
+    {
+      "path": "tests/test_throttle.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5644,
+      "sha256": "2d82dd481feac17e27d98cc6d1dea30b41cfaf0811d8b51ed4053baa9ac29548",
+      "blake3": "6952aec931a5f0597803c3eed21113dfc802fd838bdf14d75a3fd9a3fdb536f8"
+    },
+    {
+      "path": "tests/test_todo.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18813,
+      "sha256": "022e5d582971c2eec23c7f2fffb62620d3558496084a43eccf62e653f5e6ff50",
+      "blake3": "d863e5d24456f37a879cb4873b9fabae19f783394ea848b87fea21fd27013b5e"
+    },
+    {
+      "path": "tests/test_toolsets.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4666,
+      "sha256": "42279e1d682551154e25ecc7661b35561a469fdc764609be9cb3cfa3b4c1fc52",
+      "blake3": "3271830bb6a13a0eaa32a3ecef130b21bdf529f81e57fde02f976508227c799c"
+    },
+    {
+      "path": "tests/test_user.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3185,
+      "sha256": "15f4a30582edc041cbfdf8c1d4ca81e9ffb73612b7397dad60a91f91ff7ea976",
+      "blake3": "22973c24bcf800f42f3d7182d45eb590fb0c677a38c9536e53fa9786ba289e8e"
+    },
+    {
+      "path": "tests/test_validation.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5028,
+      "sha256": "525d546589ead7ce5e4666fc47bfc6a59abe49dffe3001f51fd65b5b00116461",
+      "blake3": "e958e2e152f99421aacfca215ba3d81aa436c646717f9f925dac7915d9d83341"
+    }
+  ]
+}

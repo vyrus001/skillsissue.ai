@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:6f31ae6bd2788b9c33206d0dfdacf2d5a47454b705fcbe84403d0709eea58d11",
+  "sha256": "6f31ae6bd2788b9c33206d0dfdacf2d5a47454b705fcbe84403d0709eea58d11",
+  "blake3": "10a6ce2e4a03427b17a76e9cbe4b7c34baed9b830041fe18183b87ba59e6fa27",
+  "size_bytes": 137416,
+  "file_count": 15,
+  "entries": [
+    {
+      "path": ".gitignore",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18,
+      "sha256": "43a66dea43c20146395d58c750acf4ad21456e93c422fe4c279b5f60409041a4",
+      "blake3": "c0ea34bdca377128a173f0095c7c7f3a2a603d9ab35aff03c8496d1ec237a56d"
+    },
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11403,
+      "sha256": "58cd61eeda42dfa3027b3cc4549079082d96119bdf7ae471547d99bca39e7cbc",
+      "blake3": "04696d01b3d5d4e55864964284aac3d7af2c2a238fe0dd6dc02b598146faeccc"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7504,
+      "sha256": "e9807f3da573f450e26b3721f1782a0525e2af27e79f00b55f7322937a3b7a06",
+      "blake3": "a2d9f28ec6491172237486a5cb422aac3497caee625ee56e63366ce5b79bad55"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8307,
+      "sha256": "bfb5d1ac4ab9510417e4fa04283f50142594541824d55c95a1850490712eea73",
+      "blake3": "b8861c011c08c24d87143752894109fbae6eefc2862c8119decb148330dd4ec7"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 131,
+      "sha256": "ffbe95f075faba9cbe879be9eeb92dcd99077bd95cf529c8f89bb437e29d05ca",
+      "blake3": "5833fc50bbf4e77f6f282da59303ef6d57620a7088e92d6169dc22ba3a8969e4"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 247,
+      "sha256": "d39fcd6dd44a36bc97d107562d061a9b7b8bc70872e5256f6e5dbd80474e3873",
+      "blake3": "35f2601613423a0adc52fb75aab5d9b5b25c007ad5544831d760258113ad3379"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/indexing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4025,
+      "sha256": "7e4146be7c8a65d758be61d8bb52e21bf47bf4c7cc1a0f5a4bab2b860f868f4d",
+      "blake3": "327b81ada035fa0de7196e22bd2929159f11492ee45421e7e14f8e57c88f711c"
+    },
+    {
+      "path": "references/metadata.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1971,
+      "sha256": "c2eacb9a87aa5f9889b3c3d7558b2996fbad50e12046c8434c2aab2376713320",
+      "blake3": "8ea6e49c27a518b5657e6ad67a1441b5d347f5d7ac75a48ee9bed0fb2456c36a"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/batch_index.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19810,
+      "sha256": "53b119b2c24f7fa04d48863799dcdd9dc6b0eb8aff21688f5f0d6840c9b264a8",
+      "blake3": "940a8187a56c20b8192a2ce1edb27abdb149cdaacd8d7eace709dbeed51ac43f"
+    },
+    {
+      "path": "scripts/build_skill.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18288,
+      "sha256": "6b266ea9c92fde1f913227dc9cc85e309553a1aa937d688d43d05d2b85bd9562",
+      "blake3": "70808a1df08558ebb95a29d57e7b5592b49fbc3309e4d5a373834aecc8d08883"
+    },
+    {
+      "path": "scripts/convert_documents.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16530,
+      "sha256": "cd3e605a826c9a0cbf1bdb02a8e6e27532869c168712be96df2a63ab442015e0",
+      "blake3": "500b3cf2bec7ef3ef2ac9c1874415d7d7bd94846c3d1bc34e548c21d7dcead1d"
+    },
+    {
+      "path": "scripts/merge_index.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24508,
+      "sha256": "dc2de69aa8a4ac7ebf688578a94ef2793425e90b13c1dfe3bf485da8ad9d74da",
+      "blake3": "c64c876eb06e1a4e2ae50febe262bbbc0ec3b7695e15ddb1dc61595ca205ee70"
+    },
+    {
+      "path": "scripts/prepare_workflow.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3816,
+      "sha256": "40a2ce6b3d256312ae9f0b160351688bff229092c1ae96cb018d8e258e27b9a3",
+      "blake3": "b62cfd0c814dbcfc1cc991666ce16a5f9d8c6ea31e57280ecb72777c482efd8b"
+    },
+    {
+      "path": "scripts/search_index.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5636,
+      "sha256": "d474e586d99cc82de4b84a7b9231892e30ec0dca96695953670b6d04c24f3d7c",
+      "blake3": "1776f91fb7295c1ee67d82674b77d4f8b1777e40b30df9b6109a1c0be64bc6c5"
+    },
+    {
+      "path": "scripts/split_markdown.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15222,
+      "sha256": "0243ab271e7bb718d52d5ce2b20f5dc23c1642ef9ffb12679df13a9b3a5d3b1c",
+      "blake3": "e994226953161cc123e97d4651bec2959079194d996c08bf55bba53c5d87cfa1"
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:fd9451ffe2468cddb17dc7c754a1c1cc5e5ca6db53087cbe79799f289483fc8c",
+  "sha256": "fd9451ffe2468cddb17dc7c754a1c1cc5e5ca6db53087cbe79799f289483fc8c",
+  "blake3": "19a7ac5466a0692938b993758fec4970938181b14d0c9592f093857580b158d9",
+  "size_bytes": 271476,
+  "file_count": 31,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14508,
+      "sha256": "534ca5c478b5073c890299c45ffa2bc88f478c94589010e182df1f55249a05f1",
+      "blake3": "b434023cbb9cf54f0fe56a3c6727d9354afb75d7856df0f9ebb3364b8e2fffce"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 126,
+      "sha256": "473340bf60a9d5f0d5798b83282af326819cc15e93fb40ac4de6d0cf7b5e28ba",
+      "blake3": "c20ea3e948eb99fdeb84630a62541ff1240c0b0d027c0cfd2455aa1b9ba67a6d"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/config.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1707,
+      "sha256": "ac726229dda09f4a21f896e9182e2b08daad5f39e2970a5e1baa7931de515a1f",
+      "blake3": "daf1d8c1736c4657c8f09e53f819bd7fb0a9550e3d24f07c86892b6640d989cd"
+    },
+    {
+      "path": "assets/mic_tap.b64.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 77916,
+      "sha256": "0abbc791ae0b0acb530aa61262ab24f7dc03c394e49d08b3dd51dae2bb0ee1ee",
+      "blake3": "66e606b8147e435617a9c69bd6580c54a34e597801abd9d83527c26084fe7bbd"
+    },
+    {
+      "path": "assets/mic_tap.source.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 194,
+      "sha256": "558152bdfac6be310416709ac36ebe9171a34933d489005682a10c49f1eeec0a",
+      "blake3": "fe4c5c9a25e4c9aeee191e99c0e3c6f9becb7985ec2ed447d4d61fe23dc01c82"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/images-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4092,
+      "sha256": "be9b9b3bc30a1f73c7e6ea43584e60359f814e38883f93d40f17fc8e14a98e0a",
+      "blake3": "085a99014e3508d7a0f2f8ec7e059c1178d70b131a461069b3b9401366ef6452"
+    },
+    {
+      "path": "references/notes-spec.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2341,
+      "sha256": "5a339d799277e60e8cd2d35c33f6381af46b3777e8f1cc2ad1c4d3bd16abe7cc",
+      "blake3": "8a6d65aaa3931ccf35a5754c3710cccb86b9703489d9df630c998fb6e2199d62"
+    },
+    {
+      "path": "references/script-spec.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6456,
+      "sha256": "90a4bd7dc38d092902155ba774e4887681174f78f1381ac1790cc158e8393d6b",
+      "blake3": "11021e41f895e92e4879fd818a46091388a3e63a4c7978de82750713913b5b21"
+    },
+    {
+      "path": "references/source-fetching-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1471,
+      "sha256": "a5a60b8825d9d10de8c14b3b06b3d5548b11ff30cf9cdf18d573999eed0f604a",
+      "blake3": "6c4b76b2a534f95a3dc5f9e0e29f6852974c2269225a64e54fd439a43807d86e"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/generate_podcast.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21892,
+      "sha256": "c0c1adc68a2c07b735a5cbbe94753fcf35b0144e13194186c7541d3f949dc3db",
+      "blake3": "40087ab0857e2d36f1dc86bf4dbe631b61d5ceae7225f539b3059700166bed12"
+    },
+    {
+      "path": "scripts/generate_timeline.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4954,
+      "sha256": "6c960a10e05a984b46aa8e16a09f6c075254802b30bf5b5d575e364075219a71",
+      "blake3": "a8acdb46b2be501129c72b986b400879c642b64bb93b27ae227c64f6b6e1f0ce"
+    },
+    {
+      "path": "scripts/podcast_store.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9237,
+      "sha256": "2e5c0eb932ce827682bf964eca40aa6b10c3481819c1c2fe44538b2f487d5c81",
+      "blake3": "a122a6de80c58a88441ec1e8f1feb590dd69930e6d86857e7f9db1f7f2f856db"
+    },
+    {
+      "path": "scripts/rss_feed.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5616,
+      "sha256": "4836a3bd31834fd286699557561a9643c8c2ee084978ef0298597d207414ffc5",
+      "blake3": "0d7f78d7495a0d39f4017b91e74ee5a86e1ff22ca4efcf03c20b3975378f0fcb"
+    },
+    {
+      "path": "scripts/script_md.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6599,
+      "sha256": "fc3c45f256b6ba637e71af494a293ab2dafed0594a46e70e52f07f08ac9270e8",
+      "blake3": "946202f4b2efa0a8bf7ce523112b19a4be4414f7ef6d774ee5c709f2a60eff18"
+    },
+    {
+      "path": "scripts/script_synthesis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22587,
+      "sha256": "6d2dece41cab05fb428105a5c7f6a5b64343adf1aa1bca95c0bdb79a810bfd9b",
+      "blake3": "f3d478faaed03e2b1ecb34a9cf5e5236406bdc5eaec1eee58fd542ab78b8a444"
+    },
+    {
+      "path": "scripts/tos_uploader.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2765,
+      "sha256": "085effecd9d75623f5413452f9b2d8abd954be2ef283e9b8cc3c8aec311cc2ac",
+      "blake3": "5692a0b4abb08eb8a17a94b8cc1d9a47a8cb3b70a32c9564661817c66c462514"
+    },
+    {
+      "path": "scripts/update_metadata.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3229,
+      "sha256": "9a4218e2046727b900e5829e149fb25fc5899fe49575c38369d6f8a367ccd8cc",
+      "blake3": "e7a8bd1ceca84011a417649da3d32bf940c7cefe737c491eb5d599f0979712fb"
+    },
+    {
+      "path": "scripts/validate_podcast.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9484,
+      "sha256": "b7390cac9e881b598ec6f7a3c4e0c402069a630a7464a24bd79d01261b490532",
+      "blake3": "52785ed0c7f2f1ae80ca320bbd5ae6590587a49e53b0e2ce1299d9c71d5f0403"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3144,
+      "sha256": "84547c2d0a7d6900c8c52860f7af0e179d676d76a207231dcdb4d86e47cdc491",
+      "blake3": "e649a1f7060dfdbbf0520de941909ea289811ef19d32977b96200dd5efdbc2b9"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/conftest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1870,
+      "sha256": "93bf2a7be71a02a126dc60fbd20ba13a9c066c714af9e10443a8d5f55b74957b",
+      "blake3": "ceb2e409b785f83fb3bfef98c3c29219f34c3bc5d18de2f6e1aa7c3015eda344"
+    },
+    {
+      "path": "tests/fake_tos.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2421,
+      "sha256": "d86f1afe582e35c9d4079b5b2b74ebedbad4fb927be664d285e0674b1f237bda",
+      "blake3": "5affbf36fecbece6abae34ca74b19f05981e5c9576ebea286f636ca1c1c7c0ad"
+    },
+    {
+      "path": "tests/test_podcast_store.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13375,
+      "sha256": "171f754d370d2b740f7c9a67ade92097f28b6347dec9feb5f8b2a8f72140e5fd",
+      "blake3": "e5ca35347488aacebefeb9c60b84d720554571ef3c8945f171036dff5faa4671"
+    },
+    {
+      "path": "tests/test_preprocess.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2429,
+      "sha256": "b71174732aa0feb604e75e42ea7b1c7067e9c9945a7372119c4a26fe462b5e1b",
+      "blake3": "503b4f1e3627662f5bbfa3359becf29f25629da1bfffcbf27e0a5d837950ab1d"
+    },
+    {
+      "path": "tests/test_publish_state.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8606,
+      "sha256": "0d2cd289c705677ed8c2638a11c4628d28875b71bf2bafd9115e3b19aa316af0",
+      "blake3": "0acdbdea6f34dd325afa0d2e31f79a511e86bc33b3c13fe497d1adfa168041e1"
+    },
+    {
+      "path": "tests/test_resume_cache.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12954,
+      "sha256": "252ce06717e61801e13d838823c1d3fc5a8a7b8c80a4c7258459640f5e09be26",
+      "blake3": "29586899cf4775ccc19c7beefabd10a7f4969fce0713485b7cbe31584a6ec68a"
+    },
+    {
+      "path": "tests/test_rss_feed.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4447,
+      "sha256": "37d2537f0f0b56f8397d240cab64a2545d470df35efd86154cbda8b9aefe184d",
+      "blake3": "11a05a1ae027b36f05a2e1b6c2be9c805041f1a60628d8fffae5699f3318bb18"
+    },
+    {
+      "path": "tests/test_script_md.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5866,
+      "sha256": "f7d0fb7479a501fbae7fe109f0ed0b8cde3e8d7c4838f9d75819e69a8eca3d9f",
+      "blake3": "9d88598b7d67897d50e6eab3f69011644ec202551b77ed0f9242fe821d5ae536"
+    },
+    {
+      "path": "tests/test_synthesis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8035,
+      "sha256": "5286dbb4699531ad2f3d308f0f4f87a9522abc0fd07a6db081aae24f8ddb1ceb",
+      "blake3": "fdf0c738c9964cb48918826f49cd25a524e5f8a967e7324523372b26ec90b3ea"
+    },
+    {
+      "path": "tests/test_timeline.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2935,
+      "sha256": "16702bf10055d7056d8cfeb9cd805eb6dd1e83b66596aa309c3c643dbdf73c05",
+      "blake3": "a0b9fd47b83d7b5476c66c9b43cb195b829dd6cd0bfbf85f43c1f5246a1c6752"
+    },
+    {
+      "path": "tests/test_validate.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5152,
+      "sha256": "fd25358bc668218065b00416b5b71a17f82da4549701d1a0c3301d42b6b97764",
+      "blake3": "820cdeb85d45e794bbec2966175d295538e3af619ab41fba978b69297f62db56"
+    },
+    {
+      "path": "tests/tutils.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5068,
+      "sha256": "0c3d08f8ea413e966fdd9251811b8eb1386af8bb2185cd2828662aa573057ee6",
+      "blake3": "f97ef9c146e7bec9d9cee3e61ccea0ff2afc32eaaa429259af7e0465012c563f"
+    }
+  ]
+}

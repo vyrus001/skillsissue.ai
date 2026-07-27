@@ -1,0 +1,451 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:601fac1bf3cfe3cc565966dced6ac1fd45e046deb5f9b207dd3007ddf0bc3abb",
+  "sha256": "601fac1bf3cfe3cc565966dced6ac1fd45e046deb5f9b207dd3007ddf0bc3abb",
+  "blake3": "f82b658ae8b4c9c578ad031cc3e3f30e53ae96c3df458e2c8769e1f6c66fc5fb",
+  "size_bytes": 251741,
+  "file_count": 52,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25493,
+      "sha256": "f87fefb4c6874809c52fe46d89c450de474a9064f0a967de0976e02b2baea3b3",
+      "blake3": "ab84cc0cea0959b037ccef62b7fb1e845e79baeca14392f7997079e3d9a30094"
+    },
+    {
+      "path": "LICENSE.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1090,
+      "sha256": "57ad1bbc5b2e13df3c781b193df47ee50759bf377cdce4be4fce149e73a99e88",
+      "blake3": "2bebb56b703f7d5a30886a78b848effc127dd538f1b0257f97a53015a0de5d6c"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9170,
+      "sha256": "3d2b30b2242bf471d684833aa561b19dadd8e6e62cc2795857f4d992aa4a6206",
+      "blake3": "a87bddca11e8a3012d39f57a338e87a1448b41e94beb9c889a206320fa67e920"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 26375,
+      "sha256": "287af1d887524a7b749ad2898f9bf3b7f4e4c378efddfb16b5dcb153a3428639",
+      "blake3": "5f07429d7551cdc2b0483da330543d2908fbafd02535e9a1bb6deb1f6888d0b0"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 138,
+      "sha256": "4bd41fc88769824d5d4c02172635e990c6fac196a10bb392d0195ee970ff1132",
+      "blake3": "17a9b0b0ab62e116db4979a4834b254978e2e52f6698f7e5b6bb55733bc0b458"
+    },
+    {
+      "path": "endpoints",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "endpoints/01-law-vector-search.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2620,
+      "sha256": "6330741d6987687bdab7dc0580c80c91317258b788b24d3a8f2e165b1082bf31",
+      "blake3": "54ac9e43a63be9fcd0007dfa31eb18c065a8765e0307c6cdf27cd099452eed5e"
+    },
+    {
+      "path": "endpoints/02-law-keyword-search.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3804,
+      "sha256": "c91fd3f65b211af133eb46bd695f0287316f60808fbb83c23e5bd3272210aa9c",
+      "blake3": "47526830a19d3059b1c7857130d3c1bec225ef628e2dcdd5a98cc0c25c86a89e"
+    },
+    {
+      "path": "endpoints/03-law-detail.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 675,
+      "sha256": "aa0f6b2eea27f6d087ac2e8189a75f58b5e5827b6c09acf9bb337588385bdbb3",
+      "blake3": "088aa3cbd52f133fe1e36c4ea595dd7a4da38a7c575d3caab7b709bfed81ce37"
+    },
+    {
+      "path": "endpoints/04-case-semantic-search.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2073,
+      "sha256": "22da719e87e5bfba7620e8524856b4b2e18e82512acdc07085a460236cedb19d",
+      "blake3": "cbcab191e0c755738ff36ae003e56c6eb219c87d2f5b4d8925f9e589b4316989"
+    },
+    {
+      "path": "endpoints/05-case-keyword-search.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2640,
+      "sha256": "036e3d9b513ea7c07e0b01f23acba373c083dafc38ec4f4a1f26618bc8f2e35a",
+      "blake3": "b4a363e86bf726f5bc1f0f9c30b67f56afe70941bfc0162b02d6711c630b575a"
+    },
+    {
+      "path": "endpoints/06-case-keyword-search-authority.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1044,
+      "sha256": "7245e7c634c4375aae90e0f85442f91ae3eeb4fa3a11a64932be36d5a9f28912",
+      "blake3": "36ce6ac225b55d8762eff1a33f886a20f042af1c8c05c5fe77a1ebc2baa06a6d"
+    },
+    {
+      "path": "endpoints/07-case-detail.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1141,
+      "sha256": "95a03b9d51882722f5eeb6813c5fe62ee8573fabb8625cc4505ea8324ff7d2f6",
+      "blake3": "f51d3dbbc5323eb895826b92453138aa991811bc260993e6285a204bdb9d0704"
+    },
+    {
+      "path": "endpoints/08-regulation-search.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1031,
+      "sha256": "4fd7e63b1877100edb4072bb7b6ad0c73679aed08f0b8001ffca3aa95ffafe65",
+      "blake3": "dac7c41e1ca08e806c527d7d1be9c33905888fdb203daa7a5adfb19151e69d8d"
+    },
+    {
+      "path": "endpoints/09-regulation-detail.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 569,
+      "sha256": "82faf7eef19c75d9170ab88ed5930a9894d6c7b122eb3e5f85e13c8d0ca3b8b2",
+      "blake3": "dc4d18b3b358ecafed14a71d096fe5690fac3339d3cd4ea101e5bf33c08ae050"
+    },
+    {
+      "path": "endpoints/10-enterprise-search.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1014,
+      "sha256": "5cd3e5bbea300c7a852b3c00c6b8335c591a26948df9ce17fddc8550178d83cc",
+      "blake3": "8e6f290fea2c08c06bb6d4a80896ddd7ba0a2c01c8c0a9702bc70c1a6911f224"
+    },
+    {
+      "path": "endpoints/11-enterprise-detail.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 606,
+      "sha256": "50ad3f0fab8b0ceeaf7d34be82f4bfb4a2086ed0f9f7f5318b7ca543735c7edf",
+      "blake3": "077881a3f50b87f9ade5c0baf43a05b827e1b41500785420fcfcb17ba9fc3bee"
+    },
+    {
+      "path": "endpoints/12-hall-detect.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2877,
+      "sha256": "0865bb0a7e724262e7005cb11216e4cf7e402dff5ccec57408b93067f6cf8a85",
+      "blake3": "214841cf89ac51f01bc893ce5372e5f30967b38d6dd35a8f4dcc75787e634ca5"
+    },
+    {
+      "path": "endpoints/13-enterprise-search-lightweight.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1102,
+      "sha256": "c217d6fc55a82a2bc3c9b5f3bde8563b43d4e8253d2db1253f75c7783e254253",
+      "blake3": "561c14a241698eee3760a53acec38d7f738f4972d8ae5394b18fc7b517598a3a"
+    },
+    {
+      "path": "endpoints/14-enterprise-base-info.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 794,
+      "sha256": "aa103acfcf20a40d0efb38e9c3ee9b29eddb7fd20a5420450f295f7a90aec998",
+      "blake3": "c8387978cec815e91caf3410f831a4b044a376ab8ef07977e88532c67fb2ead7"
+    },
+    {
+      "path": "endpoints/15-enterprise-aggregation-summary.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 584,
+      "sha256": "91e1cf5b3c1cd75d18211d51a4aafff21129f43f29d47925b835a0e72461fd1f",
+      "blake3": "79d8b1d4f631889df2d9cd19cf9861ea0e6fc152077b28a0959afaef396b04f6"
+    },
+    {
+      "path": "endpoints/16-enterprise-out-invest.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 643,
+      "sha256": "66820c61829e70c78dc045a2b419a81a535c9d880f60d5bc15a74f6a458025a1",
+      "blake3": "a8c21516fdaf395d304a01862e9f402f4f1b25b9e7f28915e7e5ca2901b9f614"
+    },
+    {
+      "path": "endpoints/17-enterprise-brand.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 618,
+      "sha256": "0e6d5508ba33181d841caaa3526a5353d9af6e0888f301c56a203ab096e0157a",
+      "blake3": "4c816868d9dff272fadd510d647646315c51050f2701e9bfabd2e4311cdb9599"
+    },
+    {
+      "path": "endpoints/18-enterprise-patent.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 619,
+      "sha256": "b370cc36c94244255370a4e089a8f330a2a7f3ac814d088f50c5d7d3bddbf639",
+      "blake3": "8deee4de6661638cef1eda60796b1b688a70136d7523b78e565454142b27434e"
+    },
+    {
+      "path": "endpoints/19-enterprise-soft-right.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 658,
+      "sha256": "01284da8337bc31ff0801973cd775f0d76f6e207b30a07053d1d55d10c3a3c6c",
+      "blake3": "e07a8456cc33c4fca6d5ce4243c7772327c30e380827417308ed15aaedc40982"
+    },
+    {
+      "path": "endpoints/20-enterprise-works-right.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 656,
+      "sha256": "2586652430205764f8adc6a4ed5901313994faa669672039ff74eeab06e2c9b0",
+      "blake3": "8264fbf300d2e3e27bcabd5491cd9f224cb6b9a73f396b453f9305ddfbcccb2a"
+    },
+    {
+      "path": "endpoints/21-enterprise-icp.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 624,
+      "sha256": "ae571d6ef7d250589be8837c1edabe23ec7bd138eedee4daa0ada9e09289d4c2",
+      "blake3": "64784cf28ee1410b23b6ffde9c779f66775f5ccd5176dfd8c8af579a0d027c2b"
+    },
+    {
+      "path": "endpoints/22-enterprise-change-info.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 650,
+      "sha256": "7e3a2e5e5edbbc39b92685f385465f9525ba503a443686ba11a514ed6212a4c7",
+      "blake3": "81e5af3c64ab737d1a38dfd579bbe048c04c898b7b494675955aa8fc82c4178c"
+    },
+    {
+      "path": "endpoints/23-enterprise-writ-agg.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 660,
+      "sha256": "1ec7c428a41c6c21a184705f0e2237f32d6bedbf5a83c338e17768dfa3d71f06",
+      "blake3": "c8ac45e02dfde621f9a77503d7b73f0a61611907302ebf4eeb02b9f4adfd706f"
+    },
+    {
+      "path": "endpoints/24-enterprise-writ-list.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 646,
+      "sha256": "cac26960f0b0c62b2f8021025de854692cbf64ba6f2f06aa0bbaccabb8bf6987",
+      "blake3": "3b12228be4f57081fbb058052e33ca38de1dcda0e9b6da3aa0d8dd19f341b7c8"
+    },
+    {
+      "path": "endpoints/25-enterprise-court-session-notice.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 652,
+      "sha256": "391b9006a4b0f1bcd3e36fc11d4177e535747fff6aae26e48128250b25d102f8",
+      "blake3": "a568a6eadfff3762b72ae0c5cc126b399877aeb1b2762455993fd932bf5d24f9"
+    },
+    {
+      "path": "endpoints/26-enterprise-court-notice.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 642,
+      "sha256": "3d74b4cc851bbf8265c4a0e35d2484135b626c8bf08dbcc7321fa1f9ae5531f3",
+      "blake3": "5b9de0730040ec88b47e7021c03bb9a1e157b8dc4e5514e5f656f6cb79d7ed54"
+    },
+    {
+      "path": "endpoints/27-enterprise-executions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 680,
+      "sha256": "e326185c03d65f7f6b948cef39ec387936d08a41b43ad6255aade19eba3fe1e2",
+      "blake3": "b0c68f1d04b686f293430720d871517ac2010c343a6734cd216aa1c0fa36f083"
+    },
+    {
+      "path": "endpoints/28-enterprise-executed-person.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 666,
+      "sha256": "5d6089d4feac2c74c176b16b06cbc7af11ead4df9c9e067cab9e4e7f1846279d",
+      "blake3": "30b739c0a685e22d40c89fa3ab24eeb8ace265b3b1326d660cd4b87d9d46ac06"
+    },
+    {
+      "path": "endpoints/29-enterprise-frozen-equity.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 646,
+      "sha256": "c11e19de608fd0f5b45ad1e1147171cadbe338fdee5bb69369072bdeebf1a254",
+      "blake3": "0b3b2b0d900ba21c3076c1159d2c54490be7e76ec8709357402b86c2a88890d6"
+    },
+    {
+      "path": "endpoints/30-enterprise-punishment.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 647,
+      "sha256": "c5dae10490ab12af4e1c9bcbdec3f360f45337df84484a3b6bc56401bd890ba1",
+      "blake3": "e1b58ed72dd99598bcf84bf41cfd4996038d4f75278bf48b6c0c7a8a0b638bfa"
+    },
+    {
+      "path": "endpoints/31-enterprise-pledge.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 649,
+      "sha256": "1053f2ea756264eeea97a331eb07ae48432341f97ddb87cecf62cc6da52ced78",
+      "blake3": "29befea4475d348f25bbab3deedc89a693c8ff3d4e364ce327728570aa178b0e"
+    },
+    {
+      "path": "endpoints/32-enterprise-guaranty.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 648,
+      "sha256": "4f0866fdac0792e7fd1e195c6a672f3421b1e2630dabf64bb72ac0510f913803",
+      "blake3": "54a4a4cd4ca439facc10c5555333de9d3f941fa6784e008fb989ec0bbea0e1be"
+    },
+    {
+      "path": "endpoints/33-enterprise-abnormal-operation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 672,
+      "sha256": "ccfd2183d1d6c72ab5b240c1a284e43aa4fc035194cafce903dde1bc3048df09",
+      "blake3": "db15ede45a357de62387fed3c183143fc0caff3447b66178d638e652a7ea2d05"
+    },
+    {
+      "path": "endpoints/34-enterprise-corporate-tax.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 646,
+      "sha256": "bd77409f8db15a6861d20314610ba759d10259b215b38600f471dbe500c77026",
+      "blake3": "e37ef37ed8fc94cc949c7b5ce9f40c495c224d8fe7b754e715c590744b7f50d5"
+    },
+    {
+      "path": "endpoints/35-enterprise-serious-illegal.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 654,
+      "sha256": "4ee220c8d1eba0b28a9354f53a9075946880db51cf18c001f7004d5d29286892",
+      "blake3": "257d8d2e054da80bedf28f312fc2737fa8a4019a59f690385890b809c39b467c"
+    },
+    {
+      "path": "endpoints/MANIFEST.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10975,
+      "sha256": "7b1d94d73fce3d05c9505eb9261176c0b78eddc4177171d083aaf0ca3d3d63a0",
+      "blake3": "10e5524b040e5e4f0807d7ee6fade688ccf3498214f865523b2f12509d7ee70d"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/01-keyword-expansion.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4133,
+      "sha256": "dd3b8d8ef62193205c540b075078b3e8747f79442e160be3cba3e0269415a6aa",
+      "blake3": "8bed75b7a472d29eade83132a69347019755b8b1ff147e054808d7011f1bd612"
+    },
+    {
+      "path": "references/02-typical-workflows.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9640,
+      "sha256": "7cb8dc6e025e7773a79473d38a248851cbd216a8b8d7705abf273cd35a426304",
+      "blake3": "4a848d2886784fcb3ca843bcde72bbacf2ee0964c6e626d145f5c838bbd2b531"
+    },
+    {
+      "path": "references/03-report-consolidation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5655,
+      "sha256": "f004b7c4437c822cedc0d1b3eebb0d2f241e52711e6f527be9708fb4313bc476",
+      "blake3": "d5009856c0c98ff79198e88f1cde6327eec8b7998ab3925dcc31959e54b21fa5"
+    },
+    {
+      "path": "references/04-report-design-notes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2361,
+      "sha256": "b90a4bd323d7cece29845834eadb86bf792bc66bdfbd481a82b7dd13a358fd40",
+      "blake3": "b4bcc39c4762dd47c38f25076d53f4bcd19c2062f6e77882efe5d3c84c8344d0"
+    },
+    {
+      "path": "references/05-mcp-workflow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3150,
+      "sha256": "5f1b95c13ba9a4dab1b9f6178a639878a968bfc86e4b32d16e7e7489a09a81ed",
+      "blake3": "6331c891468524bcc781f80317dc70dfd1f32f87969feb06aa95de25721b0e33"
+    },
+    {
+      "path": "references/06-enterprise-portrait.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2011,
+      "sha256": "584312a1ab8bce7e98de4013e95d4ed57fb9a3d4fda3f7d1f5c63a7c93123778",
+      "blake3": "5694ef5463cad802e28e542806dd6c471cabb290d47b7a879171d743cd7efe8c"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/MANIFEST.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2081,
+      "sha256": "cfb91d1b5d34809602f67ab4cc869e6d2e2775b3f5f798a94bf5804ce1b96823",
+      "blake3": "eb71982fe5b3523a900e15dc1f6791a6456a65e7352f293459b4dae38ff63e8a"
+    },
+    {
+      "path": "scripts/updater.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13463,
+      "sha256": "a0e5fa72faa597f997822362272cd441f43adcc01542e555a3be3d71709a694d",
+      "blake3": "533ba1eb80c899ff5499ee63f06fc9b4344d21b6e71454a32a0b72d321e0987f"
+    },
+    {
+      "path": "scripts/yd_search.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 96011,
+      "sha256": "ac6829284d094a9dbdc54328829c33fe804a8ab90cf544457e7fe50cf065e082",
+      "blake3": "0a645dba067cc24c2f202e87948082ef6d3aae06231ab95429580256cf8238d0"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2832,
+      "sha256": "829c2923fdfc5fc5b9573c83477424bae38421d855a2f08848789c27e6ac56cd",
+      "blake3": "d95bd306cd8526d5b9d34638a02c611f685b869806745dba6bbec543e3ca9993"
+    },
+    {
+      "path": "templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/legal-research-report.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1613,
+      "sha256": "0d90e73be8fa223e01a8f15639fbd6a29727b826a36d37645606422b72e12fed",
+      "blake3": "da34e9ea12764bfdb45af4de323828368136e654317b80f971098a74d23e0c6c"
+    }
+  ]
+}

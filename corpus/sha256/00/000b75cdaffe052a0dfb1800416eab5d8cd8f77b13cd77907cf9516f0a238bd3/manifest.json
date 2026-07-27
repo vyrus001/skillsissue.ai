@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:000b75cdaffe052a0dfb1800416eab5d8cd8f77b13cd77907cf9516f0a238bd3",
+  "sha256": "000b75cdaffe052a0dfb1800416eab5d8cd8f77b13cd77907cf9516f0a238bd3",
+  "blake3": "2191d21e8eb5f06823a5ef0a1f7b111bd2682ee3979613251befcb087491abb5",
+  "size_bytes": 126223,
+  "file_count": 13,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3559,
+      "sha256": "c84ab1ce1b876c5a9183d07bc49cc410831b1064006b59f81175a32c1cfa143b",
+      "blake3": "71b61b8bc38ebc62fb408472a85c33495796d1709042f64dcd2537682e55c6aa"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13870,
+      "sha256": "04a2c09a4eaeed8775efab0463ddf7e1d6110c3e513889f63eff706e68b70192",
+      "blake3": "c4cc53457e0890c247b30c9e65d7a8155650ed82b5ae78fd9afda52dbd0ec70d"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 161,
+      "sha256": "89d3565b52ac857778108647d41e78db70e3e443513857f5fd2dbc0f6dbe37ae",
+      "blake3": "8687ad07696e7e44d11ec4919d576761ab96bc23e4a06b873b3b173038a9387f"
+    },
+    {
+      "path": "manifest.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1898,
+      "sha256": "1614d0cb62159a88d98c2bfb96aa565f8f1a2574c6f831bae57da28d0957b1fe",
+      "blake3": "85af921537fbdf93f668950cd0bb0bbc15eda9e6c6dd311591d1f18df1dbb612"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/golden_longling_4vs5.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3601,
+      "sha256": "21085657708377314783f4b71d2d2ea69d318a69c885dbd7b01e255604fee973",
+      "blake3": "b014310daead3f62d3422a3ab99170f89b4c67154a287458d5985666bc377539"
+    },
+    {
+      "path": "references/output_schema.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7768,
+      "sha256": "fbbe09152971c6eff55597176323e7b45c88977593aab2578aeac34bc23f711c",
+      "blake3": "8b026a52f51e96f73f776640097f94472a9cb9f400dca5e177caa0f35e000d9e"
+    },
+    {
+      "path": "references/stage3_diff.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5091,
+      "sha256": "e979e36ac162f15103123999cf8018226c6ea1a36e42ade8f3eb04952da4a1a7",
+      "blake3": "b5df0bf4a16eaff9de4701f9d1b754e38e4d18bb161e3cfa14453e8eaba73f64"
+    },
+    {
+      "path": "references/stage4_classify.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21624,
+      "sha256": "aa078bec22d36e6e0f2dae24cafc49c7265f7e021fbc4bc8d4b6974f31f341e8",
+      "blake3": "715ee7b1c653526225d78e75c48a568c796879e55560834334785a4fa1a44ca2"
+    },
+    {
+      "path": "references/stage5_review.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13261,
+      "sha256": "13fa3775ba1139098836aa7a20974587eafa65cdf643a6ad5dad1d2e0cbaf57b",
+      "blake3": "5684b8e8bfe2c29f97e97aca3d64ea9437227a762eb1631888bec65619e6270e"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/align_clauses.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8497,
+      "sha256": "077287297bb508b0f7651cc3855c0a307d24d022fbf1eadb469f677fbfed9642",
+      "blake3": "dbe1ecfe7c54c1fb9c42ec9d6712f8d2b5fa6b5ba0f0a421092a4c9eb95cf9ab"
+    },
+    {
+      "path": "scripts/build_report.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23054,
+      "sha256": "70dee1ccb0ca9ee944cec667954758320aecdd801e170d60cfb1a976076c644b",
+      "blake3": "97bfd361c5f56d8ba139abb8c26b60377c21ebd0fafcf88bdb1da98c5de07aa8"
+    },
+    {
+      "path": "scripts/extract_documents.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17693,
+      "sha256": "88074d4d648f3a0a52a2ec31f8f4c4ec361ad1641eaad1fe5ba4fd06345ddbe2",
+      "blake3": "aac7d2a5f9d6fbe489765dbc38548decc5a4687078927d55d7d38fad8c21e09f"
+    },
+    {
+      "path": "scripts/golden_regression.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6146,
+      "sha256": "6e8c04483dfc3d1f4f94f4c47632cfd46f941716dd3c1e4b46688383fc8763dc",
+      "blake3": "15c28197b0e17872635f814d2408323aebeb07244e827318548e3d6902e9cd41"
+    }
+  ]
+}

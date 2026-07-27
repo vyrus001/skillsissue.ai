@@ -1,0 +1,489 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:01f850800b09997c213a66bb3d1e3aea60c27ca71beae1d49d6a18480eb222f3",
+  "sha256": "01f850800b09997c213a66bb3d1e3aea60c27ca71beae1d49d6a18480eb222f3",
+  "blake3": "e24179c66b52dc3c02b3959ba134eb6f992768116a9d1fc2c0ad6d3d0b25f7cd",
+  "size_bytes": 503405,
+  "file_count": 56,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6535,
+      "sha256": "bc7d8ae0eeb2ef227d57b7899a498f2f5f48c4386e855f387780f695ec6a8750",
+      "blake3": "5c2d42d70baa89f1eb1279299b97db0cf25eedafdfb9680444d887f4b36b94bf"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/alarm-template.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4002,
+      "sha256": "b242e56ac6a51788da30cc2ed9a957a49891c0e363ec865c925041074d43a7b8",
+      "blake3": "65983ba5851ba48f0b194aa80e7b540c1b13b44fa592b2c896b8922d4ca875ad"
+    },
+    {
+      "path": "assets/otel-config.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1458,
+      "sha256": "7e1412c0a286f0dfda4d113a0f954ff1b4bbd619a942a0eaf6d4c3c835d99063",
+      "blake3": "21ca4254d137cdb03e9db71ff343a17b3892ee496090a88831a4f18ad48d3b49"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/alarms.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11234,
+      "sha256": "bdd5f0787c625e01d3a35a7b428a26963b057ab662665eb3b7ec8cece46840f9",
+      "blake3": "eaab2f1e63513cd77f205b16dfeba6d38d67a2fab0806162823218c80a0f6ad1"
+    },
+    {
+      "path": "references/application-signals-cicd-metadata.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6660,
+      "sha256": "336f27f5a3961b2df051ae8d05ab71829d392cc06b77733561348d3ef4d48dc9",
+      "blake3": "022d570985e4a642ff56a6a5aec845394d9baa0abb300b72e39a707b352e8790"
+    },
+    {
+      "path": "references/application-signals-onboarding.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19997,
+      "sha256": "c0ff803e8817c8d0dec61e51389f2dc9cae6d23231d0e7dc2184a2e635972cde",
+      "blake3": "a157a8e58e0fd27adddd1b26dd108db2e4d87436c1de94a66e01805f2b1219de"
+    },
+    {
+      "path": "references/appsignals-guides",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/appsignals-guides/ec2-dotnet.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16511,
+      "sha256": "8b8a553ec1635b2eab4b23a958c89aba48b76e83ad0cde77210db8b25dbb95cc",
+      "blake3": "5d33dd6e5277749af3592a201d1d5fe664aa4d88276dea4bdf17323a34043a05"
+    },
+    {
+      "path": "references/appsignals-guides/ec2-java.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10502,
+      "sha256": "d23591d7fa962d836a5586c03a172d7ce6235fd3bc0f02d22b15d7f8a7bba245",
+      "blake3": "d7f15c041145f6e0c81a47a143e2e34a7cbe7406d87a334468d2cc9bb9f25cee"
+    },
+    {
+      "path": "references/appsignals-guides/ec2-nodejs.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19220,
+      "sha256": "f9dee3d4d8e8abef1b05f563b5d560757612d7199de3bc5f3c166b56ac7260cc",
+      "blake3": "caad505414de0f0e560ef56d6391288b0369bd0215b3c98abfba4bd69ac9e15c"
+    },
+    {
+      "path": "references/appsignals-guides/ec2-python.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24938,
+      "sha256": "3e8e8c42ceceb1b43b24ec5f0973de719b81b7cee2cb0b97a84f161cf75f4e8a",
+      "blake3": "a9b08e1537f0889aab3d58b503f30ac9482ed04172acd2bf6dbd060e6f41ff92"
+    },
+    {
+      "path": "references/appsignals-guides/ecs-dotnet.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8477,
+      "sha256": "36bb4d645595c7b8c01561e17e7961b56ad352033f983b624c4bb2aadcd07fc2",
+      "blake3": "b8a8e4e933a02b669e11d2cb80197afac18dc05cf8752ee29121befe34344e0c"
+    },
+    {
+      "path": "references/appsignals-guides/ecs-java.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5707,
+      "sha256": "478648fad3e10d1b64defbac6aaf0951ed06e0d407d1aab2398405c96782ead8",
+      "blake3": "1089c1cf19da4e6280c3c277eadef8b4eafd2b0ebe3b546dc986623a65c452ef"
+    },
+    {
+      "path": "references/appsignals-guides/ecs-nodejs.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6670,
+      "sha256": "7dec2ddae79dd29ca450d4ea06a3ff669aeac75df3a67e03555a85b2ace9db17",
+      "blake3": "6d2695a81b279975b97ebf8d0d03dcdf6d66f07d1844c611e99c0071300a4281"
+    },
+    {
+      "path": "references/appsignals-guides/ecs-python.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8119,
+      "sha256": "e5683f6cc2e149ea2786f91f710b6c757d358289e38a7bbc871e7389133fec18",
+      "blake3": "6cf834698e19d0a53b93fc3cab2c6d348f71796fd5cfaa67556a3092efca119d"
+    },
+    {
+      "path": "references/appsignals-guides/eks-dotnet.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3972,
+      "sha256": "156ed9d0e3f93d6a5e3b1a9d2c210565ee5ebebefa25333d27f8338a9bdd9270",
+      "blake3": "f85f9d51146be7fef8f493883c3f6ac32a5db1df4df02fd7d080862055cef74c"
+    },
+    {
+      "path": "references/appsignals-guides/eks-java.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3997,
+      "sha256": "bfa7989364e4141b8b8d6faf887bdb6952cb08df133642798aba75ef1ca8f2fb",
+      "blake3": "e154bc329a352e5e85540336f8b23d2eec1bda47f94594afd11345177154c68a"
+    },
+    {
+      "path": "references/appsignals-guides/eks-nodejs.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4158,
+      "sha256": "3f0cc969c87ff5d7b3ee71bd4344550d641a9802ae48ca8cb7bc97d224b3efc3",
+      "blake3": "0de9aafc009d175981823459eb130151d2902f3daafadd8e2dd524f9e2fc6569"
+    },
+    {
+      "path": "references/appsignals-guides/eks-python.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5297,
+      "sha256": "a96b20f9b3c75b40d44c960cdb090bf20ce6c94da3009b72503e88044f40c3d4",
+      "blake3": "a93bf24774d6a4f3478c7a02281a36c5efab54c80a9f9b171b2a11d1aa0b459f"
+    },
+    {
+      "path": "references/appsignals-guides/lambda-dotnet.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4004,
+      "sha256": "ee93e201ea0026da1d38cfbcd3d8e8a3fc6a2599e667a6af36c802276263f497",
+      "blake3": "692b754a4ccfc38e8599f1068cb82f4c9f54af12aab2b9662b3ab3f3818ef069"
+    },
+    {
+      "path": "references/appsignals-guides/lambda-java.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4464,
+      "sha256": "bc61050162583364e0403de35f1f649b969bc8ce9bde5e222c0cfbbf8bb73ee4",
+      "blake3": "c662e36d344a52f36c4e61759fa729b8d4396e281bf1a4bd64593fb3c4da76d4"
+    },
+    {
+      "path": "references/appsignals-guides/lambda-nodejs.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5277,
+      "sha256": "d54a1f954f0b68b9e14c82e728f295118faf325d740eb61403ec4f9b8a281f19",
+      "blake3": "aa3f8d77a8adb633cc18dccff5d53da2740fbf1ea07e97f91eb7c49d6f235acd"
+    },
+    {
+      "path": "references/appsignals-guides/lambda-python.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5819,
+      "sha256": "09acc68f1a06387bf420dfd3a886a78b7bf79972b5f94b70d5449bd036a89f7e",
+      "blake3": "998a6524be53d7e492d2f48d64debb0166e85dad21dc1f9c0f9ade8e2f67e55b"
+    },
+    {
+      "path": "references/cloudtrail.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4011,
+      "sha256": "9c7f323f05d1882b42d0e01cb5676f6abd6e7136970671c3b2e3683d29be78bf",
+      "blake3": "e800b0d587d992b67e2b489dc61c69a463661622f6490d2fd88588653482b7d3"
+    },
+    {
+      "path": "references/dashboards.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5951,
+      "sha256": "323cb457287287c3fa25ea719c582df9f3589932ecaac79ce4109d81e17347e7",
+      "blake3": "1c1f1dde3b7fb5fa5a9a30c598f2b00c886718f202d2de18a6d8c6533ab42aaf"
+    },
+    {
+      "path": "references/dynamic-instrumentation",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/dynamic-instrumentation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 39294,
+      "sha256": "42cfff13584157041766745cacf533389f7388c006827dec5eb1a73b428a0fc5",
+      "blake3": "e6830519cac989d88fcde0caab212cc2804a2a74846a2340fac17e85c8a53589"
+    },
+    {
+      "path": "references/dynamic-instrumentation/breakpoint-creation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16676,
+      "sha256": "57ef70dbd46d415370dc2b3fe1a1b87bcc005beaf3638e5c80e506762f2e5fd2",
+      "blake3": "a2a1595edf20fc4105ee28d7cdf44723ee152896db0f1dd4b6c97bba7b76bf7e"
+    },
+    {
+      "path": "references/dynamic-instrumentation/call-tree-and-directions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5836,
+      "sha256": "d7e9023303000302b3e2431aee8084a5fc1ec83300a518cf8e2f4e02d8b49cef",
+      "blake3": "509a9af2174ae8558e00596305a985685d209595ed437a54ee068d72bc07fa7a"
+    },
+    {
+      "path": "references/dynamic-instrumentation/snapshot-parsing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4296,
+      "sha256": "a2ecf65b7c44ea27e5dc70ded7ce71b4c411f9c2321639a045defc071d508738",
+      "blake3": "d7827bb2430bf2e47a08ff7a4e4323ef622f0daf29b57aafa9e8108e7046d7da"
+    },
+    {
+      "path": "references/log-insights.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7141,
+      "sha256": "2ae72120f4f34ab6fddf0726e9e6a8dfc3066a6889493b16cc174ac069d5aa87",
+      "blake3": "c7df9c54f2f96fd896bc265a1646b9829ebed95ef25cc52f47cb6e79ee13e05b"
+    },
+    {
+      "path": "references/metrics.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7630,
+      "sha256": "7260fe26d2473fe9614b264ac461d45363fa1d4b743bc3bcd5bba959bce30ae8",
+      "blake3": "41c1bdda13be4f8996eb12a9ea92cdbec359063cc638dd8e0701a56f9e474fb7"
+    },
+    {
+      "path": "references/synthetics.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6647,
+      "sha256": "b767b7ea045491e835ab481ac3e568435a61efa0155ed02284d8ab701552f371",
+      "blake3": "c7b3dc0d08e59a800e555d40d8226e57f9d2aaf5bd8f18f089f3b2fc3dd908c3"
+    },
+    {
+      "path": "references/tracing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9198,
+      "sha256": "f5e9578850f9a8ae4a933016af8d2ed5a0ea10fef14d152754ebf8f0fec5561d",
+      "blake3": "1ea08bd883a3e97345c80b84f643fde1f2e17b32ebac28cdb4c8c3d2827c9c19"
+    },
+    {
+      "path": "references/troubleshooting.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6951,
+      "sha256": "c7a3b3e6eaf8427dd227184822b8d019669d6d78364bf3aa47bbfd632e66bffe",
+      "blake3": "1e0219af54e126ca26e717bf3810f0c011b1cdf9bbb0f5f1eeecc006c2d733c5"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/di_app_signals_client.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3422,
+      "sha256": "946c61a57089189d37b5138748d4ed598b6bf48318a8ead5ef1748a1e5718ba8",
+      "blake3": "8e8963dbd908dedf17a0c1f3f797b5fc977660c29fbcb0acecd3c9942fca1027"
+    },
+    {
+      "path": "scripts/di_capture.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8723,
+      "sha256": "bcf808de0ccab0f5cc75d84961cc2c3272123bd870777df38add112d062e09e4",
+      "blake3": "8a9961fec7bf89ef88ab3289c4a64b3a2f78930e5481f5c749593d9535c283f4"
+    },
+    {
+      "path": "scripts/di_constants.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 560,
+      "sha256": "d0e6abbe921bf4add096a46b6f90544c317382accf97bca8d433fc981d45e105",
+      "blake3": "2d5edfee908c3dc7b85c57c192760a734576e9a4c4f7c174b51fd44f2b172f6a"
+    },
+    {
+      "path": "scripts/di_crud_rendering.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13420,
+      "sha256": "ed670954d47ccf880753da349f5af492746faff6827e56f70ee5af655ec5037b",
+      "blake3": "5f5c4281ed73ca6f10105c393ebce3cb24f2f34a902e62d0f1dd19f0f2ff6d02"
+    },
+    {
+      "path": "scripts/di_crud_tools.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29486,
+      "sha256": "132c2ef6318ddd3a44797e55cc2f7d0cfbf8f8dd37e401117572a16f07b336c5",
+      "blake3": "c8d4ff855f22e09501bded4f43d35f70e2955637bcbc883a3d892576d20f0700"
+    },
+    {
+      "path": "scripts/di_error_translation.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5742,
+      "sha256": "8d2f5ac61e4499bcd57050274cfa3a1f862173fcc37e9bb89d87092e1fc0da2b",
+      "blake3": "a5567fa0a48811ab147270fba20cba6a2cbc1b1288706ca12ca0a0e660274d2f"
+    },
+    {
+      "path": "scripts/di_formatting.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 992,
+      "sha256": "2793a664f304218cbcf8c6076bc9379a69ceb973e0755cc70f6185ddad1e2ea8",
+      "blake3": "0060ca2f1e33ed44ee07933c609780ad39233a6f40bdbdc52d5c0f39b9c2347e"
+    },
+    {
+      "path": "scripts/di_gateway.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7161,
+      "sha256": "1fa5de4858c680adefba5c84e220156d20a039ec6c5814a4f3099b4318b2ef4a",
+      "blake3": "b9275427417593d4a6a0c6f577d918152c8a4cc15839cdccdaa541d28954ab1a"
+    },
+    {
+      "path": "scripts/di_instrumentation.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13225,
+      "sha256": "007fa0274bbc1707c064c7370a77ae95811531eed291f580b4b036f8b8973192",
+      "blake3": "5810a2caad6c25f3d8e4926abe0a63caa4880d5fff973c22b3c2fe697fc3f03d"
+    },
+    {
+      "path": "scripts/di_location.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15668,
+      "sha256": "1772cc8c66ec0f85e0fd9b17bd4b71af5eb29b0258ace5ba54340ac78a489897",
+      "blake3": "4cd2451a9f04104b5478117f57c775ebc189eea764021baf24fe40d1d7f1de59"
+    },
+    {
+      "path": "scripts/di_logs_client.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4327,
+      "sha256": "9c107f8f9145acee4d33807f99d36a4f9bbb2b4e754198542f8c2d08fa9979af",
+      "blake3": "9330609c96b29c615315c527a366797b2feee5a96c888c050446a6f531624ae9"
+    },
+    {
+      "path": "scripts/di_region.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2032,
+      "sha256": "ef6b3c96951f4b045d8d8f10685dd9f29f5805201b41da829a7b4761826b74bc",
+      "blake3": "7e6d0e15257d7e99ca1d47fd502c5ae0a1b36e9935398833cab7b0ab5533c9d7"
+    },
+    {
+      "path": "scripts/di_result.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1998,
+      "sha256": "39875674c626f17e2388d67870cd7e8771ad83598c9f570d161dd2038b6a7d7d",
+      "blake3": "62c446e05cda84b48dc84ca2ecbd5dc5a9b6d17d6e780bb5f9aefeb10f11864a"
+    },
+    {
+      "path": "scripts/di_session.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2032,
+      "sha256": "bafbaec1b83975a6c5702d4a8a9ecd95b509abff69b2eb52e967284e124dc223",
+      "blake3": "f200499d2b2816c9e1253e46129ab27ef5f84ffa18648e3018d1cc2885a615bc"
+    },
+    {
+      "path": "scripts/di_snapshot_parsing.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11678,
+      "sha256": "53db896ac57b2b174da5affcfc72c0d81b85ca17448006ad68266952139c0398",
+      "blake3": "e85c1339e788a63352cb128e919419cc32d006f4af2c2576bd6b20c1d3e719c1"
+    },
+    {
+      "path": "scripts/di_snapshot_queries.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2458,
+      "sha256": "0c7863824199e5da9dfc87eb0199d5bcfd6e06d3babd5beaa5d88508cdeb8f18",
+      "blake3": "15a46029877b5436cb2e08e78874b4231ff7c4fcc7429640b7fb07871b97cea0"
+    },
+    {
+      "path": "scripts/di_snapshot_rendering.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12762,
+      "sha256": "3b2726ffba95872c5e41cc495aa0000be36740e1740e2cad1a42a0d02dc441c4",
+      "blake3": "f7b249476c558b4f66920a90bdd15e89605eb100849b8141a78c51859903df09"
+    },
+    {
+      "path": "scripts/di_snapshot_tools.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12320,
+      "sha256": "374eea422d58fb6c8d6548bebf65847cdd6623257d6aeee4a93afafe26f5df4d",
+      "blake3": "48ed9e3742d5c0b08d5afe49101718c26cf2b603189eb306a0f25480f65a82e9"
+    },
+    {
+      "path": "scripts/di_snapshots.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13095,
+      "sha256": "bd4d61bb0f6c5e3a9500179646c35376a088e833829b71596c756c6f50706d8b",
+      "blake3": "21286b299b6cae9d5fb3bce21c8ae81c41606367e2053837bd060cf2168a8833"
+    },
+    {
+      "path": "scripts/di_status_assessment.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4813,
+      "sha256": "4ec65bb5bd07a0de8314116d3649246620f986d7b020cbbf40083f7c3c581428",
+      "blake3": "854620791da3d6794252259f28fe3dd0f87243f7258897f0e58d6f5094a38340"
+    },
+    {
+      "path": "scripts/di_status_rendering.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12061,
+      "sha256": "29ffe8f1854bd04b65ff9691ea7553914e703d734126dca53729e39253cadde4",
+      "blake3": "30e855f1de7db14125ed56ec2547be1eba8326b09860e2c63013e48221a31f45"
+    },
+    {
+      "path": "scripts/di_status_tools.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13295,
+      "sha256": "9c3c835cc5d7a0029a4264f38cd705d5a57ecd5f1bb7ad005aab14460a50fb93",
+      "blake3": "24886a2ee33b3f5884845906da3617f98ce3470a4a247bdd88eb59518ad87159"
+    },
+    {
+      "path": "scripts/di_validation.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11486,
+      "sha256": "fa729c80aa684e1c74150eb00ea4478dd761e3cc2d92b8cf8ebac06d1aa6f939",
+      "blake3": "40d294aaebebb56a48e3b41e8e3c1dc1ef0056de7f57dfcdc575f4f9074a5c04"
+    }
+  ]
+}

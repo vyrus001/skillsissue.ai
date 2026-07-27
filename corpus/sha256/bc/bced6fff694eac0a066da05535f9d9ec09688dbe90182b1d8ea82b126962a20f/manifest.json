@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:bced6fff694eac0a066da05535f9d9ec09688dbe90182b1d8ea82b126962a20f",
+  "sha256": "bced6fff694eac0a066da05535f9d9ec09688dbe90182b1d8ea82b126962a20f",
+  "blake3": "01585e17da38aa5ded0cfecbb335db7cef84c8aaf07328c770d1be7dc5d48f82",
+  "size_bytes": 283279,
+  "file_count": 19,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 34575,
+      "sha256": "91b74ad532c4bc8fa2ea5722d566a216c344ea4b3fe523be5813037f88fa6dba",
+      "blake3": "14f7a96af5f4dda504ff9a54690f805262799d5c8d23018fd4b6c69c62ecdd23"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 155,
+      "sha256": "6d76bcca53fa037a170847a909314d67e605a194044347de22cad5a4e826137b",
+      "blake3": "1f5c9007dba8a3d609ac83acfe7c2a2ab39eb8404223f6a6ca08a64c166cb924"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1978,
+      "sha256": "95dcde4a0a6d72ee0e2832a43484e9028d1bca222f04b64c1d5a1193d901ad4b",
+      "blake3": "121a2314de8d1042f148798c73f5266058eb472c2403788391c1d00d8e81d059"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/article-brief.template.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 883,
+      "sha256": "717a2b79cd06c7a53a63d042cf551fce2208c6b3dc521f91fdb73a30bd204bb3",
+      "blake3": "48403fb1d10a0453f2024078622a675f3e26ffdf008244c416b431907eadc664"
+    },
+    {
+      "path": "assets/ops-brief.template.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 289,
+      "sha256": "d2dddbc03047c1231ac39306a103da93c035276103eadc60e131eb361ca7aaad",
+      "blake3": "5a4ffd9982d4ba2abf7484ec0302de19c437db80a0fbe7a3b0dbe271d298919d"
+    },
+    {
+      "path": "poetize-blog.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 973,
+      "sha256": "78dc34ab2a083bb91b64f835a484293af15a8bb9b87094309ccb261a5ff481a0",
+      "blake3": "3529531f71be2e291b07c6ebfa92f489df79dd43c2a543eb802522eee17aae49"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/creativity-workflow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2793,
+      "sha256": "1ace13a34298dd85ff386667c857ff89c29ba9743490ea6d9ac913dca476ec97",
+      "blake3": "eeb357ae1c9b8e3a22ba5459f3715c753ba484f488c88e7acf5ea99b98525c3d"
+    },
+    {
+      "path": "references/decision-matrix.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1820,
+      "sha256": "ecec22208b30571d738821f3f8bd2f439e126f6f969170b76d4df4795db72354",
+      "blake3": "825ca062ede04461bdce867139c3a92a59da2a30ceb0f2c51addcc9626fcf729"
+    },
+    {
+      "path": "references/strategy-playbook.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3419,
+      "sha256": "dd80462aa8608f9b546b9e61195cf705b639d6f98000c11eb1b242588083cb39",
+      "blake3": "a501a979987385a29f456a53f04fe56ba50a3dcf1eb757e5d3171924f13d90d0"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/ai_dry_run_test.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 47467,
+      "sha256": "43224e6ce73f2dbe06975ce295fa2cec1611cc71b072672e6305fb23914ef4a2",
+      "blake3": "6811db5d68b8523ed6cfde88908995aee598f9998c6949608bae941e928a8ba5"
+    },
+    {
+      "path": "scripts/blog_strategy.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15320,
+      "sha256": "8d34365d8eb849250222d193a28aaba0533717f0e1d222fc64efb330eab42915",
+      "blake3": "7cd01736a187823fc9483111f4f4b30c142c14ed99695af7b522a57d3c5c4a1c"
+    },
+    {
+      "path": "scripts/manage_blog.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10720,
+      "sha256": "f2ad368648124d6ec20f06e8e563712c6983882b18ccff2d6f863859aef8fd77",
+      "blake3": "34bc709e6c49c3a2cd3738f52b87722140c84b6be48129f8c371e7a04f94bbef"
+    },
+    {
+      "path": "scripts/openclaw_smoke_test.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2724,
+      "sha256": "ec049a9dc0e97fd612049df7bc749239d5b2de00b4376de16de249be56404a95",
+      "blake3": "150561702e2161e23c099cb42274fb2951bab1c4e199b3790a4b8a52d740308e"
+    },
+    {
+      "path": "scripts/poetize_cli.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 80714,
+      "sha256": "7b7f023411c4c6cdf6ba09b1047b138616fefb5c485eb750aee2a4e60b0cfe84",
+      "blake3": "e90313952abd26f6780920941da03f50770fa45aa1a2142014b3cb8bf314a052"
+    },
+    {
+      "path": "scripts/publish_post.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 43102,
+      "sha256": "11964a569481af75433cfb341a39bfdfc39081b4a4cfe8e55b63cc270eea0250",
+      "blake3": "d2f7f55292e7d3dd213d17f2c24b48e5d51f37c609f42019aad160c665a37770"
+    },
+    {
+      "path": "scripts/render_openclaw_config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7061,
+      "sha256": "3c73c067cc88900904dfcb3bdf63960820040af568fcd13d11f9ea9eb979da10",
+      "blake3": "147a1d53325a9e2c5da91fc9909f4dd410e22524e35c2b19923b41c8def36d1e"
+    },
+    {
+      "path": "scripts/run_strategy_evals.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14056,
+      "sha256": "350b93aa490a81ec39c83875a404609af376288cd4d3b87ed30cfce4efdee7dc",
+      "blake3": "fab7832dffe12a10d9b29f6ea426541866b04247b55334a4775ed4de5cfc3483"
+    },
+    {
+      "path": "scripts/skill_consistency_check.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12382,
+      "sha256": "851ad975b2a253090fe660b2aeb441c8c403cb15eeaa0dc0893e4794ff78660f",
+      "blake3": "2e0f03bbd86b84520f99bd7c25570d087b9d0780b9eec02777ae72376912815a"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2848,
+      "sha256": "b9c1f08be7fc59264aa6b80a57228c5228d0619cfe020b7c2ee0247b45064bd7",
+      "blake3": "9cc359b439502ce39b5658397de3ebec6f68127260c5b9f743c0806d901d9304"
+    }
+  ]
+}

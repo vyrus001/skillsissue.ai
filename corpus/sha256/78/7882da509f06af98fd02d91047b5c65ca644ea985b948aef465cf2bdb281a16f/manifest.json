@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:7882da509f06af98fd02d91047b5c65ca644ea985b948aef465cf2bdb281a16f",
+  "sha256": "7882da509f06af98fd02d91047b5c65ca644ea985b948aef465cf2bdb281a16f",
+  "blake3": "503fadb74ebfb14e4883f15e12803da155edd6486a01e291492da2149455987a",
+  "size_bytes": 45356,
+  "file_count": 12,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11726,
+      "sha256": "f41544b57acd372798e114da616b6840565da2f11e77d49474b9e001f1007bf3",
+      "blake3": "5c615ca04f2f152ef5b62b01ac06c3ce8e37678bb5442bf62d8a2812096c4d12"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 133,
+      "sha256": "34b4c7780926a1ccabd550a791a9d0a2d1272f8e4e02bd7dce540938a96ac4b9",
+      "blake3": "6a6c36c68c9d8aec29df2bb92a3cd0d25eee7b236f44b71d058733304dd6e34f"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/collection-playbook.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7379,
+      "sha256": "e4c9f7b716892b792ac53cd1713b58e2338ba0d579f2723065e5286e75581472",
+      "blake3": "a13ef8d209cab5b6f77d60a1e14af0505b0413effe9ab72ae6d3f39b052f6a36"
+    },
+    {
+      "path": "references/crawl4ai",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/crawl4ai/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1383,
+      "sha256": "5297c9965367fc15481d0f9e5d66a78d0f870132f45664c8cf70a5109fde0a3a",
+      "blake3": "a6e142c868a3cd1a4a8ae8435aeda33e42ce5977423e9ae233e429ed96830e32"
+    },
+    {
+      "path": "references/crawl4ai/cli.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2423,
+      "sha256": "88cc7ec0c0cbb2dc3564d7db3d9a83d4ae091ac208165cd0906eb1053301d962",
+      "blake3": "1255bd719fab6717f8c8b53cf340da2c7d79d103c0ac851ec9b38c35639e3009"
+    },
+    {
+      "path": "references/crawl4ai/search-recovery.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4093,
+      "sha256": "8d717aeb5e04b3313a0ca33553216049b744dbc51c69a785f3d4e556c7e89b76",
+      "blake3": "bfb15f56f6ba5ccfe6e9f43af36a5fea6a26a60df332635830a4403004930d57"
+    },
+    {
+      "path": "references/crawl4ai/site-recipes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3536,
+      "sha256": "3971bc9dd3df6ffc851a354a72c247f390d172533f5a9c49c654b861e50140f0",
+      "blake3": "df541dddb272cc5dc3cddca62d558a2c5d01f9bf9463fc40ed4ebcc21faeb170"
+    },
+    {
+      "path": "references/open-websearch",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/open-websearch/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1077,
+      "sha256": "b4111457cb5ee414808a90bda24bc1053178e3865bd25c526d4c92eb41e74931",
+      "blake3": "7d5a80bc76f51ff64a0c6b4093349820cc51c1fb4fe75757b33e038268ef4eb8"
+    },
+    {
+      "path": "references/open-websearch/cli.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2861,
+      "sha256": "5d15ea556ed4f38e74bead15f85862c5fd462b4883b64627f7006959cffc1da6",
+      "blake3": "1938acaee66463b76889d2da0e67c0d2670a498f443d06705dbd6ff1697e0eed"
+    },
+    {
+      "path": "references/open-websearch/engines.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3324,
+      "sha256": "b4c95f45d3919996a097185021498a60f5b05fa121e20b2933983432af28ed06",
+      "blake3": "21169867e2e015f24f97c1bf5f24019e1925bb22cdf68200141e996495f700ce"
+    },
+    {
+      "path": "references/open-websearch/setup.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1117,
+      "sha256": "145538546daaa45f743995dc9b67c7e2a5d62e275177771ccf56cb1ffbfae3d3",
+      "blake3": "13e0bfb7d6fd2edfd98bef2fd98295e80c44165b27633d9d604c01b20c0bf876"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/test_cli_enhancement.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6304,
+      "sha256": "1f2dbddc5690a4564bcb55f7494fca1a8d998b2abcd0474b07c2f17b3be229e7",
+      "blake3": "0e5623070342d8105f20062736e4cb6d503e1d6727e39e98ba89c6ce3d97af15"
+    }
+  ]
+}

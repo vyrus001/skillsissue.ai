@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:7a8c18e409547c350423d982f54dba6871e64ef5df5f0a96d28286b475b4c3ab",
+  "sha256": "7a8c18e409547c350423d982f54dba6871e64ef5df5f0a96d28286b475b4c3ab",
+  "blake3": "99f0b58742e6a14196662395212eb66de8748c3d3c01dcf6f91fcbe14dfad084",
+  "size_bytes": 45134,
+  "file_count": 7,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9982,
+      "sha256": "78303198f83263f30252f9e7e716831467dcc2627e8283690fdf934ce37050a8",
+      "blake3": "e360bd87e00850532908707beeb5750ba94ebcf31befe1737bb292befa73feea"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 140,
+      "sha256": "a891acb32b73e308249adc6d95bea219ca457e80056f0d531fd8e3ee6046dadf",
+      "blake3": "0a9e4fff8ddc1c9d55aa977aa438b6c19e929308b7fda62941b9e7d9bda0a877"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/generate-report.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8602,
+      "sha256": "e3ecfa4a8f16d5564ee3fbbcdb97f8c24a91a62b5dcee087213bc86ba39d8c65",
+      "blake3": "a1b02fffdbf7e71762afcdbcc3b136790a3df59bbc4c3e997a157aeb367a2b57"
+    },
+    {
+      "path": "scripts/news-fetcher.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2797,
+      "sha256": "6ce59294871366fa9db714646934b90dd9af3c50ed3d30a025d981f745d682d4",
+      "blake3": "a2e2f8ae2bf5739b15659be95544741e467ed6a2fc954394d51f4efadd2ca0b8"
+    },
+    {
+      "path": "scripts/news-processor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20433,
+      "sha256": "3a86f4adc1229a0ca66181c9f203631f6fc88df8906eb8a3956d3ceff0c5926b",
+      "blake3": "956d5cc75709c90fb0f5be54b41a7a52889ba69a88dd299feea968af47789f3d"
+    },
+    {
+      "path": "scripts/state.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 40,
+      "sha256": "442e700e9435bed6eda3074d8f1c54ee3952ea52b445708c7339fabfe04ed280",
+      "blake3": "04442f9401aa46a159009da9473086cf254c07389c27b329990afb65612bf05c"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3140,
+      "sha256": "d9db34c5a064d9b14cbb7bed7de33a16beebf90801627605c1cda5c0f0fe2c21",
+      "blake3": "65dcd1d5ca443b6d374e9429b52ae1eadcbf52a4b0de32be429370518435473d"
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:cc2c0cafa7376d0057b83af8cdf540d3c579dccfcbcc8bd86fccdb9d35958a4c",
+  "sha256": "cc2c0cafa7376d0057b83af8cdf540d3c579dccfcbcc8bd86fccdb9d35958a4c",
+  "blake3": "99ddd857a63318618bd68e33d08a112999fef43996aa596ff972f45db5d77e4d",
+  "size_bytes": 399073,
+  "file_count": 32,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10534,
+      "sha256": "923eeec86071080eed28c5ea36d92f7b74c8a8aea972b1c4d8e85d29bd31e3e1",
+      "blake3": "8aae44f11fd2872efec2cdd8233e132fc7cb76acaf70c7b36051b57acbe2df2f"
+    },
+    {
+      "path": "LICENSE.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1073,
+      "sha256": "71db553463e4d4131d755bbd1d539778da01193ea128f8b5768075833aecb7b5",
+      "blake3": "c6b1a3cfc970ab289a15b2ea0061d26780b03f901140f9f490ef6df6e6909253"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 31586,
+      "sha256": "b6c2bf79b9f4678bb521d15e77686ba71772e15b36e35bfe0bb80a8575296a56",
+      "blake3": "61da1ac7834e354cbec5c8a5582ce3955c50dcf88d44dbe3e094844c3db78aa2"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17345,
+      "sha256": "292ec5daa272c39e2bfb02426169a980bab462797ae288082ff8691f05b44c80",
+      "blake3": "89edeb80fa349866e7531727a9ddc59131ea56c08d59cbeddde45ddad19ea610"
+    },
+    {
+      "path": "TRUST.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5373,
+      "sha256": "5037ffdfc3d1759f6f46f93a53b3585fe25b424e8f85d61457d8256305d00fe3",
+      "blake3": "56a6a37ce0fd3df2c2fd80e7195a07256287cdb7ff472a35794c6f97822ffaa5"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 148,
+      "sha256": "c8e474c7fe5cbb8b9357e4fc41e2204c16052b89e9c07de9b2d81d3f854aeb70",
+      "blake3": "3ad010edac73582119a8c3a421a120bff01e6b208947a9f949124c78ed4c40d1"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 317,
+      "sha256": "a788b45ea74bbc05b0519efe871248725b7de8a23f5838e9f6f405357ed49f21",
+      "blake3": "32108b20cb3cb6cc863ab172c69fe2b9934552a1b9edd338c01f1b8eaa9c4ac0"
+    },
+    {
+      "path": "audible_goodreads_deal_scout",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "audible_goodreads_deal_scout/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 230,
+      "sha256": "6cb1e936f5ec5e600a029839bbd94cd6135b004da9970b7e7aec2b466f74519f",
+      "blake3": "a1264b38135d2e03a8b9e239297ef6133aa8cf844d14ead967f603103f44deb8"
+    },
+    {
+      "path": "audible_goodreads_deal_scout/audible_auth.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 26968,
+      "sha256": "d42ec1d604778377fcd287a0a692499469d3419bba25c3b9c947b6817576113e",
+      "blake3": "ac9298528c8c5ff4eea0d9828775a57969327c9cd7bfc0aebc03c4628c044e1e"
+    },
+    {
+      "path": "audible_goodreads_deal_scout/audible_catalog.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32405,
+      "sha256": "96808ad034a127199d71e9d52821ce42c63b3389b0f66a80c738736af7a75e23",
+      "blake3": "5a9df2a60c38a61751eb1e8bb6ea4599d6a057c7b1e72ab91c7eb19da7be2799"
+    },
+    {
+      "path": "audible_goodreads_deal_scout/audible_fetch.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22939,
+      "sha256": "7217c2fc236130e694c9631404e0575bffd3108b1edcea6c71d133714c87584d",
+      "blake3": "652b7e70382ab650140b41e531c8ed630cd62c1b22de0ec18cf3dbe2088b1866"
+    },
+    {
+      "path": "audible_goodreads_deal_scout/audible_source.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11091,
+      "sha256": "280f1c8378de81d75dd56f2b9e99dc2d4fa0992451eb0e2877dc1d9ef3865a4d",
+      "blake3": "1034e99668c29750f487bbd0ee0a1de37c7f5f2a788778707a4e0908f2daec32"
+    },
+    {
+      "path": "audible_goodreads_deal_scout/cli_errors.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 878,
+      "sha256": "80ab6614de20a2cdd8cf270a5b6c3d3242bd97ad8caea484034d4d5c37718c14",
+      "blake3": "a76202dc193e0f62cb9da6ddc539cea844630c839e400bfb7d40391e99b6908b"
+    },
+    {
+      "path": "audible_goodreads_deal_scout/constants.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2362,
+      "sha256": "b680c6364e9631053d7f40d745126d571fa0bfa05903ea710f259a53514dc4dc",
+      "blake3": "fe143cc740d91b17cb995849caaaffdecf16ff959f1a6226b6866fec5a34af21"
+    },
+    {
+      "path": "audible_goodreads_deal_scout/core.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 45254,
+      "sha256": "6334edfdcbdcc7401b6c2dbcd3de1bb24eeb9fb7a07e1d12f388a3058205102b",
+      "blake3": "43dedf2103f0d88b74e478197a82178ada21f80fec76140a22ab12df0eb439d1"
+    },
+    {
+      "path": "audible_goodreads_deal_scout/delivery.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29981,
+      "sha256": "d4cd131884581b40daead05f046e62c1e8acd26decfff53cd1d7b1475d032228",
+      "blake3": "bb67e804f44fbda1eadc98939b3386643cbde928b0dd858a217f2cf7f709f124"
+    },
+    {
+      "path": "audible_goodreads_deal_scout/diagnostics.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15245,
+      "sha256": "4eac5e9c6750508f436f01c743c2ca1e5c14cbb0679a9cdfc09f5ee7cbd73a9c",
+      "blake3": "466673c9eea8957610ab6a1158d36d1d2da9dc78070fd058c6acea22da44e86b"
+    },
+    {
+      "path": "audible_goodreads_deal_scout/fit_evidence.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7285,
+      "sha256": "a3df5e734cb152cadb371ecabf4057b5b23542ff4f792105cc23a48b8e4f2079",
+      "blake3": "372eed0ba0df3c8920409ac849664c3535022919adf84aa4401e56e15f0e8adf"
+    },
+    {
+      "path": "audible_goodreads_deal_scout/goodreads_csv.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6509,
+      "sha256": "6678b062f25cc622516390a3e54cac85b460dc3c95c384f938be05d65ca9ea47",
+      "blake3": "82bb0d10d65a50b8a56c3b3cf81b1c13f80e2f5f6ce351af03aace6f834c1efb"
+    },
+    {
+      "path": "audible_goodreads_deal_scout/goodreads_rating.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6451,
+      "sha256": "88cdfa636a98cb10d8e61f4d821b17efb378528d5b10b3203b61850a5b97b056",
+      "blake3": "5a13e16404f3c170b5fa5685b5882a3b3fdbe9d026374021e31a279396f6c24b"
+    },
+    {
+      "path": "audible_goodreads_deal_scout/html_extract.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3391,
+      "sha256": "2def4240d05bf619dddb12886871f3f74e81bdf93603eefc0cf8a4819e354cc7",
+      "blake3": "4d31da50a62975dc513133e1bb0a960d686e6d56857625fec8d2be6cf86b5d96"
+    },
+    {
+      "path": "audible_goodreads_deal_scout/public_cli.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 39079,
+      "sha256": "bbe6c352e5c51d06959c9b31cefbea1731118796239b978f2d4e76932fd524bd",
+      "blake3": "88ecd2fbccac13058960713c26377fe7d284c37cc760ed8b7fa5b12170e5570d"
+    },
+    {
+      "path": "audible_goodreads_deal_scout/rendering.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8792,
+      "sha256": "432868fa3d1b27bb1c544ccfcb6442a7b3051eec2a31543bdc28103e7398e75f",
+      "blake3": "705531b681906486674a3e943cb6ed2c7c77ecc9239f1599a8aab24fd7fa81ab"
+    },
+    {
+      "path": "audible_goodreads_deal_scout/repo_audit.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2990,
+      "sha256": "e2eff12e9b85d70909e4ab837b90694b1f3d37039f8a523872c52939a78aa419",
+      "blake3": "44fcbe628722a8abd952a04ee19c52aa4c6431a0a2596e0ba12da8a752d0b64b"
+    },
+    {
+      "path": "audible_goodreads_deal_scout/runtime_contract.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17485,
+      "sha256": "22d6606decbc707c2af544bae900c8059e5996df6251e2201af9930cdeb97e07",
+      "blake3": "e3973c3fed434712c7118ef6f512528136a32a65eaa4f85e76cd5ba4cf9f0a9e"
+    },
+    {
+      "path": "audible_goodreads_deal_scout/settings.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6010,
+      "sha256": "5f6ce1e94f39418caf63e1fd1d852bb3344f633e8708b35b91f59d82a9777743",
+      "blake3": "b9706456d7fadfa046cdeda63fb253de022115068ff608892248f83c1773220d"
+    },
+    {
+      "path": "audible_goodreads_deal_scout/shared.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7889,
+      "sha256": "7c6c2f1a8aaec8726a1f43b3c72fae4c934a20cd9f4236274ae54a0b9bdc0e7c",
+      "blake3": "4668a166754926633c44534757f0caf8207ec0aba30a9a582e1a04e5c356b9d9"
+    },
+    {
+      "path": "audible_goodreads_deal_scout/want_to_read_scan.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 34518,
+      "sha256": "f7509b397d9ffbc9b05b46ca300eb3c6fa5716e25818f04e755949c13c915cbd",
+      "blake3": "84f6441fee160048f19986008f39d668dc64ac9cc9e4912c1270d0e8d09efd12"
+    },
+    {
+      "path": "config.example.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 618,
+      "sha256": "d3cbb2a5b4c1b9efb33a17a4f1e29042d4931b8e226f75ff708e1ebac2632c34",
+      "blake3": "c61a7ba6c0656b0d26f41adfedb41e7c9633298c1b5cf1f12fc1ba59d55afb98"
+    },
+    {
+      "path": "examples",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/preferences.example.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 644,
+      "sha256": "cdaa4c09cbc86f095e0f9ba10a0eaf204b867fd8d1dbefb10513572240f047f7",
+      "blake3": "8d5373eb77cb3bf166aa65823ebb59c22cc4107cb893ca2b215637389cf2795a"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/audible-goodreads-deal-scout.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 541,
+      "sha256": "7143b86c9ad0c9567cb52af5875693c7711a9292797007e5376ac8c5e616711a",
+      "blake3": "8e4b7539ef7b25338bec5a4f5b21183c4aeaa47dae9639436a5b2c1b933d3980"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3142,
+      "sha256": "6307309a876ca5bf5b0c0c8a1baf4b1a64ce5f0e34cf1ba051f2fc19a7707c2a",
+      "blake3": "2a78664d4efd6a24dad3e26a05724697a952580370ca1c5cac720384d00371ad"
+    }
+  ]
+}

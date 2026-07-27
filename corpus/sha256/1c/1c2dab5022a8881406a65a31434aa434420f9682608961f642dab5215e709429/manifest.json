@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:1c2dab5022a8881406a65a31434aa434420f9682608961f642dab5215e709429",
+  "sha256": "1c2dab5022a8881406a65a31434aa434420f9682608961f642dab5215e709429",
+  "blake3": "9fb92daa56b7fe6361562a0c612abe9c71de426a0dc4d0f2bf0ae74e3bbd59b9",
+  "size_bytes": 165698,
+  "file_count": 25,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1431,
+      "sha256": "e9690a3a74548e895271f7db5e5067fe4eaba41b9e7c393a0f3260f54afb90c2",
+      "blake3": "33a370db607c04377a4f99d1694c5fd9b2b4d6383d06552e74ad9fa227483555"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7190,
+      "sha256": "0250186f257869dde8d9bff15ed828ba5abf242fdf00c533de21e126606fce83",
+      "blake3": "1f1d057ed3695a5aee3ac9ab59c2996985413198d3bd4b0552e5b91f698afc76"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 142,
+      "sha256": "d213556b0067c90f8ab6ec5adc81374a7eb259daa3bef8e23bd39d7c1390e3d4",
+      "blake3": "9b233b857d0799fae1cd42aa0f2395992ce10ffe6ae0d53d508c6c5427000769"
+    },
+    {
+      "path": "connector.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4226,
+      "sha256": "9f861db0b33e513797b8e63df495d062252fb5ad425bc52434538219e223e3d7",
+      "blake3": "8979850b54ad9c2ce70d9fa69ad9097d4b37eff68b6fd18048b2855d9d49d8d3"
+    },
+    {
+      "path": "node_modules",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "node_modules/ws",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "node_modules/ws/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15306,
+      "sha256": "bb979132f3cbff08ce47f36d041e18071f8f534d01f591c0b129ba7abf1e480e",
+      "blake3": "c97da7cc7d1a49a7be454ba12d268843c25ee9063272993ff912ee35d17ab2d7"
+    },
+    {
+      "path": "node_modules/ws/browser.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 176,
+      "sha256": "010da44addea1d88b2b732540c3f1fd0cbcb28926b96623d4c64222e0ead2d0e",
+      "blake3": "5391b1cec65558e590e0c635ac7d305654660424920e3f88aa746b8d59b1329a"
+    },
+    {
+      "path": "node_modules/ws/index.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 796,
+      "sha256": "924564d5be26d59b9682c4263f68320e48dde7240bd2d1ad17ec305537429dd2",
+      "blake3": "584100beebfe3f6dc2f107bd4e6e51afbd619e40fc48bdb18d430e799fd4faf0"
+    },
+    {
+      "path": "node_modules/ws/lib",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "node_modules/ws/lib/buffer-util.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3056,
+      "sha256": "8b0a45739132f82e25ea13163780abf547ccfe989267f3eb7abb475beec92da3",
+      "blake3": "66f5f971397bc591c5e7961a746be1d9ac3eac31d63e078900d0a80800c1a287"
+    },
+    {
+      "path": "node_modules/ws/lib/constants.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 503,
+      "sha256": "391e823142b8b370e55a2fd32b022deaf03b8415c56000009674ebc86a0b4f86",
+      "blake3": "8ed092a9f17118d4e30babfe6b71d6ceebb181fab4fdb1636e3283d044522ba6"
+    },
+    {
+      "path": "node_modules/ws/lib/event-target.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7321,
+      "sha256": "c45d3c6e12d170c860c0c3f1a050aa0f864d9806632b609a1e607d675aba128c",
+      "blake3": "185983f25a685567fb40aa508c706afa9623b500404cbf88b815f043911a5916"
+    },
+    {
+      "path": "node_modules/ws/lib/extension.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6183,
+      "sha256": "852564f0f6b460287043803eae732666fb5610f676874354fc89f06aa4e986ed",
+      "blake3": "3eab0f21a7561468941645a1521659444f2052c76a5bd3fd2c99e301f15d8785"
+    },
+    {
+      "path": "node_modules/ws/lib/limiter.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1034,
+      "sha256": "e0469d4b83f6ba764b15f80e1766b75c136fbff68f048f4c050f0b1c7f065f69",
+      "blake3": "8f9bd7e5e0f7b220e5a322f5e2984738597ce61bc8349327af11fef73e596d9c"
+    },
+    {
+      "path": "node_modules/ws/lib/permessage-deflate.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14532,
+      "sha256": "02c31796f0132a335d4efe7b7adcebadbb69543a1ce65ae04aaccc3530e27ab9",
+      "blake3": "f942f8d91505e3ee267f9357153325c7b7a89fedf065cd9c663561ed52b9e33a"
+    },
+    {
+      "path": "node_modules/ws/lib/receiver.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17439,
+      "sha256": "a6ada33c9a2d54eaf595824b821ea89ca2c6395f89aa06755c52142148274884",
+      "blake3": "5badaf4647d327589bd66d58f38d14d64127f0a3f78bb801c6e1796d4e4575f2"
+    },
+    {
+      "path": "node_modules/ws/lib/sender.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16886,
+      "sha256": "d0791d30c3defd44dcabbddb879a901c757993fea2c00a7ffea01d53b23b4b77",
+      "blake3": "678fc8ed829ca39b8d734de524cb8fe7a80eb9f9840009a73eaba1cb5121f37b"
+    },
+    {
+      "path": "node_modules/ws/lib/stream.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4204,
+      "sha256": "a56fcb6e2b152097ee820b6f5410b1f71e59819b45d08d9f8bda588fe39070ec",
+      "blake3": "5210a1007e5f060519c539dfc0643d6cc8067781f1198846f4ecaacacfd1f9f3"
+    },
+    {
+      "path": "node_modules/ws/lib/subprotocol.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1498,
+      "sha256": "be3f6323d6f549568577dcba9004c1479d95c65a7abb0fe0c582875b9fac0b7c",
+      "blake3": "da23dac9711de6d901235779011dc0612f9e0ae00b38367c66061e3e9d64d7e4"
+    },
+    {
+      "path": "node_modules/ws/lib/validation.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3903,
+      "sha256": "41ce8e83d0d434132e1704895fedb91f6703a701b42d91c80954ab29b2845593",
+      "blake3": "ac0237a10f654c584e1f1c6762c5366fa142eede1b02d265f98609a572b69ea1"
+    },
+    {
+      "path": "node_modules/ws/lib/websocket-server.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17022,
+      "sha256": "6d8dd89a841748c80445fd5fcdb5ba8005369b53cc3525135e11304c8b9c55e5",
+      "blake3": "5fec36014cf0de940705cffcbb5a52a4a9f008977d983a2a8852d8d1c596205d"
+    },
+    {
+      "path": "node_modules/ws/lib/websocket.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 37367,
+      "sha256": "de5add831db49e159d3ee0adb1c5e042eba3af13166374c5584f4fc520d1e734",
+      "blake3": "d9daff37a9c7a2ae3199136c82cef855d91adcee92a0368ff509a4407f8d9587"
+    },
+    {
+      "path": "node_modules/ws/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1829,
+      "sha256": "5d9fcf3bb6aaa7c789b4a020b79e208e76fbc32b1989caf2c275db8cb04329de",
+      "blake3": "6b0c1af87cdd71cbdbbddacbd777df3d1065ecbfac8763d161c357a1c13db916"
+    },
+    {
+      "path": "node_modules/ws/wrapper.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 554,
+      "sha256": "fe154662301fd558f935f9c217fccbe7a7dac02ff39e648a000589403ff27c7f",
+      "blake3": "73fbcbdf9bc28917861b0541fc162553146a19c0efe312b7d66776c957660fc6"
+    },
+    {
+      "path": "package-lock.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 764,
+      "sha256": "eacb43aa0ca4651353001d0beee1c5db4fb9da6f1d7ab81565e2dd167497f094",
+      "blake3": "4eb6ecd4a918d77ff11c831876c4b2ae39c1c6bc8112fac0a44d94bc09731d60"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 48,
+      "sha256": "dfc556339d6751928c3335d607c1814359218196a33d3c71339c0a205e7878ad",
+      "blake3": "e697deb5438ccc0ff70c410304172d6b0b0755f9057050fef3bdb3d71d62bd35"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2288,
+      "sha256": "52aabe0ae266f1d35e542b3e8539bf43a95a01c143b7d5fb2f07a4d583a9bd7f",
+      "blake3": "69f8b9eb43c81079fabcf6af3ed77ba0fd6f58362975984ed92edd826ca9d5d7"
+    }
+  ]
+}

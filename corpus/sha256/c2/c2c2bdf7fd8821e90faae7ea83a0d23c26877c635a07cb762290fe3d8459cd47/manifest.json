@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:c2c2bdf7fd8821e90faae7ea83a0d23c26877c635a07cb762290fe3d8459cd47",
+  "sha256": "c2c2bdf7fd8821e90faae7ea83a0d23c26877c635a07cb762290fe3d8459cd47",
+  "blake3": "4edf6c257d710c006e0ebf9fcc28fa8d624c0a4431c9a901e454b9b519af0fca",
+  "size_bytes": 176195,
+  "file_count": 14,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17489,
+      "sha256": "5c4f18a423a67fd564030ecd796e6ca3e54472584094701c53fe5b9cdf9d03dc",
+      "blake3": "ef66393c937626bf576a96a6be652dea2bc8c70af00f2eff1124b3ea547cc8ff"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 125,
+      "sha256": "ce9c457fe02f097da5869b52045fc5840389086b754ac1390ac9016fc3f43fcb",
+      "blake3": "30fa9b307db51ad7276f1562f5df04f3166ca25cb0bfe873a80d1ff0e26b742d"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/api",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/api/CloudQChatCompletions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6820,
+      "sha256": "93ee509c52781433a081efd335feeefdba3846d285b87d4f6debdac73e6b4998",
+      "blake3": "061e86994652adcee9d735d5d17d56bd4eda8bf99168560df0d2b4433ee2599c"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/check_env.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 31789,
+      "sha256": "17a0957be52cd4bec7c5af842ff81fbb297efbd15c7c31289fee8d550c37f409",
+      "blake3": "bf32acc27b6d0967d67fa8ef7ac41e1685c1fa208dd009bd2053ec6b341c0e1a"
+    },
+    {
+      "path": "scripts/cleanup.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13778,
+      "sha256": "bc2407b4d291b36e3bb5e8a4934769deccaab4cd5fe9c49c938fa73b374e791c",
+      "blake3": "1a2da4d47481620143224708f5a219a18677aa0cf38177df755c8ee4aef49519"
+    },
+    {
+      "path": "scripts/create_role.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9601,
+      "sha256": "be7a93d26f4e8ff6b25f9789235c0341de600b7ab3dedb97c9ad43b9b0403d45",
+      "blake3": "55311ddb47688ff353a9fa802e9acd9eb60c1ff240ec4a2b5883fb035c36db54"
+    },
+    {
+      "path": "scripts/credential_manager.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16944,
+      "sha256": "ba11e7fa8ec003a399ee7a579ecbae700d2d91d18404a5e9515d5cf3c8aca629",
+      "blake3": "75faacdc5e2a3226c3363eb6678c6b13eaaa7f61ac125dedaaffcd3f75033f63"
+    },
+    {
+      "path": "scripts/login.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12900,
+      "sha256": "a8ca10c0bf6a53ba8bc6b9b48b9f7e5765d9d2629b7f17d7be06b2792b120c7b",
+      "blake3": "4ebd34fdf33eea80237ac439c616dd0487ef8a3ff459e7e8060fa8095cef0bb2"
+    },
+    {
+      "path": "scripts/login_url.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14071,
+      "sha256": "7c53bb4bfde9dbe2f534be962f8f7b73c4ed486422d54bc172a23a7b760fe1f6",
+      "blake3": "deb1c6a959a2054af93dd69aa0923ee062a2edbe6c6f6c679d182a21787f6fd7"
+    },
+    {
+      "path": "scripts/logout.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 698,
+      "sha256": "163286efed33528dde19cfbcc9559bf51d323d46aaf732ad00677905705cf184",
+      "blake3": "b6c705b632b8d01f0092efce2c2008b350b368f9ab441f087263e95921b210f3"
+    },
+    {
+      "path": "scripts/tcloud_api.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11095,
+      "sha256": "7f912ec5de7ea0af0f0e68bc38416bff3520e255e808f75e0d8215c0d15d43d5",
+      "blake3": "3cd198d29645257b393355bc35461bff8c97ecac74d8aec863a68b01f4f0dffe"
+    },
+    {
+      "path": "scripts/tcloud_async_task.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11182,
+      "sha256": "fa0b2151b681115ddf3859bf5943a6e5b32c1aa32b4f7efea15d8e9683d46d54",
+      "blake3": "305ab5aabd81b19c37c2a1128a072b087a4356187e2c7cbd6dd3053076c337cb"
+    },
+    {
+      "path": "scripts/tcloud_sse_api.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 26776,
+      "sha256": "b72fcecc624bfd7711f5ac4860c6330ddf5d037c8f95b46ffbd4882a0bf6a1e8",
+      "blake3": "f2932935c5e0727f5d1c2091a2ad5ba5ffe7a81762b19893a94e47c8ddf23440"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2927,
+      "sha256": "e89c254ad6d9e598b038fe1d21cf23de4f4dfa4f12fcf7a75ab23bd12f80abc2",
+      "blake3": "ea41f78fb029ee5f2542b3a0afdf83b777a5979578fde0b4413b9d13d1fbc9fb"
+    }
+  ]
+}

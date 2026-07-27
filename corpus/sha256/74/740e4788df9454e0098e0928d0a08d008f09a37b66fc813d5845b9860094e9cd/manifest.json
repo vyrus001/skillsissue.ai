@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:740e4788df9454e0098e0928d0a08d008f09a37b66fc813d5845b9860094e9cd",
+  "sha256": "740e4788df9454e0098e0928d0a08d008f09a37b66fc813d5845b9860094e9cd",
+  "blake3": "b77865500a09c5268f7b4a17d190f353bff70ddcdf0e91daae3026123e63ef3b",
+  "size_bytes": 47174,
+  "file_count": 6,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11279,
+      "sha256": "c610d6c3175274b9960cf9c5c783756e53c3e5d899ddd84bc8d5be3eb827d701",
+      "blake3": "8b0e4f779cae2ffbcf31b3036532397ac19f57f55abba82fdba57abc4cddb957"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 132,
+      "sha256": "44b992854ff9e87116c54ca5967604bb2f9f9eb3e41bf0926804029db2919433",
+      "blake3": "1311fd2b11d28125e1d1d4eb918e2a3bbd2f32ba847dc9b2f22d103a780177a3"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/quantization.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4011,
+      "sha256": "08e472dd92ed7435b480560540779a4710ea746483e9bcba45be1654d1478a8d",
+      "blake3": "84a60fc58be60a3bd4c50c7ec46643a2e8883743d473e7c6ac847bb7b9a2c54e"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/build_index.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11565,
+      "sha256": "666d0381e7c9207402cabb745f6b000a5515957185a9045fc913293774321a8d",
+      "blake3": "df69d9c3826e47aa1403e29360a2e39ba7c1cbcf9b869e6a9f2ace0146e94529"
+    },
+    {
+      "path": "scripts/librarian.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3662,
+      "sha256": "7a72bf4513e3d9d07f32f2e8ca0bdbc45ea839264c47d0243b9d2692cf73f800",
+      "blake3": "310666639eac07f54b27ecbdad295ec0ded2aed6c9499825fdaf30298c7c176a"
+    },
+    {
+      "path": "scripts/search.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16525,
+      "sha256": "62ae5ecf3a7440d4ad2995f9d89cd01d109260a780e5c5fdc918a207d03277b0",
+      "blake3": "d7a83d339919b9a11b737633b606d8e71f2748961cceac02f2d49eff8296ac2f"
+    }
+  ]
+}

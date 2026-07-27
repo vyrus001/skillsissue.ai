@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:9c70ac3c970718e2b0e24e9d3f5a2255aac25b66b2add4c2c965a8d77e0a572c",
+  "sha256": "9c70ac3c970718e2b0e24e9d3f5a2255aac25b66b2add4c2c965a8d77e0a572c",
+  "blake3": "416cb3e4fe9b9dbf372b96885121079979bc376cdb8d532c842c5c60f66f377f",
+  "size_bytes": 233239,
+  "file_count": 20,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21591,
+      "sha256": "38975474e9c12449ce19c658491222df3e88ab80c2992b474a49035cc205a833",
+      "blake3": "707a8c8b2ac0fa5e9125bf371a127f65dfcead04f2fd5b52090b3ce6960b197e"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 159,
+      "sha256": "f35af2875789693db4d2078f1d565de14e86de242b38a36347e48e7db064c3e0",
+      "blake3": "210e0dbd951b16c434aa17c167c26c80b3424fcebd2d1fac84030213011bd0c4"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/config_template.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 791,
+      "sha256": "0a57afc70562ef534a26536a6a6d1e31adc46b7e61bee75abf3b3b030acb04bb",
+      "blake3": "a237d97ea3a7430009feb13dd4190d6ed69bcbd1bee5347cb457714707951778"
+    },
+    {
+      "path": "assets/deploy_script_template.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6698,
+      "sha256": "80a72d477746b113deb77cb5c333a53af11ea1624041ad6d659181dc0b1063b0",
+      "blake3": "1e1441d22e72bcd5b4e9ed46ac1b5e9b006ef49de9ca55fc7a08794aeb4ebcb0"
+    },
+    {
+      "path": "assets/huaweicloud_region_project_map.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 100,
+      "sha256": "466ffeabc6b9db18a7e8f171f61fd3acbb932355bc5ee49ba23b161ba0a74008",
+      "blake3": "416b15ad45aa70277b4f41b3464329fe998a4a0f5639efb434cded8f02285aa6"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/api_specs.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1583,
+      "sha256": "d9c8fd2e5572b275a956d0bfa0056d7d0aeab9dfa720166ed3cd32886d2fba4d",
+      "blake3": "903c185c5016d3fcf3ee1deb0e922d06c5b658e422a6d62e550ecebe55224f78"
+    },
+    {
+      "path": "references/deployment_checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1727,
+      "sha256": "a5a1271922df0b7814b78c6e50741496a879b2acbdb64a236eb6c95646057649",
+      "blake3": "e0da22a2e3b78061d57923edde7e8ae5a4b3caefd02754ef04daf9578f57cc33"
+    },
+    {
+      "path": "references/iam_policies.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5657,
+      "sha256": "ff3c613ec29d99ef46706f51fd7190f16e8f33853659263108d3b21c17343136",
+      "blake3": "5221796e1f88589c942d60f94a54186cde2ab0d031b598ad1a98676e404462c8"
+    },
+    {
+      "path": "references/troubleshooting.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4924,
+      "sha256": "80ab12eabd1e056b5e015059161e604f02f4a8c1c42013bd40f7a3efb07580c1",
+      "blake3": "46c254fcc09aa7680a7c9e91aae48475a40e44555621bd03f49d970d6e7dd3b1"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/config_channel.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27926,
+      "sha256": "b7e997efbf3dac3c796c6aa56512cf8fe0bc8437745bf8246f74f54ee917c76b",
+      "blake3": "3f56a14b349e33bac50a61259be6e79b5e4b8c3a0f7460444cf114f9663c84d9"
+    },
+    {
+      "path": "scripts/config_model.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18617,
+      "sha256": "a4ce8ce046c6a57e5a56d0caac20f058422b2f1409b81e83fee7d6eecd599de0",
+      "blake3": "24b1c357d918f2edd889b2098a482b80fb81b313c8ec6abf2bd92e640e0922a6"
+    },
+    {
+      "path": "scripts/create_instance.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16865,
+      "sha256": "465f8adbbda8aba35955ceb8c711782e022f1f4447dc28881f9d1ceb6630e44d",
+      "blake3": "1b5dee36def5d57918ba7c52c199fa3baefe587b3892b8220e519ab4cf04e24c"
+    },
+    {
+      "path": "scripts/deploy_service.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18038,
+      "sha256": "eb8266e4765eb1a046f6d4b268c35bc854dec1e00f9b96666a75cc8a914a7a05",
+      "blake3": "64029100fde8fef53b4c021eb86f23f3403fb6883af549778f20a74df4535f80"
+    },
+    {
+      "path": "scripts/install_deps.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 41175,
+      "sha256": "dd2006c7f97f95ba4e3b48e214dc0158b81b921deeef74156e37034483d3792c",
+      "blake3": "e176d8276fd99f8fe61def31cb1c146e5f27965d82488f6d9859ac1c6890d04a"
+    },
+    {
+      "path": "scripts/prepare_env.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5744,
+      "sha256": "730192f553722cb3f34eeedf98ad36dcd61349ede4ca12c31011e14a9171c022",
+      "blake3": "1bc359d548b9b2d02db7e5f9235899d435e1b9e1628f5fae030617b48fd3e926"
+    },
+    {
+      "path": "scripts/query_coc_status.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9930,
+      "sha256": "624f0e6fba459a1ff90faec28657dc65aebf9b94af1adececfd0991f8d8221f1",
+      "blake3": "22ad0a41fb9023bc29406b9d77fb2150199e2b7c4988488872db519eb7ac8712"
+    },
+    {
+      "path": "scripts/requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 105,
+      "sha256": "6a720e1f0f9c55f3a890fdf479e2d4acd7039ee2d53992777d0df9f490571e7c",
+      "blake3": "7934ec1cdaa482122aeb65e76fd60becd7a602928865ef7b38e61151a860b81b"
+    },
+    {
+      "path": "scripts/utils.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 39857,
+      "sha256": "ac2acb60353220cb324ac1f0c60dcd19c2f2b83046ba4536ede86e3b10733d8e",
+      "blake3": "ec023e753720875a0569f1944d179dd38c5ec96e5230ba9b0f89090958342f97"
+    },
+    {
+      "path": "scripts/verify_deployment.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8681,
+      "sha256": "009acb228b3347e64849b3e0e339562e43012457efa5e29e4f207386b039ccfe",
+      "blake3": "736aeb16d64413963e0330c77565c1b5c535c26928570e373e9a10fce26712d5"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3071,
+      "sha256": "1931b1b98391e049fa065d3ab2881ae614291c6b1a0821b860e2428593995bdb",
+      "blake3": "e4f3d3c76cf2a65a1b7f88106d2bfd9d0d68324252afa7c36e764e7cdeecd633"
+    }
+  ]
+}

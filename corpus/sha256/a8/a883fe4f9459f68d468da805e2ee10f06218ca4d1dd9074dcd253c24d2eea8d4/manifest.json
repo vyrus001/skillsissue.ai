@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:a883fe4f9459f68d468da805e2ee10f06218ca4d1dd9074dcd253c24d2eea8d4",
+  "sha256": "a883fe4f9459f68d468da805e2ee10f06218ca4d1dd9074dcd253c24d2eea8d4",
+  "blake3": "b885201dc9a586259cc8af3fe98151dbeec29a0266162d052b5c36c3fd37d0b2",
+  "size_bytes": 64960,
+  "file_count": 14,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 932,
+      "sha256": "8784b28ba02e9f97516c14c2d7334c1b57d1fa8974a38b1147fef3c9957b3b0f",
+      "blake3": "5e33cb41c720c53c7530ab1363d4ef792f887c138fc18b6bc633ae1840211ca9"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10998,
+      "sha256": "d90a0ebc2a6ddca0b4207e99fa4854ba3a91b6f1d614d6e18fb7edd1532fdea6",
+      "blake3": "a01b7151cbcd8184ff5ced404c0eddf3a0e79e562f75d46cf84a6d9d599ce728"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 139,
+      "sha256": "d63db9205242283ad5bb37c60910040b86267c966e2bfe0c558aef58bca45288",
+      "blake3": "6dbbfe8fc43bc2c250493de78f26d85094e07f86036dcb0c5a93a3733054282e"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 315,
+      "sha256": "87766c7c3dbda67c748bff88d5f6212358c20a2e51ec859abfdadd4938433f27",
+      "blake3": "14141bfedf6619c6965492be6fc20852ff6be36c3109c6e8a5da64da78ef2684"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/content-and-compliance.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5376,
+      "sha256": "8be23dc55895b0cb66aca3da97bfca21c547f22e2e869ab1f47d74507d02253d",
+      "blake3": "d6c85043b563612a9ff505e45a3b7eb937decf016a8286be563efefe115ef0d0"
+    },
+    {
+      "path": "references/layout-system.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5777,
+      "sha256": "1ef97c8801c434d77c7488df7fd9790a6103d5eff56e812dabf30b293f9acb50",
+      "blake3": "7717b4b722b024858457961827b9f6fb243d7d556a8acc0f7da30c0bb67294ba"
+    },
+    {
+      "path": "references/qa.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3387,
+      "sha256": "b16c8daf124bd130e02a0073c7a284ca098e06940ad9bd45874b8ea18d246e6d",
+      "blake3": "70f85a350f88c9d1b3bf5dd6d1c64ff18590ace756386fc2abeb33de535c90c9"
+    },
+    {
+      "path": "references/storyboard-schema.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4792,
+      "sha256": "29b81c25bc24fec5734108c9571e12c983fd4a279c294c09ff27e68e78f8da67",
+      "blake3": "e6b23b0ea93d4b83587a03f51d63ed74980700bc5c8464af1850fefcf7951866"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/edge_tts_generate.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2149,
+      "sha256": "d940d8d630af01aeaa0a3e8ee36d1f1fdadb2f6cef8027d630eb8d83a1d50045",
+      "blake3": "b8996213c081e9be2f9da6fd1727a3f00d08f752050fa23f9f3932e428490d39"
+    },
+    {
+      "path": "scripts/make_contact_sheet.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4489,
+      "sha256": "fd68a24518479091af806201c45e744dae2fc9a1ef0cda5756a0b523d767878d",
+      "blake3": "51061108d9039e5d27fa28aefc8afc1ec504bf929ec3794df90cdf4d850e05fb"
+    },
+    {
+      "path": "scripts/qa_video.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7310,
+      "sha256": "299c396914f5ecc305546fef11ae8470ca791dd995e7b598284562bfe943847b",
+      "blake3": "3dfee39c34fc696a4702965677ace5e74bf1f2379173de918061a6ee91a6c96e"
+    },
+    {
+      "path": "scripts/subtitles_to_timeline.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6421,
+      "sha256": "d9e4aa4b00a183a6138491511daf44a6068df62db771a23b76cb890550ffcb5a",
+      "blake3": "686049bef908d96885b69d6e7696167b55110baafeb0463a5a0a375f7e0233dd"
+    },
+    {
+      "path": "scripts/validate_storyboard.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10197,
+      "sha256": "6a70a81859237fd86ef6e5f7ad2c9c16a72b0db3714186a3e6139c94fdbbb4af",
+      "blake3": "34aba5d79ee7cd70e44a952dd10da5b8c181efcd83716ae968202edc32ab82da"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2678,
+      "sha256": "ffe540a37581ca80334e6098c40a65f003968161bc26d895cb6c454598524c04",
+      "blake3": "2e3a42301f0a669bd7d1b87d593b5734a760d3636a1a3dbe14f97da1eddd919c"
+    }
+  ]
+}

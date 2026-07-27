@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:918f5ecec33b6b0810c5d11dd2a6e7c8418be0391df05f6320de898890fe1279",
+  "sha256": "918f5ecec33b6b0810c5d11dd2a6e7c8418be0391df05f6320de898890fe1279",
+  "blake3": "9a56c8604ae399736becde95c22be0ca6b52e67330bfe9b0bb0707486026ff1a",
+  "size_bytes": 25499,
+  "file_count": 4,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4921,
+      "sha256": "caec821f9ded9f3f03a041bebe295429d3d7a3c8dd0b772ff4061c250b4df17b",
+      "blake3": "c4b9b999650a38179c9f2759aa3f9d7ef0d72b1cb69b88f4110d22e791555057"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 141,
+      "sha256": "d2fd0611dba40a3a6ecd3b8031d3e1635cc220dafbbf88351ac54ebb82d2a826",
+      "blake3": "1a8f745ceef89d703a8ef480bcd2abec0638934f793e126c12e7675bd15aed44"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 263,
+      "sha256": "e06dedbc7961f5a7d20a77655d790bb676f69c4efd922d3f1a03ffc19b9288a0",
+      "blake3": "027a317552586df3705ef653c5495116cfcfaba3239ad145e068d3ae7ae5ac27"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/activitywatch_summary.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20174,
+      "sha256": "04a8849231cef694f0364a9f0120632664dcd0800b8ac23b679631f6a8b9e207",
+      "blake3": "43fd71a77aeecd15b4d71f2e93652874d5ebeed3c10a1ceda9b5955cc8ef1c5d"
+    }
+  ]
+}

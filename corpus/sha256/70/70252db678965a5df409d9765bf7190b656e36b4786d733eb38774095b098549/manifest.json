@@ -1,0 +1,451 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:70252db678965a5df409d9765bf7190b656e36b4786d733eb38774095b098549",
+  "sha256": "70252db678965a5df409d9765bf7190b656e36b4786d733eb38774095b098549",
+  "blake3": "5e53d03fb60cabcdcb7088fb0ebdd7162591eea06f0fba0f11b5cdf31c4a9294",
+  "size_bytes": 97625,
+  "file_count": 52,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19957,
+      "sha256": "1572aaa294c5f7547889f520b6efeed979aeaaf58b4e7c4bcaaa26ace2ee3564",
+      "blake3": "be6dc4e791d01075b06d63547f9f3c55ad4f808405b1af3ea41a4163c39a2423"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 136,
+      "sha256": "ae66a7237c6e9aa0f37e2a835cb7b692ab81b8748fae4fac378639c92f0f040e",
+      "blake3": "869d6fe77f33fad8f1f5998aa9b64b9d3de2b90b322c6e193114c592424a0bf6"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/analysis-framework.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7507,
+      "sha256": "8ec26b5fd477ace735a89f0ebcb19e36c64c1c435a9f185d2036e4586bf76ca8",
+      "blake3": "21693b470d31a5e06dbc8cd6281a55ec02dfa1cf2ce4beffcc82bacc605f43a8"
+    },
+    {
+      "path": "references/base-prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1082,
+      "sha256": "a0d476aa0042d25d4c757e7f400883a04f586e74920ac822b89a50dffa185d16",
+      "blake3": "80e3a3c815729b0e82e21a983cf7057d836ff80b33f3077bf8cc3fd8e19ef5d1"
+    },
+    {
+      "path": "references/codex-imagegen.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3707,
+      "sha256": "dda3857c33d27a81fb771fac89f102c92b7af73f3aa4d84b6d88abd886f993e6",
+      "blake3": "886ddb251fce541b5c4a2ddfdb26d2a5aabef45a2a1a1d57679be12a0d146000"
+    },
+    {
+      "path": "references/config",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/config/first-time-setup.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4666,
+      "sha256": "1005e3f2d0f9ef28dd8a86660beb652c8e1bda3f215b7f61d460aff07a046620",
+      "blake3": "06e35133f035a03be9b05cdb1ebf56a153de46f082ec495360beb0974a0babce"
+    },
+    {
+      "path": "references/config/preferences-schema.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4611,
+      "sha256": "74abf2974fa598e5b82f0f5fd21a86c28cd61a15a9867748321253246bd0c856",
+      "blake3": "936c89a8c499507a55abdf09aa0a4244394feb840113fc1a4ef5b8501a0c96b1"
+    },
+    {
+      "path": "references/layouts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/layouts/bento-grid.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 851,
+      "sha256": "b8dfb690b90d935483c5bfcfbd1476f31b392990fe81b1b67ad571008f6e6e99",
+      "blake3": "56343848e1a5dcfb38da2d7a6a7e7f3f684e2db379721a82ed2aecced5c34193"
+    },
+    {
+      "path": "references/layouts/binary-comparison.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1278,
+      "sha256": "6740c77e89b4cd120e2da9c96feb447fb707e40ef42ee1774794337c8079c8ee",
+      "blake3": "80920a418876b708271f7bd1f129f5c55de6dead3e79711c15ad8fcdb606ad0c"
+    },
+    {
+      "path": "references/layouts/bridge.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 907,
+      "sha256": "ead9bd74c76c6de214e0fcee0b6bb756764b10f67ccaba52b591d05136bc7e1d",
+      "blake3": "bc9ccdbc743d7d3e11459aba70368d072338656581416515aa400b0c2a0968b9"
+    },
+    {
+      "path": "references/layouts/circular-flow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 759,
+      "sha256": "96c560cdf274e62cebecdd864e7d7a18ce44863c78cbda3ff62f48233839e859",
+      "blake3": "a39a8f6e96a01c26d53735f944140f3bb5cce8d84aa89e4bf5a17bbb5d7374f0"
+    },
+    {
+      "path": "references/layouts/comic-strip.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 847,
+      "sha256": "3ed52755443e435304cb28925da1f7465bd6186aac2ac125d9336c8e0afed028",
+      "blake3": "21302b3d010f39a3376af160f0413e3bb026b9ab477522ca7ebd6b17ce4c36d9"
+    },
+    {
+      "path": "references/layouts/comparison-matrix.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 893,
+      "sha256": "77bfeb08fd66287e11db575582262f80a6c8471c5dfa6b9508e3c48e567ae14e",
+      "blake3": "18d2ff6329ffcfc6b97918e70710dabf113ae60917edd681019b5d104e470e10"
+    },
+    {
+      "path": "references/layouts/dashboard.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 776,
+      "sha256": "045514ab6f196ff0ab2c7ead9755e955eff582c5cdedc163eb0a4b18aebee2b6",
+      "blake3": "33df2846a0d27e33456ad39ed8c5ff193614e0300ff9dd71bd8706b2dfdcc837"
+    },
+    {
+      "path": "references/layouts/dense-modules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3766,
+      "sha256": "c74d72f4daeb9b41b983f92052fab9b4b6dd28c07651b1be7023d07c20d2482e",
+      "blake3": "44153e731bc4148da7d38b8b275f43c1884c91c3baf52364591e9eb51ad88f36"
+    },
+    {
+      "path": "references/layouts/funnel.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 821,
+      "sha256": "e505f04f334d8da00607972b19b23f9a2e24b6c2cff8cdb8fbe6baa0698c7286",
+      "blake3": "b3a728bb849e4e185f4679723a8f183b05a6d28200f1beab0e2d2eeb0a5d227f"
+    },
+    {
+      "path": "references/layouts/hierarchical-layers.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1180,
+      "sha256": "5fdacc7c543788a32d9e73b4cc26465e54adec498dd4975cdcff85ca2f2d1da9",
+      "blake3": "2e06920e543e22f90358fdca95e4ec51563ce3c3ac5eb0b52435606941ed8d26"
+    },
+    {
+      "path": "references/layouts/hub-spoke.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 865,
+      "sha256": "d79526313a7f6550e5586652d871dee3b958c2ea400242a9a9c3f2bccf4b57a5",
+      "blake3": "e65d7b3fdbf4cc54f25a06518ccfafe04aa18d18334278577b23554cc0139dc0"
+    },
+    {
+      "path": "references/layouts/iceberg.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 884,
+      "sha256": "26a21caf9a3d8dd4172565953f2cd060bca0b3ab2afd82f54828dc7542f5e9e3",
+      "blake3": "4d8467f31441d3ef9a219148c1cb45d5ba2da588f058c323ab8ea0d941359a52"
+    },
+    {
+      "path": "references/layouts/isometric-map.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 833,
+      "sha256": "ec0be8d54e5a8db5182696c637fd8769f9b9a6c7f4f190ca9f6f4ea7fc00732a",
+      "blake3": "e26660710765665a49d8cb2f0b6ddd4b425ac7405ea87b412cd10d8ecc125fbf"
+    },
+    {
+      "path": "references/layouts/jigsaw.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 844,
+      "sha256": "1b5566cdf0981677bf79437a6c5877749a7ecc22fcf1cccc1bee864c9d865e75",
+      "blake3": "e574872f8f302473dd29deb738873eb04f895391c55232afe936ffafaa76c910"
+    },
+    {
+      "path": "references/layouts/linear-progression.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1238,
+      "sha256": "65dea6f3fc3c131c7d3fc32050e541b3f60e5896699adc0e8624d1c5cc469757",
+      "blake3": "0f6cf5bd896459bb981430a8caef7a84c02bfc364f98c511c281244898516c85"
+    },
+    {
+      "path": "references/layouts/periodic-table.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 774,
+      "sha256": "8fa5c1823092eecd84e88cf8a3f9547e5ce7389dfeec4fd87b6277154f33f858",
+      "blake3": "39d9cfb7ddd5d82331b77a4404e40173cbd5a7276d323ac3feefdee3ffd49bca"
+    },
+    {
+      "path": "references/layouts/story-mountain.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 815,
+      "sha256": "251491e38320301caa0e2c29c4d7c73f910f598c8a00f924eb7e58a70cc7f2e8",
+      "blake3": "b1a4441fbfca147fcbcd84562b2b3a8be955448136f92ccdd9765731db908226"
+    },
+    {
+      "path": "references/layouts/structural-breakdown.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1118,
+      "sha256": "eff60da27c0603113a283488824312e1078140872ff204935bf2c3cfe712c1fc",
+      "blake3": "6004777446ac78808a19e3c7b0e7e28593e66e1a9e1df33bc9e9ab147f7e0ed2"
+    },
+    {
+      "path": "references/layouts/tree-branching.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 913,
+      "sha256": "f493c76aa8d5ace6b5cf96a8ca2480f1131ee2ad41d335fdcb82f3ab83d928fc",
+      "blake3": "b05f0dae7ba964fa2df283a9764f91db9f5be0dea8e0c65f6552f9f7ecf41bb7"
+    },
+    {
+      "path": "references/layouts/venn-diagram.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 825,
+      "sha256": "c0babb164e540dcdc83f9006835024d04e3e2782665ceac4742e59b02a0cfd48",
+      "blake3": "93210431712b20e2902c26ccc8ace18393776a27ece6e8b826be719817d04cdd"
+    },
+    {
+      "path": "references/layouts/winding-roadmap.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 799,
+      "sha256": "52dc70d953e795696a71a4331b951cc428283016d8a01e0ffcf9f1d79eb6e4f4",
+      "blake3": "b927913324b9b0d6702f109c3cf8a9640419d139f28a0bb16db0a1504996abc3"
+    },
+    {
+      "path": "references/structured-content-template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5515,
+      "sha256": "d979b8d4fb37746fbf404d5737ec76e5837f066b97f6bd45c9b9b9478bee0877",
+      "blake3": "d0af98f1c422187cd5d5f080c5cf4092209fcd1296d3e14f807d89823679b6ee"
+    },
+    {
+      "path": "references/styles",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/styles/aged-academia.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 990,
+      "sha256": "596be4263818615dc491531bb326370a276c3995d13b27a7d3222da7ab8fffd3",
+      "blake3": "7a16aba5e571f47a3f145b266a7055f2664381e6f6e335cda3f1e54e80dcb302"
+    },
+    {
+      "path": "references/styles/bold-graphic.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 920,
+      "sha256": "d7262e681a5d8ca93aea397dbd4f00925724af9d20909adef877f5f117e2dabd",
+      "blake3": "37d3036902726c398b6636bce1fc4a961ef3859e916962bc8903a256be9e882c"
+    },
+    {
+      "path": "references/styles/chalkboard.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2204,
+      "sha256": "d903ffb1bd67b7f05972acbf82fec2305d93c149f458ad434097e4b18ff94df5",
+      "blake3": "5922597c18b6d65d9e376e7bb1d8b4deeefdee50554b270acabd56c6ea433029"
+    },
+    {
+      "path": "references/styles/claymation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 654,
+      "sha256": "c55e726c0d1156f2715107dd3b3d3c60af385b48db33b6121cb569494aa59644",
+      "blake3": "f216d1081090a58d4c9d213eca7844d995b9795d0fac831bf1f80bebe0525190"
+    },
+    {
+      "path": "references/styles/corporate-memphis.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 612,
+      "sha256": "156e6e27009fdc3305e97ef242cb1a45fac65a054f73cd62718ce99bf5171ebf",
+      "blake3": "e8c9d9bb8f38de93decefe721743b95f7ce9e6ec7332949eb44fd0300e6365e2"
+    },
+    {
+      "path": "references/styles/craft-handmade.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1429,
+      "sha256": "91740549239ab391d18532c83317a137c68cb11ab33ea154130db68a791288c0",
+      "blake3": "08af1cf2f49b6e649a1aae673cc4383c51b3ae122e823f9d17622eaaa167e6e1"
+    },
+    {
+      "path": "references/styles/cyberpunk-neon.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 625,
+      "sha256": "68fdaa033dbece53c5e788972ab47fc548df621f23c1ab408c7c633b457f6491",
+      "blake3": "fe1c166a91ad478edaa0a80ec54c109136910c663749dcdb01d2d2fb8428c36b"
+    },
+    {
+      "path": "references/styles/hand-drawn-edu.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2648,
+      "sha256": "f08c3abbdde1b63a8ff8e5a6d82024d2bf961fcff42c032510cf8dd0194e48b8",
+      "blake3": "3df312c481e0f68496594b774bebd57110704333496edaa9210f103e24b8b3a8"
+    },
+    {
+      "path": "references/styles/ikea-manual.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 572,
+      "sha256": "64816d33fd9fb5c22024d2db48f9e4ca7ca38c64cfad1d020880c7f32ccd5690",
+      "blake3": "8ea63ee33cac98a285b16ad42899112b4c61730a664979f867ed1c34a4a51ed1"
+    },
+    {
+      "path": "references/styles/kawaii.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 653,
+      "sha256": "d88bf32f4257c13ee68b6b13e7af733aa67b4eedce14e50182a791272f389f3a",
+      "blake3": "ec245a68cd7105397f43411b850cc0aae0d84ede066f3b9c397d65a0b3e8af76"
+    },
+    {
+      "path": "references/styles/knolling.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 584,
+      "sha256": "59302d093c12766b1924e659c406429cc2543055ddf791f0d42760a1b2eaafbd",
+      "blake3": "aef4a0e5fb4d0166159e1736b0102388c555ccc8564a6d17046fabb5889b2504"
+    },
+    {
+      "path": "references/styles/lego-brick.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 574,
+      "sha256": "3753f54d30e02bce4de89a1ace9db4ba82bd8395ae8f643c3670449aaaab04c7",
+      "blake3": "b4478300a92575fbbc47a6c7210e6e60b7480ea5be5e0c8a2aae5b3e462881aa"
+    },
+    {
+      "path": "references/styles/morandi-journal.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2233,
+      "sha256": "13d230f40671f05d80c6e8b134e426da1c7f5a463d354ab241ca0f1ee30fec0d",
+      "blake3": "4f63d632e2ebfc02941daea7866071b8728ec6754a00e7aa1d086040fd56d60b"
+    },
+    {
+      "path": "references/styles/origami.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 607,
+      "sha256": "58f51438267c1499591d272bd7e434283565799889a4b0c75debf2329f2b919b",
+      "blake3": "9b78a6361a8229293256a79bd63a0ea2eecc49200a2ee2724c80496f4cac5ab1"
+    },
+    {
+      "path": "references/styles/pixel-art.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 562,
+      "sha256": "1a1dffbccf818e77fd8b16f7a5872e245a934db77ce2aa2a5b6348268bb2f5f3",
+      "blake3": "0ba68d33230d2c5ae3bd83971c8dbac58788799f1c13f85149478c5b7c88166b"
+    },
+    {
+      "path": "references/styles/pop-laboratory.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2174,
+      "sha256": "c920d07989697c46aa3482fe2b2f4c6387ab803e3f19ca11206a35a2ac7b7ff9",
+      "blake3": "642e1c30e649f0a3f512ae62f8c674b236b00d896bdbc802d8ce33ee9d505005"
+    },
+    {
+      "path": "references/styles/retro-pop-grid.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2106,
+      "sha256": "d59faa1639c15a6624c51746d9725de50a40c448dbbeba8faf6eb00ac3468023",
+      "blake3": "9308901e6c63e0c80664dd896ea8ad512ae9a409d2957aa1e51db9047f04480d"
+    },
+    {
+      "path": "references/styles/retro-popup-pop.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2901,
+      "sha256": "cf040315e78c0a4a46069f902653062470b7d1fc17f1feafa4073df646ce9ab1",
+      "blake3": "ab9b8ee18fe8274e635381c466797d772fa681499ca776c57b9b7357c35c1918"
+    },
+    {
+      "path": "references/styles/storybook-watercolor.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 703,
+      "sha256": "d7067bc69f56f3fad42e3f2671c86317c36962f38fd69a181f9d606d6fd54f88",
+      "blake3": "71362745b5ffc2770c7c5705ccbea873933cdaff602dbefbbb7eea5b6513f7c7"
+    },
+    {
+      "path": "references/styles/subway-map.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 591,
+      "sha256": "a122e7f9f5b990f804b717d6e696f916922ff61227e72bfe5e540fd51c66d359",
+      "blake3": "c6a25aac9ea9f915f297855603090dd21524e50d781bcf284b8e60e719681270"
+    },
+    {
+      "path": "references/styles/technical-schematic.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 983,
+      "sha256": "2b21ce445c6a2b1ef280c2d7b4cb8e87e2f6e720f85cb68a8ba40a5c2d73a12d",
+      "blake3": "6e1d89316c12630b35d2ba50fb4500edf1324bb11d2cb1944f51b777f0ab7b84"
+    },
+    {
+      "path": "references/styles/ui-wireframe.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 596,
+      "sha256": "9a27502ab6bba76ad042cfa08834053f9e563c76cc8ffb46456cd3db2a6523a3",
+      "blake3": "8aad5844bf611d855d9f475bd8ee4ae62cce40e2da81be37cb1759f73a736e36"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2537,
+      "sha256": "ad493e995c572a692990eb1f2bddeb12ad0d42bc881049057e38dec8d1a727bf",
+      "blake3": "70e2ab4f549c8375af8bcfb9fe9c8268975448151cc653bc2e10f2ec562f6e93"
+    }
+  ]
+}

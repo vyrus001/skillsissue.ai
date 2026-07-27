@@ -1,0 +1,741 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:177b54d08433d02d7f89f80bd9e367bad56316e65d0c6f1380a906a7e1a0259c",
+  "sha256": "177b54d08433d02d7f89f80bd9e367bad56316e65d0c6f1380a906a7e1a0259c",
+  "blake3": "a041616aae7644c17582b6e8c3120bdf7cfbba06303c6a5bc1c72d41aee01e76",
+  "size_bytes": 1443183,
+  "file_count": 80,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 37855,
+      "sha256": "28636a3899efddff68cb936c66f42bb26435fa35eb8fd12e1a9d629e208d8c1d",
+      "blake3": "72e5fbf06b637ccca32896298c29b70e9b0bb42ee7bdebe1601dd7c2efe174a3"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 126,
+      "sha256": "8f6cd25dec04b07698a86c0bace1373e492f70d498f98a211e38efab0c5349b4",
+      "blake3": "3fc09891ce0107a3fbe97c5028c8ae338641cddf95dd4647ab4cee68b668f094"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 437,
+      "sha256": "cb37598b7898cd12a549b2c8d789187a7eae4b3363e82bc0c8d1a71542d3d3db",
+      "blake3": "aead65453c0c431cf4c26cb2b18fb5f1a9e26aa3440ef3790528da9501cee2c6"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/html-deck-template",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/html-deck-template/assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/html-deck-template/assets/runtime",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/html-deck-template/assets/runtime/taohtml-editor.css",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3545,
+      "sha256": "7fad7ae153662437d703c651dce5e41279c3ad2f3b509c9ef52ae4a11b9d107d",
+      "blake3": "d4e2e6883e3a567a8ff126489f2d4c54c8ea067b572bda4f06a9e59125092948"
+    },
+    {
+      "path": "assets/html-deck-template/assets/runtime/taohtml-editor.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30011,
+      "sha256": "4fc6b99e0f6864187f2646dc587d912fd599bed1d548947a7bc1e5620cbc8fb5",
+      "blake3": "4253a9163ee35c3a4011bdf550df203ff37e2614b1778e38cc4efa33541ac8c7"
+    },
+    {
+      "path": "assets/html-deck-template/assets/source-pages",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/html-deck-template/assets/source-pages/page-01.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2314,
+      "sha256": "ebb40f2472edfb17c47844f9313fb6dba11f118a85a1d6024371c60c6bf0a9e4",
+      "blake3": "dbdc908ac9da7424d238a586e5391828ec59409b9b210797e7f63c4ef1ac1030"
+    },
+    {
+      "path": "assets/html-deck-template/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24673,
+      "sha256": "408bc3f64bc080f2d7a3bcacd8cee1a70cd49bfb207370d30cdeb371f7b82205",
+      "blake3": "642d4e80c20607d30a49e1ebe585f508aa0f1273d9e82bdcc041b2a2efcc2ab6"
+    },
+    {
+      "path": "assets/reference-vi-board",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/reference-vi-board/template.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28496,
+      "sha256": "a2ac6336c01100019e72bdf515d92f58ba146a77009a9136737018ef4add2b53",
+      "blake3": "4a8f66ceb87104cce7d0af136c793174d1428822f830ed6815b8b55e37f1b5b3"
+    },
+    {
+      "path": "assets/report-ir",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/report-ir/report-ir.css",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15753,
+      "sha256": "7893f07b5a9a2e7e3e9a5effd4bd2288c63c189028728defa7280e4f1ed9e5ed",
+      "blake3": "12c503082af5547e0cff4647f191963de80799e62c1b06d9848de0ca804c8128"
+    },
+    {
+      "path": "assets/report-ir/theme-profiles.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1676,
+      "sha256": "6e29575eee08e45df8664188544b924a4378c4f4b9d316f9034cbed7f9643b9c",
+      "blake3": "5a6706bc253df591fd9e732657bb78360b0d609fca38a2d418131263b92efa03"
+    },
+    {
+      "path": "assets/visual-systems",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/visual-systems/black-white-fluorescent-cards",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/visual-systems/black-white-fluorescent-cards/preview.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1740,
+      "sha256": "8103db2cd8ea4231a1c57f2205dcc7744a54e14ae076890065d24c50700465ef",
+      "blake3": "8b3c946045925d3eab1eeecc43c523184fcca8de992bbbfeea68c3fe02926378"
+    },
+    {
+      "path": "assets/visual-systems/black-white-fluorescent-cards/templates.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4229,
+      "sha256": "bdb801658852bd58c912e2677a05306ce4b68f11fc1e2a42cb232f9b762f625a",
+      "blake3": "52b0c4e4b367af56a6798a2346f5bc78a0d2fbc17498a92012568e14334d5b8c"
+    },
+    {
+      "path": "assets/visual-systems/black-white-fluorescent-cards/theme.css",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6420,
+      "sha256": "5566370aa96113332fab4fccadd81c6e6d30ac5a268a667ba80acf9ded7a7676",
+      "blake3": "6f1a949d64ea77e12cd04f6e367899ad2d911720b9451e5a7fd41f9f21e212e0"
+    },
+    {
+      "path": "assets/visual-systems/black-white-fluorescent-cards/theme.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3136,
+      "sha256": "d0b737042ccf50d3229fe7213c408710cfac07b943980e621c178de85e90a124",
+      "blake3": "8cd3556b8ee05f1699e42a4bbfae50239fef08d881cc94534a776a9717382209"
+    },
+    {
+      "path": "assets/visual-systems/corporate-annual-report",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/visual-systems/corporate-annual-report/preview.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1844,
+      "sha256": "4f9d9f06e3a72241023598a4ed45738559314baaa919d570300b43042608c514",
+      "blake3": "514db038505899d84899cf4a82d820240b1f689065ad622105a358a4f462d1ba"
+    },
+    {
+      "path": "assets/visual-systems/corporate-annual-report/templates.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4322,
+      "sha256": "f362f5467752c844a2dd17ae245f27ad137b3f1c08f4d672d1a5b2dd4c39aff0",
+      "blake3": "0a5e416b139bedbefed272f07d4068844fabcd9a1e6cc108ecaec9f9f1388226"
+    },
+    {
+      "path": "assets/visual-systems/corporate-annual-report/theme.css",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7683,
+      "sha256": "5af74a667508ce8e95f1e28cd95ba8da44c3e8ce988b100f2ad2c1cf196dcc38",
+      "blake3": "11bbe1456ed9807277fb255013a8dfbb66eb8bd8b141f43b42d9839959f339b5"
+    },
+    {
+      "path": "assets/visual-systems/corporate-annual-report/theme.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3377,
+      "sha256": "c9f8eccc7cc8693ac71fa55b8402d3897f202afb7cbae4c9f241f51ac44de6c9",
+      "blake3": "4ac48f15be60708c1ede530f084ca4d68742fd10c140c28354eee84504f3ac59"
+    },
+    {
+      "path": "assets/visual-systems/editorial-collage",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/visual-systems/editorial-collage/preview.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1939,
+      "sha256": "c89cdebd7c79dffb13213c2feb2c912dcac4df7a8f01676ca38c55caf0de01c3",
+      "blake3": "4256a7f944a8b150cfd36f2d10601de091ba0ec44d6236c09d8d5e59f4bb7889"
+    },
+    {
+      "path": "assets/visual-systems/editorial-collage/templates.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4395,
+      "sha256": "cf5ca526026c1063d82fb546ca2f49c0fa6b8990c53823108a7866062700733f",
+      "blake3": "ad3e79b55271e116af0074d2de7762a0b3854866e395c5e9c685da35180a727e"
+    },
+    {
+      "path": "assets/visual-systems/editorial-collage/theme.css",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8714,
+      "sha256": "2dbb03209d92256035dbf6e31c23b7088b7402931f984a72822aeab45360b496",
+      "blake3": "77f05f9e20e09caa5b0fde2c27ab5da95d713d51a17537c610db79cec7bc4b41"
+    },
+    {
+      "path": "assets/visual-systems/editorial-collage/theme.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3515,
+      "sha256": "8583fd7c0c61879e50cd8b9b09952b5ac3fa1415217d183195d8016e43a268dc",
+      "blake3": "cb71fb5792bb753483558c50a9256bac60041f8ad4d25056d9c816f159f66f68"
+    },
+    {
+      "path": "assets/visual-systems/rigorous-consulting-report",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/visual-systems/rigorous-consulting-report/preview.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1849,
+      "sha256": "96b7664e862eb03dd1a9adfef305f23ed6ad23baffe97e462a5fce9dad0c07f6",
+      "blake3": "1b3ccd31aa679eed8577c37229ff83e32ff4dcfc3108bea165567bc5babfab29"
+    },
+    {
+      "path": "assets/visual-systems/rigorous-consulting-report/templates.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4297,
+      "sha256": "5909ddb1567fbab9d34bcfe7f3694c87b3f6782a85d06beff76a03f4ea75328c",
+      "blake3": "04a4d91fc6f1f8d651d0a30b58b5c7174864223504b935c42db84d05bac22e69"
+    },
+    {
+      "path": "assets/visual-systems/rigorous-consulting-report/theme.css",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6812,
+      "sha256": "5c23dc69a7116dddb128990b9658431e6b71227267c816269d7180ab41e7a1e7",
+      "blake3": "26e8a2c520f9023f07b44f47ff465990b3aef711170ab63bb29ce9a330f95d1e"
+    },
+    {
+      "path": "assets/visual-systems/rigorous-consulting-report/theme.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3362,
+      "sha256": "d96d596f4998e80b72d5f53f017be3f4aba68ee6bef87b85fb6da5f33848fac2",
+      "blake3": "b7f75679f37566570f62bb7bea321a2db94a1d3e22e0e2ed1960ee92358d0bdd"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/content-editor.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9604,
+      "sha256": "410a32a043eadc28dfe6e1228f76efaf2a81d86d4484fee8e9f36d6239c1713e",
+      "blake3": "630af17eed852c91807ee8b12b940304b9e64979a0c1d142ef7e591224088c22"
+    },
+    {
+      "path": "references/design-brief-template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14369,
+      "sha256": "4e843ed71056abfd8f05b9bbf49182d1f0ec29c41100680fe0af3dfb82b34feb",
+      "blake3": "7670591f2ad7a638bcf31ed83850ef2e3edd8808dd32b05248f00609ae0f604f"
+    },
+    {
+      "path": "references/design-quality-rubric.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7925,
+      "sha256": "a7d40505eee71efa3526155c639bba2d171fd3432734cd38c5e293610661c39e",
+      "blake3": "b522708de810e7663077dbf7d2f50d491d355f1d12a5440f08eec09d81d13f52"
+    },
+    {
+      "path": "references/environment-preflight.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5031,
+      "sha256": "1b56aa8378a4f3de863474325a2a56868df961fa24a02dd3332ba69bc47293c8",
+      "blake3": "d1ed222e08369cc125997ac773e4f947d58497990968532091289a725509cd52"
+    },
+    {
+      "path": "references/intake-workflow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 42661,
+      "sha256": "db605e56c59ce44769944aa1296500bf89e303e1897be38ff07b05d8632e0f87",
+      "blake3": "b3120069567103e8d4bf7bdfaf422c5d87a40adaf195354e4c7870623ff97fe5"
+    },
+    {
+      "path": "references/layout-pattern-library.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7476,
+      "sha256": "a5b16777c964aee13e7d5a35b27a30b2d9a2f4a48f5ff59872926b3f516304b4",
+      "blake3": "ded3777b4a08775bd26c4d1e3248d32857f3926ce3c67ec7ccd165f738f64afd"
+    },
+    {
+      "path": "references/material-understanding.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8302,
+      "sha256": "b0211038665ddfb45fc235932de15e43d90686b909c9bfbfbd3ed39a4f1a21f1",
+      "blake3": "9093a2a74220b9a98173ed2f0b66ce2f8f745a7ec233a5da402d7ca6b3df124d"
+    },
+    {
+      "path": "references/process-playbook.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 31556,
+      "sha256": "972c9f0a7f98e7be3198d65c5057e6ea6b862ef03919ced5311438d4db10e876",
+      "blake3": "e5531bf94268aea4ec0d584f62efeb13f0988b9da64a9e9cee82901cfcbed4d6"
+    },
+    {
+      "path": "references/production-authorization.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12528,
+      "sha256": "97732d722f122ed411c18fc753901b5d0a66030ff1828f81659bc7518f5e73e5",
+      "blake3": "30c63a743e7783774ff7edbec0bddde54228ea1bb9ce1f8dbae722ae3d63a25a"
+    },
+    {
+      "path": "references/profile-memory.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11937,
+      "sha256": "8888a62282d6ba0d7e009d4ad9e6f6e69d8782855fd0a63f73cb3747236cc92f",
+      "blake3": "43127d71ded41947d4b416066ad4f7a12d399da9cc624d9de9b0a563e1028bbf"
+    },
+    {
+      "path": "references/project-handoff-schema.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19857,
+      "sha256": "476e63306ac86c8b40f7d4939ff0575eaf81378ec5abd3107ff8282724bfb4eb",
+      "blake3": "c9abe2c0d49064fa71eae61cfecf391dbbc0533a3956744bc321f921d2dfd118"
+    },
+    {
+      "path": "references/project-handoff.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15228,
+      "sha256": "a37ab10eb0897e34603753914d6711fc601fbac5e32e1f10898c6ee84bb1dc8f",
+      "blake3": "e5ceac963a4ec51a64a991f3117b22cb570d9f2b337cc3cb768f1f66d1a68dcd"
+    },
+    {
+      "path": "references/project-handoff.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24649,
+      "sha256": "b09823ce28f7a30a728b6eae16d843f49fd84f0a37ef4193b76cbe1ffe5a555b",
+      "blake3": "21b3dfe593e646e594f9b83190961b8dcbac0a97793ae28f5fc7a2e39fabfe90"
+    },
+    {
+      "path": "references/project-theme-compiler.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21146,
+      "sha256": "b42ffc274e4047769bcfc56d5a7ebafa4c703dab210d95b29c0629cc8dd5cab9",
+      "blake3": "97689b445fb706c5f769fb27a5571362163018713cac6fcc9348b475b6ceb580"
+    },
+    {
+      "path": "references/report-ir-pilot-workflow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6999,
+      "sha256": "50dd584b252277c3d11e0070e066b0877b04fa1b2444caf353b7dc7811a7a201",
+      "blake3": "c78e9ca615f6677f20053b5b1028d96c0e223da0b4ae975983f6ec0d899efd40"
+    },
+    {
+      "path": "references/report-ir-runtime-patch.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3675,
+      "sha256": "f60cadda1b0a8af2eb97749db90f17fff68112451032230c8f08293cb7024dc9",
+      "blake3": "95b4267ba825c54f2bfc3c50e3c9d8d185bc6fb2726bab6fb6ebbd4d4cbdc34d"
+    },
+    {
+      "path": "references/report-ir-v1.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12040,
+      "sha256": "fdf647365192079a2ccb5c988b7b850892a3e260f23a9550ce4d0d953f7434c7",
+      "blake3": "3dc7404a13a2d788fe2d868e0e8b42c0c40177e3960b748f8bfac2696f65472a"
+    },
+    {
+      "path": "references/report-ir-v1.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20465,
+      "sha256": "3c9929bd0d6484dccce3f1c69cd0bc53960fa52ad7932a1a920df28e4e1616a6",
+      "blake3": "af4976b5b69bae28db5d9d5523c93a724be5554a0c32fdc0e1501c26f9280a74"
+    },
+    {
+      "path": "references/runtime-contract.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9929,
+      "sha256": "ffb204492875c56a8155249dd36ed203bcff94583077bcb3c8d3ebf02bb521a9",
+      "blake3": "a5cd8c45270587cb1308b3951fcdaefadafecec767c010f467133fc21f7fb0fe"
+    },
+    {
+      "path": "references/static-reference-vi.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28182,
+      "sha256": "707253b7e34c84d308f620eecdb0af224a68a2f24e7798320f815e6b0ba3bc29",
+      "blake3": "1df7470a3081aced6a572bb18df97e364e15af771299f45d46e79ea2194dd33d"
+    },
+    {
+      "path": "references/visual-systems.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9796,
+      "sha256": "bd9b9afb9d6e63a209e3f8d7b5b6f04e1e92f61cc02791e1c1ea01e1c328da51",
+      "blake3": "21bf4e34f205d6bb6211a240409c183ab135ea3f2ceb4f3f1209195ed27a90ed"
+    },
+    {
+      "path": "references/workflow-profile-brand-communication-editorial-publishing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22081,
+      "sha256": "939f8bd4d8651973310a94615bfa15cd87501d6511b951b44e2703596cef0277",
+      "blake3": "7ad2fa999eed7d16652810e469893b6a10ad576cf3b5ca42de191cae9d63d91a"
+    },
+    {
+      "path": "references/workflow-profile-contract.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16863,
+      "sha256": "8f94eaf9bb1eb43f86379e23fa063eadd1b08d14f19582e9bc6f8b27d448efb4",
+      "blake3": "863fcf79ad921b9001867a6d57b7871624e01a0c73708f9e39e38bcff55d8c02"
+    },
+    {
+      "path": "references/workflow-profile-formal-submission-writing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17487,
+      "sha256": "78eaa63435de1741d6f12cef26037d6f1e5560a4a28f0a63e9c838a7ccac7e1d",
+      "blake3": "f62be68b91e8114c7043a8d6500c7a293660aed4c4492886bbe8760603c93336"
+    },
+    {
+      "path": "references/workflow-profile-live-presentation-persuasion.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14207,
+      "sha256": "e01b0b2b68114fb7b438cd7ca81066a6af606ce4b071ac8b84fbf099362d1bd8",
+      "blake3": "404c7bb97fb70e97ef80e2b15bcda0bdaddb37e25a2eba0cb1ad227c357cc180"
+    },
+    {
+      "path": "references/workflow-profile-periodic-operations-reporting.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19774,
+      "sha256": "6ff6dbb1f8d0d1c02d30f7b2efd4d15c4496f9ed5e10e1e75534d37d04f53395",
+      "blake3": "7fa1f5b1843337b73dca5dc9ce6897274f26f3cdcd677e914b78e2d827c32e54"
+    },
+    {
+      "path": "references/workflow-profile-project-lifecycle-reporting.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19937,
+      "sha256": "9b7993aee5a3a5741970cf6213440c9328e45c383537c070e770b98db4213097",
+      "blake3": "3a67059255f4c6c80f39989a5fef0dd318ab52a14cdf43f40d90c0bc1c545f03"
+    },
+    {
+      "path": "references/workflow-profile-proposal-planning-decision.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14016,
+      "sha256": "a173ce81740849e7a115e6aed14014a7ed79084219452536927d92e404733c08",
+      "blake3": "fe595da417a5dfd7fdee444f7d7e9e52b9328f17a5e6f829fbf77b3059c4708b"
+    },
+    {
+      "path": "references/workflow-profile-research-analysis-argumentation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19318,
+      "sha256": "a4069b62c3336ada6b3b0db452fb21289916ace4f9a028cc50cf647bc0b8b60f",
+      "blake3": "de9498104a0c4206fc87fd1a8966d5bfd8d8375af195cdc59f1c3d2f4ad82490"
+    },
+    {
+      "path": "references/workflow-profile-rule-response-application-defense.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22645,
+      "sha256": "63f6a81cb73ed45c20755b7851eed264edf34a324c6a875f7f643cae194d674e",
+      "blake3": "be382e81d1af8c2b6ed5bf2bc15a4cefd16687f724381101b5ca84dceaa9eb47"
+    },
+    {
+      "path": "references/workflow-profile-teaching-training-knowledge-transfer.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19874,
+      "sha256": "9a1239b6ec60ed1492f2e5a04479c282bf142ff045ff9288f643dd709bce9cdd",
+      "blake3": "4f8f729382278d9896859e238e75513ba2c4e5d8f7f623b7558816c1c28bef32"
+    },
+    {
+      "path": "references/workflow-profiles.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2871,
+      "sha256": "d3471453475c3c6c35141186c7a2c5035c69142ea540b8177bf83738e198451d",
+      "blake3": "1d07babd36bd0b0e4c169b674529d3a8a20b0b6eca4db024b35d9e01284e7b6d"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 69,
+      "sha256": "11cb7343e91d2ebef8c44c36bce72b707b34a5cc5fc3d3dcaac3a245ed28295c",
+      "blake3": "95fbc0959b9935a3514785503d4a7d291a200b0f38e87ccc6a52d7ae67848969"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/apply_report_ir_patch.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23852,
+      "sha256": "22f5b84c0301c92845d3038fb53b105e72e400f1a982b886930f6d55e2a53f1a",
+      "blake3": "57eb6825bee55980e28f040fa9255478569b85f07681e48a2167db27180d9028"
+    },
+    {
+      "path": "scripts/build_contact_sheet.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2368,
+      "sha256": "2070f1808e8b0c49224d93754595bfd5c7a8575a4250d959aea5ba316a6da1fb",
+      "blake3": "3f09f13498ea76e0ec8e4c6164d67de2216f05e6855269b34a69407ab2ed9679"
+    },
+    {
+      "path": "scripts/check_assets.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5073,
+      "sha256": "028d3cf47ffe17b793d0f9d2b123424b74cf2e869664dcc5b2f6636d2f331f2a",
+      "blake3": "35924cf6f6b2263b00c918e5cb77ae4262f872c629f7e707977c1497200f7d53"
+    },
+    {
+      "path": "scripts/check_editor_runtime.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 38940,
+      "sha256": "8416575dd06fbf9fefea56b76806af0852a919fbfe453ea6ff98576026bfd332",
+      "blake3": "cb968c0d0539c09060acb210970dd0412e632d89d12601f3a17c9c656cf8145f"
+    },
+    {
+      "path": "scripts/check_html_deck.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 55802,
+      "sha256": "9b6028607b0d42b65c94c61d9ccbf0e5a89da907a140e991addea591910f25cc",
+      "blake3": "25419020675ad1e5c18eff8aff8d8381fa2263efe908718bb9b8fde2ae5e4b3b"
+    },
+    {
+      "path": "scripts/check_production_authorization.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27073,
+      "sha256": "8f4caf162bae7999f7d6e20ad38da13d151af6b299c10ee57ea15cf81ab196ae",
+      "blake3": "cce131ffee8570f35c435fad32ac01546c937ad69b7a8c5c9c4b2348248c31c8"
+    },
+    {
+      "path": "scripts/compile_project_theme.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 78889,
+      "sha256": "70250f128817451ab75d6cb66491d9bf9693f337fdb2e9c603a726df26520f10",
+      "blake3": "5bab01880b26bd3b7b7c4e27d5ab7adac8be87b9c546db2b1d226dd8d351009c"
+    },
+    {
+      "path": "scripts/compile_report_ir.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 63243,
+      "sha256": "3bffc94fda0a823644bdb76ddf6fc29f1636c3fca4ebf6da05852b44dcadd2fc",
+      "blake3": "19f9d860f95ffb39c849604c4792441ace098e878e919f23437d2ed3e4f079ec"
+    },
+    {
+      "path": "scripts/extract_pdf_pages.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1888,
+      "sha256": "d193c1f5e79b3cc74688db480632cd3d6089bc71b5f2f504dacceda551d62464",
+      "blake3": "f8fa7f3873ed8fc3a662418c5739ca28830caaafe343a292cebdcc6199c39ef6"
+    },
+    {
+      "path": "scripts/orchestrate_report_ir_pilot.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22752,
+      "sha256": "e34af942fe4482707cff55e37287b119c4089f33311e4e0aab64f42044377a9a",
+      "blake3": "ef65928a07583193404a36c11af9bbda919b01987f01e3d05d56ee93740a6100"
+    },
+    {
+      "path": "scripts/package_deck.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8147,
+      "sha256": "bde5b60e908471dfb45fced7b664c9f2dd88af16108ec47d83fb14eb7760f9b2",
+      "blake3": "75ca381c5e291d1eceb3110ecf8a5e398828c1001ad32d063bc0f5f64aa41847"
+    },
+    {
+      "path": "scripts/preflight.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17173,
+      "sha256": "e4d265fc79012dc5f94fdf136d8b54c859332e99ae9825038b19de77cd7ea956",
+      "blake3": "d3d8a9d67553cf5fdb390adca9b76712d313758f181aa29840a2a12df3ca7a67"
+    },
+    {
+      "path": "scripts/profile_store.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 81026,
+      "sha256": "2cca59e0d8b7c2b97b62b027228bac8ffeb08354ec14332756f25cbca8d010ed",
+      "blake3": "a641caaff085d676a56f3c8d63e8701ff1763183c118ef5fef48323009e1b1f6"
+    },
+    {
+      "path": "scripts/project_theme_layout.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9130,
+      "sha256": "5b44fb511dbe0c6ad9c2da445d110a9a0520a4a50335ed2ebfca5f4d81373d34",
+      "blake3": "aee7a1daa94bdf08cfc5e86561466bdca0590ec942616dcf76d92d18f800177f"
+    },
+    {
+      "path": "scripts/render_reference_vi.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 89489,
+      "sha256": "fb646ef9830882ec02ad407e9fcc507198739ecc06b9bf93cdd39cc0df9d060d",
+      "blake3": "34d0caeceae7a595148a35492ec6343d196855aef84616db3cbdba2aaf03168f"
+    },
+    {
+      "path": "scripts/render_visual_system.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15937,
+      "sha256": "97fdfe8ddad6076fb0eadad9e6bac6e694f0c340f350839a170251f4a9a7c216",
+      "blake3": "e5bff9d329498cb6f7ea4d4a0bd061aa5ec93789d7bf010750a96c2fcbbb1d40"
+    },
+    {
+      "path": "scripts/report_ir_core.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 39684,
+      "sha256": "c787108ac60fb89ffec99b6d54f33a0320a8740f05da18cdd0b88695c0622f64",
+      "blake3": "00da652d7e03a262054ff6664858d2caf3391dad33ca3f386416f919fce4fd7d"
+    },
+    {
+      "path": "scripts/theme_runtime.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 59032,
+      "sha256": "6f63ec0cb53b10fd3cdc63a10445485955d4a1dd5b881a2f615b3fb9f252031e",
+      "blake3": "f8966498c9324dcd45b63cbe929c3d3fa4dc5c8ae8d39c6cad9ca8a586292214"
+    },
+    {
+      "path": "scripts/validate_project_handoff.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 73944,
+      "sha256": "6a682d6ae0bcf0a7d6eb86db3246e61262a868b0b24163e8c804e61d8a11dbf8",
+      "blake3": "1bb24cffad19d1c2454cd454802fae0b4d49b790a23b2d0a5f39e7a9fc2733e0"
+    },
+    {
+      "path": "scripts/validate_report_ir.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1963,
+      "sha256": "fde995dc6d9c2f15bb41e587cc33d3374be01cd06aacf904e1270c9fbe28345c",
+      "blake3": "1c4e0aacf48b9aafee100f46a1bd4494b8641727d03466194cf333eb13d31c7c"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2761,
+      "sha256": "f08929c7cd776bbaf47fb48d9dc223bf07b244287c4112fbfa42213356c6c2b2",
+      "blake3": "d1138751433ffd5f4b9c474b677091879c0fc0f75785dc5530bb321b272063fc"
+    }
+  ]
+}

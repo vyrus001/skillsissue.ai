@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:5ac8ca9e9900c4b81e3d2ee6c19c3f50c1e0257c038051dec9718cd60e5ad415",
+  "sha256": "5ac8ca9e9900c4b81e3d2ee6c19c3f50c1e0257c038051dec9718cd60e5ad415",
+  "blake3": "7b796263cf72171697b59468e0bbc9678888dac10f1d0482fc75a0a35dd96c9f",
+  "size_bytes": 35732,
+  "file_count": 21,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6858,
+      "sha256": "75d492ec27514592eb865e40ef01a3e6cb959791d5a33dcdb405d4421fb872d4",
+      "blake3": "1790053c2a0aa503362ccdd0cbace288af0be672801ed61006b8773ad3b56836"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 133,
+      "sha256": "89c356f91d3322235f7deb7eccaf842b373bf19aa90cb6baf65fdf7e010c10ed",
+      "blake3": "3df3b0704dd4ee0ef102ba121507e830ed31d2ef5887da4427a51ba22517450b"
+    },
+    {
+      "path": "examples.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1157,
+      "sha256": "85ac776b9f878de0c209d80fb09a9b9da70478b217380be50726a807d1e33d2f",
+      "blake3": "69d423dea47334061aa667e515021b7cb7658c0b1d8b2e80f103a8e53cf2b066"
+    },
+    {
+      "path": "init-project.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1311,
+      "sha256": "5ee867641b2586eb6f1905f2acdec979312a8e0a9f4ca2d8c0f07f3d5ffe3e44",
+      "blake3": "411a191bdd4ac44d43ab74371322f4e08650f440227901a51a2dc5ff01ed6c93"
+    },
+    {
+      "path": "reference.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1814,
+      "sha256": "99d6ec55cd782bc8d00493152c2f1addbc7947a2538802e1c3e9de2154dbcfb3",
+      "blake3": "6fd49d2de0793e74bc1a4486d6497fdaff54078719de068fdb520c14642a24ea"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/fetch-abi.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2726,
+      "sha256": "2212ec522c7e6bb1ef9b0a46028b89505d9c923fa8a2bafbdbeba882c7ee91d3",
+      "blake3": "2be707e96739e6bd53906b3f30220b5e8cdabf4571d854c758f1d33a52c5a81d"
+    },
+    {
+      "path": "scripts/init-project.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1311,
+      "sha256": "5ee867641b2586eb6f1905f2acdec979312a8e0a9f4ca2d8c0f07f3d5ffe3e44",
+      "blake3": "411a191bdd4ac44d43ab74371322f4e08650f440227901a51a2dc5ff01ed6c93"
+    },
+    {
+      "path": "scripts/list-events.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 976,
+      "sha256": "6ad25c52764a41aed38c32226472306fd02c7e52d7faa0bf30d62aaf4c972856",
+      "blake3": "d0592e6336edee1b7f0534dc670c8ae8091145a666cc4fe69a65d0653542a907"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2541,
+      "sha256": "b25d997a55ee7236d859077467ea3bae351ca2f6b9558fcb29a4ac91c28f8c86",
+      "blake3": "3ebc431c8980ac9ce7ab8a2c15089c8df660c5f6f5b2b108ad8f42bb6017ded8"
+    },
+    {
+      "path": "templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 496,
+      "sha256": "0ffca7ab44fc4b62120b4da7a7d2b9d0f750fcdffe59dd077714f84eea74493c",
+      "blake3": "e686f45b4c2c8c1633cac2107b3b5b60e881a65bb39f194d1edd2fc33027b4f4"
+    },
+    {
+      "path": "templates/src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/src/abi",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/src/abi/abi_0x0000000000000000000000000000000000000000_1.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 369,
+      "sha256": "2f2759d4c0b7c368a18f66eddf6e083b664e9aa564f890879c3181b540287b7c",
+      "blake3": "e9df4b97979465dabf6c9ea7721e05cb0e0b839a5ba60ef720d69bf3c09d33a9"
+    },
+    {
+      "path": "templates/src/contract.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2368,
+      "sha256": "3c2ca4cb3c0b319b2c20870ecb8661aae089830eaf87216c9b449c7f8697ec96",
+      "blake3": "5c237e48d6fa273580584e9c65ec18ecd3d86aa1be867f62477af64f46994cdb"
+    },
+    {
+      "path": "templates/src/paths.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1125,
+      "sha256": "8a44ec074cb36fd70ccf10dec587d26f38310e60e02968d7f68bffd2e96446fd",
+      "blake3": "f0edce304315acb0bab4ff69aaf2cee1656d9cabcdc492e40f82e74006a4496e"
+    },
+    {
+      "path": "templates/src/s1.pull.contract.logs.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 861,
+      "sha256": "1864e0752b69ba54c5f413441765119b6c0aab36527b3131d26c29d59eec3c8c",
+      "blake3": "0caa7cc2b268421f5ce85cdbddcfd884d01612c616e1dfa4f998b324df4ef7c9"
+    },
+    {
+      "path": "templates/src/s2.parse.logs.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1090,
+      "sha256": "25ae19a6bc2452bf3752dc2aa6406f867fd5d2bc76f3ada1eac72b033a87c302",
+      "blake3": "292c9b83bf276db575d7028dd12f7c76e889494a921d4f389d888f2eb84cabb7"
+    },
+    {
+      "path": "templates/src/s2.prase.logs.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1078,
+      "sha256": "49d8a4bdf1095b185de5e2c16345682d016dc4fca2d67a677944129f05a368a2",
+      "blake3": "110146090d11ef8f7ce48871f87248a3108d99497aeeffca2df93bc8cbbf4aa4"
+    },
+    {
+      "path": "templates/src/types.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 153,
+      "sha256": "fa9b48c93dea9d536779b6cbbba818342e8b6f13747fa928f48e3cd5f08384c5",
+      "blake3": "d4ec95642a209f94f452d770aad6830083b6066b05bbd4243fbec7de6773ecc8"
+    },
+    {
+      "path": "templates/src/utils",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/src/utils/parse.log.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2581,
+      "sha256": "904fae03b938d6f3df815fd4d552b07c2da2240f825c0320bdcb38fb3f986650",
+      "blake3": "fc40c3a915b0e7fea7ead1adaa63426e5ccc9f9f12381d544ce9f01c8c88c066"
+    },
+    {
+      "path": "templates/src/utils/utils.pull.log.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4863,
+      "sha256": "5b65d35148092d44aefbeebc6b2fa261525c65f1d8a34ecfa6275b50072b3636",
+      "blake3": "8ab6d81376377d821eb82ce99992e11974ac317d80a8bd0ef0e2b467723589f3"
+    },
+    {
+      "path": "templates/src/utils/utils.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1628,
+      "sha256": "bb0af7e26ddca70c78949aef7ba3cfeda5634b73ac0240d59cd500dd3b2c9a2a",
+      "blake3": "59b8788250277758f8acec4e83a0cd22922e4489a3687aaa5ca0a7ca56bf4686"
+    },
+    {
+      "path": "templates/tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 293,
+      "sha256": "8138de9287553d7cd29dccff55bd2734a1587e41e1dfc5210aa03c7d5eee23c1",
+      "blake3": "fa026c1dc43a79d106431de34f0a339372074451570a071de2d7d88736b3c957"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:a2dbb5aec99644db44e1976840afc7d7ad637ee3669518526c303a1631be1f79",
+  "sha256": "a2dbb5aec99644db44e1976840afc7d7ad637ee3669518526c303a1631be1f79",
+  "blake3": "38865c18a0d1b3e61239336ef371b499a11ac17334fdf50cf669f73f3d37e80f",
+  "size_bytes": 75298,
+  "file_count": 7,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 903,
+      "sha256": "e82ed9a7be2438db0ab5f2aa2c63ff5fdfa06d87054cfd7b1ae1785c2623beb9",
+      "blake3": "5a050c07e8bd652a5d579b86fcbdb04ffb8ed1cb8e8564848b86751e2d591bda"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20945,
+      "sha256": "4e5de9bd6b33da61bf791ab35d6e28df431804b5f4619ebadd6a86a62f0214ad",
+      "blake3": "f530863e6cf82398249c4f6f766db9d5843470aff7a026569d896e7bb9c8f1e9"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 127,
+      "sha256": "7ad8f591d485ec2b097becabb32e7b567389d4470a980c2c9c263a487ca2be53",
+      "blake3": "d12e60ff406aba02c3ace5e7f57e5ad7d50ea365c5dca244128ab3ed069d7e78"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/sign_request.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8273,
+      "sha256": "ab795cb9fb0b029b65f8d70a5e24658d6060b7c5b830cf0a9c18fef7ceac6c69",
+      "blake3": "3f065da0e0cba77b24478e71647518da1c7c3dc80bfa77e1ee2587bf8a985c1c"
+    },
+    {
+      "path": "scripts/vendor",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/vendor/LICENSE-noble-secp256k1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1109,
+      "sha256": "394c2e6e5552e5dba202bee6390b9d6aa2754d657f5b9869e83b3d265a315501",
+      "blake3": "38833a94918e6e6e451add73debcd9e27e382f44d5cebb832368a2711f302523"
+    },
+    {
+      "path": "scripts/vendor/noble-secp256k1.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 41355,
+      "sha256": "0a6a0f409df1fc8fbb52381c71b196c8fda9f5d454f35b7812a7d14d82e970cd",
+      "blake3": "a99826eabc1db87ab2b07e6cb3bc589dcd3f77c4f597f6af449fed9d14273c60"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2586,
+      "sha256": "a5c96b3082b1e55f1ab102988bb11c57db4f650056806e063334026f5943c926",
+      "blake3": "ca7eb091868948889bebc342512155ee9e8bb6fc6e882ac1fda52e39cdc6113b"
+    }
+  ]
+}

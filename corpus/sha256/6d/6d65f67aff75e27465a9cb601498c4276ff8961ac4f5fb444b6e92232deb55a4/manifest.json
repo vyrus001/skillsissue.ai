@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:6d65f67aff75e27465a9cb601498c4276ff8961ac4f5fb444b6e92232deb55a4",
+  "sha256": "6d65f67aff75e27465a9cb601498c4276ff8961ac4f5fb444b6e92232deb55a4",
+  "blake3": "09e75f86408f2c3ef129fd105090cfa2c3638394aefc36d13e92c290ff24dbeb",
+  "size_bytes": 44345,
+  "file_count": 6,
+  "entries": [
+    {
+      "path": "BENCHMARK.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3867,
+      "sha256": "bb8ec586cb91adaa6f24740d0f90e52e7ab59f7b46071c82356a8082fc01d547",
+      "blake3": "5eb0c5dc32aee8afd6fb05c0949050ae3af520341a6efe117cc3075d996deac3"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6475,
+      "sha256": "6fc236f654906871b539a1c9a2675d3358cf92f812d11f3b24d93393ad40e245",
+      "blake3": "1918e4db07d8f211aaec221ab436a3c0be813be6b81fa6b358739cec58cd9f4a"
+    },
+    {
+      "path": "evals",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/evals.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6475,
+      "sha256": "45fae57ba317c79554ac72a26c8dc234c48ac380f959903daba6e68d959622b0",
+      "blake3": "45df35477083ea3cdd4ee28291f018c1e07074d5299ad3409ba0434bc0e2eb7e"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/migrate_from_nemo_flow.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 18558,
+      "sha256": "6a3c765a03ea21e7a0f3964648b22d8ce897ff86f44a5f85b1e0b364e50c4e4e",
+      "blake3": "13970412e6693674be0eaf607b03cdba12a03874536c69dc5eae25a1b16580ce"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4117,
+      "sha256": "bd24d9d9aa2ae33fa140351dafda6d58eb302dcb8831789f6b0177258faaa4cc",
+      "blake3": "a5ed46a2f0a072361d7f811492571b440e9bf182da552a7ee8ed63df639fec28"
+    },
+    {
+      "path": "skill.oms.sig",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4853,
+      "sha256": "4cb40274242341c1bbb1fd6f62fddbe191535969ac8fd6cad5e77be997328504",
+      "blake3": "3b25ac732833975ef121616e432fe9e5d9321becadae42cef2c29e855cdc67bb"
+    }
+  ]
+}

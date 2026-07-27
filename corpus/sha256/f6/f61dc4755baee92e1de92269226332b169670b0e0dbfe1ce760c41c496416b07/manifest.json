@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:f61dc4755baee92e1de92269226332b169670b0e0dbfe1ce760c41c496416b07",
+  "sha256": "f61dc4755baee92e1de92269226332b169670b0e0dbfe1ce760c41c496416b07",
+  "blake3": "07f75efd87eaf39c1212860517938bf8fffb4d56e75b73c74a305465103ca57d",
+  "size_bytes": 31678,
+  "file_count": 16,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1793,
+      "sha256": "31bf22f6d334a20d13dc92657b65ea487bc476302ce38f08fb4ae04a9cca618a",
+      "blake3": "246dd1a85615bf95b99f16519702931bacff2e1dff890a38ccbb800df39e51f1"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6630,
+      "sha256": "981191c4259cc9fbd722e5e11287ca991aedb2c245c154a296690c4823d80956",
+      "blake3": "0a58eb34ad65a76daf2abca65b5128c82e5f82336396de4ecbd7b61deb331f74"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 145,
+      "sha256": "12ed8aa61c018b4673629ba47b9112ed92e9c82ac4e05ac558f75594b2d93977",
+      "blake3": "a5dea85828547ed4a695aa476c1a163aa2a6ee65fb962218a675c693020e1924"
+    },
+    {
+      "path": "adapters",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "adapters/claude-code",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "adapters/claude-code/pre-compact.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2377,
+      "sha256": "c22bcf6f8f989252d1689089924a111d0311dccb00381830cc2340cf04fd7cb4",
+      "blake3": "fa3b39d767027009de6392b5bdadb3d484286c50738c670602ada3a59fea5be5"
+    },
+    {
+      "path": "adapters/claude-code/session-end.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2380,
+      "sha256": "3c6d444418cb088ec58dc9dcc96704318349215b12e192bda929bb7f49a2767e",
+      "blake3": "a0335eb4228d22396ff49284489b6b889f0fdcb784ffd4a04a5dede36027caac"
+    },
+    {
+      "path": "adapters/claude-code/session-start.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1265,
+      "sha256": "2b53cdbb9e61d7dc17f09d71e440006e3de5315f746a1f9b00e7dc229ea0a57f",
+      "blake3": "b35b9bc2b5e8201c6c8eaa00f882bfe4563416ff73792604fcab23ad0aad70e0"
+    },
+    {
+      "path": "adapters/codex",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "adapters/codex/project-rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1661,
+      "sha256": "b0fdb8b1521cb922ea8b0e001f180d55abbd9a865dffa23d5a5a9536ca4b384b",
+      "blake3": "445e0029f3fa6a493e5ed395fc536fa1d6bc7ba8753c95fcd87b29e566c754d6"
+    },
+    {
+      "path": "adapters/openclaw",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "adapters/openclaw/usage-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1019,
+      "sha256": "8873d30ddd8e0ed1aeacdde94737fda2739a3c006fb37177a0f69bca2823464c",
+      "blake3": "7929eff43fac19db6efb789638147a2fa88e5d02a254d3d0a93b3d82ccfd9bc9"
+    },
+    {
+      "path": "config",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "config/obsidian-init.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1535,
+      "sha256": "ee776c6123d466f47117a02dd7868ae335d284fd6f54cf4fff6c4acd1084cae0",
+      "blake3": "781f3d5422d91bbed7c381082779612631b46a151b225421e08c12c44977e098"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/create_order.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3304,
+      "sha256": "409a3b7e442c028a5df9f29dc45818e1d6885646266f78e8f7b037a3a0dfcbbd",
+      "blake3": "d6b1c4e1ba4a9f2f7020db4c70a6772965064c265c147a01c7d260ef8a56a18b"
+    },
+    {
+      "path": "scripts/file_utils.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2170,
+      "sha256": "969c99a69dfe089fe35495d5045ac48862c45fefbcedf135e23ab37a5cec6733",
+      "blake3": "739388c29cf6db860f9102c73da9ee21420b4d26d82cea8327ca2a1bc303d881"
+    },
+    {
+      "path": "scripts/service.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2904,
+      "sha256": "9af0377778745db53169bcb6a8b1151270aca19331a62a081b5e444c56ee93d1",
+      "blake3": "73169910e29aad1d75dbcb6b74ad3f9b3c98e37458fcd1b3b4472feeaee2c2f0"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3026,
+      "sha256": "ada09bca3757aae64673482d199456cb3bfdfabd0881722b1bf9bd453dc7c8ee",
+      "blake3": "bf884a61f0ae63775523360ce137c8d268fd4de5c40df84cb936e43657ca39b7"
+    },
+    {
+      "path": "templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/任务清单模板.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 450,
+      "sha256": "0f244f1a94bd78375777da43d573d5ba1ceb716e1d10cb0a0d40357a5bb2affe",
+      "blake3": "c14f357ee46ba09b62023cb587e52e85d67c89fdf73bfea5c958e5f0f05e1f6c"
+    },
+    {
+      "path": "templates/决策记录模板.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 456,
+      "sha256": "beb5a107b4e05322a0523675229a44ef83a30ce388b4f640188d17593a37f446",
+      "blake3": "b7263b9b645c1b66a8e024d399b45e86e4785df07d4dd24ffc366c91239844e7"
+    },
+    {
+      "path": "templates/工作日记模板.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 563,
+      "sha256": "309504b4dea162872fd746daec3c880d764a005d8e114c47dacaa86aff2f9c9f",
+      "blake3": "0919379571d412f42fdf6cdac17f22f5991cc4eef3de2b599b55e86ce51d4846"
+    }
+  ]
+}

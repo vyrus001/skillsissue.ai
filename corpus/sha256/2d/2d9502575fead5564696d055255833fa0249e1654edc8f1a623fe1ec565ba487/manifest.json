@@ -1,0 +1,947 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:2d9502575fead5564696d055255833fa0249e1654edc8f1a623fe1ec565ba487",
+  "sha256": "2d9502575fead5564696d055255833fa0249e1654edc8f1a623fe1ec565ba487",
+  "blake3": "9953df20a0419846b4208d80640debfb2e8ad8d2466ea0e516e6e5a3756a0894",
+  "size_bytes": 375797,
+  "file_count": 114,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10275,
+      "sha256": "693699e5e6fb042133ef29708fc1f6b16ada35e0e1882e625cdbb0aa6f49c43c",
+      "blake3": "7190feb29cd726d367bfecc229ee6636959d75e221f8b2e77c233840fb78c4b0"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 141,
+      "sha256": "1be8cf8e21c350f4a1ae6e4ff3218a8b1f3174a95a0c1cfb442b4332bf2fd3e7",
+      "blake3": "a15b365e82cba67c4969a1df3d7c3f1ca34aad6eaf002f3dbbbf04cef313f060"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/iam",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/iam/guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24426,
+      "sha256": "ae6b80457f891822404947dddce485360b7b01f8499cad251b377d5d165a6c7b",
+      "blake3": "631bb0280233c36577d8613d9fb25fa6ea972bbb7ee093211b314f7021da1dad"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 51,
+      "sha256": "cf9551d4e1c74d8bb164085245b7b6ab9c3ec359d7639b57a95cf845c13f1099",
+      "blake3": "e7eff3228e59fe46e33d043b2385028529e16e7ffa7e001d7120c06ebdd6705c"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/check_env.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2684,
+      "sha256": "f25ef7524670d4c9cedb8f765a612a79d5d14dc65b0e8b25155dc27daaa05cd5",
+      "blake3": "100319e42a029a07650f06c0dfa5d10f031a8331c9784b8e3ee9f403b4ef96b5"
+    },
+    {
+      "path": "scripts/check_env.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2601,
+      "sha256": "313adcbeba427573b4fe1ea3d91eec68e3736d6ff14b203fc1f8791116bb46da",
+      "blake3": "62f937654a540d37dee0c7a06d88d68225321980f99f554a9aecf38b4e6e6bb5"
+    },
+    {
+      "path": "scripts/config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2075,
+      "sha256": "15fd1af7178c118f02f8bd7386233cfe8e810416ec2be40287a0e1cfebaf69e5",
+      "blake3": "0a7e52922e22e0ed37432d10ac70b0758554d76f15c64d9c762e1ccedac3a2f1"
+    },
+    {
+      "path": "scripts/ensure_env.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17747,
+      "sha256": "b5c67cf5a74fef66265498111df942c70a28f94bebdcc5111144e7700325303e",
+      "blake3": "4ad0930358aac7e91fe3ce233cb5812dbb2765cd07403f6b81069e0277721058"
+    },
+    {
+      "path": "scripts/iam",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/iam/check_all_projects_permission_for_agency.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1852,
+      "sha256": "e752455211a6fc5f054a1bb4f5fbff508602e1e6d77f9a5c73735d31d47b654b",
+      "blake3": "6b2fdd97971f93708afa23e824455de3a5aa1ecb7cc8b7fb675d6560488c1483"
+    },
+    {
+      "path": "scripts/iam/check_domain_permission_for_agency.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1835,
+      "sha256": "7470a9adea7d580a23aa4c9df6dd642363c25651dcd54461de506c606d1cd48c",
+      "blake3": "5c606425d92eba493f46dbd174ead7090810f13b67547996f02e0da5a84cfced"
+    },
+    {
+      "path": "scripts/iam/check_project_permission_for_agency.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1861,
+      "sha256": "3655e43e3bf6fe7cbdc4c9d351fd8d341c277dc29f62392b8f5072ec2853e8e7",
+      "blake3": "fecd0aee1fc6eb0a36587b3367144ac05f96e23318190d8e67fccb5572449ab3"
+    },
+    {
+      "path": "scripts/iam/get_account_summary_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2874,
+      "sha256": "25f3b49f07392c135fea6626eb161fdc6244ce5eb88707465b4bbe6a85257fb6",
+      "blake3": "5e58efa226ea3178872390c26a0520eaff223640d8ecb87f5c8b84de5295f8ad"
+    },
+    {
+      "path": "scripts/iam/get_agency_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2438,
+      "sha256": "9ebd4e98bcf8741f8a7d032d30cbe54557d467f4b7b45766135830db37ef92ff",
+      "blake3": "722d821b7ebe8336a6f28c5d1bcae926db4c3cf4b518a682e177cf5593444dea"
+    },
+    {
+      "path": "scripts/iam/get_asymmetric_signature_switch_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1726,
+      "sha256": "30401bc236795fa90a2cedf912861c777cabc252f19a63651aac2c6d07658bbb",
+      "blake3": "5b67f07781b2a914060fb36aa679a4527594c647fa16dc47a22aece1cd5e9a1e"
+    },
+    {
+      "path": "scripts/iam/get_authorization_schema_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3574,
+      "sha256": "6bbd632ac767fa8087d70ba28aa7cfbe4ea5b45634ad57894a1ae430326897a5",
+      "blake3": "067ec032c8d993be0f4d27100c420d59f99451af64a54013e0e4583f60514579"
+    },
+    {
+      "path": "scripts/iam/get_feature_status_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1574,
+      "sha256": "ec089c730362614bf33ae9e759e70850d7fdd66ab5436196cfec68b1bebc6079",
+      "blake3": "649911985b325d8d052a7e071ad2d91ba81a7edcf119671a71b024332ffd4af8"
+    },
+    {
+      "path": "scripts/iam/get_policy_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2496,
+      "sha256": "d18537309bc5add35195f303092ea8711a994df55f828963a36865f5b8cc0f37",
+      "blake3": "6dc6a70493e63fd4197700deafd28cecb6cf9d73402f0c7266879d48c09ab580"
+    },
+    {
+      "path": "scripts/iam/get_policy_version_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2119,
+      "sha256": "5efeb683bbb6465bb444637c8b9b0f833647d594bbb622eb94687e87493d359a",
+      "blake3": "f164af4a8ca6eb4b946df7fe0491d563ae16e43d90b1c02107a98ac891c25486"
+    },
+    {
+      "path": "scripts/iam/get_project_id.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1768,
+      "sha256": "cc069acf9928e50ea6f626a395c4650dfbccae8bcd438e550e3cae27813e9c71",
+      "blake3": "e496167d283ce140e62e3a4e9d132b1b03d4de7500af86dfe490c1b5cfb3f415"
+    },
+    {
+      "path": "scripts/iam/get_service_linked_agency_deletion_status_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2226,
+      "sha256": "26d8dd54a7e2241c115ffb998bd6ffab71b76c56b1fc5c5a04d063f0f5bbd65e",
+      "blake3": "4761a2cf3df6fba9149691988664a5b23f61182037b4f0822592e7fd956a0c3a"
+    },
+    {
+      "path": "scripts/iam/keystone_check_domain_permission_for_group.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1845,
+      "sha256": "4fef7da903d50eda6ede68b3418d2f0a4fd06505e1e981f91c82d8a641c0d85a",
+      "blake3": "479b87350a8664066672b38c9f307751a84ec3a93e6724089a1a549c4543ec2d"
+    },
+    {
+      "path": "scripts/iam/keystone_check_project_permission_for_group.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1876,
+      "sha256": "274cb13d79c792ac09e67f706cee4ac36f7e619253adff7cba828fdb5d6048f1",
+      "blake3": "03aa5c7bef8d7ece110f9a3db0a23ab04d21ca31118485273b0c0ed2bb72b620"
+    },
+    {
+      "path": "scripts/iam/keystone_check_user_in_group.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1692,
+      "sha256": "d720dfd3f833bf33f1b6d186635d7818427fb2d98fc3f7351955bdaf0a7f8159",
+      "blake3": "16c89b52e5c9fce334197d8f26365a4931d1e78fc4ede5c0b79834e9db56f4bd"
+    },
+    {
+      "path": "scripts/iam/keystone_checkrole_for_group.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1792,
+      "sha256": "4ae24962e33281a33d7ba18066176c01a68d64186d2f3c0e1ee8fef1fea0e94e",
+      "blake3": "8043261a23135111b32df085ac6803e1e0ee6e0b6ec62f73432aafbe2f3ed5b7"
+    },
+    {
+      "path": "scripts/iam/keystone_list_all_project_permissions_for_group.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3703,
+      "sha256": "b273f073c2973df596451c891cec5f6b27d1b2597b1207c1442449e7db3c1ff0",
+      "blake3": "8c73767624601e93d7bd4558ef4817926d362d69d9c183603f950a8c82bcb38e"
+    },
+    {
+      "path": "scripts/iam/keystone_list_auth_domains.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3138,
+      "sha256": "4f23218a9102449eebe89b436cbdb4248d39ec45d908f1244d883c879ea8c2aa",
+      "blake3": "fed7397a9f465b8675267de3d17ce46841493ba42eca2c9e1c83ad8d4cd7688d"
+    },
+    {
+      "path": "scripts/iam/keystone_list_auth_projects.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3294,
+      "sha256": "253eae4df4c359e2b4c532d076c0ae4c46185099b127110bba154db819359e4a",
+      "blake3": "1d0faeed37f923ba604456c62021e3ab0ec8cfd06891e3247fe52f4f4d3fdf73"
+    },
+    {
+      "path": "scripts/iam/keystone_list_domain_permissions_for_group.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3750,
+      "sha256": "9ee5d8af0dd289ea79f2db975354c233a6a9bbea330557e6dce36aa66d309f28",
+      "blake3": "04698e7760eef69863c22d6b6290a15ab446d6c1b58ba7660e24dc8adb390164"
+    },
+    {
+      "path": "scripts/iam/keystone_list_endpoints.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3780,
+      "sha256": "83182c8db59beed3fe52f187d3ca12bbd87eec0b495e13f92938f59b99724590",
+      "blake3": "1b83d8ee159c9e154de70b4f76470f03ad8e5ff15e0d9d50ba60344b8f239a68"
+    },
+    {
+      "path": "scripts/iam/keystone_list_federation_domains.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3159,
+      "sha256": "42fab7bd82117a63dfca4685288236307b03be5dc38d459c23a2b4b5a118209f",
+      "blake3": "5bc0234a26e95cdedac39e4cd33845ee4a92d519c6eb672d24ca1a0b75113cc8"
+    },
+    {
+      "path": "scripts/iam/keystone_list_federation_projects.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3315,
+      "sha256": "e5345d7b80b774e573c54c5749c7f17b0bb4a8ed906448a8d2c0120ab6ab829e",
+      "blake3": "fa24cf446cced8ac4f2f410b7089850e28931038dfc2393fc860fcec34a27fef"
+    },
+    {
+      "path": "scripts/iam/keystone_list_groups.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3491,
+      "sha256": "57b61e287786bfa9de7eb94b992afd80422091911fede15ef81f5caf82762440",
+      "blake3": "ad5a9863edf02c9a3612d38f6d9ca21387a0efaad389f273652b84b3f345d332"
+    },
+    {
+      "path": "scripts/iam/keystone_list_groups_for_user.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3415,
+      "sha256": "dbe79888616f6afee02c985e54aad48823b2a1851da45da63ff1f189d78c5a65",
+      "blake3": "088aac8922d5319214419bf70b4f448446f4e3aa3e5a2d8252e631ff49fff06c"
+    },
+    {
+      "path": "scripts/iam/keystone_list_identity_providers.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3337,
+      "sha256": "49d8337c164341ab2d40899f966372187246e1797db0ffd82336def94bf87067",
+      "blake3": "6c084985aad1c73787f2808b948178617110ef2cac75214a5becca14f3ea341d"
+    },
+    {
+      "path": "scripts/iam/keystone_list_mappings.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3022,
+      "sha256": "1e8b092a7eaf5676a319016707d304eeacff50eb6c229d21d8e54636aa47e31f",
+      "blake3": "b81fa5318fc90b2dcff8fb0ab710fdb6b93ad5f8bb5417779e75cd28edd69a62"
+    },
+    {
+      "path": "scripts/iam/keystone_list_permissions.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4985,
+      "sha256": "2d6e16b852ecb5ffd3596bd62d68e61254065bc160019f0d10e4ed91c56a5613",
+      "blake3": "56a97276bd0c5604b8e45e9827bad611e01fbb80c0f7e992c43eff726730129c"
+    },
+    {
+      "path": "scripts/iam/keystone_list_project_permissions_for_group.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3782,
+      "sha256": "98d6e9a88d167f2dc3855dc84f359b8d78c7f5878736d4f375f2951b101aefb3",
+      "blake3": "6dff6e3ab90cb320bb942dcdda9757100da8900275737fcb21e89e6e424dcd54"
+    },
+    {
+      "path": "scripts/iam/keystone_list_projects.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4518,
+      "sha256": "720f76904e6af2359f83e0dbfe39582364ed5174ef2a2819a25ec2fad31c9e56",
+      "blake3": "befd5ed42c488013b62fedc2fbd3ca2e25e0a28dba7469220ce18d36d1585af6"
+    },
+    {
+      "path": "scripts/iam/keystone_list_projects_for_user.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3483,
+      "sha256": "8f5b02103e20e4dbbbfb371641c63afb044389cd5de70f29a2046f78576b96ea",
+      "blake3": "b631d2ed9c86d9667bba05d885951d54f9a8cb1ef760b2f3abd9916bdd6ec704"
+    },
+    {
+      "path": "scripts/iam/keystone_list_protocols.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3164,
+      "sha256": "ff32e190bbc3a1a204719716a481061ab7ab4c921e171117c830eaf788dbe949",
+      "blake3": "63099328e0e8295706b944e3e00668bc16479f06b580a6b9df9a40cebe0c27bc"
+    },
+    {
+      "path": "scripts/iam/keystone_list_regions.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3144,
+      "sha256": "ffb1578d7fe5ba1aef822c5b2cb4de93ac009425becb6e28724f0dbc834b44ae",
+      "blake3": "24a6c3ef0813ece3dab2440bcfa8d9c91f4155f97661cb5100c65c2acf6367f3"
+    },
+    {
+      "path": "scripts/iam/keystone_list_services.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3325,
+      "sha256": "855ab9203e24caa7c90f3f7ddcf7ba3c2fd0c6e3626c1acea1a1bb55dd595704",
+      "blake3": "281b6582bad33f1964ea22acd98b52d8d6e7b65a5e1e69e5a24c9e2a389a8699"
+    },
+    {
+      "path": "scripts/iam/keystone_list_users.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3867,
+      "sha256": "fa2b4b17f9f10348a20efbfc7a2755324f78c02f8e35290de8d3474043626f31",
+      "blake3": "4c2a728ab3d25e1184feff5b39aa3a75603bf992b57279ac1822ae70eff1aa94"
+    },
+    {
+      "path": "scripts/iam/keystone_list_users_for_group_by_admin.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3605,
+      "sha256": "6f6d73076e5237977d6fc382d74004c5fd7223b82d49559e3a6de56356acb096",
+      "blake3": "421cb0498a3160f5fc6d960b1091edf1199a62d6e246816a30f0a82e7840d9f3"
+    },
+    {
+      "path": "scripts/iam/keystone_list_versions.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3189,
+      "sha256": "6d134134dd377827a1bfe212d9ce1522c5d86232cf9c5584821d6073e7f6b43a",
+      "blake3": "0d150f3863099e953400e52c8d17025ca1cfe55d4480bdc8115898ee104f73b5"
+    },
+    {
+      "path": "scripts/iam/keystone_show_catalog.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1796,
+      "sha256": "d67798dddaeafe0c4ee0a5579ff9ed00420a6f69ca178c87ee7165a5f6fe4c3f",
+      "blake3": "1d018a199764a051a7c0251941f632965a582b4f57785a60673c299c36758df8"
+    },
+    {
+      "path": "scripts/iam/keystone_show_endpoint.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2110,
+      "sha256": "a7dc593f00fa5ff439d411ef6bb2546c82c5dcabe5e564da6aeb80643dd213e8",
+      "blake3": "f8486788c6548781855b6fc3f09bc153f7bc28efc0b4771882e5abdd5440216e"
+    },
+    {
+      "path": "scripts/iam/keystone_show_group.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1973,
+      "sha256": "4bd4cd9be3cce63080a71a2f92e7c0e8436bc236d4d5619d132ad1a88095db93",
+      "blake3": "5c3d7cd21126cbc2ea027a244c02bcc27d20ee86b4f502ea44c77b5cb868c85f"
+    },
+    {
+      "path": "scripts/iam/keystone_show_identity_provider.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2057,
+      "sha256": "f585e5bd967aa50e57029eda585663cede18c071f9d2470b186d623e2ab8a762",
+      "blake3": "5dbf0b83b1f46292cd148e4472168f1aa1cee59c8210ef8cbf46630df08767d2"
+    },
+    {
+      "path": "scripts/iam/keystone_show_mapping.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1761,
+      "sha256": "8adc83747c2168ede400027891f41031e1156da174c0881d006955bfb754b076",
+      "blake3": "caca37bd5ca8100b2f556173f7ee4a1c3e3ba47617850f388fb1f0b43db6a961"
+    },
+    {
+      "path": "scripts/iam/keystone_show_permission.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2472,
+      "sha256": "d8857b06c60cbfa9e9f9115670d79be46e49395866cbb20512803a1ef573fc92",
+      "blake3": "eb70c67e5c4399215bbaa09f321f560b0fcf8a218b2c83d1bd97a0d66925f19f"
+    },
+    {
+      "path": "scripts/iam/keystone_show_project.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2101,
+      "sha256": "2e3b26fbbbdc68e908a82b6eecfc31899a48e52909e454925afbe8867fb143ed",
+      "blake3": "fed688e1a2e98344b02ae77ea51595c26b845f5221e1fe4f2e8e5a21a34477ea"
+    },
+    {
+      "path": "scripts/iam/keystone_show_protocol.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1966,
+      "sha256": "20d4f350e4b7e96852cb932761eaf005a3e11fe3e2ebf425bf7774de81ab20a2",
+      "blake3": "26e93affecdd66206243bab436d75e813a2d8326b1720c7f43620e935bee0abc"
+    },
+    {
+      "path": "scripts/iam/keystone_show_region.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1994,
+      "sha256": "17f07c3fd8a2db25dc2416005b25747a08001db1e5bf3c2df0a7132d6964a958",
+      "blake3": "dfaab1331578c7abd2c83586c20b98c968d8184598aca05224056db33f41c995"
+    },
+    {
+      "path": "scripts/iam/keystone_show_security_compliance.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2022,
+      "sha256": "09cc22be3a9c7da83167981848bbe4a80a3be68063a415e897c5f2053c6f11c5",
+      "blake3": "d9ddbf28bd2168f8be763e0ebff1ddf9bd7419ceabb8915e2ade283ea9926ab7"
+    },
+    {
+      "path": "scripts/iam/keystone_show_security_compliance_by_option.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2165,
+      "sha256": "b29eaaab5c423cbc367fbeffa10f3334b4d8d5f060be5170ccc4079c37548905",
+      "blake3": "a6fa775a048731702a62b823a649af214b29a472becf755483e17128046df84e"
+    },
+    {
+      "path": "scripts/iam/keystone_show_service.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1949,
+      "sha256": "16bebc682122d53a5e6eda07efb48c9a0b4bbd6577dcfd56a81da83b7a2bb1b6",
+      "blake3": "8615632c8713c3e79a385d0b4f3c84c53657eacbd3f7d37239f4d2b1203aa7c5"
+    },
+    {
+      "path": "scripts/iam/keystone_show_user.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2307,
+      "sha256": "c0967fe0781a6b67ceb5311aad86337c86e3742399666fbc22b4a082c67c3107",
+      "blake3": "9609a6bff41ee87ae3fd4004435dd073769628ebe28933f4b5433b21397f1d89"
+    },
+    {
+      "path": "scripts/iam/keystone_show_version.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1760,
+      "sha256": "06aa38ee8929fb60480d73b23246a97af938f2e0712a06af4756c29b5a9050da",
+      "blake3": "85dee615cbedfdb270a01d2407582902da4cac766c6f6638320f43a387427de2"
+    },
+    {
+      "path": "scripts/iam/keystone_validate_token.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1940,
+      "sha256": "c0b60bcf96c829fed2c787962c7f4d676e75bde7041fb3914ecd16607440f125",
+      "blake3": "cb8071c4a59fb9045702759770b13035abdb3ac37317622a394de003ae0acd8f"
+    },
+    {
+      "path": "scripts/iam/list_access_keys_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3206,
+      "sha256": "005bdd66eef6e9b93a15de58077a1989389d710475b0893a7b9ec51cb5f72233",
+      "blake3": "90622bb28a3157fbd06b498573e2ddc863cd0679ecb1098299dc2712d15fde76"
+    },
+    {
+      "path": "scripts/iam/list_agencies.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4682,
+      "sha256": "be0cee41d10df46fc9d653d7fb057fa2809a17018e7f2fa17abbe8acc9d0af9f",
+      "blake3": "5ed902d2efeaead91511dc63bf433cbb6096411653301181403c6cb512593a62"
+    },
+    {
+      "path": "scripts/iam/list_agencies_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3384,
+      "sha256": "35e402e50c7a409a46c06363851ce3cd66d695b3f505061dbd8dfab426ce7526",
+      "blake3": "0d3f105b78cca01fcd51ab054a1c66c15a2128a401ff725f44369cc7d6aa704b"
+    },
+    {
+      "path": "scripts/iam/list_all_projects_permissions_for_agency.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3284,
+      "sha256": "a9356c93a7717aab3aa693059ffef656095eda5400b6aa6991efe55dc645a772",
+      "blake3": "4c7789d08ef0e4c66a3e8da07128eef43f9ad899d9c79b659fa76b62fa590e6a"
+    },
+    {
+      "path": "scripts/iam/list_attached_agency_policies_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3190,
+      "sha256": "ebdb7bddac15e7020dfe5e104e243bf6c1e06906d525a2ae8719f55ca79dda45",
+      "blake3": "c051e82fdf66e50c02c4a3f8db42ddb2863e2c2e45bba1f96c53bddadb6affed"
+    },
+    {
+      "path": "scripts/iam/list_attached_group_policies_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3953,
+      "sha256": "823e5706b2e1c95097d8cd22bacc085ecb040c73ed84203a6a842587199bde19",
+      "blake3": "7ad10c51338f2a5fcd3fad2886c5a5bf5b9b83b6be8e6b48f74674f8903ac4a7"
+    },
+    {
+      "path": "scripts/iam/list_attached_user_policies_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3927,
+      "sha256": "962a1ac5fb02f793cc4878996ed9e989d4cc0c6354a74e5f3e63f5deeaa16b2a",
+      "blake3": "b67da351ca24fac9948858cecdf3cf064003d6e7127a867b0722d14c85ba6925"
+    },
+    {
+      "path": "scripts/iam/list_custom_policies.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4401,
+      "sha256": "9b54806213b690c9bbeb1e4d1bdd877b924328216ff23910f09b34b96e82907e",
+      "blake3": "bd89ad85c036e69d14d9422b6ed0ccec19352c8b448c5057fc5113978ed14fd7"
+    },
+    {
+      "path": "scripts/iam/list_domain_permissions_for_agency.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4736,
+      "sha256": "cdc3f437d483022f609ae1523437d4e45555d59fdfe552abc563d98ee6c209b4",
+      "blake3": "f85513bd1c2a8c8f4e946067e1d69fccadfed10cf57689c4b3b6099b36aa0ff3"
+    },
+    {
+      "path": "scripts/iam/list_enterprise_projects_for_group.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4039,
+      "sha256": "76ab0915d9a3a2e7c7b901b53205deaa99b90beafd41d7d1433f74a6a37f8a6a",
+      "blake3": "c61ec7241462cbafd3ef43a6fdb6be1bfdd863709dde9d0366b7f82a5344fcd7"
+    },
+    {
+      "path": "scripts/iam/list_enterprise_projects_for_user.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4009,
+      "sha256": "f01c547e3239f809dafac723fe2e05d2bf4b5c3aa430ef368a6f86c31c07dfe6",
+      "blake3": "f74747ecca8f94febf0fddd2858147fc8f3d6e13109077cb7ed6a58454177c78"
+    },
+    {
+      "path": "scripts/iam/list_entities_for_policy_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4009,
+      "sha256": "65e23125fd9cf190fd1b0ca6b2657b231f8ab1a6321977d00fd109c41cf2038d",
+      "blake3": "329d6704760ed58ac42b474e97190b42f13ab0543ebe16b30b01a737d30836bd"
+    },
+    {
+      "path": "scripts/iam/list_groups_for_enterprise_project.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4262,
+      "sha256": "ad4288a03ac449927ebcf9e127cdb02df9b070b0663d9ee30c359a792f4fddf9",
+      "blake3": "5c712fff1a04e697168773ca9a102ff51b49ed9cd8242c4202b888611bfd6839"
+    },
+    {
+      "path": "scripts/iam/list_groups_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3892,
+      "sha256": "f75f071c16672c5f99af1067d6012b3506cb704cabe15753cf29d58d01f45e4a",
+      "blake3": "42ee3b6c8dfa1a7474b476e5fbd74e3387994545f582f73a7dc56bd0b662c712"
+    },
+    {
+      "path": "scripts/iam/list_mfa_devices_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3843,
+      "sha256": "24d5a6c8aa7f2b1d9e4c444a2d3ddad9b9ac2487da3a0a0546234617090b19a4",
+      "blake3": "c567dd29a8b90e4b0103a2473e182bd02a8907ae71ed71b1c197575548590a3d"
+    },
+    {
+      "path": "scripts/iam/list_permanent_access_keys.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4191,
+      "sha256": "ecf7efc64f1eea8225540cf83e8a418ba72f54c3496d8fa25a2d2aaf794e93bb",
+      "blake3": "3593f5dbd2f8a5355da68b9872aa3174036facadd45d25ad5385e810af169dc7"
+    },
+    {
+      "path": "scripts/iam/list_policies_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4518,
+      "sha256": "c1ff76f086da0673a1a34d04feaa74c109b39e7c5fe75bd7b00aebba37e91d21",
+      "blake3": "190450e67130d6f67b80dc6f05b8211f33ec69454ec75d68cb07efa338b99ebd"
+    },
+    {
+      "path": "scripts/iam/list_policy_versions_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3873,
+      "sha256": "ff6371bd4ffd5d1989102dbceaf2d8cafb027ab1830096c0c23e5619982fba61",
+      "blake3": "237c23e591631a79576b891a27958cd7128e97cc6fc9a29c4c4065b9a18cbcf2"
+    },
+    {
+      "path": "scripts/iam/list_project_permissions_for_agency.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4701,
+      "sha256": "b27582b70d1ef7ac72159f4c99581ba7c2223a737f5a73f18ddea4743010fe1b",
+      "blake3": "ca030369add8f6ba816f08dcb3370a348a5d5943794cafec458035b1f449bf90"
+    },
+    {
+      "path": "scripts/iam/list_registered_services_for_auth_schema_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3641,
+      "sha256": "264be55b508abb1f70d3dc3810d1c2a2cfd9b9e200e3bcddc0f148e9318ea5fa",
+      "blake3": "7b3acce0fd2f2c87304a45960055737fd74187a69a172901477524e831cb91e2"
+    },
+    {
+      "path": "scripts/iam/list_resource_tags_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4073,
+      "sha256": "576445d6c052971e5c0487b8468d9976b0b8dfd90ce2c1b5d01b77a6f00702b0",
+      "blake3": "307a11d82a6ab3a2f10414b33b054a93de7f31bf5356c2dff0cc042818faf470"
+    },
+    {
+      "path": "scripts/iam/list_roles_for_group_on_enterprise_project.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4548,
+      "sha256": "3165f23888bc9d6a6fcb960e0f7b407645a141fdb75e437328de49cfeb387fbf",
+      "blake3": "d4f72ef28dc0ac8f804c4d5307dda4a24f1c10467935adb49a78701cbaf60fb5"
+    },
+    {
+      "path": "scripts/iam/list_roles_for_user_on_enterprise_project.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4526,
+      "sha256": "57bce574518649b3823d7b3253ea7b5d79dae16c69b2bfc1bb6e451fb813bf53",
+      "blake3": "cb82e59823c2e18231e84ec33e6227bcd279cd01f0c433da0afd1e23f4a08097"
+    },
+    {
+      "path": "scripts/iam/list_service_principals_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3983,
+      "sha256": "cafc1d042466bef2e96ccadf30ed907f52799d5b35c69a03ee0ae602a0988c5e",
+      "blake3": "826baa4791bb6b68fca54507fe869fae9dd4c77748088aaae27f99c322b817c7"
+    },
+    {
+      "path": "scripts/iam/list_user_login_protects.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3939,
+      "sha256": "5f179f11743885f4b4070e6d09f2beb7a9839844ac72ce645ac44aa2ac0dbe1c",
+      "blake3": "6ac9a58ca3451e2edaa1b55ff9399661179d784a89ac1f99090a460afff7c8ff"
+    },
+    {
+      "path": "scripts/iam/list_user_mfa_devices.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3863,
+      "sha256": "0ae333851cf1378a889ecaf7d7fc326b333cd7828d2b4ab82ce7f38c3f4253f0",
+      "blake3": "e163d10eeb117c2ed1fcc8016607f9a685c7490d38728b0136cb1f40208fecdb"
+    },
+    {
+      "path": "scripts/iam/list_users_for_enterprise_project.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6308,
+      "sha256": "c4940b859bc9502470a04cd401d4a290361c926c15052eaeab6a340e362409e6",
+      "blake3": "21d67a3c94f1e801461961ae5df85fb0427fd4263ab08768672bec77c860dbaf"
+    },
+    {
+      "path": "scripts/iam/list_users_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3924,
+      "sha256": "0e38faf7d0dabd7fd2cd86804ef4df9ac9727f34665f4d5ceef486edb5af20c2",
+      "blake3": "f23763d2ddc0bcefb0079e69cb4f443a89611fe134182e7d1bdbdb39c71ad351"
+    },
+    {
+      "path": "scripts/iam/show_access_key_last_used_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1911,
+      "sha256": "7c99378c1ad4ccc97a4139e34618117861333e887b14ca3fd42ec225f3041166",
+      "blake3": "22e7edb668a05a4e7a529433aa0bf8a7fb70df3167538723eb833f9d8b9fc336"
+    },
+    {
+      "path": "scripts/iam/show_agency.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2332,
+      "sha256": "c7495843030f1f461045c96ecb153470e82a423aeb900864413058d7c1185023",
+      "blake3": "3dc66b38d71df260142dac46c145d52e5149e560243f9c386647220df8e38c12"
+    },
+    {
+      "path": "scripts/iam/show_custom_policy.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2625,
+      "sha256": "7522d2ba99fd412d1f6f35789834826d97d17d25b3881fa2007939abe8158a8a",
+      "blake3": "f5e75966ec3b0555b638ec1eaf46b818fc8434671953ab9c16d80935b169e375"
+    },
+    {
+      "path": "scripts/iam/show_domain_api_acl_policy.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2211,
+      "sha256": "b508a8cc92819c86e8f14ecb52065eba3d0e452cef3b58e55ce85ae50cd6f915",
+      "blake3": "a66dd15c5c594bc5b3b70e603c28ed8d12a25b1f5f2c45aecd24d3286603d202"
+    },
+    {
+      "path": "scripts/iam/show_domain_console_acl_policy.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2507,
+      "sha256": "a7d4f363d5dd79a97547e141c41251a9993ace73ffaf58db804fab26f997440c",
+      "blake3": "07b23c5e7b8d65f8c930b38f2435bc27bef58e014505fa5c0a7bfe3869a2e9a8"
+    },
+    {
+      "path": "scripts/iam/show_domain_login_policy.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2415,
+      "sha256": "6a19be8837e5b291dd2cece4beddcd4ecf63de5aaa65745cf5ea6120650bd125",
+      "blake3": "c0c154bdf80ceabeb4622f93cf731b2113e010c00a3a7e974103d1bc712b2c3e"
+    },
+    {
+      "path": "scripts/iam/show_domain_password_policy.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2894,
+      "sha256": "9c330a1faf507b3322a8573cc207e759fbc79f192537f295d7a60daa785bf254",
+      "blake3": "28db30a492b784ee3c0265a417617963caa9453884781efe4a3ae8fb675f7fa6"
+    },
+    {
+      "path": "scripts/iam/show_domain_protect_policy.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2342,
+      "sha256": "60337b6fb90d023d8622df2e74c9ad16092b112dd678acb8949b658b4a28a180",
+      "blake3": "c9690cd77cce2fe78d18a76b1801b26ce40a2c42947bef08aa43ac2b43b1197d"
+    },
+    {
+      "path": "scripts/iam/show_domain_quota.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2393,
+      "sha256": "9ecd848a7a793f2e789160f32fbe77fcfae01e2bc3acc84cbbf16e2332aec2de",
+      "blake3": "f25713ae64627bca52001efb08f664fb467aee2a1cba3d986bcdf220db0756e2"
+    },
+    {
+      "path": "scripts/iam/show_domain_role_assignments.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3991,
+      "sha256": "4ca84f3275abacdc4754c1eb9d6142cb376482a8b0ee0539a22e87f0305e4d97",
+      "blake3": "ebf3d4ba985fc25c65cd807f20b6bfb47950e80fc7e7740e6b9606f47a396f56"
+    },
+    {
+      "path": "scripts/iam/show_group_summary.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3417,
+      "sha256": "1de1e42056e7e0a2eeed17368107fa7b4a546be2a54dfbe51cb771219ca29ae4",
+      "blake3": "a5d98a1628e22999987d6b258f36b993492cbcbd2f217870e0021fd8ee9e25b2"
+    },
+    {
+      "path": "scripts/iam/show_group_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1937,
+      "sha256": "b09b0eb113c717ab5a5e91ec5a39b20c2c798c585c02f93a7d7bfb61a218d712",
+      "blake3": "ceb1dc92aa0dc5055be759daab1bb55bfcfce65570615ac691e52225f2338e94"
+    },
+    {
+      "path": "scripts/iam/show_login_policy_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2636,
+      "sha256": "b40c8b21e1cc98b2d827dc8fc8af4013aa6962302210ab33130240792c59134b",
+      "blake3": "86f64395cffab2d36a63f5f52e15532e697ee9a025fb8be5725ed71e0c3d3355"
+    },
+    {
+      "path": "scripts/iam/show_login_profile_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2008,
+      "sha256": "9ef57537d17595c19f8707e76442c1b85b31c16779ce7348c89c35b091fb0cb4",
+      "blake3": "a49bb9f8bd5f2f4ff09e0995d1388a7499165b778846c4007ae7df6b2aace539"
+    },
+    {
+      "path": "scripts/iam/show_metadata.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2320,
+      "sha256": "a75ef095da0a005136c99902efc38116dc83218595a0c9757c46cd2ea79d5710",
+      "blake3": "d066d79711153fd3e76b5e51cf6353a30dea37cd8681e782a105c1f43bb25e75"
+    },
+    {
+      "path": "scripts/iam/show_open_id_connect_config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2294,
+      "sha256": "d2f4640da60aecfe769061572806bdc2788dd6a89849b10f800a30719d890fff",
+      "blake3": "162108aa430277e9a85fee49a1456166c40d9fb9acc6543d7b3d0399d72b0969"
+    },
+    {
+      "path": "scripts/iam/show_password_policy_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2834,
+      "sha256": "78098386e6e737ee39d27084c7917670ef69b497cae3be8638e360eb10018355",
+      "blake3": "e216d4356c8873c86a51ac5e5fd9c75c7f105459a02cbe3b8f14a596e11e0c66"
+    },
+    {
+      "path": "scripts/iam/show_permanent_access_key.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2079,
+      "sha256": "084731d8e95096d915f980322cdc35a8d3a746be5ba872a17c751e6705045263",
+      "blake3": "7df8f7eb261f8ff607b297d844476e562381312b078f45225cfedc3d0145c2ba"
+    },
+    {
+      "path": "scripts/iam/show_project_details_and_status.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2096,
+      "sha256": "6fff9818cb4af44c4976394daf61cea5f928c7149f30701c4d7e0ab1563af196",
+      "blake3": "3cc55b38d9d0b4cb133b157368ae63aeb803d6d9318e852ceab230facf750d64"
+    },
+    {
+      "path": "scripts/iam/show_project_quota.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2070,
+      "sha256": "78cd27b3674598b265a8d5e56e82625dc3ddf63930925d9b336062b965614236",
+      "blake3": "048f3b065f1ee5ca15d8381ae6c20a3806651225b209215dd30f17a504fb234b"
+    },
+    {
+      "path": "scripts/iam/show_user.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3194,
+      "sha256": "c8599cb3dd08deac45ab587b33aee3d31b6b8d198b2e5bb04dd1afce8ddc904f",
+      "blake3": "6a9c56468574ed4d12a391e893ad3cad0f8fb007c84f5e71f5fff5f6d8374942"
+    },
+    {
+      "path": "scripts/iam/show_user_last_login_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1736,
+      "sha256": "b6eb731a44ebfabfc4d62b970c2cef03bc485e41bdcf0739b071250216cdcb72",
+      "blake3": "a8b42f3c8c938d5876156ebd54edf6dfd86d4a1f891aba1db680043f6c33ba62"
+    },
+    {
+      "path": "scripts/iam/show_user_login_protect.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1882,
+      "sha256": "53b934397274a193f12d3b7efcc51e479c9236f23f10c8da2221963355c79225",
+      "blake3": "41dda5f4c9f933c00ddd3990c79121fb64f9a5c22062943c5f664788ee68bed9"
+    },
+    {
+      "path": "scripts/iam/show_user_mfa_device.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1784,
+      "sha256": "5315f5ac4f4ac236b6e52288b231036ab2cffe63cd4ea22e2c8e5f2500c35b13",
+      "blake3": "e9999878d9a3f35ab0c7fc504816e8a2af92cb72e30a36a2de49d1f7b5cdf2a5"
+    },
+    {
+      "path": "scripts/iam/show_user_v5.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2222,
+      "sha256": "7d10db86cb5d90923bb968517f5c4c60f4321655b49cffc41966afe0af64d40d",
+      "blake3": "54658166b1c9bbe3b61022984dfd904a961a49969f32f74d54f12564f0419ecd"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2375,
+      "sha256": "73edd105edc5b4089a676437f83fba6187f7082e58af001c26cc01103d25c966",
+      "blake3": "2875a9fb91aa354f8fabe7e2a46cea7805593f0f499bbe05325e0999de49ce56"
+    }
+  ]
+}

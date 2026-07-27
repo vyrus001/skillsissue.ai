@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:7302ced644c60988c2bc4f705ef951455f5c0d96aec26b08d7b067c4c3dfd1b0",
+  "sha256": "7302ced644c60988c2bc4f705ef951455f5c0d96aec26b08d7b067c4c3dfd1b0",
+  "blake3": "c44a6d5f8ee0c046c7f2cffa6c0de36a7304b9c8f63a46e977590433e4f5ca5d",
+  "size_bytes": 17909,
+  "file_count": 6,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5500,
+      "sha256": "22e1c2b6c98b9d8c7d5a60b64dbc19d7504a3931742515a8cc87bc6b828ed1a0",
+      "blake3": "747d80b0a965932318769d771bc482696005562f4e0f00c8cac84c0e75b2faf4"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 139,
+      "sha256": "a0773fcfb22aa4e8fbaa9319c4f5cec30bf7672b27bbc1aed418fa94375a61ae",
+      "blake3": "62fe31a3af6c8658f8729c35966b1def5dbed2a8e37279951627bd4fd100cc45"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/create_order.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4124,
+      "sha256": "b89286276b2ef40e4a3bfd60f4097956e2e1441b3c73c3184d7bce6bcbeab68f",
+      "blake3": "63ca54a5b1237a0addf3ae1c4996c3a9fed0f7acb75e8eac3a736daa80e92b7a"
+    },
+    {
+      "path": "scripts/file_utils.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2170,
+      "sha256": "969c99a69dfe089fe35495d5045ac48862c45fefbcedf135e23ab37a5cec6733",
+      "blake3": "739388c29cf6db860f9102c73da9ee21420b4d26d82cea8327ca2a1bc303d881"
+    },
+    {
+      "path": "scripts/service.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3478,
+      "sha256": "c371cb2efb6c932ba9307218b59f9432c6f713b392fe8196009505dc104ef008",
+      "blake3": "c82c878a25836e9b97d55a2da9107c067dc8d896d3ecd685573b6106620f21ae"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2498,
+      "sha256": "764dc053b8c2232f37e317c3a929e35cd1424d5b1cbcf7cef5ad6bb1cf2cba4d",
+      "blake3": "1d18746af953d599c6f9e915e59551a065bc168cb1080252e59ab075d5131897"
+    }
+  ]
+}

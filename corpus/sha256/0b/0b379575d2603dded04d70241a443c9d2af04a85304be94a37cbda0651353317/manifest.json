@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:0b379575d2603dded04d70241a443c9d2af04a85304be94a37cbda0651353317",
+  "sha256": "0b379575d2603dded04d70241a443c9d2af04a85304be94a37cbda0651353317",
+  "blake3": "810ac44ad71b69dfb9c648cc3ee6cca8774b603ad164295ae2be745b91a7dca0",
+  "size_bytes": 53843,
+  "file_count": 17,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6354,
+      "sha256": "c6d2efe66335eb15903e1680cf4c019555e77aef639dbeced8a179709ee847ed",
+      "blake3": "8b247b964a9bb30db072ad50a8e64995b60befb3216621dbfcce745ffa938e39"
+    },
+    {
+      "path": "SKILL.zh.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5801,
+      "sha256": "bafb8247933dd2d07f7bc6cc8382f48254823cefe056ecba519fac9594ca009f",
+      "blake3": "6c7bab8f45125a3a8a88fd868aa324bd3e8261e36b478d5cea185b716da35aa8"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 136,
+      "sha256": "53f4ed51a0ded18dedc5e2abb4c2c51bd1df05677132b980cb9dbbbf7dd7c71c",
+      "blake3": "b9b573d6e01c091a3349971740ee9e3db8b9c76f0cd2111e70472fc856eea7be"
+    },
+    {
+      "path": "examples.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1044,
+      "sha256": "2797807bf964fca923c9850d4301beba796bd3c2c01889e7376240b0a70886cf",
+      "blake3": "ed4917d1587de72b414a029adc48a3909c632f69da18dd340d30b5488a6e1994"
+    },
+    {
+      "path": "reference.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1102,
+      "sha256": "467fee303ca434d0bf41e5808fa509451144dd249939b874f6f33fc061b3344d",
+      "blake3": "ec359e69a276a79f22f9da190b7522336b551966cfac811c8e4a078358bd3824"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/init-project.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1859,
+      "sha256": "4e027e10ca8b7ab65620c4baa9840401c7a26ed4593472f0fad972e47ae29847",
+      "blake3": "35e11f4cd6facd3edb200941b3fe6e327b2178a2e47ea9f3e141aea2c8331fb8"
+    },
+    {
+      "path": "scripts/probe-idl.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3111,
+      "sha256": "dacb85b8f2dd8c987f2a5acdc5be6b70fb94dbed388046431b0fb1caa3974742",
+      "blake3": "15d6246ee35c67d6ca822a2394b5cf5fe73ed7ef9ed6fc0f0bf7ceffc27148a5"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2234,
+      "sha256": "2b0cd86788f8ec04f899d7f6ecc7a9023f3db3a84cf8f093f0cc4f9a3d50e32f",
+      "blake3": "387069acd267691f0611bcfb88e71a48976a9481b4a11dbb6529618f20885ceb"
+    },
+    {
+      "path": "templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 851,
+      "sha256": "4c02ec5f7c6da758e0baf03af04058e9481e173d1ff92a638ec141998847a082",
+      "blake3": "eafbc98aa44c868c499b389bd9db2880eb8b9b24de44c05021fcc49a7a373fae"
+    },
+    {
+      "path": "templates/src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/src/tx_logs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/src/tx_logs/common.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8883,
+      "sha256": "d8df80392da06b7f3329acc1e757c875dedc8adf95adf64c68556b83511d05a6",
+      "blake3": "07d30f74b892e29439c72f4fc10303a61c65ce296b1c081a4480db443d0172df"
+    },
+    {
+      "path": "templates/src/tx_logs/s1.pull.tx.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7836,
+      "sha256": "60b9d21512fe1636bf440193159ec5f457e195b2a78f73828ffb3b61bbc3416d",
+      "blake3": "3609006a517751b108cb492a4635d58542b2f6e1f05e66c6f0e5f59f78b96b07"
+    },
+    {
+      "path": "templates/src/tx_logs/s2.parse.tx.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6415,
+      "sha256": "54edfbfab2f47f0f31374bc810c2f988358353dcb103dc4049955c1ddb3822ab",
+      "blake3": "45a2a664abc2a5fd7e37ba5ce34003f79494beac0670f79263465c702f5a4f46"
+    },
+    {
+      "path": "templates/src/tx_logs/validate.addr.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1447,
+      "sha256": "25b1fa4686dde2d46b7ca57cf5ceb43f10f15b9ce88a02e77eca8130ffb17f2d",
+      "blake3": "ebae1fdf6cb6080670e1232b6b8a7a6299f3b13ddf9a5f4a9fa68ab49df21e4e"
+    },
+    {
+      "path": "templates/src/types",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/src/types/shims.d.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 111,
+      "sha256": "0386a960991fd0c73c2f2ebda4ee4b2bcf065c485b4673aa78c56933431294d0",
+      "blake3": "68ae6c2dbafa7e924faf4e641f6966e387ca30c6964627e0b4f9f397cb6c3f50"
+    },
+    {
+      "path": "templates/src/utils",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/src/utils/utils.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6364,
+      "sha256": "0afbe97eadc48df0fca1e6f6f5cb060481489d66a3b30772ee0ff7fc1482716d",
+      "blake3": "1405e8844e4cc14866661fc06a09fb10f47cd0074cdc312be39fb72944e2ceb2"
+    },
+    {
+      "path": "templates/target_solana_addr.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "blake3": "9fa8dc9570625be2be53d308f958332981ec8fb8137d3dd7ba0ae5da317eaa7d"
+    },
+    {
+      "path": "templates/tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 292,
+      "sha256": "e75e7709301b949cef2dd293c14f34e1ef55965619c5a2931a8a2af170af41f1",
+      "blake3": "bc8acebaa219446ed25170106dc57f9df8566e4bcec68d1ea08ca866bf2899cc"
+    }
+  ]
+}

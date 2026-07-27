@@ -1,0 +1,2601 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:23a235862c8c420738abd81a7d760cbdae1c95917ad957c295ba2f18ffa7d118",
+  "sha256": "23a235862c8c420738abd81a7d760cbdae1c95917ad957c295ba2f18ffa7d118",
+  "blake3": "aacca843c0147f831fd0f4d71a34d007bfcbfa16215e4396dc62f9681e637dc4",
+  "size_bytes": 3096941,
+  "file_count": 287,
+  "entries": [
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1016,
+      "sha256": "75b973d396d1137ce946161d5788d3e0b2570ddf48a1164ab1c25dd214285b48",
+      "blake3": "150304687980a7b697dff2204803ed646931414e46baea4591a328acd2aa7835"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2213,
+      "sha256": "f6e28b49561cddd6bd8664288d467b1cb1a348e186e104722c9a449aa56e6591",
+      "blake3": "09369e3659bf46eeab116d6f6d91e7fbfba9b5583b27520d32ae27b7800b52fd"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3498,
+      "sha256": "e0fc21ac7b1e177458ee040837bf17e29311ff2460325c312693293bd306dc18",
+      "blake3": "27f9ec56ffd22257e7710baa828c1fa5b0d2bab2b488a8a20e1dc025fe637329"
+    },
+    {
+      "path": "SECURITY.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1718,
+      "sha256": "1a09564ecf6d276dbe1ee18c941bcd6053113fa679378866775ae51889f0a774",
+      "blake3": "5d2b337303e18c82efb53b0776b22ef1f40c88a79d2d37af131504b7ee124ef6"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2608,
+      "sha256": "3f8523a6bd7bbf0a1fe1312990051c2e513f57280ea8782fd4d0fcc20d6d35f0",
+      "blake3": "a1762d2c0c5d0d9fbf7a8a2c5a887016775a0b4956c36f837584c16531dc4f2f"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 136,
+      "sha256": "db0281e4878b4f6b008a433c9948b2dd5c32a3e8631abe8b4a1547de8e1bc7b8",
+      "blake3": "5cd3ecbe47ae71d6849cc136fc5174117ba35671807783d99a70dd1f85a926cc"
+    },
+    {
+      "path": "apps",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "apps/desktop",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "apps/desktop/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2128,
+      "sha256": "a7fcbe3503df12b2d91102033077d0a2a3e917926b3f3344aea078d0d15bf688",
+      "blake3": "84bcbb2ba361e47bf3e860f256d4a069324ad5cc1894f636bfd48d667bf9cff2"
+    },
+    {
+      "path": "apps/desktop/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "apps/desktop/scripts/gen-icon.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3094,
+      "sha256": "decc19cb3546f5bda076e46c9682bfa613aad162ff015844bc30cea71b9c40ac",
+      "blake3": "b6ccac3ed09a992e565f91827993209095a6b6206717d1d8d152da2ac8557439"
+    },
+    {
+      "path": "apps/desktop/src-tauri",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "apps/desktop/src-tauri/Cargo.toml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 981,
+      "sha256": "b5ca02c3ca3dc74ae0d3a43ce55303f279ec244d1209ccf7e8404ab0f9bae21b",
+      "blake3": "f7f755a5c8b60f7f36ae88180ac4275fe08b1f512d5eea389da5255358da68b9"
+    },
+    {
+      "path": "apps/desktop/src-tauri/build.rs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 39,
+      "sha256": "487059eaf8a947b80f20a9aacac038a5047b2ad69d2401b827376c67d6fe847f",
+      "blake3": "69ca21b16a83928d9e7dcfde10543ebc181766a2b93b0de6e7c2fc1d0c4531ef"
+    },
+    {
+      "path": "apps/desktop/src-tauri/capabilities",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "apps/desktop/src-tauri/capabilities/default.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 361,
+      "sha256": "616a3f807394fddd8d86045ffce7e2426682e6d8e3c2ccf2436153c22ee0a286",
+      "blake3": "8298a9935bf7b0b30b35e0a85b5995962af705214a86fcfe5fe3ad26432d59d2"
+    },
+    {
+      "path": "apps/desktop/src-tauri/src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "apps/desktop/src-tauri/src/lib.rs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21065,
+      "sha256": "337019981e6d9dd89c2850d18cbee485e91f219d4f2e02011666d14f37884756",
+      "blake3": "194ccfe17f5c8e4370dd102ab2c6c4ca17430aae9b604ed373658af867a3abfe"
+    },
+    {
+      "path": "apps/desktop/src-tauri/src/main.rs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 202,
+      "sha256": "aed8846d3dd240cc9982929dfb591fa4b474ca42cd8a7c31301909d5830e5e16",
+      "blake3": "5d8688be8d143045b9eec4e8bb8f6ae19babf4b2635558b034dd00ac7904928b"
+    },
+    {
+      "path": "apps/desktop/src-tauri/tauri.conf.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 743,
+      "sha256": "47b83a1ff62a561f8bb40419e0113a6f6a9cd9a81766819fef852392321d0655",
+      "blake3": "08370197d9da8a681aad9ea1a2e3dbb10fbd71a09a844a81d1992a5b78935dcd"
+    },
+    {
+      "path": "apps/desktop/ui",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "apps/desktop/ui/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5555,
+      "sha256": "0a738f7ff7b57ea2cab7cc083e8285ab0be4415404d90402897ab187a55f686d",
+      "blake3": "147502a1c3b5fddba9923eb511a442c830b08da6528e01f73ff7aabc251c6950"
+    },
+    {
+      "path": "docs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/v3",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/v3/AGENTS-RESEAU.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4100,
+      "sha256": "de27497bb2f3af9deed1671b10dae50c7a743bf3416bbdf073dcb6d81f20cb98",
+      "blake3": "cce74c44a8f2576ea153067a372da17087a25e78d608e36841915ea4a8fa9444"
+    },
+    {
+      "path": "docs/v3/AUDIT-AMELIORATIONS.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 63306,
+      "sha256": "a27e6030e0eebca6e1c9affef892800ea638652d5faa21e3452ed4de2df15c27",
+      "blake3": "4db53e6e9a344c6a308d8ef431959cb8210aba68f468a92eaa3181fafc722f3d"
+    },
+    {
+      "path": "docs/v3/COUCHES-ETAT.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5355,
+      "sha256": "a4a4cd1d53e76977e17840113f9a67d7b4445a82e762f2f946f5c0880e57b813",
+      "blake3": "6447bd6bcbd38fbed316ff1223c83913c62fce3614bbd713e96a8e93e686324a"
+    },
+    {
+      "path": "docs/v3/DECISIONS-LOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4323,
+      "sha256": "8cb3af377fe326d41f3fca04e8c977abdb9d45fc48e969dc7a3bf68d2cc7512c",
+      "blake3": "5d6206ab534071a2944dea106e37ba2ec7d978ad11b64c441731528a7a01e187"
+    },
+    {
+      "path": "docs/v3/DIAG-OPENCLAW-2026.6.5.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25128,
+      "sha256": "193a3217264a574ee9c1f72e1d2f6561c7cd1167d5011414571361b9a971760b",
+      "blake3": "ddc49b72f175be6aa3a3c0f724525131bf813fe81b6dc80bba9522480f1e7c44"
+    },
+    {
+      "path": "docs/v3/DIAG-OPENCLAW.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 31700,
+      "sha256": "321baad9ba8812094b5c7c22cd91de95a945c4146a2980f67b02cc2f8b268cb8",
+      "blake3": "121f5105514d4f076021f4aeb5c24be97514e00e09dcd2d78d7f46d645e840bf"
+    },
+    {
+      "path": "docs/v3/INSTALLATION-RESEAU.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5153,
+      "sha256": "b1ea63380e0c0138f28bc914fd4eeeff97b1739695e99e26d462d267018dcd87",
+      "blake3": "ab8175d795ffe5c593dd601eea3e904cefb77d2222675955259ba81cda700951"
+    },
+    {
+      "path": "docs/v3/PLAN-vs-REALISE.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2682,
+      "sha256": "3318569573f9f9694fd51defdce5d5b58da57cfa8a84716d1e2a3a7681c903f4",
+      "blake3": "b0e84924dada1dd6b0760c81f4f4c0aa422a8f9e082348b839b1eb4532ac2d4f"
+    },
+    {
+      "path": "docs/v3/STATUS.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11218,
+      "sha256": "05bfb8eb8119cc7f6e1ebe96c1f916f22b257eec52f940a86d19acb4afc176d1",
+      "blake3": "47c62597fa3487e43f92383ecc04f279d2b71e58cffd0d5c8bdba39c034a7a15"
+    },
+    {
+      "path": "docs/v3/SYNC-INTER-MACHINES.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 35662,
+      "sha256": "b0b04387c30cf83c8ed4859ec7d73120d209ef0a9a3ddc30b26802f7f9240954",
+      "blake3": "85942b0138d3b101f91f9a08fc193aa5e7c5390a0ae74de2b205e91161df0bc4"
+    },
+    {
+      "path": "docs/v3/TODO.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13014,
+      "sha256": "8b32f2fad470d6536f634aa460b09de187143aa975ab6a756adf605e2b1c28d8",
+      "blake3": "d6585bf99c98b0878f58b4639aa4d3997a3b3dadd466869650dba2add051569f"
+    },
+    {
+      "path": "docs/v3/port-map.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 347357,
+      "sha256": "af165a9ceef32a26149660803e6412e4be977df6180e3e9c8a0848c6d6dabb56",
+      "blake3": "b0ebb07a1615a7ed1bb98e30e656560101d4125fb649ef7a8c18ab9bb4ae4e5e"
+    },
+    {
+      "path": "legacy",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "legacy/CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 35861,
+      "sha256": "ee5fbcee611797459162978388688923d71e17378c7f039201a0d0be96762452",
+      "blake3": "1f90385a68abe3cb5ebabb5a2d4d8c487322e464826a17f5914e1308bd61dc47"
+    },
+    {
+      "path": "legacy/INSTALL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5811,
+      "sha256": "c8660d927b728ff022c3a5fc6860e2526f75a9d8d77d866e9919b70eb7b53c32",
+      "blake3": "1c78bc042a690209e1348d943a0c18d29635bd2d825ffdf36b8b35133d0dd654"
+    },
+    {
+      "path": "legacy/PHASE-2.2-SUMMARY.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4359,
+      "sha256": "41893066f84b8ac8f0356b80455c712404c0cefcb71418b181c7e74eaec00e80",
+      "blake3": "7e9789ca575489cb1305c4fc262e8a213a0cb1bd54311d7165427a5d2a9bc4e5"
+    },
+    {
+      "path": "legacy/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7858,
+      "sha256": "2904999ca0cc54f95890c4c98a9e4e60db264b587ff490a2b25cd3b4e184d5e6",
+      "blake3": "7bb226e3e3ffa6b0371872c622b667cf77568c735a53d0fd58faa5aa88d60559"
+    },
+    {
+      "path": "legacy/benchmarks",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "legacy/benchmarks/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1592,
+      "sha256": "a3e48c1c55017b15330d0e038b8b834bf5743827ec0dfceb9a7effe47ee37bd0",
+      "blake3": "45eddce60f1157294424a29c3b13e773d8b01ccfa761b3feae31ba68a232c9f0"
+    },
+    {
+      "path": "legacy/benchmarks/bench-v34.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25243,
+      "sha256": "ff26b30ed9e74524a4f648d69855a03cdb948d4f9a753dff0bfed33c32d7f5ad",
+      "blake3": "d9a38c07907be81c94f7ddff5786e1d9ac46590972e4f2bfc52fc0397877336c"
+    },
+    {
+      "path": "legacy/benchmarks/results",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "legacy/benchmarks/results/results-v34-20260326-083430.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 45946,
+      "sha256": "9fa5f24a56bddc8d18fa3e18998490747dbd67895576c98a731e0aac09bb09af",
+      "blake3": "75af4d2ed1b1cc6d3cd880e310e5efbaced77e17618164aa9488718a70273631"
+    },
+    {
+      "path": "legacy/capture.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13437,
+      "sha256": "ec943f76066ebad1fb53ace64bcbd232a7f9764c329934ea39fb4d6c379ada09",
+      "blake3": "7e3092d969a09275d1b2cd90662cec1c9bdcc4b63cd399418ae1c53872ede392"
+    },
+    {
+      "path": "legacy/continuous.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15528,
+      "sha256": "b26a9ff21d8f6fc35188cf3ef8345878491b1d555a329c36cb9c73f3d787ff9f",
+      "blake3": "ad6824944f9702d0444602b71b04cfa463264ffef9ffdcd6511793498f01a0ba"
+    },
+    {
+      "path": "legacy/core",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "legacy/core/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7571,
+      "sha256": "fbfdf3d01952ba38e87a1615da965055786c28761d041b17de2c8c561fa86f12",
+      "blake3": "1baa9d965f672e51b77239574a071addd5b7529fbb8ee2e2f3ff081baf0cef48"
+    },
+    {
+      "path": "legacy/core/auto-skill.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5903,
+      "sha256": "b6a2ea009dcf4398ac222787112f2545c76c870c5db2626eb72bbdc13435d85c",
+      "blake3": "c79d5342eaf732e0d25c0c100d999af36b5022c6d349576ede7ffbe6675c9477"
+    },
+    {
+      "path": "legacy/core/bootstrap-topics.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3247,
+      "sha256": "dc481bd09eaae759d43a43354ec11b3aa00dca8950de009a47ec5294fe27cc82",
+      "blake3": "47e517802e697d95acb3a550a0b3dbb2f7fc1c04a853d5e21065c7632902fdfb"
+    },
+    {
+      "path": "legacy/core/budget.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6426,
+      "sha256": "410503840c0c506a9986b0713b8a03a5229d8f1197dd7312ae3c64208022ca45",
+      "blake3": "1d77cd4559e9ab30c8024c2314b44cfd10cc111b23c930c925fe9f73c0d890c8"
+    },
+    {
+      "path": "legacy/core/config.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5888,
+      "sha256": "ac912c2f013a7fcd86ec86a6e3a5445bcefe5bf492f90a700e2812074e3ac1c9",
+      "blake3": "88ab25eb50e01aacd9b84c084d778d64cc24061c0507da668b89305c14b748fa"
+    },
+    {
+      "path": "legacy/core/context-tree.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9339,
+      "sha256": "f058d2bf69d487cba81ad6ffbaa4e47e687a5460658e7339d8dd97cf8a35075a",
+      "blake3": "fb07d9783b83ce3159ae6b70d661a1acee0f7b63e1d3de01129f6c25566228ba"
+    },
+    {
+      "path": "legacy/core/db.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 26659,
+      "sha256": "f6021a2156f1d6ee77aae95d9243ef32584bab2e88a7004d362981848d3f11c6",
+      "blake3": "6993ba4e34d7e71b3f6a0d062d4641119182f25428e9cd00c4d370e80cdabd3b"
+    },
+    {
+      "path": "legacy/core/dialectic.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6820,
+      "sha256": "edf894b1ee855efcb479f58d75e53ccb80ad2ce99e801fbb2166c26d40da21d7",
+      "blake3": "4f405e73ce8ca75f45e409022bf71d2c69a1ad434129ce0c4302997a72005806"
+    },
+    {
+      "path": "legacy/core/embed-fallback.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2092,
+      "sha256": "9ff37de674c48ba503bb3cb694e0c9694dcb51a1c48a6532f3d13590772caed7",
+      "blake3": "22ee3865b868010f27ee81012c55fe0f6fae15e77fdb4472b44e4eea6ef258b7"
+    },
+    {
+      "path": "legacy/core/embeddings.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11948,
+      "sha256": "4fb45c60dbe7d3d2d7e34f7bcca2f13d5296dc7878bb458804743095ce235ed6",
+      "blake3": "b54bce0464103f886359f9e1b5a51837b1595a5b773e889c91fb31a8c9e782c2"
+    },
+    {
+      "path": "legacy/core/example.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2548,
+      "sha256": "82555e93d52824d311f71aadf1b21200a90e8d129ededd1b11007cdbf7820dfe",
+      "blake3": "e0b4e0475d9ddd9cccbd92ae1d8ef9e3b26b8359cb8857788768a942f107eb7a"
+    },
+    {
+      "path": "legacy/core/expertise.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3740,
+      "sha256": "81e91e5e0d81b3666c27af701959d7e65c33283629b6b476056876fa02c2e61a",
+      "blake3": "d4f7d40caf2027f1b8a852f821ff73ca6febc1ed8c99dec177fbf8622a60aa08"
+    },
+    {
+      "path": "legacy/core/extraction.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7396,
+      "sha256": "bcf43ccd78eca5069bef70759e8fe04eb1d964f867fe2592b6375108d3ce7604",
+      "blake3": "8364beba7a84b0369612142d27d18082a3fe76740a0803728210ae4f9ad3bf04"
+    },
+    {
+      "path": "legacy/core/fact-clusters.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12519,
+      "sha256": "9223cf78b5d5a6ae22aad97b09db724a05469ffd743d56f2551b4e915e3c6461",
+      "blake3": "7bb680080e8cb541ad1663ad705de436bc529a1d32a5619104f8c09a9868d370"
+    },
+    {
+      "path": "legacy/core/fallback.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8047,
+      "sha256": "14138589cf16dc5f1dbb8408339a9782a69867bc62ba4113a3fa6939b37cb0c7",
+      "blake3": "71d9b95a46b24c6cec4e8ec9df4bae28026ef0e1ab5fd578517059bc85dc78e4"
+    },
+    {
+      "path": "legacy/core/feedback.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10399,
+      "sha256": "f1c1cece2599b33db8036f38c80c27c645d0700ee01ad059b28aeb50700b1105",
+      "blake3": "87d6461b749a71a96f23dc2625c197ea283e551f144362397e462b1c752b90de"
+    },
+    {
+      "path": "legacy/core/format.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2240,
+      "sha256": "c444b71dc9c129fb71316e3b696c6c211b16f222e8cf392504f9420a90557963",
+      "blake3": "09533ad5b0fb56de0a9d6b1b090e43d4b01afd4d4abb500fd9269e7fee52ddf3"
+    },
+    {
+      "path": "legacy/core/graph.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16105,
+      "sha256": "b73040e99f127062a3a8327577926d2df819b610facdaeb13c568b5c89a6ba17",
+      "blake3": "a1fbb0f00196b37e16185592c091b378dcc867ac3efb5aee8f1b026609f5cd50"
+    },
+    {
+      "path": "legacy/core/hebbian.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5495,
+      "sha256": "385febb7678f340cccbd2c2993394dbde1648f286d92983e63a396a88dbedd0d",
+      "blake3": "f21ac67c8eed0cc1eb5c902864cd105e30e7956c9fffd01e76b13bb1d56308cb"
+    },
+    {
+      "path": "legacy/core/identity-parser.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6910,
+      "sha256": "f249eea355628c5ed9ea43ce55d184d62f4846de48c8585e51ae38304d5303d9",
+      "blake3": "6d0943ff80700d1a00e1f46d1ad4139ac80f52d45dc7096d15b77f5846273141"
+    },
+    {
+      "path": "legacy/core/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14614,
+      "sha256": "f2c97ddc02ec8a63eeed293b231ca92e5a2797138cc7d8d849129fb825812e7a",
+      "blake3": "d10c18dc471b06b1fa93dfed4159f990961470b354da6772b2cbf4b50283eb01"
+    },
+    {
+      "path": "legacy/core/lifecycle.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7493,
+      "sha256": "834d503e3eda5fcc4e68bffc3971f248cf33e4e61b2253212ef392eaea4aec04",
+      "blake3": "bfaa9372309b4fecb2277fcf44e0dfb37617f13161641a39cab6dad54e13c090"
+    },
+    {
+      "path": "legacy/core/md-regen.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12244,
+      "sha256": "0d4615d5d3ea937bb90a2fcbcdbea902ea208d192d9bf5442ccb7ab4e0dea1e6",
+      "blake3": "a5b2b0466351f5a04c1f85544ab2835402684649b6cd325c40f46d455fc4cc70"
+    },
+    {
+      "path": "legacy/core/migrate.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2247,
+      "sha256": "640c00c7e39effe886e9d60b9c4775a6e201a9612c9b3cfd83554c7841223eb0",
+      "blake3": "806aca170a3baf804d552f58a6571a9ad12774d91326c0b0325f75a9855e5c02"
+    },
+    {
+      "path": "legacy/core/observations.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17403,
+      "sha256": "a6d1fa6fb0c1016186c89601aef5b3931246ddfc9885e2deadae46a0c05616e6",
+      "blake3": "9e6349d02b459af44479c882da1d9355bee74fc088d92bdc45441ee6d4ac85e1"
+    },
+    {
+      "path": "legacy/core/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 711,
+      "sha256": "b2181dccf2236c2826590af03ea0bffcb3e5bd3f51c563d387dc9fb7f99d9b35",
+      "blake3": "a104690bf6da25bf78f24c249014682a1e116af2db859a705416fa00364f7e9f"
+    },
+    {
+      "path": "legacy/core/patterns.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17089,
+      "sha256": "b974134b814e45e3a3a253aa61daa71e86aa2618985ad604fcfeb218628a9003",
+      "blake3": "b215a46617f74a4dc208092c3a0c54a480eacf22e5900ab5e955255f7f21ad12"
+    },
+    {
+      "path": "legacy/core/procedural.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 49470,
+      "sha256": "c1e2f71ef48ed4b4720880e18719e300dd5b4a088f5c349c2075f3863089592f",
+      "blake3": "d06ff97acf57247804108ba9563b3d9a3a35bb2af6df03d2a75358a90462f427"
+    },
+    {
+      "path": "legacy/core/providers",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "legacy/core/providers/anthropic.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2379,
+      "sha256": "8f17783a2246134f22932edce0570285816f0700606d991b33957b087107b7f4",
+      "blake3": "ceee106bee190b288c5fe8e6268bac91ddb2dcc4b9194f2cca219a84fa0cd8bb"
+    },
+    {
+      "path": "legacy/core/providers/ollama.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4441,
+      "sha256": "f4f92aac00fa399b92bd0e5032bb6c730b9dfad0c3d73d16ab824e2528a066ff",
+      "blake3": "337a42b913b40773e8c5a0b7f2b16750bd926f5271dd0344be88fd79034c522e"
+    },
+    {
+      "path": "legacy/core/providers/openai-compat.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4504,
+      "sha256": "853351e5e49b7c5ab3104d119ffada9b466aee98eb0ecf88b0fd0916dd62d90f",
+      "blake3": "666b9b8a6d6ff251fe8aa3aa2fc0f93f852848f2d60d1d55dc2640e5aea89e16"
+    },
+    {
+      "path": "legacy/core/providers/types.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1848,
+      "sha256": "c7f265dc88ee3ce3f51168efe9e62e9593fe860d59ea33974c19eec28d388b39",
+      "blake3": "92b47239fa6b6e536d0aa469d3dc0d34339657342a15f34296e9b85d32317a93"
+    },
+    {
+      "path": "legacy/core/revision.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7007,
+      "sha256": "d86a2a0d888200d07fb8f97c9d4af7ea7f7f6a1d164a681f14653c0299f09c6e",
+      "blake3": "92a8ab14d3e673df5f0ab49b57f8f417ca145b6ba4317013e6c242fc5563babb"
+    },
+    {
+      "path": "legacy/core/scoring.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6129,
+      "sha256": "95bcf45b42becba8ac967cc37f7f5e47628eac3947dfbf24814560fd60fbf65f",
+      "blake3": "2f53e532d85d22df452c9a413edd98f64fbe33770a6c9b319ed540e17ebd03ea"
+    },
+    {
+      "path": "legacy/core/selective.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23254,
+      "sha256": "fbef41cca8926ef0eedb615149433594924fe0beee6e52646686d252365fc7df",
+      "blake3": "987a39d4cf0c4ff033d739241f8bc7d497ee07952481ae8d3882a10934f2ae2d"
+    },
+    {
+      "path": "legacy/core/self-observation.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6455,
+      "sha256": "fc594bb05299d9faeef7063ca14d9e5d40d2450cd1266615212f2caf5abadc9a",
+      "blake3": "26cadcdd4835ab5578c16250d3bd95ea7dee271fd285910e38ae711f5ec70a01"
+    },
+    {
+      "path": "legacy/core/sync.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8781,
+      "sha256": "1d816d588db7e90c8fa4c7f0458ff3c42c20b76fe075d15108ec7a598366d2f4",
+      "blake3": "b4d515ff7e89f299edf5ec852b2c3595d4642c62558dcfad391f580692c12f05"
+    },
+    {
+      "path": "legacy/core/topics.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30552,
+      "sha256": "ae81f717f2b97a7c487e5575e84970fb415ce4ec45f3a79e5581d332e24bb144",
+      "blake3": "9e265d13cee22f43ccfd0df386c7b08e5f7248dc00e2fa357dc88fd63070c2eb"
+    },
+    {
+      "path": "legacy/core/wal.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3464,
+      "sha256": "a4dd84a769daae75e80d8874f748b3cc5fd8e263309cb2399fec2ca5424b37e1",
+      "blake3": "35a456de23566af6f18dc921661b5e375ddd2eebc7fb58e67ec45cef963c9795"
+    },
+    {
+      "path": "legacy/docs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "legacy/docs/ARCHITECTURE.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7159,
+      "sha256": "0c5dce3ed8424fba9a7cad9e13268eba63f22c429274941ac12cb4207c4c2ba9",
+      "blake3": "815ef9b3ed9395698516fab18167e4173c08eac2380a74a58e3e5db0283a8a1f"
+    },
+    {
+      "path": "legacy/docs/MODULES.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13364,
+      "sha256": "efed2121e6350ad28ef623e10ac8d08e274f7927769b4c758a3d966f3820f92f",
+      "blake3": "85abb2536a1d5ab87e59c17caca72d21860865a6d1b9b3f6b2307b5cfbbb58dd"
+    },
+    {
+      "path": "legacy/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17937,
+      "sha256": "6252d64a6d7b886d33af05ad80cef293c2dd7562f138023236ddea9d28b64090",
+      "blake3": "1f8a7e7232f2cbbc507a8fe91bc73422425521d961e8df458ce39d756ba8d208"
+    },
+    {
+      "path": "legacy/openclaw.d.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 571,
+      "sha256": "dd2208b5f2fdf5a42d009e8ddf22c64039cd2ddceb0fc0a2bbd0f1cd787ea34f",
+      "blake3": "2918027fb78664056e7f68d86b935c676f390d29473b62688397fef4906dd8db"
+    },
+    {
+      "path": "legacy/openclaw.plugin.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15686,
+      "sha256": "b68e50ae8c083f89de7109e52f0fb4561ca19cb35cbc8c178d28c8415d78b3b9",
+      "blake3": "6968d8d2f63aa189521d12677524e353f66a07204ddee159ff196da97d0214f4"
+    },
+    {
+      "path": "legacy/orchestrator.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11399,
+      "sha256": "b579f998d50fa7533e67108a86f6d2dd50f2621f250504507ec52dd21e21d5bb",
+      "blake3": "1b0304090084258e43c92d03cf27f0149c6816d09bae93a7802ca176b19985c1"
+    },
+    {
+      "path": "legacy/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1175,
+      "sha256": "aa7410bd5a4818dd4fae5f6a25c1eeb58ff06791757a2d00505a3c528a16f7f3",
+      "blake3": "4bb3efc0a497f57c2a96442ebd16b8576f8f4e724d0f9af9921d83c4399b4453"
+    },
+    {
+      "path": "legacy/prefetch.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4120,
+      "sha256": "dfa9b299d061fe6cb60579ab7a46436630ae75ba318ff8ff6445b9ff4bd3c5ff",
+      "blake3": "7a1a7c95af185cec3c41a99e25431f6c6c3cb68ba9c4b18073243b022cc53c93"
+    },
+    {
+      "path": "legacy/procedural-hooks.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8948,
+      "sha256": "5f34d0cc085c874ad36257b4b81518cb967a00f92fa46cf5ab673c9d36f0db22",
+      "blake3": "7fbc9c941e82cb21c6d2a3365de02a505586856af07ce352a55005973debf0b4"
+    },
+    {
+      "path": "legacy/recall.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16899,
+      "sha256": "5a92e7e07979c3e393e63a690b4cd08284f7af5b96e9d4c7112ffc3c0d4bf59d",
+      "blake3": "ef362260caa21bf6530f1285fcc8944af7c3ffd88fdb52e3a63bb3119586f785"
+    },
+    {
+      "path": "legacy/tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 576,
+      "sha256": "3b200f30691761d0d3bd83b343e9ff72ea8d8ca67b3e8bbe6ff905169b168a51",
+      "blake3": "b5b795adc75bc6d19186aae3cc4b69a5ab972b6f9425c7d6ec850de43268c0c6"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 692,
+      "sha256": "290b12e47ea780bd740a5c59101cc47a67fc0ae7f16aba98634828c5219bebbb",
+      "blake3": "f91f8e4963d6b00782e673ca128341a439550a77bc35c284f8a53423ba709247"
+    },
+    {
+      "path": "packages",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/adapter-openclaw",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/adapter-openclaw/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3302,
+      "sha256": "90f424b710660e1ebd8c7afa7886e93542902ab04f306908e26d8daee71873d2",
+      "blake3": "5cfa7655b47ef8fa3df6b71f693db268e3a5edb9686aa3e1fe94e33c33e2bfff"
+    },
+    {
+      "path": "packages/adapter-openclaw/openclaw.plugin.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1285,
+      "sha256": "82b5ee722d22f0d0421d061638e7361f2939e9e627ce16827a560e75938a8cd8",
+      "blake3": "ede95131c16c62b5b04f475be2bfbac8abe70caf589d1b83f5d84086718b3166"
+    },
+    {
+      "path": "packages/adapter-openclaw/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 805,
+      "sha256": "99d9d676caee678fb92cfaae6f41eac981de76bcb2722b7d07e64f4295540cb0",
+      "blake3": "2e6cec330f959bce70f6fe4e27527a5ef7c4b19549f2d507cd25a8ebb0177f59"
+    },
+    {
+      "path": "packages/adapter-openclaw/src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/adapter-openclaw/src/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10190,
+      "sha256": "6a3064fd0761c3b77dfa99085bcb2a4c955c6a8fa747ac33be1e1573e3c20f7b",
+      "blake3": "0681faead7bd25e6b5e21da14390f0ef003f4a6e525f8c88e16e8ab833f4c181"
+    },
+    {
+      "path": "packages/adapter-openclaw/test",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/adapter-openclaw/test/adapter.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7182,
+      "sha256": "1a40a31f287633b630ed31c99450b1c0272523cde83607d42a72d7b592321f1f",
+      "blake3": "ffcf367bd9771939241cb119438b8cd78a4110196ce1efd07d7b31a32999489b"
+    },
+    {
+      "path": "packages/adapter-openclaw/tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 162,
+      "sha256": "6927e822ea529c4571541de137b3b45a9b585f9a764044a5d7c1a167f4ea0fc4",
+      "blake3": "76f8fd4acadd4aeaf87db73261f395666576d4d81c30ccb0824b266d32f53de7"
+    },
+    {
+      "path": "packages/cli",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/cli/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 517,
+      "sha256": "4ea4dde4f487c4eb3fdd642c41367ce8846de8d6ea5c4d36b8f2d89782f093ec",
+      "blake3": "8fe9414f4e4b464ea23d0433e8d482c31512685ab98d1c28c48a7cfbe3355f98"
+    },
+    {
+      "path": "packages/cli/src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/cli/src/bin.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 195,
+      "sha256": "e039634ab579c2dd594c65615cf56690bb8bcbfb87ade5e71603ed9512cf5daa",
+      "blake3": "74ef2fff909f44e86fccd99469047e57195c88bfbf7022aa2db6ecac26221191"
+    },
+    {
+      "path": "packages/cli/src/commands",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/cli/src/commands/agents.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6328,
+      "sha256": "87ae9a12046cd953da07887143eebc4e000a9590f22da2588760eb29497bef50",
+      "blake3": "e8e74f9c277ff801f5f59a932ee8ba1b33515e20fac6d78c109d431e59933abe"
+    },
+    {
+      "path": "packages/cli/src/commands/audit.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2608,
+      "sha256": "4e7201c7bd4db2b75c5baa24a3d3809855b6bd51de62c8de4fd5503dddf04ceb",
+      "blake3": "1762e492fd7adc459aa8a86b048fd53f0889ef7135c2c99835db66a74bcc204e"
+    },
+    {
+      "path": "packages/cli/src/commands/control.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7859,
+      "sha256": "fc4d2f2f6e1be3e9f2a7cb7fb95be0cb72ed95c6995213969a6d87be8ab2f599",
+      "blake3": "340c7d86d29a64682d21cfdbf4bb9cb98797592af73f54be57f0ecf8277118c7"
+    },
+    {
+      "path": "packages/cli/src/commands/daemon.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5298,
+      "sha256": "a4bd03d21c503c6ca62c7237dacb6c45a26c0aec7263d704f9fd29b954708c67",
+      "blake3": "6f0f8ac4191f734019fd5e520b3ac2c8ca206a083ea03657b864903882f13174"
+    },
+    {
+      "path": "packages/cli/src/commands/doctor.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3098,
+      "sha256": "21ec984d883f212930dcc15736c6221f69c71dabebcdcbe40d66487d6ed595b2",
+      "blake3": "a3fa9ee91b6701da73eb930fb29419cae61efa5a7128894b83a0462541ac0aee"
+    },
+    {
+      "path": "packages/cli/src/commands/export.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2090,
+      "sha256": "42dd47becb79b308d7cbd135c354a2b3897be30eeb0add51f7a4f2fa7183099c",
+      "blake3": "d78057faf40a7e9be3cbae1ef76093928e90f830c311e3d71b00918b7526e0da"
+    },
+    {
+      "path": "packages/cli/src/commands/forget.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4810,
+      "sha256": "f4cd7910c99fc3dfbbfa2af6b1f1f1a8b5e247b653aa3857ab44aa9797a41b9e",
+      "blake3": "f1bb37f192d45e8318656a90c54ef56fd94d6640dcb202c2fac27f11def7d7d2"
+    },
+    {
+      "path": "packages/cli/src/commands/import.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5178,
+      "sha256": "9eaf24de9d7ad60485b6b7d5aa1ed5d29a77ebbc8da4b67b01b2c2d1cf996963",
+      "blake3": "3ca84d4dc4bbdcfeec19fa18b6686734c52e55a8556a0acd0ba9609004185930"
+    },
+    {
+      "path": "packages/cli/src/commands/init.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2545,
+      "sha256": "c51730a6fddc724600c145c6f7e824d69d3fea714d6d47e15d868e507528231f",
+      "blake3": "4561c0b5b50db57386e8399320edf2a4c068c4cf88f95274f30b04448d42251a"
+    },
+    {
+      "path": "packages/cli/src/commands/pair.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2758,
+      "sha256": "e431120cf48877fc063d9e2c76bb044d082b16939019e0379899536bde254515",
+      "blake3": "e267874c4b0a44d87314988ddd5f8d3d7adf46115efff4a925c3e56801a91ead"
+    },
+    {
+      "path": "packages/cli/src/commands/stats.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1663,
+      "sha256": "bf98985e7d250ebfd0ee217902d3540fed1fe0900282a0aa0493e04dc9af269c",
+      "blake3": "013f1826318452c03c1cc302e1d236afa1f68828cb14dbbb3ee8d0c04afb05e4"
+    },
+    {
+      "path": "packages/cli/src/commands/sync.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6830,
+      "sha256": "bbcc0e11242e3b6083552ccb0b7d684634c5c477f373fe45cca5722a08cea8b8",
+      "blake3": "2283695eb2a186864fb96991c3faf9912b1297321e81523d8f921bda6da44c76"
+    },
+    {
+      "path": "packages/cli/src/commands/ui.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3892,
+      "sha256": "96597409ab8795ec2e2b932e0a013a0a4698bc773dec8a7808ea67f53d42acba",
+      "blake3": "560adb4e4edc667bb4ee436099afd85a2bf4c21994d311f29b6b3fd155c7063a"
+    },
+    {
+      "path": "packages/cli/src/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6020,
+      "sha256": "47c23cf192f1d6d629b525cb88fe13bef73788f152d525bef37a8504ddce2cd5",
+      "blake3": "af7b574bfd62cf98122ca9826f895fc3c42fa4743f155b750c339173abbaf7f1"
+    },
+    {
+      "path": "packages/cli/test",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/cli/test/cli.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8727,
+      "sha256": "ad4b51f09091d48e6b11cd7f28dd7fef22048070deaae64849d2e13dbeaeb276",
+      "blake3": "78bc171cfd9d64105d4efec4e576f11cef4848c9618bb2bf7f48dea4752560a6"
+    },
+    {
+      "path": "packages/cli/test/import.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7184,
+      "sha256": "746acf170c1d92eda98799269376e00f23562f8bc476e73f04d330e16090ee95",
+      "blake3": "6e54a2e51df139484380e4959a4f159f61f1b7f66f18f564682460e5c6b5a98f"
+    },
+    {
+      "path": "packages/cli/test/install-script.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4133,
+      "sha256": "3156405df9835af29815c42bafd9844903188b4567ad8065e0515b940cd89afa",
+      "blake3": "bd7f1efce812a1a7e17074c1abc1fee3cd815b402b35b8189810720ae38c33fe"
+    },
+    {
+      "path": "packages/cli/test/ui.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7079,
+      "sha256": "da93e2a7f4eadfbc565576ece3f5b10cc028739120084b2383cf4d40514d4bfb",
+      "blake3": "a8670ee0dd55961e1b97965d3d1b1f86ab249e36080f79caf82dcfbd7f7eaed5"
+    },
+    {
+      "path": "packages/cli/tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 208,
+      "sha256": "088f1673a0de32711ee7596116c94887713a2a878e91133a437d9df1c785e2d9",
+      "blake3": "1ca147b9cd7ac4e2f0e235838763e352ea93fde242f20e291b1630b9298ff421"
+    },
+    {
+      "path": "packages/core",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/core/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 691,
+      "sha256": "49460122fbcf65bb07f629e47bbb4e56278fd3a98952ac8645dc4dfec5203be0",
+      "blake3": "2a283b8c9f65aad23474c910fb8ecd7e6f4c5ab85ad81abd37acc5d706146cfe"
+    },
+    {
+      "path": "packages/core/src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/core/src/agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/core/src/agents/credentials.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3220,
+      "sha256": "5f99172d756fd92829270e23633fd31bfd09a86b6f9eee7d43d18a5ed527a986",
+      "blake3": "45c5b76719c72d0193d30c1e2c9400dfd39cc7d24a57368ea503c4379edc147c"
+    },
+    {
+      "path": "packages/core/src/agents/detect.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7020,
+      "sha256": "a0a24771cacf2c1d960ef3760dcc7e33db4e296fb5502551f020e43378a2b021",
+      "blake3": "22e4506e1bf4633ac32f47ee4c55a0708b10935e8b4f79773917cbe9f1621637"
+    },
+    {
+      "path": "packages/core/src/agents/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 259,
+      "sha256": "b732c49f551bc3ce16789a1236b71188b6ed15f8f58134f48715f9d397bba613",
+      "blake3": "01b9a5d6fc4b0119f50939cb7134c9d69cb67a6ba8aa479cd6d920672a1c1fd1"
+    },
+    {
+      "path": "packages/core/src/agents/register.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14636,
+      "sha256": "1c53a9ee1bc9853dc66cd1565ffad0854fbbf70f62e7865ad48dd705855cdd7d",
+      "blake3": "76f2240358e0b8c451dca8da90fdaf557670380fdf463632ea0c71a5c9a6b70f"
+    },
+    {
+      "path": "packages/core/src/cognition",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/core/src/cognition/auto-skill.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11666,
+      "sha256": "4788b9868c1991c8a800a98fa8eab474f2acad150ac98677fbfbfad7c1d45806",
+      "blake3": "0ed3a58988f2d876d51346228c5fe4d63db597a9ae126cd6b62c813583c25718"
+    },
+    {
+      "path": "packages/core/src/cognition/clusters.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14482,
+      "sha256": "ff265770053aa0033764a88588f0155c08f43a3876cf5471a5c1ba5485749294",
+      "blake3": "9619fa8dc84748d272edd5f9bd6e26bdb99e1cb90c78ef7f0f55209623dc2ba8"
+    },
+    {
+      "path": "packages/core/src/cognition/contradiction.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13531,
+      "sha256": "918a5e3bce83eb5306eb38b639a2959f6e07f563ebc7fde8c72c6c4339170c99",
+      "blake3": "4660809c2b106412545a2fba65bb943d2129f3c3efceddec5926692ea386c64f"
+    },
+    {
+      "path": "packages/core/src/cognition/dialectic.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10979,
+      "sha256": "289fb07b494bca3428c01ed83cd07c61a92b13d54a7f9a31e8cc7e347594efeb",
+      "blake3": "09e42633edf0fa63b877d7799c76737aa17962ace51e3734153bab10db801824"
+    },
+    {
+      "path": "packages/core/src/cognition/entities.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8955,
+      "sha256": "a09256d79eabb54c01ccb6945231355d56aa8abcb69da25f70b12015fe326173",
+      "blake3": "0f1d057fdd9d055bcbb0d0334b667b1beef620bda4e6e40abf9f94a830a7222a"
+    },
+    {
+      "path": "packages/core/src/cognition/feedback.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14260,
+      "sha256": "457b3f364d94af547a270d0453d3411c3019fd289dec041554e25f360ef248b3",
+      "blake3": "087152f436ff22946e97ea3a9fd80df0d8f7a577b3e50006e2fe263a937ab7c2"
+    },
+    {
+      "path": "packages/core/src/cognition/graph.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10488,
+      "sha256": "84dbee53a6b16ca604ba59cd54b3c355541af7c5b2396f3a70eb2bac8c0eb0d6",
+      "blake3": "068f68299c4ebbe4bc96ae5c042218c836d7c1461fd0ec3e569aa460601d691b"
+    },
+    {
+      "path": "packages/core/src/cognition/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10887,
+      "sha256": "0fcd8e51ee71fcf815fa4f6cf9f69d052fac0a3eb2530234a18d2062ef6ac103",
+      "blake3": "4428186c038fa88d122d438a81ca10a248d57e6bef871c6306f51ad178c3ba3c"
+    },
+    {
+      "path": "packages/core/src/cognition/markdown-sync.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12108,
+      "sha256": "30d2bbd3eec3393ae97aa487a8ab4eddd7246cb072178427095170727c102496",
+      "blake3": "890b9ee93e476d3981322bb1d211e40fd7279c04bebfbbdf091e70ca0eca7a96"
+    },
+    {
+      "path": "packages/core/src/cognition/observations.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3611,
+      "sha256": "a47393be68b2f15cb3bb41cb5a4127d55c43872c78c76cf8c2aa35f59400d045",
+      "blake3": "b53f072810b0700fe3751d4c38cd9808f3081fb526436e97103e0050edfc790e"
+    },
+    {
+      "path": "packages/core/src/cognition/patterns.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24171,
+      "sha256": "36802a32cbc44e8d25f86140948f55f0e99194909d1349bc31723ab474d5261c",
+      "blake3": "a122c100153df0d1704757bac172e8ce47372fac487b83d2444c626fb6bdc1f2"
+    },
+    {
+      "path": "packages/core/src/cognition/procedural.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18099,
+      "sha256": "95c102ef3aa9b5ab610f06a9926095b141dd60a8f1dc4a8079e4176aab3166ae",
+      "blake3": "4e84cb30ca2a9ea4e91b15f96ce5a70d783b7f702ad0962007ab045fac71ff17"
+    },
+    {
+      "path": "packages/core/src/cognition/revision.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16097,
+      "sha256": "430e3a787655b9d834dcdf7cc4eadc14c764b0ba047be36daec951aa8fa03e35",
+      "blake3": "8996d90e357a4aedf0c4d9fd51e82144d99a36adba3d2b41dea9216f4213fd1e"
+    },
+    {
+      "path": "packages/core/src/cognition/self-observation.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16103,
+      "sha256": "558a5e87334fa76d80bbfab9931657898351555ba2ae5fabd7ac8b1805c6a553",
+      "blake3": "65a40686e91532282c953b7ea1d69755b2be00efa9d69b886468810a53503513"
+    },
+    {
+      "path": "packages/core/src/cognition/topics.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17396,
+      "sha256": "df4861824cf876e9c4fea47140737746e5491ce84b0398f854243cba92ae9aa2",
+      "blake3": "fc35c87965eebddf0ad92717910e752c6cfcfa6cb3439a0f3cc7d3e52498cbcb"
+    },
+    {
+      "path": "packages/core/src/config.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7273,
+      "sha256": "6403a51c8dd00b661a72ae2d90c860abc962ede2a3062410b794f9e52690f9f4",
+      "blake3": "cc9945114187846508cb3d7359a7f270f5c71de908cf9d8ed23d06d47efefb39"
+    },
+    {
+      "path": "packages/core/src/control",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/core/src/control/autostart.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5292,
+      "sha256": "b4310557cac049addd9dacffd70dd63d9e4236f8191a336ae1f0a880d653dc10",
+      "blake3": "8b3b1825f27c8812dca4b16ae5ff667d80146c134b2d1b827d990c82f79b0399"
+    },
+    {
+      "path": "packages/core/src/engine",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/core/src/engine/capture.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12501,
+      "sha256": "bbc5c0953211221867a2dadd3add2ea8bfba4e0ac6b679aa51ebcf331f19b83e",
+      "blake3": "b7dc06515a0b94b650b8dbcd578818f99198b0b6e7916bb544208350357689f7"
+    },
+    {
+      "path": "packages/core/src/engine/memoria.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 95632,
+      "sha256": "10511ceffe3307a934ed557181c33b7504a690a2a17f921efd79d53a86f418c5",
+      "blake3": "7c9d7f69a3a3916b2abbc44f5181ea732f597addcd474783b1103a643351d3ad"
+    },
+    {
+      "path": "packages/core/src/engine/scoring.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5126,
+      "sha256": "93609791c5a54bc0b533b581acc6ca04b45d4ab97be76066dd1654dc62a9639f",
+      "blake3": "35f5eaaec61f0b764dbef074ca9a47ea4af56b36898c5bf48118128ffd13c6e1"
+    },
+    {
+      "path": "packages/core/src/engine/selective.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2862,
+      "sha256": "40295ff83f95d564a18a237758b3988f510eb7a47ab262a6f65bdf11fdbf9dfb",
+      "blake3": "07e80f03f79e6b1147387eaf86d453d4c9913bf3dc1f77cc6610fced940546ec"
+    },
+    {
+      "path": "packages/core/src/engine/wal.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5910,
+      "sha256": "18ca4b0221bcddbf5da526335b3e66cdd24cf8681cb12b9378b4242144dd6c16",
+      "blake3": "e62ef464e021b2643b51054b459ae568b0da33f5cb44dfcbbb7ee9643b59003c"
+    },
+    {
+      "path": "packages/core/src/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2794,
+      "sha256": "7fc9f3184d6c20db93d864a1ac33f72eeece339db8c5a4dae4de0922dabb082d",
+      "blake3": "e07cf2219f6bf347ab428bbe2a11b216ca07bb1051065979844201e6dc16f8e4"
+    },
+    {
+      "path": "packages/core/src/llm",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/core/src/llm/anthropic.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4229,
+      "sha256": "4531422838c58aae9f606430f3e0e2fa6a48b20c6710c3c60cc2398589e44e6c",
+      "blake3": "e466fc81b75b1f8961e777628679398aa60d44b12ef1b4b03c5b2ea76c2bf13d"
+    },
+    {
+      "path": "packages/core/src/llm/detect.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17675,
+      "sha256": "6f407fbc9e9b076f0f2ddf957385edf8248b569a9fd53d03e5c37db96b6c4f2c",
+      "blake3": "2d6256c8987812df73bfe18a5f228f965d51a972930e7f5410db503d7684150d"
+    },
+    {
+      "path": "packages/core/src/llm/embeddings-guard.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1589,
+      "sha256": "90466edca27b1a80bf27c4e9d40728674daaf8a9b4392417d09b30b6d49e797a",
+      "blake3": "1bcc32324d03723c42f6c26802d33c3431839b6522a83ccbe178f8ff91b223ff"
+    },
+    {
+      "path": "packages/core/src/llm/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7067,
+      "sha256": "f5c98818b462b3d12863b3a9121175ddc45a0562f015b67e23e63a05a52446ce",
+      "blake3": "48166ca991d62fd864f13d76df8e6fee663d87de732163d48c18973842217642"
+    },
+    {
+      "path": "packages/core/src/llm/lmstudio.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6191,
+      "sha256": "9962d28e0db6de0c87382cef8e324896e1ed6dc4ff2b0296a506a3040f1d8522",
+      "blake3": "274e1ea5e98825adcac8f9db75d4ba26c0f081f6d1b68012adfe67204fbf2938"
+    },
+    {
+      "path": "packages/core/src/llm/ollama.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5832,
+      "sha256": "1b698de1cdc2688833ae5b980a8cb7154df6420a05ba0cb9a3ab91835cc4e206",
+      "blake3": "2081887de7fc2418453919728dad396b53c9e94effae8738d89b132c93f00db3"
+    },
+    {
+      "path": "packages/core/src/llm/openai.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5893,
+      "sha256": "222e38e4117be681ca5be448b0c4e2e3499b4d28ed5e1ab629891bada0e25a98",
+      "blake3": "2fc4598a6dcaf7979082338235de8a457f9cb89b24ae2c88a2161639ad085992"
+    },
+    {
+      "path": "packages/core/src/llm/provider.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1743,
+      "sha256": "16daa49af9f8638d139abac5a1af92cfd5fae88a55d20258e8a216ce2a5e2b83",
+      "blake3": "2db1384ef50e3ca5ce8856f997af3e8c1594b989748ff8f3f50cc38db7c61eea"
+    },
+    {
+      "path": "packages/core/src/migration",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/core/src/migration/import-cognition.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15692,
+      "sha256": "c2bd8c09a0d3ad867b49c7ef68be353ee1d0dde2868409ec2f1291c315a249d0",
+      "blake3": "0e783012dd47d3bc1116ed0c750071501bbf9f0ced2083e669fb8c7a959591c7"
+    },
+    {
+      "path": "packages/core/src/migration/import-legacy.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21384,
+      "sha256": "30029c5555b6b5fe05955ec851be53c65f8a7f097e1d4d61c1eafb6dc686594f",
+      "blake3": "f29f8034aa219464ee6a5f27d6d9cb708f6b73feedecfce2c53194e49e892169"
+    },
+    {
+      "path": "packages/core/src/migration/import-transcripts.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16313,
+      "sha256": "46fdd61e5378bedc2f95ee7afb6861aadee5377539660de63a4b5897cbfda243",
+      "blake3": "61d7f5fda398f5272cb014656dbc1ea37548fe731f5171835966e370401d2184"
+    },
+    {
+      "path": "packages/core/src/migration/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 873,
+      "sha256": "f945f1c59114ea972507891c66e29b2d5289f31c87a6bc513a652131ab623e08",
+      "blake3": "b73f28a9323ee83993ba219c00838ee66a14813cfce8829563a6e2706d7d8a06"
+    },
+    {
+      "path": "packages/core/src/migration/legacy-schema.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17762,
+      "sha256": "e9cbff2d8dfebe6b98345589c7c529e7244a64572abf6d1ada34ed967a8c4c35",
+      "blake3": "e8597c439bfe712d2217c8496e297138202cdb375fecb890106048a68324c75b"
+    },
+    {
+      "path": "packages/core/src/migration/transcript-parsers.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10350,
+      "sha256": "2a06b8cc686d362841930cdc37354575f092a03159e4c331545830ca61e6fa66",
+      "blake3": "e779eca0514b996ff5643e6889787c7312638cae8dbac79bb7ae81f549272eee"
+    },
+    {
+      "path": "packages/core/src/secrets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/core/src/secrets/aes-vault.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5273,
+      "sha256": "52277577f176ed7276be6440edf47bfe451f7f7596f0f52176fad0fe7d5361f3",
+      "blake3": "4bf9494478f8c9e5eff55cc5b446a6045cc3e13e11aa0910e431253edb5dce7b"
+    },
+    {
+      "path": "packages/core/src/secrets/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2752,
+      "sha256": "c5eb16d8b6c5c2c0ef4673a5939e8750745cffdd694bbdd792abcb59b75f8d5f",
+      "blake3": "41b9a630722b18bfb60e9789a6174348f4272f5cc7e9a8396ebe0cd7150bae2d"
+    },
+    {
+      "path": "packages/core/src/secrets/keychain-macos.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2850,
+      "sha256": "622ef9cf6fc4eb91beef47f0dde63252038ef7fa29a93985a5ed9a7df9cf31a5",
+      "blake3": "23cb1ac3e0f3f648bd7f296d6b60e0266a419ff2e16f99de01e8ab136f9f26c6"
+    },
+    {
+      "path": "packages/core/src/secrets/redaction.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4436,
+      "sha256": "ebbf30357fee661d485098a2d7afc417af56343370133e31a09876e4a35c96f0",
+      "blake3": "4990cb3e078a39c738194257c0c0a186ee69afdb1623cde1ea06699e5508abed"
+    },
+    {
+      "path": "packages/core/src/secrets/types.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1223,
+      "sha256": "8a411dd94618c866aa6659595e8e1bee12470a6b31e69e11fff278147fc45e9a",
+      "blake3": "109a84ef0d4d725b263da844270406510600c2e37600efa8beb9c89972cf386b"
+    },
+    {
+      "path": "packages/core/src/storage",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/core/src/storage/cognition-schema.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5276,
+      "sha256": "4371d5a58dc0bbc8db10f0821213852550029f68b7d9e9cce59a7e1b042021c6",
+      "blake3": "48b39bd32b7c5f297d6730e2ef8f49071c2f0fd01c61d019333dde9c94cae26e"
+    },
+    {
+      "path": "packages/core/src/storage/content-schema.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9969,
+      "sha256": "acf2b60457acc6cbcd5973ef06d4529c44843c309e86b99a78e6ef388adbe9de",
+      "blake3": "9a7006c1205d8a8631077cfb6826a54d6f9f0a5aa24de9fb37d673d3f98fc451"
+    },
+    {
+      "path": "packages/core/src/storage/content.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18525,
+      "sha256": "b103505912e2b3ec47a0d22e41df215a596eede24541ebf55132aaef25816533",
+      "blake3": "80bcf805cda8ed2c544b413a4a721b328f91a3752e1a1a343b6384cb991e5124"
+    },
+    {
+      "path": "packages/core/src/storage/migrations.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1440,
+      "sha256": "5372e3825fe0cd3fd8fc832ed01c5c42a3c9a9509632a5ca47a4ab3279ac1c64",
+      "blake3": "3cc35b7e9fe3ebec15c03592a6bee5b7b999ee8bdda1d66e8571c28c85befdae"
+    },
+    {
+      "path": "packages/core/src/storage/network-guard.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2517,
+      "sha256": "37df6f5eb263e1790a56841df2c93b6d3b25f4998d09118d5d4a25cf8889a36a",
+      "blake3": "dab6b3d800aa52c997b033f7ae1b4f2c00d7ff66054eb7f29fd3edf9e297ac3e"
+    },
+    {
+      "path": "packages/core/src/storage/registry-schema.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9898,
+      "sha256": "2de13115bfcd23e8bd4c29079bcc82be47b386d2e2b7e45299240f6eab3b4e0d",
+      "blake3": "f048ce1bd2117c8e28ee790479200eab8041b80b2232ebfc9473d45157644f93"
+    },
+    {
+      "path": "packages/core/src/storage/registry.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28053,
+      "sha256": "a9cfb624438630a9bef79496816a9c5ac29e0c33a31a4b439d230163a8bcf569",
+      "blake3": "d2b667fcbb5e10d3ab379f44d166a0d30c5b33b75f2c6ed9009cd6c7c6cb826f"
+    },
+    {
+      "path": "packages/core/src/storage/sqlite.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1068,
+      "sha256": "6572535c81686406b352f1d164f9648441be4ea3edc77a48f2bf04bd809dd313",
+      "blake3": "580d65832b87e2a4e8ba6ec93837d31a6869b33a6f1932d15a7a26d08180740f"
+    },
+    {
+      "path": "packages/core/src/sync",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/core/src/sync/clock.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2081,
+      "sha256": "82c2760fe3c896a39a9cfead402120bbfa74543719c324b2bba8a9f5de34e1dc",
+      "blake3": "5be14c64794eeda688df83fafd880a228f42210c8597c7fc84e864d40714e601"
+    },
+    {
+      "path": "packages/core/src/sync/engine.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19537,
+      "sha256": "72be84399ac228c439449a2237de0ac9f6ca9c4e46668a458f0af9204ec3fd6f",
+      "blake3": "6b607e7bea7c82424db727f0330ad266d286e9291e776f7bc18262acd53f6b45"
+    },
+    {
+      "path": "packages/core/src/sync/merge.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3977,
+      "sha256": "67521572b9861b4b8fe1f789c0088e5f321bb90e96a179fe34073b06de9741b8",
+      "blake3": "c2be1511bffdaa926341b1293bb47ce8a323e6270fd583ab1f2f1f121128244d"
+    },
+    {
+      "path": "packages/core/src/sync/peer-auth.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2637,
+      "sha256": "c04894c6f2a33b7ffb7e23f239b75370f4b2d8593e5537a049aa3a088b2ab705",
+      "blake3": "ad9ddb072f306f6a4bcc366c910781afda03f535d0713fd3f950d399e1bccdc6"
+    },
+    {
+      "path": "packages/core/src/sync/secrets-sync.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2582,
+      "sha256": "62ddb22537a4d3baaed710b5818ba6143546e795042b24933d4ffabc6edd538d",
+      "blake3": "7009f802256d9f557620b8e627c29e502327fa09a10a70bd3c0d8ac6d01551b3"
+    },
+    {
+      "path": "packages/core/src/types.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9452,
+      "sha256": "36b02e1628dbb5b6909a99f88d22ceed7274f12806e93787efb30138b8865346",
+      "blake3": "1454c9270de276f6857d5fdbb9584fa71d6d1a3139df8848400f7211290a47b1"
+    },
+    {
+      "path": "packages/core/src/util.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1898,
+      "sha256": "4bc7803f9c9139b769eed9966711cb684da99d47e5d50559b19ac5a7b3179fb8",
+      "blake3": "e6644bef7aa92d3c353e86981daca462f19c732ecab1e45b5608b434d8ac86b3"
+    },
+    {
+      "path": "packages/core/src/vector",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/core/src/vector/hybrid.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3957,
+      "sha256": "02153e9d732fb63728f23a97e09cbc99d280b5f79805c15fc25f62bae1579ce1",
+      "blake3": "dfa811d66b6c4f58fcc67ce7fba57084c2c1594eb002632846047c1fb397fb21"
+    },
+    {
+      "path": "packages/core/src/vector/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 394,
+      "sha256": "7c6fea3a5d77cbc8d78e54cfbb13b6d48e709bcd6a8d864e649d6f42f3be987d",
+      "blake3": "e2ff0a5e7ee4d0f97996f3ea4648b2a5351b95e7b5955170448120badc035628"
+    },
+    {
+      "path": "packages/core/src/vector/indexer.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4404,
+      "sha256": "e3ec8ae7d6e65d6d7a72cfbb788e882f7ca68b67f462fd10ea31639252d474d8",
+      "blake3": "da160a1884efe66e0f62caf07185aa52ade087f775a3e8197f2d15ae393d0fc4"
+    },
+    {
+      "path": "packages/core/src/vector/vec-table.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4116,
+      "sha256": "23f2de7fb9e6c069e734016867418c93de307cd64b7e2e73868f8bc250094a98",
+      "blake3": "023da35551649d9f6ea58519d2da85646c2cd995431db79d36267eac6f5a5a57"
+    },
+    {
+      "path": "packages/core/test",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/core/test/adopt-legacy.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2689,
+      "sha256": "7715e3cba1ad11b1be668d41c549e138f4b244fc3fc0a62a082f60e525d1ae1e",
+      "blake3": "e5f390ca924b09a7a078e3b20bc0353190bb88f3fdd577c7a168f7379a0532c3"
+    },
+    {
+      "path": "packages/core/test/benchmark.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7793,
+      "sha256": "eab71eeeefd1aee448ba91994714871286d7481b6297158f30a0fedfd94d5b94",
+      "blake3": "bda35524b436a8402c212970c4d341cbe676825704677dbd697098da22b60a62"
+    },
+    {
+      "path": "packages/core/test/capture-integration.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5274,
+      "sha256": "1bad3dd17ab8302c52709d744a97b689fba86403da2fb943a449d2e615192af7",
+      "blake3": "82e2f5cae671c2f49919eb0ff0180cf0af6349ae5062e6f98d01d2eec254f8b6"
+    },
+    {
+      "path": "packages/core/test/capture.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12923,
+      "sha256": "0852389c6951b08a3325e18086d5b8eb704bc8c97e4c906bf7de483ed301a31a",
+      "blake3": "b45e3ceeabd83afd6dbfe7767b4aa818336cfd139ae0005ddff20c0ae4b59bf5"
+    },
+    {
+      "path": "packages/core/test/cognition.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21999,
+      "sha256": "fd9857078a0363a3d4d515e83023ebe2c8c8e8b782e12cf43de53f3a53924550",
+      "blake3": "3a6b6c1e3722dcaaf451bf3fff7fa233f12fd16fc3d5f9f3ea2cd9d860451634"
+    },
+    {
+      "path": "packages/core/test/cognitive-stack.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3851,
+      "sha256": "7864a6be54db85f1270dd28e1375dc2fc5ff843d1799341b72c9c159867d2235",
+      "blake3": "64e3b3e97b0afb49d605f608020595790245d3b28f287eb49e712d77109c5639"
+    },
+    {
+      "path": "packages/core/test/contract.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7909,
+      "sha256": "754d52657ffe54378f60008aded1ff46f3513b9ec0f76243e482600c7bbb7655",
+      "blake3": "0f2015cd08a5ebea58a4745f6728cc7acbdf67007fa4474d3246e2d82a539e92"
+    },
+    {
+      "path": "packages/core/test/contradiction-clusters.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15644,
+      "sha256": "031a71aa9af3bf99b624c479c71d6dc77d6211b26d64c3fe15f0b613de488ca7",
+      "blake3": "8ace998ebe27ae6ac63664a889768b9defe1e9878d65b9a0af8d6ec89a3cf7ce"
+    },
+    {
+      "path": "packages/core/test/control.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5574,
+      "sha256": "77cc497766292c376f44bb370abf1eac30b076857faef4bafe1d99687ac5c143",
+      "blake3": "2dbfdf08a360fc39ca6fc449e847232efd36c4ed6a6c01a5504269a71add8fb1"
+    },
+    {
+      "path": "packages/core/test/detect-agents.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6691,
+      "sha256": "23b6aa61b7ae82b9597831c86c7c959157023c9847b1b0dc640e3973191950ed",
+      "blake3": "caeb0f72fcc9c2e67485fcce373a82c07ada26bba4842c6178469f7bb9129ab7"
+    },
+    {
+      "path": "packages/core/test/feedback.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11158,
+      "sha256": "5b9a1fcc00fb0103d8981fb63e5f73d139288dd73d6229a6cfa001fd4ccb4f8a",
+      "blake3": "5d9f68dd2d00b968f9d6a24733bc5193600cd16c525ac2fd7b7a05388d0ba7d6"
+    },
+    {
+      "path": "packages/core/test/llm-detect.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12453,
+      "sha256": "e21fd426bc619edd7631273123d8d45c6b3508cde61db1dfa5194778ac8d5d81",
+      "blake3": "80d8f8aeb9281120fa5cc3fbc192b5b056abef337b2b5c52019041718a6b6420"
+    },
+    {
+      "path": "packages/core/test/llm.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12903,
+      "sha256": "56a0212c55971085d459d7ec85fb84e6d23398406a33ea9a34401926993e1450",
+      "blake3": "e3dbe22eb1f1fc257bbf0fbdc0bc99b76c91b8038594c5a59629ab1cf5bda88f"
+    },
+    {
+      "path": "packages/core/test/lmstudio.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6846,
+      "sha256": "bc35e55af8bc352f794983f55881612c54911f8fdb449661613fd36d71802969",
+      "blake3": "55c54fccc25dcda3e152addffc6c34ecf7e978f70b6b2fb6d61b99012ca5f613"
+    },
+    {
+      "path": "packages/core/test/markdown-sync.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9529,
+      "sha256": "c7f483a9c6e0aadc16023e635756634f6a24b7dd8973af2fecaa364f33c20641",
+      "blake3": "1a423111789e8972c2b86a1fbd4b09dd1b7c2fb2a77b415ef9b25196f419caf7"
+    },
+    {
+      "path": "packages/core/test/migration.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11480,
+      "sha256": "e85a24e9764b75d98745d1b009b2d6aaafc8620ee29fd07ace26a26a0008914b",
+      "blake3": "5abac3a8909c9c51cc62e1e2d7b028d607bb73da2d41c54039ee94626d130f4b"
+    },
+    {
+      "path": "packages/core/test/openai.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4494,
+      "sha256": "e490adbab92dda6d4f1029c45b709de2cf1d53ba703e5330233022386e8f6aeb",
+      "blake3": "97957a590476148b1e4a6057bfc1371da20a5438eee90b0979f4f5e731244c61"
+    },
+    {
+      "path": "packages/core/test/patterns.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15068,
+      "sha256": "2d3833c43ca2fc344eb9b1288d4acee538e52e8cbdc2bd2d49834a64aa295659",
+      "blake3": "93efe727231aead9e388d0763d1e51bdfc2ea5f18e309b086a40b1ad6d02eb6e"
+    },
+    {
+      "path": "packages/core/test/persons.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5445,
+      "sha256": "c7409239c332f9ca8e661dc6bd0eb1f5f9d7e1fc8a425bded597daeb1edfe5c7",
+      "blake3": "7485d6b352ec3a7433ec38150465debcaf7e5cddd2d51c543738fa91366ce684"
+    },
+    {
+      "path": "packages/core/test/procedural.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14813,
+      "sha256": "596330c5faf8475294703e997d21134a1fc26571b5ad98ea28919b3df790e8d7",
+      "blake3": "11665f7075746152117d043cf2e78a4620cd23257116501218349050ca9864d7"
+    },
+    {
+      "path": "packages/core/test/recall-semantic.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6035,
+      "sha256": "f252ab62c5a048fd64a771c082b0615d96411638816caa3c1c1eccab7b595faf",
+      "blake3": "a3c598862f4f3b36c06b28e762ced7965fa62b28754eb311821ada4f65b5683e"
+    },
+    {
+      "path": "packages/core/test/review.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3246,
+      "sha256": "d5ebf70328d6ca6e10b6204a2b394f0d84421df301c555d8fa93922a15a31a4f",
+      "blake3": "c6da9c2ec0d967d4e1c6b7e004b4cf08664c926e7828a4a125e8c8f6e9e3a894"
+    },
+    {
+      "path": "packages/core/test/revision-skill.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14096,
+      "sha256": "976458f264e7117502d31a243b709f848653004dbd6da34fc4cc1d58e7c7425c",
+      "blake3": "c5c08fd449c6738637a24990a0602b006c1f26f84b71334a190aca8072ec48eb"
+    },
+    {
+      "path": "packages/core/test/scoring-context.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3988,
+      "sha256": "0d1dbe0d046e775cc38988baed9818a8a7ad6063460bc8593e43ad4f3ee35e1e",
+      "blake3": "08e145c17fc7b9fe9fdaaa591cd6887c3d302bbda71c3bd105e7ed30e4b1406c"
+    },
+    {
+      "path": "packages/core/test/secrets-gate.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3084,
+      "sha256": "3258bf4764be8c0cbd11788b688fc207f5a9acb499a56c8e6425b5446a36126a",
+      "blake3": "0b739aaef3fac2afd9360303247b81554298fb8f434b2657c41bf8f3b11deb16"
+    },
+    {
+      "path": "packages/core/test/secrets.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10736,
+      "sha256": "17c90fb832e4f9abd9347d648b13d477a026855d1defc2c435784bd499b6fc03",
+      "blake3": "bdb1fb5c83a08caf9bb5df3cfcd4b392887417e8d26c36f3bdd5b465dce4f2d7"
+    },
+    {
+      "path": "packages/core/test/self-dialectic.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15703,
+      "sha256": "3121bfb98a887e777b5811b680f90e2a80b95dc42311026cad259822f0ae724e",
+      "blake3": "be261d45955e7c89b87bde530397a7aeb1e44db5348cb9b4fbcd259778fd5133"
+    },
+    {
+      "path": "packages/core/test/sharing.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4590,
+      "sha256": "0437b5e3b6da85abf9ec6cacf18441fc342ab5dfe14e42a9da8b471fd835125e",
+      "blake3": "484c6960c5d4e8593d2dd8659a0a7a05b4b3cfa39b9eb110157f5d6755b0f6a4"
+    },
+    {
+      "path": "packages/core/test/storage.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4741,
+      "sha256": "2c4b16c358a4a10cbc130dc9b97564571b630dffc601a324b0341f34460bd85b",
+      "blake3": "63f9e52a4a5123a7b2906d1ec8b8ecad1153fe068559b4c935c654ca5a01b7df"
+    },
+    {
+      "path": "packages/core/test/sync-crypto.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3052,
+      "sha256": "6d8bc6790cd00c1dd85338b6cc217e61a9904ac9536ffcb1fb28fda730fe4cef",
+      "blake3": "4965e5dd473e5b1604df5a8146996322842740d8e59471378500f953d91f4f14"
+    },
+    {
+      "path": "packages/core/test/sync-engine.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9491,
+      "sha256": "1481b749f69c2b3b8e9b1f992a3214be2da6ea4b9d5637043a68c2054a9d229f",
+      "blake3": "c3aba3a1aca5f92fa82a8a70a4a7d56be39f8652d19acfd872b6b814c7f9ed14"
+    },
+    {
+      "path": "packages/core/test/sync-merge.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6921,
+      "sha256": "8b26b96f6543c45a7fc55fbd1415190f6735831471bb2d9f17f6797a5248232a",
+      "blake3": "8d7b008f6ec3d5b82058e6581343b3ca76911cfdc700f0afd8d28254d8cabead"
+    },
+    {
+      "path": "packages/core/test/topics.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7698,
+      "sha256": "883e2175296e48542a4ad4af228527bb8978e52e1c54ded3d231d26e3d627bf8",
+      "blake3": "2d4c29b1324b135f404684dd530bbb5737e4d918b6fa2797a51baf80daf26191"
+    },
+    {
+      "path": "packages/core/test/transcripts.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19333,
+      "sha256": "e1e810ebfd2234d8b6bb857e9fe67774d8c379b0701314dd9a2d1aef23385501",
+      "blake3": "a65965145edf787ccf5961bf60788cfe97b804a4bcb2ffe38a21af13b536c40d"
+    },
+    {
+      "path": "packages/core/test/vector.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6115,
+      "sha256": "d8c98145ac8e8322e0c9b0e555ae6d6cbb6baec16a7fb4664dc1db6fc59a455e",
+      "blake3": "8e17617e476274deedef30b7186cd4e8b4908c5996c705fec498574bba4ba916"
+    },
+    {
+      "path": "packages/core/test/wal.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6083,
+      "sha256": "e6c05a407f49834fb3c2443700daed74ca1129fb01348de6f0eee00f0a513524",
+      "blake3": "031e80b2d1a3fb11eec0adad1950bcb56fcfcb2069a1ce47e46f971cc58d8639"
+    },
+    {
+      "path": "packages/core/tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 142,
+      "sha256": "b6eff2263b1b3dcd401483d95859337721f2dd380914d9fa267fc18887821627",
+      "blake3": "de579c3e73c0140c81a1213e87ab99645c78352edea8f9f021868d341eefa399"
+    },
+    {
+      "path": "packages/daemon",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/daemon/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 624,
+      "sha256": "7201265e18afe7677419aa6c46c45ee1a544c9028fdc5bf81185d1d654dfa91b",
+      "blake3": "414beb3cd483689ef35a152e411252a1ead579c04856daa32013d421c56e88db"
+    },
+    {
+      "path": "packages/daemon/src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/daemon/src/bin.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 811,
+      "sha256": "12a3d8deb56f693811f664e3a37db95b58a490a457d8385dd71eb571d3cfab6b",
+      "blake3": "f2c4323a17d845f600313c3a5e2c50c55e8dee295281bcdf4ebadf8e973a17c3"
+    },
+    {
+      "path": "packages/daemon/src/client.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7578,
+      "sha256": "82188466d37667cb09ab0560807f39bf400cf1f293d9d95b8268906c339b0568",
+      "blake3": "4dc302613dd6d04fc9a2063e2d3cbefe8344931334e7371187f59e3fe04c1992"
+    },
+    {
+      "path": "packages/daemon/src/import-job.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5911,
+      "sha256": "3b9053e68b82ee656738470c84db8aa4d94ecf150818b666f7dc2509853ff9df",
+      "blake3": "4b16f4e379fdd458a25f02862d50ab13bdecfa07b1b1a32815c0d9669ffe9ba0"
+    },
+    {
+      "path": "packages/daemon/src/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 850,
+      "sha256": "eb63552c301117f4504c5a06428f646a8ab21e9577b2c6eb31f816d52cc94670",
+      "blake3": "ced46632c867dec098be057b218750949869c6fe234d82ede6c9187d275b2d03"
+    },
+    {
+      "path": "packages/daemon/src/ollama-pull.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4141,
+      "sha256": "756c670947e34f6320db7b1c3f17bb86f4046f6168e2fa84104319455e3a94b6",
+      "blake3": "24e13388ee8e45522aa95b5927109b5ec0dce310393830a52539a54032543779"
+    },
+    {
+      "path": "packages/daemon/src/server.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 46350,
+      "sha256": "a51fdda6e9696e17946159b407531ed8db99727ed3b35657c06220723c18f26b",
+      "blake3": "3c8d50849fd606720546ae2db74454b243229f73b963cf21dcf5b8f58777ee38"
+    },
+    {
+      "path": "packages/daemon/src/state.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2690,
+      "sha256": "87d1daccac54b91fab39a2d69a5dc45dcce07adc05f831af2ea0ce2a56599852",
+      "blake3": "f61603e872e4315ade3cf859363608f923cf5f56715f674b81f7f4a07923bc38"
+    },
+    {
+      "path": "packages/daemon/src/static.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2278,
+      "sha256": "fca0482a64f389d69d0a113c8aef9d111b2586428a29695452a631f8d08605db",
+      "blake3": "d9a963e25bface5c4aea577a7c41319f07ba28fc359fe0499a281125e6f971f8"
+    },
+    {
+      "path": "packages/daemon/src/update.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4219,
+      "sha256": "17e87e84bc8220aa5e7dad099011156c12be1637b9910a964fa1e822c7651965",
+      "blake3": "f4acb02d51e03a130714644afe2d696ad8aefde331b45c699219aa4b398ff9a2"
+    },
+    {
+      "path": "packages/daemon/test",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/daemon/test/agents-routes.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6532,
+      "sha256": "a30f681c1e6345c2fa83b056b8166e8300f1fe498501ff375e58f207a1f16ef6",
+      "blake3": "fccdc1f0867d31a9d36d8b66fe70753226419840ab0be26ed9dd45c3a188c9b1"
+    },
+    {
+      "path": "packages/daemon/test/daemon.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3111,
+      "sha256": "1fa63181d74fc1d755b6a201ef679a6f2e0b9dafabd379c3d7bc006660820ea3",
+      "blake3": "d6b3336c6d68681a842e47daa273ab3e86a077c7bd6c982cf2a69f810df720ef"
+    },
+    {
+      "path": "packages/daemon/test/import-routes.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11644,
+      "sha256": "91caa18f7a8edcf16654bb342f94014863cb998fb324012748d47bca36a663e7",
+      "blake3": "20d7cfbc3065b33bfceece35deb64e8e183fbae5d6685301b10a3d586385c816"
+    },
+    {
+      "path": "packages/daemon/test/llm-health.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6121,
+      "sha256": "d0dc4c8dd3f7680d0d9f3b51fd2cdaf1acca92c4b30bd1d2539f42eb310e67fc",
+      "blake3": "f64ae40d7e251bcc5916f46625285f2c7091a697a38caee35d6ba2e1aae1f54b"
+    },
+    {
+      "path": "packages/daemon/test/ollama-pull.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4483,
+      "sha256": "8f89c95262decb2cdb20ac9f446a4654bf1563d15fe3d8bdc0f6ba66a8a95038",
+      "blake3": "5002860f7df23d1faa385a36faf11574015939dd22ee1b9680c28e7ff256ff2b"
+    },
+    {
+      "path": "packages/daemon/test/sync-http.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3744,
+      "sha256": "c6fcc053285d43c98ae33179a9ec1a29edf92fff13780409f90312bc9c903d18",
+      "blake3": "1649e278ccf9db8ef556f958bd1dbeecb50a24c1ff6e9a4421e5b6312edde095"
+    },
+    {
+      "path": "packages/daemon/tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 183,
+      "sha256": "66e452b55f3cb012468534b8563c014fa86362cefc8c486b95c6ab0376c1c9ef",
+      "blake3": "54506047f27dd80e434269f0d5009e009f7d154ae9b55e1cb7fa79ae7ada5064"
+    },
+    {
+      "path": "packages/mcp",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/mcp/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 703,
+      "sha256": "8a489168e275d347ef79108bc162364701b53113a8d33b4332cfb4a3b9019608",
+      "blake3": "7ebed7788d7fc0517f977896ef6572fa4682263e5c08fa4783dfcf497fc48147"
+    },
+    {
+      "path": "packages/mcp/src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/mcp/src/bin.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3738,
+      "sha256": "ce821accdf505cbef4fda26d85ad8e7663f3aeb08b59634b847d685c5da580e4",
+      "blake3": "a10d2b8569733226d3c0af697c3f05b097e1ea492ae80f7987be063d61239842"
+    },
+    {
+      "path": "packages/mcp/src/connect.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3817,
+      "sha256": "c30354130d8f243052549ff67718742b2a180e3e43417e66c3606cd735708b5b",
+      "blake3": "f5de3bd0ddc0aeea87d08cbe6d05cb846d15532c7af49ab4564f14700862d832"
+    },
+    {
+      "path": "packages/mcp/src/context.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2235,
+      "sha256": "d765a3f101aad9c40cee4e9fe7f6d43aced71851fd3c4edb96336bfe7ff2ab55",
+      "blake3": "0e3e8aaef3c083586d1954bff94d0ba5935994ebeb6bcbbc9b89a8d03cd49c09"
+    },
+    {
+      "path": "packages/mcp/src/credentials.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 475,
+      "sha256": "4e395666db64bb05dab4bbf6b61561019908086bb1daec373deb6bacde8b98a8",
+      "blake3": "90764a496aec70342dc0d0ec8d87c4a9f8679ff6fc0703e8d473b084b8a2d2fd"
+    },
+    {
+      "path": "packages/mcp/src/disconnect.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3321,
+      "sha256": "ad40f6143b6d3f87c93c31cbfd7da1671d44bd71a2b89bf7f1616dacc5168074",
+      "blake3": "9a56b062b77695f895f7c709feb8e211f48c6a5f56569a4458fdf649a4cbf1ea"
+    },
+    {
+      "path": "packages/mcp/src/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1283,
+      "sha256": "793a810a2fcd5879c35b6ad2f92b7c03c2cc8b2179f089c115066a1355bae445",
+      "blake3": "086d947038720ca6e29cfbbed8ab8a4df1513b46927b616feee40721c901d673"
+    },
+    {
+      "path": "packages/mcp/src/register.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 644,
+      "sha256": "07e7d1e8a7aca745f980f02fbae5bf8ec014f7216e01bf477cce2c4461d3b96a",
+      "blake3": "d37257c68c6857a2bcd43e6e643cf8a331915d413e0404589da1538eb9b3485d"
+    },
+    {
+      "path": "packages/mcp/src/serve.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15698,
+      "sha256": "84e3c067e1649b1dbaa595ead1d29649ee56dc928df2c1f5646ce118fb55d59a",
+      "blake3": "c0ffd817d02910efedf1244df7b0198b2c36d336296a18c472e0e2981a6991d5"
+    },
+    {
+      "path": "packages/mcp/test",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/mcp/test/connect-disconnect.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4841,
+      "sha256": "3557fd70128e84ad064f78d4e0ecb9efe5dda580c1a87f0f09b83f0b563474ff",
+      "blake3": "3e101950c687b08a56df59753a2655c7faf9f80eab82294ff4ee2d2f74c50c34"
+    },
+    {
+      "path": "packages/mcp/test/mcp.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11200,
+      "sha256": "8320f9ee3c8c34146d6b7e89f7babb21a21a7e9327b8518d1c11eb6575cc7f9b",
+      "blake3": "032b080b5eec47bf3569efb782fb965362c9f333204094514ceb21b6020daba6"
+    },
+    {
+      "path": "packages/mcp/test/openclaw-hooks.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3812,
+      "sha256": "eaaead3f7d4c65a66d96e364c7b7b125450f5ba3cffd39d83d8b296f6a6047b6",
+      "blake3": "c14a7a3381002edfd6881fbfa99db6be07d731d6f1750d8480ecf2e64180ff34"
+    },
+    {
+      "path": "packages/mcp/tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 208,
+      "sha256": "088f1673a0de32711ee7596116c94887713a2a878e91133a437d9df1c785e2d9",
+      "blake3": "1ca147b9cd7ac4e2f0e235838763e352ea93fde242f20e291b1630b9298ff421"
+    },
+    {
+      "path": "packages/web",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/web/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 368,
+      "sha256": "1c7a8bb824c07c65fbd37a022364b65b46794b403fbf952014ae371cbaeac667",
+      "blake3": "8e4f96f3da7fc37b4db61a0697aedf2ad5037859bb4f25cbf3e7d72b8252a966"
+    },
+    {
+      "path": "packages/web/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 613,
+      "sha256": "29a731c62cba24139cda5867fa0af72530871eb27d885afe85bb2749c585e73b",
+      "blake3": "fa538dd71f3f8b7823375b84ce0ecbe5aec4788e2f24c88c6fa4b647592fe448"
+    },
+    {
+      "path": "packages/web/src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/web/src/App.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7407,
+      "sha256": "79d1327abd1849aa90262cd8c4c552b85469e3711dfb681ecd746beb3bbd3f49",
+      "blake3": "ca5d430439daf1a1ff593cb1759562fa0a924bad9124f0873b7f00dc108f4119"
+    },
+    {
+      "path": "packages/web/src/api.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28311,
+      "sha256": "47bd00f9436ff208e92b906d3d4f4d91e1dff480a53dadd9977c4b5e6b4afd32",
+      "blake3": "7fd3ac64274beeae817cd25333aa6e1282c8637066829ea6ba97c738406cc884"
+    },
+    {
+      "path": "packages/web/src/components",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/web/src/components/Wizard.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2436,
+      "sha256": "e5bdccabd335b2d19c5fb1b631906856a7ebfb0b622722c7670158d6cadd732e",
+      "blake3": "55b97b47a5561e351d273bc50858e9279a22a1e8db908f2dd8974be45d939af1"
+    },
+    {
+      "path": "packages/web/src/components/ui.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5678,
+      "sha256": "b138fcecfde381b097a097000de182815faf0cf57fad2ed6481f0853d1658de0",
+      "blake3": "37904afbaa5433112d36cc0a92ab95b20d7a34fd59af9f691aab322c457e5017"
+    },
+    {
+      "path": "packages/web/src/i18n.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2941,
+      "sha256": "cae68308e8ed62017130693365f3df62cdf5a7147d32edddec40ac43d8dded6d",
+      "blake3": "7ffd405798228e7f16ca192f4292d2a613acd0161e775358afadaba12e072af6"
+    },
+    {
+      "path": "packages/web/src/main.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 577,
+      "sha256": "38ca871cc85163f69343fb60bfffd6df6311b38854b08986d5358fe246bfb613",
+      "blake3": "6021859bc251915b85b2ab53147ebfab21abca6dbbb284a4455f88ff72c2d5a2"
+    },
+    {
+      "path": "packages/web/src/messages",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/web/src/messages/de.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 70250,
+      "sha256": "7f4e38d21d4f14bc324285320681e63ac150895924868214c927941e4543cfb8",
+      "blake3": "5c9275e69c1bd53a060d96b132accf447715fbfb349b664f421d1a8e13336120"
+    },
+    {
+      "path": "packages/web/src/messages/en.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 64193,
+      "sha256": "790de00ff0c1fcf49a97e94224a46af43b262fced89fcebe8638687f1c858896",
+      "blake3": "fe0638b2a794671f4f6870ae74ad04a80163a2b65ae0f1aba7751f27da4e3855"
+    },
+    {
+      "path": "packages/web/src/messages/es.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 68372,
+      "sha256": "7dca2b84ed28cc31ef459c39350c9bc328534a57df17f2ac44dad853b874ff00",
+      "blake3": "6c7976c1caba44e72ba09a156fe73b924c7776a8133d65f11b5c9aa9e3b2274b"
+    },
+    {
+      "path": "packages/web/src/messages/fr.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 68927,
+      "sha256": "d97ad69e68ec32a7a9b2209bd2c8c837af55912903ab20f65939411a9c1bc23b",
+      "blake3": "6cf1a2777ec167b63b1e7f4708b7d344c4133d8ed1386c05b9238d4ac9611347"
+    },
+    {
+      "path": "packages/web/src/messages/pt.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 68111,
+      "sha256": "ff88882651365ebeb374501fa471fcc5bb26c855d64477ab439ff61d99d5f6a4",
+      "blake3": "7aaffd7615cc4228cb55c3644217c6b51e4edeb66b27227b8c0fb55e863a04aa"
+    },
+    {
+      "path": "packages/web/src/screens",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/web/src/screens/Agents.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24158,
+      "sha256": "10f4dc889191f96e3643ab842ff292342a869b27f74a00070e23337571316673",
+      "blake3": "3c721719ffb277b4ab2e216328dc23692e9b0f394ee91e1c388c924ac9933c12"
+    },
+    {
+      "path": "packages/web/src/screens/Audit.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5483,
+      "sha256": "f3580014a5a0840111557a95bda5a186a1d6338947616586ea2dc2574bd49d4f",
+      "blake3": "a31b2df51cb33d373ddeb6bc7cb7eb65df23e2de9979e0689bb4ea9aadb33808"
+    },
+    {
+      "path": "packages/web/src/screens/Dashboard.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8196,
+      "sha256": "2571d390bd25bae7ea5ef1ae539171b0cf96a5a32cceffdab969729a9db9724d",
+      "blake3": "226adbcb01a0b89163d127bca938aec5b7cf152651ce3a93e99d24c8f0ca8fcb"
+    },
+    {
+      "path": "packages/web/src/screens/Docs.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28383,
+      "sha256": "b0045f01defb6f20b40f900142750555af04820d0fdb8ef5c59a41acdd22d6a1",
+      "blake3": "d26a6b4d3f158b5c7bcfb323370459f2f326e6d6cd8b66c0476f027c7aab4b37"
+    },
+    {
+      "path": "packages/web/src/screens/Memory.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6885,
+      "sha256": "9e9ea90dcbc4f427b4e75cb4ae4a46420740ace7b6a445682bf153ad4a136320",
+      "blake3": "2fc79246f611b4c745ec972a6f4117c5e996f1cece773486d11b8a00fda8d167"
+    },
+    {
+      "path": "packages/web/src/screens/Onboarding.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21172,
+      "sha256": "7fa8fc6f97ef9464f05ae605ea86eca9b37df2183edca546b92c00d4b9991ea1",
+      "blake3": "b95c34cc56c4aaf8612f02bef8ec76295fb39d8f170c26ece20555100f328d62"
+    },
+    {
+      "path": "packages/web/src/screens/Patterns.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4231,
+      "sha256": "1172115c944e7b5c9e4f846960573c4e8f958460202e6a3d2b6cd6019da95d55",
+      "blake3": "25484dd857e99079a25c629a5006fbe999d00b16608360f6482836e3020d74e5"
+    },
+    {
+      "path": "packages/web/src/screens/Persons.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9129,
+      "sha256": "3ffd263809487a81e2631917aaef3f9c5c70d45c5a1c6678ff6be43081a000dc",
+      "blake3": "faa1c78d8c037076087b86a317d7ee12bb7f275457c8b7890c9ee6455313b41b"
+    },
+    {
+      "path": "packages/web/src/screens/Procedures.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3331,
+      "sha256": "8379c4f3900708050789712dbb4b644cad8c84d92fcb6f36e70415a8ee1b18ce",
+      "blake3": "f3ff494450f752d82679a80797bcb4a43819886debb3518b80673919acbac0fd"
+    },
+    {
+      "path": "packages/web/src/screens/Review.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4309,
+      "sha256": "892df8a74adafbd39889be4cee456c3788e5b6e8a3d68e6ecbf320bf1fc85ba5",
+      "blake3": "8b097212c818b209721c379f99dacebdf05d9c60fa732d91b9bccb77108d9c5c"
+    },
+    {
+      "path": "packages/web/src/screens/Revisions.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4131,
+      "sha256": "3d6ba136143f3459b60ac7c1869c8883ade051ee3d30c85ced2fa26298fe6d89",
+      "blake3": "fc61471bb0c4cc8a7d203c6eeff5806b1c0fa753030f850bb5ab216744507842"
+    },
+    {
+      "path": "packages/web/src/screens/Settings.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25007,
+      "sha256": "fe10b0ece1dbac4c4421d95d74174885baf00fc23b906829f73af0fb621c27f6",
+      "blake3": "c58e5403bc1ec437ac7dea4bc431212e1793a5467ed1955d6ffd17db87d55296"
+    },
+    {
+      "path": "packages/web/src/screens/Sharing.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9003,
+      "sha256": "607952ab133a18d2d90010c1709fb0fe4509abe007b191abafb007d5f20d7fd1",
+      "blake3": "f4173798d8433b439dd9052f9996985b2ecbf33abc37f7f579edaea74d0a94b6"
+    },
+    {
+      "path": "packages/web/src/screens/System.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5064,
+      "sha256": "a24a41a3118a08b3fa9b4b098cc50db4ab0d2e4670f99bc173dee960eb7e7549",
+      "blake3": "6a96033f54b9cbf2c11e71b3b5aeee0dd2d7102bed9597e6887bdd160a38445c"
+    },
+    {
+      "path": "packages/web/src/screens/Themes.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11164,
+      "sha256": "338f5346ed1d5985063f7b7315931186a3f5d0ae9bf89d1f60d661b3963901d8",
+      "blake3": "a2adea291f0e5bc1bc3bd9b4e928b6818bfd333487a6f9193dc4dc3c8d9be265"
+    },
+    {
+      "path": "packages/web/src/screens/Vault.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2200,
+      "sha256": "39f1d1855014ba20af9fedcd8e338c668b7b7861d5fd2cc99ad38e5177728586",
+      "blake3": "1038d642986145c1b2f5f4a75c11611301b47e9cb8e18554357f9bb74aee8094"
+    },
+    {
+      "path": "packages/web/src/styles.css",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 35204,
+      "sha256": "3699a64f9ac2934917f1dc7f62a83684a55a6c6cb7e4f9af16633188249a8a60",
+      "blake3": "fdcbb2b989580efb54af1d750a9acc36ca57604bbff422e0fd3b68720168a3e3"
+    },
+    {
+      "path": "packages/web/test",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "packages/web/test/agents-api.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4062,
+      "sha256": "1b90b722f05ddc9bbebf51030ae614ed66b7b241f6879845bca2ce7fa8abfd5a",
+      "blake3": "6c777786b78f63746902345b22036b8cdd73f859a04707ac79acac3d8bd82884"
+    },
+    {
+      "path": "packages/web/test/api.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8908,
+      "sha256": "0bb75d93975bd4f095800199744bd1f4081b6413549e8152f3a423bbcdbb35b4",
+      "blake3": "d3155f4e406d2064bd772a068a9bc308585127679ffcd79aeec77f49d550fdab"
+    },
+    {
+      "path": "packages/web/tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 583,
+      "sha256": "04558566a7f8c00b86757120559be742f951dfb5f48bc8dfd8aeac252c7a4cff",
+      "blake3": "d0dce4434530ae9e6a7bf58fa074a18c39fc081d45bbc4510f2dca7758163e5e"
+    },
+    {
+      "path": "packages/web/vite.config.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 487,
+      "sha256": "44a4d3512baeb81e3f8c4cfe5f8b0e3da3fbedd923e847406bb70cd2a0153e22",
+      "blake3": "46463dc629eebc77bd95b1693b8b9a50ddb4bbd7ea25d49cb88aef3751a5b373"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/boot-test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1735,
+      "sha256": "26a2bea9759e8f4c7f33b9c5b5bb8b62a2c731065a013b1ecd17789ea4afd265",
+      "blake3": "98a2394f1c562cedf8debed4e53e955bbc59ce20944c5e8ee178111846c4ea12"
+    },
+    {
+      "path": "scripts/install-memoria.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6808,
+      "sha256": "5e89e326b9a07d6ac667c2acd4b72e742a51900596a72e7141191a347583af9c",
+      "blake3": "90e5e5db9a8cdee411474564598fb102182b72ee46501189f6a317f701f61e7a"
+    },
+    {
+      "path": "scripts/verify-layers.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6462,
+      "sha256": "b21e97d8025a951772b81db94c9152b9f1dd86143564dbeea0592b2b837fc68b",
+      "blake3": "62317863844ba62295ede7e9af0cd3d815cb716c6e9f30b379c0b7a045602ae1"
+    },
+    {
+      "path": "tsconfig.base.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 563,
+      "sha256": "e8f616b01e70369dc1bdb39b330bd46f997c02ce09d2a120c6ef9dd4f6c86203",
+      "blake3": "4bfbe0852a66006918e81fcabb3855ef212d461d5de7e8c73068619e56a79c9e"
+    },
+    {
+      "path": "tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 217,
+      "sha256": "af6f948b90027adc2a09d3b69875b886a920d2038e8a6928d2e947fd43ced638",
+      "blake3": "c3f2f97d05e9cf6ad620b43baf36e163b6fd2ad46622dde0d4af4ed3e983c331"
+    },
+    {
+      "path": "vitest.config.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 251,
+      "sha256": "14357f2a5664ec13308a5f8bd694ebb857d2a87863a8abb3bb69816c709f3ee7",
+      "blake3": "5f1ca3a8de151a51558ef00dec5ae386c86ed2810e9f748b6cb9836cc6239fbe"
+    }
+  ]
+}

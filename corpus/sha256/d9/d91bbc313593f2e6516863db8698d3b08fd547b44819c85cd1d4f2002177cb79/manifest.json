@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:d91bbc313593f2e6516863db8698d3b08fd547b44819c85cd1d4f2002177cb79",
+  "sha256": "d91bbc313593f2e6516863db8698d3b08fd547b44819c85cd1d4f2002177cb79",
+  "blake3": "382fe253db58d5f5d57f53f9f87916f4df0b6770f3a9d491cdc745ca332f5a18",
+  "size_bytes": 69847,
+  "file_count": 24,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8629,
+      "sha256": "44090d00159a70aa607bca6bfc8637770f1c11be12fe0ff57a5ef392ce8bc42d",
+      "blake3": "5c0f29f0a0bdbec6b265e650e3a70b821bc6e8a2a9e9dbd0fdf1543e2bf8f937"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 133,
+      "sha256": "02c5e3d5b960f6a51e1b8f7ca0c6146bc30aaddee8dbf6f85b361f6f484224e3",
+      "blake3": "ff626d373eb17f7d8e143c1ab45251886140048a900002a5b9c62bbd9da11d93"
+    },
+    {
+      "path": "examples.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5664,
+      "sha256": "b66536d4c2840975963db14f11db927180e77bdbfd1afc3ae84e228fa7011bf2",
+      "blake3": "535c1d0c77c303f0d342c422d154f0b12aedca10374a3bd4b145e1626e9f213c"
+    },
+    {
+      "path": "reference.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6110,
+      "sha256": "93f3c679c0f9646f829578904bbd4d2fc9c0f7ac55f3cb61b3918b9bd6732131",
+      "blake3": "01e22f7a9e8fdde5ba89517fb11fad50fe9d186cc18c7b368410b4a07e1bb4a0"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 42,
+      "sha256": "5c51994177be4eca9a434d998c236f52638423cfa1e1861ea1ec62bf828de898",
+      "blake3": "83e41688183622c84ff92c51c05fa8c3a776adbbecb3d2b1abfe063503d043ea"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/_make_test_data.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2083,
+      "sha256": "e29d29bb10276af3ba6ac5a03425347e6b069957996966893dfcad65b9a489b2",
+      "blake3": "4aa847e83545a7f38a8393a600ee0e0768b1aaa94d46aa086527f43439faaf56"
+    },
+    {
+      "path": "scripts/aggregate_excel.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2802,
+      "sha256": "ec73efec6780d7e457fe48d21c40799f0b4287d5eddad105109b83c0e0756a29",
+      "blake3": "9886357a810c702630518454d903c9262649fd232621cf29cefea1c850bc1b7e"
+    },
+    {
+      "path": "scripts/csv_to_excel.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2415,
+      "sha256": "4bdc1803c0e1d9cd1479acf8e5463a8be857bf1c9115d8f93755be4633be30e3",
+      "blake3": "86787ec59869fdbcd9414414670707c86da9bd97ee6c23f35f20ad9f0e844e2d"
+    },
+    {
+      "path": "scripts/deduplicate_excel.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2079,
+      "sha256": "78e4ac5855f0b1a4f815397bbcc7d914c7c5009008c2f5b2d4095149d476e0de",
+      "blake3": "51c73075251a9922881eca09d489d31863913d7ae6b7d1614d83f12a48b48b49"
+    },
+    {
+      "path": "scripts/excel_to_csv.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1438,
+      "sha256": "c42a71ba2d2275a2d9b91be7f53a9edca3ad5bb017fa7cfaac9428c02423c349",
+      "blake3": "8b640259e629fec550bdbe29f4da7b1ca8d6500a42ebe7b2b57a3138424e0c55"
+    },
+    {
+      "path": "scripts/filter_excel.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3213,
+      "sha256": "874987642d02cee809977ecf19fc05e246c0faf4e6f51e123958ed4431d1f833",
+      "blake3": "1670956120e7fd44179a1652bf0ec5ef8b60ffc3716799f408102f58e1b7f1c3"
+    },
+    {
+      "path": "scripts/format_columns_as_text.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3123,
+      "sha256": "b7414c8727c5985aa8d27ff6e9052f41020a29125d2f2d45cb09605fdc4fe6eb",
+      "blake3": "35c7d26bbe4e7f91b3c1b20f75eab3ab0f9ee56c3934cb365a3ac4a9a9be7f2b"
+    },
+    {
+      "path": "scripts/format_conditional.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5149,
+      "sha256": "2cd0afbcec37e0563d78ff0404e9c520fca58bd7ba7c00bb92b13f7fde6dfe2f",
+      "blake3": "e85e2d4fc5f2debc3b7b024ed56cc8dbe6333caba70e07c9e2d3740b119e4106"
+    },
+    {
+      "path": "scripts/merge_sheets.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2837,
+      "sha256": "cfd08ab9f6e71fcf39133da2cf0ee37ac49ed95b707dba8e2982eb2914f4c711",
+      "blake3": "86c508fc25b3e19f73f6379cc20acf2b66944cba0030ef6dbddbc7147c0ec614"
+    },
+    {
+      "path": "scripts/merge_tables.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2820,
+      "sha256": "beb194a8fae9c052f41e2ae035d0abfc463725ce586f470559a86e8f9eae06cc",
+      "blake3": "f4a4df00e93690ce648fdef173feebda441b7dabe4c61e833120aa92c6f3745e"
+    },
+    {
+      "path": "scripts/rename_sheets.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3035,
+      "sha256": "cbdba5e1d857978a192f40534563d3ae1150b826ea393a71ecf0e75169b4692f",
+      "blake3": "e75294ccc3d3636f62ca103b48f9008faf9858a2411133ec5547dbd3fa293733"
+    },
+    {
+      "path": "scripts/requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 42,
+      "sha256": "5c51994177be4eca9a434d998c236f52638423cfa1e1861ea1ec62bf828de898",
+      "blake3": "83e41688183622c84ff92c51c05fa8c3a776adbbecb3d2b1abfe063503d043ea"
+    },
+    {
+      "path": "scripts/select_columns.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2502,
+      "sha256": "4ac213c99a7300fadf02eb74985b9cbe85d91350476e1daaf758ace87fc30cce",
+      "blake3": "7b4b1d3ed938221524c3ec0149c53cfbc72eedba383ccaf866ded5c72a8ce4ce"
+    },
+    {
+      "path": "scripts/split_excel.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2747,
+      "sha256": "fe4bdfd3d44a864959c4c27809002130240ba73294313c24927247188e02fa2b",
+      "blake3": "6083f84c29322b5e240616a6dba812d9879df8bbc7c14b9a7641e271dfc46d01"
+    },
+    {
+      "path": "scripts/template_fill.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3685,
+      "sha256": "998bf08ab465b1f9eeba19044a00168ec3261df76aa4afaaee14fabd55eb2b73",
+      "blake3": "9cde06305c168977fc4d9bf3786bcdb90bbb3ac33a8f40e801629f83a17abed6"
+    },
+    {
+      "path": "scripts/transpose_excel.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1712,
+      "sha256": "88ea1c213a585fa4792e300be57dfb8fbb0234a010c96498d501af4939dcb212",
+      "blake3": "2e9ac2d67df6aae440c4bdd7baf122d6b22c0f9514257940b72d43021bf4dfa8"
+    },
+    {
+      "path": "scripts/validate_excel.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2135,
+      "sha256": "e33d1823093c8792a8162fede5eb651fb97608a85e67c8c226aece5f6200979a",
+      "blake3": "eac2f087294540d28b76ed7d45f9676bf71455a80bc49e821a9be8bf93190cf4"
+    },
+    {
+      "path": "scripts/vlookup_multi.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3327,
+      "sha256": "986ebeeba566f3856f87d4b57b3f32b3f5afafc537099376efd87e1f44c360ad",
+      "blake3": "3098bf0a3033fa84789e588fc6df69e9b673b5752d07f5a550772620c8fa86d5"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2125,
+      "sha256": "90222c265edd8454cd4958140a1849dca3fcc4e9f9cb1af7f279c90d97258c13",
+      "blake3": "42c2a6cd4b0dff2563cad6f1635d02a026a75eaa3c64d7b1eec8e48e177540c6"
+    }
+  ]
+}

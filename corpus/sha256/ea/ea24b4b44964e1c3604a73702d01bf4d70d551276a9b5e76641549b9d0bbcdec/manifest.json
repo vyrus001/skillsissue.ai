@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:ea24b4b44964e1c3604a73702d01bf4d70d551276a9b5e76641549b9d0bbcdec",
+  "sha256": "ea24b4b44964e1c3604a73702d01bf4d70d551276a9b5e76641549b9d0bbcdec",
+  "blake3": "5c69054e6af467692524bbb94a2f5c660410965102c0a63b433b256c32715a7a",
+  "size_bytes": 62049,
+  "file_count": 18,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 906,
+      "sha256": "019ed27916d869a5b11292209d924779cf0a100099397739c863dcca16ddfbb7",
+      "blake3": "4ecfda69ae2d45854b9d1c713794d56c6d48d90536ee2d4a44b5ae3df2a94533"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5763,
+      "sha256": "03544108c2e84fc94993e041501d7f3d075121a19aa5663659bced9614156380",
+      "blake3": "3f9c49737b11b68fda3248b12292db1c9376a7f9b2a1b88a92e67a7b83dc4c65"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 131,
+      "sha256": "3add7162359e0b087510b1da7648386ab434a2769cca7db6e855356eb4eeefdf",
+      "blake3": "81455b1c2872358920568d73568871b3642a756f6a408b67401b5a820134898b"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 284,
+      "sha256": "3795b44a48313cc7d59053b6fbc833a6131e6910cca04c3647d52d6e582519a1",
+      "blake3": "b5e8c6d7e2c0770c893fbfa41928a2dcdbc4c28091cda4617b90c5df3c615abd"
+    },
+    {
+      "path": "manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11442,
+      "sha256": "d2a869723f510d975869c4622394d380f552ff4c36c3533eba5d7242a2ef3367",
+      "blake3": "87281b1630690dd221db0e8d1492dc9951e4438a283c3e3e40f5088ae9896275"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/api-contract.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6054,
+      "sha256": "4c4250b7eb1c1c07eaa530caceaa78b6d816ea13ea28784785d7922f78d18114",
+      "blake3": "9f1ea60a3bf9b8ab652733a9afea6e5a0e1faffcc7bfc93279812a070e192717"
+    },
+    {
+      "path": "references/workflows.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2624,
+      "sha256": "c02669ab239a6bf089e7f3652ca5184949da2d5ca6395fae7773c815d2c653da",
+      "blake3": "ec8e73c8b242dbf75be2c8d977bff14f073296b9f7dca3f7e8ccb05ba7f6831c"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/_common.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13072,
+      "sha256": "e39961ac7dc5cda24e73f6927eaa034133b127462f2f4107803e386c61e9c78c",
+      "blake3": "1224d3da373592c37b6a9fe3b4d8a17227c75968eaa925cab7268271ba552f1b"
+    },
+    {
+      "path": "scripts/build_paper_materials.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1569,
+      "sha256": "414a7584468f3961c7fd67c8ef764f2b72086ee202fccb47dd48afee8a271079",
+      "blake3": "97b3747418ed9b2d67d35204ef6608dd78e37adf07071245327fc12cb0ddfb17"
+    },
+    {
+      "path": "scripts/discover_related_papers.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2062,
+      "sha256": "3c8a077ba1e77fb5865f302497e5652239942c4d6f5098bd302412297eda1837",
+      "blake3": "36d6e765eb27be6c8148ff906b5ea788d62a8c8850924e8df50403f4e07677c1"
+    },
+    {
+      "path": "scripts/paper_schema_capabilities.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 410,
+      "sha256": "a9486829ae329c3e6670bf5505ce73965adc197423ae0e4b4e89834beedbdf48",
+      "blake3": "5ae3f363a5084b3d5ec02678d6ea04fa7a9772d5468cef9f3dcdea6de7501ecf"
+    },
+    {
+      "path": "scripts/query_paper_citations.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1803,
+      "sha256": "8e8742106a3f60f2c5907c5846653e00d700ad9dc3e0082a607bea1abf5d9ba1",
+      "blake3": "a526318bcd0b6775a5e3bc187e1f1f93616889e048c304a44469ac9d656de6eb"
+    },
+    {
+      "path": "scripts/query_paper_entities.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2889,
+      "sha256": "02aa03c9a51d8aa9bbd9f0d6766d3b725240cfa18af1ea1fefd4fc13a806933a",
+      "blake3": "a0fc67d28f99d489d94396e3c55ff74d74ed40c01c460953567fadce1c0731e3"
+    },
+    {
+      "path": "scripts/query_paper_evidence.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2822,
+      "sha256": "b4ee8a3341ac5071ee1b85b2affae0c8d6a6941c9ce90c3c754c824ea54f5230",
+      "blake3": "b54ea86eeee98e44a5423ccde9fd67ae12ae23768e1ee93cd706e5d2853153e0"
+    },
+    {
+      "path": "scripts/query_paper_relations.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2668,
+      "sha256": "95c07a89c134a4e27b3a57e3315a1800f6f81a8d1ee81e98ae036879b373b1bb",
+      "blake3": "1d8e6031925b1294804d237221efdd3c71dbb60be42a53db7cef82d2bb8bbe6b"
+    },
+    {
+      "path": "scripts/resolve_paper_context.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3093,
+      "sha256": "1752c933b344add43848bf43ba265cd070a29c3e1ea36527024a93814008be57",
+      "blake3": "2cc1f45d6e39c1a53a74a1a58a4109ffc2287bbf0a3a13da970b07bf91b92290"
+    },
+    {
+      "path": "scripts/search_paper_schemas.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1526,
+      "sha256": "6fbd6db40b4f0e7063b6566560886856291df0d17c526b854c9e8e35021c218f",
+      "blake3": "c0ce1a56a6aecacc9efb26e4e09c31f7a00effb0c1051deb6e10a54b19ba743f"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2931,
+      "sha256": "05f1ea08c8710b6817a32a1b86e78bb6b47c8ac42fda435dacd0f2904eac427a",
+      "blake3": "f5aa746059e9e65285ad250268729148a832947818c7a20fda3cbbbc91024c55"
+    }
+  ]
+}

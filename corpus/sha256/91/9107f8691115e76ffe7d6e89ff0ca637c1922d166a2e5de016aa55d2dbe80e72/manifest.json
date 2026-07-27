@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:9107f8691115e76ffe7d6e89ff0ca637c1922d166a2e5de016aa55d2dbe80e72",
+  "sha256": "9107f8691115e76ffe7d6e89ff0ca637c1922d166a2e5de016aa55d2dbe80e72",
+  "blake3": "bd372079de59e6ec901300ed84d161c0c8ab841ceb53b6cbd8ed9052025cd5a5",
+  "size_bytes": 163880,
+  "file_count": 21,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4676,
+      "sha256": "d43cc5bfc224470968a675712b299647fad42657231351fb5eea31b104f30f8e",
+      "blake3": "20b163db9c342e41d9037170430f59aa76608e22026aaea8b8932811b0b3289d"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15590,
+      "sha256": "43b7790ca69b9a12cd9456231e7ceff6947e25bab001f95a14445c0f65ec0315",
+      "blake3": "b5faaf0114702ca2f98ca0c8116cb8c1429b89326a1ee7b7c08981a182aca41a"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 135,
+      "sha256": "a80dc06cf1f84bb40720eb36fc4ba75243267b65d55e2a3289648344cc5e9c74",
+      "blake3": "f64ac210cc650b4f0904998001f2f2392305d69f5ffeacba56a43a124c006794"
+    },
+    {
+      "path": "config",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "config/evaluation_config.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7994,
+      "sha256": "528de89d075608d40789799ed620ca4598c4452b3eafee6e0ba0e90af688466f",
+      "blake3": "31a6e615beb90f4cbce4d934e1a22227a0c017a332a0258edac3024b9ccce9f2"
+    },
+    {
+      "path": "install.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3044,
+      "sha256": "4537e82039a5e985846c8be86d66fc4d5c2bfcdb2971963fa137df03fd1ef6e5",
+      "blake3": "7e0be346bfae71799959219d4c05ae2bfafd6135719cb310a77bc9a1157bfb3e"
+    },
+    {
+      "path": "main.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19868,
+      "sha256": "7b35bce7ca17a67cb8379eb7a20e1a3760861c57389301abdd81f5b7b0632046",
+      "blake3": "174df1228a010b1ebaa4d97892f889a1df0f014554a0c87c43c285b687f1b37f"
+    },
+    {
+      "path": "modules",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "modules/evaluation_engine.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10829,
+      "sha256": "55c6de16ff2e2ced59dfec9bbaf491e49d584429c0e39ef52c76c2979f33128f",
+      "blake3": "330f15167814e9ab1f8047cd040b6c011572ad075e2f7480a6b322130f093538"
+    },
+    {
+      "path": "modules/file_parser.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7797,
+      "sha256": "76110136bb3138d6f2151fdd0c072a316de9d2439a23172b82809054947285e5",
+      "blake3": "9b3ff0bb9462f9bceb59108a11fc3a97ef58af61d22d860690302a7fb88dc6a0"
+    },
+    {
+      "path": "modules/interview_analyzer.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6580,
+      "sha256": "37954520c0668ead6a915a3e70b8e25e21e57d2946643eb0e35ab7c8c9e0955b",
+      "blake3": "f43768625e4220f8fe6e5234292bda3401af0d3a0b5f6d67f13e8a2a2d74a611"
+    },
+    {
+      "path": "modules/report_generator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12935,
+      "sha256": "e26eb8cef6eb96280770ba5408b5bf45b25d58fdcf579bd7bc5c489ef319b4d1",
+      "blake3": "9c9ab19144f0b9b6eb894464cbaa4369badfc7927c8a064f78d45e5030b9776c"
+    },
+    {
+      "path": "modules/resume_audit.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14356,
+      "sha256": "c3d2536ce8918204425758804952ddabf997c14d0b1be23f86cf0bce7d9b0ec1",
+      "blake3": "8e4c7f28ee9828af0914c49fbd76328411c4ddb61cec6ac5abe28379a352e047"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/behavioral_anchors.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7995,
+      "sha256": "b1bd1b1a63fdfe5f50cc81999e528657ae185feb317cee2663a6df5d8515f40c",
+      "blake3": "0b22905797e7d2f4b25405517d0fe01a52ca99757a53b69ac7ff66a7d91d8500"
+    },
+    {
+      "path": "references/calibration-cases.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4463,
+      "sha256": "85009449974290cc2f1db32a3ce1565f0c1d39a65d3f4bf077c86dc772f27658",
+      "blake3": "6534ed967f4fc3ec7ef145c4fd1a506399808ab1f181ed5b46f634f103345f42"
+    },
+    {
+      "path": "references/cognitive_review.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7448,
+      "sha256": "3485e72e07a98b084df215ca6dc048324fca92b337eb821d0ae6fadba635ec49",
+      "blake3": "9783e12448c6087dc7ee9a2fae70f68413d668f43f1882bb845d68c01595c3a7"
+    },
+    {
+      "path": "references/evaluation_matrices.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7385,
+      "sha256": "cbfed8a55a93862df0aa74bfa26fe9bcc7dc541636ef15e5426fb930f18580c9",
+      "blake3": "d1b820e8dec1bbeee32c72eeef1e6faf0d2fe51e6989e0f43aee3edfe236e87c"
+    },
+    {
+      "path": "references/interview_modules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5503,
+      "sha256": "32aa428cb9e8d1f01bb8143ac8ebaa8acb2ca8ae7277dbc41c5686e02e25eed0",
+      "blake3": "b9e77712472e717c239731d18a41ce28195f814048f77515a78308d5d96fba15"
+    },
+    {
+      "path": "references/output_templates.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8421,
+      "sha256": "05b42bde5d13c2238231aed9bda34cd5f2a4f10071096fb861cdc8de2b663f6b",
+      "blake3": "38c4775bb3d070b28476b8376ee12469cd6866a302655a3ebb48f7ebeec4b0de"
+    },
+    {
+      "path": "references/resume_audit.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6305,
+      "sha256": "8ed7469326d63f2ab90b0b7cc9ee7361026fcaa15e54279a636ed5f3c9f86021",
+      "blake3": "e8ea3d4f34886460ba927a6b701e1d451f7ee0b2b27e4b4d190e2ecbbe070d96"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 159,
+      "sha256": "fd19e90b4f553ba3f0fecff557f237073b4ed6be0e75c431182a2318f2f080af",
+      "blake3": "efbf91a22025eb148cf16dbd3f9ae5acac77183db5b6cf09cbe5e8d73fc2d3da"
+    },
+    {
+      "path": "run.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9754,
+      "sha256": "9a1bc5c50f41e604c69932d8cab17f672333b30027cdb9df5b4d6db17d7f8182",
+      "blake3": "26e0465ca6c778daeeacf7f1faee3f9861095b0466ccfb0e1e8cdc94207e16c4"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2643,
+      "sha256": "7a29eb087dc82054169996757fb8de165c0b46942356a30b37830a99bcbc7181",
+      "blake3": "409cd7c432007e374403b21a2d80b8caaf743c5783a93c7d9d7ce9845e3b8032"
+    }
+  ]
+}

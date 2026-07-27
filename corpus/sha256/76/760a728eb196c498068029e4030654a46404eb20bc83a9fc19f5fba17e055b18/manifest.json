@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:760a728eb196c498068029e4030654a46404eb20bc83a9fc19f5fba17e055b18",
+  "sha256": "760a728eb196c498068029e4030654a46404eb20bc83a9fc19f5fba17e055b18",
+  "blake3": "7091fa6e73b26e5b5e3d4bcf9b40c6ce4627a3d567f5a08ed87e6a3f058be865",
+  "size_bytes": 98163,
+  "file_count": 13,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4499,
+      "sha256": "3356c17a60e9c2191a23d6f6d7a8de7b920761c2c5b88b4443589621134d893a",
+      "blake3": "533b0e545d7582d8a825e696b79cb57eeb8233d2d07bff4929af6039e9ed2f26"
+    },
+    {
+      "path": "LICENSE.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 894,
+      "sha256": "a93021056482c96bdd67c974ce667a7f174aed087a2bcb91ad168d54c72a211e",
+      "blake3": "1759d724aae033506cb49852f46d1e67d5a4588895d53bd368906efd1884ef37"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7646,
+      "sha256": "ebab35b3b124d072933c075c6a88708f9a653d87b1aff30eabe1f93c221ac798",
+      "blake3": "f5358c034bab0cc29db731972471f5fd0556aa7af548a30fbe78ee78093dff5e"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 138,
+      "sha256": "332f64b8e4727ba731645393fabafcedc2f4394dea15be0e1404f1f6919aeeea",
+      "blake3": "dcd6bbbaddd2d0b8fe2ee01d9202d892810ea87930d7d8a66312ff351064d488"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/Invoke-BHNarrator.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5607,
+      "sha256": "b4387b9eeaa5d4ef9696c6c9c4d454ecb257cea9ce81adf74c7f326f57060fe4",
+      "blake3": "6c8817a8223019aa9e46ab84a14876c8b7b201aea344a3c0166fddd89ec2694c"
+    },
+    {
+      "path": "scripts/bh-narrator.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 617,
+      "sha256": "bcebdb83f3a3be4a36ba6a320ca4bf36bf670b89392e563202430f37909c69b7",
+      "blake3": "6e14db63c002109fb7082a9c4202d1b7fc905041151310643e3604759bcd51d3"
+    },
+    {
+      "path": "scripts/lib",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/lib/NarrativeTemplates.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27277,
+      "sha256": "1e72eb37a13753ca338d767ad1f48d52537cbbef50ba5782d3e2d2e8f2cd0328",
+      "blake3": "550792213e057c94cd29555d131d6d24a26a2de3404d2c2a125d461a99e6c85c"
+    },
+    {
+      "path": "scripts/lib/SeverityClassifier.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18112,
+      "sha256": "9081aa7168d302f4d5bbd85cb0bfe1a5c1200d4221b7275903106c6732fbf89d",
+      "blake3": "5d0970bdeb284c939c2279196515d0ecd9c4f6ad53fce552746c1fab32b89edf"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2460,
+      "sha256": "0e49e6120ef4f89d3f3dad4c81d9da5423d064e7b07aab36848db800d2cc7c0d",
+      "blake3": "fc6925d6b6c87372d5f58f70c456697c1c5f52f5bb5d8d69553e8dfdcca2a3dc"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/Invoke-BHNarrator.Tests.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14667,
+      "sha256": "95330ef29c7351b992b4cec1e9c2b7ff83f74275fc76b69170e885852a3b66d2",
+      "blake3": "cb3138f6c94e645f009bd55a937d7882c22a168dc099427097089608e1b4d3ff"
+    },
+    {
+      "path": "tests/run-tests.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 427,
+      "sha256": "0fac2dac91f3eaacc36759e543c4ef4e7de4e0970cff2f55618a2efd736d959d",
+      "blake3": "14e992a928ebec5f265024afdb1df5cb634849fe8acaa82af8dc4432f7d707e8"
+    },
+    {
+      "path": "tests/synthetic-adcs.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5911,
+      "sha256": "da25a8d947bdbd308c717caf405f6a26991a5010c5f8aee8418deb36f78000cc",
+      "blake3": "927277e6166a7b13c88a1f54396546771a8ac3d4e18f2ff5ca14965c13bba2a9"
+    },
+    {
+      "path": "tests/synthetic-bloodhound.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9908,
+      "sha256": "937832749f14a347b3f24c015c6b5ecd7c4056ac4bc9bbe8c7adae32428e3e25",
+      "blake3": "0509ae2c90f9ad2a19fe3abaeb1240600bee4123ec6975a2c12ba39c06c36b09"
+    }
+  ]
+}

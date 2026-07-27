@@ -1,0 +1,375 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:c2d43e360030cd5dfb90f56b432032dc453f62502c04f81b0fc99c96872d6c01",
+  "sha256": "c2d43e360030cd5dfb90f56b432032dc453f62502c04f81b0fc99c96872d6c01",
+  "blake3": "f2e801268e895d019be2dd99c0a2c565c1e62ef93513a39cbeb76397236db673",
+  "size_bytes": 343941,
+  "file_count": 41,
+  "entries": [
+    {
+      "path": "CONTRIBUTING.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5347,
+      "sha256": "7855cbcde7eca3d2bd905cd69c94b29494e94e980b823e95069cf96d81601f8d",
+      "blake3": "bf2bb1789948c32d6af813612c8b219dcb8a293b131bb2e831e63ee6188c746d"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 84996,
+      "sha256": "67d44c189851e08867904ff72b5a514215d3554b4fa1e5f399836549d15562a4",
+      "blake3": "a805814bb205f87de270603bbd30102814fd43b1ecdcb874b14a17e546cdcd70"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 136,
+      "sha256": "4b1ae8a5e0c944e14be39da509f82c311b4f0026cea0d51a1079f5f6b9ec643f",
+      "blake3": "2021391cb5f90cc7a683e8ca109bd1b0301c46889d07dbc60a980c468fd5e7fb"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/architecture-critic.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1833,
+      "sha256": "c780f26899881f61a13bbcd5ace519e87ac894c14008aa4f4785e2b71f0b405d",
+      "blake3": "3fef6fe6cd53258ebfc60a8704796eddf0efc900324c307654e3cde395c1408d"
+    },
+    {
+      "path": "agents/backend-reviewer.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2417,
+      "sha256": "3afa300dd977c124766ec16caaf050d1873e499a95a619b188ef2a10f0e09616",
+      "blake3": "68aba990b5b94efb3ffec6002c3ff5043f6a6bb84e31039ae3694dd45288dafb"
+    },
+    {
+      "path": "agents/code-reviewer.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3321,
+      "sha256": "2b584c1e4ae32a3d154105155afec9a620ed9d87c844d579db58549167926a27",
+      "blake3": "26783aa3c5a37c52ebd74a920f44f4726c5fc4cebb03a19aded7ba48216acd9e"
+    },
+    {
+      "path": "agents/documentation-checker.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2082,
+      "sha256": "f6ee80c294fb2e7f0ec38064b0031018a2de5be86d896b40064ca227b5e0d67a",
+      "blake3": "8cbf11ac58bdabe78063ee1c354b7ed8776ae3da3fc6b9ca462ec5c9131871ea"
+    },
+    {
+      "path": "agents/explore.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1953,
+      "sha256": "41e0cf213a734367a0d1050b7a56e198de65efbff6bb15b56438e611e3e62e66",
+      "blake3": "9bc1c9bdb079c8b6c7164d594fd73b27c909d167ccfd249492b14aa428549265"
+    },
+    {
+      "path": "agents/frontend-reviewer.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2200,
+      "sha256": "8f074e8fd4a0a4e401bf0016ece8a5c1d776bc04848305651f6c9162bae3f7b0",
+      "blake3": "2ab76768eb3e7c855e603982162cc0e192c1b60bc6e2d49d36dc0942581d7035"
+    },
+    {
+      "path": "agents/maintainability-reviewer.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2044,
+      "sha256": "e0aba4907428200700197fded8f076c018ce19133fdd5c5dc0e1af6e38cac8ed",
+      "blake3": "a0c14ccd2f618c8ee6ebbd2ccfb049866152eb8905c2a97750fc529542ecb0fb"
+    },
+    {
+      "path": "agents/performance-analyst.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2181,
+      "sha256": "bdbcf00d4933775882741a53cf2cb214a146d11178aa0c0ef65814ec2745873f",
+      "blake3": "df2b9d378e6050ee6f8d20a6f29f663638b127c286537298055ad2ceb4cb6088"
+    },
+    {
+      "path": "agents/python-reviewer.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1542,
+      "sha256": "7730ee77fdd8be23d9a83a585bffafad44420b67192acd1d6cf927c2ae5111fd",
+      "blake3": "67b26e33ba916ff0e97d696f81ec57692fb54389a37bd148533823259762e429"
+    },
+    {
+      "path": "agents/security-auditor.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2623,
+      "sha256": "2948ef2f883a64da3891c98dc69350a030b20110642a78207a9a9b8db4c20d7d",
+      "blake3": "ee1c659908d1e23df473cc62a3177f38891a050c5156a46e6be5293e22bdfa47"
+    },
+    {
+      "path": "agents/test-engineer.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2032,
+      "sha256": "967411e5ac96215d737404b02a3e97b1ef387328fabfe02a2dc020f88420503f",
+      "blake3": "239abb2e3db48cc98184ab53b7b65daff2a6eb2d3389db73bb69b0553e1a28dd"
+    },
+    {
+      "path": "agents/typescript-reviewer.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1663,
+      "sha256": "e25f07b6ad2fac76a033901997d03d53700cc4f81169b7245864a5d9b8707d2e",
+      "blake3": "5ec4907116771c1c50c0d60fe1ad7ea5c43e1eb05fd3b04d85c6a0dbf09cb858"
+    },
+    {
+      "path": "hooks",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "hooks/post-exec-log.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1932,
+      "sha256": "ceebbb15485d76ddfba40e189f8da72bbbb36d56c92caea0273c5dba35b4f359",
+      "blake3": "1fb19af84d7aabaaa4cf93ddd1c04b2bab01865e25550e4641325883ff584b3e"
+    },
+    {
+      "path": "hooks/pre-exec-check.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3449,
+      "sha256": "037d16623fbb0ce11a475ba91227d5e09b70360e2c85587af09a67b4018f0baf",
+      "blake3": "35d92d051419d189b3d10cb754511cfd5c01245592302d3c2ab20a193a7a0051"
+    },
+    {
+      "path": "hooks/stop-iteration.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5768,
+      "sha256": "35700ce8f71f918466ab3c85acbace3becdeb9ef271b21b07c906ed49ac78825",
+      "blake3": "d754e6c37ce453b43285bfedc2b2944c97d3c4daee334e3014e5a6f72d8b14dc"
+    },
+    {
+      "path": "plans",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "plans/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 222,
+      "sha256": "3761f9ae80933adb5f6c58333807eb0300fdc0e6bf00d7d5e43af6784731f5a2",
+      "blake3": "b5a232355ffc91fb532236f9148ec98aaa988302be88f0165f75f0c1d0a7945d"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/agent-system.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3873,
+      "sha256": "3d02fccf84570eeed637e9b425a2c2ee2db5359b0042982585826cd1609bc15e",
+      "blake3": "ea0555ffd4052f6e81e49dc958413668b17b0b514bc79b164d4156174d41d809"
+    },
+    {
+      "path": "references/external-agents.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5245,
+      "sha256": "11c33430d5ecf3d6601cc8dc4e0dd65897d4d8f1ed4f4b3579515cf9385b097d",
+      "blake3": "8b9dfbc73c99a9ab5a061040503889ec30ff02b1fb6f1c6a6c41d52cd97c25ab"
+    },
+    {
+      "path": "references/hook-system.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2671,
+      "sha256": "a68dbcb5b57f663aa9814e58fccf41d09537b02cf14fbd0e3b32dbccea318f8d",
+      "blake3": "0f9d70144185e1491e21de7e52f58273b766cd8364114ca26790603a2d56775b"
+    },
+    {
+      "path": "references/iteration-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4122,
+      "sha256": "1fa68a628fd42d7a542012f2dadd3c513a267746a0d012b15449331ed378034e",
+      "blake3": "50f45603968faa297c97b05d7d52d17033825d9ce9ee8382a641016710e6107a"
+    },
+    {
+      "path": "references/security-patterns-detail.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4023,
+      "sha256": "59575c766867056dc4d46be3a68227f2dd6653dc5734bf9e7101364810acd1a0",
+      "blake3": "e8ed45e2ede44fd66ebd95c69af235c68b372c75a14d16373d8c8fdff98be9b4"
+    },
+    {
+      "path": "references/tdd-anti-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5140,
+      "sha256": "52e4d12393e95a2369cef7b73ac749fc184cac5ee8234ef09dfb277b14b1f24f",
+      "blake3": "0a6c22911f60e0e7931fc3b989e1858e737e78401ce4c1ba511430eba30b11f8"
+    },
+    {
+      "path": "references/workflow-examples.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4292,
+      "sha256": "8aa409c49771283e7a645621cc32738946d62589a7bc5c1c67447dfd2a1468ea",
+      "blake3": "1cad6a4776927676a93523e0f20669586f2c6d4c2b4ea94d5394912b83d8334d"
+    },
+    {
+      "path": "references/worktree-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4020,
+      "sha256": "aa9063562cb7eeb79372e3dcf24209f9530c01f661e2376b3f30580cdb2b1b2a",
+      "blake3": "872b716bf386ab091e019f1245976bff4284dea9d0be15857eae9859b1c68998"
+    },
+    {
+      "path": "rules",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "rules/coding-standards.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2529,
+      "sha256": "bb1e23dec854ec21895e27d015a90772fe1aa3d0b7a853f89028393ea428d39c",
+      "blake3": "6d75132c3a20ee0430dd5742386a67ddf5521a14c8af0beee3ad87d2ac252a94"
+    },
+    {
+      "path": "rules/review-checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2209,
+      "sha256": "f8b4d22cdaecf9eb64993c5bf686a19c1809131a6fbfd27a67fa48759764bab3",
+      "blake3": "8b8952f7c591b85590df9c3e921f7b0eb3908351d1ca8cd845191be82c5d107c"
+    },
+    {
+      "path": "rules/security-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10273,
+      "sha256": "8c4496b42bfe2d493383f3c9090730c860ca27a2def535d477c83a95195bef3f",
+      "blake3": "0484d4b84c0de56b7406f52fce6d5c5236dbaf5ff5dcbd1455af7532cbcc7284"
+    },
+    {
+      "path": "rules/security-rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1890,
+      "sha256": "7e9415ce5bfd1f17434725abbea084310f7f81c5b288466a0166a27dde23c7a1",
+      "blake3": "8ba085e29d59575ebdd7e2d4639968c20bb7fa874e7336812ff0850c4e598b79"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/check-environment.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9612,
+      "sha256": "50716a4c1a5cb75d91cdabe89250342dcfb53c34252405d1e47e3fab56e28af0",
+      "blake3": "119ea5444329062c493c8be886c5583499b7b3327582751912253132afd9d55e"
+    },
+    {
+      "path": "scripts/dag-scheduler.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20140,
+      "sha256": "196b928c0d470240cc797daa541964cf55b35ab34309206fa4cb006035693fdc",
+      "blake3": "a0db712ff95cc15989cb56769a39ff241fec34c6c214e0af8c0abca00caa2ff1"
+    },
+    {
+      "path": "scripts/instinct-manager.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15687,
+      "sha256": "c1d42c01aac44bce15690311d32efe069ac9b4aa21cb09ededbb30fbb9b34912",
+      "blake3": "dd215ae8ca5cc8574077b4ca2800c459fcb0a5f3ee757778151e6bf907b9f407"
+    },
+    {
+      "path": "scripts/loop-controller.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 49784,
+      "sha256": "481324693f983e5b2d6a2c58a2a94e4b6c4f08e73c1cb96f092974691b1fbed1",
+      "blake3": "476e311f5cd7b4e5ef223e8c6ec91069c57d2b49080615891b58abfcd652a61b"
+    },
+    {
+      "path": "scripts/review-orchestrator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19367,
+      "sha256": "f91394b0c67a2baf14779f5034279b251457e7cf8e174715c63f083d2d0d4ba2",
+      "blake3": "7dbd7fcd2d4ef2778fcfb3b9fea2aba9e9cb0ee7c17862a81cb1f700a6f60d58"
+    },
+    {
+      "path": "scripts/spec-init.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9132,
+      "sha256": "e36b57dcf56821d907b95d9d46288acae95b5da8b0cb97f2d19f9034cca4aa71",
+      "blake3": "34f7cbdec56e235b0facdb935ec14a4b3f2dde0aeffc17b59ee8c2c98ddd8fcb"
+    },
+    {
+      "path": "scripts/tdd_runner.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13193,
+      "sha256": "3801616f4e84df531e9b48d3d939e4baea96aee1fda832a0be2b41735db1c42b",
+      "blake3": "cc12380c5533157276d499990ca835214117e9d3ab02dd68f9549244ef3fcbf0"
+    },
+    {
+      "path": "scripts/workflow-orchestrator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15221,
+      "sha256": "6814fbc04f9ed3491ce49b7b86d123bc6181928062bd301f3a07728f2c62f972",
+      "blake3": "f84a25301dc30ddbead6a307928900bf7261f1d094b7798b1a25d6c83737dc54"
+    },
+    {
+      "path": "scripts/worktree-manager.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10838,
+      "sha256": "c13b86c7b253ccaeb040f9203330e318d472d2d1da6328b1116315b3b68b9d95",
+      "blake3": "8cf9d2e9201b1ffd8f32ba7b776ef0b3953117e927d15295d5fe7bc0b9616b33"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2939,
+      "sha256": "3ec4de7b89fa4d911c9724725db015524ec777be125db83e8c611baec7c824d5",
+      "blake3": "1feeb697989d1f9050a39e674722b9a7e247e236df699dd20066d5087ac4cceb"
+    }
+  ]
+}

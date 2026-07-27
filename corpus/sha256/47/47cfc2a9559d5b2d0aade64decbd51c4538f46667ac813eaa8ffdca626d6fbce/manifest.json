@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:47cfc2a9559d5b2d0aade64decbd51c4538f46667ac813eaa8ffdca626d6fbce",
+  "sha256": "47cfc2a9559d5b2d0aade64decbd51c4538f46667ac813eaa8ffdca626d6fbce",
+  "blake3": "a39d3261f1d49b4f4d513ecd81db76072ad883c3166e48d40d2a42d08ddfa338",
+  "size_bytes": 255677,
+  "file_count": 16,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7242,
+      "sha256": "ecfde50be40cba7d5a6fec3e681e33c87428517a52a04105ea3cfd106e606104",
+      "blake3": "9ab5e62ab17f4659bdf8a79749bdcefbd147011af379e820f6e62cf448780363"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20768,
+      "sha256": "6235706f2aca4325463e56e67d0125cfb3166e600b8ff4f1e64e5b6329fb686e",
+      "blake3": "af5c3c463caa19f47f4c6c1c897c3ca605ad540cd0d1cfee27506b0baa583be0"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 130,
+      "sha256": "07e46d0499fb640318f857ddcc2c33782f7e8679c606444a9faf17599df0604c",
+      "blake3": "eaeac31843bce2d151e571c41594d61b41ac13383687d1adcb6df57b1ba7b4a8"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/edge-tts-annotation-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7010,
+      "sha256": "4d2956cf00c5a6294f586edd909091feac8482bb558c0997460dfe73edefb916",
+      "blake3": "270c91061c59f96ea0fd7e437a287a4fbefa0d96f6c852dce6eca70e117a8733"
+    },
+    {
+      "path": "references/generated-long-body.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9137,
+      "sha256": "4343f1b545f2f44f75a70934a799329d2337cb3e89b39739854ec9b4ea70bfc3",
+      "blake3": "12546c066f176b1e14f1266377c7f71c882ec0d2c07d1807772582597ec691b8"
+    },
+    {
+      "path": "references/mimo-tts-api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2937,
+      "sha256": "2042f1b0e30a03e2dbaa74132255b73af542b9b7a1dd5ddf694d95e8e5704a6f",
+      "blake3": "5d60114bac6908587bfa321e8e99265ae6ffc9e68ab3e7334323abc9df86a6d1"
+    },
+    {
+      "path": "references/voice-catalog.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8428,
+      "sha256": "faa750dee7488a350bcc42f023a84b57a1982752aa8f4787e946fcf7eb16adad",
+      "blake3": "c53996fa65595aec3c2492e093dbaf18e67318df10c3f4b862616541be8fef4f"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/generate_audiobook.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 59065,
+      "sha256": "3b75e5d349f101cd58551e0f0c83e53d8b69b873f2607b1670cd0efe9596d5c4",
+      "blake3": "6167164b3d1a76ce81caa6d5cfce48585e64a240f93d40a69a9a8d7e3e59862d"
+    },
+    {
+      "path": "scripts/generate_voice_samples.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3416,
+      "sha256": "f481aead01e66afdda10cb3074840ba22a7057e38066f1c141b38f4d41233e00",
+      "blake3": "5a815c18e6332bf3bcec14fe8a6f8cbeb3ec6159ca2aaeeb3fbb9e655163b7c3"
+    },
+    {
+      "path": "scripts/param_calculator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6525,
+      "sha256": "c832f6db9c3643934da4eb7f9cfe5156575acdeb69874b3b483811c47c26a686",
+      "blake3": "00b8d78712776233e4ee04a62531f939dbdf3200e58905e6f892645a8b85204e"
+    },
+    {
+      "path": "scripts/subtitle_parser.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24380,
+      "sha256": "b24f92ed585e31ce13376dad07cab7d97de837c2cfbc29f1007489270e039a1c",
+      "blake3": "87e110a4134cfbab35a9ffe27d1c5f2a1a7f96ae601edfa2db5e477538444b83"
+    },
+    {
+      "path": "scripts/text_parser.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 56794,
+      "sha256": "9b8285b8f49d5411d23c306abf377904f1794d293e4c4adcb7e18fbf087b941e",
+      "blake3": "d3c0ba7ded273b872c91bb8c888083495ce02cd8b7fa0ca40174df6569f17864"
+    },
+    {
+      "path": "scripts/tts_voice.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19211,
+      "sha256": "24a64981a20250ebc7358ba2a411cd65a94ae7dae6fa04d77201ce6a63550ca9",
+      "blake3": "d1c8051959986ab8a0df078629b87f8df1513a5c553f850243400d8bd1166f53"
+    },
+    {
+      "path": "scripts/tts_voice.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11064,
+      "sha256": "585c03de4d4833062c87c7a4214ab1408f4a850a9c7d40b317443bf25d57661c",
+      "blake3": "39c435be65c18a6c59166b56332107bdf9c804448a71c975e32c647c768ab56b"
+    },
+    {
+      "path": "scripts/voice_samples",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/voice_samples/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16438,
+      "sha256": "f1c05b29d30cbff04099dad5c4f0d6afb605896cafd753eb78e02e430708444b",
+      "blake3": "6bd1b3aea1fc7426736f5bb2d6dccdb80ca6a933eff3467ebc639b222dfcda23"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3132,
+      "sha256": "6118422b93879ce9588c6d6ea2e162ebfffa6564ca4daa0f127b07e8b3fedc9f",
+      "blake3": "0d47147344f4caee03b0325212f868c03b0985c5eec08778f7f48cb3d6c66d36"
+    }
+  ]
+}

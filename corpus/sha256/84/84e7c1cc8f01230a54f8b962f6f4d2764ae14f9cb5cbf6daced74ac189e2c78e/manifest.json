@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:84e7c1cc8f01230a54f8b962f6f4d2764ae14f9cb5cbf6daced74ac189e2c78e",
+  "sha256": "84e7c1cc8f01230a54f8b962f6f4d2764ae14f9cb5cbf6daced74ac189e2c78e",
+  "blake3": "2c45ed242fa0ce8de4fa7991a49d0c7b6b3c46736aa3b39f0be6dc09374bb2c2",
+  "size_bytes": 64180,
+  "file_count": 15,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8724,
+      "sha256": "0ae5cae01777ed5e218e817821987b2e74f67ad7909ca76f263df117add2ad15",
+      "blake3": "96c4fd90c63ce79b8b86be00557f5560901feaed303ffb5b23dee0920476bcd6"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 132,
+      "sha256": "7f52503118efd42928ab3190c9c10bbdfcc15d763826a8e5d42ce35a82620b01",
+      "blake3": "e635a0293814312b67afa21b365fcd16f5259dbac2114ad12a619b1ade82380a"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 718,
+      "sha256": "e73aa04c23afa32f9cf410728119c2996e0b012c7e121f96171cc9c8a1fba08e",
+      "blake3": "8623ac2bc9b339344c6e9dd59dbe55612c01feb4333e5a3401998efce66753ce"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/api",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/api/video.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2870,
+      "sha256": "cc54882e5fde3709a46ee7f5cbef14868a15ba3f24ea8a8eda4b5f7188ac961a",
+      "blake3": "36169996dfebf816728ad9b3abf783fb882ad0bf85cf33f178a028c242d7616e"
+    },
+    {
+      "path": "scripts/config",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/config/constants.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 434,
+      "sha256": "d03d430fadc14ffc6af34989a96233c524905130906171d43c89ee6c121519fc",
+      "blake3": "cf41be45bcda873abc92b81c2c4a3a15d857163a9019874be616d4227b75551a"
+    },
+    {
+      "path": "scripts/utils",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/utils/clean.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1485,
+      "sha256": "200a416a705cf824316af9243c9f3963412b175151c01116870f2be8e612eada",
+      "blake3": "7938acb62df3fb691d383706e02e74e584a137206700ffce29fb864a7e19b21a"
+    },
+    {
+      "path": "scripts/utils/download.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 31424,
+      "sha256": "69e81e74acdbf710428da69f95eb5cb54de0884733b4750281c314cb2a6cd6b7",
+      "blake3": "e2c661cfe99b8bd436d3886d89859148ff46d940866f41ed40fcd78f67c25332"
+    },
+    {
+      "path": "scripts/utils/helper.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2520,
+      "sha256": "d9044825ecee8b7d8e77a4eca5e4c06943bf24752b0de07f1535b5c15c79b205",
+      "blake3": "3ac5d17a4c2128a9e6f938ca35ffbe03c1d6963de928edac0e7e1f03785fcc56"
+    },
+    {
+      "path": "scripts/utils/request.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3866,
+      "sha256": "627dfc1a3d352bf2a2554b5085ac07ab0261bc688b4823d028069afac5e95f5a",
+      "blake3": "61e008dafabcda909d19de1505b0e1cd96d8ff173c4ba818071d313ccb2e069b"
+    },
+    {
+      "path": "scripts/utils/token.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1061,
+      "sha256": "808425926e5537085c6431c22b33e24c73dc252dd66c77cd5c1baca4f2c00430",
+      "blake3": "f64eb94c249e94d645791656ef0173f12ca6295fa5cd7806a46d28b627f695d4"
+    },
+    {
+      "path": "scripts/utils/upload.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2253,
+      "sha256": "2d856b41caad5dfc698cd53a28771dad32beb14e5972eb9a5ae73a7f62c95002",
+      "blake3": "ffc4bd6433c10552e1bade618b97d66b4272cca07fc32f6a0427d70ce01521aa"
+    },
+    {
+      "path": "scripts/utils/utils.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1189,
+      "sha256": "653cb41744e04fbd5066df31c18519cdab88aaf6205d75e5ad932338d1efc139",
+      "blake3": "cf6434b6ba2c489366eec274ff45d74383009345de4202d70747de94dfabd924"
+    },
+    {
+      "path": "scripts/utils/validator.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 422,
+      "sha256": "0ad5cb06b4fbba49e5ec749f5d090f107b5dccf8ef4e2c1e2f266bec88b699df",
+      "blake3": "1bb2806729b3c680ac6cae1105c390a11aec9c55d8476e8212772067bf6556cf"
+    },
+    {
+      "path": "scripts/video2text",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/video2text/index.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4555,
+      "sha256": "766abdef8c1210543b05b357156e4e44ff329cb2b5ff501394dd2b5a1a62c689",
+      "blake3": "e303ed9491c18324ce9d28d8c4559010ade0bd2282569c8f120de941bab71217"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2527,
+      "sha256": "b8267680ba0fbd4c31c409e841e8e33af08580112a587a992e0dfb4749c82221",
+      "blake3": "c5f981f7571846bc43b43beb4280dfe988b1b6513af7dd002db59ed8b046cacc"
+    }
+  ]
+}

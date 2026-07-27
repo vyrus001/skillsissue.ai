@@ -1,0 +1,1203 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:3e9a837e6cd41d908b73386249b745d245dc0535c197c4017ad4fcc5713e726f",
+  "sha256": "3e9a837e6cd41d908b73386249b745d245dc0535c197c4017ad4fcc5713e726f",
+  "blake3": "d931171afcbdc2553d1a9fa21258b7f61f299b071d71c946e21e4d407fcd6c3e",
+  "size_bytes": 801489,
+  "file_count": 140,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 628,
+      "sha256": "c696b8220a4d3e3cffd2718f04c08b6451a644b14d12b6928875a2daaa9729fd",
+      "blake3": "c6989a6c8b461135890af4a310a821a140db50475fc3e7ce62566fe9c4c03461"
+    },
+    {
+      "path": "METRICS.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4817,
+      "sha256": "6c75eac89418a1ec1855bbadc9a42f1e82cd08df54abb7791be0b4fee0fc279e",
+      "blake3": "fb34bfb0b56211311ed2aa98c1b3378c89623742736e687aa6960727ad00d010"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1385,
+      "sha256": "42e590685e5e7f80a225f8b4e31ad32304b6643eb7000071a13413336a315bb6",
+      "blake3": "07e3579ed0b4b324e8f018c9afdacf0c4a5a12c9a0a8cba6885c850a8756e012"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7833,
+      "sha256": "7b5f06ec8a499b81fde860e6f67a58d147b26cfebc9675e73f1f11d0ff6766af",
+      "blake3": "f60e80feea291c2bd327e10f0dd5f035d30be615f8da31572b2853b4e5aa5228"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 134,
+      "sha256": "e01be070d30f715f082752a4f0f0f5c2552276b4418cb4d64a735a26ad430e61",
+      "blake3": "01f62976f9daeb7042fec8f8957d4a803fab891468d9a420778697229bbb911a"
+    },
+    {
+      "path": "evals",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/metric-fixtures.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11290,
+      "sha256": "8a51f952b798a43a1544ea43a85aee6297fb0199015dcc7f07703803014d3105",
+      "blake3": "ef9e1a25e2c7d258be4152f0a58d3327a7f86307439f618022591a4c0abcbcfd"
+    },
+    {
+      "path": "evals/run_evals.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15733,
+      "sha256": "1444b3ccbe951fa83b142475ec2a4267e695d3cf883bcf44460b00bec0375b2f",
+      "blake3": "beed08ba4b3e3a070bfe1a5259def71c6a35fe65608fa516207d39622646bd60"
+    },
+    {
+      "path": "evals/trigger-prompts.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1350,
+      "sha256": "fe0c32aed915c945506f1f5ed7f101be9957a7486ffbfd5cc88b58af1c122ea5",
+      "blake3": "818cda34ebf524d5550c8598fd81fade59c028f5979d0f4a7fa15a1a0b38e483"
+    },
+    {
+      "path": "examples",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/claims.offline.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1935,
+      "sha256": "4cc8b19fe8354cb8ff0cb9b318e09255a2e2992f22d1c1beaa206cd5ddba5f6c",
+      "blake3": "925606b2aded60d3e7bf415651aa68b6cf997b55ba1f92e91cfeddf5a5291247"
+    },
+    {
+      "path": "examples/content_briefs.offline.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2436,
+      "sha256": "4900daa44c2d02173f240cf12bfdee0d1efabda95b52276663d7493218951ba1",
+      "blake3": "bd7c194a3bb62b0e639c99eda63087d5ec14340253d0000e08d21bb64bd76d63"
+    },
+    {
+      "path": "examples/expected-report.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 392,
+      "sha256": "095b13bae5613c5da6da6ad93305276588eadc25fb273ba24efe654197dcc80f",
+      "blake3": "9781c51886137f7722d5b32d8b2a5f12e532b09b645689c656b8dc6023402725"
+    },
+    {
+      "path": "examples/input.complete.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1228,
+      "sha256": "aeab3ad6d59e67b5a64e756d07f3f18f3c458a304501251154f622edb1a945f6",
+      "blake3": "4729f40a7fc24b7055399dbc913b8888822124a7522e095fb3b59bfa37760a36"
+    },
+    {
+      "path": "examples/input.minimal.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 171,
+      "sha256": "f475bd75be2ee4a8a62c92a440c541a5d70b3e15815b50488b0e1ad72ff743d3",
+      "blake3": "bf431360c4e0f04d5f97af40094748313f76fc13e406763f22b561d67761c873"
+    },
+    {
+      "path": "examples/opportunities.offline.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3269,
+      "sha256": "43cc6857ec0936ef0b2332fdae961c822fc3caa2e635016d83df7d7a06b66789",
+      "blake3": "60a13ba58783db906b3dcd196d7a7c4893eef9c5c3a44ec7d96aa353713a1230"
+    },
+    {
+      "path": "examples/questions.offline.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3595,
+      "sha256": "eed118347fe2695e0088190d10713fee7e17495d2afe014e943f1698d9dc6db8",
+      "blake3": "1076349d2956d4ccff965dc591912328c57aab4919ea21f5680833d69df3facb"
+    },
+    {
+      "path": "examples/run_offline_demo.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5153,
+      "sha256": "6dd3b969e4c8fc5bb5a95f14dd4b3360cf8b4df4f2da4cc7d378642a6720acde",
+      "blake3": "7117841821fa754810007d260828a08225a14962f0d13381089d570db24f3a2b"
+    },
+    {
+      "path": "mcp",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "mcp/cursor-mcp-example.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 222,
+      "sha256": "15bd545191129c8f35b2f0a9b6d14ab3f236a663b53886cadad6923f1561a51d",
+      "blake3": "67971f0b15169adc3296753b995313b7e2fd1ded90912f5443ef6ae08adfbe84"
+    },
+    {
+      "path": "mcp/manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4715,
+      "sha256": "9c1861d6d7d53f118fbf99916d5df22f7d426ee31a3c3adb5f76eb8e45cd7c17",
+      "blake3": "847703382bc8f7bc807c75a85ba5b413577b77efee236aa96cb6927393fb7308"
+    },
+    {
+      "path": "mcp/mcp_server.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10691,
+      "sha256": "9c6f0c8848d1309b264308e2c742d4c5d0218d67c844887f50b36af2cf6290c2",
+      "blake3": "fdb604908776be7ef9364abeb518d0660503ca19e841288d28d175300e5eed1d"
+    },
+    {
+      "path": "modules",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "modules/brand-depth-scoring.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2140,
+      "sha256": "eb38c920b12b222eb0d4304feb6a88957579efb035a07fa9cc017e6ae974a446",
+      "blake3": "176a680d9df556e51b9a626839784d7f72afe2062f6a36886c2d90b9e15fa61a"
+    },
+    {
+      "path": "modules/entity-kg.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1362,
+      "sha256": "fbb3b6cb917c6e8c32cc0d8cbbe5319488f8589f26da43b9094d082452528e37",
+      "blake3": "756942ef5e2451aa857006ed523645e8ba2a0263e5ef63daf001389e83145390"
+    },
+    {
+      "path": "modules/funnel-journey.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2111,
+      "sha256": "3552492377e53a23453c17acc8164aa3e994c195dad83e286bd03ca86a3f7194",
+      "blake3": "b48af33db0ef7f0bd01b74770bb822416d5a279f35defe3ee08e238093e216f3"
+    },
+    {
+      "path": "modules/geo-lint.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1319,
+      "sha256": "046cdadfe5ee665edacca5abf993868f3ebb83c696655d3b2b03249e575bef8a",
+      "blake3": "f5df80c6fe777fe47e1187b68d997aa9c6729a43f4a8f2302e713832d794e6c7"
+    },
+    {
+      "path": "modules/improvement-loop.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2187,
+      "sha256": "0a72ca8a9829a3f2550841d4db932eee15c61c9408792b149c5a6348e2108c16",
+      "blake3": "0282b0364b03d978ee9e745cfc8e537799e5f133399bf9f39c3348505099552b"
+    },
+    {
+      "path": "modules/multi-engine.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1639,
+      "sha256": "adb10da4fcfe889bcdb2cb7e0766fbb4292179b9db706b1f081dcc2a0ab4e737",
+      "blake3": "3531c00ed358af35157f1f52931fe6a462f56661381dc21ffc82b5ed98e17ddf"
+    },
+    {
+      "path": "modules/schema-automation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1436,
+      "sha256": "94f80e8f017f201bc8279ce4f964a93df6e4a4c60e8dde6df1da0aa88ab8a2b5",
+      "blake3": "b5f3974f546213d0702490f9763fe06a1a2fbc60e579be4ab15f03eaadcfb998"
+    },
+    {
+      "path": "modules/search-pipeline.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3105,
+      "sha256": "0c1e074b909c084375c23e8b6232a09e8aa86439d7c1d9e6e26cc35f56524d42",
+      "blake3": "48c2a95d19b0a25b8e5241d0ee9f16ad3544c7803bcf4273832b2848c4a34479"
+    },
+    {
+      "path": "publish.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4204,
+      "sha256": "a0fab097e4bd69a931aecfa7823ddfd6aa051b9a8ce326f44ab208e18cdd7f83",
+      "blake3": "1d3d9a17cd799124fa6ab198923ee75a7f81a4e3b793b7c1820e1f624f4128a3"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/INDEX.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4044,
+      "sha256": "b2825f04d92a3d03a531eabdfe8910828bd8b3e39fd03456df6e659b4b19b8ba",
+      "blake3": "19226552b6b54a2c22f52b5a68e107f1bb095e7773fe9724e2d30464af6968ec"
+    },
+    {
+      "path": "references/methodology",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/methodology/academic-frontiers.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4623,
+      "sha256": "efe2cb0f258b6dfb260ccaa01700f1e4257cc3eb4706585a285d3d78068c1b6b",
+      "blake3": "c578464c7db50edcc8b5591f574d1793e415216f4dab1916547887a0aba69ceb"
+    },
+    {
+      "path": "references/methodology/adaptive-retry-strategy.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5116,
+      "sha256": "1fe806a821003f79ed71c95f0822f8d59c89869a865e7bb50af89fef5ee8ab22",
+      "blake3": "0d152c22a6d91968ef64c5a72d644cd7c0c8b3b80c255bde79d5cb00ea7c205d"
+    },
+    {
+      "path": "references/methodology/ai-perception.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5070,
+      "sha256": "937dad7306faece678c8f7ead5b60ac4c7f04163953ee5775bdd5f011c8c0015",
+      "blake3": "59d95ddde212ef04cbf5aa02939ade3b3ea98f9f75e8da821f9d1842a3a55cb6"
+    },
+    {
+      "path": "references/methodology/buying-journey-metrics.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4256,
+      "sha256": "54467cdb69184fbf65f93369d68a73b81120fe393dad8b87815a2e2f5f6f2bbf",
+      "blake3": "ccf3ae01adadade770aa80d90a3ee852a17a62a74a9f152314a9f55007d844aa"
+    },
+    {
+      "path": "references/methodology/ceiling-geo.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9705,
+      "sha256": "3da30fa5e34fd0adf6af2009305e99ec063a5b84bb41c76fa377c25a3b4864d5",
+      "blake3": "54aee445debeb93f02deccd9cdbd19105f59c3b07c908c61d417a513e5751a01"
+    },
+    {
+      "path": "references/methodology/citability-scoring.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5420,
+      "sha256": "07e3654916e683eddf6f22f05cc47eb53c60d0fbc7a68c7444f8630f3cc9b805",
+      "blake3": "ac5b6b10dbabd020ea123fb592f49af3b437a818996fcc1b09583ea20cb3677e"
+    },
+    {
+      "path": "references/methodology/closed-loop-optimization.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5447,
+      "sha256": "02ed5fc4d41c488b8b0cf53588fa7def53c748e145b3316e9852d448da927ba8",
+      "blake3": "445c4d8ca2d5f5cc4d1b2d1e870a26daae19c8569045ec19ce532bb80a5373ba"
+    },
+    {
+      "path": "references/methodology/content-freshness.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4939,
+      "sha256": "1234ff57e9c69dd6d41ce706637f7f62e6bcb9839f58594debed817bb8bf7e75",
+      "blake3": "017f954e9fdfee1c6d024ecb195114a5a0444e916e3af4052f18fb71ef1d1e93"
+    },
+    {
+      "path": "references/methodology/funnel-stage-analysis.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3465,
+      "sha256": "2715ec816c6a4a871875abe65399e1b6fd28ad309b44047d11366e39eedb8ff6",
+      "blake3": "6af7334665f0173c727c28be2c5cfb538b34f688141d393e0fde74536b254d45"
+    },
+    {
+      "path": "references/methodology/international-geo.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3149,
+      "sha256": "ef20532f3ca98f0e28eda9be624decd0f8c384997934465be87aace11476517a",
+      "blake3": "6752cf33baced5700115b27e9b54f8810055bf51e4b868b621da17dfa99ba7a2"
+    },
+    {
+      "path": "references/methodology/loop-engineering.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7307,
+      "sha256": "2d83f4dd41321624515abb9b32c137fa72d51169c91152fc1bb1332e84a87fd5",
+      "blake3": "3c9bcaafa122f00ac774186052c205bf746549bea2d6afb5e38c17eb603831fc"
+    },
+    {
+      "path": "references/methodology/negative-signals.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4591,
+      "sha256": "30555cd00ef829402e8d6eb02d0390b167b7a3faf6c2200bd4ee1d82a3495af2",
+      "blake3": "09e20536ac272e5e7497eaf7d674416c0826cf59ac717f83e3df98e183bfeb67"
+    },
+    {
+      "path": "references/methodology/opportunity-scoring.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1940,
+      "sha256": "03d37ac13cf8dd2584d8a7e62dc2a9bc261a8aac45f4c9f3f73fee163a1d601a",
+      "blake3": "c0014ad7196d182b188eb12d9b198ec342657671edb1c010a09451ba7c685d9f"
+    },
+    {
+      "path": "references/methodology/optimization-action-engine.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4627,
+      "sha256": "323b9c6b915b6b8e716edbfdb94a4fd03aa14d8fa455e5d71f53959dd9c9d5e6",
+      "blake3": "e81366240a5c51fd0a40ab460a87dc6ded934378513a56a50c1bf1b494192919"
+    },
+    {
+      "path": "references/methodology/search-signal-extraction.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5809,
+      "sha256": "336bc9b6a7d3986ec46fd302dbc02153cafb057499d6f333eb91337cdb6a030b",
+      "blake3": "7fe5cfe47af47312ce09930f191400c339e657b050b6954949856b68804ff1e8"
+    },
+    {
+      "path": "references/methodology/semantic-drift-detection.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4756,
+      "sha256": "b39a17d4814a38e8b36d2c98a2095347e19fc930902a283787da1b301cb722b4",
+      "blake3": "5f04bf2a09fa60cd19897829f0f2b3c118ca84210e2a8d0c6f8a6f69e9584dbf"
+    },
+    {
+      "path": "references/methodology/site-readiness-checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4024,
+      "sha256": "ae28f0e5298446131f6b08b9fbe4b4e4657e15e1d649af2ad47f1d2f6e6729d8",
+      "blake3": "27ad8ab9b56ac24e49d6db31cb61ddfdf543b25297f60eb2a22eeba79fcd2442"
+    },
+    {
+      "path": "references/methodology/topic-authority-scoring.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3475,
+      "sha256": "a77b0c0879d1c242d5c1b89bc3880537f0f4b109f600bb2eed6098f913680a3b",
+      "blake3": "c0f904c1505cdc42f0f0d9696849d4c546aa8d98383476f5ae7171794f241f3e"
+    },
+    {
+      "path": "references/methodology/trust-stack.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4569,
+      "sha256": "a9d9227043677e13ed623ead3e9454b6dec639237f90d4320c03a99349547c34",
+      "blake3": "a7b5deb8e21f3ccc83cc053f8c19f2acd717604097cf2a93aaa6702912564cd5"
+    },
+    {
+      "path": "references/methodology/visibility-alerts.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4057,
+      "sha256": "1829fa894bfbfefbcfa2d5e942bd8409d5f2d1937424b759ef4b5af3185eac48",
+      "blake3": "d12d2f01ccc7438402f296dc48477fec94d44ead6f99c54949014c30620305b6"
+    },
+    {
+      "path": "references/research",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/research/analytics-integration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4125,
+      "sha256": "568c11e047979f997d9d29974ce7ef251baf22568f60e162c0b804509e8a60b9",
+      "blake3": "eb2fe4254f56a5c61fe83889d11b9a40f1c1ce714acb2ad0236b9fdaac53158f"
+    },
+    {
+      "path": "references/research/attribute-level-analysis.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3646,
+      "sha256": "f982bd59c1b3e38f3aabc00d2d8f9755c353d2c061f8c03b07c01f5dae5f0582",
+      "blake3": "25e53355d1fb189e764dc20796cecf28d9369b5835358f627c0bfb5632771439"
+    },
+    {
+      "path": "references/research/citation-taxonomy.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1565,
+      "sha256": "d645f14088bd9b47b22b7d40f3647b68171619902c269b20893a133fe51c9bf4",
+      "blake3": "e3442d7d929edb7ca342d0c69dc0726d2f768a74a6643aa191ea4f27d52dba98"
+    },
+    {
+      "path": "references/research/crawler-log-analysis.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4962,
+      "sha256": "68c751f58424d200bf22b1ca07fcf2de588e77f1480810d1c159d5c6c2d5fb2f",
+      "blake3": "f89015d11e118b62b538c8a1a1bfd83bbaaefe921fa4792d6a28cbfd17ef3286"
+    },
+    {
+      "path": "references/research/cutting-edge-geo.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6639,
+      "sha256": "22bc6416be6ff8f52bafd2d5769d438c8c92208dc2ada280a379b8c1e8593b6d",
+      "blake3": "15c2f09b802f3d805f35ff35ceeef47e108851dceeda00abb65787d49f7ec107"
+    },
+    {
+      "path": "references/research/entity-knowledge-graph.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6711,
+      "sha256": "0eaa07e0123976b210314b8222c2f4da596608daadec29921ad9ef416f37bd3b",
+      "blake3": "a0d6242fcda790e0af1b1b635b9a9e314088d7ebe32c1a75789cf1caf713fe8c"
+    },
+    {
+      "path": "references/research/multi-engine-query.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7397,
+      "sha256": "9ec215a52ec36db06d5fb08187d973c8509abbdc76c02d1485557f0b6959650d",
+      "blake3": "b6d840c4267ca0966e2683981776e8e18061519950d3cc9061ac4faef5f20346"
+    },
+    {
+      "path": "references/research/platform-citation-map.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3884,
+      "sha256": "2fcf7e53cc884626c649db55c525408a491f5fb8dbc94152a9078c81664f594e",
+      "blake3": "fd697d791979d6d149c3f29c34cb77eeaae220f13e9d6970c343b3b7e81f3f54"
+    },
+    {
+      "path": "references/research/publisher-influence-mapping.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4112,
+      "sha256": "68895493f13eb20393d76f930f1079357b8ff75d9a23b473bd0a922d81e843e2",
+      "blake3": "51bcd65df0bb74b35a0c864cc03c58d0e32eee42f7650e31009604b491538c29"
+    },
+    {
+      "path": "references/research/realtime-citation-check.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5994,
+      "sha256": "7b5fb37f28a1c559c509e4f5322303c421aa90bdff71094f3ae02d6d9b3fafdc",
+      "blake3": "dc1e9aa301030878e91976c7288e06984b39801c6e18bb8d24e9714fd01304b9"
+    },
+    {
+      "path": "references/research/schema-automation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4081,
+      "sha256": "907d4689e8498c524c824218af4e6fab4af11ac75f00a111aec06bbd407ea3e8",
+      "blake3": "0bff6f24bc2489de5206b1496482f7a66cca50407c3a8f1bd687eba7d540214c"
+    },
+    {
+      "path": "references/research/search-snapshot-archiving.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3831,
+      "sha256": "8cbdb0b6aabb707fa2c78794572dc42ec82dac2c34771d044851e7493fe02e1a",
+      "blake3": "c644323370887d0fd4346568e15ead0176b216c150180c24d3f0a78b0d7cdc98"
+    },
+    {
+      "path": "references/research/ultimate-geo.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6199,
+      "sha256": "213474c75c3d7e90c5af43485656774857f34790bb86d45b61259c56a6c36b9d",
+      "blake3": "3e9783c6d82cf89885d9bd400260d7a5bcf6b939afe939c080a9e24856c06382"
+    },
+    {
+      "path": "references/specification",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/specification/claim-verification.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1438,
+      "sha256": "346942c9b1728a66cfe0936104359d44a301be583ab23de519b5be73c8199010",
+      "blake3": "0b068ce9096425325f47acbaf84099da42f1cd552d5fb9d77c7f449194976fff"
+    },
+    {
+      "path": "references/specification/entity-resolution.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1376,
+      "sha256": "5cfef06626c273e68a0213581f3303401c901ce1ab7bae9d58c7f943e9cec32f",
+      "blake3": "31a63ddf76732df0d394bee3935ab5a6691a9f9f561ad6791d97cbed770ea545"
+    },
+    {
+      "path": "references/specification/geo-lint-rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9381,
+      "sha256": "9f0f6d465da5dcf0b11e0ea3467a20ece779f10bc7030e7ac9cc456670cd728c",
+      "blake3": "178fa1077b31c9c141327060a3e14db88c80274e8111d70f95d4b7889cd2c049"
+    },
+    {
+      "path": "references/specification/metric-definitions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1746,
+      "sha256": "17322df3b6e04c177ce1cdf74b597840f7c77988f75f32e2d20bdfea634b5468",
+      "blake3": "eead75c10f1aab7ff2a75d9ea54de46ac2622bfbaa2b638bd6f690a216173ac1"
+    },
+    {
+      "path": "references/specification/question-taxonomy.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1502,
+      "sha256": "ad210e648acb8af7b6c56d30e471a035b7571c1e3d8257a74bacfa82a200a64b",
+      "blake3": "d2803e5b29a65237c35df20380ab0520f92668ce10e0f95af051fd95e2923cfe"
+    },
+    {
+      "path": "references/specification/recommendation-rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1435,
+      "sha256": "56f71d5a6ef9210a887e78ba99cbd77d899c84eb8dcf39bc315d3f16f54c4574",
+      "blake3": "ec4928a7d68d4c04d3df77c4a3426c08b95a2766c12964965767c288ca3ff4c6"
+    },
+    {
+      "path": "references/specification/report-rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1552,
+      "sha256": "26b59f7d897ce6809b0825321d264e67055b0562eb5c103b744ddc2624380932",
+      "blake3": "c307ac9b59e72481d850251b023b599730e03a4d2cf4880f1db383c5bc42c363"
+    },
+    {
+      "path": "references/specification/search-query-templates.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4502,
+      "sha256": "ba2196c3307044edc0c78528d088891087ff3453bb45743f587722d883990839",
+      "blake3": "de280c0fbd5853912dff413fd9a1aeced0dcfa431ba8f1494777eb17ba814907"
+    },
+    {
+      "path": "references/specification/security.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1179,
+      "sha256": "ecb1ad57a637bda811c57e88adceb505d33f92f5822aeab4df1e2d2a5bf3f3dc",
+      "blake3": "e18c54b55f3521e30446c3746acd24dd6bd463a88748661eabbdf8b7d8ea9df4"
+    },
+    {
+      "path": "references/specification/workflow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2469,
+      "sha256": "ab13220855fcebe50391a7e51b9e400bd65c243b5da709d6eeceefbe86acad1f",
+      "blake3": "6e50dbbe38f723b71228bbecd8bf269f168c7feb6e19a8fc05adc741691656aa"
+    },
+    {
+      "path": "schemas",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "schemas/claim.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1076,
+      "sha256": "5045114b578a77324b446993054cc6b299a67ade671ef2ec04b1018660b9adaf",
+      "blake3": "45547e4a4bb8011e9bd98082a61d8174e2e87fcbc0959480d32cb3c80ddd9e6a"
+    },
+    {
+      "path": "schemas/cross-engine-metrics.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1414,
+      "sha256": "cdb1b3db774e05771fd104a467d22770b1c5889b342beb2135c9dc00273919c4",
+      "blake3": "95578770d803262180f21df3fe8a42055bae33f6d2bdd539436b8f895cd0539e"
+    },
+    {
+      "path": "schemas/engine-response.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1940,
+      "sha256": "03ee1a4198adf2916181f1a5f7714503fc7100c3cb863b7b8068c7ef24ce356c",
+      "blake3": "ef45296039ad6b8a264175a09f541dc4bcf0477ed9ea0a0727e9fe7ad91fb9b5"
+    },
+    {
+      "path": "schemas/entity-analysis.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2139,
+      "sha256": "885a357203525e79065dfbbea92e6afabdd873dcbda1649e263791a25db4ddad",
+      "blake3": "12399de1f001889d6b99c5334c56405e23bff798128f5e4924664bafe189509e"
+    },
+    {
+      "path": "schemas/geo-lint-report.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3393,
+      "sha256": "6e6629049dd420146d971e0d93018ccff6a4343641b17784b9fcf8cfdcd0f932",
+      "blake3": "4ef8faee287ad477358f35b7dc7e6a508822823a9027139e708b69410b9d7a76"
+    },
+    {
+      "path": "schemas/input.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3271,
+      "sha256": "bea312aad5df802e0116620c72a560b0cddb3c3ffa852d8f82a04966ef10556c",
+      "blake3": "809426ad399883cff0670f79a291ada408d65d112366d40b17546d356e032097"
+    },
+    {
+      "path": "schemas/manifest.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1166,
+      "sha256": "c3d8f5b311277b6c66f8e0f056419a6525600fbca877a68be95fd112044c9276",
+      "blake3": "806283f14f33364722a17881f910b9aa0047f29b4fc007af4be218596e2171b8"
+    },
+    {
+      "path": "schemas/opportunity.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1352,
+      "sha256": "895097bdfbd08e1ac0e76339b3bceccc01f5b26b19af8e65680dc5567888879a",
+      "blake3": "42a27514121d79f648093ca2be0726aa046725c5b1cebe1162e8692d21ea26a5"
+    },
+    {
+      "path": "schemas/question.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1259,
+      "sha256": "c60005448f1454910b08dffd3a4069a0e7c39fc6e5d5eef7d8da9542066c508f",
+      "blake3": "54e6edf1896c3fd1f507da042284f88e4384c144484d4bdb73f27ce584fc43c9"
+    },
+    {
+      "path": "schemas/report.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5397,
+      "sha256": "a2da04a7f388b084deac97c4d0842c929b950ce0d32c72bbea7f5f6a7438ef51",
+      "blake3": "3a5dbbf0d70843d4b6455807d2158a526903a14c33141d436cae8c2a306220b8"
+    },
+    {
+      "path": "schemas/schema-files-manifest.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 708,
+      "sha256": "b8ef44a080ca6a59f80630f8f24b06be82f6dfb76ad9e3f3db21afd12e28d874",
+      "blake3": "4c418a13b2affa7c610cd79c092378de0f527c827679abf7c2fb8d55323d119c"
+    },
+    {
+      "path": "schemas/search-result.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1556,
+      "sha256": "fb77176fb8fdf9f1f2833f168e092dc4bded79dcbffbf31e41413f4c75b706b6",
+      "blake3": "4cdb33c5712bbcdf5be733830b50b7ee61506140f5124163c5dcb859ceaa2809"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "scripts/alert_channels.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10448,
+      "sha256": "62234f459b88bb7d77d9bcb560692366a08c56050f276f3775cb8ddf8ac2d8d1",
+      "blake3": "5465d076eca0326daf8a1caea95e5dc3c5b2be14dc9d4bdf175532946450f0ce"
+    },
+    {
+      "path": "scripts/analyze_ai_referrers.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9862,
+      "sha256": "a1573f329bdb6728ad1c6c735252530a280f35ebde883a4bf942d65edfd48476",
+      "blake3": "94d99747db1ba155a4b97ae3dd3e083fae0ff962813cf333e7392a2751e03a4b"
+    },
+    {
+      "path": "scripts/api_adapters.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29849,
+      "sha256": "c2b6e48a5a3c57de7eac937c9966f4ba820db68c254c24acdfce76eae4e337e7",
+      "blake3": "540973e35fb1b0640c90c260c9594b7e292f503a50589e57d3a4be5f09e6706d"
+    },
+    {
+      "path": "scripts/append_search_result.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4411,
+      "sha256": "20a61053c81d1d29aab0a91936ecf614d33a2ddc748918ae44f00696919a3519",
+      "blake3": "8b6674d3e49396c0cad29aa429414fee5442fdd01216a49facba5fe439f94f7c"
+    },
+    {
+      "path": "scripts/calculate_metrics.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13956,
+      "sha256": "4ea4728de97454de975aa0c383ff2cf717d47e68538833c6a0af93c4b5e1625e",
+      "blake3": "ab0107746ff5735e8fa9d3df646a672179ff719a9810d57cd8bbd90230faf74f"
+    },
+    {
+      "path": "scripts/ceiling_geo.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22443,
+      "sha256": "c8d5aeb39b027eeed35c6cd5878ee8de273a8275091b9b044783928199b0c0e7",
+      "blake3": "51d6da8944780062dcbc062b81ca816f1759b0c74dfd2e8916f6ea7bbfc60917"
+    },
+    {
+      "path": "scripts/chain_runs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5602,
+      "sha256": "d1b9dadf0c6788f1d022df9418ca5610c1ee70627f510fb52a4c64f17ceb272c",
+      "blake3": "e64004c8734a72cc3caee33c8064a63e7c9cf08dab208fef1212736e3ef59b03"
+    },
+    {
+      "path": "scripts/classify_citations.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7396,
+      "sha256": "6f50c1114d19642a886949a84cac4b240850e39b68ed8eb8a6dcd18c530a72c5",
+      "blake3": "eda2cc74939b71031f1c002bebc00f56187e13a75b8d98228088238c0889d7cc"
+    },
+    {
+      "path": "scripts/classify_funnel_stage.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3342,
+      "sha256": "3ea82d5163e93604c9a259afed6c5db4c6471b289e7d9f45fd675436f79b69f2",
+      "blake3": "966fa66733388622acbc137791e9541cd4a643c60f78479b51c15ae4e46f63cb"
+    },
+    {
+      "path": "scripts/compute_journey_metrics.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5800,
+      "sha256": "8e9edfe9ca1d33a9bdc5d186a3ec833e14331447adb5d18c5e98ff53da4e85d1",
+      "blake3": "f2c1dea581ca36a1f2fb53f233a5af3b322c66832245d1b7688ab64c7abb28f5"
+    },
+    {
+      "path": "scripts/config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5666,
+      "sha256": "a39106ac98bfecf655d93115bf90c1d169a5d74849626676b28e6c80d77a58df",
+      "blake3": "c339c78c67374f9b00a118663c60f7b6da32eb931703b2255829544407069b87"
+    },
+    {
+      "path": "scripts/core",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/core/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 635,
+      "sha256": "130d590100d827ef8bad29a754e280776195fe843328691fb776e3ae00ccf5b8",
+      "blake3": "2d9942e6a12239280aac87cd63581cfeaf67467de47b4ee7a884a591ddda8d94"
+    },
+    {
+      "path": "scripts/core/cli_utils.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 411,
+      "sha256": "006f53edf5562355e10974346d912e65e7f4810cb0c969187ecb9b8b250b13c1",
+      "blake3": "f01d560395ccb5edfc311bbc98ad76ca247a45c859335ba608c7354c009a829a"
+    },
+    {
+      "path": "scripts/core/constants.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7505,
+      "sha256": "a265bfb57934dc4f8d27ee1f7d8ec244a0b023bcca743b5e16e8a97618816374",
+      "blake3": "30452336552dc0b61570ef32dbadd2b8c3a5269e3076e6c225915838c2865e10"
+    },
+    {
+      "path": "scripts/core/hashing.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 688,
+      "sha256": "1bf5269c854a28703622f15c4d3c2b466ecc9880e6db919ea3812b66f6141f68",
+      "blake3": "dd92ea363448933200eb212598b445801f288e3208e30223febdb3d717bfb64d"
+    },
+    {
+      "path": "scripts/core/io_utils.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2938,
+      "sha256": "010acc3883c705034c41f67a2aeb35d346fcab2989d09b5685900703f88630b3",
+      "blake3": "afab900c8c52ca861157fef3a91093137f7fae951cf412a5905a0e2a146e2294"
+    },
+    {
+      "path": "scripts/core/locking.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1515,
+      "sha256": "94942a6e84f7e22716c34add864af01ec6c1d3bae648252521812ea72eb5ea54",
+      "blake3": "1ed40bdfebac0b24c371b2b7820d29cb329dc93f5ecea31da621f893ca8bb3ac"
+    },
+    {
+      "path": "scripts/core/log.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1552,
+      "sha256": "7bb7aac0f8a899dcc9d60e9be75404e44988a5d0713b3511c7f5238b75f48785",
+      "blake3": "b597fedcab0c78be5e2c92f535ea3a743cba4a618ba8833ef785fba40d761961"
+    },
+    {
+      "path": "scripts/core/path_utils.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3675,
+      "sha256": "f2cd01bc53e38d17c3beb8ebb4aabe72bcb3e7b55872149f5e70fdf6a7f20b07",
+      "blake3": "eeb86d8e4d0a7c7e27a9c1f8d4f33be9af49a84e846910fb989a34422b2178f7"
+    },
+    {
+      "path": "scripts/core/text_utils.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2477,
+      "sha256": "779a2f93cacd1fb19de75b5f2469ab01b874adcfb0703164728e59dd7cf2452f",
+      "blake3": "4c3644e7c49c6c9e6d41023f36e0223d46bf6f6ad1bd0f150220af66835cb0cb"
+    },
+    {
+      "path": "scripts/core/time_utils.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 296,
+      "sha256": "499919e20bf6a862635668a824aab840ba1a5aca46939f980a15629c9d075227",
+      "blake3": "575c703669adcd18a5b655626f874eb187769d7fa31d57deac92e377dc5df7ce"
+    },
+    {
+      "path": "scripts/core/url_utils.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 637,
+      "sha256": "6fc5dc1eb91187ff52f8523849f37f8f72111ea0200f93ae3501c7c56498ccd6",
+      "blake3": "94a35fb78b853b807abfbf9f33a0aeb5cb9ac40258f6b0a52a6e11eb558f007e"
+    },
+    {
+      "path": "scripts/core/validation.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4628,
+      "sha256": "b1fe206f88b2ff5946e8bc51b19aaad79f37e49958dab187ff2c7b22ba3f57a4",
+      "blake3": "874718da5ca16f1afa38ae99f65ba6c61d45f6f3da5bd8354e0cd1458c5ca917"
+    },
+    {
+      "path": "scripts/cutting_edge_geo.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22823,
+      "sha256": "d69ec7cefdd54b0473c47e3523157591ac9dfb416eea98ecde9ff627ba1749b2",
+      "blake3": "01a16d4cc6d02b61ccf62fa04d903d897e2bb385ee6c3a863c4c63689af06129"
+    },
+    {
+      "path": "scripts/detect_drift.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9747,
+      "sha256": "eda98668b6b522bcf64ea53d9734ac6bcbf190071c298db790387c5ab7ce2d8d",
+      "blake3": "69f93a3683b264521b03ff68af3cd640efe1aa9a9af523f5d7f2245e147b12e1"
+    },
+    {
+      "path": "scripts/detect_visibility_alerts.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6552,
+      "sha256": "3a28b8432aaface91fe335583a5c47ecd0471c90fffc11c2a77022697ee932ad",
+      "blake3": "eb1cfaa3c8cab48c0650075d762b4e709e58e11fe0af9de5e1b6962f74f3cb20"
+    },
+    {
+      "path": "scripts/execute_search_batch.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7753,
+      "sha256": "e7f28604ac5a84510c4f9a9ce9e2af9e4e349b5e7ebb2db4a522cfbdd4f25931",
+      "blake3": "52ddd7c7e51ede5519c0f796b16dada77ad9f41efda028847d407082eb7401cc"
+    },
+    {
+      "path": "scripts/extract_attribute_analysis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4203,
+      "sha256": "5dd7b7ece287fc73b10c1100464a21190e1caab6c487d15d76b6d94e717f5c76",
+      "blake3": "07dd27bfc7697669acf9cdb63e6288190a0e5528f29bba63345d36b9965579d0"
+    },
+    {
+      "path": "scripts/extract_search_signals.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11538,
+      "sha256": "2d5eeeb89bf1c787019ba3169c35ab1610c4d197c0b4cdd6405fe0deecefa4f9",
+      "blake3": "ccaf884c52d128fd65f1fb923a4b4680236376782d1d4e4e65330294fc339fef"
+    },
+    {
+      "path": "scripts/generate_closed_loop_actions.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8554,
+      "sha256": "11e3398858674b2df14efa6a905e1af56754a0060a3568416670028a44489d51",
+      "blake3": "01e332f2345ab5ba561d8510b16ba24f165e3acd4d322c72fadb65eb55a67552"
+    },
+    {
+      "path": "scripts/generate_improvement_plan.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8397,
+      "sha256": "2055d3973fdd378b64a3d2788e4e27e2eef00ea8cd42a1f7e9651f28a8736510",
+      "blake3": "0d7148ef9954dbbb2f3aaacbc4ee93a3bc211b15c4a424ac14e2c8e26a406127"
+    },
+    {
+      "path": "scripts/generate_optimization_actions.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8011,
+      "sha256": "de7147d0c946e56bb2f9d0e68e91a7de3803b012f9cb501c4458293ce44c3d65",
+      "blake3": "93f08cb1006725128c7aa8129125e76da3b7252335c2f6b4306d8d863acabf66"
+    },
+    {
+      "path": "scripts/generate_schema_files.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16658,
+      "sha256": "8df8aa8ccd030a8293f0b2cfdc6ea5597096e7e26d9851d74de94a6a98e653eb",
+      "blake3": "f2e03378c78a2fbfae5344a39b31d721afa802bb05ace714cb293738da14341b"
+    },
+    {
+      "path": "scripts/geo_common.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1728,
+      "sha256": "6a30157245f7fdb6f400de5f8f40800676b3b001525013aca46de3bd73e09e89",
+      "blake3": "39828bcbd1c9a703901d1973e2e155d0b72ec8512d9828ad06019f6554a95c6c"
+    },
+    {
+      "path": "scripts/geo_lint.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 31347,
+      "sha256": "7241f9bfb008de46655d22606b1500136ec26faf817960c5c7800d264ea6273d",
+      "blake3": "170e8d9ac2bd75c10e4c44c6be6e5aec93e2ce8783733c0632c7ddf7608356d4"
+    },
+    {
+      "path": "scripts/initialize_run.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2414,
+      "sha256": "d68af2de7bebf0cd1ccd7a91f95fb449de130550e2299f241124a98721c63a13",
+      "blake3": "a81595e6d3d50c635ca2da47144d94bfc8de988a2f97a9812a83c921779aa0ff"
+    },
+    {
+      "path": "scripts/map_publisher_influence.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3666,
+      "sha256": "564fab763cee309e5f02b7534308bc2453a9c5efb58063aea7aa1e3dd49c9612",
+      "blake3": "492df3fa884ea37579eacc12e23878f9cb6f80899bb9ea39ed4d2292ae480b37"
+    },
+    {
+      "path": "scripts/monitor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8695,
+      "sha256": "459d46d44950f8596010ba13f42b8db381a520c4ffc0d5727345dfd03ed93db2",
+      "blake3": "742308b6e8a9d3e7c46b8bb99a547aa6f289ddde27de242e66cea9d024eb512e"
+    },
+    {
+      "path": "scripts/multi_engine_query.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32929,
+      "sha256": "1315e108311e16f417cea1b20f40e9c7945041b421068f68a62f7d3e91f94f93",
+      "blake3": "826b87bb37d28b9ecc824781e0b38205fb57474aec1aa1baa4aa78d6e2d4c6c6"
+    },
+    {
+      "path": "scripts/normalize_entities.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5778,
+      "sha256": "4cac7bc4e7ec4b635d7a031a5e31141dcae7191f999f1144a9fc3db57da90550",
+      "blake3": "42911662af43c1337f7d6c60fb6f0b63945e1a8ccb57a1ff2f2666fbc798d1b0"
+    },
+    {
+      "path": "scripts/normalize_urls.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4610,
+      "sha256": "aa9e714c7031ac62b1e8c74d5575fe9e9754d4de62dbec4ed31fe2f6c896ee0d",
+      "blake3": "6c84e5440707fa2cfce79b5ebb5959f3bcf175de515653ffd157e12d6e3c0115"
+    },
+    {
+      "path": "scripts/package_outputs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2759,
+      "sha256": "0031ea078298350361debe4677f20ffdeeb7dcc73ded8cc251f85983274f7d4c",
+      "blake3": "d36251a7698799f65ea7374d6448dca8ee198faffcc03198e2d378768fd73c5f"
+    },
+    {
+      "path": "scripts/pdf_export.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11066,
+      "sha256": "56d8064dcae2f7795364b1488abf9c1ebcf09d7be0e695d2eee69fa5cb62f737",
+      "blake3": "dd855ff6235cf27614559aa169a595ae960a350cdce32c5225e222b6fe8d20c2"
+    },
+    {
+      "path": "scripts/rank_opportunities.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4476,
+      "sha256": "3463d8aaed223ef9f4a1b09d8f6986b0055b001c64090e490a681b483c1e09df",
+      "blake3": "26673638b38cc0c03523fdf54c3d9e5962cb676e893ee8d5433745610cbe86b6"
+    },
+    {
+      "path": "scripts/render_report.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21312,
+      "sha256": "2ce8be0ed948365d7b97dca6d4adfeb4a2f0009ca41fa3bfd571fcee2f780389",
+      "blake3": "6aef2b6aa0024a5540af162ea1b05fb76cde9a9fe8b66a9fe2199203d0d715f1"
+    },
+    {
+      "path": "scripts/scheduler.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9667,
+      "sha256": "72bce95dfed864b0c658b5824bc76be994d2a6557e334352f64a93481edf4d97",
+      "blake3": "368a695311558823242e8cd8c660ac873787877a7e919cd9dab8d241b3ab60c2"
+    },
+    {
+      "path": "scripts/score_entity_kg.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19359,
+      "sha256": "341a6d4dcb7d09b840d4d91fc9d237f645adaa61716787aa48f1109079dacb00",
+      "blake3": "77edcb51f39300ae948a34cdf7b732d5f1274be672a8212431c37b40b19aa072"
+    },
+    {
+      "path": "scripts/score_i18n.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5608,
+      "sha256": "58225619433cf04af491a7eeba6d64d429c3f86e6082ba6a18000e81cb8c8026",
+      "blake3": "241cf8b89107125f4e29648791b6293bc8d828dc60f062378c69cab32693c33a"
+    },
+    {
+      "path": "scripts/score_search_result.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9114,
+      "sha256": "bc6f6bb88402d262852c4d3a3b6c78a42390987cc0c3d794a4fdef0f6cacf37c",
+      "blake3": "d19af6253d6d7364947d8845c009ccc1dcdddac04a60620af5a277052988bad1"
+    },
+    {
+      "path": "scripts/scoring",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/scoring/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12248,
+      "sha256": "9636adbf496f72aee3c1737e80dd394f53c8fa7628954f8fbf3ca2490bf3db89",
+      "blake3": "b085d06c2bf26aae50c61cb9f8a1a8c7de5dda168a6d1a3a8fd2c70bada87375"
+    },
+    {
+      "path": "scripts/ultimate_geo.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27590,
+      "sha256": "e62c5ef268b5fb1f440b7446d5c9be7fcc7c220ab84f3bd58daac87258fb0b06",
+      "blake3": "6bad8fb6ee99b1b42f43611a06025bfadcbe27664a45c69711846b2d6895d6ee"
+    },
+    {
+      "path": "scripts/update_manifest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3626,
+      "sha256": "7df59f3d2caf73d679cf7c6a11e4d1fc3892ef150a186d0731a7a39359539b20",
+      "blake3": "a50e8df7a609327f2a74313219f2686f0b13ac2f6332acc4f17e4a7eb3f6144a"
+    },
+    {
+      "path": "scripts/validate_input.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8366,
+      "sha256": "07c72c0bfcce458ec8792d81d3919241a067b0ba9051015307cac090f870aec5",
+      "blake3": "a80cf119e3f3b55bcbdadd965e8d6b2d541bf25ab36f78885c2fce3cf54e2ae8"
+    },
+    {
+      "path": "scripts/validate_questions.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4721,
+      "sha256": "457c286408b8f8aa48d64cc8da3dd25126ece6ce4820464182c109ac6e7afcef",
+      "blake3": "fd51be2c750d3dfa895b23adfbfe6e90331a9c95306dfc1340b76605de903677"
+    },
+    {
+      "path": "scripts/validate_report.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9176,
+      "sha256": "68d2bcf919463a51f5e028f968be69a86401a4300dc1e623525dba82f6fc4a2c",
+      "blake3": "1a9149567ec1b7b5ca12c5c671c0503e4b642097a076250cf35106c206d190e5"
+    }
+  ]
+}

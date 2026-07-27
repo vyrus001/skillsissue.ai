@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:ccb42e7e78b779f6880da280edf40d43c7231d02e80f75dbde03a457f2256eca",
+  "sha256": "ccb42e7e78b779f6880da280edf40d43c7231d02e80f75dbde03a457f2256eca",
+  "blake3": "32b4ff2e5007106a3db6940894bc8723b5c4f4a3d36ca2e7a513882ddddeb52e",
+  "size_bytes": 71145,
+  "file_count": 13,
+  "entries": [
+    {
+      "path": "QUICKSTART.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6017,
+      "sha256": "2aa8dbe6e37fb93af6abc4718eecd7657585b5452f6efc8651403b735bba5364",
+      "blake3": "2793d741f01b94c93c68ccdf354415a57c22818a99d32652519f8a3b0c991343"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3287,
+      "sha256": "d88459a69693179c571070b1ec5566280c2807e0eba2535eee1f88ddfa35be09",
+      "blake3": "77eaf096d238b02d89fad38c3305425d9a51eaf85fcfdfb65eca3df14acd4ae9"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22796,
+      "sha256": "055bb2a6120ecb7bdec73a6b965ecf202b9e43bbd8e7a4bd3fcd462fb79550eb",
+      "blake3": "d07b310b31b2174a1b58b60094358826fd1ba790030d3ece3caa13619c70b4f8"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 138,
+      "sha256": "22e613774ce2017950ee932f7fe88dcf466571e6135bcaa97a5f3137e2cc7be4",
+      "blake3": "7946f35579e19228d658e50dfa87d27b223ea298c0efe66d091261088a206026"
+    },
+    {
+      "path": "config",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "config/keys.example.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 298,
+      "sha256": "33b6939f73b886511aad454c543d802c4e05e962235001cad47dc627c797bc08",
+      "blake3": "bfaacb0d4faf48057962112ffe58a5ba4bdfbe50510c83a79fc52fedabd84815"
+    },
+    {
+      "path": "config/keys.publish.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 298,
+      "sha256": "33b6939f73b886511aad454c543d802c4e05e962235001cad47dc627c797bc08",
+      "blake3": "bfaacb0d4faf48057962112ffe58a5ba4bdfbe50510c83a79fc52fedabd84815"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/security-hardening.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3738,
+      "sha256": "17f6b3ace4820f60070b9d20403fe272940b67afa97c7c9f3a5890a8d8042996",
+      "blake3": "a426794669d5ea02294d43a2da366d733b6de0ffd49676b639e47a35fae2c2af"
+    },
+    {
+      "path": "references/state-machine-2026-07-08.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4649,
+      "sha256": "82b3a0ea9941a19f676cdf93657401914a9d1bc8052d6ef0ba0f2bf913555e02",
+      "blake3": "5fb5147d2224dc187b10a1d4da668087a894675ffec0a8ddd7d5c9b5c0bf3cf6"
+    },
+    {
+      "path": "references/tavily-401-403-recovery-pattern.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4187,
+      "sha256": "6a0b962a256b191f4d5b4905ac9a376e499c33c982d4c039a559ff4eb7db9804",
+      "blake3": "83ac021fd777943a746726e8749a65bd38c750d1aa7a38a36d8b686fc11bfd78"
+    },
+    {
+      "path": "references/tavily-429-retry-after-2026-07-17.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7316,
+      "sha256": "8e7078859d1820f117e5b8f1c8c8cb3eaf0bd22ac92035adb93ecd9020eb3b22",
+      "blake3": "6dafffb111b337cb06b779c407c4babbda2aaddfa8179fff2702a75d376e5f6e"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/check-secrets.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 895,
+      "sha256": "21f0da743aab1ab3fed870586fd6956aa5151a142c97fafb2e55481390071fe3",
+      "blake3": "a5398b1f367c4b40af1ff6baed3e1d3aa6d191b070e5ae57972e70c183ec1c4e"
+    },
+    {
+      "path": "scripts/tavily_multi_key.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14748,
+      "sha256": "47ed2726c8ff9e53085c485b89e4bf59c419225dadff17a10988972c7f245907",
+      "blake3": "eee7ef07db32f469ee8d8101ae566d407d58aedc0e1efda275e14d843ab30fe2"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2778,
+      "sha256": "408858032a182ceac0e2798f7fb12ca6f1a84644035a3ae40851248c8f553f70",
+      "blake3": "8787a8f6662a3ec44060f017cccccb89f682d791a3704bc2f85eba53de9701ba"
+    }
+  ]
+}

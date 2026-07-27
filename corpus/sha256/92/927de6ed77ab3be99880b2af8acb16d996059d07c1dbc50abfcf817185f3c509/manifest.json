@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:927de6ed77ab3be99880b2af8acb16d996059d07c1dbc50abfcf817185f3c509",
+  "sha256": "927de6ed77ab3be99880b2af8acb16d996059d07c1dbc50abfcf817185f3c509",
+  "blake3": "e36a496711a1b1f213ccd7a5c3b40fb4a792f907bb11f44502c09d7183345ea7",
+  "size_bytes": 174247,
+  "file_count": 15,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6221,
+      "sha256": "1d5d3cb55dcdae48b65bb7514c018c10751957beb616d65b896df00e0093d760",
+      "blake3": "f1a0b5f21a15c68551e016b16371085545be7ab8f5dc1a639f1f0adf6db1749a"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3203,
+      "sha256": "62458845e230b633f275baa704544986c79e3e8bf82f140447f6db70f03d4fa4",
+      "blake3": "900ac36ec65eda005509dc4dc7ea3e2c7cc27092dabde16d33e70d3443e1e7e1"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3354,
+      "sha256": "ebda93cbfeebbc616d66131e64b0926cdd7478e9945163350bc91e3b6128309a",
+      "blake3": "bc8c66c6164c580203afe2c0681c93973be790dbfb8a2ede7f461c02971c5d3a"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 135,
+      "sha256": "5f5abbb50fd297bbc990c3e1461cf902f79190c8de6f6a235e749238127a8087",
+      "blake3": "0d7bd72a7934136e00d1eecd336b51739feb16ca6a0c9e40b7a6180151843d1e"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 544,
+      "sha256": "31ea34ff5b5dfb634ce5110149d5854db7f498f05d12711a3e866423062aef35",
+      "blake3": "ef09c1f1906b4d874558a20ea42ec922b237519e1590deebc60a36a14a5e81c7"
+    },
+    {
+      "path": "plugins",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "plugins/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1776,
+      "sha256": "5b9ec40b6fa96450e5361351739ef2ab0293131ea1c5effe6f3792f8be2c801d",
+      "blake3": "b8d6c784e05d741b3db530174af06badc79b0bf5fab8cc8d1b4f09d624ca3269"
+    },
+    {
+      "path": "plugins/base.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3337,
+      "sha256": "ce672cd7a05050d347214df916b7aa42640414bdc84fb372b4a4b7ee32d2389c",
+      "blake3": "b26e27f7ec9bdcd8611644f010305db84359ccb0f0b0d6aa383274362d3dbf0c"
+    },
+    {
+      "path": "plugins/ccpa.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9272,
+      "sha256": "63a0619cd48ad64673dc50b307907ca1c058ffaa921778039f1d4f95a733a3d7",
+      "blake3": "3ce8f6cae769a91c2f72e0315a1da622389286c44d6ec3ba9cb962dc549d5b08"
+    },
+    {
+      "path": "plugins/finance.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11065,
+      "sha256": "e93fab785002ddd089b7524aa652342160f504a0cffa4e4bdc69217ca804a754",
+      "blake3": "bb59b7a499c0c64b872378133bdac8679f91c8f1d36a18807082983dd81217e2"
+    },
+    {
+      "path": "plugins/gdpr.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9841,
+      "sha256": "26a4426dc0fa863f0eb77c5b09258dcc9af35ecb679d341734475ef9410b8d18",
+      "blake3": "677c09c75f62ccde205b48d6e193f75dab37e7e20d8da1a5bb51c9eec617b94f"
+    },
+    {
+      "path": "plugins/pipl.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9525,
+      "sha256": "6dd80ce1d5a2d2cc7f5198483ec08f6b14ac15429864381796a2ee5695949b7e",
+      "blake3": "cce752a90d58d62c9227eaa777cd51d984d0491e6a259f6dde28289a7e52ded6"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 44,
+      "sha256": "323f0bc92737044560bc5ea9bfb487fa2e4c930949582d23c9b1dbacfe37882a",
+      "blake3": "89b506e435308fba3b94254bcec3e614990bf79bbd6d8385da2e6c1080b0a1a7"
+    },
+    {
+      "path": "rules",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "rules/skillhub-rules.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 69172,
+      "sha256": "9753bfe30912dbe70557dcabb31470a392ca52ed14014e6892d024c3764094d1",
+      "blake3": "66dba9534bbd177aae570c759b328344236c1569b685dd267bc3a3e0f15df2ac"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/comply.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 44470,
+      "sha256": "6caa5f6dda49f77b579551655aea4461aa67e6406ecb9423f519fa38267006f8",
+      "blake3": "6897b50ea51cebee309b4fc7d51f63a623ef4fa38ad360a473e0846428f71727"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2288,
+      "sha256": "fa43e8979e56b558050ddebd81a332df9a4dc263b62ffc85d8ae6f4a26aa777c",
+      "blake3": "ec89a3eaa514d3cba21617006c4b112d249179a365fcbc3a5923e3e3e7633445"
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:8143899a2d7b55d939d7cdaa3fd8f86a9cf6c49aaec3f1c358b62497762cdfdb",
+  "sha256": "8143899a2d7b55d939d7cdaa3fd8f86a9cf6c49aaec3f1c358b62497762cdfdb",
+  "blake3": "93d4d9a707558c88e6004f6350bb5d6eb1b76486a4e0c4450dc3a97e735f9751",
+  "size_bytes": 109567,
+  "file_count": 17,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5716,
+      "sha256": "7f8e694ee32fa6580175fce91eeb0c70d034669ae7e0ee01e428b196debbba27",
+      "blake3": "09f81256f8f3d3051acf87edf209bdf447bd6f60bdca771f31a45eca2aef29bd"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6675,
+      "sha256": "587918c0042dc4db7f024606657f46d0d4d16c1626af55da863ff87b1b54e81a",
+      "blake3": "362cf19f5c11b250b0325f7ae1c0641e5505c0ee052aa40fb7640cfebeb4e2de"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 123,
+      "sha256": "e4f9ebb1cb0f9d4d9225381a5c87982a88b164191f4abe2c4956dca230430d83",
+      "blake3": "04ac3fc7f47e479dd03efbafff5128333fab0f9da598ebc3a24817c3530b3364"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/api-endpoints.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3844,
+      "sha256": "1d1327d69457c313e65aefa3fbd49b61874c77fd16e8460fc9383d8a27e7671b",
+      "blake3": "163ec5b041b3974b67632c22220d11f6d4d2be62955bf57f4bc8cee0dd62b5bf"
+    },
+    {
+      "path": "references/summary.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5233,
+      "sha256": "2af7181f6edb977ed08d9f7011503328e0d85dc9d5a1a83550a23c1947a3ed56",
+      "blake3": "3503ce7624d2546a9433a32e91149e2356c6f5f0037c5cc964604649b27817aa"
+    },
+    {
+      "path": "references/test-log.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6615,
+      "sha256": "68665b4d66cc20996418faf1dfbfc9177506e750ae51b8c5b00ab39d5931e286",
+      "blake3": "5202b3d37d659f6b7b9c1bdd2327a12b9f4b0c70483645b1578e7ae4a83b3cfb"
+    },
+    {
+      "path": "references/test-report.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6045,
+      "sha256": "257a37e20828d68ff8c1faf13e01471f241de7ac91ce30ed9b2f710ba00ff723",
+      "blake3": "1c19ee2b1fab9fb4a133fe6b0da5eedc6dcdcd6e149a68866c34e5f4ba47d38e"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/_cpbl_api.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13267,
+      "sha256": "20501d7d2f97393df85058917907b345b8bc896a12bdfc0630a1d9c9792132ac",
+      "blake3": "64c10b6d6b9a145bd4cd6bdf7a3c459abb290991f03477b6d6cea7e77a7c6752"
+    },
+    {
+      "path": "scripts/cpbl_games.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11587,
+      "sha256": "b20893ab65f6f8b41a1889d788aa92f43f1505264ac261ec2992414e8004b655",
+      "blake3": "e08e2e3ffe5e8fc2ad9aa693fdbd8b1b799a50dc1ada6ebe0c6f83448c211dbf"
+    },
+    {
+      "path": "scripts/cpbl_live.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24405,
+      "sha256": "f60d91e5d2a4bda036527560023e9e31293322e12979b0f235fd7c20592f1f6e",
+      "blake3": "5d406a4371f0d21aeaacc352514a65dc81b5054478ad8463d7779d0dfe754035"
+    },
+    {
+      "path": "scripts/cpbl_schedule.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7052,
+      "sha256": "e9eb22bd09ef68f0c0ad9ccc92915065473a44ab37abe4049d9d223966153bc4",
+      "blake3": "6495f395111cfeb28d05a6f11cc08b15e91244b3c58324e279efc576ce59cb40"
+    },
+    {
+      "path": "scripts/cpbl_standings.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6724,
+      "sha256": "12f922138fbd4921c9b2ff9dd1263cdd5b3423a69e700c185c52d0e453e2153b",
+      "blake3": "b33493442fc45c29d7cc97c406ac7d73d89c16035cf0681969f0a424b61f8769"
+    },
+    {
+      "path": "scripts/cpbl_stats.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6480,
+      "sha256": "351a08abe44a4ca7043fd84f9bddb20ff442f826214e16da2c3b6a133a3d6af0",
+      "blake3": "5692badac0169d3d00664303ff24ae615a9f117c262be940cad01a850d684d74"
+    },
+    {
+      "path": "scripts/cpbl_twbsball.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2101,
+      "sha256": "5534997e19d0f4e17e90c8a23b4ddd894bcc1998a05cd171fe0efb8985a41910",
+      "blake3": "c498ceff0b38907d691852bf32a5b42111fc54bc9f6e962425f69d10b3289060"
+    },
+    {
+      "path": "scripts/probe_api.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1095,
+      "sha256": "f5970f1a7f6d167789907eea3ddcb501ab786c2c81f945e974e09542acb771bd",
+      "blake3": "489bf6fbcc43d46059cbee5928987c4fe307f2722e924f59833d854a283d3b0e"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2343,
+      "sha256": "5c0eddd81c75428a416df93a4a48fcf15abaac7d33702356080805d379281ac7",
+      "blake3": "0edf673002c57c17de92919dcca4edc9bd438453da88aebe725116323db79d3f"
+    },
+    {
+      "path": "skill.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 262,
+      "sha256": "596bb43929f90a26b8315446e93294e65cd96ff44689bb5dfac6ce7046f7c02e",
+      "blake3": "4762ff908f9aa3df569d82cbcddcd601d703ffcffeead97ce539b26861864356"
+    }
+  ]
+}

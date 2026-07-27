@@ -1,0 +1,377 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:17b21c3fed84b71e3ca33cb7ca3add8be5e62d4030a395cf87bc6a4dd433d688",
+  "sha256": "17b21c3fed84b71e3ca33cb7ca3add8be5e62d4030a395cf87bc6a4dd433d688",
+  "blake3": "6ea864bf3b8c36a6bc2aaf8bae12bb1e404fc2e47e022aaedb93179b360fa006",
+  "size_bytes": 750803,
+  "file_count": 42,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 931,
+      "sha256": "9ab642b07ea4ce35b05382473cfcc12f2922c7a4df7d80dc8427ba1a4f9206a2",
+      "blake3": "0e27ebc111cd11b6c4b9c22545813f2a73473d2e78328e4fa518cbb89afda47d"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10846,
+      "sha256": "07a64fc64ac3b049c94432c19fd403505de244b41b9132217690b54a39ed48f4",
+      "blake3": "2a9dcf3317cbcb14eae830272fb4697356ad7faace2c40f247ca1744272e0a36"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28096,
+      "sha256": "24446b4249be6673e5877e2e6a45fcea3d2ddf2c45dcdac95821d74fa64fc28e",
+      "blake3": "8a6fbc0bf96224fe7cd379f00c9b03215a1216cc69a643dd1c557538c4743dd0"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 135,
+      "sha256": "2c0fa5716c415b0f694ec6fffddbeea9a22a6d7394cc17555f09b9c7750c0652",
+      "blake3": "056d7a15e05e81fac04693ef6f90ae68ad354ee6da7dbe4da5a03e9fa4144b01"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 334,
+      "sha256": "b6b2a7b11238b202527ca1e111433daf2193beef9bce7f1288d0b80c7faa101c",
+      "blake3": "f299fee5830755e615deac10e7e8f495dbddc1e83d2d3d38eeb18a50f60000a2"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/trading-universe.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 569,
+      "sha256": "910ef5a9d111be64c91f0b043892d7e209ea0d6f99faba50cce63e40fdbb49b0",
+      "blake3": "5973895688d01520ed66c9727be121770b9e3b4d63a260d33713de63060137ea"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/asset-map.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4276,
+      "sha256": "2d151fd0c9851f456c73e623000d76ddca5ea297a09c6cb904d7df1f35e63109",
+      "blake3": "007931ee776bf72b9eca84081805f66a68c499ead7c5db4bd16918968f70a59c"
+    },
+    {
+      "path": "references/dashboard.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14488,
+      "sha256": "838567127f936da183fbda9fd98702bef3db96695236548d606b433859dffdf7",
+      "blake3": "2d58129677f2f367e0749c2148df1b81c68668ff840ad08deece629f939b5157"
+    },
+    {
+      "path": "references/playbook.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21863,
+      "sha256": "87c9d0b5a83adb9f4d183d81dedd9a86cbdd8db06e7715cc051ff926757e8fa8",
+      "blake3": "66f3a6a3ac7736e88cd743d5c5c368af354185c6196ab4f94c8ff4338249efe3"
+    },
+    {
+      "path": "references/wyckoff.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6796,
+      "sha256": "395b17a518c253757148c78b8a92124d43ee420cca692020eea142dfb37054af",
+      "blake3": "63956af8ba506329dd19018176b627728a43958b7d72675e90ea711df4245f30"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/alert-sender.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3725,
+      "sha256": "8b30ede78efd7c3ac9c507aba9a20d53d8094cae32749a4e58d8dca5300fc8e8",
+      "blake3": "5c089b1fba59a06972e1afbe650662095dcbe44edd4e5994ec01909210c760e9"
+    },
+    {
+      "path": "scripts/dashboard.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 368655,
+      "sha256": "65b97db83624f4fa1e6110b9317a4ec5fe8e985c7526bfefeacaed3f41357845",
+      "blake3": "cdb777348ea42d1f327ed5fad8284f179b42540c13efe14ae36c18390314aea0"
+    },
+    {
+      "path": "scripts/ict-levels.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 107357,
+      "sha256": "8102ea90c99c100129167daf1ce193fc6a3663cb5b25addfe959080cac0330e1",
+      "blake3": "21e98395e6571b668e186b9496a5637cc600debfbbcd1fd9dec6a5b21bee7763"
+    },
+    {
+      "path": "scripts/install-desktop.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2741,
+      "sha256": "0878175b5bda926a76081e6f769ac273bf4de0635f2488b188a748c683290543",
+      "blake3": "ea0ae7e960f03d8bff9b6b72b2509e279fa29a145f3315fe36955055ef75dd2b"
+    },
+    {
+      "path": "scripts/make-icon.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5724,
+      "sha256": "c60e65574a95027047facbd18c755859204f1edb09a7185607fec8257a519748",
+      "blake3": "1e629cfc80e1167ff1fb8bc30ea28d45503b87f4ba1f7edb3dc3503807cb9765"
+    },
+    {
+      "path": "scripts/reasoning-validation.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3192,
+      "sha256": "f2be631de0e87cf1d34334ed72fdae14825b933fccf2680b9803a78163423b53",
+      "blake3": "d269330585f50fcc024173e128ec66701e15e913da2b04d10ce5eee778bafec4"
+    },
+    {
+      "path": "scripts/symbols.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2418,
+      "sha256": "f1b45d77bf5bc1a7ef73fe5e2a5f27493a58bfb24dd96d305b9b3d017e7b59c9",
+      "blake3": "a11e34d7d8048bdf006ee164219dd1d46c8d49925b08103851b09edb7ad12e3c"
+    },
+    {
+      "path": "scripts/tde-entry-engine.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 50348,
+      "sha256": "cf1a4382e19de4bcc387a8b9c699f8bd2617568c07fff4de9997f25461b442b7",
+      "blake3": "c875fd1e0d1da91a7240fbed058aee2ef5eb9803971644b6d6c4484015e16389"
+    },
+    {
+      "path": "scripts/tde-lifecycle.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4851,
+      "sha256": "4cbc009552c5ff8b8c81490ab9ab556af7454924ede4ac33e31df846920299c4",
+      "blake3": "ecc4b4044e0920d613d53542427deff030a61d3d954bb54ad6da8d0349d15f25"
+    },
+    {
+      "path": "scripts/tde-registry.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27954,
+      "sha256": "f0a8b68afbbebd266d14ed5e035a637040ad9f8b3ab37fda7227239a8243c0ac",
+      "blake3": "a0b0ff0d871efdab10a069e156390b380e15af38e80a3d86113a646682f8961d"
+    },
+    {
+      "path": "scripts/tde-risk.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3357,
+      "sha256": "bbbc075c686081559d4e9b554f6f5b668a3d080a5be4d8c709b23b288b3bedfc",
+      "blake3": "0dd8092a5ff16345aa1930ecc10f875fd1f4e4875d0f277e61663c2eb922f184"
+    },
+    {
+      "path": "scripts/tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/tests/reasoning-validation.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1677,
+      "sha256": "85625233d09e2dd9ef141568d33465ac520ae175def41c9f73bbfb77bb50b501",
+      "blake3": "15d00dac937a9f51a1f571376e340d5ad78d9adb7e0093946294061d08c903b5"
+    },
+    {
+      "path": "scripts/tests/repository-hygiene.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1808,
+      "sha256": "dfb77f7819b6886a27d4b52eb7795f62e34bc4695714787b26767629a4d27fbe",
+      "blake3": "ee6f29ab02ef634f8e27656baa57f194141c093c7ae94435237d33f06df966b4"
+    },
+    {
+      "path": "scripts/tests/tde-actionability.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 761,
+      "sha256": "c900a7c53d75eaedb569d863e46f031c4cb3a39a17e2b18327cc8050909b2c57",
+      "blake3": "4b12d499ffe181583ad24a4266ae3be17496c001ee8220dac5d9504a7429ae96"
+    },
+    {
+      "path": "scripts/tests/tde-checklist.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3056,
+      "sha256": "5ecf889988fb232abfa00b4e5bee9568f60980911658f9005c30ff4cc6ff43ff",
+      "blake3": "df97514a4d9770e91d99b6c6d399e3ba407d154453d8a995fcd6146a3e0d6fd5"
+    },
+    {
+      "path": "scripts/tests/tde-dedupe.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 978,
+      "sha256": "d0ca0f66eca0fc739412753c5d77cdf4929c079aeddcc02d5040182419d16767",
+      "blake3": "216b4811231a445e47fb776c1ac5c3512655a94a0c0ba4227afb5208dc407889"
+    },
+    {
+      "path": "scripts/tests/tde-engine.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3586,
+      "sha256": "3fd4b2e942e2e96838d63804ffbd680e9fa9bf164a195bbb5e2c92091578c169",
+      "blake3": "66f1fab459bb52a5a60c9b7955a33d12b70bddbcc7b5e961b43b372090d43a8c"
+    },
+    {
+      "path": "scripts/tests/tde-exact-stops.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2806,
+      "sha256": "fdf63129075a92a215245e1ae5069e2e1df2349adfa31704e1b80beed9b1ed78",
+      "blake3": "d47ecc937e25d250b13c35eab03c61183a24b27e6a7f2dfce9ab1a44d9693830"
+    },
+    {
+      "path": "scripts/tests/tde-lifecycle.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2326,
+      "sha256": "89a7eb2a5e42888c18770055b697e8721697856a57484342dc7b3d473a8324d6",
+      "blake3": "a1bbbaee6cb98677ada12172654b575eb6bdb2b58dcc44e7bd187ad5f47f3c43"
+    },
+    {
+      "path": "scripts/tests/tde-output-boundary.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1132,
+      "sha256": "ba38fdf3412f776f0b46148967cab3ca43c3cf7c03a9d31fecf174379bcc82bf",
+      "blake3": "5a4f762a1aa55a69a077a4f2376102e60a5d679bad9c3888e3cc31ebd078008f"
+    },
+    {
+      "path": "scripts/tests/tde-qualification.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4644,
+      "sha256": "5de55a7856dafa63cac17390e74d329cf2d0d45b97a478e10753c22fc24136dc",
+      "blake3": "b264419e36d52d13dea8571406f365cc6f9d37cbc4db3de4a9e6df36787c799f"
+    },
+    {
+      "path": "scripts/tests/tde-quality.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2779,
+      "sha256": "f831f68527142bc549ebe0fb4ab4f6fe14365574a47a14564ada3bcf067e26c2",
+      "blake3": "46f9b84a59170b789468b02e1f1e747e11fc9a708525814f14e77196cd05972c"
+    },
+    {
+      "path": "scripts/tests/tde-registry.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3354,
+      "sha256": "4397f0414084e6c169fb03258f52bd9972811fc27e2754f43821be8d3ba239bc",
+      "blake3": "1cc19bb3b32f340efa0988c01b7f1fef94970d6f5ac03339cb2017a30dbbcb32"
+    },
+    {
+      "path": "scripts/tests/tde-target-labels.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1065,
+      "sha256": "1bdb4c9a8fb599c05605a130e2fc0a685e9ef61c89f8d0a490df45256028abc5",
+      "blake3": "741bc0c1e791ab61278f120248eb708df3b6d8a9979eb968ba30e089e8e4f176"
+    },
+    {
+      "path": "scripts/tests/tde-timeframes.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1187,
+      "sha256": "366bbce6ab9583d32a8b61eac7b5ffd399dc802b7df53727fdce41edf751c557",
+      "blake3": "b0695cbb832b06ddd4e196efb617144240c126256a3ecb322fbfe359fbbb197c"
+    },
+    {
+      "path": "scripts/tests/tde-trade-contract.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 925,
+      "sha256": "7bbb67ea436b4113e4ed6ad4c108fa1aabd03607eacdee1a527cc1c53a888c1c",
+      "blake3": "4ac98324d2de8e43297183100b89837ba12f842a4966e4c103352a8bc75b560a"
+    },
+    {
+      "path": "scripts/tests/trade-lifecycle.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4838,
+      "sha256": "1e6ee5413661f87c55720d67004e1242d03e4f2e8771db08b8f1dde398171873",
+      "blake3": "12cd0e81b173318db696c9729940c0de7e487e3972488b09b0e57bd0be7268f8"
+    },
+    {
+      "path": "scripts/trade-lifecycle.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15208,
+      "sha256": "32e2a3f8113c2c77c4ff3b1a7303fe6b32e7929b783186719ab748f496d08b18",
+      "blake3": "58d7dbbbadcd6c78a59b3b4bedacaa94dae105ff628c813a801d57bbdd1987e2"
+    },
+    {
+      "path": "scripts/trade-reconcile.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2812,
+      "sha256": "c1a00690371f819bedff1e3ff28f4a7b748bb76de2a52a104ecbf033b3360b16",
+      "blake3": "6c587aac0d2fc10e64183c719b77bc7393ec3b7ca52d22a80eb334fc13321fbf"
+    },
+    {
+      "path": "scripts/watcher.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19018,
+      "sha256": "adc94bab842dcbdf351347aab58498aefcac55a7aa71a4069cdfc39ad4d1ba3c",
+      "blake3": "f844e500025d40ba140abf6b357a4064ee7eb7e1b4059de2ef50179ea508c057"
+    },
+    {
+      "path": "scripts/zone-lifecycle.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4743,
+      "sha256": "4e37764cfb54555559d9d0200837e1929aa9427b6a7bd95e36f2936412bb7167",
+      "blake3": "6d532e5ce8aab6edc99ffb7cb11d489a5e4eb41a0279adaf9c7f2f2898d38c27"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3444,
+      "sha256": "cce0e7b788ac0fd2eaf0c5bea8b629044012c2f26d8b76c6e471b5eedf202a5e",
+      "blake3": "2dc0d133a2aed1577914eac8eb8577b3e718a76b17114b83dcf997d088525b20"
+    }
+  ]
+}

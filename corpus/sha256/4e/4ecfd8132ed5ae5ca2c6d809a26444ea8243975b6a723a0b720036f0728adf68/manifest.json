@@ -1,0 +1,399 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:4ecfd8132ed5ae5ca2c6d809a26444ea8243975b6a723a0b720036f0728adf68",
+  "sha256": "4ecfd8132ed5ae5ca2c6d809a26444ea8243975b6a723a0b720036f0728adf68",
+  "blake3": "9223d2e4465f5b8fc5262b14b1a399345c20a602d11645798350c7336367f8a4",
+  "size_bytes": 508014,
+  "file_count": 44,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1069,
+      "sha256": "9fc56439bef52db4532947efc39ad15687103ea2ee27c3283a6e3dc23efe72f4",
+      "blake3": "bc604a195438acb91394a8210f1ed0e92040d5158c7bbf604a71edb8103930fe"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12472,
+      "sha256": "a52c0861ab1d54beee53b105d865abd61013c7158dcf7c077fb4f035beb8a10e",
+      "blake3": "0ec04d14169b72aee3fe3f5bb743a5504b162683c993c9ca5bac2145bcf33f49"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 141,
+      "sha256": "b1a01c1e2b2ee49eca62831f2598992658ac8d5a65d5cb69939325c40338f1a7",
+      "blake3": "287c49517e1aee85f332838e457a8d72a817ebbf7803b8ba1262f1af2bd25347"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 339,
+      "sha256": "eba2090f3dd61a3f8b1ef5e8749669b091a6d58beb9751d8dbeb115b4113daea",
+      "blake3": "e0107a75d064c7067a2f26d8c1ccf7f7e499e4da4f210423aee1efafc32d06d5"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/coverage.example.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1110,
+      "sha256": "431b2e8c40e7c5c5dcd12aa0d44df18207d18815a5cac35c0a12f58ae3fb75c3",
+      "blake3": "185ca5690f2a9b736b1299c191515a41dd2de6f448115b17e5150ab5b0a728d9"
+    },
+    {
+      "path": "assets/customizations.example.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 601,
+      "sha256": "8b2306df967080a6f9a93569004f7f1e9e98d224dabdd4d923c28aeb0573ba13",
+      "blake3": "6e216b9f334ae4e69a35561d3b7d79cf6069278498e2a03c2991b25f6d02c34b"
+    },
+    {
+      "path": "assets/github-workflows",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/github-workflows/openclaw-safe-update.yml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8389,
+      "sha256": "6ab03e24972f250c6842f0847ef26d5216f1e8b9ed41b2c943ce51811ed48df9",
+      "blake3": "7e888ffff62168a57f70f27bb71b21d850e9659aebf68e20ffc7c09e99ac321e"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/benchmark-runner.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14842,
+      "sha256": "c47a58b6a395be2f0e7a1f9b4fde6e37006c7341e591301b382af22b01acc650",
+      "blake3": "ea4704134457d9be6b97be1d944cda778bb9cbaf755b0a267fa02bb9e730b33d"
+    },
+    {
+      "path": "references/benchmark-scoring-protocol.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23484,
+      "sha256": "9f3553f52f96f2972adf411e0d074578371d8282bc5601003f55b929fda22d19",
+      "blake3": "75d2e076ee311b37bd661e4a3045b79497d82ca32e37ee2d9ca182bb089c5e99"
+    },
+    {
+      "path": "references/evidence-contract.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11293,
+      "sha256": "d1a08a2fa24385c294b83dd5fdf64ce56845ec69b990fcb63928490166fce242",
+      "blake3": "b164ef836299c7730b4e98cdbde783c513a152c801ef3a61c651e6b948c15e16"
+    },
+    {
+      "path": "references/installation-contract.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2121,
+      "sha256": "885a446bf92607c2450ff00dfd27a3f050166e92ed5c503be3e48f150f132cb6",
+      "blake3": "b2936db1b13405180e53292b9f9b248a7d6815b48c62fc338b9e1c71d5a5f00d"
+    },
+    {
+      "path": "references/phase-handoffs.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3164,
+      "sha256": "12000972f8e8374307ab47919996d0a85c5afa9faac78e005f05f10752e76ab1",
+      "blake3": "0b9ac7aabdcbc18229f050481aadaf363de20e2738ceb65d6b55aa69a9f20fbd"
+    },
+    {
+      "path": "references/shadow-runs-index.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2403,
+      "sha256": "1ae76f2b048d86be7ac00b0e0c64e8dbb63fc6337b591425b2a546f5b0e34af2",
+      "blake3": "42e5872ff203e2a837b83fd417c8a84171de0ce4e47d9b1c1356904426ba74cd"
+    },
+    {
+      "path": "references/v1.1-baseline.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1090,
+      "sha256": "ff9f6f804a8a29e5d2951ab3d2bd2c767e33a97f0bb8de4f92ee78c5d65ca893",
+      "blake3": "6d911f2b83f246788f4329b7a241ea93aab5ad8512fd9c6783f82dda320d9930"
+    },
+    {
+      "path": "references/v1.3-decision.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2412,
+      "sha256": "65dc0b3ef6ca955d59d45bf58acd7403ae972c18a1ae89c104fc296c08fe14b6",
+      "blake3": "8ca000c3c6dd74a8f1908568545a1e89359b034d3a85f7ca167a4d6b4c4239b4"
+    },
+    {
+      "path": "schemas",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "schemas/openclaw.benchmark.fixture.v1.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17297,
+      "sha256": "318c8fa1e9021cabe61ce511ecf7cede0c7e6da8602cb4a85dbca8dad09374a4",
+      "blake3": "ede62359af0b2b8a5cd33197c0fe1ffd58152b475e2fc1956a680d759ac8f0fd"
+    },
+    {
+      "path": "schemas/openclaw.benchmark.manifest.v1.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11779,
+      "sha256": "dbe5fbd95da127e3a4d093e0fb9954b02e98fdab79abece1caa3e16902b35861",
+      "blake3": "d49e5210f84c47ef7860cfd81204ed6b59ed631b9f649b8d3d09b9fafcc86849"
+    },
+    {
+      "path": "schemas/openclaw.benchmark.report.v1.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12972,
+      "sha256": "4ac6b4b45bcc2a9e0245f2069ad03d2a1885a6110784b1d3880b962d4c105f7f",
+      "blake3": "491f271c27b9d502d53226c15750c427e0cd4ce2eef195cbf0bcfa7af0bc9596"
+    },
+    {
+      "path": "schemas/openclaw.benchmark.scorecard.v1.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11784,
+      "sha256": "a094b45cab2a522a3f8178f68975f77a8303a075665c2b9af2209cfbcfdf7a99",
+      "blake3": "5a886ba61721f3a476ef870f1646683d787f0cd34781023ad4143251263b95f3"
+    },
+    {
+      "path": "schemas/openclaw.benchmark.shadow_run_index.v1.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5774,
+      "sha256": "ab954f0472d26d3453182757feb4ba898c399b89ee9fd5af656e6a16a6c9e0cf",
+      "blake3": "8a5daf6ba11b4785b67adc46e766b2d5537ef96f761e2b0b6204ed5db5f299d6"
+    },
+    {
+      "path": "schemas/openclaw.safe_update.activation_handoff.v1.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2205,
+      "sha256": "633840aa263d67c83b11dac5ef8e58392e2be8650a1b335bc1434c9525149397",
+      "blake3": "205ee9940ec38eafe527af80165722fece698308fcda76a48ad1c42b49f5430b"
+    },
+    {
+      "path": "schemas/openclaw.safe_update.advisory_attachment.v1.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3191,
+      "sha256": "c497a34bba76b0ba91be8c6f3d871a4e7c483b453e16358cf40d7928fe69e067",
+      "blake3": "8debb4d08b8cd5fcac28c5651e753445fa1bfcb923abecf78a9d0a1710bd34f1"
+    },
+    {
+      "path": "schemas/openclaw.safe_update.advisory_input.v1.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9122,
+      "sha256": "7a5f6965197822aaeb2e5b6d561d70bf2bedf514a0ef46546de316c6e28280ef",
+      "blake3": "057cfe3a461e7b04bfe395d46529677b4fbd48e157c8bafdf0053bc8ae32842b"
+    },
+    {
+      "path": "schemas/openclaw.safe_update.advisory_result.v1.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5364,
+      "sha256": "02d42c18f57edf6dcfa6a1b31143e9531de6871a49ee5990fd7a03cda8adf4a5",
+      "blake3": "f7320f9fd6129101ada3c0a9aab5d44f451364ee749bb5cb9f58af1a26e4b9db"
+    },
+    {
+      "path": "schemas/openclaw.safe_update.analysis_cache.v1.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2813,
+      "sha256": "a5b7651d590a643fdc46e237e6b0d71fa226176916289d1788950a3957d257d4",
+      "blake3": "71155d3b35382ddc40eb7afb7d861b475270d4da9605a2ffee9551fd0bf3b7e7"
+    },
+    {
+      "path": "schemas/openclaw.safe_update.archive_execution.v1.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2966,
+      "sha256": "b4299ae36ba18728492807e279249301196f3c6a7213d59815610db2e9fe9eef",
+      "blake3": "a34d41168ec05029afe8fcc9382ccf5ca4df152fab8b92f6cf3e8b34f66a9685"
+    },
+    {
+      "path": "schemas/openclaw.safe_update.conservative_gates.v1.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3472,
+      "sha256": "73bdea6c96cfa0dc8545e51a5ff56dc749615b6061da1b89f69b4fc61480795b",
+      "blake3": "44a3a2b4735b33ca82e3877c8b5e401c58b6eb3918f247e96fbdba25b110e823"
+    },
+    {
+      "path": "schemas/openclaw.safe_update.conservative_inputs.v1.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1943,
+      "sha256": "45015a945f38bdb7b1d881c5813685097766e77b9831ca845a717cc297ab1110",
+      "blake3": "75ba1f866006c9ed5762cda74e0d2b81b40b5815a7259523e967a8cbfc510aaf"
+    },
+    {
+      "path": "schemas/openclaw.safe_update.core_candidate_lock.v1.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1712,
+      "sha256": "a5dd5057e4f6e6185fb0b323c4c0958ea369c854afbd41d4f9acccad563c8679",
+      "blake3": "e36abb0d90e3daf3998d2fef43b395b3f794773fd0b879a26c1ac5e08f9238ec"
+    },
+    {
+      "path": "schemas/openclaw.safe_update.forward_reconcile_handoff.v1.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2081,
+      "sha256": "69d3d783b49074b6246a2ab46f1e9e87e04881bc015b543925c563a300227211",
+      "blake3": "aa72000732d60f181fc9e535ed9b45b90caa232aa0cffcd893d91139bfe80b55"
+    },
+    {
+      "path": "schemas/openclaw.safe_update.impact_shadow.v1.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4005,
+      "sha256": "908be3663511969355830fd5d9ddbac33aacc42f48c5245308340b0429429219",
+      "blake3": "5fc9a219b546686d6c62b3186bcfb1ad5b9312b5ef35c6eb08a52ac147dd38a6"
+    },
+    {
+      "path": "schemas/openclaw.safe_update.installation_attestation.v1.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3061,
+      "sha256": "8d3bbeee921d8f68f23198aa91d646d583f605b29cb5f661d3d16a8819bcedc3",
+      "blake3": "8035e943794cda22d6f9ab451bcd32962640a6f991705bf6cc7993942f8a8ec7"
+    },
+    {
+      "path": "schemas/openclaw.safe_update.installation_candidate_lock.v1.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6371,
+      "sha256": "257d0f2eb6918008e8b5fe02d26fec36df94ccecd94660b3028daaacaecdb3d6",
+      "blake3": "a1f1981e505615dcddcf48d72db12d4d387a3f99bc31e8ed092ad3fe4b33e9fb"
+    },
+    {
+      "path": "schemas/openclaw.safe_update.installation_contract.v1.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4258,
+      "sha256": "0d6b78c45490eae1c47810e196960417888eaea3adceac7f960105a3e0634d78",
+      "blake3": "760ae2b44150bac027d486cac3e6d8e8e973b7eca1c219037be49af3248f3909"
+    },
+    {
+      "path": "schemas/openclaw.safe_update.migration_handoff.v1.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1928,
+      "sha256": "972194ecb4c0b92b9988028143e9791634f4bc330c5f38fc373243a39c24dcd8",
+      "blake3": "5d59f8788b76e9718143aaaca3a59e71f5e4a3f78bfa24fff20011b82ac13620"
+    },
+    {
+      "path": "schemas/openclaw.safe_update.preflight_handoff.v1.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1942,
+      "sha256": "b1bc03422426bcaa3064e82670ae82adf8707804d7c6b60ce9fc7ecf50bed575",
+      "blake3": "21a1ff42d52f1bcfcf36721b3d388048e4b654a12453c2efed3c8526f12f825f"
+    },
+    {
+      "path": "schemas/openclaw.safe_update.shadow_runs_index.v1.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4897,
+      "sha256": "8936a544b6697a7bc0a7443405e3d1f14fb5fa25591d104c676a422bf69307e7",
+      "blake3": "15dfe52ac7b59187d1bb5b3dd90b1e221c40c980a308431d55bb09198b1f8816"
+    },
+    {
+      "path": "schemas/openclaw.safe_update.status.v2.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9373,
+      "sha256": "199d1c99ade1c871c9e7713ae3c5d7733320c8fcc0a8348a255889165c502141",
+      "blake3": "e5e76efd150856075c704796eebcb85425a394dda81fdbd823da1416c6218a4d"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 36,
+      "sha256": "6aa47a5129c19ff68ea2ad079361cb826e46abcff30ae7b3c379508627c88a3a",
+      "blake3": "a4dd4c1329e7caaa5ecb3366d4c46de2ef06d025be22e591a828bd8387339243"
+    },
+    {
+      "path": "scripts/openclaw_advisory.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27762,
+      "sha256": "7fe484ca8752e8cc751550bbca69786692c6d34b5ca61ec690be9c72577f0966",
+      "blake3": "472729c176f20db5cc8e59152c696a0527e6c2cec007246438438be117fadca1"
+    },
+    {
+      "path": "scripts/openclaw_benchmark.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 81213,
+      "sha256": "f1ef38a61d80cc4a0158f3944272d5ac5e59ba0fc90a60e99b282249b8648116",
+      "blake3": "f630eafe10e7d2a3f38446b874c654955643f1df0dae7953752fcbc3704eacb8"
+    },
+    {
+      "path": "scripts/openclaw_operator_view.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7196,
+      "sha256": "454b0f3cd35a8826ff9e1933345b55352ab22d21962d1b4ce18b43d6b7e676c3",
+      "blake3": "8f81858bdcd7c76262115f1eb06ae4cdf0505e467217a6a4347196afd3d650d5"
+    },
+    {
+      "path": "scripts/openclaw_safe_update.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 173289,
+      "sha256": "ebcf929b890358029407930b0da3a670462fd8b45176afad3091fa233a9c5604",
+      "blake3": "601062364c79daee28674902cb1f4bb9ebc80d6515fc5ab98255782b18eeb72f"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3278,
+      "sha256": "0d99d74ca06ee222ecc2a49f6c777d3643791987a4bb1baf02d76c931040493a",
+      "blake3": "c423ace336362c009bfda8b8c8fcfb13b5c0ca1d49bb6a7bcdb8aa3b43eb5f06"
+    }
+  ]
+}

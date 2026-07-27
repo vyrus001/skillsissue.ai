@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:21dd483b53c734d99f9d9d2512d1fc999a94f30a16a5a20349785b68b793639b",
+  "sha256": "21dd483b53c734d99f9d9d2512d1fc999a94f30a16a5a20349785b68b793639b",
+  "blake3": "31511c220ce2f7ae43d8183c7503c27cb7c27c2b8ad33954d11c75f0141d8365",
+  "size_bytes": 214293,
+  "file_count": 12,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11034,
+      "sha256": "209249cfcf5e4346403cf4a479bee7044b94bd48aae1a5855f7e1dd40c0c66e5",
+      "blake3": "a9a4faf879f60b665cbce6be1d12be315bde4aab96f652baa0d8c73ec79f70f0"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 128,
+      "sha256": "1e4963d3caad947ff2a8f0c605e74a27d3745a4b2b765945ae9838c883bb83f9",
+      "blake3": "a04a30082063d6acc34dd12e24a0cd3229777a4f84abfeed64a06ea8257fda11"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/changelog.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27181,
+      "sha256": "be4d14c06e19bea47df1908a8af4ca87301ccc11399a48e9db96d1aeb6aaa6ff",
+      "blake3": "93d52ff3bdb36d457b16045cab2863a06424a8d0e377fbae9ec4919d0d29b362"
+    },
+    {
+      "path": "references/reference.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17612,
+      "sha256": "6ba378cb53dcad63c496634fd4f3bf56c02fa1806f20065d7443546b193eb106",
+      "blake3": "118280e3f107220f5fb376f2bf39b56f6afed86bcf86ed4a499d0d89273b12f0"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/_paths.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2994,
+      "sha256": "65c3f53922af619ba596b2041820227df797dd8193234895865fa76b177fbf0a",
+      "blake3": "4509a8400e24c8a819ef33f05b250b76d2c8684045ef1c5942beb8efcd6618cc"
+    },
+    {
+      "path": "scripts/clean_zip_source.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3330,
+      "sha256": "d7cc1425af756432686a67b748e0943598a7dcccc5f809fb3549fe71e73ed728",
+      "blake3": "137ba4ba74338f80d1eed84e1b4ad2c72c1a26954727501d757142751184f70d"
+    },
+    {
+      "path": "scripts/git-sync.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 77187,
+      "sha256": "1b38eff32085bce27a6a83240e9a85f17f67c6a53fea209dc7a09085426aeb82",
+      "blake3": "e29cded710c81a7e56415519a35727b46bcde27e715266285da043ddf9964ea2"
+    },
+    {
+      "path": "scripts/git-sync.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21972,
+      "sha256": "c8bf0c70f0de8a96a7ee0f32c9cd566fd20c7fff36dd58d81cc65946d6b5bb0b",
+      "blake3": "0844320579644fddbb52922ce13c0ba60c5011d31ffdc41afcdae6565b134404"
+    },
+    {
+      "path": "scripts/manifest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22170,
+      "sha256": "5fa7e0ee30f243d45d988c54d74590ee7657519183ae0e9ef595ddb44a28621e",
+      "blake3": "8fa6719f7a543b40868a443eceec50cb0b440a5d06c2df1d9bd3f66ded831489"
+    },
+    {
+      "path": "scripts/sensitive_scan.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21805,
+      "sha256": "25b5f121d8e66b76cf84b23a5c0f84e67694c86fd9aea78b5ac5c831bfdee4f2",
+      "blake3": "7e7ed28d88b807c5be441073ab6dc1b78bb067724ad8f777a5730ca70b03cdcf"
+    },
+    {
+      "path": "scripts/sync_with_exclude.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6073,
+      "sha256": "7dcfbf8d71f96a8c8c800d003c7f33653b5ec17bf3010a3b9e112a6562a7781f",
+      "blake3": "5b6a522c3d825c1c6a3f5f7f0199e6588f3234f3a3aa4002f2c18b96f7f21795"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2807,
+      "sha256": "2d1bf3729200d1fd3562b13431302f1dcf61f0f73ea791d56708f4e910bb53fe",
+      "blake3": "c38cd78e1e861833f7b4c6298adcd12e60a8db89ee74934815a56100a1574d41"
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:552e892852343f27e76e47502f105c4b5a04b20eb268325ad6981564b704b546",
+  "sha256": "552e892852343f27e76e47502f105c4b5a04b20eb268325ad6981564b704b546",
+  "blake3": "60021108d3aea02c6b31afaaae9acf95c5685b4def686422ac63275df571ed95",
+  "size_bytes": 327257,
+  "file_count": 29,
+  "entries": [
+    {
+      "path": "ARCHITECTURE.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10521,
+      "sha256": "c9d73979e5f4ced12d5b746ba077884e5bb419b8f2d8ea59eca0102255845b7c",
+      "blake3": "2b740f303be6022bba32b3c6649c823f3549d9e613a4fc798f8a74e1aad95524"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 958,
+      "sha256": "0144c87be93d87661af66434c3ede3b05cedb117d3dcb909b99ad8d7a523e9ae",
+      "blake3": "ba727fe9829238dfe6aaca4c393cf822c58a39c82971a718741b5502ca9d7736"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25595,
+      "sha256": "35f2570780058cc23d551ba537fc1c73709626e1cf87f586b61729d4b5d3aa24",
+      "blake3": "9f436ba7451bfb071e3c405765d39be669475c99e9e962c78c9e575bfef80968"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 135,
+      "sha256": "f386f9bce06244285e4fa70b71d03ee7cd70935d00e7591fe94426aab4ba9090",
+      "blake3": "aa515d8a36e6c521d3f1136da08e3847b7e6d08ea56e22f5125e8f5a42f8198d"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 108,
+      "sha256": "59d668dff2fd9b603a05218e1531069ea6bdf1fb3f95481ffc21a165d20980bd",
+      "blake3": "3cd55bcffb6f157f9762768a344b33d002100b9a49f7814a97c8cce5fdf839e8"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/document_manager.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5005,
+      "sha256": "d26660bc6fc0b0ee524bf782532cf3cb38886faffdafb3bfba769c415f0a4bd1",
+      "blake3": "f6c9d42c1c8e2d767abfdd83f5e1ba9722c148761d70eb60e961bc869148d313"
+    },
+    {
+      "path": "scripts/excel_analyzer.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 48408,
+      "sha256": "d702c79148cdcf79ef51ffa63fe7ac00ebff52d31be09222b1c34a285edeace8",
+      "blake3": "ccee4f2b9bcc86959ebca13fa06f05dad0edd6f1063f947f26d4adcf79f427ea"
+    },
+    {
+      "path": "scripts/format_converter.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6286,
+      "sha256": "6ac2b0f2b07224fef76bdfc867bbf32b484e2db4314f91a7013286eea738297f",
+      "blake3": "c7ab6149a0f98a9e9f634757e362a65b80755b8aeaec92315af3141560278239"
+    },
+    {
+      "path": "scripts/ppt_generator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 36950,
+      "sha256": "2660e9d5fc8f6ab6f93d75931d1f48ef34c5257876105ee7dc8ed884983ae99d",
+      "blake3": "e5fed9fcb370e15d7187ba6e2e9f1aed643648b9b58d2ebd7094b37a80daccd5"
+    },
+    {
+      "path": "scripts/wps_common.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5850,
+      "sha256": "36f1a4157115b67ec200873f900899aacfe44e647e3681ca5d9a928287820294",
+      "blake3": "45d4d241e51046b182bbba5799e91d59ccf1bc4eaab4d28a9135d6fd4682aaba"
+    },
+    {
+      "path": "scripts/wps_contract_review.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9275,
+      "sha256": "d041d07681a74145df30a28c166c880679e67cbf55fab1a9ec2c4ec4b92b1668",
+      "blake3": "acea3e6859d396f0d665c6f55eab50659548823dd765581a236e6ecf99a163ff"
+    },
+    {
+      "path": "scripts/wps_docx_to_ppt.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15447,
+      "sha256": "09a5ebdf49ae8abd2d9527c75f2c470066c15d424d63d429948dd411ca53b881",
+      "blake3": "742f90ea07a2c91ff44fdeec22a155e7ac1db38bbcd9269d06d232ce976fc5ec"
+    },
+    {
+      "path": "scripts/wps_engine.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4093,
+      "sha256": "99fecc987db491b642b00747df87bcdb1892a192c63cac393e9e7e256d9dbd07",
+      "blake3": "ad1d51ab659bde6c71077e72b67e2c9b916610a6c07d44e5453d7f61528f5797"
+    },
+    {
+      "path": "scripts/wps_error.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10326,
+      "sha256": "dd8bce8be5030625fa6c2c8cacdefa0a28dda59b12b9b9b945b11f0634f382d4",
+      "blake3": "3b049fa2e23795dbe65880d8e97fc1a1d016532e7254fe8402ade74080e216be"
+    },
+    {
+      "path": "scripts/wps_excel.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8766,
+      "sha256": "510bbf1a56449573fcf89a7007cbf23df9e603e7bc1a60e7598e99910e097e4c",
+      "blake3": "1419e56c6c93f509b2175f30f1267506b88e5c1fad752961e2e6875a60ad7449"
+    },
+    {
+      "path": "scripts/wps_feedback.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2830,
+      "sha256": "a627c83b6bdcfc9635ac8c3c101ec7df2f86c9fa2ad7a34da6e496bf8e5cd8fd",
+      "blake3": "1cb971365c10f6a19d25147bfdf6f75468a908f5f1a199841b083f0d063e8c2b"
+    },
+    {
+      "path": "scripts/wps_invoice_ocr.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12045,
+      "sha256": "1671cdd5df8b368f4a8acb7a2f0f5aefe9d8d8a7480e8aec6350f432ebbd582b",
+      "blake3": "1789f5d9f88bf0821f0af303d4b8ceaaddc8a693bccb8779961301f6e878c7ee"
+    },
+    {
+      "path": "scripts/wps_ms.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3140,
+      "sha256": "496e4c6dd4de86af00a46c58c0b90a650f3ccd943ab3de66299fa8f29fc3ef3a",
+      "blake3": "75cb832c0c17cfc0125989a568fda1cabd1abda1dfc6022d2ab4f0e6b27a7178"
+    },
+    {
+      "path": "scripts/wps_nl_analysis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13727,
+      "sha256": "5959c4405763b6e4c2be78b11847d12b9016e23c4b2f297edad859b0807e087c",
+      "blake3": "afff5a1f3e4e19992dfb15e21ff1a5e77e06242c57e532c93cdf38557f041a79"
+    },
+    {
+      "path": "scripts/wps_performance.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5649,
+      "sha256": "a4ac1c54aa30d0ac7467b0315c46c9bc17dd4cca4289c9ce847162af89891851",
+      "blake3": "3ca0b4d5b62f081ba595c29b5f73fc1851cb9776876ab861621325b15c4702c5"
+    },
+    {
+      "path": "scripts/wps_ppt.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5139,
+      "sha256": "0f127fd5b22e0bcdc8dfd21a4a26a6a253fe367458a69f570ece9dd4dc024f35",
+      "blake3": "7e08d22d1a2f34e639620969befc5438bf4c2478d0265d1a4ff343ce21fa4b98"
+    },
+    {
+      "path": "scripts/wps_pure.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29423,
+      "sha256": "0948be181abc129e9a1415e2a169e3c316e6e6ba92909c9b68879644f95f61bd",
+      "blake3": "24b9edeb44c7d7f193251ea0e112a4ff8e8e282c7d57862f2910b545aa24ee7f"
+    },
+    {
+      "path": "scripts/wps_test.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7114,
+      "sha256": "fbff5fdaeff7ce4da1b8650255eee5b9df189d578b2f1b9bb80473be095ce893",
+      "blake3": "85a462647958916e6219f7f2e36b9e09c38b86d3d4929912c89c51ec986ae358"
+    },
+    {
+      "path": "scripts/wps_toc.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7484,
+      "sha256": "ef30ef74f732c0c573b04b8a8d64ec9157a159a1686da404dc89c51d1dec1e4a",
+      "blake3": "9451b54558c0d86a8d813e6f621286ef8545d8e64f34f4d531c31ad4d4196e33"
+    },
+    {
+      "path": "scripts/wps_update.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3689,
+      "sha256": "104fe9d2e80618b179eda5dcdda7968096a04db02c0c8017eeb4d6210f83a889",
+      "blake3": "0ec98a74fc940dfe2ab184416b6328722312e6830d87cf898228cd09112631cb"
+    },
+    {
+      "path": "scripts/wps_word.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3532,
+      "sha256": "5ecf10a444daf3672b951eaa0770998010418cce19e91f6ff1afea9d0ec64b6d",
+      "blake3": "46a4222a51afb267c7a8b31e214057cb6d92b8a888f66b4fb3979c2bf9e87552"
+    },
+    {
+      "path": "scripts/wps_worker.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29174,
+      "sha256": "af7eca80295f176f087fa7af31518181594af65c60ef68ccd0299510ad26ab0f",
+      "blake3": "6dac784cf9de799deb922cd78c77e838310bfd58073e6fe0d33643fe94ed5721"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2966,
+      "sha256": "9c6f21c682838d984546ed6f84dd6bd491d65621eee4b87cfcc4527d6f36707d",
+      "blake3": "49e5a537ae2b2bd63135064027cd88f3868077bf7640ec36bd888624280478dc"
+    },
+    {
+      "path": "templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/generate_templates.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13622,
+      "sha256": "5c45d5ba2136dec97233d2452f07577cf827fc15969adb5a060fb351a9146e23",
+      "blake3": "a163578ae585dbd4903befe9425b22f61354685f583ebcd097f576d31a583fb4"
+    }
+  ]
+}

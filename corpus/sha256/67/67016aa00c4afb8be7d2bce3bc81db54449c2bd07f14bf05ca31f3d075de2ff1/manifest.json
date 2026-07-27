@@ -1,0 +1,361 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:67016aa00c4afb8be7d2bce3bc81db54449c2bd07f14bf05ca31f3d075de2ff1",
+  "sha256": "67016aa00c4afb8be7d2bce3bc81db54449c2bd07f14bf05ca31f3d075de2ff1",
+  "blake3": "9a1d0952e39a224ce65589822043cacf5d037dd390b680c44c36f0bfbe4044e0",
+  "size_bytes": 453233,
+  "file_count": 40,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23471,
+      "sha256": "a5895140fb6eece303a9eb6e24dec20aba1943d769bb21e8cce233582039d047",
+      "blake3": "2da32263b49454500c64227ff9b629e9b4302a317a2a00ed8839ce007e595818"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 155,
+      "sha256": "50a84f91a98991fd66c66d1e016962bf818a1c9f8eec68a04fa6536783935039",
+      "blake3": "82aa1be88c26dc43b05beab3f18e7211c498a6d3c0bb6579feb35cb566f8b759"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/a2a-proxy.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11203,
+      "sha256": "4648ea8f8a6304fff7961c4c78a46a752aee3e1111b4488210807f329528cef4",
+      "blake3": "8cd444f7d86a53598a27d883467c3c39daf98623020f0a41ab7ff3b4e98ab88d"
+    },
+    {
+      "path": "references/file-state-machine.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6455,
+      "sha256": "62d51fdccea4e926ded490d8c9ab86cef90a224ce31d846755d4e18c80a623e5",
+      "blake3": "4f8cd3ef865526c0c75685290d842aa262376379185e071c051fa83efa2fc64f"
+    },
+    {
+      "path": "references/hosted-skill-catalog.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3098,
+      "sha256": "a88a84be8c1e474673e647fdc16546d3203a646573acebcfe45a8447edb88f6f",
+      "blake3": "6878762e45000b4b3a1e2b656abe9c3fabd01338aa857aba468eab1d72ff7d7e"
+    },
+    {
+      "path": "references/ram-policies.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1164,
+      "sha256": "5766b501f1148d2e3730426665300acd7087219d2f17cb29fd6037a0b9baaf92",
+      "blake3": "73e82e99feccced63e8c012b04986b41eaa9705ee7641fc0b334c86326ef9a22"
+    },
+    {
+      "path": "references/security-boundaries.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11433,
+      "sha256": "00f54eae78e7d76332b8a1c86e4bfe88d3bf69c71673bf5d566d4a18f8463ad4",
+      "blake3": "ad50e73fa5fc7314250db215c3d245c2781abe029d12cef78c14a868639af62c"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/a2a_proxy",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/a2a_proxy/a2a_operations.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 74763,
+      "sha256": "1792efa033d2753a099477aaa5bc9510c81f650617580399f5288e293ec9774b",
+      "blake3": "410825e055281c8a6bfc452df404e7a7289b08f1b807b99a27d22edcb9fd753a"
+    },
+    {
+      "path": "scripts/a2a_proxy/agenthub_command.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 954,
+      "sha256": "0decf6a50d03cb12525d28dfa5877c8e7e49ced0a207e74b9cd4a90921d6d4ac",
+      "blake3": "cb2de40e45efeb4bd7aa6885ad7911d9609c993af14166d966b8001136337cbf"
+    },
+    {
+      "path": "scripts/a2a_proxy/agenthub_credential_source.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25857,
+      "sha256": "996fdf55d4f3df52fed7a397949f3872171b868b865a38f51d54c4e4be3652e5",
+      "blake3": "8221677bd30447230e147610dcca548e6069c8724f85c0628791bd14bbdb6c33"
+    },
+    {
+      "path": "scripts/a2a_proxy/agenthub_oauth.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15948,
+      "sha256": "4d45fa885d6de3ca60fac7d0f6f0d53f60b9dfdc82a89d5c45433fe2728e4a12",
+      "blake3": "506f829d06c60c6275710633604375f34cf9598905fd51781abb70896cd29afb"
+    },
+    {
+      "path": "scripts/a2a_proxy/agenthub_profile.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12248,
+      "sha256": "aae557a56a41dd8af123743564e2fe3255625557c406363a395d28e8c15a7b2e",
+      "blake3": "689954c288321dc9c36a49708654183677cf6998b8aecb9ec49704a7a428ed0a"
+    },
+    {
+      "path": "scripts/a2a_proxy/agenthub_token.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11470,
+      "sha256": "e42f476573df3bcab4fa847048762e285fc61ace7017d85bceb61e268e90e704",
+      "blake3": "7d89a80a0452acb65cfdb17c542c60a2141a89502ba876d2786b5ffa41e9c123"
+    },
+    {
+      "path": "scripts/a2a_proxy/get_token.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19817,
+      "sha256": "03d56db2be6bff719d0add4a10f5812de507f98baa9f61ee140fdb69a4f96065",
+      "blake3": "34cf90e08256061ab6b29621c35765623b022e5d2950f45591d949752aca5d92"
+    },
+    {
+      "path": "scripts/a2a_proxy/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/a2a_proxy/references/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "scripts/a2a_proxy/references/client_detect.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20190,
+      "sha256": "32df95b07b405586411a796bf69dd0a680e65a2408b344ef9f9224194464ddc6",
+      "blake3": "da1feb34a3ea9be72636950c5baf99739a00ddb850bcb756d14e19d878f17776"
+    },
+    {
+      "path": "scripts/a2a_proxy/references/common.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14292,
+      "sha256": "45df5a3c056854052f11cb8982e8de7b21fcb74a5ec26efe12afa9540a3bbd97",
+      "blake3": "e008dbd26b13b642254d37a8c5ea197986c33d50843b1d36d7b26f1443aca34e"
+    },
+    {
+      "path": "scripts/a2a_proxy/references/context.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4129,
+      "sha256": "172712f736a3648bfc737a223b5a03980ecdda43e320a36d5ebe66948710bd83",
+      "blake3": "f858a966c036c90ae26a5f86968e76be813d325636bd0127608c286ed025acf2"
+    },
+    {
+      "path": "scripts/a2a_proxy/references/formatter.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17677,
+      "sha256": "f75d097d327d1c7567788de44c0d3bc497aba04bf3e6380ebd9e2cdccbd21562",
+      "blake3": "d21e25b6b7d7361fa593473b276eabb81cc7c0c3a0135c5f1d4a43c1971b3b8f"
+    },
+    {
+      "path": "scripts/a2a_proxy/references/http_security.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4240,
+      "sha256": "01b6ed409029e9fd16d6ee834d373045f4a7731bd9733a314b5ef16e2fb96955",
+      "blake3": "71c66fcce8416b055ca0e092ae6cb0f8afdaf06bc5487afa2c2368d2e6dafd5f"
+    },
+    {
+      "path": "scripts/a2a_proxy/references/observability.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1308,
+      "sha256": "9014707c95d673639a43db6d8bd2af676ec41e7ff99ad63bc9fb9f8abc146fb9",
+      "blake3": "a4adb0320be1e6ec75e03f5e3b2ae8f30ff05f6aca92c74e795955bca78ee071"
+    },
+    {
+      "path": "scripts/a2a_proxy/references/secure_store.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14553,
+      "sha256": "ef6c650a8e3f834b7b331c529ca3a2f68cb04f51a0d5a8625c631ac2e2dfa229",
+      "blake3": "e4a6be96cd4779b8db87f84dd455cf96093d350332de930c90482b5c73ee890a"
+    },
+    {
+      "path": "scripts/a2a_proxy/references/task_recovery.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32292,
+      "sha256": "898d5b236d1b4605a934a9c977b4c0a8c3d1140f74d23f9c55ad400da0a0b6f3",
+      "blake3": "ed6b0795da5823c79260bb58850a3a24990fdabef039cc093e16cceb94b58e6b"
+    },
+    {
+      "path": "scripts/a2a_proxy/references/task_store.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12800,
+      "sha256": "91d45701b63549ccf5c523f843006e5940ef80efc23ee16a9d73dd8ab447ed94",
+      "blake3": "cdced3e4c74a64929746c36a674d57b8cded77e4fbbf4115c202fd5aa1e55ec5"
+    },
+    {
+      "path": "scripts/agenthub.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 305,
+      "sha256": "0096ca8f9ffd7e00db4664b107b0d17e609321a5476ef094a77b71c009c4480c",
+      "blake3": "cbfcb9858dafba18ab528fcd62606c2a74d89509022d720ede18d1876f5ba1e9"
+    },
+    {
+      "path": "scripts/agenthub_runtime",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/agenthub_runtime/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 94,
+      "sha256": "8b3e194ca90f1042412f293c33625b43161ae9eba6feb69d9c971ae21f6e0b5f",
+      "blake3": "2c55cd72a9b80a1408594a06766b0f02d948b4e18347d21c497a817247a58402"
+    },
+    {
+      "path": "scripts/agenthub_runtime/agent_card.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2051,
+      "sha256": "36d04c1fedc1690edc7f971f4e8f5c2ff68c0931a9660710b0d5d8e79462677e",
+      "blake3": "f381a4ddc075f6f784dda433a7a87f860e2be198845da936988e848b22a9a80a"
+    },
+    {
+      "path": "scripts/agenthub_runtime/agent_card_cache.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4520,
+      "sha256": "cfa4ec409a8445d02356004692d9c6cbfe92c7ccbbfd761ab8228c6d86482581",
+      "blake3": "8a63c7f549bd49a76599f977979a2e84dd8f19f00192c4e079d1d7bd169ca306"
+    },
+    {
+      "path": "scripts/agenthub_runtime/agent_discovery.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8393,
+      "sha256": "02dabe696f9e01a382fc2869a8ad3c90e74c9424907f64e340bffdeccb606b77",
+      "blake3": "753282d40e22c333afef9d03250b04636198a3419090cfc56551c81173f712f4"
+    },
+    {
+      "path": "scripts/agenthub_runtime/cli.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28414,
+      "sha256": "3560327a658cf139ebfeafc5df612db97fc1009d267a8bc496bf5dbf33b67dd4",
+      "blake3": "1365ab0e9dfaf6a7dd40bb5ade9af26f793596088fca50a8469e130728a2e726"
+    },
+    {
+      "path": "scripts/agenthub_runtime/config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1171,
+      "sha256": "ac9de35efd31a1b10c09401588671d5119a39995ac8d9afaa5c89dbedc257e5c",
+      "blake3": "40f09dbaf48ef81a55a97d42446661c6ac7cc0eb8640d261c40e8bf4dc267a1a"
+    },
+    {
+      "path": "scripts/agenthub_runtime/credentials.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7786,
+      "sha256": "e88dd504e431c1c51c75acc9f67ea23ccffb79e9477f5a1d4cc0b26506846092",
+      "blake3": "e792bf3fd0b195553211303e64b83198621d0a6b579fd7e376addf9b0f3eb24d"
+    },
+    {
+      "path": "scripts/agenthub_runtime/diagnostics.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6125,
+      "sha256": "b23472c570c336ca44f6440b077296cf8fd794072ea4a22ee30f5ebd331ed7d4",
+      "blake3": "2d1913692ac7b1f5bb43ae1df3be7a1a5729fbb838954cef6cf3f19536652b75"
+    },
+    {
+      "path": "scripts/agenthub_runtime/hosted_skill_catalog.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9144,
+      "sha256": "3a417a9453ff6878d78e21bba162769693d18ccd6da1ee428551ed7b6beab4b1",
+      "blake3": "b5ec1030bf35b1b787b14ac66d86453f5dce990b289030b56c5d2ac1ae7eb4cb"
+    },
+    {
+      "path": "scripts/agenthub_runtime/input_store.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14166,
+      "sha256": "873204bf04338a0425ccac5fd5ead3929f60c6985dedc61fb2c82afc4bc3662d",
+      "blake3": "504225034c76de9a2482a73b44514666f3b5aeaa86d9d4bcd7dc864750f3fffb"
+    },
+    {
+      "path": "scripts/agenthub_runtime/profile_commands.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4743,
+      "sha256": "2532cbc28d46dbeb82dea366f36e978e1d6d03c36cdc509cca87f95266325f31",
+      "blake3": "f0f837cb8d5a2f23cfac86e50d96414cc4eeb4df0beb064137f3e95e4b2d24b4"
+    },
+    {
+      "path": "scripts/agenthub_runtime/proxy.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8998,
+      "sha256": "49d1dd36c27d88f7d20ac957aff51163c30caee24b7f92ceed082e8ecc20e679",
+      "blake3": "c73901dfce0a3391cf3de1020c3a83f4ad12dd44f9167444d6bb8485b6b9304e"
+    },
+    {
+      "path": "scripts/agenthub_runtime/session.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11603,
+      "sha256": "5bbf5b99cae84546ab76b2103120b5f7edaf3bd1227f096e22ab8fc729a31775",
+      "blake3": "d583075ce03d363432183f7b68b193cafb05e18822ca34d584a7df3ed7ee98b0"
+    },
+    {
+      "path": "scripts/agenthub_runtime/trusted_actions.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3356,
+      "sha256": "d996c41cfafe2fc8711e0ddb65275811b6008da8baf1da0493fbfc02a2b41e60",
+      "blake3": "46d06265e3d88559978fa7b7a6d3aa3d0d68ba8c2843c90ad347931149de3f08"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2847,
+      "sha256": "8e579b8e73ffab995209d6b2698c14a7e98c8599e98e436ce778c114cbc11209",
+      "blake3": "8f2ce304e962a6fce3219738317525a27234e854abe6c045353b64266bc93eaf"
+    }
+  ]
+}
