@@ -252,7 +252,7 @@ pub fn build_graph(trace: &TraceData, settings: GraphSettings) -> GraphModel {
     }
 
     let mut activity_index = 0_usize;
-    let mut activity_chains = BTreeMap::<String, Vec<(usize, String)>>::new();
+    let mut activity_edges = Vec::<(usize, String, String, String)>::new();
     for (key, mut group) in groups {
         group.events.sort_by_key(|event| event.order);
         let first = group.events[0];
@@ -318,29 +318,22 @@ pub fn build_graph(trace: &TraceData, settings: GraphSettings) -> GraphModel {
             failure_count,
             event_ids: group.events.iter().map(|event| event.seq).collect(),
         });
-        activity_chains
-            .entry(group.owner.id)
-            .or_default()
-            .push((first.order, id));
+        activity_edges.push((first.order, group.owner.id, id, key.operation.clone()));
     }
 
-    // Activity for one process image is a chronological event chain. This avoids
-    // a dense owner-to-every-event star and gives the vertical timeline a clear
-    // continuation path through each recorded operation.
-    for (owner, mut chain) in activity_chains {
-        chain.sort();
-        let mut source = owner;
-        for (index, (_, target)) in chain.into_iter().enumerate() {
-            edges.push(GraphEdge {
-                id: format!("edge:activity:{source}:{index}"),
-                source,
-                target: target.clone(),
-                kind: "activity".to_string(),
-                label: "next event".to_string(),
-                event_ids: Vec::new(),
-            });
-            source = target;
-        }
+    // Force-directed layouts expose process ownership directly. Connecting every
+    // activity node to its active process image keeps file and socket behavior
+    // semantically adjacent without encoding chronology as a synthetic chain.
+    activity_edges.sort();
+    for (_, source, target, label) in activity_edges {
+        edges.push(GraphEdge {
+            id: format!("edge:activity:{source}:{target}"),
+            source,
+            target,
+            kind: "activity".to_string(),
+            label,
+            event_ids: Vec::new(),
+        });
     }
 
     for node in &mut nodes {
@@ -715,7 +708,7 @@ mod tests {
     }
 
     #[test]
-    fn activity_edges_form_a_chronological_chain() {
+    fn activity_edges_connect_directly_to_the_owning_process() {
         let trace = trace(
             r#"{"timestamp":1,"eventName":"sched_process_exec","processId":1,"processEntityId":10,"processName":"p","args":{"pathname":"/bin/p"}}
 {"timestamp":2,"eventName":"read","processId":1,"processEntityId":10,"processName":"p","returnValue":1,"args":{"fd":3}}
@@ -740,10 +733,16 @@ mod tests {
             .find(|node| node.event_ids == [3])
             .unwrap();
         assert!(graph.edges.iter().any(|edge| {
-            edge.kind == "activity" && edge.source == "exec:1" && edge.target == read.id
+            edge.kind == "activity"
+                && edge.source == "exec:1"
+                && edge.target == read.id
+                && edge.label == "read"
         }));
         assert!(graph.edges.iter().any(|edge| {
-            edge.kind == "activity" && edge.source == read.id && edge.target == write.id
+            edge.kind == "activity"
+                && edge.source == "exec:1"
+                && edge.target == write.id
+                && edge.label == "write"
         }));
     }
 }
