@@ -1,0 +1,659 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:804a9880002f20fb37fd130a7a585aa46a8f040c76286efb42fccb667cd253cb",
+  "sha256": "804a9880002f20fb37fd130a7a585aa46a8f040c76286efb42fccb667cd253cb",
+  "blake3": "7eff1da856ce20f2be4dbea724cb9eff0668525c0e12f00796b94eeb52c12037",
+  "size_bytes": 4225288,
+  "file_count": 69,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12051,
+      "sha256": "7a32c77fe107cc3be410b476b80f312550089b14090e500362e0b758393a51cf",
+      "blake3": "aee34cd39cfdac9072f02e28cd7a60aa715dfca7b237449ca183a1eef7ef3f37"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 160,
+      "sha256": "3122a7b8763a9518ec93ccc1854ba156990cab7feaeff04978836aa015442edc",
+      "blake3": "cf6aa5d1abd7020633dfb4c8953e994e08b8902d3498962b19e112d129c74508"
+    },
+    {
+      "path": "data",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "data/api",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "data/api/error-code.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 176674,
+      "sha256": "c07e6df066a342ee6dda42f242caf4e92b3d96723dd37c4f9524958b36223402",
+      "blake3": "efb47f1d4211554e8498810b086258dcbd7b070c52423c648a6f37aaad43b163"
+    },
+    {
+      "path": "data/api/log-rule.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 620581,
+      "sha256": "cd0c8bcbdf16cb09e3e6c7aec1cd5111b00bb95014d3c8037d1c68bce89db3b6",
+      "blake3": "7d59d3e962e601e1a8efdc2490dd53fd3fc3139839d733c2c25c98c343ebd100"
+    },
+    {
+      "path": "data/api/timeline.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 44332,
+      "sha256": "5b921774a4354553d048a362b8c0a485392294fe1c49cc9df8332538489b1836",
+      "blake3": "f3086378e31da53d77636dec104dd49064d51978a94a288ceabcc372a85b95df"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 78,
+      "sha256": "d8c0a583599f48fb1e0e679e14ea528aaec2ca29094fbe8900557b4a3ad27423",
+      "blake3": "8ca28506bbac02da982cfb757e07e9be9451c29116f72107b2891b1af1cad50f"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1865,
+      "sha256": "7e8888e59cd5414e922ec6f18d413d75bb114db4febf09bce361c3107273aa2f",
+      "blake3": "f4c5d0243e0a3a71032e01b4aa2b09c04fa72cc16e41cb7d56287ed21984b878"
+    },
+    {
+      "path": "references/audio-troubleshooting.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6423,
+      "sha256": "30bd5367da799bc05a20ec1eeec764ea8a161f2743834f52f1e929b2188629b4",
+      "blake3": "ee229f518e9951d1e2c2e9e882c35cf2c00a731c780e116984bf0177464d84de"
+    },
+    {
+      "path": "references/im-xlog-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9848,
+      "sha256": "91503fc7f61e48028c2dc36c1034122666ff4401c88079adc14ca07d5290c8f0",
+      "blake3": "f221f445c32fca2ba063257f904627dcf81f803ab7676697815fdefc792dfe90"
+    },
+    {
+      "path": "references/miniprogram-log-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22969,
+      "sha256": "80d92bae29c2345a548c8f9594c3299a0afe1f2c2b742b62eab0c22e7aa50be4",
+      "blake3": "59aef128ffd9397db7cd91e37241c99d3349b15e0465455d5fb14a86435ab522"
+    },
+    {
+      "path": "references/native-log-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19831,
+      "sha256": "cddd9eebf568966ecdc091bb005ce7044184ea982351449a67cf89cb1e4ef33a",
+      "blake3": "e1633f84ead8209efd98171f164032d560bd637071e45c78f9950f57e77ab3f6"
+    },
+    {
+      "path": "references/sdk-crash-analysis.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6847,
+      "sha256": "09c7aa2ee2820038659f2226a194559f349650d9097d6f604dcb6491b5369990",
+      "blake3": "09c687047d01d3c37c3482723a859983205cd9c97ff3f195a46952b858c94dab"
+    },
+    {
+      "path": "references/trtc-analysis-playbook.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 58008,
+      "sha256": "30d4ef3231820af088ee302fc7b9086314c6bf3ed9ab243576dce309671d5fc0",
+      "blake3": "04ec5b8e45d1bc5bc58cbb2263ec763a632d56d7683e9c462b64469c4157316c"
+    },
+    {
+      "path": "references/trtc-audio-diagnostics.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21035,
+      "sha256": "fb394e76d24d5ea99a36686c19a67281f1640ec17fd09563776fcb27342d7847",
+      "blake3": "043e66637a4150c51c4a426b50a4b3ce9b627287690955686d89770e110e1183"
+    },
+    {
+      "path": "references/trtc-deep-log-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 76845,
+      "sha256": "16b2c14083eab2c231b8ad6541d79c10cf1324d4b191a4c2b12bfcaec952db3f",
+      "blake3": "e279cb7d0407d1a2157ea523d98ff6612d61fb73d7ebd8b81f8c51a04abff404"
+    },
+    {
+      "path": "references/trtc-event-id-mapping.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9021,
+      "sha256": "f269f1b3481b279e46c72cdf4f801dc15d5a5b1cbfdadade4730db28187780b8",
+      "blake3": "5e29c1d02d1060401fff4da15df9291babf3b61618d7a7ac8b997a719bf48b2d"
+    },
+    {
+      "path": "references/trtc-known-issues.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 51713,
+      "sha256": "4a533411a0f817db308d91a65256446137af436161a72f2061d2f9779b9b8455",
+      "blake3": "33e89e46973d577e9c2fe26ae308b231dbf325d5aee5b160fa84d96a84b0d531"
+    },
+    {
+      "path": "references/trtc-product-concepts.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11185,
+      "sha256": "6f53c3f3608539716a9c5690659b6b302eaf42b4e0a6e99d2e735be7eca4d890",
+      "blake3": "a931dca5a530cef17bb42666e84b4299d23b2d022e1f4cde134a9a1870c4d2f8"
+    },
+    {
+      "path": "references/trtc-screen-share-diagnostics.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17762,
+      "sha256": "9955c8bc7074703ea79294f39e52d18c5a8e32284d886d56d3348f1b885a96a4",
+      "blake3": "d4aa742be37aac6411a0d6021af6937db228a7909a36e32c4b6695b1b637429f"
+    },
+    {
+      "path": "references/trtc-sdk-versions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11133,
+      "sha256": "5a80253e9d89b43c5ad6a9464867791de26c06b7099f88e05f6746dd3a17ebb0",
+      "blake3": "3f53183bb72f00d2038522bc243f0f1c6ed52a9c78050735fe517bbd9f8e50b1"
+    },
+    {
+      "path": "references/web-log-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23968,
+      "sha256": "49e02cb8d970b4da7ee815dbcaa984af28461ca8b53b9493dcc235acc3971097",
+      "blake3": "66519b4346a51229e30c965e5b69a29e02591cccb6ec675bf532f27725f50ec6"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/analyze-local.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9706,
+      "sha256": "102ef2358241bd543486bc911dcca78e8e237715ca733c0f9cc507dd5a1c081e",
+      "blake3": "424f29b448378086fc25f9bfbdb3be21f95fe3368ecec26199408669071e6111"
+    },
+    {
+      "path": "scripts/evidence.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3309,
+      "sha256": "34b8bf944e01d652285cc0c4238dd75836f7f3701e7050cfd7d30e22dc0ff3a4",
+      "blake3": "69b3064165455013d52520c6a94c2668aebb90047be7c6b29e0463a65069a3c6"
+    },
+    {
+      "path": "scripts/lib",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/lib/aho-corasick.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3937,
+      "sha256": "354543ba8c3c3c57ffa50be47672af736cc4a46097d8e0aedb2efa712ce66fda",
+      "blake3": "1939dc92ad6d5f6a94399b0e02f5467088f7af6d5afb61671b73a264c400fe8c"
+    },
+    {
+      "path": "scripts/lib/args.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2000,
+      "sha256": "ac483fe0ead011efe74f9a94aa0d29551e17e71cbf1bb8fcd2a012bf09d1aa3a",
+      "blake3": "31c6409e875f2137125222d93380be58b8c5a6a119c8b2a6dda4c16009e1b7eb"
+    },
+    {
+      "path": "scripts/lib/decoder.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2169,
+      "sha256": "4ce3b432e3e9719a3884ed610ae2de579f8479a89d41af5ca2f514a453f1f887",
+      "blake3": "eb675dd0cfebecff05242e4542529c1cf93da3ea0e0af2eeebef5b07c6e2d7f2"
+    },
+    {
+      "path": "scripts/lib/reg-prefilter.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2624,
+      "sha256": "e5d8959357d46d02ffe90c18ba518d221520229877d5990924dc09b9befaac8b",
+      "blake3": "6739327aaad4856c05076d3a7b59d6dfc56788a61192692cd11fb85c0f84c4cd"
+    },
+    {
+      "path": "scripts/lib/reg-room.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2106,
+      "sha256": "d8e1d98b645fcf04ddd51a89a06d051149ae952e5227d4c313fe2980199b0299",
+      "blake3": "54bce1a4f67d192b5b3e8e70ac43bf742b865806bf1461aa9e8e21af81258d6c"
+    },
+    {
+      "path": "scripts/lib/roominfo.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5426,
+      "sha256": "640db9f1d30b42ed7330418531c118cfdd3552210c5c2c3ecbade92208a594aa",
+      "blake3": "cae7ed302e2f1835a136f88b6cf60c888134af516ff99e8b972352ea8f3a1c60"
+    },
+    {
+      "path": "scripts/lib/safe-output.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2567,
+      "sha256": "e62c6f628c0ba4fc8824c02c6213b7d7cacec9adf6e28cdca0364fcee1f976cc",
+      "blake3": "164990b17fe1d4b7d261877afa02a6a83ef96e9b09ca943cb0a491fc4d14d622"
+    },
+    {
+      "path": "scripts/lib/timeline-worker.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 415,
+      "sha256": "408ca0e1da40e7db3d46f2aa87e86b5ed606fdc171d2bda8c76001980be3b78f",
+      "blake3": "3b790b42377e292e8d089964f8c4fdc269a37bf56fcb7fe5be322d759edb3ad4"
+    },
+    {
+      "path": "scripts/lib/timeline.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19352,
+      "sha256": "c12e0051dedb25751d4b2f078910325c68afe8c086c11aeeec4f82beb6351256",
+      "blake3": "70d1503d76eefa959b4b9bca536ee1b1d7a877b07ce0f7355706b97c9c0caeea"
+    },
+    {
+      "path": "scripts/lib/tpl-func.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13818,
+      "sha256": "99ac5e156c1f838f0f789b2d5b68016a6ae990887c66577509c26243a5f1952a",
+      "blake3": "09ce1842b2f973a708ceade30e509e9bdfde6af9be8cabb62a4b2fc4e50b7244"
+    },
+    {
+      "path": "scripts/lib/viewer-index.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2616,
+      "sha256": "afc21f0b832b853ddde2bd2cb7eb9688aff3938819675122e0bd169a7c8e93be",
+      "blake3": "3a2251bc87c3d611e499d1a98e96d40e0bdd1acf2515ac544b93e7f106feb487"
+    },
+    {
+      "path": "scripts/lib/viewer-registry.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3496,
+      "sha256": "e3e7f7d4c18aadd04c3c80d7f62e69268bec7d22a8701af144cc39c312665acf",
+      "blake3": "be0ef419eea74b4ef4d906337ce8a78b689be37cbe671812c360ee6ab09130cf"
+    },
+    {
+      "path": "scripts/lib/viewer-store.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6921,
+      "sha256": "72c0eabb06a3def2f3abac3930c77c9b0f7adc19c360683e92beb6965d787adf",
+      "blake3": "0de46ee3bf5292c8357b64d4f96acc8a4d2e7bc824a5427d1bb9054492ba6be4"
+    },
+    {
+      "path": "scripts/serve-viewer.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12153,
+      "sha256": "42ceb33bac48a68ebd52dd0acc220969cdd90456e5c19a19ddb50bad6e15b589",
+      "blake3": "1e4aba3eb0f3d85b4f460ca157ff267025a479887b27315fa782d4e0125e909e"
+    },
+    {
+      "path": "scripts/timeline.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8461,
+      "sha256": "8ab5af955c415a880dd7cfacd21930874cbdfcd82cf56879fcef73af0bbd8389",
+      "blake3": "e175ec38b89f20e981ba938d7d46e63d7c7d1b95014110bc0bfd376a9b8b7c2c"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3418,
+      "sha256": "ccaf0ce8f418a6a03ff4f7e35cb27bc6cd12679477fb7caab49fb424f461ac69",
+      "blake3": "d715e6a01b0fe2a914035e5d95ccc32f536f6f4ffeb575b473d0352ea0095634"
+    },
+    {
+      "path": "vendor",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/art-template",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/art-template/lib",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/art-template/lib/compile",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/art-template/lib/compile/adapter",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/art-template/lib/compile/adapter/caches.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 298,
+      "sha256": "74b613c9ba3bd9b7b1fa4e7acaedccd666ec6d9db11529f2fef4a385a73c7238",
+      "blake3": "e9d05784a38e4873efadbe672171ff49a1019147f77ec57f6a0baee80b669839"
+    },
+    {
+      "path": "vendor/art-template/lib/compile/adapter/extend.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 888,
+      "sha256": "ee3501758de9058cb403ef626d850577de018c6f58ace2327edd905e8efe6841",
+      "blake3": "801a31e6569d66ab367303be2f92a87d2de922b7d6979908ba3154ec405f8767"
+    },
+    {
+      "path": "vendor/art-template/lib/compile/adapter/html-minifier.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1001,
+      "sha256": "a6d6f48860834aea388197eff2f0977d7547a83b3aaf56af387d0ae3aa20899d",
+      "blake3": "3b6a3a8c3018a6864d077aa9d7b410f74e31c4034831d6504ef695c219241718"
+    },
+    {
+      "path": "vendor/art-template/lib/compile/adapter/include.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 508,
+      "sha256": "9b7f818d2639feb9665df7fc405f3280676344e7cd7f05a7382efd2a36fb3d13",
+      "blake3": "f45217691e20d47be8a6dc1e9b0385da259f4a934bd73c81f9f3e730a0f6ade7"
+    },
+    {
+      "path": "vendor/art-template/lib/compile/adapter/loader.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 547,
+      "sha256": "1b18881da8a184ffb2bcbeec5ea4d1403cf9d89e9e6d0d5057c1b9736b41aa32",
+      "blake3": "39d7969ed0777a368399f74a3c2d8526b37d1c89a9e8e34fcabf20b8263ae397"
+    },
+    {
+      "path": "vendor/art-template/lib/compile/adapter/onerror.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 246,
+      "sha256": "50fe78824ce97e9b8dfd96d6e5adad3e5790d8bc9260364f1e1df1b3c917ff42",
+      "blake3": "26597f25d3cb2c7c0541113f9f6555028657ebe957596a4d47b5286d60bcacee"
+    },
+    {
+      "path": "vendor/art-template/lib/compile/adapter/resolve-filename.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 926,
+      "sha256": "b028db42d797bb8203ab35a0d56560ce588799884deacc57f7f8fbf0e8a4d22a",
+      "blake3": "07d2bdfc7a788f1aab6e39296d7eb8cd7f797348c0b720c62572f44c7315f8de"
+    },
+    {
+      "path": "vendor/art-template/lib/compile/adapter/rule.art.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5972,
+      "sha256": "76a72a0e543f67ba3b5479949e6164a58de443b9cc33888fe7eaaa1ccffdf8d6",
+      "blake3": "3c38b9b3175a4d5f365c54cc4bab3792177eac3f2ff6a962886a44f866b7c6a4"
+    },
+    {
+      "path": "vendor/art-template/lib/compile/adapter/rule.native.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 732,
+      "sha256": "19f381f60a7b420b2623c1ec9d13c5970b26eef831e3043aa6f10a94f55a4e02",
+      "blake3": "17d26cd02b143d352b7e817cd9bfaf382a67bd7bb019c0e07bb990524de41e04"
+    },
+    {
+      "path": "vendor/art-template/lib/compile/compiler.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15548,
+      "sha256": "0806b89d33ad925b582726021af26ee2b90419d07f25fd7a26d1a7df0741efdf",
+      "blake3": "7fc4b76b47367612ca679e1df74044ab840cf461787407d860da399c4492662b"
+    },
+    {
+      "path": "vendor/art-template/lib/compile/defaults.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2873,
+      "sha256": "037d0d2bbbb4b59a8905bc64878e9ac88d0dc8efa8251c42035d8a8fd61ec50e",
+      "blake3": "47cad6e44baccea2a6ec5e823281e786fcca0808f0ede3408db097d3590cd43a"
+    },
+    {
+      "path": "vendor/art-template/lib/compile/error.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2451,
+      "sha256": "01b5388bb970af92ed4e8b7f7d87be4fb246326316b7bc909e57eb5f79971634",
+      "blake3": "d3280b85b08713ded5078261c6345e82e072f436601ce6b5a9c0a2f397908f3b"
+    },
+    {
+      "path": "vendor/art-template/lib/compile/es-tokenizer.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 662,
+      "sha256": "be18277e4d4ff66265df4a78376ea34a5f3f517c8a5570e74d19c05fffb50aa2",
+      "blake3": "13b7a328f1899b2dd49a67dd312a1e05a305a09f7dd11c7b190bbaa71dc77216"
+    },
+    {
+      "path": "vendor/art-template/lib/compile/index.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3307,
+      "sha256": "bd0d2e6a6d29ce903342c34186ed7bbdeac488cc0f11647ec522fa6274a2a369",
+      "blake3": "55d66023794e13c6a09accd7e92a66b4e85130b05d1c7825c408329db0060e7c"
+    },
+    {
+      "path": "vendor/art-template/lib/compile/runtime.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2341,
+      "sha256": "37b9610e707b4df00b60c057af12c4fe2ea236075c662ff3526b99531cf2cfda",
+      "blake3": "5941247ff5b37a3f7898d072182cf7752a2ae0ceb0f7ce495c2262e75d9206cb"
+    },
+    {
+      "path": "vendor/art-template/lib/compile/tpl-tokenizer.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2855,
+      "sha256": "be60b31104ab0d2f83c0a597ec8f01f2228cc59ed760417b4cf75261db8470ad",
+      "blake3": "42165d25513d1e404a860d7354dc208f922c7e45b17af962091e0f46e7b76f40"
+    },
+    {
+      "path": "vendor/art-template/lib/defaults.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 62,
+      "sha256": "5cbe72920230f4ee1516b1d739ade690296672f3d92cb8bef57fdff41c480239",
+      "blake3": "9cee0d4e4e07b9e211c26e968e6f6ba2d0d1a69b9952ff82bfb27e710aade73e"
+    },
+    {
+      "path": "vendor/art-template/lib/extension.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 573,
+      "sha256": "b990b1e7818f046a48538193f8c36637cff5919826f8030ca4bbcd126d4ffd81",
+      "blake3": "06d8168ca2f4aa0f840bed2103b5f3082dea304a9f6f0652dd968ea70ca5439e"
+    },
+    {
+      "path": "vendor/art-template/lib/index.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 707,
+      "sha256": "2806c145ad0ed5b476b880904e59c5885c0bd1a396245502ca08e1d57f28acbc",
+      "blake3": "377c5d27e3acf99ecdfc370fc88d63833be7fa5c0f4aefa5c2a11838b4f8bec7"
+    },
+    {
+      "path": "vendor/art-template/lib/precompile.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7876,
+      "sha256": "e1d0ae771f971b143326cb0fd0687e9948ba582cd9cfdedf9dcad47ca48f693c",
+      "blake3": "4892b743e2e90e32bc7b4b43c77773f399d3361bce39ba420e03bad3f4c8c67f"
+    },
+    {
+      "path": "vendor/art-template/lib/render.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 400,
+      "sha256": "0f901ef0e5fb679b2b28042fc36b5933ca40439e10480c4ed040b1ea1ef7884f",
+      "blake3": "8c28f03803089f6a5ed096c4123197330d63b9e9bdb0467fd373fdb665599e34"
+    },
+    {
+      "path": "vendor/art-template/lib/runtime.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 61,
+      "sha256": "de3fdffa24be45590983e2f9186962441f9d954839e70f182a292c42f9c90785",
+      "blake3": "ca90b6ebe10815857e727e9f33b4746d19ef37160e997c723d2af90efd3ca5d8"
+    },
+    {
+      "path": "vendor/art-template/lib/template-web.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17323,
+      "sha256": "e608874c1ea0d7c3d94bc7e272310b83f9ff7fa6ac4cc08ba7b234c4aad9eb19",
+      "blake3": "c3bde93f8f402600f4e7ea74029aa91490388e34f4c2b8eb90c906a1600ad19c"
+    },
+    {
+      "path": "vendor/art-template/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1505,
+      "sha256": "11b171f90b9168d02982c92ccaaa8776584737657dbe24dae60e3028dbfcb84c",
+      "blake3": "0da80a1f3daf7d3f7e90c653f9c2e6d4408fdcc6532a4168c665fa957147514f"
+    },
+    {
+      "path": "vendor/clog-decoder",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/clog-decoder/dist",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/clog-decoder/dist/cjs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/clog-decoder/dist/cjs/node",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "vendor/clog-decoder/dist/cjs/node/cli.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28322,
+      "sha256": "14b4b669c2889f76e7ea5be9843b6419d9c20a92b6c7bf8ff9a8afb647333d25",
+      "blake3": "ecf3af6b9b40ade255da5127ae0ac380fe79ac71ea50c7d1457c29bf2dcaec56"
+    },
+    {
+      "path": "vendor/clog-decoder/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 194,
+      "sha256": "4d28a2b3f28c5b0751c925e6294b2548ddfb1d4a3db24fabd8dea4bfb4ebfbf5",
+      "blake3": "d84204367d71e33f68e88ca31d94b4905ec96405156a61e5d3a4a67f0bffae98"
+    },
+    {
+      "path": "viewer",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "viewer/assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "viewer/assets/editor.worker-C7XS4yjJ.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 174946,
+      "sha256": "a53935804acd408cbe3f5bc5a27f91113c9267a5b68fbbe089349d0773f37c1a",
+      "blake3": "e9a4abbf2f9927025696f79881e594f678ff8c9cde40f9454ca1af4a7376f9ae"
+    },
+    {
+      "path": "viewer/assets/index-DxYmS5Jw.css",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 423622,
+      "sha256": "08c3f35ec96f5cc4d0f14b9024ef2c037812c47560923fd55f392e543eb42683",
+      "blake3": "40507d22ca54d333f68f3dcd02258dbac7cebf54bc0c58c6ca90ac8c5f955fe1"
+    },
+    {
+      "path": "viewer/assets/index-zylQmKnh.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2221313,
+      "sha256": "73f45c65530e45fc8bab658e29630eb8adffb50febfc14c84f4b981c56d8a75d",
+      "blake3": "68862fd5958a7cccd67c3780b32407a90c4e490df448cf0ae5a188fccf84684f"
+    },
+    {
+      "path": "viewer/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 406,
+      "sha256": "e32c304341e8a7dfbc65c2d438178384ee0faa92322430d53278f21b399f7e06",
+      "blake3": "93e52299f843c6fdb3b631303a28637a1c790950f6baf7579a421cb1031d4c6e"
+    }
+  ]
+}

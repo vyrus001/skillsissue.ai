@@ -1,0 +1,375 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:ebadda0b849986ce1e9c657de98f809c416e94f39f97b582539ab16895163729",
+  "sha256": "ebadda0b849986ce1e9c657de98f809c416e94f39f97b582539ab16895163729",
+  "blake3": "d12ca1f9d281630710c6da14c3f0761cdf9b74f59a885d92d55aadce92877bb6",
+  "size_bytes": 898915,
+  "file_count": 41,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 35759,
+      "sha256": "512f4cc84c383545dbc133107680702b3e8662ef960e81139419fee0e351412e",
+      "blake3": "6e411a50d642be788c2542f1b581dcee894efd9e499874d5736992df0ea3b7be"
+    },
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1071,
+      "sha256": "6d5461e7905ab9acc45d0454d189700bfb20d247d60411b5390414318ad1dec2",
+      "blake3": "2a1d9d058348df0aeadf4d160e6d9a3d8659927a92018859b522dc6a335d85f2"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 55133,
+      "sha256": "3ab10d32dc921326c7eba9f2014593d07db4797bcccca6ab3b6bec30695f5125",
+      "blake3": "3c4dfe568e64b5cc9368c315d295d36ef38f950eaeda03fdc7f064333dba472b"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32482,
+      "sha256": "f70df3d019f4e4038f45da72310105ffce7e92533b3962aeeef3d21d64ad45b0",
+      "blake3": "e3663b8805d1082bd35f81fd00f0760e73397d7ff11a9f2b1c3ae77b8abe0740"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 146,
+      "sha256": "7f8e73c58a0bce8c309e2a4290288b58bc27422ec12b76a0448b616bfc264f5d",
+      "blake3": "a1951ed71da1072d907841f818a151831318df7503d18707036fec364c00788a"
+    },
+    {
+      "path": "env.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 437,
+      "sha256": "1f869146ceff3916a3af07ee63e4026c9dcccebe5ceb98240095a24ed094b4fa",
+      "blake3": "5b5bb43a338aded54fa0838cb299f5c16c3d93268a2cb1019ada4efdb6c59a00"
+    },
+    {
+      "path": "generated",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "generated/creative-agent-runtime.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 174114,
+      "sha256": "de826c1bc3f2e447b645849784987aca4d64fb1230d64ef972d2870e35ef4354",
+      "blake3": "1df517d316821cf395809847129a3c6c622d61e97f3c54031c04e5628fa02c42"
+    },
+    {
+      "path": "llm.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7221,
+      "sha256": "c48b876cfd1b55828e6a1ef29ef6ad253eede17e98349c647fbc221e488021f5",
+      "blake3": "f3fe2ef570b719b3eb8d131ffb8e2204e213bde95248f018f21cf507ac9a90cf"
+    },
+    {
+      "path": "node-version-check.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1489,
+      "sha256": "cef89bef05f9f85879664b2422a63cece6179415ce90fb873861f5ba453b1620",
+      "blake3": "d4301ccdd4132934b73bf9b871e4e8f339956559ce61e01bca0abdec210bdb45"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/hosted-api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12494,
+      "sha256": "1f3ad990cc9021d1f1dc144f09f73fb53f3d5e39d9d608f1ba0e83c141be33d4",
+      "blake3": "232c20c3d606cba47afb065b4c7da038420f4b66050470d7ac1685e8f08bd4b8"
+    },
+    {
+      "path": "references/loop-maker.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12367,
+      "sha256": "1db9b79ef1fd39a3a40ff37ba9fd62adfe05353e7aaf6b07167656e8c0bb5449",
+      "blake3": "0a0a5f0e968a73db6e0149ba7057e0bbf95ee6866d4cea027265f1c71a194291"
+    },
+    {
+      "path": "references/models.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15830,
+      "sha256": "3853a44066559cac067d4dc3e37fa6327ccc40f9b191495d1890ad9efc5d8e26",
+      "blake3": "6c03ae77e47d97fa30656ea31bc3079848d27c50f134ff4d6fb220815501b9fc"
+    },
+    {
+      "path": "references/openclaw-config.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3516,
+      "sha256": "520182bd8f4a2dfe6999d152b9508b294c4ae7a411e001abea2ac45aa8837836",
+      "blake3": "4cbbd577228150ae5248ad26e007a0a273f2e6e3a867399574a38958797a0250"
+    },
+    {
+      "path": "references/personas-memory.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5134,
+      "sha256": "d5db63c6866e68e4a409f4d7ecb83420ae60e86c7ae6b9ad3cbc4fb33c494dab",
+      "blake3": "a3ea011ee211c70038a900240fec968e11fac3561d4e67354be571b09efb5456"
+    },
+    {
+      "path": "references/private-mature-video.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4380,
+      "sha256": "e5c89e665e335eed9f7f21fd797e5adddd7c4454a6c2c2b836475b1781dda4c5",
+      "blake3": "ff571ec0be39e720dccddf456858c113f80b7dba34693f6189f17a25b6f14551"
+    },
+    {
+      "path": "references/seamless-tiling.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5188,
+      "sha256": "bdf73e0d006577acbcb042e5b9438d2a07d5271e1e02c858864498243b828b30",
+      "blake3": "bbc8a46c41c953959125ea4fd351bc6d3378ee4caa35466c4980f90a9dc3389e"
+    },
+    {
+      "path": "references/video-editing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13460,
+      "sha256": "f7d2d2cd6055f05f286eedf10e24504ac0c0f3cb2970bbc35fa8ef41fc7e01b3",
+      "blake3": "777eda43e8dc67589d9dfade4bb9bea09faa4740cf9c4356c6f27db0398f7bcb"
+    },
+    {
+      "path": "references/video-prompting.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7207,
+      "sha256": "7daa3b8181bc2cc583f0c103e8958d0dc116ea4b58230a98115d572575a49117",
+      "blake3": "3f45943d6538e32449cd4f0dd331ca87739c3ba5a01e9ef5e7e1654bced6834e"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2930,
+      "sha256": "cb368037439109f378bd8b07db0e6e5722c143c55b25d7724a826735665cb37c",
+      "blake3": "574cd947ef0bbef276ec9370c2619516810704c3b6a6a474ca9680f4406a1dfb"
+    },
+    {
+      "path": "skill-package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 236,
+      "sha256": "9ef493bf594ee2656ed9989e8e290366ab58c68b46ec052d24b35bae13ec82f5",
+      "blake3": "8877fbe17d61b398fc97377925d444fc8ce1998149fdbc41b9d8611f2dc43801"
+    },
+    {
+      "path": "skills",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "skills/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4194,
+      "sha256": "39a1a269146518b09c8ed626141669d8a5a651d5fc9a9c4dbca7ec5b345a60e9",
+      "blake3": "8636ae9a7dbf21aac26b7f86cb1a92bfed453511bb3bfcab290a9df2b6a55047"
+    },
+    {
+      "path": "skills/app_settings.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 598,
+      "sha256": "63cac3c30a2057cdaa7cba7d48b9971a0cf7858fe7e43676a7bd646d855d3c0d",
+      "blake3": "78818dd3ae0c0620338614e45e1f24a0da87eb257eca3ffc7c61271a419fb837"
+    },
+    {
+      "path": "skills/asset_reference_management.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2305,
+      "sha256": "691e87d212b4069a77ded544b28937af692fa6088af3b322904cd748f56a71f0",
+      "blake3": "ddc31148fda511a2710aee1ec8a02ba3da974651c5e849a43b969fdec2f83937"
+    },
+    {
+      "path": "skills/composition_planning.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3095,
+      "sha256": "bfcac2bfc4eedad807a8dff8bd90f414575425ad193f259dc66438ddbceed33c",
+      "blake3": "8acf5916f658277771929475f7538dc5d77b92c51628cc132dde67bda5220458"
+    },
+    {
+      "path": "skills/image_editing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2016,
+      "sha256": "96514d3cf5bdd2fe98a2425dba109def47bc8203161122c6f0f086051b318cb1",
+      "blake3": "54b1521ef433b054f362c55063b6b9f58573c3843a424b3e28228c3cc9e39ab0"
+    },
+    {
+      "path": "skills/image_generation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1280,
+      "sha256": "36c4f1e65b11c4637f071101fac93f744d4d40a24c535e5d88724db81df63959",
+      "blake3": "8c5c6f28c90dac6fc52e021a69cfff64aa5ef073020a534762eb4b18b4a9db38"
+    },
+    {
+      "path": "skills/loop-maker",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "skills/loop-maker/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 793,
+      "sha256": "41aa204b7b8cee7c19bdb76f8d209274dfd8db0d2ad44ac4dd767cbf5c7cfe6e",
+      "blake3": "9a8726fdfb32a6ffc9b6ebf9297be5d57daac38ab014662fa966eb73278fb91c"
+    },
+    {
+      "path": "skills/loop-maker/agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "skills/loop-maker/agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 265,
+      "sha256": "69a63e2fe19d98858e7bbe01e5f4a1de3c653901457ce6f3674b6ed2f79572b5",
+      "blake3": "8471aac0309303b53292b9f4856597ec179b2329fff7a5521833bfd11233ce03"
+    },
+    {
+      "path": "skills/media_analysis.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 703,
+      "sha256": "64521f2d0787b7b739da61ebf2067c77eb8eef5356260ffdc919e06f0fe48e71",
+      "blake3": "85b98ac1f99853a32e2e7fe1a77bb635543f5daaf693b538e5c3e8aadad87738"
+    },
+    {
+      "path": "skills/music_generation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 397,
+      "sha256": "84a5532c08f1e7bf2949979d1e7a701835cc1688a521bf210d695f78f5bf7025",
+      "blake3": "adfd37ab68aefcf5ef77eb98e6b89d839e8ab163f7a137379abb834a191131fa"
+    },
+    {
+      "path": "skills/persona_management.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 825,
+      "sha256": "c84be720f3193839ddb8f1abbf5e7e650aedbec9dc97f2509233aac349c46629",
+      "blake3": "980b77a8c0b6eaa6c1c76f850df50495d8b10a50e8fbd9969ee8b6109317fefd"
+    },
+    {
+      "path": "skills/quality_audit.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 991,
+      "sha256": "4a889b693b15afd74a9db08c09688d7f47ea3af469858afefe89b0c2d250c45c",
+      "blake3": "ae28e07f7c634a9637943c27c048bb2ca79e92e328543a5c4404f0462f852d74"
+    },
+    {
+      "path": "skills/session_control.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 922,
+      "sha256": "6edd97797f2c70f9d877bb4d41e6f35bb89f4b2e2ad5a785267a232cdf242936",
+      "blake3": "5315f57cc33c655bbcfaa5ef49b06037069a07e54fb1935889a3bf15997d1d5e"
+    },
+    {
+      "path": "skills/sogni-creative-agent",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "skills/sogni-creative-agent/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 595,
+      "sha256": "a8136a1304cd6fa5944bd703d1a165ea44d88c0d93fcd0124584c2896ad3fc48",
+      "blake3": "0323d537e85c41410207de6145dda0e7ccb2f6db07555d56d097a069260929de"
+    },
+    {
+      "path": "skills/video_editing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2479,
+      "sha256": "7cfed6d8fe42c852ed47b9bae393c5e292cb167a798759c062a915023711f18e",
+      "blake3": "f87a71b05e335ad5e1b12e90a0e5ada0e85ed2b138d216aeff592ec746e125e2"
+    },
+    {
+      "path": "skills/video_generation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1041,
+      "sha256": "246673f71534310ea0150a51ca4185085fc2e7b58de95089ab4acf77a6190ac9",
+      "blake3": "f628a397a02e13a6b0d9846c5da1a5d0e1b333d7381c8bed2b16ec40571e1a75"
+    },
+    {
+      "path": "sogni-agent.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 456359,
+      "sha256": "bf2a2858a29b29a93a974b5558099170197290484385a4e3854235e38a28db73",
+      "blake3": "e2fcc2109fdfeae3aa58d6e440c834d71f8fc1bcca17d6bcc632a709dbefdd84"
+    },
+    {
+      "path": "sogni-app-id.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4877,
+      "sha256": "d1fc83c4c7fe376ff5e03d73e5af85228acc270b9da9b92a6597971b3058d976",
+      "blake3": "6586415b0782a46968c2e51daa0d37434b0a7dc105905d4513d874cd06a3b202"
+    },
+    {
+      "path": "ssrf-guard.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7689,
+      "sha256": "bdef36f9cf5ad82444cff0afcf11e3382babbd6ad8220f82c4d682b59ac52bd5",
+      "blake3": "50a511b87e9f55e029a5df1504afdb7fe2f43c7163b4362f8f9a3161f46be510"
+    },
+    {
+      "path": "update-check.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16856,
+      "sha256": "5f06285bfa67d2c56b674f28b8f6e941ee3bae732b2395106466e3739fe3a043",
+      "blake3": "9b54160044194c77a64ff06b3efb53d9bd65436fa1256ced20414c339ca104a0"
+    },
+    {
+      "path": "version.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 41,
+      "sha256": "5a12ad80c3cd17082a748bb6a20441a3036ba491890ac9c46d48e3a8b5246bc7",
+      "blake3": "136c041e8ecc2929082ec42e17655cef41b7e354ecf78aea49ac0077eb17ff6d"
+    }
+  ]
+}

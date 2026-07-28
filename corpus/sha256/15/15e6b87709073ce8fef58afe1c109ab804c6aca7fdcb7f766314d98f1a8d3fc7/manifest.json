@@ -1,0 +1,445 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:15e6b87709073ce8fef58afe1c109ab804c6aca7fdcb7f766314d98f1a8d3fc7",
+  "sha256": "15e6b87709073ce8fef58afe1c109ab804c6aca7fdcb7f766314d98f1a8d3fc7",
+  "blake3": "82e1abdccf51cd707d5b0f757f70fcd03361d4eddc9c67bce589608f3f227299",
+  "size_bytes": 1851859,
+  "file_count": 52,
+  "entries": [
+    {
+      "path": "SKILL-CN.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8939,
+      "sha256": "82a92ec7e660b64980b312c604890b9dacfb266e9b712bf1ce8224d5649bfb1b",
+      "blake3": "86fd2ed349bec78c681f91fd8dd801e927413fd82945f41723a3975fdafcbe3f"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15251,
+      "sha256": "45609c13c7542dae5ecb0b9d8985d055dfcec09865b2346644cd917f001dee51",
+      "blake3": "4370861f8f376b592b84a2051b0b541b869c36a17a803c790974bba57044f176"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 161,
+      "sha256": "cbf2132e04ad8904a06732d86e69c29659d619ab6e9a3cd345391d8b7edb001f",
+      "blake3": "161a39e41d7406403ff2a904d4303a9625715bba396ed7ebe9c5ebbbc8847354"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/output-schema.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2793,
+      "sha256": "a62baacda88132f69971cb9235e65e99e3f086faa6ca86f1bab15a764624950b",
+      "blake3": "ada3e2885db1d543a3723dc49c9277b157b5a5d08370bb989c3bed5397d9d469"
+    },
+    {
+      "path": "references/risk-rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2928,
+      "sha256": "df841c1557cf22a41c0cb51cb9230fee011bf7b06593f250c778f4126621b35d",
+      "blake3": "9d89cec071baab10777fc13c977961c786d6da13e06466a0dd075e2c1072d88b"
+    },
+    {
+      "path": "references/workflow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3081,
+      "sha256": "403f4c678257b92f81452ad92ec0ff46a262e45d3b96a0fc8d759a373e2e371d",
+      "blake3": "6ffab4045db19d648b9c065920d4876ce3ba663aebb73d0b24ba0628a7e65bdb"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/huawei-cloud.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18424,
+      "sha256": "6620dcca69df90b55bb7f46840081ef386429ab80b512ba3e38a5cb724361a66",
+      "blake3": "53f1adc2da13864cc4ddf60e75630d51e8b87433b549877fb6a119a72b290d80"
+    },
+    {
+      "path": "scripts/huawei_cloud",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/huawei_cloud/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 37,
+      "sha256": "cbe9cc741f67842b3be91f476e1e9b211fc2ee8c96227d034a819d87dea6903a",
+      "blake3": "6e363c5e5a34e955cfa98400656bc7f545c3fb0c9a78133ceae2a486328b9927"
+    },
+    {
+      "path": "scripts/huawei_cloud/aom.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 96868,
+      "sha256": "b2af2d23e6da04f2dd580733dec63d71fd676960d432f2d9c305414b86c0eb72",
+      "blake3": "0310cabf9638aa5eba29084d7cc1f536ffe1a0e0b76a8269b5d9e42cd409f75d"
+    },
+    {
+      "path": "scripts/huawei_cloud/auto_remediation.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19499,
+      "sha256": "097fe6c173737cf3d3b9c33211b1f164fa2523014f67f55a9c642a21576a14a4",
+      "blake3": "f32a49dc9017f5615cb00db79fd3c01568632d4062a20184592b6d0b38e605b0"
+    },
+    {
+      "path": "scripts/huawei_cloud/autoscaling_diagnosis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 71128,
+      "sha256": "dc56b7c782b4d8723a50eb5b5597eb288259a6439953d8c5515f292762617f27",
+      "blake3": "7060c60ae7c4acfbe949bf5a1121b2463f7d4079959eebf70875dbaf215a7b2b"
+    },
+    {
+      "path": "scripts/huawei_cloud/cce.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 187769,
+      "sha256": "5717b05f6d4283a3f77f8a3a23a338b44100cc3aa010c8e6da553dcd1aad53ea",
+      "blake3": "7f5631a582dc86fd3fcae5927aa1b74c484678af1405d1e6cf61182242c0e192"
+    },
+    {
+      "path": "scripts/huawei_cloud/cce_addon.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24229,
+      "sha256": "12177df789c1eea5eb958ee1de1224b9612bb9f21b4e96a4912d0ce6988c7f68",
+      "blake3": "de12ecef27bed67a0a9cc32bf9ae6514b434695a15cf9c5152534f781981d284"
+    },
+    {
+      "path": "scripts/huawei_cloud/cce_app_logs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 60385,
+      "sha256": "bf25aa844f50c030152244ae242f67d7617dfd55f169f1bfb3877fb26d7e1ad6",
+      "blake3": "31bd0ad8987b370158474bbd55e25ab04ed85a0e803ba4ccc3536431a4ff3d71"
+    },
+    {
+      "path": "scripts/huawei_cloud/cce_auto_inspection.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 31820,
+      "sha256": "814c776eb32671c34fab7af063fa854ac61ab1d2f78ef2c464b992013b50bcf8",
+      "blake3": "f4ef93f9604a268d063fd873410c2f6dcfb53da7f5e295a9d42e13ab34d8786a"
+    },
+    {
+      "path": "scripts/huawei_cloud/cce_availability_risk.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 45200,
+      "sha256": "809ca956f2e1eeb3cf01e3a17d195f955a1e2767edcb002e4a68da4768a41ead",
+      "blake3": "ed4b272a825c8392cc840c4e264f811569f3e8e2ddcf64c7641c244a16e6ab38"
+    },
+    {
+      "path": "scripts/huawei_cloud/cce_capacity_trend.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 49576,
+      "sha256": "26d6d25174ef7bc34d9e3c01288e900806bb159625d527e7661f5cc8812c9692",
+      "blake3": "9c5c76ca956a93c96eeea54f8a3efe4da0cd3fcbe53a90ba0524a012898748f8"
+    },
+    {
+      "path": "scripts/huawei_cloud/cce_cci_bursting.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30333,
+      "sha256": "21746517ea0741d31259b9150ad59cd0b8e8f81e41d364a808057c03e29d69fe",
+      "blake3": "79775155c70245bbabaca7a4204884391efbc5152369f38c8b65e325cefb2eaf"
+    },
+    {
+      "path": "scripts/huawei_cloud/cce_cluster.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32324,
+      "sha256": "6e6e4c82a1b4dcc41c4f40157316ba8e9f5992c59f9a296798efc5da1d4099ab",
+      "blake3": "6ec116575d89fb8f80e178e5ac3c08dc81f0219ddb57d8bf5a26d115f264443e"
+    },
+    {
+      "path": "scripts/huawei_cloud/cce_cluster_monitoring.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24412,
+      "sha256": "dfa47f621e19d8d93a3324348edda7a83524ded4744a1c0b163838eb065bfa8d",
+      "blake3": "5eac3f3ec80b73b49f102b6bfc52e4d469c3dfe17681dcd2f07c7141e67bc807"
+    },
+    {
+      "path": "scripts/huawei_cloud/cce_cost_optimization.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30907,
+      "sha256": "8126f9a9611f5b6d929d5e33bb5306602b130687cb6d69571913130948d2f0b9",
+      "blake3": "3403fc786e5e26d6fd7603f7da89822114389fea602db0c3b0d9a649d6c224f7"
+    },
+    {
+      "path": "scripts/huawei_cloud/cce_diagnosis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 87801,
+      "sha256": "6177361e19d3faaff1dfcf7389e928e17efa997966e6eb8441f3cffd3cd147b1",
+      "blake3": "e908cdb80b279c2c01341f3113e00161fb511dc59a906203a86f007a1a36326e"
+    },
+    {
+      "path": "scripts/huawei_cloud/cce_events_lts.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12500,
+      "sha256": "18a11eb8b045caa493352da788009c1b5f301904edf88a5727a0b6f0f6fe6b13",
+      "blake3": "24d152754bfb507054f621a99a350207a7ec16c6e071622667722bbc6a6971f4"
+    },
+    {
+      "path": "scripts/huawei_cloud/cce_hpa.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15229,
+      "sha256": "cd35f72e2c72c6730d694ff399759eb30522048865fc6a250924d5a67e134fe6",
+      "blake3": "f0696966a7daf31294d0826aa835f1b5af9ea6df7ecb2c4cfa0254198d31e49a"
+    },
+    {
+      "path": "scripts/huawei_cloud/cce_inspection.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 102148,
+      "sha256": "25aa88a72c89a5ad1b121b7197100175506eb9542da2299d367e54b980bb8e62",
+      "blake3": "93abe72895f6f257f6a5638b9529b06b80fe0a2f985b248ece004cd2ac177f60"
+    },
+    {
+      "path": "scripts/huawei_cloud/cce_k8s.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 44879,
+      "sha256": "110eab2909afa1c212669681621d483640f0edd22dbc3339361e9d656c09d559",
+      "blake3": "66c6b9c7db68aec39dff8ecc2f218a43fe428c287ec8de8a1cf1c6de4550a99b"
+    },
+    {
+      "path": "scripts/huawei_cloud/cce_metrics.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 36331,
+      "sha256": "b95c5415888ed111dd2cba1c600a51058630053081d213c96912bdd90eccf269",
+      "blake3": "5eb9f6b1119bbf032273198df47a7a81e90ab53dc749cae6e990a3c2c49498f0"
+    },
+    {
+      "path": "scripts/huawei_cloud/cce_node.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25022,
+      "sha256": "2daa35e3818bdfbaf26323384c129843a01b62b0611088d52bde470c27e4df56",
+      "blake3": "5c422ff164295d19334111f000fa84ff7a7bcbfc54f311060749dd8d18274052"
+    },
+    {
+      "path": "scripts/huawei_cloud/cce_nodepool.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25386,
+      "sha256": "9572fea84da0c46c7e15d097d19c845882c269c6022e8eb77a8bc90bc0b0de5e",
+      "blake3": "2b30689a418930c05a70c94ca362759d36a3ff988abc2d5100dd81fb24fa2c76"
+    },
+    {
+      "path": "scripts/huawei_cloud/change_impact_analysis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 46494,
+      "sha256": "8f780796a88c7433458f415c8a75fd3ce3d4cf5c8bf81d4061bd1a0610696134",
+      "blake3": "ff983c813a12d6aa58fdcb4122ca61451a1cc5a7fa7c16e70e3b6fe38c9a7449"
+    },
+    {
+      "path": "scripts/huawei_cloud/chart_generator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 57857,
+      "sha256": "598972882c239b70e5e096dd2960064dbe48bf00f52f4550618f0a507aed560c",
+      "blake3": "7b37838209fb91942a05e3e29317b3b527d126f6241c128b55da9ad847236c5e"
+    },
+    {
+      "path": "scripts/huawei_cloud/common.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25450,
+      "sha256": "4214180702b6ee1b2316494c7304cad7af9a3a9f7ebec9ed2a80d9b8b39311f1",
+      "blake3": "08f050f7eec5069b2c45cd6e65004d94d9fa41d9b9e42b86f0d204008dd5402f"
+    },
+    {
+      "path": "scripts/huawei_cloud/dependency_impact_analysis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20207,
+      "sha256": "cae15e3c78339e025c7be044cc33fe53923407fa4fc0346087c7c896303e6b77",
+      "blake3": "45c84e343e01a36ae5ebfbdfa4444fd310d5a4d62f9d488a695ed650cba09cc7"
+    },
+    {
+      "path": "scripts/huawei_cloud/dispatcher.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 83580,
+      "sha256": "171ae38ecc0a0da27a4055df8b24e5521cae18b67705eef79f18de7b64cb856f",
+      "blake3": "109e16e1c265021b69fa9e152fb99f25bd325d430fea4b2623ebb59a1270cf8b"
+    },
+    {
+      "path": "scripts/huawei_cloud/ecs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18381,
+      "sha256": "4632e54d071ce11c9c53ed0d2db43da64f4f3cd94c70c84f6db9b39f398e2144",
+      "blake3": "584fcc8299d824dc82c410c4c58399b9609023a51f046cbf5a72f1b8a4c23748"
+    },
+    {
+      "path": "scripts/huawei_cloud/elb.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21272,
+      "sha256": "79d75abee51816ed2fc69a479a3ae779711360a1c46a91075e344287c6a39a76",
+      "blake3": "0239bddc49471a587aa51207d63abf82d1ba992852750d7b460a4a99b499d4a9"
+    },
+    {
+      "path": "scripts/huawei_cloud/hss.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23251,
+      "sha256": "29b69953d941e86e49a04408fcac95a6181c6372957513e5b007db4d0001a8b5",
+      "blake3": "2c1322b3988f92db28dca151ea099c908ac3b5d16fea2c2e91f93d3b5186491a"
+    },
+    {
+      "path": "scripts/huawei_cloud/identity.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7552,
+      "sha256": "8a09f17df7efaf309c6af00e5f68d6a12978350822493022eb70d507fa2f050b",
+      "blake3": "4653ed0a18fbf403506f4187831e201612140f4d6698801e784b2af95dcdb124"
+    },
+    {
+      "path": "scripts/huawei_cloud/lts.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16727,
+      "sha256": "cb30f40abe27a0f605212312906c2774b200ee717f0b739aa4dd250a8b28b37f",
+      "blake3": "807b466a1ce5100d1aec614c4ff198fa839b0322c7b3f34f578a9c40952a80f1"
+    },
+    {
+      "path": "scripts/huawei_cloud/network.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 35038,
+      "sha256": "2985d5b47ce6e29adac85bc9639148a01cb218d710f1f2e6b0fb4e1eb8b8bbff",
+      "blake3": "ea798f42b391f4468d95b1f8146210ca86e320e9c511283757754ec9b7df2205"
+    },
+    {
+      "path": "scripts/huawei_cloud/network_failure_diagnosis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 64462,
+      "sha256": "880405ffc5487b55ef77209231b9f7d3ab1391edf8522a60793c004b244ef97e",
+      "blake3": "f983924f3ee5ad9b291bed8541ee0c80f83f8e1df4d3808e31cb365393e5ed25"
+    },
+    {
+      "path": "scripts/huawei_cloud/node_failure_diagnosis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 45125,
+      "sha256": "c708f82f193020aec3ce3234e7373abb4d22d93b960544100a7c4a5c755d7ff1",
+      "blake3": "4252dc0f9be98ce50e0a399c7e98f9cc216c32e49a8637ce8311963f7d7430a2"
+    },
+    {
+      "path": "scripts/huawei_cloud/ops_report_generator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 40239,
+      "sha256": "91deb88a92eba03b6456810185447d9aa52e882fec7685625bfa8c66a4ca47cf",
+      "blake3": "8713172039c03fc0ca738e64da5442fb90b7c8ef9e528e7f7c1972533c3125c7"
+    },
+    {
+      "path": "scripts/huawei_cloud/pod_diagnosis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27066,
+      "sha256": "7c90496c127343f5023fd04b6c1aa261f27feeb3d5412bb0c1d5449750b2f31d",
+      "blake3": "0679ae5794da5f7ce36bedee21c1aaf0e233992fbc2578fcab287613090f9b52"
+    },
+    {
+      "path": "scripts/huawei_cloud/report_generator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 35995,
+      "sha256": "eb6ba8300a97bbf7322e875f7f9ae1e037afaa7d6265246ab1681909d5fc5348",
+      "blake3": "adac8bf5d9f6d2dfd7df091b4132363d3b3242f66794b05a4df3619e6be89749"
+    },
+    {
+      "path": "scripts/huawei_cloud/root_cause_analysis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19504,
+      "sha256": "39f3213e335ab501433def420d518b2a46452dec40b7a8cb5c76bf3c9f3f04bb",
+      "blake3": "07def31c4385d2eb3f3744c8939f3cb9bb5228559a4d1827cbb3c1849b38a99c"
+    },
+    {
+      "path": "scripts/huawei_cloud/storage.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18801,
+      "sha256": "ef7b5a193d0926f6e5a593d7a45a0f7350f1bca0d244a5133ac59928aa182b1e",
+      "blake3": "3ffead1b44b1bef3cfc1bce47ddc18411befd50a773513ffe3679f136e536c07"
+    },
+    {
+      "path": "scripts/huawei_cloud/storage_failure_diagnosis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 78314,
+      "sha256": "e4edd20161d18c2fa552bba64e8ddae16361d90409f085a3658c6d32301b9ebb",
+      "blake3": "f32a33d8701f28419869417c89cb55e60d0118f7db2d475752b7371034ba79ec"
+    },
+    {
+      "path": "scripts/huawei_cloud/workload_rollout_diagnosis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 50524,
+      "sha256": "2f7b0d19996735ed26a23470662dce15797f9281893ed5fc07eab4616e8b9856",
+      "blake3": "d623e004cb8377d028e1257b38812585e771a30465f3058c270c9705fb4427ec"
+    },
+    {
+      "path": "scripts/huawei_get_node_security_groups.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7224,
+      "sha256": "9f6d8dee24ba3a5ee7fddfb578e103d80d24764f25b728d49caf3e8ce9235dce",
+      "blake3": "0a08be658f90486977892585b2fc38f4907932add6d0fd5aa933780f312ee5f7"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2988,
+      "sha256": "0f213d2a30885bda11ff8a7d662d3fe5cb47a5dd41a639691f48259ee41e4a19",
+      "blake3": "df244d76057a18af0e0bd25d9e0389947f41a9f12cf75031c626597dc808a9b4"
+    },
+    {
+      "path": "skill-profile.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 448,
+      "sha256": "f6070261923e08ef4081be76ef0638535786cbad3e8d94aecde9e8a1c6899450",
+      "blake3": "654f42ac8b5abb7098603f1fe1fc85f4957b318437eec239d1ea1225a9d6eaf3"
+    }
+  ]
+}

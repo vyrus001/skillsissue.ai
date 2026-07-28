@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:6dfd6f731c37c7bb20e0d020b403b680b0d20472230377fe7bcea482fd4eef77",
+  "sha256": "6dfd6f731c37c7bb20e0d020b403b680b0d20472230377fe7bcea482fd4eef77",
+  "blake3": "61dccf9b092dc4fd4abb775957d1cad47609172e5035d32c88dbb1ae56f6f6a2",
+  "size_bytes": 97573,
+  "file_count": 13,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11100,
+      "sha256": "7f0d5e43694b20eb8fc03d10819123b5be1eb004a36406508ace9b85ad2357db",
+      "blake3": "6f59695851795e5bde4fa672231aeec9a8ba804dd6430836fb359b12860f5dbd"
+    },
+    {
+      "path": "Dockerfile",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 804,
+      "sha256": "77a83216655e0c78473cc4e6efb75f7a8a8d60113a0009e0a69b546d3d6601be",
+      "blake3": "0084c9330981e07a562ad5ad75d9857dfbb3144ca44c24cec0f4767f3b0f9e81"
+    },
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1096,
+      "sha256": "a638042b6ed6bfa27dc11ed5a8e77f378f623a488937e988371dfd0a47d23240",
+      "blake3": "af05c63d60b3d0a38a0672fe2dbfa51ed8f837a33f594df58949ddc176ea7331"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3532,
+      "sha256": "7091bacffeb25a1291413bcc31cf3fbea2b353228c5d43578006eb0dbc34c42b",
+      "blake3": "1a2bf6219d3c27b17e38c6ce00b2430986277f0b2269efc163e4436215f86b11"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20350,
+      "sha256": "23b6e135fd021ebfdc88cbe67077f1f708827f5dc429039a6003c9430f78e097",
+      "blake3": "ff4ace86d006ac6131e7ee3d225a8617adb1ffb9a4f1de72a3f65fc77c9e33d7"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 154,
+      "sha256": "88d149bfe23291a08c8e268fabfe4a4ee3e6c2a8332ad509617f7ab0a027c9fe",
+      "blake3": "9d7bbd5b8bcfc44082f1112d6acff800ce64ebfda2022a92b4328dddc262f0d9"
+    },
+    {
+      "path": "check.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28003,
+      "sha256": "3ba24f383f7a063cf5714ee2b89ce29d301824e85f69c782e7072ea3f052443f",
+      "blake3": "12f45c0f01d52a9917a5cf4444a736f95da84d1160b3c42cef757cf5db962713"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/skill-writing-vocab.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4701,
+      "sha256": "1342e277a423fa192bbf54a43459f48afcf529e4ff4d7b786826d1aa9c881b50",
+      "blake3": "08f42dc7ff0ab270774c723aebfafc7cdf568a361f6179a4116e9439b91a5f05"
+    },
+    {
+      "path": "references/trigger-eval.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7753,
+      "sha256": "83be02b9ac6ca9b9786681e995f85e36f2e0616a2963fe96e41d2cf468e0a4ea",
+      "blake3": "41c0b33c2e5ef742e16a09db77a71f631d65127547e2dfdcb8317c066b8bb793"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/trigger_eval.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16245,
+      "sha256": "138dc37e52f7ae9deac565d286b65519d9c84fe2450ba884aef37cfd81980ce3",
+      "blake3": "3271055805ca3f31ea1d7c026a176b6822c27f2b01bc7bca0f4170a5ca1e722b"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2654,
+      "sha256": "af4e2df7b7cdbd0b86ac18730bb160fb15d6e9b86f12f0b84a0f82640ac15c72",
+      "blake3": "86682ef4118eeb23bfc2c71d1b51cff4740ab9668ee0effe10694be60e8c294d"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/bad",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/bad/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 379,
+      "sha256": "f8b60976a6b412c93b199f624189fec8ede9aa1c607ae4139e14596889050d30",
+      "blake3": "e5811cd2533e56742280d6f77e334b3b677129e5ac4e8669d05ca97c9f6c4b9e"
+    },
+    {
+      "path": "tests/fixtures/good",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/good/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 802,
+      "sha256": "a4924a68a3ff1ab368952b0fbf272398391abd567cf9af0fddb32cd9e3595059",
+      "blake3": "e3117c3c5f6269f59a2175b7e7b5f3d6646244b903fc0fc5975449d0540838c1"
+    }
+  ]
+}

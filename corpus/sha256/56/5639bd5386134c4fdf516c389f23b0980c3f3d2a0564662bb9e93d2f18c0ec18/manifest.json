@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:5639bd5386134c4fdf516c389f23b0980c3f3d2a0564662bb9e93d2f18c0ec18",
+  "sha256": "5639bd5386134c4fdf516c389f23b0980c3f3d2a0564662bb9e93d2f18c0ec18",
+  "blake3": "a207e60a785e509a1914f4ecf08112b95e03245b16a84c22fcb7545c7e52a56e",
+  "size_bytes": 90036,
+  "file_count": 19,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11552,
+      "sha256": "dcb3bb09c2b829c9093cd8e2fa3156ba4e5772c8243256eece34e73b52a58ba0",
+      "blake3": "7048295dbc4b82415e610200ad96bffdc31b60056331e2a49f19dbabc53a4e81"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7092,
+      "sha256": "30a1e993c181679f3237f220df27b93c002b2dcf3287d37367f7c9b1ff8a1ea4",
+      "blake3": "7f4107fe50f0824c2f3e5414e99656811fce4468707f469c9e2f51ecdfb4f9d8"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 136,
+      "sha256": "a57c1b966b61fab098fda48242a2773142a8116f5b4c102c251fab169eb02a94",
+      "blake3": "be92570eae0cd7fff82c8bbd6dbf58cdf0a1f7ae5571b2cc8cf53f0463cfa7a1"
+    },
+    {
+      "path": "package-lock.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 147,
+      "sha256": "bb5044d934479cdf4553a8cedddf212096be0df354174ff8ff1396459b570f44",
+      "blake3": "27df028c9c6f31237161f0b9dcf5b9295a5d37d6211367b69b59153a5cf9ed16"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 72,
+      "sha256": "31e004f0a9d78d6ca6c2d611ada7dd1048ded534beb35501fb657053f7a207b2",
+      "blake3": "d752db61db7d2e6ae41121c4bb6fb5b18f58f124998862b0697bfc84ce5cc6ea"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/conflict_track.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2579,
+      "sha256": "87cf8f58b041a6e2f30096fe29e1b58631416418ae6418602c723a5692a4eb48",
+      "blake3": "c1182b8e780b228562ab8b74de3f8595e71d3e48cd02fdc900da761670dd0ca4"
+    },
+    {
+      "path": "scripts/continuity_check.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4775,
+      "sha256": "fb75ffc188967f19e72ac3748960f3f5f6283e41da35ba81ab9d72402e7d6daa",
+      "blake3": "bfb9398b12b400ce3739f8874a6eeaa15dadfe7c6912eca9b3ec5163de7edeb8"
+    },
+    {
+      "path": "scripts/emostate_tick.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13782,
+      "sha256": "499e9a53f73b33fe866e3d8b70c7f4705e6de5c22f185dad92bd0ba31b3193b3",
+      "blake3": "3fd36ba021de5d135bc291a5013b6007d0c2a068c78933c998a2cae540a919cc"
+    },
+    {
+      "path": "scripts/identity_diff.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3238,
+      "sha256": "2041883beebca4ba987c8f5cb7a7f757f47f1c88b7628df6238724b5bc059603",
+      "blake3": "1dc52b70b3803e1b6946ff0b7c81f0ed3ec2e2d7f2d7bbb476b980f2f1825fb5"
+    },
+    {
+      "path": "scripts/input.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1641,
+      "sha256": "e6e65747f9a1ebd91a4fc3233cc5e2096a511a967d8b439f77faf7d758a78743",
+      "blake3": "3307e0db1564432e7ea72273a1784a76f852e415e57ee7c872c267b6e333e636"
+    },
+    {
+      "path": "scripts/journal_patch_schema.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1441,
+      "sha256": "e17bc48dd99d9c931832cc5030c49c57b3f92d3aa0de1a107c32edbc860fb1c3",
+      "blake3": "95bad20c7505fb0516be8dad836a4d58b88cf465effc40b6dd3efa9ba914a448"
+    },
+    {
+      "path": "scripts/journal_write.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3992,
+      "sha256": "8311d0e11a71de0df338ae560699ddd545057361884a3f0a02cfd88456b51ed1",
+      "blake3": "71c8e0c98e65a2535a9565f6c167103735031466d33599931db8af7279095944"
+    },
+    {
+      "path": "scripts/ltm_search.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2286,
+      "sha256": "8977d864b1e04225d2fa6af7a37e4696f023956f2e6e850beab25d3b68e94ccf",
+      "blake3": "1e3740f9d95c790830c5d9689771911ee023d590b99cdb31a1b89fa361358925"
+    },
+    {
+      "path": "scripts/ltm_write.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1942,
+      "sha256": "5bd52dbb570d44fbda426599f783077f50f2ab7eefa3c214d03f533eee0b0f80",
+      "blake3": "d242eee943d7c2bba6bce2a3162c694e26f9353808dba0abf447ad24c09d22c1"
+    },
+    {
+      "path": "scripts/notionctl_bridge.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7143,
+      "sha256": "efdd298f7cc8b5682a3619dcbcd54bc8a878c49b24ee0f9f344d1c9389b97fd5",
+      "blake3": "40de6624b18f60e804ee7a28b9189ad16d4a3d7a702a47002afdbd381bf90cf1"
+    },
+    {
+      "path": "scripts/setup_ltm.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8529,
+      "sha256": "0ff6a7d7ab90fc6c18fedacf2ae5ce3cf688338dedc6caa59febedc20a92c2e0",
+      "blake3": "4950aab75cf0bbef383edefd1401542107e8c7538f09c56c656146a5c6ecd712"
+    },
+    {
+      "path": "scripts/stage_ambient_recall.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15765,
+      "sha256": "5a54d3a34332378dc91ca2ec5105e78f2a87f86fe12f4b956c976b422ce81abb",
+      "blake3": "f000115f52051076b724e0f3f181ec91e0ffcbfc9c615c316f9b4dde8ab0592b"
+    },
+    {
+      "path": "scripts/state_recall.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1736,
+      "sha256": "1784a218d2527c1c361f5eeb1ae4a7fd3742c665efda81ad69a0063bede9fd94",
+      "blake3": "3ca506762bf0a23188119866c0582b5945b62fd9c8c1fcdd14b9eb3637a76d6c"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2188,
+      "sha256": "3ff52d868f7dd60928ff171d88521032c0e224f124851e58adea8f18fb068750",
+      "blake3": "caf77ef374caf9c042c79ee5369088733a0617f78f56150fdec3b11daa032b7a"
+    }
+  ]
+}

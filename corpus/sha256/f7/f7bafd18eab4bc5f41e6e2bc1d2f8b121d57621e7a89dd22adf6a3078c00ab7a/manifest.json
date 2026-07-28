@@ -1,0 +1,975 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:f7bafd18eab4bc5f41e6e2bc1d2f8b121d57621e7a89dd22adf6a3078c00ab7a",
+  "sha256": "f7bafd18eab4bc5f41e6e2bc1d2f8b121d57621e7a89dd22adf6a3078c00ab7a",
+  "blake3": "b342ea178bdf2d1bdaab2af340ebad3d850bdad0b1c491bdabe3cb7ba0ffc3c5",
+  "size_bytes": 630651,
+  "file_count": 113,
+  "entries": [
+    {
+      "path": "AGENTS.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4713,
+      "sha256": "9dd74527cc6b6b83ee2fe53f7d414bd12821c9a9946b7264824a0e03d4d4065e",
+      "blake3": "d3e4eea0ccbb6511d546837ef7d8f98e4f044d502deb0a5050db7ba2a6ce4dbb"
+    },
+    {
+      "path": "ETL",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ETL/逻辑SQL",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ETL/逻辑SQL/ads_会员私域驾驶舱.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5374,
+      "sha256": "7f2d63257d617aba184226c47a0358f11f6ddb86c97d73fc69b8447e71107299",
+      "blake3": "c5a7f4cefb31f0d7564314980277f8e084083c518c9a70d03bed97e332fb4d5f"
+    },
+    {
+      "path": "ETL/逻辑SQL/ads_会员经营任务池.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5672,
+      "sha256": "f39d967bae021c1ae5c9b1b97a89e0c02127b36320f956bfdf30bf244f27a55a",
+      "blake3": "f4c1327715338dfd3c7517cd836a6c061319aab237f4cd323c91381f9eb1b41b"
+    },
+    {
+      "path": "ETL/逻辑SQL/ads_门店每日指挥台.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9239,
+      "sha256": "af396af7b3eda1775c4b64525fff19e27ebfdd485a9f966a88c04d0863752553",
+      "blake3": "f2aebab97f02f69b0e3883d71479f9fc02b8f27792f88f7c18875843dd03ee50"
+    },
+    {
+      "path": "ETL/逻辑SQL/ads_高层经营驾驶舱.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5492,
+      "sha256": "ef247788a4848158ea23ac8386d6c30a749b0c3afd2952b10f8894e1cd0f2bc9",
+      "blake3": "60c755518eeb1e6d1db703e0ceda30b638bc8abb0e2890969c49c364404e424f"
+    },
+    {
+      "path": "ETL/逻辑SQL/etl_ads_加盟商单店报告 (9节点·S+J×2+C).md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10246,
+      "sha256": "9a3c477b2cf44f93f3f97e743f2332ffd7d678d1cc92978be29143cf43c6e205",
+      "blake3": "15924b33afe301e74c803334c301ceab4ca41552e202cbfe22dca1b36926c9ee"
+    },
+    {
+      "path": "ETL/逻辑SQL/etl_ads_单店利润健康 (6节点·J+C+S).md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6368,
+      "sha256": "90feae32609516c9f17d4d1e8881cceec455c362aaa89795cc96c672ec01ee3b",
+      "blake3": "7bf70fbf24281885b598348b3b48d41f674887228c5c456fd7ccc26b41326256"
+    },
+    {
+      "path": "ETL/逻辑SQL/etl_ads_异常归因清单.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20132,
+      "sha256": "1b9a0b58caccb8dacdbd0ffebd62e5effbc7a6c1f93dab489d326d7721485f21",
+      "blake3": "b40d903df501a4477ac4d71e27c6c1f7ee71a25e430e6d17905c244d7913ee0f"
+    },
+    {
+      "path": "ETL/逻辑SQL/etl_ads_活动权益复盘 (17节点·C+G+F+C+G×2+S+J×3+C).md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8454,
+      "sha256": "1d528420d4fd4099c4179c78466a6816406999e0dc82594ce28c461804be436d",
+      "blake3": "ee9fde4ea55a78871e52dfb4ef355c01a2692391a56225e78b11088671ece25c"
+    },
+    {
+      "path": "ETL/逻辑SQL/etl_dqc_归因清单对账.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11969,
+      "sha256": "51604b0f97be8c6f059b793cb31ec0e181ed6412f3d3dd448a82f76d6eced9c8",
+      "blake3": "98f806edf96bac3c9574714994709c8e6d95cd7932afcf9d0050c22d1cbf8cb0"
+    },
+    {
+      "path": "ETL/逻辑SQL/etl_dws_会员RFM分层 (10节点·F+C+G+S+J).md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6973,
+      "sha256": "88cb8bb6b0f8ba831a98a9ca6ab56a8abdc6f02f03953c8ce022ea7c9c05941c",
+      "blake3": "7ff1b0a4845252bca4198872ddeb8f9a05e8eb1703d6ab2dd468bbd9e209f48a"
+    },
+    {
+      "path": "ETL/逻辑SQL/etl_dws_会员同期群留存.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5118,
+      "sha256": "32f4814d05533e65502a5d1cd5e661c1cbe298abc735a0a2145777dfb533ecde",
+      "blake3": "b487835ac0551a0ad1ee086b6c2f2b4632b761955272328e86d4aa90ed1a55ad"
+    },
+    {
+      "path": "ETL/逻辑SQL/etl_dws_会员生命周期.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6379,
+      "sha256": "d4b39abca994cbc4885e61642cbbd7a7c6835275deedac881888852165b60e1c",
+      "blake3": "6ec2206ee15456db13ddab8b3bcc332c3743e745cef395b0471ce1c8008385d7"
+    },
+    {
+      "path": "ETL/逻辑SQL/etl_dws_体验口碑汇总.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6522,
+      "sha256": "8ebbd2669701ad5042cb0e744d6439afd2644ede217c7608067f2e140b347453",
+      "blake3": "b1029692e4b4828ae24e2a56600eeb1dd813ff0b026791dab6946671e7ae0ee9"
+    },
+    {
+      "path": "ETL/逻辑SQL/etl_dws_券效益分析.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5433,
+      "sha256": "7aa4d01256114f6d3ec3f96578796838e924f6f154c2a53b4d10ae461099cd45",
+      "blake3": "66d4aa665374b29fd5bfd9e4199f32ed06564d0df99e6d41b243df6a8b0be593"
+    },
+    {
+      "path": "ETL/逻辑SQL/etl_dws_加盟商经营汇总 (7节点·S+J+C).md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6526,
+      "sha256": "cd2d60f11091700c7406042b6ea8d7a13ab88345ee48b1127fa5ceea19859e06",
+      "blake3": "91e1098cc4482352e4883b79d3cbbd954a71ec0494f5640a8197102954280b21"
+    },
+    {
+      "path": "ETL/逻辑SQL/etl_dws_加盟回本测算 (9节点·S×3+J+C).md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9076,
+      "sha256": "12724fd40dc8854f294333f3fa1f49cbe4bfae43a73164b620cd1a469d9c5009",
+      "blake3": "2dd44241372803930bc4d08a3be38166527352b98d011b392a5a79a8b51dd0f0"
+    },
+    {
+      "path": "ETL/逻辑SQL/etl_dws_单店利润月汇总 (11节点·F+C+G+S×2+J+C).md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10802,
+      "sha256": "ffb4b7a18714efe68df66da9620873f523861d7cd26cc77fef6cb65a52d39d58",
+      "blake3": "f3e1c422b3e8c5b3f5d1f0d923d2409b9576564dcab0d9cd4c30567f570bb822"
+    },
+    {
+      "path": "ETL/逻辑SQL/etl_dws_员工导购效能 (8节点·F+S+J+C).md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7086,
+      "sha256": "3e3b9ceb61f99bde8ec0654b5aad00ae4f6b061c65d22fcb83d1fd5051fee04b",
+      "blake3": "b7d165c5ee2a3a1efc294f3350a805d595879667e77830b2b6767ddb316e20dc"
+    },
+    {
+      "path": "ETL/逻辑SQL/etl_dws_商品销售分析.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4923,
+      "sha256": "7068c32659606d67a607093e78035cb1f8a97d4ecac9969c27e58675c4c085c1",
+      "blake3": "f1dbf6b75ab6d32dee2345345cddd46d33d76f849ea7d1a2d9caf5849cbb97ae"
+    },
+    {
+      "path": "ETL/逻辑SQL/etl_dws_成本结构汇总 (7节点·J+S+C).md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4687,
+      "sha256": "9aa4646ba3a9b83ac00c26829b6ccb91cb111f7b4f37334d13c2560a5f72d923",
+      "blake3": "debaa4c8043cd32b21b85f6d6934f9995748ded96ad4cd81f111607bff45d01f"
+    },
+    {
+      "path": "ETL/逻辑SQL/etl_dws_新店爬坡_Comp老店 (8节点·F+C+G+J).md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4927,
+      "sha256": "778fcc0f402e51b34f45aefa82c35f899b6da47d30ffbf39ec5cc9c4de60f328",
+      "blake3": "37def34f99319eb38ed22ebed37dd8516f7fb5dd7e50013da10df6e93d950d99"
+    },
+    {
+      "path": "ETL/逻辑SQL/etl_dws_渠道迁移分析.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6415,
+      "sha256": "286e971264dfc8b23059bf84c397dfb1e7bfda568dfa4a0e8253f89dcbd894e6",
+      "blake3": "2d540518bf9aa2c16cea0837e9e1e8d0e25b6efb1dcf617789f91a8fddd10156"
+    },
+    {
+      "path": "ETL/逻辑SQL/etl_dws_目标达成.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5047,
+      "sha256": "9f4246be473631eea3508ab9577df09894d741cb9ed6a13cca0523f93d23582f",
+      "blake3": "044b0326f070293243b5a20c932ca85b3e41a02f6e4d95c5b1a0325f8442a814"
+    },
+    {
+      "path": "ETL/逻辑SQL/etl_dws_私域转化漏斗 (10节点·F+C+G+C+G+J+C).md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5300,
+      "sha256": "d44070bfd9dc72982135f99d1354261c190d79ecbeebcf9582ce844aafaaead7",
+      "blake3": "0792d3e236dbe7480d37b98b527d04156e350c70884d4097628b85200a551b63"
+    },
+    {
+      "path": "ETL/逻辑SQL/etl_dws_门店日报 (10节点·F+C+G+S×2+J+C).md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7214,
+      "sha256": "dd4dd2fe3d87e983f4aa83b650ba9a22230a6996afe15ae062da0cfcc2e25a3f",
+      "blake3": "de5bf56ccb80d4431e8ce1d869579e779668fa877bd75977cc5ff4b690f185bf"
+    },
+    {
+      "path": "LICENSE.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1097,
+      "sha256": "6bb54442daef44c6f98019c5bb77422ce2ca421d07529e0e061d7fd17eb9a3ce",
+      "blake3": "0791198348c3ed0bcff7010e684abbacb83484518d12571f3375a28a4d61d32c"
+    },
+    {
+      "path": "README.en.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5419,
+      "sha256": "053f8e0bedc468f50f023d6c05ad77a7715f7f15f0acd4dbff2448907dc7635c",
+      "blake3": "d3c9a5e109c52adecc80b85e9cde2bf6bdff3fd58a8cc0bc5871b4eb7a7eef79"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17884,
+      "sha256": "b9ae87fa51680991835f1efd4dfbbd215bf18e1a4f99cf22d0816655b4a7da92",
+      "blake3": "0a17baa6932e6a3eed80ad7188778ab102691e2ecfbc9744ec5f3ca120a0eb73"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6965,
+      "sha256": "e293135ca1fd350a16b0bda4d62ae1ac1ea3e792db7c389a40d46996ff69a259",
+      "blake3": "8f23d253f15c22123199e2bf28eefdd180f37ad0fa80a5c204234c72dce77630"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 132,
+      "sha256": "71f71597a2bf300c4f0e8977522b44c2c735a4ad0141edc5f4222504bd5c2c0a",
+      "blake3": "4bfd397bfbfe9e55a7b39aa09a9ecee32b45cbac4eeb940b318a68e66933a40a"
+    },
+    {
+      "path": "llms.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2529,
+      "sha256": "0cc29dbe6ef12e96a589d2ee17a5ba413c673eeaa5b20f48f18dbd31f501ece1",
+      "blake3": "f0a0128ce5ce4e351c43cc35691fa084acdf96ebd2f3a6e04ce2d690438644a1"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2940,
+      "sha256": "0259206060c94af2f58edfcb624cc56313d013541882c68a0ef827f97b5d9449",
+      "blake3": "399b0fea8b4dba8dea015f88b818725c7f384b7bae5954f704e8bd8dca42aabf"
+    },
+    {
+      "path": "公式库",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "公式库/01-date-and-time.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7423,
+      "sha256": "47596b60b1330e68db9420c95f8f6604b7452316cc45b600224ac0907431e98e",
+      "blake3": "5d07df3d8f9884c386621bfbd54a400ba83a24a49c2ce7d7a0504c26c39c1d8e"
+    },
+    {
+      "path": "公式库/02-customer-and-membership.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27093,
+      "sha256": "1b58708d3252dd2510e6eaf65455cda39554853226b222436b2f66523c348ae1",
+      "blake3": "d6da982481922a121a22835ff670b0a56cf343ebd7e9670290f0ec67c7bf9951"
+    },
+    {
+      "path": "公式库/03-revenue-kpi.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7296,
+      "sha256": "31a070f6ed335a15ab95e9b409a575b9183b910001d623020bdfe25130a88073",
+      "blake3": "c25ab9a78f2870586e2541b029699a821b9147920816fad378ad46766bff7360"
+    },
+    {
+      "path": "公式库/04-channel-and-store.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17694,
+      "sha256": "d45b35b2b1ff35dc44a228b4bf477a08c39b29eef62fb471709cf91cd132d289",
+      "blake3": "e34bcf1bdf4e908d9492e5e43c9f24ca774dbace937c0224e6b19643810b8e46"
+    },
+    {
+      "path": "公式库/05-coupon-and-discount.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5520,
+      "sha256": "c93892ebacffc8cdfeac2fecda542a1dafaea6cd1e2b0d07a3327fb295196197",
+      "blake3": "c4e9aa4a7c0a9ceeefeb4292ffb4ced6aa8fb587178bbe9c86c59e7dcb31e319"
+    },
+    {
+      "path": "公式库/06-sql-utils.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10598,
+      "sha256": "dbaac672e23a15a0dc42594bfe99d8a5b9d08b42f968c82009af1362acb98ffc",
+      "blake3": "363327ff9a04d3d54e938a8ddcc937c61483c991ff9eb5ff3ecf1ab4ff393895"
+    },
+    {
+      "path": "公式库/07-data-quality-traps.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8942,
+      "sha256": "5f48ee72726c7d14258aed4313ccbec16324a42b4607ae1f49dbf1b028c2aebd",
+      "blake3": "49e498a8d4134ed9bd97ba70fa5dca379724bff24f171890d559456eede7f083"
+    },
+    {
+      "path": "公式库/08-etl-engineering-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14943,
+      "sha256": "eaed02041e7ff5906d7ae16ab1462cbd4822edf5e46e5d903eb4fc5cc9389727",
+      "blake3": "085038c6f57ecdcdebaa0d1e9a50ef7e41b717488144a71dfe61d5bade035a30"
+    },
+    {
+      "path": "公式库/09-etl-catalog.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14188,
+      "sha256": "f31babee9b5ebac0a953ebce24b429d62f50a30f828a3bf9b489211b837370f4",
+      "blake3": "a3ba75ad3d099ad051d072ba9a8c8dba26cdc4490b430121a81165d119d61b3f"
+    },
+    {
+      "path": "公式库/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5409,
+      "sha256": "19a574db817ee10a9c22c43c20fabc532a3dfe3b3ee5d762eaab4981501df423",
+      "blake3": "1f3aa874b762cec1824355d513b53cab052fb45af48c91a14d8536584138e265"
+    },
+    {
+      "path": "分享",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "分享/区域运营的一天",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "分享/区域运营的一天/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15682,
+      "sha256": "0de3ed185d6b0d9fa21d0abf2eb1b3c09261a670c29ebd5ca09bc0dc34399c0d",
+      "blake3": "00678dd7690e8239b9cbf06d387a6d217d34993246d3f16783e0d575fd73fdb0"
+    },
+    {
+      "path": "数据集",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "数据集/结构定义",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "数据集/结构定义/ads_会员私域驾驶舱.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3244,
+      "sha256": "d3ca72f6845804cb28919e99a8ebe00b53ac0128785dcd49bdb0738e774f14c7",
+      "blake3": "e9ccf712ddf107db1f3058c37a4ac0139314672308c9d74a11296d59fa3ecd78"
+    },
+    {
+      "path": "数据集/结构定义/ads_会员经营任务池.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6950,
+      "sha256": "56d81fb22f8ea4e04880f30638705b9a4c20513410182621b0e1e14868bc63f1",
+      "blake3": "24e3e982ff6bd7bd367f7692be811c3285a9c5cd8d76dfd35a7402fd7213b7f1"
+    },
+    {
+      "path": "数据集/结构定义/ads_加盟商单店报告.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10679,
+      "sha256": "870a8548fbdc8657a10939fcd4e537e0945206b2d0b270807c59ae3b0a3fc7c4",
+      "blake3": "9c419a8c1aea6d5d9a88f280e531f6b76bc03871d1ffc1917e8f3a132ace6141"
+    },
+    {
+      "path": "数据集/结构定义/ads_单店利润健康.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8061,
+      "sha256": "8f785dd8db3f5f324cc1ef3cd8d6e54fe15f25300893aad700e5e66dee5ac728",
+      "blake3": "4e5af44a0b9864b2830ccc6b3f2e750de573be524ccc96a1d8ea26b34728ce9c"
+    },
+    {
+      "path": "数据集/结构定义/ads_异常归因清单.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4027,
+      "sha256": "bad1a34ac72e0cade34c056f1671a6f0493068366736785b775e1de79dbbd067",
+      "blake3": "c8fc749c0f3a56470ae49eb001d8bb8bf06816eb6c1affd7ab3b859c2eace382"
+    },
+    {
+      "path": "数据集/结构定义/ads_活动权益复盘.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4318,
+      "sha256": "b84c43baa9c7a4726fe45af7b41d55c899b97481776a2dfd60e8ba7a462c8302",
+      "blake3": "fa83a7360e0e490d296931db1e4c1ddf9c76c8a22545f18b7cd68b7edd291565"
+    },
+    {
+      "path": "数据集/结构定义/ads_门店每日指挥台.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5671,
+      "sha256": "bdae067fd255bc37fea702f83d545e694209bae064ac138c85b77e1bff756541",
+      "blake3": "29353e067cec4f5027b23d240118e0ca81818c8b9adbb0814765242889c90c4f"
+    },
+    {
+      "path": "数据集/结构定义/ads_高层经营驾驶舱.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3380,
+      "sha256": "d6d211cbaf639dfca342a4d5b55c8ea2e4632ad2bd3bbe3042b2b189d41c9897",
+      "blake3": "7d0e039a3b59bdbc497ddd2c298ac5c4a77935c161e844c01435b7aeafe321d2"
+    },
+    {
+      "path": "数据集/结构定义/dim_会员主档.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3853,
+      "sha256": "9d4bf00a2b23065d72fa01a62f8517a2a50ac6a9aa346a3901a7a34be9096505",
+      "blake3": "c1fefa3c9b528ab955bf130b09360685c6674ff0f4eea0eeb41b5825a15b6be3"
+    },
+    {
+      "path": "数据集/结构定义/dim_会员身份桥.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3664,
+      "sha256": "e697bf884341f9a376cd8f3b4b8437aa23ae8120d7bf5c891475acdb499ccc7c",
+      "blake3": "3faf614e3182e386187c3e4231db37a2c2add5cdb20aa84efedffe16414ee1f0"
+    },
+    {
+      "path": "数据集/结构定义/dim_券模板.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2804,
+      "sha256": "51f5506ed08c03b45581a3f59a202a363bd22b697e80f00e0a0c6165c3279e68",
+      "blake3": "887de6060d57faf11e356800e464300d6093be79b5b3b9151ddf06f55dcc60a8"
+    },
+    {
+      "path": "数据集/结构定义/dim_加盟商主档.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3331,
+      "sha256": "18d95b4d77a3a0b62bf4ce1717d9d331e1197561406d31f8eff393d12d9e1343",
+      "blake3": "2c1bcd1b6ea8597ef994ae551dc0965ca0c108ba3d863ecb01b0c7c90c2ea191"
+    },
+    {
+      "path": "数据集/结构定义/dim_员工导购.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2733,
+      "sha256": "e2efe2cfada7fcd46018efe51a97b70d78bf03f17d99d08f7df7b157a8f54407",
+      "blake3": "11592c5699c23fcd2b1916e1d37b19869b97286603f2efb7decda04bac2eb641"
+    },
+    {
+      "path": "数据集/结构定义/dim_商品主档.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3339,
+      "sha256": "411e5b86bae99560897e81efa9cdb0552758f34a9b41ffe3e45c952d5466be2e",
+      "blake3": "8ee40914848e4c36a6c4c0aaefcda92f873bb2342b94b4f5ce27f4c6943cdeae"
+    },
+    {
+      "path": "数据集/结构定义/dim_成本科目.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2447,
+      "sha256": "ed8133d30a92f7f80860f0228bb941e5a6601de1f4d8d2f62c2a8ddb581d1e89",
+      "blake3": "b0169a47915d37ecdfc7be4acf468ce05567821efdab66162892d00d1e3c8d1d"
+    },
+    {
+      "path": "数据集/结构定义/dim_日期.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3309,
+      "sha256": "e14e7b96e8d9825f2bd8a84d21a3c9780102590faff835111e4b2e57d6cfcfea",
+      "blake3": "ad54b6c2ce316c3dfd094aaa66046e1102a26926716be54c72140206e9e05b50"
+    },
+    {
+      "path": "数据集/结构定义/dim_活动主档.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3083,
+      "sha256": "e36f670351cadf8417e074335c69da191a2fc5ea331b6c032e1651029250f9e1",
+      "blake3": "e9a69d7cb3005d3756533dfdae5ff7bc709f2132e3bedb48f573c027f7dfb8ed"
+    },
+    {
+      "path": "数据集/结构定义/dim_门店主档.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7075,
+      "sha256": "ad1ad9ad9f30d643f08dd934431822fed5e0a8acf7c94b926493b0f2cbcb79c8",
+      "blake3": "cba53897cfd172ee491b073210a4b55f5deffd4d21934b68f2b0b79c0ebad201"
+    },
+    {
+      "path": "数据集/结构定义/dqc_归因清单对账.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2283,
+      "sha256": "84038e45c721c6fb89b7110cb5d103df356bb7b8f3a8c7cd0039ae0bb3e9e8c1",
+      "blake3": "d9492d76edc8c6034ee273a1c3b29af3b9a706cdf2de94aca3e88e2b2a880689"
+    },
+    {
+      "path": "数据集/结构定义/dwd_会员注册绑定.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2539,
+      "sha256": "b1ba244d04103f17949578538d5a001d26d47035f8efd75b73956d2c8a94256c",
+      "blake3": "a524fc8116065464472354eaf9b303206048a258629eddb6918227696a1b7529"
+    },
+    {
+      "path": "数据集/结构定义/dwd_会员经营任务.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5104,
+      "sha256": "e2bf172837ba197f800332fa37df4ca38a2de5fd7a4e1b2ab95640422e703205",
+      "blake3": "8b9cc7c73ebe4fcf1092fcc40708f2a34bcc89c76b4c9c924269791e000f5f83"
+    },
+    {
+      "path": "数据集/结构定义/dwd_会员触达.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3669,
+      "sha256": "084f6d5948cdfc108ed66882ec3f1466729c82d75be2fe305280dcc9e74c2f49",
+      "blake3": "043f060e22a93b20fa24f123a4a9db1aec86bee0f647e346c6d2d3be4ff42ba7"
+    },
+    {
+      "path": "数据集/结构定义/dwd_券事件.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3359,
+      "sha256": "fce1d975c69d030f4c9e53cc070753237a3102b3b71395014b7e59025a4926e4",
+      "blake3": "24cb8541951560f3d8c785cef66888bc44c7ccb2cb0daf9507b53772b2793788"
+    },
+    {
+      "path": "数据集/结构定义/dwd_加盟分账明细.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3678,
+      "sha256": "8cdb1a1f82abaf93a1d11c2650e4d1f7d543c2a9855e4c738e6cc1d6edfa637d",
+      "blake3": "69034bf2c28c5d91c390e63921e14f39e5649926db6124cf6fff00ab90771a44"
+    },
+    {
+      "path": "数据集/结构定义/dwd_加盟合同明细.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4649,
+      "sha256": "c1a62046662b4aea39fd5c707e222e04c3af0d7b103743e59963c406161eb2d0",
+      "blake3": "38eedee6a1e4821d48c6197737ead21247a2d8d847a159d425feddd215dd06eb"
+    },
+    {
+      "path": "数据集/结构定义/dwd_投诉.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2801,
+      "sha256": "69becec362f5de33c1d8d78c1357176454696400f1214d8a590adb50fd91fb62",
+      "blake3": "78c744261773aaf0b43c42d098cbd7706ca7ae0b0034b259c38b7a4b723701bd"
+    },
+    {
+      "path": "数据集/结构定义/dwd_活动参与.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2362,
+      "sha256": "b830d25df650fbb69c929522f1cd2b21288a7a4296b016a68e8c399ef0927ab1",
+      "blake3": "034ddcdcdf89e1ac8bc848081e705989cca93f76ebcefe65f60ef19898b3a814"
+    },
+    {
+      "path": "数据集/结构定义/dwd_私域事件.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2860,
+      "sha256": "ce6b045365a76d06f401db1427a5ff3c43f9fa10d6f528b8528ee1bf0babae84",
+      "blake3": "a4b2616b098f228094b499818f0d3fefcc0b4ab36221f4c4e90e5bae4355591c"
+    },
+    {
+      "path": "数据集/结构定义/dwd_积分事件.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2533,
+      "sha256": "69ab241944b83af8b0dee4c8d26a59405450a8652e42cab2a4ef55ee75cfd4a7",
+      "blake3": "effff8f5d0226a4d9f755b176d6b04753a4443f3eef86f363ed6a50f6d5a18e5"
+    },
+    {
+      "path": "数据集/结构定义/dwd_订单.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6005,
+      "sha256": "85fa42c117edc3c4f78a464b893539056e5645244c91975b1f04e2f6c20e796b",
+      "blake3": "0f255c3a8941c99ea3b82a47359889379dba0d5f5ce8587fe1cbfcaa6079bfba"
+    },
+    {
+      "path": "数据集/结构定义/dwd_订单商品.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2473,
+      "sha256": "f6a85fd746a2e6213d14bb265949cb33669e3a97cb5ced54ad540340011cc866",
+      "blake3": "15e89f7333a4fd8550b04642cd879c4b35142a68d7b4ecc3dd676c463bf9b97d"
+    },
+    {
+      "path": "数据集/结构定义/dwd_评价.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3224,
+      "sha256": "f62c073ec28a92b2e45f28f075c3bf7a6520283360ee640b133164f8b71d7c8d",
+      "blake3": "1e55a36e4e42d5ec7d68bf398989ac0bdb9e4c24eb7d4680c5b8a07b4e74d789"
+    },
+    {
+      "path": "数据集/结构定义/dwd_门店成本明细.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3512,
+      "sha256": "e7b26d712db2022a745735b5e46e469c4d92779bfe09f37e9884a9586bb45836",
+      "blake3": "e94ad9bb9a4284e113f78138850402091c1af89adebc9ed029765eaa4cdeec4e"
+    },
+    {
+      "path": "数据集/结构定义/dwd_门店投资明细.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2694,
+      "sha256": "56fceac67b36af25c53dac07b5873888b45dc3dd41ccc55a121d197b6a54125f",
+      "blake3": "726ccc74487875d07a4a1a022a2cbb44c4b280e70ef054996811d63459ec08aa"
+    },
+    {
+      "path": "数据集/结构定义/dwd_门店目标.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2118,
+      "sha256": "dc99deae7940cbaddfaf1372308f948a5a68c705fca648e224c7c214c027a3b8",
+      "blake3": "cf13e31b5f53c227df6e0cd3ffcca587b7a1e0f0dec917bc69d345f664dab8db"
+    },
+    {
+      "path": "数据集/结构定义/dws_会员RFM分层.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3563,
+      "sha256": "2f6aceacff78defb6f3b313c9433f2ab13ce5da44a7ddf0dea79e8f3e5a278f8",
+      "blake3": "a8334f1f97cec5abddb97b6714713b6622390001d74cdbe19ceb761325cada68"
+    },
+    {
+      "path": "数据集/结构定义/dws_会员同期群留存.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1814,
+      "sha256": "b20db811c1ac6fb5d1ea6d0d7703a1b4ef2cbfc95bc45528355df1cb88a30907",
+      "blake3": "e3905d9a4a9856578bfcfc5a0cdb7d26b4fef6b4387ed41f7751728e89b79755"
+    },
+    {
+      "path": "数据集/结构定义/dws_会员生命周期.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3867,
+      "sha256": "55d5ced1a948a1b169bd833a89af131d15ebb97dd8ddad06d61a1cfb8a0fa572",
+      "blake3": "92b840d04f18e2bb15d303b1c99f6645ab04463cff99daf1f62a4c17f3d54da2"
+    },
+    {
+      "path": "数据集/结构定义/dws_体验口碑汇总.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4627,
+      "sha256": "3993dd74754239bba6a82735dfa9c1fbff34108936f7ff1304c8f607e9337682",
+      "blake3": "06fba7d65b540b16dc3cadf6bc9051c4d71278e811540a37464ba57811d1e763"
+    },
+    {
+      "path": "数据集/结构定义/dws_券效益分析.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3407,
+      "sha256": "bd956653b1246fd4c48ea5adc0c0892cd5cf048912ffac419fb6a15d700bc5f6",
+      "blake3": "2500a97f1303824a0e2b86b78e1936e1fbdbb908cdc0409bc06bd7be5e6986dd"
+    },
+    {
+      "path": "数据集/结构定义/dws_加盟商经营汇总.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5771,
+      "sha256": "3e0f1f6ac4babeec9b3baec2ff91768c7c0cd90816be8304cb0e6095bfd3b521",
+      "blake3": "f985b9a7d862251f4eb657376ed19468ea0b3282353a31910b4168ff3a02cc19"
+    },
+    {
+      "path": "数据集/结构定义/dws_加盟回本测算.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5570,
+      "sha256": "f8e16f9447665ec590ca0758194e338a289a71e5d8afe45c19b7cc720910d6bf",
+      "blake3": "40826388b99558ba64a47629c9bfdbfbad4e9095a75c08d5e6caf37e5dbbe694"
+    },
+    {
+      "path": "数据集/结构定义/dws_单店利润月汇总.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8897,
+      "sha256": "c1a8a43bf254bf0004b40efcdc0326ab8f257ecbe290872e0d773bc1d01417c0",
+      "blake3": "4a2a29407f0a30e164126231afbfa6fbb43b7bc9b03ff35b12bbefcf1515c197"
+    },
+    {
+      "path": "数据集/结构定义/dws_员工导购效能.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3872,
+      "sha256": "87c4bcf24614ef4b0303ddbf87967703ddefd9568848d6f57f94ce62a36679bc",
+      "blake3": "14f95b5a83e3e094eb065ad715e74d811e22e99cb575d3728aec7165f7076fe7"
+    },
+    {
+      "path": "数据集/结构定义/dws_商品销售分析.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3962,
+      "sha256": "ba900ce0f9a2a127da25bd1173162375954cb1cf95bf7af80f3372307ad0d558",
+      "blake3": "a596579c11c4206fbb4088eb77d0bd27fe619a6be18706dcff20c58b8f7fdc53"
+    },
+    {
+      "path": "数据集/结构定义/dws_成本结构汇总.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4091,
+      "sha256": "6ad00233f5c1697330720c22c6bbea9b5ae1ac06aed22742824c445b874a5d18",
+      "blake3": "fc978c99896c4a0b3935bc915d667af6443a2f49decee5a265cbe982465e9bd5"
+    },
+    {
+      "path": "数据集/结构定义/dws_新店爬坡_Comp老店.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4419,
+      "sha256": "6e16302e299a65232362e69ffb5c4e2ee877f07c0336928a939509626faeff89",
+      "blake3": "9921cffa09812693128dbc47585341b8af027ee9e00dc1ff1f455108bd3a39ed"
+    },
+    {
+      "path": "数据集/结构定义/dws_渠道迁移分析.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2663,
+      "sha256": "b90d29e0cafe52a9285981c0000a393f002ea21f42e2343bf8e6b07791bce070",
+      "blake3": "fc0565a1cce4817e5215be419c0c68fd7e02170116d3403cc928f8a24ecd9dd3"
+    },
+    {
+      "path": "数据集/结构定义/dws_目标达成.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2442,
+      "sha256": "7b0810d9e84c86494c3c435ac450a309760917bd1302379731391a2d23b3dd93",
+      "blake3": "6f5e40ac729410e426fde520697b4afc2f1568bfcd71fdf488bb0b27f3153716"
+    },
+    {
+      "path": "数据集/结构定义/dws_私域转化漏斗.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3557,
+      "sha256": "72f42177d4916112000a2a7b8d4d828ac56cc77fd655c2db3414b90e0b5cded8",
+      "blake3": "4a64301a28cee3ea937cb0f221fb09e696239f624109c04d709032c00d0d4a01"
+    },
+    {
+      "path": "数据集/结构定义/dws_门店日报.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7449,
+      "sha256": "1be12503b9bdc7fd00b57b2b1432dd2bf03741ef9fb2dff5d23cfcea31abdbfa",
+      "blake3": "aa82409cc975ce460b0b58ac05f5f726b4dc1b46708a9a9611e2b45bb5e449e0"
+    },
+    {
+      "path": "数据集/结构定义/param_会员生命周期阈值.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1975,
+      "sha256": "d5ec76d2641f2540d67cc53245a971e3a926bd126946858137af3876d7af28fb",
+      "blake3": "114654846b50bf39276efdfd751b69bc7da1fa5064ab33408ea125c0f633b809"
+    },
+    {
+      "path": "数据集/结构定义/param_利润健康阈值.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2718,
+      "sha256": "e290a6864f52911f47a555b0d153d2a59ee61470f1d3efb620ebb4cea3a7226b",
+      "blake3": "e39315c4b413bed163ea4ab0907a0a0d7529f966750d2ffbe0f036d11ab4572a"
+    },
+    {
+      "path": "数据集/结构定义/param_豁免日历.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1825,
+      "sha256": "ad80267291d06aaa061f853a52c5b827ee488515f34cabc5558974d723315781",
+      "blake3": "550bfdee1a6d8eca8f0fdc8451c0860af1a019db7e819ad133365ebec8d4d56f"
+    },
+    {
+      "path": "清单",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "清单/ETL清单.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1677,
+      "sha256": "b6730b0ed09f7de5042fae0bfadc06d82a2b723148185008e0673fda27cc7353",
+      "blake3": "7ad0dbd777f73b63e93e6400d1e1d1ed22eb5a4af5862006aeac4b8d95068a56"
+    },
+    {
+      "path": "清单/数据集清单.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2707,
+      "sha256": "408b7d09c13198d832f5ce81df292fe2ecb5a5bef7a2c53522d631f71b5be0be",
+      "blake3": "f9079d567d67b4afa62da58286e4a509e5831d4aad57920bb36c354c423b8c64"
+    },
+    {
+      "path": "清单/看板清单.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 615,
+      "sha256": "76780f7c12995b4661861903e94c5c6bc57b8b60a16c2a56d9dd07e812d16c01",
+      "blake3": "598af6b2a869c7d2927ec35f82be5a2b2e46f68baf37d286dc4c71dcb8dd51a0"
+    },
+    {
+      "path": "看板",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "看板/页面文档",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "看板/页面文档/01-高层经营驾驶舱.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1559,
+      "sha256": "7018e014641eae159397798cf4193ee3b39f655e84f074b3f9e038e58e8ce6d4",
+      "blake3": "d73f21327a34834ed1fb291ff0c29ec1d9f01d3a95a9d1a651b652ca5a865c87"
+    },
+    {
+      "path": "看板/页面文档/02-会员私域驾驶舱.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1805,
+      "sha256": "ab45342744628e21c89eb5ad4666b39f1aa2e51e05bfff0b3a321d40bf632c33",
+      "blake3": "3d68dbe2d8586d7475e88308fc7c3ebe4437a2c02bd5bfe1d2ae0b792b93c672"
+    },
+    {
+      "path": "看板/页面文档/03-会员经营任务池.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2203,
+      "sha256": "409b29142d1b4eccc231926486d64c18cb0f41db8a0c280017c146c76d5f7c34",
+      "blake3": "f668ae38999daacef42d01aa30d99e541dcc9c46affa176cdd2e0522bfa92d97"
+    },
+    {
+      "path": "看板/页面文档/04-门店每日指挥台.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2263,
+      "sha256": "43a287c9759777fd54a504ff247c1b99a40ab4c62f9297aedbe1e01dee9a43f0",
+      "blake3": "6c05789f8593f36d48caba9ebcb4588ff953edcc4854af26d1ac0c2bf69c17fa"
+    },
+    {
+      "path": "看板/页面文档/05-活动权益复盘.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1586,
+      "sha256": "c8e594eb18b1a603c7a947dd1149a196090b18b59adc50d4953801e686301df1",
+      "blake3": "0ec306e95a91b1f698fc32f5b1fc71af70885d0cc641c21433b3dc77e4fb72c2"
+    },
+    {
+      "path": "看板/页面文档/06-体验风险专题.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1965,
+      "sha256": "b7029763c1fc70005eb03410b21e9c7cb0ea80c0f6699ca13706a426f0651732",
+      "blake3": "8905a8eb12268ce3015a64623ba6857330037d486194831ca663fc068a4e19ef"
+    },
+    {
+      "path": "看板/页面文档/07-单店利润健康.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2604,
+      "sha256": "b8d1946459e2fe5734ce67336db80eb0da15e1145c807387ad94b6cbe7cdc0d3",
+      "blake3": "bf45f9aa8089d2e440a0f5b3c52cd79979aa395da140ec4e24be4fb2d8f29f8d"
+    },
+    {
+      "path": "看板/页面文档/08-加盟商单店报告.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3281,
+      "sha256": "ec492cf79dc680cbac75136660dd5b989625f744d0e39270a0bfe5ca2c594429",
+      "blake3": "934d28b3a04dcdbb1053bc7118d3864eb8674bc54abe3fc45d4f22b92444b119"
+    },
+    {
+      "path": "看板/页面文档/09-总览(ECharts重构).md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3737,
+      "sha256": "820f58a32b7693db981dc57374270580ae0f7650207c43152e9834cace4a412e",
+      "blake3": "ec97698a7d9f4cc2666665d2c8469a49da98da2cc5279b6515b7b0b9804f255d"
+    },
+    {
+      "path": "看板/页面文档/10-异常归因作战页.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20794,
+      "sha256": "e9dfa02624939c7a42859b60c5150b7775fe1fdb466874f782a223978e54774c",
+      "blake3": "e4e332ab287163308a763138e26502ce7e661fb41d6210cc47f376787d0ff769"
+    },
+    {
+      "path": "看板/页面文档/参赛作品提交—马甲.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 754,
+      "sha256": "eabc2320093e5a4658f00e82ac16aa4669ffdaf4c60e8270729f323d26fe3d51",
+      "blake3": "724fafaf220faaec0c87eedbe6ddfd01116b97f7c72be2307505b38446c473a5"
+    },
+    {
+      "path": "看板/页面文档/外卖业绩近30天GMV增长情况.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6940,
+      "sha256": "bf4d664512a824e5d97539fc456e83cfaec6ebc8962859886a990566c3e1b248",
+      "blake3": "4a918f86688821a3bbc2bc098c2ae8973a2cf522c93c09eaf6eecc6bc40a1e42"
+    }
+  ]
+}
