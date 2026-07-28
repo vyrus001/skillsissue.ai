@@ -306,6 +306,7 @@ jobs:
             "${{ needs.plan.outputs.shard_count }}" \
             "${{ needs.plan.outputs.adapter }}" \
             "${{ needs.plan.outputs.per_shard_limit }}"
+          printf '%s\n' "${{ matrix.shard_index }}" > publication/shard-index
           actual_bytes="$(( $(du -sk --apparent-size publication | cut -f1) * 1024 ))"
           actual_files="$(find publication -type f | wc -l | tr -d ' ')"
           test "$actual_bytes" -le "${{ needs.plan.outputs.per_shard_max_bytes }}"
@@ -372,30 +373,61 @@ jobs:
           SHARD_COUNT: ${{ needs.plan.outputs.shard_count }}
         run: |
           test -d "$DOWNLOAD_ROOT"
-          unexpected_root_entry="$(find "$DOWNLOAD_ROOT" -mindepth 1 -maxdepth 1 ! -type d -print -quit)"
-          test -z "$unexpected_root_entry"
           downloaded_link="$(find "$DOWNLOAD_ROOT" -type l -print -quit)"
           test -z "$downloaded_link"
 
+          resolve_shard_index() {
+            local shard_root="$1"
+            local artifact_name
+            local manifest_index
+            local shard_index
+            if test "$shard_root" = "$DOWNLOAD_ROOT"; then
+              if test -f "$shard_root/shard-index"; then
+                shard_index="$(cat "$shard_root/shard-index")"
+              else
+                # download-artifact@v5+ extracts a single pattern match directly
+                # into `path`. Legacy one-shard artifacts therefore have no
+                # directory name from which to recover the shard index.
+                test "$SHARD_COUNT" -eq 1
+                shard_index=0
+              fi
+            else
+              artifact_name="${shard_root##*/}"
+              case "$artifact_name" in
+                "$ARTIFACT_PREFIX-shard-"*) ;;
+                *) return 1 ;;
+              esac
+              shard_index="${artifact_name#"$ARTIFACT_PREFIX-shard-"}"
+            fi
+            case "$shard_index" in
+              ''|*[!0-9]*) return 1 ;;
+            esac
+            test "$shard_index" -lt "$SHARD_COUNT"
+            if test -f "$shard_root/shard-index"; then
+              manifest_index="$(cat "$shard_root/shard-index")"
+              test "$manifest_index" = "$shard_index"
+            fi
+            printf '%s\n' "$shard_index"
+          }
+
           declare -A seen_shards=()
-          mapfile -d '' shard_roots < <(find "$DOWNLOAD_ROOT" -mindepth 1 -maxdepth 1 -type d -print0 | sort -z)
+          declare -A shard_indices=()
+          if test -f "$DOWNLOAD_ROOT/data/runs.csv"; then
+            shard_roots=("$DOWNLOAD_ROOT")
+          else
+            unexpected_root_entry="$(find "$DOWNLOAD_ROOT" -mindepth 1 -maxdepth 1 ! -type d -print -quit)"
+            test -z "$unexpected_root_entry"
+            mapfile -d '' shard_roots < <(find "$DOWNLOAD_ROOT" -mindepth 1 -maxdepth 1 -type d -print0 | sort -z)
+          fi
           test "${#shard_roots[@]}" -ge 1
           test "${#shard_roots[@]}" -le "$SHARD_COUNT"
           for shard_root in "${shard_roots[@]}"; do
-            artifact_name="${shard_root##*/}"
-            case "$artifact_name" in
-              "$ARTIFACT_PREFIX-shard-"*) ;;
-              *) exit 1 ;;
-            esac
-            shard_index="${artifact_name#"$ARTIFACT_PREFIX-shard-"}"
-            case "$shard_index" in
-              ''|*[!0-9]*) exit 1 ;;
-            esac
-            test "$shard_index" -lt "$SHARD_COUNT"
+            shard_index="$(resolve_shard_index "$shard_root")"
             test -z "${seen_shards[$shard_index]+present}"
             seen_shards[$shard_index]=1
+            shard_indices["$shard_root"]="$shard_index"
             test -f "$shard_root/data/runs.csv"
-            unexpected_file="$(find "$shard_root" -type f ! -path "$shard_root/data/runs.csv" ! -path "$shard_root/telemetry/*" -print -quit)"
+            unexpected_file="$(find "$shard_root" -type f ! -path "$shard_root/data/runs.csv" ! -path "$shard_root/shard-index" ! -path "$shard_root/telemetry/*" -print -quit)"
             test -z "$unexpected_file"
             shard_bytes="$(( $(du -sk --apparent-size "$shard_root" | cut -f1) * 1024 ))"
             shard_files="$(find "$shard_root" -type f | wc -l | tr -d ' ')"
@@ -420,8 +452,7 @@ jobs:
             cp "$worktree/data/skills.csv" "$merge_state/skills.csv"
             first_shard=1
             for shard_root in "${shard_roots[@]}"; do
-              artifact_name="${shard_root##*/}"
-              shard_index="${artifact_name#"$ARTIFACT_PREFIX-shard-"}"
+              shard_index="${shard_indices[$shard_root]}"
               docker run --rm --read-only --network none --cap-drop ALL \
                 --user "$(id -u):$(id -g)" \
                 --mount "type=bind,src=$shard_root,dst=/staging,readonly" \
