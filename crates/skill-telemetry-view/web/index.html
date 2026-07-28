@@ -58,9 +58,9 @@
         <section>
           <div class="section-heading">
             <h2>Filter</h2>
-            <button id="refresh-layout" class="refresh-button" type="button">Refresh layout</button>
+            <button id="refresh-layout" class="refresh-button" type="button">Reheat layout</button>
           </div>
-          <p id="filter-layout-note" class="filter-layout-note">Filters update immediately. Refresh removes empty timeline rows.</p>
+          <p id="filter-layout-note" class="filter-layout-note">Filters update immediately. Reheat redistributes visible nodes.</p>
           <label class="search-field" for="search">
             <span aria-hidden="true">⌕</span>
             <input id="search" type="search" placeholder="Process, path, endpoint…" autocomplete="off">
@@ -101,13 +101,12 @@
       <main class="graph-panel">
         <div class="graph-toolbar">
           <div>
-            <span class="axis-key"><i></i> occurrence time ↓</span>
-            <span class="tree-key">execution depth →</span>
+            <span class="axis-key"><i></i> force-directed topology</span>
+            <span class="tree-key">drag nodes · drag canvas to pan · wheel to zoom</span>
           </div>
         </div>
         <div id="canvas-wrap" class="canvas-wrap">
-          <canvas id="graph" tabindex="0" aria-label="Chronological execution tree"></canvas>
-          <div id="scroll-spacer" class="scroll-spacer" aria-hidden="true"></div>
+          <canvas id="graph" tabindex="0" aria-label="Force-directed telemetry execution graph"></canvas>
           <div id="loading" class="loading-card">
             <span class="spinner" aria-hidden="true"></span>
             <strong>Replaying telemetry</strong>

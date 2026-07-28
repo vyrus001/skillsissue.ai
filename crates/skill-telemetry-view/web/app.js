@@ -5,20 +5,19 @@ const canvas = $("#graph");
 const context = canvas.getContext("2d");
 const shell = $(".app-shell");
 const canvasWrap = $("#canvas-wrap");
-const scrollSpacer = $("#scroll-spacer");
 const VIEWER = Object.freeze(window.SKILLSISSUE_VIEWER || { mode: "server" });
 let staticSnapshotPromise = null;
 let staticEventMap = null;
 const staticEventPagePromises = new Map();
 
 const LAYOUT = {
-  rowHeight: 88,
-  top: 70,
-  bottom: 76,
   nodeWidth: 196,
   nodeHeight: 64,
-  timelineGutter: 88,
-  rightPadding: 34,
+  processLinkDistance: 270,
+  activityLinkDistance: 205,
+  chargeRadius: 440,
+  collisionPadding: 24,
+  fitPadding: 44,
 };
 
 const COLORS = {
@@ -34,19 +33,22 @@ const state = {
   positions: new Map(),
   visible: [],
   layoutNodes: [],
-  layoutCompacted: false,
+  visibleEdges: [],
   visibleIds: new Set(),
   nodeById: new Map(),
   zoom: 1,
   panX: 0,
-  worldHeight: 900,
-  maxDepth: 0,
+  panY: 0,
+  simulationAlpha: 0,
+  simulationFrame: null,
+  simulationTicks: 0,
   categories: new Set(["process", "file", "socket", "fd", "other"]),
   search: "",
   transport: "all",
   direction: "all",
   selected: null,
   dragging: false,
+  dragNode: null,
   dragStart: null,
   pointerStart: null,
 };
@@ -222,36 +224,63 @@ function renderCategoryFilters() {
   }
 }
 
-function calculateLayout(nodes = state.layoutCompacted ? state.layoutNodes : state.model.nodes) {
-  const model = state.model;
-  const width = canvasWrap.clientWidth || 900;
-  state.maxDepth = Math.max(0, ...model.nodes.map((node) => node.depth));
-  state.layoutNodes = nodes;
-  state.worldHeight = Math.max(
-    canvasWrap.clientHeight || 640,
-    LAYOUT.top + Math.max(0, nodes.length - 1) * LAYOUT.rowHeight + LAYOUT.bottom,
+function calculateLayout(nodes = state.visible, { preservePositions = false } = {}) {
+  stopSimulation();
+  const previous = state.positions;
+  state.layoutNodes = [...nodes];
+  state.nodeById = new Map(state.model.nodes.map((node) => [node.id, node]));
+  state.visibleEdges = state.model.edges.filter(
+    (edge) => state.visibleIds.has(edge.source) && state.visibleIds.has(edge.target),
   );
-  state.positions.clear();
-  state.nodeById = new Map(model.nodes.map((node) => [node.id, node]));
+  state.positions = new Map();
 
-  const left = LAYOUT.timelineGutter + LAYOUT.nodeWidth / 2 + 16;
-  const right = Math.max(left, width - LAYOUT.rightPadding - LAYOUT.nodeWidth / 2);
-  const laneWidth = Math.max(0, right - left);
-
-  nodes.forEach((node, index) => {
-    const depthRatio = state.maxDepth === 0 ? .5 : node.depth / state.maxDepth;
+  state.layoutNodes.forEach((node, index) => {
+    const retained = preservePositions ? previous.get(node.id) : null;
+    const seeded = retained || initialPosition(node, index, state.layoutNodes.length);
     state.positions.set(node.id, {
-      x: left + laneWidth * depthRatio,
-      y: LAYOUT.top + index * LAYOUT.rowHeight,
+      x: seeded.x,
+      y: seeded.y,
+      vx: retained?.vx || 0,
+      vy: retained?.vy || 0,
       width: LAYOUT.nodeWidth,
       height: LAYOUT.nodeHeight,
-      row: index,
+      index,
+      fixed: false,
     });
   });
-  updateScrollExtent();
+
+  const warmup = state.layoutNodes.length < 300 ? 80
+    : state.layoutNodes.length < 1_200 ? 38
+      : state.layoutNodes.length < 3_000 ? 20 : 10;
+  for (let index = 0; index < warmup; index += 1) {
+    simulationStep(1 - (index / Math.max(1, warmup)) * .48);
+  }
+  startSimulation(.58);
 }
 
-function applyFilters({ resetLayout = true } = {}) {
+function initialPosition(node, index, count) {
+  const goldenAngle = Math.PI * (3 - Math.sqrt(5));
+  const jitter = hashFraction(node.id);
+  const angle = index * goldenAngle + jitter * .9;
+  const spacing = count > 2_000 ? 112 : count > 600 ? 126 : 144;
+  const radius = Math.sqrt(index + 1) * spacing;
+  const processBias = node.kind === "process" ? node.depth * 48 : 0;
+  return {
+    x: Math.cos(angle) * radius + processBias,
+    y: Math.sin(angle) * radius,
+  };
+}
+
+function hashFraction(value) {
+  let hash = 2166136261;
+  for (let index = 0; index < value.length; index += 1) {
+    hash ^= value.charCodeAt(index);
+    hash = Math.imul(hash, 16777619);
+  }
+  return (hash >>> 0) / 0xffffffff;
+}
+
+function applyFilters({ resetLayout = false } = {}) {
   if (!state.model) return;
   const query = state.search.toLowerCase();
   state.visible = state.model.nodes.filter((node) => {
@@ -266,27 +295,140 @@ function applyFilters({ resetLayout = true } = {}) {
     return true;
   });
   state.visibleIds = new Set(state.visible.map((node) => node.id));
-  if (resetLayout) {
-    state.layoutCompacted = false;
-    calculateLayout(state.model.nodes);
-    $("#filter-layout-note").textContent = `${formatCount(state.visible.length)} visible nodes. Refresh removes empty rows.`;
-  }
+  calculateLayout(state.visible, { preservePositions: !resetLayout });
+  $("#filter-layout-note").textContent = `${formatCount(state.visible.length)} visible nodes · force layout settling.`;
   $("#empty-state").hidden = state.visible.length !== 0;
   draw();
 }
 
 function refreshFilteredLayout() {
-  state.layoutCompacted = true;
-  calculateLayout([...state.visible]);
-  canvasWrap.scrollTop = 0;
-  $("#filter-layout-note").textContent = `${formatCount(state.visible.length)} visible nodes packed chronologically.`;
-  draw();
+  calculateLayout(state.visible, { preservePositions: false });
+  fitGraph();
+  $("#filter-layout-note").textContent = `${formatCount(state.visible.length)} visible nodes · force layout reheated.`;
 }
 
-function updateScrollExtent() {
-  const viewportHeight = Math.max(1, canvasWrap.clientHeight);
-  const scaledHeight = Math.max(viewportHeight, state.worldHeight * state.zoom);
-  scrollSpacer.style.height = `${Math.max(1, scaledHeight - viewportHeight)}px`;
+function startSimulation(alpha = .58) {
+  state.simulationAlpha = Math.max(state.simulationAlpha, alpha);
+  state.simulationTicks = 0;
+  if (state.simulationFrame !== null || !state.layoutNodes.length) return;
+  const frame = () => {
+    state.simulationFrame = null;
+    const steps = state.layoutNodes.length > 1_500 ? 1 : 2;
+    for (let index = 0; index < steps; index += 1) {
+      simulationStep(state.simulationAlpha);
+      state.simulationAlpha *= .965;
+      state.simulationTicks += 1;
+    }
+    draw();
+    if (state.simulationAlpha > .012 && state.simulationTicks < 320) {
+      state.simulationFrame = requestAnimationFrame(frame);
+    } else {
+      state.simulationAlpha = 0;
+      $("#filter-layout-note").textContent = `${formatCount(state.visible.length)} visible nodes · layout settled.`;
+    }
+  };
+  state.simulationFrame = requestAnimationFrame(frame);
+}
+
+function stopSimulation() {
+  if (state.simulationFrame !== null) cancelAnimationFrame(state.simulationFrame);
+  state.simulationFrame = null;
+  state.simulationAlpha = 0;
+}
+
+function simulationStep(alpha) {
+  const positions = state.layoutNodes.map((node) => state.positions.get(node.id)).filter(Boolean);
+  if (!positions.length) return;
+
+  for (const edge of state.visibleEdges) {
+    const source = state.positions.get(edge.source);
+    const target = state.positions.get(edge.target);
+    if (!source || !target) continue;
+    let dx = target.x - source.x;
+    let dy = target.y - source.y;
+    let distance = Math.hypot(dx, dy);
+    if (distance < .001) {
+      const angle = hashFraction(edge.id) * Math.PI * 2;
+      dx = Math.cos(angle);
+      dy = Math.sin(angle);
+      distance = 1;
+    }
+    const desired = edge.kind === "activity" ? LAYOUT.activityLinkDistance : LAYOUT.processLinkDistance;
+    const force = (distance - desired) * .012 * alpha;
+    const fx = dx / distance * force;
+    const fy = dy / distance * force;
+    if (!source.fixed) {
+      source.vx += fx;
+      source.vy += fy;
+    }
+    if (!target.fixed) {
+      target.vx -= fx;
+      target.vy -= fy;
+    }
+  }
+
+  const cellSize = LAYOUT.chargeRadius;
+  const grid = new Map();
+  for (const point of positions) {
+    const cellX = Math.floor(point.x / cellSize);
+    const cellY = Math.floor(point.y / cellSize);
+    const key = `${cellX}:${cellY}`;
+    if (!grid.has(key)) grid.set(key, []);
+    grid.get(key).push(point);
+  }
+
+  for (const point of positions) {
+    const cellX = Math.floor(point.x / cellSize);
+    const cellY = Math.floor(point.y / cellSize);
+    for (let offsetX = -1; offsetX <= 1; offsetX += 1) {
+      for (let offsetY = -1; offsetY <= 1; offsetY += 1) {
+        const neighbors = grid.get(`${cellX + offsetX}:${cellY + offsetY}`) || [];
+        for (const other of neighbors) {
+          if (other.index <= point.index) continue;
+          let dx = other.x - point.x;
+          let dy = other.y - point.y;
+          let distance = Math.hypot(dx, dy);
+          if (distance >= LAYOUT.chargeRadius) continue;
+          if (distance < .001) {
+            const angle = hashFraction(`${point.index}:${other.index}`) * Math.PI * 2;
+            dx = Math.cos(angle);
+            dy = Math.sin(angle);
+            distance = 1;
+          }
+          const minimum = (Math.max(point.width, point.height) + Math.max(other.width, other.height)) / 2
+            + LAYOUT.collisionPadding;
+          let force = (1 - distance / LAYOUT.chargeRadius) * 1.1 * alpha;
+          if (distance < minimum) force += (minimum - distance) * .055 * alpha;
+          const fx = dx / distance * force;
+          const fy = dy / distance * force;
+          if (!point.fixed) {
+            point.vx -= fx;
+            point.vy -= fy;
+          }
+          if (!other.fixed) {
+            other.vx += fx;
+            other.vy += fy;
+          }
+        }
+      }
+    }
+  }
+
+  for (const point of positions) {
+    if (point.fixed) {
+      point.vx = 0;
+      point.vy = 0;
+      continue;
+    }
+    point.vx += -point.x * .0008 * alpha;
+    point.vy += -point.y * .0008 * alpha;
+    point.vx *= .76;
+    point.vy *= .76;
+    const speed = Math.hypot(point.vx, point.vy);
+    const scale = speed > 24 ? 24 / speed : 1;
+    point.x += point.vx * scale;
+    point.y += point.vy * scale;
+  }
 }
 
 function resizeCanvas() {
@@ -306,117 +448,46 @@ function draw() {
   resizeCanvas();
   const rect = canvas.getBoundingClientRect();
   context.clearRect(0, 0, rect.width, rect.height);
-  const view = visibleWorldRange(rect.height);
-  drawTimelineRows(rect, view);
+  const view = visibleWorldBounds(rect);
 
   context.save();
-  context.translate(horizontalTranslation(rect.width), -canvasWrap.scrollTop);
+  context.translate(state.panX, state.panY);
   context.scale(state.zoom, state.zoom);
-  for (const edge of state.model.edges) {
-    if (!state.visibleIds.has(edge.source) || !state.visibleIds.has(edge.target)) continue;
+  for (const edge of state.visibleEdges) {
     const source = state.positions.get(edge.source);
     const target = state.positions.get(edge.target);
-    if (!source || !target || !verticalSpanIsVisible(source.y, target.y, view)) continue;
+    if (!source || !target || !edgeIntersectsView(source, target, view)) continue;
     drawEdge(edge);
   }
   for (const node of state.visible) {
     const position = state.positions.get(node.id);
-    if (position && position.y >= view.start && position.y <= view.end) drawNode(node);
+    if (position && nodeIntersectsView(position, view)) drawNode(node);
   }
   context.restore();
-  drawDepthHeader(rect);
 }
 
-function visibleWorldRange(viewportHeight) {
-  const buffer = LAYOUT.rowHeight * 2;
+function visibleWorldBounds(rect) {
+  const padding = Math.max(LAYOUT.nodeWidth, LAYOUT.nodeHeight);
   return {
-    start: Math.max(0, canvasWrap.scrollTop / state.zoom - buffer),
-    end: (canvasWrap.scrollTop + viewportHeight) / state.zoom + buffer,
+    left: -state.panX / state.zoom - padding,
+    right: (rect.width - state.panX) / state.zoom + padding,
+    top: -state.panY / state.zoom - padding,
+    bottom: (rect.height - state.panY) / state.zoom + padding,
   };
 }
 
-function verticalSpanIsVisible(sourceY, targetY, view) {
-  return Math.max(sourceY, targetY) >= view.start && Math.min(sourceY, targetY) <= view.end;
+function nodeIntersectsView(position, view) {
+  return position.x + position.width / 2 >= view.left
+    && position.x - position.width / 2 <= view.right
+    && position.y + position.height / 2 >= view.top
+    && position.y - position.height / 2 <= view.bottom;
 }
 
-function horizontalTranslation(viewportWidth) {
-  return state.panX + (viewportWidth / 2) * (1 - state.zoom);
-}
-
-function screenX(worldX, viewportWidth) {
-  return horizontalTranslation(viewportWidth) + worldX * state.zoom;
-}
-
-function drawTimelineRows(rect, view) {
-  context.save();
-  context.lineWidth = 1;
-  context.font = "10px ui-monospace, SFMono-Regular, Menlo, monospace";
-  const firstRow = Math.max(0, Math.floor((view.start - LAYOUT.top) / LAYOUT.rowHeight));
-  const lastRow = Math.min(
-    state.layoutNodes.length - 1,
-    Math.ceil((view.end - LAYOUT.top) / LAYOUT.rowHeight),
-  );
-
-  for (let index = firstRow; index <= lastRow; index += 1) {
-    const node = state.layoutNodes[index];
-    const position = state.positions.get(node.id);
-    const y = position.y * state.zoom - canvasWrap.scrollTop;
-    context.strokeStyle = "rgba(81, 118, 108, .17)";
-    context.beginPath();
-    context.moveTo(LAYOUT.timelineGutter, y);
-    context.lineTo(rect.width, y);
-    context.stroke();
-    context.fillStyle = state.visibleIds.has(node.id) ? "#78928a" : "#405751";
-    context.fillText(formatNodeTime(node), 9, y + 3);
-  }
-
-  const depthPositions = depthScreenPositions(rect.width);
-  for (const { x } of depthPositions) {
-    context.strokeStyle = "rgba(81, 118, 108, .09)";
-    context.beginPath();
-    context.moveTo(x, 0);
-    context.lineTo(x, rect.height);
-    context.stroke();
-  }
-  context.restore();
-}
-
-function drawDepthHeader(rect) {
-  context.save();
-  context.fillStyle = "rgba(7, 16, 15, .94)";
-  context.fillRect(0, 0, rect.width, 29);
-  context.strokeStyle = "rgba(81, 118, 108, .22)";
-  context.beginPath();
-  context.moveTo(0, 28.5);
-  context.lineTo(rect.width, 28.5);
-  context.stroke();
-  context.fillStyle = "#69837c";
-  context.font = "9px ui-monospace, SFMono-Regular, Menlo, monospace";
-  context.fillText("time", 9, 18);
-  const compactLabels = rect.width < 760;
-  let previousLabelX = -Infinity;
-  depthScreenPositions(rect.width).forEach(({ depth, x }) => {
-    const minimumGap = compactLabels ? 34 : 52;
-    if (x - previousLabelX < minimumGap) return;
-    const label = compactLabels ? `d${depth}` : `depth ${depth}`;
-    context.fillText(label, x - (compactLabels ? 7 : 20), 18);
-    previousLabelX = x;
-  });
-  context.restore();
-}
-
-function depthScreenPositions(viewportWidth) {
-  const positions = [];
-  if (!state.layoutNodes.length) return positions;
-  const representative = new Map();
-  for (const node of state.layoutNodes) {
-    if (!representative.has(node.depth)) representative.set(node.depth, node.id);
-  }
-  for (let depth = 0; depth <= state.maxDepth; depth += 1) {
-    const id = representative.get(depth);
-    if (id) positions.push({ depth, x: screenX(state.positions.get(id).x, viewportWidth) });
-  }
-  return positions;
+function edgeIntersectsView(source, target, view) {
+  return Math.max(source.x, target.x) >= view.left
+    && Math.min(source.x, target.x) <= view.right
+    && Math.max(source.y, target.y) >= view.top
+    && Math.min(source.y, target.y) <= view.bottom;
 }
 
 function formatNodeTime(node) {
@@ -428,30 +499,66 @@ function drawEdge(edge) {
   const source = state.positions.get(edge.source);
   const target = state.positions.get(edge.target);
   if (!source || !target) return;
+  const dx = target.x - source.x;
+  const dy = target.y - source.y;
+  const distance = Math.hypot(dx, dy);
+  if (distance < .001) return;
+  const nx = dx / distance;
+  const ny = dy / distance;
+  const sourceInset = rayDistanceToNode(source, nx, ny);
+  const targetInset = rayDistanceToNode(target, -nx, -ny);
+  const startX = source.x + nx * sourceInset;
+  const startY = source.y + ny * sourceInset;
+  const endX = target.x - nx * targetInset;
+  const endY = target.y - ny * targetInset;
   context.save();
   const isProcess = edge.kind !== "activity";
   context.strokeStyle = isProcess ? "rgba(185, 245, 106, .52)" : "rgba(109, 214, 232, .30)";
   context.fillStyle = context.strokeStyle;
   context.lineWidth = (isProcess ? 1.45 : 1.05) / state.zoom;
   if (edge.kind === "exec") context.setLineDash([5 / state.zoom, 4 / state.zoom]);
-  const sourceBottom = source.y + source.height / 2;
-  const targetTop = target.y - target.height / 2;
-  const bendY = Math.min(targetTop - 8, sourceBottom + Math.max(12, (targetTop - sourceBottom) * .42));
   context.beginPath();
-  context.moveTo(source.x, sourceBottom);
-  context.lineTo(source.x, bendY);
-  context.lineTo(target.x, bendY);
-  context.lineTo(target.x, targetTop - 6 / state.zoom);
+  context.moveTo(startX, startY);
+  context.lineTo(endX, endY);
   context.stroke();
   context.setLineDash([]);
-  const arrow = 5 / state.zoom;
+  const arrow = 5.5 / state.zoom;
   context.beginPath();
-  context.moveTo(target.x, targetTop);
-  context.lineTo(target.x - arrow, targetTop - arrow * 1.5);
-  context.lineTo(target.x + arrow, targetTop - arrow * 1.5);
+  context.moveTo(endX, endY);
+  context.lineTo(endX - nx * arrow * 1.8 + ny * arrow, endY - ny * arrow * 1.8 - nx * arrow);
+  context.lineTo(endX - nx * arrow * 1.8 - ny * arrow, endY - ny * arrow * 1.8 + nx * arrow);
   context.closePath();
   context.fill();
+
+  const selectedEdge = state.selected && (edge.source === state.selected || edge.target === state.selected);
+  if ((isProcess && state.zoom >= .35) || (selectedEdge && state.zoom >= .28)) {
+    drawEdgeLabel(edge.label, (startX + endX) / 2, (startY + endY) / 2);
+  }
   context.restore();
+}
+
+function rayDistanceToNode(position, nx, ny) {
+  const horizontal = Math.abs(nx) < .0001 ? Infinity : position.width / 2 / Math.abs(nx);
+  const vertical = Math.abs(ny) < .0001 ? Infinity : position.height / 2 / Math.abs(ny);
+  return Math.min(horizontal, vertical);
+}
+
+function drawEdgeLabel(label, x, y) {
+  if (!label) return;
+  const fontSize = 9 / state.zoom;
+  const paddingX = 4 / state.zoom;
+  const paddingY = 2.5 / state.zoom;
+  context.font = `${fontSize}px ui-monospace, SFMono-Regular, Menlo, monospace`;
+  const width = context.measureText(label).width + paddingX * 2;
+  const height = fontSize + paddingY * 2;
+  context.fillStyle = "rgba(7, 16, 15, .88)";
+  context.fillRect(x - width / 2, y - height / 2, width, height);
+  context.fillStyle = "#8fa9a1";
+  context.textAlign = "center";
+  context.textBaseline = "middle";
+  context.fillText(label, x, y);
+  context.textAlign = "start";
+  context.textBaseline = "alphabetic";
 }
 
 function drawNode(node) {
@@ -509,41 +616,54 @@ function roundedRect(x, y, width, height, radius) {
 }
 
 function fitGraph() {
-  state.zoom = 1;
-  state.panX = 0;
-  updateScrollExtent();
-  canvasWrap.scrollTop = 0;
+  const rect = canvas.getBoundingClientRect();
+  const positions = [...state.positions.values()];
+  if (!positions.length) {
+    state.zoom = 1;
+    state.panX = rect.width / 2;
+    state.panY = rect.height / 2;
+    draw();
+    return;
+  }
+  let left = Infinity;
+  let right = -Infinity;
+  let top = Infinity;
+  let bottom = -Infinity;
+  for (const point of positions) {
+    left = Math.min(left, point.x - point.width / 2);
+    right = Math.max(right, point.x + point.width / 2);
+    top = Math.min(top, point.y - point.height / 2);
+    bottom = Math.max(bottom, point.y + point.height / 2);
+  }
+  const width = Math.max(1, right - left);
+  const height = Math.max(1, bottom - top);
+  const availableWidth = Math.max(1, rect.width - LAYOUT.fitPadding * 2);
+  const availableHeight = Math.max(1, rect.height - LAYOUT.fitPadding * 2);
+  state.zoom = Math.max(.05, Math.min(1.35, availableWidth / width, availableHeight / height));
+  state.panX = rect.width / 2 - (left + right) / 2 * state.zoom;
+  state.panY = rect.height / 2 - (top + bottom) / 2 * state.zoom;
   draw();
 }
 
 function zoomBy(factor, centerX = canvas.clientWidth / 2, centerY = canvas.clientHeight / 2) {
   const previous = state.zoom;
-  const next = Math.max(1, Math.min(4, state.zoom * factor));
+  const next = Math.max(.05, Math.min(5, state.zoom * factor));
   if (next === previous) return;
-  const viewportWidth = canvas.clientWidth;
-  const previousTranslation = horizontalTranslation(viewportWidth);
-  const worldX = (centerX - previousTranslation) / previous;
-  const worldY = (centerY + canvasWrap.scrollTop) / previous;
+  const worldX = (centerX - state.panX) / previous;
+  const worldY = (centerY - state.panY) / previous;
   state.zoom = next;
-  state.panX = centerX - worldX * next - (viewportWidth / 2) * (1 - next);
-  clampPanX(viewportWidth);
-  updateScrollExtent();
-  canvasWrap.scrollTop = Math.max(0, worldY * next - centerY);
+  state.panX = centerX - worldX * next;
+  state.panY = centerY - worldY * next;
   draw();
 }
 
-function clampPanX(viewportWidth = canvas.clientWidth) {
-  const maxPan = Math.max(0, viewportWidth * (state.zoom - 1) / 2);
-  state.panX = Math.max(-maxPan, Math.min(maxPan, state.panX));
-}
-
 function hitTest(screenX, screenY) {
-  const x = (screenX - horizontalTranslation(canvas.clientWidth)) / state.zoom;
-  const y = (screenY + canvasWrap.scrollTop) / state.zoom;
+  const x = (screenX - state.panX) / state.zoom;
+  const y = (screenY - state.panY) / state.zoom;
   for (let index = state.visible.length - 1; index >= 0; index -= 1) {
     const node = state.visible[index];
     const point = state.positions.get(node.id);
-    if (Math.abs(x - point.x) <= point.width / 2 && Math.abs(y - point.y) <= point.height / 2) return node;
+    if (point && Math.abs(x - point.x) <= point.width / 2 && Math.abs(y - point.y) <= point.height / 2) return node;
   }
   return null;
 }
@@ -975,22 +1095,41 @@ function formatOffset(ns) {
 
 canvas.addEventListener("pointerdown", (event) => {
   canvas.setPointerCapture(event.pointerId);
+  const rect = canvas.getBoundingClientRect();
+  const node = hitTest(event.clientX - rect.left, event.clientY - rect.top);
   state.dragging = true;
+  state.dragNode = node?.id || null;
   state.dragStart = {
     x: event.clientX,
     y: event.clientY,
     panX: state.panX,
-    scrollTop: canvasWrap.scrollTop,
+    panY: state.panY,
   };
   state.pointerStart = { x: event.clientX, y: event.clientY };
+  if (state.dragNode) {
+    const point = state.positions.get(state.dragNode);
+    if (point) point.fixed = true;
+  }
   canvas.classList.add("dragging");
 });
 
 canvas.addEventListener("pointermove", (event) => {
   if (!state.dragging) return;
-  state.panX = state.dragStart.panX + event.clientX - state.dragStart.x;
-  clampPanX();
-  canvasWrap.scrollTop = state.dragStart.scrollTop - (event.clientY - state.dragStart.y);
+  if (state.dragNode) {
+    const rect = canvas.getBoundingClientRect();
+    const point = state.positions.get(state.dragNode);
+    if (point) {
+      point.x = (event.clientX - rect.left - state.panX) / state.zoom;
+      point.y = (event.clientY - rect.top - state.panY) / state.zoom;
+      point.vx = 0;
+      point.vy = 0;
+      point.fixed = true;
+      startSimulation(.2);
+    }
+  } else {
+    state.panX = state.dragStart.panX + event.clientX - state.dragStart.x;
+    state.panY = state.dragStart.panY + event.clientY - state.dragStart.y;
+  }
   draw();
 });
 
@@ -999,6 +1138,12 @@ canvas.addEventListener("pointerup", (event) => {
   state.dragging = false;
   canvas.classList.remove("dragging");
   const distance = Math.hypot(event.clientX - state.pointerStart.x, event.clientY - state.pointerStart.y);
+  if (state.dragNode) {
+    const point = state.positions.get(state.dragNode);
+    if (point) point.fixed = false;
+    if (distance >= 5) startSimulation(.24);
+  }
+  state.dragNode = null;
   if (distance < 5) {
     const rect = canvas.getBoundingClientRect();
     const node = hitTest(event.clientX - rect.left, event.clientY - rect.top);
@@ -1006,8 +1151,17 @@ canvas.addEventListener("pointerup", (event) => {
   }
 });
 
+canvas.addEventListener("pointercancel", () => {
+  if (state.dragNode) {
+    const point = state.positions.get(state.dragNode);
+    if (point) point.fixed = false;
+  }
+  state.dragging = false;
+  state.dragNode = null;
+  canvas.classList.remove("dragging");
+});
+
 canvas.addEventListener("wheel", (event) => {
-  if (!event.ctrlKey && !event.metaKey) return;
   event.preventDefault();
   const rect = canvas.getBoundingClientRect();
   zoomBy(event.deltaY < 0 ? 1.12 : .89, event.clientX - rect.left, event.clientY - rect.top);
@@ -1031,12 +1185,9 @@ $("#group").addEventListener("change", () => loadGraph({ preserveView: true }));
 $("#transport").addEventListener("change", (event) => { state.transport = event.target.value; applyFilters(); });
 $("#direction").addEventListener("change", (event) => { state.direction = event.target.value; applyFilters(); });
 $("#search").addEventListener("input", (event) => { state.search = event.target.value.trim(); applyFilters(); });
-canvasWrap.addEventListener("scroll", draw, { passive: true });
 
 new ResizeObserver(() => {
   if (!state.model) return;
-  calculateLayout();
-  clampPanX();
   draw();
 }).observe(canvasWrap);
 

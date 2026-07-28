@@ -86,7 +86,7 @@ crates/skill-ingest/      ClawHub API, local/git adapters, continuous ingestion
 crates/skill-detonate/    Docker supervisor and bounded agent/fixture harness
 crates/skill-relay/       credential-isolating provider proxy
 crates/skill-analyze/     Tracee parser, taint policies, platform discovery
-crates/skill-telemetry-view/ interactive chronological Tracee graph viewer
+crates/skill-telemetry-view/ interactive force-directed Tracee graph viewer
 crates/skill-eval/        bounded SkillJect fixture synthesis and scoring
 containers/               target, relay, and one image per trusted boundary
 config/                   detonation, policy, and discovery controls
@@ -286,12 +286,14 @@ directory, `run.json`, plain Tracee JSONL, or compressed
   telemetry/2026/07/14/run_961e7f0d8181beac92ddb9fc
 ```
 
-Open the printed loopback URL. Event time descends through scrollable rows and
-the process/exec tree branches horizontally by execution depth. Use time-bucket
-and grouping controls for dense traces; selecting an aggregate exposes all of
-its event IDs and captured arguments. Filtered views can be repacked with
-**Refresh layout**, while **All events** pages through every normalized record
-and its original Tracee JSON. See
+Open the printed loopback URL. Process, exec, file, socket, and descriptor nodes
+settle into a force-directed topology: process relationships use stronger links,
+while each activity connects directly to the process image that owned it. Drag
+nodes to reposition them, drag the canvas to pan, and scroll to zoom.
+Use time-bucket and grouping controls for dense traces; selecting an aggregate
+exposes all of its event IDs and captured arguments. Filtered views can be
+redistributed with **Reheat layout**, while **All events** pages through every
+normalized record and its original Tracee JSON. See
 [`crates/skill-telemetry-view/README.md`](crates/skill-telemetry-view/README.md)
 for the data model, classification limits, CLI safeguards, and usage options.
 
