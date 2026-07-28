@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:58c0e1436fb872f7027c57f5de1ecb4c201b61e2bf3e3b4053d6e53d044f7e44",
+  "sha256": "58c0e1436fb872f7027c57f5de1ecb4c201b61e2bf3e3b4053d6e53d044f7e44",
+  "blake3": "42d4443e3ab81f1b98ef5c1e284ec58fac9ec61c22df6cdfa5b8d1a0f255b1a2",
+  "size_bytes": 33982,
+  "file_count": 9,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6155,
+      "sha256": "f73b1c65df60e0bfc47f04349791e33cb6a4bcfd8b56f58c167bfa0e24888517",
+      "blake3": "ed4f772b4680fa5c1ff5e5a4c5ffb9e8ee6296a2de7a76cca289be6e76f81a65"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 131,
+      "sha256": "1863998aea3ab9db519765376dc235b5b4711b3f1aa5590e21252065111aabf6",
+      "blake3": "f94e4e57bbebf1419597d0fc2e5c4d46c9db74c730c6b8a64c05e092a1acc385"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/bootstrap-docker.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1434,
+      "sha256": "ba8f387d70b4eab9f44d0b95ccb1b84092991002eaca1c2ef864a77d3832e7fb",
+      "blake3": "d093a0a896bb8157130a5a3d4ddb4b2c405f85883f25a412f50e49956d8c6dd4"
+    },
+    {
+      "path": "scripts/deploy-agent.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9577,
+      "sha256": "9a4c11cc2c23b7d8e80d81a19e246478e0c65a6b0166e09d8dfe40d9fc0fad3e",
+      "blake3": "a80b791f612c61b508540485c4e1832e0e88b7179705c94191aa4f110febab08"
+    },
+    {
+      "path": "scripts/detect-project.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8055,
+      "sha256": "dd3541a10656624839769d5a1d7cb57c39f0ae7ca3eab08916e3110c209e7924",
+      "blake3": "80c0f5856b28b20a9de296af9e893a54e6a59601732d1aef7deda926e5a9a435"
+    },
+    {
+      "path": "scripts/generate-dockerfile.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5462,
+      "sha256": "05991a936de7e6a723ce73a464755e42eaa15f59ca518ab8dc3749a7bcb4fe54",
+      "blake3": "dd591f982ed819170955e31ced124f0fb86081ad9f7fbfacec2e40452aae5aa1"
+    },
+    {
+      "path": "scripts/templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/templates/Dockerfile.java",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 550,
+      "sha256": "5070e48e81f1912d00ea6d0a738c52b1148be5498da0e65bcb1b0f7d4363de4e",
+      "blake3": "b2e4493b3ce35ab2f11ccd438f91a85fe02ee89199ff6b2f6ff61f6eff5a8eba"
+    },
+    {
+      "path": "scripts/templates/entrypoint.django.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 292,
+      "sha256": "4727d4f116fe1ac9b7653f3ede541e1638d74562bd623d1c2aab20ed6e7f8394",
+      "blake3": "d16bb450f732359d2e44954832ac21f55c2e0ace225d8fc5c92c892591605bc9"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2326,
+      "sha256": "e5df40ff2614d1934cb09207194b1849f6e355a9b0ab0a9665e25887277cb414",
+      "blake3": "414480cc6e3fe3380b1105c8055f358cdf0337c8ade9ef483655e6c629034cc8"
+    }
+  ]
+}

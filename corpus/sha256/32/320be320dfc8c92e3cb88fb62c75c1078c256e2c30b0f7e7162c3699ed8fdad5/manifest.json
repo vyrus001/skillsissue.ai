@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:320be320dfc8c92e3cb88fb62c75c1078c256e2c30b0f7e7162c3699ed8fdad5",
+  "sha256": "320be320dfc8c92e3cb88fb62c75c1078c256e2c30b0f7e7162c3699ed8fdad5",
+  "blake3": "c4a1a7323147ad7d4cfde80b3e7509c24c0000b3c35bbe42e575f7e966b84161",
+  "size_bytes": 53051,
+  "file_count": 9,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8995,
+      "sha256": "1c2f3661410c31b12f160e5ba2b52713c8a3bcef9251678580edccd34bbc2e44",
+      "blake3": "31547b1dc537bb62eecc3210e41e182bf28e8474375c7c3115c7e332f5b4f718"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 136,
+      "sha256": "849c9b3e94273cfe2ca7c6f6fd4c303b03b8abe8f96f2edb5782a98a0bc6a8bf",
+      "blake3": "62780152a1bbc2f33c0d82c198b8629900259fcce5cd17db16cd60cd28d8ec1d"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 273,
+      "sha256": "816fbe8cf859e7686bc223c40e224082ca8c381c4d62b4878e48fb3700387f99",
+      "blake3": "609b1389a20d10ebeb7ca65deb518f339bb41f8c3177a65ccdf217540495339f"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/answer-templates.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2388,
+      "sha256": "54ddae0cdc0186de57ac28490aa42b9e2c28cf1302d220222fc344ff0a8b8e5a",
+      "blake3": "8bfbce2ad592a2a712aa28617acc41f03f21c8688339a784ce77bd0db8d41cf2"
+    },
+    {
+      "path": "references/examples.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8142,
+      "sha256": "80edcb1622512860b59e2298db54123feb361e3782feb28d48f2a3cc07ca23cc",
+      "blake3": "d9d10e0dfba4bb2eb99dc62fd0c8028f08148d5a1ff04bad0a241adf3e14e78c"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/memory.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21836,
+      "sha256": "040ae250c4a9145dfb389d2159a9e1d48c429b03694d462006d17073c66d464e",
+      "blake3": "e622b48f29c0c60c1ae76c03bc174bbdbe5657ac28a9c3a49773924efbec8d73"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2334,
+      "sha256": "0e7bf4657edf5d2bbb9baf66a57978a7891b9c31a798d063d9db08437daa88cc",
+      "blake3": "458e2eb98aa90d1b8550ec29d041abc43acd17345b8b6404839efa035f33bfdf"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/conftest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1071,
+      "sha256": "66ed01f8f2502c098b61fbc7c7ded00dee8c7b817d89ae8a87c7320fc2f4ac13",
+      "blake3": "7380d1a50a8d1524ecdc5c582a560e83150201bd766dcd756256374656ade340"
+    },
+    {
+      "path": "tests/test_memory.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7876,
+      "sha256": "ca0e2282647f01828b97a6b1ad9d7a76b768a5ff58f7895036a7c651805ccbf7",
+      "blake3": "ab39365aae5602913109ee8ace7b9acdb57da02e3eff141b7aae7efa8ea62cc4"
+    }
+  ]
+}

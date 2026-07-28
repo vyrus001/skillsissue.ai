@@ -1,0 +1,813 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:3200cf725322eccb28ea4d1fdc05f82979b7cb58ebc04dd3ca7d7b2c83edb059",
+  "sha256": "3200cf725322eccb28ea4d1fdc05f82979b7cb58ebc04dd3ca7d7b2c83edb059",
+  "blake3": "6a786ca8e5a9851a878d65edb1ac28cdc93527bc569f9f72931bff1265b6b090",
+  "size_bytes": 695973,
+  "file_count": 86,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10403,
+      "sha256": "21d221541e77e4fcb67e03111ab2d37ccc8c7dd39d29bd9d5ba00eaf93ecf614",
+      "blake3": "cbffe6382930e67e676168e2cd4f1d206c27f628460021c1bc21bc3504c0f0df"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 139,
+      "sha256": "f8f9561a64915e2029d17e3afaa9b72383c7f4bc68658d739905bc507f3c2024",
+      "blake3": "d4f256d39fb0c8d2575df3cc75bf3f2f5b15e79c9ec2055c745dcb3f8a3cf538"
+    },
+    {
+      "path": "core",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "core/admin",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "core/admin/admin-routes.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3598,
+      "sha256": "3c3dc4ae1110f9dbb79c68a5e43a1b7fca886dd690b94564479c5144a8e8cecb",
+      "blake3": "1f96d703678b1b2e18fe8c2ae3e2b4d1090b850f7bb33c460ee9322d93c81227"
+    },
+    {
+      "path": "core/admin/auth.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5272,
+      "sha256": "e8241c27520096a3d594b0685b8d99a36bfb2f264d9b33011ebb88e7de9407b3",
+      "blake3": "c47fcbc89d2df78da7f5d6aa1b4a4606608e50a1cb81ef314e33761aac00d6b1"
+    },
+    {
+      "path": "core/admin/public",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "core/admin/public/css",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "core/admin/public/css/style.css",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 44964,
+      "sha256": "032dc53f0650767b5007f6239bcf3c83497a2019b05836661dd286cbc8feb544",
+      "blake3": "b2639d2e1871147263fa560e221b3e5f345e33d42144a49812eae5c115cad102"
+    },
+    {
+      "path": "core/admin/public/images",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "core/admin/public/images/community-link.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 70,
+      "sha256": "2c770e344efedc6304163d3e5bbf85013225e5d43c88e88fac390f2df4e8c8cc",
+      "blake3": "d23056cc9b8424a3018bc63968a7290fbcf8be3d6a9196486c2789927212c49e"
+    },
+    {
+      "path": "core/admin/public/images/community-qrcode.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2608,
+      "sha256": "4cf7905f4338c7a89bb2d3e899eab269f737605c2b3250c718c09a88e1349cc1",
+      "blake3": "ac3cc3500326ec9c56d39ce53d833d5013d1ddb18d343e4a6ed317b5f594ad0e"
+    },
+    {
+      "path": "core/admin/public/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22700,
+      "sha256": "255a20368120af280655fac7752e9aa22333a2b7ba2b3b3d99710e7b2930e6ed",
+      "blake3": "6f27fc49e09d055b6ae5854afd17a6de7b5e1cb30d9a7e50b4533f1422102ed9"
+    },
+    {
+      "path": "core/admin/public/js",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "core/admin/public/js/admin.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 64826,
+      "sha256": "c67b53ee4a0b70a116ab7bbc992febb38abe5f82991b7383b02e8055f0a60201",
+      "blake3": "35d64f68e0ad4a91214242369477b585bd10282dfbf4cda82254132841111a37"
+    },
+    {
+      "path": "core/admin/public/js/clipboard.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 480,
+      "sha256": "cc73c916bba2e0817399b0e84ea5340c7f6389efd80aa0fcb2d30bc50b014fea",
+      "blake3": "c6b6206d030fa0949f9747d639718249105da3c0f906a18ada57b863ccc8ad38"
+    },
+    {
+      "path": "core/admin/public/js/entitlements-cache.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1241,
+      "sha256": "9af26044809533ad8f99f1206668926de761815aee4fbae9b0806a5aaef47b09",
+      "blake3": "951e8356c49950cabd1d8dae378e8346aca3ea5a68347dd85172652d9877c8b6"
+    },
+    {
+      "path": "core/admin/public/js/entitlements-render.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6975,
+      "sha256": "3bcd03544ad428d4076de229b4a1dc875348efc88a0206d8170f7c0a607cf4ed",
+      "blake3": "d8dcf28f37f226635b1d17b2050d7aa82676f9bf7f414d171206386482f09a23"
+    },
+    {
+      "path": "core/admin/public/js/modal.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2216,
+      "sha256": "f6bf45a6d373784944727459b2224eec8c89451dcf2d253c13f62efd4d845ba4",
+      "blake3": "f0347b81b3be96fd5ab2f015d04b7d7cef1af1128b1466bdfe5b96d6b7b91ed4"
+    },
+    {
+      "path": "core/admin/public/js/quick-start.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4380,
+      "sha256": "a811609ff189a4f10aa6f7c64144bda51dc932ae4619b09f22027a139314279e",
+      "blake3": "f14c4490aceb301e7ca2f73232b157af27d290c19892c0583dd2c70dcd2b7e24"
+    },
+    {
+      "path": "core/admin/public/js/runtime-matrix.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2301,
+      "sha256": "ee1115c0a4f0164677b75a91d5cb56e0d3785ec073a060038aa6628b4b291abe",
+      "blake3": "5e353497b5ba260860773169ec4c506a3ec63b93dac9471b35e1f3a967732e89"
+    },
+    {
+      "path": "core/admin/public/js/toast.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 672,
+      "sha256": "fd3fb0484b3b90bbecc4d301c739c91ec21567e68e2796a97c84ff14885e22e4",
+      "blake3": "ec9bdedc10ad486ed3c5554d15588acfb4d002fc8da813761c02ef571a1fec4c"
+    },
+    {
+      "path": "core/admin/public/login.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4519,
+      "sha256": "7155befd0005a34b6f8e38e97c1c34858a65f2efec31a496c59df09a9728a590",
+      "blake3": "b403b86bc5f6bcfb5ee42760dfe644aabe5331cad64d5e663c4964bc99f8eb1a"
+    },
+    {
+      "path": "core/admin/public/setup.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4448,
+      "sha256": "4c2a968013b33ae3c60bdfd4cf03a276ed4ab96cfe3a01447272d909b414e53f",
+      "blake3": "7cbeef351059dc0aa0ae54e2ae828ca7200c5801f12f1d30df8bca7569c7d5ae"
+    },
+    {
+      "path": "core/admin/srp.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4796,
+      "sha256": "b9c9ff32f528edee88af39e44e1fdf3d936ecc38f1906774b2ecb04b43eb772e",
+      "blake3": "3add689567e2df67accc0493b43d06ef1706c5d98438a160f198f4ba89dcc78f"
+    },
+    {
+      "path": "core/anthropic-transform.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14544,
+      "sha256": "040f5f8e2eff80e9e2bdcc53eab0fdb06061e35065768d9e519665854a7c0843",
+      "blake3": "12c4464d19231dfe4c9503aa4db8a635da21a84263590f7d3475af80053ef984"
+    },
+    {
+      "path": "core/config.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 26057,
+      "sha256": "d8bf7bfe92dc6548d6f8cb81910011c1e66fa5e4b494346a3ef87986b8f551fd",
+      "blake3": "980ff8d45876b0e1000c7f9a5a57e6e1e5fbeb9859a02a4c2a2ab1df8bdded48"
+    },
+    {
+      "path": "core/context-window.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1285,
+      "sha256": "c8629038423a30573c05a7a06967ddc87923a349d1cc9ee9c6330326449a786c",
+      "blake3": "b02a1283b5cac2236720712ac2b3fc9fc070fd52c6c5d7fa9d85929bf1302ba4"
+    },
+    {
+      "path": "core/entitlements-cache.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2383,
+      "sha256": "2f41d4c68eaff028b6f2cbfe2ad5610a234250198545ca780f9fe4c80dd0c07d",
+      "blake3": "33702e7e054fb099cf60f9a6cbdb5ae3b8d3eea8c2d088ad1573e366589f6bc8"
+    },
+    {
+      "path": "core/fingerprint.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1277,
+      "sha256": "517032381863dd100448e850d67f672c502ea7ea5f307e33f73bfe2d9a062d79",
+      "blake3": "fbdfe2a7f84194f6bf56ec2e8d70899cc80094866998726af4270889022ed804"
+    },
+    {
+      "path": "core/health-check-task.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1281,
+      "sha256": "cac4a3bdeb21f8ae50269744067a3e1d229fc269e4cff5a173cb04d6484a156c",
+      "blake3": "99351d928a36dc36fb17bd3a4fc1fb902826a7b943fd879d182cf4a1c1a69c27"
+    },
+    {
+      "path": "core/health-check.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5836,
+      "sha256": "e55c1cc107467b921465aa0d4606adce07161f3c07999fc0fc228054703b7185",
+      "blake3": "62c73a7bc5232320411cf53f903eb12ad697e15304eccdf92322dd6e20d91ddb"
+    },
+    {
+      "path": "core/model-scorer.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1920,
+      "sha256": "de722ea63f23f644ce2a0e6007d7577f645423c2efdc3fe53fe57b12499bf6f5",
+      "blake3": "2150570755633c02dd0aef44f5e8b3542694f577f0eb347e09a8e39935386275"
+    },
+    {
+      "path": "core/monitor-logger.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6879,
+      "sha256": "c73be902310429b54e930e3b7d8a3bf84bdde7d37e4d22f555bfce40227f1607",
+      "blake3": "221e357e12da8b742cf5cb73420c3bf4cb9878ee5e13a3929a41b07c0f76aa88"
+    },
+    {
+      "path": "core/network-compat.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 475,
+      "sha256": "9c00918f9394e4827d1260582629e2cdce271c737633e8172f1028430a2ba915",
+      "blake3": "5d818ff819cb34e14fa21b55ddcef247e7ce0922253e4b5b68dd545db12c52a0"
+    },
+    {
+      "path": "core/notifications.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7758,
+      "sha256": "311b6bb2b1a99281724b35a07ad9a217c1af9a007b3cd2f160e90050614b694c",
+      "blake3": "ba2406bdaa6a9fd26dd5da93139ae95775c1e8a289e9c90b37e65a4e656fc457"
+    },
+    {
+      "path": "core/probe-service.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22261,
+      "sha256": "072ca9f0e5e666df519a5d436b4e4c8182403134d57ab84bc0a735f2776f2144",
+      "blake3": "5f243a4875704b0460fb45af69c39ac27f3d426b18c698db74881a7202f6e912"
+    },
+    {
+      "path": "core/provider-ids.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 377,
+      "sha256": "6770cec66b2feafa7774db30f18f2ccaac349aed47e499082ed59cd2e96359e7",
+      "blake3": "8d4bb84b7802ff0e4d436f72153239434a1a2ccc3f65da939a19935ea34bdf50"
+    },
+    {
+      "path": "core/proxy.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 61783,
+      "sha256": "27ecdc54704843c9eb2d22549b18c0056257a008763c8c8c3127edb7939a9818",
+      "blake3": "fa61bcd6ebaeb6e7e7b5ca68410c12ef2b59ec468bb37661e298e7c5d5987470"
+    },
+    {
+      "path": "core/route-engine.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 37459,
+      "sha256": "fe62f86ee88d2403deb9ff056dad1803101376773e66944307b345fbafa5ec01",
+      "blake3": "2eebcc6811353d559c8f083725a7679c8994bc3927684d217b62046dedaacd45"
+    },
+    {
+      "path": "core/routing-strategy.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3806,
+      "sha256": "182aec10ecd4c25b1cc0e486d1282f32efd5637977b5f0409bfcca780e14a7fa",
+      "blake3": "be7c93bd0cbdabf2142b40169ac4528ba961139e14f1e9f3791fb1d65d9cbf16"
+    },
+    {
+      "path": "core/server-client.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21816,
+      "sha256": "fc9696c56633619e4ffa93cd10e89550d99c3dd0edd29bcc2befef62cc59e7ab",
+      "blake3": "7b9233cc3db3171562b98fec91f215bd06547114a7f92929ddc923e33869ea2c"
+    },
+    {
+      "path": "core/server.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 47866,
+      "sha256": "e335824a9b1a4845902e3639b45a83dff650a55f05979986006b1c9e25f775a8",
+      "blake3": "e69cf7e3a6fcb1f1acc5933f1f7b9101a00171fd5fe73c24664adb5008a9da1c"
+    },
+    {
+      "path": "core/stats.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10070,
+      "sha256": "f80c9d1193ab2590ecfba60a9f1bf42b32f053d9cf7cf959f479af65e5c9f88e",
+      "blake3": "d661642f7111292b3a15b0fd647c528f12299320b5ccbd05b7ab9c4352707dfb"
+    },
+    {
+      "path": "core/timeout-profile.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1986,
+      "sha256": "4a2947527b38b68b003944f1f556c0bbf143257bee4f8854c5e5cb710b302234",
+      "blake3": "0bfe458cf0d98a8c4dc1030f9d33063ce173faa67a357d46edc31add55711baa"
+    },
+    {
+      "path": "core/update-service.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8792,
+      "sha256": "26e0980196acb05849ededcb6bc18d161c63920518d9069e66c64a7fbbabadd0",
+      "blake3": "aee1f4a50928acb1900f5b437fd900e081c4a1ec24d1f85468354d695398c212"
+    },
+    {
+      "path": "node_modules",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "node_modules/.package-lock.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 427,
+      "sha256": "9efbac5778b9622849899c32c4db1175c521af0fa5996efd474aab900938e1c7",
+      "blake3": "826c31ad9548d832e7f7165af9d8465c29d3796f0dbca74eb2de435df8d17077"
+    },
+    {
+      "path": "node_modules/@foxt",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "node_modules/@foxt/js-srp",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/.github",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/.github/workflows",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/.github/workflows/nodejs.yml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 461,
+      "sha256": "08493fbdeef9bb25e5d6505e660bc019597b6aa86d6dc66bb4a11f327f9f4700",
+      "blake3": "857517b3f294c232baa480ed01f128695a670e9ebc870c3b2fa33a428a24996b"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/.github/workflows/publish.yml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 696,
+      "sha256": "5ae474a49d69aa0443ee8bbd9105b92589443fd9c465915be24761639023e6cf",
+      "blake3": "8bbb0909d0be3510feb2c5d97e7171ec500c280513ec14ff82f9e272ce93e317"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 759,
+      "sha256": "368ebea7bd8919236d8d4f8a2a55fe7370d9759d967695b5918ef215a128d9e2",
+      "blake3": "40e82fe4bbf95d3db21143cc6f7d6ab8b21a94334a3a01740ec00218cbdeae64"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5271,
+      "sha256": "c6975c34ff130e68c20e451f6cc1c5c48a137b1e0584b8f6d44bf55efcd83ce0",
+      "blake3": "575e610d2be6a528b04a6aba7f23d6560f629647b3c00aba1c16b0929dec8261"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/dist",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/dist/index.browser.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12320,
+      "sha256": "70d1bbde1d3db9b0655bdd5478e44f39ae7b66a29f657be6e9e204be6e36ccd9",
+      "blake3": "3f8bace4c6f35a616f4b4db9ae9dee97e5a2e3fece6291f7eb1854772b27d835"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/dist/index.d.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 112,
+      "sha256": "f634a59ab8e57058b588f87555a3d11ff6c84bbdc4b8bbb736ebded6c7600d52",
+      "blake3": "fa4aa25e8a495776b72215afb238ddcdd81db4db36e318e84cb05d6bee38ffdf"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/dist/index.node.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12767,
+      "sha256": "fc79cd20ee85ec9e2a51a631de533cc384a29d14ada6281e22614608446e0a6b",
+      "blake3": "21cfd5ef020a681386e74be196bf5a8eb62d7124d25f9acb479db80db9c8b0a8"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/dist/index.node.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12345,
+      "sha256": "b31b9c042edf256d129a219c30c2ace5cf5a8c421d5a8e5a016d79395c1822b0",
+      "blake3": "f5a19ec0b48a4864d79c81959854ce924dd88a70082be1c29fdcfe5965cd08e5"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/dist/srp.d.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1561,
+      "sha256": "b916e12e3ecd8da6e7ae45b51733aaa576f4c030bd22478631d1f5192ac1eb25",
+      "blake3": "99ed9ed7ef738d3006e7ed3cebdf96c7f44db17ced9d82760d435cb0ecc1132d"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/dist/test.d.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11,
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "blake3": "ca24cdd0e8dc3986a5b6c0de7822e205d4eb160b40360403bd4af93a4622a6fd"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/dist/util.d.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 988,
+      "sha256": "d4044645c1fc9ceb4581f179e0d491a08ad430602aa26bf5d3d10d194d589ff6",
+      "blake3": "8867432c6272222edc27f44016df7dde90bcc7b35b25fdb87351d57908684663"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/dist/webcrypto.browser.d.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 37,
+      "sha256": "72037fe2552d3689ebf6c52161fda334c1f0e737d9108f4e9d74864c8ff27619",
+      "blake3": "e06f63356653458ea56f4521c7f1a74cb40a4786d52c2bae8b7567c62af32917"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/dist/webcrypto.nodejs.cjs.d.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 119,
+      "sha256": "a549113c3252fefeba9555e895e7125740c82fb6b2bf9f3ebdf2e353acea71ab",
+      "blake3": "fbeb2fb48b9854f3e7ea3f4f07cd4853d357a6ce352b5027d40d4808950c515a"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/dist/webcrypto.nodejs.esm.d.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 114,
+      "sha256": "3410848dba02795b42fd4e797579d5d10a2ac434568cf74a1305257a62383e00",
+      "blake3": "84b081d4a78c82fcf8d7b96f29ca89f7b69a01d430192cd404158b60a329e32b"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/examples",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/examples/browser-esbuild",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/examples/browser-esbuild/index.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 97,
+      "sha256": "40f2200cb607ccafbe7b0ef3d551ff57627b92a35474cb58e16ff2eb185e8f15",
+      "blake3": "fedd887fcc98fac0531a4a2d81155fa824fb05891f8786511a1e3ff1ce498f1d"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/examples/browser-esbuild/package-lock.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 790,
+      "sha256": "ccbeafc392ef15779344e5e9e7af056772ce363850261fd665ce476ebbce111d",
+      "blake3": "104ab346a8b6d5fef3fe67bf5d1bdafb97edebfb714c97bb3265288fd50a097a"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/examples/browser-esbuild/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 319,
+      "sha256": "aed6cc9a29b4626a23e5e10cd71477063f060d23596aced4af19a2ea7de55c9c",
+      "blake3": "08ea3878f1b7bacb7109ab132c5bb66e9844cccb2db51aa5fbe6e92a5986251d"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/examples/nodejs-cjs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/examples/nodejs-cjs/index.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 102,
+      "sha256": "75a5fc6c9899477e7fcd6d7de1b2c383bf92e42f7ac810037b04cab1308c1781",
+      "blake3": "6cb40f2d7a0d70a6d859d556896b520c8c0b45099648a67be864850e9f68ce6b"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/examples/nodejs-cjs/package-lock.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 780,
+      "sha256": "dfbac7837d740b6ae067fcb131cd8e0cb6b3599ab76a93a3bd30435640a0ed08",
+      "blake3": "6e6e6b572488f8d6df569ea2e4b8ee3e0a1b2d7fcafdcc192c23b50cfd4bd1d8"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/examples/nodejs-cjs/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 250,
+      "sha256": "1a46ca593b873345e0f4b435671eea49a6a5785d1fa54f45be913023d9ad2e96",
+      "blake3": "52466cf82f881aa4295f4b86979a46e58624859617aee12bc55419e2d5f34ff4"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/examples/nodejs-cjs/tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 170,
+      "sha256": "67d42d6e52803fd34aff0c6cf400a69ba34eeb2904b6dad9ab01083c84d2a195",
+      "blake3": "0a2ef696da84ff8d89c86b7e11077c1347be66a9e9a7f51540fbb5d9b35a92f8"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/examples/nodejs-esm",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/examples/nodejs-esm/index.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 97,
+      "sha256": "40f2200cb607ccafbe7b0ef3d551ff57627b92a35474cb58e16ff2eb185e8f15",
+      "blake3": "fedd887fcc98fac0531a4a2d81155fa824fb05891f8786511a1e3ff1ce498f1d"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/examples/nodejs-esm/package-lock.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 780,
+      "sha256": "4c89ac30f1bc7cbc305d44646b8a2e8e693d2f7ee5725d320df9d04ff31be0a2",
+      "blake3": "3caad3651d32fbdd5ca62640dbb11d1104e73b593570d6d5144488284ec257e7"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/examples/nodejs-esm/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 270,
+      "sha256": "b9306c9e76e1a4548b1d8dbc0beb07b7f1368106ee3d94e1b395c4fb82d3fd03",
+      "blake3": "b18cc23d5cfe84ccf7e6071a7d678a23567ca80d692789e6fe2b219335082592"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/examples/nodejs-esm/tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 170,
+      "sha256": "67d42d6e52803fd34aff0c6cf400a69ba34eeb2904b6dad9ab01083c84d2a195",
+      "blake3": "0a2ef696da84ff8d89c86b7e11077c1347be66a9e9a7f51540fbb5d9b35a92f8"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1674,
+      "sha256": "e5fa5cd5fc7f7e725d7d3ec783342bcd5d45d0cf0cbd76bcca80e105959113c5",
+      "blake3": "80b26e7cbeca670f146206ae233022062e189ab5ab976fafafdfecde363bd333"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/src/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 115,
+      "sha256": "907950a434f359d31d5ccc8874290fb34a018754a6aff9808590f70cd6e046ea",
+      "blake3": "56a5943833bfc88fdde2197fbb75dcb3d6c37cefa5f2ad5d091c2a710bcd7a37"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/src/srp.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16771,
+      "sha256": "cd7d9ab073034aeabc96670746526883b02f5f2b992c89f61e2c424222de68b6",
+      "blake3": "6cbf0c7cccd721dd907d833b40c16f75a34d245fdf3327fa28517cae090aa05e"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/src/test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2437,
+      "sha256": "7522158da399f44ae3f29c1ecefe79ac55db12e9dd5d9e39a1d5739372d34de4",
+      "blake3": "8c0231cd70f71c4087feb98ebf9e21abbc00fd747f6143bdd07baee66e844570"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/src/util.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7309,
+      "sha256": "1fa5c3e62218967309c49f1db6b2027f5a6d7c35a7cbefbf76d58988f4ad73fb",
+      "blake3": "a506f893d43a4967ed27e3d6eb05ebd6fe4fba44195fc51728462b8180d929b0"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/src/webcrypto.browser.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 35,
+      "sha256": "cb6172df8150a039d1c5a99825441a89aa9698b5371a4c1070d44deed89858d2",
+      "blake3": "66a494967e38366bfab48c1bca2df4603651e396e885b3c4c1176ec4c9d07531"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/src/webcrypto.nodejs.cjs.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 118,
+      "sha256": "60444e1a934c4659344a7e72c66ea1c36c6c64b4b5826d61358ec71389d26307",
+      "blake3": "a1028712702799ef124ec267d68cfd8e074514ccc70e0b5110c96a25f9912252"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/src/webcrypto.nodejs.esm.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 70,
+      "sha256": "9b3f35e173a2c45407f8fbd3880018f70dfc691e6c0b767e8e706c9812c2966e",
+      "blake3": "366b4055b85b6b5392281c5b8fa2ccbace548ad970b0e1f48b3a759730df4d98"
+    },
+    {
+      "path": "node_modules/@foxt/js-srp/tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 617,
+      "sha256": "997f6c484a29aeab0e041f5767d693db77b05112359c65c69ee3e1c53b83786b",
+      "blake3": "5a209a9e0adc280bce554bf7e90fe2cc956837473e04ea3cd62bf24227cfb992"
+    },
+    {
+      "path": "package-lock.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 97573,
+      "sha256": "bb1c31a4af2c94b8bbd84bfef5e9d921a21f37bb328b63d5b4b15ac9ce93ff62",
+      "blake3": "01b172bf8fe9799763557048a3780e5a3299e9832e24283e06c58f6c1c875bc7"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2659,
+      "sha256": "36dfc91884af739499d6f7046eef37addaff613bde38a9b5efda7aba0bdba5d2",
+      "blake3": "9d8a1ba3a54a3e922e2d7e517f213fd1e5e04f42a89c9842d177aae91d230284"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/event-system.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3346,
+      "sha256": "64d43f584f0588a10c4513138317704d212f96d91cddff5d14f8e78b408302f8",
+      "blake3": "0f888dd01d8c41e2c8e24eafbd58640d35d7b4c7f0466a524dd839e808891810"
+    },
+    {
+      "path": "references/idempotency.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1906,
+      "sha256": "910bee25fc819b9617e7ef20a9359847c1cb12ace4d2b06f143c8fbb3b6a594b",
+      "blake3": "b835577b0fa757cb79ba30bba859619f6f097358df5b40e33a4f344cf66ae9ff"
+    },
+    {
+      "path": "references/setup-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5164,
+      "sha256": "0701ad703ac64db7992b4bdbf0d5faf7d79374daf0185a3b1cb6f73d3d5dade8",
+      "blake3": "861d73fbf94e12c24d3d0f0db7ea9293b507a9e2aab5b289c78491abc1018d94"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cron-setup.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3233,
+      "sha256": "0d1b980a4d2435370c4034df657bc928f4e2d88ccc8b21fcd8cc3f292ca06cc1",
+      "blake3": "f48d981ba950d9572096bb2a329f51dc6bcb69e9498b09ce7dbb17f62bc0489f"
+    },
+    {
+      "path": "scripts/diag-hotpools.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2008,
+      "sha256": "f83aab6d32ea18874db23642747e9d68c587cea8d1f4f7627651bf290fa9ebc0",
+      "blake3": "cfce0d505e8d1bd026e165317e2dd4b1f30f409bf5f09dd591b6806edd21e105"
+    },
+    {
+      "path": "scripts/free-model-cli.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18013,
+      "sha256": "e793e7b015550efe2a10cb100ea91e14c00a813937d08b9e75cc7a60d6deea29",
+      "blake3": "1005e3f5cb80f24668d1e80538b2e6b3100f31e2de6cd22557ed4f7b9a585176"
+    },
+    {
+      "path": "scripts/openclaw-setup.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5560,
+      "sha256": "ccf59130491aa4726ed29d0edcc0b93c7742a819b83e635369062eeb96989bd7",
+      "blake3": "0d3d31bb55bdb79cc5ed79d6055a15c16430d3445ae074af637b673249bc1377"
+    },
+    {
+      "path": "scripts/router.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 291,
+      "sha256": "65174b342d1c865af2af76b71454051427208f5bafd8121062b902fb61f7dfb5",
+      "blake3": "093756eecd212954b325fd807670f66d908bbf2cedce97afebd72793b517c62c"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2742,
+      "sha256": "4a4027d51f18afbe9c2d83caa8025044588c97434fcf06a76bb349e917cc6d07",
+      "blake3": "e7b33b18556036d12b90251e3bc9881a4b255518cc9f902ecae8e338ca9c2c3d"
+    }
+  ]
+}

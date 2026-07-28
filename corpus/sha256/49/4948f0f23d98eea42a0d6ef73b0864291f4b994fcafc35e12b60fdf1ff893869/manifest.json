@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:4948f0f23d98eea42a0d6ef73b0864291f4b994fcafc35e12b60fdf1ff893869",
+  "sha256": "4948f0f23d98eea42a0d6ef73b0864291f4b994fcafc35e12b60fdf1ff893869",
+  "blake3": "bf021faa3c63171ff4d33e45c637901ffd5ff522f0e14f7caa748d50956474eb",
+  "size_bytes": 49315,
+  "file_count": 14,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3434,
+      "sha256": "5ff326d5794d97be8a755f2077a279cb66403de38fd55ff526f83f94054d110f",
+      "blake3": "fb62a89a690d0008a829c0cc801b379f796983d60cba68a319f65cce46e7878e"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11434,
+      "sha256": "26af610e2395b4f60639afce7babaef3d91eb3b1f038d518a7b4834f730123e2",
+      "blake3": "14c206b7fb1aa22f10cc3d400ffb14090c1bebafec40b9f623a71acb456bd91d"
+    },
+    {
+      "path": "REMOTE.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 99,
+      "sha256": "d323f22b83fa296aacf7f1bd7745ff90cc994ea38129581f3cfc7716edaef440",
+      "blake3": "ba26720e8b0bb821a1fe410cffa6ca1169dfe19b5f29369394d58806ec1f0fb4"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3542,
+      "sha256": "b2e47bdacee4646629621abae3354a31d458ad023cbb759b40584153a72cfa44",
+      "blake3": "41902cac8c5a80c29ea6159f4964b94117158529de725907843c9d873c9d6bd9"
+    },
+    {
+      "path": "VERSION.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 106,
+      "sha256": "4332352e776d4d41555b84306464dfc920e41347edabf118de05403e23e435c0",
+      "blake3": "aa7b7d792002c868e47e3bbcdf7c74b5ed56f99e46fb215d5b211c0bcb2c5e83"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 150,
+      "sha256": "57581da3345514db55f93881b2e9e528902bf6bf827dbf67aa69a089516874e2",
+      "blake3": "1ac74118e7b1da38192958b2de6c0ae9e68fa38dee454f9ed8e56eef73f87379"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/audit-log-monitor.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 726,
+      "sha256": "b78a9b081b7bcb0d0caf25b21a8047bbe03ee1022994ae6a5574e116902fd512",
+      "blake3": "a479efe4708ac0d15c992e85b34d6ba81c55ecaf2cb481ea46d7e6d9a8a7014d"
+    },
+    {
+      "path": "scripts/critical-alert.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6157,
+      "sha256": "34cac6c0117fe4caacea47ada0880b0dfe011278531c02090c432b400a983055",
+      "blake3": "f760873363dd121b4e26cfae69938f26392191c6faea1eaeb750597c31b80490"
+    },
+    {
+      "path": "scripts/daily-briefing.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5296,
+      "sha256": "81c18984847923882e7b20091d59849c0b311355b567099a6857efe93475b25b",
+      "blake3": "b3d14bbbc705ae969bd23fd2b4e8e3e8ac5569ce70cc935aac28a93669d84d76"
+    },
+    {
+      "path": "scripts/install.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7888,
+      "sha256": "1575cdde5d76f1ed7c6339df09f5ef0fdde5d7085dc7615c6a96b520f58147b7",
+      "blake3": "557d45dd4b25ab94d17897e44b90d73f445a74173d1bb4b61f355c39e51b8989"
+    },
+    {
+      "path": "scripts/rollback-ssh.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2579,
+      "sha256": "ba5ee41acb48252bd9af1363816cf5b9011b2cb192bdfdbfe5460ca909992a1a",
+      "blake3": "b4d75e3da2d180acf5096af91fd891fe7ae28b41554ac6ecf0f9900ae4fc0132"
+    },
+    {
+      "path": "scripts/verify.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3937,
+      "sha256": "f6aec56f50fc7006ccceab4bc4bcb8a3037672dd5cb61e56e1e1a01562a63be4",
+      "blake3": "2355b6bfc383b5c7ca559f605a10eafa3f7cf37dc000724fb975c6e5af8bdf2d"
+    },
+    {
+      "path": "scripts/weekly-report.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1458,
+      "sha256": "22f3e5817e2c0c8364c8fbb9c1c5450bebf988f0ceeb72d07c61c6efef9b0c4e",
+      "blake3": "7312f5ad579faae399040f67686c316474156430950de399d2dcc2ae8e774f3f"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2509,
+      "sha256": "d8b20772c934dfb2ebd71f532759453c29af9ede0e52496a64da6384387ed742",
+      "blake3": "45f6d3f930d35487ecadc737d204ab23d30b64df77a2c59cfe6bd32808d9391d"
+    }
+  ]
+}

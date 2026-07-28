@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:c1bf9ce824194a1da52dea8dfb2538d38f7b580e721f910b14b6c45eca1fbe3d",
+  "sha256": "c1bf9ce824194a1da52dea8dfb2538d38f7b580e721f910b14b6c45eca1fbe3d",
+  "blake3": "01a677dc1eb6bdef6004e98ed8a4bbfd13b56de1eb9eed55390b59165b9cdb8e",
+  "size_bytes": 32512,
+  "file_count": 17,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1793,
+      "sha256": "31bf22f6d334a20d13dc92657b65ea487bc476302ce38f08fb4ae04a9cca618a",
+      "blake3": "246dd1a85615bf95b99f16519702931bacff2e1dff890a38ccbb800df39e51f1"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4024,
+      "sha256": "17bcb056d9642a3e4842eb022f569237997357a2eb9f8cacd6ebc60ab5506a83",
+      "blake3": "08ca926962903acad58b2540adfab4ef226ccbb17bf51158e324a67f11fb4e23"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 145,
+      "sha256": "82ad90efd58f23d5bc0c4b63b3e9a8e58306a08a6cfd886b390aa19133249646",
+      "blake3": "470c03aec2ac4cc99a7a55829f0169eb05db3748b8280d767a830b5b3a73ec2f"
+    },
+    {
+      "path": "adapters",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "adapters/claude-code",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "adapters/claude-code/pre-compact.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2377,
+      "sha256": "c22bcf6f8f989252d1689089924a111d0311dccb00381830cc2340cf04fd7cb4",
+      "blake3": "fa3b39d767027009de6392b5bdadb3d484286c50738c670602ada3a59fea5be5"
+    },
+    {
+      "path": "adapters/claude-code/session-end.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2380,
+      "sha256": "3c6d444418cb088ec58dc9dcc96704318349215b12e192bda929bb7f49a2767e",
+      "blake3": "a0335eb4228d22396ff49284489b6b889f0fdcb784ffd4a04a5dede36027caac"
+    },
+    {
+      "path": "adapters/claude-code/session-start.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1265,
+      "sha256": "2b53cdbb9e61d7dc17f09d71e440006e3de5315f746a1f9b00e7dc229ea0a57f",
+      "blake3": "b35b9bc2b5e8201c6c8eaa00f882bfe4563416ff73792604fcab23ad0aad70e0"
+    },
+    {
+      "path": "adapters/codex",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "adapters/codex/project-rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1661,
+      "sha256": "b0fdb8b1521cb922ea8b0e001f180d55abbd9a865dffa23d5a5a9536ca4b384b",
+      "blake3": "445e0029f3fa6a493e5ed395fc536fa1d6bc7ba8753c95fcd87b29e566c754d6"
+    },
+    {
+      "path": "adapters/openclaw",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "adapters/openclaw/usage-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1019,
+      "sha256": "8873d30ddd8e0ed1aeacdde94737fda2739a3c006fb37177a0f69bca2823464c",
+      "blake3": "7929eff43fac19db6efb789638147a2fa88e5d02a254d3d0a93b3d82ccfd9bc9"
+    },
+    {
+      "path": "config",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "config/obsidian-init.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1535,
+      "sha256": "ee776c6123d466f47117a02dd7868ae335d284fd6f54cf4fff6c4acd1084cae0",
+      "blake3": "781f3d5422d91bbed7c381082779612631b46a151b225421e08c12c44977e098"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/create_order.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3388,
+      "sha256": "a765665a919c52c7ad85aee1353f0c610c144658e908f09ae2641f760cd083e8",
+      "blake3": "5eb0fd244b43355683604b5dae8a8040e599f9707fb03da73ab6d08c92587cd3"
+    },
+    {
+      "path": "scripts/file_utils.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2170,
+      "sha256": "969c99a69dfe089fe35495d5045ac48862c45fefbcedf135e23ab37a5cec6733",
+      "blake3": "739388c29cf6db860f9102c73da9ee21420b4d26d82cea8327ca2a1bc303d881"
+    },
+    {
+      "path": "scripts/service.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2314,
+      "sha256": "e121942a5f8ef54a4163cfd39f2c097a92c52035e833d854998d49009ea029eb",
+      "blake3": "bd0f09898ced7b6df925535b61b97e8bd9fa80ac5376f32e53e714f74d12d9ea"
+    },
+    {
+      "path": "scripts/sm4_utils.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4707,
+      "sha256": "cdb5ba3eaf9df5ddae9a50e55316bb2d671dfce63e5971d84aa0420a8c612e7b",
+      "blake3": "2ef32025d75cdb1d9ec80924e8879b48ea57dd072f3d5134e5e58e64e3bb907c"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2265,
+      "sha256": "4b71543641b7a82ddf65480adbad8c314a184f62cf9bcd5e3fb2e656de24dfe4",
+      "blake3": "b15933d2ae5d5924a332a256ece77073f5f7c51b70c13d1a45f3790c4224f14d"
+    },
+    {
+      "path": "templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/任务清单模板.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 450,
+      "sha256": "0f244f1a94bd78375777da43d573d5ba1ceb716e1d10cb0a0d40357a5bb2affe",
+      "blake3": "c14f357ee46ba09b62023cb587e52e85d67c89fdf73bfea5c958e5f0f05e1f6c"
+    },
+    {
+      "path": "templates/决策记录模板.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 456,
+      "sha256": "beb5a107b4e05322a0523675229a44ef83a30ce388b4f640188d17593a37f446",
+      "blake3": "b7263b9b645c1b66a8e024d399b45e86e4785df07d4dd24ffc366c91239844e7"
+    },
+    {
+      "path": "templates/工作日记模板.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 563,
+      "sha256": "309504b4dea162872fd746daec3c880d764a005d8e114c47dacaa86aff2f9c9f",
+      "blake3": "0919379571d412f42fdf6cdac17f22f5991cc4eef3de2b599b55e86ce51d4846"
+    }
+  ]
+}

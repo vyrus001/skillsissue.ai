@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:2d3d3d3c4b9cf7939438702808570e07a0ded16e6b7e419bda62799dac44486c",
+  "sha256": "2d3d3d3c4b9cf7939438702808570e07a0ded16e6b7e419bda62799dac44486c",
+  "blake3": "6dd3596142b53efe135eed0ecb3f444690da3573c502107b999750269d43dde7",
+  "size_bytes": 32370,
+  "file_count": 14,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 505,
+      "sha256": "1ab530bc5a9933b61d7b29c583213c676f0b59c42c3fecfabd6cc50cd93f40d4",
+      "blake3": "19683dc87d9824b6f0dfe7d89c01c340c2f632ca450805cb3d09c8b0ee88f2c0"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10338,
+      "sha256": "92a4a98fc494ad8dab0775065305440b4918a42d0be49d7eea24d40a2c57609c",
+      "blake3": "31edbdfb5f9ed3598d057b416cabf59d5d0f54e0ae8631aff6f113f9e4354be6"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 142,
+      "sha256": "a2571c13d0fee88d0d03bc0c96a0e60e88611f39049e779bfa37e7dca814e04e",
+      "blake3": "d5661e3a003eef3f2b35d7df4ebf350ff002169887bd5db0db191f79d4ac106f"
+    },
+    {
+      "path": "example.env",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16,
+      "sha256": "324eb04ba252c3556dca3c245908aea386b8643eac804d4a6e161d41489f9ed0",
+      "blake3": "5b219dd964556e1e61ee3a6dbb927d7c2deb96d1496ee791b0c8d1295bec96ff"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 259,
+      "sha256": "57d75ecd3631416ef51f7c21216eb974268893b87cfb88ce81b5770470bc23ed",
+      "blake3": "ef4d5c42fd8aa9e1eb8af463ae8401b74430f1d4295aaf96f049e593f3e822bd"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 35,
+      "sha256": "76cc27eefa6f4f8d5e9c223e06b1a122a0b3b9d65b69141ba6fc5423fdd6c3af",
+      "blake3": "95475206b821d1e83e6925041faeb40f4c52bc35a36c062109b38fdc5edfc737"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/buy.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2587,
+      "sha256": "e03233384f322790c015e4ad38c077095084f6f3bdad3dc635e7f67a86c971ea",
+      "blake3": "b6017d79a68d885075ea6caad894291fa6cc484e76d8c1f7beb41a84305e8e44"
+    },
+    {
+      "path": "scripts/explore-data-feeds.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2148,
+      "sha256": "96d4531559d48db9df9d49a0e62946943164175e5745cf290a57d8fca46bb302",
+      "blake3": "84fc6f4df1e2678044f6faf187aabf423ef1c6ced8b19e63881b8d6dd3b7fe63"
+    },
+    {
+      "path": "scripts/get-chains.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 350,
+      "sha256": "b89dbbcaf3bfd4fa74b3b23c30c9ded4c808f696579959556c79ed59d05c3468",
+      "blake3": "d59ad6f26c77bd6d8972375ab15dc3befe082ab677ee1fa3261f94cef1f85971"
+    },
+    {
+      "path": "scripts/get-dapis.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 262,
+      "sha256": "afbb714934b56026c7ea35277b2f16f2e5c5f99543ae3b37f275f234fafbc714",
+      "blake3": "14a4d3834a46ec8e858ca249e0d8a557db7efd220a925a44f53cbe8a6d0e6d92"
+    },
+    {
+      "path": "scripts/quote.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1318,
+      "sha256": "326cc5542e33e0ae99f3c19d854ec04d2ec1c3450ec8b74e749f91df9ac73f60",
+      "blake3": "5d810d167484290d801da0433077e9168e5cadfcc70a8ce59fc15b6e37e71071"
+    },
+    {
+      "path": "scripts/read-data-feed.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1300,
+      "sha256": "97f5b01a312b3cf684605ca55447ed05b065ddbc341647ffbb42948016d21a0f",
+      "blake3": "8d06ab67e9b6be8f06d35312a4c218fc325c698dbc3eb970f087541ecfc35786"
+    },
+    {
+      "path": "scripts/utils.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10825,
+      "sha256": "3e1e5fd25a3b95aa8993e85466d6b401fa6c2105732c2de5abecc9a23f646dd9",
+      "blake3": "0c47916ab59c78f1bb779fce53fad33ee89bc66840fad051d862d72d9fc3e1b1"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2285,
+      "sha256": "81151f0ae6f38c0c3df056ad2db50328ddd39b1fca179a2f631613c4a06d95eb",
+      "blake3": "82a817b913ed55fdcbdf3b7fd8aaf110fefe37347f24e4f0b58e742902ee7436"
+    }
+  ]
+}

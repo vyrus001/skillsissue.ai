@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:82b1cce4fd2ee3a5b5e1e62b5cc0b099143311e393c8c5de8c722c4ed2a06264",
+  "sha256": "82b1cce4fd2ee3a5b5e1e62b5cc0b099143311e393c8c5de8c722c4ed2a06264",
+  "blake3": "bc5800eaf18cbf3f16742d8815610c3140ec25475321206a40ee4b5d7f5232d0",
+  "size_bytes": 16129,
+  "file_count": 7,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2917,
+      "sha256": "d32172669b5eb7b64ad53a5b5ca71c500be314b9d388a0b313e7271346d5d792",
+      "blake3": "8d5faa1e789839e6f809115dc17e5ddfe0f201f1e10a620b26b2cac1e253ef3a"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 139,
+      "sha256": "eeb70a682b6375a40bb6bdcbbb69625c6e9622706c79cc2bd9c5e9cbce1227a9",
+      "blake3": "611793db5d548670190dba4fe6599077eaaafa414877185871278450131a8539"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/create_order.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3372,
+      "sha256": "b0c7befdc2d900cc4173f7411f73f794a2ff8b96a0a22aa7116606e91069492d",
+      "blake3": "daec52577d195705cb52253e9b4f867e8526dced92fcf6127801345712a002c8"
+    },
+    {
+      "path": "scripts/file_utils.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2170,
+      "sha256": "969c99a69dfe089fe35495d5045ac48862c45fefbcedf135e23ab37a5cec6733",
+      "blake3": "739388c29cf6db860f9102c73da9ee21420b4d26d82cea8327ca2a1bc303d881"
+    },
+    {
+      "path": "scripts/service.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2298,
+      "sha256": "83a86067b996fef6c6f1aff0d10d3895714827654f63bd87d39176f3e150ae53",
+      "blake3": "616cc53975d1b9aee7cab4225767be7ae7ce8f1d3d5921636b0c1b19024d8fdd"
+    },
+    {
+      "path": "scripts/sm4_utils.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3347,
+      "sha256": "3caed6661d108dbfa5f860098956b252976e2b724c8b432a67cfba54efb1ddb8",
+      "blake3": "23376f1bc9961c107b55baa2be611bd62ce3f9be23bb75c7100377f87d3368f3"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1886,
+      "sha256": "10901e31cfa78a2ccf31d79a9c63f5e954062ec8fa25589152b25b2bb51410bb",
+      "blake3": "3e15f8aef063c6cb0d27c5c23589c36a9ee32ae7fd6705f6d43c5cc68ddf4f0e"
+    }
+  ]
+}
