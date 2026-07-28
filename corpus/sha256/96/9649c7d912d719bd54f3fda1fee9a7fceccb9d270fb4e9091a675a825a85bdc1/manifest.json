@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:9649c7d912d719bd54f3fda1fee9a7fceccb9d270fb4e9091a675a825a85bdc1",
+  "sha256": "9649c7d912d719bd54f3fda1fee9a7fceccb9d270fb4e9091a675a825a85bdc1",
+  "blake3": "4477fa35fe0c14339639b4b5fbe02d125ad2b03ba72337a793c0b26b44a2a5a2",
+  "size_bytes": 90477,
+  "file_count": 14,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9432,
+      "sha256": "0f7f491cd7fe1234a2f64301d10bb9cb20fdc91e7a25ece59a0305745f730986",
+      "blake3": "e0d4af5fae03f716423b58a440628f959ecb729e18897b76fb71fd652332a56d"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 158,
+      "sha256": "e0c68e9ea74921e0e8e9d556bcc67559df027925a8a0658e2dfe42cab71b0ab8",
+      "blake3": "6400d79dcd9ca51cfe547ffd2fe91cd085606ecbeefb52192a45bbf0a60694d1"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/instances.example.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 560,
+      "sha256": "4f9f354a5c39218e992d1a6936d59036b96f27e8b212e67f20d0c9fb23bc3358",
+      "blake3": "a0ae25be4b6e14e2e6f894e3b2ab335f3335ce0e5f5cc66dde16e6fad805822f"
+    },
+    {
+      "path": "assets/thresholds.default.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3006,
+      "sha256": "608337ecdd1f500176d4cfba148665074f72190869888e0cf1897d9930d0128d",
+      "blake3": "28fa6baed9c72964bb643b9457adc767fb8bd5c00df3768dfa6a310b9e8d10db"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/cli-pitfalls.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5493,
+      "sha256": "31ff34f09c438094ec95989ae437eb8c2e169dc2f59289cd09428dda2ea46705",
+      "blake3": "13f7631187a924f7d6b114031eb801a9104918b5fa914ba078d3dd049c02bbb1"
+    },
+    {
+      "path": "references/metrics.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5627,
+      "sha256": "0707645fbbfd9227260a87b1e3668a276d527c00e8b83ae099b82a618a172385",
+      "blake3": "4e5836f0d10d3fe2e51f2837780c2308c4231e910159426574db3221f819c5f0"
+    },
+    {
+      "path": "references/ram-policies.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2860,
+      "sha256": "cb127bab53a14579c5761ba225820f38aba1330145bf54e6f847c9ad5b9bb0ac",
+      "blake3": "e119d32cbba8a031586ef12591cc2843a50beb09de1a6290bfede40cd4ea00ef"
+    },
+    {
+      "path": "references/thresholds.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5510,
+      "sha256": "012c52f4f029897fbaed47aef8534d632b7e1ac3779713c6dde1b26ca3be9aef",
+      "blake3": "3ee3bc1f95d124bae2a4663886888d9dac54d9b80d2d06a0c3e9649b044da632"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/diagnose_group.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7794,
+      "sha256": "5335ab6ea1965e541fc7774e383d19783c19e6f0710415c2a0c9640c5369e147",
+      "blake3": "1925208614a214d7332d0fa18e6de5f783cbf5331417c50bd0405854e7da1274"
+    },
+    {
+      "path": "scripts/fetch_metric.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2060,
+      "sha256": "549ac32e15f7233fac5a8c7656b2db4de64c98b415f5e3d0caf0cd5096723438",
+      "blake3": "c79873278e3319bc941866992c36b4c4a6af57a471699c266ece87f884f4720a"
+    },
+    {
+      "path": "scripts/inspect.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14828,
+      "sha256": "2387abd5b5b0f5493194865e4b2453a89a95c44cf326523391fe1a09c7558bd8",
+      "blake3": "6abd88edbda56126f98bf72eb567f31e6569fb904974cc201f0fad49da63f2b6"
+    },
+    {
+      "path": "scripts/list_instances.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2770,
+      "sha256": "072ec2a45b8cb6852bbcf1cf5f246bd91e17d61063ed6266c6c5e671466239a4",
+      "blake3": "8aba5d034b02726bf2491195f548a25e24a5bf906774641a7ecf8e3f0a1a496d"
+    },
+    {
+      "path": "scripts/preflight.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3393,
+      "sha256": "955c28285c295225eea4d0b35414add65e5118f3e131945f8f9dff5343e0e9a8",
+      "blake3": "5e7d44185a71f8ad08d5a5a072b79d96db3bb3eece37998b780542d1e0b4ff1e"
+    },
+    {
+      "path": "scripts/render_report.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 26986,
+      "sha256": "e99987705455f12072f25449d751206e61cbd45859f82e26517684b98ea8d5f4",
+      "blake3": "a1167d7ba8a127bb1ad91940dde2b4da1c068b3b0e0f92108baa88ca5100388b"
+    }
+  ]
+}
