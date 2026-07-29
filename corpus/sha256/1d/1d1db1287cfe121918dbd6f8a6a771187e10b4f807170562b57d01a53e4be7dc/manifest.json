@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:1d1db1287cfe121918dbd6f8a6a771187e10b4f807170562b57d01a53e4be7dc",
+  "sha256": "1d1db1287cfe121918dbd6f8a6a771187e10b4f807170562b57d01a53e4be7dc",
+  "blake3": "06f7d15e7d3de1e2532348b1fcc6d7a3d27c1a9dd799dd204b1e4f3f3f802e10",
+  "size_bytes": 125972,
+  "file_count": 14,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "blake3": "83cb3a2fcf829b6138e095b083016c34ddcdfa07b68d38782722c14fcf85ace6"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4803,
+      "sha256": "c08229448c3a289fc6db2ba1190371b4a1dcbaf1aed7d82a3f9ab65d12112757",
+      "blake3": "6835ffbaddf78f13510cc7e8755c930eba10aa437fdd21bf13266b09bbe76fd2"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 31672,
+      "sha256": "62e5aa7b79e56be768f8bea69ea53bc7fc5dd0eee43d30da11ecf4c7343efd88",
+      "blake3": "5d2808caa577e4062852ce44ba84a3d57d68af3fc450b70f5d12d88d9a525d26"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 126,
+      "sha256": "8cc6fd167cece7c7a96acc0e87e94edb169994fe097717c785b0c36f6cdbbe9b",
+      "blake3": "ba9cb730f8d90993903ada4ec06371af66bf90237610b30ccefd6f34ad09ee5d"
+    },
+    {
+      "path": "doc",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "doc/shared-memory-design.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12653,
+      "sha256": "4d65c5cb69cd2aec029b9219e43f80e21c06a6bbd7332946fa6073e38a2fed2c",
+      "blake3": "0a9b7c84df0fdebb532d1fabd6d58d774b7c3709f3b42de85b1ba7477b1eb010"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/condense-flow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4684,
+      "sha256": "a7fa5cf0b35c022b8d20fe898f256702c27a9dac663bd16266abf4d31429e849",
+      "blake3": "4c51155ddc28895a819f6d154549ed7949c65f61d05c86575182db16643e5dd7"
+    },
+    {
+      "path": "references/dream-flow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9516,
+      "sha256": "c1a77b47efd0530df56a2d3de215fc4e96992fd22a7df7856a3163e0c4411dc0",
+      "blake3": "84e4032ab9540c8089fdbde3adbbfd18c2a49b410bc119c8bdcb2fd29cddd43b"
+    },
+    {
+      "path": "references/extractor-prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7522,
+      "sha256": "01c8405c457e3e024db51a22c57f056fc6eaaeb8d5ffd9ec9f57f9455af6b54b",
+      "blake3": "f1ce76d508bb9522344e8fd74b07b8ca44f7499498f5e07e937390a009d08035"
+    },
+    {
+      "path": "references/routing-rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11146,
+      "sha256": "6c401a00f6d8883a8e9574cf1fbcffd785d8f1597d8dbe99578a9e80bf9085bb",
+      "blake3": "bbdb629cb913b66c06c44dac3c5219feb73869711692299c7669ec9c22153c69"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/collect.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3018,
+      "sha256": "fa13030a20f11fc8887f9d732252fb2b05a07fb24b4101ecad40be2126412f35",
+      "blake3": "52a92357def07470ff65f06637d031e552a53d7b48cb904e90d13e8164434740"
+    },
+    {
+      "path": "scripts/collect_sessions.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10047,
+      "sha256": "8e1f7808119e3bd64d8a135baff99e601b1cdc363e1bea5231ad6d0747cdef49",
+      "blake3": "caff62f1f49238868b8267fc076a235d1cc37eb78cfaf80d9a2db0c14763a90e"
+    },
+    {
+      "path": "scripts/extract_session.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8390,
+      "sha256": "48ebfe2e17e91c06adce8d92c54096ec426264b09b242116dbc697ce34666f6e",
+      "blake3": "3c43377570f2d19ec7803a2a955bf6259284674cb6cda10757944ddf6b3c5cf9"
+    },
+    {
+      "path": "scripts/scan.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8430,
+      "sha256": "5a9c3e4ead9a5508429065fc179f1aef791ef515784d298eb202f18f20e623ea",
+      "blake3": "0306ad899f3017910e02b30e4a79e588531926b8275c3876e558e0f35d728d36"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2607,
+      "sha256": "1355540184c66c0e96690f23c653a50c2910493a470675eff7de896d31667f36",
+      "blake3": "77e2a5dfde03e7ad2ac036e249d2a3d52c26c42f32f9716ff3a792257c29ba87"
+    }
+  ]
+}
