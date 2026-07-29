@@ -1,0 +1,321 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:9bd342da73c9ca01fd84cbf6abe03aee0fc7abbd8234b6e5b35d6e2b45fc68c9",
+  "sha256": "9bd342da73c9ca01fd84cbf6abe03aee0fc7abbd8234b6e5b35d6e2b45fc68c9",
+  "blake3": "e37a047bcdb60ce947a0990785c3ff7adc5b356a39a4bf3d0e10d6fb2343ac5a",
+  "size_bytes": 681508,
+  "file_count": 35,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 41904,
+      "sha256": "1cc740c2df540e2a6f77b0ed1828a6124cc3695681aeaa36bf8b484f028d5cea",
+      "blake3": "f9841a9ff65f03c66f620aa47eb47cc60c33909b82ee72b6338ebd1f91c8467c"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 137,
+      "sha256": "ee380c6aab2360971c583e75ff2599ed36f3e3af39eb6baece39ff16eff15a95",
+      "blake3": "15cd3d94973418f98df102282a6de5478cca7dbde5341b007940c123bd76ff42"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/public-repo-readme-template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2741,
+      "sha256": "9574d234eb64a8824bfe77998a5a1a7c1a5fb2eb5b82e4ec721256fbd6447644",
+      "blake3": "717f7052c102a98297cf5910777950b3da04514d89b875bec54218837bb9c477"
+    },
+    {
+      "path": "evals",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/evals.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5725,
+      "sha256": "e01a784a117ffb14a26a48dc81d18c19a76348284140e78968e38ce59436c07c",
+      "blake3": "bdfea0508958b825af4acb62718322639697ae29bb19d0274b2703e5c8c0490d"
+    },
+    {
+      "path": "evals/files",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/cursor-project-mcp.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 517,
+      "sha256": "708e2df8f319d81e7873844b2fc3fbe5d3cf8a5ec5cf2298da04cce848a0a3e5",
+      "blake3": "e03a44127f7b5b2b72a1f2a0c60bde0ff731d26929a7fbafd2b63d7ced273475"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/ide-paths.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9057,
+      "sha256": "fb83d8c94dc4f0addf41a01100bf53acffab5a88d4637466230e039b2cab6fb2",
+      "blake3": "464487e7a4cc6ef428928fc9168abeb450d17ada578d56faea133371e1e5f937"
+    },
+    {
+      "path": "references/ide-registry.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 94273,
+      "sha256": "6f101296a06a318310a180eefc1600c33e6d93053b984def03bf140e71486057",
+      "blake3": "2575d655c2fe42bd16ccf4bdb3bdde59f8300c1de75b580afe01bca5e481445d"
+    },
+    {
+      "path": "references/openclaw.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10724,
+      "sha256": "6aeb9111aa146a71c3e8aad04cb4cf89770cbeb1336ac20619e9ed99cb3270b7",
+      "blake3": "ed941797cae4455dede7c0a10af70ad25683ecc1045a16fd348966553f36961e"
+    },
+    {
+      "path": "references/publishing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1409,
+      "sha256": "348499317fbe832f2af26991403800d36920458d450c0007e7e82ed752831767",
+      "blake3": "59bbe0b0040b2caebba2896f61df166b58a18555e6f1ff69e939aa65014f41e5"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/auto-configure-openclaw-skills.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 35156,
+      "sha256": "b82388ccbc6ca7179fdfeaf0e338cac507e141322e8a7a656f190aa7ff398d45",
+      "blake3": "d8a96ce57542fc90e91a184fa2f32da99626a7df29fc553d86674b745fe99959"
+    },
+    {
+      "path": "scripts/common.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1757,
+      "sha256": "2711a55bae62c45106408416b232d998f7e478932a864353bd32fb0be6c6a40e",
+      "blake3": "a8a62f8070d4055b497cdcada239dcfaec9c525e242e54f4dda7217533d5ed77"
+    },
+    {
+      "path": "scripts/export-public-skill.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4227,
+      "sha256": "7280b4b509297c5c475f1deae704983e102837dcc226feb116c8d92b0a602538",
+      "blake3": "2e06617bd2dda21c85fd97db334a1c3737070a7a15360c3bbfc7a514bb8d68e4"
+    },
+    {
+      "path": "scripts/prepare-clawhub-release.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4315,
+      "sha256": "ea8fae18611f055b79a50226e35b8a137a24d2c428bf420d0cbb6f143ec688de",
+      "blake3": "d6c59ac717cddfce69ea537444349eb7a6ee05dc984539e0120b5ebab4ec2799"
+    },
+    {
+      "path": "scripts/smart-ide-migration.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 261404,
+      "sha256": "7f42d168f6d1ae93f4fbd105a9bbea1412f446cd7404bb3080e97b8c57772ee3",
+      "blake3": "6bcad9ba88ae757a3870a9c4302548dc3671395794843ccce98ec18e932dba27"
+    },
+    {
+      "path": "scripts/sync-global-skills.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8730,
+      "sha256": "461a4ae1235b0fc207f026e3bcb86fbd471fdfe423f2e94941f066146401f564",
+      "blake3": "4903b0010e5c75959699bb5cfa3489ca57a5477ab2bc78e8f2a826168dc807b6"
+    },
+    {
+      "path": "scripts/test-antigravity-migration.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3345,
+      "sha256": "85ba992d9bb262ca98d63d217357791fb48095aa10768974a1532ecfb4185635",
+      "blake3": "1f6fb9219c9b67957997af8c4d4849ae3d74fc054215fee7e9f30fcdc8e729d0"
+    },
+    {
+      "path": "scripts/test-claude-code-mapping.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3909,
+      "sha256": "1407b2f22fed1290225c5e352149c83ef31111dd036b32a62eb9c87f550add1b",
+      "blake3": "42255cd53e81a395ea29b9c034abf3819eea24e61a5a8e620a1c835bf94cebfe"
+    },
+    {
+      "path": "scripts/test-claude-desktop-mapping.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4589,
+      "sha256": "d0fbf6afe0dfd0f2628bb2ff59018af88b3f49df7c6f5c154243a5aaf4a62724",
+      "blake3": "8e91de436db5280921bc7e6eaf9aa8bdb1e5013af889cae94a7d99e1e2c33435"
+    },
+    {
+      "path": "scripts/test-codex-migration.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2149,
+      "sha256": "7328c395280f63824057b0e5db9be9622a31d509277cdfb34adc412fc98bff4f",
+      "blake3": "b9052aed1d3847b7a687f1d1a5515c565e34afd06c77725777cf9d68a90d1aea"
+    },
+    {
+      "path": "scripts/test-copilot-mapping.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2977,
+      "sha256": "356fe396b8de8d4dff82745d0abc3d4405c3fba68b2019c26c6bb485a49edc74",
+      "blake3": "07ab6c42c69f45699ad96d4d36cbedb122a0180eb54b0e8203b5f5dfbd18bc90"
+    },
+    {
+      "path": "scripts/test-cursor-mapping.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2101,
+      "sha256": "537c33a16b2dd685e1de4393141e5a45c378f4148bce3213713f06259b3ffcfd",
+      "blake3": "90cf0b9969c74c9711bcfc2fd7893318a15b110b8e907ef40244699417aff7f9"
+    },
+    {
+      "path": "scripts/test-emacs-mapping.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1374,
+      "sha256": "69803ef2d5190e5bfd8904677187f2b756afe4959b4b80b1d6cc75ac9ed38587",
+      "blake3": "fd0cda02db4379b73bfc65206122d114734ac518b53bd6b0d7bcdcc404fadc46"
+    },
+    {
+      "path": "scripts/test-ide-paths.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11940,
+      "sha256": "146d670e37c2edadf777741ad194548a99d362f905b7a21d25121aeb251e8f54",
+      "blake3": "60fb6c5142a35935fffa21b281a194ab751d9e251356d57763d29d0acacf663b"
+    },
+    {
+      "path": "scripts/test-jetbrains-junie-mapping.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1979,
+      "sha256": "35324fe7bf79e2279f47e959ec2a5fcd8e343de89aea0578d1599183b49bbcc0",
+      "blake3": "b8e3119a480e8c8f1e99c2b7b0acae4790040657785d2aced8a9f9863159c36f"
+    },
+    {
+      "path": "scripts/test-mcp-secret-redaction.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 35812,
+      "sha256": "cda05e54e631171910e01504afbcbae8e400fb65427dc5566aa753153f465fcd",
+      "blake3": "653ab36d28d42e1949b1544095f503020543c7bf870a0eb1bad346ee020996c8"
+    },
+    {
+      "path": "scripts/test-migration.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16797,
+      "sha256": "e7cfb72ad4db0b246b29a4d6ce8cf5826c459a11b08269ce100b506b7ff01d23",
+      "blake3": "145e0683cf2483c3a97d28e44d17968ec75734f210d60a4f6ebecd1ff4b7007b"
+    },
+    {
+      "path": "scripts/test-openclaw-support.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5888,
+      "sha256": "4e3a42b475bb59cff0537782071983c11cfcf24e52e14f3e1a45f1b375ff4645",
+      "blake3": "560e1c23cf5811a8868fecf37e135f6038d3cc998218a5618a410df6c4aa1b79"
+    },
+    {
+      "path": "scripts/test-remaining-ide-mappings.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18716,
+      "sha256": "8a73a3e5bc817486433951971e7547d59eebf34f7b876fd64200891e3eed9c31",
+      "blake3": "9def3582a74307a5237f158a89f55b1060e54649d98b113d7fe429c70ea72dfa"
+    },
+    {
+      "path": "scripts/test-smart-ide-migration.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 50494,
+      "sha256": "d7893a8aac3b4c7eec0c101cae692575d60c1679da54f6856bd6d8edef66e813",
+      "blake3": "d65a87f24c53ac363bfba6a1ae11cf13b011746db4da9d01635bd5083c23cf8d"
+    },
+    {
+      "path": "scripts/test-trae-boundary.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4422,
+      "sha256": "4886b054e68e9f47267ba56388167fe8d97a084132fe3a5b569b2a6ba2d6a1d9",
+      "blake3": "8b7018fd806a23a351d0c1bec5c8cdd75b4df4efe9964a1fd001caf86d3c948d"
+    },
+    {
+      "path": "scripts/test-vscode-mapping.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7321,
+      "sha256": "843e1b16b348aece2baeee64cd95e2699cd8893fcb35b86288afa30ef20ce736",
+      "blake3": "056997e7224a4f8735ba44ad430c939844353ef83b9fb283346292417b72f66f"
+    },
+    {
+      "path": "scripts/test-windsurf-mapping.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3300,
+      "sha256": "f180342495565b6d74635a9063d7185403a86f1b0866a9d1bfd5b665d60395ca",
+      "blake3": "40653a9ba2e29c7ccc5ef87af6fe7c5dab3eeaeeaac6dbac464575e97e253651"
+    },
+    {
+      "path": "scripts/test-zed-mapping.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2063,
+      "sha256": "204195f6b353443ec8b95dbc385f34aeacc4d97fe394de52c16104a31ffdfde3",
+      "blake3": "cb7af4ef197597f247622e06efd0f8fe1269ddcbf5d6f2bbfff404d721761a5f"
+    },
+    {
+      "path": "scripts/update-openclaw-skills.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7512,
+      "sha256": "d6b84cc557423686c8472cca6e6bcb0fd80a043c1031a66f93049afec715a32e",
+      "blake3": "5125148e9815768189c0a477ff744e6d2f028bfe0eb43b457de0a1ce0f0c8466"
+    },
+    {
+      "path": "scripts/verify-ide-config.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12744,
+      "sha256": "f03a2f44705fe70e450569d7c2f2306908a470ef6cfe7d265ee6a3d97d516733",
+      "blake3": "dad812d750f1bf6af850b3a798fe149db7da9382b07e2c51f294985c9dd9f678"
+    }
+  ]
+}

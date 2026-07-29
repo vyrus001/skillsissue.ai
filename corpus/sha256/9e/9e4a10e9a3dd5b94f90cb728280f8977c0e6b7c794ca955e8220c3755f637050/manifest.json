@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:9e4a10e9a3dd5b94f90cb728280f8977c0e6b7c794ca955e8220c3755f637050",
+  "sha256": "9e4a10e9a3dd5b94f90cb728280f8977c0e6b7c794ca955e8220c3755f637050",
+  "blake3": "7ee02a9825b978229a69f468dbc8ffa74702abe14272f9b13dc6dfb98f258959",
+  "size_bytes": 140152,
+  "file_count": 21,
+  "entries": [
+    {
+      "path": "PRICING.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6822,
+      "sha256": "7ad6d789a6c500d723942062b0b9afe25a131a6ba1f2fa886241a050f2d68fe2",
+      "blake3": "acdfc9852e34360068f74586d9b8d53a0dccf52b51660efbe7f107034228be40"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14956,
+      "sha256": "64ae75331963fcbf95899a37c625fb4881caa4ecbac640d2de4f28ae26ff3808",
+      "blake3": "6f63d310ca31986cf63b399e495332b57d9362c35854cb0b8c5d346576b42441"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 133,
+      "sha256": "fd2cff5c6437e23be58699420883cb775724a309348905ea88b3f3c88626590d",
+      "blake3": "1f9ee18894550e2431d024a37b08dbe7e65fdb721107788574663b704d9d0a20"
+    },
+    {
+      "path": "ai-app-test",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ai-app-test/auto_judge.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9353,
+      "sha256": "0959b5cf020a7283449d9f546d76669a0e5a9d939daefdda4ab7570465c6b482",
+      "blake3": "54f07460281df21073dbc12a8a8e90e3ccd52426a48b101c5832b6fac5ddc952"
+    },
+    {
+      "path": "ai-app-test/e2e_session_tester.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7908,
+      "sha256": "599aa30d76a8d8e7378688193f51b119f5715be8635f379ba3c62df8a45e0e3e",
+      "blake3": "00b0137b7d4962a667ba8ffddf80846d42e10aa469aac43c75e029c1a2f6cc8a"
+    },
+    {
+      "path": "ai-app-test/llm_core_tester.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3686,
+      "sha256": "1bc599ea185dbd6104f5e0305e2ab233fdecb066330a3316afc69095745c7dec",
+      "blake3": "8475e807a9198cbc57eb7fd63dec323ebd5e54f739d6ed6fe9520890e3b41706"
+    },
+    {
+      "path": "ai-app-test/mcp_tester.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6029,
+      "sha256": "d49f02b9dee076fbcefb08178fecb4450269357266fe235d1d00cd6e3735e991",
+      "blake3": "f3dfb7caf6fbbf89351ba2f7fec3c217c6fb2a5f558fd7dd8ed4202bba211541"
+    },
+    {
+      "path": "ai-app-test/prompt_security_auditor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4867,
+      "sha256": "b80981cd43ea90acc7b889779560f4dc5f41c090e7afb8481715df8b3665802e",
+      "blake3": "fb211899f16615cfed72647c6928258b2785a0dbc8b4c395216bd942f35a7568"
+    },
+    {
+      "path": "ai-app-test/prompt_tester.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8919,
+      "sha256": "3ef2e74cb911738d054c94e4411cdbb443d6e041ee5147ca995afd97535661fa",
+      "blake3": "8d82a4e32906993005b51d2317322e8bf3366f6b81a3e2d389aee38c6019b6e7"
+    },
+    {
+      "path": "ai-app-test/prompts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ai-app-test/prompts/judge.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 669,
+      "sha256": "66ee215d864b9a2d1f89719057e0d57eb825616e477922326b357a69b3314597",
+      "blake3": "3ea52f9412861c431480544691dd38c949fce9bb9c59f36157d56476a663cc3e"
+    },
+    {
+      "path": "ai-app-test/rag_tester.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7194,
+      "sha256": "e3bcde79322e9f7e09a1e2421360c7420d12d93844078ab3f58c14cdca372cc7",
+      "blake3": "987dc75d0ff17aeb6922938f7e44367be331557f510b9972b95f060a0a803092"
+    },
+    {
+      "path": "ai-app-test/regression_compare.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7792,
+      "sha256": "e3a5b55f015eebee51f9aac3c3204edf2aaf29fb3a9f7c2403467943ef08666a",
+      "blake3": "b002ff324ce170da6838fd96e9c27ec4aae4112f2d632a232e6cf5456e7fea32"
+    },
+    {
+      "path": "ai-app-test/reports",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ai-app-test/reports/test_summary.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5525,
+      "sha256": "6cd113b00912727639949c4051e89e6f7065148e398658f2261b47d6e56641aa",
+      "blake3": "585da1d1a2b8bcdeb5a2e975fa195f63c152e8459524a97a78faca2d99f364a0"
+    },
+    {
+      "path": "ai-app-test/run_tests.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7226,
+      "sha256": "393bb4c4faeb182b3b7b372a62e412af5b55123dd0cda916376196de09cd7e56",
+      "blake3": "553c631547a96c045b87a11908441a069d9cf517e493e8ce6acd6e4fb2946689"
+    },
+    {
+      "path": "ai-app-test/schema_checker.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10479,
+      "sha256": "5163bcd925bac452cf6a0f91924adb459c119782ddba6b3310179809d93684a7",
+      "blake3": "ee26577c556c6af38f30f632a692f3cc541d0f4b9d7fa4775dace58a3ede3b83"
+    },
+    {
+      "path": "ai-app-test/stress_tester.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6509,
+      "sha256": "3223f344ae5a5c194adf1a0158304195f2493140ca0d745e830f1db50d62666f",
+      "blake3": "a7d24eed5620504b16de460a34f37c8d62c678af77bc0416386f150eddf51066"
+    },
+    {
+      "path": "ai-app-test/test_case_generator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9931,
+      "sha256": "0f649df76d3652e5d72aaedcbb88e602008066b300e313935fc7abd336bc1ad7",
+      "blake3": "2092c4b262181b9b5d1229b07eb1849e68600568097a04125ff6082c85e8591b"
+    },
+    {
+      "path": "ai-app-test/test_cases",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ai-app-test/test_cases/e2e_scenarios.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 739,
+      "sha256": "4ff5c69d596093e3ba2e7dc5edd8d2bff03b061f47894901c71dfed3cbd39a84",
+      "blake3": "429c4efab1bdd912b57d5f48f111f3b9185b947e41e47e483a94bdd5b459b097"
+    },
+    {
+      "path": "ai-app-test/test_config.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1943,
+      "sha256": "23fdc79d01423d04b9528275ec1ce100b23e49a85dfd26f4e86a13e07f95de2e",
+      "blake3": "957a211d47284734a822340796003af9d09c5ac2f07cd7c4b963bdcf7cbcee6e"
+    },
+    {
+      "path": "ai-app-test/trace_analyzer.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9841,
+      "sha256": "729ea28074a393310daea78ef03c268c4d140a51ae7204f83084852ce38fd373",
+      "blake3": "08960487a59f43ec5d3f4171d99dc4c813c4c754d7f1af0d891856ab09258cdb"
+    },
+    {
+      "path": "ai-app-test/verify_tool_call.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9631,
+      "sha256": "4789b70b71fe90cc9096c2a370d22e9574fba01bd26558c09739130808c4d831",
+      "blake3": "a1cada6fd5f362f09af4a7a0e749469402e21f612417647450c554a598ddeefe"
+    }
+  ]
+}
