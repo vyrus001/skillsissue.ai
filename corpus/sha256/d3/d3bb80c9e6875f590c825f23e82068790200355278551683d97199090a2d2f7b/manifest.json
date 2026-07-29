@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:d3bb80c9e6875f590c825f23e82068790200355278551683d97199090a2d2f7b",
+  "sha256": "d3bb80c9e6875f590c825f23e82068790200355278551683d97199090a2d2f7b",
+  "blake3": "9fae00c4dcabafad56a46318b7a16059695ba39511c5961b5313e546726a3809",
+  "size_bytes": 129925,
+  "file_count": 16,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6142,
+      "sha256": "669753cd504d4fec9b8e49836181cff6a2a7ab0e2e2bd1488b1765baef61f292",
+      "blake3": "d8de8b5f724a66c68550d83d9fd3306f937e702892c10e5cfd1e68de737b0202"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15939,
+      "sha256": "bd69f0bf03a1fdcd7b47b85cf82e9bbac7086c6a41a6e23293aa1c7212799a76",
+      "blake3": "49931f514207676879779e57c7a3b5caced39903a04cc7d7ece98d727b753d8e"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 127,
+      "sha256": "b7f0354a8ab6c429ea9a40e341f673cb1e03d45ce7d08c8187d45f96c0d1475d",
+      "blake3": "b17f95e5dd35d3cf82b7a32384285aa4b6c06cf1d5f815b2655ba72a21004d44"
+    },
+    {
+      "path": "examples",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1769,
+      "sha256": "efc0d5d0b44fc297afec457fea5d55f817efb60ef94409c43cb4b769bfc5adf3",
+      "blake3": "1d41c72602f69448851bd05d849bfd9e5cc95229b06dbd22d2de209a9a9f7a0a"
+    },
+    {
+      "path": "examples/quickstart.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1986,
+      "sha256": "b1826e8d5dbb3a7f4b8f39de9221e1948291f474353c93f3a98d5ddaa0f94807",
+      "blake3": "b7860ae86ef46b9beedbe7f9b963fce009a683b25126449edf867adabf11d1b5"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/pmm-full-architecture.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7823,
+      "sha256": "65523299c5ebfe97f85af22031fbb8afa05ca824c533d1178c065756bd403ec5",
+      "blake3": "d18783c4acf445a2e1c3c8f170c227114adbdf2df89ccfcb2f310e359d574c74"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/install-daemon.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6223,
+      "sha256": "63f0c40f6a87a091db1731598767f65a4717d29669d75bf3a364f5b5939bf43b",
+      "blake3": "be1618fe72aa482a6db18ebf0dded10ff69605fcd6a7a3d7de01db4f3d816f26"
+    },
+    {
+      "path": "scripts/oneclick.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9277,
+      "sha256": "c9c9c2d155b964aa6714e44f6ee7031392ec881599b124e33f5a4c3109c34b2b",
+      "blake3": "6a74cfa511e98b135f5a757769ae5f68a454fc0ee496b3ae43c06f5ce1764a2d"
+    },
+    {
+      "path": "scripts/pmm_backup_files.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2325,
+      "sha256": "963363eacbb725090b18f839fcbb23434400511b8dfb2ba638c222a9586187d6",
+      "blake3": "222314b5e9f3f54a884de57ef250056c79b0e73271b815294c89d07499abfa10"
+    },
+    {
+      "path": "scripts/pmm_boot.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 848,
+      "sha256": "f678ecfeebe9986f992e2d7a3a7098564eb63d7c166d69b24732358b721c4e63",
+      "blake3": "37b16d696c361e7889dab60e3870bf98704b111f7489390fa5d7cf88e722d98e"
+    },
+    {
+      "path": "scripts/pmm_distill.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10331,
+      "sha256": "8fe23ead28795e4ceb171a356fc057e8528b65fb9ab10bd6bb59cdf5494b9529",
+      "blake3": "cafefd7cab829932c4a3d813e79282dbcce332a1e42410f94c469b000df93e81"
+    },
+    {
+      "path": "scripts/pmm_recover.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1623,
+      "sha256": "892f54a1386875804d28672268e590d6ac1f2b8b9a2a13c50747359862697d75",
+      "blake3": "51a40f9816e54ffa8767215b86504bd8edbbca6c6cc3e6903505d167a3f0bf47"
+    },
+    {
+      "path": "scripts/pmm_watch.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 59638,
+      "sha256": "d46c3041a435cedebd836e4bf40a1fe25c14e440f3e6bb627745d3559e56f044",
+      "blake3": "db303e48943300cd53a54d24583e0f2875fd17d73b890c097dcac066cb59f632"
+    },
+    {
+      "path": "scripts/update.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2484,
+      "sha256": "289c1fed2b6ccfb5cf1d144cdcc14bf89d7fe331ef256a0fa4fbd28077a877fd",
+      "blake3": "03626d41f5f7592dadf5f896721c85c9f4e28f118be5547e49460a461de0beb3"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2580,
+      "sha256": "f5799aade1b89d45f663f546b8903d613646cfecf37620c57e6a71e18fa25683",
+      "blake3": "165d8c74969c75508707f6f066e19bf24d81515aeb0b351f360a359846014780"
+    },
+    {
+      "path": "skill.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 810,
+      "sha256": "c12f9708c794591af7de0ac8f1c957d7bf3a71a4a48abe533bef7b6335846c31",
+      "blake3": "be0abead83f42d8646878cd5cc47f055e8c4e323d8ff33713edf74ccf6e1438a"
+    }
+  ]
+}
