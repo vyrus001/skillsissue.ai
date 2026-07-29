@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:fd57fa62f683ab1ceb981b32069ff09443a58865a76f3e2b269debbc3c09c82c",
+  "sha256": "fd57fa62f683ab1ceb981b32069ff09443a58865a76f3e2b269debbc3c09c82c",
+  "blake3": "2256a4f6a7d92ed0539a5585a91179ec42f5663a36b0468a1c09cb0036087379",
+  "size_bytes": 80275,
+  "file_count": 14,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5672,
+      "sha256": "02c64a7366620afa421df6597bf4f967cc88703b6b7e1c23f2e16ec83808b4c9",
+      "blake3": "424e33b92426e856a406523ac39ac3ea8e49bf6935245a01c81b2837f0ff679c"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 138,
+      "sha256": "0241365408d15ed5aa7dee452baee0c70b554303815781334a16f12ac7417ef5",
+      "blake3": "49224b5c7b2ecdda711b939a522e5522eda806279e6131ab38ac69c384f61e0d"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 213,
+      "sha256": "e36f94b3bb435596c4394f09f68d2e788d8b540caa730a1a6b6c28a1a92356dd",
+      "blake3": "5e2839a086d75ce702229b3778ccd392a58a552edc2ef30bd3bbd90de78c863a"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/data-schema.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5181,
+      "sha256": "68bd5a0b30aa6298d9e1226468d9f32ef77317240b1256580b326fb6afdf14d8",
+      "blake3": "73ae610e38b1aa375390f726f098688c14a38a377c0efc3b8e9a3a9be3333bc6"
+    },
+    {
+      "path": "references/evidence-sources.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2540,
+      "sha256": "db1db409bd8a98dcf853bf1bf069c4348ffc5f346fb4c99353da7b208e7d0a56",
+      "blake3": "18cba69a683d8f3f3ec34fd56a8f7ab27359534f40ecabc0941aadf541b2054a"
+    },
+    {
+      "path": "references/interaction-protocol.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8425,
+      "sha256": "839ac48d29707fc13ccf8519b98764972ca5a0aa45dc4f1d8fc383d083114101",
+      "blake3": "2fbab0c4b8723fb7b1928d202ad8650c98407d2083e13d192a3f9a6de6eb06c2"
+    },
+    {
+      "path": "references/safety-boundaries.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2623,
+      "sha256": "5165146d588f0fcdb0801056083b842289c5d704feda5e5f38f26f181480c278",
+      "blake3": "d7e5118226fed62c89856ab5e5773e65e9a8599bd581fbaae5bd9b4707f6e48d"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/build_reminder_schedule.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15722,
+      "sha256": "f1d3709f5b4ed7f8eed82fa6a95c0fb639416aa6632bc6eb0fe00398e6ae0521",
+      "blake3": "43055a023ebdc3ceef831dccb5042c80bfff5cad4a6862d2e3f7b97123a506fd"
+    },
+    {
+      "path": "scripts/calculate_sleep_metrics.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1549,
+      "sha256": "99189ce000efcd9ce1c507115ce6f6ab34e0e6df7f86818f8995829c4d0c4e91",
+      "blake3": "0a45e3dc3e7a6189cdbae24cfe70c959489ff47980c1a5ad162b7c13c4dde858"
+    },
+    {
+      "path": "scripts/manage_profile.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11783,
+      "sha256": "e0adf17d547e936d5607deaa37d724f560d1a06d4826aed0997ff000ecc30cc8",
+      "blake3": "64222e9460c73f36d87bc880ce8f60caa680c00516f6fba1eee0ddb044791550"
+    },
+    {
+      "path": "scripts/record_sleep_event.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10423,
+      "sha256": "c6a9ac572d81c0c172f28546b0d7b3ee82146c742669898367e5ed649548a238",
+      "blake3": "c0bc92c3643eb8a26a204da5db2717cd235952b6c18eedf675282bb874210ace"
+    },
+    {
+      "path": "scripts/sleep_core.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9482,
+      "sha256": "5800f6546144398d6b0cf7f58d6b03def2f4fea963c1701f46b86fb9965029aa",
+      "blake3": "c9e4461eed634d60cc6dc5224c7141b895164a06362b03e186b6a10d591e1819"
+    },
+    {
+      "path": "scripts/summarize_week.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2728,
+      "sha256": "71834b04f64340157f1d78d892057e3e6e1737f4a972759ae6f8f15e3ab4831a",
+      "blake3": "8052e0abea5604f7a503cf601220e572de82d1f3c3f7cf35c748cac5e40b81b1"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3796,
+      "sha256": "1a26179b26fbcad7dfd2b793cbf4b6ffa75ee6ef3c6df3066918c89f17729470",
+      "blake3": "3f7ceb206409c0739d81409dec235c90bc43df3e53c74480a711e9f1f77518e9"
+    }
+  ]
+}

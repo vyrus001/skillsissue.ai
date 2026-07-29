@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:184e2b3b62579448ecb277d88c82402484cc4fd7bb5458e8d4400ad415a9f815",
+  "sha256": "184e2b3b62579448ecb277d88c82402484cc4fd7bb5458e8d4400ad415a9f815",
+  "blake3": "f9695575a32a0975aefcb337c4ff01f3fcd3157ce6540651e8b907782ae2520b",
+  "size_bytes": 54883,
+  "file_count": 22,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2680,
+      "sha256": "1532e80f8bad353e5f1718538ca681f25f5af95e901d56749d56d53f258bb8fa",
+      "blake3": "0e2823025f890dc9e88f2b098ace54afddac4aa9577332164b0255d2ccb304d4"
+    },
+    {
+      "path": "README_zh.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2112,
+      "sha256": "748d7e441a67dafcfb6fcf51453d9beb5274de946ee67cb72fb0ecd63dedbb06",
+      "blake3": "de3365626097ef11162e4c4efff294d99025ecf972c25b7da0dea149048cd75c"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12229,
+      "sha256": "8377548d9d8d8f17d2ac36d2ad2eb65959c6f08edf8621fabcaaf51a460efbfd",
+      "blake3": "7a497608e422fc212a890a3e87fa77dbab3909105efd63f7f252746b6d4f9fca"
+    },
+    {
+      "path": "SKILL_zh.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9743,
+      "sha256": "4ceb5b18269c02bdef6d9fea9d378848123f4d837714b3781774e9fe31fd12c4",
+      "blake3": "e4e5db944dced3bb002ce7c708c0dbcb3436fc07f5d9212bb640cf196da8fa15"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 150,
+      "sha256": "36e82304138e5e41a170780333891df89f1938f3a4fdeed89ab4ebc20e7c5aab",
+      "blake3": "cd3b5409ffecc2a5c2b0577090a2135ce0a928eabd9c06a4fec2a199f9148437"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/evaluation-gates.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1904,
+      "sha256": "e22ba73e78f68671523d1e1460e2c60d1e1f9086a70f3822c8d90959f25c9fc3",
+      "blake3": "0aebe167a1d297c4e4f8bf50bd00efcbab5bd15730f514ecd9091555cf219dd6"
+    },
+    {
+      "path": "references/notion-adapter-interface.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2031,
+      "sha256": "8fad0e2a3d2f33100e5de4d376fb481b3c02b32453d9905bda21f7c132ff67f9",
+      "blake3": "f08bd02cd886c40dceaa57dd867358022670abccdbcd62df0edd42c59f151369"
+    },
+    {
+      "path": "references/portfolio-rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1810,
+      "sha256": "4b18a57ef4bce5f71418f8ae34d9c8ae8fcede07f406cdab70de9f6e7ff720ab",
+      "blake3": "0c5a96915223e6fe1675a11745a22a7eb994bda1ccdf96038f119917ebd70f84"
+    },
+    {
+      "path": "references/replay-evaluation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1871,
+      "sha256": "ffc579cbaaadfc770c48bdc1fef41f82b907d0a581ffd43b415dff8f0c94d75e",
+      "blake3": "1a53da9d2b6a9d90cb20aafeb8c6993eb946da7a75de23e403b693eac59aa89c"
+    },
+    {
+      "path": "references/scoring-model.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2224,
+      "sha256": "e238dce20e25fd9d61f4fcdd79b2fae6f2f8c9494a512aacdfcd94b4b972b6f4",
+      "blake3": "2c511055b8c8c07967c29527a813f2958640c93ecb31334a960903bc40e19118"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/calculate_scores.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2150,
+      "sha256": "8aae556da25b4c47f6e93014aed200c15f4233601166d5004356554247f52833",
+      "blake3": "c2d09668125247991aa585e1b58f66a25c3daccef8c36f995bf3565ee74d2851"
+    },
+    {
+      "path": "scripts/normalize_topics.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3958,
+      "sha256": "22f07219c0e0b24ba1fea56cdef4711bac66315dc1436b7eec89efb2895322b0",
+      "blake3": "df00a16459583e46e8698647e6207a070f178ffec36cad755739ade0f819b2a0"
+    },
+    {
+      "path": "scripts/notion_topic_adapter.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3736,
+      "sha256": "10d776d2a23395cf076f3c9a788c7a747b278a6f7983774d8b5dd2adf576ed43",
+      "blake3": "30aa28b7cc4d19ba24f744262be457ba2aab54c8815b231154af1ee0346a4694"
+    },
+    {
+      "path": "scripts/validate_change_set.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2149,
+      "sha256": "2be232c68142d9c5c70f082ba6d0ad1b02e64c8eb456b72b8bbc173bfbe6be2d",
+      "blake3": "13bd21b7609c0903b941690e97eccc99e53b81f5fc0029d715201eeac57bce58"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3185,
+      "sha256": "851db34562cf7572881986110d18941f6ffa6a176d21f9932f6809db848e6515",
+      "blake3": "ab595b3e9f925d9f810a05527a3c0b6f04b22780e494cd53b9be09ae8d228b39"
+    },
+    {
+      "path": "templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/change-preview.template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 503,
+      "sha256": "b18588e99075d3a82b3256d23adffc3c155a3f52700820a2a8b68f4ef54b6c0a",
+      "blake3": "f94217213516e5dab85f9cc25abf2b1ebd951fbe2e76c06644d1a0e037f6d4be"
+    },
+    {
+      "path": "templates/evaluation-report.template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 536,
+      "sha256": "5b03ec8b5ef34993b0e624131f95ed3661f1a607e859e185ab6c79ab8cab650b",
+      "blake3": "17bae6fbf43eb82aa6161d1544ce235c68035d09e4f0654bf1335df156ac3645"
+    },
+    {
+      "path": "templates/notion-mapping.example.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 394,
+      "sha256": "73bff2bdfa75c79eda66a9de212a9e9cef55d77e691888e7abfb2665d6addab4",
+      "blake3": "c79ad118e6b8a8a5bb123cb33da53039170514236764decdb75424145fe659d2"
+    },
+    {
+      "path": "templates/portfolio-decision.template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 548,
+      "sha256": "eb3fe2d21cb1ae4d6d586fc28f21ba0ec4189d1a4faf084315cd412ec45e16b9",
+      "blake3": "01f7e51f66ac4e7981a174cd4108a66bba96c1063f3bd921a00dc7cc655478f5"
+    },
+    {
+      "path": "templates/private-profile.example.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 411,
+      "sha256": "cccf937a66e7ff5722def5969df71e0b38f01b99b58418daeba6d6d17a6866f9",
+      "blake3": "29af612dce6c2cbc55d1f8d624e132e1bbbdd78a2ba2c94693fcab6ab6a5966c"
+    },
+    {
+      "path": "templates/topic-record.template.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 328,
+      "sha256": "8a02a571500f3c4e4244fb7c018bdf182dcf599fa78839cf4786f96e643938cf",
+      "blake3": "af4f5d233b38a0d924534f0215c542d296e37f3ab7161dd40a9acc040f701746"
+    },
+    {
+      "path": "templates/writeback-result.template.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 231,
+      "sha256": "2be73e29c0c526376ae5699f252f786ec3b98c4eefbe2d90a9c8bc26a22d177d",
+      "blake3": "48a6db83e2837a13295cd07df5e367f7baeeaa62e6b8a9a6580481af23ca281b"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:4d0a801ee360a02faa41844cb54e4337bbd7369cdf3692a0450c73753b5c882a",
+  "sha256": "4d0a801ee360a02faa41844cb54e4337bbd7369cdf3692a0450c73753b5c882a",
+  "blake3": "042936ce32622b13df5453eefa80d2275c73a912cd15f47f8ebd79d0f29d8656",
+  "size_bytes": 168008,
+  "file_count": 18,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17967,
+      "sha256": "efa19d76a47820f92021d8114cbea001f787857a322500c91cbada4ce31778f7",
+      "blake3": "5377842c147087c86d370a30504e6505926b6dfb7689d278708487942bf7383f"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 161,
+      "sha256": "31206fe4efe63bb381faf39cb00277fabb782119f5773cbdd52e6a5027748bec",
+      "blake3": "b074e5ccf75cb871fec41f25ac2ab6351a39ffbaeed12d163566fb1863629007"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/acceptance-criteria.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3423,
+      "sha256": "7b0bb3b27bca609a39c28976bd4c29b88607ba912eb03f36b16404d6c90f8123",
+      "blake3": "62b6a5b3129ee3cb9134159b45f260af697559d53e22d074094db37b8add12be"
+    },
+    {
+      "path": "references/api-reference.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3984,
+      "sha256": "3554365c392666748b8c85de5ed48a4ccad4235a7049f67840d4e09c43cc752e",
+      "blake3": "9840c7352b29c8bf4b3af4a26688f7c65fa278ee9aa66cbdbd337c0a2c3fede3"
+    },
+    {
+      "path": "references/cli-installation-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11864,
+      "sha256": "8a7bbf3b691f618d3987c3539290641e08bb8d4a35a10489459653cc5854dcf0",
+      "blake3": "b597afef8ec6b7c84413b696f41158615d362782a9686032825c7193b92904b8"
+    },
+    {
+      "path": "references/examples.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5435,
+      "sha256": "0b145586916cee2ad84a03d94aced7804bc830c0f402299976ceaebdb9ab2fd4",
+      "blake3": "4f29804452509592d7620a0787db8ed7ae5c48cf9c62defdbbed5ea3a68f6f9f"
+    },
+    {
+      "path": "references/ram-policies.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1996,
+      "sha256": "612c62174c29fc2e372f73dda605dd6d9b01406a98f80c537ee3f0d58df5f53b",
+      "blake3": "b9a4e1e3dccf7b399744f098c7045416b72ca4c5fbf8fa90eecc7b4eef3fbc77"
+    },
+    {
+      "path": "references/related-commands.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1760,
+      "sha256": "bb4a05ae248836ac386a3e8a08a1592b4f815a53a522379fdf2ae1d646931311",
+      "blake3": "3a9eeb0be4497c685a5f77b6dd601548bd29ae45db147ddbb07254be6f4a39ea"
+    },
+    {
+      "path": "references/verification-method.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1649,
+      "sha256": "f6f9f80ef6e1cf3d48ac41de8af652d639859c2dfd830bd1effe8b03db07bdd4",
+      "blake3": "c96522f4c0014fe75e41ac1ed740413f389785d1f4a33105264ecc32c923b50b"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/dns_analyze.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24393,
+      "sha256": "e483e44e31e3c6b1d92025d32ff48a916939733ab2eeef9497bc2b8958749bae",
+      "blake3": "b752807075ddfb4086c72df7ee24e5f55a86ee9305d5dc8850a1a9718811203f"
+    },
+    {
+      "path": "scripts/dns_boce.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24249,
+      "sha256": "d29142f897b32a8a89e2ed32bac442d8fff6d46f461d7359905fb9c8d5007456",
+      "blake3": "f7550d816a74df973a28cba813894b134ea753578612fd235b89bd2bce92e2bd"
+    },
+    {
+      "path": "scripts/dns_common.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14320,
+      "sha256": "a0420d761b2e976b5dbe1dab46a32e8e61da0bcf13863c56fde2b52c685e3c53",
+      "blake3": "aa057a4d2bcf92e49906e89c5af6c29f0595c0baef7f8018b44cf8029387439f"
+    },
+    {
+      "path": "scripts/dns_dig.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9857,
+      "sha256": "576e69fcf8816aa8325c4a333fa7d909f9eee4ab0e65d0796c9abcac1de1ce2f",
+      "blake3": "3a9b0042d8565ffe012b127bd9ac6019ae0c2f8a8df3528a95ae34a6a095ad77"
+    },
+    {
+      "path": "scripts/dns_openapi.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20628,
+      "sha256": "3274bf3861688a8de99bd2ff9f452e2a046e4f0019901c75ba18eea695e2ddfc",
+      "blake3": "e5641d3e4615738e2cf9facd483459f7103df6917ed52133a7c04ff959ab0627"
+    },
+    {
+      "path": "scripts/dns_quick_check.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8004,
+      "sha256": "af0be9566a3b230e6c9cffa35dcfc77f5062fbdba8bf12c09b586d9d52162fa8",
+      "blake3": "7269ed06d74e6956956c123635467ec33c6528eef1de920505581e8bd2b0e5b6"
+    },
+    {
+      "path": "scripts/dns_whois.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15395,
+      "sha256": "21228ba6757bb894725eb205d6d674347d552bc266194d1be0b13608bbe50fc5",
+      "blake3": "ba506785adad94710ff0543f728b6f323ce91c485135aafc93ede5f3ac8d0f58"
+    },
+    {
+      "path": "scripts/requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19,
+      "sha256": "63524fb3727c74932b1bef994427d3cc37b6df0ae56520f2efaaf5d622101e07",
+      "blake3": "8eb4625cce4920592bd3fa4fb822e32a155c3e94b6ed81c33c5ce88ca040fa13"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2904,
+      "sha256": "ebe9dcdc02a5c226011bfe3a7e4218ffb21ecbfdd6f7de5f9a09818de337cdfc",
+      "blake3": "d1737fe71aa291f175af594d0864a05e6f4f2f350d6fc532ab7d4b8f387c11f6"
+    }
+  ]
+}

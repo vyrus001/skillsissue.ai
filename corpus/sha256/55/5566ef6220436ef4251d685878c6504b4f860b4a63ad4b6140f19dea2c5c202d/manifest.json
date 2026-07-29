@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:5566ef6220436ef4251d685878c6504b4f860b4a63ad4b6140f19dea2c5c202d",
+  "sha256": "5566ef6220436ef4251d685878c6504b4f860b4a63ad4b6140f19dea2c5c202d",
+  "blake3": "675600e79dde9914cd34a49acc7a308a9d88b0d465e2ec22628cc45c9a23e4fe",
+  "size_bytes": 68813,
+  "file_count": 13,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7254,
+      "sha256": "360e798dde725e7c8b9eac788e8970f595f03fef7dd5cf5608c869ccd8aebc66",
+      "blake3": "3e50c8c84c72580afb42a5ffd81563fbe5228522cb4921af916a911e333aaac4"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16351,
+      "sha256": "d84d3a5f2f4f9348ed549a921a664c3f35b689919b4ec1977a686222fbc0a5de",
+      "blake3": "00364a8ef3bdd9e3120c41dabb6b5318beb4b5b5a167dbe180c3f2b7886b3f0f"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 135,
+      "sha256": "3d6209caf6bcdb04509c7659528adf08108ff22c0c5c2ad9c0bd4cc3e0baf7dc",
+      "blake3": "939f13a24134962c68ecf651fa986eba1ff80f4f72d3f13d7a8e6e297496a1bc"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/SESSION_RECOVERY_OPTIMIZATION.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8529,
+      "sha256": "f979047c5ef81ea81f7780f8bb040290f914e819ad1308ff6ea61c4006975945",
+      "blake3": "4b614bb452690c0cc6fc2898669606aaca8bfe380a4fdc5b54b5e88355c52043"
+    },
+    {
+      "path": "references/上下文压缩_信息丢失与识别.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10689,
+      "sha256": "e0446ff3946000e506ccb99388f3ab2c36d3878a1846d2bbb4a8a338759c6e30",
+      "blake3": "4eb4ba4358449e35c396800a5f7fc93f7545bf82a8ba21fe9dbaf1a21f1eb986"
+    },
+    {
+      "path": "references/上下文压缩_原文保存机制.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7084,
+      "sha256": "ff40105332036888020ede3610561592d5386e9390a581406298cf4d4199c248",
+      "blake3": "f0f69f89edc9c8e4d14e0ec6b81f1809f37ab4001ca76610a282052cd05874e2"
+    },
+    {
+      "path": "references/上下文压缩_简单解释.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7249,
+      "sha256": "b3d4ee4db722315282fb2a275f46b7e4b2296fc0775372c18b7f057eefe071dc",
+      "blake3": "1714371a43c6f2f09f7f3cba7c56538a3044c76f41dc8fcec5481765f9ddbf8a"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/new_daily_log.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1912,
+      "sha256": "e60e26cbc9a778d897f3f56f277cc8ca79dda05bd6fdf512d19951928a8d56e5",
+      "blake3": "4ae08ccdd13a48f2f769ab19f85553c62bdcdbcab23d61b6e958c457a8e0b9a8"
+    },
+    {
+      "path": "scripts/quick_recovery.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1112,
+      "sha256": "460c3115f21202727ddd4d232ba1764e19795513b4fbcf9ea3474b2c5bbdb035",
+      "blake3": "3032085e80185d9f0d125c7471712f99d133a2418d0edb3b13f174811e97bac3"
+    },
+    {
+      "path": "scripts/template_generator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3094,
+      "sha256": "79796de55fdc2f5442b9fa90ad30f77a0fd29c497e28bcbc47aa901500a3dcdd",
+      "blake3": "194fe7c9bdfc2c4659cde87dbd7e2c6e599a1f6073b6440e1c9b15919c8fc95f"
+    },
+    {
+      "path": "scripts/update_status.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1343,
+      "sha256": "585548861875c6acbdcf4615a29f3dc1f364814cc9286fb5648d43383b2e79ae",
+      "blake3": "3b948297953cfa72c65bc37760ba509bfd6439879eae16b7de9e87685a65b919"
+    },
+    {
+      "path": "scripts/weekly_archive.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1502,
+      "sha256": "60ddfa4c7362dfa8967ad3632f8c65bfe26e08ef0cdfff9f4db18629d76015f1",
+      "blake3": "5057a3dd8ba66d59f3c8f5dae6091ab16bf7c8b4ab8bd2f4a062b4f0a509bdc4"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2559,
+      "sha256": "5d2e3ab2b2e2ace521948e58aa63b4b1b8cda155eccc8f5851815de1bc09c1bd",
+      "blake3": "1a7679ec3a3d58a6d2311760d5769361d14cabafecdf1fed567b329548ecae83"
+    }
+  ]
+}
