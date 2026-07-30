@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:66fdbe151c115cba7b1bccc01b8f509715b07049a39251eace786c3ae24d2d56",
+  "sha256": "66fdbe151c115cba7b1bccc01b8f509715b07049a39251eace786c3ae24d2d56",
+  "blake3": "aabf75a2bf4ec9e2cd7aacb19368ab489eb06918963803034c0fbea5bb72dd68",
+  "size_bytes": 66334,
+  "file_count": 19,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4549,
+      "sha256": "f4f8551c75bbb44a18cf2fd88d528d5f471e27e7fdc29952f954067218e09604",
+      "blake3": "4cf8f389df28c7827db9f2be083d3f8d4af7914870ab1afeb5ba09ea8a1824f8"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 142,
+      "sha256": "2b7159ad878a09228079082b0bdf450a15607a869c76334406707b79796afcdb",
+      "blake3": "d04529197b08c7210a613b1c6cb4da21a255e1d0e3f3ad5e64d119c96c442cec"
+    },
+    {
+      "path": "modules",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "modules/async-slop.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7937,
+      "sha256": "a1b67b0890733e1fb9efa1b50683fe3db868633ffb56459849deec17f2e4c65a",
+      "blake3": "1ff93581e8cfabb55cec60a9b28dad1e416a97823edb95ef96b7ac661dabfe29"
+    },
+    {
+      "path": "modules/builtin-preference.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3751,
+      "sha256": "66d96303050bf1171f841a9ee3a37a04277bf3f42da19ad5d251f05a9901f7d5",
+      "blake3": "ff23ffb54bdd146be15ee44b7acebd681ef90b786e28554165189ba0c4e42f1c"
+    },
+    {
+      "path": "modules/cargo-dependencies.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1516,
+      "sha256": "f033cbe1d1c6d3aab505b92d15868053e9c3177cd8616f042b2277b3c59e0d1c",
+      "blake3": "34267269c087f9004122bd3fdf4834f25c350389c3c4d6a64861e46c98b8a94d"
+    },
+    {
+      "path": "modules/cfg-test-misuse.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1438,
+      "sha256": "9488760f0bd97c0d35f1ba467bbaced2a84457e094666400f15397005188d9c4",
+      "blake3": "4353e669a31ffdb7f16104dbfa5fac71a8c15832d8ccacac59ffc11af8e71a97"
+    },
+    {
+      "path": "modules/collection-types.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1539,
+      "sha256": "c12e7d8b5062ea9ad7fd89a33e790cc5ef5b7ebb8714f84110e64b9d02f32d33",
+      "blake3": "1e864437af144b0355eceaec944a7726bd83bdc688ff5cb69003f2c5a611ff83"
+    },
+    {
+      "path": "modules/concurrency-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5998,
+      "sha256": "6bf88bd2801eda15bf9f410b665419dce99b934ff3da6bf07e2cebe777acd8aa",
+      "blake3": "0ba48fddd665cbc8ed6f672cf70791f2ae0213ab843913308d795227fc47723d"
+    },
+    {
+      "path": "modules/duplicate-validators.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1559,
+      "sha256": "adc106f936f64bd79026737ee41b3e68191eabad496550c6a4d28958019885d0",
+      "blake3": "4a9def8096042a08b130f344e2d676a2b942d2c2e989871ab96b6b1226e2095c"
+    },
+    {
+      "path": "modules/error-handling.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1405,
+      "sha256": "7da0724089a01def04d9d4ebdc6e5f8154e08570922b29622cd0bebb4e16ba93",
+      "blake3": "cfc3739cb6bc190961b9ef1f1a02fe569e33b764b8aad2d1b92c3fab26d95bc2"
+    },
+    {
+      "path": "modules/error-messages.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1459,
+      "sha256": "ad9b9ca35aed90f2e47695bc95a7247b732dc835d75e5cdc7c501fb47cd3142d",
+      "blake3": "3e0d9f08b145b79379cbdbae5af89f912768634e09d66f471f8ab3f1467ac995"
+    },
+    {
+      "path": "modules/iterator-and-allocation-slop.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9416,
+      "sha256": "05ee0e2efc5632f7c6ed5564cde955c53623e25892772929d2ade036e81fcd1a",
+      "blake3": "4a00b4863e2fb4ef4c6047974ebd4db860a2bb747dbcde7877b944c4b159b4fd"
+    },
+    {
+      "path": "modules/model-specific-tells.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7032,
+      "sha256": "acde6166f5a07c0f59556bb11f4a0671e0c19949ab308f74265ce80dd9bad17c",
+      "blake3": "7032f83d52c24d7887ef3e5b2d91b819b0c201c6284d2a94f95eec1c23f1e891"
+    },
+    {
+      "path": "modules/ownership-analysis.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1469,
+      "sha256": "58ea697bd04e75f466878ae1dfc7f8bc739c338fd283ca49477e86854d62fca7",
+      "blake3": "fb315eed3844d8e3ae383c4a0b7952971e60bb2a41055962da69d1b752c68d69"
+    },
+    {
+      "path": "modules/silent-returns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1678,
+      "sha256": "1daed1908b31a7965c526c222afa61377c1f13703779a2e293717d073a901c47",
+      "blake3": "378997ff5588784beb0e9dd3c7e9c09841aa3fa994fbfb145f08299b56813a59"
+    },
+    {
+      "path": "modules/sql-injection.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1520,
+      "sha256": "6210886b4a6d3262cae4009b36c68eb561bba935c085766d71dc41f40254d20d",
+      "blake3": "1036def67159f5f043586473e9dc21c3be8b0b6f039639ad63abd5d8598a95fc"
+    },
+    {
+      "path": "modules/test-slop.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8018,
+      "sha256": "6a9f32f25e5b349328356b71e52e584090b32ccdfa40ce663f0be21e6f0bbf7e",
+      "blake3": "d1576d0365b2ba6eabbcdfa1565a3c0ecc32509f56e947ce278b6898860be883"
+    },
+    {
+      "path": "modules/unsafe-audit.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3876,
+      "sha256": "0eb99d7a7810ca66c802c7694c6d883a59b3c1c6b9b30c7b6903fc9cfbc2e78a",
+      "blake3": "c212556f21079bd40e1de295db1cb934f8c8e6862029f266719dac628c1f8299"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2032,
+      "sha256": "199cb85039013b5b8b7486c060e25599e43960cfb9f4f90278a95664625e4406",
+      "blake3": "17bd99c6fa68ba9be2502d9b795df908045fe523285a2cb40b7b9347178576db"
+    }
+  ]
+}
