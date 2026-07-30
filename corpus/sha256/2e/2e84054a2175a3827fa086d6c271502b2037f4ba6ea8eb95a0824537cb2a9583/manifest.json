@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:2e84054a2175a3827fa086d6c271502b2037f4ba6ea8eb95a0824537cb2a9583",
+  "sha256": "2e84054a2175a3827fa086d6c271502b2037f4ba6ea8eb95a0824537cb2a9583",
+  "blake3": "986923eaac6cdda2e83328d7176165fb8d0cf46c59104b39532c7b67457c981c",
+  "size_bytes": 249659,
+  "file_count": 19,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15858,
+      "sha256": "873e285cf2668373158100461f570393bad0a9eb13f4e1be6f49e528857d4292",
+      "blake3": "e7db2eb8efba7c1edd8386ccd194ab37c62eae0fd4f0463b6852236f24c5d5d2"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 131,
+      "sha256": "f4f7240d01c6b6a2069c9dc67ef827534ac65273c337e26870742fa73820d209",
+      "blake3": "cbbc14867772c6c8b8bf8344f352c2eb19e840f94fc39fd9232e71fb2101e471"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/news_digest_v2",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/news_digest_v2/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 310,
+      "sha256": "17ca7f2097c7fc7fd475913d903e6e6202f453db9a75c0a70f0d17949f34051f",
+      "blake3": "c62939e5ba24bcf33fbd3ca77dfc67cc6525295d9badb8a1299796933f953fa9"
+    },
+    {
+      "path": "scripts/news_digest_v2/config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6769,
+      "sha256": "68d82395bc88e1ce5c33d74896eb6ed02103df6d673bd8dde0666ce90bd97b6e",
+      "blake3": "9fdff78468ffa2171b66731cb278b351b1a474ff7956046a29b16d0077855623"
+    },
+    {
+      "path": "scripts/news_digest_v2/cross_day_dedup.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9285,
+      "sha256": "ef656ea2e6bd85d0a011f1989d853d89f2bdaf3f546dc7f5c0a69c7b69a81b29",
+      "blake3": "eb654161595e19a26f62cf70d4ab9b629f6847b14d3d0d6800413a99987b78a5"
+    },
+    {
+      "path": "scripts/news_digest_v2/database.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13861,
+      "sha256": "90ca95e78e859419864de7c327ba7b9729f056bf470b0e08ad4dd2326e7e8c2b",
+      "blake3": "6c811d50d962700582d92a595082b58dd1355fa6d446673d239b546197953d2b"
+    },
+    {
+      "path": "scripts/news_digest_v2/fetcher.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 37721,
+      "sha256": "01111be89e022bfad1c48c75efe31efefcfe4804ce48019aebe8f3130f2cd9c0",
+      "blake3": "06121e82893d03dc10f1cf05d2ed9dd280d0d712a35230051e6f88a39e93c2c1"
+    },
+    {
+      "path": "scripts/news_digest_v2/filters.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3258,
+      "sha256": "8ac40cc26b821a0888bd8d25e6d80a835b81110a796600c4caa1f81f400ce0a7",
+      "blake3": "a7ddea4c5d0f46bf04daca55f8892190685788bfdd8206ef02a57fb78cd6d95a"
+    },
+    {
+      "path": "scripts/news_digest_v2/formatter.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8754,
+      "sha256": "5504476897676e78be3c5c237bf8144693f9ff32b63cb785ba14c144078d4020",
+      "blake3": "4a1613deefc2f835fee8b3933c31220d6733c39a1394144ae3c7b657d4432679"
+    },
+    {
+      "path": "scripts/news_digest_v2/init_db.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6849,
+      "sha256": "60ca3bab63e3060eff4519e9d397b4cd143851fb222ee1470251197862e87970",
+      "blake3": "e17a1b16b3ae90dd7ed94a85522bfa17c066d6daa25dc70cdac849549b1b083f"
+    },
+    {
+      "path": "scripts/news_digest_v2/quick_start.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1966,
+      "sha256": "40e55032451b3aff78e452257699f645970c3e7fe8e9ad9b3cde667dc8e62da7",
+      "blake3": "9889d0f3464266beaa5d479521107ed06592b0b02927838e61b6756edc6656e8"
+    },
+    {
+      "path": "scripts/news_digest_v2/rules_config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 34228,
+      "sha256": "eb7778b3a56158fed3631740f9769e5606bb2e4fd61aa4a72a9bc456589cc10c",
+      "blake3": "6a193d800ae034c8352933c49ce171a78b79da744a75d36edee1d0fab5455c5b"
+    },
+    {
+      "path": "scripts/news_digest_v2/run_all_stages.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4883,
+      "sha256": "c22dea2b4bb07c91e762e6257b2b2c5e05924575635d4d95caea3f39f3877917",
+      "blake3": "e1a0c1c18379334227da45ace9f258bf8ab6489a548bb032c10bdeb8f2c73f23"
+    },
+    {
+      "path": "scripts/news_digest_v2/similarity.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2348,
+      "sha256": "8e248478596656adc4fe5327c09f700f6e4116bbd185aff58185512ec2fec2a7",
+      "blake3": "e9334502cac50e39d5dfabe686c37210938f90b7895b51138424ff001540a97a"
+    },
+    {
+      "path": "scripts/news_digest_v2/stage1_fetch.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1808,
+      "sha256": "e6a13358069be122ae4689fc86365f271a3df08a23c66c148e35afa81cc0fa79",
+      "blake3": "958cd13c1872a7c74810bfbb649c2ef053190b8044e81a38a6ee0651e8bc270c"
+    },
+    {
+      "path": "scripts/news_digest_v2/stage2_5_llm_summary.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 82114,
+      "sha256": "0b7616b975e9ce2dd72a2e8becf7b8e926b56a3b73490625d28b212197beae0b",
+      "blake3": "c181a81b28cb228959d7cb21579f7a3f8f5c82262a3d869cfa8eacd3d4de0b48"
+    },
+    {
+      "path": "scripts/news_digest_v2/stage2_process.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2431,
+      "sha256": "587725b0cb2d07d5a03998268a2e05d3a7cecf4de0dc9ec38d45d9eecd1e631b",
+      "blake3": "96910c5bfa06b6d352b8a36fde427f1d0503ad9afdceaa605fb78498e0150082"
+    },
+    {
+      "path": "scripts/news_digest_v2/stage3_output.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14171,
+      "sha256": "546a28b66b048684cbe3fea0203e6c98648b72113f7651f6d320bf99d6a5c7fa",
+      "blake3": "a03d1693b98963fd7459d052300943a1b5956bc7a2c9fef88188ff5d38a66501"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2914,
+      "sha256": "906bbf08c512de1abde345f3f35e6f93718cd248211d95b04a139eb3d4ef11d6",
+      "blake3": "531e414ab30c3c2e3f115a05ca98d5698fc768aa80c59d9e2704761cb14ffc9f"
+    }
+  ]
+}

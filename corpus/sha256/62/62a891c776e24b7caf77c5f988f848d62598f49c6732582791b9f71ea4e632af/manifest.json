@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:62a891c776e24b7caf77c5f988f848d62598f49c6732582791b9f71ea4e632af",
+  "sha256": "62a891c776e24b7caf77c5f988f848d62598f49c6732582791b9f71ea4e632af",
+  "blake3": "ad4c6c96a3da3feba5e6bdb21d2af1618e6450090720330d61ab1466e0534e53",
+  "size_bytes": 38428,
+  "file_count": 14,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2566,
+      "sha256": "cf9383d84c0657d2cb519f1ad7427fc9702f67290514701650b3cb640c9e4052",
+      "blake3": "e19233d04d94c854237c8cf05b3bb97e9bb68d57a424cffc4fe55dcbfec5811a"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 152,
+      "sha256": "88c7d16bfc2189a3ad0ecd4315ae86491bbcc79e94acf76c07c7be44a5cf8ff0",
+      "blake3": "d3518aa4b0c3723edac9b414db6fddfc7fe9c054377124c23d6cc5ea909a26e3"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1155,
+      "sha256": "8bfd20c37e4dae3b817108eb37a989bb4ccb217fd398d7c0c2f4ff0af413ebb4",
+      "blake3": "4b6c0866b2392bcf8760ba99e2517e66e7b7bd807f97cf4bf1eed87324dd9bab"
+    },
+    {
+      "path": "references/apis",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/apis/get_authorized_shops.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4613,
+      "sha256": "6a2a0b8b8955be9aa5ad1b1f40639643f20cd8818a2394b8a1802f7d9296299f",
+      "blake3": "b4343a3023718a454f1651728fa46df5a39fd4777b88c3901184b544990bfba4"
+    },
+    {
+      "path": "references/apis/get_reject_reasons.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3284,
+      "sha256": "47f115869a8ea62b216c53f0bd0db741bd641b4482fbdb88ace9e34d17d1083a",
+      "blake3": "000fe836381ad717019948a50a1d6a578164269f4f35ede922daddd660b426e1"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/_return_refund_api_runner.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10460,
+      "sha256": "490d553d8658890ece077c0ac8823e8d53510214ff16b884c888cb5854d91ae3",
+      "blake3": "2d20d60b7c05d17e52621c279ae5bc2e65a180274d8697220746f1683862c0aa"
+    },
+    {
+      "path": "scripts/_return_refund_endpoints.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1386,
+      "sha256": "72092ee478a9e2c98d23ada7581a46126b31ef6781d763fba6581b77645c0231",
+      "blake3": "2ef25990c5b5ad8bef0c019249bfb5db999a6e1747341c17d4c8705d91c5f3c4"
+    },
+    {
+      "path": "scripts/_shop_return_refund_common.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5656,
+      "sha256": "c4820bec602de6f4c522e04ee06f8a3bf6a085e3bfd4a7a1cb4eb4c99700a001",
+      "blake3": "5cfbd5a68aed44e1e2693c7820d26e0ef2e6ef42d45e527a974293c7959c8f27"
+    },
+    {
+      "path": "scripts/check_auth_dependency.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3273,
+      "sha256": "c972457ce665c8d80400b8fc74c4f0b2b025141b2c6ba092e49a7182979c16a2",
+      "blake3": "e38292110326a0d9cece0dab5a854c701a6c1f572591996a36254a4d2c432ac5"
+    },
+    {
+      "path": "scripts/get_authorized_shops.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 697,
+      "sha256": "583643ca759570fac03c4da08b15071f88429c48fd3f6b2b0efb16d7c523fa50",
+      "blake3": "18b4909fcd2f51f85857f11e19b27360843cf75ccb71521ad2fc0292dc5ba8c1"
+    },
+    {
+      "path": "scripts/get_reject_reasons.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 815,
+      "sha256": "49762b6408b95fb099cc411388b258ea3ec3a250518f39894c9a2b35532755ba",
+      "blake3": "cc3b8d0b6ea421c869df40d64d0893ce042665c33a1e3d1ae9c5c96e488b2b14"
+    },
+    {
+      "path": "scripts/return_refund_api.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 891,
+      "sha256": "465acfbd076c7e87cc1760fb5be2b3973421aa9803b64a609d5aa6be5641f25a",
+      "blake3": "931caf952bbaac8a2b63d14b7adf193957869566451f506e0cc44daf5ad1ca32"
+    },
+    {
+      "path": "scripts/return_refund_proxy.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 687,
+      "sha256": "8d6a91279be2c168f275bf760fec964f3987714d64fe8c82ec449e9007c78968",
+      "blake3": "8db6fab85a8a4b1d6c2704801ab0e613fc3557ec977be5b075f234ecbc7b80c4"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2793,
+      "sha256": "ae457bd2613a624d1fb678d2403b34520bd85986611722137cc70adcd2834e5c",
+      "blake3": "27b290f5692d567f00b20a389c17bfce0ac14a208f1d66f0d7dcc0bae2aa3967"
+    }
+  ]
+}

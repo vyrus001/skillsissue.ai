@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:89c95956f4f37325e289c7dfd8a51be5e9ab5696b6d008c90800753cc3c30303",
+  "sha256": "89c95956f4f37325e289c7dfd8a51be5e9ab5696b6d008c90800753cc3c30303",
+  "blake3": "3bfe53bc5fb3e277e272a3b4ed855ec78a5ce48c36c33dd0cbdf9aa8546e497c",
+  "size_bytes": 45093,
+  "file_count": 14,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4330,
+      "sha256": "a4db749dd5715ea825fca7c7ab372ef8b20a2438b5e1ce36d8440873f0d1689a",
+      "blake3": "ca3923729616442e443f6db1fc9b63447db1aaa415ee16f00f8084934adce734"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 150,
+      "sha256": "fca5680ab1ea906687f5a0d8fe116116cdd6baeda426c757181633c2c736965c",
+      "blake3": "794ee608004d3dd2702320fba7be952ed4386ef9b6ffb38ac9b16a8c49d39c7e"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3287,
+      "sha256": "ad1159eb9b35663b2516da796aa19a379059e857569467de085f753de2c0971c",
+      "blake3": "e7f43144d133312f364cb2354e205e067246c6daf11cc6e835273f8c4261b560"
+    },
+    {
+      "path": "references/apis",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/apis/get_authorized_shops.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4611,
+      "sha256": "b0e1c3d45f65aac060009ff2e42e9a367fd1b3b15157d6fabf23bf60415eb12e",
+      "blake3": "05ba1686803aa0ced5716843ca91c7e82de188bd7a6a66ccb721f0fc93aa81ea"
+    },
+    {
+      "path": "references/apis/get_order_split_attributes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5410,
+      "sha256": "ac622dba62229d00383ee6b81d823d730ab78d4698086394020f1eb802d6c889",
+      "blake3": "5056f7011b310cad0f0f224a5dc703c437d7dd1690e3b980ab26071ffa89ce80"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/_fulfillment_api_runner.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10446,
+      "sha256": "6b58363019a62142ab0e3093c9eabfdd984be04124739b2ea4c6862484a7830e",
+      "blake3": "f507c806bb471ea00b159f3a2280deef18e2e602e58d9d73db0d14a3524b0c17"
+    },
+    {
+      "path": "scripts/_fulfillment_endpoints.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1456,
+      "sha256": "e174e5c1318d6bc87239d9e969c7df1b1d8c562a4f606b2a35e2d86012afae22",
+      "blake3": "665dddf9b136f7b171e779c12abeb7c77d5ab5161205aa5ccfe538b3a2a0869a"
+    },
+    {
+      "path": "scripts/_shop_fulfillment_common.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5648,
+      "sha256": "7f3754d142a1847751f46a550c2778ff735339e8e291e0f3bfb795666fbfe32b",
+      "blake3": "7bd3710e142e030ab3dd465c2ec2be29e386454faa3b4e2deb0bb9f92dce9931"
+    },
+    {
+      "path": "scripts/check_auth_dependency.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3269,
+      "sha256": "ddf82bddcd1a5e8f299a43846b8d33927bb40f828dd3c2cb38da1c11d672fde8",
+      "blake3": "a5c37751c9f0811a747333a91eda07eba36699209da05cd5de856d17c1c1172c"
+    },
+    {
+      "path": "scripts/fulfillment_api.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 877,
+      "sha256": "5b62eb6a8fee99d33737578e750a012efcc3baf1f1c244f0e52338e93a1e21ae",
+      "blake3": "aa2e34372b6c6a1d51124dc15ce3c703534dec86de7a908d3963071c842c99c5"
+    },
+    {
+      "path": "scripts/fulfillment_proxy.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 673,
+      "sha256": "b8a31baf741fbd5b52856a22a0dac12acaaa10691a2370ed13eed4dbd7a4d740",
+      "blake3": "55aa0597839e7af40cafc158e03a8d26106ce60c223118a55e51bafa9a6a7a7b"
+    },
+    {
+      "path": "scripts/get_authorized_shops.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 841,
+      "sha256": "b4783df5e3751da6b34f22e13a5a3a712070b67221aec7af00fae7671037f1d6",
+      "blake3": "358f915123014eb1d61ee90bdfb204a89ca7b1bd0ca753ef3a254e37873419bf"
+    },
+    {
+      "path": "scripts/get_order_split_attributes.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1225,
+      "sha256": "f733722cd84066f5d6cb057fc4c915f7877832db5f8d0604742c1ddfa82bc51c",
+      "blake3": "313864f56d5f6f7099b001e184db904530c57e0e731afdf0ca9aa0e2cadbf155"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2870,
+      "sha256": "a2dabcb08e3a0e01a25b2f3e13af085ab237d621a625f7bae00ce763999f2474",
+      "blake3": "d67232ca9b4c50f6c2a4fab35645c9ab595ff62616c37a9e1728bece5b3dc805"
+    }
+  ]
+}

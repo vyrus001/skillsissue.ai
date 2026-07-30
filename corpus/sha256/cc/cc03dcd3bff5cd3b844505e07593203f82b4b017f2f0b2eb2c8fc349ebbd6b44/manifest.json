@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:cc03dcd3bff5cd3b844505e07593203f82b4b017f2f0b2eb2c8fc349ebbd6b44",
+  "sha256": "cc03dcd3bff5cd3b844505e07593203f82b4b017f2f0b2eb2c8fc349ebbd6b44",
+  "blake3": "5a1cbd18b8f592956019b2a94c74d2544bde7168aceef5a4f47d39df010ae57c",
+  "size_bytes": 130334,
+  "file_count": 14,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 72271,
+      "sha256": "7bd3ce2afe9dc9b23f68cb975ea16a64ca3e83ef444730a021ab91f848abd69d",
+      "blake3": "b2f5ca914ff290ef9e867744fb28af0ffead1e0c9ba961234b1d3efee71c7ff3"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 160,
+      "sha256": "085760289995b243a585177675762cf2f0cd0caf5136c9aab068733eb3f1af3f",
+      "blake3": "f10046b0bc5d32409585ae023f1437e6c30913af7d9751f18dcab7f14a810845"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/api-reference.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8120,
+      "sha256": "68872f913ce43a0ff831ce10d981881ab035e807131de1de0a5102804edf4e31",
+      "blake3": "ac69231ad259052a1f44fa2fd46357e802fe92196f0b30e39d9fbd815d36e8bd"
+    },
+    {
+      "path": "references/best-practices.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3805,
+      "sha256": "0a82eb38439a47471d8772d23668f970010f96a6ba31f43093854bf6b5fc6066",
+      "blake3": "b6b6f502ae8295fb4549b06de45f12c3d40b3cbcd5e09b80ba78d4e3daf0cca1"
+    },
+    {
+      "path": "references/cli-installation-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1636,
+      "sha256": "c192b259d57c9099649ce9ffdce3497f4b54670fe52c92c5dfb9865f7e7335c2",
+      "blake3": "39820fb3c04732bff5da5d199ec961d1da3e731e306aae711509e31718d98c7a"
+    },
+    {
+      "path": "references/cost-formulas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3290,
+      "sha256": "503685205b1eac03b122642dd4c1a3e1dc35cba9489e877c79955a027e451f11",
+      "blake3": "842157e3fd899616a0d2ed54677f031f6320c6ab55d412ffd375eaae82caa3e3"
+    },
+    {
+      "path": "references/error-code-handbook.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5662,
+      "sha256": "ad273ae6647aeaef85f2691e33dda1600b5d9bbb997978821b8a08f4b6efaaf6",
+      "blake3": "04ba10f4bec406f9d39c03f1caa4360620b213111a3b88a8b4b5e856021571fc"
+    },
+    {
+      "path": "references/ram-policies.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3144,
+      "sha256": "6c3613efc9b3ab76cbba559311d8079a637d244af677277f7ffbc452aecfe108",
+      "blake3": "0208ab059938114f634d186bd6f3e21926fbe0af3dfaf411c78a878b3a733cbf"
+    },
+    {
+      "path": "references/workflow-decision-tree.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3059,
+      "sha256": "b839f676210d141bee438b8864d0c25f301f6e676e87f942635a43d36e75e112",
+      "blake3": "b2c2393dc82e2fbb6b63a7b584a076cb81ca17ffaf94c091f65e8c54eea84594"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/auto_snapshot_policy_helper.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5488,
+      "sha256": "6d2367c4518e8b1878308e6ff9f74950ee2fa6dfbf565aade45e922c452867a9",
+      "blake3": "c4fd3b2c54adaa40d623dff5b71e364842081483a41bbe31ed5a85b4efb14fb8"
+    },
+    {
+      "path": "scripts/snapshot_cleanup_planner.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7008,
+      "sha256": "44e0d68ab37d8a1ca0d1be0b3e387935ca78bc2c32a25e931afaced771ea16fe",
+      "blake3": "24d0bff7fe15ccc3f77d4350ef500535478616481a3792f6be8358bb1ce2f91a"
+    },
+    {
+      "path": "scripts/snapshot_cost_calculator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6004,
+      "sha256": "2ccc2c16f95dd25d0b9ed6a42c039c558107e1d57c8c3c22aaec161d32ed5321",
+      "blake3": "078cf6e2208f2713211c638bd8a93fca0f82a6a8438d9056a41717c0a49ebbd0"
+    },
+    {
+      "path": "scripts/snapshot_lifecycle_validator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7239,
+      "sha256": "d5b355dcbc102642b708fe29c0a913ef0560b5a15eaf7d3a7c891c06d7ad59ce",
+      "blake3": "bea3911d72b2ac77f8338502156fbe497a625898b8f918339198779763e7956c"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3448,
+      "sha256": "d5fe7d1d1437729b806e921cfd07ee89ef4f7f0d81185ec4be4565311abcf5eb",
+      "blake3": "c0e8e41f196529b5b84ddefccc00ebb03751fdcd81612801ff6be08eae475842"
+    }
+  ]
+}

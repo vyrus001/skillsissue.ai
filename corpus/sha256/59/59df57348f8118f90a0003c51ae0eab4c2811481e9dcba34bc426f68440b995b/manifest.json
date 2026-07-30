@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:59df57348f8118f90a0003c51ae0eab4c2811481e9dcba34bc426f68440b995b",
+  "sha256": "59df57348f8118f90a0003c51ae0eab4c2811481e9dcba34bc426f68440b995b",
+  "blake3": "5278673833f7fc3bc7a60b2adace42f089858e537ebe4612fe3dbbf62b72685a",
+  "size_bytes": 44876,
+  "file_count": 14,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4119,
+      "sha256": "d433de62069d418dd372f7f6e85f9e33e95b68102ab1af77e59e5bebf67c2ea3",
+      "blake3": "902200a5bad9aedd9804ac4cc2d20161b58816a7e183406b0cc8bfde28a13c9f"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 148,
+      "sha256": "56b59555cd80bf9e0c094706871c7e30ac4becb58579af78454ebd994fa51f4b",
+      "blake3": "a1de33f572220fed761563d149cf25bca67a34f70db2312d59dbfc8fc76ce3cd"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3091,
+      "sha256": "5c1f86980cdf60ac95fd064b0bb6c2168c772958ed4b2f8c968a837a814f9a2e",
+      "blake3": "643124838d4ec519131272036104895964cd25bf04903b76f53d83043ee40c90"
+    },
+    {
+      "path": "references/apis",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/apis/get_authorized_shops.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4609,
+      "sha256": "683e0aefc5c50b93fad0812e9c3a1249769273012e8c7cf366a8a1bbd2703ca4",
+      "blake3": "05d968ff24563894cddb56d365fe73fde2eddbb091472fb746dbc155aa5378d9"
+    },
+    {
+      "path": "references/apis/get_warehouse_list.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6040,
+      "sha256": "e53eee2ba670b97d3c59138bbf4fddbd355e3fd12c563b2bab2af23a77c3e600",
+      "blake3": "a0ec8ca4bafe14b486c26d430d1eaff0ab6055d442d3f80c1650df23b85bb63e"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/_logistics_api_runner.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10416,
+      "sha256": "e36747d6684543e5a8ae69cf8915a9363b00ea33187a43fdd5b0112cb39a5956",
+      "blake3": "79c0249e112d9dbaf7d6f857631511255bf3eba165ffa2fabcba738cd3e50f2a"
+    },
+    {
+      "path": "scripts/_logistics_endpoints.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1369,
+      "sha256": "6aa997d38552c50cb5420069cb2040a69a941310b6622ab48eaf9b8251bf1318",
+      "blake3": "9a29e4b4c8cd6f86c4fd5474acdc2deb3cccc5b9324f48a9b3497ae43c0f2b94"
+    },
+    {
+      "path": "scripts/_shop_logistics_common.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5640,
+      "sha256": "258eeb607069538fb59c74a23a7154b0b21c4dde74cd36bfa6e1b338614d928f",
+      "blake3": "300a7439cb9187222069532c37680b7da7c0c538852641d8f83e39bdddbf8ddf"
+    },
+    {
+      "path": "scripts/check_auth_dependency.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3265,
+      "sha256": "ccad0e71b583569b04221fe9849c842cecd4fc9e19686204a9968fd2f20dd652",
+      "blake3": "cb4c4059c9a6f794bb067e0f967510cd4268fe5529918c661e4dbcd57a20eaf8"
+    },
+    {
+      "path": "scripts/get_authorized_shops.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 831,
+      "sha256": "ecfdd8ffcde2649a9223964c5b1a670633d4d7afd50d01a22301137fe143f034",
+      "blake3": "64919b7542ec4c67f3b0688a0761700ae69da6e55606a0c77b1e82732a83f35a"
+    },
+    {
+      "path": "scripts/get_warehouse_list.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1035,
+      "sha256": "5ca46b7f51a2430be4d3e2f9ff0caaa95f2ced8a51d77fe3c163bac84a468a94",
+      "blake3": "b7410b82f959dddbe58b8137da8e231c88b76d3636deb27c8fbbe57399678393"
+    },
+    {
+      "path": "scripts/logistics_api.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 863,
+      "sha256": "6bc629f59635f580e6ae53c4d69c4b70be974b928a168e87497d019af31e1b5b",
+      "blake3": "9648c240ac1c9ce1c2c8d9c853ee9a1586cf9eab32fa1004bfd4c89c16b91153"
+    },
+    {
+      "path": "scripts/logistics_proxy.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 659,
+      "sha256": "98b7500351709cba3965d4df6b42ea17310e108e117bdd6b439ac5fbcf7ff24b",
+      "blake3": "9d3d02846b314af7b5504e9c2933a6ab4e112c9fa6e2e6913abde937852e8f2f"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2791,
+      "sha256": "8d2a76cbeba850bfecefc25f8021ae7c7dfda83dfee9b56d3a032207661a91aa",
+      "blake3": "b7cbe5d00290eaa7f9332c89678d5e2dcb135b48d4915f9aa1517d08bea2d1ee"
+    }
+  ]
+}

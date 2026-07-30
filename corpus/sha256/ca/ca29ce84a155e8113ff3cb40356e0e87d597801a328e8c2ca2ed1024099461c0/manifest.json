@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:ca29ce84a155e8113ff3cb40356e0e87d597801a328e8c2ca2ed1024099461c0",
+  "sha256": "ca29ce84a155e8113ff3cb40356e0e87d597801a328e8c2ca2ed1024099461c0",
+  "blake3": "b455fee33ffafdcc336cfe34a5099525b4fd94616553d912c19f78f9f61bb4cb",
+  "size_bytes": 181416,
+  "file_count": 18,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4234,
+      "sha256": "957f6f40ae69da242427c290e3a8de9610bee247bd3860613773e47d04cd9587",
+      "blake3": "b3c450e0852af85a08db38d23a3776d9c973cddfad18c1b51a537194f2cdd59c"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 144,
+      "sha256": "e985840aa6f4e13e7dc75f9a773261aef5732213310b85d700bdc660d64d93d2",
+      "blake3": "e4868c1f584c7fda65f80d17da50ff597116515dd2ee69ef71f743b32c5c110e"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3685,
+      "sha256": "827be6ec72697e4b2329ce5caf17e0fda582951459608c8d72bf2cb0c50373ff",
+      "blake3": "333f362e441d81ef3397754fe02fdbaa8f3847b4d02e3e002dac3ac179472ce1"
+    },
+    {
+      "path": "references/apis",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/apis/get_authorized_shops.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4606,
+      "sha256": "3966283d67747e631744bddf28eae4d0526ac4fa54248d42a7bbc44369a45608",
+      "blake3": "f12d9b2848be02a3543d05e4f06ffd4d2e8cc12e2348a16a934d4f8c471ff752"
+    },
+    {
+      "path": "references/apis/get_order_detail.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 44870,
+      "sha256": "8d7ded70f2a6524d154170861ad16d33352352cb6c02e01185b4bc6c399d7146",
+      "blake3": "b186b976ab1ad2747fe12044f6cdc18abe9c6533985128ee74a44997d4c7289e"
+    },
+    {
+      "path": "references/apis/get_order_detail_202309.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 44753,
+      "sha256": "e7f9c57f4d1867421d0e62543df1918fc856cf7f927edee2bbd9c59b9631df2b",
+      "blake3": "705100184c52f48ca1f7fed8afe973ad9a4ede69d9af94456de1b0cf4a7127c4"
+    },
+    {
+      "path": "references/apis/get_order_list.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 48514,
+      "sha256": "7ffac4a070ba2c7d03053eb62d8270ebbf7d6ead5786fb04a807da736cdc3998",
+      "blake3": "a58f6c75f1afc74d4eb57f81d020bef05ac647f467e8f56709cd7d893fed5159"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/_order_api_runner.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10571,
+      "sha256": "53879b2b2e125fcb740ce466e45b18477b4247d412016487e88f44c87b79a0d1",
+      "blake3": "7d67d6cc46db0ce8aab53dfbc9438aa384d04e7e18249b9dc139bda5f78c71b6"
+    },
+    {
+      "path": "scripts/_order_endpoints.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2593,
+      "sha256": "67a08f8b2a52ab5e4b20f8ac74c4ddfb2f73fd21280005f0f044c0a10c21823c",
+      "blake3": "2e5762a4b983923942653bd8714c1b5dba1058cc7c77535678a827a42ccb2b1d"
+    },
+    {
+      "path": "scripts/_shop_order_common.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5911,
+      "sha256": "f5b2b2874d5330b84b7b4bf2f0ff4a8cd554d088b595e9547dd1ea782d887184",
+      "blake3": "db159bdf8dc6720c4964cfbe3c0b9b8598d616e6cd6bf3ebf28c8bd8422f8180"
+    },
+    {
+      "path": "scripts/check_auth_dependency.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3257,
+      "sha256": "d2e73b8c1f0ad176a096f6ce7aff51837d300af2b1dbf2759765ffd9e76dbed3",
+      "blake3": "7b15bb77632f65be28b088e2e8543190ec4fd87f96db770bc9ae6b351a9438b4"
+    },
+    {
+      "path": "scripts/get_authorized_shops.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 812,
+      "sha256": "c268aa3abe6a9c913086eed41cb3e7b81238d821fff65d960f69baaf5fdf9fa1",
+      "blake3": "381ff1b6970c7b1d1cb622af99fa9240834aca2d95f4a57a20e46e25f7944da4"
+    },
+    {
+      "path": "scripts/get_order_detail.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 808,
+      "sha256": "f2dd27e71753fba54f31ca3036fcbbfd3eaa8e6d368228bf9c58c92e183492bf",
+      "blake3": "c21cfaca4e54682a78790180018f8d3c0df91d690870b6e41acf534b2e9dbd86"
+    },
+    {
+      "path": "scripts/get_order_detail_202309.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 822,
+      "sha256": "b8702f77bf3389328a3858bcadd726a1c15f602a174022becef4564327849470",
+      "blake3": "6aace45753625554f5f2cdd792292d106eae463450df4ed59f4d5337f807c1bb"
+    },
+    {
+      "path": "scripts/get_order_list.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 888,
+      "sha256": "a756bae12ba92e5b64760e01f3475a6d6271a2aeb3e946e27c00496bdffe4215",
+      "blake3": "c74f7961994b67d76995e73b3c1514a131d4a1278d431bc802c724001cf3b175"
+    },
+    {
+      "path": "scripts/order_api.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 835,
+      "sha256": "cd9b3da1ec45c3a6c69f9c50bc8b0f169c2a935c0cf5e574fe78b107ae806687",
+      "blake3": "7c87f546e541a762c76cef5ff754ffc980baf65f811526991031fb9a4e096910"
+    },
+    {
+      "path": "scripts/order_proxy.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 656,
+      "sha256": "6f909a9ebe85a333e4414e6412dd4f2b459e4a881fc9b8517d067ff82d90c5af",
+      "blake3": "dab9fb5243f870f1877c009ee3ea8ff30726434686d7ffd0f767a071402fa264"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3457,
+      "sha256": "6b1e06268e6a8e30b639d83c27c7efe62db88f975636b980441f7be50f823948",
+      "blake3": "bfc73bfce0c29a820e66bbf9e042014e65160a502cee62d90305a1974b7c3418"
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:4ecb3116942ea6e54b60f1b15b34198b16a4c21d3c15f0bae6a5c68784457fa7",
+  "sha256": "4ecb3116942ea6e54b60f1b15b34198b16a4c21d3c15f0bae6a5c68784457fa7",
+  "blake3": "35b70248471f166ba0e10582ef3f6af51453ce96ef7311e3691cba67a0ba2c7f",
+  "size_bytes": 242922,
+  "file_count": 28,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 26119,
+      "sha256": "fb0eccad676c343a7fe7bec483d7026da3e3c3e4ed71c0025518fd535133e71a",
+      "blake3": "ee1e47058ff3c0f0d7c417e8f0e7495b54fd099cf71e831d13895e644a786b45"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 143,
+      "sha256": "06d4baa45d3aadcb0fa68123c94904faf188ec7d3aa901c19db43ca059349549",
+      "blake3": "b5cd71c4489201420f36e3bd6b8786c8f1421aa0812de217236be1f7cfd08524"
+    },
+    {
+      "path": "config",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "config/pipeline_registry.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 589,
+      "sha256": "023367ba0d1d4beeb82ad21f46614abe7b855f5124c37ed801de011a2c5c4261",
+      "blake3": "9af5d539196847b8f30877a6ea463797c61aa68286bfdb0cec2735eff6bb6015"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/anti-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2910,
+      "sha256": "461cdf642f0abd6e23af6a46facc276fc9081989a7a8e7c6e3ad5885887a1221",
+      "blake3": "80a25f9bc7be72f7735f0395628176d221407b5f55bc1076a2d583b0509d3f5b"
+    },
+    {
+      "path": "references/dag-scheduling-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3185,
+      "sha256": "13e045bf1c6e9ef642eb396c443296f3fd44ab49f739b662851d52df27c6685d",
+      "blake3": "1e72702b1cf5d3ec9472282bfe1bcff7a3e4faa4f4d976d46e851b871be12c2e"
+    },
+    {
+      "path": "references/error-recovery-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3472,
+      "sha256": "cc191fedfdc207eca5c0a0af186b2eaa940a2d503621b4c7d62a1c88418c53ba",
+      "blake3": "62df163f68af5784f5030d0e5b60533e2420f77a9fb48d2eec4d8679f6b55203"
+    },
+    {
+      "path": "references/examples.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4264,
+      "sha256": "fd9f310e5afe1b627aad9a1b92cfbd0157a571215385ee1322d03dd0e375deb8",
+      "blake3": "f4bd28b260bee24e10caef66f9bdce7fd15cab9594fe02a64e2a6f99c05769dd"
+    },
+    {
+      "path": "references/faq-deep.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3514,
+      "sha256": "37c4d670ed5e1cc41b0a2cf35c6514849ecbc4f4181866fa3d4767f880872b46",
+      "blake3": "762397c1b22b61ef2eaebec34e70cbdef48c922cb6a2b759f954f4db9e3525ce"
+    },
+    {
+      "path": "references/state-sharing-protocol.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3916,
+      "sha256": "160d635dc72e69237dbcc8e934ddf80d4fa06de787d8ac61b7eab6517f67cccb",
+      "blake3": "6d50689749eb83f23c6d1a7efd0d359168fe9159409154289cc964d4d96e89ac"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/condition_evaluator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12168,
+      "sha256": "be18c7063e9156b014c1cf84f94b297c025aa07892a7a0018a4045f7b3a2e8fd",
+      "blake3": "009132978749b71a92c82c996fa1735024549441b9405cf171e4716ed1e69aac"
+    },
+    {
+      "path": "scripts/dag_validator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20255,
+      "sha256": "723bbcd3e3c10daa6825418857344482f3fd1ddc43b94bc2d256edd219a7f07c",
+      "blake3": "2738b63ac0fafa5dae5a142da6183f3153603de958462b13e574eacba65074e8"
+    },
+    {
+      "path": "scripts/error_recovery.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12714,
+      "sha256": "dc57db7f9c6e9db2ac240715a6e5e69fd8c3c0eef82e2750c332d430eb654fa0",
+      "blake3": "de87879c277f4ad6278a0bc7b867f179a30e81d9f11e69329f2af9f71770ea7c"
+    },
+    {
+      "path": "scripts/flow_controller.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21625,
+      "sha256": "116cee8612c4555fe4821520c9faa0def20a681c9ba02155f857f95210cb301d",
+      "blake3": "7f412de4ff1f5915ffbaadc7fa19db5f023b5cb949b6365afbf88eec3fac972f"
+    },
+    {
+      "path": "scripts/hardware_detector.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6481,
+      "sha256": "a5a18204e2b46d2de53ce2c863f922c5f0e385b120e8760dc0fe925ef0130b4d",
+      "blake3": "d802c27315401c89c036f7743fdd5e02d02673c3e3b0462a0ec04f8192f01967"
+    },
+    {
+      "path": "scripts/orchestrator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21266,
+      "sha256": "27999545aadcce5ef5dedd26615d8da47bae7daeac29dcc681ec7520e8a3b4c7",
+      "blake3": "52e51f9bdd9c74d5f93ddebb8b7a0c68fbc95630d0d6e13fd704bfbb9c20e560"
+    },
+    {
+      "path": "scripts/pipeline_registry.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9543,
+      "sha256": "e9705a5b82d49e33ef3a2a0303863ba33db066fbada19f2a5cc86d8d8019593a",
+      "blake3": "92ce5617c96d1aabef4ee5390d96261e70469a1282b3dc1fac9da337b4d2324d"
+    },
+    {
+      "path": "scripts/pipeline_reporter.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18205,
+      "sha256": "07b2a076626ff0bfadfa3c9dacf2d6d8727f6154b310fe247a0432c9c4026360",
+      "blake3": "d492c067c94f338b816b3107941ee6ad1ee3b8888f1d51d4f3e7c2ec14910d9a"
+    },
+    {
+      "path": "scripts/snapshot_store.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13788,
+      "sha256": "47804eb4791f7640a017d1663e6e71ffeb2195c95d7cd09fee1fb253397b02a2",
+      "blake3": "01a2c3ac5b1efc93db303717356841482dcdc859935b5f03d3c9658d206725d8"
+    },
+    {
+      "path": "scripts/state_store.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 33564,
+      "sha256": "4c42145c2590d48a1d74f4d863ec9cc366a78578c9e870551a4f20b0bff78d3c",
+      "blake3": "739c2d175ef5a8ee570b78d6c141aca64365cb6edc687e1a150bb0e43672e96c"
+    },
+    {
+      "path": "scripts/update_checker.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4568,
+      "sha256": "76a0e74e7d5d1be0cc9d30e1802734fdaffad5b029374ed80ba49c54a29e8321",
+      "blake3": "5999bd5f093221917220e99db563b942a919ab85981ce1f03cf242489719811c"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3049,
+      "sha256": "64071914db6bf8ccd6b9bd6c599abb92070c4a9dcb444525ca559238f28f4fdb",
+      "blake3": "2434fe3be79da91bab73b3c8e9ad0e9cdc6bf421826acb59f8c2914ce0a427c6"
+    },
+    {
+      "path": "templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/control_flow_template.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3542,
+      "sha256": "8b91dbdf68f9d06f74463cb170ced2973d1d940f2f4fca7954ec59cba72195ba",
+      "blake3": "dbc0e870061e341ecb7f59bc1ded21386edae4b6e3fccbbf41a7a1d0f711eabe"
+    },
+    {
+      "path": "templates/parent_pipeline_template.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2062,
+      "sha256": "f4f68ffa0f2837ef6bfd01aea007790798634f7932e274c54b1cf0b131debec2",
+      "blake3": "79b1c9271e460458d8ba873aff66c9a798f5c868ad7059498dd47d1e48661238"
+    },
+    {
+      "path": "templates/pipeline_dag_template.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2761,
+      "sha256": "463faa610ab784eb6d6bae7590e8f03eecbb83b281b9b71791ea113c48116cb3",
+      "blake3": "1ddbfe43ab6327a625e2b81fb010f354cafa6ddbc41c38f49967f941a7b00b95"
+    },
+    {
+      "path": "templates/state_schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4624,
+      "sha256": "c7ebe8f4414bbc503c9d413f024cf251255486ae82cb4b756196eb45ebb94009",
+      "blake3": "cf2c6023bb9f74b3b4baf53593e86ffa4272affe804d98d79e1a3b7333ec3378"
+    },
+    {
+      "path": "templates/sub_pipeline_template.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1352,
+      "sha256": "2e6bc0c0327c2d785d89b6fb3beab26f13950b9b502c513dec487d2871c58fbe",
+      "blake3": "225cffa284f9b85442ac55368ef59400fc56448805aab7be97c9a7478472672c"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/test_control_flow.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2113,
+      "sha256": "446babe13d4ea1999a5dc0c1bb172bd65d61c775788183e60f3c07cd23bc830d",
+      "blake3": "3590fcfaf380ed41c925aae9f4ab74c5ca114b9a0297e0602189ea7ba75c429c"
+    },
+    {
+      "path": "tests/test_pipeline.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1130,
+      "sha256": "b99d5da93de3d06680442455b3065fe2d21aeb43f7f2c4ccfd2844b105b80fc5",
+      "blake3": "a2353176e15918d756a0cb34451461ca70c4ea543d28690f4253fdfb5018b89f"
+    }
+  ]
+}
