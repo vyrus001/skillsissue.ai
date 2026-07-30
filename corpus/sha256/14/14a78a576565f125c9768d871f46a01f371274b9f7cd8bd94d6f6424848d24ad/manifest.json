@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:14a78a576565f125c9768d871f46a01f371274b9f7cd8bd94d6f6424848d24ad",
+  "sha256": "14a78a576565f125c9768d871f46a01f371274b9f7cd8bd94d6f6424848d24ad",
+  "blake3": "80fea9ff18b2972553ae3c87873a0c1c483d68b249533e037321a1def0f796c8",
+  "size_bytes": 60687,
+  "file_count": 12,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4850,
+      "sha256": "c70e7cd1c1019570e606156719bc19e29d2629b23797a57b9673051100f61b6d",
+      "blake3": "4a46a6a32deaeb42749b176fb063333cb5ca115fa56265aa60fced91a4216a0d"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5271,
+      "sha256": "fc360dc1c89c70aa51a86c8f93728f2fbc26d755405f9d1793c87f26209e385e",
+      "blake3": "89e29402ed1887c92fa6230f9498c455c7dd09bdb08dc0c798552f1b910324fb"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 140,
+      "sha256": "e87e134221cef1e2c2d4a9d436a10edbf610e6bd0094b94c7766e1a61bfc0680",
+      "blake3": "cbc31740e699fbbe4481bcb8627ce6207b7f4b5f9632242cde5e85d2dfc5db5e"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/subagent-analysis.prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1672,
+      "sha256": "aedeccddee0ed28e2919071a20932ee5e4ad5481ad15172c1631ee5d27a138e0",
+      "blake3": "1677110ea3a256c5d79fe7e4c99b5a1ed3e7f8dd6c19cf2a894a5a312015d664"
+    },
+    {
+      "path": "references/subagent-analysis.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1460,
+      "sha256": "5a9e78469230b70a70a987c7dec4d1cf2a24a498a9b38ece4ff9194dc05a304f",
+      "blake3": "ae3fe255c239a591c5d7b45cda204e05501f7f5c2c39df8f20a761a7f3c4fe8c"
+    },
+    {
+      "path": "references/subagent-input.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 575,
+      "sha256": "442229904efef2c84ea76c19655c963be3040176ac5511201ecca231ba94d020",
+      "blake3": "57274610a86d9af9a069cf132f6b598f4b8f9290decdbe0ae38835c3987ef637"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/analysis_db.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4148,
+      "sha256": "27a040eb8c7a8a22ab9ac58ddf9c6225c3f3677e26b60577f5d7cd1ac8b4ebd3",
+      "blake3": "b57eebcf56c56357ee177cafcbad8521eac846bd8f9de2c010315903f9f4784e"
+    },
+    {
+      "path": "scripts/calibredb_read.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12616,
+      "sha256": "2ac46d5622e6aeec91746b2076f06c52616d21bbe294c0218409b01b23f77150",
+      "blake3": "1f28c908d976e44e315abc092bfbbec36eaaaa79f9cec803ecd5f385272b9956"
+    },
+    {
+      "path": "scripts/handle_completion.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12701,
+      "sha256": "649497a337f469745e3c47b8d278c106f36da412657174d05410bfdceff88870",
+      "blake3": "8b8daa9ef6a26f79b31f910fb8d2f17c060b4a1ba6768731c1c78c6bdaaffeb9"
+    },
+    {
+      "path": "scripts/prepare_subagent_input.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2110,
+      "sha256": "d46f26cf9a08fc445c58143cb684e26f01b9cda7b8469b565b0a4dbd6cdb8c9e",
+      "blake3": "e0f538bde3688755a79c2e2216eac5c3d3205ca1b687ef30ed6c686476ba0b4f"
+    },
+    {
+      "path": "scripts/run_analysis_pipeline.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12117,
+      "sha256": "4f2e86b597d9e2b02c962141ab34e4044b6874eb039c1729942c0b6e97c61853",
+      "blake3": "bbac1deda889811a2b7d1f187a1ce971b80ecd42e2b98f61d18164e4580fd76a"
+    },
+    {
+      "path": "scripts/run_state.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3027,
+      "sha256": "96b89e6f6e01b95d7642e3f567280c6fb97e4be9456bd79a2d26e6a757fdd3a8",
+      "blake3": "c0555f5c0bcf10bfd04a0b1a6ffa6f8b759825c3f8175124334324bc56a41c82"
+    }
+  ]
+}

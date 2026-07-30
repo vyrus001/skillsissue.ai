@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:b1868c3223f260445118a52be838decb157a4665a4f211e2ea31eaf02a2bc7a1",
+  "sha256": "b1868c3223f260445118a52be838decb157a4665a4f211e2ea31eaf02a2bc7a1",
+  "blake3": "f3e63094165a14232f53c7017107f8b9b34b021a8ea8db1d158dff26d84a068f",
+  "size_bytes": 88064,
+  "file_count": 24,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2625,
+      "sha256": "08d16890832c84c318c954c64aaf0bd3f39a71f1d23195bf906f11a4ece37a8b",
+      "blake3": "16163cf9aa4308af9111f7bba4d3c089c062da2ac8b7398718768ecfd50534a6"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14759,
+      "sha256": "b2d88e7d0cc7c943fba7d0f798ae0a2299a10c8befffc7a5fc9b394fe53159da",
+      "blake3": "ba276162e30cd7a4e9e43184065a9242b2aa158bad7ae2b7d0ebb1f27695e14c"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 137,
+      "sha256": "7811cdd5d17939b8889fe21dda3bf28a7d81af0b6389b278bf5727d23f2f92d4",
+      "blake3": "2d130907676509cf258cf694d7598171f3204cf597222495febb7feea7836345"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/collaboration-workflow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3319,
+      "sha256": "8cf5a5dd980fcdd2c79e29c377fadd54fb9f8bfb9041e31e32969cd1f5f36b47",
+      "blake3": "493c3c0603238c472d80b4c875556e0f735378ce86d846edabdfd84ffa1b7348"
+    },
+    {
+      "path": "references/edge-cases.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2581,
+      "sha256": "b3917c99b8355e04dca8090c6554a5441450d0423b067ae975b3ed8483085bad",
+      "blake3": "51bcfb4a0f230cceb466562b3bb7142281a6e4cf033e52d5f8c633fa875285f3"
+    },
+    {
+      "path": "references/narrative-methodology.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3622,
+      "sha256": "de838ebc97717b18c783a19d047ed1789034e689c3f6e6e6af4afe24eb7e43c0",
+      "blake3": "336a4951dabcc9aec32a3af3752cc60a3b2c56d1a2ae293853a83227485b0271"
+    },
+    {
+      "path": "references/structure-validation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3099,
+      "sha256": "ff0e8d399942b7d168e681d8e75cecd976a974af4664fbfacda118441ff11725",
+      "blake3": "0d6140fff8b2a816c878dcab6a08e5dba8df3bcec9d4bd9a9ab310094607fbb0"
+    },
+    {
+      "path": "references/style-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3594,
+      "sha256": "e2e0d219b1462782d05e710796568cf533b47d3564f6ca64e3e2411b4e205ae4",
+      "blake3": "6fc3d53b6c04e897573e94f0a949daa961be634b0ed9bec2d4ba4186f2c1aa0d"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/bump.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7284,
+      "sha256": "1ce1c9d5647bd9bcae85c551fcd854b3e716e292ca76f751a79bdac30ef51103",
+      "blake3": "225c16fd744b62ca313676e14f32a84d46a1213b23e2fe74519072f60c889540"
+    },
+    {
+      "path": "scripts/density.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6742,
+      "sha256": "ba6fdf97bd9b97319ba6fbe181aef4ca883cd40d40e24b14dee3bc4562ed4e2c",
+      "blake3": "381a0b59f0c282f18f7d45be4cc5999616e280b9f8bd53998b5dac4014862766"
+    },
+    {
+      "path": "scripts/init.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3272,
+      "sha256": "49e67059bb872356b8a8f390325e3007185a7879b0039476ca50c933bd4eff0f",
+      "blake3": "c049c2f15ca57d46fae92ba722ac98153916dd9d07b4521e1c42ad20ff3c65b3"
+    },
+    {
+      "path": "scripts/renumber.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3003,
+      "sha256": "941f7edb5ff64fee9820431185134ccb41aeb2578f22e1b05abb7148b8ccb488",
+      "blake3": "59168925d9267ad309efefac1e46c82f61d9dbfd815f08d3d9f7cec8909f5816"
+    },
+    {
+      "path": "scripts/validate.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9694,
+      "sha256": "55453f52c1db5daaaacbd70f8d38d266296348eed7941967f04f902e1fe563f3",
+      "blake3": "0bf24a3859ae1c254e40b76d2e4b2202f6fcfbfe9f8d11467e6006cefb0376fd"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2716,
+      "sha256": "1d737823b040a93e7c9fc1015ae047787a7899774f9a5395edb3efcaf78ed655",
+      "blake3": "7d6027d2041d329c5c7d4a689a4751c9682bc7f4480910f3e91ce933a07370e3"
+    },
+    {
+      "path": "templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/board-briefing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3112,
+      "sha256": "f50e9d8ff6e9c0f8f102d63f845dfd89585d07cfe9add2896a875d580bdfffec",
+      "blake3": "562067bf767f2cef92b6b9234c78857f6783235dfe7848fcd2a30ecfa76e129a"
+    },
+    {
+      "path": "templates/decision-memo.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2018,
+      "sha256": "05d9a31111cee6fcdedcb8ce7004cacf31d1454e44149a0024117c42d9d06a07",
+      "blake3": "868c1328779592e725e9d0e5a2d245078ee22d343d6e0bee817560975a6005fe"
+    },
+    {
+      "path": "templates/executive-summary.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3953,
+      "sha256": "be5e5c96b3468cdbe7e4da162ca832fca4d775cc31410359b450b78764e24a8f",
+      "blake3": "656c86d1db91d1c5dffff4a410cc68bf43c9b11191f538832a7121753262afe8"
+    },
+    {
+      "path": "templates/one-pager.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 946,
+      "sha256": "9f04366af286fc9c6b40a585979cf48374c6e9b4d7c2cc2a6f2abe29151d596a",
+      "blake3": "6edfbe65fa880946645f6992e8d801a8116c630caf00fe4535b3b1ee6f82001c"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/sample-broken.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 184,
+      "sha256": "6b72e35f61ce41ca55431f5d2dc10499563bc67668c35f8186256090a9774085",
+      "blake3": "35c2171711c3961aa60124c99e47653dafef7e7da0ac62c871c2908565cce24e"
+    },
+    {
+      "path": "tests/fixtures/sample-v1.0.0.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 380,
+      "sha256": "637705c624e9992222e2ff8ab740550bb412672851a9255b62766c33676b5e8c",
+      "blake3": "db4ee4f4986b591a20285cc854f086dcffcdcb3d500f6e376d5eb335ef81893c"
+    },
+    {
+      "path": "tests/test_renumber.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1110,
+      "sha256": "f36495abb698e7c82eb4431a0d2670e1de1e2d70c660f0972a6156ae56b57939",
+      "blake3": "17a580fd86bbedf71514b7e75c0dd8015d3714fc8850337657343a2dd671910b"
+    },
+    {
+      "path": "tests/test_v2.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6390,
+      "sha256": "f247a76d797a4fa8d81d9d68b47496df94f8e11beb452444c71d6a798e9ac100",
+      "blake3": "9e491280e08b6fd2e5fd8d7edb56b7ac517b7e05632a335d8bef23299d588955"
+    },
+    {
+      "path": "tests/test_validate.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1533,
+      "sha256": "b74e2c8aed6b8078b19f88557544ea843b5a8f4ee153ceaf20dc23482727c6f9",
+      "blake3": "1e8ab46f878ab3f90e789e58c1de55f5a7c273825449d51ebef3020f86dfdf6f"
+    },
+    {
+      "path": "version.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1991,
+      "sha256": "289f89b79422434d942a18c61adf1969b3c2a80e3a8ec38497437a40f673c4ba",
+      "blake3": "d5842d523cde9443810128090a1ef99d8d68a43b1d1d122579867c72d11d8f7f"
+    }
+  ]
+}

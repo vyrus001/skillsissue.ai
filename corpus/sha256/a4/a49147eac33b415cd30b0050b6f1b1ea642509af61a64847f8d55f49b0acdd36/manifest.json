@@ -1,0 +1,1171 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:a49147eac33b415cd30b0050b6f1b1ea642509af61a64847f8d55f49b0acdd36",
+  "sha256": "a49147eac33b415cd30b0050b6f1b1ea642509af61a64847f8d55f49b0acdd36",
+  "blake3": "dfc1212cf8589a8e1dfe1901ea7dc27502dd41e75e54d355294bd3bfa7e1aa1b",
+  "size_bytes": 1164810,
+  "file_count": 106,
+  "entries": [
+    {
+      "path": "BENCHMARK.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4878,
+      "sha256": "fd85a260dfcae21d0641f6af800e028e0ee4032737eacd1efff9d70e8f3a3fba",
+      "blake3": "568463ffa4d19bf0af7dec6b51461f210e0c61d1083fa349ca6abd1406911de1"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14191,
+      "sha256": "ba156dba3a4142aab83b2816383e87aadfea698855d7efbe7a06112074972615",
+      "blake3": "a5a6ea3bd1dd7a63e184c1375b82217adab0774db55ea69aa1f352ce4ef42bdf"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 399,
+      "sha256": "7b19856a25455c7036f185b92a78435697017e89e50b9763881d1307e89e3d63",
+      "blake3": "7c56998042d823ad230fef063f9302bae3178930522fb97af3b38a095aa53bec"
+    },
+    {
+      "path": "evals",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/evals.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8637,
+      "sha256": "00f800ca3bf1f1747c285de2026c19e0709b938b8b591d1972a330841ec67a1b",
+      "blake3": "d6da3a9300078b40776e70d571ab5b505762eb7917bad5d8030c3f62bb71f6cb"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/_shared",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/_shared/standard-instructions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 458,
+      "sha256": "29cdb9dbcfc11b2ffd713279750dcf9f865ed6130c5045518d5b02a61600c53e",
+      "blake3": "deb040412f2b873bad6d43a2a048f9e256df8609d4f9e4877b0138bd69e840ea"
+    },
+    {
+      "path": "references/_shared/standard-output-format.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 298,
+      "sha256": "eb5ed489677d5dd12f051ee8796eecf361e651152d227239bda43f84d7e18695",
+      "blake3": "aadc02640051c4d08727114c789c9858a1d581546372230654e743d2373c53b1"
+    },
+    {
+      "path": "references/cad-conversion",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/cad-conversion/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2422,
+      "sha256": "7ddccae0793a19e2fcf56f2b57af70c35315d16cf5b234c1d7b9f19d5d263cd9",
+      "blake3": "3ea32533f916260a570ed10e94d5775d65c3e7cd865110fb4fe904e775c8fab5"
+    },
+    {
+      "path": "references/cad-conversion/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/cad-conversion/scripts/conversion-report.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1321,
+      "sha256": "85bff6162e697e979251f1bb5be2f87b4715790e9e44e26a2d929ebbd2ab3fae",
+      "blake3": "aa5d63857b46a460395021a8a83cfd1af0eb788287cd8f5dfc015aed0f4f3555"
+    },
+    {
+      "path": "references/compare-profiles",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/compare-profiles.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2302,
+      "sha256": "5ddd95fcd669b037484e59f6530920fab3d59a81469a0cb18ff5358dfb828b88",
+      "blake3": "c2b000973d1667f5150cd0e66bfd0e4c594bdcb9ad85b7deee758bab6a47733c"
+    },
+    {
+      "path": "references/compare-profiles/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9410,
+      "sha256": "797ed041e75f1b59717d7591017f31d3eab46e92cca5644c5d1a6730733526dc",
+      "blake3": "96e8f12aabb4406713b7cd313b11f3a00a165119cb4ab5678ace08ec0e4dd8d4"
+    },
+    {
+      "path": "references/omniverse-authentication",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/omniverse-authentication/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3126,
+      "sha256": "d666971806f09462822519f54f5e4f39dd145b881ea696fc3cdb61d6d9ecf380",
+      "blake3": "ba5eacd915a6453d979e247a4187a3f0c725beb6f7683d54ccc4221d99c1ae01"
+    },
+    {
+      "path": "references/operations",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/operations/CLASSIFICATION.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3575,
+      "sha256": "cf631fc06f0773c5c213dbbe03fdd398e24626fe8f8253d9ab0fca1fe43f3444",
+      "blake3": "bc91f8d03423a53c1f7aa6b7f66e49b7aed67ac7d6f46c4ef51a63ecbb78446d"
+    },
+    {
+      "path": "references/operations/EXECUTION.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5997,
+      "sha256": "989c914d26f9469e88bd1a7f280dda4887c74eccdf6a1a2003686037ee952420",
+      "blake3": "a7b87ba4f5704e8bd59b1d8546f177f074a739e12173bdccb38f2dd4fa9680a3"
+    },
+    {
+      "path": "references/operations/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7899,
+      "sha256": "d29837332623399587bde2f91fe1aa5e6ed851bef7c1e62a59c6ea885f887e29",
+      "blake3": "05458687377dcdeaf5746ef9a838239858bcc99b097bad0b28c4aec7d2d85e53"
+    },
+    {
+      "path": "references/operations/operations.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 56834,
+      "sha256": "5d2049781fabc02d16c96371840cf486eb68666bf9119df1aa0a71f7e58476d1",
+      "blake3": "58b7b84660a84276ed5d3dd3c0805d81e9e71fa9e8aa47c3104fde31357d18ae"
+    },
+    {
+      "path": "references/operations/probe-snapshots",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/operations/probe-snapshots/usd-optimize-1.0.4.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2199,
+      "sha256": "e5c1917b73bb339354b61370827d81c449b0fe581ef51ef304a12471c5790e70",
+      "blake3": "98e13773494cfa2ebb755310b20e1c62babc4f21ae3ff6ffcefa76b60ce78da3"
+    },
+    {
+      "path": "references/operations/probe-snapshots/usd-optimize-1.1.1.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2255,
+      "sha256": "f912a37462f10c823836d2f83392d962026dac07424ed105bbbdf45ebd54e305",
+      "blake3": "78093b6162dd041740db49f610f3ebeb97116eae812fb3d32a6797144fb9b752"
+    },
+    {
+      "path": "references/operations/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/operations/scripts/operations.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6699,
+      "sha256": "8fd4f2158b77da5592107ec7d2c58a53f3c02137f3eebc25885f29c900f8c0f3",
+      "blake3": "5c7c6b70e11a60fb7562e22353bc29113e0369c94d93098cc9e96de0683e3f7c"
+    },
+    {
+      "path": "references/optimization-report",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/optimization-report/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21328,
+      "sha256": "df6379970e1baaba3f6909efe179e4d91ddae6c90e1e9f64eb7cc8e898bf4ece",
+      "blake3": "b86ffeef44a3e0a21fe16979c608489908db092a7e97d00886dbc80488384b27"
+    },
+    {
+      "path": "references/optimization-report/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/optimization-report/references/optimization-report-template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14269,
+      "sha256": "280b9d2f7b2ba10ccdce97465669c8a6c566c4ad1463ebd15e8bd42375a2e9ff",
+      "blake3": "2cd0e8dabf80ec8375b2f83384a95636eebd1987a50fc6287c80523deac0b337"
+    },
+    {
+      "path": "references/optimization-report/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/optimization-report/scripts/descent_convergence_common.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9191,
+      "sha256": "1cc34313e60d7a76a6ae4025e66596c5fb675f30d5287b8477e33ac88c465697",
+      "blake3": "fee0fddda6124a35dafd3c2f15dca4ea70050919838c7d5f09a8de6c5a45a78b"
+    },
+    {
+      "path": "references/optimization-report/scripts/optimization-report.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32508,
+      "sha256": "520c010adad4afb1abe3b534eaf287f9bfebbb83dba8fcfa83e87e195a3359ad",
+      "blake3": "2dcea4eed6d1299c2976685ec02a18c1f25d666f7c58be26d41c48a20e96b1d2"
+    },
+    {
+      "path": "references/optimization-report/scripts/test_validate_report_descent.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10725,
+      "sha256": "85c1f318479de5a6bc5a73248292d44634107eae253d3762e638a80a98aa1ddb",
+      "blake3": "2d6cd9d1d6302e583ba657cf0101112dc9ee3b0965fa2160d823e6aa670d0a18"
+    },
+    {
+      "path": "references/optimization-report/scripts/validate_report.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 37930,
+      "sha256": "1883d2ce8df902748382501aeb4b62aa7a92958f6bdeae8ba34f4054d2aab918",
+      "blake3": "e12e5f0dfc7a7ac14a6c12f34d890c890a73c0ba2a021232f675db3d772fb854"
+    },
+    {
+      "path": "references/output-workspace.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3122,
+      "sha256": "d7dc8441666cf9b7af8f13e4f6614d849fa5a6e3e1c6f4e68f18af6f7224edad",
+      "blake3": "ff20544caaca3dbd958a9bb5b1fcfbfe9d8827b101b273dc202a801c10657563"
+    },
+    {
+      "path": "references/profile-stage",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/profile-stage/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13568,
+      "sha256": "e7bcd6ff37057a454d9359b2dc0b9432c7807e46e059ee2e9cb4ffd6c9150c70",
+      "blake3": "f4351188043fecc6df300c8f39e02e59c7885a8112d7236e4886ddbe983ec059"
+    },
+    {
+      "path": "references/report-templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/report-templates/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1301,
+      "sha256": "c72a9455c13e0523ea96840e9f30c0145312524e8a3aa4d5f11c51d1d7a0fb98",
+      "blake3": "ceef30f634fa0a1c5c4694dc960bfe8953e26bf84d6d55f362568c2e78939ca9"
+    },
+    {
+      "path": "references/report-templates/optimization-report.design-fixture.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7862,
+      "sha256": "405d77c185016a08014ab059159cbee1c84a004c34bf71d89d1652cc166aa9ec",
+      "blake3": "c29d56a38f554785b972e12312e8e3721bc0a853cb3d47742ea0e2f786a5b81d"
+    },
+    {
+      "path": "references/report-templates/optimization-report.design-fixture.manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 820,
+      "sha256": "3807202c565c768a58aa3e8af6f62667acb62179f64ba3476ea783aa7f463899",
+      "blake3": "f7ef1f166f1bade8f09dacff5088574c57a8a1cedc6c76f480d8d0d4b29dcc3b"
+    },
+    {
+      "path": "references/report-templates/optimization-report.html.template",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9665,
+      "sha256": "303488896ffb0ac72a56d906dfe6a8237e883ea8159e94c3d8beaf53f57a0264",
+      "blake3": "b7eb25400c169034fad407985546e0ebc5e3aed6b214d24aadca15db548a3a66"
+    },
+    {
+      "path": "references/report-templates/optimization-report.md.template",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2896,
+      "sha256": "7564d86f81efaa81421510787cadb9bc05a1e6c26a5ccf4a2b66bd632f6c9c91",
+      "blake3": "8ee086bfc9aaf7ef27401c73b64bcd7eb778287b73d27b7a5443f03f5faa5318"
+    },
+    {
+      "path": "references/report-templates/optimization-report.structural-only-fixture.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3006,
+      "sha256": "670722526cd8ee116f0596fca8109f87688a3a3aa108556aa0ba329cd43d9c83",
+      "blake3": "bba0dbad5435293580f9bcf7f41285f3aa4538907b8fb8d42309759f06ea6068"
+    },
+    {
+      "path": "references/report-templates/render_preview.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8420,
+      "sha256": "b13efc4b120e09ef58f21a576b49e043039390ee79be3a81a7dd84511460c094",
+      "blake3": "acad72485fc6dde5ea4b0b60e62c0738fc05d17daf449e276ae437b4a51d695e"
+    },
+    {
+      "path": "references/runtime-artifact-token-budget.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3766,
+      "sha256": "f56f3df7bdd69aaa0bf70dcd81744a0bdd9a05b5834ef90cb7cc5216ffeeaa6a",
+      "blake3": "6cb16f79dafa38a84cf81917142acfbba0c3c45718d8b8b730585b7fbdf98043"
+    },
+    {
+      "path": "references/setup-usd-performance-tuning",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15635,
+      "sha256": "a009ec71d106855d2fdd5415b7a7f2f6131a6451291be81c801a06c96226b8bc",
+      "blake3": "6f8ab856804ada617a3c46420226fbeb3ecfad15fb60e8efd933a586f3b1211f"
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references/install-kit",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references/install-kit/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 650,
+      "sha256": "7ccc78ccf9a215fb850466b9d658430d15af57b0c2c17e844cf9a8f804250313",
+      "blake3": "efe336304e8a625a0adb7bbcffe7851158c5dbbc4f441eb6892e822070573d66"
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references/install-usd-optimize-standalone",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references/install-usd-optimize-standalone/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10665,
+      "sha256": "547d683555e50aacf8cccd36c40ed3416bdab38b3107ed1aaae2b894b0c5aaa2",
+      "blake3": "65988a7599c778baf60f7c88ae732cf0d7880f9e4c98654c186d51c446feeb39"
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references/install-usd-validation-nvidia-standalone",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references/install-usd-validation-nvidia-standalone/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4686,
+      "sha256": "641b5364b4d318dbd9fd777d667be80c8490b90a3f6c7a7baf3241353c916a48",
+      "blake3": "deb798fe62751e5e98a6a47523b1e25433344ad8361d29e64e68f74d8a6e2a36"
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references/kit-discovery.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3254,
+      "sha256": "eb720605ad6926625492c1ef2cd8f0544ce01e180cc277bfaba771cacdb31d14",
+      "blake3": "ba9ce3a460bda746e6c9a985356f9fe076afae1491fc56ffba4513c4d05ed8d4"
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references/runtime-context-header.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14835,
+      "sha256": "05d939e77385d1af5be965f64b1f26da875f2d6021ed6919fb7a1be5ac8157b6",
+      "blake3": "a5fa0e2eb07d5f9df7c02c436a6871367bc8433166c2cb33fd04da1242bb6bdb"
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references/runtime-probe.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4470,
+      "sha256": "3f92c7928c8ea247b0f9b03ff574fe0d1d2193d43f9a013b424026527b355883",
+      "blake3": "c7b2747764dd4acb3048611f6c4b9f05042ca3a5da2c0cf75435f7859bcb22b0"
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references/so-validator-auto-registration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1447,
+      "sha256": "2e5b86a82afdd75813f8ae0681ff235f9831d32a700168882aa568396430b779",
+      "blake3": "2a2891fde7eb69614282807c554ffdd8d76c48201adf77c0fd3e1c80d3943ed3"
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/references/standalone-runtime.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3161,
+      "sha256": "24759ac98e7593a8fdbf73d2f5cd5729e3a6ec69467ca1d14354a6e99d56a9d2",
+      "blake3": "88af12f64795458f565d980462165321d7e216d533bbe29b782d2372a9aa3896"
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/scripts/probe-snapshot.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1787,
+      "sha256": "dd730a5cc7669949d307e80a23f675f2b553796ae6ac100ac5724b4e69bb39c6",
+      "blake3": "eb0b4531c12598e06dc7e8139842070efa4dad945589fe0d7a2d2ec8d91e14e1"
+    },
+    {
+      "path": "references/setup-usd-performance-tuning/scripts/setup-preflight.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6555,
+      "sha256": "fecc3d26691e126e83dfb0a478f9ab003c9a88f1ce181fd78b6857a592516830",
+      "blake3": "fb5f4ae0710838d223dcf8c2cc04090065ecb0f724ba43939843fcfe22f290c1"
+    },
+    {
+      "path": "references/skill-map.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8925,
+      "sha256": "c4fd52e81af70587c4e455f20df79f61351ec14d89281b25d1b0825b4849e14b",
+      "blake3": "8afa14ff81fbac137fd9307c35e7f492c3ca34f18ead0a253cf4642e172be4f2"
+    },
+    {
+      "path": "references/upstreams",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/upstreams/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1016,
+      "sha256": "54714520aedd5e4d01832837029d94790c02640aae55c2fc2f02445236a779e3",
+      "blake3": "548c473e1fc01d713bda2718f5a9c1a7650390aa92e9190e8a49bd793273e5d2"
+    },
+    {
+      "path": "references/upstreams/usd-optimize.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4501,
+      "sha256": "a6c1f20df6757dc20225b21ac855120fcef4f1011db51fb27af2ad6c0fd37b0b",
+      "blake3": "3a27ac362b0c1de7286549ea9bc1903161aee68d6ff26a54fa425ac7ac2284a6"
+    },
+    {
+      "path": "references/usd-optimize-run-operations",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-optimize-run-operations/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3579,
+      "sha256": "a0c267245df9f16909ac0cb8875b806bbe97b21838e980dc71baa3558ea36ebe",
+      "blake3": "c70153c98acd49da663478cd1d40697ed76d0b9857ec87005e48c5895eeb5733"
+    },
+    {
+      "path": "references/usd-optimize-run-operations/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-optimize-run-operations/references/batch-mode.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8637,
+      "sha256": "7e41248f2a4d110cc5555848596e09b4f3b62b4d18fad49abe33207fd134a234",
+      "blake3": "f37553ce4a2d116fd576131d335c2c84900b44478adaf66e0060b1bad71d51c4"
+    },
+    {
+      "path": "references/usd-optimize-run-operations/references/config-from-evidence.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5101,
+      "sha256": "25aecd22c1b4fac3039531eae8d9ef6fa1757739ffdf9d74e585a7a7e33549ba",
+      "blake3": "c36d899a1969da5d736a1b1590b6313a4b325ad49b46ff6522d3dab7999367fe"
+    },
+    {
+      "path": "references/usd-optimize-run-operations/references/invocation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4172,
+      "sha256": "48438c889a276977ed7242471fd1cbf68ee91d161165ec0c23fa1cef0e9935f7",
+      "blake3": "fdd05a656e2299c6e579deb6a8cb7d1dbfb04b6a18bf1a676e7e7e7f3fe90e26"
+    },
+    {
+      "path": "references/usd-optimize-run-operations/references/operation-safety.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17687,
+      "sha256": "7ddc0be1ba7b64b91553ce1a710aa41b01d3b00aa3e8340859737926e09a67fc",
+      "blake3": "ad0e1fe6838edf17fb124334e8f20a562343fc0a1c1ff76836e58e70342e3efb"
+    },
+    {
+      "path": "references/usd-optimize-run-operations/references/pipelines.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2788,
+      "sha256": "e17ff36b1ab91f03e20bc773b88a80f64cb9717170f6d2d312a337038af68d6a",
+      "blake3": "7dd08cb94bbee12c10e36bf15f5fbb43b149b8146f00894834d401df0f07ebc2"
+    },
+    {
+      "path": "references/usd-optimize-run-operations/references/units-and-tolerances.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8574,
+      "sha256": "37cd6f0d387f7370f05da39eb46a9584f4a9e7ad023a4d4f83b9583d91616cc0",
+      "blake3": "787b4a12a5f158317ce9dcf2aabd4c413c3ddb29d9befe0d20d883e0144c945c"
+    },
+    {
+      "path": "references/usd-optimize-run-operations/references/usd-optimize-create-proxy",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-optimize-run-operations/references/usd-optimize-create-proxy/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1661,
+      "sha256": "178a577aa10316b8e1cd27562f19eda2a302a9dfbfe382d6720c2c0abce592a4",
+      "blake3": "141570d33463049a26951f79014b08a800e89da57090e70a99e2f9265801eb34"
+    },
+    {
+      "path": "references/usd-optimize-run-operations/references/usd-optimize-create-proxy/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-optimize-run-operations/references/usd-optimize-create-proxy/references/bounding-box-proxy-modes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1435,
+      "sha256": "655a08619bf645513e9a3f49ed8a1d60164c2ca13a5ea166db7776b2d8887339",
+      "blake3": "399dbd28bcede89efe16031a70c942fdb8cc288136f3cb0e0f216d85bd0206a8"
+    },
+    {
+      "path": "references/usd-optimize-run-operations/references/usd-optimize-create-proxy/references/decimate-step-recipes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1407,
+      "sha256": "e28d4aad272e34d5666a90155b70fc7190c9bb02ad9622e238a16faf7698acc6",
+      "blake3": "0435a7009884b06d9e15c8a982ea93944877186d6c92dd64ad22550e20ac90c4"
+    },
+    {
+      "path": "references/usd-optimize-run-operations/references/usd-optimize-create-proxy/references/decimation-tuning.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1418,
+      "sha256": "75230a912ea7c11508f8179d9e0b6328295dd077fcc6c3a69ab0930777f33a83",
+      "blake3": "d91d0659e4e0ea436fc622acf1a0cef125de5a45033ad88a353f1aa97d0314e6"
+    },
+    {
+      "path": "references/usd-optimize-run-operations/references/usd-optimize-create-proxy/references/proxy-config-recipes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1137,
+      "sha256": "263c03c2b18700a304f74aa56d659ac1a45e9fc4136632bfc070b264e610e975",
+      "blake3": "3a01d991b962eee710e8e87525acd3ea7b77398562ffe1147328065d22b18f6f"
+    },
+    {
+      "path": "references/usd-optimize-run-operations/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-optimize-run-operations/scripts/batch-plan.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4983,
+      "sha256": "f6ba6ff8a2abc3843a094f6c576a6087e8f876f3ef13a7e7b9fef325d881ebae",
+      "blake3": "f1bd61af0166c3a3c57fabd33fc0aa3d05e8038e74365772f5a524888f8bc8d9"
+    },
+    {
+      "path": "references/usd-optimize-run-operations/scripts/run_batch.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16011,
+      "sha256": "6c80f53dfc7cfae8fe9a4ceb899e947b0df475556357274060652107ef4a7fc4",
+      "blake3": "670a363240f047d15e267637bdc39db30de4440dbb941b04917749b9d427e075"
+    },
+    {
+      "path": "references/usd-optimize-run-operations/scripts/status.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3971,
+      "sha256": "ef8c67ce58057620641c13d9a450109e147679f0feb6ca27329ec56742dedbf2",
+      "blake3": "d33f1e6cc757d136823d75f98bcb41e1514c1dd4353f5ecac64ba6e196210635"
+    },
+    {
+      "path": "references/usd-structure-assessment",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28932,
+      "sha256": "85c0eab031315bac1685cc5a3347dd1f0f142bdda6c312be9190fa051ce877c2",
+      "blake3": "2eaac782d9a0a264c103a263c27b44682d43c3aca513a92d7b379784e2bf0a7a"
+    },
+    {
+      "path": "references/usd-structure-assessment/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/apply-restructure",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/apply-restructure/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17602,
+      "sha256": "5f3129901392fab87dd11d615b15f7cd206fbb4e211dbef959d2b93587a1fa6a",
+      "blake3": "f907e4a3e1c1053cf14508b00c412449c1ce19d750cb8dba43603884489eb55d"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/apply-restructure/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/apply-restructure/references/mesh-merge-rewrite-spec.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16497,
+      "sha256": "e61901e88b0207a163b42815c290ac02b8bd7d82644ed1dcbc5dead5f61448b8",
+      "blake3": "07784cc5ccd46ca4090f6486a107b95064d1dfb82f0f877ed76498d9f15cec30"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/apply-restructure/references/ref-remap-mode.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2807,
+      "sha256": "ec787c2117c30cd1fa8047e947799431810bfdec95284c0cc37479abf9ae90b6",
+      "blake3": "67e8c07e1f43395a1010c4b27de10adb35b45762ea5dc63206967b7d79e8cbf1"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/apply-restructure/references/restructure-mode.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20752,
+      "sha256": "c0151d8df2a4daf83394cd7f685158420639329c14810d16679a3633d83d5110",
+      "blake3": "f70b7f02736f55f3dd8ac2ce094d2c3b7be4ed84b7eae3c1f9e3af64303b511e"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/apply-restructure/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/apply-restructure/scripts/apply-restructure-manifest.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19931,
+      "sha256": "141ab98b9bb955c1604d9143b4e3c96e84462acd26956b7d8825b563fc3b2aa6",
+      "blake3": "f46c5b9dae31e46b8015003222b4a43b6dc3e86788ada912c8eee8423c7f39e8"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/asset-structure-principles.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 61399,
+      "sha256": "727cb6dee8262ae106ec126a5ba1d4cb86df13f04db587f17b65930b2d93cf93",
+      "blake3": "f3c60721f5c1477d75b55b892a9f194730cee67c99178f7e9940032668e8283a"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/composition-audit.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4579,
+      "sha256": "ecfc912f646f427469c9a05e2eddc88b859a0eeda9ee7668c82af9fdd49580b7",
+      "blake3": "9c2343c28562ba09e2a4716c7d9921c7df759b26ee70c4d88e2705d396a39203"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/factory-level-structuring.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24473,
+      "sha256": "a2b48517ca720ec09108e173e1d3e08c7a45e37c2393c8aa07330da83013b70a",
+      "blake3": "aed7f400609fc8507a7363c5f126c18458c5c7969e8b90b56d8857f6deeab0c8"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/instancing-readiness",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/instancing-readiness/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7967,
+      "sha256": "65bf783d23e45f7fec74262fa3f74fcf62cdc4770933bd3a208df4fd27146666",
+      "blake3": "f45ed211bd5ff7bffc64038c720ee4d3cb10a18c1b724a1f2754fc43de93ee89"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/instancing-readiness/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/instancing-readiness/references/instancing-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 43247,
+      "sha256": "d005fdbb52312a7bb7c93394b0fe829d3fd884dccc2951f59fce8c38658b4800",
+      "blake3": "6706cda5563b11ede75918c60e27e8ae88433ec266c72d27143ffa14741978bd"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/instancing-readiness/references/instancing-tradeoffs.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10734,
+      "sha256": "1826f6cbbf4095071c8be125ba19d52e422ecc7ea6242da1b7d7a7ac49107f4b",
+      "blake3": "2b0e1cbb153ee282cefb4004490406bb38370dec5ddf4f0f0ac1731aa5b2b885"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/layer-health.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3072,
+      "sha256": "72ec67643a4882885d75d0e9d958102e4ff042eed29736a5f2adecd704090320",
+      "blake3": "db51b5d7f92355f062ce0d987141f08a5b83643b4b4acf8484b7dfa61e0890c8"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/optimization-tradeoffs.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8676,
+      "sha256": "182df4185b091fef8ca87502399db0c1f58adad022f92eb3ffa49a102a497537",
+      "blake3": "4681fe93f23b0e823ba502f6311810a94779719ffd3f1ae3e930c8de3590aebe"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/restructure-decision",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/restructure-decision/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20917,
+      "sha256": "74cc74f4b33bfa45cca0a9c66acd8a4c14a212c415613ebbca2b4802b4ef26ca",
+      "blake3": "1cbe01d6d0d7eccf56b7a6fd6d080eabedb2104b9b470450aba1364db854eac8"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-edit-target-planner",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-edit-target-planner/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5724,
+      "sha256": "de3f6703065393cef42f975341574d5882dfab74a5e827259686af68a60d5b64",
+      "blake3": "c1aaa0fc52174bcb46db007e99fb87864104ccf4d6a30a225c84d31042c69257"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-edit-target-planner/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-edit-target-planner/references/output-saving.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2005,
+      "sha256": "e7612eb52edcd7c4b7820ae997e6147997eaeaf55ebd6837ef5ace0bb7ff9af1",
+      "blake3": "76a03afaa6e84e0d6cc6fffe5ac19eda48560e776cbf5a7888f135c2ba86e1e3"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-edit-target-planner/references/variants-payloads.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4101,
+      "sha256": "36522dd74f871dffc8eb7d316e8dabefabe527ca41df09a7ed60e0223fd8ff1c",
+      "blake3": "5e2cbc6e9e4de446444392fb94bd16ecf0e320fa00c06302536781c271dbaee9"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-hierarchy-dedupe-candidates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-hierarchy-dedupe-candidates/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5860,
+      "sha256": "8c580ae173de206eaf217b8ba46d4a5931d7634b7207dae96630907a1c6b0986",
+      "blake3": "b38c2a2c2449fbca8db26e22df3041753e9d383aef2989edc30e5b299eaed415"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-hierarchy-dedupe-candidates/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-hierarchy-dedupe-candidates/references/instance-candidate-finder-spec.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 45437,
+      "sha256": "0f7712da71136a135d427623a15471ce50bbba70111cbb86b9a1cf8de1bf3625",
+      "blake3": "f1aab5b5395ee234c643979bff796420ffe08e90a7bbdac740a6a422bc81a6b6"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-hierarchy-dedupe-candidates/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-hierarchy-dedupe-candidates/scripts/instance_candidate_finder.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 50325,
+      "sha256": "c982331841181eccd3204a81280113d1022d4d373ebdfd752172805c135a3a09",
+      "blake3": "b0df6cec9a4bddae33c90866d0065a2762c7af33cb7418db05678efb285ee81d"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-hierarchy-dedupe-candidates/scripts/select_frontier.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14010,
+      "sha256": "523c6a910c415eb7aac23dfedea5848c36b0f95b13b02289c6f8fdbe97431df1",
+      "blake3": "3288aa1613fed517cfd35cb849aa65b8d441e25ef19010dc8385272a463c1214"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-mesh-fragmentation-candidates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-mesh-fragmentation-candidates/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6100,
+      "sha256": "b9a4f4bfc83f09a0cd5a690172dc25bff3538566db0bb8e62d67e227e00317b4",
+      "blake3": "33880fe845f6d151ed431f92ddcad035c5e373123cc2e25e32339213144cf27a"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-mesh-fragmentation-candidates/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-mesh-fragmentation-candidates/references/mesh-fragmentation-finder-spec.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4094,
+      "sha256": "d742c5755f6d79686cbe07f617603764921b8ab69c5f52c51c05dfe803b14687",
+      "blake3": "a4fbed73a8715039797c23d1ba5afb9c7389094f638ded57eb53fa09a9097ae3"
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-mesh-fragmentation-candidates/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/references/usd-mesh-fragmentation-candidates/scripts/mesh_fragmentation_finder.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15316,
+      "sha256": "813bd9687ec59cbc7a539afce7cfe0f2fb5a23bd9643e0ff91b853188aff9ca6",
+      "blake3": "c20ce966b9821923057ffc97bb794d226c5b2cf0fe4318cc8bb9c2cb7a755b92"
+    },
+    {
+      "path": "references/usd-structure-assessment/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-structure-assessment/scripts/audit-report.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2395,
+      "sha256": "2651ff46d8fbfceea8aa2a790897963680dda92939d3f64e104ac835dcd06d1b",
+      "blake3": "1bfa9fd7b926a4c652ded310f488555e437c2e5a97519d2478f6371fbbe7b532"
+    },
+    {
+      "path": "references/usd-structure-assessment/scripts/optimization-plan.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1503,
+      "sha256": "1c8f89c501f27144b18c4f6af3ba31cf5c779a16ca22b95492e552624c3adfc5",
+      "blake3": "12f5283cfac25aa02ae2d2a2850e9126e7b56fa80098b1eedd0d52cccfc7a839"
+    },
+    {
+      "path": "references/usd-structure-assessment/scripts/usd-structure-assessment-report.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14257,
+      "sha256": "6e02cfa116d3fd8d1e2f1cdd7acd1e6965a71aa01ce97595606b8d9c83fbd309",
+      "blake3": "a739f25bfd0930f520f4d1cf9c72bc9c21b935a9dd95e97397c7965fbfc592d7"
+    },
+    {
+      "path": "references/usd-validation-runner",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-validation-runner/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 33378,
+      "sha256": "9eb73b40102d975d3afc42a5f97abdc22d5c4da93b0be7220f751285dd37b185",
+      "blake3": "eccfc61366f1f59ecab602ec128d22a9e49cec3a78ad12e4a2207362073034d2"
+    },
+    {
+      "path": "references/usd-validation-runner/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-validation-runner/references/usd-optimize-interpret-validators",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-validation-runner/references/usd-optimize-interpret-validators/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3693,
+      "sha256": "11cb57835baddbe2fd7b7b1b9909dada080a6d248ef1d37e1388fb4c05d866d9",
+      "blake3": "daed5f6d01fa854184f37c3dc38eeb3b45db12cfd2e487097ea5ce87f85ac4f1"
+    },
+    {
+      "path": "references/usd-validation-runner/references/usd-optimize-interpret-validators/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-validation-runner/references/usd-optimize-interpret-validators/references/follow-up-queries.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5154,
+      "sha256": "62c8d9342e8dfa74eb8d8dab91a5ec82e6a5acfd0840aa2e64c6331b8e2c32c0",
+      "blake3": "d44cc1e20417f472d54236357371eea0b3fdc82f338e3e1c6b6e9cbbfd49dcc9"
+    },
+    {
+      "path": "references/usd-validation-runner/references/usd-optimize-interpret-validators/references/rule-reference.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9054,
+      "sha256": "7385bfddd1e74c6a85cb3140fbe9d094d6358f02eba9043c3328914cc12b4eec",
+      "blake3": "968f0903f9b9befdb729456503d2e547f7e55c41070b771f2eac29126fcbab49"
+    },
+    {
+      "path": "references/usd-validation-runner/references/usd-optimize-run-validators",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-validation-runner/references/usd-optimize-run-validators/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2847,
+      "sha256": "c831c2c8828d31ec92daf992a381dbe039fbafcbb2e78a7f3ec03bc7b791cb7e",
+      "blake3": "44d565a83e5b29083773ae4214e9894c757b8d2a64670347ec59998c5ea7b84d"
+    },
+    {
+      "path": "references/usd-validation-runner/references/usd-optimize-run-validators/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-validation-runner/references/usd-optimize-run-validators/references/infrastructure.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1557,
+      "sha256": "2f48a9c2d4f211789d9b46fbc2802b8467bc6d0306afd47ef2f923aabbb101a0",
+      "blake3": "a9aa3af46f330daadbdd44b1383280f363955a9fe7013021092234dfa20e4854"
+    },
+    {
+      "path": "references/usd-validation-runner/references/validate-usd-validation-nvidia.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5366,
+      "sha256": "a33b1117a6a902815542d329d5da1d040a8c3d4395ad68e5c2832779e0ccdd44",
+      "blake3": "cc9620c844544f08958df7ca9645b0659373af13b2d754f1245e6a1bf47fa6f4"
+    },
+    {
+      "path": "references/usd-validation-runner/references/validator-concepts.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 31655,
+      "sha256": "4e3598b09c9bc39884d719d66ac2e9b952f8ba37b87ea829ba2652fdafe3a5c9",
+      "blake3": "e0b19e7b1523c239752a9d5bf7dc8b7e9744a3779dbe8be1522c5c78bea59fe5"
+    },
+    {
+      "path": "references/usd-validation-runner/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/usd-validation-runner/scripts/usd_validation_executor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27670,
+      "sha256": "d0787727ac15b42a8190d11ee9f5e9f64f5eed41c77663fb42c7e59917ab1619",
+      "blake3": "57d23e4ad38cab4aa599ecc6da730108b37f1c1491aa394a6ed82d2bda9b0048"
+    },
+    {
+      "path": "references/usd-validation-runner/scripts/validation-report.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3622,
+      "sha256": "9c99af279e2d30f870ff295dd77fdc0b6054af3012a2d27edd8fde62f043a408",
+      "blake3": "6276f7badaec32965bbca4545e855365e05fcbffb35c66d5d2c091b6e84811fd"
+    },
+    {
+      "path": "references/usd-validation-runner/scripts/validation-scope-note.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2355,
+      "sha256": "f5cb4ae7d9d795f3b80aab2bd1cbb6c37773bc2f15de636af173bd18b44aca01",
+      "blake3": "ce92d6ad2da1e5565baafe00815890fe2d1fed98490d85e38eb600ef9dcedba6"
+    },
+    {
+      "path": "references/usd-validation-runner/scripts/validator-concepts.schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3268,
+      "sha256": "cf525ed630ffc3a02c8090bd4755d4d340fa127be0325b2bf79900a6a781dca7",
+      "blake3": "7d4d2451dd8bd304bad9328081dd9b930a71e36ea806e5d625c41effe3147829"
+    },
+    {
+      "path": "references/workflow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 56007,
+      "sha256": "14f4a16eb373f8c8df3fb479c20448caa705669ae2ffd0830a9451f786aac619",
+      "blake3": "40489acf6899b9643cadbc84d1b07a43c149c8c551fb144cd1c92632f32a7b29"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4374,
+      "sha256": "ed4c6991c7f65022dd7f0e49a4af7cadd6eba0d75036337aa2cb766a0be7af14",
+      "blake3": "1caea8006f9b63d778d8a983f33f5aa822f44486eb67b32fe7974626c9e5f7c7"
+    },
+    {
+      "path": "skill.oms.sig",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 34673,
+      "sha256": "795abdb1e22cce95e59fc3d5f92649b1315290b19aa0b38720c4223f09dbe9dd",
+      "blake3": "585a851650b85b794ab303e79ecac6e7a5a8f43ecb2ebae56915e231461b457d"
+    }
+  ]
+}

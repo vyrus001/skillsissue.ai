@@ -1,0 +1,343 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:aa46bb9e7b374baad4e81e493a82a556d04637b56c2654c9117cdf3a9c248792",
+  "sha256": "aa46bb9e7b374baad4e81e493a82a556d04637b56c2654c9117cdf3a9c248792",
+  "blake3": "f3402d043319aa222f3d2a41667a137b6f19ded73a1ab7b31defdf6ba4a1c2ba",
+  "size_bytes": 190458,
+  "file_count": 34,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12033,
+      "sha256": "65d3cee3fd349eb52cd2e1ea79394d16a88308064014b13e08dae8b413a822c5",
+      "blake3": "806f3f171188217e943b864d22038e0e9348868ff2caaef0e72202c192595ca7"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20986,
+      "sha256": "b17afa8f068f4fe1b50969463051a9d379b02ac67242d6d243164ec06fd66874",
+      "blake3": "04ef23422575caa88e481cc2f5c2ab827fe4cae9f8c3f2348214e10b4b43f7a2"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 141,
+      "sha256": "88a6dec3c0faecf268e23cabaa21d43475386fa0ab294f8011c3e974d3045fa3",
+      "blake3": "28ba6e72f5e6d1769ebc558369ec7820294e5c6d2a3d83e4e5e2dbeb78080fce"
+    },
+    {
+      "path": "javascript",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "javascript/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3543,
+      "sha256": "ddbec2f95ecfba3a2b8efa9f8397ca3c2343e556b1ad6a27ed47537bd91ecdf5",
+      "blake3": "c75f685a79c63ccc532345e809136c44c3191d31a5d50f8ea992ba778ed95407"
+    },
+    {
+      "path": "javascript/mcp",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "javascript/mcp/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2776,
+      "sha256": "525b7873d5b7a775a0b0d995ce94ab394ab07cbcb2aed80a8874ca29bfae4ed4",
+      "blake3": "99ccf8d91e949d1a89734323122391c9171f889cf4031bf2f1810b2ea1c8b617"
+    },
+    {
+      "path": "javascript/mcp/mcp_test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5870,
+      "sha256": "1ca312b9fdad247ee1f92adcae14dd4daa78d86cb14c3fd6417c91f4d1db515f",
+      "blake3": "bdee43d7f00ade0cdb58c5cbfc6b11097a732e7875ce07ff3006ceeaed5fb344"
+    },
+    {
+      "path": "javascript/package-lock.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29461,
+      "sha256": "ecdc1b0a69ecfec5459362a15fd809b44c557af4eba984e635e6285c91a962ce",
+      "blake3": "6ced5555c9a0f56cfdaa8a89f40c175f0f2afcab29726a41a37632e7f53ce857"
+    },
+    {
+      "path": "javascript/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 453,
+      "sha256": "8cd142441e2db6d54bb7231022cdb1d8957b73c6d0ac0726d2492987ccd80159",
+      "blake3": "a54d0317820a5ca578466969b43ba298ce0dc0aa68217250edc194b6df21fb2e"
+    },
+    {
+      "path": "javascript/quickstart",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "javascript/quickstart/extract_text.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3073,
+      "sha256": "2e037a278e4de4cafed9c222f4d99fbe575cb853377fd2bb9315bd1827d3a186",
+      "blake3": "8d7b3270c675991914f36e6a033cc36bc8cc96d128f7246d01eb6849c8a79cca"
+    },
+    {
+      "path": "javascript/quickstart/test_integration.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8526,
+      "sha256": "16b79cf09489d2c9cd293afe849e7a20b19a427c27ca2214b49d14fff9955b57",
+      "blake3": "d86f4c21d8ec00e1247b8994d54f7e0a820d8905c0ef33bfd9261501789391f9"
+    },
+    {
+      "path": "javascript/quickstart/validate_document.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2249,
+      "sha256": "9f9685e7f8f527f6dbc12b1b8d338f171581810002e7ea013d45604b313bef26",
+      "blake3": "282a83237133f2e16f501763d5e97fc08ee395d6c228a7837f052f4bd52997dc"
+    },
+    {
+      "path": "javascript/quickstart/verify_text.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3619,
+      "sha256": "1c899557e8765b2b8457584733ed8819a5a9d5adceb0e16ca1b3e5891091f8da",
+      "blake3": "34c5314f15afb30166b86305b354d04148e9b0baaf576593403b7827641a5674"
+    },
+    {
+      "path": "javascript/use-cases",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "javascript/use-cases/batch_verify.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3882,
+      "sha256": "ad0cefa791809adc2c3dd03b429c8d767d693f74ee5443edadfa9b0b74d24b36",
+      "blake3": "fcee49ec8eef3761e07158998777ed35e1523e1000fa0078c159d74e95d0b3f3"
+    },
+    {
+      "path": "javascript/use-cases/disinformation_shield.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4371,
+      "sha256": "75070ea9455506f56460a8fe33cc84e1e50cc665810e3a407ed986c574f2812e",
+      "blake3": "fc5c6f00295ca50c99e59a75f7adae995b0eef1ac731996f24819ffa41d5ee75"
+    },
+    {
+      "path": "javascript/use-cases/hallucination_audit.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3689,
+      "sha256": "6afad24bf00a01c68d6ddbbb508cebeecf84f151d882c297e3e3c758c892ae25",
+      "blake3": "ef0c6cfcf0644dab750b3e2d45f0df5e7a539051117f5f9609b7b02cd9a4d496"
+    },
+    {
+      "path": "javascript/use-cases/private_references.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2996,
+      "sha256": "3a235f87341e5aa76d6aa5f7126c99be2c33e5f5d4f792d8eeb5da8acfcae6b7",
+      "blake3": "9236e97d715e491d7dad48148418613cf6e2d919dab832935df9ebb61b7a84df"
+    },
+    {
+      "path": "javascript/use-cases/verify_article_url.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2873,
+      "sha256": "14594ef9a6fe61fb5000a5985844d468fbcdd8ca1bbb0006664078630223d267",
+      "blake3": "2d351332486546f427e423edb49c9c74426f6831b1f79fa169295c4f57a96aa4"
+    },
+    {
+      "path": "javascript/webhooks",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "javascript/webhooks/webhook_receiver.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4599,
+      "sha256": "ab6a9eb9a5b6c605dc3f2fb7b8337b02a44bb2b9b35a484cf84729e3c61a878f",
+      "blake3": "97fff22d2af5c085595338996ad61a191869f871a3a20be770e8dfedea0bbe64"
+    },
+    {
+      "path": "python",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "python/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3137,
+      "sha256": "6f817bfb7fac040d98065992f05b83f92e1ccaf370b6af079a5e5c8c6e6073e4",
+      "blake3": "2785724f2ed4bb553c212d329d0ded233f504f0d5123ab84ddd022e6cb97266b"
+    },
+    {
+      "path": "python/mcp",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "python/mcp/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3763,
+      "sha256": "9655c71ee6117d626e3bf158a4718f58c37fa42c97f450bf265dc772fb8e83df",
+      "blake3": "72349f8c80b82b50ac2bc7476393d7993c205528fc02d0cfe7282a837fb29e97"
+    },
+    {
+      "path": "python/mcp/veritier_mcp_proxy.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18606,
+      "sha256": "a7ff0754cf06c9c73cc9d12e8481c1dce024d14c8a33e61e38d1ee0c4a6096da",
+      "blake3": "22c499831645b1c029edd77d4af95c98c3b01cda02c04b07d04db68f49bc7a42"
+    },
+    {
+      "path": "python/mcp/veritier_mcp_test.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8556,
+      "sha256": "ede5309036297945e93763fac87edf2298c0acb2406858e82933a9ae771bc2a9",
+      "blake3": "a825280fa01c8ea5710b89da744b6138c3600f676a309f97be1de4daeff1e641"
+    },
+    {
+      "path": "python/quickstart",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "python/quickstart/extract_text.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2917,
+      "sha256": "3c7ca77d613d2503e3b043f5f544211305e762cb085a35b408fe849b24b6e549",
+      "blake3": "7253b10bd1694625ffff94b903d3d1792e995b0493cabc07fbbdf3876433e95e"
+    },
+    {
+      "path": "python/quickstart/test_integration.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8640,
+      "sha256": "6f5fbf512e23ecb848047485507f55c644ba266ef2cc8009e94049d6eda652d6",
+      "blake3": "b8e68f5339cfba69060a6e70e97d4ef7abe7870cdca101ccf875f7b82f735706"
+    },
+    {
+      "path": "python/quickstart/validate_document.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2191,
+      "sha256": "aaf937d22ba24a9423f8ef141b2837743a7d683687b919a30427fae8d56a2068",
+      "blake3": "2ab5c9087c9890da4674d6c3308b77098b7f2c18e85f23992ca922d53a407a3d"
+    },
+    {
+      "path": "python/quickstart/verify_text.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3464,
+      "sha256": "ef435d824bd59beeb263638409d98accf142de406e5741e4041a3dd06b386325",
+      "blake3": "e3faf0417c9e6c061ce232b05de5285da53d9935bbf109b5fe0a2fbf80cfa4b7"
+    },
+    {
+      "path": "python/requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 42,
+      "sha256": "d07bca46f8b582f1880451aa04b5b065c8aae5d95bf4bf0e8b062483f1400a82",
+      "blake3": "e07b716251656e414fe2a9cde5f289c099c49e689537a076db8bf5eba8545a90"
+    },
+    {
+      "path": "python/use-cases",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "python/use-cases/batch_verify.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3660,
+      "sha256": "5c48c48484a293846e30a64b9ae389a7b307be8a97e94e3f1e1f5f8eb2fa72f9",
+      "blake3": "a1964111ed3fc9809017cbd6e9a1b5fc002d084e993127507d633bea6fcc7d89"
+    },
+    {
+      "path": "python/use-cases/disinformation_shield.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4084,
+      "sha256": "1b436ed811bce8ad036b1cf4f40596a9ed2c7bfafe1d30e171de2ae3554672ab",
+      "blake3": "ee610a31cc1b0e5a24ccd606a4ca9f0f68c02a24025255416d7502f344df476c"
+    },
+    {
+      "path": "python/use-cases/hallucination_audit.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3460,
+      "sha256": "632f8fe26139afc36edfc40ba4d84186071f2acf27f80250393d6c2fed04119d",
+      "blake3": "feef2f73fda03dc53a031e1511da8f0dab4ed44779801b2bf3dace1efa911cdc"
+    },
+    {
+      "path": "python/use-cases/private_references.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3139,
+      "sha256": "c25904a7112eea3461bc0827cca07ff321e62e67ae509d43a326f658c6d76443",
+      "blake3": "14e5d708d3ab96e7c3f3267e85ff3698f848fa9005e2d2a52a5c2f1606f53c4d"
+    },
+    {
+      "path": "python/use-cases/verify_article_url.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2791,
+      "sha256": "0da9d6d351d2ffef7d4177eba22fe1de459b5fcbc9f3986699a6818f3e82dff7",
+      "blake3": "6382809653d260ecc3f21f69426fea0dac3d09ffe7ce0334e801bd5739b76e25"
+    },
+    {
+      "path": "python/webhooks",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "python/webhooks/webhook_receiver.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4008,
+      "sha256": "5267be45cd6303d0f86738b403bec93aa4a633a6f65c657c927b6ebaf7419923",
+      "blake3": "088fca903a4a8e72a9804606db41f667c43a233ab05516647a7987ccd36fcefb"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2860,
+      "sha256": "ecce280a78d1bfc693627c7b4dbe20ba53b2d8271b7582798d40224f03387895",
+      "blake3": "bc3edd9b744485776c6d4a4fd3c41c7c3825004fab236fbb9d3a21700d7d7d25"
+    }
+  ]
+}

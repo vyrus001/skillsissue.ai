@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:18cbef4579a054f7b9542d46e6fbc0f51c80e85b27f8f307b60c173d879b9fbb",
+  "sha256": "18cbef4579a054f7b9542d46e6fbc0f51c80e85b27f8f307b60c173d879b9fbb",
+  "blake3": "bc9641ee7d172e6f030f549052d9898c33986e9b52c1a18ff39aa4fc944ec270",
+  "size_bytes": 238094,
+  "file_count": 14,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12378,
+      "sha256": "9c002136fab44ad6c4ada27823adb8be7c320712969fbf7b62b9ad4d851a12f8",
+      "blake3": "aacbf60520aa563fd47e0ee6511b0c87c85dbc3dc39121c260ecbf34f412e457"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 151,
+      "sha256": "ada74ebc14096663bc323c5971876b0f7ba0a289fd9ae5a88838889376e0a4a4",
+      "blake3": "c7dd709d83963ac99f7daf3a49c875d37cdebd3d35de97e8b2d2b0d91b9a7f74"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/report_template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 901,
+      "sha256": "94628d2ee0c26f84e288d9af0a8c76fd4e79ba35f2ba44a42f7239aef73ead5d",
+      "blake3": "51cb95859e916452550fdf05a8f08dc485ab9346933b867e7ee9f56be71e5aa5"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/acceptance-criteria.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2091,
+      "sha256": "45b6a5b18a8c90b558218aa65868e49ade671fdf16ad08002b3ce96f98f69034",
+      "blake3": "a368d694ff5be140ad01a7dcd97906a133aeef3e0f85aa7cbb6249df7d37c0d9"
+    },
+    {
+      "path": "references/ast-schema.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7374,
+      "sha256": "0e1ecdbd9d9c919a31afa2dcde9d1ad7d0e8da581d1abc99d24f37622197933b",
+      "blake3": "a4c73179b192c89a7d6fb893aa29059a983cde640592a8192046f8df017788cd"
+    },
+    {
+      "path": "rules",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "rules/grammar_rules.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28119,
+      "sha256": "5204d92e1cb3dd6a04e304e88a325584d1fe640441e8bdfd3f8b4c22c4e55731",
+      "blake3": "15f697c22893b3c32dd9f7ebd57c8a70f01d55bd31a14e613f9556834231e6a3"
+    },
+    {
+      "path": "rules/keywords.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22840,
+      "sha256": "ed20cbe01d48954d9c1dfea339a551021f47650632b94db599ce5d0251ea4ad2",
+      "blake3": "ff68246d539b4353aa23a7aa55fd6bf0145d7b5c0c57e1dbfce53ab11bb51b84"
+    },
+    {
+      "path": "rules/perf_rules.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2565,
+      "sha256": "c6e3827daa1747b8cbc0c18d872b3bc0e4012b2f881c412a6d605152d0648a3c",
+      "blake3": "39b0cd7a3eac4b0ae8e107b10e762232fdb894c4424d952fcc7a03fb9b03d93f"
+    },
+    {
+      "path": "rules/spec_rules.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11132,
+      "sha256": "6ba4e67e5f1a831fcd15d6cc353e2d524055941886fbafd16364f507241c2cf6",
+      "blake3": "54bc7a7c29d48a35220c71594ad07b56f0440e820aea9a6f32cef6a88ec3f795"
+    },
+    {
+      "path": "rules/syntax_rules.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6698,
+      "sha256": "b42f6c69c1e0d93f87f806350710cbbe9bdfacf3bd0950057b18bafaa49d38dd",
+      "blake3": "0e06b4a8bd14a7b2d33ac32aeb29b5563c111473e515be0364458eafe0ee1d92"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/spark_sql_checker.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 74255,
+      "sha256": "17a2739ef6e5acbce904c0efcd11768a851f83e38732fdd9d6a8af32747f7c05",
+      "blake3": "5009b0ccb4d5512e9969b363ae17fac53dd2874800696867888f5718fa338817"
+    },
+    {
+      "path": "scripts/spark_sql_parser.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 46338,
+      "sha256": "4cdf627c9896bfafdae1cea6e97472dc75d4947675090009a906f43377056688",
+      "blake3": "38381a8e63b545e14f6568a8376a3a8430c9aca19cee2fbcad8322e5be6a128b"
+    },
+    {
+      "path": "scripts/spark_sql_tokenizer.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21160,
+      "sha256": "9b304cbf981160835807914cb352dfc9495badc7d1dab487a70887928b525103",
+      "blake3": "06d9f49586d2f7ed22b29e4e5434b40a9dc2e4cc2df9c7f97735f8ebe4a742d6"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2092,
+      "sha256": "3b83da34b46466e62f3c982724ac59cd7caeb041b8124dfe659d86dc9aa81946",
+      "blake3": "8c2845efd4fb3518dae91c159af8d2d8bfc08e27da55444a08a1503d9df53453"
+    }
+  ]
+}

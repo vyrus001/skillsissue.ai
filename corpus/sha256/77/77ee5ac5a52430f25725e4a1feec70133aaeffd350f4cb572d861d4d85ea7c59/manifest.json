@@ -1,0 +1,235 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:77ee5ac5a52430f25725e4a1feec70133aaeffd350f4cb572d861d4d85ea7c59",
+  "sha256": "77ee5ac5a52430f25725e4a1feec70133aaeffd350f4cb572d861d4d85ea7c59",
+  "blake3": "f5b11b6b6587d01f41f737e85ef83f8f6f1338890f89a9276d971790fbc5d151",
+  "size_bytes": 312505,
+  "file_count": 22,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22548,
+      "sha256": "caf457eb49b944550bc1749782dccf7cbbfc7943d551a69c775f532c7b43b475",
+      "blake3": "f0cd13ee1516edc3ed727c363a8ca5aff01325aa84791c9f12a8a4fc142c9a25"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 156,
+      "sha256": "73de2547c1c6fa3451ed5ad7ee0a5675120115cba1f8a3c38a258f7d34254bf5",
+      "blake3": "3eed2e859233b7fced50eaefc50be79dac0398db1183c0c59142c9731252ff69"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/ddl_grammar.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15359,
+      "sha256": "ca3e3ba04b85d288d83d01d883cc9afbbfc8aa213044e79d67fb7318cdfdf716",
+      "blake3": "8912db336e8ce70a72c7eaef379ab562f35b0bdddfe1c9725ed4781362991a12"
+    },
+    {
+      "path": "references/dml_misc_grammar.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13181,
+      "sha256": "d82d3df1a3749fd0bf5055190e89250f351317193926c82014d70ace7db55f6f",
+      "blake3": "11705c04a22a2789c3eb2e8f880700224ce06b97c1b09d882ce07d39753492d1"
+    },
+    {
+      "path": "references/select_grammar.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10078,
+      "sha256": "3ef932c867fa59ff1e712a6756f18c041d50172337698ebff2c349ed22512188",
+      "blake3": "dd2e79786500eb90710a656709be55808a17d6b71a9e1714f0f3dbab2c883792"
+    },
+    {
+      "path": "references/token_types.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5797,
+      "sha256": "a01e4d66aa84b04e16d062d2fc3f2d59242e5550033aad6a4408ec8855a3c8a0",
+      "blake3": "ac0ea7b60153d2086d595a11eb4c1d24fab4c24e82bf86260f327c9aedb566ee"
+    },
+    {
+      "path": "rules",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "rules/common",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "rules/common/spec_rules.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8896,
+      "sha256": "0537ee43ff63de4884117909ae2d93e6146627ea53ed91025483b60b65a60553",
+      "blake3": "b65e861101d9ec609196fcc8c2bfac17d613a1000b260e48b14f7af5c72a8509"
+    },
+    {
+      "path": "rules/v22.3",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "rules/v22.3/grammar_rules.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 31013,
+      "sha256": "c943a9cff85750f5581563c461f71a0312eb48fc6836f878584bb1cbcc023abf",
+      "blake3": "6f53b4617c1998ba4694ba647f4b36282c3bed73b1bc8e3f1753e8b48ef1a906"
+    },
+    {
+      "path": "rules/v22.3/keywords.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21029,
+      "sha256": "215c8d96ff01de53dcbc2f0cc8135c819f3d1161039df1ec9444f7e6b4db647e",
+      "blake3": "12d1dc7e4f0fab4768257c4be1da6774459fd21655a07a8491fdc0d28a868bf5"
+    },
+    {
+      "path": "rules/v22.3/token_types.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4973,
+      "sha256": "d1ddd12bee917233cf14a5c13d9116fd21e1dd8a63797a54793a5644fe21d567",
+      "blake3": "04d8158cf075a84a4fe02a2fc84ac804ac72ec4c4998dd0bcece9733657b4482"
+    },
+    {
+      "path": "rules/v23.3",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "rules/v23.3/grammar_rules.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23037,
+      "sha256": "d295d696d3fefde545d66b1733cd0d264c31c25dc07ae2a5d33b67191dcb2790",
+      "blake3": "1135320edb42668feba255c0cc47e918455602184ea6d0284e63801947691d36"
+    },
+    {
+      "path": "rules/v23.3/keywords.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22764,
+      "sha256": "0fceedfac48e545c8673442d57cbdecf8b9473a32828d4f91ab8559484899778",
+      "blake3": "6ca06fc0ea88256bf7afe784474e2c5fe65d6aeb6f5039503fdf74416e48b36a"
+    },
+    {
+      "path": "rules/v23.3/token_types.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5077,
+      "sha256": "96526106c59b41248e0d0ecc54ca0d1a94eeb4898da08c8fa10304c7efd91098",
+      "blake3": "bf0546b903764041bc060d1ad95084479c7b33c3df22e64e2c0b51ed29edec53"
+    },
+    {
+      "path": "rules/v24.8",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "rules/v24.8/grammar_rules.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19799,
+      "sha256": "552f30e9475ad8f536441755e99c4c4e8c3962e1a0b758cbe12b51fa22388bba",
+      "blake3": "e3280f5409d14db27a929100b09142ee9f51747466ce78a369cf8e53573f8cf0"
+    },
+    {
+      "path": "rules/v24.8/keywords.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23818,
+      "sha256": "f9380706da78e141fa6a347ae3434a4dbceaed025b9cd4bcada0dcd48ed391dc",
+      "blake3": "671dd6113375228151944068690380a807ce9ca742972f5a9af1887bcb33c49c"
+    },
+    {
+      "path": "rules/v24.8/token_types.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5148,
+      "sha256": "a4022d77ab7123a3da5054b11bb9f564bdaec3c547995af598719416c3a817e6",
+      "blake3": "8c1d71e49d341a1c039cd1c6a0fec42e42408da16f38799bbed5733527741ddd"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/ck_sql_checker.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 39233,
+      "sha256": "be3c44439446540aca04a89873ab218ef4412892e9e77e8cdbfeed87ffb3c150",
+      "blake3": "4b2a4dec67f914edc1772d06daffbfd455381753a6c2efb82c4464cc1a97bda8"
+    },
+    {
+      "path": "scripts/ck_sql_parser.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17743,
+      "sha256": "f091760960747bed8de2264e469c85e98b40a0223bc9bac690e3294c7b684383",
+      "blake3": "4a21b119b202f5f5a2c6225f00a9efbb3756cccecd93e8fb130f8a68bf76136f"
+    },
+    {
+      "path": "scripts/ck_sql_tokenizer.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16453,
+      "sha256": "f090f4388089f6793c8f04ac34e0cf76e2b9f1a271fda6befd1ee15f7d11fd28",
+      "blake3": "62a614502c15def23ce9c550563441f20b087eb6059e99a44f13c45e26242626"
+    },
+    {
+      "path": "scripts/version_loader.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3259,
+      "sha256": "b5b45540b196b46256d07491fc358411008947ff6cda478eab2665c63d2ec0d0",
+      "blake3": "8edf461d51d2dd54a629e80eb5e8eb2c3131fd9d8c495610732557eb28a92aff"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2279,
+      "sha256": "502f7c77c6420b9e69fdc091472f50bbec171683ab27db61dff212e7b880e159",
+      "blake3": "a5d4ce57cc9498fdffeb7465cf1bcf45ee5c789c8dbed8b787725bb74c45a02c"
+    },
+    {
+      "path": "templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/report_template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 865,
+      "sha256": "c4a52c847f75f135dea83884ba0d819e13a5c466836de741fe19301519eee682",
+      "blake3": "8d2eda467155331460270237de9f7337ff0447fe89245d6851ecb17bf89861ea"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:e64850ad5ea1065c177e0d9c4599c85d571459108603f33e5c99ca16faae1630",
+  "sha256": "e64850ad5ea1065c177e0d9c4599c85d571459108603f33e5c99ca16faae1630",
+  "blake3": "897f0a70b507de8381de8165c0b00722032dadfb9f37573b3489f667f6fc4d8f",
+  "size_bytes": 291847,
+  "file_count": 13,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29014,
+      "sha256": "9c76c6105383f434623762fa171413cc05f3a6d768a1772f30f25391541adb2a",
+      "blake3": "3f2d623eb3cb627a9fc428d7fd1b68fc616ab33c4e08e3b74ff8089c7bb6d25e"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 147,
+      "sha256": "dd7f7aea7ed8197ea6e8073c5b7a2b1d5a05cac4e548189ae6672a013b9cd30b",
+      "blake3": "839b3acca35271607d263eab3830b1b1721be6055d9604c4c2e90c41309ccab6"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/ast_schema.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12663,
+      "sha256": "7d6b7e9a1679f3dda7e4978350df186b1f6831f555cb1dafa80ef025be25440d",
+      "blake3": "9720ab59d61f00babac0ea2a06f15356cb39f0b629159abc3089f1df5140e81a"
+    },
+    {
+      "path": "rules",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "rules/grammar_rules.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 55441,
+      "sha256": "85ae56163d6581e97c65ed09160f69f03112f91765299e7ff3a511710f44d78c",
+      "blake3": "28f03aab7ab973dec6474f04513c47598afba81fd544ba8446f89b6853967b6f"
+    },
+    {
+      "path": "rules/keywords.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 36461,
+      "sha256": "06134f913eae462c50c364891e59971c15ad9c5e5836f8a25c56f870ccea5695",
+      "blake3": "0a32bb81e020b3c45b3858efc49c249459ffa056725f882cff9ce68198e4cdad"
+    },
+    {
+      "path": "rules/perf_rules.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5102,
+      "sha256": "c710b8687b7970062fc535ccc7ea36a1ac4acc53982ff668c75f8295dfb5fe8a",
+      "blake3": "e4cc563ca6eb2b9699286b4b23a7025b17af627b7acd812bb33c99f5e8e452c8"
+    },
+    {
+      "path": "rules/spec_rules.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20331,
+      "sha256": "e24f23ec92c8effc2203c32e34afa382fdde120b956080188e8055e900db8d6e",
+      "blake3": "3cbaef38377bca646f501661a7e63ffc4b8470d1f64a0c7ae963a1b2d1b9e41b"
+    },
+    {
+      "path": "rules/syntax_rules.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16147,
+      "sha256": "dfaa3a6234cf3439ee76696278765a104a64962312ab891c088df8c4dbf83328",
+      "blake3": "25732edc0e31b8033b41cea2399bea34861f72d54392a82b4eea830e48965245"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/doris_sql_checker.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 48549,
+      "sha256": "f8fad6c45a994f1a0e2363dee971c40396ff70d52df0d4e7aaaa150d27efce35",
+      "blake3": "885c1a69d755943a22b325b98e2a8e8473a708592d439974545f569209b5f74c"
+    },
+    {
+      "path": "scripts/doris_sql_parser.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 45743,
+      "sha256": "d15fbd260f4f2d2bb96d8d534589ee2e48adf3a15891018c604b685e019344bb",
+      "blake3": "25814efc099f5e8e2c7cdfb2dcd86e5efab65a65873aeb8e691dff631cacb184"
+    },
+    {
+      "path": "scripts/doris_sql_tokenizer.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18661,
+      "sha256": "99e277626d0c4ea7223f76db2efd38ac81d3b75c62f87da5c5c533f35f4848d9",
+      "blake3": "e81badc303511f02f91d8b5e7e7186b4135811a2d18167f15c27495e18007be3"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2661,
+      "sha256": "aeef4d19425031dbda780227886c85b8a45c58b76f447c0149b62cb19f900ec2",
+      "blake3": "361362dceb3b69f8fd3bfaf1c3e7e71663e490ae8dc86eebaf3bbb2ede859359"
+    },
+    {
+      "path": "templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/report_template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 927,
+      "sha256": "03d5356552ced5ac5ffb266e073a15cdf389d934f10a4e0f072fa0dd700cc27a",
+      "blake3": "04487ed6ab3a3f1be6659d0f09bd9866c3e7795528ffc197100b783360d808bd"
+    }
+  ]
+}

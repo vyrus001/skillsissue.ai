@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:18a5cacb272b3a7d38aea71dde4dc54301be0da717289dd88b664b41edd3e148",
+  "sha256": "18a5cacb272b3a7d38aea71dde4dc54301be0da717289dd88b664b41edd3e148",
+  "blake3": "5262ed4a24901b486d105923645f0a12a07ae7cd467012b15239597e3fcfdfdc",
+  "size_bytes": 88222,
+  "file_count": 18,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11558,
+      "sha256": "8e60637e332aa8dfed990b5b92c2b8c65f0742d616b0609ac4690e6b8792c0ce",
+      "blake3": "2d734aeba62b5e07553d8d7d1392a6b76eae603b3eb0d0b5f5863252bd22d8ab"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7236,
+      "sha256": "65969b98a55367c678af3a7b20f8495c0142a336ddcebc1762ef54c14218bf57",
+      "blake3": "c404b005b8f13d9634eb899edc645a9f40ebe74f86aa3830ef0018ac849a3fb5"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 136,
+      "sha256": "ddea8a70fdf92143ddd08ba549973733ee4fa3ba8fe66eaea254e26355110cf2",
+      "blake3": "668614540ac949fcf9d2181cf31b0547aa8b409f25925de0db513a782f4b9044"
+    },
+    {
+      "path": "package-lock.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 147,
+      "sha256": "bb5044d934479cdf4553a8cedddf212096be0df354174ff8ff1396459b570f44",
+      "blake3": "27df028c9c6f31237161f0b9dcf5b9295a5d37d6211367b69b59153a5cf9ed16"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 72,
+      "sha256": "31e004f0a9d78d6ca6c2d611ada7dd1048ded534beb35501fb657053f7a207b2",
+      "blake3": "d752db61db7d2e6ae41121c4bb6fb5b18f58f124998862b0697bfc84ce5cc6ea"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/conflict_track.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2579,
+      "sha256": "87cf8f58b041a6e2f30096fe29e1b58631416418ae6418602c723a5692a4eb48",
+      "blake3": "c1182b8e780b228562ab8b74de3f8595e71d3e48cd02fdc900da761670dd0ca4"
+    },
+    {
+      "path": "scripts/continuity_check.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4775,
+      "sha256": "fb75ffc188967f19e72ac3748960f3f5f6283e41da35ba81ab9d72402e7d6daa",
+      "blake3": "bfb9398b12b400ce3739f8874a6eeaa15dadfe7c6912eca9b3ec5163de7edeb8"
+    },
+    {
+      "path": "scripts/emostate_tick.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13814,
+      "sha256": "e2853e0cca0b9119fbb35cee61cf4f47631e0b410dad878b9963a04db72ecc2e",
+      "blake3": "6693bff176add16bd575634fc27ed5a1e42fff860050bf5135e679c391f748b0"
+    },
+    {
+      "path": "scripts/identity_diff.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3238,
+      "sha256": "2041883beebca4ba987c8f5cb7a7f757f47f1c88b7628df6238724b5bc059603",
+      "blake3": "1dc52b70b3803e1b6946ff0b7c81f0ed3ec2e2d7f2d7bbb476b980f2f1825fb5"
+    },
+    {
+      "path": "scripts/input.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1641,
+      "sha256": "e6e65747f9a1ebd91a4fc3233cc5e2096a511a967d8b439f77faf7d758a78743",
+      "blake3": "3307e0db1564432e7ea72273a1784a76f852e415e57ee7c872c267b6e333e636"
+    },
+    {
+      "path": "scripts/journal_patch_schema.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1473,
+      "sha256": "f4dc0d2a876f81d827e4331b61752702d7f00d1f5d38b3ecf1a72e7d7a5edb0d",
+      "blake3": "cb1851beae79f7b669534c0b5b207ffbc20df99d580af07795754dc266d70afa"
+    },
+    {
+      "path": "scripts/journal_write.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4024,
+      "sha256": "154ed233466f4e2ffab4c4af3d2226b8c42ef494ed5bd08203a458c351819bc5",
+      "blake3": "c1631d37efd97956d189c4f5890244a0248b802fd736b1355533b47ec791cb6c"
+    },
+    {
+      "path": "scripts/ltm_search.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2286,
+      "sha256": "8977d864b1e04225d2fa6af7a37e4696f023956f2e6e850beab25d3b68e94ccf",
+      "blake3": "1e3740f9d95c790830c5d9689771911ee023d590b99cdb31a1b89fa361358925"
+    },
+    {
+      "path": "scripts/ltm_write.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1942,
+      "sha256": "5bd52dbb570d44fbda426599f783077f50f2ab7eefa3c214d03f533eee0b0f80",
+      "blake3": "d242eee943d7c2bba6bce2a3162c694e26f9353808dba0abf447ad24c09d22c1"
+    },
+    {
+      "path": "scripts/notionctl_bridge.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7175,
+      "sha256": "84f330b66b7d7756c776c8efe872918c9599cd1191334e92de3187d0a685c4af",
+      "blake3": "fc1265267e1a032294523904467e0e9489b88182606109522d35b676a4e5d0d0"
+    },
+    {
+      "path": "scripts/setup_ltm.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8593,
+      "sha256": "0ed618d481c659b499d28ba8b5a18f2e1a0fee5bfa363066ccb1b92810550527",
+      "blake3": "88fd95125b6e05c3c620bce18289b0fdaedc86d99727797f74e59bdba7980475"
+    },
+    {
+      "path": "scripts/stage_ambient_recall.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15765,
+      "sha256": "5a54d3a34332378dc91ca2ec5105e78f2a87f86fe12f4b956c976b422ce81abb",
+      "blake3": "f000115f52051076b724e0f3f181ec91e0ffcbfc9c615c316f9b4dde8ab0592b"
+    },
+    {
+      "path": "scripts/state_recall.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1768,
+      "sha256": "c636f2fc9f9f5ccdc4671826095b9b6c534ba8a522ced8f01752cb6fc7e6b24d",
+      "blake3": "ddb9b0aace344855bcdc9d99c1685d5d3e9b9d32782ce8cc309de5ef0e99c26b"
+    }
+  ]
+}
