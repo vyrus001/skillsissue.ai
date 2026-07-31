@@ -50,25 +50,34 @@ basename of its declared `telemetry_path` inside that directory.
   TCP/UDP. Connect is outbound; bind/listen is inbound-open; accept is
   inbound-accept. Missing family/type and unlabeled numeric packet direction are
   reported as unknown rather than guessed.
-- Event time descends through discrete, scrollable rows. IDs and timestamps are
-  serialized as decimal strings to avoid JavaScript integer precision loss.
-  Source sequence provides deterministic row order for equal or missing
-  timestamps, while process relationships branch horizontally by execution
-  depth.
+- The Canvas uses a force-directed topology while preserving explicit
+  process/exec/fork ownership edges. IDs and timestamps are serialized as
+  decimal strings to avoid JavaScript integer precision loss.
+- Supervisor-annotated pre-detonation activity is hidden by default. **Show
+  pre-detonation** restores it with dimmed nodes; the underlying records and
+event IDs are never deleted.
 
-The current detonation policy records connect/security-connect and DNS but does
-not record bind, listen, or accept. A run produced by that policy can therefore
-show outbound and ambiguous activity, but absence of an inbound node is not
-proof that no listener existed. If a different Tracee policy captures inbound
-events, the normalizer classifies them.
+The GitHub Pages static build additionally reads a run's bounded
+`network.jsonl.zst`. Intercepted HTTP(S) responses appear under **Intercepted
+downloads** with URL, status, resolved address, byte count, and body hash. The
+viewer renders only an inert text/hex preview and requires an explicit action
+to download the exact captured bytes; it never inserts remote content into the
+page as HTML or executes it. Provider-relay records remain in the authenticated
+transcript but are not presented as downloaded target artifacts.
+
+The current detonation policy records socket creation, connect, bind, listen,
+accept, send/receive, security-connect, and DNS events. Older committed runs may
+contain only outbound and ambiguous activity, so absence of an inbound node in
+those runs is not proof that no listener existed.
 
 ## Dense traces and raw evidence
 
 The default UI groups matching activity within 10 ms by operation, process
-image, target, transport, and direction. Controls can change the bucket, group
-only by operation, or render one node per event. Category, transport, direction,
-and text filters affect the view without deleting data. **Refresh layout** packs
-the currently visible nodes into adjacent chronological rows after filtering.
+image, target, transport, direction, and detonation phase. Controls can change
+the bucket, group only by operation, or render one node per event. Category,
+phase, transport, direction, and text filters affect the view without deleting
+data. **Reheat layout** redistributes the currently visible force graph after
+filtering.
 Aggregates retain every underlying event ID; node inspection and the **All
 events** browser retrieve normalized arguments and original Tracee JSON through
 bounded local endpoints. Exec nodes surface captured command lines; file nodes
@@ -76,9 +85,8 @@ show paths, FDs, and byte totals; socket nodes show transport, direction, and
 endpoint evidence. Read/write content is displayed only when Tracee captured a
 payload argument. A buffer pointer is reported as a pointer, never reconstructed
 or presented as file content. All event and process nodes use one consistent
-shape. The graph is virtualized into the visible scroll window, and fit-to-width
-is the minimum gesture/keyboard zoom: long runs remain vertically scrollable
-instead of being shrunk into a single viewport.
+shape. Rendering is culled to the visible Canvas viewport, and wheel/keyboard
+zoom plus panning keep dense traces navigable.
 
 Loading fails instead of silently truncating when a limit is exceeded. Defaults:
 
@@ -102,4 +110,5 @@ cargo clippy -p skill-telemetry-view --all-targets -- -D warnings
 Focused tests cover Tracee argument normalization, compressed input, stable
 timestamp ordering, process/fork relationships, FD-backed file attribution,
 file operation labels, TCP/UDP/Unix and direction classification, aggregation
-coverage, and deterministic layout inputs.
+coverage, static intercepted-response publication, and deterministic layout
+inputs.

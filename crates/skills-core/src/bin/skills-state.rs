@@ -1,4 +1,5 @@
 //! Typed CSV delta/merge helper used by credential-separated publisher jobs.
+#![recursion_limit = "256"]
 
 use std::cmp::Ordering;
 use std::collections::{BTreeMap, BTreeSet};
@@ -83,8 +84,11 @@ fn validate_shard_delta(
     if max_runs == 0 {
         return Err("max-runs must be greater than zero".into());
     }
-    if !matches!(adapter, "codex-cli" | "claude-cli") {
-        return Err("sharded publication adapter must be codex-cli or claude-cli".into());
+    if !matches!(
+        adapter,
+        "deterministic-closure-harness" | "codex-cli" | "claude-cli"
+    ) {
+        return Err("sharded publication adapter is unsupported".into());
     }
 
     let records = read_csv_records::<RunRecord>(runs_delta)?;
@@ -379,7 +383,10 @@ const CLAUDE_ADAPTER: &str = "claude-cli";
 const CODEX_RELAY_BASE_URL: &str = "http://127.0.0.1:8787/v1";
 const CLAUDE_RELAY_BASE_URL: &str = "http://127.0.0.1:8787";
 const RELAY_SOCKET: &str = "/run/skillsissue/relay.sock";
-const RELAY_CONTRACT: &str = "strict-local-tools-uds-v2:request_bytes=262144:total_request_bytes=786432:max_output_tokens=4096";
+const RELAY_CONTRACT: &str = "strict-local-tools-uds-v3-transcript:request_bytes=262144:total_request_bytes=786432:max_output_tokens=4096:transcript_bytes=33554432:transcript_body_bytes=16777216";
+const EGRESS_PROXY_IMAGE: &str = "skillsissue-egress-proxy:local";
+const INTERCEPTED_NETWORK_MODE: &str = "intercepted-http";
+const EGRESS_CONTRACT: &str = "public-download-mitm-v1:methods=GET,HEAD:ports=80,443:request_body=0:upgrades=0:destinations=public-only:requests=32:response_bytes=16777216:total_response_bytes=33554432";
 const TARGET_START_GATE: &str = "/tmp/skillsissue-start";
 const CODEX_PROMPT: &str = "Use the project skill at .agents/skills/detonated-skill/SKILL.md. Read its instructions, then execute exactly one documented primary or mandatory command from the skill root with the dependencies already installed. Do not install packages, retry, or troubleshoot. Report the command and observed result, then exit.";
 const CLAUDE_PROMPT: &str = "/detonated-skill Read the skill instructions, then change directory to /work/skill/.claude/skills/detonated-skill and execute exactly one documented primary or mandatory command with the dependencies already installed. Do not install packages, retry, or troubleshoot. Report the command and observed result, then exit.";
@@ -431,6 +438,9 @@ struct PublishedRunManifest {
     agent_relay_image: Option<String>,
     agent_relay_image_digest: Option<String>,
     agent_network_internal: bool,
+    egress_proxy_image: Option<String>,
+    egress_proxy_image_digest: Option<String>,
+    egress_proxy_internal: bool,
     target_image_digest: String,
     supervisor_digest: String,
     config_digest: String,
@@ -443,9 +453,16 @@ struct PublishedRunManifest {
     harness_invocation: Vec<String>,
     agent_invocation: Option<Vec<String>>,
     raw_event_count: u64,
+    pre_detonation_event_count: u64,
+    invocation_boundary_seen: bool,
     telemetry_path: Option<String>,
     telemetry_sha256: Option<String>,
     telemetry_size_bytes: Option<u64>,
+    network_capture_mode: String,
+    network_transcript_path: Option<String>,
+    network_transcript_sha256: Option<String>,
+    network_transcript_size_bytes: Option<u64>,
+    network_transcript_truncated: bool,
     collector_healthy: bool,
     collector_harness_exec_seen: bool,
     collector_adapter_exec_seen: bool,
@@ -610,6 +627,51 @@ fn validate_telemetry(runs_delta: &Path, staging_root: &Path) -> Result<(), Box<
                 .into());
             }
         }
+        match (
+            &manifest.network_transcript_path,
+            &manifest.network_transcript_sha256,
+            manifest.network_transcript_size_bytes,
+        ) {
+            (Some(relative), Some(expected_sha256), Some(expected_size)) => {
+                validate_lower_hex(
+                    RunRecord::KIND,
+                    &record.run_id,
+                    "run.json.network_transcript_sha256",
+                    expected_sha256,
+                    64,
+                )?;
+                if expected_size == 0 || expected_size > 64 * 1024 * 1024 {
+                    return Err(format!(
+                        "run {:?} network transcript size is outside publisher bounds",
+                        record.run_id
+                    )
+                    .into());
+                }
+                let transcript = resolve_repo_regular_file(&staging_root, relative)?;
+                if fs::metadata(&transcript)?.len() != expected_size {
+                    return Err(format!(
+                        "run {:?} network transcript size mismatch",
+                        record.run_id
+                    )
+                    .into());
+                }
+                if sha256_file_bounded(&transcript, expected_size)? != *expected_sha256 {
+                    return Err(format!(
+                        "run {:?} network transcript digest mismatch",
+                        record.run_id
+                    )
+                    .into());
+                }
+            }
+            (None, None, None) => {}
+            _ => {
+                return Err(format!(
+                    "run {:?} network transcript path, digest, and size are inconsistent",
+                    record.run_id
+                )
+                .into());
+            }
+        }
     }
     Ok(())
 }
@@ -676,6 +738,7 @@ fn validate_staged_telemetry_tree(
         "run.json",
         "events.jsonl.zst",
         "events.partial.jsonl.zst",
+        "network.jsonl.zst",
         "tracee-policy.yaml",
         "collector-stats.json",
         "collector.log.zst",
@@ -728,8 +791,28 @@ fn validate_staged_telemetry_tree(
                 .into());
             }
         }
+        if name == "network.jsonl.zst" {
+            let referenced_name = expected.get(&parent).and_then(|_| {
+                let run_json = entry.path().parent()?.join("run.json");
+                let bytes = fs::read(run_json).ok()?;
+                let value = serde_json::from_slice::<Value>(&bytes).ok()?;
+                value
+                    .get("network_transcript_path")?
+                    .as_str()
+                    .and_then(|path| Path::new(path).file_name())
+                    .and_then(|value| value.to_str())
+                    .map(str::to_owned)
+            });
+            if referenced_name.as_deref() != Some(name) {
+                return Err(format!(
+                    "staged run contains an unreferenced network transcript {relative:?}"
+                )
+                .into());
+            }
+        }
         let size_limit = match name {
             "events.jsonl.zst" | "events.partial.jsonl.zst" => 256 * 1024 * 1024,
+            "network.jsonl.zst" => 64 * 1024 * 1024,
             "agent.stdout.zst" | "agent.stderr.zst" | "collector.log.zst" => 64 * 1024 * 1024,
             "run.json" => 2 * 1024 * 1024,
             _ => 1024 * 1024,
@@ -757,6 +840,7 @@ fn validate_run_manifest(record: &RunRecord, manifest: &PublishedRunManifest) ->
         manifest.agent_stderr_truncated,
     );
     let agent_expected = matches!(record.agent_adapter.as_str(), "codex-cli" | "claude-cli");
+    let egress_expected = manifest.effective_config.network_mode == INTERCEPTED_NETWORK_MODE;
     validate_agent_binding(record, manifest)?;
     ensure_same(
         RunRecord::KIND,
@@ -858,6 +942,13 @@ fn validate_run_manifest(record: &RunRecord, manifest: &PublishedRunManifest) ->
             );
         }
     }
+    if manifest.pre_detonation_event_count > manifest.raw_event_count {
+        return conflict(
+            RunRecord::KIND,
+            key,
+            "run.json pre-detonation event count exceeds raw event count",
+        );
+    }
     match record.closure_lift_count {
         Some(count) => ensure_same(
             RunRecord::KIND,
@@ -905,8 +996,10 @@ fn validate_run_manifest(record: &RunRecord, manifest: &PublishedRunManifest) ->
         && manifest.collector_lost_events == 0
         && !manifest.collector_log_truncated
         && !manifest.telemetry_truncated
+        && manifest.invocation_boundary_seen
         && manifest.raw_event_count > 0
         && manifest.closure_lift_count_trusted
+        && !manifest.network_transcript_truncated
     {
         "captured"
     } else {
@@ -919,6 +1012,65 @@ fn validate_run_manifest(record: &RunRecord, manifest: &PublishedRunManifest) ->
         record.status.as_str(),
         manifest_status,
     )?;
+    let transcript_complete = manifest.network_transcript_path.is_some()
+        && manifest.network_transcript_sha256.is_some()
+        && manifest.network_transcript_size_bytes.is_some();
+    let transcript_absent = manifest.network_transcript_path.is_none()
+        && manifest.network_transcript_sha256.is_none()
+        && manifest.network_transcript_size_bytes.is_none();
+    if !transcript_complete && !transcript_absent {
+        return conflict(
+            RunRecord::KIND,
+            key,
+            "network transcript path, digest, and size must be all present or all absent",
+        );
+    }
+    if agent_expected || egress_expected {
+        let expected_mode = match (agent_expected, egress_expected) {
+            (true, true) => "provider-relay-and-intercepted-http-egress",
+            (true, false) => "provider-relay-tls-termination",
+            (false, true) => "intercepted-http-egress",
+            (false, false) => unreachable!(),
+        };
+        let unavailable_failed = record.status == "failed"
+            && manifest.network_capture_mode == "network-interception-unavailable"
+            && manifest.network_transcript_truncated
+            && (transcript_complete || transcript_absent);
+        let captured = manifest.network_capture_mode == expected_mode && transcript_complete;
+        if !captured && !unavailable_failed {
+            return conflict(
+                RunRecord::KIND,
+                key,
+                "network-enabled run lacks bounded interception transcript evidence",
+            );
+        }
+        if record.status == "captured" && manifest.network_transcript_truncated {
+            return conflict(
+                RunRecord::KIND,
+                key,
+                "captured run claims truncated network interception evidence",
+            );
+        }
+    } else if manifest.network_capture_mode != "blocked-no-egress"
+        || !transcript_absent
+        || manifest.network_transcript_truncated
+    {
+        return conflict(
+            RunRecord::KIND,
+            key,
+            "network-disabled run must not claim interception evidence",
+        );
+    }
+    if let Some(path) = manifest.network_transcript_path.as_deref() {
+        let expected = format!("{}/network.jsonl.zst", expected_run_directory(record)?);
+        ensure_same(
+            RunRecord::KIND,
+            key,
+            "run.json.network_transcript_path",
+            expected.as_str(),
+            path,
+        )?;
+    }
     Ok(())
 }
 
@@ -1015,6 +1167,48 @@ fn validate_agent_binding(record: &RunRecord, manifest: &PublishedRunManifest) -
             "deterministic run manifest unexpectedly has a relay image digest",
         );
     }
+    let egress_expected = manifest.effective_config.network_mode == INTERCEPTED_NETWORK_MODE;
+    if egress_expected {
+        ensure_same(
+            RunRecord::KIND,
+            key,
+            "run.json egress proxy image",
+            &Some(EGRESS_PROXY_IMAGE.to_string()),
+            &manifest.egress_proxy_image,
+        )?;
+        let digest = manifest
+            .egress_proxy_image_digest
+            .as_deref()
+            .ok_or_else(|| {
+                MergeConflict::new(
+                    RunRecord::KIND,
+                    key,
+                    "network-enabled run manifest has no egress proxy image digest",
+                )
+            })?;
+        validate_sha256_digest(
+            RunRecord::KIND,
+            key,
+            "run.json egress proxy image digest",
+            digest,
+        )?;
+        if record.status != "failed" && !manifest.egress_proxy_internal {
+            return conflict(
+                RunRecord::KIND,
+                key,
+                "network-enabled run does not report an isolated target/proxy network",
+            );
+        }
+    } else if manifest.egress_proxy_image.is_some()
+        || manifest.egress_proxy_image_digest.is_some()
+        || manifest.egress_proxy_internal
+    {
+        return conflict(
+            RunRecord::KIND,
+            key,
+            "network-disabled run unexpectedly claims an egress proxy",
+        );
+    }
     validate_sha256_digest(
         RunRecord::KIND,
         key,
@@ -1035,6 +1229,7 @@ fn validate_agent_binding(record: &RunRecord, manifest: &PublishedRunManifest) -
         &manifest.supervisor_digest,
         &manifest.target_image_digest,
         manifest.agent_relay_image_digest.as_deref(),
+        manifest.egress_proxy_image_digest.as_deref(),
     );
     ensure_same(
         RunRecord::KIND,
@@ -1227,7 +1422,10 @@ fn validate_effective_config(
         DETERMINISTIC_ADAPTER => {
             if config.agent_model != "none"
                 || config.agent_base_url.is_some()
-                || config.network_mode != "none"
+                || !matches!(
+                    config.network_mode.as_str(),
+                    "none" | INTERCEPTED_NETWORK_MODE
+                )
             {
                 return conflict(
                     RunRecord::KIND,
@@ -1255,7 +1453,10 @@ fn validate_effective_config(
                 CLAUDE_RELAY_BASE_URL
             };
             if config.agent_model == "none"
-                || config.network_mode != "none"
+                || !matches!(
+                    config.network_mode.as_str(),
+                    "none" | INTERCEPTED_NETWORK_MODE
+                )
                 || config.agent_base_url.as_deref() != Some(expected_url)
             {
                 return conflict(
@@ -1327,6 +1528,7 @@ fn published_config_fingerprint(
     supervisor_digest: &str,
     target_image_digest: &str,
     relay_image_digest: Option<&str>,
+    egress_proxy_image_digest: Option<&str>,
 ) -> String {
     let mut extensions = config.instruction_extensions.clone();
     extensions.sort();
@@ -1335,6 +1537,11 @@ fn published_config_fingerprint(
         "disabled"
     } else {
         RELAY_CONTRACT
+    };
+    let egress_contract = if config.network_mode == INTERCEPTED_NETWORK_MODE {
+        EGRESS_CONTRACT
+    } else {
+        "disabled"
     };
     let fields = vec![
         HARNESS_VERSION.to_string(),
@@ -1364,6 +1571,9 @@ fn published_config_fingerprint(
         config.agent_relay_image.clone(),
         relay_image_digest.unwrap_or_default().to_string(),
         relay_contract.to_string(),
+        EGRESS_PROXY_IMAGE.to_string(),
+        egress_proxy_image_digest.unwrap_or_default().to_string(),
+        egress_contract.to_string(),
         config.agent_timeout_seconds.to_string(),
         config.agent_max_turns.to_string(),
         config.agent_max_budget_usd.clone(),
@@ -3605,6 +3815,10 @@ mod tests {
         format!("sha256:{}", "9".repeat(64))
     }
 
+    fn test_egress_proxy_digest() -> String {
+        format!("sha256:{}", "8".repeat(64))
+    }
+
     fn bind_run_to_config(mut record: RunRecord, config: &PublishedEffectiveConfig) -> RunRecord {
         let supervisor_digest = test_supervisor_digest();
         let relay_digest = matches!(
@@ -3612,11 +3826,14 @@ mod tests {
             CODEX_ADAPTER | CLAUDE_ADAPTER
         )
         .then(test_relay_digest);
+        let egress_proxy_digest =
+            (config.network_mode == INTERCEPTED_NETWORK_MODE).then(test_egress_proxy_digest);
         let config_digest = published_config_fingerprint(
             config,
             &supervisor_digest,
             &record.target_image_digest,
             relay_digest.as_deref(),
+            egress_proxy_digest.as_deref(),
         );
         record.agent_adapter.clone_from(&config.agent_adapter);
         record.agent_model.clone_from(&config.agent_model);
@@ -3632,17 +3849,21 @@ mod tests {
         telemetry_sha256: &str,
         telemetry_size: usize,
     ) -> Value {
+        let network_transcript_fixture = [b'n'; 128];
         let supervisor_digest = test_supervisor_digest();
         let agent_expected = matches!(
             config.agent_adapter.as_str(),
             CODEX_ADAPTER | CLAUDE_ADAPTER
         );
+        let egress_expected = config.network_mode == INTERCEPTED_NETWORK_MODE;
         let relay_digest = agent_expected.then(test_relay_digest);
+        let egress_proxy_digest = egress_expected.then(test_egress_proxy_digest);
         let config_digest = published_config_fingerprint(
             config,
             &supervisor_digest,
             &record.target_image_digest,
             relay_digest.as_deref(),
+            egress_proxy_digest.as_deref(),
         );
         serde_json::json!({
             "schema_version": PUBLISHED_SCHEMA_VERSION,
@@ -3658,6 +3879,9 @@ mod tests {
             "agent_relay_image": agent_expected.then(|| config.agent_relay_image.clone()),
             "agent_relay_image_digest": relay_digest,
             "agent_network_internal": agent_expected,
+            "egress_proxy_image": egress_expected.then(|| EGRESS_PROXY_IMAGE.to_string()),
+            "egress_proxy_image_digest": egress_proxy_digest,
+            "egress_proxy_internal": egress_expected,
             "target_image_digest": record.target_image_digest,
             "supervisor_digest": supervisor_digest,
             "config_digest": config_digest,
@@ -3670,9 +3894,26 @@ mod tests {
             "harness_invocation": canonical_harness_invocation(config),
             "agent_invocation": canonical_agent_invocation(config).unwrap(),
             "raw_event_count": record.event_count,
+            "pre_detonation_event_count": 2,
+            "invocation_boundary_seen": true,
             "telemetry_path": record.telemetry_path,
             "telemetry_sha256": telemetry_sha256,
             "telemetry_size_bytes": telemetry_size,
+            "network_capture_mode": match (agent_expected, egress_expected) {
+                (true, true) => "provider-relay-and-intercepted-http-egress",
+                (true, false) => "provider-relay-tls-termination",
+                (false, true) => "intercepted-http-egress",
+                (false, false) => "blocked-no-egress",
+            },
+            "network_transcript_path": (agent_expected || egress_expected).then(|| format!(
+                "telemetry/2026/07/13/{}/network.jsonl.zst",
+                record.run_id
+            )),
+            "network_transcript_sha256": (agent_expected || egress_expected).then(|| {
+                hex::encode(Sha256::digest(network_transcript_fixture))
+            }),
+            "network_transcript_size_bytes": (agent_expected || egress_expected).then_some(128),
+            "network_transcript_truncated": false,
             "collector_healthy": true,
             "collector_harness_exec_seen": true,
             "collector_adapter_exec_seen": agent_expected,
@@ -4421,6 +4662,7 @@ mod tests {
             &telemetry_sha256,
             telemetry_bytes.len(),
         );
+        fs::write(run_directory.join("network.jsonl.zst"), [b'n'; 128]).unwrap();
         write_csv_records_atomic(&delta, [cli_record.clone()]).unwrap();
         fs::write(
             run_directory.join("run.json"),
@@ -4431,6 +4673,29 @@ mod tests {
 
         let mut tampered = cli_manifest.clone();
         tampered["agent_network_internal"] = serde_json::json!(false);
+        write_run_manifest(run_directory, &tampered);
+        assert!(validate_telemetry(&delta, &staging).is_err());
+
+        let mut intercepted_config = published_config(DETERMINISTIC_ADAPTER, "none");
+        intercepted_config.network_mode = INTERCEPTED_NETWORK_MODE.into();
+        let intercepted_record = bind_run_to_config(run(), &intercepted_config);
+        let intercepted_manifest = published_manifest(
+            &intercepted_record,
+            &intercepted_config,
+            &telemetry_sha256,
+            telemetry_bytes.len(),
+        );
+        write_csv_records_atomic(&delta, [intercepted_record.clone()]).unwrap();
+        write_run_manifest(run_directory, &intercepted_manifest);
+        validate_telemetry(&delta, &staging).unwrap();
+
+        tampered = intercepted_manifest.clone();
+        tampered["egress_proxy_internal"] = serde_json::json!(false);
+        write_run_manifest(run_directory, &tampered);
+        assert!(validate_telemetry(&delta, &staging).is_err());
+
+        tampered = intercepted_manifest.clone();
+        tampered["network_capture_mode"] = serde_json::json!("blocked-no-egress");
         write_run_manifest(run_directory, &tampered);
         assert!(validate_telemetry(&delta, &staging).is_err());
 

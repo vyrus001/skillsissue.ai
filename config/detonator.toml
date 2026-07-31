@@ -7,9 +7,9 @@ cpus = "1.0"
 pids_limit = 128
 max_attempts_per_run_key = 3
 
-# `none` still records attempted destinations from execve argv while preventing
-# an untrusted skill from reaching the public Internet.
-network_mode = "none"
+# Public HTTP(S) downloads are forced through a bounded TLS-interception proxy
+# on an internal Docker network. The target has no direct Internet route.
+network_mode = "intercepted-http"
 max_telemetry_bytes = 4194304
 max_agent_output_bytes = 524288
 max_skill_entries = 4096
@@ -25,9 +25,9 @@ instruction_extensions = ["md", "txt"]
 agent_adapter = "deterministic-closure-harness"
 agent_model = "none"
 agent_relay_image = "skillsissue-relay:local"
-# For `codex-cli` or `claude-cli`, keep `network_mode = "none"`, set a model,
-# and use the fixed loopback URL backed by the harness's per-run Unix-socket
-# forwarder. The target gets only a fixed dummy key; never mount host credentials.
+# For `codex-cli` or `claude-cli`, set a model and use the fixed loopback URL
+# backed by the harness's per-run Unix-socket forwarder. The target gets only a
+# fixed dummy key; never mount host credentials.
 # agent_base_url = "http://127.0.0.1:8787/v1"
 agent_timeout_seconds = 120
 agent_max_turns = 8

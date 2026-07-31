@@ -25,6 +25,11 @@ jobs:
         run: cargo fmt --all --check
       - name: Test workspace
         run: cargo test --workspace --locked
+      - name: Test egress interception policy
+        working-directory: containers
+        run: python3 -m unittest -v test_egress_policy.py
+      - name: Check telemetry viewer JavaScript
+        run: node --check crates/skill-telemetry-view/web/app.js
       - name: Lint workspace
         run: cargo clippy --workspace --all-targets --locked -- -D warnings
       - name: Validate worker CLIs
@@ -63,6 +68,12 @@ jobs:
           dockerfile: containers/relay.Dockerfile
           tag: skillsissue-relay:ci
           cache-scope: skillsissue-relay
+      - name: Build egress interception proxy image
+        uses: ./.github/actions/build-cached-image
+        with:
+          dockerfile: containers/egress-proxy.Dockerfile
+          tag: skillsissue-egress-proxy:local
+          cache-scope: skillsissue-egress-proxy
       - name: Build detonator image
         uses: ./.github/actions/build-cached-image
         with:

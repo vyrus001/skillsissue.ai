@@ -37,6 +37,15 @@
           <p id="coverage-note" class="coverage-note"></p>
         </section>
 
+        <section id="network-capture-section" hidden>
+          <div class="section-heading">
+            <h2>Intercepted downloads</h2>
+            <b id="network-capture-count">0</b>
+          </div>
+          <p class="coverage-note">Captured HTTP(S) response bytes are available for inspection and safe binary download.</p>
+          <button id="network-captures" class="network-captures-button" type="button">Browse network evidence</button>
+        </section>
+
         <section id="density-controls">
           <h2>Density</h2>
           <label class="field-label" for="bucket">Time bucket</label>
@@ -66,6 +75,11 @@
             <input id="search" type="search" placeholder="Process, path, endpoint…" autocomplete="off">
           </label>
           <div id="category-filters" class="check-list"></div>
+          <label class="check-row" for="show-pre-detonation">
+            <input id="show-pre-detonation" type="checkbox">
+            <span>Show pre-detonation</span>
+            <b id="pre-detonation-count">0</b>
+          </label>
           <label class="field-label" for="transport">Socket transport</label>
           <select id="transport">
             <option value="all">All transports</option>

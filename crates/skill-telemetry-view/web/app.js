@@ -9,6 +9,7 @@ const VIEWER = Object.freeze(window.SKILLSISSUE_VIEWER || { mode: "server" });
 let staticSnapshotPromise = null;
 let staticEventMap = null;
 const staticEventPagePromises = new Map();
+let staticNetworkIndexPromise = null;
 
 const LAYOUT = {
   nodeWidth: 196,
@@ -46,11 +47,13 @@ const state = {
   search: "",
   transport: "all",
   direction: "all",
+  includePreDetonation: false,
   selected: null,
   dragging: false,
   dragNode: null,
   dragStart: null,
   pointerStart: null,
+  networkCaptureCount: 0,
 };
 
 async function loadGraph({ preserveView = false } = {}) {
@@ -58,9 +61,12 @@ async function loadGraph({ preserveView = false } = {}) {
   const bucket = $("#bucket").value;
   const group = $("#group").value;
   try {
-    state.model = await graphPayload(bucket, group);
+    const snapshot = VIEWER.mode === "static" ? await staticSnapshot() : null;
+    state.model = snapshot ? snapshot.graph : await graphPayload(bucket, group);
+    state.networkCaptureCount = snapshot?.networkCaptureCount || 0;
     renderHeader();
     renderStats();
+    renderNetworkControls();
     renderCategoryFilters();
     applyFilters({ resetLayout: true });
     if (!preserveView) fitGraph();
@@ -111,6 +117,31 @@ async function staticEventPage(page) {
   })();
   staticEventPagePromises.set(page, promise);
   return promise;
+}
+
+async function staticNetworkIndex() {
+  if (VIEWER.mode !== "static") return { captureCount: 0, captures: [] };
+  if (staticNetworkIndexPromise) return staticNetworkIndexPromise;
+  staticNetworkIndexPromise = (async () => {
+    const root = String(VIEWER.dataRoot || "../runs").replace(/\/$/, "");
+    const response = await fetch(`${root}/${encodeURIComponent(staticRunId())}/network/index.json`);
+    if (!response.ok) throw new Error(`published network index request failed (${response.status})`);
+    return response.json();
+  })();
+  return staticNetworkIndexPromise;
+}
+
+async function staticNetworkDetail(capture) {
+  const root = String(VIEWER.dataRoot || "../runs").replace(/\/$/, "");
+  const detail = String(capture.detailUrl || "");
+  if (!/^network\/[1-9][0-9]*\.json$/.test(detail)) {
+    throw new Error("published network detail path is invalid");
+  }
+  const response = await fetch(
+    `${root}/${encodeURIComponent(staticRunId())}/${detail}`,
+  );
+  if (!response.ok) throw new Error(`published network evidence request failed (${response.status})`);
+  return response.json();
 }
 
 async function graphPayload(bucket, group) {
@@ -174,10 +205,13 @@ function renderStats() {
   const model = state.model;
   const values = [
     [formatCount(model.eventCount), "events"],
+    [formatCount(model.preDetonationEventCount || 0), "pre-detonation"],
     [formatCount(model.processCount), "processes"],
     [formatCount(model.activityNodeCount), "activity nodes"],
+    [formatCount(state.networkCaptureCount), "HTTP(S) captures"],
     [formatDuration(model.minTimestampNs, model.maxTimestampNs), "duration"],
   ];
+  $("#pre-detonation-count").textContent = formatCount(model.preDetonationEventCount || 0);
   const target = $("#trace-stats");
   target.replaceChildren();
   for (const [value, label] of values) {
@@ -198,6 +232,13 @@ function renderStats() {
     note.className = "coverage-note warning";
     note.textContent = `${formatCount(model.representedEventCount)} of ${formatCount(model.eventCount)} events are represented.`;
   }
+}
+
+function renderNetworkControls() {
+  const section = $("#network-capture-section");
+  const available = VIEWER.mode === "static" && state.networkCaptureCount > 0;
+  section.hidden = !available;
+  $("#network-capture-count").textContent = formatCount(state.networkCaptureCount);
 }
 
 function renderCategoryFilters() {
@@ -284,6 +325,7 @@ function applyFilters({ resetLayout = false } = {}) {
   if (!state.model) return;
   const query = state.search.toLowerCase();
   state.visible = state.model.nodes.filter((node) => {
+    if (node.preDetonation && !state.includePreDetonation) return false;
     if (!state.categories.has(node.category)) return false;
     if (node.category === "socket" && state.transport !== "all" && node.transport !== state.transport) return false;
     if (node.category === "socket" && state.direction !== "all" && node.direction !== state.direction) return false;
@@ -574,6 +616,7 @@ function drawEventNode(node, position, selected) {
   const x = position.x - position.width / 2;
   const y = position.y - position.height / 2;
   roundedRect(x, y, position.width, position.height, 7);
+  context.globalAlpha = node.preDetonation ? .48 : 1;
   context.fillStyle = selected ? "rgba(101, 229, 194, .17)" : "rgba(17, 36, 32, .97)";
   context.fill();
   context.lineWidth = (selected ? 2.3 : 1.2) / state.zoom;
@@ -595,7 +638,8 @@ function drawEventNode(node, position, selected) {
 }
 
 function nodeMetadata(node) {
-  if (node.kind === "process") return `pid ${node.pid} · ${node.processKind}`;
+  const phase = node.preDetonation ? "pre-detonation · " : "";
+  if (node.kind === "process") return `${phase}pid ${node.pid} · ${node.processKind}`;
   const parts = [];
   if (node.category === "socket") {
     parts.push(node.transport === "not-applicable" ? "transport n/a" : node.transport.toUpperCase());
@@ -607,7 +651,7 @@ function nodeMetadata(node) {
   if (node.fileDescriptors?.length) parts.push(`fd ${node.fileDescriptors.join(",")}`);
   parts.push(`${node.count} event${node.count === 1 ? "" : "s"}`);
   if (node.failureCount) parts.push(`${node.failureCount} failed`);
-  return parts.join(" · ");
+  return phase + parts.join(" · ");
 }
 
 function roundedRect(x, y, width, height, radius) {
@@ -680,6 +724,7 @@ async function inspectNode(node) {
     ["Process", `${node.processName || "unknown"} (pid ${node.pid})`],
     ["Process identity", node.processKey],
     ["Execution depth", String(node.depth)],
+    ["Phase", node.preDetonation ? "pre-detonation" : "detonation"],
     ["Command", node.command || "not captured for this node"],
     ["Timestamp ns", node.timestampNs || "unavailable"],
     ["Relative time", formatNodeTime(node)],
@@ -767,6 +812,7 @@ async function inspectEvent(seq) {
     ["Parent PID", event.ppid === null ? "unavailable" : String(event.ppid)],
     ["Entity", event.processEntityId || "unavailable"],
     ["Normalized detail", event.detail || "unavailable"],
+    ["Phase", event.preDetonation ? "pre-detonation" : "detonation"],
     ["Timestamp ns", event.timestampNs || "unavailable"],
     ["Source", `line ${event.sourceLine}, item ${event.sourceIndex}`],
     ["Target", event.target || "unavailable"],
@@ -946,6 +992,162 @@ function nestedValues(value, key) {
     ...(name.toLowerCase() === key.toLowerCase() ? [String(item)] : []),
     ...nestedValues(item, key),
   ]);
+}
+
+async function browseNetworkCaptures() {
+  shell.classList.add("details-open");
+  state.selected = null;
+  $("#details-title").textContent = "Intercepted downloads";
+  const body = $("#details-body");
+  body.replaceChildren();
+  const loading = document.createElement("p");
+  loading.className = "muted";
+  loading.textContent = "Loading bounded HTTP(S) response evidence…";
+  body.append(loading);
+  try {
+    const index = await staticNetworkIndex();
+    loading.textContent = `${formatCount(index.captureCount)} request/response capture(s). Response bodies are inert evidence until you explicitly download them.`;
+    const list = document.createElement("div");
+    list.className = "event-list";
+    for (const capture of index.captures || []) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "event-button";
+      const code = document.createElement("code");
+      code.textContent = capture.status ? String(capture.status) : "ERR";
+      const name = document.createElement("span");
+      name.textContent = `${capture.method || "GET"} ${capture.url || "unknown URL"}`;
+      const detail = document.createElement("small");
+      detail.textContent = capture.failure
+        ? capture.failure
+        : formatBytes(capture.responseBytes || 0);
+      button.append(code, name, detail);
+      button.addEventListener("click", () => inspectNetworkCapture(capture));
+      list.append(button);
+    }
+    body.append(list);
+  } catch (error) {
+    loading.textContent = `Could not load network evidence: ${error.message}`;
+  }
+  draw();
+}
+
+async function inspectNetworkCapture(summary) {
+  shell.classList.add("details-open");
+  state.selected = null;
+  $("#details-title").textContent = `${summary.method || "GET"} response`;
+  const body = $("#details-body");
+  body.replaceChildren();
+  const loading = document.createElement("p");
+  loading.className = "muted";
+  loading.textContent = "Loading exact captured response bytes…";
+  body.append(loading);
+  try {
+    const capture = await staticNetworkDetail(summary);
+    const response = capture.response || {};
+    const request = capture.request || {};
+    loading.remove();
+    body.append(detailGrid([
+      ["URL", capture.url],
+      ["Resolved IP", capture.resolved_ip],
+      ["Transport", capture.tls_intercepted ? "TLS intercepted" : "cleartext HTTP"],
+      ["Status", response.status === null || response.status === undefined ? "unavailable" : String(response.status)],
+      ["Response bytes", formatBytes(response.original_bytes || 0)],
+      ["Body SHA-256", response.body_sha256],
+      ["Failure", capture.failure || "none"],
+      ["Capture truncated", response.capture_truncated ? "yes" : "no"],
+    ]));
+
+    body.append(sectionTitle("Request headers"));
+    body.append(networkHeaders(request.headers));
+    body.append(sectionTitle("Response headers"));
+    body.append(networkHeaders(response.headers));
+
+    const encoded = String(response.body_base64 || "");
+    body.append(sectionTitle("Response body preview"));
+    const preview = document.createElement("pre");
+    preview.className = "content-preview";
+    preview.textContent = encoded
+      ? base64Preview(encoded)
+      : "(empty response body)";
+    body.append(preview);
+    if (encoded) {
+      const download = document.createElement("button");
+      download.type = "button";
+      download.className = "load-more";
+      download.textContent = `Download captured response (${formatBytes(response.original_bytes || 0)})`;
+      download.addEventListener("click", () => downloadCapturedBody(capture));
+      body.append(download);
+    }
+    const raw = document.createElement("details");
+    raw.className = "raw-details";
+    const rawSummary = document.createElement("summary");
+    rawSummary.textContent = "Raw capture metadata";
+    const rawValue = document.createElement("pre");
+    rawValue.className = "raw-event";
+    const metadata = structuredClone(capture);
+    if (metadata.response) metadata.response.body_base64 = `[${encoded.length} base64 characters]`;
+    rawValue.textContent = JSON.stringify(metadata, null, 2);
+    raw.append(rawSummary, rawValue);
+    body.append(raw);
+  } catch (error) {
+    loading.textContent = `Could not load response evidence: ${error.message}`;
+  }
+  draw();
+}
+
+function networkHeaders(headers) {
+  const preview = document.createElement("pre");
+  preview.className = "content-preview";
+  preview.textContent = Array.isArray(headers) && headers.length
+    ? headers.map(([name, value]) => `${name}: ${value}`).join("\n")
+    : "(none retained)";
+  return preview;
+}
+
+function base64Preview(encoded) {
+  const bounded = encoded.slice(0, 8192);
+  const aligned = bounded.slice(0, bounded.length - (bounded.length % 4));
+  try {
+    const decoded = atob(aligned);
+    const bytes = Uint8Array.from(decoded, (value) => value.charCodeAt(0));
+    const printable = [...bytes].filter(
+      (value) => value === 9 || value === 10 || value === 13 || (value >= 32 && value <= 126),
+    ).length;
+    const suffix = encoded.length > bounded.length ? "\n\n[…preview truncated…]" : "";
+    if (!bytes.length || printable / bytes.length >= .72) {
+      return new TextDecoder().decode(bytes) + suffix;
+    }
+    return [...bytes]
+      .slice(0, 1024)
+      .map((value, index) => `${index && index % 16 === 0 ? "\n" : ""}${value.toString(16).padStart(2, "0")}`)
+      .join(" ") + suffix;
+  } catch {
+    return "(response body encoding could not be previewed)";
+  }
+}
+
+function downloadCapturedBody(capture) {
+  const encoded = String(capture.response?.body_base64 || "");
+  const decoded = atob(encoded);
+  const bytes = new Uint8Array(decoded.length);
+  for (let index = 0; index < decoded.length; index += 1) {
+    bytes[index] = decoded.charCodeAt(index);
+  }
+  const contentType = (capture.response?.headers || [])
+    .find(([name]) => String(name).toLowerCase() === "content-type")?.[1]
+    || "application/octet-stream";
+  let filename = "captured-response.bin";
+  try {
+    const basename = new URL(capture.url).pathname.split("/").filter(Boolean).pop();
+    if (basename) filename = basename.replace(/[^a-zA-Z0-9._-]/g, "_").slice(0, 128);
+  } catch {}
+  const href = URL.createObjectURL(new Blob([bytes], { type: contentType }));
+  const link = document.createElement("a");
+  link.href = href;
+  link.download = filename;
+  link.click();
+  setTimeout(() => URL.revokeObjectURL(href), 0);
 }
 
 async function browseEvents(offset = 0) {
@@ -1175,6 +1377,7 @@ canvas.addEventListener("keydown", (event) => {
 
 $("#refresh-layout").addEventListener("click", refreshFilteredLayout);
 $("#all-events").addEventListener("click", () => browseEvents(0));
+$("#network-captures").addEventListener("click", browseNetworkCaptures);
 $("#close-details").addEventListener("click", () => {
   shell.classList.remove("details-open");
   state.selected = null;
@@ -1184,6 +1387,10 @@ $("#bucket").addEventListener("change", () => loadGraph({ preserveView: true }))
 $("#group").addEventListener("change", () => loadGraph({ preserveView: true }));
 $("#transport").addEventListener("change", (event) => { state.transport = event.target.value; applyFilters(); });
 $("#direction").addEventListener("change", (event) => { state.direction = event.target.value; applyFilters(); });
+$("#show-pre-detonation").addEventListener("change", (event) => {
+  state.includePreDetonation = event.target.checked;
+  applyFilters();
+});
 $("#search").addEventListener("input", (event) => { state.search = event.target.value.trim(); applyFilters(); });
 
 new ResizeObserver(() => {

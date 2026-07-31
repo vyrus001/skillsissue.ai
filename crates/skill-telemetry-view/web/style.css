@@ -152,6 +152,15 @@ h2 { margin-bottom: 12px; font-size: 12px; text-transform: uppercase; letter-spa
 .stat span { color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: .06em; }
 .coverage-note { margin: 10px 0 0; color: var(--muted); font-size: 11px; line-height: 1.45; }
 .coverage-note.warning { color: var(--danger); }
+.network-captures-button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+  border-color: rgba(109, 214, 232, .35);
+  border-radius: 5px;
+  color: var(--socket);
+  background: rgba(109, 214, 232, .06);
+}
 
 .field-label { display: block; margin: 12px 0 6px; color: var(--muted); font-size: 11px; }
 select, input { width: 100%; border-radius: 6px; padding: 8px 9px; }

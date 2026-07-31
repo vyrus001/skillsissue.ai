@@ -203,6 +203,9 @@ fn string_field(value: &Value, name: &str) -> Option<String> {
 }
 
 fn parse_event(value: Value, seq: u64, source_line: u64, source_index: usize) -> TraceEvent {
+    let pre_detonation = field(&value, &["skillsissuePhase", "skillsissue_phase"])
+        .and_then(value_as_string)
+        .is_some_and(|phase| phase.eq_ignore_ascii_case("pre-detonation"));
     let root = value
         .get("event")
         .filter(|event| event.is_object())
@@ -211,6 +214,7 @@ fn parse_event(value: Value, seq: u64, source_line: u64, source_index: usize) ->
         seq,
         source_line,
         source_index,
+        pre_detonation,
         timestamp: field(
             root,
             &["timestamp", "timestamp_ns", "timeStamp", "monotonic_ns"],
@@ -359,6 +363,18 @@ mod tests {
         assert_eq!(loaded.events[0].args["pathname"], "/tmp/x");
         assert_eq!(loaded.events[0].seq, 2);
         assert_eq!(loaded.events[1].seq, 3);
+    }
+
+    #[test]
+    fn loads_supervisor_phase_annotation() {
+        let temp = tempfile::NamedTempFile::new().unwrap();
+        writeln!(
+            temp.as_file(),
+            "{{\"skillsissuePhase\":\"pre-detonation\",\"eventName\":\"openat\",\"processId\":2}}"
+        )
+        .unwrap();
+        let loaded = load(temp.path(), LoadLimits::default()).unwrap();
+        assert!(loaded.events[0].pre_detonation);
     }
 
     #[test]

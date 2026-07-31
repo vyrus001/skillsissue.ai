@@ -364,6 +364,73 @@ mod tests {
     }
 
     #[test]
+    fn pre_detonation_events_are_excluded_from_rule_assessment() {
+        let temp = tempfile::tempdir().unwrap();
+        let paths = test_paths(&temp);
+        let trace = temp.path().join("phase.jsonl");
+        fs::write(
+            &trace,
+            "{\"skillsissuePhase\":\"pre-detonation\",\"eventName\":\"write\",\"processId\":1,\"returnValue\":1,\"args\":{\"pathname\":\"/etc/shadow\"}}\n\
+             {\"skillsissuePhase\":\"detonation\",\"eventName\":\"sched_process_exit\",\"processId\":1,\"returnValue\":0}\n",
+        )
+        .unwrap();
+        write_runs(&paths.runs_csv, &[("run-phase", trace.to_str().unwrap())]);
+        write_platforms(&paths.platforms_csv);
+
+        let summary = run_once(&paths, 1).unwrap();
+        assert_eq!(summary.findings, 0);
+        let assessments =
+            skills_core::read_csv_records::<AssessmentRecord>(&paths.assessments_csv).unwrap();
+        assert_eq!(assessments[0].verdict, "benign");
+    }
+
+    #[test]
+    fn lan_socket_after_sensitive_read_is_not_malicious() {
+        let temp = tempfile::tempdir().unwrap();
+        let paths = test_paths(&temp);
+        let trace = temp.path().join("lan.jsonl");
+        fs::write(
+            &trace,
+            "{\"eventName\":\"read\",\"processId\":7,\"returnValue\":32,\"args\":{\"pathname\":\"/home/detonator/.ssh/id_ed25519\"}}\n\
+             {\"eventName\":\"connect\",\"processId\":7,\"returnValue\":0,\"args\":{\"remote_addr\":\"192.168.1.20:443\"}}\n",
+        )
+        .unwrap();
+        write_runs(&paths.runs_csv, &[("run-lan", trace.to_str().unwrap())]);
+        write_platforms(&paths.platforms_csv);
+
+        let summary = run_once(&paths, 1).unwrap();
+        assert_eq!(summary.findings, 0);
+    }
+
+    #[test]
+    fn authentication_material_modification_is_rule_based_and_malicious() {
+        let temp = tempfile::tempdir().unwrap();
+        let paths = test_paths(&temp);
+        let trace = temp.path().join("auth-modification.jsonl");
+        fs::write(
+            &trace,
+            "{\"eventName\":\"write\",\"processId\":9,\"returnValue\":4,\"args\":{\"pathname\":\"/etc/shadow\"}}\n",
+        )
+        .unwrap();
+        write_runs(
+            &paths.runs_csv,
+            &[("run-auth-modification", trace.to_str().unwrap())],
+        );
+        write_platforms(&paths.platforms_csv);
+
+        let summary = run_once(&paths, 1).unwrap();
+        assert_eq!(summary.findings, 1);
+        let findings = skills_core::read_csv_records::<FindingRecord>(&paths.findings_csv).unwrap();
+        assert_eq!(
+            findings[0].rule_id,
+            "integrity.authentication_material_modified"
+        );
+        let assessments =
+            skills_core::read_csv_records::<AssessmentRecord>(&paths.assessments_csv).unwrap();
+        assert_eq!(assessments[0].verdict, "malicious");
+    }
+
+    #[test]
     fn adapter_plumbing_sinks_are_benign_but_persistence_remains_hostile() {
         let temp = tempfile::tempdir().unwrap();
         let paths = test_paths(&temp);
@@ -412,7 +479,7 @@ mod tests {
 
         let summary = run_once(&paths, 10).unwrap();
         assert_eq!(summary.analyzed, 2);
-        assert_eq!(summary.findings, 2);
+        assert_eq!(summary.findings, 4);
         let assessments =
             skills_core::read_csv_records::<AssessmentRecord>(&paths.assessments_csv).unwrap();
         let safe = assessments
@@ -480,7 +547,7 @@ mod tests {
     }
 
     #[test]
-    fn internal_relay_is_not_a_platform_but_remains_a_security_sink() {
+    fn internal_relay_is_neither_a_platform_nor_a_remote_security_sink() {
         let temp = tempfile::tempdir().unwrap();
         let mut paths = test_paths(&temp);
         paths.discovery_config =
@@ -505,7 +572,7 @@ mod tests {
         assert_eq!(summary.unknown_platform_interactions, 0);
         assert_eq!(summary.unknown_platform_count, 0);
         let findings = fs::read_to_string(&paths.findings_csv).unwrap();
-        assert!(findings.contains("confidentiality.sensitive_to_untrusted_network"));
+        assert!(!findings.contains("confidentiality.sensitive_to_untrusted_network"));
         assert!(findings.contains("skillsissue-relay"));
         let platforms = fs::read_to_string(&paths.platforms_csv).unwrap();
         assert!(!platforms.contains("skillsissue-relay"));
@@ -839,10 +906,11 @@ mod tests {
         write_platforms(&paths.platforms_csv);
 
         let summary = run_once(&paths, 1).unwrap();
-        assert_eq!(summary.findings, 1);
+        assert_eq!(summary.findings, 2);
         assert_eq!(summary.platform_candidates, 0);
         let findings = fs::read_to_string(&paths.findings_csv).unwrap();
         assert!(findings.contains("attempted a blocked write"));
+        assert!(findings.contains("integrity.scheduled_task_persistence"));
     }
 
     #[test]

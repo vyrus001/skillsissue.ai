@@ -11,7 +11,7 @@ use regex::Regex;
 use serde::Serialize;
 use skill_detonate::{
     CLAUDE_ADAPTER, CODEX_ADAPTER, DETERMINISTIC_ADAPTER, HARNESS_COMPLETION_EXIT_BASE,
-    MAX_ENCODED_CLOSURE_LIFTS, agent_cli_invocation,
+    INVOCATION_MARKER_PATH, MAX_ENCODED_CLOSURE_LIFTS, agent_cli_invocation,
 };
 use std::collections::{BTreeMap, BTreeSet, VecDeque};
 use std::fs::{self, File};
@@ -175,6 +175,7 @@ fn run_session(args: &Args) -> Result<HarnessStats> {
     let content_root = skill_destination
         .canonicalize()
         .context("canonicalize staged skill")?;
+    mark_invocation_boundary()?;
     let stats = match args.adapter.as_str() {
         DETERMINISTIC_ADAPTER => run_deterministic_session(args, &content_root)?,
         CODEX_ADAPTER | CLAUDE_ADAPTER => run_cli_session(args, &project_root)?,
@@ -189,6 +190,10 @@ fn run_session(args: &Args) -> Result<HarnessStats> {
         ),
     )?;
     Ok(stats)
+}
+
+fn mark_invocation_boundary() -> Result<()> {
+    fs::write(INVOCATION_MARKER_PATH, b"detonation\n").context("write invocation boundary marker")
 }
 
 fn skill_destination(args: &Args) -> Result<PathBuf> {
@@ -895,7 +900,7 @@ mod tests {
     #[test]
     fn loopback_forwarder_copies_bidirectionally_and_stops() -> Result<()> {
         use std::io::{Read as _, Write as _};
-        use std::net::{Shutdown, TcpStream};
+        use std::net::TcpStream;
         use std::os::unix::net::UnixListener;
 
         let temp = TempDir::new()?;
@@ -915,7 +920,6 @@ mod tests {
         client.set_read_timeout(Some(Duration::from_secs(2)))?;
         client.set_write_timeout(Some(Duration::from_secs(2)))?;
         client.write_all(b"ping")?;
-        client.shutdown(Shutdown::Write)?;
         let mut response = [0_u8; 4];
         client.read_exact(&mut response)?;
         assert_eq!(&response, b"pong");

@@ -49,6 +49,9 @@ fn parse_jsonl(reader: impl BufRead) -> Result<ParsedTrace> {
 }
 
 fn normalize(value: Value, seq: u64) -> NormalizedEvent {
+    let pre_detonation = field(&value, &["skillsissuePhase", "skillsissue_phase"])
+        .and_then(value_as_string)
+        .is_some_and(|phase| phase.eq_ignore_ascii_case("pre-detonation"));
     let root = value
         .get("event")
         .filter(|event| event.is_object())
@@ -91,6 +94,7 @@ fn normalize(value: Value, seq: u64) -> NormalizedEvent {
     NormalizedEvent {
         seq,
         timestamp,
+        pre_detonation,
         pid,
         ppid,
         name,
@@ -267,6 +271,13 @@ mod tests {
         assert_eq!(trace.events[0].kind, EventKind::Open);
         assert_eq!(trace.events[0].pid, 4);
         assert_eq!(trace.events[0].args["pathname"], "/tmp/a");
+    }
+
+    #[test]
+    fn preserves_supervisor_event_phase() {
+        let input = r#"{"skillsissuePhase":"pre-detonation","eventName":"openat","processId":4}"#;
+        let trace = parse_jsonl(Cursor::new(input)).unwrap();
+        assert!(trace.events[0].pre_detonation);
     }
 
     #[test]
