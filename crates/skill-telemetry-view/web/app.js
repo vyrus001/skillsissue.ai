@@ -1014,7 +1014,11 @@ async function browseNetworkCaptures() {
   body.append(loading);
   try {
     const index = await staticNetworkIndex();
-    loading.textContent = `${formatCount(index.captureCount)} request/response capture(s). Response bodies are inert evidence until you explicitly download them.`;
+    const publishedCount = Number(index.publishedCaptureCount ?? (index.captures || []).length);
+    const publicationNote = index.publicationTruncated
+      ? ` Showing the first ${formatCount(publishedCount)} here; the complete transcript remains in the repository run evidence.`
+      : "";
+    loading.textContent = `${formatCount(index.captureCount)} request/response capture(s).${publicationNote} Response bodies are inert evidence until you explicitly download them.`;
     const list = document.createElement("div");
     list.className = "event-list";
     for (const capture of index.captures || []) {

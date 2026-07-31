@@ -95,6 +95,8 @@ const MAX_STATIC_NETWORK_LINE_BYTES: usize = 24 * 1024 * 1024;
 #[serde(rename_all = "camelCase")]
 struct StaticNetworkIndex {
     capture_count: usize,
+    published_capture_count: usize,
+    publication_truncated: bool,
     captures: Vec<StaticNetworkSummary>,
 }
 
@@ -401,6 +403,8 @@ fn publish_network_captures(run_directory: &Path, run_output: &Path) -> Result<u
     let decoder = zstd::Decoder::new(File::open(&transcript)?)
         .context("open compressed network transcript")?;
     let mut captures = Vec::new();
+    let mut capture_count = 0_usize;
+    let mut publication_truncated = false;
     let mut decoded_bytes = 0_usize;
     for line in BufReader::new(decoder).lines() {
         let line = line.context("read network transcript line")?;
@@ -425,10 +429,13 @@ fn publish_network_captures(run_directory: &Path, run_output: &Path) -> Result<u
         {
             continue;
         }
-        ensure!(
-            captures.len() < MAX_STATIC_NETWORK_RECORDS,
-            "network transcript exceeds the static publication record limit"
-        );
+        capture_count = capture_count
+            .checked_add(1)
+            .context("network capture count overflow")?;
+        if captures.len() >= MAX_STATIC_NETWORK_RECORDS {
+            publication_truncated = true;
+            continue;
+        }
         let response = value
             .get("response")
             .context("egress transcript record has no response object")?;
@@ -486,14 +493,16 @@ fn publish_network_captures(run_directory: &Path, run_output: &Path) -> Result<u
             detail_url,
         });
     }
-    if captures.is_empty() {
+    if capture_count == 0 {
         return Ok(0);
     }
-    let capture_count = captures.len();
+    let published_capture_count = captures.len();
     write_json(
         run_output.join("network/index.json"),
         &StaticNetworkIndex {
             capture_count,
+            published_capture_count,
+            publication_truncated,
             captures,
         },
     )?;
@@ -546,8 +555,8 @@ fn write_json<T: Serialize + ?Sized>(path: PathBuf, value: &T) -> Result<()> {
 #[cfg(test)]
 mod tests {
     use super::{
-        README_VIEWER_URL, build, public_http_url, publish_network_captures, safe_run_id,
-        safe_telemetry_path,
+        MAX_STATIC_NETWORK_RECORDS, README_VIEWER_URL, build, public_http_url,
+        publish_network_captures, safe_run_id, safe_telemetry_path,
     };
     use serde_json::Value;
     use skills_core::{SkillRecord, write_csv_records_atomic};
@@ -611,8 +620,70 @@ mod tests {
         )
         .expect("detail JSON");
         assert_eq!(index["captureCount"], 1);
+        assert_eq!(index["publishedCaptureCount"], 1);
+        assert_eq!(index["publicationTruncated"], false);
         assert_eq!(index["captures"][0]["responseBytes"], 4);
         assert_eq!(detail["response"]["body_base64"], "dG9vbA==");
+    }
+
+    #[test]
+    fn static_network_publication_bounds_details_without_hiding_total_count() {
+        let temporary = tempfile::tempdir().expect("temporary directory");
+        let run_directory = temporary.path().join("run");
+        let run_output = temporary.path().join("site-run");
+        fs::create_dir_all(&run_directory).expect("run directory");
+        fs::create_dir_all(&run_output).expect("output directory");
+        let record_count = MAX_STATIC_NETWORK_RECORDS + 1;
+        let records = (1..=record_count)
+            .map(|sequence| {
+                serde_json::to_string(&serde_json::json!({
+                    "capture": "intercepted-http-egress",
+                    "sequence": sequence,
+                    "method": "GET",
+                    "url": format!("https://example.test/{sequence}"),
+                    "tls_intercepted": true,
+                    "failure": "request_limit_exceeded",
+                    "response": {
+                        "status": 429,
+                        "body_base64": "",
+                        "body_sha256": "fixture",
+                        "original_bytes": 0,
+                        "capture_truncated": false
+                    }
+                }))
+                .expect("network record JSON")
+            })
+            .collect::<Vec<_>>()
+            .join("\n")
+            + "\n";
+        let compressed =
+            zstd::stream::encode_all(Cursor::new(records.as_bytes()), 1).expect("compression");
+        fs::write(run_directory.join("network.jsonl.zst"), compressed).expect("transcript");
+
+        assert_eq!(
+            publish_network_captures(&run_directory, &run_output).expect("publication"),
+            record_count
+        );
+        let index: Value = serde_json::from_slice(
+            &fs::read(run_output.join("network/index.json")).expect("network index"),
+        )
+        .expect("index JSON");
+        assert_eq!(index["captureCount"], record_count);
+        assert_eq!(index["publishedCaptureCount"], MAX_STATIC_NETWORK_RECORDS);
+        assert_eq!(index["publicationTruncated"], true);
+        assert_eq!(
+            index["captures"]
+                .as_array()
+                .expect("capture summaries")
+                .len(),
+            MAX_STATIC_NETWORK_RECORDS
+        );
+        assert!(
+            !run_output
+                .join("network")
+                .join(format!("{}.json", MAX_STATIC_NETWORK_RECORDS + 1))
+                .exists()
+        );
     }
 
     #[test]
