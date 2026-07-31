@@ -1,0 +1,427 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:29480b932ecc7551d83c7016caab75491fb898c54bfa3a3ae7fe10f6a75ce00b",
+  "sha256": "29480b932ecc7551d83c7016caab75491fb898c54bfa3a3ae7fe10f6a75ce00b",
+  "blake3": "3ceac5bbf85e90ba1e225e5c2b326d190b844dda90c3c46cac759e518f5a58c9",
+  "size_bytes": 232774,
+  "file_count": 46,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4767,
+      "sha256": "12ea7fa0c4ac0b4724664ea7e2d0a709ef44f4d58127a72d6c01802679147261",
+      "blake3": "5837bda811458b675ac07d3f6f5f2953044f58344c9ecfbfd044b82eb17bda9d"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 134,
+      "sha256": "3409491197819c4a7194c232b3bc5bc1df3f9aa49b18f6e92706bba652ed1ed2",
+      "blake3": "0a4d65e19c740fb53c1a7d7955854ea6e5bda13fb1c58e71197517447215cbae"
+    },
+    {
+      "path": "commands",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "commands/account.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3368,
+      "sha256": "fb7d64b43898e426c0e08574c5cb4f770e6988973bab0ed653a68c8353087b96",
+      "blake3": "4ac0378a9abaf1165ad9c2395c95d0ae233c4e2eb1320b8fe3a9986e150a75d6"
+    },
+    {
+      "path": "commands/group.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9734,
+      "sha256": "05bf566fada376181f199b9c33b9dd8e11106ca7a3c1ee0c072eb8c7f5f03414",
+      "blake3": "b02cc31ecc0adb877371686f555748334820a61a304151757de133f6fb5f9689"
+    },
+    {
+      "path": "commands/image.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7521,
+      "sha256": "fcace2c2286539f8953bb9e971399c1217abe605ab4a4892e28995f06ba18f3f",
+      "blake3": "14e12f604c29e5547f0eca71c9e5c65aeba62e2c05d49f6007af6ab6bb19d858"
+    },
+    {
+      "path": "commands/login.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4405,
+      "sha256": "96b880c3a84ca10abbc66a1dfbcb7c4bf54cfc945e7b121211eb74ba6260e959",
+      "blake3": "d3ad2417ee8701cc70c59bb828c6bf93c6b4b714654b14c25d2ece148c7330b6"
+    },
+    {
+      "path": "commands/logout.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 754,
+      "sha256": "c658fa7173245afe6aa95ce4bf04fe8cf40091d35a5b1bc5428917919347c48e",
+      "blake3": "6b84aa32657ac00005757e7ee944e72d3e25340f88a6914ce090251057faad08"
+    },
+    {
+      "path": "commands/model.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5080,
+      "sha256": "c0454793569d35ec99b5e8eb0d52f81e476ff85e618ff2ed2a11ea5a7a432bca",
+      "blake3": "d66d878317b8ed5fc5c466ea316acf7aa6d8ae71382a5677a6e37cbb7c07f88f"
+    },
+    {
+      "path": "commands/node.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17392,
+      "sha256": "39c3ccf70cf60db24cf57d8d0b975522b74eae190aa450c77878debba248c883",
+      "blake3": "d4e95cfa2123b4ec48e49a3e63f4ba7139071d658ec7613e2f48d5e83e65d3f0"
+    },
+    {
+      "path": "commands/project.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9454,
+      "sha256": "d5f2bbe41922465b3fc92601785a0e432b9f39d2b13b2e8f5f089d55fe2a141e",
+      "blake3": "6a3e8b5f49d07f3e2db9a7a74dc5a6593a1b4df606e0e07a37a81cccd9791aae"
+    },
+    {
+      "path": "commands/script.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7470,
+      "sha256": "013cb4832845e8ebae2fc1a36123d3ec23ef2e23c959a2fb33546b48d754d879",
+      "blake3": "2fcac92af0559f5ca492acf66e2f09adda10e0d6ef27870f5e344b9b17fd41fe"
+    },
+    {
+      "path": "commands/upload.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4167,
+      "sha256": "9b2deea445824544749d1cf13901440c081eb90784de98d6b0d7314c16000c58",
+      "blake3": "ea502ddcee9f51ecad3ec313445128003ecd51a5fc1e3571b98d6cd992c38b20"
+    },
+    {
+      "path": "commands/workspace.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8285,
+      "sha256": "738dc80c0547044b177e2ee68869340847e34e11fe27771b6f2425ff1dede4c5",
+      "blake3": "0aedb6415958548769c3acf7c2c30e76adb9b59c141971dd17ff24cd037ae33e"
+    },
+    {
+      "path": "examples",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3962,
+      "sha256": "112e7baeccbf04d68566fff452e4235b2bdb6dcc776bbecac119aaaaae390bbb",
+      "blake3": "5c6dc14e99aeb28cb006095ed6a3b150db4f8de6d141520381eafe2648d33412"
+    },
+    {
+      "path": "examples/node-types",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/node-types/audio.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 770,
+      "sha256": "ebc7c6192cbd4e55b0a8fe6f470b77a3591923646c39cb407de40482dd2f592e",
+      "blake3": "9017c14fb8284ea224f418347bd74148931c6b1857a341447f606506d1857858"
+    },
+    {
+      "path": "examples/node-types/image.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 867,
+      "sha256": "86c399a1181df713ec5fc281ab497776ef92f6995250c8b71bb6183484baf107",
+      "blake3": "f15da6c091ec86a5a644de504d2c05d2fcd1d09a776c8bdbda46eed8e36d10da"
+    },
+    {
+      "path": "examples/node-types/script.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1216,
+      "sha256": "6ad8fc3d9c61dae9a25586e628f0376c38463e15d5fa7ad12a85e186b7b3ed07",
+      "blake3": "cdc11cf9082210fb8e723dc7a78721f7f7b33e059b179adf42b0d25c9d3abef7"
+    },
+    {
+      "path": "examples/node-types/storyboard.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 919,
+      "sha256": "5b0040eeead808d514d734902f288e8df74cb67bfe9f866ce7dd8e8c8d2fe1a4",
+      "blake3": "0b2a28976ef991471374bb4982957c8672b03ec192e2761960d5873f4e4f1136"
+    },
+    {
+      "path": "examples/node-types/text.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 730,
+      "sha256": "3b6dc65f6dcbea68263740933298c710caca7d2dc11eb3b16b02a8e20b06d94a",
+      "blake3": "554e369bd219399e30805eb77a182ca97c3005e6b8597033eba995c866714b9f"
+    },
+    {
+      "path": "examples/node-types/video-clip.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1193,
+      "sha256": "5911f71e3dc237f1a9c3a0cd6014b263f36d56bf1625bcaa78810a6652b5d1db",
+      "blake3": "5ec112015b43ab4518e5d870c97790dede01eb37772ee2d4d4f081a96fb2c65b"
+    },
+    {
+      "path": "examples/node-types/video.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1312,
+      "sha256": "54559bff6721879ed6d21d494931b7ad115a78a0438b04cb74c9b77d2174d44f",
+      "blake3": "ea44cf329fa676af49af11d85ac54bda5d18a3bed2c161142f5096be715d39af"
+    },
+    {
+      "path": "examples/pipes",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/pipes/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3284,
+      "sha256": "0c54e4a7435afab25108aedc2200f051c8366ec2f44bfd0923ee6ae16a8f19b4",
+      "blake3": "e45701a9d09a1d375f48805bb42514d94e62adfe4e8df7e52c32888f00cf4844"
+    },
+    {
+      "path": "examples/pipes/error-handling.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5076,
+      "sha256": "f63d2b79fda5245b36e24ac6e119517d82edc4f284315ad3a184e7801c29d529",
+      "blake3": "7acd1b9483f67cf6d192a434a680502b03060a2b543940ba2193dc7d3af6031c"
+    },
+    {
+      "path": "examples/pipes/group-and-node.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4384,
+      "sha256": "199cf1b76e955b951fbb473f6784ad0429d27d19c9ecbbf526daf12ad0cb275c",
+      "blake3": "1ac6aa9246e5eddf5ab5119ca1ecdcf6e4c8d07285af30fad5856b1e44805cb2"
+    },
+    {
+      "path": "examples/pipes/nested-dag.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7303,
+      "sha256": "42192d5a43df630e2cd8a24d392768301f50208d159c2e4478eb7f2e04bea7a9",
+      "blake3": "ab523ccbc1f767ecd6a37ccf36f600cd24c038eda96b0a3f082d672b111047e9"
+    },
+    {
+      "path": "examples/workflow",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/workflow/all-in-one.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 885,
+      "sha256": "0e6274343bac8ef854be22326524cf8146476a514304ec0d757c788e60dfd446",
+      "blake3": "4dcffccf795048225b4870dac887abb40a58f9cbcb4b413832cd34279cb83f69"
+    },
+    {
+      "path": "examples/workflow/common-errors.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1785,
+      "sha256": "1f3c67cb6184957c9039009352db2a650e3d86314fabcc1e122820ad23b6b5f5",
+      "blake3": "bcc194ab8b158164a29b0a25f28a20e5500c8064034e9522e9eab713d7f23b2f"
+    },
+    {
+      "path": "examples/workflow/connect-only.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1186,
+      "sha256": "f7e097f04e84a130682d555d6384293937c9aca5bba1cff4d69231d9076b9831",
+      "blake3": "2e4e9a1c289acdd3cb85f108bc9f31407c9e106a2aaba7ff6a339b98ff0e126b"
+    },
+    {
+      "path": "examples/workflow/create-and-run.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1061,
+      "sha256": "8d0bff0c0e29a0b03bb1d3ea3e939f6eb0b36ac6169e0466fea9d122df00ecfc",
+      "blake3": "41b743876d82de3b336b049e79321356c99b0527b0abd931c1b5b7a776912136"
+    },
+    {
+      "path": "examples/workflow/group-batch-run.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1250,
+      "sha256": "26d519352ecd149a7168d8d619474f62cab087647bd08c6e87549fcd29a86f1e",
+      "blake3": "a137a99edf3f035a9ca2898456cb56fd3767f1fe3c047292a3020a8f209b685c"
+    },
+    {
+      "path": "examples/workflow/update-params.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1324,
+      "sha256": "c67be7f609d4cb1caa96dc9f0c5c34f57c6aa12c3471c64fcd7c7899230323c0",
+      "blake3": "d633d48dae1786a866f12ef83f9dbb277f910d071df24886e5d571bb5110abec"
+    },
+    {
+      "path": "examples/workflow/workspace-setup.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1922,
+      "sha256": "d2ff84c46d4285e077e842023db2c1ce5a60559ae47e5ecf654abe2b3191762e",
+      "blake3": "ce475422b9bd391e800f48ea1ab94adabe25ddce0ff1915444391052ffa6f9e2"
+    },
+    {
+      "path": "model-schema",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "model-schema/schema.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15770,
+      "sha256": "86b318cbd0bffc82cfa9860aafe0acf96810bb56c2ee181172299b1ce28551a1",
+      "blake3": "b4aeee1907eaf6d0864b396b4a801f2a59fa0131af4ca21cdf1c68b8f3c0b383"
+    },
+    {
+      "path": "node-types",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "node-types/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9990,
+      "sha256": "f97dac812c94982ad6345129f397325f5785d2e53c2848d340a78bdb09990738",
+      "blake3": "b4e6ca4ac80cc54f0cbbeb12a01877df967423f6204678e38c5eefaf68a3e30e"
+    },
+    {
+      "path": "node-types/audio.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5156,
+      "sha256": "50e3116eda0f77d3c4d5dc17f699729d17420e60b9844a2827a768cc8ca698b9",
+      "blake3": "954c6fd7edfeb5ed751e9fbaf2dd4b245a8657b27f6c48c4baf37205d4563a62"
+    },
+    {
+      "path": "node-types/image.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5412,
+      "sha256": "b28fa121578c62a458bb23baecab5c4fb4ff834a0ac115d8ebfb2790b2076b4e",
+      "blake3": "604f5e0a99247feb87c0972d686c3b3a6626f832521e5dd5d9e97550410093ae"
+    },
+    {
+      "path": "node-types/script.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8908,
+      "sha256": "b099b4824e44f6bfb5b4272ded6678b8f37f1f77b0ee269b453b296821948282",
+      "blake3": "97671b47a29a624d72590815f364657cc5e5422bd71597b2c93c0f2005cdac14"
+    },
+    {
+      "path": "node-types/storyboard.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2185,
+      "sha256": "9203ecd082949abbad4e2fc955652c9c713ac2b584c2ac9c6f72361c4c5d514c",
+      "blake3": "3a22d91434ab8a28c0e8dbf6cab81e311209413b160fdd119448786b56829494"
+    },
+    {
+      "path": "node-types/text.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4202,
+      "sha256": "8657e43075a1cc58f893f028f0b00241f42db6323259bba0d24f72b90cb9bd47",
+      "blake3": "ae54fc1a209d6b1966266178aef1d118cb270add77585cd725eddf899c92d694"
+    },
+    {
+      "path": "node-types/video-clip.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6442,
+      "sha256": "01cae01f107b51148b6e3cb69be04ec4c441620aba50bab79d9b4d60672dbab0",
+      "blake3": "84ddc271ffef115cafbef941a86438bbaf6e0ca6fda19e9c4bee0a06f4303fd8"
+    },
+    {
+      "path": "node-types/video.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5940,
+      "sha256": "76ee840092d08844de6451bb2bc0f6b05ad400f7143b96604e44e424aeff856d",
+      "blake3": "1a4a6f46fb74628b6c77553bd7ade0cf78a881103bc5031af9920a8f7c440125"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/install-libtv-cli.bat",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1635,
+      "sha256": "414eb3639a76d67d0cb2bb4ff61994f950fb2ae754f9c400a903c23d7948bef2",
+      "blake3": "66a2d327dae7ce881415eed95a3b50aa1646aba4e53d536a92d05cc7f1886fa9"
+    },
+    {
+      "path": "scripts/install-libtv-cli.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13510,
+      "sha256": "6a166630e19879fd212843ae983a0a09e14920645523e13664b0020cf4155a13",
+      "blake3": "fdcab31e75d6e3cf54e8a318a42b63ccce7d7201b1ca20d4d321efdfc61bf30a"
+    },
+    {
+      "path": "scripts/install-libtv-cli.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19820,
+      "sha256": "261ced9482994676521ba172fab50bb5bf4bc76f3121a31465f810b42c9c33ea",
+      "blake3": "1b7d9e474992a9f16b10e019012766243a3e4503887140c27ce3439b205c8a2d"
+    },
+    {
+      "path": "scripts/install.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8093,
+      "sha256": "614713f13d0d66c3edad88610e37bdaaf13e14cfcc7e7eb0b41cfc1b95c488df",
+      "blake3": "1f45e4cfe7ec707a1f68be1892b3a6edcc21d7227741f2feffaa2c31d489a3f3"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2751,
+      "sha256": "7b02e8086c3f6de934997af04b10fda64286d15d71c419326c7cad2b6ffbe442",
+      "blake3": "201d5335ee401846eac8049148cb0d17ee062b7e0209c57c07efd176f66985d5"
+    }
+  ]
+}

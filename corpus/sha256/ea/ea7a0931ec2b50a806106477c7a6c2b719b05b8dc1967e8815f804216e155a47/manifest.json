@@ -1,0 +1,495 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:ea7a0931ec2b50a806106477c7a6c2b719b05b8dc1967e8815f804216e155a47",
+  "sha256": "ea7a0931ec2b50a806106477c7a6c2b719b05b8dc1967e8815f804216e155a47",
+  "blake3": "4940dd7f2ec399a9f31fa1ab013ab6cdad21d3ab57995ddcc8834189a61441ba",
+  "size_bytes": 1204503,
+  "file_count": 59,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1490,
+      "sha256": "a6a531f38465dc58db1aacb18b7f69b0716b4ee12c378148ad4b1e7ebffe04c1",
+      "blake3": "f96a26a881b3bd1cc0e6f12783609501873be117cfe2a4980dff83e811e24bac"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4337,
+      "sha256": "adf0a0694eccf4b913739b658fafe97b3572efb7dd64f98ec96627517ca7287d",
+      "blake3": "e94383cd5268926c2d9f3a9fdd5b2ce27d3cba2cf3a752b7f57a42cd0f62208d"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 142,
+      "sha256": "2a3d333e285db5efd96a0fd74ed3af3dfedab6b23180ebf2d43f26f08580ed0c",
+      "blake3": "4b01072bae97a883de2fc015866d824646f959f0cf2821ec805a11c37cb9f2dd"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/academic-translation-policy.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4162,
+      "sha256": "0b29d83f6e3d077eaaab43a503085c9d8f1a16a6936849ba8cebda037819fbc7",
+      "blake3": "d12860157b3c14c81e74f5ea29e6a092c53c07ba31683d28c75ff536dd71c066"
+    },
+    {
+      "path": "references/glossary-template.tsv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 861,
+      "sha256": "25a18d8e7b93614dbd4e4696a105c02d54f280ee062cfe005cecb440d0aef3f8",
+      "blake3": "8928f979e9005d2b8f8a7fbc7b55a4dc49226e77293796ddd7e14c8d190a2cd4"
+    },
+    {
+      "path": "references/known-pitfalls.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22733,
+      "sha256": "bd7c0c2df12f8d944f4689734321fcd2d9bc8b4e994066c374a9427d014cf366",
+      "blake3": "6bd92f52acad649adde3afe0a29ea4147055e69df2ac9824ead672757b29de2d"
+    },
+    {
+      "path": "references/provider-base-urls.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2342,
+      "sha256": "0b50ec966d15e7cb4143262aaee35ef72387653b2ba1c9076b3940bbb2563368",
+      "blake3": "0dab14c0d0c988af89f0e4e43c6394dfa39872c6893b6d1f193fe6142e40da65"
+    },
+    {
+      "path": "references/runtime-dependencies.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7173,
+      "sha256": "98e44a4189c62f8c8dac176413149564270e43d8520817ed040b405d5f314fb8",
+      "blake3": "c5f7a31f90528edd06f517f29bf72ca2af2f0a2ee975a98f5fc44a53c774b02b"
+    },
+    {
+      "path": "references/workflow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12235,
+      "sha256": "af2c1acbb5b185792ef4eafa5c4b1d2f3bc73b551f03db69916a89e81f244a95",
+      "blake3": "a8844cd52400297f93b1e65b79ed9499bd0af6940f9e3bf8991905e696871514"
+    },
+    {
+      "path": "run_translate.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7560,
+      "sha256": "5c8207b4e58a00009c44a3da9aef368de893db73556c147aeea048dcee3207a0",
+      "blake3": "b5c17f085c9d13fd8931613bfad40ac1ba2aa94a06af6c8dc97dc8ae0cb64422"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/_subprocess_safe.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3361,
+      "sha256": "727dc794eb8212d44a9ea1324f7ffa720277a4e2d545f58f44398125d61c5bef",
+      "blake3": "50e38334b5c3ad708d29b00318bd2d7f14fbf0c71415140443bffced991eae9f"
+    },
+    {
+      "path": "scripts/apply_glossary_edits.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8849,
+      "sha256": "996c8fbb9e86fa278c91487e025024fd491cc1ac1f34532ad147b2077180199c",
+      "blake3": "92f697ca4353a05c5d13743dcbe24503421ac65cd87a6eeede751e158b354b77"
+    },
+    {
+      "path": "scripts/build_babeldoc_il_layout_map.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10188,
+      "sha256": "b201fadceed9d947946a9f724200e2588d0eb37747df2eefb8c8d77c89caa330",
+      "blake3": "4213481c87350e8dbf007296c31e3422aae85c48b685069886ca6128f8a2db71"
+    },
+    {
+      "path": "scripts/build_bilingual_pdf.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7809,
+      "sha256": "ef0a36eaf5667e34c1abe83bf5b4ed742add31d3a00936e711c9cc479621d801",
+      "blake3": "3b26a42fecf1c7d3ce9a4b2a5b0ad2166118dcb8a77c7f29b5bf5865cdff3503"
+    },
+    {
+      "path": "scripts/build_block_bridge.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17809,
+      "sha256": "e5e5ab725831c947cf250c502ebdfa0e659a048d020368592f45d75e3fa9366d",
+      "blake3": "94b4365eb2d51bf94784321ca6bf760f86838e985c5a2ab80d910da87c89bb53"
+    },
+    {
+      "path": "scripts/build_layout_structure_gate.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24853,
+      "sha256": "17a7d624b3c70f758831b1f8d37aecc669545a91494e1ef366b18ef9cecbcbed",
+      "blake3": "b46dab4a7b007679958201414e8d168023b01b254e3e65d9fdc7ad721ae7165c"
+    },
+    {
+      "path": "scripts/build_pdf_rerender_plan.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11841,
+      "sha256": "2b8ee076eb3d83f3c23832b92e6f8af349ab1ebe6e822352343dcd20e598d33a",
+      "blake3": "c24e99b64ef8d3e97a3dda6410ae13e511a19fbf4bf5e0e2ab2820c624b365df"
+    },
+    {
+      "path": "scripts/build_poppler_text_bbox_audit.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22534,
+      "sha256": "a827eb2c14af0f151b4a994a091a450da6ba0944083d5385de27f068d1b16b57",
+      "blake3": "23cb243aa607338f4aa5ae374d4e8dadae6645861b1bc1a7011c6145a7df88fe"
+    },
+    {
+      "path": "scripts/build_pymupdf_layout_audit.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 33563,
+      "sha256": "3f3830b6bacf00c0faeba5ccade7bd8936b324e9bc552094c2945eb7362a9a7a",
+      "blake3": "f518b4a72a346a8a7884097c6f9dc5310fd50c1e8915a0d64945ba2146435fb0"
+    },
+    {
+      "path": "scripts/build_structured_visual_candidates.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2260,
+      "sha256": "3c439a4475f55dc3a0264738f66d116b53022b6aa3e1141d9df28ef77473390b",
+      "blake3": "969e9a226ce99bd8d01abd638812612c6d81734c6e520dfff0a1323ade9b0494"
+    },
+    {
+      "path": "scripts/build_structured_writeback_manifest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10420,
+      "sha256": "d64dc897eb26a04c8dfd7fbe95acda75283f11ff2913e23a239b524f3a051d4d",
+      "blake3": "743b199462bd3c93e39209d9619049dea9e0f442d81bba02d0f2b6a3b1eca461"
+    },
+    {
+      "path": "scripts/check_translation.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5776,
+      "sha256": "c5e34bef687a071d3dd7fb011f2ddb15f44ef0294f7a4cfc405e6ea000698d20",
+      "blake3": "cc399afcf4d5ee20e5709e46b0a9bd4faf3c23d1cc2235162be38aab8874354e"
+    },
+    {
+      "path": "scripts/check_translation_core.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16637,
+      "sha256": "4bee3ae0d654e74fda2bd3ff4d38949b208a9c502446aeb5111fe952b74ce745",
+      "blake3": "38a8ad81ee8cc1329a1693102c461082cf4cdc2a483413f8de4b36a4810bac9d"
+    },
+    {
+      "path": "scripts/check_translation_memory.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18437,
+      "sha256": "f4ac153536cc55cf7c2169020e170dd04479c9a4f7d955cfb6a7c9cbad14f9f8",
+      "blake3": "9ca7d7cdf13ea3a2bd142cb2519601366ded7a330488acd18df9654ef64259b0"
+    },
+    {
+      "path": "scripts/check_translation_policies.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11849,
+      "sha256": "72c57fa94505849b0ab57c93036b9d236bd9b7f945e1022b4d70fd58ea93b95e",
+      "blake3": "f6bad890dc77e6ea336ef2f0c4d47444f1ed0e3614d68c3aa0af5f37eeddadd4"
+    },
+    {
+      "path": "scripts/check_translation_policy_data.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20043,
+      "sha256": "a23df38f46e3b42164691f92d03232001f31c7f408a19ba533099663a959019d",
+      "blake3": "49fdaf56aaf7ac82f1220be8ed59961cc337531b2b67f39028e16c3eb9e42871"
+    },
+    {
+      "path": "scripts/check_translation_report_runtime.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 26283,
+      "sha256": "2d9438955dd3ac9d728c3d23a792855452fde7bb0e1a31e4b3a867789ecbb40e",
+      "blake3": "9dfb1034ad22dd4360ca6d178b7640f1cce46d6117d46853e197f851f0ec1631"
+    },
+    {
+      "path": "scripts/check_translation_residue.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 31035,
+      "sha256": "12999fd08f9c8a146a23d49023aa379fbad881a6737a16b006ba05d6b5e0b5da",
+      "blake3": "db37da460b8e341bc9c60cc7998abcc352d58c760092bdbc4beb478904d4d3f2"
+    },
+    {
+      "path": "scripts/delivery_gate_runtime.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 69923,
+      "sha256": "d210497867ece84db22471ff28d2de3c505760ab2a0e0aa12275e1a2672096f2",
+      "blake3": "42b4c47b70fa820fc1b0614b161d45a55eca61165228d54360ae17f79c70d934"
+    },
+    {
+      "path": "scripts/extract_terms.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14011,
+      "sha256": "d69775814f8c5de0f609d6356f34d11ea6f141dbe5888defe421f8b6b99778d3",
+      "blake3": "41170e46a07b143e301aeb663a631adbad89bbc3085babd5d240ad4cf4c54422"
+    },
+    {
+      "path": "scripts/latex_direct_runtime.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 54506,
+      "sha256": "e810571b051a2620102ea010e673cbd96ac3ccd25b2d85122acf4e635a48d955",
+      "blake3": "fa20def6c00e55e5162bf4d18bc613f6b41f72a6ac8a0d7b7bb3b6ea665b64b7"
+    },
+    {
+      "path": "scripts/layout_role_policy.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 43439,
+      "sha256": "4e86bfc99ba87364e9624366bb27295d1e54c8362a3641adcef4c76d89ec1197",
+      "blake3": "621686fa944bfdf185afce9d1b0bcaa20274763c09adaba47ece74d31a964d8e"
+    },
+    {
+      "path": "scripts/model_client.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9177,
+      "sha256": "3417606063af939e0821e19b1bbdb84469e9c4a68722364f965abde7376443ca",
+      "blake3": "5a0cec3925164edbdfdc93d67391ded6219c5d9ae04a0450aab24cbeb4d16812"
+    },
+    {
+      "path": "scripts/pdf2zh_backend.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1831,
+      "sha256": "403190f68ef7cf8a3e83c47a24a605b980b055e929a1181bd481e09ebf0863c8",
+      "blake3": "010d620759e8a8e6d70759a3dae4e24d8db201f43e71cd6fb6486cfa3ebed2a9"
+    },
+    {
+      "path": "scripts/pdf_translation_artifacts_runtime.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 37343,
+      "sha256": "1efec0b6287bef48e6bc8e2a23e10a0a2daab7150a35ad839ac9c1a6c6d113e9",
+      "blake3": "3b3b948d3013044eea70b7775bbb0daf777e4e1efbeb5339675ca31d69f1e9d3"
+    },
+    {
+      "path": "scripts/pdf_translation_delivery_runtime.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 33495,
+      "sha256": "a069fb4e4cf6c27910491b914ec1178d7fe15baa0da4cfbb6e3e670dd2c50e4b",
+      "blake3": "6cf06bda90184623f4f1e752f03ec21b15f73c2a404a74c3e36782def6161af9"
+    },
+    {
+      "path": "scripts/pdf_translation_quality_runtime.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 46947,
+      "sha256": "c672d1a09726c174e4d7a700deed834ed8c6a29f88eda84ba6ec7b7b7fb0f8b1",
+      "blake3": "beba8df45d51b69271092073aba9e18d4ecd6cd038aa4dd9ecebe81767f5fed3"
+    },
+    {
+      "path": "scripts/pdf_translation_runtime.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23774,
+      "sha256": "a6ddc8975676d5021833734b2a8b86e5c6d0f1bd0cfb3e8044b64b83adb4153b",
+      "blake3": "39ce02a6e9e23858553b468fb2ea4ecca81b97894e6d2d73342f823bc9e204ce"
+    },
+    {
+      "path": "scripts/policy_utils.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15433,
+      "sha256": "7792ab33419189980612d5b48970d33447c75ef1a15384f212de3c618716eb89",
+      "blake3": "a1643b199c40671f93be496c1dbf37af1256e4f1deb4528d112ba92dea4ef434"
+    },
+    {
+      "path": "scripts/preflight_runtime.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20755,
+      "sha256": "56a37215362b3fcd837093187d553664ac8b7c7c07c83739a34724c6f514201b",
+      "blake3": "46189b81c6646c78724635d9ed2f424c39ec12afac61b633143f0f941803d9bf"
+    },
+    {
+      "path": "scripts/prepare_paper_source.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32135,
+      "sha256": "6e9284abe82de00a388ffaedcb9f99e55b8c4be6e2d7f47d359802798496c60c",
+      "blake3": "09d69945245726304ad81423baed3cb311a0d320a642f5ea85be87bf81a388d1"
+    },
+    {
+      "path": "scripts/qwen_pdf2zh_cli_translator.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7337,
+      "sha256": "ddb1d1fb64ca3affd806043aeba1b2f7cab8df7fdd1746942b1d2ab8edb569f9",
+      "blake3": "77cff2140562403541ea80f7f02eabcbddfe31c46c6a03a8cce47b4cb396eafb"
+    },
+    {
+      "path": "scripts/render_readable_pdf.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5338,
+      "sha256": "4e6bac296d8e99401a28d6d9179bde2824045eddcd279cd147f9b7d2f0e8d016",
+      "blake3": "35362a89b920a096564e17f2018a213307876a3fc9a66c23ca6ec8d1c92f6491"
+    },
+    {
+      "path": "scripts/repair_protected_spans.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6647,
+      "sha256": "c4f883df583b12b56bf5daafd31bf71912058f23cb093c31deca91ac8895fb20",
+      "blake3": "838442ce745cdf7baf03efa34fb979c818cba8bf92b6705e5941e88e5f0682d7"
+    },
+    {
+      "path": "scripts/repair_quality_issues.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11705,
+      "sha256": "b6233cfe5bfd9b4641bcc4790b4aef9185b335d672c661ec605f9abf70692ebe",
+      "blake3": "2b3413114ecfbcb0bdaf2e974932e11327dd45df512248ab4a1bc79866bc6553"
+    },
+    {
+      "path": "scripts/run_pdf_translation.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 79211,
+      "sha256": "d27d59fed764661ca7501a0e7e1a6b797a898a54f5f123bbfa8fbdce47e3e526",
+      "blake3": "00a9e03fe27a1aa195c81d0d423ab14b5af0e6a4874c438818ffaf70185c33a4"
+    },
+    {
+      "path": "scripts/setup_venv.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5404,
+      "sha256": "494ca4b133e816dd6d82a2d7e4f1ac26ebebbbaddb20dc7990aa3f4518cc0f24",
+      "blake3": "4e2731629d2955c98bda6d544d70a9415c6f8e1bdc4ab069fee2967e92907988"
+    },
+    {
+      "path": "scripts/toc_repair_runtime.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29983,
+      "sha256": "51f04797e002f17d175fd2f5774d5ec0c42866d67d920cb593ac470b7029b62a",
+      "blake3": "ff7535c4da5b1d0e1b7622bd7edca1c693080cf74020ccc1aecb22d14c92ae61"
+    },
+    {
+      "path": "scripts/translate_with_qwen.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17241,
+      "sha256": "53274f04b8bd550007accac2454b743b947b422c056c59c6cbdd804d21352100",
+      "blake3": "3b012d1d5afdb8825c51c1324b117db26ec70dd240ac8d34f0294605d6faf822"
+    },
+    {
+      "path": "scripts/translation_api_probe.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 45462,
+      "sha256": "42ed9dc05128098593cd59085bc9f22cf5aa727cce52df9ca09b8a3aed209954",
+      "blake3": "8c0c76a796caf76fec2bfe83e62ad3027cae214bf8e5efd49b3c5b404958b1d4"
+    },
+    {
+      "path": "scripts/translation_compat_proxy.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 44815,
+      "sha256": "a7e3bcd0ac5d03fcdc069e09684d9f8eda1fb6ca9baea8bbf4d5659bc623da26",
+      "blake3": "3e349e6e88c67b85321fc94e8fdbf64b076e0752b05054596bcdb7684fe21d40"
+    },
+    {
+      "path": "scripts/visible_residue_audit.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32527,
+      "sha256": "c3776d3f9085b34142ea33b8a7fa34da4b9227b23b28a5ea656a45671c249faa",
+      "blake3": "081eebda65d00d001b1b512e318d089d6295ca9fe52009d47bb346b82facacc5"
+    },
+    {
+      "path": "scripts/visible_residue_repair.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13903,
+      "sha256": "d77a37f497fa3ebb9da2eb99dc51f225a4a9c2499a92890af71295cbdf81ce55",
+      "blake3": "7ec16ca9bab8db21a4f610c733407463f736530695c80c24403a630f3fce4419"
+    },
+    {
+      "path": "scripts/visual_layout.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1482,
+      "sha256": "e4a2e1789b823f5da81c04e09dcc39ef14c8fbb9427d53356c70e32e11d076e8",
+      "blake3": "8ab7e2cfcf4e256fdaf2c51809f4fd010de598a755a55be2232b69319f070b11"
+    },
+    {
+      "path": "scripts/visual_layout_analyzer.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 33239,
+      "sha256": "d500ee74f64c919f0d96cfed69b1fbf874be0c098aaf256cf48877bbf6b7ab20",
+      "blake3": "11efa160be24c67832a5c31c15b4d1e40c36f67cad1b5d90ed9b5d160a916ace"
+    },
+    {
+      "path": "scripts/visual_layout_core.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29387,
+      "sha256": "7e9aa1c1dfd861c1882500208a1165828601d10c28db20ab6d5b96b6e92d19dd",
+      "blake3": "70f5fd46cf0d2222fca0a6dbc06d57ddc09a0ac1c4f2bd4d19b3d1652ac5175c"
+    },
+    {
+      "path": "scripts/visual_layout_findings.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 41272,
+      "sha256": "2adda1098b2c6339143ec79aab174b057e2946becca4f085484c19d659945930",
+      "blake3": "3f77c6a4959f3f0c28e0b062ba2c4300e6f6d04dcc279752b525fec5985ec951"
+    },
+    {
+      "path": "scripts/visual_layout_semantic.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 47426,
+      "sha256": "97a294e326e6107baea8f9f1bef02be5d0266a8e3e6be075f921e28ab1848ebd",
+      "blake3": "d73c2d94d49df1250754fb03bc031c6395629b155dc4e178b36de59201e93911"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2773,
+      "sha256": "3f4d1b7883ea2771b5631050d83f8a7de06ef0809d15dcbc1b3da3cc012e4c9c",
+      "blake3": "e3e1952e471d8e3cb5665d9f0a36fb904abb7fd44c9c6bf6ce507b994557ead3"
+    }
+  ]
+}

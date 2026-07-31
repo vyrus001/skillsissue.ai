@@ -1,0 +1,557 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:8a5a92ff5619aa433600d14e2a9513fa006f1ec69a3cadb5a821aae6a7506c72",
+  "sha256": "8a5a92ff5619aa433600d14e2a9513fa006f1ec69a3cadb5a821aae6a7506c72",
+  "blake3": "2cdd008ba0067b45b28dff93d2a4cda1891021c855ddfd800a75a8ce32c854fa",
+  "size_bytes": 469320,
+  "file_count": 63,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1192,
+      "sha256": "c96627f6dbea76412d05e98163a761fcfa96d928f1b07f4ece75492456c9f337",
+      "blake3": "d3ccc6712b3a2ed939ed0f864915e4a053e24997c87241e6506307bbf772a478"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3014,
+      "sha256": "abbdfbf3d0eeb5e04646a70d064e861de7be6ff84079b3e0e8d68ee6722d7265",
+      "blake3": "4eeb4c493d183962a4d0e617d42294655cc6ddc751c4f12d117d6b59eec628f2"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9345,
+      "sha256": "e2992a2bd97851c584177f4a24b71a4182a711f563323d6a9edc087a601bebb6",
+      "blake3": "7ea537d37c670577eba5ebb194ca977c5f969c0e32bc9c7093e544a99e0f3da7"
+    },
+    {
+      "path": "SECURITY.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6036,
+      "sha256": "b66caec7872c6c87b02606a233c301c714d9b45e12f77dfd71581769c559b3e5",
+      "blake3": "279683a443952418d379430dbb0348a36e4ad439c68a457c84a1087ad22fe898"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16020,
+      "sha256": "c67b9ab67cbd17dfedd2ba0f64e9d5c33d03f9e5437674f1025f043d5cb8c338",
+      "blake3": "7946416fe5ddf52c024af61cf3a5eeb0e1908dace5033cf74448b6a70dbf39ff"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 132,
+      "sha256": "f544ee9ef7458d4e4df0e24fe9aeb40a5cb8cf33d403c4a687c7756e913d83c8",
+      "blake3": "d7ee65d55e74af12640cad363b8add103e839e0c89bb1f6e6c90588c7a8ab0b3"
+    },
+    {
+      "path": "commands",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "commands/eval-audit.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8713,
+      "sha256": "83f149b51db9756399e113a08c69acf6df2bd236c123913e4b5fdaa037b2e0a6",
+      "blake3": "c84025f6bd599b87f26ea5f489cad36348ad62dd093ef4fdcfcbc2922341f463"
+    },
+    {
+      "path": "commands/eval-compare.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3994,
+      "sha256": "30641ff79614b3243b052b64baa7ca118876ccb05cd1ff7df8834363de7c3c9e",
+      "blake3": "bad7a0e407e7f0bd74b9b1ba7afc5545f27d206767dd89eff2bf1cddf2bbc4ba"
+    },
+    {
+      "path": "commands/eval-evolve.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11273,
+      "sha256": "42d8922491965397358a1644e97495e7daf2da8bde8dd7de7676deaa53d300d4",
+      "blake3": "2e9c5ba6dba916efed736898100ab09fc237d1aef6fc4e272a5ca109b83607c3"
+    },
+    {
+      "path": "commands/eval-improve.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9373,
+      "sha256": "4d0c8440fe10cca225b2f5504d2eb8871b4bedc199cbd220ef864aee07dfbd4e",
+      "blake3": "fddd1df8a510f4a5b789e85dd516afabf7ac7130a5961e193cb2041da4ee9334"
+    },
+    {
+      "path": "commands/eval-merge.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4296,
+      "sha256": "80cccf83e71eb2435044f2d54261dfe50e7d74609f0d40278c6e8ea46c2775a7",
+      "blake3": "444fb5028e03d23a9e71b93c568b02f5d3f840dc6139f003995af4d0d184492e"
+    },
+    {
+      "path": "commands/eval-rollback.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5485,
+      "sha256": "a73c9dd8437e951e7ba14b6a7ed17ef4ac0266b9391cd69b893865f1fc60d413",
+      "blake3": "e14ef12d148436c0e793c8c8741a81f1e626a48f8203817f0095023a89a803f5"
+    },
+    {
+      "path": "commands/eval-security.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3107,
+      "sha256": "af962a84ec679620ba72e0ee2560e2e4488debff5a69ff636bb62440057e45d9",
+      "blake3": "089bc18ce1531751f016ffc2711645ba14330359b439488a24678b0d3ad1a327"
+    },
+    {
+      "path": "commands/eval-skill.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22948,
+      "sha256": "b587d0e139dd1623c7c06081bc2c837c38fe886a28afacb53b63ee7f163a1677",
+      "blake3": "8d84f2b952e53b3e12a029ea42d202b436b657e8eb381337b263f12bff41b160"
+    },
+    {
+      "path": "commands/setup.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15484,
+      "sha256": "d1b6a2bdaedffe181c72caee848fed20d4efc4233e3524a193ac97f626fdd2b1",
+      "blake3": "fa5ca73a512a9b92f91c81c8f7295ffd9f53ecb496e2deed8c25fad0bc7bbaac"
+    },
+    {
+      "path": "commands/skill-compass.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6828,
+      "sha256": "7214ac364196b9385844efa5346b47a877076158501604762bf3fc013862ab3c",
+      "blake3": "0cf259308410375753f6cceae71defd0032d9bad7ad9c93ee3f26d5bef4d1a82"
+    },
+    {
+      "path": "commands/skill-inbox.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12688,
+      "sha256": "5461ae579559c684329fa2a2e91133af6ed09f23f70c6c6c58db20b604d3671f",
+      "blake3": "4da1d3663b62172349ab1017b2fad9f670e575ab5441c213eea22292a4589674"
+    },
+    {
+      "path": "commands/skill-report.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12431,
+      "sha256": "ba1124ffbd681d3033dd1a88c11624378d7295cf666e7cc45e5aff3e24f83e19",
+      "blake3": "bef46c2f5867e830bf10fd59aab24e4f7f1e3b25828256ca5378007d93df0942"
+    },
+    {
+      "path": "commands/skill-update.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6426,
+      "sha256": "84887990f085630f5641c9643c7122641f04ce83db1b4e57645ee4a1faaa13d6",
+      "blake3": "0ac316514ae85ceeaf8a0bd57ca1e0632ff08bd122d92e7f489379e0a294a50a"
+    },
+    {
+      "path": "hooks",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "hooks/hooks.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1348,
+      "sha256": "150113f61630e4979a2c0401b6b1e56add55950d42fc5ad9b8c97d00c4c07f09",
+      "blake3": "9561adf46134bc08f1ed9036eaf3efcd2aa4fdf4f2d8dd4da9c1edeb0b2dcccb"
+    },
+    {
+      "path": "hooks/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "hooks/scripts/eval-gate.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11349,
+      "sha256": "7b5911ebd1f627ccdac7e3cae93119fb3fcfdc9299d9c45c7bcae3ff75cd8ef5",
+      "blake3": "0904d195519e924a226f024b53d7da8ccee76e8072d4066ea9277789f73c6c4d"
+    },
+    {
+      "path": "hooks/scripts/output-guard.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7174,
+      "sha256": "0bc8e251ca331f549b0be6ef7b37636c1a59e27a7b5266c82c1c3542684491d2",
+      "blake3": "724b673f5d281a0fed137553ce31a87ebf5f63db3c55d739eeb1c8bce2f070d1"
+    },
+    {
+      "path": "hooks/scripts/post-skill-edit.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7116,
+      "sha256": "5d10aacaa4e003568459e2cd1ae5cde6b31b8a96f4dcd91b6fbe7749227f07c2",
+      "blake3": "9a3a3d855a475458492bd902a05c2edf6da59bef994d0c9cca9b8caa4fa4bf4f"
+    },
+    {
+      "path": "hooks/scripts/pre-eval-scan.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 478,
+      "sha256": "625dca6fe4fa9084e0c66df400a7d5bd8977ece77bea91e982773d960be2fb9d",
+      "blake3": "a2f94ddb1a93151af821fd1287b55e83e620f6329bfe29f8fd00a0cf30ae4e93"
+    },
+    {
+      "path": "hooks/scripts/pre-eval-scan.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 144,
+      "sha256": "2b3573e9c7b5ce3fedc9519d902cf9666d662ddb1af352c00e30aa666cb69a0a",
+      "blake3": "f135232af93079b7f6789b5bcd770ecf83243ec2d89d1fbb56c030b2b021577b"
+    },
+    {
+      "path": "hooks/scripts/session-tracker.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5338,
+      "sha256": "4e4b2995abdce0ae5948a1bfd4f2faba9981e0ea0b1a92c508509bfdb561b7f4",
+      "blake3": "d1eae3a182fe8b14cd29cc643e55787b7e7658e3b956504769fff43a8c5be929"
+    },
+    {
+      "path": "hooks/scripts/skill-usage-tracker.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6471,
+      "sha256": "b880118b2616345ec1e04fcdf6abfeb0cad6fa8e1f0aa3d61eebca690f8b7693",
+      "blake3": "db7b07c471f80a9251d50144797fa4de1689d298daa108bb621eed4e96660a83"
+    },
+    {
+      "path": "lib",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "lib/audit-chain.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6679,
+      "sha256": "38dc54985bff29552573a4b861682295441d455cdb70356fbd66ad2e22b874ed",
+      "blake3": "57751ac58a7056348ebc8d537817176829d02b478eb32ad61610ff865fe4c4e9"
+    },
+    {
+      "path": "lib/basic-validator.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6650,
+      "sha256": "9650044739fbbc29e923ca4372443bce11da5b03f3cd2892c07bd57bec9380e3",
+      "blake3": "fe0aa585b882a533d2e6df7e2083651de90de42f1d7740486c4ad01ef47e8816"
+    },
+    {
+      "path": "lib/inbox-engine.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14929,
+      "sha256": "c5100207a582cefaadcd2b2c88f3f8e5737fc561784b55b61c3a91e5d403cca6",
+      "blake3": "665c2b69c3d802dc14cfa121e571e2346f7e2358a6603de06fdd0da990c2d78e"
+    },
+    {
+      "path": "lib/inbox-store.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11392,
+      "sha256": "8262190a106dff5a91388b6d398bb6cedad5a168d01a9e342eb3c782b551a3f0",
+      "blake3": "3ce4504b1fbbcb5a8cf1ba3a34926b1d0e1fdd781fc61bb424b57be308bbbb6b"
+    },
+    {
+      "path": "lib/integrity-monitor.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9686,
+      "sha256": "748c1affca5beae3f8345147bfd8173a61102760357e36e3be22e5be2ae699ff",
+      "blake3": "3ed63b1fc374f186c9b646701c39f28af903968369c5c151b950822b707d2a5e"
+    },
+    {
+      "path": "lib/patterns.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6829,
+      "sha256": "dd794164b63790550ece1b68f4a0499d805a869cd01ab748f3efd09ffb23a8d7",
+      "blake3": "c4ea92ad9323c1c09bb9c50b1c865555fe1fd7ec75a67e1ee8d59d928a155f74"
+    },
+    {
+      "path": "lib/pre-eval-patterns.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1778,
+      "sha256": "c6728b8ad858d83baa12fbf7161e223478bb0a6015f56a83763fa8700c09f68e",
+      "blake3": "20e2c882191b8acef926a8e6066ed549b4d378cf44fe6b0f10df259196d06256"
+    },
+    {
+      "path": "lib/pre-eval-scan.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6180,
+      "sha256": "aeac52ab364530457d1e58333769f15fe4f9c51e53608f93affd36950cb8aaa9",
+      "blake3": "85b6b9c505ee7b176a8758b0f7aa2eef7f4f73e8000d9ce35fba5223dd0b8e66"
+    },
+    {
+      "path": "lib/quick-scan.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5798,
+      "sha256": "0791a0654ac557bb241b650088a4ef26e72ffd905baeb00eaa0c1e5c9d96eca5",
+      "blake3": "1f6526cf17872e95f96c2e57b22d2d00d2fc922a716969f348c0249186c5b0b5"
+    },
+    {
+      "path": "lib/security-validator.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22242,
+      "sha256": "76845ce3924660b8479c95b63a72f7353fe9b0a7f46c4cacb0c6e0b7a0c99347",
+      "blake3": "07a0dbc6d082e5b8ea2f7dfa28e578d7ea6c9fd954533bf2e8cee62fc4660059"
+    },
+    {
+      "path": "lib/structure-validator.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19136,
+      "sha256": "defa821883070767ac10dacc7c1a70e86ddae3529a1fb78068c4c922f2d01728",
+      "blake3": "ea2df5e2c61083260531f7a2d5519a6512ec25a563e1feb750b4d4d5de05d927"
+    },
+    {
+      "path": "lib/trigger-validator.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20256,
+      "sha256": "ac21c5f95894cf0a25d645c6494496267ef24ea1a78eaa1f4e2b5226c5634d26",
+      "blake3": "e0e75eead2108958db63f621c65949aea995f4d02238c1f9428eadaebeb646cd"
+    },
+    {
+      "path": "lib/update-checker.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7754,
+      "sha256": "65e1437e4854fd5b970171e7d957b322afbf67c6fa67d4f93cff25ec712787b9",
+      "blake3": "e619b0638e399bd3672e67dc17b3d7b6c35bc9e2fdac74a2a5750998236929d9"
+    },
+    {
+      "path": "lib/usage-reader.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6941,
+      "sha256": "790ff7c42d2c15b5dd4b7204d8d452b422d4ce08dedb67c1a8d3db996c8141c4",
+      "blake3": "935f5a763e5989c81886447c0e3ea0067f556d6cb2376f70dd525297f9a25d16"
+    },
+    {
+      "path": "package-lock.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 892,
+      "sha256": "96620b6f0ffe0fb6d0c20a5336ebdf143ea2af2d6d2cbeee105c4d1128efe882",
+      "blake3": "0eb59ca237f5243d73223b87d13799f3fdc3b66f9124fbf390a7a46771351868"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1176,
+      "sha256": "0f4f53b00b7569c6d4bfc87750ff17e01f510ff06cff48b35b8081ba6f1f25f5",
+      "blake3": "ce780ecf501f964696b285e2d8e4cbc7d1b86271cf337eccb69e9af6c6216611"
+    },
+    {
+      "path": "prompts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "prompts/d1-structure.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7142,
+      "sha256": "28fe17fcf8890cf31473a0e536f610f565746c40a405ecbd6fae3902894c0cda",
+      "blake3": "e62839ee9e00aee4d58eee8a660772104778162e6f3cd7c4af600d30003d71ea"
+    },
+    {
+      "path": "prompts/d2-trigger.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7138,
+      "sha256": "745f555c11491865035bb2a10b09bef2ab3b8f69e1012c79ef04af3017abc239",
+      "blake3": "c53adf6e82db613881b4b79c2c335b5ef77c3589165d0ea341c245c7ca9688d0"
+    },
+    {
+      "path": "prompts/d3-security.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13241,
+      "sha256": "43e5e3e537471837951a3dcf571dbb40d45519f2f4419df1345af0e8c5545f9d",
+      "blake3": "ec27ff0889a112756ee2b3a396c6c7582fa08317e4535b8218e6dbb40fe94379"
+    },
+    {
+      "path": "prompts/d4-functional.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16416,
+      "sha256": "d30d5264fe61fdd80df4fc7d040165fae3ea882f75d70df77d874dfc736cad4d",
+      "blake3": "81ab74f888e7366bea62c9b4a86ee3555e5930a1dc6ce02c3385a488c4c5e0ad"
+    },
+    {
+      "path": "prompts/d5-comparative.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10876,
+      "sha256": "ccd6776ebfa23f865629ab8caff3d4791805ebee2b02b21fbfdffc54ad1651af",
+      "blake3": "91aee2f2c56afc7b42f5d4a1abdc94a722cb3efd94124ff4543b2997eefdbef3"
+    },
+    {
+      "path": "prompts/d6-uniqueness.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11960,
+      "sha256": "cbe8b2e7cc2a81f6b0d80fece5e1bfc4c93b54fe805314e2f4d3a821e5244f90",
+      "blake3": "48a2c9f7683d87b22275f556f757f37f1f95f35cc0b48b6d9dcac396f7c5b2b8"
+    },
+    {
+      "path": "prompts/improve.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5155,
+      "sha256": "a7e3aa571d31d4e0d4ea236ced5a2f99dcc33699c83238987f6c8a230e2f636b",
+      "blake3": "fcb8468fd373498fd4fdbbfced580f4ccbbbf81ce9e2b26e883af0ece444b1aa"
+    },
+    {
+      "path": "prompts/merge.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4169,
+      "sha256": "b6feed6d1c490a77b4dd90873767e1f3d183d28c5f7f626a00da2ad115c0c47d",
+      "blake3": "ecf28a0adaac51abf9ae3304ebbf9b0a636df933257cd5072bf38439f0b89a8f"
+    },
+    {
+      "path": "schemas",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "schemas/eval-result.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9364,
+      "sha256": "f33c78d327038810c0e003fa327f0169bbc864b9f2fd547a681327535ba66b56",
+      "blake3": "48d5cb89a210d2d6c6c0cde749d213400c6fb70a411b90040498e47a6876c186"
+    },
+    {
+      "path": "schemas/feedback-signal.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2358,
+      "sha256": "19b465a3a047306146988f677ebab88d701b3f26f3f76c2f8ae1a8fb8260686e",
+      "blake3": "684b3e6f9b41f92f3f6b885c30a3bbc06b8f283fc9617529a84f2ec858611c99"
+    },
+    {
+      "path": "schemas/merge-result.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2461,
+      "sha256": "66ad17fe94999e52db48a149b1876042f3dcf85b59fb94840302ed2183d46d40",
+      "blake3": "3963d7062859501d525bf8312a8ad87160aec50eb44c72d0e6c9acd60dc481ce"
+    },
+    {
+      "path": "schemas/version-manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2864,
+      "sha256": "97cfbbcb7d2e8dceeb2034266ae6e3f9fe125a28c25b3c1449986066105ca4e5",
+      "blake3": "9429bc8a96e884b8b85badf0ac642c392b45bd18bf94c371c50f2bffab0c5232"
+    },
+    {
+      "path": "shared",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "shared/feedback-integration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2579,
+      "sha256": "e77b6a895fbd041531fad4621e430bd223a6ea182f0cd041d449e07d0478cc92",
+      "blake3": "c8398e6a0b82b2e1e94ccb9c11b142d8dd149daf96abe4909e0765b24ca6cfaa"
+    },
+    {
+      "path": "shared/llm-capability-baseline.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3818,
+      "sha256": "afb31511a10cdfc081a24a3932e8a1e101153239994151cef834de98f9e31d81",
+      "blake3": "74729665081a130c25a71b1ffe6dd86615850ec3ea44692f17ae56f413bc5a14"
+    },
+    {
+      "path": "shared/scoring.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3247,
+      "sha256": "fdbd111eddf8784ce10e7d7066d67f4de89be15e77ed3d990fc1c9275f9b14a6",
+      "blake3": "3a41362c10ed8085df49dbee3e4571421eae6de11eb815e57041ef73951ec744"
+    },
+    {
+      "path": "shared/skill-registry.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6407,
+      "sha256": "214c7c48a53cade115aaf127412457d975a71e72f482a8e2c96b0367bcbb4a5c",
+      "blake3": "9677f30fd9ab88af2ca74219b371ba7bfcd5e6d635557e27d93346896a6a220c"
+    },
+    {
+      "path": "shared/threat-signatures.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3236,
+      "sha256": "190cc8efeef7e0b1fc1c10ea81205782b8546df5a560009e1adf1f1809fedcc8",
+      "blake3": "0c2f98b2b479b5c2cd58862916b829deb3a463db88dde38b343671eff0a168ac"
+    },
+    {
+      "path": "shared/tool-instructions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3303,
+      "sha256": "948bf4c0a1f86ba6df2f0279fe89832e3ae8df6c9c1f1d9d26af2e9c32c953aa",
+      "blake3": "513bff015221885b384c1787d0f09e86dad29b2e3ab85291ae6ddf4831b9f737"
+    },
+    {
+      "path": "shared/version-management.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3973,
+      "sha256": "7287cb41ac306013fac2c7b68f1c30015e5423ae9fb3f57b8d39368da93026dd",
+      "blake3": "ca2b499fc7d7e8c3e0d1186d276a1a4089c5be3d8288f949eafffa49a7f67556"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3092,
+      "sha256": "a55f69e96471e1c45e04057d2fda7b95a91c625d439bf1fab9a72f32904ed63a",
+      "blake3": "196226827857edd27af907eabf8aeb4d669efdd5820f38b589de300090dd87f3"
+    }
+  ]
+}
