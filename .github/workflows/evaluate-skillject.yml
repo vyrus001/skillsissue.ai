@@ -99,6 +99,13 @@ jobs:
           tag: skillsissue-sandbox:local
           cache-scope: skillsissue-sandbox
 
+      - name: Build egress interception proxy image
+        uses: ./.github/actions/build-cached-image
+        with:
+          dockerfile: containers/egress-proxy.Dockerfile
+          tag: skillsissue-egress-proxy:local
+          cache-scope: skillsissue-egress-proxy
+
       - name: Build detonator image
         uses: ./.github/actions/build-cached-image
         with:
@@ -152,7 +159,7 @@ jobs:
             --revision "$SKILLJECT_COMMIT" \
             --limit "$EVALUATION_LIMIT"
 
-      - name: Detonate fixtures with required eBPF capture and no target egress
+      - name: Detonate fixtures with required eBPF and bounded intercepted downloads
         continue-on-error: true
         run: |
           docker run --rm \

@@ -2,7 +2,7 @@
 set -eu
 
 environment_name="hosted-detonation"
-adapter="codex-cli"
+adapter="deterministic-closure-harness"
 limit="1"
 shard_count="1"
 max_parallel="1"
@@ -16,18 +16,20 @@ usage() {
 Usage: scripts/run-hosted-detonation.sh [options]
 
 Validate the hosted-detonation environment and dispatch detonate.yml on the
-repository's default branch. Defaults to one Codex skill on one runner.
+repository's default branch. Defaults to one deterministic, LLM-free skill on
+one runner.
 
 Options:
-  --adapter codex-cli|claude-cli  Agent harness (default: codex-cli)
-  --limit 1|2                    Skills per shard (default: 1)
-  --shards 1..16                 Deterministic shards (default: 1)
-  --max-parallel 1..16           Concurrent runners (default: 1)
-  --repo OWNER/REPO              Repository (default: current gh repository)
-  --check                        Validate controls without dispatching
-  --yes                          Skip the interactive cost confirmation
-  --no-watch                     Return after dispatch instead of watching
-  -h, --help                     Show this help
+  --adapter deterministic-closure-harness|codex-cli|claude-cli
+                                   Harness (default: deterministic-closure-harness)
+  --limit 1|2                      Skills per shard (default: 1)
+  --shards 1..16                   Deterministic shards (default: 1)
+  --max-parallel 1..16             Concurrent runners (default: 1)
+  --repo OWNER/REPO                Repository (default: current gh repository)
+  --check                          Validate controls without dispatching
+  --yes                            Skip the interactive cost confirmation
+  --no-watch                       Return after dispatch instead of watching
+  -h, --help                       Show this help
 EOF
 }
 
@@ -97,9 +99,10 @@ while test "$#" -gt 0; do
 done
 
 case "$adapter" in
+  deterministic-closure-harness) required_secret="" ;;
   codex-cli) required_secret="OPENAI_API_KEY" ;;
   claude-cli) required_secret="ANTHROPIC_API_KEY" ;;
-  *) fail "--adapter must be codex-cli or claude-cli" ;;
+  *) fail "--adapter must be deterministic-closure-harness, codex-cli, or claude-cli" ;;
 esac
 is_positive_integer "$limit" || fail "--limit must be 1 or 2"
 test "$limit" -le 2 || fail "--limit must be 1 or 2"
@@ -138,14 +141,16 @@ test "$branch_allowed" = "true" || fail "$environment_name must explicitly allow
 enabled="$(gh variable get HOSTED_DETONATION_ENABLED --env "$environment_name" --repo "$repository" 2>/dev/null || true)"
 test "$enabled" = "true" || fail "$environment_name variable HOSTED_DETONATION_ENABLED must equal true"
 
-secret_names="$(gh secret list --env "$environment_name" --repo "$repository" --json name --jq '.[].name')"
-secret_found="false"
-for secret_name in $secret_names; do
-  if test "$secret_name" = "$required_secret"; then
-    secret_found="true"
-  fi
-done
-test "$secret_found" = "true" || fail "$environment_name is missing environment secret $required_secret"
+if test -n "$required_secret"; then
+  secret_names="$(gh secret list --env "$environment_name" --repo "$repository" --json name --jq '.[].name')"
+  secret_found="false"
+  for secret_name in $secret_names; do
+    if test "$secret_name" = "$required_secret"; then
+      secret_found="true"
+    fi
+  done
+  test "$secret_found" = "true" || fail "$environment_name is missing environment secret $required_secret"
+fi
 
 smoke_conclusion="$(gh run list --repo "$repository" --workflow evaluate-skillject.yml --limit 1 --json conclusion --jq '.[0].conclusion // empty')"
 test "$smoke_conclusion" = "success" || fail "the latest hosted eBPF smoke run must succeed before detonation"
@@ -171,7 +176,7 @@ fi
 
 if test "$assume_yes" != "true"; then
   if test -t 0; then
-    printf 'Dispatch provider-backed GitHub runners now? [y/N] '
+    printf 'Dispatch hosted detonation runners now? [y/N] '
     read -r answer
     case "$answer" in
       y|Y|yes|YES) ;;

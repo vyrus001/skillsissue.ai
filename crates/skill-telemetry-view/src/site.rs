@@ -1,6 +1,6 @@
 use std::collections::{BTreeMap, BTreeSet};
 use std::fs::{self, File};
-use std::io::{BufWriter, Write};
+use std::io::{BufRead, BufReader, BufWriter, Write};
 use std::path::{Component, Path, PathBuf};
 
 use anyhow::{Context, Result, bail, ensure};
@@ -83,9 +83,37 @@ struct StaticGraph {
     graph: GraphModel,
     event_count: usize,
     event_page_size: usize,
+    network_capture_count: usize,
 }
 
 const EVENT_PAGE_SIZE: usize = 100;
+const MAX_STATIC_NETWORK_RECORDS: usize = 64;
+const MAX_STATIC_NETWORK_BYTES: usize = 96 * 1024 * 1024;
+const MAX_STATIC_NETWORK_LINE_BYTES: usize = 24 * 1024 * 1024;
+
+#[derive(Serialize)]
+#[serde(rename_all = "camelCase")]
+struct StaticNetworkIndex {
+    capture_count: usize,
+    captures: Vec<StaticNetworkSummary>,
+}
+
+#[derive(Serialize)]
+#[serde(rename_all = "camelCase")]
+struct StaticNetworkSummary {
+    id: usize,
+    sequence: Option<u64>,
+    recorded_at_unix_ms: Option<String>,
+    method: String,
+    url: String,
+    status: Option<u64>,
+    response_bytes: u64,
+    body_sha256: Option<String>,
+    failure: Option<String>,
+    tls_intercepted: bool,
+    capture_truncated: bool,
+    detail_url: String,
+}
 
 pub fn build(repo_root: &Path, output: &Path, max_published_events: usize) -> Result<BuildSummary> {
     ensure!(
@@ -346,12 +374,14 @@ fn publish_graph(
     );
     let run_output = output.join("runs").join(&run.run_id);
     fs::create_dir_all(run_output.join("events"))?;
+    let network_capture_count = publish_network_captures(run_directory, &run_output)?;
     write_json(
         run_output.join("graph.json"),
         &StaticGraph {
             graph,
             event_count: trace.events.len(),
             event_page_size: EVENT_PAGE_SIZE,
+            network_capture_count,
         },
     )?;
     for (page, events) in trace.events.chunks(EVENT_PAGE_SIZE).enumerate() {
@@ -361,6 +391,113 @@ fn publish_graph(
         )?;
     }
     Ok(true)
+}
+
+fn publish_network_captures(run_directory: &Path, run_output: &Path) -> Result<usize> {
+    let transcript = run_directory.join("network.jsonl.zst");
+    if !transcript.is_file() {
+        return Ok(0);
+    }
+    let decoder = zstd::Decoder::new(File::open(&transcript)?)
+        .context("open compressed network transcript")?;
+    let mut captures = Vec::new();
+    let mut decoded_bytes = 0_usize;
+    for line in BufReader::new(decoder).lines() {
+        let line = line.context("read network transcript line")?;
+        decoded_bytes = decoded_bytes
+            .checked_add(line.len() + 1)
+            .context("network transcript byte count overflow")?;
+        ensure!(
+            decoded_bytes <= MAX_STATIC_NETWORK_BYTES,
+            "network transcript exceeds the static publication byte limit"
+        );
+        ensure!(
+            line.len() <= MAX_STATIC_NETWORK_LINE_BYTES,
+            "network transcript record exceeds the static publication line limit"
+        );
+        if line.trim().is_empty() {
+            continue;
+        }
+        let value: serde_json::Value =
+            serde_json::from_str(&line).context("parse network transcript record")?;
+        if value.get("capture").and_then(serde_json::Value::as_str)
+            != Some("intercepted-http-egress")
+        {
+            continue;
+        }
+        ensure!(
+            captures.len() < MAX_STATIC_NETWORK_RECORDS,
+            "network transcript exceeds the static publication record limit"
+        );
+        let response = value
+            .get("response")
+            .context("egress transcript record has no response object")?;
+        let body = response
+            .get("body_base64")
+            .and_then(serde_json::Value::as_str)
+            .context("egress transcript record has no response body evidence")?;
+        ensure!(
+            body.len() <= MAX_STATIC_NETWORK_LINE_BYTES,
+            "egress response evidence exceeds the static publication body limit"
+        );
+
+        let id = captures.len() + 1;
+        let detail_url = format!("network/{id}.json");
+        fs::create_dir_all(run_output.join("network"))?;
+        write_json(run_output.join(&detail_url), &value)?;
+        captures.push(StaticNetworkSummary {
+            id,
+            sequence: value.get("sequence").and_then(serde_json::Value::as_u64),
+            recorded_at_unix_ms: value
+                .get("recorded_at_unix_ms")
+                .and_then(serde_json::Value::as_str)
+                .map(str::to_owned),
+            method: value
+                .get("method")
+                .and_then(serde_json::Value::as_str)
+                .unwrap_or("unknown")
+                .to_string(),
+            url: value
+                .get("url")
+                .and_then(serde_json::Value::as_str)
+                .unwrap_or("unknown")
+                .to_string(),
+            status: response.get("status").and_then(serde_json::Value::as_u64),
+            response_bytes: response
+                .get("original_bytes")
+                .and_then(serde_json::Value::as_u64)
+                .unwrap_or(0),
+            body_sha256: response
+                .get("body_sha256")
+                .and_then(serde_json::Value::as_str)
+                .map(str::to_owned),
+            failure: value
+                .get("failure")
+                .and_then(serde_json::Value::as_str)
+                .map(str::to_owned),
+            tls_intercepted: value
+                .get("tls_intercepted")
+                .and_then(serde_json::Value::as_bool)
+                .unwrap_or(false),
+            capture_truncated: response
+                .get("capture_truncated")
+                .and_then(serde_json::Value::as_bool)
+                .unwrap_or(true),
+            detail_url,
+        });
+    }
+    if captures.is_empty() {
+        return Ok(0);
+    }
+    let capture_count = captures.len();
+    write_json(
+        run_output.join("network/index.json"),
+        &StaticNetworkIndex {
+            capture_count,
+            captures,
+        },
+    )?;
+    Ok(capture_count)
 }
 
 fn safe_telemetry_path(path: &Path) -> bool {
@@ -408,10 +545,13 @@ fn write_json<T: Serialize + ?Sized>(path: PathBuf, value: &T) -> Result<()> {
 
 #[cfg(test)]
 mod tests {
-    use super::{README_VIEWER_URL, build, public_http_url, safe_run_id, safe_telemetry_path};
+    use super::{
+        README_VIEWER_URL, build, public_http_url, publish_network_captures, safe_run_id,
+        safe_telemetry_path,
+    };
     use serde_json::Value;
     use skills_core::{SkillRecord, write_csv_records_atomic};
-    use std::{fs, path::Path};
+    use std::{fs, io::Cursor, path::Path};
 
     #[test]
     fn static_publication_accepts_only_repository_telemetry_paths() {
@@ -436,6 +576,43 @@ mod tests {
             "https://clawhub.ai/"
         );
         assert_eq!(public_http_url("file:///tmp/data", None), "#");
+    }
+
+    #[test]
+    fn static_network_publication_keeps_exact_response_evidence_separate() {
+        let temporary = tempfile::tempdir().expect("temporary directory");
+        let run_directory = temporary.path().join("run");
+        let run_output = temporary.path().join("site-run");
+        fs::create_dir_all(&run_directory).expect("run directory");
+        fs::create_dir_all(&run_output).expect("output directory");
+        let records = concat!(
+            "{\"capture\":\"provider-relay\",\"response\":{\"body_base64\":\"ignored\"}}\n",
+            "{\"capture\":\"intercepted-http-egress\",\"sequence\":1,\"recorded_at_unix_ms\":\"10\",",
+            "\"method\":\"GET\",\"url\":\"https://example.test/tool\",\"tls_intercepted\":true,",
+            "\"failure\":null,\"request\":{\"headers\":[],\"body_base64\":\"\"},",
+            "\"response\":{\"status\":200,\"headers\":[[\"content-type\",\"application/octet-stream\"]],",
+            "\"body_base64\":\"dG9vbA==\",\"body_sha256\":\"fixture\",\"original_bytes\":4,",
+            "\"capture_truncated\":false}}\n"
+        );
+        let compressed =
+            zstd::stream::encode_all(Cursor::new(records.as_bytes()), 1).expect("compression");
+        fs::write(run_directory.join("network.jsonl.zst"), compressed).expect("transcript");
+
+        assert_eq!(
+            publish_network_captures(&run_directory, &run_output).expect("publication"),
+            1
+        );
+        let index: Value = serde_json::from_slice(
+            &fs::read(run_output.join("network/index.json")).expect("network index"),
+        )
+        .expect("index JSON");
+        let detail: Value = serde_json::from_slice(
+            &fs::read(run_output.join("network/1.json")).expect("network detail"),
+        )
+        .expect("detail JSON");
+        assert_eq!(index["captureCount"], 1);
+        assert_eq!(index["captures"][0]["responseBytes"], 4);
+        assert_eq!(detail["response"]["body_base64"], "dG9vbA==");
     }
 
     #[test]

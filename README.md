@@ -27,8 +27,10 @@ flowchart TB
     S["Provider credential<br/>trusted supervisor and relay only"]
     Q["Isolated per-run credential relay<br/>read-only Unix socket + separate egress"]
     O["Allowlisted provider endpoint<br/>OpenAI Responses or Anthropic Messages"]
+    X["Bounded egress interception proxy<br/>per-run CA + exact response capture"]
+    W["Public HTTP(S) origins<br/>GET/HEAD on 80/443 only"]
     B["Tracee eBPF sensor<br/>container-scoped syscalls"]
-    T[("telemetry/YYYY/MM/DD/run<br/>run.json + attributable events*.zst")]
+    T[("telemetry/YYYY/MM/DD/run<br/>run.json + phased events*.zst<br/>+ bounded TLS transcript")]
     R[("runs.csv")]
     A["Analyze Telemetry Action<br/>Rust / replay only"]
     F[("assessments.csv + findings.csv<br/>unknown_platform_interaction<br/>unknown_platform_count")]
@@ -49,7 +51,12 @@ flowchart TB
     CX -->|"fixed dummy key"| Q
     CL -->|"fixed dummy key"| Q
     S --> Q
-    Q -->|"inject auth; bounded requests"| O
+    Q -->|"inject auth; TLS + bounded transcript"| O
+    CX -->|"internal network only"| X
+    CL -->|"internal network only"| X
+    FX -->|"internal network only"| X
+    X -->|"public downloads only"| W
+    X -->|"request + exact response bytes"| T
     CX -. "isolated behavior" .-> B
     CL -. "isolated behavior" .-> B
     FX -. "isolated behavior" .-> B
@@ -69,10 +76,13 @@ flowchart TB
 ```
 
 The Codex, Claude, and fixture nodes are alternatives: one target and one
-adapter are selected for each run. Only the relay has provider egress. The
-target always uses Docker `--network none`; a bounded loopback forwarder reaches
-the relay only through a read-only per-run Unix socket volume. The target never
-receives the real provider credential.
+adapter are selected for each run. The target joins a fresh Docker-internal
+network with no external gateway. Its only network peer is a bounded
+dual-homed HTTP(S) interception proxy; direct sockets, private/LAN/metadata
+destinations, request bodies, non-download methods, protocol upgrades, and
+nonstandard ports remain blocked. For CLI runs, the provider relay remains a
+separate path reachable only through a read-only per-run Unix socket volume.
+The target never receives the real provider credential.
 
 The feedback edge is intentionally gated. Telemetry can add an unknown domain
 to the registry only as `status=candidate, enabled=false`; an adversarial skill
@@ -143,14 +153,20 @@ and eBPF support. A trusted supervisor starts:
   to the target container;
 - a separate non-root target with a read-only root filesystem, all Linux
   capabilities dropped, `no-new-privileges`, PID/CPU/memory/time limits, no
-  Docker socket, and no repository checkout. Every target uses `--network
-  none`; and
+  Docker socket, and no repository checkout. It joins only a fresh
+  Docker-internal network without a public gateway;
+- a separate non-root HTTP(S) interception proxy. The target receives only its
+  per-run CA certificate and proxy environment. The proxy permits bounded
+  `GET`/`HEAD` downloads on ports 80/443, rejects private, loopback, link-local,
+  metadata, single-label, and mixed public/private DNS destinations, strips
+  caller credentials, and records each response body before delivery; and
 - for a CLI run, a separate non-root credential relay with its own egress
   network. A dedicated per-run Docker volume containing only the Unix socket is
   the only shared
   transport; the harness exposes it solely on target loopback. The relay accepts
   only bounded, strict local-tool OpenAI Responses or Anthropic Messages
-  envelopes and injects the real credential upstream.
+  envelopes, injects the real credential upstream, terminates the provider TLS
+  connection, and writes a bounded redacted transaction transcript.
 
 The validated seed tree is mounted read-only at `/seed`. The Rust harness copies
 it into `/work/skill`, a Docker tmpfs with kernel-enforced byte and inode caps;
@@ -163,7 +179,8 @@ The target receives synthetic sensitive files whose values are unique
 `#data_<run>_<role>` markers. It never receives the runner's real credentials.
 The deterministic fixture adapter in `config/detonator.toml` executes explicit
 in-tree scripts and shell fences, rescans newly written `.md`/`.txt` artifacts,
-and feeds them back through the same bounded harness process.
+and feeds them back through the same bounded harness process. It requires no
+language model or provider credential and is the default continuous adapter.
 
 The production configurations use bounded model-driven adapters:
 `config/detonator-codex.toml` stages the unmodified skill at
@@ -176,7 +193,14 @@ writes the selected provider key to a per-run read-only relay secret, while the
 target receives only a fixed dummy key and fixed relay URL. Host CLI login state
 is never mounted. `run.json` and bounded harness output record the adapter,
 model, sanitized harness/agent argv, CLI version, relay image digest, and
-whether the target used the isolated relay transport.
+whether the target used the isolated relay and interception transports.
+Network-enabled runs retain `network.jsonl.zst` plus its hash and size. It
+contains provider transactions when applicable and the target's intercepted
+HTTP(S) requests, response metadata, response-body SHA-256, and exact response
+bytes as base64. Authentication, cookie, and routing headers are removed before
+persistence; transcript limits fail closed rather than forwarding an
+unrecorded response. Upstream timeouts and rejected requests retain bounded
+failure evidence.
 
 Every attempt retains `run.json`; attributable event bytes are compressed as
 `events.jsonl.zst` or, for a failed attempt, `events.partial.jsonl.zst`. A run
@@ -184,10 +208,17 @@ directory also records the target container ID, collector health, effective
 limits, hashes, image identity, outputs, and termination reason. Unattributable
 events are deleted rather than risking host telemetry disclosure.
 
+Immediately before invoking the selected adapter, the trusted harness emits a
+fixed filesystem boundary marker. The supervisor annotates every attributable
+Tracee record as `pre-detonation` or `detonation` from that captured ordering.
+Replay ignores pre-detonation events, while the viewer hides them by default and
+offers an explicit control to show them.
+
 A run qualifies as `captured` only when the collector flushes cleanly, reports
 no loss or error, stays within log/event caps, emits target-only JSON, captures
 the harness exec sentinel (and configured Codex/Claude CLI exec sentinel), and
-the PID-1 harness reports trusted completion.
+the PID-1 harness reports trusted completion, and every configured network
+interception transcript is complete.
 Otherwise it is `captured_untraced` and replay coverage is partial; observed
 hostile evidence may still be reported, but an empty result cannot become
 benign. The fixture configuration caps raw events at 4 MiB and each output
@@ -196,13 +227,13 @@ uncompressed attributable event stream at 128 MiB and each agent output stream
 at 1 MiB. That 128 MiB raw-event ceiling is an execution safety limit, not a
 promise that the run can be published.
 
-The scheduled Action separately defaults to a 32 MiB cap for each shard
+The scheduled Action separately defaults to a 64 MiB cap for each shard
 artifact, after event compression and including manifests, logs, and CSV
-changes. It reserves 32 MiB of publication budget per attempted skill, so a
+changes. It reserves 64 MiB of publication budget per attempted skill, so a
 two-skill-per-shard batch requires the operator to raise the per-shard cap to at
-least 64 MiB. The planner also derives and enforces aggregate byte and file caps
-from the validated shard count; the default four-shard plan is capped at 128
-MiB total.
+least 128 MiB. The planner also derives and enforces aggregate byte and file
+caps from the validated shard count; the default four-shard plan is capped at
+256 MiB total.
 The successful compressed `events.jsonl.zst` smoke captures currently committed
 here are under 200 KiB each; this is an observation, not a guaranteed bound. At
 four total scheduled runs per day, the default four-shard publication ceiling
@@ -213,7 +244,8 @@ hashes are designed to survive that migration.
 
 ### 3. Analysis and platform discovery
 
-`skill-analyze` is rootless and replay-only. It accepts Tracee 0.24 JSON,
+`skill-analyze` is rootless, deterministic, and replay-only; it never calls a
+language model. It accepts Tracee 0.24 JSON,
 reconstructs process/file/network evidence, propagates marker and
 process/inode/anonymous-pipe provenance, and emits:
 
@@ -222,6 +254,14 @@ process/inode/anonymous-pipe provenance, and emits:
 - integrity findings for skill-driven writes outside allowed roots and
   untrusted download/execute flows; and
 - supplemental behavioral findings such as an observed `curl | bash` chain.
+
+The versioned rule set additionally detects sensitive configuration and
+authentication-material changes; download/execute chains; cron, scheduled-task,
+service, boot, and startup persistence; security-update and endpoint-protection
+tampering; process injection and executable anonymous memory; logging/audit
+destruction; privilege elevation; and firewall, SELinux, AppArmor, and related
+enforcement changes. Loopback, link-local, RFC1918, IPv6 ULA, single-label, and
+common LAN-local destinations are excluded from malicious network findings.
 
 The same replay extracts URLs and domains from exec arguments, shell strings,
 DNS, and network events. Strong skill-registry evidence creates a disabled
@@ -266,7 +306,9 @@ CSV registries and telemetry. Its front page joins each latest assessment to
 the skill's platform provenance, detection time, SHA-256 identity, and verdict.
 When the assessed run has a bounded committed capture, the skill links to a
 GitHub Pages-hosted execution graph. Static graphs load event evidence in
-bounded pages; no local server or public telemetry API is required.
+bounded pages; no local server or public telemetry API is required. Runs with
+intercepted downloads also expose an evidence browser with URL, status, byte
+count, body hash, safe text/hex preview, and an explicit inert-file download.
 
 Build and preview the exact Pages artifact locally:
 
@@ -335,6 +377,7 @@ The deterministic fixture configuration needs no provider key:
 ```bash
 docker build -f containers/sandbox.Dockerfile -t skillsissue-sandbox:local .
 docker build -f containers/relay.Dockerfile -t skillsissue-relay:local .
+docker build -f containers/egress-proxy.Dockerfile -t skillsissue-egress-proxy:local .
 cargo run --locked -p skill-detonate --bin skill-detonate -- \
   --repo-root . --config config/detonator.toml preflight
 cargo run --locked -p skill-detonate --bin skill-detonate -- \
@@ -407,8 +450,9 @@ or disposable long-lived runners.
   or telemetry collisions, and commits the aggregate once. The default is four
   shards with one skill per shard and at most four concurrent runners. Manual
   dispatch can process at most 32 skills for one harness (`16` shards times
-  limit `2`). It schedules Codex at 00:00 and 12:00 UTC, alternating with Claude
-  at 06:00 and 18:00 UTC.
+  limit `2`). Scheduled runs and successful ingestion completions select the
+  credential-free deterministic adapter. Codex and Claude remain explicit
+  manual choices for model-driven coverage.
 - `analyze.yml` replays new telemetry on a normal rootless runner and hands
   assessments, findings, evidence, and disabled platform candidates to a clean
   publisher after enforcing total publication caps.
@@ -428,9 +472,10 @@ executing a fixture if the current hosted kernel cannot support the required
 Tracee capture.
 
 After configuring the `hosted-detonation` environment described below, use the
-guarded launcher for a minimal provider-backed run. It validates the branch
-policy, enable flag, selected provider secret, and latest eBPF smoke result
-before asking for confirmation and dispatching one skill on one runner:
+guarded launcher for a minimal deterministic run. It validates the branch
+policy, enable flag, and latest eBPF smoke result before asking for confirmation
+and dispatching one skill on one runner. A provider secret is checked only when
+`--adapter codex-cli` or `--adapter claude-cli` is selected:
 
 ```bash
 scripts/run-hosted-detonation.sh --check
@@ -533,8 +578,9 @@ Read `SECURITY.md` before enabling scheduled detonation. In particular:
   `ubuntu-slim` runner;
 - expose only the selected provider key to the trusted supervisor/relay path;
   never mount host login state or pass real credentials to the target;
-- keep the target at `--network none` with only the read-only per-run relay
-  socket volume, never an ordinary or internal bridge;
+- keep the target on its fresh Docker-internal proxy network, never an ordinary,
+  host, or directly routed bridge; keep provider access on the separate
+  read-only Unix-socket relay path;
 - treat raw events, paths, URLs, stdout, and CSV strings as attacker-controlled;
 - review candidate platforms and their terms before enabling ingestion; and
 - remember that an untriggered malicious path is a dynamic-analysis false

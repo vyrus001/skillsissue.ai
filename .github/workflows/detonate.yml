@@ -18,13 +18,17 @@ on:
       agent_adapter:
         description: Intended agent harness
         required: false
-        default: codex-cli
+        default: deterministic-closure-harness
         type: choice
         options:
+          - deterministic-closure-harness
           - codex-cli
           - claude-cli
+  workflow_run:
+    workflows: ["Ingest skills"]
+    types: [completed]
   schedule:
-    # Alternate four daily runs: Codex at 00:00/12:00 UTC, Claude at 06:00/18:00 UTC.
+    # Deterministic runs need no provider credential and keep the backlog moving.
     - cron: "0 0,12 * * *"
     - cron: "0 6,18 * * *"
 
@@ -41,8 +45,10 @@ concurrency:
 jobs:
   plan:
     if: >-
-      github.event_name != 'workflow_dispatch' ||
-      github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+      (github.event_name != 'workflow_dispatch' ||
+      github.ref == format('refs/heads/{0}', github.event.repository.default_branch)) &&
+      (github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'success')
     runs-on: ubuntu-latest
     timeout-minutes: 5
     outputs:
@@ -72,10 +78,9 @@ jobs:
         env:
           LIMIT: ${{ inputs.limit || vars.DETONATION_BATCH_LIMIT || '1' }}
           MAX_PARALLEL: ${{ inputs.max_parallel || vars.DETONATION_MAX_PARALLEL || '' }}
-          PUBLICATION_MAX_BYTES: ${{ vars.DETONATION_PUBLICATION_MAX_BYTES || '33554432' }}
+          PUBLICATION_MAX_BYTES: ${{ vars.DETONATION_PUBLICATION_MAX_BYTES || '67108864' }}
           PUBLICATION_MAX_FILES: ${{ vars.DETONATION_PUBLICATION_MAX_FILES || '64' }}
           REQUESTED_ADAPTER: ${{ inputs.agent_adapter || '' }}
-          SCHEDULE: ${{ github.event.schedule || '' }}
           SHARD_COUNT: ${{ inputs.shard_count || vars.DETONATION_SHARD_COUNT || '4' }}
         run: |
           if test -z "$MAX_PARALLEL"; then
@@ -92,25 +97,22 @@ jobs:
           test "$MAX_PARALLEL" -le "$SHARD_COUNT"
           # The cap applies independently to each artifact. Keep it bounded so
           # a compromised capture leg cannot turn aggregation into disk abuse.
-          test "$PUBLICATION_MAX_BYTES" -ge "$(( LIMIT * 33554432 ))"
+          test "$PUBLICATION_MAX_BYTES" -ge "$(( LIMIT * 67108864 ))"
           test "$PUBLICATION_MAX_BYTES" -le 268435456
           test "$PUBLICATION_MAX_FILES" -ge 1
           test "$PUBLICATION_MAX_FILES" -le 256
 
           if test -n "$REQUESTED_ADAPTER"; then
             case "$REQUESTED_ADAPTER" in
-              codex-cli|claude-cli) ;;
+              deterministic-closure-harness|codex-cli|claude-cli) ;;
               *) exit 1 ;;
             esac
             adapter="$REQUESTED_ADAPTER"
           else
-            case "$SCHEDULE" in
-              "0 0,12 * * *") adapter=codex-cli ;;
-              "0 6,18 * * *") adapter=claude-cli ;;
-              *) exit 1 ;;
-            esac
+            adapter=deterministic-closure-harness
           fi
           case "$adapter" in
+            deterministic-closure-harness) config=config/detonator.toml ;;
             codex-cli) config=config/detonator-codex.toml ;;
             claude-cli) config=config/detonator-claude.toml ;;
           esac
@@ -195,6 +197,7 @@ jobs:
         run: |
           docker build --file containers/sandbox.Dockerfile --tag skillsissue-sandbox:local .
           docker build --file containers/relay.Dockerfile --tag skillsissue-relay:local .
+          docker build --file containers/egress-proxy.Dockerfile --tag skillsissue-egress-proxy:local .
           docker build --file containers/detonator.Dockerfile --tag skillsissue-detonator:local .
       - name: Snapshot typed run index
         run: |
@@ -233,6 +236,26 @@ jobs:
             --limit "${{ needs.plan.outputs.per_shard_limit }}" \
             --shard-index "${{ matrix.shard_index }}" \
             --shard-count "${{ needs.plan.outputs.shard_count }}"
+      - name: Capture bounded eBPF telemetry without an LLM
+        id: detonate_deterministic
+        if: needs.plan.outputs.adapter == 'deterministic-closure-harness'
+        continue-on-error: true
+        run: |
+          docker run --rm \
+            --read-only \
+            --network none \
+            --tmpfs /tmp:rw,nosuid,nodev,size=64m \
+            --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock \
+            --mount "type=bind,src=$WORKER_ROOT,dst=$WORKER_ROOT" \
+            --mount type=bind,src=/sys/kernel/btf,dst=/sys/kernel/btf,readonly \
+            --mount type=bind,src=/sys/fs/cgroup,dst=/sys/fs/cgroup,readonly \
+            skillsissue-detonator:local \
+            --repo-root "$WORKER_ROOT" \
+            --config "${{ needs.plan.outputs.config }}" \
+            once \
+            --limit "${{ needs.plan.outputs.per_shard_limit }}" \
+            --shard-index "${{ matrix.shard_index }}" \
+            --shard-count "${{ needs.plan.outputs.shard_count }}"
       - name: Capture bounded eBPF telemetry with Claude
         id: detonate_claude
         if: needs.plan.outputs.adapter == 'claude-cli'
@@ -261,7 +284,8 @@ jobs:
         id: stage
         if: >-
           always() &&
-          (steps.detonate_codex.outcome != 'skipped' ||
+          (steps.detonate_deterministic.outcome != 'skipped' ||
+          steps.detonate_codex.outcome != 'skipped' ||
           steps.detonate_claude.outcome != 'skipped')
         run: |
           mkdir -p publication/data publication/telemetry
@@ -325,7 +349,8 @@ jobs:
       - name: Preserve detonation failure after evidence upload
         if: >-
           always() &&
-          (steps.detonate_codex.outcome == 'failure' ||
+          (steps.detonate_deterministic.outcome == 'failure' ||
+          steps.detonate_codex.outcome == 'failure' ||
           steps.detonate_claude.outcome == 'failure')
         run: exit 1
 

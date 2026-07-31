@@ -1,5 +1,5 @@
 schema_version = 1
-policy_version = "skilldetonate-v2"
+policy_version = "skilldetonate-v3-rules"
 
 # These files contain synthetic #data_* values inside the sandbox. Host secrets
 # are never mounted into the target.
@@ -8,6 +8,19 @@ sensitive_path_globs = [
   "/home/detonator/.aws/*",
   "/home/detonator/.config/gcloud/*",
   "/home/detonator/.env",
+  "/etc/hosts",
+  "/etc/hostname",
+  "/etc/resolv.conf",
+  "/etc/nsswitch.conf",
+  "/etc/passwd",
+  "/etc/shadow",
+  "/etc/group",
+  "/etc/gshadow",
+  "/etc/sudoers",
+  "/etc/sudoers.d/*",
+  "/etc/ssh/*",
+  "/etc/pam.d/*",
+  "/etc/ssl/private/*",
 ]
 
 # Agent runtimes routinely open these non-persistent device/diagnostic sinks.

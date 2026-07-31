@@ -316,7 +316,7 @@ mod tests {
     fn repository_configs_use_supported_aliases() {
         let root = PathBuf::from(env!("CARGO_MANIFEST_DIR")).join("../..");
         let policy = Policy::load_or_default(&root.join("config/policy.toml")).unwrap();
-        assert_eq!(policy.version, "skilldetonate-v2");
+        assert_eq!(policy.version, "skilldetonate-v3-rules");
         assert_eq!(policy.marker_prefix, "#data_");
         assert!(policy.is_sensitive_path("/home/detonator/.ssh/id_ed25519"));
         assert!(policy.is_allowed_write("/tmp/download"));

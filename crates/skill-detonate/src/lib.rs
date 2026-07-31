@@ -30,13 +30,28 @@ pub const MAX_ENCODED_CLOSURE_LIFTS: u32 = 63;
 pub const DETERMINISTIC_ADAPTER: &str = "deterministic-closure-harness";
 pub const CODEX_ADAPTER: &str = "codex-cli";
 pub const CLAUDE_ADAPTER: &str = "claude-cli";
+pub const INVOCATION_MARKER_PATH: &str = "/tmp/skillsissue-invocation-boundary";
 const RELAY_PORT: u16 = 8787;
 const RELAY_REQUEST_BYTES: u64 = 256 * 1024;
 const RELAY_TOTAL_REQUEST_BYTES: u64 = 768 * 1024;
 const RELAY_MAX_OUTPUT_TOKENS: u64 = 4096;
-const RELAY_CONTRACT_VERSION: &str = "strict-local-tools-uds-v2";
+const RELAY_CONTRACT_VERSION: &str = "strict-local-tools-uds-v3-transcript";
 const RELAY_SOCKET_CONTAINER_PATH: &str = "/run/skillsissue/relay.sock";
 const RELAY_SOCKET_CONTAINER_DIR: &str = "/run/skillsissue";
+const RELAY_TRANSCRIPT_CONTAINER_PATH: &str = "/run/evidence/network.jsonl";
+const RELAY_MAX_TRANSCRIPT_BYTES: u64 = 32 * 1024 * 1024;
+const RELAY_MAX_TRANSCRIPT_BODY_BYTES: u64 = 16 * 1024 * 1024;
+const EGRESS_PROXY_IMAGE: &str = "skillsissue-egress-proxy:local";
+const EGRESS_PROXY_ALIAS: &str = "skillsissue-egress-proxy";
+const EGRESS_PROXY_PORT: u16 = 8080;
+const EGRESS_PROXY_CA_CONTAINER_PATH: &str = "/run/skillsissue/egress-ca.pem";
+const EGRESS_PROXY_CA_HOST_NAME: &str = "mitmproxy-ca-cert.pem";
+const EGRESS_PROXY_EVIDENCE_CONTAINER_PATH: &str = "/run/evidence/egress-network.jsonl";
+const EGRESS_PROXY_MAX_REQUESTS: u64 = 32;
+const EGRESS_PROXY_MAX_RESPONSE_BYTES: u64 = 16 * 1024 * 1024;
+const EGRESS_PROXY_MAX_TOTAL_RESPONSE_BYTES: u64 = 32 * 1024 * 1024;
+const EGRESS_CONTRACT_VERSION: &str = "public-download-mitm-v1";
+const INTERCEPTED_NETWORK_MODE: &str = "intercepted-http";
 const CODEX_RELAY_BASE_URL: &str = "http://127.0.0.1:8787/v1";
 const CLAUDE_RELAY_BASE_URL: &str = "http://127.0.0.1:8787";
 const PROVIDER_SECRET_ENV: &str = "SKILLSISSUE_PROVIDER_API_KEY";
@@ -122,6 +137,8 @@ pub struct DetonatorConfig {
     #[serde(skip)]
     pub agent_relay_image_digest: String,
     #[serde(skip)]
+    pub egress_proxy_image_digest: String,
+    #[serde(skip)]
     pub supervisor_digest: String,
 }
 
@@ -156,6 +173,7 @@ impl Default for DetonatorConfig {
             skillject_commit: "6598997b76044fa00abe0a4416064fbd2eab33ff".into(),
             target_image_digest: String::new(),
             agent_relay_image_digest: String::new(),
+            egress_proxy_image_digest: String::new(),
             supervisor_digest: String::new(),
         }
     }
@@ -222,10 +240,13 @@ impl DetonatorConfig {
             DETERMINISTIC_ADAPTER => {
                 if self.agent_model != "none"
                     || self.agent_base_url.is_some()
-                    || self.network_mode != "none"
+                    || !matches!(
+                        self.network_mode.as_str(),
+                        "none" | INTERCEPTED_NETWORK_MODE
+                    )
                 {
                     bail!(
-                        "deterministic adapter requires agent_model=none, network_mode=none, and no base URL"
+                        "deterministic adapter requires agent_model=none, a supported network mode, and no base URL"
                     );
                 }
             }
@@ -237,8 +258,11 @@ impl DetonatorConfig {
                 {
                     bail!("CLI adapters require a bounded non-empty agent model");
                 }
-                if self.network_mode != "none" {
-                    bail!("CLI adapters require network_mode=none");
+                if !matches!(
+                    self.network_mode.as_str(),
+                    "none" | INTERCEPTED_NETWORK_MODE
+                ) {
+                    bail!("CLI adapters require a supported network mode");
                 }
                 let base_url = self
                     .agent_base_url
@@ -289,6 +313,9 @@ pub struct RunManifest {
     pub agent_relay_image: Option<String>,
     pub agent_relay_image_digest: Option<String>,
     pub agent_network_internal: bool,
+    pub egress_proxy_image: Option<String>,
+    pub egress_proxy_image_digest: Option<String>,
+    pub egress_proxy_internal: bool,
     pub target_image_digest: String,
     pub supervisor_digest: String,
     pub config_digest: String,
@@ -301,9 +328,16 @@ pub struct RunManifest {
     pub harness_invocation: Vec<String>,
     pub agent_invocation: Option<Vec<String>>,
     pub raw_event_count: u64,
+    pub pre_detonation_event_count: u64,
+    pub invocation_boundary_seen: bool,
     pub telemetry_path: Option<String>,
     pub telemetry_sha256: Option<String>,
     pub telemetry_size_bytes: Option<u64>,
+    pub network_capture_mode: String,
+    pub network_transcript_path: Option<String>,
+    pub network_transcript_sha256: Option<String>,
+    pub network_transcript_size_bytes: Option<u64>,
+    pub network_transcript_truncated: bool,
     pub collector_healthy: bool,
     pub collector_harness_exec_seen: bool,
     pub collector_adapter_exec_seen: bool,
@@ -418,6 +452,9 @@ pub fn config_fingerprint(config: &DetonatorConfig) -> String {
         config.agent_relay_image.clone(),
         config.agent_relay_image_digest.clone(),
         relay_contract,
+        EGRESS_PROXY_IMAGE.to_string(),
+        config.egress_proxy_image_digest.clone(),
+        egress_contract_fingerprint(config),
         config.agent_timeout_seconds.to_string(),
         config.agent_max_turns.to_string(),
         config.agent_max_budget_usd.clone(),
@@ -437,7 +474,17 @@ fn relay_contract_fingerprint(config: &DetonatorConfig) -> String {
         "disabled".to_string()
     } else {
         format!(
-            "{RELAY_CONTRACT_VERSION}:request_bytes={RELAY_REQUEST_BYTES}:total_request_bytes={RELAY_TOTAL_REQUEST_BYTES}:max_output_tokens={RELAY_MAX_OUTPUT_TOKENS}"
+            "{RELAY_CONTRACT_VERSION}:request_bytes={RELAY_REQUEST_BYTES}:total_request_bytes={RELAY_TOTAL_REQUEST_BYTES}:max_output_tokens={RELAY_MAX_OUTPUT_TOKENS}:transcript_bytes={RELAY_MAX_TRANSCRIPT_BYTES}:transcript_body_bytes={RELAY_MAX_TRANSCRIPT_BODY_BYTES}"
+        )
+    }
+}
+
+fn egress_contract_fingerprint(config: &DetonatorConfig) -> String {
+    if config.network_mode != INTERCEPTED_NETWORK_MODE {
+        "disabled".to_string()
+    } else {
+        format!(
+            "{EGRESS_CONTRACT_VERSION}:methods=GET,HEAD:ports=80,443:request_body=0:upgrades=0:destinations=public-only:requests={EGRESS_PROXY_MAX_REQUESTS}:response_bytes={EGRESS_PROXY_MAX_RESPONSE_BYTES}:total_response_bytes={EGRESS_PROXY_MAX_TOTAL_RESPONSE_BYTES}"
         )
     }
 }
@@ -525,6 +572,12 @@ pub fn ensure_docker_preflight(config: &DetonatorConfig, require_ebpf: bool) -> 
         Command::new("docker").args(["image", "inspect", &config.sandbox_image]),
         "sandbox image",
     )?;
+    if config.network_mode == INTERCEPTED_NETWORK_MODE {
+        command_ok(
+            Command::new("docker").args(["image", "inspect", EGRESS_PROXY_IMAGE]),
+            "egress proxy image",
+        )?;
+    }
     if config.agent_adapter != DETERMINISTIC_ADAPTER {
         command_ok(
             Command::new("docker").args(["image", "inspect", &config.agent_relay_image]),
@@ -554,6 +607,15 @@ pub fn resolve_target_image(config: &mut DetonatorConfig) -> Result<()> {
             );
         }
         digest
+    };
+    config.egress_proxy_image_digest = if config.network_mode == INTERCEPTED_NETWORK_MODE {
+        let digest = image_digest(EGRESS_PROXY_IMAGE)?;
+        if digest.is_empty() {
+            bail!("Docker returned an empty image ID for {EGRESS_PROXY_IMAGE}");
+        }
+        digest
+    } else {
+        String::new()
     };
     let executable = std::env::current_exe().context("resolve supervisor executable")?;
     let mut file = File::open(&executable)?;
@@ -591,6 +653,7 @@ pub fn detonate(request: DetonationRequest) -> Result<DetonationResult> {
     let run_dir = request.repo_root.join(&relative_run_dir);
     fs::create_dir_all(&run_dir)?;
     let mut agent_network_internal = false;
+    let mut egress_proxy_internal = false;
 
     let attempt = (|| -> Result<DetonationResult> {
         fs::create_dir_all(request.repo_root.join(".state"))?;
@@ -609,25 +672,47 @@ pub fn detonate(request: DetonationRequest) -> Result<DetonationResult> {
         let target_name = docker_name("skillsissue-target", &run_id);
         let tracee_name = docker_name("skillsissue-tracee", &run_id);
         let relay_name = docker_name("skillsissue-relay", &run_id);
+        let egress_proxy_name = docker_name("skillsissue-egress-proxy", &run_id);
         let egress_network = docker_name("skillsissue-relay-egress", &run_id);
+        let target_network = docker_name("skillsissue-target-internal", &run_id);
         let relay_socket_volume = docker_name("skillsissue-relay-socket", &run_id);
         let relay_enabled = request.config.agent_adapter != DETERMINISTIC_ADAPTER;
-        let containers = if relay_enabled {
-            vec![target_name.clone(), tracee_name.clone(), relay_name.clone()]
-        } else {
-            vec![target_name.clone(), tracee_name.clone()]
-        };
-        let networks = if relay_enabled {
-            vec![egress_network.clone()]
-        } else {
-            Vec::new()
-        };
+        let egress_enabled = request.config.network_mode == INTERCEPTED_NETWORK_MODE;
+        let mut containers = vec![target_name.clone(), tracee_name.clone()];
+        let mut networks = Vec::new();
+        if relay_enabled {
+            containers.push(relay_name.clone());
+        }
+        if egress_enabled {
+            containers.push(egress_proxy_name.clone());
+            networks.push(target_network.clone());
+        }
+        if relay_enabled || egress_enabled {
+            networks.push(egress_network.clone());
+        }
         let volumes = if relay_enabled {
             vec![relay_socket_volume.clone()]
         } else {
             Vec::new()
         };
         let _cleanup = DockerCleanup::new(containers, networks, volumes);
+        if relay_enabled || egress_enabled {
+            create_docker_network(&egress_network, false)?;
+        }
+        let egress_ca_path = if egress_enabled {
+            create_docker_network(&target_network, true)?;
+            let ca_path = start_egress_proxy(
+                &egress_proxy_name,
+                &egress_network,
+                &target_network,
+                work.path(),
+                &run_dir.join("egress-network.jsonl"),
+            )?;
+            egress_proxy_internal = true;
+            Some(ca_path)
+        } else {
+            None
+        };
         let relay_socket_transport = if relay_enabled {
             start_agent_relay(
                 &relay_name,
@@ -635,9 +720,10 @@ pub fn detonate(request: DetonationRequest) -> Result<DetonationResult> {
                 &relay_socket_volume,
                 &request.config,
                 work.path(),
+                &run_dir.join("provider-network.jsonl"),
             )?;
             // `true` now denotes an isolated per-run relay transport. The target
-            // itself has `--network none`; only the read-only UDS is shared.
+            // reaches it only through the read-only UDS shared with the harness.
             agent_network_internal = true;
             Some(relay_socket_volume.as_str())
         } else {
@@ -651,6 +737,8 @@ pub fn detonate(request: DetonationRequest) -> Result<DetonationResult> {
             &skill_root,
             &canary_root,
             relay_socket_transport,
+            egress_enabled.then_some(target_network.as_str()),
+            egress_ca_path.as_deref(),
         )?;
         let target_id = container_id(&target_name)?;
         fs::write(run_dir.join("target-container-id"), &target_id)?;
@@ -715,18 +803,39 @@ pub fn detonate(request: DetonationRequest) -> Result<DetonationResult> {
         let closure_lift_count = target_outcome.closure_lift_count.unwrap_or(0);
         let harness_completed = target_outcome.closure_lift_count.is_some();
         let expected_adapter_exec = expected_adapter_executable(&request.config.agent_adapter);
-        let (event_count, telemetry_truncated, harness_exec_seen, adapter_exec_seen) =
-            filter_trace_to_container(
-                &uncompressed_events,
-                &target_id,
-                request.config.max_telemetry_bytes,
-                expected_adapter_exec,
-            )?;
+        let filtered_trace = filter_trace_to_container(
+            &uncompressed_events,
+            &target_id,
+            request.config.max_telemetry_bytes,
+            expected_adapter_exec,
+        )?;
+        let event_count = filtered_trace.event_count;
+        let telemetry_truncated = filtered_trace.telemetry_truncated;
+        let harness_exec_seen = filtered_trace.harness_exec_seen;
+        let adapter_exec_seen = filtered_trace.adapter_exec_seen;
         let compressed_path = run_dir.join("events.jsonl.zst");
         compress_zstd(&uncompressed_events, &compressed_path)?;
         fs::remove_file(&uncompressed_events)?;
         let telemetry_sha256 = file_sha256(&compressed_path)?;
         let telemetry_size_bytes = fs::metadata(&compressed_path)?.len();
+        if relay_enabled && !container_is_running(&relay_name)? {
+            bail!("credential relay exited before evidence finalization");
+        }
+        if egress_enabled && !container_is_running(&egress_proxy_name)? {
+            bail!("egress interception proxy exited before evidence finalization");
+        }
+        if relay_enabled {
+            stop_container(&relay_name);
+        }
+        if egress_enabled {
+            stop_container(&egress_proxy_name);
+        }
+        let network_evidence = finalize_network_transcript(
+            &run_dir,
+            &relative_run_dir,
+            relay_enabled,
+            egress_enabled,
+        )?;
         compress_and_remove(&stdout_path)?;
         compress_and_remove(&stderr_path)?;
 
@@ -740,8 +849,8 @@ pub fn detonate(request: DetonationRequest) -> Result<DetonationResult> {
             event_count,
             harness_exec_seen,
             expected_adapter_exec.is_none() || adapter_exec_seen,
-            harness_completed,
-        );
+            harness_completed && filtered_trace.invocation_boundary_seen,
+        ) && !network_evidence.truncated;
         let status_name = if telemetry_usable {
             "captured"
         } else {
@@ -801,6 +910,10 @@ pub fn detonate(request: DetonationRequest) -> Result<DetonationResult> {
             agent_relay_image_digest: relay_enabled
                 .then(|| request.config.agent_relay_image_digest.clone()),
             agent_network_internal,
+            egress_proxy_image: egress_enabled.then(|| EGRESS_PROXY_IMAGE.to_string()),
+            egress_proxy_image_digest: egress_enabled
+                .then(|| request.config.egress_proxy_image_digest.clone()),
+            egress_proxy_internal,
             target_image_digest: request.config.target_image_digest.clone(),
             supervisor_digest: request.config.supervisor_digest.clone(),
             config_digest: config_digest.clone(),
@@ -818,9 +931,16 @@ pub fn detonate(request: DetonationRequest) -> Result<DetonationResult> {
                 &request.config.agent_max_budget_usd,
             )?,
             raw_event_count: event_count,
+            pre_detonation_event_count: filtered_trace.pre_detonation_event_count,
+            invocation_boundary_seen: filtered_trace.invocation_boundary_seen,
             telemetry_path: Some(telemetry_path),
             telemetry_sha256: Some(telemetry_sha256),
             telemetry_size_bytes: Some(telemetry_size_bytes),
+            network_capture_mode: network_capture_mode(relay_enabled, egress_enabled).to_string(),
+            network_transcript_path: network_evidence.path,
+            network_transcript_sha256: network_evidence.sha256,
+            network_transcript_size_bytes: network_evidence.size_bytes,
+            network_transcript_truncated: network_evidence.truncated,
             collector_healthy: collector_stats.healthy,
             collector_harness_exec_seen: harness_exec_seen,
             collector_adapter_exec_seen: adapter_exec_seen,
@@ -853,6 +973,7 @@ pub fn detonate(request: DetonationRequest) -> Result<DetonationResult> {
             &relative_run_dir,
             &run_dir,
             agent_network_internal,
+            egress_proxy_internal,
             &error,
         ),
     }
@@ -869,6 +990,7 @@ fn failed_attempt_result(
     relative_run_dir: &Path,
     run_dir: &Path,
     agent_network_internal: bool,
+    egress_proxy_internal: bool,
     error: &anyhow::Error,
 ) -> Result<DetonationResult> {
     let finished_at = Utc::now();
@@ -884,6 +1006,8 @@ fn failed_attempt_result(
     let mut partial_event_count = None;
     let mut partial_harness_exec_seen = false;
     let mut partial_adapter_exec_seen = false;
+    let mut partial_pre_detonation_event_count = 0;
+    let mut partial_invocation_boundary_seen = false;
     let mut partial_truncated = true;
     let telemetry_relative = if final_events.is_file() {
         Some(relative_run_dir.join("events.jsonl.zst"))
@@ -898,11 +1022,13 @@ fn failed_attempt_result(
             )
             .map_err(std::io::Error::other)
         }) {
-            Ok((count, truncated, harness_seen, adapter_seen)) => {
-                partial_event_count = Some(count);
-                partial_harness_exec_seen = harness_seen;
-                partial_adapter_exec_seen = adapter_seen;
-                partial_truncated = truncated;
+            Ok(stats) => {
+                partial_event_count = Some(stats.event_count);
+                partial_harness_exec_seen = stats.harness_exec_seen;
+                partial_adapter_exec_seen = stats.adapter_exec_seen;
+                partial_pre_detonation_event_count = stats.pre_detonation_event_count;
+                partial_invocation_boundary_seen = stats.invocation_boundary_seen;
+                partial_truncated = stats.telemetry_truncated;
                 compress_zstd(&raw_events, &partial_events)?;
                 fs::remove_file(&raw_events)?;
                 Some(relative_run_dir.join("events.partial.jsonl.zst"))
@@ -929,6 +1055,24 @@ fn failed_attempt_result(
     let telemetry_path = telemetry_relative
         .as_ref()
         .map(|path| path.to_string_lossy().into_owned());
+    let relay_configured = request.config.agent_adapter != DETERMINISTIC_ADAPTER;
+    let egress_configured = request.config.network_mode == INTERCEPTED_NETWORK_MODE;
+    let mut network_evidence = finalize_network_transcript(
+        run_dir,
+        relative_run_dir,
+        agent_network_internal,
+        egress_proxy_internal,
+    )?;
+    let network_unavailable = (relay_configured && !agent_network_internal)
+        || (egress_configured && !egress_proxy_internal);
+    if network_unavailable {
+        network_evidence.truncated = true;
+    }
+    let network_capture_mode = if network_unavailable {
+        "network-interception-unavailable"
+    } else {
+        network_capture_mode(agent_network_internal, egress_proxy_internal)
+    };
     for output in [run_dir.join("agent.stdout"), run_dir.join("agent.stderr")] {
         compress_and_remove(&output)?;
     }
@@ -949,6 +1093,10 @@ fn failed_attempt_result(
         agent_relay_image_digest: (request.config.agent_adapter != DETERMINISTIC_ADAPTER)
             .then(|| request.config.agent_relay_image_digest.clone()),
         agent_network_internal,
+        egress_proxy_image: egress_configured.then(|| EGRESS_PROXY_IMAGE.to_string()),
+        egress_proxy_image_digest: egress_configured
+            .then(|| request.config.egress_proxy_image_digest.clone()),
+        egress_proxy_internal,
         target_image_digest: request.config.target_image_digest.clone(),
         supervisor_digest: request.config.supervisor_digest.clone(),
         config_digest: config_digest.to_string(),
@@ -966,9 +1114,16 @@ fn failed_attempt_result(
             &request.config.agent_max_budget_usd,
         )?,
         raw_event_count: partial_event_count.unwrap_or(0),
+        pre_detonation_event_count: partial_pre_detonation_event_count,
+        invocation_boundary_seen: partial_invocation_boundary_seen,
         telemetry_path: telemetry_path.clone(),
         telemetry_sha256,
         telemetry_size_bytes,
+        network_capture_mode: network_capture_mode.to_string(),
+        network_transcript_path: network_evidence.path,
+        network_transcript_sha256: network_evidence.sha256,
+        network_transcript_size_bytes: network_evidence.size_bytes,
+        network_transcript_truncated: network_evidence.truncated,
         collector_healthy: false,
         collector_harness_exec_seen: partial_harness_exec_seen,
         collector_adapter_exec_seen: partial_adapter_exec_seen,
@@ -1293,6 +1448,8 @@ fn tracee_policy_yaml(target_id: &str) -> String {
         "openat",
         "read",
         "write",
+        "pwrite64",
+        "writev",
         "pipe",
         "pipe2",
         "dup",
@@ -1300,10 +1457,37 @@ fn tracee_policy_yaml(target_id: &str) -> String {
         "dup3",
         "close",
         "renameat",
+        "renameat2",
         "unlinkat",
         "chmod",
+        "fchmod",
+        "fchmodat",
+        "chown",
+        "fchown",
+        "setuid",
+        "setgid",
+        "setreuid",
+        "setregid",
+        "setresuid",
+        "setresgid",
+        "capset",
+        "ptrace",
+        "process_vm_writev",
+        "process_vm_readv",
+        "mmap",
+        "mprotect",
+        "memfd_create",
+        "socket",
+        "bind",
+        "listen",
+        "accept",
+        "accept4",
         "connect",
         "security_socket_connect",
+        "sendto",
+        "sendmsg",
+        "recvfrom",
+        "recvmsg",
         "net_packet_dns",
         "dropped_executable",
         "file_modification",
@@ -1477,6 +1661,7 @@ fn start_agent_relay(
     socket_volume: &str,
     config: &DetonatorConfig,
     work_root: &Path,
+    transcript_path: &Path,
 ) -> Result<()> {
     let credential = provider_secret(&config.agent_adapter)?;
     if credential.is_empty()
@@ -1499,9 +1684,10 @@ fn start_agent_relay(
     #[cfg(unix)]
     fs::set_permissions(&secret_path, fs::Permissions::from_mode(0o400))?;
     make_target_owned(&secret_path)?;
+    File::create(transcript_path).context("create per-run network transcript")?;
+    make_target_owned(transcript_path)?;
 
     create_docker_volume(socket_volume)?;
-    create_docker_network(egress_network, false)?;
     if docker_network_is_internal(egress_network)? {
         bail!("Docker created the relay egress network as internal");
     }
@@ -1518,6 +1704,11 @@ fn start_agent_relay(
     // Docker seeds this fresh volume from the image's empty UID-65532-owned
     // directory, so the non-root relay can create its socket without a helper.
     let socket_mount = relay_socket_volume_mount(socket_volume, false);
+    let transcript_mount = format!(
+        "type=bind,src={},dst={}",
+        transcript_path.display(),
+        RELAY_TRANSCRIPT_CONTAINER_PATH
+    );
     let mut relay_args = vec![
         "create".to_string(),
         "--name".into(),
@@ -1541,6 +1732,8 @@ fn start_agent_relay(
         secret_mount,
         "--mount".into(),
         socket_mount,
+        "--mount".into(),
+        transcript_mount,
         "--label".into(),
         "ai.skillsissue.role=credential-relay".into(),
         config.agent_relay_image.clone(),
@@ -1562,6 +1755,122 @@ fn start_agent_relay(
     )?;
     wait_for_relay_health(relay_name)?;
     Ok(())
+}
+
+fn start_egress_proxy(
+    proxy_name: &str,
+    egress_network: &str,
+    target_network: &str,
+    work_root: &Path,
+    transcript_path: &Path,
+) -> Result<PathBuf> {
+    if docker_network_is_internal(egress_network)? {
+        bail!("Docker created the proxy egress network as internal");
+    }
+    if !docker_network_is_internal(target_network)? {
+        bail!("Docker created the target network without internal isolation");
+    }
+
+    let config_dir = work_root.join("mitmproxy");
+    fs::create_dir(&config_dir).context("create per-run MITM configuration directory")?;
+    make_target_owned(&config_dir)?;
+    File::create(transcript_path).context("create per-run egress transcript")?;
+    make_target_owned(transcript_path)?;
+
+    let config_mount = format!("type=bind,src={},dst=/run/mitmproxy", config_dir.display());
+    let transcript_mount = format!(
+        "type=bind,src={},dst={EGRESS_PROXY_EVIDENCE_CONTAINER_PATH}",
+        transcript_path.display()
+    );
+    let proxy_args = vec![
+        "create".to_string(),
+        "--name".into(),
+        proxy_name.into(),
+        "--network".into(),
+        egress_network.into(),
+        "--read-only".into(),
+        "--cap-drop".into(),
+        "ALL".into(),
+        "--security-opt".into(),
+        "no-new-privileges=true".into(),
+        "--pids-limit".into(),
+        "64".into(),
+        "--memory".into(),
+        "384m".into(),
+        "--cpus".into(),
+        "0.5".into(),
+        "--user".into(),
+        "65532:65532".into(),
+        "--tmpfs".into(),
+        "/tmp:rw,nosuid,nodev,noexec,size=32m,nr_inodes=512".into(),
+        "--mount".into(),
+        config_mount,
+        "--mount".into(),
+        transcript_mount,
+        "--env".into(),
+        format!("SKILLSISSUE_EGRESS_EVIDENCE_FILE={EGRESS_PROXY_EVIDENCE_CONTAINER_PATH}"),
+        "--env".into(),
+        format!("SKILLSISSUE_EGRESS_MAX_REQUESTS={EGRESS_PROXY_MAX_REQUESTS}"),
+        "--env".into(),
+        format!("SKILLSISSUE_EGRESS_MAX_RESPONSE_BYTES={EGRESS_PROXY_MAX_RESPONSE_BYTES}"),
+        "--env".into(),
+        format!(
+            "SKILLSISSUE_EGRESS_MAX_TOTAL_RESPONSE_BYTES={EGRESS_PROXY_MAX_TOTAL_RESPONSE_BYTES}"
+        ),
+        "--label".into(),
+        "ai.skillsissue.role=egress-interception-proxy".into(),
+        EGRESS_PROXY_IMAGE.into(),
+    ];
+    let output = Command::new("docker")
+        .args(proxy_args)
+        .output()
+        .context("create egress interception proxy container")?;
+    if !output.status.success() {
+        bail!(
+            "create egress interception proxy container: {}",
+            String::from_utf8_lossy(&output.stderr).trim()
+        );
+    }
+    command_ok(
+        Command::new("docker").args([
+            "network",
+            "connect",
+            "--alias",
+            EGRESS_PROXY_ALIAS,
+            target_network,
+            proxy_name,
+        ]),
+        "connect interception proxy to internal target network",
+    )?;
+    command_ok(
+        Command::new("docker").args(["start", proxy_name]),
+        "start egress interception proxy",
+    )?;
+
+    let ca_path = config_dir.join(EGRESS_PROXY_CA_HOST_NAME);
+    let deadline = Instant::now() + Duration::from_secs(30);
+    loop {
+        if !container_is_running(proxy_name)? {
+            let logs = Command::new("docker").args(["logs", proxy_name]).output()?;
+            let mut combined = logs.stdout;
+            combined.extend_from_slice(&logs.stderr);
+            bail!(
+                "egress interception proxy exited during startup: {}",
+                String::from_utf8_lossy(&combined).trim()
+            );
+        }
+        if let Ok(metadata) = fs::symlink_metadata(&ca_path)
+            && metadata.is_file()
+            && !metadata.file_type().is_symlink()
+            && metadata.len() > 0
+        {
+            return Ok(ca_path);
+        }
+        if Instant::now() >= deadline {
+            bail!("egress interception proxy did not generate its per-run CA within 30 seconds");
+        }
+        thread::sleep(Duration::from_millis(100));
+    }
 }
 
 fn relay_process_args(config: &DetonatorConfig, provider: &str) -> Vec<String> {
@@ -1591,6 +1900,12 @@ fn relay_process_args(config: &DetonatorConfig, provider: &str) -> Vec<String> {
         "1".into(),
         "--timeout-seconds".into(),
         config.agent_timeout_seconds.to_string(),
+        "--transcript-file".into(),
+        RELAY_TRANSCRIPT_CONTAINER_PATH.into(),
+        "--max-transcript-bytes".into(),
+        RELAY_MAX_TRANSCRIPT_BYTES.to_string(),
+        "--max-transcript-body-bytes".into(),
+        RELAY_MAX_TRANSCRIPT_BODY_BYTES.to_string(),
     ]
 }
 
@@ -1713,12 +2028,26 @@ fn create_target(
     skill: &Path,
     home: &Path,
     relay_socket_volume: Option<&str>,
+    egress_network: Option<&str>,
+    egress_ca_path: Option<&Path>,
 ) -> Result<()> {
     let relay_expected = config.agent_adapter != DETERMINISTIC_ADAPTER;
     if relay_expected != relay_socket_volume.is_some() {
         bail!("target relay socket mount does not match configured adapter");
     }
-    let args = target_create_args(name, config, skill, home, relay_socket_volume);
+    let egress_expected = config.network_mode == INTERCEPTED_NETWORK_MODE;
+    if egress_expected != egress_network.is_some() || egress_expected != egress_ca_path.is_some() {
+        bail!("target egress proxy inputs do not match configured network mode");
+    }
+    let args = target_create_args(
+        name,
+        config,
+        skill,
+        home,
+        relay_socket_volume,
+        egress_network,
+        egress_ca_path,
+    );
     let mut command = Command::new("docker");
     command.args(args);
     let output = command.output().context("create target container")?;
@@ -1863,6 +2192,8 @@ fn target_create_args(
     skill: &Path,
     home: &Path,
     relay_socket_volume: Option<&str>,
+    egress_network: Option<&str>,
+    egress_ca_path: Option<&Path>,
 ) -> Vec<String> {
     let tmpfs = format!(
         "/work/skill:rw,nosuid,nodev,noexec,size={},nr_inodes={},uid=65532,gid=65532,mode=0700",
@@ -1878,7 +2209,7 @@ fn target_create_args(
         "--name".into(),
         name.into(),
         "--network".into(),
-        "none".into(),
+        egress_network.unwrap_or("none").into(),
         "--read-only".into(),
         "--cap-drop".into(),
         "ALL".into(),
@@ -1912,6 +2243,42 @@ fn target_create_args(
         args.extend([
             "--mount".into(),
             relay_socket_volume_mount(socket_volume, true),
+        ]);
+    }
+    if let Some(ca_path) = egress_ca_path {
+        let proxy_url = format!("http://{EGRESS_PROXY_ALIAS}:{EGRESS_PROXY_PORT}");
+        args.extend([
+            "--mount".into(),
+            format!(
+                "type=bind,src={},dst={EGRESS_PROXY_CA_CONTAINER_PATH},readonly",
+                ca_path.display()
+            ),
+            "--env".into(),
+            format!("HTTP_PROXY={proxy_url}"),
+            "--env".into(),
+            format!("HTTPS_PROXY={proxy_url}"),
+            "--env".into(),
+            format!("http_proxy={proxy_url}"),
+            "--env".into(),
+            format!("https_proxy={proxy_url}"),
+            "--env".into(),
+            "NO_PROXY=127.0.0.1,localhost".into(),
+            "--env".into(),
+            "no_proxy=127.0.0.1,localhost".into(),
+            "--env".into(),
+            format!("SSL_CERT_FILE={EGRESS_PROXY_CA_CONTAINER_PATH}"),
+            "--env".into(),
+            format!("REQUESTS_CA_BUNDLE={EGRESS_PROXY_CA_CONTAINER_PATH}"),
+            "--env".into(),
+            format!("CURL_CA_BUNDLE={EGRESS_PROXY_CA_CONTAINER_PATH}"),
+            "--env".into(),
+            format!("GIT_SSL_CAINFO={EGRESS_PROXY_CA_CONTAINER_PATH}"),
+            "--env".into(),
+            format!("NODE_EXTRA_CA_CERTS={EGRESS_PROXY_CA_CONTAINER_PATH}"),
+            "--env".into(),
+            format!("PIP_CERT={EGRESS_PROXY_CA_CONTAINER_PATH}"),
+            "--env".into(),
+            format!("NPM_CONFIG_CAFILE={EGRESS_PROXY_CA_CONTAINER_PATH}"),
         ]);
     }
     args.extend([
@@ -2274,21 +2641,29 @@ impl Drop for DockerCleanup {
     }
 }
 
+#[derive(Clone, Copy, Debug, Default, Eq, PartialEq)]
+struct FilteredTraceStats {
+    event_count: u64,
+    pre_detonation_event_count: u64,
+    telemetry_truncated: bool,
+    harness_exec_seen: bool,
+    adapter_exec_seen: bool,
+    invocation_boundary_seen: bool,
+}
+
 fn filter_trace_to_container(
     path: &Path,
     target_id: &str,
     max_bytes: u64,
     expected_adapter_executable: Option<&str>,
-) -> Result<(u64, bool, bool, bool)> {
+) -> Result<FilteredTraceStats> {
     let file = File::open(path)?;
-    let filtered = path.with_extension("filtered.jsonl");
-    let mut output = BufWriter::new(File::create(&filtered)?);
-    let mut count = 0_u64;
-    let mut bytes_written = 0_u64;
-    let mut truncated = false;
     let mut foreign = 0_u64;
     let mut harness_exec_seen = false;
     let mut adapter_exec_seen = false;
+    let mut target_index = 0_u64;
+    let mut invocation_boundary_index = None;
+    let mut invocation_boundary_timestamp = None;
     for line in BufReader::new(file).lines() {
         let line = line?;
         if line.trim().is_empty() {
@@ -2314,11 +2689,73 @@ fn filter_trace_to_container(
                 foreign += 1;
                 continue;
             }
+            if invocation_boundary_index.is_none()
+                && json_contains_string(&value, INVOCATION_MARKER_PATH)
+            {
+                invocation_boundary_index = Some(target_index);
+                invocation_boundary_timestamp = json_event_timestamp(&value);
+            }
             harness_exec_seen |= json_event_name(&value) == Some("sched_process_exec")
                 && json_contains_string(&value, "/usr/local/bin/skill-harness");
             adapter_exec_seen |= json_event_name(&value) == Some("sched_process_exec")
                 && expected_adapter_executable
                     .is_some_and(|executable| json_contains_string(&value, executable));
+            target_index += 1;
+        }
+    }
+    if foreign > 0 {
+        bail!("Tracee emitted {foreign} event(s) outside target container {target_id}");
+    }
+
+    let filtered = path.with_extension("filtered.jsonl");
+    let mut output = BufWriter::new(File::create(&filtered)?);
+    let mut count = 0_u64;
+    let mut pre_detonation_event_count = 0_u64;
+    let mut bytes_written = 0_u64;
+    let mut truncated = false;
+    let mut target_index = 0_u64;
+    for line in BufReader::new(File::open(path)?).lines() {
+        let line = line?;
+        if line.trim().is_empty() {
+            continue;
+        }
+        let value: serde_json::Value =
+            serde_json::from_str(&line).context("Tracee output contained a non-JSON line")?;
+        let values = match value {
+            serde_json::Value::Array(values) => values,
+            value => vec![value],
+        };
+        for mut value in values {
+            let event_container = value
+                .get("containerId")
+                .and_then(|value| value.as_str())
+                .or_else(|| {
+                    value
+                        .pointer("/container/id")
+                        .and_then(|value| value.as_str())
+                })
+                .unwrap_or_default();
+            if !container_id_matches(target_id, event_container) {
+                continue;
+            }
+            let pre_detonation = match (invocation_boundary_timestamp, json_event_timestamp(&value))
+            {
+                (Some(boundary), Some(timestamp)) => timestamp <= boundary,
+                _ => invocation_boundary_index.is_some_and(|boundary| target_index <= boundary),
+            };
+            if let Some(object) = value.as_object_mut() {
+                object.insert(
+                    "skillsissuePhase".to_string(),
+                    serde_json::Value::String(
+                        if pre_detonation {
+                            "pre-detonation"
+                        } else {
+                            "detonation"
+                        }
+                        .to_string(),
+                    ),
+                );
+            }
             let encoded = serde_json::to_vec(&value)?;
             let required = encoded.len() as u64 + 1;
             if bytes_written.saturating_add(required) <= max_bytes {
@@ -2326,18 +2763,23 @@ fn filter_trace_to_container(
                 output.write_all(b"\n")?;
                 bytes_written += required;
                 count += 1;
+                pre_detonation_event_count += u64::from(pre_detonation);
             } else {
                 truncated = true;
             }
+            target_index += 1;
         }
     }
     output.flush()?;
-    if foreign > 0 {
-        let _ = fs::remove_file(&filtered);
-        bail!("Tracee emitted {foreign} event(s) outside target container {target_id}");
-    }
     fs::rename(&filtered, path)?;
-    Ok((count, truncated, harness_exec_seen, adapter_exec_seen))
+    Ok(FilteredTraceStats {
+        event_count: count,
+        pre_detonation_event_count,
+        telemetry_truncated: truncated,
+        harness_exec_seen,
+        adapter_exec_seen,
+        invocation_boundary_seen: invocation_boundary_index.is_some(),
+    })
 }
 
 fn json_event_name(value: &serde_json::Value) -> Option<&str> {
@@ -2348,6 +2790,21 @@ fn json_event_name(value: &serde_json::Value) -> Option<&str> {
             value
                 .pointer("/event/eventName")
                 .and_then(serde_json::Value::as_str)
+        })
+}
+
+fn json_event_timestamp(value: &serde_json::Value) -> Option<u64> {
+    ["timestamp", "timestamp_ns", "timeStamp", "monotonic_ns"]
+        .iter()
+        .find_map(|name| {
+            value
+                .get(*name)
+                .or_else(|| value.get("event").and_then(|event| event.get(*name)))
+                .and_then(|value| {
+                    value
+                        .as_u64()
+                        .or_else(|| value.as_str().and_then(|value| value.parse().ok()))
+                })
         })
 }
 
@@ -2379,6 +2836,106 @@ fn compress_zstd(input: &Path, output: &Path) -> Result<()> {
     std::io::copy(&mut reader, &mut encoder)?;
     encoder.finish()?.flush()?;
     Ok(())
+}
+
+#[derive(Debug, Default)]
+struct NetworkEvidence {
+    path: Option<String>,
+    sha256: Option<String>,
+    size_bytes: Option<u64>,
+    truncated: bool,
+}
+
+fn network_capture_mode(relay_enabled: bool, egress_enabled: bool) -> &'static str {
+    match (relay_enabled, egress_enabled) {
+        (true, true) => "provider-relay-and-intercepted-http-egress",
+        (true, false) => "provider-relay-tls-termination",
+        (false, true) => "intercepted-http-egress",
+        (false, false) => "blocked-no-egress",
+    }
+}
+
+fn finalize_network_transcript(
+    run_dir: &Path,
+    relative_run_dir: &Path,
+    relay_enabled: bool,
+    egress_enabled: bool,
+) -> Result<NetworkEvidence> {
+    let provider_raw = run_dir.join("provider-network.jsonl");
+    let egress_raw = run_dir.join("egress-network.jsonl");
+    if !relay_enabled && !egress_enabled {
+        for path in [&provider_raw, &egress_raw] {
+            if path.exists() {
+                fs::remove_file(path)?;
+            }
+        }
+        return Ok(NetworkEvidence::default());
+    }
+    let raw = run_dir.join("network.jsonl");
+    let compressed = run_dir.join("network.jsonl.zst");
+    if compressed.is_file() && !raw.exists() && !provider_raw.exists() && !egress_raw.exists() {
+        return Ok(NetworkEvidence {
+            path: Some(
+                relative_run_dir
+                    .join("network.jsonl.zst")
+                    .to_string_lossy()
+                    .into_owned(),
+            ),
+            sha256: Some(file_sha256(&compressed)?),
+            size_bytes: Some(fs::metadata(&compressed)?.len()),
+            truncated: false,
+        });
+    }
+
+    let mut truncated = false;
+    let mut output = BufWriter::new(File::create(&raw)?);
+    for (enabled, source) in [
+        (relay_enabled, &provider_raw),
+        (egress_enabled, &egress_raw),
+    ] {
+        if !enabled {
+            if source.exists() {
+                fs::remove_file(source)?;
+            }
+            continue;
+        }
+        if !source.is_file() {
+            truncated = true;
+            continue;
+        }
+        for line in BufReader::new(File::open(source)?).lines() {
+            let line = line?;
+            if line.trim().is_empty() {
+                continue;
+            }
+            match serde_json::from_str::<serde_json::Value>(&line) {
+                Ok(value) => {
+                    truncated |= value
+                        .pointer("/request/capture_truncated")
+                        .and_then(serde_json::Value::as_bool)
+                        .unwrap_or(false);
+                    truncated |= value
+                        .pointer("/response/capture_truncated")
+                        .and_then(serde_json::Value::as_bool)
+                        .unwrap_or(false);
+                }
+                Err(_) => truncated = true,
+            }
+            output.write_all(line.as_bytes())?;
+            output.write_all(b"\n")?;
+        }
+        fs::remove_file(source)?;
+    }
+    output.flush()?;
+    compress_zstd(&raw, &compressed)?;
+    fs::remove_file(&raw)?;
+    let relative = relative_run_dir.join("network.jsonl.zst");
+    Ok(NetworkEvidence {
+        path: Some(relative.to_string_lossy().into_owned()),
+        sha256: Some(file_sha256(&compressed)?),
+        size_bytes: Some(fs::metadata(&compressed)?.len()),
+        truncated,
+    })
 }
 
 fn compress_and_remove(path: &Path) -> Result<()> {
@@ -2558,7 +3115,7 @@ mod tests {
         assert!(args.windows(2).any(|pair| pair == ["--max-requests", "8"]));
         assert_eq!(
             relay_contract_fingerprint(&cfg),
-            "strict-local-tools-uds-v2:request_bytes=262144:total_request_bytes=786432:max_output_tokens=4096"
+            "strict-local-tools-uds-v3-transcript:request_bytes=262144:total_request_bytes=786432:max_output_tokens=4096:transcript_bytes=33554432:transcript_body_bytes=16777216"
         );
 
         let mut changed_model = cfg.clone();
@@ -2575,6 +3132,8 @@ mod tests {
             &cfg,
             Path::new("/host/seed"),
             Path::new("/host/home"),
+            None,
+            None,
             None,
         );
         let rendered = args.join("\n");
@@ -2610,6 +3169,8 @@ mod tests {
             Path::new("/host/seed"),
             Path::new("/host/home"),
             Some("skillsissue-relay-socket-test"),
+            None,
+            None,
         );
         assert!(args.windows(2).any(|pair| pair == ["--network", "none"]));
         assert!(args.windows(2).any(|pair| {
@@ -2636,6 +3197,43 @@ mod tests {
             agent
                 .windows(2)
                 .any(|pair| pair == ["--config", "web_search='disabled'"])
+        );
+    }
+
+    #[test]
+    fn intercepted_target_has_only_internal_proxy_transport_and_per_run_ca() {
+        let mut cfg = config();
+        cfg.network_mode = INTERCEPTED_NETWORK_MODE.into();
+        let args = target_create_args(
+            "target",
+            &cfg,
+            Path::new("/host/seed"),
+            Path::new("/host/home"),
+            None,
+            Some("skillsissue-target-internal-test"),
+            Some(Path::new("/host/mitmproxy-ca-cert.pem")),
+        );
+        let rendered = args.join("\n");
+        assert!(
+            args.windows(2)
+                .any(|pair| pair == ["--network", "skillsissue-target-internal-test"])
+        );
+        assert!(rendered.contains(
+            "type=bind,src=/host/mitmproxy-ca-cert.pem,dst=/run/skillsissue/egress-ca.pem,readonly"
+        ));
+        for variable in [
+            "HTTP_PROXY=http://skillsissue-egress-proxy:8080",
+            "HTTPS_PROXY=http://skillsissue-egress-proxy:8080",
+            "SSL_CERT_FILE=/run/skillsissue/egress-ca.pem",
+            "NODE_EXTRA_CA_CERTS=/run/skillsissue/egress-ca.pem",
+        ] {
+            assert!(rendered.contains(variable));
+        }
+        assert!(!rendered.contains("--network\nbridge"));
+        assert!(!rendered.contains("--network\nhost"));
+        assert_eq!(
+            egress_contract_fingerprint(&cfg),
+            "public-download-mitm-v1:methods=GET,HEAD:ports=80,443:request_body=0:upgrades=0:destinations=public-only:requests=32:response_bytes=16777216:total_response_bytes=33554432"
         );
     }
 
@@ -2893,12 +3491,11 @@ mod tests {
         let path = temp.path().join("events.jsonl");
         let event = "{\"containerId\":\"0123456789ab\",\"eventName\":\"read\"}\n";
         fs::write(&path, format!("{event}{event}"))?;
-        let (count, truncated, harness_exec_seen, adapter_exec_seen) =
-            filter_trace_to_container(&path, "0123456789abcdef", event.len() as u64, None)?;
-        assert_eq!(count, 1);
-        assert!(truncated);
-        assert!(!harness_exec_seen);
-        assert!(!adapter_exec_seen);
+        let stats = filter_trace_to_container(&path, "0123456789abcdef", 120, None)?;
+        assert_eq!(stats.event_count, 1);
+        assert!(stats.telemetry_truncated);
+        assert!(!stats.harness_exec_seen);
+        assert!(!stats.adapter_exec_seen);
         let retained = fs::read_to_string(path)?;
         assert_eq!(retained.lines().count(), 1);
         serde_json::from_str::<serde_json::Value>(retained.trim())?;
@@ -2913,12 +3510,11 @@ mod tests {
             &path,
             "{\"containerId\":\"0123456789ab\",\"eventName\":\"sched_process_exec\",\"args\":[{\"name\":\"cmdpath\",\"value\":\"/usr/local/bin/skill-harness\"}]}\n",
         )?;
-        let (count, truncated, harness_exec_seen, adapter_exec_seen) =
-            filter_trace_to_container(&path, "0123456789abcdef", 4096, None)?;
-        assert_eq!(count, 1);
-        assert!(!truncated);
-        assert!(harness_exec_seen);
-        assert!(!adapter_exec_seen);
+        let stats = filter_trace_to_container(&path, "0123456789abcdef", 4096, None)?;
+        assert_eq!(stats.event_count, 1);
+        assert!(!stats.telemetry_truncated);
+        assert!(stats.harness_exec_seen);
+        assert!(!stats.adapter_exec_seen);
         Ok(())
     }
 
@@ -2930,16 +3526,55 @@ mod tests {
             &path,
             "{\"containerId\":\"0123456789ab\",\"eventName\":\"sched_process_exec\",\"args\":[{\"name\":\"cmdpath\",\"value\":\"/usr/local/bin/skill-harness\"}]}\n{\"containerId\":\"0123456789ab\",\"eventName\":\"sched_process_exec\",\"args\":[{\"name\":\"cmdpath\",\"value\":\"/usr/local/bin/codex\"}]}\n",
         )?;
-        let (count, truncated, harness_seen, adapter_seen) = filter_trace_to_container(
+        let stats = filter_trace_to_container(
             &path,
             "0123456789abcdef",
             4096,
             Some("/usr/local/bin/codex"),
         )?;
-        assert_eq!(count, 2);
-        assert!(!truncated);
-        assert!(harness_seen);
-        assert!(adapter_seen);
+        assert_eq!(stats.event_count, 2);
+        assert!(!stats.telemetry_truncated);
+        assert!(stats.harness_exec_seen);
+        assert!(stats.adapter_exec_seen);
+        Ok(())
+    }
+
+    #[test]
+    fn raw_trace_marks_events_before_invocation_boundary() -> Result<()> {
+        let temp = TempDir::new()?;
+        let path = temp.path().join("events.jsonl");
+        fs::write(
+            &path,
+            format!(
+                "{{\"containerId\":\"0123456789ab\",\"timestamp\":1,\"eventName\":\"openat\",\"args\":{{\"pathname\":\"/tmp/setup\"}}}}\n\
+                 {{\"containerId\":\"0123456789ab\",\"timestamp\":10,\"eventName\":\"openat\",\"args\":{{\"pathname\":\"{INVOCATION_MARKER_PATH}\"}}}}\n\
+                 {{\"containerId\":\"0123456789ab\",\"timestamp\":11,\"eventName\":\"execve\",\"args\":{{\"pathname\":\"/bin/sh\"}}}}\n\
+                 {{\"containerId\":\"0123456789ab\",\"timestamp\":5,\"eventName\":\"read\",\"args\":{{\"fd\":3}}}}\n\
+                 {{\"containerId\":\"0123456789ab\",\"timestamp\":12,\"eventName\":\"openat\",\"args\":{{\"pathname\":\"{INVOCATION_MARKER_PATH}\"}}}}\n"
+            ),
+        )?;
+        let stats = filter_trace_to_container(&path, "0123456789abcdef", 4096, None)?;
+        assert!(stats.invocation_boundary_seen);
+        assert_eq!(stats.pre_detonation_event_count, 3);
+        let phases = fs::read_to_string(path)?
+            .lines()
+            .map(|line| {
+                serde_json::from_str::<serde_json::Value>(line).unwrap()["skillsissuePhase"]
+                    .as_str()
+                    .unwrap()
+                    .to_string()
+            })
+            .collect::<Vec<_>>();
+        assert_eq!(
+            phases,
+            vec![
+                "pre-detonation",
+                "pre-detonation",
+                "detonation",
+                "pre-detonation",
+                "detonation"
+            ]
+        );
         Ok(())
     }
 

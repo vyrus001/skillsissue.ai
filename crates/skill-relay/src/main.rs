@@ -1,14 +1,14 @@
 use std::collections::HashSet;
 use std::error::Error;
 use std::fmt;
-use std::fs::{self, File};
-use std::io::Read;
+use std::fs::{self, File, OpenOptions};
+use std::io::{Read, Write};
 use std::path::{Path, PathBuf};
 use std::process::ExitCode;
 use std::str::FromStr;
 use std::sync::atomic::{AtomicU64, Ordering};
-use std::sync::Arc;
-use std::time::Duration;
+use std::sync::{Arc, Mutex};
+use std::time::{Duration, SystemTime, UNIX_EPOCH};
 
 use axum::body::{to_bytes, Body};
 use axum::extract::{Request, State};
@@ -33,10 +33,14 @@ const DEFAULT_RESPONSE_BYTES: usize = 32 * 1024 * 1024;
 const DEFAULT_MAX_REQUESTS: u64 = 32;
 const DEFAULT_MAX_CONCURRENCY: usize = 2;
 const DEFAULT_TIMEOUT_SECONDS: u64 = 120;
+const DEFAULT_TRANSCRIPT_BYTES: u64 = 32 * 1024 * 1024;
+const DEFAULT_TRANSCRIPT_BODY_BYTES: usize = 4 * 1024 * 1024;
 const HEALTH_BODY_LIMIT: usize = 4 * 1024;
 const MAX_CONFIGURED_OUTPUT_TOKENS: u64 = 65_536;
 const MAX_CONFIGURED_REQUEST_BYTES: usize = 1024 * 1024;
 const MAX_CONFIGURED_TOTAL_REQUEST_BYTES: u64 = 4 * 1024 * 1024;
+const MAX_CONFIGURED_TRANSCRIPT_BYTES: u64 = 256 * 1024 * 1024;
+const MAX_CONFIGURED_TRANSCRIPT_BODY_BYTES: usize = 16 * 1024 * 1024;
 
 #[derive(Debug, Parser)]
 #[command(name = "skill-relay", version, about)]
@@ -120,6 +124,24 @@ struct ServeArgs {
         default_value_t = DEFAULT_TIMEOUT_SECONDS
     )]
     timeout_seconds: u64,
+
+    /// Pre-created append-only file for bounded, redacted request/response evidence.
+    #[arg(long, env = "SKILL_RELAY_TRANSCRIPT_FILE")]
+    transcript_file: Option<PathBuf>,
+
+    #[arg(
+        long,
+        env = "SKILL_RELAY_MAX_TRANSCRIPT_BYTES",
+        default_value_t = DEFAULT_TRANSCRIPT_BYTES
+    )]
+    max_transcript_bytes: u64,
+
+    #[arg(
+        long,
+        env = "SKILL_RELAY_MAX_TRANSCRIPT_BODY_BYTES",
+        default_value_t = DEFAULT_TRANSCRIPT_BODY_BYTES
+    )]
+    max_transcript_body_bytes: usize,
 }
 
 #[derive(Debug, Args)]
@@ -341,9 +363,62 @@ struct StateData {
     request_budget: RequestBudget,
     concurrency: Arc<Semaphore>,
     timeout: Duration,
+    transcript: Option<TranscriptWriter>,
+    transcript_body_limit: usize,
 }
 
 type AppState = Arc<StateData>;
+
+#[derive(Debug)]
+struct TranscriptWriter {
+    file: Mutex<File>,
+    used: AtomicU64,
+    maximum: u64,
+    sequence: AtomicU64,
+}
+
+impl TranscriptWriter {
+    fn open(path: &Path, maximum: u64) -> Result<Self, Box<dyn Error>> {
+        let metadata = fs::symlink_metadata(path)?;
+        if !metadata.is_file() || metadata.file_type().is_symlink() {
+            return Err("transcript path must be a pre-created regular file".into());
+        }
+        let file = OpenOptions::new().append(true).open(path)?;
+        Ok(Self {
+            file: Mutex::new(file),
+            used: AtomicU64::new(metadata.len()),
+            maximum,
+            sequence: AtomicU64::new(0),
+        })
+    }
+
+    fn next_sequence(&self) -> u64 {
+        self.sequence.fetch_add(1, Ordering::Relaxed) + 1
+    }
+
+    fn append(&self, value: &Value) -> Result<(), RelayFailure> {
+        let mut encoded = serde_json::to_vec(value).map_err(|_| RelayFailure::EvidenceFailure)?;
+        encoded.push(b'\n');
+        let required = encoded.len() as u64;
+        if self
+            .used
+            .fetch_update(Ordering::Relaxed, Ordering::Relaxed, |used| {
+                used.checked_add(required)
+                    .filter(|next| *next <= self.maximum)
+            })
+            .is_err()
+        {
+            return Err(RelayFailure::EvidenceFailure);
+        }
+        let mut file = self
+            .file
+            .lock()
+            .map_err(|_| RelayFailure::EvidenceFailure)?;
+        file.write_all(&encoded)
+            .and_then(|()| file.flush())
+            .map_err(|_| RelayFailure::EvidenceFailure)
+    }
+}
 
 #[derive(Debug)]
 struct RequestBudget {
@@ -402,6 +477,7 @@ enum RelayFailure {
     UpstreamTimeout,
     UpstreamFailure,
     ResponseTooLarge,
+    EvidenceFailure,
 }
 
 impl RelayFailure {
@@ -414,7 +490,9 @@ impl RelayFailure {
                 StatusCode::PAYLOAD_TOO_LARGE
             }
             Self::UpstreamTimeout => StatusCode::GATEWAY_TIMEOUT,
-            Self::UpstreamFailure | Self::ResponseTooLarge => StatusCode::BAD_GATEWAY,
+            Self::UpstreamFailure | Self::ResponseTooLarge | Self::EvidenceFailure => {
+                StatusCode::BAD_GATEWAY
+            }
         }
     }
 
@@ -428,6 +506,7 @@ impl RelayFailure {
             Self::UpstreamTimeout => "upstream_timeout",
             Self::UpstreamFailure => "upstream_failure",
             Self::ResponseTooLarge => "upstream_response_too_large",
+            Self::EvidenceFailure => "evidence_capture_failed",
         }
     }
 
@@ -464,6 +543,11 @@ async fn serve(args: ServeArgs) -> Result<(), Box<dyn Error>> {
     validate_serve_args(&args)?;
     let timeout = Duration::from_secs(args.timeout_seconds);
     let credential = Credential::read(&args.credential_file)?;
+    let transcript = args
+        .transcript_file
+        .as_deref()
+        .map(|path| TranscriptWriter::open(path, args.max_transcript_bytes))
+        .transpose()?;
     let client = reqwest::Client::builder()
         .redirect(Policy::none())
         .no_proxy()
@@ -483,6 +567,8 @@ async fn serve(args: ServeArgs) -> Result<(), Box<dyn Error>> {
         request_budget: RequestBudget::new(args.max_requests),
         concurrency: Arc::new(Semaphore::new(args.max_concurrency)),
         timeout,
+        transcript,
+        transcript_body_limit: args.max_transcript_body_bytes,
     });
     let app = Router::new()
         .route("/healthz", get(health))
@@ -518,6 +604,8 @@ fn validate_serve_args(args: &ServeArgs) -> Result<(), Box<dyn Error>> {
         || args.max_concurrency == 0
         || args.timeout_seconds == 0
         || args.max_output_tokens == 0
+        || args.max_transcript_bytes == 0
+        || args.max_transcript_body_bytes == 0
     {
         return Err("all relay bounds must be greater than zero".into());
     }
@@ -537,6 +625,16 @@ fn validate_serve_args(args: &ServeArgs) -> Result<(), Box<dyn Error>> {
         || args.max_total_request_bytes > MAX_CONFIGURED_TOTAL_REQUEST_BYTES
     {
         return Err("request bytes exceed the relay safety ceiling".into());
+    }
+    if args.max_transcript_bytes > MAX_CONFIGURED_TRANSCRIPT_BYTES
+        || args.max_transcript_body_bytes > MAX_CONFIGURED_TRANSCRIPT_BODY_BYTES
+    {
+        return Err("transcript bytes exceed the relay safety ceiling".into());
+    }
+    if let Some(path) = args.transcript_file.as_deref() {
+        if !path.is_absolute() || !path.is_file() {
+            return Err("transcript file must be a pre-created absolute regular file".into());
+        }
     }
     if args.expected_model.is_empty()
         || args.expected_model.len() > 128
@@ -636,27 +734,70 @@ async fn forward(
     body: Vec<u8>,
 ) -> Result<Response<Body>, RelayFailure> {
     let url = format!("{}{}", state.provider.upstream_origin(), path_and_query);
-    let mut headers = sanitize_request_headers(incoming_headers);
+    let transcript_request_headers = sanitize_request_headers(incoming_headers);
+    let mut headers = transcript_request_headers.clone();
     state.provider.inject_auth(&state.credential, &mut headers);
     headers.insert(ACCEPT_ENCODING, HeaderValue::from_static("identity"));
     headers.insert(CONTENT_TYPE, HeaderValue::from_static("application/json"));
 
-    let mut response = state
+    let response = state
         .client
         .post(url)
         .headers(headers)
-        .body(body)
+        .body(body.clone())
         .send()
-        .await
-        .map_err(|error| {
+        .await;
+    let mut response = match response {
+        Ok(response) => response,
+        Err(error) => {
             if error.is_timeout() {
-                RelayFailure::UpstreamTimeout
+                record_transaction(
+                    state,
+                    path_and_query,
+                    &transcript_request_headers,
+                    &body,
+                    TranscriptResponse {
+                        status: None,
+                        headers: &HeaderMap::new(),
+                        body: &[],
+                        failure: Some(RelayFailure::UpstreamTimeout.code()),
+                    },
+                )?;
+                return Err(RelayFailure::UpstreamTimeout);
             } else {
-                RelayFailure::UpstreamFailure
+                record_transaction(
+                    state,
+                    path_and_query,
+                    &transcript_request_headers,
+                    &body,
+                    TranscriptResponse {
+                        status: None,
+                        headers: &HeaderMap::new(),
+                        body: &[],
+                        failure: Some(RelayFailure::UpstreamFailure.code()),
+                    },
+                )?;
+                return Err(RelayFailure::UpstreamFailure);
             }
-        })?;
+        }
+    };
 
+    let status = response.status();
+    let transcript_response_headers = response.headers().clone();
+    let headers = sanitize_response_headers(response.headers());
     if response.status().is_redirection() || response.status().is_informational() {
+        record_transaction(
+            state,
+            path_and_query,
+            &transcript_request_headers,
+            &body,
+            TranscriptResponse {
+                status: Some(status),
+                headers: &transcript_response_headers,
+                body: &[],
+                failure: Some(RelayFailure::UpstreamFailure.code()),
+            },
+        )?;
         return Err(RelayFailure::UpstreamFailure);
     }
     if response
@@ -665,25 +806,88 @@ async fn forward(
         .iter()
         .any(|value| value.as_bytes() != b"identity")
     {
+        record_transaction(
+            state,
+            path_and_query,
+            &transcript_request_headers,
+            &body,
+            TranscriptResponse {
+                status: Some(status),
+                headers: &transcript_response_headers,
+                body: &[],
+                failure: Some(RelayFailure::UpstreamFailure.code()),
+            },
+        )?;
         return Err(RelayFailure::UpstreamFailure);
     }
     if response
         .content_length()
         .is_some_and(|size| size > state.response_body_limit as u64)
     {
+        record_transaction(
+            state,
+            path_and_query,
+            &transcript_request_headers,
+            &body,
+            TranscriptResponse {
+                status: Some(status),
+                headers: &transcript_response_headers,
+                body: &[],
+                failure: Some(RelayFailure::ResponseTooLarge.code()),
+            },
+        )?;
         return Err(RelayFailure::ResponseTooLarge);
     }
 
-    let status = response.status();
-    let headers = sanitize_response_headers(response.headers());
     let mut bytes = Vec::new();
-    while let Some(chunk) = response
-        .chunk()
-        .await
-        .map_err(|_| RelayFailure::UpstreamFailure)?
-    {
-        append_bounded(&mut bytes, &chunk, state.response_body_limit)?;
+    loop {
+        let chunk = match response.chunk().await {
+            Ok(Some(chunk)) => chunk,
+            Ok(None) => break,
+            Err(_) => {
+                record_transaction(
+                    state,
+                    path_and_query,
+                    &transcript_request_headers,
+                    &body,
+                    TranscriptResponse {
+                        status: Some(status),
+                        headers: &transcript_response_headers,
+                        body: &bytes,
+                        failure: Some(RelayFailure::UpstreamFailure.code()),
+                    },
+                )?;
+                return Err(RelayFailure::UpstreamFailure);
+            }
+        };
+        if let Err(failure) = append_bounded(&mut bytes, &chunk, state.response_body_limit) {
+            record_transaction(
+                state,
+                path_and_query,
+                &transcript_request_headers,
+                &body,
+                TranscriptResponse {
+                    status: Some(status),
+                    headers: &transcript_response_headers,
+                    body: &bytes,
+                    failure: Some(failure.code()),
+                },
+            )?;
+            return Err(failure);
+        }
     }
+    record_transaction(
+        state,
+        path_and_query,
+        &transcript_request_headers,
+        &body,
+        TranscriptResponse {
+            status: Some(status),
+            headers: &transcript_response_headers,
+            body: &bytes,
+            failure: None,
+        },
+    )?;
 
     let mut builder = Response::builder().status(status);
     *builder
@@ -692,6 +896,129 @@ async fn forward(
     builder
         .body(Body::from(bytes))
         .map_err(|_| RelayFailure::UpstreamFailure)
+}
+
+struct TranscriptResponse<'a> {
+    status: Option<StatusCode>,
+    headers: &'a HeaderMap,
+    body: &'a [u8],
+    failure: Option<&'a str>,
+}
+
+fn record_transaction(
+    state: &StateData,
+    path_and_query: &str,
+    request_headers: &HeaderMap,
+    request_body: &[u8],
+    response: TranscriptResponse<'_>,
+) -> Result<(), RelayFailure> {
+    let Some(transcript) = state.transcript.as_ref() else {
+        return Ok(());
+    };
+    let recorded_at_unix_ms = SystemTime::now()
+        .duration_since(UNIX_EPOCH)
+        .unwrap_or_default()
+        .as_millis()
+        .to_string();
+    let request_original_bytes = request_body.len() as u64;
+    let response_original_bytes = response.body.len() as u64;
+    let (request_body, request_truncated) =
+        captured_body(request_body, state.transcript_body_limit);
+    let (response_body, response_truncated) =
+        captured_body(response.body, state.transcript_body_limit);
+    let record = serde_json::json!({
+        "schema_version": 1,
+        "sequence": transcript.next_sequence(),
+        "recorded_at_unix_ms": recorded_at_unix_ms,
+        "transport": "tls",
+        "tls_intercepted": true,
+        "provider": state.provider.to_string(),
+        "method": "POST",
+        "remote_origin": state.provider.upstream_origin(),
+        "path_and_query": path_and_query,
+        "failure": response.failure,
+        "request": {
+            "headers": captured_headers(request_headers),
+            "body": request_body,
+            "original_bytes": request_original_bytes,
+            "capture_truncated": request_truncated,
+        },
+        "response": {
+            "status": response.status.map(|status| status.as_u16()),
+            "headers": captured_headers(response.headers),
+            "body": response_body,
+            "original_bytes": response_original_bytes,
+            "capture_truncated": response_truncated,
+        },
+    });
+    transcript.append(&record)?;
+    if request_truncated || response_truncated {
+        return Err(RelayFailure::EvidenceFailure);
+    }
+    Ok(())
+}
+
+fn captured_headers(headers: &HeaderMap) -> Value {
+    let mut output = Map::new();
+    for (name, value) in headers {
+        if is_request_secret_or_routing_header(name)
+            || name == AUTHORIZATION
+            || name.as_str().eq_ignore_ascii_case("set-cookie")
+        {
+            continue;
+        }
+        output.insert(
+            name.as_str().to_string(),
+            Value::String(value.to_str().unwrap_or("<non-utf8>").to_string()),
+        );
+    }
+    Value::Object(output)
+}
+
+fn captured_body(body: &[u8], limit: usize) -> (Value, bool) {
+    let truncated = body.len() > limit;
+    let retained = &body[..body.len().min(limit)];
+    let mut value = serde_json::from_slice::<Value>(retained)
+        .unwrap_or_else(|_| Value::String(String::from_utf8_lossy(retained).into_owned()));
+    redact_json(&mut value);
+    (value, truncated)
+}
+
+fn redact_json(value: &mut Value) {
+    match value {
+        Value::Array(values) => {
+            for value in values {
+                redact_json(value);
+            }
+        }
+        Value::Object(values) => {
+            for (key, value) in values {
+                let key = key.to_ascii_lowercase();
+                if contains_secret_key(&key) {
+                    *value = Value::String("[REDACTED]".to_string());
+                } else {
+                    redact_json(value);
+                }
+            }
+        }
+        _ => {}
+    }
+}
+
+fn contains_secret_key(key: &str) -> bool {
+    [
+        "authorization",
+        "api_key",
+        "apikey",
+        "access_token",
+        "refresh_token",
+        "password",
+        "credential",
+        "cookie",
+        "secret",
+    ]
+    .iter()
+    .any(|indicator| key == *indicator || key.ends_with(&format!("_{indicator}")))
 }
 
 fn constrain_provider_body(
@@ -2239,6 +2566,21 @@ mod tests {
         assert_eq!(budget.used.load(Ordering::Relaxed), 10);
     }
 
+    #[test]
+    fn transcript_payloads_redact_secret_fields_and_bound_bodies() {
+        let body = br#"{"input":"keep","authorization":"drop","nested":{"access_token":"drop","message":"keep"}}"#;
+        let (captured, truncated) = captured_body(body, body.len());
+        assert!(!truncated);
+        assert_eq!(captured["input"], "keep");
+        assert_eq!(captured["authorization"], "[REDACTED]");
+        assert_eq!(captured["nested"]["access_token"], "[REDACTED]");
+        assert_eq!(captured["nested"]["message"], "keep");
+
+        let (captured, truncated) = captured_body(b"0123456789", 4);
+        assert!(truncated);
+        assert_eq!(captured, "0123");
+    }
+
     #[tokio::test]
     async fn invalid_endpoint_allowed_requests_consume_request_count_budget() {
         let mut raw = HeaderValue::from_static("secret");
@@ -2260,6 +2602,8 @@ mod tests {
             request_budget: RequestBudget::new(1),
             concurrency: Arc::new(Semaphore::new(1)),
             timeout: Duration::from_secs(1),
+            transcript: None,
+            transcript_body_limit: 4_096,
         });
         let invalid = || {
             Request::builder()

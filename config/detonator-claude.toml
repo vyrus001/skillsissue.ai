@@ -1,4 +1,4 @@
-# Schema version 1. The target has no network and reaches the relay through a per-run Unix socket.
+# Schema version 1. Provider access uses a Unix socket; public downloads use a separate MITM proxy.
 tracee_image = "aquasec/tracee:0.24.1@sha256:cfbbfee972e64a644f6b1bac74ee26998e6e12442697be4c797ae563553a2a5b"
 sandbox_image = "skillsissue-sandbox:local"
 timeout_seconds = 300
@@ -6,7 +6,7 @@ memory = "2g"
 cpus = "2.0"
 pids_limit = 256
 max_attempts_per_run_key = 3
-network_mode = "none"
+network_mode = "intercepted-http"
 max_telemetry_bytes = 134217728
 max_agent_output_bytes = 1048576
 max_skill_entries = 4096

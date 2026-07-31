@@ -26,14 +26,26 @@ capabilities and direct public egress are removed; no-new-privileges, PID, CPU,
 memory, output, event, and wall-clock limits are enforced. The validated skill
 seed is read-only, while mutable skill state and `/tmp` live on byte/inode-capped
 tmpfs mounts; Docker's own target and collector logs are capped as well. The
-target adapters use `--network none`. For a CLI run, the target receives only a
-dedicated read-only Docker volume containing the Unix socket; its trusted PID 1 harness forwards
+target joins a fresh Docker-internal network with no external gateway. Its only
+network peer is a non-root dual-homed interception proxy. The target receives
+the public half of a per-run CA; the CA private key exists only in the proxy's
+ephemeral configuration directory. The proxy accepts only HTTP(S) `GET`/`HEAD`
+on ports 80/443, rejects private, loopback, link-local, metadata, single-label,
+and mixed public/private DNS destinations, strips caller authentication and
+cookies, and disallows bodies and protocol upgrades. It records each bounded
+response body before delivery. Clients that bypass proxy settings, use an
+unsupported protocol, or pin a remote certificate fail because the target has
+no direct route.
+
+For a CLI run, the target additionally receives only a dedicated read-only
+Docker volume containing the Unix socket; its trusted PID 1 harness forwards
 fixed loopback port 8787 to that socket with bounded concurrency. The credential
-relay alone joins a fresh egress network, so the target has no bridge gateway or
-direct route to the Internet. The socket remains directly connectable by the
-target UID, so the relay's strict request schema and cumulative budgets are the
-provider control boundary. The sensor remains on `--network none`, and cleanup removes
-the per-run relay egress network, socket volume, and all three containers.
+relay alone joins the fresh external egress network and is not attached to the
+target network. The socket remains directly connectable by the target UID, so
+the relay's strict request schema and cumulative budgets are the provider
+control boundary. The sensor remains on `--network none`, and cleanup removes
+the per-run internal and external networks, socket volume, target, sensor,
+proxy, and optional relay.
 
 Codex and Claude never reuse host login state, mount provider configuration, or
 receive a real API key. The harness clears its inherited environment and gives
@@ -46,7 +58,16 @@ Messages endpoints. It rejects provider-hosted web, MCP, connector, code,
 computer, file, and image tools; accepts only the pinned CLIs' local tool
 envelopes; disables proxies and redirects; and bounds per-request bytes,
 cumulative bytes, output tokens, request count, concurrency, and time. It does
-not log credentials or bodies.
+not persist authentication/routing headers, and recursively redacts
+secret-shaped JSON fields before recording bounded request and response bodies.
+Treat those transcripts as sensitive attacker-controlled evidence even after
+redaction.
+
+Intercepted public-download bodies are retained byte-for-byte as base64 with a
+SHA-256 digest. They are attacker-controlled executable content, may contain
+sensitive-looking data supplied by a remote host, and must never be rendered as
+active HTML or executed during analysis. The static viewer shows only inert
+text/hex previews and requires an explicit download action.
 
 For behavioral coverage, Codex runs with its inner sandbox set to
 `danger-full-access`, and Claude runs with `--dangerously-skip-permissions`.

@@ -23,6 +23,7 @@ struct ActivityKey {
     target: String,
     bucket: u64,
     unique: u64,
+    pre_detonation: bool,
 }
 
 #[derive(Clone, Debug)]
@@ -66,21 +67,23 @@ pub fn build_graph(trace: &TraceData, settings: GraphSettings) -> GraphModel {
         {
             let order = process_first_order(process, trace);
             let id = format!("process:{}:observed", safe_id(&process.key));
-            nodes.push(process_node(
-                &id,
-                process,
-                "observed",
-                process.first_timestamp,
-                order,
-                Vec::new(),
-                None,
-            ));
-            process_anchors.push(Anchor {
+            let anchor = Anchor {
                 id,
                 timestamp: process.first_timestamp,
                 order,
                 seq: process.first_seq,
-            });
+            };
+            nodes.push(process_node(
+                &anchor,
+                process,
+                "observed",
+                Vec::new(),
+                None,
+                events_by_seq
+                    .get(&process.first_seq)
+                    .is_some_and(|event| event.pre_detonation),
+            ));
+            process_anchors.push(anchor);
         }
 
         for seq in &process.exec_events {
@@ -101,30 +104,30 @@ pub fn build_graph(trace: &TraceData, settings: GraphSettings) -> GraphModel {
                     }
                 });
             let command = command_line(event);
+            let anchor = Anchor {
+                id,
+                timestamp: event.timestamp,
+                order: event.order,
+                seq: event.seq,
+            };
             let mut node = process_node(
-                &id,
+                &anchor,
                 process,
                 "exec",
-                event.timestamp,
-                event.order,
                 vec![event.seq],
                 Some((
                     label,
                     command.clone().unwrap_or_else(|| event.detail.clone()),
                     command,
                 )),
+                event.pre_detonation,
             );
             node.target.clone_from(&event.target);
             node.success_count = usize::from(event.success == Some(true));
             node.failure_count = usize::from(event.success == Some(false));
             nodes.push(node);
             consumed.insert(event.seq);
-            process_anchors.push(Anchor {
-                id,
-                timestamp: event.timestamp,
-                order: event.order,
-                seq: event.seq,
-            });
+            process_anchors.push(anchor);
         }
         process_anchors.sort_by_key(|anchor| {
             (
@@ -239,6 +242,7 @@ pub fn build_graph(trace: &TraceData, settings: GraphSettings) -> GraphModel {
             target: grouped_target,
             bucket,
             unique,
+            pre_detonation: event.pre_detonation,
         };
         let group = groups.entry(key).or_insert_with(|| ActivityGroup {
             owner,
@@ -300,6 +304,7 @@ pub fn build_graph(trace: &TraceData, settings: GraphSettings) -> GraphModel {
             order: first.order,
             equal_time_order: 0,
             depth: process_depth,
+            pre_detonation: first.pre_detonation,
             label,
             sublabel,
             command: None,
@@ -377,6 +382,11 @@ pub fn build_graph(trace: &TraceData, settings: GraphSettings) -> GraphModel {
         min_timestamp_ns: min_timestamp.map(|value| value.to_string()),
         max_timestamp_ns: max_timestamp.map(|value| value.to_string()),
         event_count: trace.events.len(),
+        pre_detonation_event_count: trace
+            .events
+            .iter()
+            .filter(|event| event.pre_detonation)
+            .count(),
         represented_event_count: represented.len(),
         process_count: trace.processes.len(),
         activity_node_count: activity_index,
@@ -387,13 +397,12 @@ pub fn build_graph(trace: &TraceData, settings: GraphSettings) -> GraphModel {
 }
 
 fn process_node(
-    id: &str,
+    anchor: &Anchor,
     process: &ProcessInfo,
     process_kind: &str,
-    timestamp: Option<u64>,
-    order: usize,
     event_ids: Vec<u64>,
     override_text: Option<(String, String, Option<String>)>,
+    pre_detonation: bool,
 ) -> GraphNode {
     let (label, sublabel, command) = override_text.unwrap_or_else(|| {
         let label = if process.name.is_empty() {
@@ -409,14 +418,15 @@ fn process_node(
         (label, sublabel, None)
     });
     GraphNode {
-        id: id.to_string(),
+        id: anchor.id.clone(),
         kind: "process".to_string(),
         process_kind: Some(process_kind.to_string()),
-        timestamp_ns: timestamp.map(|value| value.to_string()),
+        timestamp_ns: anchor.timestamp.map(|value| value.to_string()),
         time_offset_ns: None,
-        order,
+        order: anchor.order,
         equal_time_order: 0,
         depth: 0,
+        pre_detonation,
         label,
         sublabel,
         command,
@@ -705,6 +715,45 @@ mod tests {
         assert_eq!(activity.file_descriptors, [3]);
         assert_eq!(activity.success_count, 3);
         assert_eq!(activity.failure_count, 0);
+    }
+
+    #[test]
+    fn phase_filter_metadata_keeps_pre_and_post_activity_separate() {
+        let trace = trace(
+            r#"{"skillsissuePhase":"pre-detonation","timestamp":1,"eventName":"read","processId":1,"processEntityId":10,"processName":"p","returnValue":1,"args":{"fd":3}}
+{"skillsissuePhase":"detonation","timestamp":2,"eventName":"read","processId":1,"processEntityId":10,"processName":"p","returnValue":1,"args":{"fd":3}}
+"#,
+        );
+        let graph = build_graph(
+            &trace,
+            GraphSettings {
+                bucket_ns: 10,
+                group: GroupMode::Target,
+            },
+        );
+        assert_eq!(graph.pre_detonation_event_count, 1);
+        assert_eq!(graph.activity_node_count, 2);
+        assert!(
+            graph
+                .nodes
+                .iter()
+                .any(|node| node.process_kind.as_deref() == Some("observed")
+                    && node.pre_detonation)
+        );
+        assert!(
+            graph
+                .nodes
+                .iter()
+                .filter(|node| node.kind == "activity")
+                .any(|node| node.pre_detonation)
+        );
+        assert!(
+            graph
+                .nodes
+                .iter()
+                .filter(|node| node.kind == "activity")
+                .any(|node| !node.pre_detonation)
+        );
     }
 
     #[test]
