@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:d13d9822a6d1eb8ec481fa9fd11766e7a2ab8096b33f0180f35319d7aa04aacf",
+  "sha256": "d13d9822a6d1eb8ec481fa9fd11766e7a2ab8096b33f0180f35319d7aa04aacf",
+  "blake3": "11de2cd461ef245028808e9f893fa8e7eb466fd3e89c7e120325bc8ca9484208",
+  "size_bytes": 252125,
+  "file_count": 23,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 911,
+      "sha256": "a33317e6a1205436ed41939f32f54d5255c6bf831d250e5868fcdc71cc88b3ff",
+      "blake3": "af8211500ad5609b1173a138563d4ab7fd44c6e1058de905e7870cfee82b386c"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6738,
+      "sha256": "d87a18e6c9a61d4e780619bbfc5268e880fe4e09f7a80ce5530427e66442b39d",
+      "blake3": "b833f1c7c27f1031621fb1282b3f1eea962c8ca32ea383edac52949877865c67"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 142,
+      "sha256": "a6822a317875effce01e2c21610fc1d2c2495d05cbc6ab12187e0b15c6580308",
+      "blake3": "9872a481b31fbbf1ae66e2b7968e2c226142e6f8c745a7426d4a9c45e81a76c7"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/ablation-protocol.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2820,
+      "sha256": "1deaa494326db4d9321b55604c113da1a9b3b284583eeaa24a1732f61c009380",
+      "blake3": "5f8057fdb08feddb15923772bb0b56320b3bae8ca393ddbe35080ede9946a1a6"
+    },
+    {
+      "path": "references/report-narration-prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 819,
+      "sha256": "adf67d2e75db7a47869f4d4845ce8bff6b0e88f09e5ff543755992f8662f833b",
+      "blake3": "f5a81d92ca830dabc5a7dccee81a17b72d85d68bcbb39bcf3890f4e8c33f7e87"
+    },
+    {
+      "path": "references/scoring-rubric.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11312,
+      "sha256": "0673daec42292ac97becf3353b05ec83f0bbf63b8313853325f99e0e437c85f6",
+      "blake3": "e548e6891f5c9d7c18b620e29c51c1c63fe3a406f537e64497111e81bb296853"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/skill_usefulness_audit.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 793,
+      "sha256": "f222031666834e08ac4ea589340367eecb8867a79d2d828c72a78a63d89fdd82",
+      "blake3": "5399f1eccdaf3d47613d0ff799ab766465cd2b6742b0b3bf4ccade0354e2da53"
+    },
+    {
+      "path": "scripts/skill_usefulness_audit_lib",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/skill_usefulness_audit_lib/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 219,
+      "sha256": "86f01da6a7c862214bb345ef4079b6fb27bbaa773f226e82042b5e6cd9231334",
+      "blake3": "059036dc47d23a596919126fe1da6f0a4427b71b893e68e232aba7348e4089c2"
+    },
+    {
+      "path": "scripts/skill_usefulness_audit_lib/ablation.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5078,
+      "sha256": "b97f948d3ae3d7d4642e9a0770d0806aa13c88d1155c3b08b646eba9137340eb",
+      "blake3": "b2b3214d0906386771b0f86a11f5994dde0304da9de02800440c2eb242b13933"
+    },
+    {
+      "path": "scripts/skill_usefulness_audit_lib/cli.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 38170,
+      "sha256": "cfe2e5e76a951c8cda33804ab2efabfc6e0fc68da692cab122f4fc108abcf053",
+      "blake3": "4976bc04bb90997242e5ca1fd8866336cca91fc6f323a27b4f59870f9779a0ad"
+    },
+    {
+      "path": "scripts/skill_usefulness_audit_lib/common.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24079,
+      "sha256": "ddd907791f92db929e829dc65f4b25af5529977da28bf34f0a21854ca656045a",
+      "blake3": "4be86323a8a27ebb97df9fc66be293cc707c7e040708b9ff66e97f9234e6e4ec"
+    },
+    {
+      "path": "scripts/skill_usefulness_audit_lib/community.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7317,
+      "sha256": "84d327a6affa9e4356e8e3642a5211c881ef7ca923749c66263c9ff0259a5921",
+      "blake3": "ace85257df241d0fca064102dcaceb43c0b4d8f80548ecc0fdbe6c4b47caafe6"
+    },
+    {
+      "path": "scripts/skill_usefulness_audit_lib/constants.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11293,
+      "sha256": "fcb8ee17495e8da4941ccbebae0052855fb035d1343061a284fc17f4a3ace297",
+      "blake3": "4bb0ddfa70fb1ffc2dfc69fa0077f5ea97236d097851529fd98775736cf71806"
+    },
+    {
+      "path": "scripts/skill_usefulness_audit_lib/reporting.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 60621,
+      "sha256": "28dd626b865c1cae9ea6c1da1b348a9484dfd452aa2ee3e29e255d3ac84f0ccd",
+      "blake3": "77ad7921636854c2ccc58a91666be0fd5080b3cb25f7f19475aa586c8b8cc901"
+    },
+    {
+      "path": "scripts/skill_usefulness_audit_lib/risk_quality.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 46000,
+      "sha256": "e94cab2a2ac2722e67f399e0b667ab6bc9c74da4ca786ff1630b71801a3e8dac",
+      "blake3": "b8fc30768dc2815cd194e83ab84e69ae81e2985fc9d6760e7898b89d3ca6be3f"
+    },
+    {
+      "path": "scripts/skill_usefulness_audit_lib/risk_signatures.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 394,
+      "sha256": "ec1ce99be6a62ebfa86460599d5294f01ee764181efa297fd12af9d8a3f14c99",
+      "blake3": "bf649bf069a94a5b57733ceaabb1c920e380fcf2f2ba8c962be01e6db2e92e6c"
+    },
+    {
+      "path": "scripts/skill_usefulness_audit_lib/risk_signatures_encoding.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 271,
+      "sha256": "a7cd56acdd926c1cdb17b517fc5e0466885d1c046ec43f8724bf8ccbf54099e9",
+      "blake3": "9c5b31e5084abd415d77783aec15d06ec047349aad356fa346e7ae73211ed355"
+    },
+    {
+      "path": "scripts/skill_usefulness_audit_lib/risk_signatures_execution.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 687,
+      "sha256": "76197e6574b637dbfe3bfaf4a9264728fd763a0f64e673ba833b53c9084e6cee",
+      "blake3": "ab4b90553690d6f65aefb564191fb132ae73ab7401aa449e6ea479f2678987e1"
+    },
+    {
+      "path": "scripts/skill_usefulness_audit_lib/risk_signatures_network.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 581,
+      "sha256": "c6a98fafe6b080be7ccb28f860deea1bf4c4245b31157a53a4041958ed421f3e",
+      "blake3": "2a6c686b456502d4bdc25c9ae5b58757c5f5af2ec62c0b82366387202c6c8e28"
+    },
+    {
+      "path": "scripts/skill_usefulness_audit_lib/risk_signatures_sensitive.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 326,
+      "sha256": "8c96785565559a5a3028c0e1f64c69d931897bfa314b6467a1a22b8ba27a2f05",
+      "blake3": "25fdc2335bc3a85771bff310389e98acc968988849b8329304cefca157059816"
+    },
+    {
+      "path": "scripts/skill_usefulness_audit_lib/scoring.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18994,
+      "sha256": "05170a7edd0a7cc98f143e8ca72790f7993cf8741897343eb80884b34dd0eb84",
+      "blake3": "eca7b8190d3d8f6459b1efd9595457d2b8886f53ece8c09af78e2bc390204eb9"
+    },
+    {
+      "path": "scripts/skill_usefulness_audit_lib/usage_loader.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11893,
+      "sha256": "c8e4da8cc9bc89cc61f1dc6274356f56605094abb3a3ffe577b2e2314236120a",
+      "blake3": "5a838637aa90fe6a2a33fc4c6f7a42ad8077e0af8d407c8583b5cc9810e88da8"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2667,
+      "sha256": "04aec79bcf61d33c672223fcfb45d10c6d0cf87536fd2e4b9965281ea9de8e04",
+      "blake3": "31ae191e11ced6f305763f1fcaa80319ccc4c0d30c7d500350fa4418e123af66"
+    }
+  ]
+}
