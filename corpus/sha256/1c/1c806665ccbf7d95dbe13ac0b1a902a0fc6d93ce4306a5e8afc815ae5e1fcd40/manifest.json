@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:1c806665ccbf7d95dbe13ac0b1a902a0fc6d93ce4306a5e8afc815ae5e1fcd40",
+  "sha256": "1c806665ccbf7d95dbe13ac0b1a902a0fc6d93ce4306a5e8afc815ae5e1fcd40",
+  "blake3": "f23356c89087cbd1f67f7b1e5878f495c047cd22baeaa01c82d10049155817f6",
+  "size_bytes": 115276,
+  "file_count": 14,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21098,
+      "sha256": "3941b0f248d45ebab140d402c947e20a54316a5658280ae6f2b9e92b9752cbb4",
+      "blake3": "79e7c2700e03752b9e9f98ce7d4c113511582b99397b12ed37264ec0b0fdeb17"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 136,
+      "sha256": "826f0933117263c321344ae5b59aff57adb6164942cb568d9be248ffa8c9ed0d",
+      "blake3": "b6f8eff01259b46178b2deffaa1af02986678f7e4fcc2b506df2b178edf45c49"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/deployment-plan-template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10173,
+      "sha256": "659ca7a25420c9dfedcacdaff37cfc4dcd97890efb58dbf1aabc305206b3acf3",
+      "blake3": "87652fd5c1f2afe643c5a39ff51148148a0b8afab15e8f88e8c8c884528a1c0c"
+    },
+    {
+      "path": "references/dockerfile-templates.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7801,
+      "sha256": "4da86ba85adf12971b1b209541c8864145b313363a9b99e97a827d93ac534841",
+      "blake3": "fb237cdfacff0866c3c33202c5513c5a57463f3418327394981be4f36d5db2da"
+    },
+    {
+      "path": "references/ecs-deploy-steps.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27220,
+      "sha256": "f0479e8c8064eb5220bc22197a18e18ba82716cfde25712811f765acc85c6902",
+      "blake3": "f1d3bb13ae7f6f6c7223f4e31bd97d32502dc1d7316a24727303197b402c69c6"
+    },
+    {
+      "path": "references/faas-deploy-steps.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1909,
+      "sha256": "c790901aa4f8bfdbee45f8a1c5cbbc29507d012ab1ce8e29e798f68120a4a404",
+      "blake3": "dacb2e13e4d8c789c886b23665ebc287c46d9b50d77ad27cc50af48b81c18984"
+    },
+    {
+      "path": "references/k8s-manifests.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9650,
+      "sha256": "f88934c02145727e4c2e269d5f859b15af115350d244fd569f7bd9657a948137",
+      "blake3": "65219c262a31f0bbe090f1064772807404d90075b6665b467ad7cda0aee38e9d"
+    },
+    {
+      "path": "references/service-linked-roles.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7865,
+      "sha256": "332f7da4083928be5af8ad29aaa5edd59062da08fb200f279009a11cf57c1334",
+      "blake3": "670d8e741cb376acc378c5126294cf611141233cd488c14ad3281f05235e7377"
+    },
+    {
+      "path": "references/supported-dependencies.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11784,
+      "sha256": "d786cbbcd5d58e9e0e8cc309ba2a6f97cf5441568c04b19e9d08a64f9f579e1c",
+      "blake3": "3709dc5cc0b92c776bc3aa3bdb61e8d0fa31c3ed1250e246ab19d8ab967b098a"
+    },
+    {
+      "path": "references/vke-deploy-steps.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5794,
+      "sha256": "d9d64311bcff15cccbce0fe3d2c8fb63e452394c09caf88104c1d0fc6f62277e",
+      "blake3": "9a6eb7fd61e7d563a622970e99c25c4409fc96b8524b4ec4ed64d82e4522b474"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/gen-docker-compose-test.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5796,
+      "sha256": "156ffe71a34a40655ff9364d8b78830bb0cf8e1efa4363d85bc6129e36019896",
+      "blake3": "24d151c419f73aa11227d145d756326694e97e5a81e7ed82eafb660bbdbe2cf3"
+    },
+    {
+      "path": "scripts/gen-systemd-unit.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1502,
+      "sha256": "e8eef963ed3920b874c181555f4474071f94e3b172dfc476df02bb0ff76a187d",
+      "blake3": "bb6dd14d417dfa6036ed711541c93dfc30404d428988f831fb51e2d82e6402e3"
+    },
+    {
+      "path": "scripts/poll-status.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1595,
+      "sha256": "f06bca9cb1279ba1306c9ef6a5b27a955c6377b1483f5b3916609cef92978def",
+      "blake3": "5c85aa6eff9ed09137ec862ba89ae6d246b1093da556b191741a2fd195b38042"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2953,
+      "sha256": "05857da16654d261e08bac2464fdeab987797c851d258ce033fabbc39a1a9ff7",
+      "blake3": "9537628a26d2c5b65237537d404a0773c1f44fe67819e55bbd8af936e2f0a57a"
+    }
+  ]
+}

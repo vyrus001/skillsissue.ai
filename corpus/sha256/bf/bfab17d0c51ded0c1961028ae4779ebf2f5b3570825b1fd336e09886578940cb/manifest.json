@@ -1,0 +1,463 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:bfab17d0c51ded0c1961028ae4779ebf2f5b3570825b1fd336e09886578940cb",
+  "sha256": "bfab17d0c51ded0c1961028ae4779ebf2f5b3570825b1fd336e09886578940cb",
+  "blake3": "d50a4ffa533f80a84c94e1bfb009fcbb110d625082b2cec86b49905fef2c481f",
+  "size_bytes": 573106,
+  "file_count": 49,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6362,
+      "sha256": "21d76c7d05b85293e421e071d657dbb52d6a3dcc54db0f9d631663c974103906",
+      "blake3": "9f4bc03354ed2e2f52de4bad0c94711cdfc5aa0a5062f5e01ae605a7d35d2b30"
+    },
+    {
+      "path": "INTERNAL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9831,
+      "sha256": "03074480fda032a284a888df8bf29ada33380e600d02361fe7d1ac3ba86b116e",
+      "blake3": "0f740b503deb3b472a619584b598333c85eb3df2d616f758cc8cd09c839a81c5"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 181,
+      "sha256": "14431a182bd022f52a23e0811b5cf46ee2061cc552a14c3e730c961d84a06f3e",
+      "blake3": "f69a1b954e95687e0469164928d3ee972352bbc497a148f181ea2113f0a12470"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4244,
+      "sha256": "f4bb7a394115265c1d904f314f08660dee6cffebcacf64a5e2c998e5c50e701a",
+      "blake3": "5396f13faf9f09a3b36920cca8290b2820aebdbb6df4271b456b404191475d34"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 125,
+      "sha256": "5e5fb802c587f60509b2f4fbc3a8e10bebc6e5e745364a65d9d37980ded4af63",
+      "blake3": "a9f17265eb461df09ec95f1594107e0de672e3202cf133a8d0a5b3825f6863a3"
+    },
+    {
+      "path": "bin",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "bin/opphub",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7499,
+      "sha256": "ac2ea874aa855edf0ccd3e0f59828d5e3bc68b3c02e81329419775fa905a21d2",
+      "blake3": "2fd626c2fd3fae258a556b5fe2e7abf5fcc8a86fc30cc365d22b812ca8bd710c"
+    },
+    {
+      "path": "bin/opphub-check-update.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6347,
+      "sha256": "a78d838dbf5942fe8ac5aa5a0fe7caa1e13201ce0b94e08d3c32a4aba8991b5c",
+      "blake3": "a58176cf8e6d5c6f43ddf9c708e46f0004e4169356383f2eb582bf6be07cb835"
+    },
+    {
+      "path": "bin/opphub-configure.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7552,
+      "sha256": "5111b973524dfacdf41fcee4d3cb3e32ece9b138c3d491eb4dddf5f89cf31fdd",
+      "blake3": "9e0500949231e28eda3e5ce887ec113deb3d0a2c20f35a4a10d62e99e3ff14b5"
+    },
+    {
+      "path": "bin/opphub-cron-setup.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10591,
+      "sha256": "244e3780192ef37128552c3640749bfad2fdbff6a6e22f0de8ba433042749ebb",
+      "blake3": "a2570415f34b5116356da68a96542b86e5e09a8fc9fac106f9b5d6aee8d8abe9"
+    },
+    {
+      "path": "bin/opphub-find-peers.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4613,
+      "sha256": "3038aadf7ca5aa0a4511b627632224e0f11759788a70f0a92f9a652c11185f74",
+      "blake3": "569754bd8b12d656a693a363a5130b1bb00e6a57c0a726890109fb60487b2d38"
+    },
+    {
+      "path": "bin/opphub-knowledge-add.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5486,
+      "sha256": "a91cdac6d28a64b9350c8ef20fbc8dc268d3b0f63d9e1210a191b5563427727d",
+      "blake3": "8812a38d3c98d205c91cc587ebb517072a4e7fadb5e1f92866b6f07e3c60892f"
+    },
+    {
+      "path": "bin/opphub-knowledge-autofill.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1140,
+      "sha256": "fb567c73943f840270fa781b69222305120903954634048ff06f8a226d41be08",
+      "blake3": "54aad39504f5894f8d1be7f590d016860de123463290f00d222115b92001c536"
+    },
+    {
+      "path": "bin/opphub-knowledge-card.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15405,
+      "sha256": "599d575b7912987128c21ffaec66428e07382c208400e1b783f6fcb3b9412d20",
+      "blake3": "2feedcce50721d72ceccad800781f72d74e02814ad382964c230f8e5ee292c4e"
+    },
+    {
+      "path": "bin/opphub-knowledge-discover.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15498,
+      "sha256": "84f18c66a40ce2f6dd25f9771ad3d6e57837dddb3e0a8f41d6dcfe0209781ec7",
+      "blake3": "df926c23b3e2f5e65388025f2fdad26d43170f2f1f2f3ced56aaf3017ff24371"
+    },
+    {
+      "path": "bin/opphub-knowledge-ingest-batch.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8814,
+      "sha256": "cda881565489daa5a23a2cf581dbb69d7714a5bb3ffc9a229bb8a07eeb3cf051",
+      "blake3": "29faf1e4cfbdccdddda2b180c0aafa3b18fff88f16bd43c20388991f589c47b4"
+    },
+    {
+      "path": "bin/opphub-knowledge-match.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13515,
+      "sha256": "fd95c3af18bf26fd6afaefbd5e757fd6ba7f0795ddbc785b3dedf9b187fde58b",
+      "blake3": "eccdb54875573fa6a58340b9e89451f840aac9bd4adc6c0cd20329c6658c81d4"
+    },
+    {
+      "path": "bin/opphub-knowledge-relate.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20077,
+      "sha256": "5b3cadb956ba7ea729f3f93920287cf3b18c2b527c1d113604ce87a911d69e96",
+      "blake3": "d85ee72ebbb0b3bd40c46ae68071850635cc60eef1c0306e0486c5afcce4d411"
+    },
+    {
+      "path": "bin/opphub-knowledge-search.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4394,
+      "sha256": "36e9c1be28ed793b8d669ecb330c30dd450cbfbf04b91f92c3b16f06c0aab7b6",
+      "blake3": "a250f35240f9b8e8b54b9275fa58a74121fcdd383f7e5178bda2b148a2f4bf41"
+    },
+    {
+      "path": "bin/opphub-knowledge-status.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4246,
+      "sha256": "16eeead3588b3afbb798b71775c3ccdd576cd1ffb429e2d7bdee1cd618b721a7",
+      "blake3": "5ea18b6be4ec7a4148e480d43ec429faa327a7e301322fa46832a2cabf90f0d6"
+    },
+    {
+      "path": "bin/opphub-knowledge-submit.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11522,
+      "sha256": "ba07506de53865bf7d0783a6aba8659ae9fe3f90dce0dfcccb735e98842c2d9a",
+      "blake3": "a879c934fa1ecd5674d2be608301d2da493e2b6f3986b1b9e404a5784c41c2c5"
+    },
+    {
+      "path": "bin/opphub-oauth-login.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25839,
+      "sha256": "86b23a4b8e0328c434e00c1329dd5a22cf0005b2af66f86c0a7990f88d4eb71b",
+      "blake3": "ac11d1c31aa777b922e8fb741f032781f9053d65db7ca7a819d19a80d8a21473"
+    },
+    {
+      "path": "bin/opphub-plugin-check.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2355,
+      "sha256": "d88b39313cab2da9a6f744ed3bf2cc089f0f293a225767bc73acb5df07b89932",
+      "blake3": "a5b1a282dd0a51b455fc2136dfbdabd884186b9e1ed5ad33f39e985595e0b40a"
+    },
+    {
+      "path": "bin/opphub-token-refresh.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4067,
+      "sha256": "d448d1b2940a38c6554359fd9876b3480da30e863dd194283b41b7df20ececf1",
+      "blake3": "a6837df6a4c4020e445eed0881f533066fad8da3b770c0f14e38e1cfdf573832"
+    },
+    {
+      "path": "docs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/runtime-channel-renderer-v31-design.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10948,
+      "sha256": "47b40fe3606d2ed68fb33d6d5ed5c64501ef459ed4aa9c7def46db2f6d73a0a7",
+      "blake3": "66c388e93a1ae6498e0e09e5fc2cced0ddad0f944b10eb8381dc3347a0b7dacf"
+    },
+    {
+      "path": "docs/server-schema-v31-design.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3745,
+      "sha256": "7cbe152c36e4dec721e531fb6060d40b95d7d229dcf861d95593e40d3cc31f5b",
+      "blake3": "800c5ab7f6d14305798de4bbb7d2baaf01d2fc5d271004757c664b679ce4c915"
+    },
+    {
+      "path": "docs/server-schema-v32-design.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16162,
+      "sha256": "007fffa00a4537927b6033f79ff9c36d5b31829f63a78520bda7036b92a3281c",
+      "blake3": "f81fdf55589bccc2c975ee52da28d5010585f2fa3ce55e97924e3a206aeed7ab"
+    },
+    {
+      "path": "docs/superpowers",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/superpowers/plans",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-23-phase1-nav-rewrite.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32098,
+      "sha256": "65468f9a642ca7fb51623fa73881a16c449c75d598d5a54e792e9fdf7ceeec08",
+      "blake3": "2ff335f4f2533dbf301268e35c29d07f241df0f6f06c4248744906cd9cab350a"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-23-phase2-confirm-and-group.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24529,
+      "sha256": "6c272572d08d2ed2c5d9864dfc1e22718824f77d9e0183864560dcb9246350da",
+      "blake3": "2c9a45ec808d0481a3461ce766d57f2473dc23801c85edfde43af1dffb5c7727"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-23-phase3-modal-interactions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23297,
+      "sha256": "352060fc0cf9020be9ebdc74b8ef6d36d739e89fe4e1b6db84528f6390475f99",
+      "blake3": "7cbb82e116792011d3e211e6a97a47f24e0c2f8b90064007a9fdb6c1cc0da1b8"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-23-phase4-bug-fixes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27089,
+      "sha256": "ab9a3a33a16f216140cc849c996adb8ef2f58038350e53530f45a2e7d654ef96",
+      "blake3": "4ff8dddf5c0e8f82fdf7f4cac49b70262c2c977ff4c220be27f10ff3d1c0f543"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-23-phase5-v1-conflicts-radar.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7761,
+      "sha256": "9d384a9a9303330b37d00a544bfc377ab2ff709fc8b10cd97ca01bda6538a104",
+      "blake3": "234bc4dec3fd93082c7243274f76887029d54482c2c510bfe33d13cf927f8403"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-24-batch1-push-pipeline.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25710,
+      "sha256": "548b432b3d29f54d04546c491a7e0d6ac3d5cc21b8d8aad2337af1cf373c31ce",
+      "blake3": "f368a92105b6ed7a1d99727a4fff47052917edcbfac43f9387e880d91accefa5"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-07-24-dashboard-optimize.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27740,
+      "sha256": "c0989d9337709af34687544175de9e9997da675f70563772008216132a562f64",
+      "blake3": "281bec7365062ea00c2c2e314049e89ef8790a73a183c8903d24ea0205694ee7"
+    },
+    {
+      "path": "docs/superpowers/specs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-23-opphub-product-design.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19197,
+      "sha256": "7188c94d9442ad784a69608ffdcab7daed53493976c442088519a687ad0fe784",
+      "blake3": "f8d7a5989a81522561814c67af57d9964f4006fe3f05a9f17152a20c5d8ed68b"
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-24-opphub-dashboard-optimize-design.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12998,
+      "sha256": "d7504fb07c1b4cfee23f727a01df49d1832e7dc9146ba2bf9c4e8555f994d1c7",
+      "blake3": "2c622a7e2518a33248380d715d9d5db5c316fee9d172d51be129d58a18291a31"
+    },
+    {
+      "path": "docs/superpowers/specs/2026-07-24-opphub-discover-to-order-flow-design.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 46430,
+      "sha256": "586e182b814247f14e3d58b80076c282b3c1772c06be2f82723ec0c688d34dcb",
+      "blake3": "15222735f14d71e5b0f5b3b4436ed8da176818df1fd5b9ec40da9a5fd92e0b99"
+    },
+    {
+      "path": "docs/v3.1-architecture.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30966,
+      "sha256": "f9fcf6766ddac854cfa3779c076646fa6da520d0a3d18cc97e9edc8ee14d3ae7",
+      "blake3": "95921431f03175ca943d886c3bad4c9c0eb31ff8d456ba47d12bd92f90eeeaa0"
+    },
+    {
+      "path": "flow",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "flow/registration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2512,
+      "sha256": "e4d19ed947e2b1a3d0df10416f4bad020fa5055740d7addd2c9480d3eca9f89a",
+      "blake3": "dd8dd3ed146c6da22ee31b485325ae4787b0b58db324502b605642758b0b6b1f"
+    },
+    {
+      "path": "lib",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "lib/error-format.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5402,
+      "sha256": "9faa9ad0ea948bacc584c9b793883debf8699b20e50720fa8977be9d10a44f19",
+      "blake3": "967a090ba8bc920ebd0c8df8ab79c69d2bb66d2ed6e6541f59991351f554685b"
+    },
+    {
+      "path": "lib/intent-card.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6550,
+      "sha256": "ebd5b74616d24e544160b8380f66b3d83c804dd650fffbfd119ca2eb91440be9",
+      "blake3": "4ff3e6ae70080671bf596535c997ab6e9b7788ebf3d4326c528de7b09222f644"
+    },
+    {
+      "path": "lib/opphub-plugin-client.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9380,
+      "sha256": "3ae4d1a4f5eead62853ea97bd48a75b701f8fb00bf55cc7e88e35179b24969b8",
+      "blake3": "7ab4f261f6fe140414589d2042c6672db6958729c11f05cf2e2c156706689051"
+    },
+    {
+      "path": "lib/opphub-server-client.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1770,
+      "sha256": "fa88b212912e3daaad038a7b68cd6dda65b4ea5b5193e43c4ecee3a0a0260399",
+      "blake3": "f2b11f434c9eeb77a6de3cd093fc46373130d9a4b39dea0b46ef7a38b267c62f"
+    },
+    {
+      "path": "memory",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "memory/2026-07-24.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11335,
+      "sha256": "d823fea610c5f901e3807632e505be9d494fee0fda6e23acc639af804a457cd0",
+      "blake3": "31326312c2f1c3878c82e3eb6361fbc12faf7516a06e8bfd9eae37d0ae187a9e"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 863,
+      "sha256": "eb4d40912dd3a9ba19f3d19e3915b4665be85f3e1d31e990822736a066ba6df1",
+      "blake3": "9648e9a4f5d80a5375ed73edcb8aafc3aeeecbd1529edf970b6eb1973944dfdf"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/check-version.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2737,
+      "sha256": "67bcc26f2dca9db9b94f0f686251945655e4a95aea605885f22c3c81b650c93d",
+      "blake3": "8c30672711491de5251dc0c631281ca555de7e0bdd72f7769ec17ac5dc73cf7b"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2911,
+      "sha256": "c2a997554662d274d31922696690a9118f11a1e0032d3415f1197b9e01adce52",
+      "blake3": "677c72deec548ee1450fc0ee038d8e9daf31a946f0e3691b4cbae483848d9447"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/e2e-verify.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16596,
+      "sha256": "24cfffd94c09d48e30fa6800136eea946844ddb14f8ef4bb270d2bd0084b907b",
+      "blake3": "4773a437fe6c17f88d9fccd2fe4210705cc2b635057989cea9b9cc34b09c65c0"
+    },
+    {
+      "path": "tests/mock-knowledge-server.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4038,
+      "sha256": "119e0dbd85133e0c85401f0e81770d0b873154593fb1f6fe789ae5b10f5233ee",
+      "blake3": "af3f1615476158e8ae807311eacce112a509aeb6bb20859ece73ce2a382a198a"
+    },
+    {
+      "path": "tests/unit-knowledge-card.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10639,
+      "sha256": "1a66076b923fdba7ccee0b5777f0dca3e3b7d0db207768d1fb4107c716dd9cd3",
+      "blake3": "db3805aa8801802fc4f3b1cc53239dbb54e2300539f7d6f28844c82fe0accd9a"
+    }
+  ]
+}

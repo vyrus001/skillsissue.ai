@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:149f3b7b661c850ed22a2e6071a32b6d0a92399c83807f6ffb88a9ff4b68efc3",
+  "sha256": "149f3b7b661c850ed22a2e6071a32b6d0a92399c83807f6ffb88a9ff4b68efc3",
+  "blake3": "7b9279d21dee1f801e28379c7c17369c4640d552e80711fcac930f05f1905c06",
+  "size_bytes": 73073,
+  "file_count": 12,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1099,
+      "sha256": "d2e8b9fae2ec5ba04a57fab5a61dc5add069489d40b6bf3776ac20d27d43ff37",
+      "blake3": "af89f0ffb9a971e3b8323969e3e3ef7e3ff80430da7ab39f8c8f0c223eccef9d"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6634,
+      "sha256": "d18637cf3658dd4cf2735c8d1ce568d397eafef672e8d8855ab516e027612fd2",
+      "blake3": "32d9ebac8f5e97dc816ab6c8f827259a4aa2d6ed7b4e9450324756ed902a46cf"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 151,
+      "sha256": "08ac2c6b363e31a8b134dc3722fd094070f101c898e610d901565526ebb7268d",
+      "blake3": "353ba80020282a25268328cb76cc53851e4b773480df43a4bd514813ea499730"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/solar_panel_defaults.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1670,
+      "sha256": "42280a9c277bc2833876adb932f66403d4d19b3c3cef2e6bc25535b340dca82c",
+      "blake3": "142d1234f473bbd035fa83028d3b1e264100945921c2b0b5c8287fd2436106e2"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 239,
+      "sha256": "24830f91b9b099bc407f15bbedb1739a5edf02d360858e66109d72ae7de2180d",
+      "blake3": "d084937a9f4929f9bcbe337466f1462369b34585dbb1499ecf6b82f4b3f8a3b5"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/rooftop_solar_inventory.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 56706,
+      "sha256": "7cfa794c91efb448f5926ca91ddd1aa892beedd51a3c5ded50b652075d108432",
+      "blake3": "da55c8c194daaa96589744cbfc1bd6cfae44e2492b627912d050a06a4d856e21"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2804,
+      "sha256": "d34289288f643574b82d408cf09576b125396dcc508bc4808a41bf4fb2e765d4",
+      "blake3": "1f66b80a476a976a4d4c1840f7199a21ab203bcefbc98f4c0a6be60f468ff1e5"
+    },
+    {
+      "path": "test-output2",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "test-output2/building_potential.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 895,
+      "sha256": "650ad6de9adfd9bd6817ce99874cbb7557c3a30657e2f838db9a9a04407ce71a",
+      "blake3": "ba85f03d64953422b0aea0f29bb48522e91ec341aac272cae78639d25b057c87"
+    },
+    {
+      "path": "test-output2/dataset-manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 728,
+      "sha256": "47b3d290e39984dfe0cf0c1f98d74b9e4fbc287fc6b49d6c7e8759505f5ce2c9",
+      "blake3": "0b023e38be452579b4cc33222bc0b75c9ecced26e7dd2c717c0698d5f00150f1"
+    },
+    {
+      "path": "test-output2/output-manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1387,
+      "sha256": "109c9d5a72444605f28b58b32a386e43b7ead8c1ffbda757bd617c97d5e8ae87",
+      "blake3": "7de32f44e3737a316f08b87915290bff44da96c0cc37ee0d11626cacc8bac79f"
+    },
+    {
+      "path": "test-output2/qa.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 394,
+      "sha256": "55e844718b944c7773e522435f447e629664a0842c04f87f7c1dfe8e5a2854ef",
+      "blake3": "8ad00b905fef9f47bf46e2fa5f0d1cdc721d153c3ffb7209fd0a580ec905828c"
+    },
+    {
+      "path": "test-output2/request.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 366,
+      "sha256": "c80e894d77bd061df33a46c7170f9b14a9d12393173b368b2815a88bba6bc874",
+      "blake3": "ad5f546ee0e69fc2e8fd4e8347ae0e84123599725702b7f7d875ba60a570121b"
+    }
+  ]
+}

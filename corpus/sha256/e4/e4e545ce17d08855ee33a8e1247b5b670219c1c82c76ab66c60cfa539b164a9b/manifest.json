@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:e4e545ce17d08855ee33a8e1247b5b670219c1c82c76ab66c60cfa539b164a9b",
+  "sha256": "e4e545ce17d08855ee33a8e1247b5b670219c1c82c76ab66c60cfa539b164a9b",
+  "blake3": "02d01f0ba3ca41523e4d0033bd63d6d9eb05e3ac13b63f0a9c07129f9047b3ca",
+  "size_bytes": 118223,
+  "file_count": 19,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7726,
+      "sha256": "8914b034bc1106704ee886a934aaf705d406831905a29130087a43b29c2899d0",
+      "blake3": "75bd14113a79ab87ae5e4361a4f032c39e1690f39c8bf25c725beb61b4f07e28"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 131,
+      "sha256": "b2905fe28032e5ae1253296ff99dfd20fadc5f3c9a5562faf3f582bfea8e29ed",
+      "blake3": "69606c07b029371690a5442d0648b91852d448a403c1c3ef46f99315e5c4bd35"
+    },
+    {
+      "path": "config",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "config/gtp_skill.cfg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 366,
+      "sha256": "5da6c895467631f90d48aae5bd6896661de87416ab85702458a87b312e252035",
+      "blake3": "33b0aa6a4b803592b78f02fa41a437234785b14a2468d824f663c4a41b1032af"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 47,
+      "sha256": "7032c61975a979f5964e63f53a0d449a4e53cd2939f274551f0120fe70e787db",
+      "blake3": "577bc8124ea802a3d274039b0208e14f8ab0239cbb474235902bf33833fc412f"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/_vendor",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/_vendor/go_next_move_core",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/_vendor/go_next_move_core/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 326,
+      "sha256": "712598e0062f25feccdda1abfe6e3a4b83bb258bbebf60ec2342efa7564d6cb0",
+      "blake3": "5a97fc518ace6afe882eebc6aa6c21fbcbab9c8c75d2fe01db4d1d86cbfdd5e9"
+    },
+    {
+      "path": "scripts/_vendor/go_next_move_core/analysis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 49016,
+      "sha256": "f5700977d9f5db1f234583b2590bc532f553d69d6921a4a4ea852c0e44692e58",
+      "blake3": "b503e1ce299684c5b127bb9ea29d2120e8dbf38538443aff17d6034991b374ab"
+    },
+    {
+      "path": "scripts/_vendor/go_next_move_core/board_profiles",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/_vendor/go_next_move_core/board_profiles/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1000,
+      "sha256": "3637d97485503ad041bda057a131aaaadf0f336971de0398ab0705cfa82a28dd",
+      "blake3": "0bdba8b3739de145066bbedca5509448f27801333f20f47750b880caea61ffe0"
+    },
+    {
+      "path": "scripts/_vendor/go_next_move_core/board_profiles/common.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3624,
+      "sha256": "6122cdd676c1f88fd3a9784cca2b3c2eda09604a5031243be8a6d8e7c23b5871",
+      "blake3": "e41505b2b9838d746fc6f75ebf19cea51c71ce96a1d0870ca8ec4d5ce416cc13"
+    },
+    {
+      "path": "scripts/_vendor/go_next_move_core/board_profiles/white_plastic_or_paper.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4055,
+      "sha256": "edcc6ce500e5ae83b85b9549dac0df82535a9bf72fcf377b601dcc8765df47e4",
+      "blake3": "da4e6af87560e3872c48a3ae98e0aa07978feddc4d74fd355b6d3133aaf7fbed"
+    },
+    {
+      "path": "scripts/_vendor/go_next_move_core/board_profiles/wood.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3042,
+      "sha256": "a05776aa8937e87649ced002479e5813d378be261cc90bb2c7ac26dbfee07a4e",
+      "blake3": "cb31d490804bcf2f268b84f8b6b5630f9ca72c1e142447ef19996692e1e1354b"
+    },
+    {
+      "path": "scripts/_vendor/go_next_move_core/cli.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4787,
+      "sha256": "8df8c22c81df4eb2444768382d4d846fcffd2faf9c7e57212a4725b08455e285",
+      "blake3": "265ad775173ef9cd8f08f84dd6f738bd8f99e608381a8b3ab955703dba32dfe7"
+    },
+    {
+      "path": "scripts/_vendor/go_next_move_core/coordinates.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 568,
+      "sha256": "9c07aa4501939a4f48f5183d39ffe63a73ef4c0de73061530b22286a71d41947",
+      "blake3": "644e68bfea6be617fe9299202369029ef31555a622750da64e3a63375167860d"
+    },
+    {
+      "path": "scripts/_vendor/go_next_move_core/katago.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3721,
+      "sha256": "dafcb92b04b26dc238151828981536aac15e31b2204e86831fa8a360c68ebc01",
+      "blake3": "344eeffdb01aaaba36ee020dbcc24059922c8655866d25ca661ff906c628ba39"
+    },
+    {
+      "path": "scripts/_vendor/go_next_move_core/katago_protocol.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3328,
+      "sha256": "920c580948bbb9f1e9ee4c12afa69a158255f441d5c93e88bff47398eb4edb35",
+      "blake3": "8cf0cbd501005096b1d56849c1d07c5187fe5de79d0a3ae6b2be6af9acef5274"
+    },
+    {
+      "path": "scripts/_vendor/go_next_move_core/recognition.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32669,
+      "sha256": "fe4c2a5992f8f6a50150de53f662b1f8a87c4a18dbdf0140e442d4df064b94b8",
+      "blake3": "1d900fb04b685e07d61b34bdfafc0469d99147fdcab9334b8829a08ef8a36b9e"
+    },
+    {
+      "path": "scripts/_vendor/go_next_move_core/resources",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/_vendor/go_next_move_core/resources/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 60,
+      "sha256": "6b1e22de1b81b954a422e3c7aa25384eac3b806f3e4ccef3fbacb7f05baafde3",
+      "blake3": "7e189a3ea917e9dedce012546429bfd8d555654aa7d08e67fcf203c40cc08b68"
+    },
+    {
+      "path": "scripts/_vendor/go_next_move_core/resources/analysis.cfg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 390,
+      "sha256": "4ca6b537d2f3d2aeea870b2858dbf7344979fe761c67cf67232fa1084b559413",
+      "blake3": "46227c16c7493bda37eaf01f3c72ad1e807afbdc47d28470e679b3a510122d7b"
+    },
+    {
+      "path": "scripts/next_move.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 818,
+      "sha256": "3ad1ecc45849312c29fc8e32901450fd603276a3c98d7e510853a48afcbdf766",
+      "blake3": "edd093680e1c2f266f2c38d48332f9d3c18cc46670573dae6c64b8e330e4db3c"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2549,
+      "sha256": "f497d7e3e6c4bac368fa85f8f98ebeb1b660e1f1d6d8f7d04486236814b57b7f",
+      "blake3": "86bfb2ce10add90a2eb6576c95ac4d78ed3df0cdcf39c5cddec98b68abf93de1"
+    }
+  ]
+}
