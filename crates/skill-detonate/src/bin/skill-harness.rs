@@ -11,7 +11,8 @@ use regex::Regex;
 use serde::Serialize;
 use skill_detonate::{
     CLAUDE_ADAPTER, CODEX_ADAPTER, DETERMINISTIC_ADAPTER, HARNESS_COMPLETION_EXIT_BASE,
-    INVOCATION_MARKER_PATH, MAX_ENCODED_CLOSURE_LIFTS, agent_cli_invocation,
+    INVOCATION_MARKER_PATH, INVOCATION_MARKER_STAGING_PATH, MAX_ENCODED_CLOSURE_LIFTS,
+    agent_cli_invocation,
 };
 use std::collections::{BTreeMap, BTreeSet, VecDeque};
 use std::fs::{self, File};
@@ -193,7 +194,13 @@ fn run_session(args: &Args) -> Result<HarnessStats> {
 }
 
 fn mark_invocation_boundary() -> Result<()> {
-    fs::write(INVOCATION_MARKER_PATH, b"detonation\n").context("write invocation boundary marker")
+    // Finish marker I/O under an unrelated staging name, then expose one
+    // atomic rename event as the boundary. Target activity starts only after
+    // rename(2) returns, so every earlier target event is setup activity.
+    fs::write(INVOCATION_MARKER_STAGING_PATH, b"detonation\n")
+        .context("write staged invocation boundary marker")?;
+    fs::rename(INVOCATION_MARKER_STAGING_PATH, INVOCATION_MARKER_PATH)
+        .context("commit invocation boundary marker")
 }
 
 fn skill_destination(args: &Args) -> Result<PathBuf> {

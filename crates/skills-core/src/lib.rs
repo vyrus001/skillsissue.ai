@@ -25,8 +25,9 @@ pub use id::{detonation_shard_index, stable_id_v1};
 pub use lock::WorkspaceLock;
 pub use records::{
     ASSESSMENTS_HEADERS, AssessmentRecord, DISCOVERIES_HEADERS, DiscoveryRecord, FINDINGS_HEADERS,
-    FindingRecord, INGEST_REJECTIONS_HEADERS, IngestRejectionRecord, PLATFORM_EVIDENCE_HEADERS,
-    PLATFORMS_HEADERS, PlatformEvidenceRecord, PlatformRecord, RUNS_HEADERS, RunRecord,
-    SCHEMA_VERSION, SKILLS_HEADERS, SkillRecord,
+    FindingRecord, INGEST_REJECTIONS_HEADERS, IngestRejectionRecord,
+    PHASE_CAPTURE_CONTRACT_VERSION, PLATFORM_EVIDENCE_HEADERS, PLATFORMS_HEADERS,
+    PlatformEvidenceRecord, PlatformRecord, RUNS_HEADERS, RunRecord, SCHEMA_VERSION,
+    SKILLS_HEADERS, SkillRecord,
 };
 pub use time::{is_valid_utc_rfc3339, parse_utc_rfc3339, utc_now_rfc3339};

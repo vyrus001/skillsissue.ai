@@ -206,6 +206,7 @@ function renderStats() {
   const values = [
     [formatCount(model.eventCount), "events"],
     [formatCount(model.preDetonationEventCount || 0), "pre-detonation"],
+    [formatCount(model.unknownPhaseEventCount || 0), "phase unknown"],
     [formatCount(model.processCount), "processes"],
     [formatCount(model.activityNodeCount), "activity nodes"],
     [formatCount(state.networkCaptureCount), "HTTP(S) captures"],
@@ -616,7 +617,7 @@ function drawEventNode(node, position, selected) {
   const x = position.x - position.width / 2;
   const y = position.y - position.height / 2;
   roundedRect(x, y, position.width, position.height, 7);
-  context.globalAlpha = node.preDetonation ? .48 : 1;
+  context.globalAlpha = node.preDetonation ? .48 : (node.phaseKnown === false ? .7 : 1);
   context.fillStyle = selected ? "rgba(101, 229, 194, .17)" : "rgba(17, 36, 32, .97)";
   context.fill();
   context.lineWidth = (selected ? 2.3 : 1.2) / state.zoom;
@@ -638,7 +639,9 @@ function drawEventNode(node, position, selected) {
 }
 
 function nodeMetadata(node) {
-  const phase = node.preDetonation ? "pre-detonation · " : "";
+  const phase = node.phaseKnown === false
+    ? "phase unknown · "
+    : (node.preDetonation ? "pre-detonation · " : "");
   if (node.kind === "process") return `${phase}pid ${node.pid} · ${node.processKind}`;
   const parts = [];
   if (node.category === "socket") {
@@ -652,6 +655,11 @@ function nodeMetadata(node) {
   parts.push(`${node.count} event${node.count === 1 ? "" : "s"}`);
   if (node.failureCount) parts.push(`${node.failureCount} failed`);
   return phase + parts.join(" · ");
+}
+
+function phaseLabel(item) {
+  if (item.phaseKnown === false) return "unknown (legacy capture)";
+  return item.preDetonation ? "pre-detonation" : "detonation";
 }
 
 function roundedRect(x, y, width, height, radius) {
@@ -724,7 +732,7 @@ async function inspectNode(node) {
     ["Process", `${node.processName || "unknown"} (pid ${node.pid})`],
     ["Process identity", node.processKey],
     ["Execution depth", String(node.depth)],
-    ["Phase", node.preDetonation ? "pre-detonation" : "detonation"],
+    ["Phase", phaseLabel(node)],
     ["Command", node.command || "not captured for this node"],
     ["Timestamp ns", node.timestampNs || "unavailable"],
     ["Relative time", formatNodeTime(node)],
@@ -812,7 +820,7 @@ async function inspectEvent(seq) {
     ["Parent PID", event.ppid === null ? "unavailable" : String(event.ppid)],
     ["Entity", event.processEntityId || "unavailable"],
     ["Normalized detail", event.detail || "unavailable"],
-    ["Phase", event.preDetonation ? "pre-detonation" : "detonation"],
+    ["Phase", phaseLabel(event)],
     ["Timestamp ns", event.timestampNs || "unavailable"],
     ["Source", `line ${event.sourceLine}, item ${event.sourceIndex}`],
     ["Target", event.target || "unavailable"],

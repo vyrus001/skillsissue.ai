@@ -4,17 +4,17 @@ on:
   workflow_dispatch:
     inputs:
       limit:
-        description: Maximum skills to detonate per shard (1-2)
+        description: Maximum skills to detonate per shard (1-4)
         required: false
-        default: "1"
+        default: "4"
       shard_count:
-        description: Deterministic corpus shards to dispatch (1-16)
+        description: Deterministic corpus shards to dispatch (1-20)
         required: false
-        default: "4"
+        default: "20"
       max_parallel:
-        description: Maximum disposable eBPF runners used concurrently (1-16)
+        description: Maximum disposable eBPF runners used concurrently (1-20)
         required: false
-        default: "4"
+        default: "20"
       agent_adapter:
         description: Intended agent harness
         required: false
@@ -76,12 +76,12 @@ jobs:
       - name: Build a bounded deterministic shard plan
         id: plan
         env:
-          LIMIT: ${{ inputs.limit || vars.DETONATION_BATCH_LIMIT || '1' }}
+          LIMIT: ${{ inputs.limit || vars.DETONATION_BATCH_LIMIT || '4' }}
           MAX_PARALLEL: ${{ inputs.max_parallel || vars.DETONATION_MAX_PARALLEL || '' }}
           PUBLICATION_MAX_BYTES: ${{ vars.DETONATION_PUBLICATION_MAX_BYTES || '67108864' }}
           PUBLICATION_MAX_FILES: ${{ vars.DETONATION_PUBLICATION_MAX_FILES || '64' }}
           REQUESTED_ADAPTER: ${{ inputs.agent_adapter || '' }}
-          SHARD_COUNT: ${{ inputs.shard_count || vars.DETONATION_SHARD_COUNT || '4' }}
+          SHARD_COUNT: ${{ inputs.shard_count || vars.DETONATION_SHARD_COUNT || '20' }}
         run: |
           if test -z "$MAX_PARALLEL"; then
             MAX_PARALLEL="$SHARD_COUNT"
@@ -90,9 +90,9 @@ jobs:
             *[!0-9:]*|:*|*:) exit 1 ;;
           esac
           test "$LIMIT" -ge 1
-          test "$LIMIT" -le 2
+          test "$LIMIT" -le 4
           test "$SHARD_COUNT" -ge 1
-          test "$SHARD_COUNT" -le 16
+          test "$SHARD_COUNT" -le 20
           test "$MAX_PARALLEL" -ge 1
           test "$MAX_PARALLEL" -le "$SHARD_COUNT"
           # The cap applies independently to each artifact. Keep it bounded so

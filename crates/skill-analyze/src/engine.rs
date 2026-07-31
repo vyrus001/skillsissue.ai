@@ -142,6 +142,12 @@ impl Analyzer {
             Ok(trace) => trace,
             Err(_) => return Ok(self.empty_analysis(run, "unavailable")),
         };
+        if trace.events.iter().any(|event| !event.phase_known) {
+            // Legacy captures have no trustworthy invocation boundary. Treating
+            // their setup activity as detonation evidence can create false
+            // positives, so they remain explicitly unknown until re-captured.
+            return Ok(self.empty_analysis(run, "phase_unknown"));
+        }
         let event_count = trace
             .events
             .iter()

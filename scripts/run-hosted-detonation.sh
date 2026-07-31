@@ -3,9 +3,9 @@ set -eu
 
 environment_name="hosted-detonation"
 adapter="deterministic-closure-harness"
-limit="1"
-shard_count="1"
-max_parallel="1"
+limit="4"
+shard_count="20"
+max_parallel="20"
 repository=""
 check_only="false"
 assume_yes="false"
@@ -16,15 +16,15 @@ usage() {
 Usage: scripts/run-hosted-detonation.sh [options]
 
 Validate the hosted-detonation environment and dispatch detonate.yml on the
-repository's default branch. Defaults to one deterministic, LLM-free skill on
-one runner.
+repository's default branch. Defaults to 80 deterministic, LLM-free skills on
+20 isolated GitHub-hosted runners.
 
 Options:
   --adapter deterministic-closure-harness|codex-cli|claude-cli
                                    Harness (default: deterministic-closure-harness)
-  --limit 1|2                      Skills per shard (default: 1)
-  --shards 1..16                   Deterministic shards (default: 1)
-  --max-parallel 1..16             Concurrent runners (default: 1)
+  --limit 1..4                     Skills per shard (default: 4)
+  --shards 1..20                   Deterministic shards (default: 20)
+  --max-parallel 1..20             Concurrent runners (default: 20)
   --repo OWNER/REPO                Repository (default: current gh repository)
   --check                          Validate controls without dispatching
   --yes                            Skip the interactive cost confirmation
@@ -104,11 +104,11 @@ case "$adapter" in
   claude-cli) required_secret="ANTHROPIC_API_KEY" ;;
   *) fail "--adapter must be deterministic-closure-harness, codex-cli, or claude-cli" ;;
 esac
-is_positive_integer "$limit" || fail "--limit must be 1 or 2"
-test "$limit" -le 2 || fail "--limit must be 1 or 2"
-is_positive_integer "$shard_count" || fail "--shards must be between 1 and 16"
-test "$shard_count" -le 16 || fail "--shards must be between 1 and 16"
-is_positive_integer "$max_parallel" || fail "--max-parallel must be between 1 and 16"
+is_positive_integer "$limit" || fail "--limit must be between 1 and 4"
+test "$limit" -le 4 || fail "--limit must be between 1 and 4"
+is_positive_integer "$shard_count" || fail "--shards must be between 1 and 20"
+test "$shard_count" -le 20 || fail "--shards must be between 1 and 20"
+is_positive_integer "$max_parallel" || fail "--max-parallel must be between 1 and 20"
 test "$max_parallel" -le "$shard_count" || fail "--max-parallel cannot exceed --shards"
 
 require_command gh

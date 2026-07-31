@@ -23,6 +23,7 @@ struct ActivityKey {
     target: String,
     bucket: u64,
     unique: u64,
+    phase_known: bool,
     pre_detonation: bool,
 }
 
@@ -81,6 +82,9 @@ pub fn build_graph(trace: &TraceData, settings: GraphSettings) -> GraphModel {
                 None,
                 events_by_seq
                     .get(&process.first_seq)
+                    .is_some_and(|event| event.phase_known),
+                events_by_seq
+                    .get(&process.first_seq)
                     .is_some_and(|event| event.pre_detonation),
             ));
             process_anchors.push(anchor);
@@ -120,6 +124,7 @@ pub fn build_graph(trace: &TraceData, settings: GraphSettings) -> GraphModel {
                     command.clone().unwrap_or_else(|| event.detail.clone()),
                     command,
                 )),
+                event.phase_known,
                 event.pre_detonation,
             );
             node.target.clone_from(&event.target);
@@ -242,6 +247,7 @@ pub fn build_graph(trace: &TraceData, settings: GraphSettings) -> GraphModel {
             target: grouped_target,
             bucket,
             unique,
+            phase_known: event.phase_known,
             pre_detonation: event.pre_detonation,
         };
         let group = groups.entry(key).or_insert_with(|| ActivityGroup {
@@ -304,6 +310,7 @@ pub fn build_graph(trace: &TraceData, settings: GraphSettings) -> GraphModel {
             order: first.order,
             equal_time_order: 0,
             depth: process_depth,
+            phase_known: first.phase_known,
             pre_detonation: first.pre_detonation,
             label,
             sublabel,
@@ -387,6 +394,11 @@ pub fn build_graph(trace: &TraceData, settings: GraphSettings) -> GraphModel {
             .iter()
             .filter(|event| event.pre_detonation)
             .count(),
+        unknown_phase_event_count: trace
+            .events
+            .iter()
+            .filter(|event| !event.phase_known)
+            .count(),
         represented_event_count: represented.len(),
         process_count: trace.processes.len(),
         activity_node_count: activity_index,
@@ -402,6 +414,7 @@ fn process_node(
     process_kind: &str,
     event_ids: Vec<u64>,
     override_text: Option<(String, String, Option<String>)>,
+    phase_known: bool,
     pre_detonation: bool,
 ) -> GraphNode {
     let (label, sublabel, command) = override_text.unwrap_or_else(|| {
@@ -426,6 +439,7 @@ fn process_node(
         order: anchor.order,
         equal_time_order: 0,
         depth: 0,
+        phase_known,
         pre_detonation,
         label,
         sublabel,
@@ -732,6 +746,7 @@ mod tests {
             },
         );
         assert_eq!(graph.pre_detonation_event_count, 1);
+        assert_eq!(graph.unknown_phase_event_count, 0);
         assert_eq!(graph.activity_node_count, 2);
         assert!(
             graph

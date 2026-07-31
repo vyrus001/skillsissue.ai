@@ -203,8 +203,12 @@ fn string_field(value: &Value, name: &str) -> Option<String> {
 }
 
 fn parse_event(value: Value, seq: u64, source_line: u64, source_index: usize) -> TraceEvent {
-    let pre_detonation = field(&value, &["skillsissuePhase", "skillsissue_phase"])
-        .and_then(value_as_string)
+    let phase = field(&value, &["skillsissuePhase", "skillsissue_phase"]).and_then(value_as_string);
+    let phase_known = phase.as_deref().is_some_and(|phase| {
+        phase.eq_ignore_ascii_case("pre-detonation") || phase.eq_ignore_ascii_case("detonation")
+    });
+    let pre_detonation = phase
+        .as_deref()
         .is_some_and(|phase| phase.eq_ignore_ascii_case("pre-detonation"));
     let root = value
         .get("event")
@@ -214,6 +218,7 @@ fn parse_event(value: Value, seq: u64, source_line: u64, source_index: usize) ->
         seq,
         source_line,
         source_index,
+        phase_known,
         pre_detonation,
         timestamp: field(
             root,
@@ -374,7 +379,21 @@ mod tests {
         )
         .unwrap();
         let loaded = load(temp.path(), LoadLimits::default()).unwrap();
+        assert!(loaded.events[0].phase_known);
         assert!(loaded.events[0].pre_detonation);
+    }
+
+    #[test]
+    fn legacy_event_phase_is_unknown_instead_of_detonation() {
+        let temp = tempfile::NamedTempFile::new().unwrap();
+        writeln!(
+            temp.as_file(),
+            "{{\"eventName\":\"openat\",\"processId\":2}}"
+        )
+        .unwrap();
+        let loaded = load(temp.path(), LoadLimits::default()).unwrap();
+        assert!(!loaded.events[0].phase_known);
+        assert!(!loaded.events[0].pre_detonation);
     }
 
     #[test]

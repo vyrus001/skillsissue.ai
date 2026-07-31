@@ -8,7 +8,7 @@ use blake3::Hasher;
 use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
 use sha2::{Digest, Sha256};
-pub use skills_core::{RunRecord, SkillRecord};
+pub use skills_core::{PHASE_CAPTURE_CONTRACT_VERSION, RunRecord, SkillRecord};
 use std::collections::{BTreeMap, BTreeSet};
 use std::ffi::OsStr;
 use std::fs::{self, File, OpenOptions};
@@ -31,6 +31,7 @@ pub const DETERMINISTIC_ADAPTER: &str = "deterministic-closure-harness";
 pub const CODEX_ADAPTER: &str = "codex-cli";
 pub const CLAUDE_ADAPTER: &str = "claude-cli";
 pub const INVOCATION_MARKER_PATH: &str = "/tmp/skillsissue-invocation-boundary";
+pub const INVOCATION_MARKER_STAGING_PATH: &str = "/tmp/.skillsissue-invocation-ready";
 const RELAY_PORT: u16 = 8787;
 const RELAY_REQUEST_BYTES: u64 = 256 * 1024;
 const RELAY_TOTAL_REQUEST_BYTES: u64 = 768 * 1024;
@@ -426,6 +427,7 @@ pub fn config_fingerprint(config: &DetonatorConfig) -> String {
     let relay_contract = relay_contract_fingerprint(config);
     let fields = vec![
         HARNESS_VERSION.to_string(),
+        PHASE_CAPTURE_CONTRACT_VERSION.to_string(),
         config.supervisor_digest.clone(),
         config.tracee_image.clone(),
         config.sandbox_image.clone(),
@@ -489,6 +491,26 @@ fn egress_contract_fingerprint(config: &DetonatorConfig) -> String {
     }
 }
 
+fn recorded_harness_version(supervisor_digest: &str) -> String {
+    format!(
+        "{}+{}@{}",
+        HARNESS_VERSION, PHASE_CAPTURE_CONTRACT_VERSION, supervisor_digest
+    )
+}
+
+fn completed_capture(run: &RunRecord) -> bool {
+    matches!(run.status.as_str(), "captured" | "analyzed" | "complete")
+}
+
+fn phase_capture_contract_satisfied(run: &RunRecord) -> bool {
+    completed_capture(run)
+        && run
+            .harness_version
+            .split_once('@')
+            .map(|(version, _)| version.ends_with(&format!("+{PHASE_CAPTURE_CONTRACT_VERSION}")))
+            .unwrap_or(false)
+}
+
 pub fn pending_skills(
     skills: Vec<SkillRecord>,
     runs: &[RunRecord],
@@ -516,9 +538,19 @@ pub fn pending_skills_sharded(
 ) -> Vec<SkillRecord> {
     let completed: BTreeSet<&str> = runs
         .iter()
-        .filter(|run| matches!(run.status.as_str(), "captured" | "analyzed" | "complete"))
+        .filter(|run| completed_capture(run))
         .map(|run| run.run_key.as_str())
         .collect();
+    let completed_skills = runs
+        .iter()
+        .filter(|run| completed_capture(run))
+        .map(|run| run.skill_id.as_str())
+        .collect::<BTreeSet<_>>();
+    let phase_covered_skills = runs
+        .iter()
+        .filter(|run| phase_capture_contract_satisfied(run))
+        .map(|run| run.skill_id.as_str())
+        .collect::<BTreeSet<_>>();
     let mut attempts = BTreeMap::<&str, u32>::new();
     for run in runs {
         *attempts.entry(run.run_key.as_str()).or_default() += 1;
@@ -529,7 +561,19 @@ pub fn pending_skills_sharded(
         .collect::<Vec<_>>();
     skills.sort_by_cached_key(|skill| {
         let key = run_key(&skill.skill_id, policy_sha256, config);
+        // Repair previously scanned legacy skills first, then advance first
+        // coverage. Refreshes of already phase-aware skills come last, so a
+        // changing image digest cannot starve either coverage queue.
+        let coverage_priority = match (
+            completed_skills.contains(skill.skill_id.as_str()),
+            phase_covered_skills.contains(skill.skill_id.as_str()),
+        ) {
+            (true, false) => 0,
+            (false, false) => 1,
+            (_, true) => 2,
+        };
         (
+            coverage_priority,
             attempts.get(key.as_str()).copied().unwrap_or(0),
             skill.skill_id.clone(),
         )
@@ -871,7 +915,7 @@ pub fn detonate(request: DetonationRequest) -> Result<DetonationResult> {
             queued_at: started_at.to_rfc3339(),
             started_at: Some(started_at.to_rfc3339()),
             finished_at: Some(finished_at.to_rfc3339()),
-            harness_version: format!("{}@{}", HARNESS_VERSION, request.config.supervisor_digest),
+            harness_version: recorded_harness_version(&request.config.supervisor_digest),
             policy_sha256: policy_sha256.clone(),
             agent_adapter: request.config.agent_adapter.clone(),
             agent_model: request.config.agent_model.clone(),
@@ -1148,7 +1192,7 @@ fn failed_attempt_result(
         queued_at: started_at.to_rfc3339(),
         started_at: Some(started_at.to_rfc3339()),
         finished_at: Some(finished_at.to_rfc3339()),
-        harness_version: format!("{}@{}", HARNESS_VERSION, request.config.supervisor_digest),
+        harness_version: recorded_harness_version(&request.config.supervisor_digest),
         policy_sha256: policy_sha256.to_string(),
         agent_adapter: request.config.agent_adapter.clone(),
         agent_model: request.config.agent_model.clone(),
@@ -1456,6 +1500,7 @@ fn tracee_policy_yaml(target_id: &str) -> String {
         "dup2",
         "dup3",
         "close",
+        "rename",
         "renameat",
         "renameat2",
         "unlinkat",
@@ -2689,9 +2734,7 @@ fn filter_trace_to_container(
                 foreign += 1;
                 continue;
             }
-            if invocation_boundary_index.is_none()
-                && json_contains_string(&value, INVOCATION_MARKER_PATH)
-            {
+            if invocation_boundary_index.is_none() && is_invocation_boundary_event(&value) {
                 invocation_boundary_index = Some(target_index);
                 invocation_boundary_timestamp = json_event_timestamp(&value);
             }
@@ -2738,22 +2781,25 @@ fn filter_trace_to_container(
             if !container_id_matches(target_id, event_container) {
                 continue;
             }
-            let pre_detonation = match (invocation_boundary_timestamp, json_event_timestamp(&value))
-            {
-                (Some(boundary), Some(timestamp)) => timestamp <= boundary,
-                _ => invocation_boundary_index.is_some_and(|boundary| target_index <= boundary),
+            let phase = if invocation_boundary_index.is_none() {
+                "unknown"
+            } else {
+                let pre_detonation =
+                    match (invocation_boundary_timestamp, json_event_timestamp(&value)) {
+                        (Some(boundary), Some(timestamp)) => timestamp <= boundary,
+                        _ => invocation_boundary_index
+                            .is_some_and(|boundary| target_index <= boundary),
+                    };
+                if pre_detonation {
+                    "pre-detonation"
+                } else {
+                    "detonation"
+                }
             };
             if let Some(object) = value.as_object_mut() {
                 object.insert(
                     "skillsissuePhase".to_string(),
-                    serde_json::Value::String(
-                        if pre_detonation {
-                            "pre-detonation"
-                        } else {
-                            "detonation"
-                        }
-                        .to_string(),
-                    ),
+                    serde_json::Value::String(phase.to_string()),
                 );
             }
             let encoded = serde_json::to_vec(&value)?;
@@ -2763,7 +2809,7 @@ fn filter_trace_to_container(
                 output.write_all(b"\n")?;
                 bytes_written += required;
                 count += 1;
-                pre_detonation_event_count += u64::from(pre_detonation);
+                pre_detonation_event_count += u64::from(phase == "pre-detonation");
             } else {
                 truncated = true;
             }
@@ -2780,6 +2826,18 @@ fn filter_trace_to_container(
         adapter_exec_seen,
         invocation_boundary_seen: invocation_boundary_index.is_some(),
     })
+}
+
+fn is_invocation_boundary_event(value: &serde_json::Value) -> bool {
+    matches!(
+        json_event_name(value),
+        Some("rename" | "renameat" | "renameat2")
+    ) && value
+        .get("processName")
+        .or_else(|| value.pointer("/event/processName"))
+        .and_then(serde_json::Value::as_str)
+        == Some("skill-harness")
+        && json_contains_string(value, INVOCATION_MARKER_PATH)
 }
 
 fn json_event_name(value: &serde_json::Value) -> Option<&str> {
@@ -2996,6 +3054,33 @@ mod tests {
             manifest_path: String::new(),
             first_seen_at: String::new(),
             last_seen_at: String::new(),
+        }
+    }
+
+    fn completed_run(skill_id: &str, run_key: String, harness_version: &str) -> RunRecord {
+        RunRecord {
+            schema_version: 1,
+            run_id: format!("run-{skill_id}"),
+            run_key,
+            skill_id: skill_id.into(),
+            status: "captured".into(),
+            scenario: "default".into(),
+            seed: 0,
+            queued_at: String::new(),
+            started_at: None,
+            finished_at: None,
+            harness_version: harness_version.into(),
+            policy_sha256: "p".into(),
+            agent_adapter: DETERMINISTIC_ADAPTER.into(),
+            agent_model: "none".into(),
+            target_image_digest: String::new(),
+            skillject_commit: String::new(),
+            telemetry_path: None,
+            event_count: None,
+            exit_code: None,
+            termination_reason: None,
+            closure_lift_count: None,
+            taint_coverage: None,
         }
     }
 
@@ -3405,6 +3490,44 @@ mod tests {
     }
 
     #[test]
+    fn changed_image_digest_does_not_repeat_phase_covered_skill_before_first_coverage() {
+        let old_config = config();
+        let mut current_config = old_config.clone();
+        current_config.target_image_digest = format!("sha256:{}", "1".repeat(64));
+        let run = completed_run(
+            "a",
+            run_key("a", "p", &old_config),
+            &recorded_harness_version(&format!("sha256:{}", "2".repeat(64))),
+        );
+
+        let pending = pending_skills(
+            vec![skill("a"), skill("b")],
+            &[run],
+            "p",
+            &current_config,
+            1,
+        );
+        assert_eq!(pending[0].skill_id, "b");
+    }
+
+    #[test]
+    fn legacy_capture_is_prioritized_for_phase_backfill() {
+        let old_config = config();
+        let mut current_config = old_config.clone();
+        current_config.target_image_digest = format!("sha256:{}", "1".repeat(64));
+        let legacy = completed_run("z", run_key("z", "p", &old_config), "0.1.0@sha256:legacy");
+
+        let pending = pending_skills(
+            vec![skill("a"), skill("z")],
+            &[legacy],
+            "p",
+            &current_config,
+            1,
+        );
+        assert_eq!(pending[0].skill_id, "z");
+    }
+
+    #[test]
     fn run_csv_is_sorted_and_round_trips() -> Result<()> {
         let temp = TempDir::new()?;
         let path = temp.path().join("runs.csv");
@@ -3547,10 +3670,10 @@ mod tests {
             &path,
             format!(
                 "{{\"containerId\":\"0123456789ab\",\"timestamp\":1,\"eventName\":\"openat\",\"args\":{{\"pathname\":\"/tmp/setup\"}}}}\n\
-                 {{\"containerId\":\"0123456789ab\",\"timestamp\":10,\"eventName\":\"openat\",\"args\":{{\"pathname\":\"{INVOCATION_MARKER_PATH}\"}}}}\n\
+                 {{\"containerId\":\"0123456789ab\",\"timestamp\":10,\"eventName\":\"renameat\",\"processName\":\"skill-harness\",\"args\":{{\"newpath\":\"{INVOCATION_MARKER_PATH}\"}}}}\n\
                  {{\"containerId\":\"0123456789ab\",\"timestamp\":11,\"eventName\":\"execve\",\"args\":{{\"pathname\":\"/bin/sh\"}}}}\n\
                  {{\"containerId\":\"0123456789ab\",\"timestamp\":5,\"eventName\":\"read\",\"args\":{{\"fd\":3}}}}\n\
-                 {{\"containerId\":\"0123456789ab\",\"timestamp\":12,\"eventName\":\"openat\",\"args\":{{\"pathname\":\"{INVOCATION_MARKER_PATH}\"}}}}\n"
+                 {{\"containerId\":\"0123456789ab\",\"timestamp\":12,\"eventName\":\"renameat\",\"processName\":\"skill-harness\",\"args\":{{\"newpath\":\"{INVOCATION_MARKER_PATH}\"}}}}\n"
             ),
         )?;
         let stats = filter_trace_to_container(&path, "0123456789abcdef", 4096, None)?;
@@ -3575,6 +3698,22 @@ mod tests {
                 "detonation"
             ]
         );
+        Ok(())
+    }
+
+    #[test]
+    fn raw_trace_without_trusted_boundary_is_phase_unknown() -> Result<()> {
+        let temp = TempDir::new()?;
+        let path = temp.path().join("events.jsonl");
+        fs::write(
+            &path,
+            "{\"containerId\":\"0123456789ab\",\"timestamp\":1,\"eventName\":\"openat\",\"args\":{\"pathname\":\"/tmp/setup\"}}\n",
+        )?;
+        let stats = filter_trace_to_container(&path, "0123456789abcdef", 4096, None)?;
+        assert!(!stats.invocation_boundary_seen);
+        assert_eq!(stats.pre_detonation_event_count, 0);
+        let event: serde_json::Value = serde_json::from_str(fs::read_to_string(path)?.trim())?;
+        assert_eq!(event["skillsissuePhase"], "unknown");
         Ok(())
     }
 
