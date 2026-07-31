@@ -1369,7 +1369,11 @@ fn validate_agent_binding(record: &RunRecord, manifest: &PublishedRunManifest) -
         &manifest.supervisor_digest,
     )?;
 
-    let expected_harness_version = format!("{HARNESS_VERSION}@{}", manifest.supervisor_digest);
+    let expected_harness_version = format!(
+        "{HARNESS_VERSION}+{}@{}",
+        skills_core::PHASE_CAPTURE_CONTRACT_VERSION,
+        manifest.supervisor_digest
+    );
     ensure_same(
         RunRecord::KIND,
         key,
@@ -1698,6 +1702,7 @@ fn published_config_fingerprint(
     };
     let fields = vec![
         HARNESS_VERSION.to_string(),
+        skills_core::PHASE_CAPTURE_CONTRACT_VERSION.to_string(),
         supervisor_digest.to_string(),
         config.tracee_image.clone(),
         config.sandbox_image.clone(),
@@ -3991,7 +3996,10 @@ mod tests {
         record.agent_adapter.clone_from(&config.agent_adapter);
         record.agent_model.clone_from(&config.agent_model);
         record.skillject_commit.clone_from(&config.skillject_commit);
-        record.harness_version = format!("{HARNESS_VERSION}@{supervisor_digest}");
+        record.harness_version = format!(
+            "{HARNESS_VERSION}+{}@{supervisor_digest}",
+            skills_core::PHASE_CAPTURE_CONTRACT_VERSION
+        );
         record.run_key = published_run_key(&record, &config_digest);
         record
     }

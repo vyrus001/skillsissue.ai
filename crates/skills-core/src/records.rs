@@ -3,6 +3,9 @@ use serde::{Deserialize, Serialize};
 use crate::{CanonicalSkill, CsvRecord};
 
 pub const SCHEMA_VERSION: u32 = 1;
+/// Capture contract recorded in `RunRecord::harness_version` once every event
+/// has an authoritative pre-detonation or detonation phase annotation.
+pub const PHASE_CAPTURE_CONTRACT_VERSION: &str = "phase-v1";
 
 pub const SKILLS_HEADERS: &[&str] = &[
     "schema_version",

@@ -49,8 +49,12 @@ fn parse_jsonl(reader: impl BufRead) -> Result<ParsedTrace> {
 }
 
 fn normalize(value: Value, seq: u64) -> NormalizedEvent {
-    let pre_detonation = field(&value, &["skillsissuePhase", "skillsissue_phase"])
-        .and_then(value_as_string)
+    let phase = field(&value, &["skillsissuePhase", "skillsissue_phase"]).and_then(value_as_string);
+    let phase_known = phase.as_deref().is_some_and(|phase| {
+        phase.eq_ignore_ascii_case("pre-detonation") || phase.eq_ignore_ascii_case("detonation")
+    });
+    let pre_detonation = phase
+        .as_deref()
         .is_some_and(|phase| phase.eq_ignore_ascii_case("pre-detonation"));
     let root = value
         .get("event")
@@ -94,6 +98,7 @@ fn normalize(value: Value, seq: u64) -> NormalizedEvent {
     NormalizedEvent {
         seq,
         timestamp,
+        phase_known,
         pre_detonation,
         pid,
         ppid,
@@ -277,7 +282,16 @@ mod tests {
     fn preserves_supervisor_event_phase() {
         let input = r#"{"skillsissuePhase":"pre-detonation","eventName":"openat","processId":4}"#;
         let trace = parse_jsonl(Cursor::new(input)).unwrap();
+        assert!(trace.events[0].phase_known);
         assert!(trace.events[0].pre_detonation);
+    }
+
+    #[test]
+    fn legacy_event_phase_is_unknown_instead_of_detonation() {
+        let input = r#"{"eventName":"openat","processId":4}"#;
+        let trace = parse_jsonl(Cursor::new(input)).unwrap();
+        assert!(!trace.events[0].phase_known);
+        assert!(!trace.events[0].pre_detonation);
     }
 
     #[test]

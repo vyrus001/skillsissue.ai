@@ -217,6 +217,7 @@ fn workspace_root(runs_csv: &std::path::Path) -> &std::path::Path {
 mod tests {
     use super::*;
     use std::fs;
+    use std::io::Read;
 
     fn fixture(name: &str) -> PathBuf {
         PathBuf::from(env!("CARGO_MANIFEST_DIR"))
@@ -265,6 +266,42 @@ mod tests {
             ])
             .unwrap();
         for (run_id, telemetry) in rows {
+            let source = std::path::Path::new(telemetry);
+            let annotated = path
+                .parent()
+                .unwrap()
+                .join(format!("{run_id}-phase-aware.jsonl"));
+            let mut input = Vec::new();
+            if source
+                .extension()
+                .is_some_and(|extension| extension.eq_ignore_ascii_case("zst"))
+            {
+                zstd::stream::read::Decoder::new(fs::File::open(source).unwrap())
+                    .unwrap()
+                    .read_to_end(&mut input)
+                    .unwrap();
+            } else {
+                input = fs::read(source).unwrap();
+            }
+            let mut output = String::new();
+            for line in String::from_utf8(input).unwrap().lines() {
+                match serde_json::from_str::<serde_json::Value>(line) {
+                    Ok(mut event) => {
+                        if event.get("skillsissuePhase").is_none() {
+                            if let Some(object) = event.as_object_mut() {
+                                object.insert(
+                                    "skillsissuePhase".into(),
+                                    serde_json::Value::String("detonation".into()),
+                                );
+                            }
+                        }
+                        output.push_str(&serde_json::to_string(&event).unwrap());
+                    }
+                    Err(_) => output.push_str(line),
+                }
+                output.push('\n');
+            }
+            fs::write(&annotated, output).unwrap();
             writer
                 .write_record([
                     "1",
@@ -283,7 +320,7 @@ mod tests {
                     "model",
                     "image",
                     "commit",
-                    telemetry,
+                    annotated.to_str().unwrap(),
                     "0",
                     "0",
                     "completed",
@@ -954,6 +991,27 @@ mod tests {
         run_once(&paths, 1).unwrap();
         let assessment = fs::read_to_string(&paths.assessments_csv).unwrap();
         assert!(assessment.contains(",unknown,0.0,none,0,0,0,false,0,partial,"));
+    }
+
+    #[test]
+    fn legacy_trace_without_phase_annotations_is_unknown() {
+        let temp = tempfile::tempdir().unwrap();
+        let paths = test_paths(&temp);
+        let legacy = temp.path().join("legacy.jsonl");
+        fs::write(
+            &legacy,
+            "{\"eventName\":\"write\",\"processId\":7,\"args\":{\"pathname\":\"/etc/hosts\"},\"returnValue\":0}\n",
+        )
+        .unwrap();
+        write_runs(&paths.runs_csv, &[("run-legacy", legacy.to_str().unwrap())]);
+        fs::copy(&legacy, temp.path().join("run-legacy-phase-aware.jsonl")).unwrap();
+        write_platforms(&paths.platforms_csv);
+
+        let summary = run_once(&paths, 1).unwrap();
+        assert_eq!(summary.findings, 0);
+        let assessment = fs::read_to_string(&paths.assessments_csv).unwrap();
+        assert!(assessment.contains(",unknown,"));
+        assert!(assessment.contains(",phase_unknown,"));
     }
 
     #[test]

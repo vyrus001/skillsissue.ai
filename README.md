@@ -457,16 +457,18 @@ or disposable long-lived runners.
   bundles, validates symlinks, content-addressed artifacts, and total
   publication caps before upload, then hands deterministic registry changes to
   a clean publisher.
-- `detonate.yml` plans a bounded matrix of 1-16 deterministic shards and runs
+- `detonate.yml` plans a bounded matrix of 1-20 deterministic shards and runs
   each capture leg on a full `ubuntu-24.04` GitHub-hosted VM. GitHub destroys
   the VM after the leg, and each leg has an isolated Docker daemon. Capture
   jobs have no repository write permission; they upload separate artifacts,
   and a clean publisher validates shard membership, combines typed deltas,
   rejects run-key
-  or telemetry collisions, and commits the aggregate once. The default is four
-  shards with one skill per shard and at most four concurrent runners. Manual
-  dispatch can process at most 32 skills for one harness (`16` shards times
-  limit `2`). Scheduled runs and successful ingestion completions select the
+  or telemetry collisions, and commits the aggregate once. The default is 20
+  shards with four skills per shard and up to 20 concurrent runners, matching
+  the standard GitHub-hosted concurrency available to a public repository on
+  the Free plan. Each skill still receives a fresh target container. Manual
+  dispatch can process at most 80 skills for one harness (`20` shards times
+  limit `4`). Scheduled runs and successful ingestion completions select the
   credential-free deterministic adapter. Codex and Claude remain explicit
   manual choices for model-driven coverage.
 - `analyze.yml` replays new telemetry on a normal rootless runner and hands
@@ -488,9 +490,9 @@ executing a fixture if the current hosted kernel cannot support the required
 Tracee capture.
 
 After configuring the `hosted-detonation` environment described below, use the
-guarded launcher for a minimal deterministic run. It validates the branch
-policy, enable flag, and latest eBPF smoke result before asking for confirmation
-and dispatching one skill on one runner. A provider secret is checked only when
+guarded launcher. It validates the branch policy, enable flag, and latest eBPF
+smoke result before asking for confirmation and dispatching the bounded
+phase-aware backlog. A provider secret is checked only when
 `--adapter codex-cli` or `--adapter claude-cli` is selected:
 
 ```bash
@@ -501,14 +503,20 @@ scripts/run-hosted-detonation.sh
 Run `scripts/run-hosted-detonation.sh --help` for bounded shard, concurrency,
 adapter, non-interactive, and no-watch options.
 
-The detonation controls can also be set with `DETONATION_SHARD_COUNT` (1-16),
+The detonation controls can also be set with `DETONATION_SHARD_COUNT` (1-20),
 `DETONATION_MAX_PARALLEL` (no greater than the shard count),
-`DETONATION_BATCH_LIMIT` (1-2 per shard),
+`DETONATION_BATCH_LIMIT` (1-4 per shard),
 `DETONATION_PUBLICATION_MAX_BYTES`, and
 `DETONATION_PUBLICATION_MAX_FILES`. Manual inputs override their corresponding
 variables. Separate workflow runs are FIFO-queued; when a queued run actually
 starts, its serialized planner resolves the latest default-branch commit so it
 sees captures published by earlier runs.
+
+Pending selection is coverage-first. Previously captured skills without the
+current phase contract are re-detonated first, never-captured skills follow,
+and environment refreshes of already phase-aware skills come last. This keeps
+base-image rebuilds from repeatedly selecting the same hashes while older
+telemetry is repaired with an authoritative invocation boundary.
 
 All third-party actions are pinned to immutable commit SHAs. Repository write
 jobs share a queued concurrency group so completed worker artifacts are not

@@ -61,6 +61,7 @@ pub struct Analysis {
 pub struct NormalizedEvent {
     pub seq: u64,
     pub timestamp: Option<u64>,
+    pub phase_known: bool,
     pub pre_detonation: bool,
     pub pid: i64,
     pub ppid: Option<i64>,
