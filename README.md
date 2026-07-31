@@ -431,6 +431,22 @@ cargo run --locked -p skill-analyze -- \
   once --limit 100
 ```
 
+Pending means either unassessed or assessed by an older analyzer ruleset. A
+ruleset-version change therefore creates a bounded, deterministic backfill
+without deleting raw telemetry. Analyzer-owned assessments, findings, and
+platform evidence are published as one validated snapshot so a replay can
+replace outdated verdicts and remove findings that the current rules no longer
+emit.
+
+Dispatch a large hosted backfill from the default branch with:
+
+```bash
+gh workflow run analyze.yml \
+  --repo vyrus001/skillsissue.ai \
+  --ref main \
+  -f limit=1000
+```
+
 Each binary also has a `loop` subcommand. GitHub Actions uses bounded `once`
 runs because scheduled jobs are finite; container loops are intended for local
 or disposable long-lived runners.

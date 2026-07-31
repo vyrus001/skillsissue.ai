@@ -28,9 +28,19 @@ const RULE_FORENSIC_TAMPER: &str = "integrity.logging_or_forensic_artifact_tampe
 const RULE_PRIVILEGE_ELEVATION: &str = "behavior.privilege_or_integrity_elevation";
 const RULE_SECURITY_POLICY_TAMPER: &str = "integrity.security_policy_modified";
 const RULE_PROTECTION_TAMPER: &str = "integrity.built_in_protection_disabled";
+const RULESET_VERSION: &str = "deterministic-rules-v1";
 const MAX_FINDINGS_PER_RUN: usize = 1_024;
 const MAX_PLATFORM_EVIDENCE_PER_RUN: usize = 2_048;
 const MAX_RETAINED_URL_BYTES: usize = 2_048;
+
+pub(crate) fn analyzer_version(discovery_version: &str) -> String {
+    format!(
+        "{}+{}.{}",
+        env!("CARGO_PKG_VERSION"),
+        RULESET_VERSION,
+        discovery_version
+    )
+}
 
 pub struct Analyzer {
     policy: Policy,
@@ -1262,7 +1272,7 @@ fn assessment(
         unknown_platform_count,
         coverage_state: coverage.into(),
         policy_version: policy.version.clone(),
-        analyzer_version: format!("{}+{discovery_version}", env!("CARGO_PKG_VERSION")),
+        analyzer_version: analyzer_version(discovery_version),
         assessed_at: run.evidence_time(),
     }
 }

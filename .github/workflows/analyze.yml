@@ -78,18 +78,24 @@ jobs:
           test "$PUBLICATION_MAX_BYTES" -ge 1
           test "$PUBLICATION_MAX_FILES" -ge 1
           mkdir -p publication/data
-          for kind in assessments findings platform_evidence platforms; do
-            docker run --rm --read-only \
-              --user "$(id -u):$(id -g)" \
-              --network none \
-              --cap-drop ALL \
-              --mount "type=bind,src=$GITHUB_WORKSPACE,dst=/source,readonly" \
-              --mount "type=bind,src=$WORKER_ROOT,dst=/worker,readonly" \
-              --mount "type=bind,src=$GITHUB_WORKSPACE/publication,dst=/publication" \
-              --entrypoint skills-state \
-              skillsissue-analyzer:run \
-              diff "$kind" "/source/.baseline/data/$kind.csv" "/worker/data/$kind.csv" "/publication/data/$kind.csv"
-          done
+          cp \
+            "$WORKER_ROOT/data/assessments.csv" \
+            "$WORKER_ROOT/data/findings.csv" \
+            "$WORKER_ROOT/data/platform_evidence.csv" \
+            publication/data/
+          docker run --rm --read-only \
+            --user "$(id -u):$(id -g)" \
+            --network none \
+            --cap-drop ALL \
+            --mount "type=bind,src=$GITHUB_WORKSPACE,dst=/source,readonly" \
+            --mount "type=bind,src=$WORKER_ROOT,dst=/worker,readonly" \
+            --mount "type=bind,src=$GITHUB_WORKSPACE/publication,dst=/publication" \
+            --entrypoint skills-state \
+            skillsissue-analyzer:run \
+            diff platforms \
+            /source/.baseline/data/platforms.csv \
+            /worker/data/platforms.csv \
+            /publication/data/platforms.csv
           actual_bytes="$(( $(du -sk --apparent-size publication | cut -f1) * 1024 ))"
           actual_files="$(find publication -type f -print | wc -l | tr -d '[:space:]')"
           test "$actual_bytes" -le "$PUBLICATION_MAX_BYTES"
@@ -151,14 +157,18 @@ jobs:
 
             tracked_link="$(find "$worktree/data" -type l -print -quit)"
             test -z "$tracked_link"
-            for kind in assessments findings platform_evidence platforms; do
-              docker run --rm --read-only --network none --cap-drop ALL \
-                --user "$(id -u):$(id -g)" \
-                --mount "type=bind,src=$worktree/data,dst=/data" \
-                --mount "type=bind,src=$PUBLICATION_ROOT/data,dst=/input,readonly" \
-                --entrypoint skills-state skillsissue-analyzer:publisher \
-                merge "$kind" "/data/$kind.csv" "/input/$kind.csv"
-            done
+            docker run --rm --read-only --network none --cap-drop ALL \
+              --user "$(id -u):$(id -g)" \
+              --mount "type=bind,src=$worktree/data,dst=/data" \
+              --mount "type=bind,src=$PUBLICATION_ROOT/data,dst=/input,readonly" \
+              --entrypoint skills-state skillsissue-analyzer:publisher \
+              replace-analysis /data /input
+            docker run --rm --read-only --network none --cap-drop ALL \
+              --user "$(id -u):$(id -g)" \
+              --mount "type=bind,src=$worktree/data,dst=/data" \
+              --mount "type=bind,src=$PUBLICATION_ROOT/data,dst=/input,readonly" \
+              --entrypoint skills-state skillsissue-analyzer:publisher \
+              merge platforms /data/platforms.csv /input/platforms.csv
             git -C "$worktree" add \
               data/assessments.csv data/findings.csv data/platform_evidence.csv data/platforms.csv
             if git -C "$worktree" diff --cached --quiet; then

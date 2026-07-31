@@ -32,6 +32,9 @@ fn main() -> Result<(), Box<dyn Error>> {
         [operation, kind, before, after, output] if operation == "diff" => {
             dispatch_diff(kind, Path::new(before), Path::new(after), Path::new(output))?;
         }
+        [operation, destination, snapshot] if operation == "replace-analysis" => {
+            replace_analysis_snapshot(Path::new(destination), Path::new(snapshot))?;
+        }
         [operation, repo_root, delta, staging_root] if operation == "validate-artifacts" => {
             validate_artifacts(
                 Path::new(repo_root),
@@ -60,12 +63,162 @@ fn main() -> Result<(), Box<dyn Error>> {
         }
         _ => {
             return Err(
-                "usage: skills-state merge <kind> <destination.csv> <delta.csv>\n       skills-state diff <kind> <before.csv> <after.csv> <delta.csv>\n       skills-state validate-artifacts <repo-root> <skills-delta.csv> <staging-root>\n       skills-state validate-telemetry <runs-delta.csv> <staging-root>\n       skills-state validate-shard <runs-delta.csv> <shard-index> <shard-count> <agent-adapter> <max-runs>"
+                "usage: skills-state merge <kind> <destination.csv> <delta.csv>\n       skills-state diff <kind> <before.csv> <after.csv> <delta.csv>\n       skills-state replace-analysis <destination-data-dir> <snapshot-data-dir>\n       skills-state validate-artifacts <repo-root> <skills-delta.csv> <staging-root>\n       skills-state validate-telemetry <runs-delta.csv> <staging-root>\n       skills-state validate-shard <runs-delta.csv> <shard-index> <shard-count> <agent-adapter> <max-runs>"
                     .into(),
             );
         }
     }
     Ok(())
+}
+
+fn replace_analysis_snapshot(destination: &Path, snapshot: &Path) -> Result<(), Box<dyn Error>> {
+    require_real_directory(destination, "analysis destination")?;
+    require_real_directory(snapshot, "analysis snapshot")?;
+
+    let runs_path = destination.join("runs.csv");
+    require_real_file(&runs_path, "run ledger")?;
+    let runs = read_csv_records::<RunRecord>(&runs_path)?
+        .into_iter()
+        .map(|record| (record.run_id, record.skill_id))
+        .collect::<BTreeMap<_, _>>();
+
+    let assessment_path = destination.join("assessments.csv");
+    let finding_path = destination.join("findings.csv");
+    let evidence_path = destination.join("platform_evidence.csv");
+    let snapshot_assessment_path = snapshot.join("assessments.csv");
+    let snapshot_finding_path = snapshot.join("findings.csv");
+    let snapshot_evidence_path = snapshot.join("platform_evidence.csv");
+    for (path, label) in [
+        (&assessment_path, "destination assessment ledger"),
+        (&finding_path, "destination finding ledger"),
+        (&evidence_path, "destination platform evidence ledger"),
+        (&snapshot_assessment_path, "snapshot assessment ledger"),
+        (&snapshot_finding_path, "snapshot finding ledger"),
+        (&snapshot_evidence_path, "snapshot platform evidence ledger"),
+    ] {
+        require_real_file(path, label)?;
+    }
+
+    let existing_assessment_runs = read_csv_records::<AssessmentRecord>(&assessment_path)?
+        .into_iter()
+        .map(|record| record.run_id)
+        .collect::<BTreeSet<_>>();
+    let assessments = read_csv_records::<AssessmentRecord>(&snapshot_assessment_path)?;
+    let mut assessment_keys = BTreeSet::new();
+    let mut assessment_runs = BTreeSet::new();
+    for record in &assessments {
+        record.validate()?;
+        let key = checked_key(record)?;
+        if !assessment_keys.insert(key.clone()) {
+            return Err(CoreError::DuplicateStableKey(key).into());
+        }
+        if !assessment_runs.insert(record.run_id.clone()) {
+            return Err(format!(
+                "analysis snapshot contains more than one assessment for run {:?}",
+                record.run_id
+            )
+            .into());
+        }
+        if runs.get(&record.run_id) != Some(&record.skill_id) {
+            return Err(format!(
+                "assessment {:?} does not match a known run and skill",
+                record.assessment_id
+            )
+            .into());
+        }
+    }
+    if let Some(missing) = existing_assessment_runs.difference(&assessment_runs).next() {
+        return Err(format!(
+            "analysis snapshot would remove the existing assessment for run {missing:?}"
+        )
+        .into());
+    }
+
+    let findings = read_csv_records::<FindingRecord>(&snapshot_finding_path)?;
+    let mut finding_keys = BTreeSet::new();
+    let mut finding_counts = BTreeMap::<String, (u64, u64, u64)>::new();
+    for record in &findings {
+        record.validate()?;
+        let key = checked_key(record)?;
+        if !finding_keys.insert(key.clone()) {
+            return Err(CoreError::DuplicateStableKey(key).into());
+        }
+        if !runs.contains_key(&record.run_id) || !assessment_runs.contains(&record.run_id) {
+            return Err(format!(
+                "finding {:?} does not reference an assessed known run",
+                record.finding_id
+            )
+            .into());
+        }
+        let counts = finding_counts.entry(record.run_id.clone()).or_default();
+        match record.category.as_str() {
+            "confidentiality" => counts.0 += 1,
+            "integrity" => counts.1 += 1,
+            "behavioral" => counts.2 += 1,
+            _ => {}
+        }
+    }
+    for assessment in &assessments {
+        let counts = finding_counts
+            .get(&assessment.run_id)
+            .copied()
+            .unwrap_or_default();
+        if counts
+            != (
+                assessment.confidentiality_findings,
+                assessment.integrity_findings,
+                assessment.behavioral_findings,
+            )
+        {
+            return Err(format!(
+                "assessment {:?} finding counts do not match the snapshot",
+                assessment.assessment_id
+            )
+            .into());
+        }
+    }
+
+    let evidence = read_csv_records::<PlatformEvidenceRecord>(&snapshot_evidence_path)?;
+    let mut evidence_keys = BTreeSet::new();
+    for record in &evidence {
+        record.validate()?;
+        let key = checked_key(record)?;
+        if !evidence_keys.insert(key.clone()) {
+            return Err(CoreError::DuplicateStableKey(key).into());
+        }
+        if runs.get(&record.run_id) != Some(&record.skill_id)
+            || !assessment_runs.contains(&record.run_id)
+        {
+            return Err(format!(
+                "platform evidence {:?} does not reference an assessed known run and skill",
+                record.evidence_id
+            )
+            .into());
+        }
+    }
+
+    // Derived detail ledgers are written first. The assessment remains the
+    // durable completion marker for a fully published analysis snapshot.
+    write_csv_records_atomic(&finding_path, findings)?;
+    write_csv_records_atomic(&evidence_path, evidence)?;
+    write_csv_records_atomic(&assessment_path, assessments)?;
+    Ok(())
+}
+
+fn require_real_directory(path: &Path, label: &str) -> Result<(), Box<dyn Error>> {
+    match fs::symlink_metadata(path) {
+        Ok(metadata) if metadata.is_dir() && !metadata.file_type().is_symlink() => Ok(()),
+        Ok(_) => Err(format!("{label} must be a real directory: {}", path.display()).into()),
+        Err(error) => Err(error.into()),
+    }
+}
+
+fn require_real_file(path: &Path, label: &str) -> Result<(), Box<dyn Error>> {
+    match fs::symlink_metadata(path) {
+        Ok(metadata) if metadata.is_file() && !metadata.file_type().is_symlink() => Ok(()),
+        Ok(_) => Err(format!("{label} must be a real file: {}", path.display()).into()),
+        Err(error) => Err(error.into()),
+    }
 }
 
 fn validate_shard_delta(
@@ -4039,6 +4192,99 @@ mod tests {
             analyzer_version: "analyzer-v1".into(),
             assessed_at: LATE.into(),
         }
+    }
+
+    #[test]
+    fn analysis_snapshot_can_replace_versioned_results_and_remove_stale_detail_rows() {
+        let temp = tempdir().unwrap();
+        let destination = temp.path().join("destination");
+        let snapshot = temp.path().join("snapshot");
+        fs::create_dir(&destination).unwrap();
+        fs::create_dir(&snapshot).unwrap();
+
+        let existing = assessment();
+        let mut updated = existing.clone();
+        updated.analyzer_version = "analyzer-v2".into();
+        write_csv_records_atomic(destination.join("runs.csv"), [run()]).unwrap();
+        write_csv_records_atomic(destination.join("assessments.csv"), [existing]).unwrap();
+        write_csv_records_atomic::<FindingRecord, _>(
+            destination.join("findings.csv"),
+            std::iter::empty(),
+        )
+        .unwrap();
+        write_csv_records_atomic(
+            destination.join("platform_evidence.csv"),
+            [platform_evidence()],
+        )
+        .unwrap();
+
+        write_csv_records_atomic(snapshot.join("assessments.csv"), [updated.clone()]).unwrap();
+        write_csv_records_atomic::<FindingRecord, _>(
+            snapshot.join("findings.csv"),
+            std::iter::empty(),
+        )
+        .unwrap();
+        write_csv_records_atomic::<PlatformEvidenceRecord, _>(
+            snapshot.join("platform_evidence.csv"),
+            std::iter::empty(),
+        )
+        .unwrap();
+
+        replace_analysis_snapshot(&destination, &snapshot).unwrap();
+        assert_eq!(
+            read_csv_records::<AssessmentRecord>(destination.join("assessments.csv")).unwrap(),
+            vec![updated]
+        );
+        assert!(
+            read_csv_records::<PlatformEvidenceRecord>(destination.join("platform_evidence.csv"))
+                .unwrap()
+                .is_empty()
+        );
+    }
+
+    #[test]
+    fn analysis_snapshot_cannot_remove_an_existing_assessment() {
+        let temp = tempdir().unwrap();
+        let destination = temp.path().join("destination");
+        let snapshot = temp.path().join("snapshot");
+        fs::create_dir(&destination).unwrap();
+        fs::create_dir(&snapshot).unwrap();
+
+        write_csv_records_atomic(destination.join("runs.csv"), [run()]).unwrap();
+        write_csv_records_atomic(destination.join("assessments.csv"), [assessment()]).unwrap();
+        write_csv_records_atomic::<FindingRecord, _>(
+            destination.join("findings.csv"),
+            std::iter::empty(),
+        )
+        .unwrap();
+        write_csv_records_atomic::<PlatformEvidenceRecord, _>(
+            destination.join("platform_evidence.csv"),
+            std::iter::empty(),
+        )
+        .unwrap();
+        write_csv_records_atomic::<AssessmentRecord, _>(
+            snapshot.join("assessments.csv"),
+            std::iter::empty(),
+        )
+        .unwrap();
+        write_csv_records_atomic::<FindingRecord, _>(
+            snapshot.join("findings.csv"),
+            std::iter::empty(),
+        )
+        .unwrap();
+        write_csv_records_atomic::<PlatformEvidenceRecord, _>(
+            snapshot.join("platform_evidence.csv"),
+            std::iter::empty(),
+        )
+        .unwrap();
+
+        let before = fs::read(destination.join("assessments.csv")).unwrap();
+        let error = replace_analysis_snapshot(&destination, &snapshot).unwrap_err();
+        assert!(error.to_string().contains("would remove"));
+        assert_eq!(
+            fs::read(destination.join("assessments.csv")).unwrap(),
+            before
+        );
     }
 
     #[test]
