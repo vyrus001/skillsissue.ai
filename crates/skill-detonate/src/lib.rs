@@ -503,12 +503,14 @@ fn completed_capture(run: &RunRecord) -> bool {
 }
 
 fn phase_capture_contract_satisfied(run: &RunRecord) -> bool {
-    completed_capture(run)
-        && run
-            .harness_version
-            .split_once('@')
-            .map(|(version, _)| version.ends_with(&format!("+{PHASE_CAPTURE_CONTRACT_VERSION}")))
-            .unwrap_or(false)
+    matches!(
+        run.status.as_str(),
+        "captured" | "captured_untraced" | "analyzed" | "complete"
+    ) && run
+        .harness_version
+        .split_once('@')
+        .map(|(version, _)| version.ends_with(&format!("+{PHASE_CAPTURE_CONTRACT_VERSION}")))
+        .unwrap_or(false)
 }
 
 pub fn pending_skills(
@@ -3503,6 +3505,28 @@ mod tests {
         let pending = pending_skills(
             vec![skill("a"), skill("b")],
             &[run],
+            "p",
+            &current_config,
+            1,
+        );
+        assert_eq!(pending[0].skill_id, "b");
+    }
+
+    #[test]
+    fn changed_image_digest_does_not_repeat_phase_tagged_partial_before_first_coverage() {
+        let old_config = config();
+        let mut current_config = old_config.clone();
+        current_config.target_image_digest = format!("sha256:{}", "1".repeat(64));
+        let mut partial = completed_run(
+            "a",
+            run_key("a", "p", &old_config),
+            &recorded_harness_version(&format!("sha256:{}", "2".repeat(64))),
+        );
+        partial.status = "captured_untraced".into();
+
+        let pending = pending_skills(
+            vec![skill("a"), skill("b")],
+            &[partial],
             "p",
             &current_config,
             1,
