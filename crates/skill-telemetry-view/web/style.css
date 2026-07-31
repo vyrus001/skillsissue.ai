@@ -152,6 +152,43 @@ h2 { margin-bottom: 12px; font-size: 12px; text-transform: uppercase; letter-spa
 .stat span { color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: .06em; }
 .coverage-note { margin: 10px 0 0; color: var(--muted); font-size: 11px; line-height: 1.45; }
 .coverage-note.warning { color: var(--danger); }
+.assessment-section {
+  border-left: 3px solid rgba(255, 95, 86, .78);
+  background: linear-gradient(135deg, rgba(88, 23, 22, .18), transparent 70%);
+}
+.assessment-verdict {
+  padding: 4px 7px;
+  border: 1px solid var(--line-bright);
+  border-radius: 99px;
+  color: var(--muted);
+  font: 700 9px ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+.assessment-verdict.malicious { border-color: rgba(255, 95, 86, .55); color: #ff8d7f; background: rgba(255, 95, 86, .09); }
+.assessment-verdict.benign { border-color: rgba(185, 245, 106, .4); color: var(--accent); background: rgba(185, 245, 106, .07); }
+.assessment-details-button {
+  width: 100%;
+  margin-top: 11px;
+  padding: 8px;
+  border-color: rgba(255, 95, 86, .42);
+  border-radius: 5px;
+  color: #ff9d91;
+  background: rgba(255, 95, 86, .07);
+}
+.finding-shortcuts { display: grid; gap: 5px; margin-top: 8px; }
+.finding-shortcut {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 7px;
+  padding: 7px;
+  border-radius: 5px;
+  text-align: left;
+}
+.finding-shortcut b { color: #ff8d7f; font: 700 8px ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; }
+.finding-shortcut span { overflow: hidden; color: var(--muted); font-size: 9px; line-height: 1.35; text-overflow: ellipsis; white-space: nowrap; }
+.finding-shortcut.active { border-color: #ff5f56; background: rgba(255, 95, 86, .12); }
 .network-captures-button {
   width: 100%;
   margin-top: 10px;
@@ -176,6 +213,7 @@ select, input { width: 100%; border-radius: 6px; padding: 8px 9px; }
 
 .legend { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; color: var(--muted); }
 .swatch { display: inline-block; width: 9px; height: 9px; margin-right: 8px; border-radius: 3px; background: var(--other); }
+.swatch.threat { background: #ff5f56; box-shadow: 0 0 8px rgba(255, 95, 86, .65); }
 .swatch.process { background: var(--process); }
 .swatch.file { background: var(--file); }
 .swatch.socket { background: var(--socket); }
@@ -244,6 +282,23 @@ canvas.dragging { cursor: grabbing; }
 .details-header button { width: 28px; height: 28px; border: 0; background: transparent; color: var(--muted); font-size: 20px; }
 .details-body { padding: 18px; }
 .muted { color: var(--muted); line-height: 1.55; }
+.verdict-explanation {
+  margin: 0 0 14px;
+  padding: 11px;
+  border-left: 3px solid var(--accent-2);
+  background: rgba(101, 229, 194, .055);
+  color: var(--muted);
+  line-height: 1.5;
+}
+.verdict-explanation.danger { border-left-color: #ff5f56; background: rgba(255, 95, 86, .07); color: #ffd2cd; }
+.finding-list { display: grid; gap: 8px; }
+.finding-card { width: 100%; display: grid; gap: 7px; padding: 11px; border-radius: 6px; text-align: left; }
+.finding-card > span { min-width: 0; display: flex; align-items: center; gap: 8px; }
+.finding-card code { overflow: hidden; color: var(--faint); font-size: 9px; text-overflow: ellipsis; white-space: nowrap; }
+.finding-card strong { color: var(--text); font-size: 11px; line-height: 1.4; }
+.finding-card small { overflow: hidden; color: var(--muted); font: 9px ui-monospace, SFMono-Regular, Menlo, monospace; text-overflow: ellipsis; white-space: nowrap; }
+.finding-severity { flex: 0 0 auto; padding: 3px 5px; border-radius: 3px; color: #07100f; background: var(--file); font: 800 8px ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; }
+.finding-severity.critical, .finding-severity.high { background: #ff7b6d; }
 
 .detail-grid { display: grid; grid-template-columns: 104px minmax(0, 1fr); gap: 8px 12px; margin: 0 0 18px; }
 .detail-grid dt { color: var(--faint); }

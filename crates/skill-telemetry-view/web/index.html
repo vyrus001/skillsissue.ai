@@ -37,6 +37,16 @@
           <p id="coverage-note" class="coverage-note"></p>
         </section>
 
+        <section id="assessment-section" class="assessment-section" hidden>
+          <div class="section-heading">
+            <h2>Verdict evidence</h2>
+            <span id="assessment-verdict" class="assessment-verdict">Unknown</span>
+          </div>
+          <p id="assessment-summary" class="coverage-note"></p>
+          <button id="assessment-details" class="assessment-details-button" type="button">Why this verdict</button>
+          <div id="finding-shortcuts" class="finding-shortcuts"></div>
+        </section>
+
         <section id="network-capture-section" hidden>
           <div class="section-heading">
             <h2>Intercepted downloads</h2>
@@ -102,6 +112,7 @@
         <section>
           <h2>Legend</h2>
           <ul class="legend">
+            <li><i class="swatch threat"></i> Flagged evidence chain</li>
             <li><i class="swatch process"></i> Process image</li>
             <li><i class="swatch file"></i> File activity</li>
             <li><i class="swatch socket"></i> Socket activity</li>

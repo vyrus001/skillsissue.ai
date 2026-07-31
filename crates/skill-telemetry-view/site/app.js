@@ -117,7 +117,9 @@ function skillRow(skill) {
   skillName.textContent = skill.name;
   const linkType = document.createElement("small");
   linkType.textContent = skill.graphAvailable
-    ? "Open execution graph ↘"
+    ? skill.findingCount > 0
+      ? `Explain ${formatCount(skill.findingCount)} finding${skill.findingCount === 1 ? "" : "s"} ↘`
+      : "Open execution graph ↘"
     : skill.verdict === "pending-scan"
       ? "Execution graph pending ↗"
       : "Local viewer instructions ↗";
@@ -143,14 +145,18 @@ function skillRow(skill) {
   hashCell.append(hash);
 
   const verdictCell = document.createElement("td");
-  const verdict = document.createElement("span");
+  const verdict = document.createElement(skill.graphAvailable ? "a" : "span");
   verdict.className = `verdict ${verdictClass(skill.verdict)}`;
+  if (skill.graphAvailable) {
+    verdict.href = skill.detailUrl;
+    verdict.title = skill.findingCount > 0 ? "Open verdict evidence" : "Open execution graph";
+  }
   const verdictName = document.createElement("strong");
   verdictName.textContent = titleCase(skill.verdict);
   const detail = document.createElement("small");
   detail.textContent = skill.verdict === "pending-scan"
     ? "Awaiting isolated run"
-    : `${formatRisk(skill.riskScore)} · ${skill.maxSeverity}`;
+    : `${formatRisk(skill.riskScore)} · ${skill.maxSeverity} · ${formatCount(skill.findingCount)} finding${skill.findingCount === 1 ? "" : "s"}`;
   verdict.append(verdictName, detail);
   verdictCell.append(verdict);
 

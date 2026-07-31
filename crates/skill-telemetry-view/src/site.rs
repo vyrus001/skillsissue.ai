@@ -6,7 +6,8 @@ use std::path::{Component, Path, PathBuf};
 use anyhow::{Context, Result, bail, ensure};
 use serde::Serialize;
 use skills_core::{
-    AssessmentRecord, DiscoveryRecord, PlatformRecord, RunRecord, SkillRecord, read_csv_records,
+    AssessmentRecord, DiscoveryRecord, FindingRecord, PlatformRecord, RunRecord, SkillRecord,
+    read_csv_records,
 };
 use url::Url;
 
@@ -67,6 +68,7 @@ struct PublishedSkill {
     platforms: Vec<PublishedPlatform>,
     detail_url: String,
     graph_available: bool,
+    finding_count: usize,
 }
 
 #[derive(Debug, Serialize)]
@@ -81,9 +83,36 @@ struct PublishedPlatform {
 #[serde(rename_all = "camelCase")]
 struct StaticGraph {
     graph: GraphModel,
+    assessment: PublishedAssessment,
     event_count: usize,
     event_page_size: usize,
     network_capture_count: usize,
+}
+
+#[derive(Serialize)]
+#[serde(rename_all = "camelCase")]
+struct PublishedAssessment {
+    verdict: String,
+    risk_score: f64,
+    max_severity: String,
+    coverage_state: String,
+    assessed_at: String,
+    findings: Vec<PublishedFinding>,
+}
+
+#[derive(Serialize)]
+#[serde(rename_all = "camelCase")]
+struct PublishedFinding {
+    finding_id: String,
+    rule_id: String,
+    category: String,
+    severity: String,
+    source_marker: Option<String>,
+    sink_kind: String,
+    sink_value: String,
+    evidence_seq_start: u64,
+    evidence_seq_end: u64,
+    summary: String,
 }
 
 const EVENT_PAGE_SIZE: usize = 100;
@@ -130,6 +159,7 @@ pub fn build(repo_root: &Path, output: &Path, max_published_events: usize) -> Re
     let platforms: Vec<PlatformRecord> = read_csv_records(data.join("platforms.csv"))?;
     let runs: Vec<RunRecord> = read_csv_records(data.join("runs.csv"))?;
     let assessments: Vec<AssessmentRecord> = read_csv_records(data.join("assessments.csv"))?;
+    let findings: Vec<FindingRecord> = read_csv_records(data.join("findings.csv"))?;
 
     let platforms_by_id = platforms
         .iter()
@@ -140,6 +170,7 @@ pub fn build(repo_root: &Path, output: &Path, max_published_events: usize) -> Re
         .map(|run| (run.run_id.as_str(), run))
         .collect::<BTreeMap<_, _>>();
     let discoveries_by_skill = group_discoveries(&discoveries);
+    let findings_by_run = group_findings(&findings);
     let latest = latest_assessments(&assessments);
 
     write_asset(output.join("index.html"), SITE_INDEX)?;
@@ -173,7 +204,17 @@ pub fn build(repo_root: &Path, output: &Path, max_published_events: usize) -> Re
         let graph_available = if let Some(assessment) = assessment {
             scanned_skills += 1;
             match runs_by_id.get(assessment.run_id.as_str()).copied() {
-                Some(run) => publish_graph(repo_root, output, run, max_published_events)?,
+                Some(run) => publish_graph(
+                    repo_root,
+                    output,
+                    run,
+                    assessment,
+                    findings_by_run
+                        .get(assessment.run_id.as_str())
+                        .map(Vec::as_slice)
+                        .unwrap_or_default(),
+                    max_published_events,
+                )?,
                 None => false,
             }
         } else {
@@ -204,6 +245,9 @@ pub fn build(repo_root: &Path, output: &Path, max_published_events: usize) -> Re
                 )
             };
 
+        let finding_count = assessment
+            .and_then(|assessment| findings_by_run.get(assessment.run_id.as_str()))
+            .map_or(0, Vec::len);
         published.push(PublishedSkill {
             skill_id: skill.skill_id.clone(),
             name: skill
@@ -221,9 +265,15 @@ pub fn build(repo_root: &Path, output: &Path, max_published_events: usize) -> Re
             platforms: published_platforms,
             detail_url: assessment
                 .filter(|_| graph_available)
-                .map(|assessment| format!("./graph/?run={}", assessment.run_id))
+                .map(|assessment| {
+                    let view = (finding_count > 0)
+                        .then_some("&view=findings")
+                        .unwrap_or_default();
+                    format!("./graph/?run={}{}", assessment.run_id, view)
+                })
                 .unwrap_or_else(|| README_VIEWER_URL.to_string()),
             graph_available,
+            finding_count,
         });
     }
 
@@ -306,6 +356,63 @@ fn latest_assessments(assessments: &[AssessmentRecord]) -> BTreeMap<&str, &Asses
     latest
 }
 
+fn group_findings(findings: &[FindingRecord]) -> BTreeMap<&str, Vec<&FindingRecord>> {
+    let mut grouped: BTreeMap<&str, Vec<&FindingRecord>> = BTreeMap::new();
+    for finding in findings {
+        grouped
+            .entry(finding.run_id.as_str())
+            .or_default()
+            .push(finding);
+    }
+    for rows in grouped.values_mut() {
+        rows.sort_by(|left, right| {
+            severity_rank(&right.severity)
+                .cmp(&severity_rank(&left.severity))
+                .then_with(|| left.evidence_seq_start.cmp(&right.evidence_seq_start))
+                .then_with(|| left.finding_id.cmp(&right.finding_id))
+        });
+    }
+    grouped
+}
+
+fn severity_rank(severity: &str) -> u8 {
+    match severity {
+        "critical" => 4,
+        "high" => 3,
+        "medium" => 2,
+        "low" => 1,
+        _ => 0,
+    }
+}
+
+fn published_assessment(
+    assessment: &AssessmentRecord,
+    findings: &[&FindingRecord],
+) -> PublishedAssessment {
+    PublishedAssessment {
+        verdict: assessment.verdict.clone(),
+        risk_score: assessment.risk_score,
+        max_severity: assessment.max_severity.clone(),
+        coverage_state: assessment.coverage_state.clone(),
+        assessed_at: assessment.assessed_at.clone(),
+        findings: findings
+            .iter()
+            .map(|finding| PublishedFinding {
+                finding_id: finding.finding_id.clone(),
+                rule_id: finding.rule_id.clone(),
+                category: finding.category.clone(),
+                severity: finding.severity.clone(),
+                source_marker: finding.source_marker.clone(),
+                sink_kind: finding.sink_kind.clone(),
+                sink_value: finding.sink_value.clone(),
+                evidence_seq_start: finding.evidence_seq_start,
+                evidence_seq_end: finding.evidence_seq_end,
+                summary: finding.summary.clone(),
+            })
+            .collect(),
+    }
+}
+
 fn public_platforms(
     discoveries: &[&DiscoveryRecord],
     platforms: &BTreeMap<&str, &PlatformRecord>,
@@ -335,6 +442,8 @@ fn publish_graph(
     repo_root: &Path,
     output: &Path,
     run: &RunRecord,
+    assessment: &AssessmentRecord,
+    findings: &[&FindingRecord],
     max_published_events: usize,
 ) -> Result<bool> {
     ensure!(safe_run_id(&run.run_id), "unsafe run ID: {}", run.run_id);
@@ -381,6 +490,7 @@ fn publish_graph(
         run_output.join("graph.json"),
         &StaticGraph {
             graph,
+            assessment: published_assessment(assessment, findings),
             event_count: trace.events.len(),
             event_page_size: EVENT_PAGE_SIZE,
             network_capture_count,
@@ -556,10 +666,10 @@ fn write_json<T: Serialize + ?Sized>(path: PathBuf, value: &T) -> Result<()> {
 mod tests {
     use super::{
         MAX_STATIC_NETWORK_RECORDS, README_VIEWER_URL, build, public_http_url,
-        publish_network_captures, safe_run_id, safe_telemetry_path,
+        publish_network_captures, published_assessment, safe_run_id, safe_telemetry_path,
     };
     use serde_json::Value;
-    use skills_core::{SkillRecord, write_csv_records_atomic};
+    use skills_core::{AssessmentRecord, FindingRecord, SkillRecord, write_csv_records_atomic};
     use std::{fs, io::Cursor, path::Path};
 
     #[test]
@@ -585,6 +695,56 @@ mod tests {
             "https://clawhub.ai/"
         );
         assert_eq!(public_http_url("file:///tmp/data", None), "#");
+    }
+
+    #[test]
+    fn static_assessment_publishes_rule_explanations_and_event_ranges() {
+        let assessment = AssessmentRecord {
+            schema_version: 1,
+            assessment_id: "assessment_fixture".to_string(),
+            run_id: "run_deadbeef".to_string(),
+            skill_id: "skill_fixture".to_string(),
+            verdict: "malicious".to_string(),
+            risk_score: 100.0,
+            max_severity: "critical".to_string(),
+            confidentiality_findings: 1,
+            integrity_findings: 0,
+            behavioral_findings: 0,
+            unknown_platform_interaction: false,
+            unknown_platform_count: 0,
+            coverage_state: "complete".to_string(),
+            policy_version: "fixture".to_string(),
+            analyzer_version: "fixture".to_string(),
+            assessed_at: "2026-07-31T00:00:00Z".to_string(),
+        };
+        let finding = FindingRecord {
+            schema_version: 1,
+            finding_id: "finding_fixture".to_string(),
+            run_id: assessment.run_id.clone(),
+            rule_id: "confidentiality.fixture".to_string(),
+            category: "confidentiality".to_string(),
+            severity: "critical".to_string(),
+            source_marker: Some("/root/.ssh/id_ed25519".to_string()),
+            sink_kind: "network".to_string(),
+            sink_value: "example.test".to_string(),
+            evidence_seq_start: 41,
+            evidence_seq_end: 57,
+            summary: "Sensitive material reached an untrusted endpoint".to_string(),
+        };
+
+        let published = serde_json::to_value(published_assessment(&assessment, &[&finding]))
+            .expect("published assessment JSON");
+        assert_eq!(published["verdict"], "malicious");
+        assert_eq!(
+            published["findings"][0]["ruleId"],
+            "confidentiality.fixture"
+        );
+        assert_eq!(published["findings"][0]["evidenceSeqStart"], 41);
+        assert_eq!(published["findings"][0]["evidenceSeqEnd"], 57);
+        assert_eq!(
+            published["findings"][0]["sourceMarker"],
+            "/root/.ssh/id_ed25519"
+        );
     }
 
     #[test]

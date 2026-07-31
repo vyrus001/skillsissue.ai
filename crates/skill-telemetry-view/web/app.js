@@ -31,6 +31,7 @@ const COLORS = {
 
 const state = {
   model: null,
+  assessment: null,
   positions: new Map(),
   visible: [],
   layoutNodes: [],
@@ -49,6 +50,10 @@ const state = {
   direction: "all",
   includePreDetonation: false,
   selected: null,
+  activeFinding: null,
+  threatNodeIds: new Set(),
+  threatEdgeIds: new Set(),
+  assessmentOpened: false,
   dragging: false,
   dragNode: null,
   dragStart: null,
@@ -63,14 +68,21 @@ async function loadGraph({ preserveView = false } = {}) {
   try {
     const snapshot = VIEWER.mode === "static" ? await staticSnapshot() : null;
     state.model = snapshot ? snapshot.graph : await graphPayload(bucket, group);
+    state.assessment = snapshot?.assessment || null;
     state.networkCaptureCount = snapshot?.networkCaptureCount || 0;
     renderHeader();
     renderStats();
+    renderAssessment();
     renderNetworkControls();
     renderCategoryFilters();
     applyFilters({ resetLayout: true });
     if (!preserveView) fitGraph();
     else draw();
+    const requestedView = new URLSearchParams(window.location.search).get("view");
+    if (!state.assessmentOpened && requestedView === "findings" && state.assessment) {
+      state.assessmentOpened = true;
+      inspectAssessment();
+    }
   } catch (error) {
     $("#loading").innerHTML = "";
     const strong = document.createElement("strong");
@@ -240,6 +252,38 @@ function renderNetworkControls() {
   const available = VIEWER.mode === "static" && state.networkCaptureCount > 0;
   section.hidden = !available;
   $("#network-capture-count").textContent = formatCount(state.networkCaptureCount);
+}
+
+function renderAssessment() {
+  const section = $("#assessment-section");
+  const assessment = state.assessment;
+  section.hidden = !assessment;
+  if (!assessment) return;
+  const findings = assessment.findings || [];
+  const verdict = $("#assessment-verdict");
+  verdict.textContent = assessment.verdict || "unknown";
+  verdict.className = `assessment-verdict ${assessment.verdict || "unknown"}`;
+  $("#assessment-summary").textContent = `${formatRisk(assessment.riskScore)} · ${assessment.maxSeverity || "no severity"} · ${formatCount(findings.length)} rule finding${findings.length === 1 ? "" : "s"}`;
+  const shortcuts = $("#finding-shortcuts");
+  shortcuts.replaceChildren();
+  for (const finding of findings) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "finding-shortcut";
+    button.dataset.findingId = finding.findingId;
+    const severity = document.createElement("b");
+    severity.textContent = finding.severity;
+    const summary = document.createElement("span");
+    summary.textContent = `#${finding.evidenceSeqStart} · ${finding.summary}`;
+    button.append(severity, summary);
+    button.addEventListener("click", () => inspectFinding(finding));
+    shortcuts.append(button);
+  }
+}
+
+function formatRisk(value) {
+  const score = Number(value);
+  return Number.isFinite(score) ? `${score.toFixed(0)} risk` : "risk unavailable";
 }
 
 function renderCategoryFilters() {
@@ -496,13 +540,23 @@ function draw() {
   context.save();
   context.translate(state.panX, state.panY);
   context.scale(state.zoom, state.zoom);
-  for (const edge of state.visibleEdges) {
+  for (const edge of state.visibleEdges.filter((candidate) => !state.threatEdgeIds.has(candidate.id))) {
     const source = state.positions.get(edge.source);
     const target = state.positions.get(edge.target);
     if (!source || !target || !edgeIntersectsView(source, target, view)) continue;
     drawEdge(edge);
   }
-  for (const node of state.visible) {
+  for (const edge of state.visibleEdges.filter((candidate) => state.threatEdgeIds.has(candidate.id))) {
+    const source = state.positions.get(edge.source);
+    const target = state.positions.get(edge.target);
+    if (!source || !target || !edgeIntersectsView(source, target, view)) continue;
+    drawEdge(edge);
+  }
+  for (const node of state.visible.filter((candidate) => !state.threatNodeIds.has(candidate.id))) {
+    const position = state.positions.get(node.id);
+    if (position && nodeIntersectsView(position, view)) drawNode(node);
+  }
+  for (const node of state.visible.filter((candidate) => state.threatNodeIds.has(candidate.id))) {
     const position = state.positions.get(node.id);
     if (position && nodeIntersectsView(position, view)) drawNode(node);
   }
@@ -556,9 +610,12 @@ function drawEdge(edge) {
   const endY = target.y - ny * targetInset;
   context.save();
   const isProcess = edge.kind !== "activity";
-  context.strokeStyle = isProcess ? "rgba(185, 245, 106, .52)" : "rgba(109, 214, 232, .30)";
+  const isThreat = state.threatEdgeIds.has(edge.id);
+  context.strokeStyle = isThreat
+    ? "rgba(255, 95, 86, .96)"
+    : (isProcess ? "rgba(185, 245, 106, .52)" : "rgba(109, 214, 232, .30)");
   context.fillStyle = context.strokeStyle;
-  context.lineWidth = (isProcess ? 1.45 : 1.05) / state.zoom;
+  context.lineWidth = (isThreat ? 3.1 : (isProcess ? 1.45 : 1.05)) / state.zoom;
   if (edge.kind === "exec") context.setLineDash([5 / state.zoom, 4 / state.zoom]);
   context.beginPath();
   context.moveTo(startX, startY);
@@ -618,13 +675,16 @@ function drawEventNode(node, position, selected) {
   const y = position.y - position.height / 2;
   roundedRect(x, y, position.width, position.height, 7);
   context.globalAlpha = node.preDetonation ? .48 : (node.phaseKnown === false ? .7 : 1);
-  context.fillStyle = selected ? "rgba(101, 229, 194, .17)" : "rgba(17, 36, 32, .97)";
+  const isThreat = state.threatNodeIds.has(node.id);
+  context.fillStyle = isThreat
+    ? "rgba(88, 23, 22, .98)"
+    : (selected ? "rgba(101, 229, 194, .17)" : "rgba(17, 36, 32, .97)");
   context.fill();
-  context.lineWidth = (selected ? 2.3 : 1.2) / state.zoom;
+  context.lineWidth = (isThreat ? 3.1 : (selected ? 2.3 : 1.2)) / state.zoom;
   const color = COLORS[node.category] || COLORS.other;
-  context.strokeStyle = selected ? "#ffffff" : color;
+  context.strokeStyle = isThreat ? "#ff5f56" : (selected ? "#ffffff" : color);
   context.stroke();
-  context.fillStyle = color;
+  context.fillStyle = isThreat ? "#ff5f56" : color;
   context.fillRect(x, y, 4 / state.zoom, position.height);
   context.fillStyle = "#edf7f2";
   context.font = "600 11px ui-sans-serif, system-ui, sans-serif";
@@ -718,6 +778,208 @@ function hitTest(screenX, screenY) {
     if (point && Math.abs(x - point.x) <= point.width / 2 && Math.abs(y - point.y) <= point.height / 2) return node;
   }
   return null;
+}
+
+function inspectAssessment() {
+  const assessment = state.assessment;
+  if (!assessment) return;
+  clearFindingHighlight();
+  shell.classList.add("details-open");
+  $("#details-title").textContent = `${titleCase(assessment.verdict)} verdict`;
+  const body = $("#details-body");
+  body.replaceChildren();
+  const findings = assessment.findings || [];
+  body.append(detailGrid([
+    ["Verdict", titleCase(assessment.verdict)],
+    ["Risk score", formatRisk(assessment.riskScore)],
+    ["Maximum severity", titleCase(assessment.maxSeverity)],
+    ["Coverage", assessment.coverageState],
+    ["Assessed", formatIso(assessment.assessedAt)],
+    ["Rule findings", formatCount(findings.length)],
+  ]));
+  const explanation = document.createElement("p");
+  explanation.className = "verdict-explanation";
+  explanation.textContent = findings.length
+    ? "This verdict was produced by the deterministic rules below. Select a finding to highlight its recorded evidence and process chain in red."
+    : "No rule findings were recorded for this assessment.";
+  body.append(explanation);
+  const list = document.createElement("div");
+  list.className = "finding-list";
+  for (const finding of findings) list.append(findingButton(finding));
+  body.append(list);
+  draw();
+}
+
+function findingButton(finding) {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "finding-card";
+  const heading = document.createElement("span");
+  const severity = document.createElement("b");
+  severity.className = `finding-severity ${finding.severity}`;
+  severity.textContent = finding.severity;
+  const rule = document.createElement("code");
+  rule.textContent = finding.ruleId;
+  heading.append(severity, rule);
+  const summary = document.createElement("strong");
+  summary.textContent = finding.summary;
+  const evidence = document.createElement("small");
+  evidence.textContent = `#${finding.evidenceSeqStart}${finding.evidenceSeqEnd === finding.evidenceSeqStart ? "" : `–#${finding.evidenceSeqEnd}`} · ${finding.sinkKind}: ${finding.sinkValue}`;
+  button.append(heading, summary, evidence);
+  button.addEventListener("click", () => inspectFinding(finding));
+  return button;
+}
+
+function inspectFinding(finding) {
+  state.activeFinding = finding.findingId;
+  const chain = findingChain(finding);
+  state.threatNodeIds = chain.nodes;
+  state.threatEdgeIds = chain.edges;
+  state.selected = null;
+  shell.classList.add("details-open");
+  $("#details-title").textContent = finding.summary;
+  const body = $("#details-body");
+  body.replaceChildren();
+  body.append(detailGrid([
+    ["Rule", finding.ruleId],
+    ["Severity", titleCase(finding.severity)],
+    ["Category", titleCase(finding.category)],
+    ["Source", finding.sourceMarker || "not retained"],
+    ["Sink", `${finding.sinkKind}: ${finding.sinkValue}`],
+    ["Evidence", `#${finding.evidenceSeqStart}${finding.evidenceSeqEnd === finding.evidenceSeqStart ? "" : `–#${finding.evidenceSeqEnd}`}`],
+    ["Highlighted", `${formatCount(chain.nodes.size)} nodes · ${formatCount(chain.edges.size)} edges`],
+  ]));
+  const explanation = document.createElement("p");
+  explanation.className = "verdict-explanation danger";
+  explanation.textContent = finding.summary;
+  body.append(explanation);
+  const note = document.createElement("p");
+  note.className = "muted";
+  note.textContent = "Red nodes contain the rule evidence or connect it through process ancestry. Red edges are the shortest available graph path between recorded source and sink evidence; the dashboard does not invent missing telemetry.";
+  body.append(note);
+  body.append(sectionTitle("Recorded evidence events"));
+  const events = document.createElement("div");
+  events.className = "event-list";
+  for (const seq of evidenceSequences(finding)) {
+    events.append(eventIdButton(seq, `Evidence #${seq}`, finding.ruleId));
+  }
+  body.append(events);
+  const back = document.createElement("button");
+  back.type = "button";
+  back.className = "load-more";
+  back.textContent = "Back to all verdict findings";
+  back.addEventListener("click", inspectAssessment);
+  body.append(back);
+  markActiveFindingShortcut();
+  draw();
+}
+
+function evidenceSequences(finding) {
+  const start = Number(finding.evidenceSeqStart);
+  const end = Number(finding.evidenceSeqEnd);
+  return start === end ? [start] : [start, end];
+}
+
+function findingChain(finding) {
+  const nodes = new Set();
+  const edges = new Set();
+  const sequences = new Set(evidenceSequences(finding).map(String));
+  const evidenceNodes = state.model.nodes.filter((node) =>
+    (node.eventIds || []).some((seq) => sequences.has(String(seq))),
+  );
+  for (const node of evidenceNodes) nodes.add(node.id);
+
+  const marker = String(finding.sourceMarker || "").trim().toLowerCase();
+  const genericMarkers = new Set(["", "skill", "untrusted-network", "sensitive-source"]);
+  let sourceNode = null;
+  if (!genericMarkers.has(marker)) {
+    const candidates = state.model.nodes.filter((node) => {
+      if (node.kind === "process") return false;
+      const text = [node.target, node.command, node.sublabel, node.label]
+        .filter(Boolean).join(" ").toLowerCase();
+      return text.includes(marker);
+    });
+    candidates.sort((left, right) => latestEventSequence(right) - latestEventSequence(left));
+    sourceNode = candidates.find((node) => latestEventSequence(node) <= Number(finding.evidenceSeqEnd)) || null;
+    if (sourceNode) nodes.add(sourceNode.id);
+  }
+
+  const adjacency = new Map();
+  const incoming = new Map();
+  for (const edge of state.model.edges) {
+    if (!adjacency.has(edge.source)) adjacency.set(edge.source, []);
+    if (!adjacency.has(edge.target)) adjacency.set(edge.target, []);
+    adjacency.get(edge.source).push({ node: edge.target, edge });
+    adjacency.get(edge.target).push({ node: edge.source, edge });
+    if (!incoming.has(edge.target)) incoming.set(edge.target, []);
+    incoming.get(edge.target).push(edge);
+  }
+
+  for (const node of evidenceNodes) addAncestorChain(node.id, incoming, nodes, edges);
+  if (sourceNode) addAncestorChain(sourceNode.id, incoming, nodes, edges);
+  if (sourceNode) {
+    for (const target of evidenceNodes) addShortestPath(sourceNode.id, target.id, adjacency, nodes, edges);
+  }
+  return { nodes, edges };
+}
+
+function latestEventSequence(node) {
+  return Math.max(0, ...(node.eventIds || []).map(Number));
+}
+
+function addAncestorChain(start, incoming, nodes, edges) {
+  const queue = [start];
+  const visited = new Set(queue);
+  while (queue.length) {
+    const current = queue.shift();
+    for (const edge of incoming.get(current) || []) {
+      if (edge.kind === "activity" || state.nodeById.get(edge.source)?.kind === "process") {
+        nodes.add(edge.source);
+        edges.add(edge.id);
+        if (!visited.has(edge.source)) {
+          visited.add(edge.source);
+          queue.push(edge.source);
+        }
+      }
+    }
+  }
+}
+
+function addShortestPath(start, target, adjacency, nodes, edges) {
+  if (start === target) return;
+  const queue = [start];
+  const previous = new Map([[start, null]]);
+  while (queue.length && !previous.has(target)) {
+    const current = queue.shift();
+    for (const step of adjacency.get(current) || []) {
+      if (previous.has(step.node)) continue;
+      previous.set(step.node, { node: current, edge: step.edge });
+      queue.push(step.node);
+    }
+  }
+  if (!previous.has(target)) return;
+  let current = target;
+  nodes.add(current);
+  while (current !== start) {
+    const step = previous.get(current);
+    if (!step) break;
+    nodes.add(step.node);
+    edges.add(step.edge.id);
+    current = step.node;
+  }
+}
+
+function clearFindingHighlight() {
+  state.activeFinding = null;
+  state.threatNodeIds = new Set();
+  state.threatEdgeIds = new Set();
+  markActiveFindingShortcut();
+}
+
+function markActiveFindingShortcut() {
+  for (const button of document.querySelectorAll(".finding-shortcut")) {
+    button.classList.toggle("active", button.dataset.findingId === state.activeFinding);
+  }
 }
 
 async function inspectNode(node) {
@@ -1292,6 +1554,7 @@ function formatCount(value) { return new Intl.NumberFormat().format(value || 0);
 function formatIso(value) { try { return new Date(value).toLocaleString(); } catch { return value; } }
 function shortSource(value) { return value.split(/[\\/]/).slice(-2).join("/"); }
 function ellipsis(value, max) { return value.length > max ? `${value.slice(0, max - 1)}…` : value; }
+function titleCase(value) { return String(value || "unknown").replaceAll("-", " ").replaceAll("_", " ").replace(/\b\w/g, (letter) => letter.toUpperCase()); }
 
 function durationNumber(minimum, maximum) {
   if (minimum === null || maximum === null) return 0;
@@ -1389,6 +1652,7 @@ canvas.addEventListener("keydown", (event) => {
 
 $("#refresh-layout").addEventListener("click", refreshFilteredLayout);
 $("#all-events").addEventListener("click", () => browseEvents(0));
+$("#assessment-details").addEventListener("click", inspectAssessment);
 $("#network-captures").addEventListener("click", browseNetworkCaptures);
 $("#close-details").addEventListener("click", () => {
   shell.classList.remove("details-open");
