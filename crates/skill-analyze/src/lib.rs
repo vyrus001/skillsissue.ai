@@ -12,7 +12,10 @@ use config::{DiscoveryConfig, Policy};
 use engine::Analyzer;
 use model::{Analysis, RunRecordExt};
 pub use model::{AssessmentRecord, FindingRecord, PlatformEvidenceRecord, PlatformRecord};
-use store::{merge_records, read_assessments, read_platforms, read_runs};
+use store::{
+    merge_records, read_assessments, read_findings, read_platform_evidence, read_platforms,
+    read_runs, write_records_atomic,
+};
 
 #[derive(Clone, Debug)]
 pub struct AnalyzerPaths {
@@ -34,7 +37,8 @@ pub struct PassSummary {
     pub unknown_platform_count: u64,
 }
 
-/// Analyze at most `limit` completed runs which do not yet have an assessment.
+/// Analyze at most `limit` completed runs which do not yet have an assessment
+/// produced by the current ruleset and discovery configuration.
 ///
 /// The function deliberately performs all analysis before atomically merging any
 /// ledger. This is the narrow integration seam for the shared `skills-core` CSV
@@ -47,6 +51,7 @@ pub fn run_once(paths: &AnalyzerPaths, limit: usize) -> Result<PassSummary> {
     let workspace_root = workspace_root(&paths.runs_csv);
     let policy = Policy::load_or_default(&paths.policy_config)?;
     let discovery = DiscoveryConfig::load_or_default(&paths.discovery_config)?;
+    let expected_analyzer_version = engine::analyzer_version(&discovery.version);
     let (platforms, completed, runs) = {
         let _lock = skills_core::WorkspaceLock::acquire(workspace_root)?;
         (
@@ -58,6 +63,7 @@ pub fn run_once(paths: &AnalyzerPaths, limit: usize) -> Result<PassSummary> {
     let analyzer = Analyzer::new(policy, discovery, &platforms)?;
     let completed = completed
         .into_iter()
+        .filter(|row| row.analyzer_version == expected_analyzer_version)
         .map(|row| row.run_id)
         .collect::<BTreeSet<_>>();
 
@@ -116,9 +122,25 @@ fn persist(
         .iter()
         .map(|assessment| assessment.unknown_platform_count)
         .sum();
+    let analyzed_run_ids = assessments
+        .iter()
+        .map(|assessment| assessment.run_id.as_str())
+        .collect::<BTreeSet<_>>();
 
-    merge_records(&paths.findings_csv, findings.clone())?;
-    merge_records(&paths.platform_evidence_csv, evidence)?;
+    let retained_findings = read_findings(&paths.findings_csv)?
+        .into_iter()
+        .filter(|finding| !analyzed_run_ids.contains(finding.run_id.as_str()));
+    write_records_atomic(
+        &paths.findings_csv,
+        retained_findings.chain(findings.iter().cloned()),
+    )?;
+    let retained_evidence = read_platform_evidence(&paths.platform_evidence_csv)?
+        .into_iter()
+        .filter(|row| !analyzed_run_ids.contains(row.run_id.as_str()));
+    write_records_atomic(
+        &paths.platform_evidence_csv,
+        retained_evidence.chain(evidence),
+    )?;
     merge_platforms(&paths.platforms_csv, existing_platforms, candidates.clone())?;
     // Assessment is written last: its presence is the durable completion marker.
     merge_records(&paths.assessments_csv, assessments)?;
@@ -824,6 +846,55 @@ mod tests {
         for (left, right) in before.into_iter().zip(after) {
             assert_eq!(left.unwrap(), right.unwrap());
         }
+    }
+
+    #[test]
+    fn outdated_assessment_is_replayed_and_stale_derived_rows_are_removed() {
+        let temp = tempfile::tempdir().unwrap();
+        let paths = test_paths(&temp);
+        let trace = fixture("positive.jsonl");
+        write_runs(
+            &paths.runs_csv,
+            &[("run-reanalysis", trace.to_str().unwrap())],
+        );
+        write_platforms(&paths.platforms_csv);
+        assert_eq!(run_once(&paths, 1).unwrap().analyzed, 1);
+
+        let mut assessments =
+            skills_core::read_csv_records::<AssessmentRecord>(&paths.assessments_csv).unwrap();
+        assessments[0].analyzer_version = "legacy-analyzer".into();
+        store::write_records_atomic(&paths.assessments_csv, assessments).unwrap();
+
+        let mut findings =
+            skills_core::read_csv_records::<FindingRecord>(&paths.findings_csv).unwrap();
+        let mut stale_finding = findings[0].clone();
+        stale_finding.finding_id = "stale-finding".into();
+        findings.push(stale_finding);
+        store::write_records_atomic(&paths.findings_csv, findings).unwrap();
+
+        let mut evidence =
+            skills_core::read_csv_records::<PlatformEvidenceRecord>(&paths.platform_evidence_csv)
+                .unwrap();
+        let mut stale_evidence = evidence[0].clone();
+        stale_evidence.evidence_id = "stale-evidence".into();
+        evidence.push(stale_evidence);
+        store::write_records_atomic(&paths.platform_evidence_csv, evidence).unwrap();
+
+        assert_eq!(run_once(&paths, 1).unwrap().analyzed, 1);
+        let assessments =
+            skills_core::read_csv_records::<AssessmentRecord>(&paths.assessments_csv).unwrap();
+        assert_eq!(
+            assessments[0].analyzer_version,
+            engine::analyzer_version("platform-discovery-v1")
+        );
+        let findings = skills_core::read_csv_records::<FindingRecord>(&paths.findings_csv).unwrap();
+        assert!(!findings.iter().any(|row| row.finding_id == "stale-finding"));
+        let evidence =
+            skills_core::read_csv_records::<PlatformEvidenceRecord>(&paths.platform_evidence_csv)
+                .unwrap();
+        assert!(!evidence
+            .iter()
+            .any(|row| row.evidence_id == "stale-evidence"));
     }
 
     #[test]

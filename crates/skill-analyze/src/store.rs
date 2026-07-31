@@ -5,13 +5,23 @@ use std::path::Path;
 use anyhow::Result;
 use skills_core::{merge_csv_records, read_csv_records, write_csv_records_atomic, CsvRecord};
 
-use crate::model::{AssessmentRecord, PlatformRecord, RunRecord};
+use crate::model::{
+    AssessmentRecord, FindingRecord, PlatformEvidenceRecord, PlatformRecord, RunRecord,
+};
 
 pub fn read_runs(path: &Path) -> Result<Vec<RunRecord>> {
     Ok(read_csv_records(path)?)
 }
 
 pub fn read_assessments(path: &Path) -> Result<Vec<AssessmentRecord>> {
+    Ok(read_csv_records(path)?)
+}
+
+pub fn read_findings(path: &Path) -> Result<Vec<FindingRecord>> {
+    Ok(read_csv_records(path)?)
+}
+
+pub fn read_platform_evidence(path: &Path) -> Result<Vec<PlatformEvidenceRecord>> {
     Ok(read_csv_records(path)?)
 }
 
