@@ -166,6 +166,7 @@ h2 { margin-bottom: 12px; font-size: 12px; text-transform: uppercase; letter-spa
   text-transform: uppercase;
 }
 .assessment-verdict.malicious { border-color: rgba(255, 95, 86, .55); color: #ff8d7f; background: rgba(255, 95, 86, .09); }
+.assessment-verdict.suspicious { border-color: rgba(232, 189, 109, .45); color: #e8bd6d; background: rgba(232, 189, 109, .07); }
 .assessment-verdict.benign { border-color: rgba(185, 245, 106, .4); color: var(--accent); background: rgba(185, 245, 106, .07); }
 .assessment-details-button {
   width: 100%;
@@ -187,8 +188,18 @@ h2 { margin-bottom: 12px; font-size: 12px; text-transform: uppercase; letter-spa
   text-align: left;
 }
 .finding-shortcut b { color: #ff8d7f; font: 700 8px ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; }
+.finding-shortcut.warning b { color: #e8bd6d; }
 .finding-shortcut span { overflow: hidden; color: var(--muted); font-size: 9px; line-height: 1.35; text-overflow: ellipsis; white-space: nowrap; }
 .finding-shortcut.active { border-color: #ff5f56; background: rgba(255, 95, 86, .12); }
+.finding-shortcut.warning.active { border-color: #e8bd6d; background: rgba(232, 189, 109, .12); }
+.clear-finding-highlight {
+  width: 100%;
+  margin-top: 7px;
+  padding: 7px;
+  border-color: rgba(232, 189, 109, .42);
+  color: #e8bd6d;
+  background: rgba(232, 189, 109, .06);
+}
 .network-captures-button {
   width: 100%;
   margin-top: 10px;
@@ -214,6 +225,7 @@ select, input { width: 100%; border-radius: 6px; padding: 8px 9px; }
 .legend { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; color: var(--muted); }
 .swatch { display: inline-block; width: 9px; height: 9px; margin-right: 8px; border-radius: 3px; background: var(--other); }
 .swatch.threat { background: #ff5f56; box-shadow: 0 0 8px rgba(255, 95, 86, .65); }
+.swatch.warning { background: #e8bd6d; box-shadow: 0 0 8px rgba(232, 189, 109, .5); }
 .swatch.process { background: var(--process); }
 .swatch.file { background: var(--file); }
 .swatch.socket { background: var(--socket); }
@@ -291,6 +303,7 @@ canvas.dragging { cursor: grabbing; }
   line-height: 1.5;
 }
 .verdict-explanation.danger { border-left-color: #ff5f56; background: rgba(255, 95, 86, .07); color: #ffd2cd; }
+.verdict-explanation.warning { border-left-color: #e8bd6d; background: rgba(232, 189, 109, .07); color: #f7deb0; }
 .finding-list { display: grid; gap: 8px; }
 .finding-card { width: 100%; display: grid; gap: 7px; padding: 11px; border-radius: 6px; text-align: left; }
 .finding-card > span { min-width: 0; display: flex; align-items: center; gap: 8px; }

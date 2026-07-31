@@ -6,6 +6,7 @@ const state = {
   query: "",
   verdict: "all",
   platform: "all",
+  findingType: "all",
   limit: 25,
   descending: true,
   visible: [],
@@ -35,13 +36,14 @@ function populateFilters() {
   const verdicts = [...new Set(state.catalog.skills.map((skill) => skill.verdict))].sort();
   appendOptions($("#verdict-filter"), verdicts);
   appendOptions($("#platform-filter"), state.catalog.platforms);
+  appendOptions($("#finding-filter"), state.catalog.findingTypes || [], (value) => value);
 }
 
-function appendOptions(select, values) {
+function appendOptions(select, values, format = titleCase) {
   for (const value of values) {
     const option = document.createElement("option");
     option.value = value;
-    option.textContent = titleCase(value);
+    option.textContent = format(value);
     select.append(option);
   }
 }
@@ -62,7 +64,9 @@ function renderTable() {
     const matchesVerdict = state.verdict === "all" || skill.verdict === state.verdict;
     const matchesPlatform = state.platform === "all"
       || skill.platforms.some((platform) => platform.name === state.platform);
-    return matchesQuery && matchesVerdict && matchesPlatform;
+    const matchesFinding = state.findingType === "all"
+      || (skill.findingTypes || []).includes(state.findingType);
+    return matchesQuery && matchesVerdict && matchesPlatform && matchesFinding;
   });
   rows.sort((left, right) => {
     const order = left.detectedAt.localeCompare(right.detectedAt);
@@ -83,6 +87,7 @@ function searchableText(skill) {
     skill.skillId,
     skill.verdict,
     skill.maxSeverity,
+    ...(skill.findingTypes || []),
     ...skill.platforms.flatMap((platform) => [platform.name, platform.id]),
   ].join(" ").toLowerCase();
 }
@@ -165,7 +170,7 @@ function skillRow(skill) {
 }
 
 function exportCsv() {
-  const header = ["platforms", "skill", "detected_at", "sha256", "verdict", "risk_score", "severity", "run_id"];
+  const header = ["platforms", "skill", "detected_at", "sha256", "verdict", "risk_score", "severity", "finding_types", "run_id"];
   const rows = state.visible.map((skill) => [
     skill.platforms.map((platform) => platform.name).join("|"),
     skill.name,
@@ -174,6 +179,7 @@ function exportCsv() {
     skill.verdict,
     skill.riskScore,
     skill.maxSeverity,
+    (skill.findingTypes || []).join("|"),
     skill.runId,
   ]);
   const csv = [header, ...rows].map((row) => row.map(csvCell).join(",")).join("\n");
@@ -193,7 +199,7 @@ function csvCell(value) {
 
 function verdictClass(verdict) {
   if (verdict === "pending-scan") return "pending";
-  if (verdict === "malicious" || verdict === "benign") return verdict;
+  if (["malicious", "suspicious", "benign"].includes(verdict)) return verdict;
   return "unknown";
 }
 
@@ -244,6 +250,10 @@ $("#verdict-filter").addEventListener("change", (event) => {
 });
 $("#platform-filter").addEventListener("change", (event) => {
   state.platform = event.target.value;
+  renderTable();
+});
+$("#finding-filter").addEventListener("change", (event) => {
+  state.findingType = event.target.value;
   renderTable();
 });
 $("#row-limit").addEventListener("change", (event) => {

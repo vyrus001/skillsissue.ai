@@ -28,6 +28,7 @@ const COLORS = {
   fd: "#bb8df2",
   other: "#879994",
 };
+const PROCESS_INJECTION_RULE = "behavior.process_injection_or_memory_execution";
 
 const state = {
   model: null,
@@ -51,6 +52,7 @@ const state = {
   includePreDetonation: false,
   selected: null,
   activeFinding: null,
+  findingHighlightTone: "danger",
   threatNodeIds: new Set(),
   threatEdgeIds: new Set(),
   assessmentOpened: false,
@@ -269,7 +271,7 @@ function renderAssessment() {
   for (const finding of findings) {
     const button = document.createElement("button");
     button.type = "button";
-    button.className = "finding-shortcut";
+    button.className = `finding-shortcut ${findingHighlightTone(finding)}`;
     button.dataset.findingId = finding.findingId;
     const severity = document.createElement("b");
     severity.textContent = finding.severity;
@@ -611,8 +613,11 @@ function drawEdge(edge) {
   context.save();
   const isProcess = edge.kind !== "activity";
   const isThreat = state.threatEdgeIds.has(edge.id);
+  const highlightColor = state.findingHighlightTone === "warning"
+    ? "rgba(232, 189, 109, .98)"
+    : "rgba(255, 95, 86, .96)";
   context.strokeStyle = isThreat
-    ? "rgba(255, 95, 86, .96)"
+    ? highlightColor
     : (isProcess ? "rgba(185, 245, 106, .52)" : "rgba(109, 214, 232, .30)");
   context.fillStyle = context.strokeStyle;
   context.lineWidth = (isThreat ? 3.1 : (isProcess ? 1.45 : 1.05)) / state.zoom;
@@ -676,15 +681,17 @@ function drawEventNode(node, position, selected) {
   roundedRect(x, y, position.width, position.height, 7);
   context.globalAlpha = node.preDetonation ? .48 : (node.phaseKnown === false ? .7 : 1);
   const isThreat = state.threatNodeIds.has(node.id);
+  const warning = state.findingHighlightTone === "warning";
   context.fillStyle = isThreat
-    ? "rgba(88, 23, 22, .98)"
+    ? (warning ? "rgba(76, 55, 13, .98)" : "rgba(88, 23, 22, .98)")
     : (selected ? "rgba(101, 229, 194, .17)" : "rgba(17, 36, 32, .97)");
   context.fill();
   context.lineWidth = (isThreat ? 3.1 : (selected ? 2.3 : 1.2)) / state.zoom;
   const color = COLORS[node.category] || COLORS.other;
-  context.strokeStyle = isThreat ? "#ff5f56" : (selected ? "#ffffff" : color);
+  const highlightColor = warning ? "#e8bd6d" : "#ff5f56";
+  context.strokeStyle = isThreat ? highlightColor : (selected ? "#ffffff" : color);
   context.stroke();
-  context.fillStyle = isThreat ? "#ff5f56" : color;
+  context.fillStyle = isThreat ? highlightColor : color;
   context.fillRect(x, y, 4 / state.zoom, position.height);
   context.fillStyle = "#edf7f2";
   context.font = "600 11px ui-sans-serif, system-ui, sans-serif";
@@ -800,7 +807,7 @@ function inspectAssessment() {
   const explanation = document.createElement("p");
   explanation.className = "verdict-explanation";
   explanation.textContent = findings.length
-    ? "This verdict was produced by the deterministic rules below. Select a finding to highlight its recorded evidence and process chain in red."
+    ? "This verdict was produced by the deterministic rules below. Select a finding to highlight its evidence chain: yellow for medium process-injection warnings, red for high or critical findings."
     : "No rule findings were recorded for this assessment.";
   body.append(explanation);
   const list = document.createElement("div");
@@ -831,7 +838,12 @@ function findingButton(finding) {
 }
 
 function inspectFinding(finding) {
+  if (state.activeFinding === finding.findingId) {
+    inspectAssessment();
+    return;
+  }
   state.activeFinding = finding.findingId;
+  state.findingHighlightTone = findingHighlightTone(finding);
   const chain = findingChain(finding);
   state.threatNodeIds = chain.nodes;
   state.threatEdgeIds = chain.edges;
@@ -850,12 +862,13 @@ function inspectFinding(finding) {
     ["Highlighted", `${formatCount(chain.nodes.size)} nodes · ${formatCount(chain.edges.size)} edges`],
   ]));
   const explanation = document.createElement("p");
-  explanation.className = "verdict-explanation danger";
+  explanation.className = `verdict-explanation ${state.findingHighlightTone}`;
   explanation.textContent = finding.summary;
   body.append(explanation);
   const note = document.createElement("p");
   note.className = "muted";
-  note.textContent = "Red nodes contain the rule evidence or connect it through process ancestry. Red edges are the shortest available graph path between recorded source and sink evidence; the dashboard does not invent missing telemetry.";
+  const highlightName = state.findingHighlightTone === "warning" ? "Yellow" : "Red";
+  note.textContent = `${highlightName} nodes contain the rule evidence or connect it through process ancestry. ${highlightName} edges are the shortest available graph path between recorded source and sink evidence; the dashboard does not invent missing telemetry.`;
   body.append(note);
   body.append(sectionTitle("Recorded evidence events"));
   const events = document.createElement("div");
@@ -867,7 +880,7 @@ function inspectFinding(finding) {
   const back = document.createElement("button");
   back.type = "button";
   back.className = "load-more";
-  back.textContent = "Back to all verdict findings";
+  back.textContent = "Clear highlight and show all findings";
   back.addEventListener("click", inspectAssessment);
   body.append(back);
   markActiveFindingShortcut();
@@ -971,6 +984,7 @@ function addShortestPath(start, target, adjacency, nodes, edges) {
 
 function clearFindingHighlight() {
   state.activeFinding = null;
+  state.findingHighlightTone = "danger";
   state.threatNodeIds = new Set();
   state.threatEdgeIds = new Set();
   markActiveFindingShortcut();
@@ -980,6 +994,11 @@ function markActiveFindingShortcut() {
   for (const button of document.querySelectorAll(".finding-shortcut")) {
     button.classList.toggle("active", button.dataset.findingId === state.activeFinding);
   }
+  $("#clear-finding-highlight").hidden = !state.activeFinding;
+}
+
+function findingHighlightTone(finding) {
+  return finding.ruleId === PROCESS_INJECTION_RULE ? "warning" : "danger";
 }
 
 async function inspectNode(node) {
@@ -1653,6 +1672,7 @@ canvas.addEventListener("keydown", (event) => {
 $("#refresh-layout").addEventListener("click", refreshFilteredLayout);
 $("#all-events").addEventListener("click", () => browseEvents(0));
 $("#assessment-details").addEventListener("click", inspectAssessment);
+$("#clear-finding-highlight").addEventListener("click", inspectAssessment);
 $("#network-captures").addEventListener("click", browseNetworkCaptures);
 $("#close-details").addEventListener("click", () => {
   shell.classList.remove("details-open");

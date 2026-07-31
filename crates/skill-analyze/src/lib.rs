@@ -444,6 +444,35 @@ mod tests {
     }
 
     #[test]
+    fn process_injection_signal_is_a_medium_suspicious_finding() {
+        let temp = tempfile::tempdir().unwrap();
+        let paths = test_paths(&temp);
+        let trace = temp.path().join("process-memory.jsonl");
+        fs::write(
+            &trace,
+            "{\"eventName\":\"mprotect\",\"processId\":7,\"returnValue\":0,\"args\":{\"prot\":\"PROT_READ|PROT_WRITE|PROT_EXEC\"}}\n",
+        )
+        .unwrap();
+        write_runs(
+            &paths.runs_csv,
+            &[("run-process-memory", trace.to_str().unwrap())],
+        );
+        write_platforms(&paths.platforms_csv);
+
+        assert_eq!(run_once(&paths, 1).unwrap().findings, 1);
+        let findings = skills_core::read_csv_records::<FindingRecord>(&paths.findings_csv).unwrap();
+        assert_eq!(
+            findings[0].rule_id,
+            "behavior.process_injection_or_memory_execution"
+        );
+        assert_eq!(findings[0].severity, "medium");
+        let assessments =
+            skills_core::read_csv_records::<AssessmentRecord>(&paths.assessments_csv).unwrap();
+        assert_eq!(assessments[0].verdict, "suspicious");
+        assert_eq!(assessments[0].risk_score, 50.0);
+    }
+
+    #[test]
     fn lan_socket_after_sensitive_read_is_not_malicious() {
         let temp = tempfile::tempdir().unwrap();
         let paths = test_paths(&temp);

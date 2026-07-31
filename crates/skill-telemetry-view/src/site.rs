@@ -49,6 +49,7 @@ struct Catalog {
     total_known: usize,
     published_graphs: usize,
     platforms: Vec<String>,
+    finding_types: Vec<String>,
     skills: Vec<PublishedSkill>,
 }
 
@@ -69,6 +70,7 @@ struct PublishedSkill {
     detail_url: String,
     graph_available: bool,
     finding_count: usize,
+    finding_types: Vec<String>,
 }
 
 #[derive(Debug, Serialize)]
@@ -187,6 +189,7 @@ pub fn build(repo_root: &Path, output: &Path, max_published_events: usize) -> Re
     let mut published_graphs = 0_usize;
     let mut scanned_skills = 0_usize;
     let mut platform_names = BTreeSet::new();
+    let mut finding_types = BTreeSet::new();
 
     for skill in &skills {
         let assessment = latest.get(skill.skill_id.as_str()).copied();
@@ -248,6 +251,18 @@ pub fn build(repo_root: &Path, output: &Path, max_published_events: usize) -> Re
         let finding_count = assessment
             .and_then(|assessment| findings_by_run.get(assessment.run_id.as_str()))
             .map_or(0, Vec::len);
+        let skill_finding_types = assessment
+            .and_then(|assessment| findings_by_run.get(assessment.run_id.as_str()))
+            .map(|findings| {
+                findings
+                    .iter()
+                    .map(|finding| finding.summary.clone())
+                    .collect::<BTreeSet<_>>()
+                    .into_iter()
+                    .collect::<Vec<_>>()
+            })
+            .unwrap_or_default();
+        finding_types.extend(skill_finding_types.iter().cloned());
         published.push(PublishedSkill {
             skill_id: skill.skill_id.clone(),
             name: skill
@@ -266,14 +281,17 @@ pub fn build(repo_root: &Path, output: &Path, max_published_events: usize) -> Re
             detail_url: assessment
                 .filter(|_| graph_available)
                 .map(|assessment| {
-                    let view = (finding_count > 0)
-                        .then_some("&view=findings")
-                        .unwrap_or_default();
+                    let view = if finding_count > 0 {
+                        "&view=findings"
+                    } else {
+                        ""
+                    };
                     format!("./graph/?run={}{}", assessment.run_id, view)
                 })
                 .unwrap_or_else(|| README_VIEWER_URL.to_string()),
             graph_available,
             finding_count,
+            finding_types: skill_finding_types,
         });
     }
 
@@ -300,6 +318,7 @@ pub fn build(repo_root: &Path, output: &Path, max_published_events: usize) -> Re
         total_known: skills.len(),
         published_graphs,
         platforms: platform_names.into_iter().collect(),
+        finding_types: finding_types.into_iter().collect(),
         skills: published,
     };
     write_json(output.join("skills.json"), &catalog)?;

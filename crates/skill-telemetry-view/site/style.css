@@ -229,6 +229,7 @@ kbd {
   text-transform: uppercase;
 }
 .filter-bar select { min-width: 145px; padding: 7px 9px; border-radius: 3px; font-size: 11px; }
+#finding-filter { width: min(390px, 34vw); }
 .result-count { margin: 0 0 8px auto; color: var(--muted); font: 10px ui-monospace, SFMono-Regular, Menlo, monospace; }
 
 .table-shell {
@@ -294,6 +295,8 @@ td { color: var(--muted); }
 .verdict.malicious strong { color: var(--danger); }
 .verdict.benign { border-color: rgba(185, 245, 106, .38); background: rgba(185, 245, 106, .05); }
 .verdict.benign strong { color: var(--accent); }
+.verdict.suspicious { border-color: rgba(232, 189, 109, .42); background: rgba(232, 189, 109, .06); }
+.verdict.suspicious strong { color: var(--file); }
 .verdict.pending { border-color: rgba(232, 189, 109, .42); background: rgba(232, 189, 109, .06); }
 .verdict.pending strong { color: var(--file); }
 .verdict.unknown strong { color: var(--file); }
@@ -372,5 +375,6 @@ footer {
   .search-bar { grid-template-columns: 1fr; }
   .action-button { min-height: 38px; }
   .filter-bar label, .filter-bar select { width: 100%; }
+  #finding-filter { width: 100%; }
   footer { align-items: flex-start; flex-direction: column; padding: 16px; }
 }

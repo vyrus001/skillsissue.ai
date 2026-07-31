@@ -28,7 +28,7 @@ const RULE_FORENSIC_TAMPER: &str = "integrity.logging_or_forensic_artifact_tampe
 const RULE_PRIVILEGE_ELEVATION: &str = "behavior.privilege_or_integrity_elevation";
 const RULE_SECURITY_POLICY_TAMPER: &str = "integrity.security_policy_modified";
 const RULE_PROTECTION_TAMPER: &str = "integrity.built_in_protection_disabled";
-const RULESET_VERSION: &str = "deterministic-rules-v1";
+const RULESET_VERSION: &str = "deterministic-rules-v2";
 const MAX_FINDINGS_PER_RUN: usize = 1_024;
 const MAX_PLATFORM_EVIDENCE_PER_RUN: usize = 2_048;
 const MAX_RETAINED_URL_BYTES: usize = 2_048;
@@ -1045,7 +1045,7 @@ impl RunState<'_> {
             self.add_rule_finding(
                 event,
                 RULE_PROCESS_INJECTION,
-                "critical",
+                "medium",
                 "process-memory",
                 path.as_deref().unwrap_or(&event.evidence),
                 "Observed process injection, executable anonymous memory, or memory-resident execution",

@@ -60,7 +60,7 @@
         <div class="search-bar">
           <label class="search-field">
             <span aria-hidden="true">⌕</span>
-            <input id="search" type="search" placeholder="Search by skill, platform, hash, or verdict…" autocomplete="off">
+            <input id="search" type="search" placeholder="Search by skill, platform, hash, verdict, or finding…" autocomplete="off">
             <kbd>Ctrl K</kbd>
           </label>
           <button id="export" class="action-button" type="button">↓ Export CSV</button>
@@ -71,6 +71,9 @@
           </label>
           <label>Platform
             <select id="platform-filter"><option value="all">All platforms</option></select>
+          </label>
+          <label>Finding type
+            <select id="finding-filter"><option value="all">All finding types</option></select>
           </label>
           <label>Show
             <select id="row-limit">
