@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:a5ac58794091376b24cf3ad77db7be452768192ed471a928cfd8893e43dbd552",
+  "sha256": "a5ac58794091376b24cf3ad77db7be452768192ed471a928cfd8893e43dbd552",
+  "blake3": "f11ad11f3ace294328df74f5f02bdba8b27e606908fe18afed40dfca1067a0b4",
+  "size_bytes": 237658,
+  "file_count": 25,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13735,
+      "sha256": "bfcd5b7c064b5ff4a72fe4cfe5dad0b791afc307124b20c510ce901f0909419c",
+      "blake3": "3eef399b4e57ad559c03bd1ee7ae3bbed5218d4aacd646c7505cb4f6d54dbb54"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 130,
+      "sha256": "1eeb6a1ab6dd9c78a019c2fb0b377384a0f51c2101da1c01ad7c6e7e71735619",
+      "blake3": "42c98a35e02d364924c87f6b6a7faf79139794dc7e5376a012f6c248c143cb3b"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/import-markdown.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3053,
+      "sha256": "bd745710bbb219419c63dd440091ed83bedcc171677db6f186cf9f41e80bdf84",
+      "blake3": "3b8311ca69215dc5b76b4bbaf8431e18667370a89af1688009b7a0fa6c84541b"
+    },
+    {
+      "path": "references/record-templates.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8046,
+      "sha256": "82c0617641feb9ceca71476ddfef744b3bf0b022725b69fe7cd84a68d6a9e1d5",
+      "blake3": "9a55290d3041521a548aba0e584c5cbfd3f87d0069d61ab77c57a0c33c7b7940"
+    },
+    {
+      "path": "references/scenario-examples.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8110,
+      "sha256": "cef2ad2cb8587b361465e95c942c443a672d418570c8d1667c4a5e7e7d844b7a",
+      "blake3": "15fb3a1eaa0185205aeadb29369f8ff6fa936b2a43a8884325c09c066413a1c0"
+    },
+    {
+      "path": "references/team-dashboard.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3665,
+      "sha256": "df631b685542aa16654ffe48ce21fb2733cc747fc4f02b0cef209cf892b60a01",
+      "blake3": "91e7c266100059271af1e3748469ea58d1172017196169eaa5e8a6d74c727bea"
+    },
+    {
+      "path": "references/troubleshooting.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4080,
+      "sha256": "f61758338d4b661ca3495fd98bfea3e728d7fc1411092d154c8c13da6b549686",
+      "blake3": "1504c2ec0c529e44b467381a6102771d6f692eb66644546420c2eff0e7926b09"
+    },
+    {
+      "path": "references/upgrade.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5950,
+      "sha256": "29f4e33460951f93eb34f055f75e23a39999be4b41e3496b7a38f40c55316e5d",
+      "blake3": "bfaff521820737b2a556d6989e31c945e83b484021b7209840575ea0ec05d974"
+    },
+    {
+      "path": "references/usage.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14281,
+      "sha256": "aaf11cf11b0c8434d6dad2c88c7fcfd116609ab5243f67bb6cba2e4a7be7aa56",
+      "blake3": "b9a65b3a0d320180a9fbcebc2d334d86b3eec5d464468690273783e4fae02016"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/adopt-data.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7570,
+      "sha256": "9d6b3007d4b9cec2bdde877de8187a9c1eb82c4f283150c7a8da33ea805254a5",
+      "blake3": "58849c20d865b1c9335a06ce9348bb91641a45eec483704e43f6a021d4aa9586"
+    },
+    {
+      "path": "scripts/doctor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13368,
+      "sha256": "50e197084823303bee02b3774439621aa1be4e7e4c1c0f71dfb5f89962e7db0f",
+      "blake3": "056e1ca8314ab30a2e62d572bf71cfcc97b85964f4b69038ad053bb9fd7fa8de"
+    },
+    {
+      "path": "scripts/export-data.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4217,
+      "sha256": "0010386b84821c14b739856610cac3b97c43994bd2b480f1c0425a61adfc45c6",
+      "blake3": "f2c56e4f0445b769093763ae8f26b7732024143806be074bdbc8a03b458388e9"
+    },
+    {
+      "path": "scripts/import-member-markdown.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27137,
+      "sha256": "fa4fdb8c1539ff10bb722aabbaee981c4bb28be5855dcc0041f0e899897d7add",
+      "blake3": "1ac8bf73d36b09d7e248b2c6322825f6fabba018c9a25cac89145f9ea6aed2fd"
+    },
+    {
+      "path": "scripts/init.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2565,
+      "sha256": "3cab3361bc4bdb89766887a413c252caced7cc5518b9174aa441d0994cdd78b1",
+      "blake3": "1c73d7e85319e1c6077173991142fb410a97db4c85ef35d3434c41a9a6500834"
+    },
+    {
+      "path": "scripts/migrate-v1-to-v2.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6871,
+      "sha256": "b1f951cac1067996e24dcb0b12566f9a5f322b4e0751b310190858675ffccbb0",
+      "blake3": "96ff770244c0fd1b722c096e861cc15f0375b8f28d811e6691331bc9582451c5"
+    },
+    {
+      "path": "scripts/new-member.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3250,
+      "sha256": "3adfc6d459e3316daf68e89e904bc1471dc64e0cf2261715fd4c5db299198531",
+      "blake3": "a99bf230353f9091dc8e144d4d51f887be2075dc6888c9ff6e7dcc96aef7d7ae"
+    },
+    {
+      "path": "scripts/rebuild-index.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21473,
+      "sha256": "606848a03581324d754234fd14292d593683d9f860f03d1935274cc81a1485a0",
+      "blake3": "3519286d4c47e3e42d2222a4d5f25e4581880838f8e5c66bcebcb4e151957d21"
+    },
+    {
+      "path": "scripts/resolve-task.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6487,
+      "sha256": "f85a27d2a32df40dc41463a4b52a5e5a45e6722d6f5de0bc95f146d146688a8d",
+      "blake3": "a58cc383f575c4f1d8eeb99f1b12d2d0f52f1aaa744d0f856e31102b22d5f494"
+    },
+    {
+      "path": "scripts/review-tasks.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4807,
+      "sha256": "3460e6875772128bdcb3387461c6aefb8699bed20a0c39b349bf7e232a9df79d",
+      "blake3": "0b64444ef78dfba8abcae1851b263b5666374eaaeaa0bf85e7ef925fddd4d63c"
+    },
+    {
+      "path": "scripts/sync-tasks.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4260,
+      "sha256": "3314630904736bad753f30b09e69865eb05302fbd6c8a157e910240399d74b34",
+      "blake3": "6a6dc4562eecc237cae35ca8c34fc65ca38e28bb089fbcb1344015127eef30c4"
+    },
+    {
+      "path": "scripts/task_utils.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23739,
+      "sha256": "e7c2f8255455731332c2adf823bb476a307d7c7d576d3e73c3ddee3286b9a9f5",
+      "blake3": "ee1bb1729b025753c5a409299b19714b3606b16349c104201bff7e534eddfa90"
+    },
+    {
+      "path": "scripts/team-dashboard.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 33444,
+      "sha256": "a6e1d1cb012d5d1171185eace53143f960662f165e9067fa3eb6fb1c0b6dd448",
+      "blake3": "97280a73d4da8efce3eda1580d5f8e00b4c59db08bd1b939388a2b5dadf67165"
+    },
+    {
+      "path": "scripts/team_memory_paths.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11157,
+      "sha256": "406b189a55ed72cd2ad13efa64e9a763fba9d68d633669adfbf8d4f076f87873",
+      "blake3": "e8f26bba0b4d3754c9ab484d7b3e3faa36e1c348b56452a70ba304caecf5b299"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3129,
+      "sha256": "debeb4698f534e866eb20865ecad51ab54bdbf26ef3e72664c02c399adcca028",
+      "blake3": "06379800d92ceecf4bbaa2e6b71b79372d060d8205c1ea819ba874fd4d04fab1"
+    },
+    {
+      "path": "skill-config.example.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3134,
+      "sha256": "6594e036af6634c44964ad79c35a751e9cc9c12d17646aa03eb8c77d26305613",
+      "blake3": "e6313a2825b06b9ddab013e1f6265eb69287bbddfd6941c8a739e74e4cce395a"
+    }
+  ]
+}
