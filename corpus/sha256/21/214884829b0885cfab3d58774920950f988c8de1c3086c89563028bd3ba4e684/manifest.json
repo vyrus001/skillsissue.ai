@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:214884829b0885cfab3d58774920950f988c8de1c3086c89563028bd3ba4e684",
+  "sha256": "214884829b0885cfab3d58774920950f988c8de1c3086c89563028bd3ba4e684",
+  "blake3": "5cce8e84441295df2fd422907646e0697d590f2b5107f34ec02059c84fa99c56",
+  "size_bytes": 410119,
+  "file_count": 15,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1075,
+      "sha256": "1bfb76bc9b3ade965f76c18f8c48cbf3544cdcc0e5b65c1db5c2f924cf661d19",
+      "blake3": "408a08c8ee08ed70e99acc91a584985f3e8f876d9cea7da7be67b861e9984b9d"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3782,
+      "sha256": "e14b9e2bb08be554b38afa8066f7ed748b6dc5da163f3fd9a52d1831c8474a51",
+      "blake3": "722fbd94178e0c15c2a663d35fa6a3ee8f5bf7d7b8500590f68fc9556e9a9fd9"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11431,
+      "sha256": "9cdf51e36b5b5c092ad8b8053b98d647ee76820101e649ea26792a31b765c8f0",
+      "blake3": "ad0e039af6123da0e0fc25b5b1093ff3eee97a39466d90fb2fc020575c580446"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 143,
+      "sha256": "3d3b257b61a854f5ecae738480ae8295d909bb02985f187242a0edb09a6835b1",
+      "blake3": "a3bb52aeb33a96bb76591a875bb56e3c0ebdfb3deb817d6bef9d1c8f71daab9c"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/api-reference.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2480,
+      "sha256": "0910214f68d347a05c82e53243ec0b7f2744182c96c88e6482cc210f30052c7d",
+      "blake3": "9905d60040d0ab57f578d8243ca920a51a3c14f074a8944e60d88c8127cc9f2a"
+    },
+    {
+      "path": "references/queue-actions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7640,
+      "sha256": "8c2b1bbc9cf64a460b39d22e74e2dedd974bfcad131d90ba2edaf45d9e2f3fa9",
+      "blake3": "2bbbaafad218b31457941e2fa2bb4b2b4b4ba755fb924069b35b2589103e1d5a"
+    },
+    {
+      "path": "references/queue-reply-contract.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2664,
+      "sha256": "37ef2afdd0b7e40d4b1c566f0e2d70ab818d0b6a8732c5d11d4b1438f8bb6cfc",
+      "blake3": "a375f46c797b396aec139a5dfd87b23ba3127e65e650476eb4427b7c501cc141"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/jgy.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 214439,
+      "sha256": "5ce387dcd9c3caf65625021b7c9f95e95209a9684b17ee9c713e3e1f7b9cae44",
+      "blake3": "ef5fab8ba0a983f130ab2284af1bd430bbeacebd4af8f313395c777fd4a2d0ea"
+    },
+    {
+      "path": "scripts/vendor",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/vendor/pt-passport",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/vendor/pt-passport/bundled_modules",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/vendor/pt-passport/bundled_modules/@sec",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/vendor/pt-passport/bundled_modules/@sec/cliguard",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/vendor/pt-passport/bundled_modules/@sec/cliguard/core",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/vendor/pt-passport/bundled_modules/@sec/cliguard/core/cliguard.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 55895,
+      "sha256": "988c1cd008dab41afe4848c8a30bba589572bc72ce4c8696fca16faca0a74df2",
+      "blake3": "45df6ebfcc1948eaf73f5bb08b71962abd1573d5479d0a30052db77165ebfde3"
+    },
+    {
+      "path": "scripts/vendor/pt-passport/bundled_modules/@sec/cliguard/index.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3068,
+      "sha256": "2c8a09c6858e4ac50d41d2fdc535afe02dde273e68ab5346717a2dc41622bf4b",
+      "blake3": "4012062174cf54b15b2f9b075b7982ea110e0b60c1110410732a38d01f653cb9"
+    },
+    {
+      "path": "scripts/vendor/pt-passport/bundled_modules/@sec/cliguard/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 488,
+      "sha256": "14ead0c4fa82963cccdec45ba4b8e04e7b6f8d2827631ac797929cbce39f9ed4",
+      "blake3": "3c0c83de8bd1e7f7c473aa423f7e02a54cfa46a59c3a49e5c86b33e94ca6e18a"
+    },
+    {
+      "path": "scripts/vendor/pt-passport/dist",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/vendor/pt-passport/dist/index.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 101510,
+      "sha256": "acc0044824f37a49d2dcb0fbd3f0b44d6d9228bbc0a4cd07491837f6e4c0fc18",
+      "blake3": "247048b84444a3e1b347c2d29f900ea3df2f98c2dad07969e5f8e9a75c82c11e"
+    },
+    {
+      "path": "scripts/vendor/pt-passport/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1022,
+      "sha256": "83893576a924cb006864578db0027d1a4d27359571e978bfaa51b7acede35f72",
+      "blake3": "b062531f0bb52fa75e1411242828c7d76ed0e7994f638bc8a9cc3926797f4e12"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3174,
+      "sha256": "eaa8f9c823eac1545c5901912113196f676b38713ef168c8c889efa2e572ab43",
+      "blake3": "ea96f4a82d1de7ef33878f437db64a5dfe76a97341b988f5d32bd21c546c204e"
+    },
+    {
+      "path": "skill.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1308,
+      "sha256": "fe96dd054522a7cdf711df159890a967035f856a19955870d45855c2f358a1e0",
+      "blake3": "dd895b82f7caaa49ce51a4b75c450979d479af564f70d5aac0e4f5081dade209"
+    }
+  ]
+}

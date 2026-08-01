@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:d14ab43255c47dbff5481664209c88fcb544a6a7f22830146a679cdea48d58be",
+  "sha256": "d14ab43255c47dbff5481664209c88fcb544a6a7f22830146a679cdea48d58be",
+  "blake3": "360b362331906e000af3083aab142c00c8de331d899733606ec3660d4b7ba273",
+  "size_bytes": 292721,
+  "file_count": 30,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 31464,
+      "sha256": "48dbfe1d5ab63ff43daa1b59ee1a97594041ac6aad29a5c7ef16367a9bb4131d",
+      "blake3": "2f70cd1b407949888e13fd194efca3848b0881b0c88c14afd8dbf8a741242613"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 140,
+      "sha256": "2c28d85c32cda47259b39233e9e9313451e4d68006bb337ddbbc26a59bbe250b",
+      "blake3": "6fe429301812338376ca9fc8600e770ad15c67db875ea3e715f55622dd7c6cd9"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/cut-catalog.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13246,
+      "sha256": "9834bf2f8357771fc519e17c0fd11afa61ea8d1c3faca775804dcc494891d13c",
+      "blake3": "8d536f711e54d3975f56cbaa9d077fb84f029b884a48b5575281b4e99cd7f65f"
+    },
+    {
+      "path": "references/motion-language.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15636,
+      "sha256": "8ed8191062abd862edcf1879ef3c39215105b3b337fc7c4b8db5322ba67ebf43",
+      "blake3": "ec899c96caee853ec92ebe62f7d3d0aa1d2ca736be8b2cb957ac4ee11581049e"
+    },
+    {
+      "path": "references/story-design.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 33011,
+      "sha256": "282f6791f6b3bc4eca7b8f9d18e81ecb269506ee43c9d1c9cb9211d45c9a56dd",
+      "blake3": "04f33262fef019868468487c0c6011951fb4be99ec4559a9cb50522d04a2eb9c"
+    },
+    {
+      "path": "references/visual-design.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16488,
+      "sha256": "d8103d178f974009a573e17c54e1781721141492440860fdf880773af3251c5a",
+      "blake3": "032d9c4b0a462c1b70f7dcd1f2a7ecd196eec71b5fd963adad1a19c52c1dcef0"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/assemble-index.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 31703,
+      "sha256": "dbfb9bbefa6a13ea362be2db2a1f2f4ae26297c51652d517e1641f855f67b19c",
+      "blake3": "e2f328062f0b3c97aae349f341530fda42d21ee35dd31b79f854770ad8df60d7"
+    },
+    {
+      "path": "scripts/assemble-index.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2932,
+      "sha256": "6cb47d62848a827f060d9b3a434ee9f38cf105b00e405608e2d52724018a220b",
+      "blake3": "4b95f8eca1f4d726c6715926a2865af0f059cab9b3b3b2b531ac03f2f008a998"
+    },
+    {
+      "path": "scripts/audio.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13096,
+      "sha256": "4443907b5563e1cd17dcded312ac911763130ab2a3f5d2d5a2ee66548fa53510",
+      "blake3": "b89434560c874f8ae2f4d33eaba5b54efaaad91d71f7cfd8c01f996de1cf6ab0"
+    },
+    {
+      "path": "scripts/audio.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9798,
+      "sha256": "cbe1ce87dc01271d3066758d676e9bb47764a7d7e696fa026443a9cfdf323fbb",
+      "blake3": "f6dfbbccf432710059f53220827cd9d414165c88b4479cd933741e9823737ad2"
+    },
+    {
+      "path": "scripts/build-frame.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25080,
+      "sha256": "e0d404bfedbe28fa84660b7d9c0a02d9b028514a6664e3563104d84ee3f69f58",
+      "blake3": "953ce554c522bcff8e6bb985589e209388c7cdd831d773f16d1736f6d4ea82e8"
+    },
+    {
+      "path": "scripts/captions.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23489,
+      "sha256": "01ebf8d12cd99f3ab47c51c869b366e2a88778f9d39d9b88f95387911b7be5e2",
+      "blake3": "f721b845fa36eb73f7e0d804d46dcbcca10f2a900d260b92b014fca784d2b22d"
+    },
+    {
+      "path": "scripts/captions.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1720,
+      "sha256": "4e6bfb3736e928ce1ef3bc9808633f84f997a14462b09f219cdf29404e46f0d5",
+      "blake3": "c7b87e907b6b4cb8584aa23c0d5df13b5ec2da00ae750f95bff1dadd07910d76"
+    },
+    {
+      "path": "scripts/capture-skill-guardrails.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1728,
+      "sha256": "98e41b2b055664fd6ea26c04b470622b4c2879f5fc1f4ed771071070eed959e5",
+      "blake3": "ea9db9a3c72d546a45eebb7dc8e54ffd7af81e2533e464014db3f167f23ffecd"
+    },
+    {
+      "path": "scripts/frame-packets.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1114,
+      "sha256": "6457b3640c04040d5349a190cba31d015544c62dd82969d1ecf055448ea3d7ad",
+      "blake3": "f209ae3eec78e977bc0912b1cdd8498e111720e8e877a4ac078258f95c51f097"
+    },
+    {
+      "path": "scripts/frame-packets.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3025,
+      "sha256": "009d5cc7f9e0c45ab56ffc664e5b177e833c994767dcbb39b5806029e0804e3d",
+      "blake3": "34f4237f0a2eda8ddf51e4dd91111fcb3eeb09f0f97beb4cdb8c6fd1c4808a47"
+    },
+    {
+      "path": "scripts/lib",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/lib/assets.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2115,
+      "sha256": "bc3a9bdfa56035cfd85391251ca7c80ae575376c0d726d0fd449b3d235cd5546",
+      "blake3": "7d68685b80a44bab8cd88fdc09ac1f629b1e9bdf9ea1bb528e1f009befb24918"
+    },
+    {
+      "path": "scripts/lib/dimensions.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2288,
+      "sha256": "f7fa9dbb55275644b72e21e3727e36c11c23c7ff550fa1756203918caf37f179",
+      "blake3": "08a1deced313cf0eb1cdbc1cd4cbbd7d625babea32dddbf7753cf5180061858f"
+    },
+    {
+      "path": "scripts/lib/pad-frame-duration.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1628,
+      "sha256": "733de1b9109c9db9963c6c083db54b2c045c6aba9dfadeb3188f1c456ee9b2c1",
+      "blake3": "da12adc835aacf7d9f838240feafc59a775a2416f8551e141bda36e1b2b112b0"
+    },
+    {
+      "path": "scripts/lib/pad-frame-duration.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2970,
+      "sha256": "6cf79b1ceb62e266adafbdd26b3280cf9f356ff55e996b3f529b2a644f9a17e2",
+      "blake3": "787bcbb6392159b39c015c31a067a37387d0e1a6aa95089272b834a66d77788e"
+    },
+    {
+      "path": "scripts/lib/storyboard.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8249,
+      "sha256": "351d22701a115165b99695fbba880caf652dce92d436815236a430db2da94039",
+      "blake3": "a67f72c5e32b544fae475eaf405e3216d4b644d4fac46a3b4353b4a9dcb4fb41"
+    },
+    {
+      "path": "scripts/lib/tokens.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10164,
+      "sha256": "9b33a71a18d10877eb8397e22513df9082004bea9c745470edb7a8fd6d7c4d03",
+      "blake3": "7357bffaeea00cdee8cb8428015c5958689464eaf707dee742788f36d95348b2"
+    },
+    {
+      "path": "scripts/lib/tokens.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2289,
+      "sha256": "7f4e0f8fe3d629e7bb2df4a6a99518af395329e41e990c651a5e7ed0a0bd9fa8",
+      "blake3": "b5b8f1c02a4ce5fa87053f42fb11ac9a7c3bcf8b0c60317adb07a0c672b20698"
+    },
+    {
+      "path": "scripts/lib/transition-registry.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1588,
+      "sha256": "a8baca4d865e20a8a0b713a303ea2228f1f82a7bee4eb581568782fe661add8d",
+      "blake3": "cbd02ef58100707f11145b6835602977bce13828c63cbf4ac4d29c4997d7cce8"
+    },
+    {
+      "path": "scripts/lib/transitions.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3905,
+      "sha256": "6fc520869fb41fbbf6a5291ef221186a64c3daa66dd8ebe612c782e01368e1e9",
+      "blake3": "b9c6d8d0c3cd2e4b87b6ea4286d5a3080da918ddfc322a38ed36b79148b3608a"
+    },
+    {
+      "path": "scripts/media-contract.test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10663,
+      "sha256": "6969181b24da19a9dfc5cefae2fb2fc82bef4db9512d875954e79ece228ac0ac",
+      "blake3": "58fce00c047d44fdc8865005707785c175e335f03333230081c0304507ad3e18"
+    },
+    {
+      "path": "scripts/stage-assets.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1672,
+      "sha256": "46eb2415c3c95722df16f41c43ac84b41693849682fb4a0e2c20be2d17f16fda",
+      "blake3": "bd211bff54e27adc1806824bdb62847d84b6e8d633e82536833fbfc5ea112232"
+    },
+    {
+      "path": "scripts/transitions.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15623,
+      "sha256": "0a53387d6c2f3a3d997b6f4003e2d4f905567e3dcae7cf5df9d41cc9d10103da",
+      "blake3": "a6caed644d20467521d502f57b22b857519eae356d8e4d46b278362441cd0ec0"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2351,
+      "sha256": "70fa928103e65a7a937d61e115b8d3f11bab1c61376bc0716138527b0ac757d9",
+      "blake3": "9b1be51f500a878e45d77532a541c835600914f30fb4ed6d940efb1060d42125"
+    },
+    {
+      "path": "sub-agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "sub-agents/frame-worker.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3546,
+      "sha256": "0265a4475c226f604e6a7f50f5bbeb564b26d69f25f7d17c8608b5b676e75e39",
+      "blake3": "d36088bc5da1e1b28bab7b85be83efdefc6d228aaa565d8492caf25e0e569a69"
+    }
+  ]
+}
