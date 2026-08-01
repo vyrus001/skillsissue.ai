@@ -447,10 +447,11 @@ fn public_platforms(
                 id: discovery.platform_id.clone(),
                 name: name.to_string(),
                 url: public_http_url(
-                    &discovery.source_url,
                     platforms
                         .get(discovery.platform_id.as_str())
-                        .map(|platform| platform.base_url.as_str()),
+                        .map(|platform| platform.base_url.as_str())
+                        .unwrap_or_default(),
+                    Some(&discovery.source_url),
                 ),
             });
     }
@@ -684,12 +685,15 @@ fn write_json<T: Serialize + ?Sized>(path: PathBuf, value: &T) -> Result<()> {
 #[cfg(test)]
 mod tests {
     use super::{
-        MAX_STATIC_NETWORK_RECORDS, README_VIEWER_URL, build, public_http_url,
+        MAX_STATIC_NETWORK_RECORDS, README_VIEWER_URL, build, public_http_url, public_platforms,
         publish_network_captures, published_assessment, safe_run_id, safe_telemetry_path,
     };
     use serde_json::Value;
-    use skills_core::{AssessmentRecord, FindingRecord, SkillRecord, write_csv_records_atomic};
-    use std::{fs, io::Cursor, path::Path};
+    use skills_core::{
+        AssessmentRecord, DiscoveryRecord, FindingRecord, PlatformRecord, SkillRecord,
+        write_csv_records_atomic,
+    };
+    use std::{collections::BTreeMap, fs, io::Cursor, path::Path};
 
     #[test]
     fn static_publication_accepts_only_repository_telemetry_paths() {
@@ -714,6 +718,52 @@ mod tests {
             "https://clawhub.ai/"
         );
         assert_eq!(public_http_url("file:///tmp/data", None), "#");
+    }
+
+    #[test]
+    fn platform_badges_prefer_the_public_storefront_over_raw_sources() {
+        let platform = PlatformRecord {
+            schema_version: 1,
+            platform_id: "clawhub".to_string(),
+            display_name: "ClawHub".to_string(),
+            canonical_domain: "clawhub.ai".to_string(),
+            base_url: "https://clawhub.ai".to_string(),
+            ingest_uri: "https://clawhub.ai/api/v1/skills/example/download".to_string(),
+            adapter: "clawhub_api".to_string(),
+            status: "supported".to_string(),
+            enabled: true,
+            discovery_method: "api_catalog".to_string(),
+            confidence: 1.0,
+            first_seen_at: None,
+            last_seen_at: None,
+            rate_limit_per_minute: Some(60),
+            terms_url: None,
+            evidence_url: None,
+            notes: None,
+        };
+        let discovery = DiscoveryRecord {
+            schema_version: 1,
+            discovery_id: "discovery_fixture".to_string(),
+            skill_id: "skill_fixture".to_string(),
+            platform_id: platform.platform_id.clone(),
+            source_native_id: "example".to_string(),
+            source_url: "https://clawhub.ai/api/v1/skills/example/download".to_string(),
+            source_revision: None,
+            source_path: Some("SKILL.md".to_string()),
+            etag: None,
+            publisher_display: None,
+            published_at: None,
+            first_seen_at: "2026-07-31T00:00:00Z".to_string(),
+            last_seen_at: "2026-07-31T00:00:00Z".to_string(),
+            ingest_run_id: "ingest_fixture".to_string(),
+            adapter_version: "fixture".to_string(),
+        };
+        let platforms = BTreeMap::from([(platform.platform_id.as_str(), &platform)]);
+
+        let published = public_platforms(&[&discovery], &platforms);
+
+        assert_eq!(published.len(), 1);
+        assert_eq!(published[0].url, "https://clawhub.ai/");
     }
 
     #[test]

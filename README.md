@@ -260,8 +260,11 @@ authentication-material changes; download/execute chains; cron, scheduled-task,
 service, boot, and startup persistence; security-update and endpoint-protection
 tampering; process injection and executable anonymous memory; logging/audit
 destruction; privilege elevation; and firewall, SELinux, AppArmor, and related
-enforcement changes. Loopback, link-local, RFC1918, IPv6 ULA, single-label, and
-common LAN-local destinations are excluded from malicious network findings.
+enforcement changes. Environment-file writes are medium-severity suspicious
+activity, while skill-driven reads of environment material are high severity;
+writes to authentication keys, certificates, and account databases remain
+critical. Loopback, link-local, RFC1918, IPv6 ULA, single-label, and common
+LAN-local destinations are excluded from malicious network findings.
 
 The same replay extracts URLs and domains from exec arguments, shell strings,
 DNS, and network events. Strong skill-registry evidence creates a disabled

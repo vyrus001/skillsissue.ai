@@ -19,6 +19,8 @@ const RULE_DOWNLOAD_EXECUTE: &str = "integrity.untrusted_download_execute";
 const RULE_CURL_PIPE_SHELL: &str = "behavior.observed_curl_pipe_shell";
 const RULE_SENSITIVE_FILE_MODIFICATION: &str = "integrity.local_sensitive_file_modified";
 const RULE_AUTH_MATERIAL_MODIFICATION: &str = "integrity.authentication_material_modified";
+const RULE_ENVIRONMENT_MATERIAL_READ: &str = "confidentiality.environment_material_read";
+const RULE_ENVIRONMENT_MATERIAL_MODIFICATION: &str = "integrity.environment_material_modified";
 const RULE_SCHEDULED_PERSISTENCE: &str = "integrity.scheduled_task_persistence";
 const RULE_DANGEROUS_SCHEDULED_ACTION: &str = "behavior.scheduled_high_risk_network_action";
 const RULE_SECURITY_UPDATE_TAMPER: &str = "integrity.security_update_process_tampered";
@@ -28,7 +30,7 @@ const RULE_FORENSIC_TAMPER: &str = "integrity.logging_or_forensic_artifact_tampe
 const RULE_PRIVILEGE_ELEVATION: &str = "behavior.privilege_or_integrity_elevation";
 const RULE_SECURITY_POLICY_TAMPER: &str = "integrity.security_policy_modified";
 const RULE_PROTECTION_TAMPER: &str = "integrity.built_in_protection_disabled";
-const RULESET_VERSION: &str = "deterministic-rules-v2";
+const RULESET_VERSION: &str = "deterministic-rules-v3";
 const MAX_FINDINGS_PER_RUN: usize = 1_024;
 const MAX_PLATFORM_EVIDENCE_PER_RUN: usize = 2_048;
 const MAX_RETAINED_URL_BYTES: usize = 2_048;
@@ -864,7 +866,11 @@ impl RunState<'_> {
                 event,
                 RULE_OUTSIDE_WRITE,
                 "integrity",
-                "high",
+                if is_environment_material_path(path) {
+                    "medium"
+                } else {
+                    "high"
+                },
                 "skill",
                 "file",
                 path,
@@ -881,11 +887,40 @@ impl RunState<'_> {
         let path = event_path(event);
         let mutates_path = matches!(event.kind, EventKind::Write)
             || (event.kind == EventKind::Open && open_writes(event));
+        let reads_path = matches!(event.kind, EventKind::Read)
+            || (event.kind == EventKind::Open && !open_writes(event));
         let evidence = event.evidence.to_ascii_lowercase();
+
+        if reads_path
+            && !event.return_value.is_some_and(|value| value < 0)
+            && self.process(event.pid).taint.skill
+            && path.as_deref().is_some_and(is_environment_material_path)
+        {
+            let path = path.as_deref().expect("environment path is present");
+            self.add_finding(
+                event,
+                RULE_ENVIRONMENT_MATERIAL_READ,
+                "confidentiality",
+                "high",
+                path,
+                "environment-material",
+                path,
+                "A skill-driven process read environment or secret material",
+            );
+        }
 
         if mutates_path {
             if let Some(path) = path.as_deref() {
-                if is_auth_material_path(path) {
+                if is_environment_material_path(path) {
+                    self.add_rule_finding(
+                        event,
+                        RULE_ENVIRONMENT_MATERIAL_MODIFICATION,
+                        "medium",
+                        "environment-material",
+                        path,
+                        "Environment configuration or secret material was modified",
+                    );
+                } else if is_auth_material_path(path) {
                     self.add_rule_finding(
                         event,
                         RULE_AUTH_MATERIAL_MODIFICATION,
@@ -1506,12 +1541,21 @@ fn is_auth_material_path(path: &str) -> bool {
         ],
     ) || lower.ends_with("/authorized_keys")
         || lower.ends_with("/authorized_keys2")
-        || lower.ends_with("/.env")
         || lower.contains("/.ssh/id_")
         || lower.contains("/.aws/credentials")
         || lower.contains("/.config/gcloud/")
         || lower.contains("credential")
         || lower.contains("access_token")
+}
+
+fn is_environment_material_path(path: &str) -> bool {
+    let lower = normalized_path(path);
+    let name = lower.rsplit('/').next().unwrap_or(lower.as_str());
+    name == ".env"
+        || name.starts_with(".env.")
+        || lower == "/etc/environment"
+        || lower.starts_with("/etc/environment.d/")
+        || (lower.starts_with("/proc/") && lower.ends_with("/environ"))
 }
 
 fn is_scheduled_task_path(path: &str) -> bool {

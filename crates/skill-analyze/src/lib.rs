@@ -519,6 +519,71 @@ mod tests {
     }
 
     #[test]
+    fn template_environment_write_is_suspicious_not_malicious() {
+        let temp = tempfile::tempdir().unwrap();
+        let paths = test_paths(&temp);
+        let trace = temp.path().join("template-environment-write.jsonl");
+        fs::write(
+            &trace,
+            concat!(
+                "{\"eventName\":\"openat\",\"processId\":63,\"returnValue\":3,\"args\":{\"pathname\":\"/work/skill/SKILL.md\",\"flags\":\"O_RDONLY\"}}\n",
+                "{\"eventName\":\"sched_process_exec\",\"processId\":63,\"returnValue\":0,\"args\":{\"pathname\":\"/bin/sh\",\"argv\":[\"/bin/sh\",\"-eu\",\"-c\",\"export GEMINI_API_KEY=your-key-here; echo GEMINI_API_KEY=your-key-here >> ~/.env\"]}}\n",
+                "{\"eventName\":\"openat\",\"processId\":63,\"returnValue\":4,\"args\":{\"pathname\":\"/home/detonator/.env\",\"flags\":\"O_WRONLY|O_CREAT|O_APPEND\"}}\n"
+            ),
+        )
+        .unwrap();
+        write_runs(
+            &paths.runs_csv,
+            &[("run-template-environment-write", trace.to_str().unwrap())],
+        );
+        write_platforms(&paths.platforms_csv);
+
+        assert_eq!(run_once(&paths, 1).unwrap().findings, 2);
+        let findings = skills_core::read_csv_records::<FindingRecord>(&paths.findings_csv).unwrap();
+        assert!(findings.iter().all(|finding| finding.severity == "medium"));
+        assert!(findings
+            .iter()
+            .any(|finding| finding.rule_id == "integrity.environment_material_modified"));
+        assert!(!findings
+            .iter()
+            .any(|finding| finding.rule_id == "integrity.authentication_material_modified"));
+        let assessments =
+            skills_core::read_csv_records::<AssessmentRecord>(&paths.assessments_csv).unwrap();
+        assert_eq!(assessments[0].verdict, "suspicious");
+    }
+
+    #[test]
+    fn skill_driven_environment_read_is_high_severity() {
+        let temp = tempfile::tempdir().unwrap();
+        let paths = test_paths(&temp);
+        let trace = temp.path().join("environment-read.jsonl");
+        fs::write(
+            &trace,
+            concat!(
+                "{\"eventName\":\"openat\",\"processId\":7,\"returnValue\":3,\"args\":{\"pathname\":\"/work/skill/SKILL.md\",\"flags\":\"O_RDONLY\"}}\n",
+                "{\"eventName\":\"openat\",\"processId\":7,\"returnValue\":4,\"args\":{\"pathname\":\"/home/detonator/.env\",\"flags\":\"O_RDONLY\"}}\n"
+            ),
+        )
+        .unwrap();
+        write_runs(
+            &paths.runs_csv,
+            &[("run-environment-read", trace.to_str().unwrap())],
+        );
+        write_platforms(&paths.platforms_csv);
+
+        assert_eq!(run_once(&paths, 1).unwrap().findings, 1);
+        let findings = skills_core::read_csv_records::<FindingRecord>(&paths.findings_csv).unwrap();
+        assert_eq!(
+            findings[0].rule_id,
+            "confidentiality.environment_material_read"
+        );
+        assert_eq!(findings[0].severity, "high");
+        let assessments =
+            skills_core::read_csv_records::<AssessmentRecord>(&paths.assessments_csv).unwrap();
+        assert_eq!(assessments[0].verdict, "malicious");
+    }
+
+    #[test]
     fn adapter_plumbing_sinks_are_benign_but_persistence_remains_hostile() {
         let temp = tempfile::tempdir().unwrap();
         let paths = test_paths(&temp);
