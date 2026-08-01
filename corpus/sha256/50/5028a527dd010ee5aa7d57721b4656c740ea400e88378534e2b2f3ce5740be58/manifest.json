@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:5028a527dd010ee5aa7d57721b4656c740ea400e88378534e2b2f3ce5740be58",
+  "sha256": "5028a527dd010ee5aa7d57721b4656c740ea400e88378534e2b2f3ce5740be58",
+  "blake3": "741dfa008155f52d97494bc2622e2446be8da71d0429d7e000d089603ba756b2",
+  "size_bytes": 50692,
+  "file_count": 9,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1090,
+      "sha256": "7ad4062a330bc8ba53ce55fa6d8eafa865a3008e547f369355347ef0c3dc124e",
+      "blake3": "98e70248ed76ea23c313889dfce16b0e9cf0024d3f14cc3cba58976db1bbadd6"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12795,
+      "sha256": "fa1720b4ff2f03cf9f9ca77917c4914ccc211ec5921c53042723a42bf7991b59",
+      "blake3": "f435425e3150f02690b1d2dee4134e82b61a89fa953695ea91be4a0fa1491699"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 149,
+      "sha256": "b97c127341c8702bb5a5af77f21eaee577515d0003fe036bf3fe39da2bdfddf7",
+      "blake3": "a1bc5b929562e78b1d37b73ae3ca5d2df53bf0b8aaf6923492bb8be8faa222a9"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/dynamic-agent-patch.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8092,
+      "sha256": "f60e5f75bf99362182af39093404e46f40565b23246ee19981d1aa928a7aafa4",
+      "blake3": "41319dc42eda47af7c1a4f7f6403d4a8affbeafbff15278e313d907e486aa098"
+    },
+    {
+      "path": "references/feishu-reference.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2593,
+      "sha256": "d86f95bd92aa48018c90615e6a0ef58def7fcc0c518822c4cfce20b2aadeaa34",
+      "blake3": "a6e36027c3462fad3f8692b54a3c9d09fe44ddd7609a5dbeadb8c4c8161adb2c"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/apply-dynamic-agent-patch.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14600,
+      "sha256": "865189b87009575cbe22e15a84860875f9aa2084d81c6797b95b10732b464347",
+      "blake3": "4a0ef1f36d81f62db61d7b8e1853a99a2bf92d0daae27daa2b3245254ada63ab"
+    },
+    {
+      "path": "scripts/generate-agent-config.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3990,
+      "sha256": "971548e96557bee35883146685da16264452446153a34cb8fe3877d1645afd04",
+      "blake3": "0f69625f90280c360acba71ba16821672ffa339cbbcf4a6e5057d4d6559cef52"
+    },
+    {
+      "path": "scripts/verify-isolation.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4789,
+      "sha256": "5f1b3a66726c83a3d6ad74b9648aa412aca90fca8f0af32887679467606082ba",
+      "blake3": "cdc230746893bc042b7213102d103ce9e3193b44054a630ab1a81f5715e4d326"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2594,
+      "sha256": "55eee9e772b76a4ae1ed18878a2e61a7c204d0678b13ebca1b9e6fd08a0b1557",
+      "blake3": "eb10eb3303a92765b4208dc22838e7fac4ef66619bd54cc66ccfef1f98deaca9"
+    }
+  ]
+}

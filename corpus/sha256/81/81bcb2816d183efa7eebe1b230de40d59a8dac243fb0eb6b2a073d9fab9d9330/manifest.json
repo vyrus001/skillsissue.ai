@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:81bcb2816d183efa7eebe1b230de40d59a8dac243fb0eb6b2a073d9fab9d9330",
+  "sha256": "81bcb2816d183efa7eebe1b230de40d59a8dac243fb0eb6b2a073d9fab9d9330",
+  "blake3": "b6726ce2e1f8ab2d9a9957a976f3149d741ad1b8c8134a0f09aba5fcd48d6b14",
+  "size_bytes": 69306,
+  "file_count": 22,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11387,
+      "sha256": "b01fa5ea8333e47117eb0b464895f965625de79e289b7199547d8840a1396e3f",
+      "blake3": "2b1ecb897924050bf171ff9375d6184c6efb6cb21d2d2d225e04964776346434"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 135,
+      "sha256": "28d69de5f665e37a292af78ada3dc6f8de6a3a9a722f0331eb25aeb3f7f59b77",
+      "blake3": "1e2999a9f8993114621dac2fd3447d10aa6b84a86f26ef0fa1ada2163af3adfc"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1014,
+      "sha256": "03a9ff50f542da2e820ed73c7924f64a2d1e0da97630410d1c276c4d9d05d7f1",
+      "blake3": "a38faf81984e11163e46aeae44b7da9ecc24f653061e59eb06a5c129f890eee9"
+    },
+    {
+      "path": "readme.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4388,
+      "sha256": "eeb23c5f17dc4d4a0ef0d4d0e44c2d33c8a97457e19a21f8a1ca813e5fd836c0",
+      "blake3": "60e08546a0b4e07350587ca99bb6657b206614ac8e155878d68e7606464e6578"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/changelog.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2094,
+      "sha256": "3a61ab67b19d2fde9c73cb021ca43c17f0b7a47a05ec4734974c94d19133ab4f",
+      "blake3": "481e8bb11c147604a7c38f8f27e958d2be1178cc499c2170bb0984e4143b094f"
+    },
+    {
+      "path": "references/options.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8667,
+      "sha256": "3af8e2ea4f93b9bf409a33da4779047ca288350917b5bd0c6c7184c2a3fd570b",
+      "blake3": "4086d927d82f168588338ee2b23c45c947e7bb8e25c7cebb1890fb12ee5cf528"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2189,
+      "sha256": "4bcd33e857f8000850834986c0fe012db27bfb9976e227c287a62ca723388927",
+      "blake3": "6fa59a5b9006c471e03912f48cdb3b49f644295e07470b9930a9dd49052006d6"
+    },
+    {
+      "path": "src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/api",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/api/detail.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2755,
+      "sha256": "63351ff55194a6405fa23ba0fcba2125152019c84c9b0bf6cdd494ea4f4df529",
+      "blake3": "d047e912420a2600ca4129e053ec8f087e926da47a9292b6e745ed6c18563205"
+    },
+    {
+      "path": "src/api/post.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2133,
+      "sha256": "afdbd5bccb5e0fdb63932119bbe1d243c1dd657fc3eb81a45a551312e04b3627",
+      "blake3": "c0e6407b21b7316354e4d2ede81fb390e52b31504a79f91a3f13a7c7650f18f9"
+    },
+    {
+      "path": "src/api/search.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3614,
+      "sha256": "ed2f0201dc103c1a1013a64d9dbfb8b37a4167a4f5b1615c7b2ab75771ace65c",
+      "blake3": "d0f40086dde5f494d37bbf3f22c672ff55b7a55767429806d7e3c998d46816fb"
+    },
+    {
+      "path": "src/config",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/config/constants.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 183,
+      "sha256": "fe1033bf5307fa1d8cfa5500294378bdd0aa3393a5616cab5f58d10a3b0c821b",
+      "blake3": "70faa35f94432b2e85144e15dd60c6dc77abc23d293ff849e9cd3704f424853f"
+    },
+    {
+      "path": "src/utils",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/utils/args.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3975,
+      "sha256": "75173ddbcee52f1523612593bb10a768066ca4e95aac9c3fd3f73233fe3c6640",
+      "blake3": "de6caa383df68018e5f2c673e4ebc6c8818fa850406e83d294b2d80d05f92d42"
+    },
+    {
+      "path": "src/utils/key.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 803,
+      "sha256": "b2d9e6f0ec3b3bdde1666b78c5a0f966ecaedf273fe77f865e9accb396d55d94",
+      "blake3": "0b1f420394508cf94b26035f122be64403a247c5633ef86c5d5c3fddc9c7cb5a"
+    },
+    {
+      "path": "src/utils/log.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1183,
+      "sha256": "0b24214c31b80718557df0d791097d51a8e04d0ae0ea430f2ad2e85acf5c1fc6",
+      "blake3": "47d1cbafa2aaed64d689a52471d3509af382a89576fdf4dec8b7c5f12508da2e"
+    },
+    {
+      "path": "src/utils/request.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3663,
+      "sha256": "956612db386129a0e63a958cc62d1b45a2a199fd5be317afa08c90d5a8b82d35",
+      "blake3": "6752fbf61d8c86370841f66be8e2c5a93e5e2d2fbd60854a43f3848834c9d91e"
+    },
+    {
+      "path": "src/utils/retry.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 743,
+      "sha256": "50d0e830c213fbf7545f05134abd875b437b99ab7eb39b2776ed5469531be67a",
+      "blake3": "59e26afecb130436ae2999f1309d419162e06e6b254749fc5cf7d376d48bfcfd"
+    },
+    {
+      "path": "src/utils/utils.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1215,
+      "sha256": "846f94ecdaf7ea08db6824e128c4618116d90d7bb70d549e9fd76b9ba4430ec4",
+      "blake3": "20e85aa1b7f134a7c85dec786612fd0074c7740e7302ea3844aaf58b8936adc8"
+    },
+    {
+      "path": "src/validate",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/validate/keyword.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2192,
+      "sha256": "c13c88399e0f12583ff48a418f041c8d44683669589f8e43704c5d380498db00",
+      "blake3": "241dd821782c7b6525e4137549defa36daf54207dc64d18868098328bcaa395d"
+    },
+    {
+      "path": "src/validate/url.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1886,
+      "sha256": "194f38bb16b366f408892104d683ce11b229a6e39e1773cdb12d993b244ce11c",
+      "blake3": "69e8b4ba866557fdc9095f157a7b3aa45039c5ce38f9a7df681898c239c54b11"
+    },
+    {
+      "path": "src/xiaohongshu",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/xiaohongshu/detail-cli.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4617,
+      "sha256": "f117f35292d4ba58a7f4841730aba4bdf973ae1dfbc7f71d5e45de34a6b7f2f5",
+      "blake3": "3cd2f8d4beaa34a03d791ad427118fbacd42167ba516f4ab1bd0a1883a3d9d87"
+    },
+    {
+      "path": "src/xiaohongshu/post-cli.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4586,
+      "sha256": "891ee7dfb96fd3b8326c815b7d70d57d39e13d4e06cf0ae90c7f9a794901ed11",
+      "blake3": "0414e4f5933b44e184e64f514153de07b49204bbe0f49ddb8c57a3e1f9427bb4"
+    },
+    {
+      "path": "src/xiaohongshu/search-cli.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5884,
+      "sha256": "0322fd37fd921152f5ee170c872f8fd2c4dd542abf614c8962dd891991a7c0cf",
+      "blake3": "7cc9b715a1ce6f5936abe02e5ce53a682b8b839b57e1d05133ca23254effe8f6"
+    }
+  ]
+}
