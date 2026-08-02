@@ -1,4 +1,3 @@
-# syntax=docker/dockerfile:1.7
 FROM mitmproxy/mitmproxy:12.2.3@sha256:68afa70d7b6ac9d269b88f88534f9ffceb363b4ce31703a78702341fba82e831
 
 USER root

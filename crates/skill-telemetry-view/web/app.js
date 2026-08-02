@@ -105,11 +105,23 @@ function staticRunId() {
   return runId;
 }
 
+function staticSnapshotId() {
+  const snapshotId = new URLSearchParams(window.location.search).get("snapshot") || "";
+  if (!/^v[1-9][0-9]*-[0-9a-f]{64}$/.test(snapshotId)) {
+    throw new Error("This graph link is missing a valid snapshot identifier.");
+  }
+  return snapshotId;
+}
+
+function staticSnapshotRoot() {
+  const root = String(VIEWER.dataRoot || "../runs").replace(/\/$/, "");
+  return `${root}/${encodeURIComponent(staticRunId())}/${encodeURIComponent(staticSnapshotId())}`;
+}
+
 async function staticSnapshot() {
   if (staticSnapshotPromise) return staticSnapshotPromise;
   staticSnapshotPromise = (async () => {
-    const root = String(VIEWER.dataRoot || "../runs").replace(/\/$/, "");
-    const response = await fetch(`${root}/${encodeURIComponent(staticRunId())}/graph.json`);
+    const response = await fetch(`${staticSnapshotRoot()}/graph.json`);
     if (!response.ok) throw new Error(`published trace request failed (${response.status})`);
     const snapshot = await response.json();
     staticEventMap = new Map();
@@ -122,8 +134,7 @@ async function staticEventPage(page) {
   if (staticEventPagePromises.has(page)) return staticEventPagePromises.get(page);
   const promise = (async () => {
     const snapshot = await staticSnapshot();
-    const root = String(VIEWER.dataRoot || "../runs").replace(/\/$/, "");
-    const response = await fetch(`${root}/${encodeURIComponent(staticRunId())}/events/${page}.json`);
+    const response = await fetch(`${staticSnapshotRoot()}/events/${page}.json`);
     if (!response.ok) throw new Error(`published event page request failed (${response.status})`);
     const events = await response.json();
     for (const event of events) staticEventMap.set(String(event.seq), event);
@@ -137,8 +148,7 @@ async function staticNetworkIndex() {
   if (VIEWER.mode !== "static") return { captureCount: 0, captures: [] };
   if (staticNetworkIndexPromise) return staticNetworkIndexPromise;
   staticNetworkIndexPromise = (async () => {
-    const root = String(VIEWER.dataRoot || "../runs").replace(/\/$/, "");
-    const response = await fetch(`${root}/${encodeURIComponent(staticRunId())}/network/index.json`);
+    const response = await fetch(`${staticSnapshotRoot()}/network/index.json`);
     if (!response.ok) throw new Error(`published network index request failed (${response.status})`);
     return response.json();
   })();
@@ -146,14 +156,11 @@ async function staticNetworkIndex() {
 }
 
 async function staticNetworkDetail(capture) {
-  const root = String(VIEWER.dataRoot || "../runs").replace(/\/$/, "");
   const detail = String(capture.detailUrl || "");
   if (!/^network\/[1-9][0-9]*\.json$/.test(detail)) {
     throw new Error("published network detail path is invalid");
   }
-  const response = await fetch(
-    `${root}/${encodeURIComponent(staticRunId())}/${detail}`,
-  );
+  const response = await fetch(`${staticSnapshotRoot()}/${detail}`);
   if (!response.ok) throw new Error(`published network evidence request failed (${response.status})`);
   return response.json();
 }

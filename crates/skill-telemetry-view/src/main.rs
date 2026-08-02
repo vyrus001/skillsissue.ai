@@ -49,6 +49,14 @@ enum Command {
         #[arg(long, default_value = "target/site")]
         output: PathBuf,
 
+        /// Separate destination for immutable telemetry snapshots (for example, an R2 upload tree).
+        #[arg(long, requires = "graph_base_url")]
+        graph_output: Option<PathBuf>,
+
+        /// Public HTTPS base URL that serves the separate telemetry snapshots.
+        #[arg(long, requires = "graph_output")]
+        graph_base_url: Option<String>,
+
         /// Largest telemetry run published into a browser-readable snapshot.
         #[arg(long, default_value_t = 25_000)]
         max_published_events: usize,
@@ -118,9 +126,25 @@ fn main() -> Result<()> {
         Command::BuildSite {
             root,
             output,
+            graph_output,
+            graph_base_url,
             max_published_events,
         } => {
-            let summary = skill_telemetry_view::site::build(&root, &output, max_published_events)?;
+            let summary = match (graph_output.as_deref(), graph_base_url.as_deref()) {
+                (Some(graph_output), Some(graph_base_url)) => {
+                    skill_telemetry_view::site::build_with_graph_store(
+                        &root,
+                        &output,
+                        graph_output,
+                        graph_base_url,
+                        max_published_events,
+                    )?
+                }
+                (None, None) => {
+                    skill_telemetry_view::site::build(&root, &output, max_published_events)?
+                }
+                _ => unreachable!("clap enforces paired graph store arguments"),
+            };
             println!("{}", serde_json::to_string_pretty(&summary)?);
             Ok(())
         }

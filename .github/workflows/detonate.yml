@@ -195,10 +195,23 @@ jobs:
           test -z "$(docker ps --all --quiet)"
       - name: Build trusted supervisor and untrusted target separately
         run: |
-          docker build --file containers/sandbox.Dockerfile --tag skillsissue-sandbox:local .
-          docker build --file containers/relay.Dockerfile --tag skillsissue-relay:local .
-          docker build --file containers/egress-proxy.Dockerfile --tag skillsissue-egress-proxy:local .
-          docker build --file containers/detonator.Dockerfile --tag skillsissue-detonator:local .
+          build_image() {
+            dockerfile="$1"
+            tag="$2"
+            for attempt in 1 2 3; do
+              if docker build --file "$dockerfile" --tag "$tag" .; then
+                return 0
+              fi
+              if test "$attempt" -eq 3; then
+                return 1
+              fi
+              sleep "$((attempt * 5))"
+            done
+          }
+          build_image containers/sandbox.Dockerfile skillsissue-sandbox:local
+          build_image containers/relay.Dockerfile skillsissue-relay:local
+          build_image containers/egress-proxy.Dockerfile skillsissue-egress-proxy:local
+          build_image containers/detonator.Dockerfile skillsissue-detonator:local
       - name: Snapshot typed run index
         run: |
           mkdir -p .baseline/data

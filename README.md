@@ -307,9 +307,11 @@ and independently measured LLM-context taint remain open limitations.
 The public threat-intelligence site is generated entirely from the committed
 CSV registries and telemetry. Its front page joins each latest assessment to
 the skill's platform provenance, detection time, SHA-256 identity, and verdict.
-When the assessed run has a bounded committed capture, the skill links to a
-GitHub Pages-hosted execution graph. Static graphs load event evidence in
-bounded pages; no local server or public telemetry API is required. Runs with
+When the assessed run has a bounded committed capture, the skill links to an
+execution graph whose lightweight viewer shell is hosted by GitHub Pages and
+whose immutable, gzip-compressed snapshot is served from Cloudflare R2 through
+`graphs.skillsissue.ai`. Static graphs load event evidence in bounded pages;
+no local server or public telemetry API is required. Runs with
 intercepted downloads also expose an evidence browser with URL, status, byte
 count, body hash, safe text/hex preview, and an explicit inert-file download.
 
@@ -320,6 +322,13 @@ cargo run --locked -p skill-telemetry-view -- \
   build-site --root . --output target/site
 python3 -m http.server --directory target/site 8000
 ```
+
+Production publication uses the repository variables
+`CLOUDFLARE_ACCOUNT_ID` and `R2_BUCKET`, plus the bucket-scoped GitHub secrets
+`R2_ACCESS_KEY_ID` and `R2_SECRET_ACCESS_KEY`. The R2 bucket is exposed only for
+reads through `graphs.skillsissue.ai`; the workflow applies the browser CORS
+policy from `config/r2-cors.json` and never deletes older content-addressed
+snapshots.
 
 The same dependency-free graph remains available as a local viewer for any run,
 including captures that exceed the static publication limit. It accepts a run
@@ -481,7 +490,10 @@ or disposable long-lived runners.
   builds every container boundary. It never detonates pull-request content.
 - `pages.yml` builds the searchable scan table and one static, paged execution
   graph for each latest assessed run whose committed telemetry fits the
-  publication limit, then deploys the artifact through GitHub Pages.
+  publication limit. Content-versioned graph snapshots are synchronized to a
+  bucket-scoped Cloudflare R2 origin, while the sub-1-GiB site shell is deployed
+  through GitHub Pages. Long builds are allowed to finish instead of being
+  canceled by a newer scheduled snapshot.
 - `evaluate-skillject.yml` is manual-only and is the secret-free hosted eBPF
   smoke test. It runs a bounded attack-only regression matrix on a fresh full
   `ubuntu-24.04` VM, has read-only repository permission, and uploads results

@@ -4,6 +4,7 @@ use std::io::{BufRead, BufReader, BufWriter, Write};
 use std::path::{Component, Path, PathBuf};
 
 use anyhow::{Context, Result, bail, ensure};
+use flate2::{Compression, write::GzEncoder};
 use serde::Serialize;
 use skills_core::{
     AssessmentRecord, DiscoveryRecord, FindingRecord, PlatformRecord, RunRecord, SkillRecord,
@@ -22,12 +23,8 @@ const SITE_CSS: &str = include_str!("../site/style.css");
 const GRAPH_INDEX: &str = include_str!("../web/index.html");
 const GRAPH_JS: &str = include_str!("../web/app.js");
 const GRAPH_CSS: &str = include_str!("../web/style.css");
-const GRAPH_CONFIG: &str = r#"window.SKILLSISSUE_VIEWER = {
-  mode: "static",
-  dataRoot: "../runs",
-  indexUrl: "../"
-};
-"#;
+const LOCAL_GRAPH_DATA_ROOT: &str = "../runs";
+const GRAPH_SNAPSHOT_VERSION: &str = "v1";
 const README_VIEWER_URL: &str =
     "https://github.com/vyrus001/skillsissue.ai#interactive-telemetry-viewer";
 
@@ -35,6 +32,7 @@ const README_VIEWER_URL: &str =
 #[serde(rename_all = "camelCase")]
 pub struct BuildSummary {
     pub output: String,
+    pub graph_output: String,
     pub scanned_skills: usize,
     pub published_graphs: usize,
     pub fallback_links: usize,
@@ -149,11 +147,55 @@ struct StaticNetworkSummary {
 }
 
 pub fn build(repo_root: &Path, output: &Path, max_published_events: usize) -> Result<BuildSummary> {
+    build_internal(
+        repo_root,
+        output,
+        None,
+        LOCAL_GRAPH_DATA_ROOT,
+        max_published_events,
+    )
+}
+
+pub fn build_with_graph_store(
+    repo_root: &Path,
+    output: &Path,
+    graph_output: &Path,
+    graph_base_url: &str,
+    max_published_events: usize,
+) -> Result<BuildSummary> {
+    let graph_base_url = validated_graph_base_url(graph_base_url)?;
+    ensure!(
+        graph_output != output && !graph_output.starts_with(output),
+        "graph-output must be outside the deployable site output"
+    );
+    build_internal(
+        repo_root,
+        output,
+        Some(graph_output),
+        &graph_base_url,
+        max_published_events,
+    )
+}
+
+fn build_internal(
+    repo_root: &Path,
+    output: &Path,
+    separate_graph_output: Option<&Path>,
+    graph_base_url: &str,
+    max_published_events: usize,
+) -> Result<BuildSummary> {
     ensure!(
         max_published_events > 0,
         "max-published-events must be positive"
     );
     prepare_output(repo_root, output)?;
+    if let Some(graph_output) = separate_graph_output {
+        prepare_output(repo_root, graph_output)?;
+    }
+    let graph_output = separate_graph_output
+        .map(Path::to_path_buf)
+        .unwrap_or_else(|| output.join("runs"));
+    let compress_graphs = separate_graph_output.is_some();
 
     let data = repo_root.join("data");
     let skills: Vec<SkillRecord> = read_csv_records(data.join("skills.csv"))?;
@@ -182,8 +224,11 @@ pub fn build(repo_root: &Path, output: &Path, max_published_events: usize) -> Re
     write_asset(output.join("graph/index.html"), GRAPH_INDEX)?;
     write_asset(output.join("graph/app.js"), GRAPH_JS)?;
     write_asset(output.join("graph/style.css"), GRAPH_CSS)?;
-    write_asset(output.join("graph/config.js"), GRAPH_CONFIG)?;
-    fs::create_dir_all(output.join("runs"))?;
+    write_asset(
+        output.join("graph/config.js"),
+        &graph_config(graph_base_url)?,
+    )?;
+    fs::create_dir_all(&graph_output)?;
 
     let mut published = Vec::new();
     let mut published_graphs = 0_usize;
@@ -209,7 +254,7 @@ pub fn build(repo_root: &Path, output: &Path, max_published_events: usize) -> Re
             match runs_by_id.get(assessment.run_id.as_str()).copied() {
                 Some(run) => publish_graph(
                     repo_root,
-                    output,
+                    &graph_output,
                     run,
                     assessment,
                     findings_by_run
@@ -217,6 +262,7 @@ pub fn build(repo_root: &Path, output: &Path, max_published_events: usize) -> Re
                         .map(Vec::as_slice)
                         .unwrap_or_default(),
                     max_published_events,
+                    compress_graphs,
                 )?,
                 None => false,
             }
@@ -286,7 +332,13 @@ pub fn build(repo_root: &Path, output: &Path, max_published_events: usize) -> Re
                     } else {
                         ""
                     };
-                    format!("./graph/?run={}{}", assessment.run_id, view)
+                    format!(
+                        "./graph/?run={}&snapshot={}{}",
+                        assessment.run_id,
+                        assessment_snapshot_id(&assessment.assessment_id)
+                            .expect("validated assessment ID used for published graph"),
+                        view
+                    )
                 })
                 .unwrap_or_else(|| README_VIEWER_URL.to_string()),
             graph_available,
@@ -325,6 +377,7 @@ pub fn build(repo_root: &Path, output: &Path, max_published_events: usize) -> Re
 
     Ok(BuildSummary {
         output: output.display().to_string(),
+        graph_output: graph_output.display().to_string(),
         scanned_skills: catalog.total_scanned,
         published_graphs,
         fallback_links: scanned_skills.saturating_sub(published_graphs),
@@ -460,13 +513,16 @@ fn public_platforms(
 
 fn publish_graph(
     repo_root: &Path,
-    output: &Path,
+    graph_output: &Path,
     run: &RunRecord,
     assessment: &AssessmentRecord,
     findings: &[&FindingRecord],
     max_published_events: usize,
+    compress: bool,
 ) -> Result<bool> {
     ensure!(safe_run_id(&run.run_id), "unsafe run ID: {}", run.run_id);
+    let snapshot_id = assessment_snapshot_id(&assessment.assessment_id)
+        .context("assessment ID is unsafe for static publication")?;
     let Some(telemetry_path) = run.telemetry_path.as_deref() else {
         return Ok(false);
     };
@@ -503,10 +559,11 @@ fn publish_graph(
         "{} graph omits parsed events",
         run.run_id
     );
-    let run_output = output.join("runs").join(&run.run_id);
+    let run_output = graph_output.join(&run.run_id).join(snapshot_id);
     fs::create_dir_all(run_output.join("events"))?;
-    let network_capture_count = publish_network_captures(run_directory, &run_output)?;
-    write_json(
+    let network_capture_count =
+        publish_network_captures_with_format(run_directory, &run_output, compress)?;
+    write_json_with_format(
         run_output.join("graph.json"),
         &StaticGraph {
             graph,
@@ -515,17 +572,28 @@ fn publish_graph(
             event_page_size: EVENT_PAGE_SIZE,
             network_capture_count,
         },
+        compress,
     )?;
     for (page, events) in trace.events.chunks(EVENT_PAGE_SIZE).enumerate() {
-        write_json(
+        write_json_with_format(
             run_output.join("events").join(format!("{page}.json")),
             events,
+            compress,
         )?;
     }
     Ok(true)
 }
 
+#[cfg(test)]
 fn publish_network_captures(run_directory: &Path, run_output: &Path) -> Result<usize> {
+    publish_network_captures_with_format(run_directory, run_output, false)
+}
+
+fn publish_network_captures_with_format(
+    run_directory: &Path,
+    run_output: &Path,
+    compress: bool,
+) -> Result<usize> {
     let transcript = run_directory.join("network.jsonl.zst");
     if !transcript.is_file() {
         return Ok(0);
@@ -581,7 +649,7 @@ fn publish_network_captures(run_directory: &Path, run_output: &Path) -> Result<u
         let id = captures.len() + 1;
         let detail_url = format!("network/{id}.json");
         fs::create_dir_all(run_output.join("network"))?;
-        write_json(run_output.join(&detail_url), &value)?;
+        write_json_with_format(run_output.join(&detail_url), &value, compress)?;
         captures.push(StaticNetworkSummary {
             id,
             sequence: value.get("sequence").and_then(serde_json::Value::as_u64),
@@ -627,7 +695,7 @@ fn publish_network_captures(run_directory: &Path, run_output: &Path) -> Result<u
         return Ok(0);
     }
     let published_capture_count = captures.len();
-    write_json(
+    write_json_with_format(
         run_output.join("network/index.json"),
         &StaticNetworkIndex {
             capture_count,
@@ -635,6 +703,7 @@ fn publish_network_captures(run_directory: &Path, run_output: &Path) -> Result<u
             publication_truncated,
             captures,
         },
+        compress,
     )?;
     Ok(capture_count)
 }
@@ -649,6 +718,35 @@ fn safe_run_id(run_id: &str) -> bool {
     run_id.strip_prefix("run_").is_some_and(|value| {
         value.len() == 24 && value.bytes().all(|byte| byte.is_ascii_hexdigit())
     })
+}
+
+fn assessment_snapshot_id(assessment_id: &str) -> Option<String> {
+    let digest = assessment_id.strip_prefix("assessment:v1:")?;
+    (digest.len() == 64 && digest.bytes().all(|byte| byte.is_ascii_hexdigit()))
+        .then(|| format!("{GRAPH_SNAPSHOT_VERSION}-{}", digest.to_ascii_lowercase()))
+}
+
+fn validated_graph_base_url(candidate: &str) -> Result<String> {
+    let mut parsed = Url::parse(candidate).context("graph-base-url must be an absolute URL")?;
+    ensure!(parsed.scheme() == "https", "graph-base-url must use HTTPS");
+    ensure!(
+        parsed.username().is_empty() && parsed.password().is_none(),
+        "graph-base-url must not contain credentials"
+    );
+    ensure!(
+        parsed.query().is_none() && parsed.fragment().is_none(),
+        "graph-base-url must not contain a query or fragment"
+    );
+    let path = parsed.path().trim_end_matches('/').to_string();
+    parsed.set_path(&path);
+    Ok(parsed.into())
+}
+
+fn graph_config(data_root: &str) -> Result<String> {
+    Ok(format!(
+        "window.SKILLSISSUE_VIEWER = {{\n  mode: \"static\",\n  dataRoot: {},\n  indexUrl: \"../\"\n}};\n",
+        serde_json::to_string(data_root)?
+    ))
 }
 
 fn public_http_url(candidate: &str, fallback: Option<&str>) -> String {
@@ -673,27 +771,52 @@ fn write_asset(path: PathBuf, contents: &str) -> Result<()> {
 }
 
 fn write_json<T: Serialize + ?Sized>(path: PathBuf, value: &T) -> Result<()> {
+    write_json_with_format(path, value, false)
+}
+
+fn write_json_with_format<T: Serialize + ?Sized>(
+    path: PathBuf,
+    value: &T,
+    compress: bool,
+) -> Result<()> {
     let file = File::create(&path).with_context(|| format!("creating {}", path.display()))?;
-    let mut writer = BufWriter::new(file);
-    serde_json::to_writer(&mut writer, value)
-        .with_context(|| format!("serializing {}", path.display()))?;
-    writer.write_all(b"\n")?;
-    writer.flush()?;
+    if compress {
+        let mut writer = GzEncoder::new(BufWriter::new(file), Compression::new(6));
+        serde_json::to_writer(&mut writer, value)
+            .with_context(|| format!("serializing {}", path.display()))?;
+        writer.write_all(b"\n")?;
+        let mut writer = writer.finish()?;
+        writer.flush()?;
+    } else {
+        let mut writer = BufWriter::new(file);
+        serde_json::to_writer(&mut writer, value)
+            .with_context(|| format!("serializing {}", path.display()))?;
+        writer.write_all(b"\n")?;
+        writer.flush()?;
+    }
     Ok(())
 }
 
 #[cfg(test)]
 mod tests {
     use super::{
-        MAX_STATIC_NETWORK_RECORDS, README_VIEWER_URL, build, public_http_url, public_platforms,
+        MAX_STATIC_NETWORK_RECORDS, README_VIEWER_URL, assessment_snapshot_id, build,
+        build_with_graph_store, graph_config, public_http_url, public_platforms,
         publish_network_captures, published_assessment, safe_run_id, safe_telemetry_path,
+        validated_graph_base_url, write_json_with_format,
     };
+    use flate2::read::GzDecoder;
     use serde_json::Value;
     use skills_core::{
-        AssessmentRecord, DiscoveryRecord, FindingRecord, PlatformRecord, SkillRecord,
+        AssessmentRecord, DiscoveryRecord, FindingRecord, PlatformRecord, RunRecord, SkillRecord,
         write_csv_records_atomic,
     };
-    use std::{collections::BTreeMap, fs, io::Cursor, path::Path};
+    use std::{
+        collections::BTreeMap,
+        fs,
+        io::{Cursor, Read},
+        path::Path,
+    };
 
     #[test]
     fn static_publication_accepts_only_repository_telemetry_paths() {
@@ -718,6 +841,179 @@ mod tests {
             "https://clawhub.ai/"
         );
         assert_eq!(public_http_url("file:///tmp/data", None), "#");
+    }
+
+    #[test]
+    fn external_graph_configuration_is_https_and_content_versioned() {
+        let digest = "a".repeat(64);
+        assert_eq!(
+            assessment_snapshot_id(&format!("assessment:v1:{digest}")),
+            Some(format!("v1-{digest}"))
+        );
+        assert!(assessment_snapshot_id("assessment:v1:../../data").is_none());
+        assert_eq!(
+            validated_graph_base_url("https://graphs.skillsissue.ai/runs/")
+                .expect("valid graph base URL"),
+            "https://graphs.skillsissue.ai/runs"
+        );
+        assert!(validated_graph_base_url("http://graphs.skillsissue.ai/runs").is_err());
+        assert_eq!(
+            graph_config("https://graphs.skillsissue.ai/runs")
+                .expect("serialized graph configuration"),
+            concat!(
+                "window.SKILLSISSUE_VIEWER = {\n",
+                "  mode: \"static\",\n",
+                "  dataRoot: \"https://graphs.skillsissue.ai/runs\",\n",
+                "  indexUrl: \"../\"\n",
+                "};\n"
+            )
+        );
+    }
+
+    #[test]
+    fn external_graph_objects_are_valid_gzip_json() {
+        let temporary = tempfile::tempdir().expect("temporary directory");
+        let path = temporary.path().join("graph.json");
+        write_json_with_format(path.clone(), &serde_json::json!({"ok": true}), true)
+            .expect("compressed JSON");
+        let mut decoded = String::new();
+        GzDecoder::new(fs::File::open(path).expect("compressed graph"))
+            .read_to_string(&mut decoded)
+            .expect("decode graph");
+        assert_eq!(decoded, "{\"ok\":true}\n");
+    }
+
+    #[test]
+    fn external_graph_store_stays_outside_the_pages_artifact() {
+        let temporary = tempfile::tempdir().expect("temporary directory");
+        let repo_root = temporary.path().join("repository");
+        let data = repo_root.join("data");
+        let run_id = "run_0123456789abcdef01234567";
+        let skill_id = "sha256:v1:fixture";
+        let assessment_digest = "c".repeat(64);
+        let assessment_id = format!("assessment:v1:{assessment_digest}");
+        let telemetry_relative = format!("telemetry/2026/08/02/{run_id}/events.jsonl.zst");
+        let telemetry_file = repo_root.join(&telemetry_relative);
+        let output = temporary.path().join("site");
+        let graph_output = temporary.path().join("graph-store");
+        fs::create_dir_all(&data).expect("data directory");
+        fs::create_dir_all(telemetry_file.parent().expect("telemetry parent"))
+            .expect("telemetry directory");
+        fs::write(
+            &telemetry_file,
+            zstd::stream::encode_all(
+                Cursor::new(
+                    b"{\"skillsissuePhase\":\"detonation\",\"eventName\":\"execve\",\"processId\":1}\n",
+                ),
+                1,
+            )
+            .expect("telemetry compression"),
+        )
+        .expect("telemetry fixture");
+        write_csv_records_atomic::<SkillRecord, _>(
+            data.join("skills.csv"),
+            [SkillRecord {
+                schema_version: 1,
+                skill_id: skill_id.to_string(),
+                sha256: "a".repeat(64),
+                blake3: "b".repeat(64),
+                canonicalization_version: 1,
+                name: Some("Published example".to_string()),
+                publisher: None,
+                declared_version: None,
+                entrypoint: None,
+                license: None,
+                size_bytes: 1,
+                file_count: 1,
+                bundle_path: "corpus/example/bundle.tar.zst".to_string(),
+                manifest_path: "corpus/example/manifest.json".to_string(),
+                first_seen_at: "2026-08-02T00:00:00Z".to_string(),
+                last_seen_at: "2026-08-02T00:00:00Z".to_string(),
+            }],
+        )
+        .expect("skills CSV");
+        write_csv_records_atomic::<RunRecord, _>(
+            data.join("runs.csv"),
+            [RunRecord {
+                schema_version: 1,
+                run_id: run_id.to_string(),
+                run_key: "fixture".to_string(),
+                skill_id: skill_id.to_string(),
+                status: "captured".to_string(),
+                scenario: "default".to_string(),
+                seed: 0,
+                queued_at: "2026-08-02T00:00:00Z".to_string(),
+                started_at: Some("2026-08-02T00:00:00Z".to_string()),
+                finished_at: Some("2026-08-02T00:00:01Z".to_string()),
+                harness_version: "fixture".to_string(),
+                policy_sha256: "d".repeat(64),
+                agent_adapter: "fixture".to_string(),
+                agent_model: "none".to_string(),
+                target_image_digest: "sha256:fixture".to_string(),
+                skillject_commit: "fixture".to_string(),
+                telemetry_path: Some(telemetry_relative),
+                event_count: Some(1),
+                exit_code: Some(0),
+                termination_reason: Some("completed".to_string()),
+                closure_lift_count: Some(0),
+                taint_coverage: Some(1.0),
+            }],
+        )
+        .expect("runs CSV");
+        write_csv_records_atomic::<AssessmentRecord, _>(
+            data.join("assessments.csv"),
+            [AssessmentRecord {
+                schema_version: 1,
+                assessment_id,
+                run_id: run_id.to_string(),
+                skill_id: skill_id.to_string(),
+                verdict: "benign".to_string(),
+                risk_score: 0.0,
+                max_severity: "none".to_string(),
+                confidentiality_findings: 0,
+                integrity_findings: 0,
+                behavioral_findings: 0,
+                unknown_platform_interaction: false,
+                unknown_platform_count: 0,
+                coverage_state: "complete".to_string(),
+                policy_version: "fixture".to_string(),
+                analyzer_version: "fixture".to_string(),
+                assessed_at: "2026-08-02T00:00:02Z".to_string(),
+            }],
+        )
+        .expect("assessments CSV");
+
+        let summary = build_with_graph_store(
+            &repo_root,
+            &output,
+            &graph_output,
+            "https://graphs.skillsissue.ai/runs",
+            100,
+        )
+        .expect("external graph build");
+        let catalog: Value = serde_json::from_slice(
+            &fs::read(output.join("skills.json")).expect("generated catalog"),
+        )
+        .expect("catalog JSON");
+        let snapshot = format!("v1-{assessment_digest}");
+
+        assert_eq!(summary.published_graphs, 1);
+        assert!(!output.join("runs").exists());
+        assert_eq!(
+            catalog["skills"][0]["detailUrl"],
+            format!("./graph/?run={run_id}&snapshot={snapshot}")
+        );
+        assert!(
+            graph_output
+                .join(run_id)
+                .join(snapshot)
+                .join("graph.json")
+                .is_file()
+        );
+        assert_eq!(
+            fs::read_to_string(output.join("graph/config.js")).expect("graph configuration"),
+            graph_config("https://graphs.skillsissue.ai/runs").expect("expected configuration")
+        );
     }
 
     #[test]

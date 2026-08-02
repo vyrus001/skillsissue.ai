@@ -657,12 +657,22 @@ mod tests {
             .deserialize::<PlatformRecord>()
             .collect::<std::result::Result<Vec<_>, _>>()
             .unwrap();
-        assert_eq!(platforms.len(), 1);
-        let clawhub = &platforms[0];
+        let enabled_supported = platforms
+            .iter()
+            .filter(|platform| platform.enabled && platform.status == "supported")
+            .collect::<Vec<_>>();
+        assert_eq!(enabled_supported.len(), 1);
+        let clawhub = enabled_supported[0];
         assert_eq!(clawhub.platform_id, "clawhub");
         assert_eq!(clawhub.ingest_uri, "https://clawhub.ai");
         assert_eq!(clawhub.adapter, "clawhub_api");
         assert_eq!(clawhub.status, "supported");
         assert!(clawhub.enabled);
+        assert!(
+            platforms
+                .iter()
+                .filter(|platform| platform.platform_id != "clawhub")
+                .all(|platform| !platform.enabled && platform.status == "candidate")
+        );
     }
 }

@@ -9,6 +9,7 @@ on:
       - Cargo.toml
       - crates/skill-telemetry-view/**
       - crates/skills-core/**
+      - config/r2-cors.json
   # Backlog capture and analysis can advance main faster than a Pages build.
   # A periodic latest-snapshot deploy avoids an endless cancel/restart loop.
   # Full graph generation currently takes well over 20 minutes at backlog
@@ -22,21 +23,59 @@ permissions:
 
 concurrency:
   group: github-pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
     if: github.event.repository.visibility == 'public'
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 120
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: auto
+      R2_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+      R2_BUCKET: ${{ vars.R2_BUCKET }}
     steps:
       - name: Check out scan data and telemetry
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           ref: ${{ github.event.repository.default_branch }}
           persist-credentials: false
-      - name: Build static scan index and telemetry snapshots
-        run: cargo run --quiet --locked -p skill-telemetry-view -- build-site --root . --output target/site
+      - name: Verify the scoped R2 publisher configuration
+        run: |
+          test -n "$AWS_ACCESS_KEY_ID"
+          test -n "$AWS_SECRET_ACCESS_KEY"
+          test -n "$R2_ACCOUNT_ID"
+          test -n "$R2_BUCKET"
+          aws --version
+      - name: Build the site shell and immutable telemetry snapshots separately
+        run: |
+          cargo run --quiet --locked -p skill-telemetry-view -- build-site \
+            --root . \
+            --output target/site \
+            --graph-output target/graph-store \
+            --graph-base-url https://graphs.skillsissue.ai/runs
+      - name: Configure the read-only browser origin
+        run: |
+          aws s3api put-bucket-cors \
+            --endpoint-url "https://$R2_ACCOUNT_ID.r2.cloudflarestorage.com" \
+            --bucket "$R2_BUCKET" \
+            --cors-configuration file://config/r2-cors.json
+      - name: Publish new immutable graph snapshots to R2
+        run: |
+          aws s3 sync target/graph-store "s3://$R2_BUCKET/runs" \
+            --endpoint-url "https://$R2_ACCOUNT_ID.r2.cloudflarestorage.com" \
+            --size-only \
+            --no-progress \
+            --only-show-errors \
+            --content-type application/json \
+            --content-encoding gzip \
+            --cache-control public,max-age=31536000,immutable
+      - name: Enforce the GitHub Pages artifact budget
+        run: |
+          site_bytes="$(( $(du -sk --apparent-size target/site | cut -f1) * 1024 ))"
+          test "$site_bytes" -le 943718400
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
