@@ -1,0 +1,335 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:62a89604ca480c7397bb0604b6d369fe46a68cee2ca08fae799f566cb15c4b75",
+  "sha256": "62a89604ca480c7397bb0604b6d369fe46a68cee2ca08fae799f566cb15c4b75",
+  "blake3": "228a4ac97c158df424e934f148907e37b4923c5630a35fc1f92f6ffc31e53e0a",
+  "size_bytes": 807104,
+  "file_count": 36,
+  "entries": [
+    {
+      "path": ".clawhubignore",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 233,
+      "sha256": "469b13826f10f767bb548c138ba537c3300be0b79b65f63c0b8f658e10e98f07",
+      "blake3": "fb0c14e6a5a39e64ad248c0c6737bd5bf2b495dd4c804e50b393ac39c1695448"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4819,
+      "sha256": "be3d578f01dbc8e0dda6cb3f4e997a4fdbfa5e6b1347c50539c1d1b62cc3ec74",
+      "blake3": "6da344eca6d9dc59e0c5484e9926e167025660c2d0d6d71e342d9190d138398a"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 130,
+      "sha256": "e8e93dfe52296319b685905331211327e70e1f92f76cf81a74164e5c7bd0db76",
+      "blake3": "6a5bb4c0316aaca3e52439f2c162243ee9d0bbbbe1eb8680edcd92275cd48bf8"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 240,
+      "sha256": "acfc1634110890b63f1374ae76c90c3f235641a2997b2dc87d19909b64a02c65",
+      "blake3": "bce83b3255daf2e29a6e839ca4c6994fe807bd7133354db2624140744a76be25"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/data",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/data/category_heatmap.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 312,
+      "sha256": "e4875b8ec607d83ec2c2c362151b1969e19dfb74c10a974923f2e8373b0bd27c",
+      "blake3": "86a85b980ade964f5223f914d429b9443cd220938b94633db852b0f6a66ab86c"
+    },
+    {
+      "path": "assets/data/employee_survey.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 176,
+      "sha256": "7ed967fedbdb76a54ac21e1e00ffae2ab97c75e9ea2b20cb7a2b9ed89ab93890",
+      "blake3": "a840282deab9e689d0efc9ea605517c20abcb957b5935d6420bda3d8ab470399"
+    },
+    {
+      "path": "assets/data/headcount_waterfall.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 122,
+      "sha256": "6b282fb6d7cddfcaab3b653b92cad5aa5070236057cc67e76f64d2db4ed3fd3c",
+      "blake3": "bbdb985a944289daa2fb30012764f3505c39904f2a14e44e71f5aa89ff5bafcd"
+    },
+    {
+      "path": "assets/data/revenue_sales_staff.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 167,
+      "sha256": "2d05b2f9625f85b8368de7d80af5992ea6f2c0ce31fc9909829ff1dcf5d6987b",
+      "blake3": "28abd8340732515b8a43dadf9d86484891dbdf776fc81ae7bb44080926994d6e"
+    },
+    {
+      "path": "assets/data/supplier_market_share.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 70,
+      "sha256": "12f0241b865e6b3ce9fa5e25f3f4d5f3ad9bb4cab04ef0f0943483c78312c0be",
+      "blake3": "66588fab28c8552de7e3cb41c5422c59413056de839cc0f156e311aebfc625a7"
+    },
+    {
+      "path": "assets/data/tax_rates.csv",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 39,
+      "sha256": "f26813140454f655ae21b6d180e237065f90335600b27b3854524ce040b753f6",
+      "blake3": "a118efdf4556dc61bb8abdb752ba72cc827ee58590d397aff9dd1f2c7babe1cd"
+    },
+    {
+      "path": "assets/examples",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/examples/category_heatmap.pdf",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27710,
+      "sha256": "7a1d11c88bceda7be8094ad6d7a8cfe9c206619f7c8486224d4345aacce3e3b6",
+      "blake3": "a40429c4f344cced85fbe22e8e6e7a3c4bbb3a6633883f8363ce72ed006eadc2"
+    },
+    {
+      "path": "assets/examples/category_heatmap.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 92496,
+      "sha256": "e14eab1f442d4c4158137b969b2df53a28835e7ee5098f3d78b9ad594d6ae460",
+      "blake3": "99317dd8f24ad9450f13aab933886ed32ef8f2fdbf2463933206f2c077019b7f"
+    },
+    {
+      "path": "assets/examples/category_heatmap.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18778,
+      "sha256": "d232039fec62d2cf91aefe61a6c92a79ec9a3db56ac72fb461d9e6aa7343b1bc",
+      "blake3": "518a26b91eb3677025f9bcbcaebbe71490e4b6086293dec077851b5efd3902d6"
+    },
+    {
+      "path": "assets/examples/employee_survey_slopegraph.pdf",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28748,
+      "sha256": "b9a9931b5e28bb79f21790c97c0258059be20e39bfc424dcb3bd8c999da5b9d8",
+      "blake3": "00343715e89f563a6c5d650c7bdcbcc8530397168144cf8ae8b68dacacf36d81"
+    },
+    {
+      "path": "assets/examples/employee_survey_slopegraph.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 129738,
+      "sha256": "8f332faa1fb662c4d057386706466a480e8d5b60836e71fd98b2345cb4d45549",
+      "blake3": "ed5058ce060711fe858c3f4d1567e8c131cdbef29f90fa0639315d23a7bbbac7"
+    },
+    {
+      "path": "assets/examples/employee_survey_slopegraph.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10164,
+      "sha256": "333e665bded3c8a949b3cc39e61c45402c72960120a91b9ae09ed0859a96ff56",
+      "blake3": "15aacfff36e57f8d146c79d8379bc5d8ff39d9a00e9071dc29bb377a342fff55"
+    },
+    {
+      "path": "assets/examples/headcount_waterfall.pdf",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25703,
+      "sha256": "72490b55f68e9795ec09c140212c774be03494adffe7cb4bab5a9e8f01175134",
+      "blake3": "66cc0e5b18c5afda0e10325ad11b51480dbcfb92ab1d8f4868631f89638f5c88"
+    },
+    {
+      "path": "assets/examples/headcount_waterfall.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 66584,
+      "sha256": "3e952898f7da0c106ac5adfd939545ebd6b4efbeb90327f6d7e3a65bb336e544",
+      "blake3": "e06e41a8192cb691d705b4cea1743452edd73af4195226c59a5c2dc48f2b98de"
+    },
+    {
+      "path": "assets/examples/headcount_waterfall.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11023,
+      "sha256": "686dca2ebeb4325a670a2f1c160102cdcdc2c792fbeba0900db9f3c3582a810f",
+      "blake3": "8c60427ec81f08d442c55c7e053ff4e56cc81221803bdbf7b76875c0dbfa9fa8"
+    },
+    {
+      "path": "assets/examples/revenue_staff_small_multiples.pdf",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 31941,
+      "sha256": "c3050f0cb976602104e3405e84d9bb2f019ea54ad6115b9aee748fcf41acb58f",
+      "blake3": "02bd67a2a8ef21ec7c8fca5dd2c2bab6b9676c49c95572d1b62c9ee44ed59eb9"
+    },
+    {
+      "path": "assets/examples/revenue_staff_small_multiples.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 121956,
+      "sha256": "66609e95dc2abbc961aaf370d3dfcbb290defe4d756778916c8e664601bfd3bb",
+      "blake3": "fa548628fa27cafadff615511ce19ed766fd511d9d81031b9c84623ce75f4b7e"
+    },
+    {
+      "path": "assets/examples/revenue_staff_small_multiples.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14610,
+      "sha256": "781b2d1d8727fc00ccc807d5bf0a5dc552d906ca6cde86b5d94f6a1ab9ca3223",
+      "blake3": "9daaac1542e65ffd4776f1b6b859f431bcea7c5c3bb9557335fff92cce9923ce"
+    },
+    {
+      "path": "assets/examples/supplier_market_share.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7899,
+      "sha256": "05b02c4b891868d8fe71fa8348992ec6ab39f721c9eebac1b34b78c41fe9240d",
+      "blake3": "1211e6a8009543b47d2a6d32a1b515da434ceaf1b3fdd3eb0ace4ffd86f90f93"
+    },
+    {
+      "path": "assets/examples/supplier_market_share.pdf",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25798,
+      "sha256": "d7ecd3793e6b71014eba90396f84674545522e5b9f1047b7d422ffa5a1a6527f",
+      "blake3": "d14be9ee82e28863948e503b26fc9ef8c6f70577b2aa986cc6367161610e0f24"
+    },
+    {
+      "path": "assets/examples/supplier_market_share.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 65276,
+      "sha256": "a45f51034f2750179891f3bc583fc14cb944e0cb11be6bd7c76489c06252ec3e",
+      "blake3": "7fe51f4522e809a27dbfc644e9e826158680f4ffc4b81f50feb761db8baf3b8d"
+    },
+    {
+      "path": "assets/examples/supplier_market_share.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9074,
+      "sha256": "a2a2fb02ae8682300acdd7cddbf8ebb16daa1488af8b6959386ede4624cc89bf",
+      "blake3": "a16aeb8274bfe1e85a4e370fa1e66c34e330567c10690b4e8bee14f49d41bcee"
+    },
+    {
+      "path": "assets/examples/tax_rate_zero_baseline.pdf",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24593,
+      "sha256": "e85acf713d140ccd8023d05d6d5f03d14379eaef839f212dedf4e53bc2542f11",
+      "blake3": "b9b4ae10885b3955037c81083c9ebf3496fd27b957dcd67ecdaa2644aa8a53d2"
+    },
+    {
+      "path": "assets/examples/tax_rate_zero_baseline.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 55037,
+      "sha256": "fea6a2dba8446edd381fbc6f03b0f8ba516ca1cb240c79219a3607644eaca779",
+      "blake3": "aa97ec1e59ed06c32850b7b9566a33a2d53afd8faa6aeeaaae31a21332b2dbdc"
+    },
+    {
+      "path": "assets/examples/tax_rate_zero_baseline.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8318,
+      "sha256": "95eff28c080d11eaf70ea6bd97d554b8cf3259bd63cffcf1049a5002122c90b1",
+      "blake3": "2387f688fdebcc3a3a382fe3c7507030492719a269e5c70dec1848a7ffbf3711"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/chart-recipes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6158,
+      "sha256": "652752372ce4509406eda5039438114a8ec85475ad5c4b43d42c359a10716ef4",
+      "blake3": "785412690ffb0be403a93c8b22ac720438a5c8f2823ed5bf874801a81d2d3abf"
+    },
+    {
+      "path": "references/palette.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2048,
+      "sha256": "9a154186a2e14700dd92a6e459b3889cd9583a07955e4778172dee67fdc9f268",
+      "blake3": "4fcfb3b197c72f6a34963290abd98c42454962a07fff270791f25b9446a7e579"
+    },
+    {
+      "path": "references/source-examples.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2007,
+      "sha256": "edb36955174febeffa2279793e5e4179d16ef2af685a7724ca6be84025566fed",
+      "blake3": "67e73b9c15519470d5544da9529dba07a285d6b977cb411af84001c60824ec8e"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/build_book_examples.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10407,
+      "sha256": "fea21e735db062da6929655946b8a47d3e603d88ba27257bc5bcaae6f79755c7",
+      "blake3": "c613314207d25ebcf8d55e5a6ecb19b3d17b47ee870b52b82b3792fe070f5dc5"
+    },
+    {
+      "path": "scripts/requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 73,
+      "sha256": "67c1b169352c9d702537263311210465bc4f8142c66bfefa3052a69f21995342",
+      "blake3": "3a679ece8ec1f7b53d292c6c9ed05ef163234c198624bc6e350ea7d6eedfbecf"
+    },
+    {
+      "path": "scripts/storytelling_style.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2599,
+      "sha256": "2e47329bba8206197ee62b4ad3ee870f8dd677b06c264ee12a42f2f76731bffd",
+      "blake3": "a5e4105a5ffee4e4063a051d69c1e567be0e4b60d016a1b848caebba949a46f5"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2058,
+      "sha256": "8f56d6660bce5ca7b879463eaf5145de924c58c89d60a17fb975c4a1b3a5e0a0",
+      "blake3": "9c565fa655434fb6150263623253e1eeb082dafd23409b518a8f577d81a3157c"
+    }
+  ]
+}
