@@ -326,9 +326,10 @@ python3 -m http.server --directory target/site 8000
 Production publication uses the repository variables
 `CLOUDFLARE_ACCOUNT_ID` and `R2_BUCKET`, plus the bucket-scoped GitHub secrets
 `R2_ACCESS_KEY_ID` and `R2_SECRET_ACCESS_KEY`. The R2 bucket is exposed only for
-reads through `graphs.skillsissue.ai`; the workflow applies the browser CORS
-policy from `config/r2-cors.json` and never deletes older content-addressed
-snapshots.
+reads through `graphs.skillsissue.ai`. Apply the one-time browser CORS policy
+from `config/r2-cors.json` in the bucket settings; the object-scoped publishing
+token deliberately cannot edit bucket configuration. The workflow never
+deletes older content-addressed snapshots.
 
 The same dependency-free graph remains available as a local viewer for any run,
 including captures that exceed the static publication limit. It accepts a run

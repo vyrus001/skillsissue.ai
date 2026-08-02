@@ -9,7 +9,6 @@ on:
       - Cargo.toml
       - crates/skill-telemetry-view/**
       - crates/skills-core/**
-      - config/r2-cors.json
   # Backlog capture and analysis can advance main faster than a Pages build.
   # A periodic latest-snapshot deploy avoids an endless cancel/restart loop.
   # Full graph generation currently takes well over 20 minutes at backlog
@@ -56,12 +55,6 @@ jobs:
             --output target/site \
             --graph-output target/graph-store \
             --graph-base-url https://graphs.skillsissue.ai/runs
-      - name: Configure the read-only browser origin
-        run: |
-          aws s3api put-bucket-cors \
-            --endpoint-url "https://$R2_ACCOUNT_ID.r2.cloudflarestorage.com" \
-            --bucket "$R2_BUCKET" \
-            --cors-configuration file://config/r2-cors.json
       - name: Publish new immutable graph snapshots to R2
         run: |
           aws s3 sync target/graph-store "s3://$R2_BUCKET/runs" \
