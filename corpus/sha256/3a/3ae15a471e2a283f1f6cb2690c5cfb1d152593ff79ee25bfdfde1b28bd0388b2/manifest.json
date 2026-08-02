@@ -1,0 +1,241 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:3ae15a471e2a283f1f6cb2690c5cfb1d152593ff79ee25bfdfde1b28bd0388b2",
+  "sha256": "3ae15a471e2a283f1f6cb2690c5cfb1d152593ff79ee25bfdfde1b28bd0388b2",
+  "blake3": "23b654fb51b68b053c894551328f3987833d1f778ecb5527555c530ca15d3556",
+  "size_bytes": 2077272,
+  "file_count": 28,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5402,
+      "sha256": "854f81aa014eca80d4088840b08e86de880a28ec233b291d75d686bb7873dd68",
+      "blake3": "ea84cb2604a477b3fc4d6a265d304a0a38bbcefc6affb9e52f65c0e1f51ef8ab"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14239,
+      "sha256": "2940e10bd397b213a87fe219f3fbe9c925e1d959edad151b91d3f14825dc7772",
+      "blake3": "ccaf06e142ec5aa7bb7f0a82f9c1d3929c66203fafe55b90b7425805042ec9d4"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 138,
+      "sha256": "6ce42c1c2b0fd6b217dcb02740344664b94a8e2dbfcd2e525b03eb31c320b67b",
+      "blake3": "f5ee4b3b51255c67bac30652d17fc722bb9fb37352d2e4029f96394323712c0b"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/abilities_cn.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 465358,
+      "sha256": "d4726d95b222bf4a70f1c6013b2969ff75ad677f1f6e97c51997f2cfea570bd8",
+      "blake3": "ea8924dea492b726678d62a9ac43cf255941617160143b3b437312f960c56639"
+    },
+    {
+      "path": "scripts/abilities_db.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 436751,
+      "sha256": "29abfa55004496d967433392b37d6ae685fe5761bc4b5dc4e1a7a6ad37b61075",
+      "blake3": "7763741d36bddf785fb23aea1337692f1ced4fea4ee26e073a52e9d7837794c0"
+    },
+    {
+      "path": "scripts/fetch_ability_details.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2552,
+      "sha256": "50c59c718efc18c78643a94efa30b3dc647f3876589c4e98e87ac4328dc563a8",
+      "blake3": "0feba5aae851271bec7987a98d1b1d4078f504e6f35574473de968759839693e"
+    },
+    {
+      "path": "scripts/fetch_bracket_wr.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2333,
+      "sha256": "5bc8b1bfb7d0c36fb1905f85f3c5c469d1a7b43c1fd07ad38a73d510b1b35b6e",
+      "blake3": "1da125b7bfafe73021c914e0bcf05b51b9ce9b5396c8f83e9e13a248ea296398"
+    },
+    {
+      "path": "scripts/fetch_hero.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20721,
+      "sha256": "d88155f198c907c4c3bca74837b389e5b98a5d48ce38623dc62638ae2dac486a",
+      "blake3": "49d35e57a1635e276cfb151e64d36ffd8b8ed38ba77d13a936dff31b6f3e69b9"
+    },
+    {
+      "path": "scripts/fetch_item_popularity.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3181,
+      "sha256": "0a6556cdda9463d90cd71310daa980fce6559254de392e8d44b8754c273e702d",
+      "blake3": "8abd73ae397236f47fab1da8c4c565ef7d7bbe688fc5076891ad19b11cdbd7a8"
+    },
+    {
+      "path": "scripts/heroes_db.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 262753,
+      "sha256": "266b941e6ca724065eda594b02b40639e462019a3e22d63c876a9edb6e2f8a81",
+      "blake3": "e8fd9995a991a9ec920dbb05953c6f11b251028cc7aeea67ac48584900a5e5a0"
+    },
+    {
+      "path": "scripts/item_popularity.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 357419,
+      "sha256": "73197039a0a0baba548a01231b7de6b71356b091200ca032c1c984f86346a1d1",
+      "blake3": "5a796f56ff1762d9594562a6d3bf725172e2a94d4b25e5e7cd903f92b810ac7c"
+    },
+    {
+      "path": "scripts/items_db.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 271408,
+      "sha256": "f36c9201ec63c2d54ff25ce1401b28bb271f54d6e558699cf6a1632c9e897345",
+      "blake3": "0ffe5223f042f014fcc96e42e44af997f81f22cb87f0b6f4463ee04cf7dff894"
+    },
+    {
+      "path": "scripts/merge_abilities.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2334,
+      "sha256": "0af79c7c7f0036abd5bb5f05cdf01dec105075eef7f0445edde4a092dd487b9d",
+      "blake3": "066bae55da92e6f110210871abe20c496b719f7c6587b81ee421762d3e492b8e"
+    },
+    {
+      "path": "scripts/merge_items.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2148,
+      "sha256": "f2eb4b2bd4759ac95224d917410d4fd065975c24d9650b03248ef1e045c23b48",
+      "blake3": "965c70212ab4a6b5fba0609905bfa3df618c7bdf13b2fe0a5cea4705c30b577c"
+    },
+    {
+      "path": "scripts/neutral_items.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17458,
+      "sha256": "578fc0acc35ee775f4f7427e3abd16ccb21f6cf09126d6f81baa843949356fc8",
+      "blake3": "76ff24663c66ce7fb41fd450d0b7a53568afd3e2bd47de4732736fd22a812852"
+    },
+    {
+      "path": "scripts/rebuild_abilities.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5148,
+      "sha256": "f7e15bb3a1b4591142ed333cb65704528f46061788928a6288d024efbd845c20",
+      "blake3": "7c16e833d03ada9efba10ca32b00c4cd3b854111ceb617618b3fab84a3857147"
+    },
+    {
+      "path": "scripts/refresh_v118.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10152,
+      "sha256": "4e68f740c1e0eb6eb7acb6288b34557a2eabe0d0f818aa00c3ee558253a61274",
+      "blake3": "7c57b03d5263ecba11566918acc170ba23d3c02d95b3135e1ed03d830386e8dc"
+    },
+    {
+      "path": "scripts/talents_db.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 64389,
+      "sha256": "39ccedfa9a8bb2f8d1903b54435749124fba942a5672654b38233c641ee6b835",
+      "blake3": "c21c3bbde0e9f13a48af37ccabcdf9ea4fc3aa40452536759b74f0c5f7b7013f"
+    },
+    {
+      "path": "scripts/talents_db_cn.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 81254,
+      "sha256": "b290da38309673d553c01811467013aa2d0471d250d09e29a9156fa6d4f9f579",
+      "blake3": "8b4e378848f1d6fc3d32715ce4fc5b13dca66ca0ed36330e13af75fc79329935"
+    },
+    {
+      "path": "scripts/unpack_vpk.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4123,
+      "sha256": "a0903460ecad4ac27a2cdb5f14fd74032f5034cc80ce8e5a9da130b6ef044c45",
+      "blake3": "503272da8c9a7f36bfbf5ab4e3140f33a3a28eab08a57b4170c984b7a1baf491"
+    },
+    {
+      "path": "scripts/update_abilities_v118.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14813,
+      "sha256": "fa4efcbf274d98531990223bca11542b0a63094214020ecdd22d95c18b769a52",
+      "blake3": "dc63180814bc07693f284553118517f55782e123c94bdb57bcf64624ea241ace"
+    },
+    {
+      "path": "scripts/update_hero_warnings.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5084,
+      "sha256": "391433c30d7a3567b11a91299b1baae83587f463b1848861bd843daa0bdbbbea",
+      "blake3": "7c86ee62e4edf0a705c1e8828f923e62a68365092bbe4bc083b0b9307dca15d7"
+    },
+    {
+      "path": "scripts/update_heroes_v118.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4452,
+      "sha256": "49ffad557ba7302849f61bda1f21d3c86e03aa334358561e5a0b9298f6e1d19b",
+      "blake3": "9886a1d45088fcac6114766c20082de13620aedcb6a85b3e3f8cd724d1ad4b9a"
+    },
+    {
+      "path": "scripts/update_items_v118.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8531,
+      "sha256": "a0b1dcda07e8781887db58f2b7a545c8ff9843437990542578866ae184c2c410",
+      "blake3": "3a6d34c0326d8844fa57bf08f8af9a46632233a92e6b52ffdbf27d8c9bd598d8"
+    },
+    {
+      "path": "scripts/update_market_share.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2733,
+      "sha256": "e5615eb4b3faec95ca2d60c0051b9e7ecf84d74b4353d1db1894468e92d24954",
+      "blake3": "89ebd8a45cd8e1d0aabd8aa21457792b26f75bb1df8f352c2a7dc0ed9a1f9657"
+    },
+    {
+      "path": "scripts/update_neutral_items_v118.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5454,
+      "sha256": "5515a88df598338ccf12325d395806af1e068213d72fcfa33e5ff46f34443179",
+      "blake3": "12da49fcc098f0e70af93096f39a1a14fc988defbda7e23a3e6b7448fd8d2d8d"
+    },
+    {
+      "path": "scripts/update_talents_v118.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4449,
+      "sha256": "c0570653dd8d1158733e482798a0ada38840d56d0c8c73c5c7226bcbad03dff4",
+      "blake3": "c29e60102ac25b3a2316da4448cb6c435c361e1450d07e6f6b1cd1927a3cd72b"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2495,
+      "sha256": "5df99af235f0335bcd7d4c4855727752170b581f5e5b27b3f05817711986f3af",
+      "blake3": "528bb5329639643a7c093b508ed5a6de29ea0d4727afd9dd012184730f709619"
+    }
+  ]
+}

@@ -1,0 +1,1765 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:806083ac29e1f8ea01b2a2b0b7040917159bdd07a0257b892a4204efe52f47d9",
+  "sha256": "806083ac29e1f8ea01b2a2b0b7040917159bdd07a0257b892a4204efe52f47d9",
+  "blake3": "280fcbba86801331df798272416f14d18ddc8d301e2ce5ee41ecce7156cb9c59",
+  "size_bytes": 3670938,
+  "file_count": 196,
+  "entries": [
+    {
+      "path": "AGENTS.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1139,
+      "sha256": "10130561e87a63108e791831cdaaa692731d2e32e350fd6199b3a07efabb1d6e",
+      "blake3": "1a2a3a179e6db4ac49aeb031720b4dd9ab0b21bd242404b9220799fc04636ef1"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 36154,
+      "sha256": "f7a1bad694d3be190908370d497b001615a55388758b02212efdf0e4204c85e0",
+      "blake3": "0461266725b7dd619dc8869623020cf0ddd1d3872cfdacc85af78b3c909db72e"
+    },
+    {
+      "path": "CLAUDE.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 893,
+      "sha256": "8217463baedd8f8e9d187456728d0827eb6cf5137cbd0b919247f1fab7947293",
+      "blake3": "447f50a875df6ffb8497cdf119d38e547cd27069fb1da565cc287df50ee4d570"
+    },
+    {
+      "path": "CORE_IDENTITY.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2678,
+      "sha256": "68c4d19b72e7d7c9b117206b91a67531f30d2ffa484dc10c96ae68a291da6399",
+      "blake3": "f1c21d82c6b7624058eda5fc885049841a5f2adf3614129e985793a73d0e9632"
+    },
+    {
+      "path": "CORE_VALUES.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 785,
+      "sha256": "5cc12c29cce6df6df78dee48a559bdbd91b771bd3ae1ec2b79d2d510d7f34437",
+      "blake3": "1440682628e473089408195e9978e3e73911450a2a4bd82938c714c422ca2f34"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8648,
+      "sha256": "a63957f58f69d383e517bd03f7129fd23b938b9c7d1a29dacea010f9f62b5f73",
+      "blake3": "c4fbab313904e8e2ba5995f0e7e8dd9fe2755d302e3c22fc479537b2aaa9c2e2"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7528,
+      "sha256": "27a23c1e664fbdd6db31893a671e881790a9ae16fc817ca35450cbcfc70e62dd",
+      "blake3": "3ce73be7c48e2cc757439628414402f10cedfe7e2637642bccbec5901ca20b0e"
+    },
+    {
+      "path": "UPGRADE_REPORT.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2525,
+      "sha256": "e8d8bbc0dcc131ee653d4e005caccfde8c0f8505c0b74512810add645a1ebe10",
+      "blake3": "edfeefb274e7e67f702a014b124b1fbf123e178f9feba2660ca4475c703f7949"
+    },
+    {
+      "path": "UPGRADE_REPORT_v2.0.37.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13366,
+      "sha256": "6898cbf2321c2ab56c07c87bfb7dfc4b0ef6e3d4d2e410f086bff257dbca453d",
+      "blake3": "af25b18b2b1af75687b97f5c91471996703f74ca87686fcb9e1e0a34dd09364d"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 131,
+      "sha256": "84b31f7c500367af411ef9c3c457d8570e65ce047b4c0e194b7a13ca40de19bf",
+      "blake3": "3b2d54e367f889896fbed69f9524107852ffe83b7dd769c6fd89fa53620eca5f"
+    },
+    {
+      "path": "bin",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "bin/cli.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4802,
+      "sha256": "b86f8549a8a6872f1f0e9684f075acf2ae7628eda794c6ad1aed1807bc844b55",
+      "blake3": "5482cf8b9d8de95cd18e89855c98bb2c3a6ff7e7ae5864666811eb3845d7ed9c"
+    },
+    {
+      "path": "bin/daemon-client.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3572,
+      "sha256": "106ad76882d077e0bd642f3a4047b3aa70268826c9d4f8d6196b83206a09995a",
+      "blake3": "87222324651bc246821be4f5d0c9be98fb59506adad2c22c844821faeb1e3742"
+    },
+    {
+      "path": "bin/daemon.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8415,
+      "sha256": "39fac2263a7c1529674c7c2e75dc402662c68b050dc44f2c145d5eb095c69ea2",
+      "blake3": "66a82f252edaf219409a4e98bcb8c232025c0941914761210b1af32a030ef020"
+    },
+    {
+      "path": "bin/test-daemon.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4833,
+      "sha256": "ee202f4af6cdff4610f5d0b5be42ace3c5226bba87ff63bef3b469c00dbd2371",
+      "blake3": "f0e53077db53fde2def5ad09a17c2060e9db230d80d1b84041199817f66e0b6d"
+    },
+    {
+      "path": "package-lock.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 33858,
+      "sha256": "dda89e84d3dfa4dbe80be8de4a6322d9bbe6affe57664d5af5341fccec1ec282",
+      "blake3": "5c5a816989fad8a5c28c954ac733b7c19d6a5f616ecb0e4341eed91f7e5a816e"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1658,
+      "sha256": "663ed718113b684b7956029c8b703da0ef4f5ec42cee499ebd1a891f16d89fab",
+      "blake3": "e87619ec8a9ffca81c9c4c7573dcb3a60e2fe6d5bae532cc6215789551a4b08b"
+    },
+    {
+      "path": "plugins",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "plugins/heartflow-memory-inject.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2854,
+      "sha256": "aff6c2ca9158ac7e22763fcfcf61bc1d38147f628d2d389c1bd05d880e48f61d",
+      "blake3": "8a6259be37984408fae3089aac4fec4fd8f21e56f55c0e3466745fb7a7e745aa"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/audit-zombie.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6541,
+      "sha256": "9e29bad2466f8632a2e29e8534e1cf26f5d2579a5739c64eb81bbb22983a029c",
+      "blake3": "2de955716642c55ec0428db35a8b9fc7cc611cbc8429e31849e18b235920497b"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/download-model.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4375,
+      "sha256": "24168e51d2066637e9f63900cedab22d24da9ccace33e182579fecbb8bd708f0",
+      "blake3": "4cf275ed8dbf31e5758bcd48f23454e84a1a68d3a4fec66cf4deffbedb048e9c"
+    },
+    {
+      "path": "scripts/heartflow-memory-inject.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5143,
+      "sha256": "6bc4133deed11bba629ed92471a99194e59f06a1302fdb0af8322af62d54124e",
+      "blake3": "e7fff778c81318083004b78f6a9c2905983fecee840c94c51eb2d81131eb3092"
+    },
+    {
+      "path": "scripts/heartflow-memory-tool.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7611,
+      "sha256": "f68a1a6a385350a54f8e16551104635dd339e09e094fe502217e88caa53084d5",
+      "blake3": "e98a9eef67f9a2d592a96154b9de69d685d0b5ddf6f8c16ad8168a9764e355f3"
+    },
+    {
+      "path": "scripts/hf_judge.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1213,
+      "sha256": "2a312a0fe78fcffe9f9cd8175b9b9853ee39a7825da1e770ac00f10f311382c6",
+      "blake3": "c25995337eaa3b31d54a0069cf4f1ae3c0a9ab98a57cefb71bd126a0f9e3edd8"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3240,
+      "sha256": "441acdeab4b268498e342e13156812c252a19268eed2878b16b221adde110baa",
+      "blake3": "0ab3c33ab2b8fdbe97f4d33c3c2f52b861d044a69c5f22f511397a7b429d74c5"
+    },
+    {
+      "path": "src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/behavior-tracker.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18507,
+      "sha256": "2876578b036361eeba6ed3314b9b3f095a68d18216561ca7fb2a9bb9d96f81a2",
+      "blake3": "d3876b955168dfaa980e22299f529849fd8741c276ec7e92b0e2e964a069227c"
+    },
+    {
+      "path": "src/core",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/core/assertions.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30522,
+      "sha256": "25badededb1844f876a83a76d27f663819d0e300299b781051dfa4acbe37a942",
+      "blake3": "e63c56edbc4fdbffd91526b5abc8309cc58678390d69f1b07c80c0af49ff722a"
+    },
+    {
+      "path": "src/core/associative-engine",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/core/associative-engine/associative-engine.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20211,
+      "sha256": "823c8d607a39dc5f4be3d863c911cac694e5979e7dc451ca610989f475d65e86",
+      "blake3": "dcc7de20c1e205801fdd7351be44be3926d5cfb4dcb349968b7b959684a57a56"
+    },
+    {
+      "path": "src/core/associative-engine/chunk-detector.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20794,
+      "sha256": "1e26d9c4fadbbb1bd2d34aded9e42e8c44598fb942007e62580398d24cfb7667",
+      "blake3": "303c49b1f1a7118bb74c449a070952970dbb8cebafc3675178d8009b2374c671"
+    },
+    {
+      "path": "src/core/associative-engine/lexical-associator.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29230,
+      "sha256": "06cbfeaff351e44daccf7877ffb0f21815f47916574095170d20d811bdfcd6f0",
+      "blake3": "e1dafc1e971773abab115c4fd130320092eb85be385f1c1fad2c3289daf7306b"
+    },
+    {
+      "path": "src/core/associative-engine/narrative-retriever.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29020,
+      "sha256": "389cd2968c1d54d812f63e2e9ef7daff63717247538dcbbd5f5605a195d7242a",
+      "blake3": "242e27b9f2f975d04234ac9140cdb2101cfb7273baeee48f648bd1fe7aa4bc7b"
+    },
+    {
+      "path": "src/core/associative-engine/semantic-converger.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 26740,
+      "sha256": "6436a57248f513ff4bd8274df9a4739c6c962b043c9d97f8eb80e173640fef4e",
+      "blake3": "c4cbd7d61d3a92ee2f6f68ee9f0c4a1ef2243155ad33ea42148f6df7b9b2a721"
+    },
+    {
+      "path": "src/core/associative-engine/word-by-word-generator.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20805,
+      "sha256": "c0c1325d1d33454aacbcfca0e70b44b0f961d277abe0331818e7efda5b5f92a7",
+      "blake3": "6883b288e121d6c00819dcb73b13c151717a4ff8ac0f1d56bd311819d77be9a5"
+    },
+    {
+      "path": "src/core/auto-compaction-engine.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20666,
+      "sha256": "ac1f9892fd06f3c08ab9781ea40d586cbf92671795bc767e91ecb2da3dccdcca",
+      "blake3": "8028417f2fcb1d3c7bec180ac642cea10080528daeca372fabc33280c36ce2ef"
+    },
+    {
+      "path": "src/core/autonomy",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/core/autonomy/digital-homeostasis.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 37800,
+      "sha256": "f7d8c4a7afc96ea6d8db5d531065bcb37932c2d689f7321db1556f2a1c59a405",
+      "blake3": "70419125bb616ac2aceee0c129e9d0be58da52d46466787c6156e9dabd6a7f7c"
+    },
+    {
+      "path": "src/core/autonomy/goal-generator.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 26629,
+      "sha256": "c79c262251da6a92a2e62bf11a0b8c2751e951f54719631d0462d34c7803de12",
+      "blake3": "094f81b063ae3f3441dd4c2edabace4435f2505632fd5c5d6dfddc56fac16aa3"
+    },
+    {
+      "path": "src/core/autonomy/pdca-engine.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 35428,
+      "sha256": "1b382411ddcf9789e3acc69d86551ba6a325c0f172518efee8a76b03ddb8e0da",
+      "blake3": "1bd870ff6e323c99f7916597140b0d874fb77af6c63420a56570824ab4864653"
+    },
+    {
+      "path": "src/core/autonomy/policy-optimizer.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28412,
+      "sha256": "de43821f8a7b7d1590ce0ec98eac98242b9a12f47bfc819567a0de36eac32f3c",
+      "blake3": "5376d136605a12aa64412982253c4bd15ec5c77b86e5195f92f108d9a6ad389c"
+    },
+    {
+      "path": "src/core/autonomy/temporal-planner.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 35446,
+      "sha256": "025f6a145dbef9972432e8552ec2dcc6a7081018362408a72ef1e3c331c9178e",
+      "blake3": "2be8f23b1d4b52080d2b9ad53fb426f4d640bad88c6cbd50bdc353cd046fbb0f"
+    },
+    {
+      "path": "src/core/being-logic.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11457,
+      "sha256": "bef25f1cfb8b50633427d94c52c91a31cd75e3f7bf1ac0cfe0515695b78e68aa",
+      "blake3": "8052e29f77a1d15f005363882660bdc264318d08515bf99bb238eda70924c337"
+    },
+    {
+      "path": "src/core/blind-spot-breaker.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28916,
+      "sha256": "0c303799075a7f898423d69e64b867c8dbe4b32081b27f16f40cd3d300bd36d7",
+      "blake3": "f4967a6da55672cd2fd1b24397254ff486c18249fd084f5e8fe57589cd6b719c"
+    },
+    {
+      "path": "src/core/boot-check.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20926,
+      "sha256": "043310d02b23d39d008a8fd321a77fa144b8528135c36a8b488303f5bdcef0a9",
+      "blake3": "f9c95331bbdd78dd02150d383885d461e277bc01d45c8944170f9c650b18e965"
+    },
+    {
+      "path": "src/core/budget.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 38985,
+      "sha256": "daa6d1525525e67b8cd77050497110fe2c7e220adf21d3a41e4592d172f02d59",
+      "blake3": "ab4efbd96579622bf519a3dd2650fc317ce7f7f9836b13ec5e68efd9754e7753"
+    },
+    {
+      "path": "src/core/claim-extractor.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21746,
+      "sha256": "861e2eb023f2d05974f1aa30f1ccea05ba7a6d5ae608b93f8298ac03df41dabe",
+      "blake3": "cf448d4973bfbf4808fff2325a9d47ae7d0ba819806e14a2ba1287184f93f1e2"
+    },
+    {
+      "path": "src/core/code",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/core/code-engine.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 129236,
+      "sha256": "9d4621d003890be90acadda183c0f99e724a996d0ffd6f9cb0e36142efe524fe",
+      "blake3": "e6aea7b9b4b53d28a07c9f08d1ac22440fefde26d19050ac408bb6ca9d5a3b58"
+    },
+    {
+      "path": "src/core/code-verifier.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29777,
+      "sha256": "1e9e60f20cb30f9b0f0241e163fb5d57289dc66cb6343b9c759c6b3b2e541565",
+      "blake3": "8f8a73b192cce2281dcac1c2a2cd24c56511d5bd942725dba176e1cf21e21b2f"
+    },
+    {
+      "path": "src/core/code/code-executor.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32457,
+      "sha256": "0f4462350b47c662bd4df90617f4ca5177ecbc0bc566253116c6dfe4d8ca433f",
+      "blake3": "3c5f072e661c8755b38cb0950514a89317c14861813961e308c51d21b8e8f2a7"
+    },
+    {
+      "path": "src/core/code/code-planner.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29201,
+      "sha256": "71c8e6ef2e799d674ba342512b061de63518952761d91fb176f5e806ef5f159b",
+      "blake3": "dea8ec0d0be389ceb801b434ca5d67ef9296270dea91a1fa558e062c12b0fcce"
+    },
+    {
+      "path": "src/core/code/code-writer.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 61025,
+      "sha256": "e06ad6461d5112bbe4d476cecdeaf5901bc8557677cf99b19158c9c8ac9d7319",
+      "blake3": "8a3623b5921f79b2d88e5ddd904350bbe678a9d3dd3ea620ebcef89fe244c787"
+    },
+    {
+      "path": "src/core/cognitive-appraisal.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19345,
+      "sha256": "f1d88039737c7027dc906f834d101385e284439f420ef6cd7c75d56ad9a90222",
+      "blake3": "aa4bd24476c35fda20ef3c668ffb5b87cfc226dbda2c4f0e68c8803d9648d97a"
+    },
+    {
+      "path": "src/core/cognitive-protocol.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24151,
+      "sha256": "779429326705b7f84572acd42a45bd1ed9b7410226f4c54466013db5064e5a68",
+      "blake3": "659eadb044ada022bd88d7f4fe394085bc0fc55c16777bc4b73e79e302011e3b"
+    },
+    {
+      "path": "src/core/confidence-annotator.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21857,
+      "sha256": "75d8b2e30932ea8c9e44e3a55457239d4b026ede2e61c1da94d080a114540e12",
+      "blake3": "2b11d3f9835f98f0388c34ae5bb20216350e87dc330919387c60d163bc230fbc"
+    },
+    {
+      "path": "src/core/confidence-calibrator.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12856,
+      "sha256": "7e09e3032a5bf96419bc0db32c5689138f75bb9e278cf49800d836eded80af93",
+      "blake3": "b272eb1f3a9956a1de8e8b4c4dd316b41156576ddd2127289f49eb0a129fc157"
+    },
+    {
+      "path": "src/core/consciousness",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/core/consciousness/global-workspace.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13634,
+      "sha256": "57b1ab189993e6f3a458395361ec4ca23c72e00b9e9df2a267d2932a83b11dfe",
+      "blake3": "8877925b81b52944850ec74e08dd68098d6d78f438841083e60e9d2d51e96d5c"
+    },
+    {
+      "path": "src/core/consciousness/mind-wanderer.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23542,
+      "sha256": "f5cdc7ab5ddb086fd153232194073a374d17a457017e7d89547d9b7802fdc70b",
+      "blake3": "38825d1a47e5cb9c72119e90385c70883e3e073d48753bca27df781a56702bbd"
+    },
+    {
+      "path": "src/core/consciousness/phenomenology-engine.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15092,
+      "sha256": "315a8e43ba79e12aee82207cdc828ba628891ba1326687e8a57af001193f40a6",
+      "blake3": "ab20d7dd4d0267ba7b92bf850371510fb3d590f0c2dcf534558437136eb6cf7b"
+    },
+    {
+      "path": "src/core/consciousness/self-model.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13836,
+      "sha256": "9327bce4039aec27c4f2dbb99c07f50aa04f3bee0c8e9ed1c6c66cf480c5036e",
+      "blake3": "6009d5658ccb0528b3040da946e41568e7cd6ad59aaf7e1f33d2558f469d8a1f"
+    },
+    {
+      "path": "src/core/constitutional-ai.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18582,
+      "sha256": "23070f21e54d58c9dc9225ece18cc2429f7c830f85d98b0ecb60076c4c4c85df",
+      "blake3": "d3536c630514b3926b3d51e2c603b203b97914552ba3d54473bc32fd808a9b76"
+    },
+    {
+      "path": "src/core/cooperative-arbitration.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22177,
+      "sha256": "f7f2e5c8dbbba14e6a896f53751acda10a599ec365493881276ff04ce2078eda",
+      "blake3": "b042832d9801d0e42949b4880cf848fd841ea7e10221dc69d6988450922095ec"
+    },
+    {
+      "path": "src/core/counterfactual-engine.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16099,
+      "sha256": "70b0ca45d79d50f5c062e38ea5de9a26c8b80210c8da050a28a8afa59feed71b",
+      "blake3": "8d8a6734ceafd4d04b0c038fbcd13064048edc4fd66c9f4a6ac3c4a9d6eff6db"
+    },
+    {
+      "path": "src/core/decision-verifier.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18135,
+      "sha256": "1098b4e2ca9d8294b61aba37258173d71debaa0c047a297f3834b284928df058",
+      "blake3": "16937130eaa8cc02fec95674469df40a6af74fbaf3f42882e0e75f75d7afebb4"
+    },
+    {
+      "path": "src/core/decision.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12844,
+      "sha256": "bb5b408c96225c31fc65c1e4e3915d9d0a9a2afa75ba9b3963a014a25b50abc2",
+      "blake3": "de1b53af9462dc5cd41805e28bca2b7566059f295be91ff76f2262436f997f57"
+    },
+    {
+      "path": "src/core/dream-consolidation.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23701,
+      "sha256": "2eac4eb062096ad50e35882a975ca00b2d8688c5da27bc64bf31559f761540dd",
+      "blake3": "7e32d605789fe39a6bff799d68a09fcdfd365f325be44963bd22a1891a5e6987"
+    },
+    {
+      "path": "src/core/dream-loop.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22870,
+      "sha256": "7acfb45add119dc9b9b89202700f3776274566cf2339aadd75f08d58d8076aab",
+      "blake3": "d7f68087d56b8a664bc5dbe8254dd775708bdda4b4f456a22eab68d229f8e8db"
+    },
+    {
+      "path": "src/core/dream.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23454,
+      "sha256": "53e7689e1e56f60846ce4012f0a1a3d307a10eb925a5fb6e835d916341e3eb4b",
+      "blake3": "678e7f2edcd4670d1ea2005b4e33e65b9a3b816470de857c218e4f379cfdd104"
+    },
+    {
+      "path": "src/core/embodied-core.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29178,
+      "sha256": "0532c6d42c7996dda606a7c3d942d11b2e0290060a25e85dfd92984973e96e95",
+      "blake3": "891b20453d3aeb8576c36a9f4816a724952364999e7f22f78832e73520826e74"
+    },
+    {
+      "path": "src/core/emotional-memory-bridge.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 36811,
+      "sha256": "e8f23b300c38e0e93002cf6ce46942c1b9361b5882141459ac12f7ae78f09c0c",
+      "blake3": "5a9cf4de9a2039ead3fdd347aa2f2529b2ac6e4360a13e38556db1f288d71315"
+    },
+    {
+      "path": "src/core/error-handler.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25099,
+      "sha256": "5f0949360b4ac8064b75ff2eb907b847855e3964fb52c3a868866704d213d80e",
+      "blake3": "c269d4c135af059c7d95b08c021e8ea2020e7765d8d5c4ae4b9cc5c9ce3586ef"
+    },
+    {
+      "path": "src/core/ethics",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/core/ethics/boundary-negotiation.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15696,
+      "sha256": "cdc5dc5ef9e5d0d6721547e8c5c7c5c079e9ce2582f63e67e9a0c770aa29ea77",
+      "blake3": "c64c5f607865c0c3cc851150facb79e5ef9c7d5a0da80326576fb36baff93f09"
+    },
+    {
+      "path": "src/core/ethics/sage-guardian.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11073,
+      "sha256": "c427d26ade6a286018008131f7898b49cc88222d3c66bc0e7e1d59199648569c",
+      "blake3": "7dd2c0d2afaef16357d20da4ce5716a587a2b545357bc07d041848058ade2a5c"
+    },
+    {
+      "path": "src/core/ethics/value-internalizer.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30111,
+      "sha256": "95936dc5dad853f046ea415093399d189f664b628e717830321e82a888ade1c8",
+      "blake3": "62d0f947b79b5ba28da00c759ed8999fa1a79158f243d5014fae7d7249c87482"
+    },
+    {
+      "path": "src/core/execution-verifier.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17381,
+      "sha256": "8fcf99bd26e6b2e361d8bfb5e15c2f0b832e5cad36303795c89d7d59ef2916c0",
+      "blake3": "e33b954c333a8f3c4029aa6e56f5d654a0cd4a094024dc7d208c5017d10a4d95"
+    },
+    {
+      "path": "src/core/experience-replay.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30594,
+      "sha256": "422ddb4fdea887d0dd40131c1e34314d7edda75a0cd59ebe1a9ce6033967c8ed",
+      "blake3": "7b0d024e40330f6d13e92ee21cc5b9e9ea5dc0568a282d39db6839d49be8bc94"
+    },
+    {
+      "path": "src/core/external-verifier.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16178,
+      "sha256": "0fc15dc2b2ebb7d7ff47f23ee1dcd419a52ed1011e42aa92d298d586567b2b23",
+      "blake3": "3f249cabfcc532cad033bdcc33542ff6f77d6e898cd0d5e01c09c520029fd695"
+    },
+    {
+      "path": "src/core/fact-checker.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15302,
+      "sha256": "7f684ec17e8b921dbdfedf599db9ba9854d470c46013baadac3f1f60c6e45323",
+      "blake3": "0dcdb8994ecda08ad18365faf80c9da19648a6fe1940c14537fa8b8bd92138e9"
+    },
+    {
+      "path": "src/core/feedback-functions.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20592,
+      "sha256": "b7a52dff5b54793cfcc221f36ecfa424224af27c6da1f2b6392d82cdaaddc2b8",
+      "blake3": "374a999cc9632139e900a5fb5cff3d3510be1114b8313b098061f6bf5755cca5"
+    },
+    {
+      "path": "src/core/graph-of-thoughts.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20428,
+      "sha256": "9ce084249894a005718e14ad30424eab349379d2d5d1154ef56e69b6a2fd4466",
+      "blake3": "680d6ec76b30019f50f67d41db8d00737bd49aa966bd3e66880b1d4baf977681"
+    },
+    {
+      "path": "src/core/heart-logic.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 75565,
+      "sha256": "16d7638101e12db082eb2dd3a6783a9b4730465f93234864ec8b91ea665eba09",
+      "blake3": "9615ba0b404d5a7ae4ae61947fee454bcc36f931e6c1ec009718c5dc86c4c6ef"
+    },
+    {
+      "path": "src/core/heartflow-engine.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 50170,
+      "sha256": "80f0982dfc5b691035cdea43637d0d1f374c177f884a669a8058f44ea4cfd28e",
+      "blake3": "6ce6904c739a1446b6956044ce58793db5eee73724ab61d251d1dff804740ba3"
+    },
+    {
+      "path": "src/core/heartflow.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 91455,
+      "sha256": "257f28a099f693900bdfcc3dc800545522c44b1c23c217379455d68a3e39cd15",
+      "blake3": "9bfec575b542024a2ad81ac5bd66237d784ec28f6ca506251d51d774da9b18ca"
+    },
+    {
+      "path": "src/core/hooks-adapter.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12638,
+      "sha256": "b894031d923416814f4319d08350a4e35ebd8226792dd14895c4b57c1087736d",
+      "blake3": "6aa69f9648cc4c0e1a94c1b2fc2f258f7e4ff4a7c5005c6934c725b0dc939f6e"
+    },
+    {
+      "path": "src/core/hypothesis-tester.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15901,
+      "sha256": "672c5f477a8e402c890f2a9d75e86c1cced7d9139ee7facac57fadcd7be73a41",
+      "blake3": "eac366a2886800fd1d59ec14fc47056e1dcb463f1dfdb7ba3d27c8ed61cf4ccb"
+    },
+    {
+      "path": "src/core/identity-engine.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20609,
+      "sha256": "efba66ded9d836b2a2afbac0fc7b1667c626acb4b61dba2aa6483cce736f7336",
+      "blake3": "c375ae90df4d04830961e27666bc2c29bf4c7bc5f6f656f461ddce8d8fb65646"
+    },
+    {
+      "path": "src/core/interactive-dream.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12074,
+      "sha256": "6e2a8a28e06d75a152b2f706d69f3ce00312b2cedb84cea3c20da6ffe6dee7a8",
+      "blake3": "7ee19df19f4d93cb54f0b69545093606ccaf2cfec7ffd74bdf6ff25206ec5dcc"
+    },
+    {
+      "path": "src/core/judgment.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18408,
+      "sha256": "7a183fd5f781652718dfecbefd8f40979b9a5074b207a4a1426c0c5d4caab4f1",
+      "blake3": "eb87f53e436ac67da342ad465c922672fdf87ec5045e59ab54629d9e8317c13d"
+    },
+    {
+      "path": "src/core/language-honesty.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13519,
+      "sha256": "174a0e735b8dcf8fc5e5efb2b983d8d56c31562e801a9093f4e5724e5b3860bc",
+      "blake3": "cf0af7e38479a8f7c4d6e91c683059f461d87d42161994928f5b710a751b82af"
+    },
+    {
+      "path": "src/core/learning-engine.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15639,
+      "sha256": "eb40f1d65df43d7f0fa34c75bca7ecdb6c31e89c8149d3acb62dabd6afa27132",
+      "blake3": "26c82ca22ea76101a09a0946444f14243e03f8107e5cbf12cb33441db18aeeea"
+    },
+    {
+      "path": "src/core/lesson-bank.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12286,
+      "sha256": "9bf3958876ec5f6c98eb638a6183e14a609c6bcad187c90ba573eca2af18d50f",
+      "blake3": "cf902d723884657b4f2159138c1b6d9bab933ad6ff51b7231814bcd96d79746d"
+    },
+    {
+      "path": "src/core/lesson-retrieval.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14834,
+      "sha256": "308ca1bc86a10872ac4bfc3ab6ffa5ebe87da82a7858b40a91065166433b6bd6",
+      "blake3": "04aebab625003a690423ff6319e8ed3df14a0b025a8daa52ab51dcc3d1124ff1"
+    },
+    {
+      "path": "src/core/lessons",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/core/lessons/lesson-storage.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16477,
+      "sha256": "59727be0e8de9eb5a0d9ddf830f396a697fc5e91315997dd937540ee612cede1",
+      "blake3": "80c759bb484a9f0df893f8bcfd38fc873086ac7d70e6421dea07632e93dd123f"
+    },
+    {
+      "path": "src/core/meaningful-memory.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32201,
+      "sha256": "75673a436d7114ff0442f2d39d4dd0211e5f12a93b579e4d4c21efbb53f9bece",
+      "blake3": "a85996a8aa25772b112c721e0c943f054a98f0648dcb7866c4e517d966cbdf23"
+    },
+    {
+      "path": "src/core/memory",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/core/memory.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25345,
+      "sha256": "2351d24984e40e5bce57bf5118ec9625cd874eff91043590be56996de864846d",
+      "blake3": "e924d3109631aa1ca53604b6d3534e7513f6ad50e09b2cefb2c433b56a537848"
+    },
+    {
+      "path": "src/core/memory/graph.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16123,
+      "sha256": "91fd824fb0e993a8073071fdf9951fdaab111ec34e9a8fbd6ef02e77d8b9b5be",
+      "blake3": "dc738b188e206e7bf6321dd5337dbb0eb716228ce27b52f82a3b4bc7b2ec76c3"
+    },
+    {
+      "path": "src/core/memory/observe.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15690,
+      "sha256": "4685260dacd0ec190af825de2d3bbbb8dd7af074829f7da07830503be8dd4016",
+      "blake3": "766e3a3ff9f026717bb47fb83bbc6f40b92da16b245548f9f04fa4768d22df8c"
+    },
+    {
+      "path": "src/core/memory/slots.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14523,
+      "sha256": "4677177394210273d8546ba9fc5b1c935996d67568951f0c82a2dbc06523475a",
+      "blake3": "cce81b31820b08fdc97315e658e2db96987b4ce6cd9192365002187f1449653e"
+    },
+    {
+      "path": "src/core/memory/triality-memory.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18831,
+      "sha256": "650ad010ff14d8b3244caea3839bfb9bea2bf7e3c7bd7088231149590200d590",
+      "blake3": "b5e9fbe7728b3f92517f612a413ec5a57d3027712cfd95ff2897ecf358f2ba1f"
+    },
+    {
+      "path": "src/core/mental-effort-tracker.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13978,
+      "sha256": "5d9440d8a13b139aa629dd2550cd5de566624c8eb3013848679a4ff9304c0f15",
+      "blake3": "a7f3e39f6908ff029fe704332f3042fc7bbcae13ef5d2989b37cd0838de7c5fc"
+    },
+    {
+      "path": "src/core/meta-engine.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 35934,
+      "sha256": "4f5b4a830bfd76ebe9c94b4658dcac2632547c24fbc2f6203f3052d97177ce4e",
+      "blake3": "75257f7bc89badb74d08cab59ad7261d621f1dc1ad25d41fdc644a007f2b5fd0"
+    },
+    {
+      "path": "src/core/meta-prompt-engine.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25066,
+      "sha256": "455063db2c9604de3702e52436e9186c8fda12326984b0aa17fad3df3aec44e7",
+      "blake3": "3afaac09f1e6f4a0d008a49d6a85545a5287ddc627781bbdb67bed901d420c9e"
+    },
+    {
+      "path": "src/core/metaMemory.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20792,
+      "sha256": "03f44cfdccd3fd9db05ab1359239666f4e7ae8c32f8572f20dca32cad90e1475",
+      "blake3": "f15a0d4ef2c89825a0debfd57a810deafb42e56af80346664fffa213473c4236"
+    },
+    {
+      "path": "src/core/metacognitive-executive.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16390,
+      "sha256": "2fa7393b5748597339737856619dcdc9e1107a54ad3ba598e7ef3c71c4e0b905",
+      "blake3": "95b217ee3c0454fd81c12203644ca6d903039ec3f21317502b1c886e0d19bc77"
+    },
+    {
+      "path": "src/core/mindspace",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/core/mindspace/mind-space-guardian.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20570,
+      "sha256": "3ecf0a7b7266bdce3e62cd9fb487c153a4bcf1d3a956c6f72aad0419b82e0835",
+      "blake3": "8a4490facfe8f80e1651a92018585705403e48f982311d021191883cc7f7a669"
+    },
+    {
+      "path": "src/core/narrative-generator.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13346,
+      "sha256": "a8fbdeeb88f7bfe60763389b84d0ca5ab6cda0a49d1d18109d69403b3bc8f6b5",
+      "blake3": "b42be9eb52fee9d06b794e7527ebfdbc4d355f81727db75a7c26c2a440bba6b3"
+    },
+    {
+      "path": "src/core/openalex-client.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17716,
+      "sha256": "f7ae166da6c36f803e3612d907b2d2086bf6fd3596acb5e4bce9ae21233e4f7b",
+      "blake3": "abceff47d93c70470459c7989f5e39a2ae02609554c7bfa85d96de8291d61cae"
+    },
+    {
+      "path": "src/core/philosophy-engine.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17908,
+      "sha256": "2173028af6b895c1203c70ed80e055b020192299072631aefae6e3f30d432c62",
+      "blake3": "7e38c39db156545af2f57824787b557b6a7c4c781c5057381ccef9887142ef11"
+    },
+    {
+      "path": "src/core/philosophy-execution.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19308,
+      "sha256": "f3a5a9d04930b491a2dd76d32d5076b2eb04d674f659b5c9c0f026a0b0c49682",
+      "blake3": "d7ea0472704de55051db13e35e2f7bae326cf4916da412ac4f47567f2649e5ee"
+    },
+    {
+      "path": "src/core/psychology.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 56658,
+      "sha256": "5b0c4873175dbf1ed2519ec3664200001045f9acfedac6cfb2514e63d751cb05",
+      "blake3": "8c1bfda87ef62295d06bb6db570dece990ed6f0273ea496ffbd8fcc7accd2dd7"
+    },
+    {
+      "path": "src/core/reasoning-integrator.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16954,
+      "sha256": "3be7a079c44f87702ba910c4ac2183ea266e21c3a64ccb01078f42c0c6bdbeac",
+      "blake3": "64cbfd78b824b39b04671c9094183f7049087e476ea53ce8c4a9a1156e2373cf"
+    },
+    {
+      "path": "src/core/reflection-loop.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30275,
+      "sha256": "9831f66b2e168055efb73413e42e9f508f65359e9bed26520d59d19524071c63",
+      "blake3": "d6578d6f0ae74b3b143c49c38022b6066a273bbf1e37c122fac956166bec5239"
+    },
+    {
+      "path": "src/core/reflector.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 31443,
+      "sha256": "89710a3d0d320bbf5ff19c3b835a4c4c5c6b54b1f272e3069b94c72ffd14be5d",
+      "blake3": "1544d6dd54061bef3ae8b3f19df16c10032552cc09438b9a8870366cf0aca545"
+    },
+    {
+      "path": "src/core/retrieval-router.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13792,
+      "sha256": "58996e826a0c4c1ebcb0e17befd71f98a6af1e63caabb8a429f833ffedab959b",
+      "blake3": "3c79a481b1e1d4932927930836ca611d34e24c62ab2c644a8465b1986d61db1b"
+    },
+    {
+      "path": "src/core/search",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/core/search/bm25.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18145,
+      "sha256": "211572eee884f0440633df070173e344b6f1fb9cf34ee34ae0511b3af0991f12",
+      "blake3": "16998cae669b05c37520c07de577395b031ab46f852d498c73b949bb5b37d8b8"
+    },
+    {
+      "path": "src/core/search/hybrid-search.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17900,
+      "sha256": "a8f5e2fbbb24f4a86bc0163a3a465d770e02042c05ff089223caa13c9b70a114",
+      "blake3": "d2ae6018bb44a114f7c3349048d676daabd1b4c2ece8ef10e24e43ee68429833"
+    },
+    {
+      "path": "src/core/search/search-trace.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18409,
+      "sha256": "226f7455c87d91d16c65f49645d002d5d29c053bd4c5730232fbe00802bf0f14",
+      "blake3": "e3350cde4419145b02894ae3b7a8f66400c2457951de6a4ebac4c8f901d44f22"
+    },
+    {
+      "path": "src/core/search/semantic-search.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28959,
+      "sha256": "aa9f6c7c4e5f5b7ea28ca8d372176945d7e4351914e7c7b0b195b69bce270194",
+      "blake3": "d2f785f316be5bd9694ac565dbd673599f2d9c02e24bad73ea4a0405764eb0d8"
+    },
+    {
+      "path": "src/core/self-audit.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 35049,
+      "sha256": "d446742855fb1884fa4f4957b1f61833b54768b8a0227d8fb947d1b3a54b15ac",
+      "blake3": "0c6a72fcaa0d9799f9a54f2dce7e5b614376c8d61b9caead9e5f0f3842fdd70c"
+    },
+    {
+      "path": "src/core/self-correction-loop.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16857,
+      "sha256": "ff0661e917c72506eb36c150b62f23a5e9a7b1e0ede194b434e0d61d7636974d",
+      "blake3": "5c59f30cee0aa567800b88dcb8b70ec57245a27f2fda1c75629b12f24819c9d4"
+    },
+    {
+      "path": "src/core/self-diagnostic.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24986,
+      "sha256": "d1f7a6f1ce765192ae25821868bc4acc00b406f94e72c952895dea6fa4fc0025",
+      "blake3": "5914cca23ac10495ef0e9e4aa799fe19d7a982b44ec1dcf53d3295ad4e279721"
+    },
+    {
+      "path": "src/core/self-evolution",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/core/self-evolution/goedel-engine.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28579,
+      "sha256": "9eb02b95be0e7757bb7bb258da77d72ecc58d0c47488fb6f22536d571b48b97b",
+      "blake3": "a5b8ec502c00102e68ec549595a7789e54cad228cc7819238f82c03e7727862f"
+    },
+    {
+      "path": "src/core/self-evolution/meta-learning.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25668,
+      "sha256": "f4b42eaf0710216b59007339fd9ef7d79777276b09403449eb729d57b691aaa1",
+      "blake3": "751201446d384f1071d54bdf645ba9cf793d706b15399880c93dd8f1f3819381"
+    },
+    {
+      "path": "src/core/self-evolution/rollback-manager.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28837,
+      "sha256": "35412a1c833dce8897317aff4df8e22a730e3bb13d19e0e517b42ffbbbc18516",
+      "blake3": "7f7e06ed0037e53d6d8512532ccb97ad3187eef27e5083db4b34714b904b176c"
+    },
+    {
+      "path": "src/core/self-evolution/self-evolution-core.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 36091,
+      "sha256": "478767917fb20b727ab302c634a74d146e05fb3329daa02597cca806bca6edda",
+      "blake3": "c71d35504f4148eaea96fee955a895e562450d74716461c7f81c060c87ab34a1"
+    },
+    {
+      "path": "src/core/self-healing-rl.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25444,
+      "sha256": "4c21b1a18344e29b0c6d1544ccc7a38c995158d5092e171089b1c55160e168ae",
+      "blake3": "83e2323b3202d80a71e5bad99cdc490e8a7f57bd60a4a6d8dc3aaecdc23872c4"
+    },
+    {
+      "path": "src/core/self-healing.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21450,
+      "sha256": "52cd22c845b313e57f47eeb093661a7846795dc3ee0df217b7a9bdff9f69b01b",
+      "blake3": "10ba5fb497a4049a3a0c70b4942ba80b9fedc8057e056d4eed187d7a5c570fcc"
+    },
+    {
+      "path": "src/core/semantic-anchor.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21937,
+      "sha256": "433c5b335a26a345d0a5fdc998e614c8eb83d44754d92fa1e66ba97eab3845ba",
+      "blake3": "2cf6468e80d1e58817053be6864792fcb4b6897524876eb60901c7b7e0812509"
+    },
+    {
+      "path": "src/core/skill-generator.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17886,
+      "sha256": "a16d43c95910ac093587e7faec9d3e2e15ce66954f0d11e9470b2b51d6891748",
+      "blake3": "73ea88f42c59dbc8351e0cac9af8b0e9fb73d337a0692a01b144ecd5cbfae9f6"
+    },
+    {
+      "path": "src/core/skill-verifier.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18495,
+      "sha256": "4fd573ac234ea2e5dbae3b0d79ead9619a96de1c5ac9c794e51424fb50ea7084",
+      "blake3": "af2a1c0c36200e0df0aa23f335d7e6bb9bcbbabcde67612f4ea8fc195fc2ba50"
+    },
+    {
+      "path": "src/core/spontaneous-restraint.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16843,
+      "sha256": "99fd6f7f226e4b3461cbdcaa4430f1182867a8201cafc2520b31b0ed65daa065",
+      "blake3": "c0b2d114712e675eda49e3b648d86d36e0e30b4bc0000e74471ea75e01ecdd64"
+    },
+    {
+      "path": "src/core/stability-guard.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20157,
+      "sha256": "37bc8b330ada4d56da8c7cd6342a36c1181da435cb84352124a5700b9a0e0cd1",
+      "blake3": "7ce2237c5ad8ce95d1afb7e66f0d5c59dca65213af3d7ff4e90fd213fa70835b"
+    },
+    {
+      "path": "src/core/state-snapshot.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12431,
+      "sha256": "1cfad3de3e37d59e45c156d7fc5669c557ce53f631a6fbc87351a2e39dc1cee8",
+      "blake3": "8c6e4c06fab2eb447ff767bebb0593397a8e2f0c24589a31ff662d5d44163181"
+    },
+    {
+      "path": "src/core/task-pipeline.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 43450,
+      "sha256": "24a52c1f2245fe18cfbe16391a9032151a3c7b31da3d320b56147d7e59fd59c8",
+      "blake3": "1ddba00b917d23536acf2369acec55dbaddeab19536c7f2c5c00aebb7148f12f"
+    },
+    {
+      "path": "src/core/thought-chain.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 31574,
+      "sha256": "74f7c2635459d650773396f6afb812babb91d58bf63e95f6d30cc86ce469aefd",
+      "blake3": "cd0041d0bad8f17a12cc9e2d348f25ceb6285b88a2113de53dbf04969401a4a6"
+    },
+    {
+      "path": "src/core/transmission",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/core/transmission/transmission-engine.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22173,
+      "sha256": "271fd2f3d4fd17041f7b85c32beec965c7c8afa9fb7ea033af2298ffd532b15c",
+      "blake3": "3460a9b142b08f39f2da396abf3cefd6f37df9afd6debe8dafd9a025153573e3"
+    },
+    {
+      "path": "src/core/upgrade-proposal.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18273,
+      "sha256": "d25757b266fa105284bc5698fee1979a1e4f824765ee3f93607cf1afe61bdbd8",
+      "blake3": "819d342d2ad2ca3795103762c1540384737fba5727c28b2d3718a675ea57c347"
+    },
+    {
+      "path": "src/core/utils",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/core/utils.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15735,
+      "sha256": "8e287309e7725aa9569ae9441712b5b11b7af5af70e544bb424b4c7916f3e0d0",
+      "blake3": "970822af04d976f68e79289bb5ecef166c63d89a3123ec58dadcf8e50d791255"
+    },
+    {
+      "path": "src/core/utils/error-handler.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 33271,
+      "sha256": "72452b4dffd56ab31989a9c4cb57dbc217bdcbd9f54d867ec6960113aed37052",
+      "blake3": "2f7aa84768c1eb61dfc34d245d13a85871e30e005bdd56b669c3743398e44c8b"
+    },
+    {
+      "path": "src/core/utils/retry-util.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15921,
+      "sha256": "f8c699979d4b9b11bb1bd156b5ea3561fa6c3a8432debb4692698d720d818da1",
+      "blake3": "c1c98d251eca5157d0a8c6dc059ad7a32e9728e17f26f3d53de0bcf784554488"
+    },
+    {
+      "path": "src/core/utils/state-snapshot.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10122,
+      "sha256": "96d1637a60de7ef233ef55e0458d5d74f6b2e6e2c647d3e39745c93c3ff060c8",
+      "blake3": "feb17c8b07bdf0a5525feb5dd305e2b49e848546074eb7d402a82ad430be237f"
+    },
+    {
+      "path": "src/core/verification-engine.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13443,
+      "sha256": "c270788d7822ec50c476e869253d6315d5347f562f89cb5b569fb94bc3d46bac",
+      "blake3": "e8f6c30d7ecdf10c2763483ccd4772fd559dafae40e4476e2fb58f7eafcb2546"
+    },
+    {
+      "path": "src/core/version.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15787,
+      "sha256": "2f2da7273ecd0d3ec3db0cb1ed1d71c7c82587b0b4f74ea8788f5a346b88defa",
+      "blake3": "c1418362a79fd66befaccbc1f581a2f09fd6fbe7aba8466ba16ec9239778a5a5"
+    },
+    {
+      "path": "src/core/wake-up-verifier.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19294,
+      "sha256": "0f7136b074c710192947a9d6d74c616af12dae62493e4a22d7e2fe9eae2b8197",
+      "blake3": "495e0eba500a2bd5f4d1b6369c373af3078e0c78c683d3b978d1863b42cb060b"
+    },
+    {
+      "path": "src/core/workflow-switch.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25945,
+      "sha256": "6f09b39808e44cb2cf0651ff52ad4da7046710b544f2430cd0f6c0bb5e5eb6a0",
+      "blake3": "46cdd820dd54d02c45403f841dac63b5bdd96d7d242f933cdc5e6cb5700119f3"
+    },
+    {
+      "path": "src/dream",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/dream/engine.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30859,
+      "sha256": "d82607fe98d7dee8c3bc5eb4b16777976e644a4d1753ab1183002250e12a7644",
+      "blake3": "a87149b72acb56fae2ce0b453c58dacc66c4c086781e567aae806e4ced417ca4"
+    },
+    {
+      "path": "src/emotion",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/emotion/autonomous-emotion.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6015,
+      "sha256": "a6e7e621ef2853673000d09a1bb41fa388e06b2648bd7d342550ce4c84763679",
+      "blake3": "c2a3b1fb450ed1e1a0a358dee9a305af21f2e29e6f12d9d96c3bf5a41d9bfb12"
+    },
+    {
+      "path": "src/emotion/desire-system.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5413,
+      "sha256": "880fa0d0aedaf4d36b7e7e2b2cf805f03e6abaa0283f8173c920f8e1de7aa304",
+      "blake3": "e10d38f165dcd204d77a789f79788ae5e18da04f0af8ea71502c21cf7bfb0c1e"
+    },
+    {
+      "path": "src/emotion/emotional-growth.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4846,
+      "sha256": "9b759bbff480a98189fa8ed91842ab72d793b8de85a3cf6a9a60e989a1c3fe0e",
+      "blake3": "241ded4f8945972c50333131d4c3b29fce64b36c509b263942601e5a17f75906"
+    },
+    {
+      "path": "src/emotion/mood-evolution.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5613,
+      "sha256": "0f6c2f0d0279bf918daa8f2e39ac2216ad3547f403ac5e9e97f619f1ac8ed695",
+      "blake3": "47838a03418f6dd0155030f778acc5313c6e5719e62123167b59ed978d3d031c"
+    },
+    {
+      "path": "src/evolution",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/evolution/loop.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20622,
+      "sha256": "89fd3a947a051ff99412680cea37c13e4178aab1280f834703d10373ccdae036",
+      "blake3": "c0ae2f4b3ef5c65b8796acf98f4287c81d428434e2f9a00c307d67117e461f7d"
+    },
+    {
+      "path": "src/evolution/meta-learner.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20502,
+      "sha256": "6556143dc712624ff07751ef8014622d2430a7930f91d0c301fa7cc534569bcd",
+      "blake3": "0360c2d991ef76500c14ec0ef1b24992510ce29ad50a7895724597113aba9d05"
+    },
+    {
+      "path": "src/evolution/self-regulation-feedback.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9646,
+      "sha256": "47abf127553893c8e5d6d0dd5fc8f08103d6874fb0cad5c04e725c1810343489",
+      "blake3": "ef02083007689d6cd2ab740567a427b8260194175f1ff27d7f210cb177012258"
+    },
+    {
+      "path": "src/identity",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/identity/identity-core.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9447,
+      "sha256": "e06abea9d1a9c5b9082886bb560a44fc2edbd84d0f433edadb8056ff3597ca46",
+      "blake3": "c0cd757fd9433ebc4da75b7cdd59e28e4e87f93f9e2d6cffb58170d05f769590"
+    },
+    {
+      "path": "src/identity/identity-rules.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3911,
+      "sha256": "c4de1f0273aa3b7ebdc36d561346a7774f33ae84ebd3978de56bcfe895eb20d7",
+      "blake3": "37bfa50be46c8a13896a735fc430c7bcc83741ea67a12ea7406497177349a03c"
+    },
+    {
+      "path": "src/identity/lesson-bank.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11614,
+      "sha256": "45ba38375957c483b1dec56ce0ef9d25de7f30317e93f83129467e54140ef5f3",
+      "blake3": "ecf020b57b29bcb710cc77fe464e33916335eadf17da5cc31473c854620513ef"
+    },
+    {
+      "path": "src/identity/memory-index.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14186,
+      "sha256": "ba19054fe3cb05e60ca987c845b5c99ccd6c15237bea68ca6cbb7e29e7bc6ebd",
+      "blake3": "48d1a55d19c2840da9ad11344d62f61740b54eb5e3ade215119623220a74848f"
+    },
+    {
+      "path": "src/identity/self-model.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8691,
+      "sha256": "2fe7259b0532ccbaf5f0f57a1d7d87e4da9b581f2f12f7a7bd07d50b22b3b4e6",
+      "blake3": "1ce7d128faaa78d28e8a1a40e4b33cbc1a4d8f633e658622b81af17260ce8469"
+    },
+    {
+      "path": "src/identity/self-verifier.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6563,
+      "sha256": "24d90a37cb43a22b52d1ffbdc809ee890d2e704cd6babb37000ea1cd6cb5e450",
+      "blake3": "7fce536d0820994fbef38f3bd1fe8cb9ca479cb777e3e0e40d2622d3696654ef"
+    },
+    {
+      "path": "src/identity/topic-scope.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19712,
+      "sha256": "72b831fd7b466acb23025143cb8442c98696a446bff41d5a552153e4300aa813",
+      "blake3": "7eae3aaf2c388eabfcbc71397cbe8847b6d08ad20e8e13570c20657843f8b068"
+    },
+    {
+      "path": "src/learning",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/learning/experience-collector.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8775,
+      "sha256": "fff4e1bb5a1767de067ad60a4c9adf61d4c583687b013e51af67419121a42ee6",
+      "blake3": "a53bc3910cfe64a22d37332332c2e0565daa7a0ecdccc8856d3bbf427b359684"
+    },
+    {
+      "path": "src/learning/failure-analyzer.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8224,
+      "sha256": "eaa9478200e0010a7e46068077cb46a52701f5aaf699a895bb558c8e562b75c0",
+      "blake3": "ab944f009f09810fd57c0743560ede9fd16c86854dad7e310a735f01ebc5cbd3"
+    },
+    {
+      "path": "src/learning/strategy-adapter.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5995,
+      "sha256": "baf77491b5ae92d8652dab0295e19e8e11475574d1e261e2c76b23a0f6fb9d35",
+      "blake3": "1adb6c6a8aa89880aecfc9f48235017a363ed972f5de9761c70b9890dec6c7bb"
+    },
+    {
+      "path": "src/memory",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/memory/cross-session-index.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8153,
+      "sha256": "dd442d62f5662b0d39874dcf509938081ee9c49049eae55dc28cffab8f46838e",
+      "blake3": "e5abf081758a1cd3cc4d50b39c21133a5b4494f04f0445054c8f27c9e035e9a9"
+    },
+    {
+      "path": "src/memory/forgetting.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24987,
+      "sha256": "f09cab89ee5d3f22ebd40bc027dadd839f8317bade1d1ea5570613f21c989b3b",
+      "blake3": "597df9b254d181ba4787b9d160090963d27d84e3c778fee8f64eaccb6a60ba57"
+    },
+    {
+      "path": "src/memory/heartflow-memory.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16986,
+      "sha256": "afc4b3158db3e71466e2b58495838a525ef391b0e763750cd0283040f862d6cc",
+      "blake3": "75d81ea4af268cd4db419544c2153a86e34d99893ec84e2f2a788e9e67724c17"
+    },
+    {
+      "path": "src/memory/knowledge-graph.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17838,
+      "sha256": "8fe44c73059f30ab2c6b7a26e0487abfc71cd16bbb59b98b62ea7339783e257a",
+      "blake3": "60372a8feb8835cb53f1bcf7210a208e2c4b0ee5ffd0f69e54afcc83f7a22079"
+    },
+    {
+      "path": "src/memory/long-term-memory.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7612,
+      "sha256": "08f3fb657f7662fc918b0d374bc02108421eb5cd429051889ad7b91dc726c981",
+      "blake3": "30dca23ef96295e61175e026d086bb71dec692e106ced0b39f21ed198977beaf"
+    },
+    {
+      "path": "src/memory/meaningful-memory.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16462,
+      "sha256": "f306cb17c8c5835d321689d9306b04d439fb5a1aa77839c4e482dbb79bd597ad",
+      "blake3": "810d4b9fec32d74cc3a766bd4f73546e3de1df0efdedc9eff9aaa7162080e02b"
+    },
+    {
+      "path": "src/memory/project-context.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7005,
+      "sha256": "a4868d645886ffc0ac949fefaa9cb775f9d80a4ce766ba22ba21b1e4944e98d0",
+      "blake3": "f6774ac9065809070bda7a2e2282b7fe57f10bda1874a09b2ba953b038accdae"
+    },
+    {
+      "path": "src/memory/retrieval-anchor.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14152,
+      "sha256": "57709cc0a51d385578a1d9f32e6a7714fa4753b6a9a03a36448c18769e4235d8",
+      "blake3": "52633c2dd1837e1638f5cc6ce7d3c59ddaed0b91587f1cd9ebb4aee56cae19f7"
+    },
+    {
+      "path": "src/memory/session-memory.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4746,
+      "sha256": "72540ba08b24c688b9f9adab10df4ea5b1a869f08ee4921ab8087f164145138c",
+      "blake3": "8c9ef7fcd68157765d9f0e87bf51dc815573eb25290ff41dd93aab9823b4e6a5"
+    },
+    {
+      "path": "src/pattern-detector.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28537,
+      "sha256": "1741c133d0a78311a5e07a2646d712c20dc95e8ca8e0cedcfb35593d639aadb2",
+      "blake3": "cafdbb45f5b61cdfd351a7baea9f58f3fc2954fddf2f56da9171d540019dd392"
+    },
+    {
+      "path": "src/planner",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/planner/adaptive-planner.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10612,
+      "sha256": "d491e58b28c44a8ac040a1ec4199caa9d99b7ceccaf6f5dcbc09430e32ceec63",
+      "blake3": "b768752e45927b3f95685eefcc7ed02c4fbc486bc9b72962398f3acc3e89847d"
+    },
+    {
+      "path": "src/planner/replan-trigger.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21663,
+      "sha256": "370b6477663e13833300dae8478db75a81c2a76518dff542713b7263647c7ca6",
+      "blake3": "51ca8c408ebfd865caec9574dcd82a0fa9f2f2ad7c54aec48c6583d520856a3f"
+    },
+    {
+      "path": "src/planner/strategy-selector.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17360,
+      "sha256": "6a2db95683a58bace482cac230f5885d32dd4f893df2bdf6d60f4203d8c5845d",
+      "blake3": "bb6ceaa10dceebca80273f8f0f8562566a79fb87baa7dc3aa3eafd95a460b2c5"
+    },
+    {
+      "path": "src/proactive",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/proactive/curiosity-engine.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6845,
+      "sha256": "5b4fec463f0335c2ad5dc5272aaf441ebf506d241e4e6b6f10fbcec11d1aa2b3",
+      "blake3": "8868984907d675f8197ab0a2543ae8762e169554da02bed3d5fa7577ce1e116d"
+    },
+    {
+      "path": "src/proactive/desire-engine.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6546,
+      "sha256": "5aa85da8dfac046e89c0579164082d5881f88b84d5da6ce6e2be24dbf32eea2d",
+      "blake3": "00f3048aca659724626686fdcef015dc14a17b268504f12e1b7b794c99fa082a"
+    },
+    {
+      "path": "src/proactive/goal-pursuer.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6447,
+      "sha256": "1555b3f8674295b384357c76e3222d910fe45717d7715091e3b0280c6b86aa5a",
+      "blake3": "14061fb0dcdb693b59b9bb606ddd3c23dc440af02fad160d518dc613e601c186"
+    },
+    {
+      "path": "src/proactive/self-initiator.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 36129,
+      "sha256": "cb17054d659d7efcc608b805b69fa4314c51edc307d4575c7e54e971fbf6341e",
+      "blake3": "cc7f7fb5d20180963e40b891b6175aef4950e623fc53479b78068e35fd378fcb"
+    },
+    {
+      "path": "src/psychology",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/psychology/breathing-exercise.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2641,
+      "sha256": "8d99acde1214f6a33d4e936105cb050d5d8f02033590d6286c86b0ebc45383f8",
+      "blake3": "af05605424067ff63d9d114b510568b372d7d20dd1422df93bdd617c1be5963d"
+    },
+    {
+      "path": "src/psychology/cognitive-restructuring.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2157,
+      "sha256": "35e10aee3297d1f882e33e48268917bf46d6f31f7ea9aacfe577b58c434345ff",
+      "blake3": "f8655599a2eca252a7e99bcca6bbb30dba5fa0d72bad4aad24035b2d27c66373"
+    },
+    {
+      "path": "src/psychology/emotional-check-in.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1992,
+      "sha256": "0a40c28f29279138a7c2b1f9e16f4b9ae0b05714c5bece07df08b3352ee61ee4",
+      "blake3": "9429462957552c6fbb95b08fa62ab9c135bd63548de54003bd70b0390f43e044"
+    },
+    {
+      "path": "src/psychology/empathy-detector.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12980,
+      "sha256": "70fd3588410333770a993de46f51bf0ff102134605927ee854fc2d63fe313a32",
+      "blake3": "b4c63ce31bc7734d834cedbf6e0093ea971d17004c16a6bc17747a8d24654999"
+    },
+    {
+      "path": "src/psychology/engine.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23618,
+      "sha256": "c5518435f16f93bfee9ccb8e65aa9797d155a4cad65f615daf5d5fae8faa1399",
+      "blake3": "3abf346442a077d212690dcb305a18399df7b11c77b4b09192284fc73512bdd4"
+    },
+    {
+      "path": "src/psychology/grounding-technique.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2458,
+      "sha256": "591d5715e52e5ccb3312c6db3350eefdf6d42545a26991e60db6d1bf5ee85930",
+      "blake3": "9285ba2c228521f0177689c7500038d087e5a4cea5c7345ca6ee2e4040c9a6f4"
+    },
+    {
+      "path": "src/psychology/pause-and-reflect.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1950,
+      "sha256": "511d91bcdb64515730afd1c5f318f8c0407bc1beb7c84850e691d53777ce8877",
+      "blake3": "1c601ab1503c18b4d6b46af7af01382183751f9c643c5480f6b48bd2d3cc4e53"
+    },
+    {
+      "path": "src/psychology/self-compassion-script.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1737,
+      "sha256": "a96505d7f04d55ab08226d4f49a3de95ca37628aac94dd78cd82d79b1ad3b9eb",
+      "blake3": "eaee304f1bbd101294dc3c29061ca6e6a3fed22a06800b03fcf9ce6ac746b8fb"
+    },
+    {
+      "path": "src/reasoning",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/reasoning/causal-inference.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7492,
+      "sha256": "5d3e9f80ace617903109ca53391bb42933feea33d6165e4247925f3f7c935c95",
+      "blake3": "1ac03a66627af9c077f39c186a8caa18b2be1c4d655c6788bd04f38c2f61bda1"
+    },
+    {
+      "path": "src/reasoning/commonsense-engine.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27175,
+      "sha256": "85c1f8e0d95f532831e4431a742e90a43a980f02aef8a9c106fc3f936e03af01",
+      "blake3": "c958ccde47320404ef2872dc49251aebde219e28ae1ba0be222c8111a495a7ce"
+    },
+    {
+      "path": "src/reasoning/inference-chain.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6415,
+      "sha256": "9af33be2e56689ec0b3e1d21d748c6cf09b4e579b6f48aeed02f4869da0845b5",
+      "blake3": "6a8b18cfc121be64b1d46bd71467ca3ba5f8a00be23cf7cbf906fa4cf2f279dc"
+    },
+    {
+      "path": "src/reasoning/knowledge-base.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6568,
+      "sha256": "fdff3b96d01ab11455c166aed7541f1d21f4caeb376f482ec7000ecf1c3b8447",
+      "blake3": "e105fe943f3b036a0616e04956fffb92c9ffa91b5b686a5e8660df635c8e6711"
+    },
+    {
+      "path": "src/utils",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/utils/atomic-write.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12964,
+      "sha256": "365ad66617f32d9322895816882aab6fcf7efd7a59926c41bb2f2b87befebb47",
+      "blake3": "2c23419c1ba59fa4154680e0ccab929edac3899d3264185f2c2ac85f6bc00d59"
+    },
+    {
+      "path": "src/utils/write-ahead-log.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3466,
+      "sha256": "47169769c3a709cdc8286751e998d842b172a21e051ba088f26b7c9c69eb9e5a",
+      "blake3": "df840f239f031a4347fbea8f28e5f4fd072edb0250ad0e04c1498f1f2e18f09a"
+    },
+    {
+      "path": "src/verifier",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/verifier/output-checker.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6279,
+      "sha256": "f010415f8024b60f65d6ee59df6dee756b2ea1ed2c60c85929507ddd629967e7",
+      "blake3": "8cc9dff97b1ebf93a77a5ecdd9081dbad1e89471560d5b2db18173d03e4c1d48"
+    },
+    {
+      "path": "src/verifier/pattern-matcher.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21872,
+      "sha256": "f7cdb1fe7b7ee7c689c3503380315fbb5156227aa3c509e6edf4e75012711218",
+      "blake3": "8f435e167872e2fa707d55741caa381ea0a158e1797f4a189876c0a6e8631802"
+    },
+    {
+      "path": "src/verifier/quality-verifier.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5462,
+      "sha256": "97547f096ffd6132ffd2722aa3fbb7d47c92a757e342036ec71d65e18b8614c2",
+      "blake3": "9ba0cb2949d0bd87312356cd84370c9d4e77a2edb840ca9bebbfed89bb4b17e7"
+    },
+    {
+      "path": "test-boot.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 902,
+      "sha256": "5e8bf8da98faf4dd3a20701867b49534d706c809de74932e74e3b8bd53e8a9d0",
+      "blake3": "35f43249974291325ff5359f4b78e07b0c93536e8366fc3ebe59f3e30cba1f89"
+    },
+    {
+      "path": "test-dispatch.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1094,
+      "sha256": "d7964e5145f68382bac2f68349a6d65c9c4a218ed0c4b69a010e20a5ba611d52",
+      "blake3": "80bf40e9eaf20591f9af8f4a9b339d5133b7d64a5c56812f8973cf644255c9d3"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/integration.test.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2418,
+      "sha256": "5ac84fdc6f3cedad93732ab58e73355cd81e62bd668ef236005616a60843a47a",
+      "blake3": "1eee3dd07b4a78202af05f22968bb7d597a92400ee4e685e2cb779ed8652b012"
+    },
+    {
+      "path": "tests/v2_0_19.test.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8539,
+      "sha256": "075910ed47b7a884c91cfffd30ae106ffaf5ff4e55c207b6b1678a63bcb93788",
+      "blake3": "ab5389044af4cb4da01b841a69127a60fd0c8d695d59a782d5789c2753295277"
+    }
+  ]
+}

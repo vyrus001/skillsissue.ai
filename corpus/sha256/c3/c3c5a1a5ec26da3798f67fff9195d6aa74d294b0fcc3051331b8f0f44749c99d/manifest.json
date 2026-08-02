@@ -1,0 +1,2261 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:c3c5a1a5ec26da3798f67fff9195d6aa74d294b0fcc3051331b8f0f44749c99d",
+  "sha256": "c3c5a1a5ec26da3798f67fff9195d6aa74d294b0fcc3051331b8f0f44749c99d",
+  "blake3": "0606b5b444ee16cac79f9a9160f7b79e732ca4af3232809d7c3ca529a6f605fe",
+  "size_bytes": 4209264,
+  "file_count": 258,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 191324,
+      "sha256": "643d1d618d9bf246f457fa39db43d9f507928f5b2a91019c57266d9528ff7f54",
+      "blake3": "67a6fa3f5f8b5a5fd34e8d86cba74b666c610d59f9bb6f6c3217cdad7c72b242"
+    },
+    {
+      "path": "CLAWHUB.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4738,
+      "sha256": "2bf002df7f353e5bf4dbf1e990dec471871f96dbef0419de9e8146ec76920ebf",
+      "blake3": "5f8695cfa28c6e48bb74766424a426780d27d7e1b2c24c456d7c42524fca136f"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14661,
+      "sha256": "f25ed93d2c7ffd95ffa5fb36deecf41994ebb7601e70b5c8c462ad1037ef8456",
+      "blake3": "110d924b222bbae093f637b762525f154325b920f5ec536a0c7f84c923ce96fe"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9749,
+      "sha256": "3e81bcb96c09bf971f3c3052d215741152e6afd65ce34eaeafb210072bc08d13",
+      "blake3": "5e71c65caad17e3748306e88c7d14844f79b3f0718fd373a32d305be2ebe2371"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 130,
+      "sha256": "a274739e19d3406f333a38595e59407b25ff9bff65d430f585487afaf591bfb8",
+      "blake3": "906ef260d8765fcbf3ab3d73028b7b099c3440cb11c24afef6468e212ef74921"
+    },
+    {
+      "path": "billing",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "billing/api-client.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11289,
+      "sha256": "f70707f6aa11448c6157fb7554fdf81c922bf0228a0b8f7dcfea65e213f834c7",
+      "blake3": "b4de05a4195fb8fcc5cbda2ea935be3edb71b2e96724c3dae3938943d4c6186a"
+    },
+    {
+      "path": "billing/billing-cache.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15183,
+      "sha256": "056884f8adaf7c7e4c37c43d84d0bcdde4ae11dcbeb22dc58c270bcfdbfcf212",
+      "blake3": "ba23f60e0004239559ec681a7deac255ab3d7eb3517fcb79aadc4952b434b075"
+    },
+    {
+      "path": "billing/billing-cache.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7502,
+      "sha256": "f3777827936292a9ba2a0c612163fb27f5b4044c28e8d21be600474c718e2eff",
+      "blake3": "0c247e54331ce54688673bf9d7ae88662900a6146084e5c0fd4b5fad79a12366"
+    },
+    {
+      "path": "billing/gateway-url.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9877,
+      "sha256": "1b498b78fcfba73e2d6127054a7ebc6e785e763c1bee48d9cada4388cb7e4c19",
+      "blake3": "5922574bcb7977b4187b4dbb1e629a5f8cdc40d6a69b87ed45e315f876ea8cfe"
+    },
+    {
+      "path": "billing/gateway-url.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8707,
+      "sha256": "8669f878ede390dcec4e32bd7abd93d8c448247e4ac93ec354abf81cd26fc7a4",
+      "blake3": "1cb49a2137c94dff41449a0cdfd64cb91faa8dfd681a2282cfc05f9a3a4bfe27"
+    },
+    {
+      "path": "billing/inbound-user-tracker.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5543,
+      "sha256": "fe06c7ae85a72b40c5514b2ba86f4cc1f4e8398716821c70404371856bcca2ec",
+      "blake3": "ae2e2e474fd00373b97397b8d60d20f41b2780b732041a3a5dfc71b3117d9028"
+    },
+    {
+      "path": "billing/inbound-user-tracker.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6494,
+      "sha256": "ed5dff68609b0de0840e757225217dc86deb7ccbde6bea2a69fdd54bad991604",
+      "blake3": "6b8964d1119c352df9a9628a25f8add5ad4e975e69f1b7bfc4b74c276b9cbd9d"
+    },
+    {
+      "path": "billing/relay-headers.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5597,
+      "sha256": "7761949a0747a21ca25a6622394ffef1e3f782f9c432ac422fb2df77d3417fe2",
+      "blake3": "b12e03bdc57c2eace5f4cfc6418863711c6ff4a3a065567b71ebfdcd3349e097"
+    },
+    {
+      "path": "billing/relay-headers.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1947,
+      "sha256": "6f9891a5b37e1f0465a9f56892e7cb950a3d437a2ec186528a0ea53d5b616e55",
+      "blake3": "059d70a51ec27d1f7ebbd1740e1b09a32a6e7302a373aaf432e93d90dc453ef8"
+    },
+    {
+      "path": "billing/relay.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4839,
+      "sha256": "9187a2680d82318a927c7293d5496db2c4bdd386c23cd4a5ef058159e69fbac1",
+      "blake3": "fbc1c015d7ddf23e07a3675dd65fdd867e3cf94f83cf0804069ad8c2e4241cfc"
+    },
+    {
+      "path": "billing/relay.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7017,
+      "sha256": "4d1cbc30b67b00b93c3c611de8ff8f67e58e07b705674f719990bf316acbb0f2",
+      "blake3": "5e3c47eb94bbfbace4f979cc7759104256dccad9c5cbb76738ad9c0f432502fa"
+    },
+    {
+      "path": "cli",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "cli/cli-registercli-scope.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8402,
+      "sha256": "41557d30b153704eb08c75ec3d1912c299cd5513e750ad2eea1dd789906ad3ff",
+      "blake3": "4362315a197641a5c81e4efa7fbe3a9d69040671840eceafafa981b0b252785e"
+    },
+    {
+      "path": "cli/tr-cli-export-helper.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4665,
+      "sha256": "cb65541d2c98d7e053ae6e9dbbf8d81b1269ef8505ed02c0d0f39144a056c4ca",
+      "blake3": "89f6c1824dc37a224fba4797f0a012902c3f77817cc74b4b273eb9331a7f3bac"
+    },
+    {
+      "path": "cli/tr-cli-json-output.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9773,
+      "sha256": "4d64d796939df0f0974515b54e86c00afc36bf4f5cab6bd457c6369023e9034b",
+      "blake3": "a9420c24823e2358234b7a190e9a805079ffeef3195ba6b14f098097e31491f5"
+    },
+    {
+      "path": "cli/tr-cli.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21797,
+      "sha256": "e6f72c03820cb09cc0b9476f1af94db2a54bb8832a8821998c2e40afc726535a",
+      "blake3": "31f48828dcc9313e1bf428182d87d4270e21f3fe15ad34c9c5144bf844b4bc0d"
+    },
+    {
+      "path": "config-schema.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6215,
+      "sha256": "a1ca85781ceed16950d113d6e59098e2ffee97a95d849a2a88b72f1a98ef494b",
+      "blake3": "011c5800f63775e3151f92e3e54f7cb70e17d68f0acfcdc0bbe99598bee94966"
+    },
+    {
+      "path": "config.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9504,
+      "sha256": "59b031efd3cc67e70295367261faf1ec957dd9494663aede94ba3a624b49753f",
+      "blake3": "12968ff6366e717856156982d7f6d676b6c09b84de5dd904a8d1c7e6a158c9f5"
+    },
+    {
+      "path": "config.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23024,
+      "sha256": "c9cc5fd181d63bd5690cd2ff7f66c1c3b97e1ac93e20754b4448f3554a4e3cfd",
+      "blake3": "cfbe72f387f8a94b961187490a3e3474c643e48eefffcf3d6b11349a18b9daa7"
+    },
+    {
+      "path": "contradiction",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "contradiction/contradiction-sync.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 59028,
+      "sha256": "517ac6d6983419a379039b8bc6a9bf19bd8ef39d1f8e1364db9ee0f86e4342db",
+      "blake3": "c74b7c1df34cecff1ffdad3c2ce6d74a632cc738aadb620d5a6c5ac18ebf1eef"
+    },
+    {
+      "path": "contradiction/contradiction-sync.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 49921,
+      "sha256": "f96d7a886a7480e99bfe18e94ae639a920c1d49ddf5ad2a7ceb9742b8ac9b6ac",
+      "blake3": "487c6b57fe52510cc1c4bfb50c295aad0c5567af6fb3b9fe490fd2d7e661fccc"
+    },
+    {
+      "path": "crypto",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "crypto/crypto.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1030,
+      "sha256": "63336a95ac067d49efffebf186d3d70eea18198ac9f4b6ca775ec74f95a5e006",
+      "blake3": "3ae1ce2398582559ade7033574fbed0d4c07bf839d75d1beb326580bfdd154a8"
+    },
+    {
+      "path": "crypto/nonce-serialization.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7274,
+      "sha256": "b6d294b36878cca99d8e6c7643481e8aeee36449ec9ff6407407f4ff753abb7f",
+      "blake3": "82abe72b15bd911dc52a81088870a5e0859e237cb0a4fdc1ae042ebc4a8279b4"
+    },
+    {
+      "path": "crypto/vault-crypto.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9477,
+      "sha256": "83810965440d5ad2d234b74265b4fa877fc08ba64429b5088c58994446b150b6",
+      "blake3": "de6c3cbbf8d8a23f1cea7600140702e13ed31569a7b71d4853f8e3f25c83998b"
+    },
+    {
+      "path": "crypto/vault-crypto.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27649,
+      "sha256": "8f8a8859f5cbc40db75c88534c6aa94c9268fab8a7c250ad95565374556fc4a6",
+      "blake3": "d4101060ca7a37b26e0f1e7199e0b107146e0b4baaea5cc72d3dffad1b621211"
+    },
+    {
+      "path": "digest",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "digest/digest-injection.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 35637,
+      "sha256": "4acc8a261f9c0196ee2ef75348fcdc541b2b71488de814ea79075af95aa7ffa4",
+      "blake3": "aa89fee4b85563c12053e813836c9a62131000633936aaf8b3c7225ee753b616"
+    },
+    {
+      "path": "digest/digest-stub-skip.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9164,
+      "sha256": "11fb52c3958b3be42024c5a130e47741e4c4766380a2684c02bda4f71dbfbec1",
+      "blake3": "bb45ff6a4a04eb12d74a2a77b7e73d741799e506ab3f80c3d706cb3d2046e755"
+    },
+    {
+      "path": "digest/digest-sync.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22355,
+      "sha256": "b7b508b82f271e0d3c436d1c66cd83aa04542aa53d94429cb4260af6f9a8ecb7",
+      "blake3": "a04b26974ac1f24c47b893e96768883dba171594f6644fc0960b81ecc2c095fc"
+    },
+    {
+      "path": "digest/digest-tuning.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11695,
+      "sha256": "86ea63427cb63630b3d542743d63f3005521f0132fbf64b0ba51c59f863dd545",
+      "blake3": "176e37802a129c7c2d340b2ee0cd2c1c34b475af1e23bf0c1d272a720f79bd21"
+    },
+    {
+      "path": "dist",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "dist-esm-smoke.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9222,
+      "sha256": "6a853d58c141424efd34f923f0fd087b9c4fe6a0f35fc0656b4095c75fbbff57",
+      "blake3": "097f57ae6b2bd7a019ee0cdab373e4f1fae562778a4ad1a70cb80ff858ef2dc6"
+    },
+    {
+      "path": "dist/billing",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "dist/billing/api-client.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9669,
+      "sha256": "95d030502de3694a96ef8f4797396dd10062fd1405534cf37bbb93621fa73052",
+      "blake3": "a337eb7db4de15b753295ee2a790642d4328425e3925caac59058a34f2f9d0bd"
+    },
+    {
+      "path": "dist/billing/billing-cache.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6397,
+      "sha256": "38f1c6e89a59117ea87e561bdfefc04f30ea14b105fa4d4b5741950031adc15f",
+      "blake3": "5c8f353542c964c264c198cc385dd80bcd27f0f4c3ff5f4c7d10857d81bc083f"
+    },
+    {
+      "path": "dist/billing/gateway-url.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8054,
+      "sha256": "ad0c3f55af65818f740b7ad8e3a773f4ae4d89550cbbde271803fd1fff3bab97",
+      "blake3": "dc3d4c5624535cba2959bde767cc2ad9d71cdeb554498d5e133ed96d3c0ef290"
+    },
+    {
+      "path": "dist/billing/inbound-user-tracker.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6033,
+      "sha256": "2229cda6622f6f3d5f4fc04a52bdcc4553ab9059fc58327171defa91d438c898",
+      "blake3": "0ada04090263b5bb8a8ff00766d187bce85afcc12731dce698190d63adf0735a"
+    },
+    {
+      "path": "dist/billing/relay-headers.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1881,
+      "sha256": "e9f59a97cf06e822d661091b3ccff1390c373c934bba5e9fd8940fe6ee241061",
+      "blake3": "1286cf9bd6c1853d867f276ae7fc14ff9ab897930501109ea82e961a4e39c65f"
+    },
+    {
+      "path": "dist/billing/relay.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6527,
+      "sha256": "4eb88f0db1a717db3b07843fc7fa4f335d9249329aca73e29901a42964d8a52e",
+      "blake3": "cac9c44cc0c494ebacb79c1faf37d98a1961cde37e5d163f5ed71718c03fb332"
+    },
+    {
+      "path": "dist/cli",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "dist/cli/tr-cli-export-helper.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4500,
+      "sha256": "dde020b4d2d03f97229836e4b69b95fc1cdaa6bd8b5c109c2118be741d77b2ae",
+      "blake3": "2cdcbdc1eaf7b238827b1e5efdf2e933b684faf0ce2112714cf629625bc310e5"
+    },
+    {
+      "path": "dist/cli/tr-cli.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22068,
+      "sha256": "ff8859894436bfffde854a7845a7d45729e8956b8e40a2c162e57befd102c9a8",
+      "blake3": "e2e8d3dc35869610d0d37db5d5d1ef21078d426a75d8018c849e5a3218da3cdf"
+    },
+    {
+      "path": "dist/config.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22301,
+      "sha256": "3961df140cc1774cead37df1cf066717d2308d18fc0a835cb9d8a14ae3346e89",
+      "blake3": "4de293918d5cfd47ec6aec991b80865242cc520c21fa0f64600e09eb0ae35f87"
+    },
+    {
+      "path": "dist/contradiction",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "dist/contradiction/contradiction-sync.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 43389,
+      "sha256": "7ac67f443f63f7d1f5802279abb9c214c470bee62ee8a613e8b58150d6661081",
+      "blake3": "e99677e0fa1835cb85ccc35a4eba387a370598f2bdd733a0827d1ea50c1e7371"
+    },
+    {
+      "path": "dist/crypto",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "dist/crypto/crypto.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1012,
+      "sha256": "3cb9fd94cdd18a6ae178062e55b100dd3bdb0f3557369bb9e8f7c28f9f5b369f",
+      "blake3": "10937b94b4ba98a5c8701bd0b765ad07b46d239884812532989a21e0f0d522e4"
+    },
+    {
+      "path": "dist/crypto/vault-crypto.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24748,
+      "sha256": "bdfdfc1b1d783b8571b9fbafbfdd867630cb6f723a5b50197fa6180b2d83eeff",
+      "blake3": "7f8bff1df780e3e85e8ab6ba8a66678ca1b6eb4e63354aa1d255c0e98daa3ee4"
+    },
+    {
+      "path": "dist/digest",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "dist/digest/digest-sync.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16795,
+      "sha256": "7db811c00577aa930655b6cf935dbbd9d90c5e8175d0a39be924ad3089ff9e3a",
+      "blake3": "3f706b328ad3ebddf926cfd4c631331e66a6d27c50d23c7d22782e206abc5b67"
+    },
+    {
+      "path": "dist/embedding",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "dist/embedding/download-ux.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3560,
+      "sha256": "c3269b9fc92c88adf3c4d4a076bdffed8460de4f54451d0a0d5cad70c47eb1b0",
+      "blake3": "63c6cb45fd5ee4080d79862faef55e8e509338fffa873e33f8cba480312b21b1"
+    },
+    {
+      "path": "dist/embedding/embedder-cache.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6910,
+      "sha256": "6899d569c760ebedfae65d1d145e3c251a03ce4b1e478793b7dd4ef97ec22f3b",
+      "blake3": "0ae9047881f690dc79d96885ef7747929be78e064b6985a3dbfe5e8517d85d58"
+    },
+    {
+      "path": "dist/embedding/embedder-loader.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19122,
+      "sha256": "cb894e5450eff5462032e3d0b5beda5f0e014de4f2f5a7b72a82e661a701a4b8",
+      "blake3": "0e7991cd96064e648f3a29ddd38ec4694f8601644a7b907a915cfaaa2c0bee88"
+    },
+    {
+      "path": "dist/embedding/embedder-network.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12576,
+      "sha256": "ad1dc6666c973b93b14404cc46cb910caeeb33d8d56ec9c65960de4457d6fb0d",
+      "blake3": "2e4afe4e92d2a0d2476cced586ccef489add8a19a354f08cd27e873f78c1f8a6"
+    },
+    {
+      "path": "dist/embedding/embedding-codec.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11848,
+      "sha256": "3d80211666965a0847511283b04d9ff2bc275691c63362d69d5b92239072de99",
+      "blake3": "b1541e770e4b6284ef5e8b2012ea3958e0f10c4738d4d3be0663b3a78b20801c"
+    },
+    {
+      "path": "dist/embedding/embedding.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12842,
+      "sha256": "ace80c7a140318efcd5196abacba23d32ee0d980ab6afe90a24e5586feb63c5f",
+      "blake3": "b33243aac9f2a448858ca66ed02d418100259e602ee050dbdca1576e32a56604"
+    },
+    {
+      "path": "dist/embedding/lsh.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2203,
+      "sha256": "effbc3782a023b90b8bdb4e5f76ec2d9867b070f39b19dc4bde3a0fb60e23e81",
+      "blake3": "524772e9a8a8a34ffc73bba5db01537a4b0c161d98db39d51a64207685b38352"
+    },
+    {
+      "path": "dist/embedding/reranker.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17946,
+      "sha256": "87a8b4f16375e7bc791e2aef66f9170f22b7aa8f0e69fe4151d2a3d8938ef3a5",
+      "blake3": "35ab0325d75730705dc97775cc2e522921742fc453c5a56031b5c184b333909b"
+    },
+    {
+      "path": "dist/entry.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5342,
+      "sha256": "108dd4f5a001bcfbfe2df2b8636a2c5df7ae72b187cb639dd9e4c3105bab5efb",
+      "blake3": "40c223aa382d1c85a59c51944db4709b689db3b2b7d3114a9cdc97bb6b1c23d4"
+    },
+    {
+      "path": "dist/extraction",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "dist/extraction/claims-helper.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 26525,
+      "sha256": "38763f22ed3e55a497adc3c12e971f7b04096131618c951652bbc083191780de",
+      "blake3": "3e6cef20c42cce6d681270fd8f397c705c158036d9e6e6841fad0bf7504a1ff2"
+    },
+    {
+      "path": "dist/extraction/consolidation.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7510,
+      "sha256": "501b1abb8163e523cdfc3dd4fe3d31cf60bd9ca548516bf5f2fe1ac74d28ed01",
+      "blake3": "f57d55423cbac3c56b7b7c7f404aa30e6277fe2dd63bcba2e16d3c40aa333c8e"
+    },
+    {
+      "path": "dist/extraction/extractor.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 62240,
+      "sha256": "9f73dc317dfa565d2f1b7b660924b95c40aa4266d8b49bac5c6e0391a1e1ce33",
+      "blake3": "0ad7380120a44c1c319d5b1ae86c369088bf03b58f4ee9e20b4dffbdfe774245"
+    },
+    {
+      "path": "dist/extraction/importance-filter.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1661,
+      "sha256": "adb7403a8948fb69cdac3b5991f28535678a99ad464d10249e54bf9a3488e8b9",
+      "blake3": "7890ffeeb3e244ecaa7e607722343f8a9541a1912d7df71c1b69b7bd7a1d4ae1"
+    },
+    {
+      "path": "dist/extraction/semantic-dedup.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3079,
+      "sha256": "051a009b0ebe303b2daa14feb25423392933ce8536ddc6cf555dbbec2d77cbff",
+      "blake3": "87047966c89dc8396f75bf952c815804923985e869c8ee8e928d27613f98c980"
+    },
+    {
+      "path": "dist/fs-helpers.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 45450,
+      "sha256": "0e3739935fac825199087e8815dcfd078d7a690201607d044b232bd9001561ad",
+      "blake3": "14c4d17f645bd5951f1930ed9b9bc924a3fa19468261c81958442c80cae34224"
+    },
+    {
+      "path": "dist/import",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "dist/import-adapters",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "dist/import-adapters/base-adapter.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2109,
+      "sha256": "6098bae275957a57a1b2b86692aa14089013ada4355b3591ec5b0a3ec8222803",
+      "blake3": "25a6f90ad0ce84519ad51310101aa188e5d0a35f73a241ce54d95f9505cf11e8"
+    },
+    {
+      "path": "dist/import-adapters/chatgpt-adapter.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11120,
+      "sha256": "e634f9ceb2fc141cc954656221117baeee56d238b7a747d6dbe58d10b5e7d2d9",
+      "blake3": "8ac16e67feb1c86b6b0f2aaf9473871e96de1a646540c2d4dafe31972640e8cd"
+    },
+    {
+      "path": "dist/import-adapters/claude-adapter.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5486,
+      "sha256": "8f4ba516526712e779978a8bc63b8df0946557a12dd314025f1ac63fa12092c7",
+      "blake3": "f2095fe8bb522a4c1c00330d210b3783d7208db5dd5cb31b1993dad1abfd13b6"
+    },
+    {
+      "path": "dist/import-adapters/gemini-adapter.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4111,
+      "sha256": "1f3c03c1d098a07b3676225f614f958c08765cf9661acbc7b1330be544cf6172",
+      "blake3": "d584d445cdf01e0c005d54c994a33dfc4071ad2bf8a7c40ee2c877679a459698"
+    },
+    {
+      "path": "dist/import-adapters/index.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1093,
+      "sha256": "c5c79d327bd1f28bc17c09b3b847a1f7465160a81c3376c035ae3ca8cee897f0",
+      "blake3": "f9fbacd46c33e993592325bdf2a213333f4edfab6ba19d3f780e8ad99e8d13fb"
+    },
+    {
+      "path": "dist/import-adapters/mcp-memory-adapter.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9280,
+      "sha256": "633b20b51e5f07fb132a5eabc315d903adc2d14c46d4047870614d2350618cb4",
+      "blake3": "00b63caa51fbd3a3aea0da4c8d7b36802573b463a16c354e5b3068a1bc24ad2e"
+    },
+    {
+      "path": "dist/import-adapters/mem0-adapter.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6044,
+      "sha256": "1cab3599b1eaa3389de1c6d9ab9e3081a93e29f12d52d05a541c3881ed6fbce3",
+      "blake3": "a58def34ff18a3bb7b5bfcd1e23d0d4bb3ad0d2c86bce381a088aff4485b22ff"
+    },
+    {
+      "path": "dist/import-adapters/types.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11,
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "blake3": "ca24cdd0e8dc3986a5b6c0de7822e205d4eb160b40360403bd4af93a4622a6fd"
+    },
+    {
+      "path": "dist/import/batch-gate.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1830,
+      "sha256": "80277319b5e030658062de5f5d2813ee7f0e4ac6743b707ec6e16de8f788202d",
+      "blake3": "7a345de8de6a83fca4f39e9a872bf1f2aa3d58d45285a400c40e5d9c48a4151e"
+    },
+    {
+      "path": "dist/import/import-runtime.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 33832,
+      "sha256": "68816b5a5a8b9ca8942645c22698bf089dc474aa4ce005dcff70177ea3344d21",
+      "blake3": "85da6fd7130c79f411b670a33b4c0c5175398bb7b8966984618ef3981e42b918"
+    },
+    {
+      "path": "dist/import/import-state-manager.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3676,
+      "sha256": "cff240c4b23bb24a6bade8724d8dcefbcf1d151b5aceea9e20aedac1bc34a5dc",
+      "blake3": "85cd51855ef1d0ac7f6dae010d75e173e75fb90f3fe6b9f10128112081047aa6"
+    },
+    {
+      "path": "dist/index.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 221805,
+      "sha256": "97e6a752a64334ad03e3d78697162e660f9a71b8906c5b3e7c8f8a072e6d34c7",
+      "blake3": "fdc59be943a14221a2c8e909b42f4e3a7974977bedc37bcd2d1f663f9f7c4dbc"
+    },
+    {
+      "path": "dist/llm",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "dist/llm/llm-client.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 46482,
+      "sha256": "54b07b50652280f8a8106ad362a4111f5a3ca6a891b2c03a651e1e0aec31731d",
+      "blake3": "45ac4ae2c54f8ae12e2a54bd306652e86d80559f8cd96ed24866377c826dea0c"
+    },
+    {
+      "path": "dist/llm/llm-profile-reader.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11452,
+      "sha256": "72bc796a33c7fcaab553382441e06028cf702320156f356b8c0171dfa98a5012",
+      "blake3": "458dd46f10ac4e7c0ef2e96156c039a72de17dfe3fd6a67790e84996607a561f"
+    },
+    {
+      "path": "dist/memory",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "dist/memory/hot-cache-wrapper.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4206,
+      "sha256": "564b6d95d6ed11a388bab44f627cf2109cd7db003f36c292f9fbb1f6c76946d9",
+      "blake3": "8d60c135521cf9c4c8a20d2a4e47d20e507f934b8a758dd9dba4af32b9096b06"
+    },
+    {
+      "path": "dist/memory/memory-runtime.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23885,
+      "sha256": "21cf817e4ec3d136cd60ec622f8e15c53fced1a00a0015fc5368d3bb684f71c2",
+      "blake3": "9877a8ee14f104a26d0d6f6fb74a2e9b9ed4f1db48a82f7fa01d492a84a2f656"
+    },
+    {
+      "path": "dist/memory/native-memory.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8825,
+      "sha256": "bec70f6edc00ddabc2c4ea713c1960f93698b52acda7b7f9d0fb8a71afc67e79",
+      "blake3": "3607670909988f7001abeae633da4d6418916185f319436a250aa77a2ef1095f"
+    },
+    {
+      "path": "dist/memory/native-store.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1772,
+      "sha256": "d08b409b6eacebf3d9664d680337987171e3bea3d2d629fc02175df0fb2d2538",
+      "blake3": "60de5ec3c7818ff4c527fd6f8383a54d666fd9503a9f772dccc559856cf3aaca"
+    },
+    {
+      "path": "dist/memory/pin.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22972,
+      "sha256": "4b569788097a82a0face9b871778a58f470ba2161fb343b4496ae73a46f4e7ab",
+      "blake3": "24eb54ddb1cb12c30603a73aff3bb6e4b8a7b633a24cccad7023beb7ec15dd44"
+    },
+    {
+      "path": "dist/memory/retype-setscope.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14358,
+      "sha256": "2b788685827e0b3189fdc88a3419829fbe8a109029c527769e41c175257bc775",
+      "blake3": "354a50459b6d66bbcce2b5ddc6d464687324c037eb2c8c8267a0738ba34c377d"
+    },
+    {
+      "path": "dist/memory/tool-gating.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3562,
+      "sha256": "35f19215af172bc4ab1d598f4c179e5ddf4bc75ad4c3d074bbfc6c3409d3219a",
+      "blake3": "12e33f4fb7c34c28d8703c1c6233c7db9733bbad6383060902a8c64a5553f411"
+    },
+    {
+      "path": "dist/memory/tools.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27417,
+      "sha256": "b03eb1ef48c96c11151aea31c7f8872daf600369f1609b76bd57b2879c0b27fe",
+      "blake3": "823306ca1cf0704e8e2b26eb04d35bfa0cbbf4c299efd1fd9f960cde54066e92"
+    },
+    {
+      "path": "dist/pairing",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "dist/pairing/credential-provider.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5815,
+      "sha256": "e6a50915c0cae5ef6789c7e066cd89255157dd07272a7ea12c56be67264fb214",
+      "blake3": "a10388faaf7444fe14b7dc27f89357f6dd962f02774816916fb4acfaa19c9def"
+    },
+    {
+      "path": "dist/pairing/first-run.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5634,
+      "sha256": "77a3c06154204a5ba8975357ba8229823c9881b63f499cee197c753fda78cd82",
+      "blake3": "54ed52a439e921245e48a04b9529241b87782afb2a83adb2e2ad08de94eccb33"
+    },
+    {
+      "path": "dist/pairing/generate-mnemonic.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 572,
+      "sha256": "6fc82df4856aef173e9b3fd9deffac510d3c3cf525d70e103fabfb08f4d71d23",
+      "blake3": "be03ca9382a766c1e34b06e8e34403e6634c0118dc43278da30a4f3b19b2b243"
+    },
+    {
+      "path": "dist/pairing/onboarding-cli.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 36206,
+      "sha256": "eebb257d3b3994e186cde7b1580243760949e1a2de25f902d79b28eec224b53a",
+      "blake3": "d0c2d9c8a2edd7caeda9eda33f5115ed22be0b6d3ec924c502816f3ee528fe2d"
+    },
+    {
+      "path": "dist/pairing/pair-cli-relay.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15912,
+      "sha256": "886a7e56656646ac3ef2ea3b02997670abfd4e16e7cf91bdb026a6c66d3fbc0a",
+      "blake3": "b0c5b872751500549fa3cf39610df788dd9478472b0392384f4a1399bec39466"
+    },
+    {
+      "path": "dist/pairing/pair-cli.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18701,
+      "sha256": "8210587b148e3ed67486174f3c3c3692420ade95960d2a8e78732eef2888f126",
+      "blake3": "e130cfdbc6f4fb8095c2999095164312e8a2e60849837458c7bf232671eb119d"
+    },
+    {
+      "path": "dist/pairing/pair-crypto.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1103,
+      "sha256": "827a388630d67248291de646298be9d8c87f7e6bf36795d747c525cefcb4b58e",
+      "blake3": "46bac7a761df283f8d55f729c00c3b4e7b1f48aba01f6bea98b2d01b14ff7a3a"
+    },
+    {
+      "path": "dist/pairing/pair-http.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24666,
+      "sha256": "836d422783774e733a802fa4fdf83f31648d3b6a9aefa6ffe1cbc7b7cec8a016",
+      "blake3": "aa07377f1cc296c73dc52c90b772722533a4ef1bdd7c804564bd665a506c5b60"
+    },
+    {
+      "path": "dist/pairing/pair-page.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 34644,
+      "sha256": "2591c34367c8c1d9e692e7265561e9f5f89e51caed754051d421dded90b6e05c",
+      "blake3": "125a3c33fb9caeba3609757a0c171bdd878510c3310523381a65e6e7ef234f0f"
+    },
+    {
+      "path": "dist/pairing/pair-qr.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3951,
+      "sha256": "da72f1aeb5bbf1dda876760d449c576fc7ddaf6e4aa5179583ee917ed8e4904d",
+      "blake3": "891ea587dc62a665e7cf17232d58f71372a958c83d808810bf392f068b02eb87"
+    },
+    {
+      "path": "dist/pairing/pair-remote-client.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15320,
+      "sha256": "1ad21fd5b998e01b7085be4c8516ebb9f2ef5a2a7eddeb1da52c9d49b3f6b134",
+      "blake3": "78233d5197d64cf802b8e8d06a93a1f32e9e4b6abb1ae7f541eeeb98aeeeeab5"
+    },
+    {
+      "path": "dist/pairing/pair-session-store.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23613,
+      "sha256": "03753e803b92c8452df3e2ec297e342b934a1a05b7a473c86a3001e91c39b280",
+      "blake3": "20e71f58d4d070c673fd0673b6aa1c91d884152530718aa413bfa06c71e3c439"
+    },
+    {
+      "path": "dist/pairing/restart-auth.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10819,
+      "sha256": "7b66524147073b3472e675d10225e6d38067ec9fe06b69566b4e517c9a47c162",
+      "blake3": "adb874ab01452945c9ad06cf0f14899311b93d381407b6cd85e14a26b67981c9"
+    },
+    {
+      "path": "dist/runtime",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "dist/runtime/config-schema.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2939,
+      "sha256": "207113aac6503ad316f15b6a0db42ef6a211b19779ff67d570e7bd35599fba86",
+      "blake3": "c66c3118daab770a94e30bf12879d017413f917c38bc185fff1eab45fabca976"
+    },
+    {
+      "path": "dist/runtime/format-helpers.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12706,
+      "sha256": "1a191d9be6f1752c0f75f308a61bd2d2456e23b0bbbfb923057ea73825a392c5",
+      "blake3": "0d31fed00f6f5d24b4ddb3bd669dc9d7643d0340f583513e78fd478f699f7876"
+    },
+    {
+      "path": "dist/runtime/types.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 583,
+      "sha256": "0d0a3fa58ff4a5bef3ae85d95dbad5f8b9dcffa0faf9f2186c109718ec6fb4bf",
+      "blake3": "133327928c3f53fc2c6745bc57c1d2d86c7e280af1b8600ee48f10fb92aead04"
+    },
+    {
+      "path": "dist/setup",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "dist/setup/qa-bug-report.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13106,
+      "sha256": "fa751c552d0704ffccbbe31064cc7209989805fcc5b5791253ba9600297f0481",
+      "blake3": "3615bccefb7f5c86c36ac3d94a3a86caaac15897fed116dcafaf40c52be4e7c9"
+    },
+    {
+      "path": "dist/setup/skill-register.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4575,
+      "sha256": "eed625d488a3671f80e74c356322940669c01fe78aba3a160e74a8669bae3d60",
+      "blake3": "5d173ce8bfdc7edb550203cf4a635ac5c760d5328c35238233a7c59264f4b6ee"
+    },
+    {
+      "path": "dist/subgraph",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "dist/subgraph/batch-sizing.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10885,
+      "sha256": "9dcf53f9f4b770e57af00a213dc81f0f411c07d801ae94f3cddcc64dba55a840",
+      "blake3": "d4932ab4ec839937836141edfaccf56ea83ca3c714b4c4a56e15800d2d97d1b6"
+    },
+    {
+      "path": "dist/subgraph/confirm-indexed.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5397,
+      "sha256": "dd2582d7b9e810475b08be3b942f310213e1b6c2a94baf6c7beeb8e6ea318e73",
+      "blake3": "152fa69b61cb735ae3188526ec87a817acda6f6f0d97cd76c4b60d8893e3c674"
+    },
+    {
+      "path": "dist/subgraph/subgraph-search.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10855,
+      "sha256": "17dc84a17dff542442921f89c9145cefa01d15c63a5a69ccf63c6ea8276b914f",
+      "blake3": "4aa30278e9fb25319b2630125cbddca0aed0cc43d93f5e8495209070a3ade43a"
+    },
+    {
+      "path": "dist/subgraph/subgraph-store.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 41657,
+      "sha256": "0e28b352f0d7d697d85f9b0e010314b4ffc3d3fd79268a5770073f2c1abf3745",
+      "blake3": "2b195994407510eb045cdc118e44d15756849355ce3fa5caad62de113378c5e4"
+    },
+    {
+      "path": "dist/subgraph/trajectory-poller.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20901,
+      "sha256": "2d194cda85797ed332961763dd15a16ec5320ca9c5b80892fa5baaa842b181ba",
+      "blake3": "cbc4489e02cdec96fad9086a08dab9434a380f29accfa8b1b065c73f5412f049"
+    },
+    {
+      "path": "embedding",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "embedding/download-ux.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4029,
+      "sha256": "27e9c415c0733d367097efbe5509db82ace993abaf50c22de0d2be6564b14b4f",
+      "blake3": "cc52f5c61a2b9beb8c01e00773880e57aecac2dddbdd05bb89fb00b0d8c17a57"
+    },
+    {
+      "path": "embedding/embedder-cache.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10794,
+      "sha256": "3214a44887f19943122025a6f6336f800125a610c36c20c2bae1175da19c583f",
+      "blake3": "146188a434f3abcdb7ef4f5c3be6209ebef1bd5d2f781e6409c045fadb4eab1a"
+    },
+    {
+      "path": "embedding/embedder-cache.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8537,
+      "sha256": "69e708ccd6275be208e83fa2e55e919d6e8c0b336a83a4dae56a9413ff214b48",
+      "blake3": "4d40addd40fd6489b6613e0c104c0a9fac42036ae99614c5beb627ca49194530"
+    },
+    {
+      "path": "embedding/embedder-loader.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28136,
+      "sha256": "e35f3c198b1e19f5c9a34df2c8062b3a865729aa5047f1c0bfb49b7618aaf730",
+      "blake3": "fd6df33119d8ffc8528a87b6f67e6af6b0455ad64743f6433f9036c38a2d7674"
+    },
+    {
+      "path": "embedding/embedder-loader.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20755,
+      "sha256": "6c1818fb90513d1c8552bdd7a57cd072b9177780597c1de15040878969a49437",
+      "blake3": "0c5d8cec64a8f5e3512615e7381b0a7a031625a92499170bb0fd2f88347e3e6d"
+    },
+    {
+      "path": "embedding/embedder-network.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11360,
+      "sha256": "e1a5f5d3ef230f4d712d31870fc260d4b5d0fe6f5115bdcfa4333aaff5aeae99",
+      "blake3": "72bed6216aeeab31996f6d6ccd846f885c0d1972f8be5eb6063fee58b2431983"
+    },
+    {
+      "path": "embedding/embedder-network.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13368,
+      "sha256": "b33decbdb15a649728268c8ce8ee4fbb95819e87b252fb4d6a37858aaecd21fa",
+      "blake3": "9f36c86908dc0042e2b578ee74eade4d8cd381fb87922d0021ca22115fee9366"
+    },
+    {
+      "path": "embedding/embedding-codec.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10135,
+      "sha256": "3c83ac0e073c936e337405d0e75a2bbfdbf14585a2c9eebd1871d244b6539b63",
+      "blake3": "7fa989c064758c90076f72ce10ddf58e322c01dd81f23b26f8b570e08d0e66b9"
+    },
+    {
+      "path": "embedding/embedding-codec.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12631,
+      "sha256": "8ea90df08d22d0b6439d0f51130d03dd2485e4a186da3a98e7e6efc7f5a7e04f",
+      "blake3": "097bedd872a1637b83d0151fa85984e7bbc545b13027dfefe960edb4d608e1f2"
+    },
+    {
+      "path": "embedding/embedding-fallback-tag.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4445,
+      "sha256": "528e5ded4f217d4f323eb3f4f95c76e137f4a0f56272e92e4cddb6a4ac81ff9d",
+      "blake3": "b6555c3c7cf4cebc396c9aaba8b8473a828152ad8fd0879e548cd5f9a0e8e103"
+    },
+    {
+      "path": "embedding/embedding-model-id.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6199,
+      "sha256": "f709eff5b8012432b0bbd4f3436a01bfd33887d1e08999bba458d80b84524bb3",
+      "blake3": "e4c50255cce7a5e58deef770b26984980944b122af4eab50d3aee6a0ba21b312"
+    },
+    {
+      "path": "embedding/embedding.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13924,
+      "sha256": "7b40bd2c518e671e23404b857ca73452b0274bc9bd9dbda00edddc06e569f8f0",
+      "blake3": "e0c382463a517c6e35ba5098cc064dd8769dcda4bb96d118ed3be37f9010dfb6"
+    },
+    {
+      "path": "embedding/lsh.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16071,
+      "sha256": "fe716a5791bb35275faa3d43792f6e515b47c90e75cfc3ba6b40a06bb2247b00",
+      "blake3": "e6c9854f435d0be63d96ee2d82c369c85d1f256b746cac909bb06306e8d76fcf"
+    },
+    {
+      "path": "embedding/lsh.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2355,
+      "sha256": "873faf71ad7178b9691e5fe410f1ecc4ca0010ad33b5652193ef128708a0646d",
+      "blake3": "80d16180ac91dfd22db76cb9ceee88d0e8c1283d9f378edbe9fea0fe8c5cdf7f"
+    },
+    {
+      "path": "embedding/reranker-cross-runtime-parity.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8239,
+      "sha256": "20ebbb1b02a6b8fe8bbbfccc4d49f36e245f545a86dac56486ad88b2a07fe54b",
+      "blake3": "b7579d5d3f954013043b594ca01fc23fc624aa74f3a2a1a6c87e4e685eb0d558"
+    },
+    {
+      "path": "embedding/reranker.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8152,
+      "sha256": "74b7a7f47e37d43d20cc13f38eb95cef20ed227cbb5e94d93b71baf175bb40e7",
+      "blake3": "e5c635481e11acb957e184ce7062d4550b0cc92a5677f2ff6e1b6e17bd8d5b56"
+    },
+    {
+      "path": "embedding/reranker.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19653,
+      "sha256": "7ae5f5451f434c6090a291db1d6a8d54ce9cc23a3d9277bfa07df59d039ec103",
+      "blake3": "e3bb902556254967bd9a7d2ad5beeebffb8b441d71c8c18a631d6f7f355e1f11"
+    },
+    {
+      "path": "embedding/test_issue_507_query_cold_start_no_block.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5194,
+      "sha256": "665a8951607eba204d67709b1c2dd1f9651ced93e0ab6e232eeb782116350945",
+      "blake3": "d064083782f49932d65d3f2c06357aa1f1ecc0c779d563f59b5b7c07704ca6d3"
+    },
+    {
+      "path": "embedding/test_issue_92_onnx_download_ux.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5837,
+      "sha256": "6b4c0d50211b65217188f4e145a474702569c923872437ffc9fe32864f188395",
+      "blake3": "9fc7ea9e5fa6c77bd46662f8c16b789c0966fecca7a646e3df94a30a9ba80b40"
+    },
+    {
+      "path": "entry-env.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3704,
+      "sha256": "78ef63a1decda8d959c2c487b2000ceec5585442c4104b1d2d328f858becd325",
+      "blake3": "929e0263effad8226518ba90f3aa990b1ef7caf906b6abb06145cd9743bd103b"
+    },
+    {
+      "path": "entry.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5428,
+      "sha256": "01264986ae1b73e5080eb6ece0abbdcff3efc3ffdaa214c8d1886057864bd07c",
+      "blake3": "09183a51872a860f8f435aa548a95ebfcadcc4d0ebe333c71da0250618df8a42"
+    },
+    {
+      "path": "extraction",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "extraction/claim-format.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14248,
+      "sha256": "c50b82510f3973e0b8396b576a1200a28812f9946776d82c3246ac154758ac8d",
+      "blake3": "b6413a88e5ce2924ebbb9c0ad22847ce42ffd49fbe63858315e0b7fb7126e585"
+    },
+    {
+      "path": "extraction/claims-helper.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 34683,
+      "sha256": "4f8b6cc351f68428baf73054140646b98f7f85a4a75b0fa082ae76126031c47e",
+      "blake3": "0f5b7ed11d28ef2308d1e8295520b21f251f213a9a5654d6f1250756e6cdfa3f"
+    },
+    {
+      "path": "extraction/consolidation.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17320,
+      "sha256": "3c411b6292feae8784a0b2b3965b3ef315b2d032c39891cca9717dd5e80163a5",
+      "blake3": "ff3a71a5bd7692ae160effae117bd7cd7b38d5ca7d8ee4ae52e45d991228e506"
+    },
+    {
+      "path": "extraction/consolidation.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8621,
+      "sha256": "bc4bb6922cf746276f66e8927bfc7055072bcf64f96cd2dc7cbf7c6c3fc475f3",
+      "blake3": "9f6af2efeea398ab4ac72064cce25c82bfe7638614228af2b9c066d3ecfe7287"
+    },
+    {
+      "path": "extraction/extractor-compaction.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13319,
+      "sha256": "667f7b2a0894d57be82326e0375019850f08e5ccd5ae82153243f226fe1f4f37",
+      "blake3": "0580c2d517a36f35617cfcb7f6ca99ac3c2ffb35c6c4296bf1d9c7f9208fb68d"
+    },
+    {
+      "path": "extraction/extractor-dedup.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6025,
+      "sha256": "818c875215d65c8c83c289a238f0eefc1f1768cbc5e02488ff609b837d16e74e",
+      "blake3": "cd3d20f53f9dd599d73947f6f27b36da17f857c66bde737bd4fe1186f51cbc72"
+    },
+    {
+      "path": "extraction/extractor-entities.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17165,
+      "sha256": "933f736ceebceafd1cfbfd4edb677a907ba15581904416402a8abc240a8db091",
+      "blake3": "773840f985edcfa90d59cc1bfbafabf13d1cea9efa806579dc5d55f4c583ede0"
+    },
+    {
+      "path": "extraction/extractor.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 66928,
+      "sha256": "b6c4de7e72917445b40d4e04c965519e869a90ea700eda84968097ce571a341b",
+      "blake3": "f948f80d5771705423ceed30871aec61210fbc01055fa0a32fb7a703f5695026"
+    },
+    {
+      "path": "extraction/importance-filter.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1840,
+      "sha256": "8e5a4057f3614bbf7fcb2d07ea217be9023c79ebf6d4c0621443448c254d54e1",
+      "blake3": "0d6b6ec56127c04c443adaeb8aebfe75c75dafdde252aa6c11c752731ab0dda4"
+    },
+    {
+      "path": "extraction/semantic-dedup.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13816,
+      "sha256": "9724948e094a284d310747549446af384e2613dc70c24e26c109cb7c3816ff57",
+      "blake3": "c6509040f2fa05ddfa53d9f81acc1bf8308976b3e9347a84c9da1e628a18e4f1"
+    },
+    {
+      "path": "extraction/semantic-dedup.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3475,
+      "sha256": "1e515f568bbe6752b68b0079a4a1718696393d99ad4c82d3b299ed6706fd8921",
+      "blake3": "9c545315d6ca5a478eee8e831341f3ecb900acb11893d10e8edb3041cd5029dd"
+    },
+    {
+      "path": "extraction/store-dedup-wiring.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10059,
+      "sha256": "8c38a605d8483f1d3a25c23c1e99286d2f81064e57746f344402a6707ea2d382",
+      "blake3": "cf40cecb79965c21a691a56d761fb8f6bb80f9d0a17b58cbe5d9db3b88a4cba5"
+    },
+    {
+      "path": "extraction/v1-taxonomy.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25986,
+      "sha256": "392a87ca06574a2aab5efb23a0ea25b4f342b09bc9a122c24262bdbd8289672f",
+      "blake3": "5bd82cebd542c9dc3d16f561822efa3a6be428ba1e575a9e00a28ce4f0556053"
+    },
+    {
+      "path": "fs-helpers.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 41033,
+      "sha256": "29d71f545561b98bee76225f130df64215b43aa5816eacb9a51d78121f6e2cb5",
+      "blake3": "5fd66a9ca253e2762c93fd62a53fb61948634a11c396623c2e452df467ff98fe"
+    },
+    {
+      "path": "fs-helpers.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 52807,
+      "sha256": "5ec48d0a5aab45c1f98a6fa41a61eb540d6ab41439566fd664e94596ed184199",
+      "blake3": "b71ef275bba006ab50b5c35a1e088cbf3dbc0871eaa97cfb7b63751c2ea9f86b"
+    },
+    {
+      "path": "import",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "import-adapters",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "import-adapters/base-adapter.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2685,
+      "sha256": "c3ef13a4e3120a169176415749295788cab354ef87fb8f369171e05039935a07",
+      "blake3": "6c56c10660a16dfdd220fb5e4e8c301f635e3a4db9dea77d532dfeefb6b58135"
+    },
+    {
+      "path": "import-adapters/chatgpt-adapter.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11386,
+      "sha256": "bda6e04a8952478ef9fe8636f177a4733b2bfb527884f7ba4bd8fcca4933ef1a",
+      "blake3": "18f913b31fdeb636c03dafd0ba44102d863e9769883d8c0e30acbf7449165933"
+    },
+    {
+      "path": "import-adapters/claude-adapter.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5390,
+      "sha256": "e820a324615b5ec7ca7ce8c4c6f8ebf187404fe6ac1562b7820c86da44bbcfe0",
+      "blake3": "6e2d2959dfe0f78b05559eadc522c1b39d953b338aa606f020c8ee3257418d0a"
+    },
+    {
+      "path": "import-adapters/gemini-adapter.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4343,
+      "sha256": "a639a4e329ad0abb309697b679cb12db9b899f7e1fc4d1cfa1171319a13ccf9e",
+      "blake3": "e6984be82411c40d791ae86325bb019b42b33ded5e77fc02f39392c7ea1cf74a"
+    },
+    {
+      "path": "import-adapters/import-adapters.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 48194,
+      "sha256": "1a5484bc933fa9471529a2b8c590c8ee0ac0fbe3181545c031ff85ddbe3b7e72",
+      "blake3": "f533034a4fdbf3c0724608f7aecd82bc92a894074a69fb0db1696a990ec9bc78"
+    },
+    {
+      "path": "import-adapters/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1271,
+      "sha256": "accf64561be94253c35f4f5c2e41b4a111d64e77aa942ee7cc01794b333c19d4",
+      "blake3": "24d5ea44759b9c4f6a23825712206b8b1f27e10ad408f582bd7f5922092b7855"
+    },
+    {
+      "path": "import-adapters/mcp-memory-adapter.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8957,
+      "sha256": "15abe4696af83d8dead2fbfc05367b7ce3b6670b3871ab117d4884037c007fbf",
+      "blake3": "823d3da9f5802e0bf82f366c544a1ea366b8d3e55d1dae087e901cf06c2cd116"
+    },
+    {
+      "path": "import-adapters/mem0-adapter.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6412,
+      "sha256": "5c493a7a7ebde1a489d3d77e7c8e657d3e0f249330a0cdfe45ada041c6ec2f37",
+      "blake3": "3983e6fbac3810daf761325e78a33af54ab537b0f9c6f5ff2394803f25dfdd96"
+    },
+    {
+      "path": "import-adapters/types.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3624,
+      "sha256": "178808f89e5203847933d76a07b3e38b0c58ad0b671b9a7d6aa6dd9b05584fd6",
+      "blake3": "325eac3b7f8b7170d51488a556deebc4fea7c045a775128811af4f539bce9e3c"
+    },
+    {
+      "path": "import-time-smoke.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2236,
+      "sha256": "b821342287ff38ac5e5c43e53d4e690903620b82af08bc6b19127dbb6a5e25dd",
+      "blake3": "49c471fe4b1c9bfe0cea205826808a370045a09e893beee4ccbc7cd38d099c69"
+    },
+    {
+      "path": "import-upgrade-cli.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12824,
+      "sha256": "ebd731269287602685025977c1bb005a91e34090ea9f83bf4766c1e1b3577de2",
+      "blake3": "3d908ffa8885e00ef710f21081c544d5d74fb068ef4a5b634475ecb29637afac"
+    },
+    {
+      "path": "import/batch-gate.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4638,
+      "sha256": "327532b1161e1742ded6e88f75ee055c3b10cbdeb40c928d13af641d92f47af2",
+      "blake3": "5c6d49b31992394e70ac7a14c9c9c4b921d42888e663205412f2a2cc2725a093"
+    },
+    {
+      "path": "import/batch-gate.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1847,
+      "sha256": "780aa74327186a3036cbfea25161a6e6ba63255dec6dedf61008c12465e48e19",
+      "blake3": "9c113275b77fb423ae6880e9758600ebf0a9eef62a98133369fd5b93c2b556cc"
+    },
+    {
+      "path": "import/import-runtime.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 33576,
+      "sha256": "c540e98ae06ad304794a8fa89578458d31e2837e8b894738619f52e76569940e",
+      "blake3": "b02bb931b3ecf642fa060f67f901c88b90f88bdfea7a61951dc597a4fdf0eb0c"
+    },
+    {
+      "path": "import/import-state-manager.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4596,
+      "sha256": "82a3ad7e2f2d37fe034f4f828b1c028034ce8319cf2e1206a2c5551eee70c8b5",
+      "blake3": "51613fcb28e723710db02d25f84ed56ad52f30bc496d9a2ac68823f20f89310f"
+    },
+    {
+      "path": "import/import-state.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4931,
+      "sha256": "f349f4c16063c8c29445df7fc2a961c8e812355fb2d81f843b402b4bc0eeb4ab",
+      "blake3": "1d8cd991679e6f75434bfa857d9bbfb32844d37a0645a570afc202be12d12e2d"
+    },
+    {
+      "path": "index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 200767,
+      "sha256": "46b085212376d12d3c8112f10c8910999b3adf7128979ca981c6402f08d2b1d6",
+      "blake3": "2c206c371e4e83fc222a8b8f8c6f2133ad4db0a81d4837aa4870aa0a7c0dff26"
+    },
+    {
+      "path": "install-reload-idempotency.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8704,
+      "sha256": "6a7a0390946ddfe6d47b0dc5b2bec7217b73df8133a0ff495b1ed27b2287600c",
+      "blake3": "b5c57fb6ddacb27176083c6024e0a06822a2095fcef2432e8f14f54703de58eb"
+    },
+    {
+      "path": "install-staging-cleanup.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6722,
+      "sha256": "21062cd771894c2363a039646d7c79465970c4da861c84be2c835a4868920af5",
+      "blake3": "77101883595ebfe40774372670fbe4bc2e22b2422bd1bde90054dd0b64415b3e"
+    },
+    {
+      "path": "json-stdout-cleanliness.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9830,
+      "sha256": "c1640958925de2aa160962d952009464ca3c05da510da1a8ef4f6a54f2190afb",
+      "blake3": "7382c33ccb9f11bb5d479603752fef9fe27368d08375bf1ebfc847f5aa6d311c"
+    },
+    {
+      "path": "llm",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "llm/llm-client-json-mode.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2596,
+      "sha256": "bf39db569c377c8f66acc147a6bdd6173bac5b63541ccdfc5211176755efbed4",
+      "blake3": "606136a167a3763113d73bcc8efe92c648198951573b06cab3aa68e9c67e8be3"
+    },
+    {
+      "path": "llm/llm-client-retry.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29177,
+      "sha256": "68e4d77db3d2cce3d240b3bdc9d69ad0bb71a04aa83eff0c61c098f85b135e0e",
+      "blake3": "99189c611e91e00851765f3fc086db3ac3ca31a42ec17940d121fa493a6bf9d5"
+    },
+    {
+      "path": "llm/llm-client.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20108,
+      "sha256": "f52c8fe965a1e4104ddb5f8f0b6082e72bf2fd550b4dfb4b047147f9572dcdf9",
+      "blake3": "d6f351e67415872cd56245edc378dc767835657319a8f834ba2190f84b045b07"
+    },
+    {
+      "path": "llm/llm-client.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 51746,
+      "sha256": "95274847397e67fa2acb281add63ba983f9d92b5cd210d36e7dfa074c2a5c7a6",
+      "blake3": "7884e327704ca1d18783604950bc63701bc44d28bbf52cdda474074d75806187"
+    },
+    {
+      "path": "llm/llm-profile-reader.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11797,
+      "sha256": "32d323fdc6788b16fb1035046ea4109887f76f3182d7aee177b8f5edcdae4be2",
+      "blake3": "45daf60a3d1cbdda98ea80a08b9570036e8859036b762a0e369fcff0493e8611"
+    },
+    {
+      "path": "llm/llm-profile-reader.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12015,
+      "sha256": "0ddd28c40e7b33874926cbc90b2d97d3cb300bd2dc6a3f33c15d7aca2459d860",
+      "blake3": "e6a8a043f8f8183e0d69ca2e2ace0455b263c1c0d45a0df32eb49646250b3a65"
+    },
+    {
+      "path": "manifest-shape.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11949,
+      "sha256": "240a099653a863455afcd64b7fdc8c0097da51b4053ec4a870c11f97ca6a5100",
+      "blake3": "8af6dd8232d66e60619a1a479ec4a54458e5b76c77c655a2405275752540c50a"
+    },
+    {
+      "path": "memory",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "memory/hot-cache-wrapper.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4487,
+      "sha256": "a296d3c82d71afcd48a82d22403c5d1f2ac285a95495ec2d74d7b289bab66576",
+      "blake3": "ee6f9bbe4f790f25510367c2aee8d3a7a583fd753154d9389b8ea5d850faea4a"
+    },
+    {
+      "path": "memory/memory-runtime.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21696,
+      "sha256": "eaa31a8a8de4aec2ea83da81b6858e19bfcb5441674fc7e21899dc88292d40dc",
+      "blake3": "0ebd5e6e1263adce62664729a388d3d24b160491f7069fec19fc8ff47ad4a219"
+    },
+    {
+      "path": "memory/memory-runtime.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 35586,
+      "sha256": "ab8fa70ab81add698443071e619f0de72e97638fa0173729fd119dc4fa9d4638",
+      "blake3": "22c00662f2007d73da35bd0027b232962c83064373935609d0b81e132c21378d"
+    },
+    {
+      "path": "memory/native-memory.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11900,
+      "sha256": "1d4245ceb39381c8f2eaee6799b7166601e195d0acd90d4b1ee73679d5da2145",
+      "blake3": "5bda300c1992d80ceb1b2af7dc1af0079e45b5e3f085430ab60919a412fabd84"
+    },
+    {
+      "path": "memory/native-store.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5107,
+      "sha256": "f6c5784bb973caedbbcc3ec5a1f86b350f1061721ee97dcda98808bcd4a915d3",
+      "blake3": "32fca585b26a4f6353c2008e09796d4f6c4a9b667e33334393db9000ec54dbd4"
+    },
+    {
+      "path": "memory/native-store.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3597,
+      "sha256": "fc3acead52d665cb1f7fe3610a8f2e5c31bc66dbff223c7e1196c63e5c064152",
+      "blake3": "150b7ccb3c163b792b6451bd8f444998624f7263a902584d8c1eabc440c02209"
+    },
+    {
+      "path": "memory/pin-batch-cross-impl-parity.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9635,
+      "sha256": "c90cd7ff8dea5846fbdb5a14759e1f2585c12f20a6a8fac6539cd263202019bf",
+      "blake3": "8e1ee225d6e2ef4f20abc4dc7505b086d1f11771a5ddb62f7bbb2c5edc684f7a"
+    },
+    {
+      "path": "memory/pin-unpin.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 46753,
+      "sha256": "4760c6c443d7b259502549db1c9dc0dff678ec6679e058d68877f802db8588a2",
+      "blake3": "5b67ead5d67326f25a66dfb387a0a790aacbc038566cc49ffbce017b38545e65"
+    },
+    {
+      "path": "memory/pin.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28003,
+      "sha256": "a4d95d273a339c3f26d1aea968b19e00713c14bc540996439669e64f9435fd56",
+      "blake3": "62587a2380a5a8166df33c34d83238af5c31b2f8a5749d7df633f5322bc76d63"
+    },
+    {
+      "path": "memory/register-native.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16708,
+      "sha256": "4195e564d7684b1a81852d6caf6215c6dcd46723fca1182f2c43be308db24e09",
+      "blake3": "890ac5c3346465dc6473ac9e7880106a51b509719870a1a6350bc94c5352ffe9"
+    },
+    {
+      "path": "memory/retype-setscope.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17461,
+      "sha256": "5a24c9c0b53d1284a71861d33fc27555a338637d00bc9fc69b91fe1741735e43",
+      "blake3": "23148867903e4b7d47d7dffd7fa19e1779e9939e0460034ca998ccfefd41e4cf"
+    },
+    {
+      "path": "memory/retype-setscope.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18111,
+      "sha256": "5ec0314a9a1172064c85693febad797eb48560353a0931e936c93add137560ed",
+      "blake3": "b847fb9f296f4f9c17450ab402930b73c37866eeec72f53dcf290212a791a9dd"
+    },
+    {
+      "path": "memory/save-tool.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8003,
+      "sha256": "8f1ea0ef08b781d6982997861705358abd23906b4b6de3ab5d63e6b3fa034edd",
+      "blake3": "0fac2ac4e2aa77862990de1cc70c50b387001989cd9c8f6b1782e1db2067f98c"
+    },
+    {
+      "path": "memory/tool-gating.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6973,
+      "sha256": "27d8b64bbe02a15dec006c1db8282f7b35a403a2047ae5f95106da4db579e07e",
+      "blake3": "966c8f92275cec0936bb80f905212d1495f2c3263bbc9084048b114bf05c3111"
+    },
+    {
+      "path": "memory/tool-gating.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3866,
+      "sha256": "6500a77834ec13cb9552a09385ba763f33fc78c98a2aebc1cd64744c30a1a36d",
+      "blake3": "1e321873e27eeb0f3aa2e45966da8244fdf253c216c6c7cf881633db4cb566c4"
+    },
+    {
+      "path": "memory/tools.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15469,
+      "sha256": "b67e3e31b4c4cea0e6e640ab2ea586e9133614500457b94341a573aa3b457557",
+      "blake3": "05b678098ccd6c9c85dd560f7640a0dc814068fb3b476947a30397b31d55c6df"
+    },
+    {
+      "path": "memory/tools.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29888,
+      "sha256": "a35b7ef5bc24cfe29bdc56f7d09f172a7901f91c08679422b9d74b1d83a96b51",
+      "blake3": "498e80656309b26b9581ea9460344ae17ef0233bfeed047163f67819c66620fe"
+    },
+    {
+      "path": "openclaw.plugin.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2419,
+      "sha256": "0f6ec8d2ca9562aba4d63d635385e5039f3827285fe1b2e049c2b8726577d033",
+      "blake3": "3a7cf9cd6ca96bbe29b12b0ea237dc9b1d7fa0bfd5f5d70db6a6a8bf92181bfd"
+    },
+    {
+      "path": "package-lock.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 81520,
+      "sha256": "15e8ce5c0d5aa6513da4a9dffc6bbff14e48be740f587122cfd43d7a18077d53",
+      "blake3": "93396911b028047b148e8aa6b15344040d71955536c399f7065030311ea5b1ec"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3233,
+      "sha256": "f5f292f5694254d6fd0ade50b0584f0f5bfc4d092229fd340e92e96e7abc1193",
+      "blake3": "1e3460b0d85cd56f6144a6c6852aba829e721a4d14ac7ea495362f99aca37870"
+    },
+    {
+      "path": "pairing",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pairing/credential-provider.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9904,
+      "sha256": "65a5baf3dd3559ee436dd5ecd1166a7f00518beee2a341216898cfd1321280db",
+      "blake3": "0f9593d9ab993901b467c5a7d0e8ace77fba1511dbaa9784c97f7c340cc79315"
+    },
+    {
+      "path": "pairing/credential-provider.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6860,
+      "sha256": "c7f6adfe91c26ccf47758b366533a9803945d8631b410f638e70e6eacd47c354",
+      "blake3": "216cb107a8a3cbb4f1b88c1db1778b905de3828bc061230b7b771e651ffe51ae"
+    },
+    {
+      "path": "pairing/credentials-bootstrap.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14736,
+      "sha256": "caa6d36e3d7fb0ee4d540787b1cee22429e082950257a6c0784c2822d3d646a7",
+      "blake3": "b249c0de73818abe3ec9d6c1f24618585041465191f6542ba0702891582331be"
+    },
+    {
+      "path": "pairing/first-run.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8631,
+      "sha256": "fd1b664718a444461b8fc2a1d5b4d496fd71a40e59f9f7dd39dc8f927b56a193",
+      "blake3": "2cbb10dc4feb64c0e62f390ab050539f5d389246cbfe2b227981431dbe62dd75"
+    },
+    {
+      "path": "pairing/first-run.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5881,
+      "sha256": "c9124d3ccacd2806d0184d91ef5a388a3d7e7da641fb2e91a6504866f894a946",
+      "blake3": "01d47319183c4318dead641be5deeec0da564d1cf9dcc327c775f939e6bb7b1b"
+    },
+    {
+      "path": "pairing/generate-mnemonic.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 573,
+      "sha256": "6f854b95b08e57e9e37793a25589fb468321a5f42ea66d6c54f8aa6fc817477d",
+      "blake3": "b2e3a17da3a4721423f18969e5c65e7e4f659b8cb90c828118aedcfb6f811566"
+    },
+    {
+      "path": "pairing/onboard-pair-only.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10685,
+      "sha256": "84a5b4bcaa06696a05eed538c5485c8486a85039125a4f22044c619769f05e5f",
+      "blake3": "9eb492f3fd19adc48278f203eb44a105c78368c5f125f9ae143ff157c10c05fb"
+    },
+    {
+      "path": "pairing/onboarding-cli.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19174,
+      "sha256": "45805a92e2a1af4f69bc24fa680c39f22a1f25c28a2442f46ef8ebb47176161d",
+      "blake3": "e177a28f7bb3363d9fd7a676aa9f1b0d6f08f192ea87ca476468899366701cb5"
+    },
+    {
+      "path": "pairing/onboarding-cli.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 39074,
+      "sha256": "080107faf5943db357ddd819bac9a5ec36c5865c69aa3f530036812a3cbd097a",
+      "blake3": "51ba1ede330764d8322a15c379511fb41a84222739c4a973ef67444b68710b16"
+    },
+    {
+      "path": "pairing/onboarding-noninteractive.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7728,
+      "sha256": "1e6f7e541f1a95ff80fa3f4cb76cf84f664bc1cf8d17c6de6cc846294680e9c3",
+      "blake3": "9ecd5bfa4389e7be16d771fa35e5b59116413816b891e49c8796e56675edafbf"
+    },
+    {
+      "path": "pairing/onboarding-state.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13050,
+      "sha256": "ab9bac72560c4b1ad0a096f86790da405bc5722ec222e518e61843ee565c8520",
+      "blake3": "d19e379fa1fe82c38f23327b2eae07e257aefc8e37c103c378e7f3724c567cae"
+    },
+    {
+      "path": "pairing/pair-cli-default-mode.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5946,
+      "sha256": "40776695cfa254afd60762835acf08d1fa815547e2e96a5c3b1e02a0c31183d1",
+      "blake3": "c7123d208428e233108b47da38499cd4841d2232b3190433b0c734f1074de028"
+    },
+    {
+      "path": "pairing/pair-cli-json.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12094,
+      "sha256": "d463d4ee479813fe4b4a1f7413a956894637b484f3bae649463a65a385b4d5b4",
+      "blake3": "cb7c7ecdf7e25519d3be9a8f673a73b92e99979094eeb9803b98ab7c33191555"
+    },
+    {
+      "path": "pairing/pair-cli-relay.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16342,
+      "sha256": "ba381da68c7304cc28dee3937dd8854db60a9750850cdcdbffb4f5d30522b3dc",
+      "blake3": "2710330da3849117e4c92eca17bd2e7e8463c8f2c9c2a1e88fabe09f500c81c4"
+    },
+    {
+      "path": "pairing/pair-cli.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13546,
+      "sha256": "ae821d06eb46a0b61446e8823ef9cabb14e31feab9119e10f7e09c68f1f754c5",
+      "blake3": "4eadc60c9474187f749143541dde76f5d7d8924d6ffbf25ad25f54f33dcbf71c"
+    },
+    {
+      "path": "pairing/pair-cli.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24857,
+      "sha256": "4abf3c575c8cbf1a04df646f0fd1dab8eab195cd9e02bda0a8869e481ad1ac5b",
+      "blake3": "0c685643b1c3f541b90070344922499bb3a220b304c21f1f8f9ef16037805332"
+    },
+    {
+      "path": "pairing/pair-crypto.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15619,
+      "sha256": "e8e06b609a9016585fe19b6ac5a847c3dfff0471b4f48d4a6e979144a5ac8301",
+      "blake3": "c072aa36dbd0c30dd854ebc96ac1a404d2fd4fcbe33e9bac3f80722982387faa"
+    },
+    {
+      "path": "pairing/pair-crypto.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1324,
+      "sha256": "bddd4cc2dff71f72772a00a84be06555ff9381007fb35ef140a13dfad89bc87b",
+      "blake3": "ecd084ac6780190723bf0e2bfe80807ea3397f6dcc2c14237af36b4aeb5545ea"
+    },
+    {
+      "path": "pairing/pair-e2e-leak-audit.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13063,
+      "sha256": "733e5f3929da86e8ea350c6e1a3f8eb661acffb9b1ffe82be351cd6f615ead38",
+      "blake3": "ed02f4c4a29cd7136568a66566de7cacba1bb9493dfefbcadf0e4f0b6ebbfd35"
+    },
+    {
+      "path": "pairing/pair-http-init.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16700,
+      "sha256": "9b0132a3a719f7e9e1749ad9ba017725e6d3a9aa095559a1ad547ee4456c2227",
+      "blake3": "d25ea307f679397867774ba9990d1f5b5b6d9f471d5c9efee4316e632b3767c5"
+    },
+    {
+      "path": "pairing/pair-http-route-registration.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13429,
+      "sha256": "a662f63d49139b8791eae95515eab98f2492a3f37bf705f7d2d6c3c6a39ec77e",
+      "blake3": "c7aadb627a49fd2eef31e0ff92c863e7590c0e17d4fe7ab1da74ea9f1803a08a"
+    },
+    {
+      "path": "pairing/pair-http.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27668,
+      "sha256": "5ff9117c6df43339a5a18a3342951d9287bf242b8647069ae16491b18c5f9783",
+      "blake3": "e28be3006df308b45a1453788dbeb12126e99764152872a98eb1e76638bcc224"
+    },
+    {
+      "path": "pairing/pair-http.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28261,
+      "sha256": "2af77d85f5acb0a7f56f1b2a3c166898d02cc9edbf076a0e42b232fcfeaf6677",
+      "blake3": "b5dc0d68e5f89787a14dc32063b5fa0df29de5fffb23cf14a27c2357b85f33b1"
+    },
+    {
+      "path": "pairing/pair-page.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10899,
+      "sha256": "9840b0ed55ccf4347eaccb9dbf86cb62abb3aa8f1bf6970276eb54f5ea36177d",
+      "blake3": "0b33a56cd3151f2bb20dc22579e1a5a3904bb383fe6dd488a6a597cdbbfb2359"
+    },
+    {
+      "path": "pairing/pair-page.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 35217,
+      "sha256": "67168d5ce8d33c65f43ea7555829de793eea69258b72742f07318839b5f11e2b",
+      "blake3": "b363ea9ca9a488002d0054ae0c14d3b5044e16a5580f0f4df38a1187c1953a04"
+    },
+    {
+      "path": "pairing/pair-qr.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4765,
+      "sha256": "3104e1b4c612ef824b231dce9d6f07d620abd10c4dd034a281ec831fa857ec5f",
+      "blake3": "7227a2adacb4d245b277cb6966b7e1d0166f65ada229713a37d2bbec5376673f"
+    },
+    {
+      "path": "pairing/pair-qr.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5223,
+      "sha256": "c5669b1db192ea8dd266b519a231777f7821cb7d3528ceaace64b750d9c76454",
+      "blake3": "ff69d894c5af79285a2da3dcc86523f75ee25fa9fff2db101de5b01ab020fded"
+    },
+    {
+      "path": "pairing/pair-remote-client.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28176,
+      "sha256": "0ff1f5cdb9c941ee18753990358e82cb2945a317f392e4679b3e5d696615d80d",
+      "blake3": "becaa38a1e27a0a61b8c36c5127546dc30232dc74eb4e2e984c32d881bc344ac"
+    },
+    {
+      "path": "pairing/pair-remote-client.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18504,
+      "sha256": "4319ee9fedb97f0fc09ffe6be34a6f8beb09c3c2763424ed46da7564809782b8",
+      "blake3": "613b6c5e45a7b2a151351767d52d1279aa29224cff7456570a5a00a285b68c37"
+    },
+    {
+      "path": "pairing/pair-session-store.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24709,
+      "sha256": "264f3315558e820aa8a0817f2d174f7112de4051e62694968b9e2ff8590ba2c8",
+      "blake3": "6ee309d98391543ddf66c807a6c60c0348e7cc0a47e8f282bebc179d06807ba3"
+    },
+    {
+      "path": "pairing/pair-session-store.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28307,
+      "sha256": "0a30bf89804513a927eea4b66168b56c071f9b5c9162a27c30e9cf80bb11449d",
+      "blake3": "82701e76c8ba12ae7380b2d896f8e542c4e0d0c45b5ad9602294959eb0788915"
+    },
+    {
+      "path": "pairing/restart-auth.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10457,
+      "sha256": "24aa66cd25d085541569f82b198fe12f4d38b329960c0762d5fcab91ffcb49c9",
+      "blake3": "498fea930045a2805000a7978d3770d98f9fc9cb2fbddcfb9fb7a86c15944ce0"
+    },
+    {
+      "path": "pairing/restart-auth.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13101,
+      "sha256": "6af241b3a9503967249430ade61ccf5736f2226e4b4328833d50ec46cd0e529d",
+      "blake3": "6401d34b89846b4ebf15daec7a5ee459240378ec53d5025e2bbec93af69a095f"
+    },
+    {
+      "path": "partial-install-detection.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10542,
+      "sha256": "2fd911f9b481e52fa416d6fd9290fedcd7e1f296dd5379c167c36afb2e762843",
+      "blake3": "23bff617e6377355a39ed9fe8bbe99c9c22193ca08da5a05d29ab5f81e570f13"
+    },
+    {
+      "path": "phrase-safety-registry.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8814,
+      "sha256": "f4d1fb0339aca3dbb1a0bcd2cc70cbc019a5d32a3682687245cd29a480b10a6c",
+      "blake3": "5dbb6d48c2ab993e6c9f3c0b3d4e697c1918e7d8282041690180b06b9d7c16be"
+    },
+    {
+      "path": "pocv2-e2e-test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32874,
+      "sha256": "45d08b03a2feb4a86f9f680d25dcacab4198d3fae853f338b5ee869c8fca4411",
+      "blake3": "883041bddab8cb9cd5c19c5a34fe620530edb13be4c7c52a3c90c67bd325726d"
+    },
+    {
+      "path": "postinstall-validate.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10843,
+      "sha256": "02ca6099a1905d9e973d2956035f35e0a411258d7e8eb253f3f2bb03f10d9634",
+      "blake3": "47238f5e25a862162b2dae0fc79eeb92760d146de1b2d7ff8f9bbccb552baf6a"
+    },
+    {
+      "path": "postinstall.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5944,
+      "sha256": "4a36355faa29d279eac0ab5f2a4776748fd93feb650155a8a16ae927e938498b",
+      "blake3": "4a87d22ec28a129c3915edb42ea9815fecf9e1903fa4afb3d23f83c531cbeec6"
+    },
+    {
+      "path": "register-command-name.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11180,
+      "sha256": "49b5ba89be22456092f070bf875e05ce20f396bb905c36e61f651528b5632791",
+      "blake3": "2eec77a2ab39e7759035a1fc4a6f1cc8b345ed11205fc1f24cde56079d25506a"
+    },
+    {
+      "path": "remember-schema.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6986,
+      "sha256": "4bab99cc6d903b2244099cd9f76ccc9489ba8178ea7627eed262716c4bf05dff",
+      "blake3": "f9f90ab94ce89cad9283b1d7939ed33d161086332f889727f934e4f69c2a11c4"
+    },
+    {
+      "path": "run-tests.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5943,
+      "sha256": "722c822d797bf48fc0fa048da74eabe6a79a265dcebf82bd8665fdd11e6dccce",
+      "blake3": "e437a8c53bf305c4d66f7e23b9c8d38e7002d7b982260ad37c438bea02d7d893"
+    },
+    {
+      "path": "runtime",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "runtime/config-schema.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2519,
+      "sha256": "4d8abf1c50f9903b155b0a2ff74a5e56b4e95e4db80b1ff0ef8d16128b2bed99",
+      "blake3": "3402906013944df0bc0fe0fa635a4137d5ad6d2e3535321bd98f8330b029624e"
+    },
+    {
+      "path": "runtime/format-helpers.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12956,
+      "sha256": "11a4ebb8e58851eb44a7e564bae6d09e7fd93966b1638cc29a9e3813716326e7",
+      "blake3": "4f5cf95c213a38117583d72f41867dbb5fc48a873123ac260624506428fd24aa"
+    },
+    {
+      "path": "runtime/types.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4426,
+      "sha256": "18f21b79ead6b35511ccb654eab0811ebfd3196bc48e120e1e532cc6d685d2c8",
+      "blake3": "1f445248d95bc2f02b1463425c39c0669c2b6897f8e2fad9d60713fcbfc75aa5"
+    },
+    {
+      "path": "scope-address-visible.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6878,
+      "sha256": "0826018b6bd4fd4601bb846b8fbfd49779368a08445628fc79f413f7ccd8dd9f",
+      "blake3": "206ea02594aef8eb21e6a0a84e56dccb1dcf9079d23566b01a5c0dcf098e494a"
+    },
+    {
+      "path": "setup",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "setup.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 531,
+      "sha256": "78e45dbe020375f5e7d86a1caff10cf89e13a09b61ad46227b730de8430fd2cf",
+      "blake3": "f66afba4534178911faf7ec3506b2a4d33ab9d8875747da7152b66d994c1fd87"
+    },
+    {
+      "path": "setup/qa-bug-report.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16032,
+      "sha256": "8081dcecb220788858d83aad18c3780daf3f1896b716e134ffbaccf9b9760b0c",
+      "blake3": "7ff968e161d4bedf847f5a7a06ccf5a9895e8a75236baa0d80cacd6fd31891ac"
+    },
+    {
+      "path": "setup/qa-bug-report.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14171,
+      "sha256": "b1e8371e00cd505d30af5af5a375c9000b4c64845ea14e3054ac156522ea69c9",
+      "blake3": "8702100772f0e1695eda7ec00a319b34b3e9ddf81763968686795cf5edf59883"
+    },
+    {
+      "path": "setup/skill-register.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9212,
+      "sha256": "2fa90c94b44c2a0d0a20ff720459aa6a3f383522b52a90022f5eb54ed21c2408",
+      "blake3": "94ba3b80b3af212b9063b9a3357b0e6f67273251def0f535aa67ff8028ebba1b"
+    },
+    {
+      "path": "setup/skill-register.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5692,
+      "sha256": "c243022de415e0a24c00066ec9cf431a430e2cb73db40b1d89ee8d2246a2dc97",
+      "blake3": "18a8433d5225ed84964271c5bdc329e784da4b91ef210dbedce0016333495a83"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2887,
+      "sha256": "f9fd4f9e744037d6c28f7496ab9381e8e82abafe87f9a1380585613e5123a574",
+      "blake3": "6251ed6e69949cf681cddea8cfebc74b0edfda5f4d4b0d889c6eeb44c865f4bf"
+    },
+    {
+      "path": "skill-md-native.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15078,
+      "sha256": "3a751a99abd3400338ae3cbe014e23a3591f192e1153ad8b7f2d75f6b140126a",
+      "blake3": "883f193b1eca1a27b0f0887469db66eae9327e25500c823bbbe92a78429782cb"
+    },
+    {
+      "path": "skill.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12450,
+      "sha256": "4eda67419ea37cc11614ccf844449f4f333d80dad77f80df281ef50404bc7699",
+      "blake3": "1e1a158eedc9773bc203ec069de467de0e4b3711846f9e79a4bb291f966d91cd"
+    },
+    {
+      "path": "staging-banner-gate.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5402,
+      "sha256": "bee66ed549ecb3424303b0753a7894371ec6d9aa15926e063f6f5be976c8a420",
+      "blake3": "f7e52d935f2d6cfc151839e54e8708dce9abc799a5443206738fa78ddecfe8ee"
+    },
+    {
+      "path": "subgraph",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "subgraph/batch-grouping-integration.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9641,
+      "sha256": "a39ad827e1c3e9fa269f743059854b0de6ec7a7c07c03b5fe85ebea02f7cf6df",
+      "blake3": "75c164cd4d2ec29874f1be2dbb679e453553dfd647f4bc7e054b4e417f03bb15"
+    },
+    {
+      "path": "subgraph/batch-sizing.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18922,
+      "sha256": "a384b4ef1bce373c9bcd1c952e6f81532c53226467d49134ab47b7860ba584e0",
+      "blake3": "356d9c1d70719115b36984a01cbec8b078f4f2fa7b6f5ee371a579a9d7b37c41"
+    },
+    {
+      "path": "subgraph/batch-sizing.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12369,
+      "sha256": "900e5d57a372d28385b2a085a4e6227d8dc1767cdb080bca409246f7ec02b321",
+      "blake3": "a0f0d6c9e005c89cc48e50e011655e1c17c56bf95bab27b4268d3c0e879ae858"
+    },
+    {
+      "path": "subgraph/confirm-indexed.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7472,
+      "sha256": "291c7c749ac204633eb5a55ad4e4b3f8c327e6af1c47b37174f3c2051d24b00f",
+      "blake3": "c3ac5e68c3ff87e0a5d0726f5efe596171f4b2f94b9cc0273d8abaff8c2fbec7"
+    },
+    {
+      "path": "subgraph/counterfactual-initcode.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17878,
+      "sha256": "ba07eec583ab4dab73389c4fa0a6af11bf29da6ca73085da9ea01397728afaf1",
+      "blake3": "cbac7db12db250c76ec351c6e2c820141fb79adb1ee158bf0bfa0ab1af7df0b8"
+    },
+    {
+      "path": "subgraph/dataedge-write-target.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10353,
+      "sha256": "755fe5149dda14594ad774571dca9cdaefbe4b16dc8ab4d40a9e3233a8762180",
+      "blake3": "9c1466645ccfea063494ecb5d72c93404c2d2cff1c9282730dd693e67e8e8a7f"
+    },
+    {
+      "path": "subgraph/initcode-lifecycle.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25117,
+      "sha256": "59e94111fcdd62ef00b0bd941f0d92f42d0bc4ffc31bb0c8694b69c65a59a565",
+      "blake3": "f954d7ba871e114a9396be9b7fa0bea5f1638e28af5604c4db71e717c82ed324"
+    },
+    {
+      "path": "subgraph/subgraph-search.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11846,
+      "sha256": "5327e4e0081525aafc6cce8a825ee4715efbb88061d4f7eab713c5a67f2b646c",
+      "blake3": "8456389ea42349beda967d54c6d3b71c687d797105e1f8909ff2ac1659be64be"
+    },
+    {
+      "path": "subgraph/subgraph-store.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 43631,
+      "sha256": "dc3685eb58a165ca0a4657699ed9831d9a44485668d0a06611bb58f093329bb5",
+      "blake3": "d9671933ab214705420c0906de83d79058058c3c4bf2330f0f9279ec43f72468"
+    },
+    {
+      "path": "subgraph/trajectory-poller.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 34417,
+      "sha256": "66ce339cd75ccc6add82eea77a6d4ad59084d3d5e4bf786a9e35361b99bd1b86",
+      "blake3": "72134809544cc561d3b956b5f96a442dd46966a0a8fc18809d4f00374b3ee881"
+    },
+    {
+      "path": "subgraph/trajectory-poller.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23138,
+      "sha256": "6c589493f561d6b188566a08452acd3afe0b6c4ede3ac94995bb2ce64b84c9dd",
+      "blake3": "eda4b3770102f28356ce3186f451114fc574859af744fb3e801ee3e72204a6ba"
+    },
+    {
+      "path": "terminology-parity.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13273,
+      "sha256": "58325aa34576fd8620105113778f6077d285f2214ad961ec1652ffb5bc511359",
+      "blake3": "b66fb3dc928569409d3113b90ca8bf808abce492b848065dec2ae6cb7f76193c"
+    },
+    {
+      "path": "tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 656,
+      "sha256": "9e37e73cc97eed4fe7da0ada609aa84fb457a1d80d538b40ab78fa99ad17400c",
+      "blake3": "10c19016905c0d58d366bc59f4b6ee3383fcb96bed06cefbd81118b999bf0964"
+    },
+    {
+      "path": "url-binding.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7176,
+      "sha256": "e47b0918920a1450688666f4b7b21594272e55ba96d1ffcce65abd3997af4c78",
+      "blake3": "53adb8259b7e0da411ed2b040881e5e30737d345170d5de9a95499c907357e43"
+    }
+  ]
+}

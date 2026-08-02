@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:b7fd210de685a0a2b46d64c31527d8dc71e3a789220f138f69f0ce93491e7414",
+  "sha256": "b7fd210de685a0a2b46d64c31527d8dc71e3a789220f138f69f0ce93491e7414",
+  "blake3": "e8169633ad1e57c671d7f902283b0f27600c9b6a63e1e4f9f63e4ea1f73ffd55",
+  "size_bytes": 166490,
+  "file_count": 20,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8273,
+      "sha256": "86341a5a510f11ba6403996dae66e5fdedd2d070a5c7d121c8b9d68f125bbb26",
+      "blake3": "76055cbb1712cc0cbd17572bba6a43a458280d3f13406bb82ece7caaa06cf51e"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 139,
+      "sha256": "9455eddd0044a82eeede247f4324ff6856dffe1f238347fe36fba5b42202af53",
+      "blake3": "b6de08833c4a8b46d894ed79f370326c38b12e96813962317051484144a1d833"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/dream-audit.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2010,
+      "sha256": "c4e1cf24bd150d102b7f6e18a22244261c26dc6f27f1f4f6b10e44db80a08c74",
+      "blake3": "bbc9ff59e212be0b5ef06ca4b4d951f1ce04bad594e13eb2a670927be6fb5595"
+    },
+    {
+      "path": "references/dream-protocol.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7419,
+      "sha256": "6ffb77af6a254f09c58d5f135705448306594f4a9686f5e68e6cd616ff4e5205",
+      "blake3": "40ae00c7321cda783fadb46bc730cd38ebb569f7f62ddc7a48aaae0a89c26e4a"
+    },
+    {
+      "path": "references/migration-v1-to-v2.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2391,
+      "sha256": "7882ae7685e398f2c9c0cfd7cbaa3a18096aba5a36b6a2dbfd21c14c35e957a6",
+      "blake3": "60475cc129743e7ec2307e070d5381e2309946ac710107e0b7b4f0e5bcc70f3d"
+    },
+    {
+      "path": "references/native-capability-contract.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2562,
+      "sha256": "b938daa39259d7d11e5e15d51375b662d11456e1e71817ed94a00763cdee0dba",
+      "blake3": "88d3f8a5c03c8e649023a68a8f59508349a4d6117dd8c59743e1d0692681e720"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/common.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9412,
+      "sha256": "0a5b3bcf40db6b24dee6cf9c31c04cc79a8224d8d08321c9dea285e5f0cd646d",
+      "blake3": "b5fb59da21e02608ddf7828d77441e6b6e00f71fd134b68412bc02fbbee23962"
+    },
+    {
+      "path": "scripts/curation-gate.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4197,
+      "sha256": "e524147bc2d58d5b368e34b00d7fee3c4c3904ea2fca34d0ae858c499932fd6f",
+      "blake3": "79fc6f561120d9ecf9c179d85b474dc282c4f805c98d4359ed2b0d81dc9b92e3"
+    },
+    {
+      "path": "scripts/delta-state.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12010,
+      "sha256": "bf44c193450db3fe73e4c2946ebe7c9dc9bd5c1682bb4181e8bc93171e0f0bcc",
+      "blake3": "f8e17d788ec10893756002afea00ed344119e01975d6430fd25e52de6d4c8aa7"
+    },
+    {
+      "path": "scripts/dream-audit.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8448,
+      "sha256": "3def18f059a3a2861819145041bf1ff97d202e9a1379317e68a2330ecef69168",
+      "blake3": "49f9f181c3ada11e4b319d8e2af25beea6acadb5d67fa2e2c8a7050cf64a6419"
+    },
+    {
+      "path": "scripts/memory-transaction.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13449,
+      "sha256": "4a70f26738b03585335fcb1de05806a043f5e953ff10e83f69c75cc537805b4c",
+      "blake3": "f8a3305f9ad28a8ac1f6cb3c276215c52d6df0a4e22da287f8d46a4518855161"
+    },
+    {
+      "path": "scripts/migration-preflight.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4863,
+      "sha256": "3c35e1703890995668fda363fd398b74bb2cd6d08da02f86d4fda7c1893cd388",
+      "blake3": "aef69820549d7c25c45b13bb01efc5b131e7944fdfcb6c23e97ff3706d154aea"
+    },
+    {
+      "path": "scripts/path-guard.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2945,
+      "sha256": "411e3e650f66315d48ed136f6a17e47796328870dca7436d191fcf304c4732ae",
+      "blake3": "d2ee7dd9498a0bc8bfdace18053ce7ba721363dc0c0c057f1199963f32f6c685"
+    },
+    {
+      "path": "scripts/preflight.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7282,
+      "sha256": "487f15b17770b467a4e995f4a0ee91efe8480bdccdf8eca88056c27adb870aab",
+      "blake3": "26cd5745ddbdb24812702c85c44caf8ccc1792eec6b886e76852cef1f9d6959e"
+    },
+    {
+      "path": "scripts/run-guard.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22473,
+      "sha256": "3f733c87261fa7493ef68453d97d0861fc1940cc658922c64898734cc3fd30be",
+      "blake3": "b784780676ecca4007de2fa8de061a2dc374213b344bf79a2f89f074dca8cd50"
+    },
+    {
+      "path": "scripts/self-test-fixture.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6929,
+      "sha256": "7a2f8078b51051236bfc65a95f371ca33c33e149527196de90b791e0b8537763",
+      "blake3": "07658d55ebba383f96aa5e9afe448518261e6f861548ab4934a0e2361994fc32"
+    },
+    {
+      "path": "scripts/self-test.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32509,
+      "sha256": "508d2cfa6ce5d485244c82f4cf8844641f87ae42064e7515669cbae180208757",
+      "blake3": "99462b7ddf27612d6f27ab3aafbd75e4fe71322d02b26dae5e6287abd10cde08"
+    },
+    {
+      "path": "scripts/self-test.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8437,
+      "sha256": "8bb119d8c482d409bfbe61adcb5e42c318cd4ed64770610f0036a1d0c7585848",
+      "blake3": "4315d7f33eb268d5c34ea3c6f1b623f251cf0482d39dfcd1efc03019a774774f"
+    },
+    {
+      "path": "scripts/transaction-list.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8003,
+      "sha256": "a535b7f339e8a9c4f77c7b5a1710e1924d00309747498418d7dac9d40a1be864",
+      "blake3": "5ed9eb7774a677a9b54278b81cf16b56be03a24f80457cfade09566b0b2373b7"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2739,
+      "sha256": "c9a2ee13b1185dd327897b95fe96dbfa6714406f2139383b83b0ab0c6553859b",
+      "blake3": "d5392967478bbc2dda7f31dfc166bad0472e6523d691ce1731f41dffda0bf3d6"
+    }
+  ]
+}

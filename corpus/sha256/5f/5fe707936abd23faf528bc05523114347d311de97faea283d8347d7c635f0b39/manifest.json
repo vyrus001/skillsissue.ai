@@ -1,0 +1,615 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:5fe707936abd23faf528bc05523114347d311de97faea283d8347d7c635f0b39",
+  "sha256": "5fe707936abd23faf528bc05523114347d311de97faea283d8347d7c635f0b39",
+  "blake3": "14644d9a478eff67cefcd3c4b06a3c53bdd85546baaeff79a771d562c87ef1d6",
+  "size_bytes": 1314230,
+  "file_count": 74,
+  "entries": [
+    {
+      "path": "LICENSE.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1068,
+      "sha256": "18b5e8815bff7ee659b080b22a6385c421c9b563671b16a5cf0eaa7b7b32a069",
+      "blake3": "767ca5fd3425f78bec399bd27347b51ce9e6a3f61ae644175422f62cbed8d584"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30387,
+      "sha256": "f1c92a6934d4cf6e5f0a9ecaeb7dcb779524605099508c9785bda29583146cc0",
+      "blake3": "8edfaa2c8a72e8265498b5da1c0c037ce81cb44541842a17528dda30b1045fcd"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 130,
+      "sha256": "e1cb09d2e1786f23408480209cd0c9ae2d502e5df5790bb30a39a646b8ec0a22",
+      "blake3": "dd9ca9edbd87f6a96efb390723bcaae00990fcbcdc63b8785a9fdb290d491dac"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/best_practices.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 42435,
+      "sha256": "2467e8d6a001a0e930f6814cde994c9d1941bc54378515ed41c7f69c5dd4e0b0",
+      "blake3": "9fb41d415356972391bcecc1745e5b62f00886d8dffd830107c561b77eb3cfc8"
+    },
+    {
+      "path": "references/mps_aigc_image.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5830,
+      "sha256": "dfeb6e90912d8f33efd4d8f68344e7cef91c1fe31b01238128d792f52a9653cb",
+      "blake3": "46b91b46fec17fbad2d52e2de081b75d2b2e56e7cc0baf546cf65f5a5d2fab3a"
+    },
+    {
+      "path": "references/mps_aigc_video.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18684,
+      "sha256": "8c5a9b491c413d21d0889be718877ebabbce4b4a1cbb03a575088605d5cc8f7c",
+      "blake3": "fe67d063cbfd1a4ce1dbe1b93e07a2972acbecbeca2b6abd133028024adad07e"
+    },
+    {
+      "path": "references/mps_av_understand.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3663,
+      "sha256": "2bea36d1b33658ed3504e24bf250669817ab6b4489a3d2dda1d37051eaaa9e25",
+      "blake3": "64cae62657321949533e82b0675dbe5eb5b0e14fd4968b6df1835f66eba03b55"
+    },
+    {
+      "path": "references/mps_cos_ops.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5542,
+      "sha256": "28c321258bb981a28522f0518476677ccd8adbc5dc068855746c09d9be8f5810",
+      "blake3": "35d74fd9c4951d1846e5daf75ef68c3871f75def3ae9d6a67ee092a1651f302e"
+    },
+    {
+      "path": "references/mps_dedupe.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3869,
+      "sha256": "fd27a810ccce38acc8a902e336a990a3a045de2dcf6b7e20fd760e136c67d37a",
+      "blake3": "4fcaaae289b36da4efcf7e53503f980bfaf9cf26f60e4801293ac4d56c105554"
+    },
+    {
+      "path": "references/mps_doc_to_video.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7722,
+      "sha256": "03536149735b3edf6c3ec6ec9a5d2aee456d51be7db358c6cd8f03b16a3770f9",
+      "blake3": "54e243a2b715bd45c01d4fa6251303573bbafe56319ed736f71eb1153768f1b3"
+    },
+    {
+      "path": "references/mps_dubbing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13354,
+      "sha256": "b6f0a5cb0ef3774b44be76125ad7e38911fd7b4654dd787b6c7bea2748b5f349",
+      "blake3": "83fcd0ecced2f16d665a9f38467f4eedb767530f026e0ab554fc1d9dfd90f978"
+    },
+    {
+      "path": "references/mps_enhance.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9235,
+      "sha256": "d192f4bc43492fe1871c5eb0fffd16d483b872405301eaf34cf0b4edea9a65de",
+      "blake3": "5c6f746d1ae6ad3eb857cccbe799d62955541e9fdf8b0b3bc8414577e2c39641"
+    },
+    {
+      "path": "references/mps_erase.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6388,
+      "sha256": "6272ae6645a100e1e2c7fb5dc3482aaffc1bc122466c1d8bbba2bb8edccf8d9c",
+      "blake3": "acfb8d08c642b494f8315817fdb1bcef776822f5104579898649810afc2674b0"
+    },
+    {
+      "path": "references/mps_gen_compare.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4638,
+      "sha256": "e7cf59e81c60585f9cfb30d271508d1e17a8b3426c8da9285d8aa7220a340c2a",
+      "blake3": "90b3db7eb814024a71a052fb08dcdd2911abd4a91b9916b195ed85801faae7cb"
+    },
+    {
+      "path": "references/mps_highlight.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4919,
+      "sha256": "95c1d77d4a09e0378aad234cd3a3d41116e7b6f91a05c66fb02a4b78971187b2",
+      "blake3": "050b44cfdd1d63e8e741eb6e77629e6470ef9e468b7dccabb494089d331a73f3"
+    },
+    {
+      "path": "references/mps_image_bg_fusion.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7313,
+      "sha256": "3cdb52cbe2ac7427e259b6adf2d19b71a3f7e681ffdabe8b5fd43f2511e3fefa",
+      "blake3": "66ecf91127e758d5ca96d63e6077536829733dd420b1ac237e811090760d6578"
+    },
+    {
+      "path": "references/mps_image_changemodel.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6266,
+      "sha256": "07a079eb4b67e45427e681d12ea2a9f6a5ff50121a04fedb9b8bd73c270003c9",
+      "blake3": "538d9af43c452b75f75ea80247c6e36e659002ce10ab221edaf6e3dd5cbbba7f"
+    },
+    {
+      "path": "references/mps_image_comprehend.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5331,
+      "sha256": "8137b6bc11830813904d797c27a16156bffb06be0f7c3f283647611d5d309887",
+      "blake3": "1a5c74e7e5d5553336cef808bb6c23353d9d4d3e3384ccd92fae3e22e6ab678d"
+    },
+    {
+      "path": "references/mps_image_cutout.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4744,
+      "sha256": "503ef153904214372202f4462f2ef3ff82152390e79bb802ffec738681033440",
+      "blake3": "6a7030dffbb4e1c08da69e473937cdf5b445867c0bd555053073f5d152b279f7"
+    },
+    {
+      "path": "references/mps_image_detect.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5702,
+      "sha256": "82924914db154f53f8dd913d68cac01906be25cef707385460472d4f42664e15",
+      "blake3": "865df8961f952962269d0663a72d3cef2f8979d8820bc8e7f0a5d210361f680c"
+    },
+    {
+      "path": "references/mps_image_multiview.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4993,
+      "sha256": "aaed5a2d5e83f496e0bb879fa34af3b3dbd4eb6d9a0974cbad82003720927ed5",
+      "blake3": "b169643adf24c5bc3304ac3edb1584f1a4cd3bd2299e120f3b6fb6129194f574"
+    },
+    {
+      "path": "references/mps_image_padding.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4993,
+      "sha256": "997c9c06b1a44a6589f33454a7e85cbc7df7805f3a89425df72ef127dd7972c7",
+      "blake3": "802508345156aa7d858678e7b4b064463bd3d8e5218b791a37173f56a6f89f4d"
+    },
+    {
+      "path": "references/mps_image_poster_suite.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14956,
+      "sha256": "7d43f3f07ec8974b4968c236dd1c2bbd0f96cba9119287834807e85d5378689c",
+      "blake3": "b1f93d71f747256f9e2a80cbb922d6449feb721e4ac018b72befd183525a70ee"
+    },
+    {
+      "path": "references/mps_image_repaint.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5732,
+      "sha256": "b87fca5c6722525dddea6381f0e08b544463993de29f86d751e6bc83b605b55c",
+      "blake3": "48ee282871c1dbf5e829f3ce436d502c67ab336d8ab29ff5166d2417d9a1446f"
+    },
+    {
+      "path": "references/mps_image_split.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5813,
+      "sha256": "2ace47f898f89ccfc1d0608fdcc2a2301677bcb5284cf910348ce734cc37d707",
+      "blake3": "e6b1e7c12a6489106e75e206480c24fb59576a0589e7814371dee361b6bf7938"
+    },
+    {
+      "path": "references/mps_image_tryon.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7278,
+      "sha256": "79f4a61fbaf8cd28b96d8dcc347f366cc4280f67aea7da4b417c0fe315178f50",
+      "blake3": "4b3211d02f9cf3552f936832ef5a6d7969d184d7465a8e9c15488472d47dee53"
+    },
+    {
+      "path": "references/mps_imageprocess.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10335,
+      "sha256": "2cec40ecf8f0e2f590a157ddfeeb2bb1e87dffb4ccc842d525d398eebae1eecb",
+      "blake3": "a7cdb72cd05c8f52f8435429464b0c9d32c5e010d53943de45f8571a594852c1"
+    },
+    {
+      "path": "references/mps_narrate.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4421,
+      "sha256": "7fd768bcd9af2598be32b9995f29ab36b65d789443fd8166609cf5d5bd42b6e6",
+      "blake3": "231082756002535d8cb92010f9c9705842ee5b724196d24735f529a3a154e2bf"
+    },
+    {
+      "path": "references/mps_orientation_convert.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10057,
+      "sha256": "ff42e6e632a9a26b33cef1bd582106a219c99b6285d44c78d0fbb0235568d705",
+      "blake3": "a163ff085c0b97a0a8aee4aeeaad31cd11009451130caf2fa8d9c426f39c4e9e"
+    },
+    {
+      "path": "references/mps_qualitycontrol.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3346,
+      "sha256": "299fcb82049130101ab63fb29bc7682cc63783531810454adc4025608a43d71f",
+      "blake3": "4cbf2f9e96eddca40f4e5a4a01fcd6df9147d39cccfa942506c9080a791618b3"
+    },
+    {
+      "path": "references/mps_query_task.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2814,
+      "sha256": "8eef0ee04803d2fed24a5e3e3a92575fb06753ad5029674f80aa73c4dde00347",
+      "blake3": "c5303bfc934a5d4ce32880295af42c880a7495c1c3f132e62f5729783a7fbd8f"
+    },
+    {
+      "path": "references/mps_subtitle.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4775,
+      "sha256": "1e3560526cae88538219c478e3be47bc58652a7671d3ca53518b005b54f62d6d",
+      "blake3": "4317e87b4674e991531df538045420ebcab91d4689f06671d5bbc6e4eb285434"
+    },
+    {
+      "path": "references/mps_transcode.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5139,
+      "sha256": "fc36c9129c689d166ef6dedc321fe2bc037af79333c2c112f33cf1a3bb4e7093",
+      "blake3": "d55292d788305ed85252cead95d835639aad406d05293cb367047fa7d212a2e1"
+    },
+    {
+      "path": "references/mps_usage.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2506,
+      "sha256": "9b13db63253c1d443a200bb2ee7662bc46ddbe6d82b1eb24e204383293f09df1",
+      "blake3": "ce87a7055a3cba6a1f7b96da79f520de4a2063910d021b09ca2694d1fe54e857"
+    },
+    {
+      "path": "references/mps_vremake.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5276,
+      "sha256": "860f0eeb5800a6d612b7fdf718427bd71a5059870f4f829f6eac64121b459e77",
+      "blake3": "b8de2903596612f4ff40e48813e81fd34f04e92058174c2d4f01c39db02399e5"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/mps_aigc_image.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 42198,
+      "sha256": "0a438fa3e344969991c0aeff6a9cd6a862614bb50ca0652b0b3b96d44bb01309",
+      "blake3": "68515fe813104fdfe7e07058c3dc8195349326704cae3506352567ddd7a21499"
+    },
+    {
+      "path": "scripts/mps_aigc_video.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 92969,
+      "sha256": "9946bb66649ddf5523baec1dc1f43aff856cd24d050f78a0d8408f64e12f465e",
+      "blake3": "b479ab47eb8a408002255ba45d7522c7ae5f6f3af220e80e2bab926303c8987f"
+    },
+    {
+      "path": "scripts/mps_auto_upgrade.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6360,
+      "sha256": "04becca7249467531203b5198e4785acd86455036f23a9adaa4cee0f430bb21e",
+      "blake3": "dd7768af9029e661d29413c9ce9e378cb27ab7a5bd5faea21355d0dfc008a750"
+    },
+    {
+      "path": "scripts/mps_av_understand.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23391,
+      "sha256": "35caa8bbe0ea705ad8275c7f4bdd31f3104563212ba5743c85c7f38ca269b32f",
+      "blake3": "83e49c62167b73da230a36fad2dd56ad843ad5bb0251b0a76176e6486a4ca299"
+    },
+    {
+      "path": "scripts/mps_cos_download.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7824,
+      "sha256": "e9146d833a7cdd01bb4885f1a2fdcd9e8f068091991bbfa1a62792706b5ced83",
+      "blake3": "fee9421552894429a6a9b55994db54a9cc277cb64976c9fe5ebea063eba30a02"
+    },
+    {
+      "path": "scripts/mps_cos_list.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11883,
+      "sha256": "b07e7de910517c9669c724c658be5b48bc8a12d4eaa7f875981253d696c55e3c",
+      "blake3": "f6c170af46ebaeb135f4ed665098ce0bcf377575295257270467a0e05c0593a7"
+    },
+    {
+      "path": "scripts/mps_cos_upload.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9210,
+      "sha256": "8abf38308ba6e72f2b5822e3af764541c792d2ce6806fa779a3124d3e0c0e351",
+      "blake3": "a5038caa0bc88db5936d053381036e5f646b9c0746b686f0b5e63c650f769604"
+    },
+    {
+      "path": "scripts/mps_dedupe.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22764,
+      "sha256": "7ed49c68704b21709f498ae52768779041edf0b9167a53b797aa42a5262c9152",
+      "blake3": "b245870e8564d79c9be16f7d930846bf5672bff8616815065b844572f1c8d297"
+    },
+    {
+      "path": "scripts/mps_doc_to_video.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32797,
+      "sha256": "8f8988cdc0e0cf1de1eb988774f4d6942af7736969d12c640db9349dc9de4983",
+      "blake3": "27d84e784df20939d12e85b3593ee69441604b4153b51306728857ec0861df48"
+    },
+    {
+      "path": "scripts/mps_dubbing.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 43024,
+      "sha256": "ecf55c3b217f70e2693acddb193c6c6acc3755ceedac92ace835c20b3db68ed3",
+      "blake3": "e3755ad2775e65b71f8da4edcb25159537944302104b41bc2d43b628567b89d2"
+    },
+    {
+      "path": "scripts/mps_enhance.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 53041,
+      "sha256": "e5000503a71675e48a8e38cc14064852f7ebaa609ac61aff6c3102cb0c32ae28",
+      "blake3": "12883425691f333abfbfa45418517713f23f01d39411c04fa7463bba00d7be22"
+    },
+    {
+      "path": "scripts/mps_erase.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 44832,
+      "sha256": "21b1cb4880ef3d35265954c6b24dcd17b068347beff15792cb7684a1d3c396e4",
+      "blake3": "6ef95af37bb7ecd4aac466019328cfa859a1ca036182724540521da8609e2ccc"
+    },
+    {
+      "path": "scripts/mps_gen_compare.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30915,
+      "sha256": "713b2a1492951ab53aeb954d7b74a9a0525c0a66e6f7d2a0acd5612ec55a09e8",
+      "blake3": "fe75015a6e1fa4e8c109be7aabf12f1f7ac6d5f9bedcab9a4f7c9c591e0a56ca"
+    },
+    {
+      "path": "scripts/mps_get_image_task.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11500,
+      "sha256": "91160a5d1e906e92bd6403bd28ec2e825e768c1cf55c30ca61394d26ab61ecfc",
+      "blake3": "834c95538c89343a00873a60a09894fabeff323bd482eac1c968d832b1bbe48a"
+    },
+    {
+      "path": "scripts/mps_get_video_task.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 54761,
+      "sha256": "f1e79e9c5b67090fbd1640c9b5304ddb427c2162d36cd8c21d965a32792f7bdd",
+      "blake3": "8306f9c312d8fc21a04d3fa25c7c5988d0435a4ae853ab85088b17cd2e0157e2"
+    },
+    {
+      "path": "scripts/mps_highlight.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27349,
+      "sha256": "978052c883beed92d3dc3aa32226179ddfce1cfae4ee1b0e50672ec95a093428",
+      "blake3": "665cdc5ced359d4f21db4c8b078e3a9b1853165732dfb0d6e180ef82344b761b"
+    },
+    {
+      "path": "scripts/mps_image_bg_fusion.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20411,
+      "sha256": "7f95d2eaa62268021680a3206bdaf67a2fa438c8268e8e7110833b2c13e3c707",
+      "blake3": "7b8f7115ea3652bafc1a5d532596281550ec254a8c6e0ab0470db08276c16148"
+    },
+    {
+      "path": "scripts/mps_image_changemodel.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19848,
+      "sha256": "605100b0360a7f14dd64f8f6b380339b8cbed79205128fddfe2e742444940b2d",
+      "blake3": "9e4c69933a0782f1c27b23570c75472553ad72cb903df38d574d5395f0e26358"
+    },
+    {
+      "path": "scripts/mps_image_comprehend.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18527,
+      "sha256": "b4cd50e57abbf86a123e0364ccd76b4a3b3b9be504ed43d0886bcd7e24fa2904",
+      "blake3": "52d1f278c7e3d04ace764dd62459e2b36e20776acb1b369cee15755679ef233d"
+    },
+    {
+      "path": "scripts/mps_image_cutout.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17823,
+      "sha256": "ea7e820f8a629ba65f8b37c55f4c19fd2139c11e824081ede703945bdf3d0b11",
+      "blake3": "570a767fbf1d88fbd672075b0c058378479cf53cdefedffdfd3f4226b1eb2b5f"
+    },
+    {
+      "path": "scripts/mps_image_detect.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21705,
+      "sha256": "46708a2cdb73a93813bb7e3ad856860917469413d016a4a10f3b40c5d2123b18",
+      "blake3": "028176e5c688497203d8d18c460b78d9dc3f03cbd567d22b928de48a397c5ad1"
+    },
+    {
+      "path": "scripts/mps_image_multiview.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18920,
+      "sha256": "dbf11a410d2a533fe2d2f43060188b87343125470f67de8d5c5207b288b5ce35",
+      "blake3": "a793a676d5a58795818a2a16b7a701daed6287dc8ad839845cd6880e7d304f75"
+    },
+    {
+      "path": "scripts/mps_image_padding.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18543,
+      "sha256": "8c5078262806c0a7cdab48810aa9c76c8b2c42bea617d6d799ba4bd997067229",
+      "blake3": "6ae7be81675ea3fdc576650cbd47023ca1f0843cf136bc491a274f8a552f91f0"
+    },
+    {
+      "path": "scripts/mps_image_poster_suite.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30053,
+      "sha256": "51ec6c32357a46490b6b8b19b8cfe6368c9e138bc573d56be6bd5199f1330ccc",
+      "blake3": "8633c01047c8b772dc1736e7ac871a5b9471860b8abcdf91be04c937569ed712"
+    },
+    {
+      "path": "scripts/mps_image_repaint.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19122,
+      "sha256": "50192d74904efa20fec58d26ccd691d15ee5786c4328cdcd0c05d98dde7cf782",
+      "blake3": "eeb31fe22821766b4b7c234f86a5fa3eced7e4050c984e93739dfc25a4836c0c"
+    },
+    {
+      "path": "scripts/mps_image_split.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18422,
+      "sha256": "793ce203977dac38887278c8eeb076bff1e7776cef6fb5504e4e1a4e0c5df341",
+      "blake3": "54b662aafd01e9de611d547473e80862fa378311c4fde9db481ea3190d8e4538"
+    },
+    {
+      "path": "scripts/mps_image_tryon.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21206,
+      "sha256": "facecc1727760858c2653d758c6a6cef2fab1f0125dc79f4a08fac312734ee50",
+      "blake3": "7a0cf370c306be84e3511524b795f7376ce18f987d86838d978983f668ce5f57"
+    },
+    {
+      "path": "scripts/mps_imageprocess.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 57226,
+      "sha256": "b4216617b547dee28fb3d94bef33dc028be63daeb1ae91f7f070f196b0e0af04",
+      "blake3": "b7f282ab1120ec3836aca8b2d2cd7b2b1d51bd93d1c7b6ad69eb09039df0211f"
+    },
+    {
+      "path": "scripts/mps_load_env.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14035,
+      "sha256": "ddb8306347d1eef9901b7f2234c2988b79d11e5b77fe139689d895d632fc79bd",
+      "blake3": "56b9dbc324c021738396b07c4b1b8d765fd4c66bcf5c42414f7906161ccd5331"
+    },
+    {
+      "path": "scripts/mps_narrate.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20434,
+      "sha256": "b3518d22c9a682e9b64e15a7dabd41c850facffe5a5dc639c299ab9b5374d051",
+      "blake3": "a6392c34c83d9b0a711000f2b5f6d298aadecddd92a65308789814594d6e5126"
+    },
+    {
+      "path": "scripts/mps_orientation_convert.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30033,
+      "sha256": "6d6a0f746b3d5e386fdfbd271c4f6d194d2f8a03126f8ad4d300ce0dfd7f6016",
+      "blake3": "41d65e7c53c985ae8bd2987222d0148c690a396e70520d7ffef55c2b35c7546d"
+    },
+    {
+      "path": "scripts/mps_poll_task.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30529,
+      "sha256": "8f81ac90735cd2c3c0952dd311ad81b2b73b301c7166fbd95ac152da36ed2b64",
+      "blake3": "c4aa53e0c9127f60039f1e5cf39cdcef2fc8d2a9b9cce65c15b83907df57fd66"
+    },
+    {
+      "path": "scripts/mps_qualitycontrol.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28941,
+      "sha256": "d2064ba5835fa8c753fc383a3c477729c70c87c5c33c95c37b1a097f4d98dadc",
+      "blake3": "fed20f452ac10b8678fcffd51f3442589ffed20d4a02e4f4c626e0f7c5f7bec3"
+    },
+    {
+      "path": "scripts/mps_subtitle.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 39856,
+      "sha256": "96de41da708a1137d20e10afd173c8c2c53c4861aa4bcfdcd1ad0029f583517c",
+      "blake3": "b6388a127cae9ec6da3a606ce6674a90712d3794e7729e9e9c3a6b66639eb04b"
+    },
+    {
+      "path": "scripts/mps_transcode.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28451,
+      "sha256": "c54685b225d40225c692cee35706fdf930f9c5dd7a893e88d8669d63fbaef791",
+      "blake3": "ba2584cb17cc885b8bcbc2869644a64e19b3c097ec491ebdf3d165662103ed3c"
+    },
+    {
+      "path": "scripts/mps_usage.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13151,
+      "sha256": "5438819b2e00e87cbd7265c92c6d57a9f41a2213cc32765fcc04f0ab80c0feb0",
+      "blake3": "4c3c4a17d25d6b23ac28fdffdc429ce93a613b70d20a4fd17573abb2ecc41079"
+    },
+    {
+      "path": "scripts/mps_vremake.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28133,
+      "sha256": "367050d6ef411a6c9ae05f45a0bc48ae4079eaee2d359531c832f4f26ed607d5",
+      "blake3": "47bef35b1036acb500bac5e94f5086a00ddeeecfe300a99b72db283e1c218786"
+    },
+    {
+      "path": "scripts/requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1063,
+      "sha256": "3d76b4cf3f2bdfb0d3738e6e91b5ef0f01b4e334eb98759b1ac8bd5c2220829f",
+      "blake3": "9830221864acf12183c8afc3d40d40d04b144e190e5bdd9babbf955a927e3fc2"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3326,
+      "sha256": "16e48453043ec8522dac945e78bed54842e843d3463f3db18a60f448b3a214fa",
+      "blake3": "0399d6f25d62fe0f723ae6edb4433362b39e577062b5dc7bd1ea77407d966628"
+    }
+  ]
+}
