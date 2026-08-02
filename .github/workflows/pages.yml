@@ -28,7 +28,7 @@ jobs:
   build:
     if: github.event.repository.visibility == 'public'
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 240
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
@@ -57,6 +57,7 @@ jobs:
             --graph-base-url https://graphs.skillsissue.ai/runs
       - name: Publish new immutable graph snapshots to R2
         run: |
+          aws configure set default.s3.max_concurrent_requests 40
           aws s3 sync target/graph-store "s3://$R2_BUCKET/runs" \
             --endpoint-url "https://$R2_ACCOUNT_ID.r2.cloudflarestorage.com" \
             --size-only \

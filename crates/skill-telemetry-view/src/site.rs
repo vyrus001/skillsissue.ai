@@ -5,6 +5,7 @@ use std::path::{Component, Path, PathBuf};
 
 use anyhow::{Context, Result, bail, ensure};
 use flate2::{Compression, write::GzEncoder};
+use rayon::prelude::*;
 use serde::Serialize;
 use skills_core::{
     AssessmentRecord, DiscoveryRecord, FindingRecord, PlatformRecord, RunRecord, SkillRecord,
@@ -236,6 +237,33 @@ fn build_internal(
     let mut platform_names = BTreeSet::new();
     let mut finding_types = BTreeSet::new();
 
+    let graph_availability = skills
+        .par_iter()
+        .map(|skill| {
+            let graph_available = match latest.get(skill.skill_id.as_str()).copied() {
+                Some(assessment) => match runs_by_id.get(assessment.run_id.as_str()).copied() {
+                    Some(run) => publish_graph(
+                        repo_root,
+                        &graph_output,
+                        run,
+                        assessment,
+                        findings_by_run
+                            .get(assessment.run_id.as_str())
+                            .map(Vec::as_slice)
+                            .unwrap_or_default(),
+                        max_published_events,
+                        compress_graphs,
+                    )?,
+                    None => false,
+                },
+                None => false,
+            };
+            Ok((skill.skill_id.clone(), graph_available))
+        })
+        .collect::<Result<Vec<_>>>()?
+        .into_iter()
+        .collect::<BTreeMap<_, _>>();
+
     for skill in &skills {
         let assessment = latest.get(skill.skill_id.as_str()).copied();
         let platform_rows = discoveries_by_skill
@@ -249,23 +277,12 @@ fn build_internal(
                 .map(|platform| platform.name.clone()),
         );
 
-        let graph_available = if let Some(assessment) = assessment {
+        let graph_available = if assessment.is_some() {
             scanned_skills += 1;
-            match runs_by_id.get(assessment.run_id.as_str()).copied() {
-                Some(run) => publish_graph(
-                    repo_root,
-                    &graph_output,
-                    run,
-                    assessment,
-                    findings_by_run
-                        .get(assessment.run_id.as_str())
-                        .map(Vec::as_slice)
-                        .unwrap_or_default(),
-                    max_published_events,
-                    compress_graphs,
-                )?,
-                None => false,
-            }
+            graph_availability
+                .get(skill.skill_id.as_str())
+                .copied()
+                .unwrap_or(false)
         } else {
             false
         };
@@ -781,7 +798,7 @@ fn write_json_with_format<T: Serialize + ?Sized>(
 ) -> Result<()> {
     let file = File::create(&path).with_context(|| format!("creating {}", path.display()))?;
     if compress {
-        let mut writer = GzEncoder::new(BufWriter::new(file), Compression::new(6));
+        let mut writer = GzEncoder::new(BufWriter::new(file), Compression::fast());
         serde_json::to_writer(&mut writer, value)
             .with_context(|| format!("serializing {}", path.display()))?;
         writer.write_all(b"\n")?;
