@@ -9,11 +9,10 @@ on:
       - Cargo.toml
       - crates/skill-telemetry-view/**
       - crates/skills-core/**
-      - data/**
-      - telemetry/**
-  workflow_run:
-    workflows: ["Analyze telemetry"]
-    types: [completed]
+  # Backlog capture and analysis can advance main faster than a Pages build.
+  # A periodic latest-snapshot deploy avoids an endless cancel/restart loop.
+  schedule:
+    - cron: "11,41 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -25,10 +24,7 @@ concurrency:
 
 jobs:
   build:
-    if: >-
-      github.event.repository.visibility == 'public' &&
-      (github.event_name != 'workflow_run' ||
-      github.event.workflow_run.conclusion == 'success')
+    if: github.event.repository.visibility == 'public'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:

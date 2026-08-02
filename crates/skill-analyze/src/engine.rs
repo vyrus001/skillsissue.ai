@@ -30,7 +30,7 @@ const RULE_FORENSIC_TAMPER: &str = "integrity.logging_or_forensic_artifact_tampe
 const RULE_PRIVILEGE_ELEVATION: &str = "behavior.privilege_or_integrity_elevation";
 const RULE_SECURITY_POLICY_TAMPER: &str = "integrity.security_policy_modified";
 const RULE_PROTECTION_TAMPER: &str = "integrity.built_in_protection_disabled";
-const RULESET_VERSION: &str = "deterministic-rules-v3";
+const RULESET_VERSION: &str = "deterministic-rules-v4";
 const MAX_FINDINGS_PER_RUN: usize = 1_024;
 const MAX_PLATFORM_EVIDENCE_PER_RUN: usize = 2_048;
 const MAX_RETAINED_URL_BYTES: usize = 2_048;
@@ -1077,12 +1077,20 @@ impl RunState<'_> {
         }
 
         if is_process_injection_event(event, &evidence) {
+            // The complete event remains in telemetry. Retaining that full
+            // flattened record in every finding made mmap-heavy runs dominate
+            // the CSV (and eventually the publication artifact). A concise,
+            // sequence-addressable sink preserves one clickable finding per
+            // event without duplicating hundreds of bytes of trace metadata.
+            let sink_value = path
+                .clone()
+                .unwrap_or_else(|| format!("{} pid={} seq={}", event.name, event.pid, event.seq));
             self.add_rule_finding(
                 event,
                 RULE_PROCESS_INJECTION,
                 "medium",
                 "process-memory",
-                path.as_deref().unwrap_or(&event.evidence),
+                &sink_value,
                 "Observed process injection, executable anonymous memory, or memory-resident execution",
             );
         }

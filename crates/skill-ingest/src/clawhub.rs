@@ -401,6 +401,21 @@ where
     if response.status == 409 && variant.owner_handle.is_none() {
         return Ok(ScanControl::Ambiguous(provisional));
     }
+    if matches!(response.status, 404 | 410) {
+        return Ok(
+            if visit(ClawhubCandidate::Rejected {
+                observation: provisional,
+                reason: format!(
+                    "catalog item is no longer downloadable (HTTP {})",
+                    response.status
+                ),
+            })? {
+                ScanControl::Continue
+            } else {
+                ScanControl::Stop
+            },
+        );
+    }
     if let Err(error) = require_success(&response, "ClawHub skill download") {
         return Ok(
             if visit(ClawhubCandidate::Error {
@@ -1814,6 +1829,48 @@ mod tests {
         assert!(observation.source_revision.contains(&commit));
         assert!(observation.source_revision.contains(&content_hash));
         assert_eq!(transport.requests().last(), Some(&redirected.to_string()));
+    }
+
+    #[test]
+    fn records_removed_catalog_download_as_rejection_instead_of_source_error() {
+        let transport = FixtureTransport::default();
+        let base = validate_clawhub_base("https://clawhub.ai").unwrap();
+        transport.add(
+            catalog_url(&base, None).unwrap(),
+            json_response(
+                br#"{"items":[{"slug":"removed","latestVersion":{"version":"1.0.0"},"updatedAt":99}],"nextCursor":null}"#,
+            ),
+        );
+        transport.add(
+            download_url(&base, "removed", None, Some("1.0.0")).unwrap(),
+            HttpResponse {
+                status: 404,
+                content_type: Some("application/json".to_owned()),
+                location: None,
+                body: br#"{"error":"not found"}"#.to_vec(),
+            },
+        );
+
+        let mut rejection = None;
+        scan_with_transport(
+            &transport,
+            "https://clawhub.ai",
+            SecurityLimits::default(),
+            |_| KnownDisposition::New,
+            |candidate| {
+                let ClawhubCandidate::Rejected { reason, .. } = candidate else {
+                    panic!("a removed catalog item should be recorded as a rejection");
+                };
+                rejection = Some(reason);
+                Ok(true)
+            },
+        )
+        .unwrap();
+
+        assert_eq!(
+            rejection.as_deref(),
+            Some("catalog item is no longer downloadable (HTTP 404)")
+        );
     }
 
     #[test]

@@ -466,6 +466,8 @@ mod tests {
             "behavior.process_injection_or_memory_execution"
         );
         assert_eq!(findings[0].severity, "medium");
+        assert!(findings[0].sink_value.starts_with("mprotect pid=7 seq="));
+        assert!(findings[0].sink_value.len() < 128);
         let assessments =
             skills_core::read_csv_records::<AssessmentRecord>(&paths.assessments_csv).unwrap();
         assert_eq!(assessments[0].verdict, "suspicious");

@@ -69,7 +69,10 @@ jobs:
       - name: Stage replay output
         id: stage
         env:
-          PUBLICATION_MAX_BYTES: ${{ vars.ANALYSIS_PUBLICATION_MAX_BYTES || '67108864' }}
+          # The deterministic findings ledger is intentionally published as a
+          # complete replacement. Keep enough headroom for a full backlog
+          # replay while the compact evidence format rolls through old runs.
+          PUBLICATION_MAX_BYTES: ${{ vars.ANALYSIS_PUBLICATION_MAX_BYTES || '268435456' }}
           PUBLICATION_MAX_FILES: ${{ vars.ANALYSIS_PUBLICATION_MAX_FILES || '64' }}
         run: |
           case "$PUBLICATION_MAX_BYTES:$PUBLICATION_MAX_FILES" in
