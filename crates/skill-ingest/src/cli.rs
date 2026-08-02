@@ -47,6 +47,10 @@ pub struct Limited {
     /// Maximum number of previously unindexed skill directories to attempt.
     #[arg(long, default_value_t = 100, value_parser = parse_positive_usize)]
     pub limit: usize,
+
+    /// Return success when individual sources fail after the validated partial result is saved.
+    #[arg(long, default_value_t = false)]
+    pub allow_source_errors: bool,
 }
 
 #[derive(Clone, Debug, Args)]
@@ -121,7 +125,29 @@ mod tests {
     #[test]
     fn parses_once_and_loop_contracts() {
         let once = Cli::try_parse_from(["skill-ingest", "once", "--limit", "7"]).unwrap();
-        assert!(matches!(once.command, Command::Once(Limited { limit: 7 })));
+        assert!(matches!(
+            once.command,
+            Command::Once(Limited {
+                limit: 7,
+                allow_source_errors: false
+            })
+        ));
+
+        let partial = Cli::try_parse_from([
+            "skill-ingest",
+            "once",
+            "--limit",
+            "7",
+            "--allow-source-errors",
+        ])
+        .unwrap();
+        assert!(matches!(
+            partial.command,
+            Command::Once(Limited {
+                limit: 7,
+                allow_source_errors: true
+            })
+        ));
 
         let looping = Cli::try_parse_from([
             "skill-ingest",

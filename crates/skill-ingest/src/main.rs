@@ -18,7 +18,7 @@ fn main() -> Result<()> {
         Command::Once(args) => {
             let summary = worker.run_once(args.limit)?;
             print_summary(&summary)?;
-            fail_on_errors(&summary)
+            finish_summary(&summary, args.allow_source_errors)
         }
         Command::IngestPath(args) => {
             let summary = worker.ingest_path(IngestRequest {
@@ -65,4 +65,29 @@ fn fail_on_errors(summary: &skill_ingest::IngestSummary) -> Result<()> {
         );
     }
     Ok(())
+}
+
+fn finish_summary(summary: &skill_ingest::IngestSummary, allow_source_errors: bool) -> Result<()> {
+    if allow_source_errors && summary.has_errors() {
+        eprintln!(
+            "ingestion retained a validated partial result with {} source error(s)",
+            summary.errors.len()
+        );
+        return Ok(());
+    }
+    fail_on_errors(summary)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::finish_summary;
+
+    #[test]
+    fn source_error_policy_distinguishes_strict_and_validated_partial_runs() {
+        let mut summary = skill_ingest::IngestSummary::default();
+        summary.errors.push("transient source failure".to_string());
+
+        assert!(finish_summary(&summary, true).is_ok());
+        assert!(finish_summary(&summary, false).is_err());
+    }
 }

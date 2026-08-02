@@ -61,7 +61,7 @@ jobs:
             --env "SKILLS_INGEST_RUN_SEQUENCE=${{ github.run_number }}" \
             --tmpfs /tmp:rw,nosuid,nodev,size=2g \
             --mount "type=bind,src=$WORKER_ROOT,dst=/workspace" \
-            skillsissue-ingest:run once --limit "$LIMIT"
+            skillsissue-ingest:run once --limit "$LIMIT" --allow-source-errors
       - name: Stage only indexes and newly addressed objects
         id: stage
         if: always() && steps.poll.outcome != 'skipped'
