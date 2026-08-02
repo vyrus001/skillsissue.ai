@@ -1,0 +1,725 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:da3178b4c3516ebecc7d0ada82b2a98280c479b464042cc979808c47cffdc463",
+  "sha256": "da3178b4c3516ebecc7d0ada82b2a98280c479b464042cc979808c47cffdc463",
+  "blake3": "075e501485dfcbab964423f4751456957bc15433c6ce7df9784f81e7706765a9",
+  "size_bytes": 992970,
+  "file_count": 72,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13060,
+      "sha256": "2ee800c1f1a3bb34b2a73990a147c4f723efb6cd51d89faa0c4d308db9bd3936",
+      "blake3": "ebdde7831a89475792d1e4c5f50839cb9901487311ad93f4a151e2013eadb076"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5997,
+      "sha256": "8e78731f5fac0df5752827fd27d6b31029ab17d9e3bfe165343ce8803804cacf",
+      "blake3": "b59523f00a285099270f431fe22f0111a24979a39ca0b285ba85fe0d4ade1de9"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 127,
+      "sha256": "83fd61303b804e56ca094d2098692b300e6bec3173c2a222b3a85bd833055963",
+      "blake3": "586f5f7f57fbc99696a6f75f790c00cfb7f455ce2f571baf38b536a874f6d13b"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 286,
+      "sha256": "bc3a3989c3d6b6ae546f9992caddcc6911ed35855ee8dcd3d77f94ee52c09817",
+      "blake3": "44bd910aee3277c1757965b96c618445aa782850c085ef93be1dd8feddc5b998"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/book-skeleton",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/book-skeleton/book.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 260,
+      "sha256": "0b4aa5e0181e6ea8adf7ea842fbe86eece684b00163b0bdde73f4a7eb3b2d2c5",
+      "blake3": "b38a17c04ceea5bc2a51fc8a325ad4d5c00d69172f5e9ac0fa7ceebde3497bf2"
+    },
+    {
+      "path": "assets/book-skeleton/chapters",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/book-skeleton/chapters/index.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21,
+      "sha256": "937fefcec99f8cf28315081608622131670b8aaf4210edce1fd78e38a3a1a5fc",
+      "blake3": "08d7a9c6d027630554b900697ee437e19b4ade4277be9bbf0619bddf9c67e11e"
+    },
+    {
+      "path": "assets/book-skeleton/story",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/book-skeleton/story/audit-drift.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 81,
+      "sha256": "b3d62b993a944c7664b7f6eb9e522799e4d0a1b81b9d0280c67205dbfc0fba24",
+      "blake3": "80a26e21dfa0b9ea8cec4efa7357bdf8cf54f3fc9376a50e9325bc30d861e779"
+    },
+    {
+      "path": "assets/book-skeleton/story/author_intent.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 157,
+      "sha256": "3a3fc4579e73bbba4b3371d64ba0d066c09fa2b213162739263d0b129946c4fa",
+      "blake3": "07119de3fce81760ef3a62a0edebca92a282042933656c6837f367ae111cddd1"
+    },
+    {
+      "path": "assets/book-skeleton/story/book_rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 288,
+      "sha256": "56dc1d384f41b553e2baa0adae480af9604316ec83b05a99ff3a4ac6355a078e",
+      "blake3": "0cb893c2fd905cd87eb348a095158360ed203d3ae6216b9b8dd38111191266b5"
+    },
+    {
+      "path": "assets/book-skeleton/story/chapter_summaries.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 168,
+      "sha256": "e3f020455ea5b110e6310499efdb87973956def7270658165532a897d16efde1",
+      "blake3": "b349b1ae96982392b5782226746a96bf42b1626f76e6f41e7ddc53642d4d4b7a"
+    },
+    {
+      "path": "assets/book-skeleton/story/current_focus.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 146,
+      "sha256": "d184dc46ce20b3dfa0e711da87761fdc1da2b82d6d92f5dacaefa533d5b27bb6",
+      "blake3": "d0e1ab634df5ccc1fabf621eac6cdee5b8936f4913adcd34d6668522ec7cab03"
+    },
+    {
+      "path": "assets/book-skeleton/story/current_state.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1233,
+      "sha256": "4a37cfe83960b04bca2ac6af9dab3b755cddcf58913bd9eba12a9a31349b8bca",
+      "blake3": "bf569ca4d471cb68339578b193779396ce96c11288442809efa08f48fba2ad6d"
+    },
+    {
+      "path": "assets/book-skeleton/story/outline",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/book-skeleton/story/outline/story_frame.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 264,
+      "sha256": "03cb81b55435d9cb6efa23c26dffe76678367a78a63cbfe1861967607d705531",
+      "blake3": "7f4eaf1db0c8f978cf34c613d959e88e380be122861c9b48043bff0592505662"
+    },
+    {
+      "path": "assets/book-skeleton/story/outline/volume_map.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 212,
+      "sha256": "736bed4e7cad609b4e9b09c91592e7d86e37c5b9ea6796be5c725f4c47564180",
+      "blake3": "eb731194137b8ae302251e94815fd8df227b885332b5e5e4185eb873a9001292"
+    },
+    {
+      "path": "assets/book-skeleton/story/pending_hooks.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 379,
+      "sha256": "80f216591d1f2b362d5224ba7781c6a2ce8e6e6eeed865859366dbce0b93e75a",
+      "blake3": "403571f1d31c191ac0019a7428649165e3fa73d31e7acbebac94a0db7e729d42"
+    },
+    {
+      "path": "assets/book-skeleton/story/style_guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 172,
+      "sha256": "7e6ba0c15d768bd0cd298f5324de54b9a079f5fcf3a00cf00ea42b034a91725c",
+      "blake3": "ea568ccbae6a131fb934be1f1cc7e0b11982ddbb89fead241c403d31ea451061"
+    },
+    {
+      "path": "assets/dashboard.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 129539,
+      "sha256": "8f0cab9fe6ca90bfac61dd41205465a7e93ef9ee7241ccb48ac0647968da6582",
+      "blake3": "c479c0353337dd931efb8c8629ab704795044c9f5d6bcec5b8976c283bd3cda8"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/audit-dimensions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 35601,
+      "sha256": "5bcc8cba1c9ae95e7076111128d4f63184ef7d95a227794d0d875e80cf2033d2",
+      "blake3": "e14954020f1475199030eb2d7a50196dad3b77af68610d842c3d7af205d8ec57"
+    },
+    {
+      "path": "references/file-contract.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4842,
+      "sha256": "878f7ebc1b51598032d88e06cd40989178517b09d74324a0b63703310a4c80b7",
+      "blake3": "1c804b95fd480a57a36d76b2d17c757311946b41c54dc83cdb0e5f3585fa78ba"
+    },
+    {
+      "path": "references/file-contract.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21050,
+      "sha256": "719b924b0eadfb0360afecd54948c9df81bcc80ac72445c219610d81dfb80a98",
+      "blake3": "d10d9ff44c064843e33e2382d21a4d39102105da43e8d9762b63543d9f45c5d2"
+    },
+    {
+      "path": "references/tab-chars.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 106712,
+      "sha256": "f52f66edcc3cd776f07398d7afd47c8059bed9f7caa908a008c7fa601534f57d",
+      "blake3": "fb4688a380b958e8e6e598104655d50d65517539db9a81892ca996d43f90a990"
+    },
+    {
+      "path": "references/tab-overview.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 131017,
+      "sha256": "57629e06d06a0c640a5230485ed10cf20bfdeb45e44264b7cf28d888d2cffb21",
+      "blake3": "3e9b8dde20fbbddf973725cda064d85deed0c8fbb1e48bce9c95f09f44ac6e33"
+    },
+    {
+      "path": "references/tab-read.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 42489,
+      "sha256": "4e005a4df8c459b89cca0007ddc814060a99cbaff976c6c3a65e21b242834bca",
+      "blake3": "29677e47f272ba4c5abdd85dc2012c0ec47cd5630f5197c3fa83efec91a11062"
+    },
+    {
+      "path": "references/tab-settings-content.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 171653,
+      "sha256": "fba35f8dd7725626ca03fdde761bd705d692953718bcb2e680d4629f5c42593a",
+      "blake3": "7c25c2d6dbfa801fcbc7af39e27e3004c295f3c3e42b2460197f05055b19b7f3"
+    },
+    {
+      "path": "references/tab-settings.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 52214,
+      "sha256": "346b49ab195af92f444bd4015f7d0f599f89c9d163a9aa2bc2579aff0209a774",
+      "blake3": "a2d97fadfb09a152a5f734781b13393424ca12059dc8360cbd43ee8c271f6c04"
+    },
+    {
+      "path": "references/templates.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17524,
+      "sha256": "b9db85655b9f98a090a1edbef65847ad22244a1c9fceca549ae87d7c8853dc8f",
+      "blake3": "13f597b15e5d0e41e3e2904dfbbabe2bab33d2146a017658818f4cf79e83a9da"
+    },
+    {
+      "path": "references/workflow-continue.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2309,
+      "sha256": "762d6547a7e20fae04f234439898d9e43a6e581368216c8d8039efdefbae152f",
+      "blake3": "126198cdc8572151928c411c253aa0d27af499022a6e0dacef3723abaa953184"
+    },
+    {
+      "path": "references/workflow-dashboard.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3087,
+      "sha256": "75861be3baa514d30fdf27cd702ee53e76bcd0e177292b53da91a7613b891cf0",
+      "blake3": "9708ef77551e5b5762109b06bb8760a0d5869d24845ba157992f19e44466ad16"
+    },
+    {
+      "path": "references/workflow-import.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1080,
+      "sha256": "2bffb0abbf473840f6ffdde3a0a6a7ba6fbd7c334fae20b45394eb09b065cb8b",
+      "blake3": "3fac5d8379f5c161d82ac6c642ccb1b8b77b1c655310943fdf81cc67b367f9da"
+    },
+    {
+      "path": "references/workflow-new-book.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1932,
+      "sha256": "85bd6c5d46df184fffa1a9eed1efb70fd95719d6e15e35f4f92f475e1e83b0e1",
+      "blake3": "d7d5dbde44913908a848a7a50347bbe64f9df7c6c4237fc4ae623a4e79332e50"
+    },
+    {
+      "path": "references/workflow-redirect.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 867,
+      "sha256": "d72876eae68a4b8a2f359f154202bf795c0face968fdf3b2c16f96b502dea426",
+      "blake3": "4d3db9e47398fb041c8880911cb2c4da1d9107c6f963f225279f4c92f9e65f84"
+    },
+    {
+      "path": "references/workflow-rewrite.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2166,
+      "sha256": "43a7db1122c5bdd59dbb1aae11d28e9b5e095c0b4da6afaf4c5e7700e1476092",
+      "blake3": "a8aa62051e299c9bbeeccb06cfbf767d26cfe16d176790338c1d8d3205013a9e"
+    },
+    {
+      "path": "references/workflow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 630,
+      "sha256": "4405e96040ca6af35a6ae0bb26fb3d3c42e923a1b82df5a40094fbfb69b57ba1",
+      "blake3": "712d6e5bca0dfaafd2d83275791780a307d68082b080876e1dffff82f0700971"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/__pycache__",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/__pycache__/auto_update.cpython-312.pyc",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15398,
+      "sha256": "bd2a235444cfddad0f3b945f6ce2d01f07f43de1a01931f7b226fc6095cb943d",
+      "blake3": "fd891a68a32ad97ebc94a263837be2f22184a5b24eb78ba7a95f55df966a11c8"
+    },
+    {
+      "path": "scripts/__pycache__/validate_book.cpython-312.pyc",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20225,
+      "sha256": "661304270d12ed02d07a466067e05a70941596c76c585a8c7cd90ec8eda1fc53",
+      "blake3": "7aedb095d80188d7843825c1c5b9d43184466ce9715424607d82deb248befdbb"
+    },
+    {
+      "path": "scripts/auto_update.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11077,
+      "sha256": "0939b239f907910806cb481ed3dccf7efba619079838e08519a3f7859ca04fa4",
+      "blake3": "87b187cdd61d45c0135069eb0d22ff7b5811ec908dec73ba23fec23613ec9c07"
+    },
+    {
+      "path": "scripts/build_dashboard.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3729,
+      "sha256": "5695615cdb6d68fde878e06a3859429b5b4fc3841d49ca1b4fb8efafa03ce5d6",
+      "blake3": "847bc86aa791278585b01625c5f529b1a7d2db632e6723702c0aef2e493575ae"
+    },
+    {
+      "path": "scripts/init_book.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4904,
+      "sha256": "178d1a862f17c5d914c4554fb93f727f2f55f61413ba7a2bf4ca9b6a7164787e",
+      "blake3": "ca533ba19ebc2ef3a0b46b54c9e66581a7ddf9c7e93f90671e4b003e9a9b3e39"
+    },
+    {
+      "path": "scripts/quality_check.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4770,
+      "sha256": "770262480ada95785c1703c713fcfdb7701dab3fb5cb99ce8cbef74138b51f7f",
+      "blake3": "63faaa3a72343dff11e568713a6de5f282645760f19b225ba8d94bcbfe2dcc62"
+    },
+    {
+      "path": "scripts/rebuild_index.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5206,
+      "sha256": "e43ffcdcefbee6dcff976c8393b860c21529f9b0d9c3d80602cf07862d98ba55",
+      "blake3": "d8985c5e05b8dceb92e7e85cc12b51181a1d82e0a2bf7229f4742c640606e563"
+    },
+    {
+      "path": "scripts/rollback_book.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7339,
+      "sha256": "e96f25bff58a6b23a1f8f5a1a712b6abaaeb8310d9527181e839652712fa5d7c",
+      "blake3": "c93a253b546235ce61c6c28e3ae2d93701bdbc3d49a3f77feb313992614c7e0d"
+    },
+    {
+      "path": "scripts/select_audit.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8952,
+      "sha256": "3f2cfb9e362df5497909b17f7cf5dd74bb729303b33fe894bbe36e404bfd75e7",
+      "blake3": "6439d965fa69c57b509a04188d9d9115d07dc3a41638a759f6731c662a56d305"
+    },
+    {
+      "path": "scripts/snapshot_book.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6719,
+      "sha256": "bd6e325ac7e2a2f24e80d8289be55a7d00c39603247dfc7a9ae87e8862941911",
+      "blake3": "0ed6ee2c2eeb29901c28cc559ebca073e234ce989d59e6e14b0494217d01f09c"
+    },
+    {
+      "path": "scripts/validate_book.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12751,
+      "sha256": "abe8a2fc6f46d990632edce48224d3b98482c3ea29848c0867a5463f7d283b8c",
+      "blake3": "a179817f448e1f0a633993182ee9961eb708882588101737c4ca5a4d40624522"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2839,
+      "sha256": "7d9192530f7e5caf247477d5c325a76c6833d70fc1700cc5e0fa7fbcb00460b4",
+      "blake3": "0a8e47d9e6dc8effd2b37e5b8491e0f327cb306749717d753db263510fdcbbc1"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/__pycache__",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/__pycache__/test_contract.cpython-312-pytest-9.1.1.pyc",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15351,
+      "sha256": "8e63cece16bbacf538431c0cec064db784e1fc5361fb44456a8f1378ce30ef3c",
+      "blake3": "e364b921175a7db33dc95acc8704a25adb698326555f58bf483ea27e3de927c0"
+    },
+    {
+      "path": "tests/artifacts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/artifacts/build_size.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30,
+      "sha256": "cb80a4796b2975154671d5044749f2ede24ba487b5154072ccabd0657bdf9048",
+      "blake3": "87a7a60c405caa91bad4133baf3ffb3823b6951c366bd8befe5c62a6640a3990"
+    },
+    {
+      "path": "tests/artifacts/quality_check.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 42,
+      "sha256": "3b68f7b9714d8e78b63e8cf8a92490b230dacf3ab5360a566d0730fcaf03ae92",
+      "blake3": "30f27be286d59e168af84cf519d5832b5d7da599cfcd44025441b156e4869e7f"
+    },
+    {
+      "path": "tests/artifacts/test-1-landing.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 41319,
+      "sha256": "42fd4d64c31ea16ac61d57d32011a656967e116eebf962d50c29f2c8b86bfe23",
+      "blake3": "2a216ff91a51bcefcd9a4c1f2a660451a76198e204b3fcf7258b598456513ecd"
+    },
+    {
+      "path": "tests/artifacts/test-2-after-pick.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 41293,
+      "sha256": "ba638d85f401cce9271070f81504b7b386e671e55b196cc8fb0387acabe877cb",
+      "blake3": "fcf7f75530ba0a8d61b41704b3f7d8bed91a261bdd68277adb72c26c46325d2f"
+    },
+    {
+      "path": "tests/fixtures",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/standard-book",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/standard-book/book.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 308,
+      "sha256": "335f54e0d08a86174661568b7a22be1416029d7783e2c0648f4789aee093cdc7",
+      "blake3": "123d434c0190a034e3e5d51926da7991553ddef6c5d4b895be6988bbd19cbcd9"
+    },
+    {
+      "path": "tests/fixtures/standard-book/chapters",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/standard-book/chapters/0001_入门.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 340,
+      "sha256": "c4aab2ad913ad3733ff765c622780de3ad7c3f7226fbbd49744d5df3b22cbe62",
+      "blake3": "88e74b502125388ac0a32ca7e96858837a34124b356ab7edbb7e94a98adbe838"
+    },
+    {
+      "path": "tests/fixtures/standard-book/chapters/0002_初遇.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 329,
+      "sha256": "288eb6e17c50cbd9237d2ede0ebded3b317daac90f22439ada17ef9adbd369f6",
+      "blake3": "35f4b27a551e527c5d7dfdfc3235b93ffde35819ce9b2e591e3cbcc20f5c12b9"
+    },
+    {
+      "path": "tests/fixtures/standard-book/chapters/index.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 477,
+      "sha256": "5e553305791fd934f7054a8f2365c53eed3da5d5af331420b8eef2f50d69f551",
+      "blake3": "135e4237c964d975f0c2c22be1a7a272879d54ca609125cbf6787d308d9f3abc"
+    },
+    {
+      "path": "tests/fixtures/standard-book/story",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/standard-book/story/audit-drift.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 81,
+      "sha256": "b3d62b993a944c7664b7f6eb9e522799e4d0a1b81b9d0280c67205dbfc0fba24",
+      "blake3": "80a26e21dfa0b9ea8cec4efa7357bdf8cf54f3fc9376a50e9325bc30d861e779"
+    },
+    {
+      "path": "tests/fixtures/standard-book/story/author_intent.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 445,
+      "sha256": "fdb52e844fdfb6209db5490fef0401a2a07ea3da20be5472ac2fdbe955638d44",
+      "blake3": "97ae228432d62b4afc2a59142217f50c4d2773833d2ef22fd9178f8384ff49b5"
+    },
+    {
+      "path": "tests/fixtures/standard-book/story/book_rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 692,
+      "sha256": "ea003e1c1ffce60224a02223b1c7b506bd437ab3bc8d192a5ee0688f7c692bd8",
+      "blake3": "73aeeb5106002b82594e306e69fe891f00261fe14fe32201fccb5b017d839d5f"
+    },
+    {
+      "path": "tests/fixtures/standard-book/story/chapter_summaries.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 399,
+      "sha256": "13a39eea6f71d155d8dd061add7c5f64b128600d4dd99339fb8bf29c8d3bb0e4",
+      "blake3": "03bd51c5c34faace38fe33d2d9654d8d0599657da1a317fe77741aed2a553106"
+    },
+    {
+      "path": "tests/fixtures/standard-book/story/current_focus.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 402,
+      "sha256": "13ec004d394bd74702937f9de5525fa63134e6f39f8daf176e518a08afa36e36",
+      "blake3": "b6c5c8d7934b5a3f89606027effe78cabcbc4546b126637b186be32393ac5d1d"
+    },
+    {
+      "path": "tests/fixtures/standard-book/story/current_state.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2543,
+      "sha256": "8209481675d3fcd362647ca54c9f97992573adc0d19e5ae0a9491487f2bcdf4d",
+      "blake3": "c1e539294fb7f77015a8b4b74404a5616e88ebb00637331bf3865c51ea8fc962"
+    },
+    {
+      "path": "tests/fixtures/standard-book/story/outline",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/standard-book/story/outline/story_frame.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 736,
+      "sha256": "9ea5d1dba525039b5449cce3bfc9ed0a035e480616405f994c5d76002c317d84",
+      "blake3": "248be23c8e992f837d0265b68921cd026cbbd9a1c0a60d9fde0bbdee8daf60db"
+    },
+    {
+      "path": "tests/fixtures/standard-book/story/outline/volume_map.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 727,
+      "sha256": "d1b9720211e4cd2a87460383fdd23a266e599d94e9f39a06fe8fdd2942e69b00",
+      "blake3": "4cbb27832dd7622a15b767b99309a0a758ad7237a889dc468d02ad940a1d337b"
+    },
+    {
+      "path": "tests/fixtures/standard-book/story/pending_hooks.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 659,
+      "sha256": "d22509e8c681faeb46c0c00b9baeeb7f2e529429cd29c7ba8f8f2293b33394ff",
+      "blake3": "e142ff31e06b7e7bcb8e3ca18dd31a14402b6716ed162178e3603e59a7b05c5b"
+    },
+    {
+      "path": "tests/fixtures/standard-book/story/roles",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/standard-book/story/roles/major",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/standard-book/story/roles/major/苏霜.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 521,
+      "sha256": "a47c43501fbd8477c86057f2fcab3c44cf2aef9957b67987865989aaf04abe01",
+      "blake3": "747b3a94bb764de79f55f81c80cc8a5a32541c6b19408fa7df15445edf988f73"
+    },
+    {
+      "path": "tests/fixtures/standard-book/story/roles/major/陆恒.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 536,
+      "sha256": "ba675a999fad12bcf3c613115a7389b847bb203d3fa1758145246efb90e7b950",
+      "blake3": "7acc2bea968261407b8668397ee12bf6a23dccc5f0b789eedea094c48840decb"
+    },
+    {
+      "path": "tests/fixtures/standard-book/story/roles/minor",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/standard-book/story/roles/minor/林逸.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 413,
+      "sha256": "7932e847c0f4f43ecd4db55abee673dc955e7f7c10a0b57b42689dc077052348",
+      "blake3": "b0ab59911f57e95dc9b8de6f567835c934b1b5468b1bf3c6aebb974c1b403a80"
+    },
+    {
+      "path": "tests/fixtures/standard-book/story/snapshots",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/standard-book/story/snapshots/0000",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/standard-book/story/snapshots/0000/manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 186,
+      "sha256": "f475787a720ee538b6fe61b09070e297ece8c3e77df6eb6040eeb07aee913488",
+      "blake3": "07d5c07f32d386cddad572193c0b734df9fa343ee34f25817fbdee12caffa070"
+    },
+    {
+      "path": "tests/fixtures/standard-book/story/style_guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 387,
+      "sha256": "11e567da9181c0e6af42825661382dbb020401dbdae1193502017e8f350f9a92",
+      "blake3": "403d8eadd1770f98e578421173a78fc7049654485aecf83e4783d5ba194e31ad"
+    },
+    {
+      "path": "tests/js",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/js/test_dashboard.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10890,
+      "sha256": "d16c8566ad95461853fb55aa46141e5bf53d72edca90766d53d7d8b90def25ed",
+      "blake3": "8185494ee2dc5069d0d56d3e07bf66f4fdf515b676ed556423378ab06bb4ae23"
+    },
+    {
+      "path": "tests/js/test_integration.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7106,
+      "sha256": "793ac6bddecd84eca024ef700cd48d22f8bdd81ae4f4c8e2e87ff8702dd1cde6",
+      "blake3": "570084693377f4f752c69c772521ed68dde045c19611a6965d4c35f9ff2da20c"
+    },
+    {
+      "path": "tests/js/test_mdparser.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9710,
+      "sha256": "467c046b7d4cfc8fe861423ce9c50aa0e36eecc879c09569bf6b2006a299042d",
+      "blake3": "045b8404f5bc42bbd8e2637cb61fc51395bbcf9259649ccd4d030759dde06de3"
+    },
+    {
+      "path": "tests/test_contract.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5576,
+      "sha256": "a026e0c9bee2dfeca9b274f2d131eae15d8afce6aac30f7697b503f9b4363b96",
+      "blake3": "0ff3bf50b7d673a8f294d6eace79719789f57f9492abf86e2f0e24cfab8ea60c"
+    }
+  ]
+}

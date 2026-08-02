@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:69702591393c1aa46826a4b7ff6ab8510bc4d768d877930408ebc59d449d758b",
+  "sha256": "69702591393c1aa46826a4b7ff6ab8510bc4d768d877930408ebc59d449d758b",
+  "blake3": "cd49dd4aa7fac9e427e88ea0f7e874d392ac118dfece10dd6527470411387c71",
+  "size_bytes": 244085,
+  "file_count": 22,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1073,
+      "sha256": "8a2520333a54e29577b3c6a50c9580cee6c6a30b2435f0caf0f28ee18b3a1906",
+      "blake3": "bbbffa5530fa73ea97ec16d5c240fbf93a73abbba7a9d8f3e4e6e0da2062f85c"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8918,
+      "sha256": "17e0122c60875f9b88607d39118113fcb165585443ea4b3d9aa06e8dc5aeec18",
+      "blake3": "3ffe53e38d5c7abdf0fef59461bff54f314ce4a9253620ab4b6c90e58617d8af"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 42575,
+      "sha256": "4f03ff7773b815fc46efec24ef188f86ab6030166ea8efdd1054cfb1dc382280",
+      "blake3": "68992c3d41170201e5f9b329078e7ceee326656290f9e55901c9bab2d185caa0"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 130,
+      "sha256": "6f3a94e5d1989e3581ab15c449412d0b671f219a7d1b1427b35135b67b5718d2",
+      "blake3": "138fe2946db2a12ef030f6e8841c0faf499d0503f8b3464a1a3400d13c35c8ba"
+    },
+    {
+      "path": "bin",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "bin/tokei-agent.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3225,
+      "sha256": "fb308131ebf644959bde70265fe4d846435dc716ee81bff47a2097e44c6e76b7",
+      "blake3": "ae60f23016b9bb31048a4b5bb0ee2cbef1e303e2d6bc18805949451c5b341a75"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 801,
+      "sha256": "38c81b981cd559d272000507315725ad86315e1280865a98b3416ed34c717577",
+      "blake3": "20a81721866df8e61603e88715e153cc18e994c4ae71f6d5fe3276a7aea3184c"
+    },
+    {
+      "path": "server.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1116,
+      "sha256": "f8af04e09e31f04df77fc4d8319ebb8483f4523deff79f08de4579322f673069",
+      "blake3": "c2257f0990e17f4d6df66d4bb0b9ae943a268a96e68dd0c753933a32d7882eb2"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2405,
+      "sha256": "88d54d79ee7a60df46d055339491821c7900ca5f55a2ae8816688f54340fcbc1",
+      "blake3": "f25baf6b3601cfae6d24cf33d02599ce2e402a00e00b6491054b826869cb9866"
+    },
+    {
+      "path": "src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/__tests__",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "src/__tests__/args.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1720,
+      "sha256": "ccd4058ffcdf427b0b558524d163e308b8cfb3b3d20df5af65b90e584e6c0953",
+      "blake3": "2e3ae513cab29c181c8366b9f30085dceba2d0d09ad9a937bd08fc3ddfac7afa"
+    },
+    {
+      "path": "src/__tests__/commands.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 33801,
+      "sha256": "a1012d1b8547d019086706a93286c4de56a677ea9edd964fa674149ba1e1dc72",
+      "blake3": "8bcf6d91b3147de01d7716f84cf1976f59ef6135b0ecd3c7f293d0d12e773f3b"
+    },
+    {
+      "path": "src/__tests__/http.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6498,
+      "sha256": "431bd2eaaeaad0343eeb8312f36ca7f1f536f4fef7d03802d03e9ca518bf1193",
+      "blake3": "4166a3c0abe2aef0bb24861c6314b85c8e7deb244e6791e99b87afcef0a1e663"
+    },
+    {
+      "path": "src/__tests__/mcp.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28050,
+      "sha256": "d27024e62e3d32be877b3df69579aa54d94b2b61152b48ac9da6d9b62b9627a7",
+      "blake3": "343eb0dbff77e4f298008c542837efe61b80ff5a03626a69826df162caf3793e"
+    },
+    {
+      "path": "src/__tests__/media.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9693,
+      "sha256": "6d5752e8367319687f7f8d99a4db23f8990ad63140a4d72109cd9234aefd688b",
+      "blake3": "7309ee4aa3ee43824978267300111feb77aa413394ab1c13bbb176264d6dc1d2"
+    },
+    {
+      "path": "src/__tests__/ui.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15670,
+      "sha256": "3a1f5b68062f4541e712c20dfa1aad3768318f36102b379d8886782bcd773b96",
+      "blake3": "a70db43dd285aaa35657325f4b776bbc334a767c0e46e8182146a692149ea833"
+    },
+    {
+      "path": "src/__tests__/version.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 918,
+      "sha256": "1ee8357647b6c31509fa8599e3428fc2f582c5bbcdf72082f4db10a1a7b4acae",
+      "blake3": "510daa6cda86b90053e2fb22b6953b51f868a51bc1455a1efeb213ff83aec099"
+    },
+    {
+      "path": "src/args.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1352,
+      "sha256": "9cba5e44b54e5883e73f19df6b1a686690f820ab52e6db3c2ad095e395474f89",
+      "blake3": "909709f817163d71fbfdb2f97123a4073e51b4bb65ee1fdcbf8410f940617b91"
+    },
+    {
+      "path": "src/http.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4824,
+      "sha256": "ea11c4157dd5ca635088336b938aeb698b080f00f6c024ad083cfb0e9d9ff5b0",
+      "blake3": "34c5f3581b01328a053470081ae36cde4bca606eb6c3efa75924ec944c9be3f0"
+    },
+    {
+      "path": "src/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29240,
+      "sha256": "936045e0aea908bf0f950054c9adffcc54f6db004baa06121300e4c0dfd393a0",
+      "blake3": "28774ab2241553355bc63da99cfb86bebeb23e746ea7662757f009777d06d552"
+    },
+    {
+      "path": "src/mcp.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28172,
+      "sha256": "9138f068ef097d220177c8332dd5f24193fb45c41afc740bd2e37752834752b9",
+      "blake3": "f8fd3c9031dc6c2cf98b00c7e934425cd3463ad32148640d34fcfe1f37aac88e"
+    },
+    {
+      "path": "src/media.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6013,
+      "sha256": "c8436d6b04d88bd588455e4c52a28ca7ae64d1391e947f2d355eeb8821e3fcf6",
+      "blake3": "e2359b222da1c978548d9384583dd91fd2386edd10d3896f5ff79e8d2f44ac6d"
+    },
+    {
+      "path": "src/ui.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17632,
+      "sha256": "2ccb614130c3456728d374adff85bfc26b2cd3314ebd6f115cb7dce7d3f102cd",
+      "blake3": "f360f4942de39c43896fdaf2e2cbfde11ebee584b36e88027bc4272e78782681"
+    },
+    {
+      "path": "tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 259,
+      "sha256": "2808d69a57a88875e4f8bbd3472111493e50ced82c75126162553285d88aa9c6",
+      "blake3": "425479ec9a224c021cdea321f03e29e4b7d4de6bfcad0eadc50f103dffbec2a6"
+    }
+  ]
+}
