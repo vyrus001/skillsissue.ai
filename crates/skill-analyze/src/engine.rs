@@ -892,7 +892,7 @@ impl RunState<'_> {
         let evidence = event.evidence.to_ascii_lowercase();
 
         if reads_path
-            && !event.return_value.is_some_and(|value| value < 0)
+            && event.return_value.is_none_or(|value| value >= 0)
             && self.process(event.pid).taint.skill
             && path.as_deref().is_some_and(is_environment_material_path)
         {
