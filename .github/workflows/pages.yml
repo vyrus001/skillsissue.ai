@@ -11,8 +11,10 @@ on:
       - crates/skills-core/**
   # Backlog capture and analysis can advance main faster than a Pages build.
   # A periodic latest-snapshot deploy avoids an endless cancel/restart loop.
+  # Full graph generation currently takes well over 20 minutes at backlog
+  # scale, so keep one build per hour with enough time to finish.
   schedule:
-    - cron: "11,41 * * * *"
+    - cron: "17 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -26,7 +28,7 @@ jobs:
   build:
     if: github.event.repository.visibility == 'public'
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 60
     steps:
       - name: Check out scan data and telemetry
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
