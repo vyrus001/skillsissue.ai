@@ -48,13 +48,35 @@ jobs:
           test -n "$R2_ACCOUNT_ID"
           test -n "$R2_BUCKET"
           aws --version
+      - name: Inventory immutable graph snapshots already in R2
+        run: |
+          mkdir -p target
+          aws s3api list-objects-v2 \
+            --bucket "$R2_BUCKET" \
+            --prefix runs/ \
+            --endpoint-url "https://$R2_ACCOUNT_ID.r2.cloudflarestorage.com" \
+            --query 'Contents[?ends_with(Key, `/zz-complete.json`)].Key' \
+            --output text \
+            | tr '\t' '\n' > target/existing-graphs.txt
+          sed -i '/^None$/d;/^$/d' target/existing-graphs.txt
+          if ! test -s target/existing-graphs.txt; then
+            aws s3api list-objects-v2 \
+              --bucket "$R2_BUCKET" \
+              --prefix runs/ \
+              --endpoint-url "https://$R2_ACCOUNT_ID.r2.cloudflarestorage.com" \
+              --query 'Contents[?ends_with(Key, `/graph.json`)].Key' \
+              --output text \
+              | tr '\t' '\n' > target/existing-graphs.txt
+            sed -i '/^None$/d;/^$/d' target/existing-graphs.txt
+          fi
       - name: Build the site shell and immutable telemetry snapshots separately
         run: |
           cargo run --quiet --locked -p skill-telemetry-view -- build-site \
             --root . \
             --output target/site \
             --graph-output target/graph-store \
-            --graph-base-url https://graphs.skillsissue.ai/runs
+            --graph-base-url https://graphs.skillsissue.ai/runs \
+            --existing-graph-manifest target/existing-graphs.txt
       - name: Publish new immutable graph snapshots to R2
         run: |
           aws configure set default.s3.max_concurrent_requests 40

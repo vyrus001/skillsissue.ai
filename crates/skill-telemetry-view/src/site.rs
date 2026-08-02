@@ -26,6 +26,7 @@ const GRAPH_JS: &str = include_str!("../web/app.js");
 const GRAPH_CSS: &str = include_str!("../web/style.css");
 const LOCAL_GRAPH_DATA_ROOT: &str = "../runs";
 const GRAPH_SNAPSHOT_VERSION: &str = "v1";
+const GRAPH_COMPLETION_MARKER: &str = "zz-complete.json";
 const README_VIEWER_URL: &str =
     "https://github.com/vyrus001/skillsissue.ai#interactive-telemetry-viewer";
 
@@ -148,11 +149,13 @@ struct StaticNetworkSummary {
 }
 
 pub fn build(repo_root: &Path, output: &Path, max_published_events: usize) -> Result<BuildSummary> {
+    let existing_graphs = BTreeSet::new();
     build_internal(
         repo_root,
         output,
         None,
         LOCAL_GRAPH_DATA_ROOT,
+        &existing_graphs,
         max_published_events,
     )
 }
@@ -162,6 +165,44 @@ pub fn build_with_graph_store(
     output: &Path,
     graph_output: &Path,
     graph_base_url: &str,
+    max_published_events: usize,
+) -> Result<BuildSummary> {
+    let existing_graphs = BTreeSet::new();
+    build_with_graph_store_inventory(
+        repo_root,
+        output,
+        graph_output,
+        graph_base_url,
+        &existing_graphs,
+        max_published_events,
+    )
+}
+
+pub fn build_with_graph_store_manifest(
+    repo_root: &Path,
+    output: &Path,
+    graph_output: &Path,
+    graph_base_url: &str,
+    existing_graph_manifest: &Path,
+    max_published_events: usize,
+) -> Result<BuildSummary> {
+    let existing_graphs = read_existing_graph_manifest(existing_graph_manifest)?;
+    build_with_graph_store_inventory(
+        repo_root,
+        output,
+        graph_output,
+        graph_base_url,
+        &existing_graphs,
+        max_published_events,
+    )
+}
+
+fn build_with_graph_store_inventory(
+    repo_root: &Path,
+    output: &Path,
+    graph_output: &Path,
+    graph_base_url: &str,
+    existing_graphs: &BTreeSet<String>,
     max_published_events: usize,
 ) -> Result<BuildSummary> {
     let graph_base_url = validated_graph_base_url(graph_base_url)?;
@@ -174,6 +215,7 @@ pub fn build_with_graph_store(
         output,
         Some(graph_output),
         &graph_base_url,
+        existing_graphs,
         max_published_events,
     )
 }
@@ -183,6 +225,7 @@ fn build_internal(
     output: &Path,
     separate_graph_output: Option<&Path>,
     graph_base_url: &str,
+    existing_graphs: &BTreeSet<String>,
     max_published_events: usize,
 ) -> Result<BuildSummary> {
     ensure!(
@@ -242,18 +285,34 @@ fn build_internal(
         .map(|skill| {
             let graph_available = match latest.get(skill.skill_id.as_str()).copied() {
                 Some(assessment) => match runs_by_id.get(assessment.run_id.as_str()).copied() {
-                    Some(run) => publish_graph(
-                        repo_root,
-                        &graph_output,
-                        run,
-                        assessment,
-                        findings_by_run
-                            .get(assessment.run_id.as_str())
-                            .map(Vec::as_slice)
-                            .unwrap_or_default(),
-                        max_published_events,
-                        compress_graphs,
-                    )?,
+                    Some(run) => {
+                        let object_key = graph_object_key(run, assessment)?;
+                        let completion_key = graph_completion_key(run, assessment)?;
+                        if existing_graphs.contains(&completion_key)
+                            || existing_graphs.contains(&object_key)
+                        {
+                            publish_completion_marker(
+                                &graph_output,
+                                run,
+                                assessment,
+                                compress_graphs,
+                            )?;
+                            true
+                        } else {
+                            publish_graph(
+                                repo_root,
+                                &graph_output,
+                                run,
+                                assessment,
+                                findings_by_run
+                                    .get(assessment.run_id.as_str())
+                                    .map(Vec::as_slice)
+                                    .unwrap_or_default(),
+                                max_published_events,
+                                compress_graphs,
+                            )?
+                        }
+                    }
                     None => false,
                 },
                 None => false,
@@ -598,6 +657,7 @@ fn publish_graph(
             compress,
         )?;
     }
+    write_completion_marker(&run_output, compress)?;
     Ok(true)
 }
 
@@ -743,6 +803,59 @@ fn assessment_snapshot_id(assessment_id: &str) -> Option<String> {
         .then(|| format!("{GRAPH_SNAPSHOT_VERSION}-{}", digest.to_ascii_lowercase()))
 }
 
+fn graph_object_key(run: &RunRecord, assessment: &AssessmentRecord) -> Result<String> {
+    ensure!(safe_run_id(&run.run_id), "unsafe run ID: {}", run.run_id);
+    let snapshot_id = assessment_snapshot_id(&assessment.assessment_id)
+        .context("assessment ID is unsafe for static publication")?;
+    Ok(format!("runs/{}/{snapshot_id}/graph.json", run.run_id))
+}
+
+fn graph_completion_key(run: &RunRecord, assessment: &AssessmentRecord) -> Result<String> {
+    ensure!(safe_run_id(&run.run_id), "unsafe run ID: {}", run.run_id);
+    let snapshot_id = assessment_snapshot_id(&assessment.assessment_id)
+        .context("assessment ID is unsafe for static publication")?;
+    Ok(format!(
+        "runs/{}/{snapshot_id}/{GRAPH_COMPLETION_MARKER}",
+        run.run_id
+    ))
+}
+
+fn publish_completion_marker(
+    graph_output: &Path,
+    run: &RunRecord,
+    assessment: &AssessmentRecord,
+    compress: bool,
+) -> Result<()> {
+    ensure!(safe_run_id(&run.run_id), "unsafe run ID: {}", run.run_id);
+    let snapshot_id = assessment_snapshot_id(&assessment.assessment_id)
+        .context("assessment ID is unsafe for static publication")?;
+    let run_output = graph_output.join(&run.run_id).join(snapshot_id);
+    fs::create_dir_all(&run_output)?;
+    write_completion_marker(&run_output, compress)
+}
+
+fn write_completion_marker(run_output: &Path, compress: bool) -> Result<()> {
+    write_json_with_format(
+        run_output.join(GRAPH_COMPLETION_MARKER),
+        &serde_json::json!({"schemaVersion": 1}),
+        compress,
+    )
+}
+
+fn read_existing_graph_manifest(path: &Path) -> Result<BTreeSet<String>> {
+    let file = File::open(path)
+        .with_context(|| format!("opening existing graph manifest {}", path.display()))?;
+    let mut keys = BTreeSet::new();
+    for line in BufReader::new(file).lines() {
+        let key = line.context("reading existing graph manifest")?;
+        let key = key.trim();
+        if !key.is_empty() && key != "None" {
+            keys.insert(key.to_string());
+        }
+    }
+    Ok(keys)
+}
+
 fn validated_graph_base_url(candidate: &str) -> Result<String> {
     let mut parsed = Url::parse(candidate).context("graph-base-url must be an absolute URL")?;
     ensure!(parsed.scheme() == "https", "graph-base-url must use HTTPS");
@@ -817,10 +930,11 @@ fn write_json_with_format<T: Serialize + ?Sized>(
 #[cfg(test)]
 mod tests {
     use super::{
-        MAX_STATIC_NETWORK_RECORDS, README_VIEWER_URL, assessment_snapshot_id, build,
-        build_with_graph_store, graph_config, public_http_url, public_platforms,
-        publish_network_captures, published_assessment, safe_run_id, safe_telemetry_path,
-        validated_graph_base_url, write_json_with_format,
+        GRAPH_COMPLETION_MARKER, MAX_STATIC_NETWORK_RECORDS, README_VIEWER_URL,
+        assessment_snapshot_id, build, build_with_graph_store, build_with_graph_store_manifest,
+        graph_config, public_http_url, public_platforms, publish_network_captures,
+        published_assessment, safe_run_id, safe_telemetry_path, validated_graph_base_url,
+        write_json_with_format,
     };
     use flate2::read::GzDecoder;
     use serde_json::Value;
@@ -1023,13 +1137,53 @@ mod tests {
         assert!(
             graph_output
                 .join(run_id)
-                .join(snapshot)
+                .join(&snapshot)
                 .join("graph.json")
                 .is_file()
         );
         assert_eq!(
             fs::read_to_string(output.join("graph/config.js")).expect("graph configuration"),
             graph_config("https://graphs.skillsissue.ai/runs").expect("expected configuration")
+        );
+
+        let manifest = temporary.path().join("existing-graphs.txt");
+        let incremental_output = temporary.path().join("incremental-site");
+        let incremental_graph_output = temporary.path().join("incremental-graph-store");
+        fs::write(&manifest, format!("runs/{run_id}/{snapshot}/graph.json\n"))
+            .expect("existing graph manifest");
+        let incremental = build_with_graph_store_manifest(
+            &repo_root,
+            &incremental_output,
+            &incremental_graph_output,
+            "https://graphs.skillsissue.ai/runs",
+            &manifest,
+            100,
+        )
+        .expect("incremental external graph build");
+        let incremental_catalog: Value = serde_json::from_slice(
+            &fs::read(incremental_output.join("skills.json")).expect("incremental catalog"),
+        )
+        .expect("incremental catalog JSON");
+
+        assert_eq!(incremental.published_graphs, 1);
+        assert!(
+            incremental_graph_output
+                .join(run_id)
+                .join(&snapshot)
+                .join(GRAPH_COMPLETION_MARKER)
+                .is_file()
+        );
+        assert!(
+            !incremental_graph_output
+                .join(run_id)
+                .join(&snapshot)
+                .join("graph.json")
+                .exists()
+        );
+        assert!(
+            incremental_catalog["skills"][0]["graphAvailable"]
+                .as_bool()
+                .expect("graph availability")
         );
     }
 

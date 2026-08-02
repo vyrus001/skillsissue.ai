@@ -57,6 +57,10 @@ enum Command {
         #[arg(long, requires = "graph_output")]
         graph_base_url: Option<String>,
 
+        /// Newline-delimited remote object keys that are already published and immutable.
+        #[arg(long, requires = "graph_output")]
+        existing_graph_manifest: Option<PathBuf>,
+
         /// Largest telemetry run published into a browser-readable snapshot.
         #[arg(long, default_value_t = 25_000)]
         max_published_events: usize,
@@ -128,17 +132,29 @@ fn main() -> Result<()> {
             output,
             graph_output,
             graph_base_url,
+            existing_graph_manifest,
             max_published_events,
         } => {
             let summary = match (graph_output.as_deref(), graph_base_url.as_deref()) {
                 (Some(graph_output), Some(graph_base_url)) => {
-                    skill_telemetry_view::site::build_with_graph_store(
-                        &root,
-                        &output,
-                        graph_output,
-                        graph_base_url,
-                        max_published_events,
-                    )?
+                    if let Some(existing_graph_manifest) = existing_graph_manifest.as_deref() {
+                        skill_telemetry_view::site::build_with_graph_store_manifest(
+                            &root,
+                            &output,
+                            graph_output,
+                            graph_base_url,
+                            existing_graph_manifest,
+                            max_published_events,
+                        )?
+                    } else {
+                        skill_telemetry_view::site::build_with_graph_store(
+                            &root,
+                            &output,
+                            graph_output,
+                            graph_base_url,
+                            max_published_events,
+                        )?
+                    }
                 }
                 (None, None) => {
                     skill_telemetry_view::site::build(&root, &output, max_published_events)?
