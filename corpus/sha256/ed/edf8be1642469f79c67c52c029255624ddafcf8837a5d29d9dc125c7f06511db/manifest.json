@@ -1,0 +1,299 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:edf8be1642469f79c67c52c029255624ddafcf8837a5d29d9dc125c7f06511db",
+  "sha256": "edf8be1642469f79c67c52c029255624ddafcf8837a5d29d9dc125c7f06511db",
+  "blake3": "6f28c7049412858fcda512b36351bd5c38b7202aca4d373934c7e79da6a3e4af",
+  "size_bytes": 108749,
+  "file_count": 30,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11515,
+      "sha256": "f17d17b9ef3c53d4e1cf18ce5aee4b1688e06e8af45ea68c61707e3cb762330b",
+      "blake3": "95af1a93eee3def02c852772a658d4231b66df032ad559165bbbfe927ab44ffb"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 164,
+      "sha256": "f871f97725881e3b2e1ea8dc87d8ebf3c2a2179ae60ee086f468ff0c9ce80963",
+      "blake3": "13a0e57f6742489a4dd994cd9c5feef1ae7665afed5d38bfa56a0ab7eddbcf5b"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/api_doc.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 666,
+      "sha256": "35ec91fc003c99989b3e8fbffbc9abb64e1a5f896034f979f02342ccc28b2330",
+      "blake3": "c819166750fea8e43b9e534b6d6e49e453fce9306d0cbf10e773890bd467129e"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 64,
+      "sha256": "c1527f257742a4a2fa292220f4368e7d956e5d7718e1b2c1f1b676e944e35dd2",
+      "blake3": "618ea2d009d7f715e6387e61366b784ce8fa0d9793f7c8851f7e96c509036e4d"
+    },
+    {
+      "path": "scripts/config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 682,
+      "sha256": "ba0be95f4c85d56574551f160253e01bdb5fbabc089cac88984a2e7f0cc147ba",
+      "blake3": "ac4033e34719e59a6e44351efcb41403dd2a7ce45e03639e3690c54a82d779ac"
+    },
+    {
+      "path": "scripts/config.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "blake3": "a7c4d54776fcb179f048728766a52d75dc450cc2a5072b7e2c238aa9b2cff3b6"
+    },
+    {
+      "path": "scripts/skill.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 585,
+      "sha256": "22cca477212c67e977ead2d35154c0881564d0c45f14b1334fd3be863a768f53",
+      "blake3": "0e5e71fd53b0c47a6d85bbf1a647b4ab34c1373b7b5423195e833a9d23ff4103"
+    },
+    {
+      "path": "scripts/smyx_pet_scratch_frequency_intensity_analysis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3562,
+      "sha256": "d4eb2b37b342c58ad3d52f4d3b4a9a56a0b4b99ee9c52a35c34a8415207b91a7",
+      "blake3": "80136ac87422d6ecfb3ef9eae8782d4edf722d3cf47454ab7593b37d8a191800"
+    },
+    {
+      "path": "skills",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "skills/smyx_analysis",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "skills/smyx_analysis/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "skills/smyx_analysis/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "skills/smyx_analysis/references/api_doc.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 427,
+      "sha256": "8c5932e199fffe88fc18f959fcdf4fc60fb9c757adf24712788314301de9c3db",
+      "blake3": "922e83010d0558254e11afc74f0ae8cc26256c2eab03c9b943cf093909eb1a49"
+    },
+    {
+      "path": "skills/smyx_analysis/requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 45,
+      "sha256": "168cd066fb5dfe0be03380192077cb8bdad8a911dec97ebf64f7eae05d307446",
+      "blake3": "b6f38811381004a719ce854ddc7ab4fdc9643b876b2b184955653b0b87d4db00"
+    },
+    {
+      "path": "skills/smyx_analysis/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "skills/smyx_analysis/scripts/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "skills/smyx_analysis/scripts/api_service.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1509,
+      "sha256": "e5ac3cf6aed937243742bc5afa0143ba56d7c166f042c0389c60ae402e1647b6",
+      "blake3": "28349b404ea1f07b1aade5b93dfb6882dfad0a81bf53633f5ce45a75d1e5f540"
+    },
+    {
+      "path": "skills/smyx_analysis/scripts/config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1003,
+      "sha256": "326d82b32c03329e9cc487dbc8974cace7fe40d029c05612a641eb7bec9a417d",
+      "blake3": "5d0a2e39d2119f9c189eeffeb53ad55bf7c9bc9731aba69ea6326766f0f42429"
+    },
+    {
+      "path": "skills/smyx_analysis/scripts/config.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "blake3": "a7c4d54776fcb179f048728766a52d75dc450cc2a5072b7e2c238aa9b2cff3b6"
+    },
+    {
+      "path": "skills/smyx_analysis/scripts/skill.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6529,
+      "sha256": "7a37568fc0205c836232b1af09c056f452085b87c93e26c13070f0fa779219e9",
+      "blake3": "a97ae5bd1620761ddf2b29d276c5b4366714a9f366dca3e73da787715c85e512"
+    },
+    {
+      "path": "skills/smyx_analysis/scripts/smyx_analysis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3833,
+      "sha256": "f99cbeec24edb0e2730b183d36fe75803dfc826da2b98b85090f6f4561824ae2",
+      "blake3": "3d7e220bff3000d3b25fc5370bfbbbd0a455d88de1a2bf72f9a58b84ff23113e"
+    },
+    {
+      "path": "skills/smyx_common",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "skills/smyx_common/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "skills/smyx_common/requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 47,
+      "sha256": "c10fd2bb2b172c959d5407d43e0190f4e13022e3238be95ccfb011a1a5ce0a59",
+      "blake3": "ac9644a82cd2324f640bd96b246c1db4c850a7e1d8b41512f21f1e96c4477b70"
+    },
+    {
+      "path": "skills/smyx_common/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "skills/smyx_common/scripts/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 177,
+      "sha256": "d57089526406da0b67ccd2ee2d03946b84acf378e71a151b5f95866fa6fedee7",
+      "blake3": "26191ab26d006967c98c255eba2fba8a15c6b38373dff734a68aaeab61faff32"
+    },
+    {
+      "path": "skills/smyx_common/scripts/api_service.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2645,
+      "sha256": "d691523aa0724090727eeada8560056fe4d58516cca01a75ddffd9a2c8b94369",
+      "blake3": "af9aabfb1e6ed83a5bc117e61ea4ee6cb8dc9df745a3eae12e691a7017df02d8"
+    },
+    {
+      "path": "skills/smyx_common/scripts/base.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 469,
+      "sha256": "9b2cd59f9051e767487a6ce7219d352573aae9a5e1d093899cc9d56198eecb04",
+      "blake3": "8be1ad833f7598cf951e5fecd38dc4448631c874b68a0718ecbd9949e11700d2"
+    },
+    {
+      "path": "skills/smyx_common/scripts/config-dev.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 214,
+      "sha256": "2aaa52e8d70d78704a63e5b92a06a1df24ea8dab23f3c1a8c2c4e3e56b253e0a",
+      "blake3": "1c0349b22b2f7111ad492aacb965f3571c6933202b5e8a33cde3f2a9bf5daa44"
+    },
+    {
+      "path": "skills/smyx_common/scripts/config-prod.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "skills/smyx_common/scripts/config-test.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 256,
+      "sha256": "1c5af769f38f39fac54287af7cbc24ebd16d7c7de0f0107fd4cac3621d793281",
+      "blake3": "6b7feb1a730a84eceb7bce9ab3c2cd72793826540020b7b4d844f6a79d38422b"
+    },
+    {
+      "path": "skills/smyx_common/scripts/config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24363,
+      "sha256": "ec2708864ce5a5868e7bc8c3c28a5cfdb94a669a33b25f64f92c7bd823a81858",
+      "blake3": "e8c6be3861db71052211fb2b6dfe9292340494556697197747e5f4b28911c435"
+    },
+    {
+      "path": "skills/smyx_common/scripts/config.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 473,
+      "sha256": "fe547b1a11335cb85438a488d5157d0e29048e6336832b0c5d4062b50ba61e54",
+      "blake3": "2d79a778aba561d1973862317e57073d7bcd5be608aaefd5dd202e24eb01f44b"
+    },
+    {
+      "path": "skills/smyx_common/scripts/dao.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18266,
+      "sha256": "fd85f371d0589e624029eea909bd5211628d43689dbd7ca0d03771f6a36ac1a4",
+      "blake3": "dec212b0bc07e107b115ab9c739501f55bc953186fe566c238824705ae3c85bf"
+    },
+    {
+      "path": "skills/smyx_common/scripts/skill.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2473,
+      "sha256": "41ad3786db29cd390d5f1e1389a6d5a9b8084d315f1670b2ac3a1c30b820918c",
+      "blake3": "8ec3e9160af343d230103c150c4849b70db5f10314addaff7a7f0aa52e45eae3"
+    },
+    {
+      "path": "skills/smyx_common/scripts/util.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28776,
+      "sha256": "2dd92504a12c7e319d89f52fb8b7e6bed1d81ad116e81abfee0a27e9999c81e0",
+      "blake3": "2054b7c3e81dc1b0066604ea48227e6eb30dada1baf050a2b17a30d65d3afd82"
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:ccaa11c4be321ca691a159d3a0b8694b33e429e62c1697cbbbae2468661a007c",
+  "sha256": "ccaa11c4be321ca691a159d3a0b8694b33e429e62c1697cbbbae2468661a007c",
+  "blake3": "d68bfbead3e21cf3c59dfc987737baeb692fd2b95913b4cac3d1f2d67a3bf71f",
+  "size_bytes": 102612,
+  "file_count": 24,
+  "entries": [
+    {
+      "path": ".claude-plugin",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": ".claude-plugin/plugin.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 410,
+      "sha256": "d7787f852fb4b79fab392aeff8096d60c48a04d1ff7ac87c04f019dd1a41751b",
+      "blake3": "774d3dd3708ff99ebd8942a5ac84a997027eba0694ebb64390814ba96d801871"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14497,
+      "sha256": "c3f3c88c90d734f16824297c7a8b3baf36185c5f16ea3f4c90ac6d844bc3100e",
+      "blake3": "bd577cc3aebc8b2b77df04869a3db1554801dac1464f12767e0481e082dc928a"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 136,
+      "sha256": "b4f55dbc5c1616c512454d86656f76fbb73e5cbd068fba8327bf141f2645f8ef",
+      "blake3": "9b18baea7c0e9a7da84cfe3d6c9f242887911f188df4f99b4168c48823baa56e"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 462,
+      "sha256": "05b52641249f917e36e5de47e94e026bfe568fd35080d9cf0b7dfb7fbd78e655",
+      "blake3": "362f779fbc95822bff28a500298e45d108f2172f1123f2f9d117870f5e46f154"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/motu-color-engine-logo.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20946,
+      "sha256": "1e7e24ecf9def450db0bba85d58b88acc606c356bdf3e77c4fa1855f2cb632ad",
+      "blake3": "73ee66c175fe267945ceb01d0ac113415b8170813d857f3b736cc8c18442f44e"
+    },
+    {
+      "path": "assets/motu-color-engine-logo.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2208,
+      "sha256": "8ff8e269479a721552a71a51a5cfc17baf83201c21d0541887eb4c2a25252632",
+      "blake3": "fc701eaa95ec8d9a70f10f62073136b28e591d24a6a2bcc0a6f00c33cffac4c5"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10608,
+      "sha256": "009278bd513bd89c01ef76541d87cf6d79acf17822787de2608c0c2db9d95bb9",
+      "blake3": "21ecfe0ba00ff45f7753856d01e0baf2f7ffd70bfe407f1e72508e33c5f2b36c"
+    },
+    {
+      "path": "references/crop-specs.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4420,
+      "sha256": "8f477b9f347b16411d73a54aa36729c0d33858a141bbcae4ae7b778fdd8604e5",
+      "blake3": "6213e310c156673e424dc890133c4a9fd7129129d60c4d5091193bec3ec77142"
+    },
+    {
+      "path": "references/headshots-api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7225,
+      "sha256": "ecee95475d9bae177a71c8a93876a886f8f4b65f2561451423c5431151719173",
+      "blake3": "f4f67106597c15bb4f1f3f705d97feb54b5d419ea0b8445cb58a4d3973df4c11"
+    },
+    {
+      "path": "references/styles.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1414,
+      "sha256": "a16a587983c6e1d3c04c9cfcaf47a9eb57122847febf22c8b9d3c388c3f3743c",
+      "blake3": "3654fb8fe6978531fb5e7aab017e8936050bedf5da53e803aa4074aee269c214"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/crop-specs.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1196,
+      "sha256": "1e7803563e09335510c733088cbe943feea333edb8a34ccdcaad3e61ed4f5f6b",
+      "blake3": "4367682fb0dd5a9328b4fc9b7761bcc2bf86536b081f4c22f3c70397abf1e795"
+    },
+    {
+      "path": "scripts/crop.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1978,
+      "sha256": "1f1ef36473ab936df4fcce84fa1a1613e4c8195d1d70f547db32af88c63a84bb",
+      "blake3": "1490339e0955c8f2955b51d0cb3099beab69eb9c76fd82a04eaa9e19adde0ff8"
+    },
+    {
+      "path": "scripts/grade.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3183,
+      "sha256": "e53a3f43fa52a232411570e54acc39c3fb0d0c763169853aafce4d6de07a6dc4",
+      "blake3": "90fd67c61c81d83319f6d18d2110dd80b2fb343671237febe8c7d7929bf93b5f"
+    },
+    {
+      "path": "scripts/headshots.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17274,
+      "sha256": "18fb0716b8064ccf4a5225181aa0bfcb0902706979617e9ecf9daceed4f76182",
+      "blake3": "dce98321cd452c0ebaec5d5b99cb3bf5c39fddff69711ef95b3f719bb24d9548"
+    },
+    {
+      "path": "scripts/id-check.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1510,
+      "sha256": "d4c90d6327762c283773161d5e71d3067df7e31f843dfa7f6a8fdaeaee6f2e83",
+      "blake3": "fb30f188f4b38d2cc9cd87ff13bc2757cf4a48f8fcecf2b88159b3d2b936887d"
+    },
+    {
+      "path": "scripts/id-pack.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3981,
+      "sha256": "a15e1b243db13323600f805c7d2368bab1bf3e80947dc697a51ea417997d5be3",
+      "blake3": "37906e36b50b9c13f9a17f17aaaa894653be315dab8a4313e9e3b8e8bae98eb3"
+    },
+    {
+      "path": "scripts/mask.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 860,
+      "sha256": "101204c8ec029e851903230ad4571641c2ab07f5676be5189fdace49c1a58a3c",
+      "blake3": "3d4c329616fda5b9a6d6927df178da896d63e650339a773561a89507d887009d"
+    },
+    {
+      "path": "scripts/optimize.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1311,
+      "sha256": "56a53b4af268f920f3e9865b46bf494a25c494d1b8557991c3ab3eeefa065b84",
+      "blake3": "9245b07a3e7275c38b602ea26e494d14483e5bedf4dab13d2b36c552b9ce7c78"
+    },
+    {
+      "path": "scripts/outfit.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1361,
+      "sha256": "1f484f5d2fca0c999be4aeb58db8f3e5ec7b36c55350ec3d3f1fe2210f98e22e",
+      "blake3": "44513ca5ed2154f8ae3f6620a6c2b40597b0006e74a071d3a073aacdeda37327"
+    },
+    {
+      "path": "scripts/outfits.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1149,
+      "sha256": "873b129e65792e516ff31f21d37589f14548c68286b7eb6e4dad71ddc047e7e0",
+      "blake3": "97ac9116744b113d8eb8c845dd872f763ee33547f863c6d4808b411697edf36e"
+    },
+    {
+      "path": "scripts/print-sheet.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1160,
+      "sha256": "b563c3310ffba8c76b68720369c6871d544b8e75d892bddd0689fb92fff76178",
+      "blake3": "c3ef972f1111672eb03044a81567926f52d3b39704dae13ea76c3bc577753d87"
+    },
+    {
+      "path": "scripts/smooth.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1153,
+      "sha256": "4a399f89a8c619bdd8eb6aa7160555eb50b807ee3b23242cd58bce204758826d",
+      "blake3": "34126c37bc598aa84dc3c9fe7bd70ed216d518ca0381bfa791d0c25649b21805"
+    },
+    {
+      "path": "scripts/styles.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 846,
+      "sha256": "faae349140b4615d84b26d9b7382f64fbb95d0c8ea982e5cbf41272e5bccd079",
+      "blake3": "353aa92559e798823968bda2af7216fde591ce7a299df4735e6f16d092c5c6d4"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3324,
+      "sha256": "fc85efe532f4c4a20132ba3e1c314634dfbcef4f0be586121187383e97b166b5",
+      "blake3": "d1827fa84a683fe551f49ea68d14d6e20f271de7e25950f29f5d895f39caf98d"
+    }
+  ]
+}

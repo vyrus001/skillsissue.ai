@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:416c62e9b7c4ae55e23d614b9746e4d7fc5b230d40936a312987f7c945765e22",
+  "sha256": "416c62e9b7c4ae55e23d614b9746e4d7fc5b230d40936a312987f7c945765e22",
+  "blake3": "5ea7261360cabcd78062d0d11111a2a01a4a783d8d795508f27229334c515a12",
+  "size_bytes": 53678,
+  "file_count": 13,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4525,
+      "sha256": "c8e275606e096697cde360d1cd924d5f841eee7f873677c9c7616ed54bfd9457",
+      "blake3": "5e756e0ce3fcb3c2f98e9681b59279841734c4cab9a350dc29f6af9850f2b5a4"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 132,
+      "sha256": "551ef8b9df1e532960a4a79b7656256fea1d8acb6af2a1b2b4ebe7632523146b",
+      "blake3": "ffd69248e02800d8e3e81c5701b9c042f0d18af0d43ed29dc8e264931e522b20"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/commands.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3111,
+      "sha256": "aa181b839942928707b5d0edf08c90caeed6eddd516e55eaac68cbad51f61f4b",
+      "blake3": "1a11135c43e2ae747cf0067e4a67f38650a966ce90abab455dbe064b4de67f2b"
+    },
+    {
+      "path": "references/field-mapping.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3428,
+      "sha256": "9eb563abf5dc7befcbf72216ffa0bba151dd5ba2416df3123ea7658e5b78e0da",
+      "blake3": "52d78ed87f9053be80b70ceac9f0a84355ec77183b2083e51f47b2e63d8ae00f"
+    },
+    {
+      "path": "references/routing-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3183,
+      "sha256": "3a414e4b73bbb654d64e7f8b33b62ae6c9bde861d0b231a2ace1273aa7b60060",
+      "blake3": "bb82bdb2f2b1036a3cdaee4249d49fb825bf79813a0f904fffe01d7592003cde"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/arxiv_api.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3750,
+      "sha256": "663156ef9fdf6aef545191bb4109b5a022778ef290fa84e5d1a07c8edf911ac3",
+      "blake3": "34d180ef774c36cc445e4eda3c068cdef36e1b36518625ef96800a8441ea8fd2"
+    },
+    {
+      "path": "scripts/baidu_scholar_api.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3724,
+      "sha256": "df3e1d920fdd036119d93459c5c52fbba78eb61696edda67995510dd75e70181",
+      "blake3": "5f64440c0cd31b1136711dd1be9bcd89a0ccf3787d7c55c7f36fb824b1923ddd"
+    },
+    {
+      "path": "scripts/crossref_api.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4245,
+      "sha256": "02f69f533460bbd8145e9e76fcde0b56f0b97b0fc13b45ab4677d2ad903872f2",
+      "blake3": "858e91a76b18c6578e8018aa2e0c6c9f262936cf9a9799a0a85ae74d317b6903"
+    },
+    {
+      "path": "scripts/pubmed_api.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4385,
+      "sha256": "74c1f33479cb3a6f01792c17b53d9eef985ba7b0f12633939b6d8febff878d0b",
+      "blake3": "1b1b3e70eab2d47777a9a8ffb8c8f303c9e82bff4d85cf4ab3e128936d771141"
+    },
+    {
+      "path": "scripts/search.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10021,
+      "sha256": "838801fc4e9d612739723317e3f4bbdd1b30d27e57bd245df13b082fa8a6edb2",
+      "blake3": "27764cc283a090374981ebf37273ed9e57a2157773e83206957945000d5381be"
+    },
+    {
+      "path": "scripts/semantic_scholar_api.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6980,
+      "sha256": "a5dc685d1f0040226c682c76077466e7ae43f03d80f2585c447ac2e815be5046",
+      "blake3": "aea87671beed866518256ee1cc023d95f8155be3395fb210b90a5d05d3c91fb8"
+    },
+    {
+      "path": "scripts/summarize.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3533,
+      "sha256": "5c13733babfaa6b4f5ab56006a7388d69848781b4e1b1e57bb6a137b6c992074",
+      "blake3": "3466eba8dc7ee818af17b26578cb3cc8f71e982d8dfb4ff5bcbf334fd4641472"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2661,
+      "sha256": "7cec378ce1ca6b3d2d77f729f65c4466f41d53ad0b693a8ef22a13ab95f13f7b",
+      "blake3": "2ace9f68845750e072065e9afcd6985b74d777389f84654594dae28d0fa951ae"
+    }
+  ]
+}
