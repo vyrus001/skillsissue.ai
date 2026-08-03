@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:3f60b599c71a79a018df06c894f66f730fb3c2bdf2ffaf6a4571d6a2c5d35111",
+  "sha256": "3f60b599c71a79a018df06c894f66f730fb3c2bdf2ffaf6a4571d6a2c5d35111",
+  "blake3": "0267cbccd63cab882aa1a604040b5a2069243c034a614080427f1aab0db693aa",
+  "size_bytes": 63084,
+  "file_count": 14,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10987,
+      "sha256": "dba59b68d2579d610da5754b48fbbe31a54f58231d8ce99604752582cd4cc91f",
+      "blake3": "ad374e4371999c84bab5d622dab42c1223e681d50524d2de5c66bfbee7d694ac"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 122,
+      "sha256": "bc35257d9d172a80b2a6d592294b78db8218c62c9143b674c62af7fb2cde00de",
+      "blake3": "d7357e0612f91e4ad48cd5be00d9c17cca485f800e6a11a13ca165953ed60a42"
+    },
+    {
+      "path": "forms.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11854,
+      "sha256": "9530b3f57034792e0242a3abfe8b3c296466329551916f2ff6c5a70db78f7e44",
+      "blake3": "0e7cde54504cb3ec30aef3456c9255ac6d2f3b03aede16f5c32e53edab07bca5"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 316,
+      "sha256": "0314625fc9daad71b77993561a32fa58cad485bdb75e17088cf20938b30e8004",
+      "blake3": "c164add7047e8ae326811e11b3be72c1f382848173edecd71db3ba7aa7593a60"
+    },
+    {
+      "path": "reference.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16693,
+      "sha256": "a82564ff905097991e13d848fe529c51d952739efad05a8705d5e15df041d54a",
+      "blake3": "56caa0daebb47a88c141cad4ff0b7ece551bf7b621269c0ce6125da9285ccd27"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/check_bounding_boxes.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2774,
+      "sha256": "0ced522402dd7b3c82a0be9518cf4e485fa9cc0467d7beab6ddb04cb36fcc3e1",
+      "blake3": "f50f40a8602a6358766b66e663608f8b20e5c272e71df7bdb1cd0aef7836656c"
+    },
+    {
+      "path": "scripts/check_fillable_fields.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 268,
+      "sha256": "1fe10b9980a5493c9bbec8c20630c603eaa475b45403751c08f26738736647b8",
+      "blake3": "add4c4f9c3347e89d5bb594845c8d92e4efc448578b4bb8e49562ff3ffbc01c8"
+    },
+    {
+      "path": "scripts/convert_pdf_to_images.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1008,
+      "sha256": "7f58e292a67e18a8ff000d30bad2469389546731f7e8a698cc1d0aed001ea15d",
+      "blake3": "d8d145e4285c4098b43a2ac7bd4eec9eac6eee9a4e7c2dbea5ab5f1b4cac457b"
+    },
+    {
+      "path": "scripts/create_validation_image.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1258,
+      "sha256": "8fa9fd7962c9f940045b81cf6b991e7c1057c1838e3f9cc6d305007a222ffebf",
+      "blake3": "46a20a34e1781ce49668522433ea26f0efd7ce971095d09a2481d2ca5cc03822"
+    },
+    {
+      "path": "scripts/extract_form_field_info.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4300,
+      "sha256": "bb235b36f497bbb1c7c6821cecf527bbba7213520de11219da99f7b13a38c109",
+      "blake3": "8e3983fbe31d5a357b8c33c5a35c8a2edf850a3e761bff9d16b5a9f05fdca65f"
+    },
+    {
+      "path": "scripts/extract_form_structure.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3945,
+      "sha256": "6814e3fe8f78c2b16d766c132b5a727ff7a31b71d76a7d46bd6e40fe50bc97c5",
+      "blake3": "b7d642dcc56d2dde2869abde8ff00f3ee88531d3b70c99d68d003155469de0e0"
+    },
+    {
+      "path": "scripts/fill_fillable_fields.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3819,
+      "sha256": "d140872c2e92e41b1e05370ae8d270c5b7f5ebdf55d9905f03bc974a9c708ff5",
+      "blake3": "c7fcd4efbe627961f80336312343f3857db8904e43f3bf399dfa01b4a37a636c"
+    },
+    {
+      "path": "scripts/fill_pdf_form_with_annotations.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3235,
+      "sha256": "8a56e063a49ed53c0b0e1d312ecf8023af76816ed139486ec3b539873de202fd",
+      "blake3": "d0637c5a80810e4b1a7967bf24ac842aaa7d929abf5a10ae9f0cede08a98f2f2"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2505,
+      "sha256": "f765c142d2f29994383c07f42dab6a440d53fb2a5759de28aa19ab9b9538f680",
+      "blake3": "dcdabd0575bdbc1f991ab6f6937082347a2798513b368d986910b4a3c8124121"
+    }
+  ]
+}
