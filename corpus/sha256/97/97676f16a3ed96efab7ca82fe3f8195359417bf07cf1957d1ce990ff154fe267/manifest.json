@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:97676f16a3ed96efab7ca82fe3f8195359417bf07cf1957d1ce990ff154fe267",
+  "sha256": "97676f16a3ed96efab7ca82fe3f8195359417bf07cf1957d1ce990ff154fe267",
+  "blake3": "1ed5166d0f5e10171ae4e13cd98f9a71038729ee3081becad707371079dd0227",
+  "size_bytes": 59741,
+  "file_count": 12,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6271,
+      "sha256": "ff76cc0f0e7d2f8f9004411348f04a53d3b34d853737b84de8c34cd8766e5b91",
+      "blake3": "8b8f196fcd16d003b4709b28e14d0a80ea0ebacca4c34b19e5efe8804e08a530"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 131,
+      "sha256": "b055c26155ff04482c73fe4bffcfd7ba46197fa487b20f919550042eed5285d3",
+      "blake3": "e6980bf2f43e84d5fec7238de05bc067a9d4969803a93ba9e851e06c2a7cfc4b"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/import_claude_usage_csv.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3317,
+      "sha256": "9087fac87c31a39a0f32e57af1884bb60300e26c57d7d80b5571ac4d4304af36",
+      "blake3": "411bdcfdd07531d99f032f059031d472a7d986ae0b7ef08ff482edeecdefb197"
+    },
+    {
+      "path": "scripts/ledger_query.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2460,
+      "sha256": "142a372e4c5feea192664802d5b6fc9047661ff390cff4b4c2a075d86ff94371",
+      "blake3": "8639057e1053e684f136d9fc214001debfa9ad9e48cd36752e8ef6eaae33c834"
+    },
+    {
+      "path": "scripts/ledger_query_by_source.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5214,
+      "sha256": "114dd5c338677ca71145b8fa2b3d38fc5a0929807bb11cac09912d87923824df",
+      "blake3": "ab82ca201f2cbeab7b8cd1428d1e63ff3d97e39a58fd2ca92138638ec0c908ac"
+    },
+    {
+      "path": "scripts/ledger_report_daily.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1343,
+      "sha256": "9e21aba551d6a3dd2edfc9b3eb661e77c634584bea5c188456b464907e89ce75",
+      "blake3": "32a780aa7f3e50fe7305a31263ed730ecd7fc941c596189e6cf5f9ed4ebc1d00"
+    },
+    {
+      "path": "scripts/ledger_schema.sql",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3234,
+      "sha256": "3fb29a7b06d80ca3afeb79e90d4671f3059943953cebcc436215ca1f8680faa9",
+      "blake3": "7be59959b45051f3cdc6a5c499b07050ee6f2c38fc509fb8ccb23db39f7430cc"
+    },
+    {
+      "path": "scripts/ledger_watcher.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30592,
+      "sha256": "728675820ed2a5b4b97b09fa6b5a3c1392656742700a38b8933bfa89eedcd063",
+      "blake3": "9b89104d887ab68403392d5d0b78f010b1ea95632de86f31c65f3be440a20501"
+    },
+    {
+      "path": "scripts/reconcile_claude_csv.sql",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1595,
+      "sha256": "8c345449469a74bc23eed9dfb832f6fb7bc19f6d34e5319af38cadd52f887604",
+      "blake3": "01b407d49ddde2a4247fb4f3f8d1c089abe0803079c777853bdb321f709248db"
+    },
+    {
+      "path": "scripts/render_plist.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 390,
+      "sha256": "a5291ba985a0d0ca37afdb8ab2f5f19b2122c51263b1f859526bacd8534e8e6c",
+      "blake3": "126d633360d40377f24e4ff6e8402fa000e83564684e6f8f4903a853af70fe1d"
+    },
+    {
+      "path": "scripts/test_price_versions.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1911,
+      "sha256": "682e2279074d3d7b8a75a48b8c9e20e891aa7ae9d2234a791d33a0abbe5efcd2",
+      "blake3": "5a1ef3cae71f4e38b0f320a0c163c1c495b6ac69a10ce01b2dc6e229a3df577c"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3283,
+      "sha256": "21be220391b1f6edc28a37e6f0b297bf5c07e2ca835fea669b0a7ec0f0cf2ebd",
+      "blake3": "9507b2c5a6f20e91db5a42178d41e1d1f991397e8ca0ac8a34a3610d50c97516"
+    }
+  ]
+}

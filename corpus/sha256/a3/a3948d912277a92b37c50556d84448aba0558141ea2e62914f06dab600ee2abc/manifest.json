@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:a3948d912277a92b37c50556d84448aba0558141ea2e62914f06dab600ee2abc",
+  "sha256": "a3948d912277a92b37c50556d84448aba0558141ea2e62914f06dab600ee2abc",
+  "blake3": "aa9504105158644d20edd85c7cdfa4574240c7818c20f9ed9cf3db7fe5e115a6",
+  "size_bytes": 168562,
+  "file_count": 9,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18153,
+      "sha256": "b3ef6a18a07a101e3c5ecd983893065dd10f713665d4e55f97bd9b2b661557b1",
+      "blake3": "4858cfc80c81f1518e3bb57dc168e84b6dc9c8861effbab043de516be72d10e9"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 136,
+      "sha256": "853085a153f535983417990a45a12569a8c77aaf12c2b69c655e6e5bf589ff29",
+      "blake3": "76365649c0bd6140fbd93d9fe63b07150fc4c28d09d1e3a16f6f3776474ad0d4"
+    },
+    {
+      "path": "config",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "config/init_agent.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8067,
+      "sha256": "02208a9748f0ddee5efa4c8c96aa124044f10bd3cec7983eb6e1d40f112ec2b7",
+      "blake3": "e889fad70cb87699351a670c820100318c87974c5745bfe135dd8cfc220988b4"
+    },
+    {
+      "path": "config/mcp_client.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 34246,
+      "sha256": "e0547107b5d16ad9616b5b8f53807583aefe53fa974aff72db3730e20c02b1af",
+      "blake3": "29b54da2345e3723d109c06079b4a03fdb9607375ceec0d11b7962db5bc10cdf"
+    },
+    {
+      "path": "config/mcp_stdio_server.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5871,
+      "sha256": "d4ceed12e16f1543c287aca736dd23e63a0056a0a1c9c0427817890ede9eaec3",
+      "blake3": "92787c74ed81076e5896c3c9a453d514bcb6fc89a3716a7ea6ee373c10d2020e"
+    },
+    {
+      "path": "offline_workflows",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "offline_workflows/offline_fallback.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3286,
+      "sha256": "2cab4a6b983ec5b38389e70a9d7642bc1169643d0ae46bcdd95eb8f3bb87068e",
+      "blake3": "a671c20ee9ab62b3af8bb139f8290281d1579e346058268b093980a5e5ca69dd"
+    },
+    {
+      "path": "offline_workflows/tax_compliance_workflow.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8285,
+      "sha256": "cb441abdea9ee145c2309547ff12f4c0a54f07ebdb44ce64e2dfd41bcae8b76c",
+      "blake3": "307f8943cf6335d2f90468a2c070fc4fb6fa83f8d14c2d84f88f628ac16c958c"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3157,
+      "sha256": "630b2eeb8d264f494735dd9398ce185c40cb59b8ab03cc14d43e3f05cdded005",
+      "blake3": "a04452e4558e01226618a77a2cb814175f2546d8f0f2fb0356195313e6a58845"
+    },
+    {
+      "path": "web",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "web/topic_workflow_crossborder.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 87361,
+      "sha256": "abc1c18ff79161b645222f3886b8ea56786c6ae3b07497c20780a767891f475f",
+      "blake3": "f9d71ce9222be33bf5fb1ed50f8f52f9d041ab56a78db4766a51d9746362ed86"
+    }
+  ]
+}

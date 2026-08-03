@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:25416cceb51f5f54769d0017859e70f971453584b26256819c1f4086b486a524",
+  "sha256": "25416cceb51f5f54769d0017859e70f971453584b26256819c1f4086b486a524",
+  "blake3": "04da42791c66d7569306ac8f4f58e2abaff39c033bb63a2cb6c81ca73134e716",
+  "size_bytes": 204161,
+  "file_count": 11,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18245,
+      "sha256": "d844a7bb6d6ff52b7e262b34ce008eb627099a4045ff230fa04d8891dfdf1b90",
+      "blake3": "6cb4499723304288f9ef9765ed89636ab9737582a4aa80e1427c40daa64091b7"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 138,
+      "sha256": "53e1e91fc35d00a4b6f813ced45e2299741fbd3c44ebd126c499f4c4349e4cde",
+      "blake3": "d32cb091c06b7ac1d4b054f7b11f7265bc2747d9f430fc66bccb66f6e527005b"
+    },
+    {
+      "path": "config",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "config/init_agent.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8067,
+      "sha256": "02208a9748f0ddee5efa4c8c96aa124044f10bd3cec7983eb6e1d40f112ec2b7",
+      "blake3": "e889fad70cb87699351a670c820100318c87974c5745bfe135dd8cfc220988b4"
+    },
+    {
+      "path": "config/mcp_client.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 34248,
+      "sha256": "afaebc9c9cfe34a297e431fe99614a10aae73b60f8f4511a98b9ef54cfd39bc0",
+      "blake3": "7f6719a28f87889cd2e0178e3788b62294b131b041aabec47de0e90707e93c09"
+    },
+    {
+      "path": "config/mcp_stdio_server.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5871,
+      "sha256": "d4ceed12e16f1543c287aca736dd23e63a0056a0a1c9c0427817890ede9eaec3",
+      "blake3": "92787c74ed81076e5896c3c9a453d514bcb6fc89a3716a7ea6ee373c10d2020e"
+    },
+    {
+      "path": "offline_workflows",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "offline_workflows/esop_tax_workflow.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29412,
+      "sha256": "9b0ec175c06230526b3fba9d2c663c92e77e51050f9f5a47df2b6ba5783ee296",
+      "blake3": "35bacaf484e0d22dc66e0e180c31c116c554f469c4f212090212bf2570369934"
+    },
+    {
+      "path": "offline_workflows/gen_esop_report.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5154,
+      "sha256": "f921200c15f84124b0bc8e5757ee07532f10ac7056ffd4c1ae68f722822cd110",
+      "blake3": "099c3e8786065d80b42456996bb931ca3abf9be9737c4d84101e2d1b471df609"
+    },
+    {
+      "path": "offline_workflows/offline_fallback.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3286,
+      "sha256": "2cab4a6b983ec5b38389e70a9d7642bc1169643d0ae46bcdd95eb8f3bb87068e",
+      "blake3": "a671c20ee9ab62b3af8bb139f8290281d1579e346058268b093980a5e5ca69dd"
+    },
+    {
+      "path": "offline_workflows/tax_compliance_workflow.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8285,
+      "sha256": "cb441abdea9ee145c2309547ff12f4c0a54f07ebdb44ce64e2dfd41bcae8b76c",
+      "blake3": "307f8943cf6335d2f90468a2c070fc4fb6fa83f8d14c2d84f88f628ac16c958c"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2948,
+      "sha256": "3991d531a86c61bee0784b2b3289447c9f561053ba09b9cae1ae8e81bb9aa30c",
+      "blake3": "2f977a5308347c3b0e5212c7f98ee315ed78ed6931d48d32672be5b1431c7067"
+    },
+    {
+      "path": "web",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "web/topic_workflow_esop.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 88507,
+      "sha256": "348678e376ee735942982d7f90950a67883a4c0d81f2c6082667cf521ea53ad6",
+      "blake3": "da1e1718bb68aebdd65c050afec9260dbdfebf958976d9f22d948c848f78b6c2"
+    }
+  ]
+}
