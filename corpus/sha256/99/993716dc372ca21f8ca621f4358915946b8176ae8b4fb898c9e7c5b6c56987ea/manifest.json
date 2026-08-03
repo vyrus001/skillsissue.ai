@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:993716dc372ca21f8ca621f4358915946b8176ae8b4fb898c9e7c5b6c56987ea",
+  "sha256": "993716dc372ca21f8ca621f4358915946b8176ae8b4fb898c9e7c5b6c56987ea",
+  "blake3": "266c783f8fbe61828cd28bfb60e7075e9a34148850b9f6ab950b6115d4331ea6",
+  "size_bytes": 191654,
+  "file_count": 25,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27865,
+      "sha256": "9d09f29a1ead2fb3056092a60b106bdf2ddb14751df6eeb11fd934fa64acc0cd",
+      "blake3": "4ac3da19fc9e14a3f973578b6d471dbec357cde9e72fc71a703087e10b8392ab"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 144,
+      "sha256": "22d77aebb249997cabf690cc4ebc8aafe2241423976f32b0fb2afca582e83d66",
+      "blake3": "a76b308dd1ce412f058934c084a2d63d6d5c055a1813eba3786da01908ab2f4d"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/acceptance-criteria.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 752,
+      "sha256": "8e1473be0bb05cce1584a7b249081bfc95841be60ed2514161e295954bed1dcd",
+      "blake3": "a8bdee2b7d007b61bcd932e6313f66ff2fe25b0d92d053065f3fd2af468bcefa"
+    },
+    {
+      "path": "references/architecture.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3119,
+      "sha256": "4ddfd1756d9377245034ce13e39818bc7f3d037c2347b079f6d7ff9f52e7b90e",
+      "blake3": "f955837657f23718b3971fcb00cd65a973515a1006d1fa2d8394d0c8704e2441"
+    },
+    {
+      "path": "references/cli-installation-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 686,
+      "sha256": "a2c9f94a25d87cedc8b158cab1e427301524e4fe16e82e06060929a9630d6596",
+      "blake3": "cb98933bf03525986b5b8482d99892cace75c6885b36386d5f83524a357d1dc3"
+    },
+    {
+      "path": "references/iam-policies.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 774,
+      "sha256": "128b9b64bdbd96aea1deaf693e68529bd9b428b041158108813faaffc0321b2b",
+      "blake3": "0edc07e6b12ee4beedaa5dd5b087b2acee0eec5c4f60ddf62b6f1267b626b01e"
+    },
+    {
+      "path": "references/output-schema-spec.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10476,
+      "sha256": "685338e8839bc914ada3e8aa4e418184951aee868295dc4e9b7a6363061ac87a",
+      "blake3": "c1a46c617456755573c692a35c7113c8687471d32458a90800190bab23fb731b"
+    },
+    {
+      "path": "references/phase-transition-rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3439,
+      "sha256": "738a7bd20e941fc4a29da242ba86bf925c14877e0b9ef8385f2e161b7fa74f4d",
+      "blake3": "439a7443f26218e4a07239e1a1d404176da61832bc13e09322d6b1d0c8768bb0"
+    },
+    {
+      "path": "references/verification-method.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 688,
+      "sha256": "d60731df7c35d13dfa12eaffc6139832b873b8975406751c34ae7353dce27120",
+      "blake3": "9613bfa6e36340e91012029860eb8e520d337eef39a23570c87677a59f0e1ff1"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/lib",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/lib/chain-verify.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3018,
+      "sha256": "2e7f249eaa51323710d7f82cd9116ebc11301d90a959c40aee84d28c893f44ee",
+      "blake3": "c1224b37d13972b9d2a991f0cd6a1e55fb204732cf2d43e73355fede06242123"
+    },
+    {
+      "path": "scripts/lib/config.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3768,
+      "sha256": "6fac821b03d3775c1843b2c3409bbdc671abff1819f6e689820557fe165d896d",
+      "blake3": "f4cde5961e159749d48fc6dbf21d37e605dcaaa5a339339311db19cd325c4c40"
+    },
+    {
+      "path": "scripts/lib/utils.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10776,
+      "sha256": "77bd25f1d024287017f1dc4c07bd46cf692441b7935cd5e6768ccc2af57050fa",
+      "blake3": "c40801c3549f29bb5e4e6daf87be12aed34a34acb638d3ba40f8ead418062639"
+    },
+    {
+      "path": "scripts/run-test-pipeline.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5578,
+      "sha256": "accd5f2e86f3cb5abff1cd3eb301c20d6ab5d476ef5f042d7d197114b8c539db",
+      "blake3": "b294cc319b4c7b91a274445f3c032926fcf319967431eea404c33337b64946fd"
+    },
+    {
+      "path": "scripts/tier1",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/tier1/phase-0-install-check.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7569,
+      "sha256": "4f3ecf52c8d21b006fa71aa9fb02e218fb58d92b1489f737131bfca16b4664d3",
+      "blake3": "abc47ac6ea96f7cd72804330ff2269480da53bbd386560904d47a241afc20b79"
+    },
+    {
+      "path": "scripts/tier1/phase-1-skill-analysis.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19381,
+      "sha256": "d1ad9b3b9e7a98f76d2dcc6b9ec2c3636138c78cfc6e5b42214486ef8ff625cb",
+      "blake3": "182b112d538be6681899c5250a4e6cbfdd3450500d02a01a9e18ba4e0b4651cb"
+    },
+    {
+      "path": "scripts/tier1/phase-2-tech-research.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9557,
+      "sha256": "48cd1ebbb0118955ea3fe7c772a77cb3fcb9b69f8986923678c1e1ed93ce4da4",
+      "blake3": "2079d81e038b12c29fe1ecac787d839b19ce7489fb1d9130c21f802acb5f31b0"
+    },
+    {
+      "path": "scripts/tier1/phase-3-gen-testcases.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12713,
+      "sha256": "b5d46c3062db99c8c7c1bbc81a5ecca9f7bd99309458d1a42e6b0af4ce7c7b1a",
+      "blake3": "1865b3a5a7e14839b28234c30054109082ec02a7a20f636da295a08774bee7d6"
+    },
+    {
+      "path": "scripts/tier1/phase-4-execute-tests.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23224,
+      "sha256": "0e7b5051f48b85f74e127e4b4efec52da37bfba00cd3b4371d0a136781d5fb5e",
+      "blake3": "63f2922532c3eeb0c8a1eb4e92d28c3539b3de8a6675564ee45ffda869082e58"
+    },
+    {
+      "path": "scripts/tier2",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/tier2/phase-5-orchestration.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11841,
+      "sha256": "b12cafa65647bf008bb0177bd56b40c385e253cfd04fe7652dfee23ecbb592f0",
+      "blake3": "a5bb939652eec14b23e916ea331ce89a8ef92cc4ffc789d7432eac926944f083"
+    },
+    {
+      "path": "scripts/tier2/phase-6-full-flow.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14401,
+      "sha256": "ae6d63dd712c6db444554a37e751ae76769d5f7f35cd64facefafa95a1c435be",
+      "blake3": "d0ab437d9c43bf4e8e95144a912421d93128dcdbdc43ee7cafe3b93c67a91b70"
+    },
+    {
+      "path": "scripts/tier3",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/tier3/phase-7-final-report.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12914,
+      "sha256": "1917d505faef0b6335f713222f5376801c350d9ef47382242d450ae4c1fe118c",
+      "blake3": "1cc6ef0dcc954fe838013a0a57164aef8bce4b4e2f3553a2e74e2772653882f2"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3341,
+      "sha256": "271ff515cffd763348e2256a95c2222f044ab1900b5f689ce5afafd8cfd2fb15",
+      "blake3": "8f8d342bb0191f1ebf090fb9982787256bfca8af2f86feaf20577e8859d2350a"
+    },
+    {
+      "path": "templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/phase-report-schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1262,
+      "sha256": "b963880c56e11d4ccf0ad56bf6c184774966a749743ffecf4a37d50253970b45",
+      "blake3": "c1a3dcd728110482a291324dc38ba5a1cde8f9532757b44c3aceade5e65524a5"
+    },
+    {
+      "path": "templates/scenario-template.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2799,
+      "sha256": "3c22cc16f8d49c084bcb07c25b4d0bc23efb00f17ba61bc84e3c4be4755bd8fc",
+      "blake3": "d721acfef4c37a63a14589d123334be7af344fb5806eb3a0a8454a384ea632f4"
+    },
+    {
+      "path": "templates/test-case-schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1569,
+      "sha256": "608f217b1c3530b0855547b32d13771d61e900737a6c4f9efe7c402487bdb2c7",
+      "blake3": "c000f970d3680ca761e9a7546300de50df70f2b7d463968e8002419353656662"
+    }
+  ]
+}
