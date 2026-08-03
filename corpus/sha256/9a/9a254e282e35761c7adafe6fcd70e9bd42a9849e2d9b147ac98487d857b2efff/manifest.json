@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:9a254e282e35761c7adafe6fcd70e9bd42a9849e2d9b147ac98487d857b2efff",
+  "sha256": "9a254e282e35761c7adafe6fcd70e9bd42a9849e2d9b147ac98487d857b2efff",
+  "blake3": "393bab0fde8aa3b1d8619b501cbbf034fc1d4dd6857511d282c4bc54b216f9f8",
+  "size_bytes": 297402,
+  "file_count": 17,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16535,
+      "sha256": "7f25028404b44b6319b433321b60da21ade16a1c72d1b05823bf60ef168399e7",
+      "blake3": "debcae6a55bd6efb5000556a55d3b58ba598a6693078155b527a983e8e71f9bc"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 150,
+      "sha256": "3cc15dc981ee6f33d304cbe544142730af1507b147b2098bad1e9e15e9a0691c",
+      "blake3": "5ee450dffb45d59f8af0a69f942b01a882425014385ebc6737d22b1905d3419d"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/report_template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 899,
+      "sha256": "d25900847d08e092f30925bf51ae3fd5754c9bffd2a7382e6caebe65d67b5c56",
+      "blake3": "9cc8cc3728d71fbfddd74b3e06bd05e628bf445c8a889c6294d15a19a6aa2445"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/ast-schema.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3991,
+      "sha256": "da6db2613896ce9b176302393c8d2e21c66900e409332f6dbecbf559c31f67e2",
+      "blake3": "af39cc9e9cb47028556c5c023053b5a8eeea6f9302f85357fecefa79341a6518"
+    },
+    {
+      "path": "rules",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "rules/grammar_rules.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25566,
+      "sha256": "02d3501dea86ba47eb2a711961cc1205f0985b1de0ba4c0f1a9f8777265cf7ab",
+      "blake3": "d08561c17b3c48a99a466891efba789e1aed28ea7e42af4ad106aaabbd1c2600"
+    },
+    {
+      "path": "rules/keywords.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32648,
+      "sha256": "0a8cf9009ecd87c911d0856d3ae77d1b3ef702111e21ca1b082c4a66f450743a",
+      "blake3": "af6e9e20b709685f4876075efce82a428b9e4e27da38b5cbd01cd5f54e428487"
+    },
+    {
+      "path": "rules/perf_rules.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2563,
+      "sha256": "a6210b2851e27f6d19860e13cf68906843e6992860b69360eb4a06e19cf2f1e2",
+      "blake3": "89a67cff4a42a61c8068618fd7ef6870bd7143b8b12a6194f6d6ea9fee41a8c4"
+    },
+    {
+      "path": "rules/spec_rules.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9521,
+      "sha256": "ae5c2b692b81f232f0e183355c0a95b9d621d84d78d5864c608316262afbc04e",
+      "blake3": "0893cbcdef3395addf13209d3363d6d232b008afb4105d5cb3d7a20ea442695a"
+    },
+    {
+      "path": "rules/syntax_rules.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5501,
+      "sha256": "754a0ff980ed40aaf1b0f5c2b9cddae1168d00dbb1f1a90c6aef6e7f79495c3f",
+      "blake3": "7a96f8ffd47a0ec0f53aad8040258df7e8a4e2eb7f8c3dffd0cae1910742f478"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/hive_sql_checker.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 111866,
+      "sha256": "164135a17a253018b1fa1319c78bc7278932c30223e5fdfff6b79728b1a3504f",
+      "blake3": "1d0cacfbf7f7440abc73fb8a4e58d188421ab4091d65536ebb4e7d02700310f6"
+    },
+    {
+      "path": "scripts/hive_sql_parser.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 36985,
+      "sha256": "c81df3a9468839c278086677d992978eba249e8baf62494c6813c72bfe1a0b20",
+      "blake3": "7d1b9b043c4f3b4ab8737e6d334db86b8cb44b38922c47eb9919ef60ea432886"
+    },
+    {
+      "path": "scripts/hive_sql_tokenizer.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22895,
+      "sha256": "b2ad0e630b11c4395928bbbb56b279d59d63ebdbfee0db11a19957603901be01",
+      "blake3": "62a62eb76cac8d83dadce13d64c6cce1a5f9200d472ea1a0a02fe75b966cc655"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2135,
+      "sha256": "5a71b67f3ab8db32f5e3ccd77ebb64f689d467aa091b8705637c86b75838cab9",
+      "blake3": "ac4bb83afa51b0c98ab78db76ad5028cc1da6ef56a42459daa2546cbaea7c75e"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/analyze_errors.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5097,
+      "sha256": "b0598ccd2f3c1ec8e116796c824a72285cfc7fe307b519d4a2214f0bddd4e4ac",
+      "blake3": "38b30b3bc4bb5e6b1b769845db1e86c29109302e1272f27fe54fceb7c27eb166"
+    },
+    {
+      "path": "tests/extract_samples.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5231,
+      "sha256": "43abaa4e4512708393290241de837eb7f2abef34f02bfaf0e203c068b3ca13ef",
+      "blake3": "b597c005f49de488ca92b7f973e9b31458a5cabc38835544237d2b5dc5479679"
+    },
+    {
+      "path": "tests/test_q_files.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8068,
+      "sha256": "51b7f0e3b7cd96edf8820cb4a52d07531780f2ba3c5eafbb2a3bc987a5f85564",
+      "blake3": "634c33c62a2a0b1031e1c64188e03fc44e3dd3ed356e03ae9e52e71e4ba682e1"
+    },
+    {
+      "path": "tests/test_regression.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7751,
+      "sha256": "a258aee6f311741bb7ad52e96b1fc263749b2698cd0a22ed92b19f32c1488111",
+      "blake3": "2c2f8abd5951e0ee61c58962a31af491be98df0c071386984a6558bb593daa22"
+    }
+  ]
+}
