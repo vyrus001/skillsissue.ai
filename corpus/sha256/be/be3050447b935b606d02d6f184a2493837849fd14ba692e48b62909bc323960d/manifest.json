@@ -1,0 +1,381 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:be3050447b935b606d02d6f184a2493837849fd14ba692e48b62909bc323960d",
+  "sha256": "be3050447b935b606d02d6f184a2493837849fd14ba692e48b62909bc323960d",
+  "blake3": "8c7835e83557106702637eb25092cf2a3cf976090c09099248dd2d21e509d384",
+  "size_bytes": 141410,
+  "file_count": 41,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10348,
+      "sha256": "64690cb3433073fbed25c1a7193f51dfee87b1098cc521a9b714d8a48b1d0ac6",
+      "blake3": "ccc668a8b318b9c42f4c2cf3c8aa08cba49d1d00aa0a229c78c88fba227f04ee"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 148,
+      "sha256": "4501b370099807e2e38a19d40ec9c54beba09a8d23847acd42b66109307e661a",
+      "blake3": "3483b94764e7e0062d4e2af447377259a68fb1afdb172c181f26d9824068edf3"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/ces",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/ces/guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3271,
+      "sha256": "b408afe252bfd6b6283a82ee1e99a3fed4b138077f883fab6dc826e044e064a4",
+      "blake3": "74697ca8d17196843a682ea00a4c005d8fc385401c05d963d231458ed9056c49"
+    },
+    {
+      "path": "references/eps",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/eps/guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3308,
+      "sha256": "91a9977217ac3459ef74558c479ec61a2a3a1d6f193ab10e3d9af16b168d47db",
+      "blake3": "ca09fd77f155c2d06c089b4d931de988939dfa3d99169475fdc7d92678386245"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 100,
+      "sha256": "545e8d13f3f1bab1004a84d45d8f0b15b99e8cf0808234d6159c601b6e94062b",
+      "blake3": "703175b3c8703e666e37a33989923f3f1ed30c74ef321a7cd56508170d0afc10"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/ces",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/ces/list_agent_dimension_info.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2701,
+      "sha256": "fb6ff40b8164448599ad166a1462d065cab0becff61acf3b58b37676d874e228",
+      "blake3": "69775cedf86c3bf568dff6e9f4861c6e39095e0c3ba7a2719ed55abbaa3197a4"
+    },
+    {
+      "path": "scripts/ces/list_alarm_histories.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5695,
+      "sha256": "4782431eb9f264f7e4307b83a97b0a95a987ca9e138edaabc222213caafb6431",
+      "blake3": "0491980c299d6ff7289ec17cceb441951818ea33815961345e8b71e8e10d0352"
+    },
+    {
+      "path": "scripts/ces/list_alarm_rule_policies.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2889,
+      "sha256": "c3c9e503d9742513500a23d65dc698f0a1b0c3d29edb3f376080eca3374964ba",
+      "blake3": "657bcd4fb3e8973329d3ef267be2090c43373676d02dee28c9017b2aeb5a52e7"
+    },
+    {
+      "path": "scripts/ces/list_alarm_rule_resources.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2572,
+      "sha256": "8b901f557486ecbb16f025349a20954870f8029ab0de3f4c5112950692bee24c",
+      "blake3": "c6362a9dc96d7c81c317a3f1881b4338fac1a1c55cfded1a70aed5b5460809da"
+    },
+    {
+      "path": "scripts/ces/list_alarm_rules.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3879,
+      "sha256": "f2c8a34c8a0ea9e00dea45c84bbaf53973a88d297c7a716a5c72556b51f13027",
+      "blake3": "c7cb9f69b0d49e539fa7550782b52553c72d0d2dd6759a7fcb343c8e8d82e03b"
+    },
+    {
+      "path": "scripts/ces/list_alarm_template_association_alarms.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2566,
+      "sha256": "7e64d147b0dae7bc929d170ad01caef0f46d2a3ef70870f50ad8f76d0ae6a030",
+      "blake3": "b50ed5332b08e46c22c070e33aeaab6dd86787aadd0510316e4436ec3ca7fc01"
+    },
+    {
+      "path": "scripts/ces/list_alarm_templates.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3522,
+      "sha256": "406327b02715b52a6fec2dd14c3b3c66c64a744dc45fcbe90d23c39dc5986715",
+      "blake3": "a02b1389a79867d39c6302e63af872f527209cdbf876c15d1ca39987306fdcc1"
+    },
+    {
+      "path": "scripts/ces/list_ces_target_project_tags.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1908,
+      "sha256": "58bc1dbd0c002b17e028e1766be1e282e43fb5aa18c46df0a92b8eba7fa5a753",
+      "blake3": "4b63a42d34beb13f2b8800e85c87fddd7c66dbfe8ee3656c7fccb2211d91da9e"
+    },
+    {
+      "path": "scripts/ces/list_dashboard_infos.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3279,
+      "sha256": "0069bb14b5895f79fae045c629b1f6adacde0b8c4a957fdf4f079830105b8904",
+      "blake3": "d4e9d7f7ee7089e9f5041c52bc26dd7b4e5674d5fabd90736a0dfcf7a2268c55"
+    },
+    {
+      "path": "scripts/ces/list_dashboard_widgets.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2407,
+      "sha256": "b60a6516665f9102107896391282a498def67b2e423339ed5742083c4868d043",
+      "blake3": "71fb123adbd0773227e3bd1c74ee9e693b89bab95b546d933c166c9b27284473"
+    },
+    {
+      "path": "scripts/ces/list_notification_mask_resources.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2688,
+      "sha256": "28f1b867378a15eecfc4e31720bb1c94af90bccf29c58561bdd68b45c28b2e27",
+      "blake3": "364604a922609a179c8579d4bcf3e9f103e34aac1fa687f86fdb29591c0bd002"
+    },
+    {
+      "path": "scripts/ces/list_notification_masks.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4428,
+      "sha256": "3345cea99af1ed12cf4e492dd5c08ac3654d168abee74f36126895d37f3432f0",
+      "blake3": "bb631da59834eae3e849dac82acbea8728c6ba0b6e1721646a849079761e916e"
+    },
+    {
+      "path": "scripts/ces/list_one_click_alarm_rules.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2119,
+      "sha256": "1e0e8f06189e618d68c8a6d337349e5fae8914b96cd4cf451337e32cad0ffc29",
+      "blake3": "95cdc0080cf9a1dcbed416b7e8af030f2dc0f75accff8d1b38f070faac4b2e3c"
+    },
+    {
+      "path": "scripts/ces/list_one_click_alarms.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1999,
+      "sha256": "9482e66ffc3cb415003330ef52448226c385d87e43faf92658d12e9bede6f0b5",
+      "blake3": "8989cbe650c64432ebec13786d669f59dd562ceb49c36221833c03bf46dff43a"
+    },
+    {
+      "path": "scripts/ces/list_resource_groups.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3185,
+      "sha256": "c6931d7ef2b150f010a59e7545c1c163c8ad5f2708a99ed886596509ad366dc3",
+      "blake3": "a61895187d7f3171906909611cff7b3d74ec32e636355df0b5992030a2df39e2"
+    },
+    {
+      "path": "scripts/ces/list_resource_groups_services_resources.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4082,
+      "sha256": "e935ac6acc2d578436b9561538e2444fe47d0d942176e2e78e6f70e1b2cc2733",
+      "blake3": "f0b0dd1d2f29b8b80e84930013d2c847924adaf1cf53c6a712e879c2299420b0"
+    },
+    {
+      "path": "scripts/ces/show_alarm_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2556,
+      "sha256": "e0bc0507fdb6d182c33079d015b7c7d21dc2fbb8989fb9219015560e1a2c8bd0",
+      "blake3": "bd868695d6841492f2e7211ed27799cb288a8a1b6251cb59ed16d1c06350b586"
+    },
+    {
+      "path": "scripts/ces/show_resource_group.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1994,
+      "sha256": "49e8787dfba9bcac30b2bb2073a89c4969a21cf3d8c540184871476593a4ffc5",
+      "blake3": "7b46c26a603fd8610da9d2aa30372ba1bac518e46d689b044cdd2c3245f59cea"
+    },
+    {
+      "path": "scripts/ces/show_widget.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1881,
+      "sha256": "c4fe78b2c487dd5510dfbe2d78133d2e22acab5d949df7d0b8c0a2cc5beef204",
+      "blake3": "02dbf15938994f8c56846e43aad6fde5dd5a04f8abfbe6a474015d08a4681adb"
+    },
+    {
+      "path": "scripts/check_env.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2684,
+      "sha256": "f25ef7524670d4c9cedb8f765a612a79d5d14dc65b0e8b25155dc27daaa05cd5",
+      "blake3": "100319e42a029a07650f06c0dfa5d10f031a8331c9784b8e3ee9f403b4ef96b5"
+    },
+    {
+      "path": "scripts/check_env.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2601,
+      "sha256": "313adcbeba427573b4fe1ea3d91eec68e3736d6ff14b203fc1f8791116bb46da",
+      "blake3": "62f937654a540d37dee0c7a06d88d68225321980f99f554a9aecf38b4e6e6bb5"
+    },
+    {
+      "path": "scripts/config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2075,
+      "sha256": "15fd1af7178c118f02f8bd7386233cfe8e810416ec2be40287a0e1cfebaf69e5",
+      "blake3": "0a7e52922e22e0ed37432d10ac70b0758554d76f15c64d9c762e1ccedac3a2f1"
+    },
+    {
+      "path": "scripts/ensure_env.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17801,
+      "sha256": "6806ccea4ff944bf5a975c34bfef9fd9e0a3a53857e42ca87e0427010c605ec5",
+      "blake3": "6abcf1ff930859f2de0a2d97cdeb5faf85d750264e33179e5fe163a1db740efd"
+    },
+    {
+      "path": "scripts/eps",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/eps/list_api_versions.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3725,
+      "sha256": "cb4f77ba95478bd7114f1ba2217fe213b5b95f7a1a87eb907181e65fd51a48b0",
+      "blake3": "537de98e8803ee3e38fbf7994837ce9fba2f1ded109794f93eed38daae6c0f29"
+    },
+    {
+      "path": "scripts/eps/list_enterprise_projects.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5406,
+      "sha256": "5d2f425b85265b01539e9a841e6bef99f2721bb7d7f4cc66370d686b500983f8",
+      "blake3": "ae5df632db9440b5d8005212bde8d8ea7f4749ad7c1206151c43aacc1c2f27b6"
+    },
+    {
+      "path": "scripts/eps/list_migration_records.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5027,
+      "sha256": "8dc28e199bc4eb02e8d46b7bc937492c49c233ac74fda97762be3ba51f61d25e",
+      "blake3": "7048658ecb8e44be2428455e399992fcfcfaf2a8f6c99b4a4ce1430024ae2d92"
+    },
+    {
+      "path": "scripts/eps/list_providers.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4501,
+      "sha256": "ffc291c409884bd1c888368d15e2264df23b958c25bd15c3d26825f51a4189d9",
+      "blake3": "76f0e5423efe01b3c2c01c0407c7ca1a67bb2d134d0fca7badaf712d30eb5d39"
+    },
+    {
+      "path": "scripts/eps/list_resource_mapping.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3696,
+      "sha256": "9f9555285384dd165387b49fe820913617bb23c06ee9d8318f6aa298dad55361",
+      "blake3": "dff98e469667bc38af2162ef15325356ce2d0f65c427d027d4ee849c81e728ba"
+    },
+    {
+      "path": "scripts/eps/show_api_version.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2069,
+      "sha256": "c09278c80a4207f3075bc64d2e5276ce17c9b395749985b1082d4cdbf56c720d",
+      "blake3": "36077b5bc199720eebd51c62d78a7ed6d7c83ec0f13f9a42a6b02384fcdf9e3e"
+    },
+    {
+      "path": "scripts/eps/show_associated_resources.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2900,
+      "sha256": "2a99a9b3318e5f350b25bdc424db16f9d8f503672034eb55392ad5db28b17ebd",
+      "blake3": "add023cc74e57554f793948c296a0abd1f1259393bc4a4c276a6a2d5a79a71b1"
+    },
+    {
+      "path": "scripts/eps/show_enterprise_project.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2471,
+      "sha256": "e5ea242a553de89c6842f90bf71c5fbba9f2f6ad7bfe1991a14c79d298332ccf",
+      "blake3": "cfb2b2a3054d306e2fed5732d64cf1a0d1b7d15a947ab2b1e7f7f73ebfefa672"
+    },
+    {
+      "path": "scripts/eps/show_enterprise_project_quota.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1974,
+      "sha256": "e5eeb649d6213bb0cd167e136800fea9f3d74fa9aaa796f10c3baaefbc092fe2",
+      "blake3": "6fe1ebd597ddb0b1af2fbea5d00b07046817b4e501d3de28661d40bd59e7f1f7"
+    },
+    {
+      "path": "scripts/eps/show_ep_configs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1769,
+      "sha256": "6be2ccc3a22f38bec6a984e9776b20fe7ce7ca0061bd65a6a5bca1abd72a6864",
+      "blake3": "349b7d3d483898d490587cfcbc96f22c2daab33cf9cbba03bdb1050ca3486c12"
+    },
+    {
+      "path": "scripts/eps/show_resource_bind_enterprise_project.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4422,
+      "sha256": "abc7846933a4a8d423a83109d6a498bfdc5d97a58cc7e7f93ebfd8bcb6be3f5b",
+      "blake3": "2d97bba5bef30da32bcedccf12e37d6eb2a08f91154f67d0995fcfa09b432fbd"
+    },
+    {
+      "path": "scripts/iam",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/iam/get_project_id.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1768,
+      "sha256": "cc069acf9928e50ea6f626a395c4650dfbccae8bcd438e550e3cae27813e9c71",
+      "blake3": "e496167d283ce140e62e3a4e9d132b1b03d4de7500af86dfe490c1b5cfb3f415"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2996,
+      "sha256": "83241878d069bf72903b5c544396b9d106362140fdc4e6445098d07bf64cf29a",
+      "blake3": "a103e161ee0f0fb4f82be2f42fcdfe140627531c106e2c7609d0274c6fe1c1df"
+    }
+  ]
+}

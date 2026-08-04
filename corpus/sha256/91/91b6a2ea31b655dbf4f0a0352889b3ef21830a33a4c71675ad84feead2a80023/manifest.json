@@ -1,0 +1,1941 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:91b6a2ea31b655dbf4f0a0352889b3ef21830a33a4c71675ad84feead2a80023",
+  "sha256": "91b6a2ea31b655dbf4f0a0352889b3ef21830a33a4c71675ad84feead2a80023",
+  "blake3": "e79d2940b1cb32aef26815a6824d205e8c9f33905066bb22b6ad43de1d6499e5",
+  "size_bytes": 1039976,
+  "file_count": 230,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10482,
+      "sha256": "0e716e32bf120d7f588a9efb9f7220a63b740e934d29675e626adfa2d386946b",
+      "blake3": "7d158c947f504dae1a6f42503457f2ab7f310eca2fe99000bccfb606ca88ba18"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 145,
+      "sha256": "b9521c618c0eeaddb7141aad3ce5c3397f79587efe65a3ffdb0b63a16e553c98",
+      "blake3": "4804a761f7a73d2e100c6d4d971848c3515a2b124f6b495e463f42bd451e272f"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/dns",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/dns/guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13343,
+      "sha256": "daedeb3de68e42be81559e81f046895f0631ed518d052450eff3561eb0e49466",
+      "blake3": "9c80478a6482d8d1cc56b54f752a0f84ed9b66fba101128b847c01a09f5d7008"
+    },
+    {
+      "path": "references/eip",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/eip/guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2977,
+      "sha256": "943f80f5193c2833e041bf0cc40aafbd605c0cca7207588e563445422be11b13",
+      "blake3": "0e5c153dcd6be3039b9ec1256e36b40fbfbdb9ca7bc31337aef1f59cb56e0c6d"
+    },
+    {
+      "path": "references/elb",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/elb/guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11796,
+      "sha256": "87e28695a88d01d9442e04e45789f968f7a970f40371fee77ba4f283dedaa30f",
+      "blake3": "42897e6d5fb6cfcc045ce19efdd9e44fa012b1d96b599b4c2c7c3e4b8bb11bae"
+    },
+    {
+      "path": "references/nat",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/nat/guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7733,
+      "sha256": "e040b906e5d463cf5468c602fcf7b217e3356030352af18ea0ccc8332ea3fc2c",
+      "blake3": "9a6d74b19b6a2d6740c31a9a8b6959f9029095f370a96337a8258312de7fc0ad"
+    },
+    {
+      "path": "references/vpc",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/vpc/guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9353,
+      "sha256": "9a192196c970f7ab858c0e59ae42092d69baf33e12353646626b44dbb8508d5b",
+      "blake3": "86670b57ce1c6f5f2c5c5bde050974318b98d4242579215e297cd41e2ec9ab31"
+    },
+    {
+      "path": "references/vpn",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/vpn/guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8419,
+      "sha256": "2344d54229ed32f95328d3e778d140bcde565183bf0dd199b9a33011a726095f",
+      "blake3": "a38ba9f421cc04b7d5d95255a5dc61b9ba29bd644ec909d6239a625f5368d0c2"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 200,
+      "sha256": "cb1242f4c23611257c6816e65c62985d9357ffb4b705f8d48310612426ffddc6",
+      "blake3": "802ba1fb70d95856caf1f0e483ff5b76bd3471aeae255183697ff2e454ac2a72"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/check_env.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2684,
+      "sha256": "f25ef7524670d4c9cedb8f765a612a79d5d14dc65b0e8b25155dc27daaa05cd5",
+      "blake3": "100319e42a029a07650f06c0dfa5d10f031a8331c9784b8e3ee9f403b4ef96b5"
+    },
+    {
+      "path": "scripts/check_env.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2601,
+      "sha256": "313adcbeba427573b4fe1ea3d91eec68e3736d6ff14b203fc1f8791116bb46da",
+      "blake3": "62f937654a540d37dee0c7a06d88d68225321980f99f554a9aecf38b4e6e6bb5"
+    },
+    {
+      "path": "scripts/config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2075,
+      "sha256": "15fd1af7178c118f02f8bd7386233cfe8e810416ec2be40287a0e1cfebaf69e5",
+      "blake3": "0a7e52922e22e0ed37432d10ac70b0758554d76f15c64d9c762e1ccedac3a2f1"
+    },
+    {
+      "path": "scripts/dns",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/dns/list_api_versions.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1917,
+      "sha256": "17b6e007f67372d56fe8268742edeab95beacdd89c8e66bf673856e15b47c19a",
+      "blake3": "4a3cb79a377b89117bdf2e013aa0d4f1198c6aed1dd1a71f9cf9f627b8481f08"
+    },
+    {
+      "path": "scripts/dns/list_custom_line.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3704,
+      "sha256": "817b48abf72a4569ed657797cef3df64497ce96ede7c01f8aa4a4c3fe3f02703",
+      "blake3": "9a65f5be34c607edb67b03c55635ddf44e799b55c07c8df31fbdc680345bd8cd"
+    },
+    {
+      "path": "scripts/dns/list_endpoint_ipaddresses.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2372,
+      "sha256": "8cd8b16ee9ad31302fd57c11e669d466cb68260d14bab7a73bf2993d87d0fddf",
+      "blake3": "73ad03651b8c070be7bb0da0ae50b4a30ad0fac8b24a4128dee3ae5ffc3f050c"
+    },
+    {
+      "path": "scripts/dns/list_endpoint_vpcs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2960,
+      "sha256": "e257acebf6670d4799909b55964d71363afc10df5861b34e706d1124de8c5180",
+      "blake3": "f46c07a131d6aa8134f70e74886c1fa6cab4b657b1e3bc107b692505586df3ef"
+    },
+    {
+      "path": "scripts/dns/list_endpoints.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3483,
+      "sha256": "f16195ae709fabf015ad9c0d6a30c8fee35b58ef1c42c7977ffad7fe9cf0e841",
+      "blake3": "53ca489864942479f666dbd2cf7f3c0aa5c2d6eb08620631e924f815be162e45"
+    },
+    {
+      "path": "scripts/dns/list_instances.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2780,
+      "sha256": "b764d454e9b3b767b157b38fbfe5fd0bab953a0dadcbe5f6a2af49a1895062c1",
+      "blake3": "23c6129604afe083fe43a4af568cb828298cbdf1f06e5862beebf7ef700cbadd"
+    },
+    {
+      "path": "scripts/dns/list_line_groups.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3355,
+      "sha256": "ff2aac831f4714cd976f4944b343e05bbdb663d55ee244d63b20b22ddb97454f",
+      "blake3": "03e41facdbc9ce9ab8c8e07c49835bebcc08b1d1f3559f45092eacca64364100"
+    },
+    {
+      "path": "scripts/dns/list_name_servers.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2613,
+      "sha256": "3ef0ab8f6b25288e5916a154941fb7d2de2942cd8df3f17a5407def0e91eca2f",
+      "blake3": "5af3b29151164aa19ba43b287958e0f4df441fbd71bd5c4efd5e224c050d1871"
+    },
+    {
+      "path": "scripts/dns/list_private_zones.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5313,
+      "sha256": "c372e6d8c620612bef6c8fd27935b2c65c027c97737ca7d776ecc7a298902dec",
+      "blake3": "f0e7542d4ed324e5db50eb71ea5dfce7d655d3be016edb0cc7906ad54e09d007"
+    },
+    {
+      "path": "scripts/dns/list_ptr_records.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3974,
+      "sha256": "a9a015ff155e0f937da0eb03ef8b20bb226b73f6f94d48ed9723dd5158016cd4",
+      "blake3": "10ceea5ea02f00a64dab7532df6171a2442a1f0d2bc45a5a7c306024b4c8f071"
+    },
+    {
+      "path": "scripts/dns/list_ptrs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4108,
+      "sha256": "55ff6518b295debf763ea8db704dbb716b6f1660982e990d8309e3588087024e",
+      "blake3": "e83b7c4713fbafb887d35fc6f8a3fb097b9403d6676ff7161e776b8a25572fef"
+    },
+    {
+      "path": "scripts/dns/list_public_zone_lines.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3262,
+      "sha256": "62f9c6b8e82d7026317d0ab20c3a0740ada5ac995fcdc6bd051c22d6a7623454",
+      "blake3": "e552613578bf5a3ce39e3974d253d8d2af1ce5bafae9d7054499e48606c6b222"
+    },
+    {
+      "path": "scripts/dns/list_public_zones.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5113,
+      "sha256": "e7dfaea2fdc5e2f295578e8ca0e5ae22c8623e032b6b399dcb02c876645fe19b",
+      "blake3": "5fa55b8a6628397317cebfb5fddd20432c92fbface4de0f5346a8ccfe7b2b576"
+    },
+    {
+      "path": "scripts/dns/list_record_sets.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5121,
+      "sha256": "8149da2630b91930c1eb69cbec41ae6e80db48806f0c39c74bc3da32d36139aa",
+      "blake3": "a0f94d34f07c89abfb539c036153fc56156f7abb8e90973fde13eb06a39b05cd"
+    },
+    {
+      "path": "scripts/dns/list_record_sets_by_zone.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4963,
+      "sha256": "4837975de7380c5c526ecd25e4c9bb648746d019966ec6b677ce924b64d28194",
+      "blake3": "4e8df7bb3cd7b0e7f292a9c4ec15535eb0166edee2a74977d8b417777a50f097"
+    },
+    {
+      "path": "scripts/dns/list_record_sets_with_line.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5692,
+      "sha256": "63994c7bfa595bd996cd3c1bd4516ae2d75ba2630f07c7ce4f2e0580eb1034f5",
+      "blake3": "a9ed5d32147fe2645df35639aed1c65d98210f55c83291c4c456cb8d7177224f"
+    },
+    {
+      "path": "scripts/dns/list_resolver_query_log_configs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3472,
+      "sha256": "a2dfa1c7b23392f2b13d0aec9235d070cccf20b7bd3971c9a5427958be556bc8",
+      "blake3": "12959b2aef6652cf727a97cb92b50d7dd230f7153157b61eb1467f8e3233bb5e"
+    },
+    {
+      "path": "scripts/dns/list_resolver_rules.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3897,
+      "sha256": "d8f3365d4523cc8727d35aea4c9e790262fb86ebe53fa0c3874bf6c59ebc9d7c",
+      "blake3": "f6c47506103bdbe6c321863af4dee300ffdc0444e1df709afc4bda54a8e0678f"
+    },
+    {
+      "path": "scripts/dns/list_system_lines.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3084,
+      "sha256": "16253f6a252343df0ffd04e1f5eacc7d4e8fa987a68ee732a8541493b7e36130",
+      "blake3": "df6c5660aeee5c2bfe5dfe8a2722053ef0e40d07a289c9662e8409414216768c"
+    },
+    {
+      "path": "scripts/dns/list_tags.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2271,
+      "sha256": "da94b5445f4252f590bafb77021577bf2edc08a5cca73862e22df74333d9df7a",
+      "blake3": "dbac24ba6f0863014276f88bbbf38e7cbc5cd92a5aea7ed5202cad59422c1a71"
+    },
+    {
+      "path": "scripts/dns/show_api_info.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2439,
+      "sha256": "93e398004d24e675a4801969ca4402f0c03a57152d2927f18b243222684c2125",
+      "blake3": "f9ad68499b22f33d8fc0e51d1cdecec2ea1285c71857c7ff4128040d189acd2e"
+    },
+    {
+      "path": "scripts/dns/show_authorize_txt_record.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2289,
+      "sha256": "83ee2d87a63357ae74cee64619ca43bedc3faef847c006797e5db33ed27246ee",
+      "blake3": "3d6b6bcb1f30f500e05b844fdf48031219eb9eaa680873f23725dbeb4ad5c39c"
+    },
+    {
+      "path": "scripts/dns/show_batch_create_record_sets_task.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2727,
+      "sha256": "00e04b0bd98b72879a4f5eb16033d23f3507ec87cfd1576d7495722a46471589",
+      "blake3": "9382d9f51d1bcda7d71aea80ac171ec5f4ef47983f7c8b75c3e764a53aafac09"
+    },
+    {
+      "path": "scripts/dns/show_batch_operation_task.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2574,
+      "sha256": "afba681c739f6fec9b417ce68946542ef37b5c5b180fb467e8c9314b49eb8fce",
+      "blake3": "59ec64c407e7250046f8497117b01d040c85cd81dbcf1799440d65ca1a4ccc1a"
+    },
+    {
+      "path": "scripts/dns/show_dnssec_config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2561,
+      "sha256": "7ccfe037abe825d5d943d7898b30126cb4ad85df2ee34ac5674aeedd16454850",
+      "blake3": "cd7d8a35c02416c1018f0a26cf2b3668805a082586c75e03c487e19ada57357d"
+    },
+    {
+      "path": "scripts/dns/show_domain_detection.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2073,
+      "sha256": "b38856c1f8c166916d31ada9361f1312bdb210fede3625af3bf5caa76b33301d",
+      "blake3": "81e5a330edfcadc4e08ffc278ecc34fc913e126071c5ee9e6c26f5bdbf71da7a"
+    },
+    {
+      "path": "scripts/dns/show_domain_quota.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2116,
+      "sha256": "ea004be08ba2cca0e7504c5b4c0be5f7918309386b93b9078a8c0d4a6e6f4d8a",
+      "blake3": "1c05e94c4bdbfcea78d4e91f9c57cfae45636e05aaec345795558149a27f9500"
+    },
+    {
+      "path": "scripts/dns/show_email_record_set.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3289,
+      "sha256": "b05998956cc9af9f8f06f367bc515b63e4300a4f915bc13587119a8ef4b8bab7",
+      "blake3": "68fecd45ec6622dd80d1d9ff67c0c15ed573c15b959fdc544aada7f1a785b28e"
+    },
+    {
+      "path": "scripts/dns/show_endpoint.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2671,
+      "sha256": "c14cbd04700bb737175dfc6fefc685461deec59543960fda3d16fed16aebf3b3",
+      "blake3": "30bbcc3dcf9a451c802f3df176307315bc6f2fe5fad0c4d8320da9f913486d7c"
+    },
+    {
+      "path": "scripts/dns/show_line_group.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2094,
+      "sha256": "9dcd905c889710df6b05e6a66b17016f854053b2b941bce5df6d348fff85c83d",
+      "blake3": "4150288e81127258278bf156f52caa4b4457bf2c0dbb2670ffd1247aff28f3cf"
+    },
+    {
+      "path": "scripts/dns/show_private_zone.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3146,
+      "sha256": "78c3d49b4f7e6cf3e89d76c74c85fee15d351cfd3605dc9be0809f1496c4d4ab",
+      "blake3": "6c05826c38b4561cdee6b68238bfc7cfbb739cf8c34b27a413f0b67d5026c5a6"
+    },
+    {
+      "path": "scripts/dns/show_private_zone_name_server.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2168,
+      "sha256": "31c21b8b2201aa77fc46175e0d53cabc5e67c4051e5984ec083fc139993d45d6",
+      "blake3": "b74f9880e398799d65743799c511d7d324ff424dfbba1a307e47e1ac97f98cc5"
+    },
+    {
+      "path": "scripts/dns/show_ptr.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2297,
+      "sha256": "d9c7c1ba3e0cb010f59fe6d42a4af1fc64549ecc7363750d06c33390b3985aec",
+      "blake3": "77378e102c5cff0c3e5779d4f352dbec85efb40f352427627a398cb93cfc7afd"
+    },
+    {
+      "path": "scripts/dns/show_ptr_record_set.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2287,
+      "sha256": "a056d64b388a368b4975290d714a366aaae1a5ee1eca4edbfc2911c752c05c7a",
+      "blake3": "3b5f1fa7e0ffda6236564d08b0c40731a9359b8083343041ea870a1d2dc54783"
+    },
+    {
+      "path": "scripts/dns/show_public_zone.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2642,
+      "sha256": "91d26fce493cc3508c1198677946278f72faa8f52b8d55218259c99f65a057a3",
+      "blake3": "ee9ff120e38e861f4cb08a25f52bfa43bd4f5ad20389c4d8b5803504feb59375"
+    },
+    {
+      "path": "scripts/dns/show_public_zone_name_server.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2108,
+      "sha256": "ef86050ebb7acc1677634ae8460cbde1e2a5638a35d3df5687caea4c253256c4",
+      "blake3": "2f4b7af16cf66cf7cfc408a013bfd732dc4ca1d204c3588fadd11d30b7da0ad3"
+    },
+    {
+      "path": "scripts/dns/show_record_set.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2637,
+      "sha256": "b1b6601c855427981f7e8eb0f2cc6678ac30b3f55b3b7434f8d4f9b4d69e6537",
+      "blake3": "f709e8b6082f2f15e15efed3cfbfad58bff48fff2a0bdb97529b4ddc756e2637"
+    },
+    {
+      "path": "scripts/dns/show_record_set_by_zone.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5079,
+      "sha256": "ee7ebe178980742b2d9afcb651f4fa5a27cba9bea4cad4f4d97ea7b3fde911b1",
+      "blake3": "24e4e813c8524196b22d08b34a3cfe75a9954303da69758a7db89e6af026e238"
+    },
+    {
+      "path": "scripts/dns/show_record_set_with_line.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3335,
+      "sha256": "9f77dbe9ff879261492e16e0f28874b8a4d6277adae07a507f197ed7caffc797",
+      "blake3": "01d5e9fe422adb5c07dbcc9acbbdb3d88669880be3bf57a9bf69c8872c00fe08"
+    },
+    {
+      "path": "scripts/dns/show_resolver_query_log_config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2227,
+      "sha256": "f348445acc9be927a76ee7ae08879578b919352579090b5fc1698d380dfc4329",
+      "blake3": "fd3efd77372a1e2da09e8e7cda1b5dfd8e78d18abd68e9c52fb441a7bb65c634"
+    },
+    {
+      "path": "scripts/dns/show_resolver_rule.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2624,
+      "sha256": "666af8d6fcc165658bc6003e861861087b517e9eb2344860db36d4551fb398c5",
+      "blake3": "9e10a74e11f33444a18185489c1e8bfdfe71937a9836c2c08c31e9826128eac9"
+    },
+    {
+      "path": "scripts/dns/show_resource_tag.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2373,
+      "sha256": "9214a1d321c2f7c8548d5c2aca0d230eb47f83f664a693c7d316ba7134baea97",
+      "blake3": "a0ee7676e9a14bfed077ae56d25d153d2b6000b9649176fe1ffddb2baa2c4875"
+    },
+    {
+      "path": "scripts/dns/show_retrieval.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2128,
+      "sha256": "18ea79ee40a59113439b18a418f435018cf18ebe29788b70e2b4546ef24cbe25",
+      "blake3": "244595959c3645e87063af50fabb5979b8e54c45cf1c63e778429e08f50ed00b"
+    },
+    {
+      "path": "scripts/dns/show_retrieval_verification.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1771,
+      "sha256": "0e61c6b5ca15156efe7bae350d8e503ce1e65ff05122870dd5010eb9e40b37ae",
+      "blake3": "593d246f5f691543d8e29b44604b4fe65f621443de738e396ab7b889a3ed68f5"
+    },
+    {
+      "path": "scripts/dns/show_website_record_set.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3297,
+      "sha256": "e0befd67261fb27a477957792e030ae22fa03912f4c1b9d16b880bba43ae7be2",
+      "blake3": "a093eb365e12c711334af46352e1a0e9987d691df639ef1aa9302610c33780f9"
+    },
+    {
+      "path": "scripts/dns/show_zone_name_server.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2544,
+      "sha256": "946a95734f8ff0c43154bba0f1e0e41a43684e2c3975b58ba036a699700940e8",
+      "blake3": "8932708a129568a098c071de2ea3511d282ec919b3f1bf6a2084eda619d309f7"
+    },
+    {
+      "path": "scripts/eip",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/eip/count_eip_available_resources.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2250,
+      "sha256": "fb654085d359d5af92580eeb50878cf4fd2ac413ad1d2e95b1186eee56099e23",
+      "blake3": "cc588f34a00193fd4a7f3497b510e9e5efe5c48c6bb15633222f8f5962d23026"
+    },
+    {
+      "path": "scripts/eip/list_bandwidth.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10375,
+      "sha256": "cd1ac735e3359a7cb1bc2d77722cb7b22186f0d83e38ef04437b30a9b52c11e4",
+      "blake3": "67d49d7b738acbc1a74f57bbb52295d58cde90083b2d5db519edcd0e4f2b1b3d"
+    },
+    {
+      "path": "scripts/eip/list_bandwidths_limit.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7587,
+      "sha256": "d4933da900830d3432dd4dcf90dcbcd061da34a07c89c236c8cd258c1da9cf0d",
+      "blake3": "7a961b170a0f924b05e156c0e5fbb1f0e7130efca3f4c7e71b2b4fee2af8ec0a"
+    },
+    {
+      "path": "scripts/eip/list_common_pools.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7578,
+      "sha256": "74bcea333deb8d86521f14c8d88da331e293fa078f812f9e5e2c3d91e70b4dd0",
+      "blake3": "85fc0ab2d272eedd9ee18626aa13dc56a3880a1383e9f85e4686c777fc5bb02b"
+    },
+    {
+      "path": "scripts/eip/list_eip_bandwidths.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10534,
+      "sha256": "dace963ad5a479bf2530428a6f1bf148c6836a222df58ade33335a35af025dd8",
+      "blake3": "575defcfad798873de76d81e4d61106253f1a4abd786668270161d01b9cbbc7c"
+    },
+    {
+      "path": "scripts/eip/list_project_geip_bindings.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6936,
+      "sha256": "d16112cbbf332517e98f5dd492709a6b53d2034b23f480ee773725d47fb56c3a",
+      "blake3": "64ea8d0b8391b09eb45aaf4f7ff45185c7ce6b3478d497537bf6d41af6930896"
+    },
+    {
+      "path": "scripts/eip/list_publicip_pool.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8685,
+      "sha256": "39bccfd4edea069dde2d2d8e4400ec020f55154d77af724aa2f30ad5523e8554",
+      "blake3": "aadf65df5f58e9966f3ad2dc057ba29ffadfea687799837695393ad5b5e2b236"
+    },
+    {
+      "path": "scripts/eip/list_publicips.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12793,
+      "sha256": "784dc4188f5e26500b1e471f301b3b9265a3904584728d65c16b259301da53e6",
+      "blake3": "0af6ffeb01e1e24918d033499177d2fa699c574f10faa1f59df31a74c5e9e82e"
+    },
+    {
+      "path": "scripts/eip/list_share_bandwidth_types.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5253,
+      "sha256": "f4e5170dc2f1933a7657075021463f5396f25f89f41d512b6b6e30d6667f3332",
+      "blake3": "ac6898a8017eb942b722319d058ee73124590213e2f32537604be0742c2e6e10"
+    },
+    {
+      "path": "scripts/eip/list_tenant_vpc_igws.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4507,
+      "sha256": "67e5bb4c1ebe1aa0dce40b57c9f94801d2f80b01687d44b6d556ed63dba6ab14",
+      "blake3": "3e9eb67e75eb0986b27c7a3bb288274c82c8e96c841a713aed17ca08944cc46c"
+    },
+    {
+      "path": "scripts/eip/show_internal_vpc_igw.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2395,
+      "sha256": "ecd38b3b89b94e9ba66320a57676933b921b3ae136798a37093ca757151783c2",
+      "blake3": "8f6d4122dc5defaa0ad278c4d2c1f61c6767cbcf4710983fa03a768f8733f4e9"
+    },
+    {
+      "path": "scripts/eip/show_publicip.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4255,
+      "sha256": "3f59fa748a77bdc3d19bf46dcae1935aada030a68fc7a7f653eb745f77083561",
+      "blake3": "aea31d47357d936c16969ade164da3cab0b0c19de62598a09f4b40282ab04e86"
+    },
+    {
+      "path": "scripts/eip/show_publicip_pool.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3055,
+      "sha256": "92941ff8ed810ecc09ae836f14c0e103a6954d4168e5646eb572db7592eb3e5f",
+      "blake3": "42f90e24a1648f2ad813436d52d1f7c9304f2d90523c50dfbcf8eccf4368029f"
+    },
+    {
+      "path": "scripts/eip/show_publicip_pool_types.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2681,
+      "sha256": "57f2c574f993154405a8ffbfca4c6daf878522e3cdd8d2698d376661bdb18c4c",
+      "blake3": "cc44eeb1fa272c01b7b95ee79fccd231d7834147ef0a4e78e662864bcd71f62b"
+    },
+    {
+      "path": "scripts/elb",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/elb/count_preoccupy_ip_num.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3349,
+      "sha256": "5999eda32eeebb3e2d94db050b7f50909133001eed79595ce5220b8374c62231",
+      "blake3": "0176205d769820f2c53814c7f4090af1a4413acff4104cd3b0a582499b8dd3cd"
+    },
+    {
+      "path": "scripts/elb/list_all_l7_rules.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4968,
+      "sha256": "1c987ae8d8a98cd4b49e357264390c30daae27b01e2e808d57abe10377cef7d7",
+      "blake3": "3c3d5ccd98f51870a8ac831742ab8e350e7c8cb9e5c5ce3db4fd7aaf13342252"
+    },
+    {
+      "path": "scripts/elb/list_all_members.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9586,
+      "sha256": "2486d458cf395684a4801acea40cb144a4f591fb2b134ca37ea9783db8db26fe",
+      "blake3": "7467be179eac0469d2a84c6d3f4548d25d77c7cb35ec748bad2dd103fedde722"
+    },
+    {
+      "path": "scripts/elb/list_api_versions.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3011,
+      "sha256": "5e71d6e64091f913c5487251da0c508a1b52adfee4e8e5861eed7b7e55479cdd",
+      "blake3": "f9f3d10abd19fe174a2a0572f85d92f73a879db7b4cb74c38854e51a0b55efa3"
+    },
+    {
+      "path": "scripts/elb/list_availability_zones.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4208,
+      "sha256": "66b7c5174f0f4de48841392c7d542c67cb192b781399c0ae0e8edaa7d766a90a",
+      "blake3": "3227a82c5c37ea33789eed5cb34f9fe9fd59151518949e870fa47db493cd467e"
+    },
+    {
+      "path": "scripts/elb/list_certificates.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5663,
+      "sha256": "011ec35f91daf4c7c8d293f785e32550c9dfee356dbc7ea947af32ac473abf38",
+      "blake3": "26917fc2ae9d14e70438e6ab87d3de9cc0f8b687c24f389051ac241e577f82a9"
+    },
+    {
+      "path": "scripts/elb/list_domain_i_ps.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3400,
+      "sha256": "3a0ad562c6478ec2de20ba1165bb46d1b25fa8d8e6f54841f63060d025ab8605",
+      "blake3": "5f1852f65d4e92c6d66f1ad13e0520e476ca2eafc6a7ce2eb4cda41153364627"
+    },
+    {
+      "path": "scripts/elb/list_feature_configs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3577,
+      "sha256": "4a69352f58d0cab0f9433c86bab205b8263ad06a5cc222955e63072ed2397018",
+      "blake3": "dccb6a32a824f5150dacd1986dfa768109b96a6124af06fdba7e8a397b8ec7a4"
+    },
+    {
+      "path": "scripts/elb/list_flavors.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4603,
+      "sha256": "0edefa589be56a3fd6ad0ec1eca70f58319b936eff7f3947ea50bd4c76506740",
+      "blake3": "217e5d95f429850bfe4ba639dff39c4cc3aed8a75e3ea6cde7780db739f9deaf"
+    },
+    {
+      "path": "scripts/elb/list_health_monitors.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11024,
+      "sha256": "05448160b4098e42c337c76585602837cdb853ad67f9d437641c9d7e3401dc42",
+      "blake3": "b788766af89263c08b4d01558f72db9847745901f6eb8980f37b559d59de6c7c"
+    },
+    {
+      "path": "scripts/elb/list_ip_groups.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7392,
+      "sha256": "34cd639df3042916e581ec48437cd9771bcf2af71360ba455e74f582cfe4b14c",
+      "blake3": "7eeb9b48e531a7195d383c18415a0dd3b6e8b27207bf7c528501587db9fbed38"
+    },
+    {
+      "path": "scripts/elb/list_jobs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3997,
+      "sha256": "77e7ae8fd27dc90f4426ec94582bf447f40c1d7a765ba0bf22371b25c5e96816",
+      "blake3": "0cdfe27ed1349c7132641084427fc94ccb0a81891a9f29e906ae49226ded5aa8"
+    },
+    {
+      "path": "scripts/elb/list_l7_policies.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9854,
+      "sha256": "d5133a1ddafa0ea9cbb1bc6ab6c988f06cadb86943a0750e4f880d5c1ea8c741",
+      "blake3": "4cb1e4c26638c32ba80db4e49e79c2f81af28dbac590af07e8fe55895838ce25"
+    },
+    {
+      "path": "scripts/elb/list_l7_rules.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5063,
+      "sha256": "67f39bdb3d2c3906743c1c5d78e16ac1417ed32a6d87e7569fc32ceb615ebc4a",
+      "blake3": "66943682b6b645933add9f4ecef965756c2a55f1db50bba96e54ee66e4f1f958"
+    },
+    {
+      "path": "scripts/elb/list_listener_tags.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3086,
+      "sha256": "c7d82560dfbb856eb9bf6fd419640f4a397b4f2d87ad41e70a76d86cf935f71e",
+      "blake3": "fe941693762967f384ac58c15efa1e487cb38f4e37bc48f9e42b598cf079e1b2"
+    },
+    {
+      "path": "scripts/elb/list_listeners.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13796,
+      "sha256": "831e23a7d4a17021a6d58967014c7a54a5f88eeee7d785c0cf2b4596290c0f48",
+      "blake3": "2ffee31ea5af4b189c2070d0e244cc3330ff5f435811a3cfb738213c7ed895bd"
+    },
+    {
+      "path": "scripts/elb/list_load_balancers.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11073,
+      "sha256": "dd3d8f32a919a5b96c3bb880aed9f195165a118995d6678ad18965541ed74bd4",
+      "blake3": "24e4a7dfcd1e96b241b359b0f9b0f386ecc3d10b87c738a8e9d2c129d51a1298"
+    },
+    {
+      "path": "scripts/elb/list_loadbalancer_feature.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3330,
+      "sha256": "c0e2377746d06a4afd71dd7bd23a319312f7ab39ed021fdac87fec0f66d78e7a",
+      "blake3": "eead2229c48abb5637aaca0a8289cbb54673f5946749838b1c778756bbf9f8ed"
+    },
+    {
+      "path": "scripts/elb/list_loadbalancer_tags.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3114,
+      "sha256": "4d0d547f99ea75eac6139b4bd3af00420184258eaef84123931ad6fe2bd055f1",
+      "blake3": "f78ed1b4129a6103f3b6004f4f6481103ccb295f320535c71297b09133644a59"
+    },
+    {
+      "path": "scripts/elb/list_logtanks.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3960,
+      "sha256": "e8fa551fa2d3db410a38db7317e32e5f31832f04e832e67f411e89ab94222a89",
+      "blake3": "d7851d08cd955fc8bd37121bcfaf52c268ee2ce4c6d3c1deef0d1d840207000b"
+    },
+    {
+      "path": "scripts/elb/list_master_slave_pools.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6039,
+      "sha256": "e190bbe18aa35ce55c2c0ee66d9a55d10c20716d527701d3763bded319581019",
+      "blake3": "c6da9b78acaaf9d03ce4af6e9b348a8e7c6dd1611d8971781e0c1a90e5d5237f"
+    },
+    {
+      "path": "scripts/elb/list_members.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9914,
+      "sha256": "547ca779ce264c52635c6374eb7dce59058c83b66eabf1d349182ff0e78986f6",
+      "blake3": "a5abc4aa34f3ee2ea2d99593f75623214f6767771539a09a287ba4c1144d52e1"
+    },
+    {
+      "path": "scripts/elb/list_pools.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11331,
+      "sha256": "d20f89b7e06f2eea8f0e16311c8962d6ae5f412e555827a5628c19e2e658e1b0",
+      "blake3": "0bf6af8dc45b3a0359587e54459d108143fbfb2a55038a507fde0f3d7043cb42"
+    },
+    {
+      "path": "scripts/elb/list_quota_details.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5106,
+      "sha256": "1ad0663ac494f3308884cadb1dcf9ac53c87627f172f44c468c6d96a0275afb1",
+      "blake3": "6a491fc857a12ccf7425ac4f69223eb7f143de37f4ebb0f904133324dd802b31"
+    },
+    {
+      "path": "scripts/elb/list_recycle_bin_load_balancers.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4932,
+      "sha256": "cfa22aea2f434e40698d83ffd1541d3b0cc10506517fbf6c72d62377886befd4",
+      "blake3": "336ec25eb10dfeda5accb48665cf36a61fb439bdf286c0ca2bc2b2abedeb1968"
+    },
+    {
+      "path": "scripts/elb/list_security_policies.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4033,
+      "sha256": "2d6df6c7f7906d5e357c6c12d84d030cf1dd4261583911034c55b12af032600a",
+      "blake3": "146a37ffb7ff8ac9519fb08edf72d97be4ca24a3e96cfeed7fe9e095afc20b9c"
+    },
+    {
+      "path": "scripts/elb/list_system_security_policies.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3258,
+      "sha256": "d3df4987fe75321a173c921ed44ec65829bd20618238e905ca9fb9ec263b2b1a",
+      "blake3": "673c311d4cbd38f360a8c240ce8361944a8f86c7227f205f09e85945fcffb4f0"
+    },
+    {
+      "path": "scripts/elb/show_certificate.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2622,
+      "sha256": "ea519a20be5b4f7944e77c5fb143daccca331e4c44362d4cb1ff49b8575ce61b",
+      "blake3": "48403e151787161522dc31f69a96a43fb9ad160292b3bbf16ba52e9d7ebd7f94"
+    },
+    {
+      "path": "scripts/elb/show_certificate_private_key_echo.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1555,
+      "sha256": "931e634b9f1908af26c539ecbcf13ac3e571ca9dd13eeff6507ee54f1550fd80",
+      "blake3": "bd90103080790d13345bdd38639d107584da83af5fd5cf7cc31635619edcfc11"
+    },
+    {
+      "path": "scripts/elb/show_flavor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2231,
+      "sha256": "a458be4717d6158e3e3aa502587b788bf0b483ce068dfafcc4cba025fa7a7763",
+      "blake3": "549f76ed3ef50b7ce107436af1efcea851e56ce5d98239c4928ec716b4d5b5ec"
+    },
+    {
+      "path": "scripts/elb/show_health_monitor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2773,
+      "sha256": "7baf05028956c5ea1614259c81d57b6ae7dd9d579f2d8c96ed30d8ddda33f277",
+      "blake3": "f9e8d1ac176fbcc2ad30cde840192d6a871556b0856bed8a8160689e2f9c5d88"
+    },
+    {
+      "path": "scripts/elb/show_ip_group.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2300,
+      "sha256": "5df8f498140b1d95721cf992d3427f8bd68b47f52e861755ad6c2b98b26ee3ff",
+      "blake3": "5d5cff94a2ca78589dd14dd9c45beb28ee16e361626ca299f4a59dfa86d6d22a"
+    },
+    {
+      "path": "scripts/elb/show_ip_group_related_listeners.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1946,
+      "sha256": "6d51abcb2f2ec372bd2e97b95ae01f9d80662a8b3c655d3fe262dcbc734a4b36",
+      "blake3": "f837481f02c27cf604f7051c4e97285ee5c91fcf164193447341abb96a7737d2"
+    },
+    {
+      "path": "scripts/elb/show_job.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2278,
+      "sha256": "c59f596ab7db41133a9fff194b5850f16490851a797e6539bafadeec081ac950",
+      "blake3": "5443f5ad6d08f55004903a7718b084bac90143bceb3cbd6d5b51864641cabb14"
+    },
+    {
+      "path": "scripts/elb/show_l7_policy.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2741,
+      "sha256": "9a2a120b9899ce36abf26c6abeae1a0cb61a63b72880a1ff115121c9b46126ab",
+      "blake3": "7b424d25f19ad9be6bf9d085a337735a6921f014ad6d93e1347470bb59061531"
+    },
+    {
+      "path": "scripts/elb/show_l7_rule.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2494,
+      "sha256": "c49948fb0302408024cc35f6580b92151bbedf327580aaa56ca8ad602d2e85b6",
+      "blake3": "d6d19876163f48d607a6c07a203a579764dce26d83d03a5bf177632e6fc19ed0"
+    },
+    {
+      "path": "scripts/elb/show_listener.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3721,
+      "sha256": "7b01aa8119385312d79cbe2dc38d126deb39e53a8f0910f001d09317bf23b8ed",
+      "blake3": "6aa10fe9d061d4afddfc55aa7c3af2ffd0309872d497be51ad5dad09562865af"
+    },
+    {
+      "path": "scripts/elb/show_listener_tags.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2713,
+      "sha256": "3c132158bffd9c5cbe569d6bd4f9e331d4dcfe5545f85c477ce524a0d563c620",
+      "blake3": "dfb2a0e4562f8c36c0425dd8b13d73a1ecb1f45ee91b84b073d461714bf92879"
+    },
+    {
+      "path": "scripts/elb/show_load_balancer.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4276,
+      "sha256": "1b6d678716960208b0d5dc70436224de0490bf7e21ceda883039f4a83a18b21e",
+      "blake3": "888517c3c992eb012d0f410ef38cde61b8ead495876d3e54df7e333a111f3dda"
+    },
+    {
+      "path": "scripts/elb/show_load_balancer_ports.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3051,
+      "sha256": "c4d29f76b13ebc4ea57fe65ade86397ec502da0ea27815efcd537d14a86bdbc4",
+      "blake3": "290c728f02dcfe0789642feed5c6e8c37e30bfb3bc322a062b3fe61735851954"
+    },
+    {
+      "path": "scripts/elb/show_load_balancer_status.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1824,
+      "sha256": "188358c92b358a4b2c468f78299c407dff74761ad4ada1152b9f93f65caeea21",
+      "blake3": "c55585a6efecec1249aa255777b7bbf827d45b4f5fc1c795509ced78b27641e3"
+    },
+    {
+      "path": "scripts/elb/show_load_balancer_topology.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2156,
+      "sha256": "69ae1e84620d88a49d4e3bb124a00097b5efb8e66b501c6ec483fa15b198f3a2",
+      "blake3": "a3c397a6b4a921caa7b69c322856c7d533da34ce1ed5581d7e76a8c3c45c24d2"
+    },
+    {
+      "path": "scripts/elb/show_loadbalancer_tags.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2776,
+      "sha256": "ff445ea1d7165e33d17038fe0420175dbb09a2c60704087eebbb1beee6833236",
+      "blake3": "ee3548a69e3be127241948dfd070aec89fe31b39286bdcff8dc4ca6afbe7a062"
+    },
+    {
+      "path": "scripts/elb/show_logtank.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2147,
+      "sha256": "b5674dda9a3eff369c3de918a57df4a78d4c22f91926a47b291cca6af0fa3a68",
+      "blake3": "9bef85f92acf75c3e47ff2e63fb970610d63f0696080024fc4a75ec3e0e579a9"
+    },
+    {
+      "path": "scripts/elb/show_master_slave_pool.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2472,
+      "sha256": "a1b8196a15139daf3307f7bf86b8f27681784aa0277d68c5ecda451fe15097c0",
+      "blake3": "a34a97305a6410a2f466c3ab1d449735d3c94c659e27937a54e52e19c2639f16"
+    },
+    {
+      "path": "scripts/elb/show_member.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2575,
+      "sha256": "4c763c36cf30eaae4fbd6f5f4888e356dc13acd5c9af614cad311154efff2200",
+      "blake3": "e75b81a2b2b9dac7438bdeafdd1931d69e054c4bd26decd068d6c0bf46066936"
+    },
+    {
+      "path": "scripts/elb/show_member_health_check_job.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2473,
+      "sha256": "95b3dcaf3710bc0531c976fdcf968864a893a178076b3149628860283d9bd4bf",
+      "blake3": "3a7aef27734784b2367a899c19161291662beab8c707989a601cb4f2f8bc4d05"
+    },
+    {
+      "path": "scripts/elb/show_pool.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2547,
+      "sha256": "133ae7a98bd0950daeeb80637cc73310372d57343153352ae2ef32749e8ec710",
+      "blake3": "a317f9ed00780151e91d2a7137d87fd4f7f9b1366cc6d5fcadcf84baf05f477c"
+    },
+    {
+      "path": "scripts/elb/show_quota.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2310,
+      "sha256": "af1ab7e2857515d96f81ebfe6851a31f3526a14e6d0d1f5b2e8bf5407f53b3f7",
+      "blake3": "b3b5931ffc42f629a137d5abb6ebd2092db0ca3c80dfa0f5a5f11d4a7fca76dd"
+    },
+    {
+      "path": "scripts/elb/show_recycle_bin.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1815,
+      "sha256": "ded4485797f78122c9fe0f950ad42e6c74f3a373c2698d6a971c9d4f6121547c",
+      "blake3": "a6448a9462730078f254868bc60961d91a5f5ea6ce284db248edaae95d65d72a"
+    },
+    {
+      "path": "scripts/elb/show_security_policy.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2461,
+      "sha256": "ba665c6e39b6ab8df3951552e20e36b6c125fbbcf17491912a9d0775492c7b59",
+      "blake3": "0988837892c77bb343a6ed27def4920fc51105279ff39914c0390e0a0e06e491"
+    },
+    {
+      "path": "scripts/ensure_env.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17879,
+      "sha256": "486b282b709ba8deca190b3e8021183faa1f061b3581bb9b72f48d16e09f44ef",
+      "blake3": "0c97f7caee676d27ba5fb4e9a9ac9e1b28ab5676329a66bdb6a51fb5aa36867d"
+    },
+    {
+      "path": "scripts/iam",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/iam/get_project_id.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1768,
+      "sha256": "cc069acf9928e50ea6f626a395c4650dfbccae8bcd438e550e3cae27813e9c71",
+      "blake3": "e496167d283ce140e62e3a4e9d132b1b03d4de7500af86dfe490c1b5cfb3f415"
+    },
+    {
+      "path": "scripts/nat",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/nat/list_nat_gateway_by_tag.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7539,
+      "sha256": "a26675273dbdfd221a58bbd4035628bdd6e1c92576bf9091b2548dd9738983c8",
+      "blake3": "bfcf17b5c493de8daf207cc134efd7f72bbc31403f8e7f10b2650b59b3b84b14"
+    },
+    {
+      "path": "scripts/nat/list_nat_gateway_dnat_rules.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11635,
+      "sha256": "93d3122a522e0ff3443f5627c29c75a571bcfbcbc16291d5627379813f3a01b1",
+      "blake3": "86ebc80c8cc759112ea316e7cf9f202f873bc8ff581a349cbc088e57af3a114e"
+    },
+    {
+      "path": "scripts/nat/list_nat_gateway_snat_rules.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7618,
+      "sha256": "6ac6fc472d7f91682a2ca4bbfdba56f70a37f40d251f12fa032dbadb4cf1f3b1",
+      "blake3": "38bb52669fe517d28280e95494a3d33b22b9389c78830b96f3eadb9e90ba1250"
+    },
+    {
+      "path": "scripts/nat/list_nat_gateway_specs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3790,
+      "sha256": "9531e85cc933687296d2dfc442f584cecddc954c10a20b78046a108b2bb6fd30",
+      "blake3": "898975f70c389ed3345709201a337f17ededd09a41e01169a777c13ae00ab653"
+    },
+    {
+      "path": "scripts/nat/list_nat_gateway_tag.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3860,
+      "sha256": "514dd45122088e4662eaaef6179627ac0945451a6e0f73dea7d29d3a652c4d00",
+      "blake3": "80ca39f581253b4bd165b90d5097e086bdb7745a36ba33a35667f5b492a141f4"
+    },
+    {
+      "path": "scripts/nat/list_nat_gateways.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10104,
+      "sha256": "f5d65237a8cc9b6e6bc893e0f6f25c541b7f4a1fc4dd6b28150d0583f53ef2bd",
+      "blake3": "7e78006589ccf0274caef4963fa96acf307cea03960a59d42e21a20682dfaaa9"
+    },
+    {
+      "path": "scripts/nat/list_private_dnats.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10862,
+      "sha256": "6f148219f9a501955cf728003c5d75607b8ff214ba5e93c474494efa25e43ab3",
+      "blake3": "51f8e7bc33bdcf13bec1818841d596a94456a5e96c0dba9bd3bdf1c51ca4d5a0"
+    },
+    {
+      "path": "scripts/nat/list_private_nat_tags.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3864,
+      "sha256": "7181504bd017986c88472610a3bd4c87cd02f8cfeda1a3f3ddc481c9b45a1a0f",
+      "blake3": "61175086cddea7d31dfb0519bcfb8fa7c65c29472b74b25e7c5f949618b02871"
+    },
+    {
+      "path": "scripts/nat/list_private_nats.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9960,
+      "sha256": "c8d8a034a338896ba46ce44d9aa324ef38b5a743baa10529c84bc31d74fbf275",
+      "blake3": "f37efbcf87198842b087d036cf43a1427bac99bc53e40e94b1ae7b6048368265"
+    },
+    {
+      "path": "scripts/nat/list_private_nats_by_tags.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7548,
+      "sha256": "190a1d542c95be35698effa233459997e2c3e166ce88a26f58b0d6c03dbe8a5f",
+      "blake3": "2be57c4571136ae50aade15f85f6d71b41a28f75852af85af27ce39377a681c2"
+    },
+    {
+      "path": "scripts/nat/list_private_snats.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6498,
+      "sha256": "eede2897a9735ef298788e66d0f4579a81ffb674cc0d95ae1322d164ea80c6ff",
+      "blake3": "39c48c11d0f3c23d302d293194650f2207dcd5fc6982a40af7a8dddf75e9cb98"
+    },
+    {
+      "path": "scripts/nat/list_specs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6499,
+      "sha256": "46d6840b1162bdb4d0f8bf1fdb5f790ee1e043f7ecc6a9b6dc153ab76f9da10b",
+      "blake3": "516197b222d356c535c732f61c3712ee5e1adc68d99993e411073366d14cb86e"
+    },
+    {
+      "path": "scripts/nat/list_transit_ip.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6389,
+      "sha256": "5bfa4252a3353e0cb42d447e31569229def94b63d468d9cc2c182610abd4785d",
+      "blake3": "2e9f6c35c76ab65e00785e7059eb07a4651cd28cf2d1f735398c5a73ba64dead"
+    },
+    {
+      "path": "scripts/nat/list_transit_ip_tags.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3839,
+      "sha256": "d09f8300a41b67cba70bdbc22f866c7e7b9448bf6b8fd334684ea0242249e6f2",
+      "blake3": "8f775ea1c2f0a046aa112be2ab20466f4a38252ef617ce4364b6230224a034f4"
+    },
+    {
+      "path": "scripts/nat/list_transit_ips_by_tags.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7387,
+      "sha256": "6f49268151b354cec11a9ee91c64050a362fbca2a05b0bfdd803f9ca652ca91b",
+      "blake3": "bb2310560996912bc385c0c4063808e9c5d3fdc44ea483347dc2963a27735a01"
+    },
+    {
+      "path": "scripts/nat/list_transit_subnet.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9201,
+      "sha256": "8f89455ca340fd99a7311657d947aba11590a03c5591e97799fe74b289d6842f",
+      "blake3": "1d5a03ca6ed6944013543a853a238bd1f82de02354741665172a4491491e223a"
+    },
+    {
+      "path": "scripts/nat/list_transit_subnet_tags.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3867,
+      "sha256": "aa43d825275d28d6ecc00c40af9b6792d3daeec309a94eec0b04165b8798a075",
+      "blake3": "afd477949bc5c1fbd6e585fcbc110941df5b99574359004f168269e4e95fcf5a"
+    },
+    {
+      "path": "scripts/nat/list_transit_subnets_by_tags.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7435,
+      "sha256": "a12ac5f5cfc60102b95ba347a42960fec8bd95e8448ac39fde223ae771717e14",
+      "blake3": "85177719d49643e52656b94a1acf235c30d88b45f33024569c6c3bff2ac35eed"
+    },
+    {
+      "path": "scripts/nat/show_nat_gateway.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3804,
+      "sha256": "4514c3c3d2a089d2c29ba648438f830c5a8688c7a1a448cfd4d83c1c5988d476",
+      "blake3": "26d35ac24be3393ba8e9e87f65d241c33e54d2313972bbaeb0bb8d7f1ace415a"
+    },
+    {
+      "path": "scripts/nat/show_nat_gateway_dnat_rule.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3442,
+      "sha256": "e11517a52326bd57cfdf47b3a1451c7849033613c0a0760acf99ae058db0933a",
+      "blake3": "12bcf2a49fcd9a2f6b7d9e8e8caf9b5b49f690bafb3b61461a1de4f3fd4b78e0"
+    },
+    {
+      "path": "scripts/nat/show_nat_gateway_snat_rule.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3022,
+      "sha256": "3c3a8c1ca73fe5c3ae6f6665801b0f6cca5c97289f29aa01817effddb2fb52c8",
+      "blake3": "1c49f3f190399e240bf71906098041353b2f4f740692a268d95a91553011fde0"
+    },
+    {
+      "path": "scripts/nat/show_nat_gateway_tag.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1979,
+      "sha256": "852fa89270a10a29f69bea08b276f9022f7c1cd28f8f704b35ed615ca34e6ce5",
+      "blake3": "c5deec3fea199933a655261c1078cbc5cf351bcb9d64f97650429427f1247b89"
+    },
+    {
+      "path": "scripts/nat/show_private_dnat.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3029,
+      "sha256": "b916b3d0e7e42decb1988ba6baf5c9f65402d3ab8918b85cb45b7e160995cad3",
+      "blake3": "516464971a451d62070b7ef5da622d079e72f534b42da0376a805431619df264"
+    },
+    {
+      "path": "scripts/nat/show_private_nat.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2947,
+      "sha256": "5d51e16017d075366eab1ef8897d420e8520f8562486094b0365cbe727ad8b20",
+      "blake3": "6f3465afac696188f901c16e5f95fe55a8daa101dda094636a432d1256df95e1"
+    },
+    {
+      "path": "scripts/nat/show_private_nat_tags.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1974,
+      "sha256": "83057e684da4457793bb57d5c81836bb82b300644e60df1fcd09f0c263e1fa24",
+      "blake3": "7321f126808462f6cfa37173a63c493e6ac2cd06f497a3a58d7f598795413db1"
+    },
+    {
+      "path": "scripts/nat/show_private_snat.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2782,
+      "sha256": "bce2fae078c1d234bab30427a8526bd0c62f8a98df7622903026c89a94668a46",
+      "blake3": "b64b7da956f7cf3c7cbb815e0728dd6d87d9ae2d8482731bba92506076531044"
+    },
+    {
+      "path": "scripts/nat/show_transit_ip.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2681,
+      "sha256": "3153ec43fbf37093c3689527aadfa4cdfa2c848483115d5e1ff1a2b7df686553",
+      "blake3": "57dc1d69088331556f553f74dbbebe43bf62a1b9f7b2fd4e3170d1664522da4a"
+    },
+    {
+      "path": "scripts/nat/show_transit_ip_tags.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1950,
+      "sha256": "43d9b38cc3bcedf6db46dff2b6a0f81d7212066051d8fb1c9b93255cc22e6fec",
+      "blake3": "a12c89bc00dda010c41cfeefdbb3561379776715842c40334b48d06963ce699d"
+    },
+    {
+      "path": "scripts/nat/show_transit_subnet.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2821,
+      "sha256": "e75ee552cbb99cff50111861c96f97cf6d1ce54db0e7401734a82cecab966f75",
+      "blake3": "d72070ce9af1b516c40f02073cf9563201e2a4f28028b02ee5dd4c7d67c0afa1"
+    },
+    {
+      "path": "scripts/nat/show_transit_subnet_tags.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1979,
+      "sha256": "03367b435f0264c8ba8a52f908bf39330749455099c925f52e5f3b3a8a2e6145",
+      "blake3": "cd2f74dc060c1da5ad966c686e53662fe9c45036675b7f61e9572f51076dc348"
+    },
+    {
+      "path": "scripts/vpc",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/vpc/list_address_group.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8124,
+      "sha256": "40148827be0ce8bc188f061beac7a7855a4b99110c3d8a788be8024101c02459",
+      "blake3": "28ee99eb99c022aeab46e73fbc46d091a1cda74b743d2782f4a887301b87b5ce"
+    },
+    {
+      "path": "scripts/vpc/list_address_groups_dependency.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5076,
+      "sha256": "6bb1e213ffb69b0794aac9e23fea67301873fcd2e4ee4f99b8531d0377002c29",
+      "blake3": "34f9f4e1ff01f78acde14512c4701b34d3e276a48299781b94c5db560a132103"
+    },
+    {
+      "path": "scripts/vpc/list_firewall.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5357,
+      "sha256": "7b3aa9488fb61ed53391e3660f638919ac5b15b95c2f9b6fc5a3a761c8f2bbe9",
+      "blake3": "2884cde5b66ec610548de711499befad4713be4f817e4fcc5dc22a77d9a48239"
+    },
+    {
+      "path": "scripts/vpc/list_flow_logs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5321,
+      "sha256": "f72d83dd4948b5277b1f8006e62af37682752c9c8ee1829b073b3493ae3ee5f9",
+      "blake3": "d43eb04708e2a2be90d3c02de5560dfd03565d4871228cc30d852ee0638c05a4"
+    },
+    {
+      "path": "scripts/vpc/list_ports.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7026,
+      "sha256": "4123bd4d3ac28166ee56d3ec452062b227fa2d0a6f8a5042180a4066afe9a92c",
+      "blake3": "99575d9b4247e3facfe3c685ab94508eee503093cb2200217a2cf74c40f25773"
+    },
+    {
+      "path": "scripts/vpc/list_privateips.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4284,
+      "sha256": "55fe25c4776747f78f4af31b78fedde422166b12f80c059076f7ca715fc8505d",
+      "blake3": "a19ad2045a85f80fbaa7688108cf44bf904daf2c89c39a75830fefe2b5000bd9"
+    },
+    {
+      "path": "scripts/vpc/list_route_tables.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4514,
+      "sha256": "a47c332b8ce327ecf1a6f0b7cbfc6099b3703598563f8ea30ba16e7c96e97808",
+      "blake3": "1ecf8cc36ac652291b5423424ee4053d6b0b48ac9008f65e43ed86b7579c58a7"
+    },
+    {
+      "path": "scripts/vpc/list_security_group_rules.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9641,
+      "sha256": "b0a6e498abd3f8d49590824d1e73d766a7c67e0a97a45fec7019e5bf3d4acdbf",
+      "blake3": "5606dc9021bc6f40460c1b81818deafd06e535c7e38b1e8467e997b5e3b55395"
+    },
+    {
+      "path": "scripts/vpc/list_security_groups.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4963,
+      "sha256": "7211560f2078aaf3a109cda0a0054c4bfa7c3c16542e1ec101185dfef7d3fc87",
+      "blake3": "062266c253f53d4124fb7491312f9ca1ac5724fb3f2bf4709b0a1c91e1e986a9"
+    },
+    {
+      "path": "scripts/vpc/list_sub_network_interfaces.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6041,
+      "sha256": "88cc5f66093e35dc23f85f4b0152c25b7aa9f05493dec40aadf15fc432c16c61",
+      "blake3": "bbdd54c67559621ea1942d34020e9ea1ace0f6278842d2729209376dcd0ec79e"
+    },
+    {
+      "path": "scripts/vpc/list_subnets.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8139,
+      "sha256": "ace8f0bfd245390d25a11ee41753b731676877b91bc988702a17d0fc3ed39e70",
+      "blake3": "c621c2bccfff9e681a181d5e3633dc71562f5bbe34a5015b5f08ce878edb3a7b"
+    },
+    {
+      "path": "scripts/vpc/list_traffic_mirror_filter_rules.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8934,
+      "sha256": "325a787d2e28343a07cf0e65b997e99752967f5f09fdb7a69231f4cfc423d9ae",
+      "blake3": "b5859c5c13ac761f1bab8726ae6a1c42df81b58e188e5e7eafd9f50661e660e1"
+    },
+    {
+      "path": "scripts/vpc/list_traffic_mirror_filters.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4827,
+      "sha256": "069d2b6418a78572a8c433c0367dd9a67c2264ee021721c25bf69ec016bdfd80",
+      "blake3": "e069089d5763afdff0edb9504b438ba01a6fa3492dcea5b723a525e9848f4724"
+    },
+    {
+      "path": "scripts/vpc/list_traffic_mirror_sessions.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8627,
+      "sha256": "44804cbc70c9e5d0363fc777309fed405ab2e57cb7a7ce643b455cd8c2302a02",
+      "blake3": "9dfa3046dcbf011b365c89e0e429bc2b98eb5ea77a236505fb1d6b76961abcde"
+    },
+    {
+      "path": "scripts/vpc/list_virsubnet_cidr_reservations.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5798,
+      "sha256": "029974c90efb124fc4fe3157e2d490427be115a82d325181ca37f6ef760b5770",
+      "blake3": "73140146afd00e99389714277ed3eb41591683e198e6db389192e7ce979818fc"
+    },
+    {
+      "path": "scripts/vpc/list_virsubnets.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5454,
+      "sha256": "47fdb352167cc0edefcb8064a6de0c0116e67dcfcb2af0c86f23a3988be52a4a",
+      "blake3": "5e4a8b91a1c823d43eae4f11ceddf2e40211f0c584f11c1721fd4ddcffffc2bc"
+    },
+    {
+      "path": "scripts/vpc/list_vpc_peerings.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5382,
+      "sha256": "82d4f814580e51d50d14e27c8faf2f883c0e82d1c09a692fb989a40c930be369",
+      "blake3": "d77976119317beeacb32459fa7b80f33b61e6548152131a0dac1be6782b0dbb0"
+    },
+    {
+      "path": "scripts/vpc/list_vpc_routes.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4807,
+      "sha256": "0e719cd8f69dd9650d9cab517d7792dec35e83a22e37b7d6f654e87e5bc96664",
+      "blake3": "e3587bf544cc586697345064ea2a20b05f479096e6ef4aeddaec907c7a920e62"
+    },
+    {
+      "path": "scripts/vpc/list_vpcs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7968,
+      "sha256": "11929543883cecd26de717d9cfb7cfba0a9d9eb03b280c9a04a2921d525034af",
+      "blake3": "19ff35bf4e367a100c3385f71659f1988536eb54611f51913c92259dafbbb972"
+    },
+    {
+      "path": "scripts/vpc/show_address_group.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2808,
+      "sha256": "75dc09ae10754fd82da8baca0b47f6cb74c4cd4024bb0ccd195620797fa39d95",
+      "blake3": "10831bf1b509af6a95201ca99f06daec0cfb9957cab722c11c478d10ed946f67"
+    },
+    {
+      "path": "scripts/vpc/show_firewall.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2904,
+      "sha256": "4a964fd2db82a662c6d4cd092b366282cce2c30ae27d7b442819560d24a37a3a",
+      "blake3": "4186fc38c3c8d49f231ad09f502ab6d3e7ee921a773b34c2962fc0765ca9798b"
+    },
+    {
+      "path": "scripts/vpc/show_flow_log.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2800,
+      "sha256": "58d89d535fc8879512eb683ac336fc8f32f119ef383a3c7f79ede9df9d0505e7",
+      "blake3": "0e59304f6f43a144a07bc5231ae459104dcfab8e5ad59fc440cf3a39bba6698e"
+    },
+    {
+      "path": "scripts/vpc/show_network_ip_availabilities.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2379,
+      "sha256": "9d254183d28879f954d567abfca3768439dc5ac12b3e64ca9192eb85a9c62bb2",
+      "blake3": "0d728df447e35c804025ebdc3ab1d628bc3656b6ec0e088495c1511845598d9a"
+    },
+    {
+      "path": "scripts/vpc/show_port.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2945,
+      "sha256": "f92c9547a7224edfffa0825407fc6201996016fc3739792c6878817cebb91e52",
+      "blake3": "b53181aa499603ecd03030e4d25440993504210138eb1b3fb0b277bc307b6b1d"
+    },
+    {
+      "path": "scripts/vpc/show_privateip.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2161,
+      "sha256": "78f29a9faf1ff0f2e25d2e6d2ebe3001c94103ffb9ba15192d0125b55ede8a05",
+      "blake3": "0719409c4abf90300820a7c324b55105ed7292aa16c88d1856d6a09f53dc8b78"
+    },
+    {
+      "path": "scripts/vpc/show_quota.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1846,
+      "sha256": "07237e9bc2dd8c07f280c385821cd55b5520d00203c627875be4cfa82fe83fb6",
+      "blake3": "5e069a80148aa352a0e44d57da90fcef232b088c44c1ad0ef7e978d4fc3ad37b"
+    },
+    {
+      "path": "scripts/vpc/show_route_table.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2461,
+      "sha256": "f02388842dd60dd93f45b5f5cf9317d2d48114e218307e26217225ccf8821586",
+      "blake3": "2c24beb884772bb056790a51892323957097c8fe4aaf3bc5cb9e2c5076c0e0e9"
+    },
+    {
+      "path": "scripts/vpc/show_security_group.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2564,
+      "sha256": "6c0b58a6cd8b846290bfdaf4a7577b9dffcf20f90743cf65b8775b23889e80c2",
+      "blake3": "d99b041c26f14b7dad744b37cca54b12d20c36f4c134de62c363ddd768637d0e"
+    },
+    {
+      "path": "scripts/vpc/show_security_group_rule.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3147,
+      "sha256": "03a60fd43113edc924e1e0ee17b6a02d41df024430096cd18ff0a0104c66489e",
+      "blake3": "ecec7373ee60c7dc37d134c958eeba227270e77942776ceb3d1fceeb4a9821ad"
+    },
+    {
+      "path": "scripts/vpc/show_sub_network_interface.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3053,
+      "sha256": "488eaa5082369db3f9fcf9ddabaec9b7fbb005dc0a9f74f37e46ae1460951a15",
+      "blake3": "14dc8fc8039575ac15509f8f34cd56f8ff4277a70e1a552f90c384e4d11e2a94"
+    },
+    {
+      "path": "scripts/vpc/show_sub_network_interfaces_quantity.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1799,
+      "sha256": "0e2ac4e455b1ee6fd4a574dce5fef8e7da1421b9e85df3e68d6d5a34f1aa858c",
+      "blake3": "3fed042bc6809110d0cbde51ae1d082dc01a140bb80e402207c051fafa34baae"
+    },
+    {
+      "path": "scripts/vpc/show_subnet.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3380,
+      "sha256": "2642099703d190eb0fc1fdfba05046d7c99bda53d0bf413c9b377a6ea9c58d84",
+      "blake3": "62279dc2486a43c5864062dca3ea63a1371ed17f9be2348f4cbb7e946cf1cf5e"
+    },
+    {
+      "path": "scripts/vpc/show_traffic_mirror_filter.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2626,
+      "sha256": "03e7a4c64db4bf67b759ac4c704282eee1ecdfd512960eafffd96b5019e636ac",
+      "blake3": "125a8f0973cbd9d8f2dff878ee5fd4f4e5188e0a77dd3be27b61418ff73c7430"
+    },
+    {
+      "path": "scripts/vpc/show_traffic_mirror_filter_rule.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3259,
+      "sha256": "eb389069eb45fcb4b2874637ede1a8adcc513f465a1abc4e4aac843867da0f64",
+      "blake3": "161c6f77f3872babe6eb68d5fed6492b7a41fa01b4f9d1748fcb1c4fa55567ea"
+    },
+    {
+      "path": "scripts/vpc/show_traffic_mirror_session.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3255,
+      "sha256": "004e1cfa9db6e3abb346b324e4ed9ba39c1403f84562d673ff6140b165f20e69",
+      "blake3": "cb17286b8cea2cfdf2e97ac0ecd3408ea0758868d6ba37d0780446255ff3466c"
+    },
+    {
+      "path": "scripts/vpc/show_virsubnet.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2654,
+      "sha256": "c5160a751300760f4a813eadc05de37778ae007854dbc63c02192da51ac90e30",
+      "blake3": "4976db358ab351ec9177b07a0b76361eebe4a0d8a62b9476d78f47328f998c86"
+    },
+    {
+      "path": "scripts/vpc/show_virsubnet_cidr_reservation.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2633,
+      "sha256": "41202213950a681617b13c3c02414487a9176573377a4abc4ecf5aeff0ff62a0",
+      "blake3": "f99f94a4f92bb7474b20d9d8555780321c4234b69f37d3902c9eea6f43d6d257"
+    },
+    {
+      "path": "scripts/vpc/show_vpc.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2615,
+      "sha256": "5b9d0db92098ce83bc1861d6bb7999a41b6632d45d8283f66b009f092ee1af5f",
+      "blake3": "c955d5ff1ead488ea437a7e87f6d8a7af05bc9ac5efc40c93f249645ece22615"
+    },
+    {
+      "path": "scripts/vpc/show_vpc_peering.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2362,
+      "sha256": "1f7fb1c5b9074699b33146ce49cfbf55435237ba91e7b6dcf5b00ab0bba38fd5",
+      "blake3": "9e8369b4993d1ab60667391d01d7ad6b0bda233a3a4b0bc53252dc9ab633709b"
+    },
+    {
+      "path": "scripts/vpc/show_vpc_route.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2122,
+      "sha256": "15617d9f963aa9b0966022992580d0c55e9e72c442564c99c9c4c8870210cd24",
+      "blake3": "a3202348bd454cd1863aa73987ca402364163da9453ad37aef0383c90e700a74"
+    },
+    {
+      "path": "scripts/vpn",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/vpn/list_availability_zones.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5006,
+      "sha256": "6f3cde9556a144a4edf9918477ee1083af9a30e000d56fe4bfc24298a5a14857",
+      "blake3": "d03f126266ef6551f3992630492dec4f5b3e2bccf668f364724828fa649ff055"
+    },
+    {
+      "path": "scripts/vpn/list_cgws.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8184,
+      "sha256": "9bc82d8350b3a06f52d2e0b4ba2526a1aec9a10244038279b4cc3dfd952756c2",
+      "blake3": "e47473fb97a62c7649e0537845d86f17e1234d7b35d3055b6801c81d2882a955"
+    },
+    {
+      "path": "scripts/vpn/list_connection_monitors.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5007,
+      "sha256": "8949adb1837a09144ee48eb84539ff154199d6b0658e72e06602ac6023a210b0",
+      "blake3": "cc5ecdfec49e2d26906a29e5068089e4deea29daee0ca763ebd2f1a7f1b57761"
+    },
+    {
+      "path": "scripts/vpn/list_extended_availability_zones.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5146,
+      "sha256": "158b08585e09a043a0e77fa1233b3cce03e60cb2be943a372ae6e312e5e1f966",
+      "blake3": "f860da0657b86bc256938941f971ab16d38c673178d353ddd3392cc9dae2da5f"
+    },
+    {
+      "path": "scripts/vpn/list_p2c_vgw_availability_zones.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4024,
+      "sha256": "438b606f7033cb8fabc1816de058cb10cad1a1625bd5707b7cf09bb7c251ce35",
+      "blake3": "f8baea9c4f5244092dc5433aaeb50aaa2583d68bc6f202110b197e8da6e7c61e"
+    },
+    {
+      "path": "scripts/vpn/list_p2c_vgw_connections.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8861,
+      "sha256": "30dee584b07b574c40c5e3714757da42a0666f872106fe7e5f8f4a874384a431",
+      "blake3": "5381be2a3b3c2797dd23933abf044715e6b020ac9b4b3c4e4f4a2daf0228c064"
+    },
+    {
+      "path": "scripts/vpn/list_p2c_vgws.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9444,
+      "sha256": "891044d34c1d7ac1679f9156873a935b14cb571060ff2eb66a043f700b2126e4",
+      "blake3": "63fb5010dcf794868c4687af323f544935a20172540c4c010afc4162321c58de"
+    },
+    {
+      "path": "scripts/vpn/list_p2c_vpn_gateway_jobs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4528,
+      "sha256": "bb7c4d1f0202a39cdc4c65054ba9ddf890c6cf5ed295782cab12b78bd3c61876",
+      "blake3": "bc5fa440e7d5cf271dccfa76a644053d5b602b5e26b2614f31b0a196202c7d78"
+    },
+    {
+      "path": "scripts/vpn/list_project_tags.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4166,
+      "sha256": "6ed67f8e70f2e3153a800ae89f7a8d3fe70239131381485c6d5d8a7aaae99698",
+      "blake3": "e74b17138e62b10047560f9e4fdbcd7f3e7abb240de695f7149ceb136c88e04e"
+    },
+    {
+      "path": "scripts/vpn/list_resources_by_tags.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5577,
+      "sha256": "fa8bdbcd75bef306f088d36a22f9511ef967380ad10dfc7bca39751c27645f96",
+      "blake3": "483f9f88fe357a417480a0f13dfff43aa41108abaef638ec2e89f4bc7009dd0f"
+    },
+    {
+      "path": "scripts/vpn/list_vgws.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7896,
+      "sha256": "867f60a6e6dc5ca119354282cc0d195d52a484c5ec6c7fa012dae24d47df98e1",
+      "blake3": "0c10d30bd69aaeb790aa516dca5c16ab320db62e0535d721cbbe37b1fe98cf0c"
+    },
+    {
+      "path": "scripts/vpn/list_vpn_access_policies.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4816,
+      "sha256": "e36e8a9e70b5a9f18c144a85b490b8398a7de4d138139c028273c950fef688f6",
+      "blake3": "3988385492119efdd092382fbcc2de9382e1587db260dec987463e7574d99933"
+    },
+    {
+      "path": "scripts/vpn/list_vpn_connections.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8863,
+      "sha256": "4501522507714997cc2527130200e1503d324eedc71d668109ed7cafef4580b9",
+      "blake3": "da461d73cca99fa4cae5f0123e4d72d2d9153afa2d875cc5565e000906ece8be"
+    },
+    {
+      "path": "scripts/vpn/list_vpn_gateway_jobs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4490,
+      "sha256": "d21f3ecce251bc29194b46f76c4be796ef19cb0e885f5bbc4d1c9341d9297edb",
+      "blake3": "7e713e1057d8d6e2f0eec29c4996c08429a2deeb6f71f50cbfa45c5d7ccb49bf"
+    },
+    {
+      "path": "scripts/vpn/list_vpn_servers_by_project.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7454,
+      "sha256": "c350a375f04f385742488b08bc8982c8c425bac9d71588ef94075fc33ceae5a3",
+      "blake3": "236d451b9bd8f5895023aa41bd71f2803fe7f667b39c437250c9cb17c9a71777"
+    },
+    {
+      "path": "scripts/vpn/list_vpn_servers_by_vgw.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4714,
+      "sha256": "08f207c63c7f3820e3d303694c79122ce9fd18d151e13f521f2c242c450ce8e4",
+      "blake3": "fa538ca71d135c1e1085c94b158e05df1eb684dd913f10c21cd702179e241c41"
+    },
+    {
+      "path": "scripts/vpn/list_vpn_user_groups.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7715,
+      "sha256": "2ee2c6933115e593dd3a9430ddd949329f5d086fd49ced138d61308948facf6d",
+      "blake3": "db4f7655d850b7dc2cd57de15cf0f334e480040d30a42c9ba5d7255eaba6b6ec"
+    },
+    {
+      "path": "scripts/vpn/list_vpn_users.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4653,
+      "sha256": "bde641813298d366f1cb8707d19696d510bb5c6f46daf8f1ff51abba9da72edd",
+      "blake3": "85bba877e8a65ff01fb9fd8319bad0d1b5250e375eb18bb34a86f84179bc7d4e"
+    },
+    {
+      "path": "scripts/vpn/list_vpn_users_in_group.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4498,
+      "sha256": "3a049afd97988ee1b333120604b9c00ba622ef2b5f486e6f30815c4d70216b6b",
+      "blake3": "608d0386c4725e1d0057bbe82227b8295c4ee6bba904369d8261a9134a449011"
+    },
+    {
+      "path": "scripts/vpn/show_cgw.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3049,
+      "sha256": "ca8269e9dd0798e6ea635cc044a3e17e426e7c4f090474961904a5996e3ae348",
+      "blake3": "6d7a1c37dc9ead41d364ff8604a3b49a74b58d59b1a5cfd03416eccb484a8fd9"
+    },
+    {
+      "path": "scripts/vpn/show_client_ca.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2638,
+      "sha256": "837c4c8ff9a6f76dc95d6e2d95ef6e6413cf80770fb87acec3f964c77fb36e1a",
+      "blake3": "8d7d8500970a7936c19929899fbb15a2d7c46ff85f16afcd79081731c0103dba"
+    },
+    {
+      "path": "scripts/vpn/show_connection_monitor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2339,
+      "sha256": "637d8835ac541777dd6c834534822cb5dd6147c2bb7eaac7e8722d0dfd5a60a8",
+      "blake3": "ffebbe07f28efc225bdb8ea01920e49cae2a71cd4638e017ac0bfd30ce6d0367"
+    },
+    {
+      "path": "scripts/vpn/show_p2c_vgw.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3150,
+      "sha256": "5762a2894667010fb724efa16590d35def7aea8769b968c7dcdf15c89dc371e4",
+      "blake3": "d3a0a575b8e111dc387c01a1e8adc38109c7a2fdd488d973f20f07f7369f20ef"
+    },
+    {
+      "path": "scripts/vpn/show_quotas_info.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1838,
+      "sha256": "4e34a875fc4e96a7ced56ba52e85c64e957be1c9c903d9cee6f570151bef36fc",
+      "blake3": "8b8a6991e076294d33bb60acb186503f6ec1816e226273c871ff210e52204000"
+    },
+    {
+      "path": "scripts/vpn/show_resource_tags.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2198,
+      "sha256": "8bd9e0d74fc07c099cdbc6e6eb6ceeacbb8a2cbf8e38b6031cf467c995babb07",
+      "blake3": "525e8121a7e124d77cc882013296a2a720252eb9e544968d711b099ddb8d6d46"
+    },
+    {
+      "path": "scripts/vpn/show_vgw.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3810,
+      "sha256": "f6b78260414267b5f0192a7e30de795ef6396747e187577dcd05f940d60eda4a",
+      "blake3": "4c3026339fa979d86181e7a3ce4a1afeafb701d25dd0ddd24e483eae13321443"
+    },
+    {
+      "path": "scripts/vpn/show_vpn_access_policy.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2649,
+      "sha256": "fa6a84fe9788dea2daeb0c1bcb9128698fce830d8bf76095221e6f248cec799e",
+      "blake3": "70fa080b06cc2668eacfc69c3b5fb513cb7eeca1cc7117e9384d281897b575b7"
+    },
+    {
+      "path": "scripts/vpn/show_vpn_connection.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3279,
+      "sha256": "e823a03922dacd1a8eb1a54f7a969feaf4dbe81e0f06ac7df98e44fc30896763",
+      "blake3": "7a74e204bd57842a4e9894d5c3f30ab146a0ab7e0e33b3e91d05d443d15d15e0"
+    },
+    {
+      "path": "scripts/vpn/show_vpn_connection_log.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1955,
+      "sha256": "9d6aa650d50759d4a69d019bd74d424b71c650a0d214c729b8d0b6e88eef4bcb",
+      "blake3": "35f958025cd303b7542a84bb829d46b0bbb0612aca28a905bdcad011b474d26e"
+    },
+    {
+      "path": "scripts/vpn/show_vpn_connections_log_config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1993,
+      "sha256": "e77d75a15613216a37177591213f3a43bcb39962eaf162a16bb078063a1f55f2",
+      "blake3": "771405cc58eb216a7093a11d176b7547724582758fb9cdfb6146d90a80814acf"
+    },
+    {
+      "path": "scripts/vpn/show_vpn_gateway_certificate.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3655,
+      "sha256": "431572248ff9475d820a85594c00179c32c9bbbc6be08da6d404f36a02f9cfee",
+      "blake3": "10d388f7597dc1a37162ff23844d83cff21402c450485a389b51af37babe6cc2"
+    },
+    {
+      "path": "scripts/vpn/show_vpn_gateway_routing_table.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4202,
+      "sha256": "12ad4f754e1cfb7f50fd2253a2f33735c3624ba6f3c9f9ce8ae89031e958c848",
+      "blake3": "b0d150d05f7b6789adafcd92f80377cac4ace548dd56ae20837296cd0851a09a"
+    },
+    {
+      "path": "scripts/vpn/show_vpn_user.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2490,
+      "sha256": "a73c62f1dcb21c05b1b23e5fbba1026f65ef6bd49f23bd232e24eef62634d81e",
+      "blake3": "f4081c48ac5a512a50a92cfa7a4d19eaf14657602476cb40c5a34eaf073935e0"
+    },
+    {
+      "path": "scripts/vpn/show_vpn_user_group.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2414,
+      "sha256": "cc587f16e6388c273f3005a322fe2c910749e96b5705ad2b62f49e1460da98da",
+      "blake3": "e891eedd221ea42712a50feec6deaa7dbba9932250a70cc0502eba3ad69dbdee"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2701,
+      "sha256": "8fac9ce1a5e632060d00908cfed5f72380579aaf5f36aa40dc64a8c435a3d25f",
+      "blake3": "f8f30cb6bb9ebb80f7e5077a5f429443f09e8746efa23fc19a74970ec564f7f7"
+    }
+  ]
+}

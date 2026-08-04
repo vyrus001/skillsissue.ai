@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:990f71471372707c590af18bb77b7fd7be5f0ab81cf2b998a0a802a49b671228",
+  "sha256": "990f71471372707c590af18bb77b7fd7be5f0ab81cf2b998a0a802a49b671228",
+  "blake3": "1db97b4cd0e25730daae348c9f1e62f3fcf4ad1f1c80dabe0e157d083b6a8218",
+  "size_bytes": 104472,
+  "file_count": 22,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17467,
+      "sha256": "2ddb2b71bab09b87ccf0207b02da1a32ceff095a1f7e888c5d79672ec79bacbf",
+      "blake3": "296dcce47737b6d8c023263f49c58b11e7e3ce806ffb721c29ece3d99ba26ce9"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 141,
+      "sha256": "1c3b6e79f1210d5553507c5fd1509e0e42ea1eef401f52f9adcbc3b39f95a791",
+      "blake3": "ddf8515376572cdbe401733c722cd70aff9c880897ab105cd9b6c158147ea02b"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/acceptance-criteria.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5585,
+      "sha256": "1ffbc4c84cae21c9d45ee2436413bea8684a823d49d76f35373e28d2f38c6b5c",
+      "blake3": "e62d33278cddd289baa9b2aea81ec1e9422278afceb9516318f33749ea18c542"
+    },
+    {
+      "path": "references/cli-installation-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1928,
+      "sha256": "5fa5915a2c39b01ec88f3f396b2464c6388bdc83fcd3250c2f53501df97dad68",
+      "blake3": "02394ede8529f93587a14bc1f776e34593d77407b289f396e3202314b3f57b9a"
+    },
+    {
+      "path": "references/common-commands.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2513,
+      "sha256": "cbe5bf1f5c4764eb1dcf61e3abe5581352305da684bbac58d680fe82e4d90f31",
+      "blake3": "ba8fae46b61ade1babb27166da9fa27ed7926d992274577b0c3b79e507514ef3"
+    },
+    {
+      "path": "references/iam-policies.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3209,
+      "sha256": "dfb9e99412afaa16d7e070fb74e5340e0891209217a440f5258c2297124f72d9",
+      "blake3": "b5187210f836889b89f469ddf742e93a4c98b4503f1ad32600a8ff712dbd6212"
+    },
+    {
+      "path": "references/memory-monitoring-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3644,
+      "sha256": "b0f513ad4220daf11fc3a1f0a7230b84209a2016431aed09716abc14627d1714",
+      "blake3": "8332e12b035f74e67528e84cc5c337dd196e7d158d6778ffc898e15e5654a55d"
+    },
+    {
+      "path": "references/related-apis.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4009,
+      "sha256": "d1d96a35846653ff073eaf4499ca72522e6662ae7fe5b84d41e850d61c680936",
+      "blake3": "b9c61f324b00c65c8af569387f127b9ef8d44a733d1b84796cd54da7d4f30ba2"
+    },
+    {
+      "path": "references/smn-subscription-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3805,
+      "sha256": "b1dd1e52d5ed99a33869d58dacadeb9ee480dd45040b76616a064fc62dc57545",
+      "blake3": "0776e50936a9341db1b6cc225182960e4ca2600dd139f537d4e57d5aaaab194b"
+    },
+    {
+      "path": "references/troubleshooting.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4861,
+      "sha256": "5df79525a921a0375ea890648e694f9f841b8552554cdbd5d269e9b924e5a95b",
+      "blake3": "5d781253eb04ba54d9b477a54bdc4fb43963540e72b6b75f7e438ef746e134a3"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/_env_compat.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1293,
+      "sha256": "f2e316c956667f9c61f59863489d952093a6b6183d142ef8e45801b9735ba9b7",
+      "blake3": "fb685274987019287f6d873e84571f0c110d238676d02f9362eab1278220f34d"
+    },
+    {
+      "path": "scripts/batch_query_metrics.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7420,
+      "sha256": "82ac61380b320fccc9445d3cc250bc400ba89168e01c0c2698fdde42dee36745",
+      "blake3": "0316ca64c099c3be2c89dd7252160327db425ee43743793a2f0dae38990d6560"
+    },
+    {
+      "path": "scripts/check_env.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4992,
+      "sha256": "53cc6d85f62a6cb37e1532ad9480a6bfca694f5a987b470ddbb4d6b3821f56e2",
+      "blake3": "a8142aced17f71b1880bd0b6e96d5b458afd58ef2b5faf2fd979a528b3a4576b"
+    },
+    {
+      "path": "scripts/config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3442,
+      "sha256": "6acb54bee1916d5b69cc67c8901cdcc235fb7f526a5e45468bccda7ddcda4b3b",
+      "blake3": "18fa796ea41af8cfcdcbf6fa00b2480baca302659674cdb9f5fb479c77e105c3"
+    },
+    {
+      "path": "scripts/create_alert_rules.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8006,
+      "sha256": "ac8e1b2d0419f5dc8351c9b14f5b11701b8aa2f4b3dde01d386e1ce1e479f942",
+      "blake3": "20e5c65b9f97494f3617effbf33153c125e0085f147d75d79a22ba23f977701b"
+    },
+    {
+      "path": "scripts/create_email_subscription.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4780,
+      "sha256": "7e67ea0e4f7dee489751152faa4f065f0066c527f5ab3e2dfa7b281009b1efb2",
+      "blake3": "771c6eb0ed3c51f5f2a233e230fc0a69e26e611fa04b374b1127b5d0fddac74e"
+    },
+    {
+      "path": "scripts/list_alarms.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4682,
+      "sha256": "b86f33e0333fb4a23e1917fe3ad468741673c698b162a9d56d01b31766411160",
+      "blake3": "67425c2f242b3e581d949dcfa0d5414ff5139cbc33394011b7bd0b0ca01618ef"
+    },
+    {
+      "path": "scripts/list_ecs.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3933,
+      "sha256": "e025c1fcd0aa339a4fca70c2fb388a65be17ea2f5d475a947df13a55968de5cd",
+      "blake3": "fbc0c94bc84ddf836d6c04a702a2e64873313c036c65860faf638622c36d36c0"
+    },
+    {
+      "path": "scripts/list_subscriptions.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4805,
+      "sha256": "9a860f96233a9e050a3799ae240c5a08b5b9de3b7c11a65231e92982102fe414",
+      "blake3": "4f0516fb6a4daab59df5811f893faa28ecf7ce7863c37e0c625ad7d68a0daa89"
+    },
+    {
+      "path": "scripts/manage_notifications.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5649,
+      "sha256": "339e52750fcca94a59fac0e5fd732787365fd67ad4fa22ae4386085d50118f44",
+      "blake3": "c448a3c81d980d25202aa6dee23ef5bb267ebd04ff721fc91eb8908f2daeee49"
+    },
+    {
+      "path": "scripts/update_alarm_notifications.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5209,
+      "sha256": "f21acbfacb348f023bf675d0e4f2655b999228b96f6ba6979d8fc30ffe9caa79",
+      "blake3": "a165f5b86204bbd5ab59f0d59990e98fe3b0999e617cf3179d11bc78394b5f19"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3099,
+      "sha256": "e49384e8e1fc558f8eeb88ca10414b2aeb722e0333adc2121ba6fbeb36d16d73",
+      "blake3": "68e252286441237f7c879d1e2e4a02bc8f7877a673359c30689d2acb5766f5b9"
+    }
+  ]
+}

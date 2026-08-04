@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:faedaec307b8d042dbc08a8fa8ddbb6bdef5f0712d9d7009453a638aa8e73371",
+  "sha256": "faedaec307b8d042dbc08a8fa8ddbb6bdef5f0712d9d7009453a638aa8e73371",
+  "blake3": "8d97cf07fd3b0c56305fd5b96d8265d73ecb1004a65ac035fc66d7972effefff",
+  "size_bytes": 70618,
+  "file_count": 13,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1623,
+      "sha256": "b388ac788d6b754fb5d67069029024c33f7f069658a6d97804cbeae3de766da8",
+      "blake3": "12a3e07476087d102da594d023c13e1eddaec1af3413f9a2ebe8601162c521b1"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7243,
+      "sha256": "88b64c2418f131ba4b6144f362d7f5c6584822530906cef081d3460fba661546",
+      "blake3": "d073065d60e042874341fcbd3b3821751ff246f20d873361f78c85ae52bd6586"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 146,
+      "sha256": "9bc1fc1eea2e21b445cd8d22b6526701081f8af5903fd797be02fed741203604",
+      "blake3": "6819ace816df22582774fa74f731ad92107d2c883bcdf7b39055fee2bc1f7b5b"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/report_template.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5196,
+      "sha256": "b969292563faae26ec600d77a0d13c8d428cf455a8717db52433e837aef1217f",
+      "blake3": "9d259be824094e8f5930843c124b23be42d76ad9ab1d331d831c41f15ff837be"
+    },
+    {
+      "path": "manifest.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 892,
+      "sha256": "0f1611a939d089b0dcaa6c0c0880f08c2d3b309070c7e6665582cb274875398b",
+      "blake3": "d97bf6cb77d6c57d65e1f00618c46f1d383a7632c878237746acf30a3b7cae28"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/data_sources.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3407,
+      "sha256": "e837d6f6ed08c9b89b13b3836a8c5af2ac2191a47f73128521884b9915dbadd7",
+      "blake3": "4243df615dd0b5027acdde06cbf98548f9ecc947df68a66c0aeb7fe2db8255af"
+    },
+    {
+      "path": "references/industry_registry.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2795,
+      "sha256": "85e88af47517c96b030cdba4c356cb6e009090b1d5235e7e8e78cd5f60c69ee5",
+      "blake3": "3fd954f3f77f2018d191bb1bc80546cab9b70ad0f0629ac733a938424ed13856"
+    },
+    {
+      "path": "references/scoring_methodology.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3848,
+      "sha256": "073b4747227fb1295997f0fea570d9270967567141cd0fa18d3b1c6161bdac60",
+      "blake3": "9933997638f28243df2ee746c6f53f7da5700509803360b992052185908e78f2"
+    },
+    {
+      "path": "references/semiconductor_indicators.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4768,
+      "sha256": "4fccf39574ca794795560424e8e6ce6da249ad3368717b8d16e4c50fdbf4676d",
+      "blake3": "2a1cec73bc97d0cdee2f282593904b7b9d2f60066ec96c06a1d1f18025d2401e"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/calculate_score.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7983,
+      "sha256": "f6ecdf7f4cc754408a26f8d32819574066b9e18d5bd0252b3b60c10689c4ecf5",
+      "blake3": "316686f5e5752bfe83b60cfe37536fcfe77a57706957f56ea87f17fd36f183f3"
+    },
+    {
+      "path": "scripts/fetch_indicators.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22467,
+      "sha256": "94891defefbc19709ee5c697192df38f7b7a732dda4049b1cc1725d6d85554b0",
+      "blake3": "8ded52045e648a2e7f85a356ed7bf0fea9dfd3f0bfefe1e9d99ce9b2853ae4a1"
+    },
+    {
+      "path": "scripts/generate_report.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6995,
+      "sha256": "71a8491508cd70dd41f624479e7ffb8c8172ec007a0545ae7248d588cd1a7920",
+      "blake3": "aba44bb97f22dc985373fc1816f21e109e7a578b898e25c1421f6d8a9053c58e"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3255,
+      "sha256": "ab231f0787b39ddd6ab77bd02f304a925f3cedc736b5d9508e7c5942b3490669",
+      "blake3": "7e6b6be0ac199c5426c0e97968e3c08ea499c48440fdc1e981bbc61ecf8e13dc"
+    }
+  ]
+}
