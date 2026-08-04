@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:3801bafeec81166d135586944fbafc9666d9983d704cb68fc3a59adccf4c8c7b",
+  "sha256": "3801bafeec81166d135586944fbafc9666d9983d704cb68fc3a59adccf4c8c7b",
+  "blake3": "89de5a92c77cc61d9f438b4c2d602ee25acc467836f6b63a0977447b8d36caac",
+  "size_bytes": 44261,
+  "file_count": 8,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4911,
+      "sha256": "ae3a685299d160d078b22262e5d623c31955fe1cc9844c068cbe6f54e3a21e15",
+      "blake3": "32b491c84d7686f083d0fd2a83e2cafa40415b77775c770004055d125f84a9ab"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 138,
+      "sha256": "234c004d360cd444ea883ec95fa8d97c09e1fa7b5498af97ed5ecfb199557e37",
+      "blake3": "f58bd079db0c0e2b89dc11ab5df84cdb116e9de82403ab4ca8d403d51d2a9d4d"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/dxf_pile_patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3940,
+      "sha256": "d7301ef17615e9b25d2f7af1efb5a9bfa678305a34e4a6c52b52591d14b780ee",
+      "blake3": "6d822279c51ce8f173576ed0aafef64f229dda38d5868800daacab04c07333c5"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/analyze_dxf.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4164,
+      "sha256": "61dca579c00be94180070ed2dcdf5ee978934bcecd1aeb459395ddba9993d794",
+      "blake3": "126ad6482853fe45aa9ef8b47dda819290974275823d38ca933b199887885f9e"
+    },
+    {
+      "path": "scripts/extract_piles.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14602,
+      "sha256": "5d4308354d44cd7e053aeda6b6f5ca9db90a592190f5643498133eb87fbde906",
+      "blake3": "8251c584a59043bee0fd5ac3ad7db297323cdb9c724078ebd276179e12c1155f"
+    },
+    {
+      "path": "scripts/interpolate_elevation.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11392,
+      "sha256": "8c8719c08d1f831a667e7c9d574dfb9bc3c81c92134511f66c38805465197a52",
+      "blake3": "b1a37337a7f6dbcfb0d8c852c9d6b0d68633e0a75652410c4de4a27c6d608bd4"
+    },
+    {
+      "path": "scripts/label_piles.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2900,
+      "sha256": "4a72eb715cebda81d104139df70c8af5a875649e1369f9f0e351dae4416e851a",
+      "blake3": "3678eeb4f5adb8862fd1dce90cb1425e4d28199ab3458d67b04c1ae713df3a82"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2214,
+      "sha256": "5f5323aa8df94e5bd2ebce1907d0487c09174836a85f3312fd287d3b212d48a1",
+      "blake3": "4299bdad2510b11abb5c57ff91cca4edd3f733521597753b456ba8ca5457a3cd"
+    }
+  ]
+}

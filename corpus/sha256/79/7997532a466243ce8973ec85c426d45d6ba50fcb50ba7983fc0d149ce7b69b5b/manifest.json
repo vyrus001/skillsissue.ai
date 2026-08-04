@@ -1,0 +1,1867 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:7997532a466243ce8973ec85c426d45d6ba50fcb50ba7983fc0d149ce7b69b5b",
+  "sha256": "7997532a466243ce8973ec85c426d45d6ba50fcb50ba7983fc0d149ce7b69b5b",
+  "blake3": "dba8f49717bd1fb813680148126a039fe2465e2b24d9ba4fd6cbfe75b65ba1a9",
+  "size_bytes": 1335320,
+  "file_count": 178,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12404,
+      "sha256": "2dfb8492e446a6d8ea4ad29c89fb2e9613b738a244d4710b7318c12c53449a4e",
+      "blake3": "a9e5e519e40c50711fea93b2f73d909411c5631013dfdf20ab4fd0718f814ec4"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 132,
+      "sha256": "22dd9435150406903ecee13dc00cdbeb7da3e1b503fd3fe388ce47ca2c8d12b2",
+      "blake3": "22db47db1d75486cdcfa5bbe0a4af76e13d5650bb82c595ef7e4525cbb0cd02a"
+    },
+    {
+      "path": "external",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2840,
+      "sha256": "1e505b565663f054326ab1961d9e832305c867931fede349441b05f0f4d3aff5",
+      "blake3": "9eb880bfc5941502a2ea893c7316377b53107099735331c1c564ef5194a3cfdc"
+    },
+    {
+      "path": "external/paper-orchestra/CITATION.cff",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 792,
+      "sha256": "5ec6d0078da3e2334c7f0b2063aae6ddff19d60a1719619b30a8da50840c7495",
+      "blake3": "222950e72b65c28fd78863945b474ae13200dec74edf8b0f6ee4a8c0dd13df2e"
+    },
+    {
+      "path": "external/paper-orchestra/LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1629,
+      "sha256": "dc27ef9d7b6ef445f54a067430aa626d3b77533ee7404468321abe4a10e0936d",
+      "blake3": "8233ef4a068695118eec9019e4841b543cd085fe28936b319a14d19b61e97f1b"
+    },
+    {
+      "path": "external/paper-orchestra/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19306,
+      "sha256": "768266d230c910d19d50347f3b9f1658a3c973fcc54f6118c4e2b4d53be58942",
+      "blake3": "36962cac830539439f8d41a02bc3c7e33bea6b4c03d7b80d7cf203be23ee2ac9"
+    },
+    {
+      "path": "external/paper-orchestra/requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 545,
+      "sha256": "9862a40fd01a595cfd77e11e0f7e8865fb847504101460d6756df0252e6b2ae6",
+      "blake3": "8fc6ed0a8d0b5c3cba7b995b03a1016093f00c749651dbb50266cdf748ba3522"
+    },
+    {
+      "path": "external/paper-orchestra/setup.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7009,
+      "sha256": "caca8a8f24ed941812a966f6b9226e5f4c15b70817f798596bbf5446e5558cc3",
+      "blake3": "713b99c2823aced540f8a9b56bc30c4766fa7d5db136fe383f99e21ba5306054"
+    },
+    {
+      "path": "external/paper-orchestra/skills",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/agent-research-aggregator",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/agent-research-aggregator/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14771,
+      "sha256": "f2880db9723cbec68a769a7f1a4b83a18890b44d7a9e4dbbe5125f7211e71eab",
+      "blake3": "0240f0930c7e013fe641a680fe0c8162ba668a51e22cdba55808782b6de1b19f"
+    },
+    {
+      "path": "external/paper-orchestra/skills/agent-research-aggregator/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/agent-research-aggregator/references/extraction-prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4688,
+      "sha256": "e00f3f078a6349084a511d1886d525274c6dd7203753b29714203834ec91d4f8",
+      "blake3": "1cc39c3ac7c93445e0dbd8d58c7eee180aa85390c588c73a7142f1967479a0cb"
+    },
+    {
+      "path": "external/paper-orchestra/skills/agent-research-aggregator/references/log-formats.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5833,
+      "sha256": "49da7d4ed65e683c835d3dd67618421d75e8fde40e2642e0771825dcf3b21467",
+      "blake3": "0582cea16ba73e364961d0478408aab3b5344336812a559a94f507ae2d26c319"
+    },
+    {
+      "path": "external/paper-orchestra/skills/agent-research-aggregator/references/synthesis-prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5362,
+      "sha256": "3f8d57e22a8c701963f5593a2e9c77faed763e56f01e8f3652d2c6c3fa74137e",
+      "blake3": "b5258c5df56e8c50230ffd02882b30f924ac79e0cbb55453840d26b7f7e95f92"
+    },
+    {
+      "path": "external/paper-orchestra/skills/agent-research-aggregator/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/agent-research-aggregator/scripts/discover_logs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16511,
+      "sha256": "506bf4a07026e00f97df57b6b14a04f00c5b2432216c831c27d044f400bc08f8",
+      "blake3": "8aece5b4b40ebe59f453f314b31ed3dbefb111a5f8039589d99c6e2c6eef0d80"
+    },
+    {
+      "path": "external/paper-orchestra/skills/agent-research-aggregator/scripts/extract_experiments.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8285,
+      "sha256": "c02d8c372d9ad2e5cd74ea6cb2ff5f17bd215114b01b87243fabcb58d3304933",
+      "blake3": "5b99c1d614f596342bfb56ebf2b16ce700b4a79eb8558d363eb1102a1a50def2"
+    },
+    {
+      "path": "external/paper-orchestra/skills/agent-research-aggregator/scripts/format_po_inputs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14167,
+      "sha256": "8242495610e7046c48259f267e1a708843b4bdad4c8620cde014168ba622e0bd",
+      "blake3": "86eee851a177c4652141918698168d91ae9d1d60bf17cf038eac9afa1bc3c114"
+    },
+    {
+      "path": "external/paper-orchestra/skills/content-refinement-agent",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/content-refinement-agent/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12532,
+      "sha256": "958b3134c14ec1146682f6e53674a7b8b29970e0a852262ea70168263e678922",
+      "blake3": "9f33ea322ae0d8de2ed68f07bf663d952a6cdee808a18a453668505e5d3dbe22"
+    },
+    {
+      "path": "external/paper-orchestra/skills/content-refinement-agent/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/content-refinement-agent/references/ai-failure-modes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 834,
+      "sha256": "d395109322e4282fed52339fc78f6e08e86b9bb48d96abd0cc49879537bbacb4",
+      "blake3": "a7e5bf3a5495cf199e327eb7afad1f14a754eb1e35d82e5c7964bbe4e93c52e6"
+    },
+    {
+      "path": "external/paper-orchestra/skills/content-refinement-agent/references/da-reviewer.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1827,
+      "sha256": "a43e42a6295be100c2812f51e953107138ebfcc306cf06a9cc878a2a0bd1117e",
+      "blake3": "0805a072d52d18d40505b1965d1bc69137c3ac3ab33da731c6d1b940a27faca6"
+    },
+    {
+      "path": "external/paper-orchestra/skills/content-refinement-agent/references/halt-rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4629,
+      "sha256": "b7a28cd8711a9fcf8d7436be62b3dcffc59c4e52de70addef929dc1bb3dbb3d3",
+      "blake3": "a29e6b4f37e411741b9f2d15fc187bcac68af9d336106b6cd6f5868434bd4581"
+    },
+    {
+      "path": "external/paper-orchestra/skills/content-refinement-agent/references/prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5924,
+      "sha256": "ed819a547644a854289372026aeaf6b95d9274a316e05749f039ef61b1ccad6f",
+      "blake3": "61fee94d5e7c75fab41bf7bfe125cb16f6b3e4e0e98921da22f2f2ad73738707"
+    },
+    {
+      "path": "external/paper-orchestra/skills/content-refinement-agent/references/reviewer-rubric.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5662,
+      "sha256": "00ed52706f7d065c300faac28f67779c6bad6cfdfe93347e6dd3aaaa314142cd",
+      "blake3": "9bb98be9afb2a89ef03f416d67e926ab1da9133686261e558669d245d76601d7"
+    },
+    {
+      "path": "external/paper-orchestra/skills/content-refinement-agent/references/safe-revision-rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5082,
+      "sha256": "996ab6da642f2d763443ef6130fc6d156e888c84f33a1491f290ad6ef4ea53d6",
+      "blake3": "fc2c7cd220c2719f69fdd447cfc8526721c4dce2574be2328e6e27eca9c092b4"
+    },
+    {
+      "path": "external/paper-orchestra/skills/content-refinement-agent/references/writing-quality-check.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 738,
+      "sha256": "401e1ea9d802c520136d155e7592f102b62552ce576778133a8032daa728c25c",
+      "blake3": "079123bb25a83b1345aaa68d7ff86a5bc910ef014cd288c86512f653c8d8732d"
+    },
+    {
+      "path": "external/paper-orchestra/skills/content-refinement-agent/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/content-refinement-agent/scripts/apply_worklog.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3228,
+      "sha256": "75fa5995addec568fd55ef3995a95946e864cd4c3b362d9da8e8eb05dd0c6eca",
+      "blake3": "59d45db290b7a677aae6515b995c91cfe0dd1ce0df16cd6a8c7a3cb8eb3cf319"
+    },
+    {
+      "path": "external/paper-orchestra/skills/content-refinement-agent/scripts/score_delta.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5605,
+      "sha256": "05ee33b329b0737114193e373327ecb4b1019db326aaa686b2800160e651ba62",
+      "blake3": "01cc0d20a854466113d74c7dd85a0f20882939cbeefadac583ba55d884c0277c"
+    },
+    {
+      "path": "external/paper-orchestra/skills/content-refinement-agent/scripts/score_trajectory.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9071,
+      "sha256": "4e0311088c985bf854e363144d083ef59cb25bca5d720a29773c99c716a271c2",
+      "blake3": "bf3ab1e757d1b3a632f05b2c711664a0569b4d83cd446f83e36095406a2fb0fc"
+    },
+    {
+      "path": "external/paper-orchestra/skills/content-refinement-agent/scripts/snapshot.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1669,
+      "sha256": "c97b0acd4149f5c90cc8c4f58979f983b49d37994af1b38e6215ea472899f788",
+      "blake3": "e6fc488e7891165500c30041fe947bf0cd44bbbbcc76e509ca7c6db7992d0ef7"
+    },
+    {
+      "path": "external/paper-orchestra/skills/literature-review-agent",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/literature-review-agent/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15500,
+      "sha256": "1e0370e86f4fcefd9e01297c16cd91a113894be9354ac76463618f8e4420fc71",
+      "blake3": "0be561ef10a17d19e2bb071a5fbd9d811305efee0202a80776aa56bf56febdc8"
+    },
+    {
+      "path": "external/paper-orchestra/skills/literature-review-agent/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/literature-review-agent/references/citation-density-rule.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2952,
+      "sha256": "6b63f495fea2d69438ddefc0e5f76e6cf863dfdf3b0f1aa36f97e770dd8fe540",
+      "blake3": "894699ad0213e85c1edcfde98da11940523db6aef1b2b6b03a8271cabfb264e4"
+    },
+    {
+      "path": "external/paper-orchestra/skills/literature-review-agent/references/discovery-pipeline.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5043,
+      "sha256": "af9c7c8dbac5d571ba85d0fd8923d1cbb6e2d7552c60b61a5e2a90df44b7fc77",
+      "blake3": "d1923d70f3bfb89fe8b39aad4c0a4594d46485e93d5230b6fd74875a37aefc73"
+    },
+    {
+      "path": "external/paper-orchestra/skills/literature-review-agent/references/exa-search-cookbook.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9576,
+      "sha256": "76705dceacb77a1468a98c696ae70154ea450933739b1b7d17c0c56535e41a76",
+      "blake3": "9fb422155adce075e2ad99fb391c57c175a2840095f7bb42b788ce15c5c1f143"
+    },
+    {
+      "path": "external/paper-orchestra/skills/literature-review-agent/references/prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3371,
+      "sha256": "bbc9e41573ff31e0852f1377afd26992a06ea39099f8a79ea1f692fcda6db883",
+      "blake3": "0a9665888e0f3168ba868f9ad6f5ca0d1eb83644211bfb0fdcfd4a12a9189513"
+    },
+    {
+      "path": "external/paper-orchestra/skills/literature-review-agent/references/s2-api-cookbook.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4368,
+      "sha256": "2a47f87fd49851fe2ee42e5d38bcf161ff48430812b942d27b5dc360d7bf0a51",
+      "blake3": "a478138654edc7dc7d80055017534e25a2c2a5302672eccfb77a642422f40fbb"
+    },
+    {
+      "path": "external/paper-orchestra/skills/literature-review-agent/references/verification-rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4378,
+      "sha256": "699e39d1328dc7dace8a682c460d18d6926f53194272e8a299ed744824b02838",
+      "blake3": "2ed7870de5a31a79f3c4c0751df5841f9afef3e64b9725b65f2845a741fe2e7f"
+    },
+    {
+      "path": "external/paper-orchestra/skills/literature-review-agent/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/literature-review-agent/scripts/bibtex_format.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5489,
+      "sha256": "7dc21eee92cb3e3a2df2e4878bd299f5554bf4863a6bc65a49d1c1a6b17b34da",
+      "blake3": "ab1d24eaae416034e36ebcb91644856482795981ccd355ad027a80deda5b449f"
+    },
+    {
+      "path": "external/paper-orchestra/skills/literature-review-agent/scripts/check_cutoff.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2339,
+      "sha256": "d6985e734a59428c5276c6c48d88dc17038cecd554a500595add89f08dff0b3a",
+      "blake3": "2d471e6d1169834ddc6a014caca1b18a181fad96f9463c6d2bfc4e15a4f85673"
+    },
+    {
+      "path": "external/paper-orchestra/skills/literature-review-agent/scripts/citation_coverage.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3264,
+      "sha256": "03b60bf78a8255f6cc45d3a0b6ae19d534f7e699004cda83a55672ca2c90e916",
+      "blake3": "a03b231cb39e9f05003504a7615a7ceb26aaaed918b99a43d1824ae161b9ed6d"
+    },
+    {
+      "path": "external/paper-orchestra/skills/literature-review-agent/scripts/dedupe_by_id.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3315,
+      "sha256": "7df08f994894818d7b1ab57b971124fd76d9c80a40e23add304c139a06b91075",
+      "blake3": "2ae448b5510d977acc36fb1f5e01eef54d6e08af374729ebf4da9bca8cff5247"
+    },
+    {
+      "path": "external/paper-orchestra/skills/literature-review-agent/scripts/exa_search.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6184,
+      "sha256": "285a5df6a5f5651eebd81ab037c4e118111ca631011572ae84a9aa99b6c4d8b1",
+      "blake3": "3becf8fb7d60204bdabc605b9773f2b587c1ba71d71e702be19697d24b6df378"
+    },
+    {
+      "path": "external/paper-orchestra/skills/literature-review-agent/scripts/levenshtein_match.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2266,
+      "sha256": "4c9c7b8870860043e174e9d93f0ab0d5dcdf65a0151e37f0e28e9ff527cf09e2",
+      "blake3": "929601ba5d9cea71969247d96efdf320d529f437bc8a4795757a20183edc5a7e"
+    },
+    {
+      "path": "external/paper-orchestra/skills/literature-review-agent/scripts/pre_dedup_candidates.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5185,
+      "sha256": "ac9c878640716905871e4dc88574b708c8b6b8a12394e806a28f22214dd8afba",
+      "blake3": "9d2279cbc8aaf007e63ec276b0b106ed8454b862b6b07c7e6e91032f162dcb1d"
+    },
+    {
+      "path": "external/paper-orchestra/skills/literature-review-agent/scripts/s2_cache.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3679,
+      "sha256": "4827c7c5c3150c8015b13ba14fd957b7dfb9273d357f19d6e3c10df6a45a0348",
+      "blake3": "74d8a0010c6f1f447104f4f57bd7db95a255135c9cccfb6b3c73af1546b45867"
+    },
+    {
+      "path": "external/paper-orchestra/skills/literature-review-agent/scripts/s2_search.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7389,
+      "sha256": "bfe921df856799344f97bdcbc71e777fd0efd0c84e73e70d0449ca7cb6fea35a",
+      "blake3": "c911f0687941b6659c1c48813ec2d9aa91ae50b66263b62d609da68844def962"
+    },
+    {
+      "path": "external/paper-orchestra/skills/literature-review-agent/scripts/sync_keys.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4170,
+      "sha256": "5282d8da84b2f12c660cf23db0c5f7d74944eec8a8728a2cb3af9fb60441d555",
+      "blake3": "dc3ca3ff52e761d47c0a49db479baae41a093a94e0b98e94a6cb6eb11640553c"
+    },
+    {
+      "path": "external/paper-orchestra/skills/literature-review-agent/scripts/validate_pool.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5028,
+      "sha256": "05501f54697be07e8f7cac4956d57ed78d4dcd0e4191981def007de03a0d2c29",
+      "blake3": "3c914f5f655877b9109d1ab00293d53405d7b64c68f14e6418c0b7968e300318"
+    },
+    {
+      "path": "external/paper-orchestra/skills/outline-agent",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/outline-agent/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5463,
+      "sha256": "cdbb057b7764461f4831b51042523aee801ee2e7cf735a3a1cff24afad76bd15",
+      "blake3": "df2618798d930059a03aa88a229e587213b393e45eeeefd35da9c7b7c3766618"
+    },
+    {
+      "path": "external/paper-orchestra/skills/outline-agent/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/outline-agent/references/allowed-values.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2348,
+      "sha256": "d0a8260e391810b51b25332c21a94c820e2c2a95e717bfbe2e4f9431bcfe4360",
+      "blake3": "2be071b577b663b2590986287718c17f7164d0b303fd061e9a8cc0a4181f6bfa"
+    },
+    {
+      "path": "external/paper-orchestra/skills/outline-agent/references/example-output.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5072,
+      "sha256": "c62d4dcfa1704914a0d0aafbba5f18c8c7a898d07b839ff38d2711add8e8dc09",
+      "blake3": "7b735a1d1616b05b2b750c99edb50a10cba63031ea0f3ed673a960fb3e3fb11d"
+    },
+    {
+      "path": "external/paper-orchestra/skills/outline-agent/references/outline-schema.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4451,
+      "sha256": "c2ff79f2a085146b28f6e46eccaaf8cdd72386480aca194278c239aa944c6ea9",
+      "blake3": "7d8248208a931a08d34fb884ea1225c97d35dbdf680a8f7989452530c1fcc1a8"
+    },
+    {
+      "path": "external/paper-orchestra/skills/outline-agent/references/outline_schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4261,
+      "sha256": "66d4bb103547b6247added9764b6a6d609845976e403c058e90256935d43d29a",
+      "blake3": "d23962585e934d1a1e1532f96055d80b4075b7ace74323b670c1db4cc2e94879"
+    },
+    {
+      "path": "external/paper-orchestra/skills/outline-agent/references/prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7055,
+      "sha256": "b189f1f330c59fe424fcf65751e39520f1da5d1bd2bf0a0e4cda6af8fee626fd",
+      "blake3": "be8c9594a121d03660f60884c736336f5086f350869402187de2763ba41fe8ec"
+    },
+    {
+      "path": "external/paper-orchestra/skills/outline-agent/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/outline-agent/scripts/validate_outline.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5326,
+      "sha256": "b3faff79054e9f0dd242148c2aae3731775c1f1f1403dc412209fa5e5838492f",
+      "blake3": "e6119a52abe5579776f3b8bc4a3741100d0fd0e21df2e0d730aa56e3ef0d453c"
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-autoraters",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-autoraters/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6748,
+      "sha256": "6d82c973a2ee3d8a769f948a91b53b73b3ade04f7731f0658a8d024ebd2e6569",
+      "blake3": "497737fcf9d69b1777f5eec930c5a1b962e2647cddc50d1541f8c3bdac1db790"
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-autoraters/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-autoraters/references/citation-f1-prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2647,
+      "sha256": "b291b27833c56291b7c2b8856bd5fb892f07509dcc3cb0fd79d40dac9e087303",
+      "blake3": "1084068ccf4356b30b95bc84c6ec4952b23856b5350374fa5e076910522455ee"
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-autoraters/references/litreview-quality-prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8297,
+      "sha256": "dd7c436bd54a936a929b54d8c8e7a27f179491f8ad2fbb66d2b3ec95456a8f4c",
+      "blake3": "ae20545d076df1787813a20a19e5eb55c5a681622484d95cb1fb274849143e47"
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-autoraters/references/sxs-litreview-prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2481,
+      "sha256": "5b8f305d4c160eb7773d3378da4a689b66053e48df5a96fa90857c21f4581737",
+      "blake3": "c6d536fbe250a3411662c6e8406eacef7900138de78a40cfc653b15f80f76ab5"
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-autoraters/references/sxs-paper-quality-prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3531,
+      "sha256": "5735b574493e8b960c452dbd4c82c9142e343248ad7d404f55ac6d8008fca098",
+      "blake3": "3f5ebff39b74fff4e2971662f2c03fd9bb81a84b4e646f83d3963ad95f080f79"
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-autoraters/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-autoraters/scripts/compute_f1.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3795,
+      "sha256": "9b755240344975ecdc019b97a6aa5ce934a160adff85717597cdc124b95d0e78",
+      "blake3": "a9735311f3e6daec09fa4773092780764338f1903a6fc8a8c14460b5e554f4bc"
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-orchestra",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-orchestra/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12278,
+      "sha256": "64c999e337c5490ddddb3a2508aa4461f5d655a7ae6561aedffd116667db83d9",
+      "blake3": "c1b973e79074b886ffba64ab2bf8938da5345f4c4099ca8b303276b6dcedeecf"
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-orchestra/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-orchestra/references/anti-leakage-prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2588,
+      "sha256": "ccc909464c9f22f3d07b96df8e94414205e1d48a9bf41a3f41917882a0b9575d",
+      "blake3": "80df58dd36e84f60e16faf8ca9180d9db07a76e665f14462661d053dc1e92625"
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-orchestra/references/host-integration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8214,
+      "sha256": "e6125b1d47a9300a34bac2ad88009d22af0d9cf1ec325b2ec5590ab6e4f495f0",
+      "blake3": "d1308b5345add588ecad940c06c67a22d2fd2b2c8447cf43870222deeb10d02b"
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-orchestra/references/io-contract.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7483,
+      "sha256": "f8ebccf4cef8366fc0bd13fa8b8135964e09d593c55dd08afb3ee5080f4fc0e1",
+      "blake3": "58f8718af06de1fa49abbf616f6853efa2910bdf1dae8ca877bdbd051cc4d51a"
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-orchestra/references/paper-summary.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4248,
+      "sha256": "87433616f405e51bda639a7318cded0268af4b3ced73af1b7c9bf882b4cb3dd6",
+      "blake3": "221ee5a17a900652079117cc6e51b7df62d3e5fd24f435018b4d8da4ecbe3bba"
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-orchestra/references/pipeline.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7457,
+      "sha256": "fb83069100b2242d9d24a814626d5298aba508b00d87ead67007b72eeb0aa1ed",
+      "blake3": "2c4b6af921795cc5444a7bdfa60d78bbe54870dbf9736ec873d74239921f44c3"
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-orchestra/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-orchestra/scripts/anti_leakage_check.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3468,
+      "sha256": "0fca89a23667dcb594a45892f6565231da2057010475f29ce1e7351db0586c63",
+      "blake3": "d2458c4a83bb2fa023ff5d69a8c35bf34be03d0148596bd65faaa9bc5d83cd50"
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-orchestra/scripts/build_pdf.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 29734,
+      "sha256": "03410eebd76c8dc65ca6e037208dd45bb8e02e0afe6fa15979bbf090c27d927b",
+      "blake3": "26a8a32754367ee3b42efa4d87bf25b7cb9541c861c382322675a09d60da38ad"
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-orchestra/scripts/check_idea_density.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5964,
+      "sha256": "ba56ce0945ba00292bf623000ac634b0df42fdf79101c41beb50c0eddbc730e3",
+      "blake3": "b54063df2fc92fb8f495c874d8f7ae81aba5ee8cbdc4c472f669a7bb9b4b1ec2"
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-orchestra/scripts/check_tex_packages.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6257,
+      "sha256": "183ad7c515d2041c51e11bdf50f444dbdaf35a00c0fd2e5b5bc0e6967401dfc1",
+      "blake3": "0acd132ea7be5be913fb854250181c9d61956c1d95c78d58c5e562e9ef899e24"
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-orchestra/scripts/init_workspace.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4745,
+      "sha256": "224fa017c20510eb86ddfb68501994195b7ae4776de4a026b63738a785e9f6f1",
+      "blake3": "bd4ba49514d4b3fee9d46b02d1e6cf3b5b53dee94e31eca5e8876498b5a402dc"
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-orchestra/scripts/validate_consistency.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10139,
+      "sha256": "447fad5a1f525449ad6d6ca3d297d81f8e11c4e33a5c75a97dd93ccb71a94ba6",
+      "blake3": "53f7a10e3dcd8d738254aaa04c1119386508c56658f59cf3a0b6d745be06d74d"
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-orchestra/scripts/validate_inputs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5012,
+      "sha256": "43249a01e1eab397616e3c12e0ca31966caf2637a077834d3f660e352e09cb79",
+      "blake3": "7360dd096de04cb27cc4b18f31e78d320bd5209b15427661162b9ffba00eac70"
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-writing-bench",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-writing-bench/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5758,
+      "sha256": "f4e8d8c2045737838ed7df2d785165e8b7c156839a137d856941c8f9a34b9fd6",
+      "blake3": "5675ddeb339ad8730743715184440ccb8c2af64cccdeeb14b5250ccb93050412"
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-writing-bench/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-writing-bench/references/bench-overview.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4420,
+      "sha256": "fadd1800a96cb9efe423bb6964ebd98d089922f8d246cba6b352c9b8eb1cf3b1",
+      "blake3": "cd6f1586e7056433da35e65084a819b87c424b17a4369979490e29bfe8543320"
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-writing-bench/references/dense-idea-prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3377,
+      "sha256": "257705d846409ef629d010c89066afdeaa021c7c031aae7adcf44ceb68e379f3",
+      "blake3": "2007a02d14a4c7fbb3586e4fb4f57405859feecf6c22ed16dde95596326db419"
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-writing-bench/references/experimental-log-prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3390,
+      "sha256": "0bcda77012568bd7e8a3e1f9175ae3ec76eb52fc32210ae979ef2452ef30351a",
+      "blake3": "3a24672fd5205fd712788c9aa4ed89d5971381be76e461c0ec2174ea2197f260"
+    },
+    {
+      "path": "external/paper-orchestra/skills/paper-writing-bench/references/sparse-idea-prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2878,
+      "sha256": "da4bd33b58a5424675efbd8112f708f8e8304463982b7cb71d9f48e7e7a55f46",
+      "blake3": "2625470d34c6baf54ebd22fb9753be85604c943d8c7ae753a9eb8add083a6f82"
+    },
+    {
+      "path": "external/paper-orchestra/skills/plotting-agent",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/plotting-agent/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8107,
+      "sha256": "6186fc86056102eb22ce48c971ee7aa80a86edbe8164c35300752986f17a9436",
+      "blake3": "b1a30d7ac6de838a8d5b5f7485c37601dfa8bd8f0e2706245d27f57192dca8bd"
+    },
+    {
+      "path": "external/paper-orchestra/skills/plotting-agent/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/plotting-agent/references/aspect-ratios.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2139,
+      "sha256": "306c665bb0cd9628e6ddcbcd903a14c7b84f91e5c276759c86d18bcf999b0969",
+      "blake3": "e79704aede46e2e80a9f262996ae91cb6e1abc7c14bf2f4ae0e6afb63bb61b84"
+    },
+    {
+      "path": "external/paper-orchestra/skills/plotting-agent/references/caption-prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2791,
+      "sha256": "3cebe4a90b0a12a0f758998bc30d559922b8f15ee42d99fce8263bc2c5641210",
+      "blake3": "d20415ab74f0ccd4abe3f64bcd5424a52ca51f48bb4abfed7d6c30b7eee63a94"
+    },
+    {
+      "path": "external/paper-orchestra/skills/plotting-agent/references/chart-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6955,
+      "sha256": "63b30ea50b8e11abac37f4a29bd50a3880759691ac9bb065cd05ec836b543280",
+      "blake3": "887c0000c218477cf9352b12ac499f2a610752593d090dc9141833e97cb0aef7"
+    },
+    {
+      "path": "external/paper-orchestra/skills/plotting-agent/references/diagram-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4057,
+      "sha256": "6da788346d2fdcc7d57615f6f347e56ac6b5c0737b51a0b833ea4d5160435311",
+      "blake3": "a29c7a1c1db840340dea8c62a19f9888549235eb4377210d9048e64c70cf50cb"
+    },
+    {
+      "path": "external/paper-orchestra/skills/plotting-agent/references/paperbanana-cookbook.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6298,
+      "sha256": "6b36392ca826e95fc0889705cd366a304c5a25352479fc6cc53da2647f340d04",
+      "blake3": "96c7849732118a287f36e5b3320aca536b17df7efe458f03490a7d4d86939712"
+    },
+    {
+      "path": "external/paper-orchestra/skills/plotting-agent/references/plotting-pipeline.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6056,
+      "sha256": "0f80d4fdb984d77cb419200f1ad8e2929ff71c1312e0a4a4d37591efc1ffbe66",
+      "blake3": "abdeb80c0ccc150d5939820f14a595671d1e80032e5257722b75bad086c6d1f7"
+    },
+    {
+      "path": "external/paper-orchestra/skills/plotting-agent/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/plotting-agent/scripts/paperbanana_render.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13345,
+      "sha256": "cdc9d88ebd732c0ed0c1e3a39fb7a3935999ea6639c6394c84ccb77e00a4d17a",
+      "blake3": "3f7d1febeecca1d7ff2ddf6f5704328f3c8a83857b3117a7c4aa89a3ce9b231e"
+    },
+    {
+      "path": "external/paper-orchestra/skills/plotting-agent/scripts/render_diagram.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4353,
+      "sha256": "b5454576820172aa69a63549a3dd2952b441c15c0643b7277c9b91f1a2f00d78",
+      "blake3": "cd66e0569190e9f0ba25fa1fb6e64865cac3eeb4b1fdc94293c5d921ea5c223f"
+    },
+    {
+      "path": "external/paper-orchestra/skills/plotting-agent/scripts/render_matplotlib.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7478,
+      "sha256": "2518312d148541c88afbf3fb4e20f252f2b68d58b5f7a59ee565adfd265d9af4",
+      "blake3": "adb593d10b50e49ebe32af5423433d45b8d64a87a432a4221e2440c36d50347b"
+    },
+    {
+      "path": "external/paper-orchestra/skills/section-writing-agent",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/section-writing-agent/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11066,
+      "sha256": "75f23bb6b1743b7fbe3296d52ad625f6883001a86854f22ff0ed1b7901500b29",
+      "blake3": "3f719b530433076e26db09ef29ded0ef32b2d2b7e3ec7cd782cb458cce7f526e"
+    },
+    {
+      "path": "external/paper-orchestra/skills/section-writing-agent/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/section-writing-agent/references/figure-integration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3703,
+      "sha256": "e5567f7486cdbbae3b436c27cfdb55a121fde7078da64c4e89ae94202a18da12",
+      "blake3": "33707193174e11034d9b3cf2c453859f5f88df6c7b6803d11c83e58b7a038129"
+    },
+    {
+      "path": "external/paper-orchestra/skills/section-writing-agent/references/latex-table-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5718,
+      "sha256": "d73f504c35fb87d61fd29d2dc6fffd9419ab0a4478af9a190202d9270c4efb30",
+      "blake3": "04e991698dc6341e84bcb035dee02ed5497202142927d4c25674c95a5a08fb5a"
+    },
+    {
+      "path": "external/paper-orchestra/skills/section-writing-agent/references/prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5534,
+      "sha256": "d5a9e226714b9d675cffdb3eacf08fda7c011b49cf5253d9b79fcac6d525fbcb",
+      "blake3": "e04e47efc9373494b53fffb81f9f674bfcfbcac927a8a1cf69bb6f2f75551b20"
+    },
+    {
+      "path": "external/paper-orchestra/skills/section-writing-agent/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/section-writing-agent/scripts/extract_metrics.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3998,
+      "sha256": "913b58be0954edf94198a8e911bc793da80d71cc2affbb237c6d9187438cadda",
+      "blake3": "97879d62fac9e5b8f5ef0b0595a78253145096f51f68b691c37e549c1d172f10"
+    },
+    {
+      "path": "external/paper-orchestra/skills/section-writing-agent/scripts/latex_sanity.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4080,
+      "sha256": "46811a507692f4374be89d752ab4b458c53f947f6001b9fa56a4c45a212ae480",
+      "blake3": "5e693dc4daacd7ce519312373e62bb2a60a583365a2fdc1931e4899f1c04dc6d"
+    },
+    {
+      "path": "external/paper-orchestra/skills/section-writing-agent/scripts/orphan_cite_gate.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1981,
+      "sha256": "eb1b0f8bb094f7200e2d093f03940df2c4f8c955fdf3357103d9b068e8a4ce05",
+      "blake3": "a31533c79eab0638195cf15263e73e0e84b3f149e4a713bad18726226cb9ffd5"
+    },
+    {
+      "path": "external/paper-orchestra/skills/shared",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/paper-orchestra/skills/shared/ai_failure_modes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7368,
+      "sha256": "8a882d952bef57c944ff36607afaba3f1aa7ae0fbaff5b5d03acef4e77306fe6",
+      "blake3": "ddd5f4e0346cba666cd1194125a4345b1ae110d28180510dcb7426a8d0b816dc"
+    },
+    {
+      "path": "external/paper-orchestra/skills/shared/handoff_schemas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8939,
+      "sha256": "2e75a597007a427b0bdf521625040a6ec4613b70520623edf881b1a9703bdf67",
+      "blake3": "1e51bb085c1917a426a1c7dd7fa45450e53e1707ab3f33ab6c0543e060bf01b0"
+    },
+    {
+      "path": "external/paper-orchestra/skills/shared/writing_quality_check.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6530,
+      "sha256": "79add3bbd4bb377bfb314f011b6153fabeee09a955651efabba795e3dac13a65",
+      "blake3": "e43f75958fd16874b221f30c549fcc0d07d544a2ef2f41e46d846ff1bbf72dff"
+    },
+    {
+      "path": "external/tools",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/tools/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1239,
+      "sha256": "28e19b82eebb49935e8d11d654578edd13e3a8d1a65d487e91717a9e33e48040",
+      "blake3": "2547c2e4a0e66e2841cf8d8788f951cac38ca92dc8368195267689668e46e947"
+    },
+    {
+      "path": "external/user-corpus",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/user-corpus/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2497,
+      "sha256": "6bc1f478dc2dc7e7f686f5aed249dbce722dc4995d3e70c9bae3ff2906571719",
+      "blake3": "45e3c86edef8b9784aba0666757a30faa17dcde8cec0ce62083f09bfbad1d81e"
+    },
+    {
+      "path": "external/zhanwen-mathmodel",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "external/zhanwen-mathmodel/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1441,
+      "sha256": "eaa098d8bb4f069a1a75aaf941d7bc62ad0a5a5c7b9f9e1c0e19cd93f7e376a1",
+      "blake3": "b6d227110a8b40ea2f8cd41f385e9cf4ef492d182f4f3ead05282d9f616fa1d5"
+    },
+    {
+      "path": "pipeline",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pipeline/00-environment-setup.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16334,
+      "sha256": "1e2937a90d4695c4a8ef4d19ef22a6d53e8ff3716c6fb0736a8fcc4a993a8305",
+      "blake3": "5c14fff080219a5eed6501abbcd88e549e187f26f73a95600c6038516ac9258e"
+    },
+    {
+      "path": "pipeline/01-problem-intake.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3871,
+      "sha256": "346d56ec0f9d7d196fbc2d77b979303212e114c777ac96bb81a0cf247bbffa98",
+      "blake3": "cadfaf1b22d74ae2061069d2fe6b25cac0e594c8554890d5902d8592b63a8245"
+    },
+    {
+      "path": "pipeline/02-modeling-plan.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3499,
+      "sha256": "d3518f062e98540b5bfda6e94e9c5ed86e0d4fff256936ffadcd75020972dddd",
+      "blake3": "31a51b25c2774eb1e8bcbbcf2aad767683c91638270ac454739baaa792149876"
+    },
+    {
+      "path": "pipeline/03-coding-solve.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8672,
+      "sha256": "9342d98223509522054d5f8ecdd7ca16e2b8c91962dd4a427980974d745c9fee",
+      "blake3": "98573276463dc19a259540db6c90bfc1fa140fe70a2a5a76f47a539f94f4688a"
+    },
+    {
+      "path": "pipeline/04-paper-writing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6556,
+      "sha256": "a7f2469855e72f95b9fa895d8b9d92450e0f95aa98fadc8a89c64f4d3e21e803",
+      "blake3": "a01117fac3b5f664bb05cde4a1a9f8726e2ac8e4257b5e37f1d03d18fdebea81"
+    },
+    {
+      "path": "pipeline/05-quality-audit.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7276,
+      "sha256": "18befb3bb87dfa379c05b58f54fad84ef1ed75ce7ad012c1801623848f01a93d",
+      "blake3": "ba553a92aed4564367104f7effadfa8a7c607048d5461ad9d5fad32387de34a1"
+    },
+    {
+      "path": "pipeline/06-packaging-output.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6980,
+      "sha256": "b3977a05a4d3971d22bb53d49f004f5cbd306c536861e7a0664cd8cd2ff724f4",
+      "blake3": "ef1dd46fee29b433295b6cff522a9ca4419c871a278ccabbb8a00712f7b45807"
+    },
+    {
+      "path": "prompts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "prompts/coder.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9311,
+      "sha256": "7d6503226cacbad389a0ea7ca3784cf3daa64d0380730e79f6491ccebe958a09",
+      "blake3": "c27c2939e75c5cb8d3323c21408006d6c230e181e8265b25e0a2d2dd74d815d3"
+    },
+    {
+      "path": "prompts/coordinator.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3073,
+      "sha256": "7c0b3da124e0cfdb4b6d4afd5d7120d9caad729d2ba8669a25f05dfb93de094f",
+      "blake3": "1159b75d4604bbe7d050e1be3f89a7302d460b777f6314d244a3a596465d6e32"
+    },
+    {
+      "path": "prompts/modeler.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6182,
+      "sha256": "8fadf0986cf7c6296b0f2a2b12cc1d4f6bb7642d59c461a4c639cfad4b7a1932",
+      "blake3": "57e19351a3b77ff75cc27157c1f8434d379b808a463a07a0f6a47e1fb73572b2"
+    },
+    {
+      "path": "prompts/shared.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7435,
+      "sha256": "b7ccf267aca4cfe2a90178b2d0a2dbebf6864c06343d4ae80a65fabe3ad5c745",
+      "blake3": "600035c7785ec4f619f294785173782e2c81ac7d177d8167fa384f3061a75b3e"
+    },
+    {
+      "path": "prompts/writer.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9983,
+      "sha256": "dfeb28be2b662783a9894637b9e775881bd2e242ee8cd8c8429682fa3912131f",
+      "blake3": "33309b749aa49f6411df40f6541e791d21cb38e7b20f651643fcf03b68275bbb"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/agent-mode.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7222,
+      "sha256": "de5847b92775ccb0254bbad435042a62d6fea5528dd74331c351420c83706e84",
+      "blake3": "1eb030783c10ead6461fd3ce1a2407e00c5e29202f078cc741191e0741663c3c"
+    },
+    {
+      "path": "references/algorithms",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/algorithms/01-optimization.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13110,
+      "sha256": "2f4ebdaffb2c09f6b3e2465e6067c3235a3c470ce3585d203faa050fb6524b40",
+      "blake3": "a04881e2aca64abe02bc5b7405d20f520f540fe9f8fa6709e0f5365bb351de38"
+    },
+    {
+      "path": "references/algorithms/02-prediction.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14883,
+      "sha256": "7e5018126c840f8b3709cb1eabff89e46e86160ab9a01526f859e6666ff793d5",
+      "blake3": "aa79ed00ace591b889d50ccde0a1900781526452e158aaafef376a209f08ea2d"
+    },
+    {
+      "path": "references/algorithms/03-evaluation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15633,
+      "sha256": "fbf659995c6289eac033e845c2991b0cafb0cb5185e070973e824c3eaee6b02d",
+      "blake3": "64236e3148081c18aebe047d10f42679fd1f26ce7bb60e0111df34ca1beafb74"
+    },
+    {
+      "path": "references/algorithms/04-graph.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17671,
+      "sha256": "258bbc4f6304082f2d4c78750b5fdf591037fa2493a4924867be16b29bf13c60",
+      "blake3": "cce57b9f68fe5c4becc3b7e7e877a3d58089240e25683b679c4170cbe4b9c0ed"
+    },
+    {
+      "path": "references/algorithms/05-statistics.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13403,
+      "sha256": "345bd975e91bf2bd283a5cd5acae6f35f1ae28c3f55903b0459301b84aca3525",
+      "blake3": "bd84965379b0d0ec01189854bad05dc3d23b5e7ea75479f2c9346c2dcab1de63"
+    },
+    {
+      "path": "references/algorithms/06-comprehensive.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14159,
+      "sha256": "146b86bc8b5aa6f62ceb8263fbc12fde079f1d78357cec7ad62dafafcb29938d",
+      "blake3": "ac098f8b187fe63af40df718dbf2d6eaa90adaa5052d37b684668fca350f898c"
+    },
+    {
+      "path": "references/algorithms/07-machine-learning.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13718,
+      "sha256": "388626c80b269f818cd58fe93737f6256d10f9f2b3ac3e7f06ad4e9bd65cd61c",
+      "blake3": "d837f694d40091da4c138c7b7c1f34ddc952e714662df3da7b0216083210a13b"
+    },
+    {
+      "path": "references/algorithms/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3150,
+      "sha256": "f9f0966c13bdc30a217cf18785af4240f9b6501e17c52e50ab45140deef77cb9",
+      "blake3": "c9723b64953dcd4d5b9c09293142619174169dd59a2c1c60656f824d2f3888fa"
+    },
+    {
+      "path": "references/artifact-manifest.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3316,
+      "sha256": "374b54c19367abbe49efee5363fc328efe79632b6db4810136041256b4384563",
+      "blake3": "5985aed5aeb5fb78b3d2b44a4da5366cb22fdcfc208bcaf5733990f55dcfe408"
+    },
+    {
+      "path": "references/chart-quality-gate.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3645,
+      "sha256": "0e54c544b20055ee6cb307eaa0ee73cc4942f4ddec5d3bdb513027e31ff07757",
+      "blake3": "f0958ec34a3477b762674d4626d6cf21cf279d419e5ff4ea667a0955f2bfb79e"
+    },
+    {
+      "path": "references/exemplar-papers",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/exemplar-papers/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5010,
+      "sha256": "fcc83dd47e28fd0dbfde61664499d57f9e0f688866ecbbbd27fedcdcb8d8df1b",
+      "blake3": "297e29d2f9fb0153b3c0d19a33942bcdf115df4333b576264b75546abba8cad2"
+    },
+    {
+      "path": "references/exemplar-papers/cumcm-2022-A_A22116460175",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/exemplar-papers/cumcm-2022-A_A22116460175/cumcm-2022-A_A22116460175.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 34536,
+      "sha256": "e0946597816b6112c4f14a298c1e65ec409e611087ce2e9cceb6d7a45df30176",
+      "blake3": "bf03d6854cacd6cee31406bf0ac3d07e864697d088720d97685854f4c2c9b240"
+    },
+    {
+      "path": "references/exemplar-papers/cumcm-2022-B_B22110490001",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/exemplar-papers/cumcm-2022-B_B22110490001/cumcm-2022-B_B22110490001.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 37618,
+      "sha256": "d3aaa9d34cdd5dca48c2492ab546e65fc956b6daac480bdda2ec1d6b549c563e",
+      "blake3": "cda20e03ed8c8eb97530732b2c8748027b0caf54757b01a422e37572bb1e9168"
+    },
+    {
+      "path": "references/exemplar-papers/cumcm-2023-A_A23102890028",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/exemplar-papers/cumcm-2023-A_A23102890028/cumcm-2023-A_A23102890028.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 41161,
+      "sha256": "85ce428ef710814e3c2d92c1ab88f0aeeb5e5d89dac305fa1bbf8c52e3cecb29",
+      "blake3": "044c5853d99a102564b6199c5295fea3b1a3bf79e012c5298a1f541357f987f1"
+    },
+    {
+      "path": "references/exemplar-papers/cumcm-2023-B_B23100070173",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/exemplar-papers/cumcm-2023-B_B23100070173/cumcm-2023-B_B23100070173.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 43962,
+      "sha256": "1127da175ef69700a23b31b535b0177bc636a5aab971696a3253d3d01a52083d",
+      "blake3": "5a1c948b9853933ef428f104d32eb9384eab4985b397f5cc4acae44ef45f5e1e"
+    },
+    {
+      "path": "references/exemplar-papers/cumcm-2023-C_C23102890004",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/exemplar-papers/cumcm-2023-C_C23102890004/cumcm-2023-C_C23102890004.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 35790,
+      "sha256": "d6efe60d17ae35838d373d7d8f8921544061a4a9196e9f14390380b6423095cd",
+      "blake3": "da5001d386c61fa606bc3c3e101000648e3257f5317582297ccf09e02c529516"
+    },
+    {
+      "path": "references/exemplar-papers/mcm-2017-A_55280",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/exemplar-papers/mcm-2017-A_55280/mcm-2017-A_55280.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 38131,
+      "sha256": "73b6dcf0793fc42899d52d92b5ddb8d5cf489b488dc2455389485d6ec6fb094d",
+      "blake3": "16290a206a2867bc3b438bc0d77c5bd72b8c25df52782f194996a48f1d230c98"
+    },
+    {
+      "path": "references/exemplar-papers/mcm-2017-C_55278",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/exemplar-papers/mcm-2017-C_55278/mcm-2017-C_55278.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 38907,
+      "sha256": "d233cd089343785f81d4ca9ca05436de045f542318dcf54f48e97e8b03c9b6e4",
+      "blake3": "39c532c4d8ba3f70ec11c969c0d0d5c085b32c165c3b4b3d3998e8d85ffda93f"
+    },
+    {
+      "path": "references/external-tools-catalog.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8186,
+      "sha256": "ce529fff56675c9eb17b2d87d10f8742cda306cffe63adf84e7bdb667368eebf",
+      "blake3": "1f747b6dc243487569f5910ae090e2307d7803d0b7c6dcf34a0f97039241429f"
+    },
+    {
+      "path": "references/fault-tolerance.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7976,
+      "sha256": "dafb8a5991dee90b19fb6a57be718f58602e901ae56423a7e5f8838cc31cf597",
+      "blake3": "3870f3fdcc64c26ddcfecbb9a41435de4008ae88e57c9d3b42ffd94663199493"
+    },
+    {
+      "path": "references/project-root-protocol.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2392,
+      "sha256": "b67be3e29a065be5c0e855cce4f2b362db6736822b70f51faaab6518122d063c",
+      "blake3": "04fa9a3ff537f01100fc5f708177be0ebc3120809c2c70297c0f1e596004d3fd"
+    },
+    {
+      "path": "references/roles",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/roles/coder-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10989,
+      "sha256": "10bf84d04cb8a504d7bcec8459c77c16ccb4190664b8bcda3e2e1c7205ebc853",
+      "blake3": "98524b75366a7703fbacb6dfb4a3ccc81300650659150b156f50a8edee2f21be"
+    },
+    {
+      "path": "references/roles/modeler-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9156,
+      "sha256": "1f2341006d9df5773b6df3517012843b2105477ad6a83dfd0a8314037ff30483",
+      "blake3": "1a27f08dd93a1fea7de30c2d52b266c4520605b296a34d1a687f3a15a4e5e6ef"
+    },
+    {
+      "path": "references/roles/writer-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13942,
+      "sha256": "cd96abd7188533da7cf73f335b6273596487be267a4f7e9c8604e32667b3f7c2",
+      "blake3": "5b3d448a36697a470a17022072c7c74c91967aaf5f3200e57e41527fe85926a4"
+    },
+    {
+      "path": "references/run-mode-protocol.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2002,
+      "sha256": "788bb30ffda9cb5ff49474771b7ab2dd1f47299a1efc4b8e8280ef5aa90108aa",
+      "blake3": "21f90d9f7134afbbe169d114b298acb944799243a01483400875939f78adec31"
+    },
+    {
+      "path": "references/setup-policy.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2417,
+      "sha256": "99e5cb3f14165bec8d5caafbe4276ea061b0b247bb64513b1019bcd24368a6a5",
+      "blake3": "161d1feb428d19f287ed0ecea0ff4b81b19fb2c76b56f1dc67a668701a93009b"
+    },
+    {
+      "path": "references/workdir-protocol.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7151,
+      "sha256": "dd575d2b7cc93b521d1fcbf0c8bf8c254ab13d7591793d610eb20ce9a06b1be1",
+      "blake3": "85b843f5f290cf36d9e17d9b8a490871041bba47873c1dc7d47524a3ed368e12"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3926,
+      "sha256": "f709d2b5aaace665f6313b9148a61f642226b43d92498b5f512d042afd6614d8",
+      "blake3": "45a19fdd984182d69d55211aa3f62b1a4f78f61b6655cbfef37cff50a618481f"
+    },
+    {
+      "path": "scripts/install",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/install/discover_tools.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4637,
+      "sha256": "13516c0982881d2bc65823a327f40d692e1e525e912d4bad36d0244c593699c7",
+      "blake3": "5cc27a1ee41f671d582cdf0247def4d71c60abd7834bd0e3c76157f6a06f57a5"
+    },
+    {
+      "path": "scripts/install/fetch_zhanwen.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4515,
+      "sha256": "15d9152ebd56489972e9abf982f0b78e055d785c7bbe8c8fd7a5f48f719c878f",
+      "blake3": "16da99bc77d9946c930a1cd0c50fc0ed0267a67530ca96854adf14f1754280c1"
+    },
+    {
+      "path": "scripts/install/fetch_zhanwen.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3748,
+      "sha256": "464e0dd8c35223101d06a584e80170338b33a0aa3875fd525c441d9db084096f",
+      "blake3": "79bfd1a8bf908a02634fcdb53eef3e7d8829d2914fdbc8dec6aee7bdcd32007e"
+    },
+    {
+      "path": "scripts/install/verify_environment.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3089,
+      "sha256": "783841503d4e04e0231ecdcc33ba3c7328f237f4eb9c7d4ddef09b3d9ef05a3d",
+      "blake3": "16940e5245ce4b3caca3b7da16f90cef1a34e68874c4c53e1c997720e5ce9b8a"
+    },
+    {
+      "path": "scripts/runtime",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/runtime/__pycache__",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/runtime/__pycache__/audit_export.cpython-314.pyc",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13723,
+      "sha256": "92534a74521287b2bcead582634930e50328f2847e70200b9f1b408f8d3c86f9",
+      "blake3": "ad341ad66a6163ba2bc8d0ff56206d20677ed5d4854e04a1f734e74ddbbd2763"
+    },
+    {
+      "path": "scripts/runtime/__pycache__/audit_quality.cpython-314.pyc",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27927,
+      "sha256": "773f1f18450355abffe0ce41ec3ff9fec52fdc8ecdcb12f90e39f2acafa2554e",
+      "blake3": "2db7caa98985c03ef7d3f17f2e5345e88b52799a4d0b94c200c8ffa615fcbaf4"
+    },
+    {
+      "path": "scripts/runtime/audit_export.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8553,
+      "sha256": "2e1aecfbcc1ccaaf5d76fabf456e973b61cce5f1c60ff6b1ef2820de9612c1da",
+      "blake3": "46edfef3d6607d5f80f9ededea07261b90d025749086fb26deb60939758d1cd9"
+    },
+    {
+      "path": "scripts/runtime/audit_quality.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16573,
+      "sha256": "4dd78e7f3f58d3fc15ca3839c01201db49363c0b2f32a6917d184b312a7cacbb",
+      "blake3": "26142ce4a35d0befacf154d6bed94cb8b9ba1ecd9338b1a6d0f1cd0d14594056"
+    },
+    {
+      "path": "scripts/runtime/export_paper.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13217,
+      "sha256": "aff2602fbff24a782b32d1857bf5df8f61daec757337059bef797ac36b48ed8e",
+      "blake3": "7e908608b98c7b558f0f60fc76dea5fc0ca7fe48d5d26705d0eea3588d3b53b7"
+    },
+    {
+      "path": "scripts/runtime/init_workdir.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4480,
+      "sha256": "f3ca39e5985049a8fbfb252eece3010d8922053382aaafd2ba4edf482b90e741",
+      "blake3": "c7bf07ac7a622830f97b21e4386b9066a7c3703100a3158a97f45d36e78464ce"
+    },
+    {
+      "path": "scripts/runtime/match_thesis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9589,
+      "sha256": "64c739b1bed305c6e43291f0e3d9e21dfbc99805aa5938d1ccef096c8c23ffbd",
+      "blake3": "b3be809c79199e1f39c14728558c2e8991889671c5ca258bc423a7060fac7d2a"
+    },
+    {
+      "path": "scripts/runtime/pack_deliverable.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20339,
+      "sha256": "e004f9e246fc4185bedfc33500b237ce9b756b0631dac0305666c3ac16ce5701",
+      "blake3": "b800531d52a31e8e93801c22ae76398b6740a4cefbc1bdcf21e5ab045bccf35b"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2466,
+      "sha256": "e6b419ff570d74b139eb04fcef9b107d8148f9391c915821c107797b9d995ef8",
+      "blake3": "93cd13973734734988443971e60689d7e1b3de0119bdddb6f3cdcce6c90599b7"
+    },
+    {
+      "path": "templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/chapter_outline.toml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6979,
+      "sha256": "40c34de656dd90e174d759fae0d12288791a0c059e34ddeafb5e038c8ad11dbf",
+      "blake3": "dd7e9dc4ee8503e48aa8b7377e2e5646d48fb0f6407289b1752eb15d26c34356"
+    },
+    {
+      "path": "templates/paper_en.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4800,
+      "sha256": "b4e245cd16a429e8c966c605845442649760fe8446c1c3eb5f36d94d85a5b35f",
+      "blake3": "eb8645d329edbf824684309a55c640d4604641f8bc6677aa38049553e6beecd0"
+    },
+    {
+      "path": "templates/paper_zh.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9228,
+      "sha256": "ff9d3a029d8d29f2d1309bd225bcddec807a63627ac31861fecd0971f2fca3fa",
+      "blake3": "2b0fd2244a068233101c79780de8fe1918d383e3cafcd5539d3b627432c7b3db"
+    },
+    {
+      "path": "templates/readme_workdir.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1419,
+      "sha256": "4674ddeefe19406aecf143b3a92042f82ad0706203119e69a2ff2fc8bb4a1d84",
+      "blake3": "64a31168c4e17b2ef17a810f7add8c1ef5a57e91697fb34d0d900b560e4cacc5"
+    },
+    {
+      "path": "tools",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/brainstorming",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/brainstorming/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1362,
+      "sha256": "cb9ff51977011cfe8415822d0d6cbe7458182551be1f3913206160c4c3fa0348",
+      "blake3": "a97bfad287587f3720b11e60167a40fa660d116a9be2beff8ac02f411555315c"
+    },
+    {
+      "path": "tools/dataset",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/dataset/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2187,
+      "sha256": "c8cdacc2916c549a413c7b5714828bd801cf0e409659a15e7d3ae830eed7c64f",
+      "blake3": "1f81960e7692bc24bd1eaaf6aee8b43cad6bff6541e1a2e8716f6db326544304"
+    },
+    {
+      "path": "tools/dispatching-parallel-agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/dispatching-parallel-agents/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 734,
+      "sha256": "78457fcff916a1fe6e297ff48ac5c02c2c76538c2b4a92bbc83c390a17dc6691",
+      "blake3": "8d48f1143cf1f07ef8026e83d935e6f437bea72c062c5e297e71255bd1221f5c"
+    },
+    {
+      "path": "tools/docx",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/docx/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2328,
+      "sha256": "02372162e493365b8a258a2281c4a10e680ddecf9f3c0900fc1b642f2f72b9fc",
+      "blake3": "b216b7bac2c28ddb6b38c4b55e7d6fd175936eeb88a32e4496c8793905358b20"
+    },
+    {
+      "path": "tools/external-context",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/external-context/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1490,
+      "sha256": "79ce08e6a5d8c9bc74da3e9509f2f3b7e4e9c0696a2664dc47d5b4a3915838c4",
+      "blake3": "1936078bc84375a4a3beca1924ae5576cac98b87d3db7389e5626704026edb62"
+    },
+    {
+      "path": "tools/humanizer",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/humanizer/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1786,
+      "sha256": "d9a0737311a8d35b9121e4a6eb2873c72dc40ed93516bfbdef0132259136bbde",
+      "blake3": "c1ade19d8d51b94de8dcd4454b5101277895733f173dbbedc2fb034e00070ec9"
+    },
+    {
+      "path": "tools/mineru",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/mineru/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2743,
+      "sha256": "d0439c1cc4f38ee6cb75aa9694cab60b563028ca5063564732551bb6f4c84fb5",
+      "blake3": "ee15b7ad78eccdd4cd1b63e65add7a33b1db4526bcbd6a1ba0efa0c86a52e829"
+    },
+    {
+      "path": "tools/paper-orchestra",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/paper-orchestra/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7615,
+      "sha256": "bde3920006b4dd88deab2f752b237f0b503034f6751d7dfc10dd0c9a250bf791",
+      "blake3": "20b7b22aac45e0822d6dbf81d2cd5803876630e016b8d2c39107d0c8ec50a805"
+    },
+    {
+      "path": "tools/paper_search",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/paper_search/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2398,
+      "sha256": "24597e009f916e2f95c1816a7655e907e08f2ece260489ac006f9d383307e6b0",
+      "blake3": "e15e370397606f5ef17ca32bc42fdd0cef0c4f85f1c62a7990a2a520111df5a7"
+    },
+    {
+      "path": "tools/paper_search/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/paper_search/scripts/aggregated_search.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7542,
+      "sha256": "3ae9c3b863155c62512d32d2540acac52f730126e5f354fe11f0a8815f19604a",
+      "blake3": "7e122a0051dde518429f2a7e5d2adb237e690f73eed4c3d95cc7e8fd9a970451"
+    },
+    {
+      "path": "tools/paper_search/scripts/openalex_scholar.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4037,
+      "sha256": "edad729b5c9ed5ca9d801cb4ce4ad7580abe9eae350a76ec4fa2ffd8711b9ed7",
+      "blake3": "1b066ddd0ce942554aae3822cfbcb07db084d5031aa8867264dba814bdc78831"
+    },
+    {
+      "path": "tools/pdf",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/pdf/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1849,
+      "sha256": "b45d661412d28f8d5757e4906b965873b9b00eabfedcc58e115e757842209a29",
+      "blake3": "12f70813206ffd0178e5be146f0194c194f240509c11778be1984a1e7cedecbe"
+    },
+    {
+      "path": "tools/scholar",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/scholar/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 906,
+      "sha256": "ec72a367171a3c499b85c07c5d56bb9421d89ac1baddd57e24ef8f1894709973",
+      "blake3": "94d02f20ceec677d5b8e73a724c181a71c00aabe52163112e2ab7726a3a063a7"
+    },
+    {
+      "path": "tools/scientific-slides",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/scientific-slides/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1348,
+      "sha256": "a2cba7f4216601d9130f7379a2b5a41afb01b758665cc83a3a6375345b6ce2d3",
+      "blake3": "3b78fec5fb9128a0112d9011418e3129f26b20267884ef91c8a6aac9833dc839"
+    },
+    {
+      "path": "tools/simplify",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/simplify/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 797,
+      "sha256": "f23dbf887296c58f8b4dd07bfba4b0ea7887d8603d834840784c77bfaede488a",
+      "blake3": "a863b8cd299c456ed826af0ba4b7456dd48478af86ad53df67585e09f8ab9fba"
+    },
+    {
+      "path": "tools/subagent-driven-development",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/subagent-driven-development/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1347,
+      "sha256": "0a291d55220cb078990a9dd10d6d82a6e34bcdedb525f5724557249610590e21",
+      "blake3": "66fa404e33987ebcfccb56a0cdeef2bc15e7076fe947af85f58ee8d42f357c41"
+    },
+    {
+      "path": "tools/systematic-debugging",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/systematic-debugging/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 765,
+      "sha256": "004891aa881b9dae715ed5d9325558cc88e846e43afe8da3fcee05ece5184da1",
+      "blake3": "0a3300bccdf87178d949e12b6a0f8bdb1a83a768e25ce6e3d62cb0b96f85572d"
+    },
+    {
+      "path": "tools/user-corpus-explorer",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/user-corpus-explorer/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1966,
+      "sha256": "4bebfe022d8582cd02c262bb7b0a1ec5afccea75f8ac1e2a7efec14a5c05e131",
+      "blake3": "9e3512b16f50cf0f81e271904fc15f0fba752270c2f264614f4c054ff94e3e07"
+    },
+    {
+      "path": "tools/verification-before-completion",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/verification-before-completion/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1333,
+      "sha256": "b7e19508443d220cc2af3c1739af11a7a1bb06b218ee63e4316235e8bec7c01d",
+      "blake3": "896dc8f787aaed95ea18140072a80a30647a48c544aafa41c320be04daf1cc28"
+    },
+    {
+      "path": "tools/webcrawl",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/webcrawl/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2400,
+      "sha256": "dec18a681ab59a73a7aa4f9b1aa51ce20019024aa3e6eebbc83fa3ff52f44750",
+      "blake3": "40d109ca657e36d2e241b128e4ea8c9fe72b029c92a8378d182432998b35a6e7"
+    },
+    {
+      "path": "tools/xlsx",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/xlsx/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1642,
+      "sha256": "8736ea58788f3c75d56ea36225b5e52c2bacc85065f80cd19d91237abffef10a",
+      "blake3": "701a02c6dd6478f957ef7a6f3032710bae3844105e106553d86f5741bdb9fe3c"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:ab899a5cce6a0932de1db4a0a7662f05596f154a9b3d0e1fe110efcc8a1acbbd",
+  "sha256": "ab899a5cce6a0932de1db4a0a7662f05596f154a9b3d0e1fe110efcc8a1acbbd",
+  "blake3": "8603e95289ad0415c60b46212ae910128cade1c09f7a331b7a35268f9d4cf9c5",
+  "size_bytes": 141732,
+  "file_count": 15,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18651,
+      "sha256": "9b4900442a6e00483fa2ea225e2bd2c06e6b298614c97e2beb5e1d50f1f4f958",
+      "blake3": "0f95bf6642aca7b83969f40513442669f36995065d8f44622ee40739b4c3bbf8"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 168,
+      "sha256": "3bf580c108e1d08a8ebcf7f01527cce1726250282462c393899b4f3cad585fb6",
+      "blake3": "5594e6e88b653e0a0ad9ba4fb09886d7d63a4a74bd1f0e60dedaba9eeaa1c5a9"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/config_manager.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8013,
+      "sha256": "cde4d5d0937db7a186a0b796febef3dea1ab68ddc7057e5ba9bc4aa9eb3fd08b",
+      "blake3": "4ad721850a6408137b63e5e4af8ec15c3eb5e71286d261e7bf049280f613cac9"
+    },
+    {
+      "path": "scripts/connection_utils.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10946,
+      "sha256": "80fcc2b3d894a23f0bcea561bcaa17bbd69fc69ed94c46b186e0832f6e6584d4",
+      "blake3": "2546aee7eab46ac4330d4d417b03f741e949e5200c217c1e06c2f29515d99441"
+    },
+    {
+      "path": "scripts/ddl_builder.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9144,
+      "sha256": "b56249df2e1f22b4d8501ef7fa98eecd10a3d799d0930619345716e2de9c0977",
+      "blake3": "14e420168712858fb23d8433d6ee2bf2ffbdf67dfa0f4e65200e928601e990c7"
+    },
+    {
+      "path": "scripts/generate_paimon_statements.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15412,
+      "sha256": "478eb4e58421bc88aaaa2c47c2a1b63dede4b055a3780209e351619a0237c843",
+      "blake3": "bb003a9ebcecaffec1fa53d074002d80c15273cfd923646db789bc719d4a3712"
+    },
+    {
+      "path": "scripts/generate_rclone_script.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7910,
+      "sha256": "600729468411b3bc2a2c7b7543b8b1db5cb8e0f69632adea1098762627d7cc7a",
+      "blake3": "06f2e33ce36deb19f65a62b94eb75b6f50b6699d522049a4f98c7a7d6230bf93"
+    },
+    {
+      "path": "scripts/get_metastore_changes.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8795,
+      "sha256": "bfd59285f9d2535604e358f93c08b03028f1c65051cfd729c34c48ae62b97d24",
+      "blake3": "1879dd0f7d24dbad89124ca7c0ae5d57f5bb2998404610327b522fbfd0a1e4aa"
+    },
+    {
+      "path": "scripts/get_metastore_changes_thrift.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10076,
+      "sha256": "eb3ebdd50bed28689f32fd81f6b6d42c53b8380dca0d07c3e552781e512ec140",
+      "blake3": "87d994eddbafc92feb0f666edcb93f972904168b99cd14c3a0bc86fe689e189c"
+    },
+    {
+      "path": "scripts/hive_dive.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6254,
+      "sha256": "f303dbcabc6e3e837e9af4a488fa74f2fae5a6dfa43b747c8505839882e57a4a",
+      "blake3": "f70e094d96205fbcc256fb061f3a5fc7ddc578fedd4ad5b47717131f9b6fb9c5"
+    },
+    {
+      "path": "scripts/hive_dive_thrift.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9615,
+      "sha256": "6a5f4928550a7970a05c0a40f31bd16770456437994572d6311dfb976bb0c58a",
+      "blake3": "eaebf3f037ff5349fa1c5ebb676014678b4ed9d5eca74eb7796ba7466b8f4204"
+    },
+    {
+      "path": "scripts/hive_explore.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25311,
+      "sha256": "964b162cf3f6714f31822c178c9c68065aad336bb01f2c478659c548423690b7",
+      "blake3": "e6f2cc16d8c0d20a7a815f601e09eb17551611989c089b196951d8d066f337b4"
+    },
+    {
+      "path": "scripts/main_metastore_changes.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4687,
+      "sha256": "7dd5fca2918bcdc6a085c01a9216af301743afbb1e29528475755711c2e91982",
+      "blake3": "3dfec7aa69653265a47c754131c74aa9340e4c6731d778a4dd10242f78312f42"
+    },
+    {
+      "path": "scripts/thrift_client.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4535,
+      "sha256": "6d80763cc4ce0b693c59014b60a42bd794f526ef3b5fb581dbb8bfdfc17c8143",
+      "blake3": "d5879537edb920142f1dcc341331a1bcb278a3595513c7b2ce64ae35fd405770"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2215,
+      "sha256": "53c3a0214ffadfe4cedb985174e8d8f5a4f2c82c73c3d3fb6eb5248d61e29b5b",
+      "blake3": "74936f6ca659e4edd16a0981ccb8893ce65a83d4f92c2969e30699b2326b93c8"
+    }
+  ]
+}
