@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:d818a229a0f93c2049297c5ba32dec53184de1fdaeff4749c62df30397456476",
+  "sha256": "d818a229a0f93c2049297c5ba32dec53184de1fdaeff4749c62df30397456476",
+  "blake3": "ccd76108aa648cbbb0e22880923bc9737a1333c6ef841e6825878f5cf719b30d",
+  "size_bytes": 127275,
+  "file_count": 30,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 661,
+      "sha256": "fdf82d069c95d7a862d7de042e12733e99a57617e13fede02fcca94da2616295",
+      "blake3": "210ffb8f26665b21b1d9266b069529e7e15ac04f8fefb9631766b0dd6fc9dae6"
+    },
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1078,
+      "sha256": "f39135fb6b56188ee6293387bb360043128831be0bf8826de4324dbbe6d78890",
+      "blake3": "d22d3f8ab0d846633a14c64a6704f88869025d70d64b101a1efbcb102cc5d964"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5446,
+      "sha256": "66187efe4f945434e8cfc3e1715995ae89a3f78aad4cfad79b2874f7a6b89922",
+      "blake3": "f9c69002eec98be5a928c7dd785c7c7f456820797213459a09564fa54e235e91"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5411,
+      "sha256": "4f65347d751b9e6d5238f5d0af0cfe85cd470ddbbf462a4fa556963f1793de4e",
+      "blake3": "7096e2e25d9c4c8675c25c3a2fd7b9c0657a7d8c483806dbccc9e0e86e14231f"
+    },
+    {
+      "path": "_geoskill_core",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "_geoskill_core/VENDORED.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 798,
+      "sha256": "30dc71cbbc3294c7efc85f7b4869dab38be0f7381908875ee71bc76983c745ad",
+      "blake3": "2219cd52d33c39d265a64ba2dd94f8fa18c02c3b1c00eece7e7e8a05aadd989f"
+    },
+    {
+      "path": "_geoskill_core/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 933,
+      "sha256": "985f46ae9c0824a8f6fe9849808a2f39081eeb46c8118a7f1e967f3e8c65c16c",
+      "blake3": "cd63d5a121f918edd3a9d2d995c21fbd0d9e43f75646ccb87b26ebfc4dd37b95"
+    },
+    {
+      "path": "_geoskill_core/aoi.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16578,
+      "sha256": "88a997177f463e5669bce1328776280517d525f0d72a204a7f395c4df21ff272",
+      "blake3": "d7f13df2385a69f7dc6c758873af570f95ae7e6c8ed74eee560482966681536c"
+    },
+    {
+      "path": "_geoskill_core/checks.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7271,
+      "sha256": "630bbb0f2338484ca1b1c6f06ef9937fb447a60af9211f18180798adee0f2144",
+      "blake3": "7f0efa9dd621c62da26e00f8c1ac8d8784cd0ace23be088a7ce6ed726c35f17f"
+    },
+    {
+      "path": "_geoskill_core/credentials.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12241,
+      "sha256": "21c1d93486acfc168abc0c5d03e7f2b031e43c4a38eb3254471d6c3f77d6fb91",
+      "blake3": "d83cbe61b000766e776bc269bff46616f2421007f4ca7071890356e8d56f7834"
+    },
+    {
+      "path": "_geoskill_core/errors.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4092,
+      "sha256": "cd825cd77eeb23bd4ed3ac8c83670bb022f48df8b4ffb1c5759f6cb618ee0804",
+      "blake3": "56cdb00baaabfccc644583e4a50264131063b4cb519fc1d8b9a8341928d589eb"
+    },
+    {
+      "path": "_geoskill_core/manifest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10109,
+      "sha256": "da7781616420e20a23221df7776206029dada53b5ed52e72d1c98720b8867de1",
+      "blake3": "9a8c4d9bda6862bdc1103534e830753ed732c4bee5d83beff24a830895a40786"
+    },
+    {
+      "path": "_geoskill_core/safe_download.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9604,
+      "sha256": "aa5ff8fa84d7ae87365e470928c0300f01756d8e06ab11dc17a9d1d5db8fbf86",
+      "blake3": "7d12f260dd06bf272b3bd45f2c965cd2ed378b294a4264a1e17a407d47531964"
+    },
+    {
+      "path": "_geoskill_core/sensors.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11146,
+      "sha256": "9c704fa6f33f81e38433b7489e992dda87097115910efd69479373eb06786031",
+      "blake3": "ade850be9859a816daee83f23c311ed8561fc8ca0bf03c57cd2c825841a9b6ed"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 151,
+      "sha256": "a395aa0309857b1ed5451ccdc95b532b8b74ce17545f92b98203ac0d4aa9e2b8",
+      "blake3": "776c0c34363bf3a7105af39fe29d6b839184bd7191f4c384e957bd3420526c61"
+    },
+    {
+      "path": "_place.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10249,
+      "sha256": "b8d18db766f7836aea5b8e456fcfd22658eab8739a35c29ba5af3acef71a6828",
+      "blake3": "40dfda8a47781569636104c45741c8d926396bb1dd40735609e71ad2276e8d5f"
+    },
+    {
+      "path": "_test_st_line",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "_test_st_line/noise_params.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 253,
+      "sha256": "d6950d4ba8d1d30341d0dcdb94f4ebcf92da2d989645e28da68ae346af67fef6",
+      "blake3": "aad8ede7b1519f0c5626fd13a58beca51a9a990853a732d45bba0ad91adaa54a"
+    },
+    {
+      "path": "_test_st_line/output-manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1454,
+      "sha256": "d29b968d7e8ddf1cfd4d570377759f83127d620c8ed1022e66ec790d9020ed85",
+      "blake3": "13ea26ef3598ee6ab59dc0e4668473d3b7fc697e4bd3267e613e3e6e43ba28e5"
+    },
+    {
+      "path": "_test_st_point",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "_test_st_point/noise_params.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 255,
+      "sha256": "82676da535a7d7e59a1e3dfbb8a6b0cbdb46ff8d99c2210b2bf8703f9b30e4ed",
+      "blake3": "baa13f16716dcf8d6b6a9c7bbfe4deaa58325c23555d81389ebb5eac3b860ef6"
+    },
+    {
+      "path": "_test_st_point/output-manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1460,
+      "sha256": "ce1cdd84cdab0cb42700f20c9c9484cc370f8418868b33a4a05abce0c192d150",
+      "blake3": "3076541aa1b0945bd7c27939949ef8b9ff9a7b7709ca6072cd67a56d0c02d07c"
+    },
+    {
+      "path": "e2e_test.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1633,
+      "sha256": "cd1dbfb159068336c53be2bc6b10f3bdff268d9439f7907d14f2aaf253af93c8",
+      "blake3": "2fcf96d3616714676c33654fae8be663ef14d01b905627aad364074d66957d08"
+    },
+    {
+      "path": "geoskill-noise-pollution-mapping.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15600,
+      "sha256": "fd7270d63cb98fdce6ccac29fff7c39452e8ca7f71a0101f531b770169345ada",
+      "blake3": "45f3f8832f002a8e936931b25027b51813ec6fc2969a4228636791e143c33192"
+    },
+    {
+      "path": "openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 558,
+      "sha256": "a7b1dc26de149de8084b62503d2bc1e9ee1efe41c61893a3dedd2a7ad195a7a3",
+      "blake3": "a16429b300653fe95bf6e9c0200e479edb549511d85eac1dd9e3626e903b15a8"
+    },
+    {
+      "path": "pytest.ini",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 125,
+      "sha256": "9024eb52b07a0ae4471be8219bdb57948721e4932387e9bb152d8fc52af28952",
+      "blake3": "e69801775d7a8cccbb9e895b2fb441a6d67416299c41f71f198923fecec7e668"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21,
+      "sha256": "b5a26aff03b3bf8536c8651285299dfa131f6ea69a8dfddac26190ae4ee65e13",
+      "blake3": "42d4ef30bd0a5a8e4b990da912c90dc6e147898bc64b8ae99eedb991ec2be165"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2361,
+      "sha256": "80156f1cf319ff883b6e19f18faf4ae3c9ba2a6275e1313b7d672258c633cc37",
+      "blake3": "519bfc0743f3a47bc3ae1fe05ed385d95d78629bf5dcda9f4e49d3743c66c2fd"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16,
+      "sha256": "735469839c842bc3fbc34792d87ecca2fb190d80bc5c631024bb850a07b5bbfb",
+      "blake3": "ba7ccd03b0ae1e29ab90fde8c3c24913b03b47a6e7e792269288dbb61d48e077"
+    },
+    {
+      "path": "tests/conftest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 684,
+      "sha256": "9520d01a1888faed8ba04dfcbcd58989cc7b346586ad7f799f3650f8c7c72e03",
+      "blake3": "37c56c113a7c3c6946441016dcb9064454ad7cced258e1a531cb2a79adf43775"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1536,
+      "sha256": "a1d2a7a657b0528a7f59b04e01915b6050bc6425a3547eccf5524f9d7301370e",
+      "blake3": "49e531f72ff9094a6ecff7a27028f5b3e24a5c51a3678f869f59c5aebda4a6f7"
+    },
+    {
+      "path": "tests/test_core.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3490,
+      "sha256": "605208532edd7220a07df488b57c12168a9705b93629b389e258e311318fcbbe",
+      "blake3": "ae2c9da8614e148ae7452cc489962ca0a4f7b4c69a618b5f31cceb955b9b5fa1"
+    },
+    {
+      "path": "tests/test_e2e.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2061,
+      "sha256": "beeb2ad233f8a2ccd93aef91d3289ec5955d7dfead83f143e09032a25cb5dd6c",
+      "blake3": "ef7241a53e82de29ca2842651f80f8230018e392e80cd67c34e3a99f07bb7368"
+    }
+  ]
+}
