@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:e4b4bdb244ce4e9f67100998a31111d3021003fcd462a9fa60b882536bd4acd2",
+  "sha256": "e4b4bdb244ce4e9f67100998a31111d3021003fcd462a9fa60b882536bd4acd2",
+  "blake3": "1787d6e5ab8a0e3da2cdb95d2116ed73d1c34efc2773fa1d0ea1bc813a13bd13",
+  "size_bytes": 128938,
+  "file_count": 26,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 665,
+      "sha256": "c27036f522d8b15a1cb0a85ed793ab02e509ad9f7bcaf7737d11d8040d0283b2",
+      "blake3": "796c67b17eab897cc9f9ecea3346b89d856106c6aff80de115b8c8e76e7b02a4"
+    },
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1078,
+      "sha256": "f39135fb6b56188ee6293387bb360043128831be0bf8826de4324dbbe6d78890",
+      "blake3": "d22d3f8ab0d846633a14c64a6704f88869025d70d64b101a1efbcb102cc5d964"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3261,
+      "sha256": "fee5ad895056fb627f742c1d4309ce65b6b7bea725ad73c32989a097417bae11",
+      "blake3": "efa584ac118b995ab8af8892b60d7e290a52b55a89b89d052b85681e70549529"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3004,
+      "sha256": "2fd6a8ed2a52829b76ac398e2aff3811beba813bbc7123eef811a2f68f98f31c",
+      "blake3": "2a84d222b62670d98af55d67a007b729b365777438a8d0663c1171d9282e121d"
+    },
+    {
+      "path": "_geoskill_core",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "_geoskill_core/VENDORED.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 798,
+      "sha256": "30dc71cbbc3294c7efc85f7b4869dab38be0f7381908875ee71bc76983c745ad",
+      "blake3": "2219cd52d33c39d265a64ba2dd94f8fa18c02c3b1c00eece7e7e8a05aadd989f"
+    },
+    {
+      "path": "_geoskill_core/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 933,
+      "sha256": "985f46ae9c0824a8f6fe9849808a2f39081eeb46c8118a7f1e967f3e8c65c16c",
+      "blake3": "cd63d5a121f918edd3a9d2d995c21fbd0d9e43f75646ccb87b26ebfc4dd37b95"
+    },
+    {
+      "path": "_geoskill_core/aoi.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16578,
+      "sha256": "88a997177f463e5669bce1328776280517d525f0d72a204a7f395c4df21ff272",
+      "blake3": "d7f13df2385a69f7dc6c758873af570f95ae7e6c8ed74eee560482966681536c"
+    },
+    {
+      "path": "_geoskill_core/checks.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7271,
+      "sha256": "630bbb0f2338484ca1b1c6f06ef9937fb447a60af9211f18180798adee0f2144",
+      "blake3": "7f0efa9dd621c62da26e00f8c1ac8d8784cd0ace23be088a7ce6ed726c35f17f"
+    },
+    {
+      "path": "_geoskill_core/credentials.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12241,
+      "sha256": "21c1d93486acfc168abc0c5d03e7f2b031e43c4a38eb3254471d6c3f77d6fb91",
+      "blake3": "d83cbe61b000766e776bc269bff46616f2421007f4ca7071890356e8d56f7834"
+    },
+    {
+      "path": "_geoskill_core/errors.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4092,
+      "sha256": "cd825cd77eeb23bd4ed3ac8c83670bb022f48df8b4ffb1c5759f6cb618ee0804",
+      "blake3": "56cdb00baaabfccc644583e4a50264131063b4cb519fc1d8b9a8341928d589eb"
+    },
+    {
+      "path": "_geoskill_core/manifest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10109,
+      "sha256": "da7781616420e20a23221df7776206029dada53b5ed52e72d1c98720b8867de1",
+      "blake3": "9a8c4d9bda6862bdc1103534e830753ed732c4bee5d83beff24a830895a40786"
+    },
+    {
+      "path": "_geoskill_core/safe_download.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9604,
+      "sha256": "aa5ff8fa84d7ae87365e470928c0300f01756d8e06ab11dc17a9d1d5db8fbf86",
+      "blake3": "7d12f260dd06bf272b3bd45f2c965cd2ed378b294a4264a1e17a407d47531964"
+    },
+    {
+      "path": "_geoskill_core/sensors.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11146,
+      "sha256": "9c704fa6f33f81e38433b7489e992dda87097115910efd69479373eb06786031",
+      "blake3": "ade850be9859a816daee83f23c311ed8561fc8ca0bf03c57cd2c825841a9b6ed"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 156,
+      "sha256": "36118405be26d72ffe61a7d09c800d057ec972e8500d8c389d81709214df56d7",
+      "blake3": "8699171a8df6c1526e0d608f12998192dd770820bab6065ffd2407b727532ab8"
+    },
+    {
+      "path": "_place.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10249,
+      "sha256": "b8d18db766f7836aea5b8e456fcfd22658eab8739a35c29ba5af3acef71a6828",
+      "blake3": "40dfda8a47781569636104c45741c8d926396bb1dd40735609e71ad2276e8d5f"
+    },
+    {
+      "path": "e2e_test.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1648,
+      "sha256": "b85eeedd9516f9649f6a17a50c2f312b3c8005bf2435ced61888958ae678da03",
+      "blake3": "e33b4f37c18e7040d7e0583742dd8db69d247fa121648afd99c2385369232d9f"
+    },
+    {
+      "path": "geoskill-insar-deformation-monitoring.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21180,
+      "sha256": "884f4dc861cb16ebe32cad5e103408109f0128dc9d387049ef70b27d0d49da70",
+      "blake3": "954343e58dee2fdea0668c54c254478fff850174454fd6778f01443d7753aab8"
+    },
+    {
+      "path": "openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 614,
+      "sha256": "e00950e822919723793c852e334327caecd4723117ad34aef34c33a86ae0f803",
+      "blake3": "9fe49c67eed98e4aba7aa0bd40c81eae8a1f18bd783a53b20130ea0e4ddd30e9"
+    },
+    {
+      "path": "pytest.ini",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 125,
+      "sha256": "9024eb52b07a0ae4471be8219bdb57948721e4932387e9bb152d8fc52af28952",
+      "blake3": "e69801775d7a8cccbb9e895b2fb441a6d67416299c41f71f198923fecec7e668"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21,
+      "sha256": "b5a26aff03b3bf8536c8651285299dfa131f6ea69a8dfddac26190ae4ee65e13",
+      "blake3": "42d4ef30bd0a5a8e4b990da912c90dc6e147898bc64b8ae99eedb991ec2be165"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2716,
+      "sha256": "4f8806c5c5830fa264eda1df83b357f74bdf06e14ba3700f58d9680f4cce003e",
+      "blake3": "3712295ee8c33daf494d80b60a81e5ab21326d461298057d231cf98d23a7760d"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16,
+      "sha256": "735469839c842bc3fbc34792d87ecca2fb190d80bc5c631024bb850a07b5bbfb",
+      "blake3": "ba7ccd03b0ae1e29ab90fde8c3c24913b03b47a6e7e792269288dbb61d48e077"
+    },
+    {
+      "path": "tests/conftest.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 704,
+      "sha256": "5692f093d5fac6749f866305d9aa4e698edec7c586994b3f81a7ef32e74ff07e",
+      "blake3": "e01ccc8b8f41f9db1fb829cf1908466f1b9c0370580ba2bdb5c8b43f75f33b49"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2800,
+      "sha256": "483313bf1bb9904dead23b857e7e7829c730ac64d4782a6c7a0eac65f1ce177e",
+      "blake3": "d5c6513f63cdae3df1e504d489508bbe9a857c062bb69c43067ab982c4ad4db9"
+    },
+    {
+      "path": "tests/test_core.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5853,
+      "sha256": "bd114c0f705ea9c7adfd8bdc058ac89a2ca85f66eabb43d29fc021a615d92d8e",
+      "blake3": "36dc879d3d1a047bc0d374bbcf45a2e862ef9fe801c651d8d00960c6399e0cb4"
+    },
+    {
+      "path": "tests/test_e2e.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2076,
+      "sha256": "4f1fa8c5504c8c6cff1e59c6ba2042c35b74c0c8b172206e07c0a4cde62623db",
+      "blake3": "9800a35e51cf8193ac72053c0b611d0fb943dc017a5feccb09f3c54e1bfdb450"
+    }
+  ]
+}

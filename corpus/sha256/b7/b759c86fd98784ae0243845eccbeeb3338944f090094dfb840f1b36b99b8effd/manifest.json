@@ -1,0 +1,671 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:b759c86fd98784ae0243845eccbeeb3338944f090094dfb840f1b36b99b8effd",
+  "sha256": "b759c86fd98784ae0243845eccbeeb3338944f090094dfb840f1b36b99b8effd",
+  "blake3": "24fd42ed623e1fff0d923cf71590fe8f0c342e4d4932147cc1c712d9780e9fd4",
+  "size_bytes": 174017,
+  "file_count": 66,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9722,
+      "sha256": "dc0a7aaab6a90514c741a98afa93f6eda254162074793d4b5045f256de47f9f2",
+      "blake3": "abe16daa5f7457837fd1148c15637882c8ba0b03aae5e7b7412723a547af98e1"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 142,
+      "sha256": "9e5bd731622d9097adf08aed9d1acf56a0b7d81f0f038dd5ac0fc126208a7155",
+      "blake3": "db8242e3d7b09a50becfcdea3ccb1877f6288617ac47f54df3fa2b473188ee2a"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/test-corpus",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/test-corpus/run.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8421,
+      "sha256": "b6ceead2abf0f155ca816c2a696e0ea4db9d0b2d55bba5ad1407d65ccbd23399",
+      "blake3": "a465980bc25f1a32be351fb0993f8b82a51c7117b54c9e2bcd867d1118249ac6"
+    },
+    {
+      "path": "assets/test-corpus/tier-1-title-card",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/test-corpus/tier-1-title-card/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2221,
+      "sha256": "12dfb3609e2be9b112ea92036049296cbfa11696bda471e79c6061eeb2d3009e",
+      "blake3": "137d943cc455109ec2ab8680c06edc577fd0a52330f1b63e97e4bf28c6ad5189"
+    },
+    {
+      "path": "assets/test-corpus/tier-1-title-card/expected.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1772,
+      "sha256": "0a6f8a3fc564abefd007fe0c80428698910905e73c6389749a6163c0e2cfbc8b",
+      "blake3": "fa0e2f0c7b37b6a77a127e36dc3a3a52a693bd5fe8faa7b2d4aa47d6387f8f88"
+    },
+    {
+      "path": "assets/test-corpus/tier-1-title-card/hf-src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/test-corpus/tier-1-title-card/hf-src/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1837,
+      "sha256": "8a2551b3517f1b50cfef228ad6f62fbee356f6fdb94228cbb64a8b5bed255e87",
+      "blake3": "09c69287c684264330d8528bc251ed45ad5503cbf8c89cb2052e722bc70a5b27"
+    },
+    {
+      "path": "assets/test-corpus/tier-1-title-card/remotion-src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/test-corpus/tier-1-title-card/remotion-src/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 296,
+      "sha256": "f9037f73cfc4bc7ad28fcd4bb140d7e6fa6cccf282e52bc27164ccc56a40cf9c",
+      "blake3": "ecf97d396f7b76235fae52f5db02a1dcc525743c310f6bfbfd2fab7aba11a5c0"
+    },
+    {
+      "path": "assets/test-corpus/tier-1-title-card/remotion-src/remotion.config.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 497,
+      "sha256": "105f9af576e76af26840b1ba6ccfd0f98415a26ecf00c2895490ae77fc1d9a06",
+      "blake3": "4817f4edadde22c2c3d07923a2e69300a5af48488569f3408076c73ca55664f6"
+    },
+    {
+      "path": "assets/test-corpus/tier-1-title-card/remotion-src/src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/test-corpus/tier-1-title-card/remotion-src/src/Root.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 259,
+      "sha256": "e3e158828c415ba90c158755d997eff6d5034e4ccd5c16dec7c5f271bcb3cc06",
+      "blake3": "f0ed8fe8668263adbbc63077b551f32b3fcfe57237ed1ffedeeb5ac19fdc4323"
+    },
+    {
+      "path": "assets/test-corpus/tier-1-title-card/remotion-src/src/TitleCard.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 773,
+      "sha256": "6ffcc488718b52a5206332881186331a9424e9c14d06c64ecc8219bff7718f8f",
+      "blake3": "9c1609f4d440df2b8a1a06e62f47dcf7c197847799c81ac2409c7ef3f81d5e0c"
+    },
+    {
+      "path": "assets/test-corpus/tier-1-title-card/remotion-src/src/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 109,
+      "sha256": "957e481dd33a29b4a55ae0e95dbf763b7e48c37c427ca4bd1275faf34bc07a74",
+      "blake3": "7022f7177e242ebe3f587106261572178a62145043edc7e670db7d05f17131cf"
+    },
+    {
+      "path": "assets/test-corpus/tier-1-title-card/remotion-src/tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 337,
+      "sha256": "cc24d56b89415ebbfdff594c246957974a16c8603803fedeff515edbee5f5c58",
+      "blake3": "54da5f369c451b28cb0ca26db705ef273c2f8a35fc7f60eea99d98455d22acc6"
+    },
+    {
+      "path": "assets/test-corpus/tier-2-multi-scene",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/test-corpus/tier-2-multi-scene/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3152,
+      "sha256": "09a12cc6b77d74533998e622dd7878f931a051991168a6c26bef743f47655b82",
+      "blake3": "095eaf199785c58a46f79a432c47cefea7245d30aaa639e9abd8f89bf9087f8d"
+    },
+    {
+      "path": "assets/test-corpus/tier-2-multi-scene/expected.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2002,
+      "sha256": "ecc0cfa050dde50b018b9d014c5b4fb710f44d2e016111ea60dd358bdadc60be",
+      "blake3": "725fa807b51fb7807ad62e02cc8e14b03d339bba66ed2107774dfeb67c528418"
+    },
+    {
+      "path": "assets/test-corpus/tier-2-multi-scene/hf-src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/test-corpus/tier-2-multi-scene/hf-src/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3782,
+      "sha256": "a406157afd13831c077745aabd3735336911342f28cb091fa4086483c22e5225",
+      "blake3": "ea8f77481c49132c95f8bfd606e65ad66671ac9820c84a75d9fc8343ee303d56"
+    },
+    {
+      "path": "assets/test-corpus/tier-2-multi-scene/remotion-src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/test-corpus/tier-2-multi-scene/remotion-src/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 298,
+      "sha256": "54130e2f8e546c5a0d22e8f90cb08e13d3c0e4efa0bf258796f0503c47e87a58",
+      "blake3": "8cf684d9c9a16985778ff794cf2b98e5c659fb94d4c05fecaf3035bbcf5c1360"
+    },
+    {
+      "path": "assets/test-corpus/tier-2-multi-scene/remotion-src/remotion.config.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 497,
+      "sha256": "105f9af576e76af26840b1ba6ccfd0f98415a26ecf00c2895490ae77fc1d9a06",
+      "blake3": "4817f4edadde22c2c3d07923a2e69300a5af48488569f3408076c73ca55664f6"
+    },
+    {
+      "path": "assets/test-corpus/tier-2-multi-scene/remotion-src/src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/test-corpus/tier-2-multi-scene/remotion-src/src/MultiScene.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2367,
+      "sha256": "a6c10fcbe7668cd0b8aca25d1423e53be4acb6cf37e51fa03bd73b8152a60fc8",
+      "blake3": "308163222cdf0a13c6104ef4466b74c5d64fb19177c8125c95580afd70a59988"
+    },
+    {
+      "path": "assets/test-corpus/tier-2-multi-scene/remotion-src/src/Root.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 264,
+      "sha256": "0d17fc76061ebcddfeabeea2caeb721b0f0fe7d2c6cd1e2fea116d5832dc49c1",
+      "blake3": "f722ca0dacd0f3c4375b79dc495a704eb55328894d9b9fa56279e217519b419f"
+    },
+    {
+      "path": "assets/test-corpus/tier-2-multi-scene/remotion-src/src/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 109,
+      "sha256": "957e481dd33a29b4a55ae0e95dbf763b7e48c37c427ca4bd1275faf34bc07a74",
+      "blake3": "7022f7177e242ebe3f587106261572178a62145043edc7e670db7d05f17131cf"
+    },
+    {
+      "path": "assets/test-corpus/tier-2-multi-scene/remotion-src/tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 337,
+      "sha256": "cc24d56b89415ebbfdff594c246957974a16c8603803fedeff515edbee5f5c58",
+      "blake3": "54da5f369c451b28cb0ca26db705ef273c2f8a35fc7f60eea99d98455d22acc6"
+    },
+    {
+      "path": "assets/test-corpus/tier-2-multi-scene/setup.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1244,
+      "sha256": "312bf8f2958afd8ebc21dc73479eef4b92c30623584b99293614b984965a553c",
+      "blake3": "fa2b221918c02e35929ab957f2553e5c1a8e70dec7f86d1d2521c44d3e7ceffb"
+    },
+    {
+      "path": "assets/test-corpus/tier-3-data-driven",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/test-corpus/tier-3-data-driven/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5026,
+      "sha256": "cc18dd2d50e77116a733264294d59360a7a908d3a83cafb7825f911c1269648e",
+      "blake3": "fe616e0b2ccd2448b17c7041941af82c0cbf8e684afd46ff6e5d2fc63ebef031"
+    },
+    {
+      "path": "assets/test-corpus/tier-3-data-driven/expected.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3448,
+      "sha256": "5b9f50d2558629864cd2a576104d1141fcbe4dbad115f767184041eba4a1372f",
+      "blake3": "cd350b4b8f5d772232c4954f047a54476fd0917835c44dab731d8a699e515294"
+    },
+    {
+      "path": "assets/test-corpus/tier-3-data-driven/hf-src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/test-corpus/tier-3-data-driven/hf-src/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9102,
+      "sha256": "311495e83d8d6b2c566be26c49112a7a7e1a499cbc512b3c2d98541e622e3e16",
+      "blake3": "d0e07026f5d57de60e976eec579913628518079ff62395885df05fc807903a7d"
+    },
+    {
+      "path": "assets/test-corpus/tier-3-data-driven/remotion-src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/test-corpus/tier-3-data-driven/remotion-src/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 319,
+      "sha256": "dea1bb6534c27d6cf15e1987f43eb994cc7be9a93b81d60c50c7099b52742876",
+      "blake3": "4b7d3a77fe9541bed4f78f8c0e1cd11068cc26de0988fd781130cf3e833a1051"
+    },
+    {
+      "path": "assets/test-corpus/tier-3-data-driven/remotion-src/remotion.config.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 497,
+      "sha256": "105f9af576e76af26840b1ba6ccfd0f98415a26ecf00c2895490ae77fc1d9a06",
+      "blake3": "4817f4edadde22c2c3d07923a2e69300a5af48488569f3408076c73ca55664f6"
+    },
+    {
+      "path": "assets/test-corpus/tier-3-data-driven/remotion-src/src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/test-corpus/tier-3-data-driven/remotion-src/src/Root.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 681,
+      "sha256": "113fdac2ac92f90f135abbcc1e24ace0fd2ff50f861c93db94599f82771f1985",
+      "blake3": "f2570738aa1cb28e3db5f0fc3dfa430612757b1f266fe949cfa436b75f80689b"
+    },
+    {
+      "path": "assets/test-corpus/tier-3-data-driven/remotion-src/src/Stargazed.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 970,
+      "sha256": "151be9c45dbb626de4ad148f6a099b94b8cf1e717b79e98f9409a398cf4d8bb6",
+      "blake3": "60b991b9a3e634c0500a41e88eb50f30e5d9366c3a829b076fcd5ac03c59435b"
+    },
+    {
+      "path": "assets/test-corpus/tier-3-data-driven/remotion-src/src/components",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/test-corpus/tier-3-data-driven/remotion-src/src/components/AnimatedNumber.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 740,
+      "sha256": "0f10007f91bc101fc4ad583b2456b6283cdf08b15a64f0028e43d45f1e3fd4b0",
+      "blake3": "e0cc30b7da586b74ee58f0e940188ef2327a0c60b00913317278521852d3080f"
+    },
+    {
+      "path": "assets/test-corpus/tier-3-data-driven/remotion-src/src/components/StatCard.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1474,
+      "sha256": "e22d82bcdac1848059667ad9dc78f748337743cefa13fbb2514d0df20054b5d7",
+      "blake3": "d0758d75a3661645035593d5cb8ceeba3fd09090002e81fe3012fa0b73fcfd72"
+    },
+    {
+      "path": "assets/test-corpus/tier-3-data-driven/remotion-src/src/components/UnderlinedText.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1154,
+      "sha256": "356978f113c97f9ca3fb7dd81b830d1abf91bad67b36a7fb10641816e2df9b34",
+      "blake3": "0134e70de2b1117d5302404d2a1ff408c0e1c90359fb46662df4de3d776bb107"
+    },
+    {
+      "path": "assets/test-corpus/tier-3-data-driven/remotion-src/src/index.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 109,
+      "sha256": "957e481dd33a29b4a55ae0e95dbf763b7e48c37c427ca4bd1275faf34bc07a74",
+      "blake3": "7022f7177e242ebe3f587106261572178a62145043edc7e670db7d05f17131cf"
+    },
+    {
+      "path": "assets/test-corpus/tier-3-data-driven/remotion-src/src/scenes",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/test-corpus/tier-3-data-driven/remotion-src/src/scenes/OutroScene.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 423,
+      "sha256": "356071b5cb883c9c637ccb97a17732839d885e4a3cdac31d2734a474050036e0",
+      "blake3": "04e6cd1811baccbab0cc8bf028eb63b77e3092318f1480bb8f299ca669909db3"
+    },
+    {
+      "path": "assets/test-corpus/tier-3-data-driven/remotion-src/src/scenes/StatsScene.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 676,
+      "sha256": "6a7b3f777ce4762f54fe86961f2050b696a4810d06616cf3bd0db6d9addcad38",
+      "blake3": "d2744ce32d60e851ba060de0ad7ac5add1f55fa8dc3f0aab5430edd8887833cf"
+    },
+    {
+      "path": "assets/test-corpus/tier-3-data-driven/remotion-src/src/scenes/TitleScene.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1230,
+      "sha256": "24cabaabcd364c3e434aa8ac46929830c54eca3edaf355c143f0bac8b1d851c3",
+      "blake3": "dfd95d324077392958b99c984a66e571b771cdc6f15dca7c245dd7d1634db0b5"
+    },
+    {
+      "path": "assets/test-corpus/tier-3-data-driven/remotion-src/tsconfig.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 337,
+      "sha256": "cc24d56b89415ebbfdff594c246957974a16c8603803fedeff515edbee5f5c58",
+      "blake3": "54da5f369c451b28cb0ca26db705ef273c2f8a35fc7f60eea99d98455d22acc6"
+    },
+    {
+      "path": "assets/test-corpus/tier-4-escape-hatch",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/test-corpus/tier-4-escape-hatch/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2825,
+      "sha256": "1ecada7bc9e9313d188cc3e1d2c731ab5e41f4ab7b9ee157dfec91a63afe4b9d",
+      "blake3": "cb31f873846153feffa460a6b86a214d9b410cb35f62cde93a74a55637e23568"
+    },
+    {
+      "path": "assets/test-corpus/tier-4-escape-hatch/cases",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/test-corpus/tier-4-escape-hatch/cases/01-use-state.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1000,
+      "sha256": "9e22cd1f74df87f34a0c3682e4aa7e948c582b4031b6226a054e384d609cc816",
+      "blake3": "5eeb3446e6c9a6eed0d08d93dbfe9cdc76f7894a503be7859a3074f0374c0ed8"
+    },
+    {
+      "path": "assets/test-corpus/tier-4-escape-hatch/cases/02-use-effect-deps.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 954,
+      "sha256": "5fb0307fd81f712a2e8109940201af26f925acab1d840b0f9539e1a8b615d077",
+      "blake3": "6bbc06c1701f6cbb4704dd92e3fb2c891c9f5eb7b963643949b1c32e210f8505"
+    },
+    {
+      "path": "assets/test-corpus/tier-4-escape-hatch/cases/03-async-metadata.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1128,
+      "sha256": "62cf1868ef9bbef0bc2173118a0e90e894cb94f5dfa54ab8ad632c0a3da7fa0f",
+      "blake3": "dbd6dacb452eb9382ef0dcef0f79af966fe4651ba96f1c549797abf33a44b590"
+    },
+    {
+      "path": "assets/test-corpus/tier-4-escape-hatch/cases/04-third-party-react.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1183,
+      "sha256": "74b145ed7e3c0568dda453f01b9ec6cdaec37478791a5edd3941447f1490f5e3",
+      "blake3": "f146548e652407f9636392a4a434d963ca368206018b33da989b185a6e9e2542"
+    },
+    {
+      "path": "assets/test-corpus/tier-4-escape-hatch/cases/05-lambda-config.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1425,
+      "sha256": "961b9d599dab03e167775a14ee23cbee2d0c80ff8da4da34818d9433603c7ad8",
+      "blake3": "b286ee1ace1ad2270bec33f1b5b5c1b54e7c5807ee742cfb958d89a5206798a9"
+    },
+    {
+      "path": "assets/test-corpus/tier-4-escape-hatch/cases/06-warnings-only.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1387,
+      "sha256": "38a93a2eeb5a4935afc56fba76eef263885e357901331e96a001f68417c269d4",
+      "blake3": "617725c209e7793f13887724a6aae9c42c485e691a05d3533649638163218874"
+    },
+    {
+      "path": "assets/test-corpus/tier-4-escape-hatch/cases/07-custom-hook.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1094,
+      "sha256": "eafc07dfb99f2e78246663219ea251a2b98f1a6daff94d8689aa4f8a34fab41c",
+      "blake3": "13059adc5ccf4f63b96869f5d5c33543aeb9796e92ae139d9809cced17fe2bf7"
+    },
+    {
+      "path": "assets/test-corpus/tier-4-escape-hatch/cases/08-mixed.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1166,
+      "sha256": "4a3c2c65c563ff4af123dee0a90082a1e408f7fbfd6c14795940821956d2baa1",
+      "blake3": "5c517101d3aebd6c9b2aa9bfc3ecc32469e49d3833bdf578cbb632af4edc7539"
+    },
+    {
+      "path": "assets/test-corpus/tier-4-escape-hatch/expected.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2784,
+      "sha256": "fff7f57d87ec185c3f4b95debabcb1c8dd3ea8012af7b6b3a83486900fc095c5",
+      "blake3": "d63c61b44366f982d84ad0cb016698e016bb405dba1a7df6629cb850bb29633e"
+    },
+    {
+      "path": "assets/test-corpus/tier-4-escape-hatch/validate.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3534,
+      "sha256": "75abb2f5a9d39591e75712113fd2a9ebe6bcae911b7bda33a1209aff101446b7",
+      "blake3": "d452c84ce3bab65084f7ae93715894aa79d6e13234cfc1febcfab2a043716f30"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/api-map.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12431,
+      "sha256": "58785f6e131c582fd491140e4eadba84e03856cc06cfec85c9de50255692fa13",
+      "blake3": "9ccf237389d5dc80c69b3df8ec638089e4fafbc57b581495c5b901adf1181df0"
+    },
+    {
+      "path": "references/escape-hatch.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5403,
+      "sha256": "047472599b5f38502f8419839740e3fcb2198ddba96211d70331c4ad3b6774c7",
+      "blake3": "9c61db7eb72a5dec858fd0df88a20cbc98200c91b6d58d0db6007cc4b3566570"
+    },
+    {
+      "path": "references/eval.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5589,
+      "sha256": "70fb49186755905bf43777618bd51af2189413109dde76e4964b5724991baa3c",
+      "blake3": "e88c658533612877d33697ddaff40f3a441c2f89a19aeb43a57b325cf5a45d34"
+    },
+    {
+      "path": "references/fonts.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3246,
+      "sha256": "c7f59567c1f6d560c8c6f95577a86fabfafdc7517a5d7eaebb73d564ad955ad6",
+      "blake3": "a3cc914532f697bcf7c077f1a273f19f343a6f56475249fe2cbd7f755df15e42"
+    },
+    {
+      "path": "references/limitations.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4943,
+      "sha256": "0b894e939765e2530acec754f5954c4c16ad1ab48dc23b870182daa1be2371fe",
+      "blake3": "d476bebfd38d684c1cb03b2fb396f250d499aa2273038b2e0f79d46e4b6c84bc"
+    },
+    {
+      "path": "references/lottie.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4310,
+      "sha256": "28813c02483df1d5c0eb7137023bb59ac201fd4774aee6dac397e504affc0aec",
+      "blake3": "cd2b213478e96c6ad1cc6a92be7cbf413f01ce4542354c4c02cb802629875c95"
+    },
+    {
+      "path": "references/media.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3872,
+      "sha256": "7359c636de98d1aa48fd07adc284548ed224600bfa0eab85a8ce3a47c57709b6",
+      "blake3": "3472debd37a0d2a0d085058ee0eaa85b4e116288a184b484ecabb159139d1833"
+    },
+    {
+      "path": "references/parameters.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4620,
+      "sha256": "518f6812b347421c8c6d9603b11f4d9fafa22a1e6d8c96a3f9efdba626909027",
+      "blake3": "554ee4c90f3974e06024baf9fe7c42b36d16047adbe7cdd9cdec4702ffb21926"
+    },
+    {
+      "path": "references/sequencing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5380,
+      "sha256": "f35e19e9dcd371f4803f71cb70b9f3b409bdeb7c45aba35c2eae6968f294b0f2",
+      "blake3": "c38ec2138f53a777eef06201c292ec4b3afdf7ef5a67a53303c144b895e852c9"
+    },
+    {
+      "path": "references/timing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6201,
+      "sha256": "cfa76638755202858600b28e3ada7372666efbcfd1b9b9e0b79760cafb0a177b",
+      "blake3": "a3ffd09fb30cab3835d2989fb91adacbe7f86011fa6e86313e651cae6d4112b2"
+    },
+    {
+      "path": "references/transitions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4500,
+      "sha256": "4d32d654ba5872fc8e55f0559415f61feafcdf20f1918ae724e4d14b76486873",
+      "blake3": "1c5e9ab8bd65cf61c930752a15fdb925ec2c061a58230ec4b00a1b0bec0892c7"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/frame_strip.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3737,
+      "sha256": "c6cb73b4886991b2092417b5c3fa257d34fefb288e248a7fda854047b8c66bae",
+      "blake3": "a7125f01033ebfca29c962ce1bc9f195f097a1881c748f1f864edca8ac444f5f"
+    },
+    {
+      "path": "scripts/lint_source.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12162,
+      "sha256": "d76a3059cb9cf905d47a1b8b3498d3dc81aae37f409e1428cde7219b96bb324d",
+      "blake3": "274bff44906c1ba4eccafe768c454f85a51fa456ac867093e3be1b3a6cf707f5"
+    },
+    {
+      "path": "scripts/render_diff.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3066,
+      "sha256": "516be1130a6edbe5927106905349bafba3d8ff1a99b3f0e0394b6d0ecf7a223b",
+      "blake3": "36ae60439c1bec1255ceee0b95b6d72aede7b67f978ba611d9f7abd17503926b"
+    },
+    {
+      "path": "scripts/tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/tests/fixtures",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/tests/fixtures/blocker.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1853,
+      "sha256": "e12bc7d06340b71cebbdbc8aae9f948a21f7487dbccafcdea6be9f1936f7e4c0",
+      "blake3": "e60564f8bb094a2191ab0b7f3427b2b9b05d9f70d6cd9f1b1244fdeeb9a0c15f"
+    },
+    {
+      "path": "scripts/tests/fixtures/clean.tsx",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1379,
+      "sha256": "912f5a176e8b4eee7acbdf9a9334e1edcb14f6859cab397846ed8a63f13d080d",
+      "blake3": "f1c8edb3522c5e9e28bbf1f51ae38f55caf75f8459f87ef161c5f2dee6dc3304"
+    },
+    {
+      "path": "scripts/tests/smoke.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3635,
+      "sha256": "9a51cadfe9b6fe645096fc2e05d80849c6985abd3a92bd27cb985b3cdd3ce7b0",
+      "blake3": "e3edc24fa051676f9d35def7afe445349141b517b85d2f6a39d80c4374323a9f"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2586,
+      "sha256": "b9da551b31bf1ddc266d5c6aee91c71ef5e3462c212119e15177a7e0abcb9efe",
+      "blake3": "605b56793d42d1acbc5e2e1fdacf65eebcbb3699f5fe378ceb0e4a4366d9396d"
+    }
+  ]
+}

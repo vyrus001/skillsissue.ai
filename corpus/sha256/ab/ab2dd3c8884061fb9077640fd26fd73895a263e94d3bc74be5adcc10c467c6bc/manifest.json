@@ -1,0 +1,445 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:ab2dd3c8884061fb9077640fd26fd73895a263e94d3bc74be5adcc10c467c6bc",
+  "sha256": "ab2dd3c8884061fb9077640fd26fd73895a263e94d3bc74be5adcc10c467c6bc",
+  "blake3": "2761fda892136ac6a432a7473e0bdffe5ae508f6753e2961086e0a0e5d018764",
+  "size_bytes": 159177,
+  "file_count": 34,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10791,
+      "sha256": "dc253356421b23d32770845d86a2a5a7d34f8f5298421073b9bd35ba6ab0ef8b",
+      "blake3": "25a3b2c19390e6a78b3d0b3ed07698a89cb89af3dca9c3bf9090f926026ddbe6"
+    },
+    {
+      "path": "VERSION",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2733,
+      "sha256": "df81481bcaa4a8785e15ffda1885bd39b555a746dea8c1562f57041d0140668d",
+      "blake3": "5967bdb06368d0210a7e9d23ead30eedaf5fb84251e1d1b11b960459eca768f2"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 141,
+      "sha256": "fd44536fbfd5fc72fe71eb5e2f47f737049bcbe0d45e84b75a7852b9e77ea71d",
+      "blake3": "5735fdf366d24900f55808dc83a55ee19a0bd640fcf66a92cd2e64525938b478"
+    },
+    {
+      "path": "pscale-auth",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-auth/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4483,
+      "sha256": "1e78b375c49d30e7c2286abbf9fc909334058effea5137eb6ee77b2b5eeefe58",
+      "blake3": "f059bfa4944b04a0a1644e0c515f2b60b6a88827f1d20a1eef4bf041d02d681d"
+    },
+    {
+      "path": "pscale-auth/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-auth/references/commands.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1027,
+      "sha256": "6107df6146ae009ff6ce90656a43e924ec259a5100341d1dc73c0e262aed7fcf",
+      "blake3": "e6b30292e04345e36ae069b7dd0104aecb609c79af143cb9153c633b0cf2d155"
+    },
+    {
+      "path": "pscale-backup",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-backup/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1086,
+      "sha256": "f3415ab8b09ef36a055b4ab464c6a716c2dee37fcaca8bf46fbf004f4c3343f0",
+      "blake3": "bcb2274492504c6f883bb22911515d12829d4196bb02d44a9854513378aabc05"
+    },
+    {
+      "path": "pscale-backup/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-backup/references/commands.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1204,
+      "sha256": "982c299fddbefc7558b88d92d59e5f80a4afe23ff197d46265d9d2686ec2cd5d",
+      "blake3": "ee8752d232aab868619aa3fa5977a156816bbcd14f8406fbbf9a0d7c558108eb"
+    },
+    {
+      "path": "pscale-branch",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-branch/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17321,
+      "sha256": "729b6e86ba7bcdeba5ace56281c78746aa51ae9149883747234df4392a692c9e",
+      "blake3": "5055fc71a68891a80e44f9e6d05a74afe03e1f328c5ec8f60286e745b4514010"
+    },
+    {
+      "path": "pscale-branch/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-branch/references/commands.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32176,
+      "sha256": "e35fe4fd98f9e5a0946c2573b378359470f09e3c229f3480f4427b6c5c396dd4",
+      "blake3": "6cb30595e8c2921745e839b41562316f88e19eade12a487bd7a428410fe3c4f5"
+    },
+    {
+      "path": "pscale-branch/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-branch/scripts/create-branch-for-mr.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3320,
+      "sha256": "adc98a125f9fc27ac2bf01f3fbd48ee9ed655e8c48ad7b6acb933d3d6efd029e",
+      "blake3": "52bd5419eef1381992bbf9910ac9913c41ca0c2aef8e6683318626ce1295eb9c"
+    },
+    {
+      "path": "pscale-database",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-database/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1732,
+      "sha256": "481cad7765582123a987e7df03a853dcf7e8781c554cc2dfc36a250997fca186",
+      "blake3": "bc07d24fd8a525d99c2fc477e1901f2ad8a6d6f282fc72cbc706664407948f96"
+    },
+    {
+      "path": "pscale-database/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-database/references/commands.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1339,
+      "sha256": "358846361e621e4fcbbe440f7639f4b5d2b674b0acb7891f18c7e53f3acb24d9",
+      "blake3": "858ab04e4939396af33828f982dcbb0e716d65d45a8cc7f67e80bd1574275f37"
+    },
+    {
+      "path": "pscale-deploy-request",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-deploy-request/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6378,
+      "sha256": "7570a5b285e5cfb1a15c2668f3f41941587dc3cdc6c20fe5318d8c6ec3a65e3f",
+      "blake3": "e4a151af8e34d4c67d083dd46f3c2a52bb7504bcfd79cc8f489c9f0567c716e9"
+    },
+    {
+      "path": "pscale-deploy-request/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-deploy-request/references/commands.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1685,
+      "sha256": "cb0ff53b900a1f2ecb4f7335b25f0fffb05fbb06b926463759eb5389dd9e4858",
+      "blake3": "0a000002806ad9f9808deed5213e50906715ee2f3f860c7c48cd2fc35a94d85a"
+    },
+    {
+      "path": "pscale-deploy-request/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-deploy-request/scripts/deploy-schema-change.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4477,
+      "sha256": "5374f4bde291955f181e8b1be91d48a606ce263fc9102a87065e2e09b4bb4ff2",
+      "blake3": "870fb02c657e64cf77544679453b92d23f94d5bd689e9cf2e8dce5307fd5b3bf"
+    },
+    {
+      "path": "pscale-import-d1",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-import-d1/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8057,
+      "sha256": "7f2814c0c4de5aaa2a98b1010769619ce072bc7bf2834ae734415ef48a102d6a",
+      "blake3": "9bae37aab3da45934c53eada56377c32d569dcee491b73fb94d396c010094972"
+    },
+    {
+      "path": "pscale-import-d1/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-import-d1/references/commands.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7065,
+      "sha256": "e54b8d0737ceccb4cd83b42b4f80bd979f30489a8e86f3d955e25e7b7a4c2e29",
+      "blake3": "baf4b0bd74b5262d9c8110563c3966043eaf6aa55e1632fd0aa3b0d84b284055"
+    },
+    {
+      "path": "pscale-insights",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-insights/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3963,
+      "sha256": "0688b1de444e7cea4145f44a097472b7899a7a80afe8ee83c26f53347eba433e",
+      "blake3": "e5e7e5e85b8f3cd23fb5b7b0445627d895897a54a899d49b22b2b01e3fa975f1"
+    },
+    {
+      "path": "pscale-insights/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-insights/references/commands.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3299,
+      "sha256": "8588d08d697a2dbb395dbe6525a86101869ea8a948032ae8a8a2c9fbf3215585",
+      "blake3": "bca5ac0b02fd38e75a36e2ed37db40a6f72394c6559f577228fe65d32084363f"
+    },
+    {
+      "path": "pscale-inspect",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-inspect/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5311,
+      "sha256": "1877bcfe315c60676ac283651c9c9e23cbdeef29165ade298cead93afa64010e",
+      "blake3": "77a7b0a8257d4255fba1dfac548ed9aea4d7485fb6ab79370968d1047d708c2e"
+    },
+    {
+      "path": "pscale-inspect/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-inspect/references/commands.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4511,
+      "sha256": "3ea56d9b78844f30047215a7ab77ef242a0674cc70f20ed4801cc4e5db9aafbb",
+      "blake3": "a9cda887ba81ff88f0f29b140d03266b48eb1bd6997a5ec9993204298f5bfedb"
+    },
+    {
+      "path": "pscale-org",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-org/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1133,
+      "sha256": "cfd3d69c8c37b13c276ea0f811fd427609c05fc0ff319991ffd3e500cbf376ed",
+      "blake3": "889cad25416e0df33c2950322b7db90eaf604064410d0ee2de17f8a13d8b8cc0"
+    },
+    {
+      "path": "pscale-org/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-org/references/commands.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1062,
+      "sha256": "90cbb0f3e81d818fb83122428106ac0642de2fc8d7ab94f900a115f036a04896",
+      "blake3": "0ce00629e32753e59d626879586d94feb7126982e6295bfa75f77f3eb2ffebfc"
+    },
+    {
+      "path": "pscale-password",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-password/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2977,
+      "sha256": "d3cd317565c458677c028d7df026be9406c5f542f09cc6c4b05e35141afcd6a7",
+      "blake3": "4d56bf61c61e0912a7d4b535a5c5fac231e94ab708490534d9d228d556220796"
+    },
+    {
+      "path": "pscale-password/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-password/references/commands.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3830,
+      "sha256": "3430c2e8f0945f46f5c7ffa83256cff2af977c07ec8f1f87a0b65b3f26112b3d",
+      "blake3": "bc027b76bef34e22bc6296a71bb7952d2753f2770215ddaee3741d5917e8a53a"
+    },
+    {
+      "path": "pscale-service-token",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-service-token/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3170,
+      "sha256": "511c73eb6840947e11d2d16c959e8a989417d2860a0ae092b872912daeec8ea7",
+      "blake3": "208f412ec657379993407f7a7659b0d3166e4d65f6b4b28b45d02a2c5c6faba2"
+    },
+    {
+      "path": "pscale-service-token/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-service-token/references/commands.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1387,
+      "sha256": "aece4a6ddf6a7a668a00ee3df3ffda282b56bc33ca9c027947da00b577507598",
+      "blake3": "7f0849a92a9448132573309ccabbe909f71936c976c676703709996c543918aa"
+    },
+    {
+      "path": "pscale-sql",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-sql/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3052,
+      "sha256": "e2b352a4dd3ad97bbbe5722227f7a82716cba96203c0664f9cf066f185a416ff",
+      "blake3": "9ad4d5ef3835e7338d86f7de0e7f5cc793bfacd8e16acf0b6bebf03c29619cca"
+    },
+    {
+      "path": "pscale-sql/references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pscale-sql/references/commands.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2870,
+      "sha256": "1d3b3d0c58ecc3d26d95b7a8f7bdcc9b513bacfbcf339e3fcecba623b8bb638c",
+      "blake3": "ebea74514e6811327ef2fbf401aa95382d232e3e9040b1887f2684b6808968ea"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/create-branch-for-mr.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3320,
+      "sha256": "adc98a125f9fc27ac2bf01f3fbd48ee9ed655e8c48ad7b6acb933d3d6efd029e",
+      "blake3": "52bd5419eef1381992bbf9910ac9913c41ca0c2aef8e6683318626ce1295eb9c"
+    },
+    {
+      "path": "scripts/deploy-schema-change.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4477,
+      "sha256": "5374f4bde291955f181e8b1be91d48a606ce263fc9102a87065e2e09b4bb4ff2",
+      "blake3": "870fb02c657e64cf77544679453b92d23f94d5bd689e9cf2e8dce5307fd5b3bf"
+    },
+    {
+      "path": "scripts/sync-branch-with-main.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4298,
+      "sha256": "e4bb3d00191a0a31c8a7266d8ddb57ee626d0e5be45124925b5ba5d912ebaf1b",
+      "blake3": "280dac1520f15e1ed0fb7a70514564b5573b9ebc3161afe190a381ebd81c7a0f"
+    },
+    {
+      "path": "scripts/sync-canonical-scripts.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1734,
+      "sha256": "9389e96f19a06c013cf847a041619a2d11909c4910f7afd8c17694068a56d68e",
+      "blake3": "b684416fbdcba469e0cff5e20aec4b376ca0e7c7c886aa3a48764498b108e1c8"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3768,
+      "sha256": "be74b5e001c8625760a496a0a12111f9238bea95cebc436c0e31fcd0954fc051",
+      "blake3": "470f64811bfbc9cd97cb51301d0e861c3999caa72c6f1760fda8824ea1df5008"
+    }
+  ]
+}

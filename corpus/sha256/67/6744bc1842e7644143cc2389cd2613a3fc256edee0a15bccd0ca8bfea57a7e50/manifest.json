@@ -1,0 +1,941 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:6744bc1842e7644143cc2389cd2613a3fc256edee0a15bccd0ca8bfea57a7e50",
+  "sha256": "6744bc1842e7644143cc2389cd2613a3fc256edee0a15bccd0ca8bfea57a7e50",
+  "blake3": "aab153efc70a61d42655c29463d6e7e8fa56edeb77066b7678f34d33037effa9",
+  "size_bytes": 625169,
+  "file_count": 96,
+  "entries": [
+    {
+      "path": "Advertiser Disclosure.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 777,
+      "sha256": "ec8a74ce7e1caa775fddc30e4c2a1a672db0c0f03b382626af335384e26f3bd1",
+      "blake3": "5c4348a28a5ade3d1045cd7bce0fbb9de9b52a41d9e9c28cbdbfe94c7efb6dbb"
+    },
+    {
+      "path": "CLAUDE.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7202,
+      "sha256": "05631aebca092d7ba32c380463738917e2702b0f74d047aabb315e21a77ad5fb",
+      "blake3": "af120cf5dad5874069f79e5873939606e96f8c430f8c531228528a645eb2a686"
+    },
+    {
+      "path": "GEMINI.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1851,
+      "sha256": "c645365f129ed36ff8ecbfbcdb804e19a1c764fd66e9716a7c3d7b12b10a604c",
+      "blake3": "ca8284c72f101641342297dcf51ab243637913e2a6158ad197102bc8866003ff"
+    },
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1066,
+      "sha256": "3bee70f408127bdb6570a503f13799ee23ef40095cf27458de5f1b0c22dcf2aa",
+      "blake3": "9eb0de44b4c7eac31a1663d7c43912ac1bcc91c2cc009db69d95a99d122e5fde"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4786,
+      "sha256": "be6148dbd29c6bb23dad44b53a73c95214ef794a025c0b904f9088ab9d62b831",
+      "blake3": "e38b8d7613c6c407badf20a41a17805151e8fb2eb096e053383b7639d5da9479"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8830,
+      "sha256": "2d97dd77bacafd46df01348f4fd3acd9ba18b3544863ad0e6c710550e602fdcb",
+      "blake3": "b695467eb51dd4bbfc00a161d14f7da67cbd1468e477754008082b51b7b2b9a8"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 125,
+      "sha256": "2d5ae1de5485c2df146160e84f4897c55b30286532b361797060e96bbfb5c987",
+      "blake3": "ba0b42f61252ed32d987429b3f2c1e49508d84f323b1922b5e8d9606605e4543"
+    },
+    {
+      "path": "app.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 43,
+      "sha256": "b13ee7c731d772622c9c7000e384f786d25bc4f372ab1f5bbcf1ca1fb470bebf",
+      "blake3": "c9bbe964d0491002cc98c3a155f4160cc79ed34ccf2751f3b875d64257772a50"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/default_card.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 786,
+      "sha256": "9a416d50c0efb3217fe9d6ecf890d6bb1925542ea108ea8c0344719cccd95a71",
+      "blake3": "bf8ce4b9b1c7ef582a6189535da3e8142f4cbe9bf832aefc543f209c80593ce5"
+    },
+    {
+      "path": "cli.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32854,
+      "sha256": "18cf000de5e45cab86e795fa9f9f2e888abca18391919ca4ebc096d7c05006e3",
+      "blake3": "c1731646b9adb886928791ddaba9f467da1e04504fd457e098f90eea8a59ee51"
+    },
+    {
+      "path": "db.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9974,
+      "sha256": "3b2467109db148e8921c3475feb42cb1e021b28d43e8ae8694610050d3f94e3c",
+      "blake3": "6eb3eebad2d43d4af825ef97144b8e1764c608b277839f3d4c6e484fbbe9d46f"
+    },
+    {
+      "path": "docs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/CNAME",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12,
+      "sha256": "a7914c33ca76fefa9df4bc9a6b223618ff930214c2cf9ab4bb0af03915f79a45",
+      "blake3": "5a0b968f5344a776fa06213eafe4e2a80144a90ed6a5a1a3100e35166ad0dbc8"
+    },
+    {
+      "path": "docs/DESIGN.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4492,
+      "sha256": "826dc942fde45cd0338973feab7e374f0aa8f763502e06a5b91fa44ebeceacd9",
+      "blake3": "e19659d39d226c26057d1207f9f043435349d18984a5ca2d81fe753d17472df9"
+    },
+    {
+      "path": "docs/SEO.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9250,
+      "sha256": "424535e8d9f0649c3c90dbe743a040d9ef3d2dba8a03030cf46b8ffe10d4a4f9",
+      "blake3": "b63ce878651b94117f3c55772fab4188152cc79ca6de2f56602bdad15528475c"
+    },
+    {
+      "path": "docs/commands.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 47580,
+      "sha256": "52f1ed6c91c2b09d52ee270db23b3f505d224d1b14a95a47e6b734c836c5840f",
+      "blake3": "629aa0dece5a8538dd4ed474ef012d0bb2de16eeda8729ec5c212b539d452496"
+    },
+    {
+      "path": "docs/index.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 40378,
+      "sha256": "d9087713719ff4e451b5f1e03852dde4681e0ec38f1b8ab68f0c1c385fbe96e6",
+      "blake3": "e2eaf9e3c8fcf3831ccc90f3d2889a0b5dc3b745fdcf4185a3bfa3159f5d24d5"
+    },
+    {
+      "path": "docs/ios.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23648,
+      "sha256": "f1c4637e9adef8f61e3a898b75c6e25d0b8d0731af9a86a97ec55734fefd759f",
+      "blake3": "c6e20612154a64f8310bf31cad1ccf210c635934dd7313b68a4a60ed079a2ae7"
+    },
+    {
+      "path": "docs/privacy-policy.html",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11636,
+      "sha256": "003c6aa1e2beb57d5a6adad9c603a674811894d0caea0787b3bd5c6326e7bcb0",
+      "blake3": "8e636b81ec9a2fc7ac89ee1d0f338f968c1768cbc7aed63b2152c9204a9fe4e4"
+    },
+    {
+      "path": "docs/robots.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 66,
+      "sha256": "4ab0536b18bf5d5629818d1dc5e28923e11bb60137bd8559a1384085490a01e5",
+      "blake3": "cecc33959c3ee41e719e291db6d0b96933958bf44c30689db6e9ebe74c17bc15"
+    },
+    {
+      "path": "docs/sitemap.xml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 747,
+      "sha256": "b92925685deab73db6e9f5900542b5699d2ad834ed739f552925f94bd43c57bd",
+      "blake3": "6fb529cd0705da923978f686cf7d72338ef9d60baf820617c72635ecdafec004"
+    },
+    {
+      "path": "fleece.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11244,
+      "sha256": "a48c8a685e23123cd22a38fbb3ddcdf96a59c45f4f21ea153712374c187bf9b7",
+      "blake3": "7f23a8bd4806b2bc6f4f01c8ea97c8e953e1d703900c39a814e404b4ef8db7cc"
+    },
+    {
+      "path": "image_service.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5843,
+      "sha256": "1e96d34f5eccec39179b3a8c98b78d07244a3b461a29561802b2b02570691236",
+      "blake3": "42d3ee201894f8c26ab0238aaef42258a87f59109b784819ebec9b071419af8b"
+    },
+    {
+      "path": "install.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3832,
+      "sha256": "d7f49a574bf3d85b3444506d3c866fa1e0f99aec0a25033ec5bfe28bb9bcadde",
+      "blake3": "fbf4136801c265cc36ade558cf5c2d15671102fc0e59c913414f733f7d224756"
+    },
+    {
+      "path": "ios",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ios/FleeceApp",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ios/FleeceApp/AppState.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8369,
+      "sha256": "5ba0346be25443768c2ee763f7d7393bb84c1e26b74805d9c5f7a568c5863bb0",
+      "blake3": "f8addaf867096369dcf70f9c63de7168dd982b5b952588890cb153a6678807fd"
+    },
+    {
+      "path": "ios/FleeceApp/Assets.xcassets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ios/FleeceApp/Assets.xcassets/AppIcon.appiconset",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ios/FleeceApp/Assets.xcassets/AppIcon.appiconset/Contents.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 205,
+      "sha256": "edd2dc1705ef734629ecafb2e7b732b8c6610440754d1bce83be10826ba74484",
+      "blake3": "60239ffad0bff721fd47d40438c7cc9c234ee4e65014e1fcfae9aa4e62494ec2"
+    },
+    {
+      "path": "ios/FleeceApp/Assets.xcassets/Contents.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 60,
+      "sha256": "f5fb0e1f3a8142892ed092efb5955c1c2cc537003a89ad7bbdb9dade7fe8985f",
+      "blake3": "7fb39eb6e09c2e41980022a799c15d9a04f8a37986a58224a967523a75a78ef7"
+    },
+    {
+      "path": "ios/FleeceApp/Config.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 275,
+      "sha256": "a0d0e4dfee8cc02045507af411929c0f64fd6d805b6a9670ea6e42dc67a42cae",
+      "blake3": "24fb1a174b6bdbaa2a4764485b4377b50829c1b49b0d1fea20ad2ad93b9fe08a"
+    },
+    {
+      "path": "ios/FleeceApp/ContentView.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1469,
+      "sha256": "4d665763c75a71f577674fa354c5a3b54b5db13a4fcd58215b4f46fe17409efa",
+      "blake3": "4836b8f8b5f25fb96aa14bb40552e6afb7186b79f18a8a4c48f4dbfef0356ff0"
+    },
+    {
+      "path": "ios/FleeceApp/FleeceApp.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1484,
+      "sha256": "c5053c2d89abea1925c680d636ca33def6bb85b8ffe6ada6c27d97f06f9c6443",
+      "blake3": "74c16388fa6efae36db888ab3a1e50df856e4c88af03cee94bd1abc80f0dc141"
+    },
+    {
+      "path": "ios/FleeceApp/Intents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ios/FleeceApp/Intents/AskFleeceIntent.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4279,
+      "sha256": "87809b11939ace70f8db469240c367da5fd3b9ffc66955efc1275a4521f9c085",
+      "blake3": "da1d61211169694a8383f604944d8530c9cadf0140449a98f14fadf0e401b8b0"
+    },
+    {
+      "path": "ios/FleeceApp/Managers",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ios/FleeceApp/Managers/LocationManager.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2110,
+      "sha256": "409146c855e1ad56574ca36830e15542c239778712c7532ff42e3be3d27c2210",
+      "blake3": "84f7f467cba9817dd82545e5196798f78bd3fc4e5952b43f5ad35018c8d1f6a6"
+    },
+    {
+      "path": "ios/FleeceApp/Managers/NotificationManager.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3202,
+      "sha256": "efe8fac4e69e8ce06b0071d4012049a41b8f88139df982365c65e23001047271",
+      "blake3": "07e309ccb00fe14eb88286cad317dc57a11dbf266cc60c3e55f419bfe24bcb1b"
+    },
+    {
+      "path": "ios/FleeceApp/Managers/PlacesService.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2293,
+      "sha256": "b82b51e12758e07688062699595166a1c6ff6f5b1d71fad71ebe9031453cfa20",
+      "blake3": "0e077a4999cac64c09886f28222e3b16e766c0a04611c2f3eb282876d46a654e"
+    },
+    {
+      "path": "ios/FleeceApp/Models",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ios/FleeceApp/Models/ChatMessage.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 820,
+      "sha256": "a950ee6a6933100604db1d4ff6459fe42f3e4401c28ce607be783ab52bfd401f",
+      "blake3": "4927c73f0c9ea131f09a5352904e4656a9a19b388ea75f7d2b575bcfe441fd1a"
+    },
+    {
+      "path": "ios/FleeceApp/Models/CreditCard.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1624,
+      "sha256": "b79ba224a10ff04deb46ef95bdc5017e0617411e60289b594653b11c6a8e0460",
+      "blake3": "b742e9c69a55c838fa818309af5cca085813fa4faad6f73096e580c3803c04b2"
+    },
+    {
+      "path": "ios/FleeceApp/Models/FeeCalendarWidgetData.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1278,
+      "sha256": "f6fb5d11f39823eb8044157afefe03da18bf0aeac2bbfd00d41569bf56fcdd7c",
+      "blake3": "eaefb614fd4291f251bd73e856245e8fb54a43dbe6ebe2578a2741f15098b13c"
+    },
+    {
+      "path": "ios/FleeceApp/Models/FleeceWidgetData.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1186,
+      "sha256": "d359b2f62ce94093a2d472941f8bfea93b4190112c0ac41a372867660ae3c1aa",
+      "blake3": "72982392f9f8e3c2ee54c1d25aca5c8eef6e9409b5ba1b8a2f2ab77904cc1535"
+    },
+    {
+      "path": "ios/FleeceApp/Models/MCCCategory.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2684,
+      "sha256": "ad27aa43b09a2642a401335e3035a78bb6fc6772771be06b1a2348433c253e72",
+      "blake3": "8f39018fe811cda42e269d7ea66530ba923edbc549078801753a25f938d0a5ec"
+    },
+    {
+      "path": "ios/FleeceApp/Models/NearbyPlace.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1350,
+      "sha256": "3b365378199c0e5d10d9a7cdf177b839320e3c6ea6ecbf20325773ca35ec3e9d",
+      "blake3": "3beee524a4ef97a91208286d68cdfe01b4aaa97a533425c078968f6da3d7aa5a"
+    },
+    {
+      "path": "ios/FleeceApp/Models/Recommendation.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 622,
+      "sha256": "5580ef00715cb91b79c7b4e6001233899b0d400f8005dcc8cb261a12a162e236",
+      "blake3": "420b23cbf3748477f0ea9b1161c248b7c0e4409bac5f6de58d72827a7a5e709e"
+    },
+    {
+      "path": "ios/FleeceApp/Models/SpendingProfile.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1485,
+      "sha256": "a6de979e7c4df97f73d804b4f9e07a9b32e8def3b0080dbe3a944fc5a664fe32",
+      "blake3": "d8548ec8aa998cdbb5a0c7def27d448834d5a85677bd4cb056b3fab37fbe3d97"
+    },
+    {
+      "path": "ios/FleeceApp/Services",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ios/FleeceApp/Services/CardDatabase.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18186,
+      "sha256": "09267a3e555c257ea4191b2080bdd6bb885936b38adb44752c0a6b150b00c9f0",
+      "blake3": "e6d8604002fc0c6573cda9e45e8489bdfff8d994663e9023a6adbabf51c7ea24"
+    },
+    {
+      "path": "ios/FleeceApp/Services/CardExplanationService.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2329,
+      "sha256": "1af792b68ee2f2a7dc63f5690afbf6065ccbcf8a609ad368f8804d04a574dd68",
+      "blake3": "071f86ecc88fa3215615b54793c5f1e12449bde1efeba02830799b64185ca711"
+    },
+    {
+      "path": "ios/FleeceApp/Services/CardRecommender.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2131,
+      "sha256": "d3369f6c93dea45f7c2b31a56f07a5590ea097bd0c33d97f9417160ba65a4377",
+      "blake3": "ca0a4bef161bf9826de4f96ecb89e68ae9003400c34616d760c23095419dc992"
+    },
+    {
+      "path": "ios/FleeceApp/Services/ChatService.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7111,
+      "sha256": "ab1ab30ded5d98f254f5ed65e6338bff9215d077461cae65688b1b9b638192ef",
+      "blake3": "df192e810a759d1b46f8c2b5f85497f067abf453fa15de4964d8567f237f1571"
+    },
+    {
+      "path": "ios/FleeceApp/Services/ChatTools.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8106,
+      "sha256": "712b3b92f4435a51a84f7a25481cdb4efd2c494f07b59aced98ff8079c726964",
+      "blake3": "cca6248045edc0b59ed54c20581f6576323aed003c5472f35b629c697d9d1b9e"
+    },
+    {
+      "path": "ios/FleeceApp/Services/KnowledgeBase.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 26957,
+      "sha256": "9dd9f88afa9237b5474fa0001638bff9d41ecf620b9971a5b0f3dcf94fe21ce0",
+      "blake3": "a8d0a2cba35e7f30b5fda29e840a4b860ce772432f0ab4c54a49c259047f372c"
+    },
+    {
+      "path": "ios/FleeceApp/Services/WalletDetectionService.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2349,
+      "sha256": "02924a1baba5359340fdcb09a66b781217024cd000792955c08f4c410403ebe2",
+      "blake3": "759cf44887b29d5f70c1c55399e51f448c72692ef13e2038dcba003797b056dc"
+    },
+    {
+      "path": "ios/FleeceApp/Views",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ios/FleeceApp/Views/AskView.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8899,
+      "sha256": "bca48c3b9699a1d81a739f0d69d92e8d2c93d2ef60c66de25bf3e4827570e4c4",
+      "blake3": "c80b70f38f38a501988a35b2c7d933505c0ae32c6697a423df9482aa773ef323"
+    },
+    {
+      "path": "ios/FleeceApp/Views/HomeView.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7236,
+      "sha256": "8e1ad512b63c2673097be10c95d2938638a4a75e1550ff2c95ad38a494af53a2",
+      "blake3": "3a91342ac74417d985d6a89d1a86c427149026c75cab5d46dff969108f13e0ac"
+    },
+    {
+      "path": "ios/FleeceApp/Views/RecommendationCardView.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8355,
+      "sha256": "f5f7219266ed0a299276f168037761e48b287a63d7bbb514fd063bcefe1ed496",
+      "blake3": "58d47fbf913f27d58b34ab6f4f019d18d2f4ed347d1fa23fb4590762f629dd2d"
+    },
+    {
+      "path": "ios/FleeceApp/Views/SettingsView.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9122,
+      "sha256": "cbb4e6963d0a02c91ae5469d12f02a57a0caec69be5e894ab6c58fe328adc211",
+      "blake3": "84b570b52f93ed234d5443bd5d461e5e976d24879ab8d01f6b7e9ada55830f7c"
+    },
+    {
+      "path": "ios/FleeceApp/Views/WalletView.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7359,
+      "sha256": "e30f5a4781bf5b864e51b1243068e810f8b6cada9ec8ef7db4f90707a8e7befd",
+      "blake3": "ee96d0e9d6b648e50887d025acd607243efffd689d30515f7689aa6a0914b119"
+    },
+    {
+      "path": "ios/FleeceWidget",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "ios/FleeceWidget/FleeceWidget.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14830,
+      "sha256": "4a85278d81ff82cbb463281e90294eea2ee4f7c6b2b6a906ee1b89304f99df52",
+      "blake3": "3ece6e48ce623fe2fd1b0ebd3ea1721c3d0f6996ec00848358c5abc57d051a15"
+    },
+    {
+      "path": "ios/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3929,
+      "sha256": "1a82c695930690006df95afa26b4f3c74d02b055e8d8e2567dc478a26640c08b",
+      "blake3": "ea1394d065f0447ba01d4834e356fd672b269aa206c9ba68bedb1e9504ab7925"
+    },
+    {
+      "path": "ios/apple-foundation-models.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11792,
+      "sha256": "456c52174a8ff54d92e32d3f2437e25da9a1800b63c29a19d7a6e6a6f5b54ece",
+      "blake3": "4b465b21e260804a0ac22ac1c4e8c7dfd0511f657c87241b1b4a455b9c351260"
+    },
+    {
+      "path": "ios/appstore-metadata.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5826,
+      "sha256": "9e7fbf66b6fdac024452fdfe795141804753671d63a3def042041fc3729d6a1f",
+      "blake3": "37278765773d0754fc77c79a088b2ce732f819c7cb80373243f1d7dace574835"
+    },
+    {
+      "path": "ios/chat-feature-discussion.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6037,
+      "sha256": "65f7a31a8838816ec1d96f267bb13163ba9365c473f203dc2b64fd4afa9da92a",
+      "blake3": "9e488d3c101e5035e88350bfad9d5ad0a21d3481d20d957425ed0697c8f2ec92"
+    },
+    {
+      "path": "ios/decision-log.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8136,
+      "sha256": "db8453828ff06b40d1bb59226d46ebd959e2cea74e7bc8e25194c477eddb1391",
+      "blake3": "88702dc44b2f6eb5411976018f31f775bc0cbdd45cd676cff6ab5464ce85df44"
+    },
+    {
+      "path": "ios/ios-features-backlog.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10451,
+      "sha256": "d9b1481da23fc3d8dab7a946ff4452d409cbbc12b6bd23256e321fd3f30cb8b9",
+      "blake3": "5ef43c8cac6a94f4e4e96238becc9e6b70cdac36a8078e19e297bdf7390b8699"
+    },
+    {
+      "path": "ios/ios-known-issues.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10883,
+      "sha256": "5369e0b0091a32104605b0187fb2f8ef1c6ff44f25b594fa8d55da01a415f79c",
+      "blake3": "5f88e53c31d0ad9c50a411c6471805cf2fd917315737f6b907fc483d72bb838c"
+    },
+    {
+      "path": "ios/project.yml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3226,
+      "sha256": "fcc094e04d19a3714f0c37c22a214f7801d11d2c0155f13c89dbf52c46667cdf",
+      "blake3": "bb1239b0c16e151495b399eb5e3072d41b2c7ad829781ff996227c5bf6e247f3"
+    },
+    {
+      "path": "ios/release.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1122,
+      "sha256": "2a656eb946c5b19a954c3723110b51fea1277d9b67ba182f27bb42714a08d850",
+      "blake3": "333aa76d1ba33c50ad467e8de5c1538422cbb1f2e63f0ff8f37e59526d17582c"
+    },
+    {
+      "path": "kb",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "kb/benefits",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "kb/benefits/lounge-access.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4981,
+      "sha256": "a4f399b88e95ce6341847857b621617e6780dd7304403a1de2c6ca4c03dd283e",
+      "blake3": "abfa71b2147710aa57afee38109f1f474b25f0f07e1c053ee8483d41dfb923a3"
+    },
+    {
+      "path": "kb/benefits/travel-protections.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6703,
+      "sha256": "dbdf87a1fd1949d3383522c1bdc32fba21c7aa7d6b0ad8b976d7115c314c531a",
+      "blake3": "472e34908abe184f7cb2a5490c949237e59a0a44c49db4c1b7c10a6f944b556e"
+    },
+    {
+      "path": "kb/card",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "kb/card/business.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5084,
+      "sha256": "2a67d91302334c7230c5219ab813526caa32470962f8acea9ce0ae832a20fc90",
+      "blake3": "2c356a563ea84536b9d2490d8c1a2b40d73dc69db84e69c776354e6078332bbb"
+    },
+    {
+      "path": "kb/card/personal.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7660,
+      "sha256": "91f21fbf1724f308838065b9f4dcafb233dc975f6c98284c7b3338a190687465",
+      "blake3": "6659d116418dd00ff8ed90c51d34cb1198db710f254e5ccb9e271afdd64039fb"
+    },
+    {
+      "path": "kb/index.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7573,
+      "sha256": "468e3acb8cbafcb2dafee1d1529cfd3901c2be51ccd596e090504b64cc608b9d",
+      "blake3": "2279d7d6172628e287a660ef99532b4f572256f7af09eb7241aac01204866b06"
+    },
+    {
+      "path": "kb/redemption",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "kb/redemption/valuations.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7493,
+      "sha256": "f772a7bf2be15bb93c4df0d0ba84f026d37d04098e7a6b063eca7ff056f55e22",
+      "blake3": "20a80cc903e274aa75c3ab76e27fff1e42ef2935f7acfbac6e108fa177fca253"
+    },
+    {
+      "path": "kb/rules",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "kb/rules/application.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6243,
+      "sha256": "a581f56a2bd1f371107bb704c7b1341a423185d05c40875dc5fbd1062f4c461f",
+      "blake3": "696eacda66fefed69820b44753c50312dbdd5a98d335e853910459315a076473"
+    },
+    {
+      "path": "kb/transfer",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "kb/transfer/partners.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8869,
+      "sha256": "c83b15f77b961168c949a76e0af5540953ba9bcccff786d30f78df1dd7ecba19",
+      "blake3": "bfa4922e1cb48cc0556eda806d7f27a3d9d70b3383b834060d617a98794a4e32"
+    },
+    {
+      "path": "migrate.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 960,
+      "sha256": "0deb195ad2af4aa91024591166212e9fc953dfdfdb838274b07638b0dbb98117",
+      "blake3": "d9fa83b4d2e41f69f0b92dcaa01e5fd4f527e8277fdb1cce8fe09170cd95b5b5"
+    },
+    {
+      "path": "pages",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "pages/credit_cards.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14618,
+      "sha256": "7c202477923f428b3327636a4dcc9c97dadcc4e844ccff055d693d2a1ee7d190",
+      "blake3": "f48f003bfdcf2dd3708f2847ad4227b6759a399f88975e9bb96d774896064007"
+    },
+    {
+      "path": "pages/my_credit_cards.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15313,
+      "sha256": "f2a42fcbd556d673e9300bad9db468ce284ab80e3ff5d7f59d4ab9bba2099dfe",
+      "blake3": "d5894c5e236185b7e5219b857d3f219e2eeb3151128a6b9ffeb6d1587a2a6d69"
+    },
+    {
+      "path": "plan.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5732,
+      "sha256": "742a89a63a89eb592f48106c46424d439d480fc9183776111e498eca9f68c254",
+      "blake3": "2944166b96de29eb2d41fd8e3584289cd1393d4884823041b53f013a562d59d1"
+    },
+    {
+      "path": "pointsyeah.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1477,
+      "sha256": "62cb07b9fa47bf948ccd450aa08a71213cf1906f13d9e2a8323a700487c48b2e",
+      "blake3": "25a89abaf95c332334589a6e224b21e931da50951952ab9506206c048e9fd1a8"
+    },
+    {
+      "path": "prompts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "prompts/agent_system_prompt.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1502,
+      "sha256": "6f224965012c2bd74dbe709cc381d723f50a251dd88a8a510603e5df327c648e",
+      "blake3": "1fd5793c168f61455ce9bf21284e8bcf92945ad423f7b25d1ea8a38552757745"
+    },
+    {
+      "path": "pyproject.toml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1136,
+      "sha256": "e0478f5426f32b1417426f4a1b82c59d5976991f4202d519b2884c71aec02554",
+      "blake3": "654a060d369366b4d76483ea20ef71368f74f3aec917e5ba3516ec459154a08b"
+    },
+    {
+      "path": "reference",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "reference/Analyzer.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "requirements-test.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25,
+      "sha256": "242a108e9bcb44badbe3c922c50292ee10fe4ef2a353a392c764251ee329cdd9",
+      "blake3": "44f8319906ae8c229c2d53cc26767580ba88fb8ccd8b105e3a39431e8ed1e34b"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 188,
+      "sha256": "6ba69a495b2838c7524e48553c3860fd5d0b4b455d98de5ad7f89fe208786f80",
+      "blake3": "3493eb319584197e2022b3d7923fade66beaac74b75f6c42eadaf835957095a9"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2965,
+      "sha256": "73440ae49904e69cdd93e6da81279f5cdacd9b76b5448ea36a9da1c6983abc3f",
+      "blake3": "dab6f846f131643ab4060a2314dc3d586ba41f5187e1d87577db0feb0fa41b7c"
+    },
+    {
+      "path": "skills",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "skills/fleece",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "skills/fleece-gmail-spend",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "skills/fleece-gmail-spend/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5431,
+      "sha256": "c43bcc92e9d351b5fba44f18a6227bc66f03fa5172930e12fd46071b29a4b3f5",
+      "blake3": "748054186678a8369e3cc7dc0a059fc21aab2a0bb16d5c2287cb8dfe6ab0ecb1"
+    },
+    {
+      "path": "skills/fleece-gmail-spend/agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "skills/fleece-gmail-spend/agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 246,
+      "sha256": "685afb74eae899aaa2b20dc3a0169af1ca1edcd17fbc6d4c4da712614831d6cc",
+      "blake3": "0df9cd8bc3cceee2ae642c227852041b35f996df27d5a658514e1427aa3e8470"
+    },
+    {
+      "path": "skills/fleece/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8830,
+      "sha256": "2d97dd77bacafd46df01348f4fd3acd9ba18b3544863ad0e6c710550e602fdcb",
+      "blake3": "b695467eb51dd4bbfc00a161d14f7da67cbd1468e477754008082b51b7b2b9a8"
+    },
+    {
+      "path": "style.css",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6127,
+      "sha256": "f69ca662a9cdb5fef92ed1cacb0ac8faee58499abe84db9ebcdf5f5d9dc4fe6f",
+      "blake3": "c5f24459657422751b8403f0b715ea1b2c5d3ff75f6b669b25d6de9637d5059c"
+    },
+    {
+      "path": "test_fleece.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13380,
+      "sha256": "93007f20f0cd75a0b13180b4aae573fe1c84a97a26486786ba23a5c9235fad46",
+      "blake3": "cff7b856853cd2230623cec9bf201c9237bd5019e90d69ce109d6b851b6d1882"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blake3": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    },
+    {
+      "path": "tests/test_brave_client.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4592,
+      "sha256": "4a50cc7fa919df46a58c0b3decda8ab82c37f1ca20e5988d5b7fdc4a4a4f796c",
+      "blake3": "2321a35404403a10518235604382dfb449434af87e0c1f300ad57d93ca6b4fcf"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11129,
+      "sha256": "eee87e67606a57ad4808526fe4b75a34643c48e97053b744a95f537c877466e8",
+      "blake3": "279fa8d21f58a940ee81b1668186c163925494a620c405041eac4a4117d76e48"
+    },
+    {
+      "path": "tests/test_pointsyeah.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1108,
+      "sha256": "f872a1a6be053d9b87667279875d31adf0a8907a78066dc83097209ff8e14f93",
+      "blake3": "d480e9488b1364ff18ffa9691b37ea7d7a62b22f32e7a778431de9f536ca380e"
+    },
+    {
+      "path": "tests/test_renewal.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9644,
+      "sha256": "1179fcc87975645b977d855c1c4f337ca4cec36a0c62221e32e7e7224235c590",
+      "blake3": "5661f9eafba43b745cde29070e3fe2e9e85141c99c5497e8f37400fce69015b3"
+    },
+    {
+      "path": "tests/test_tools.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6471,
+      "sha256": "1d272a5313f92ba7a5194955c28b0b144b856cb1f599e472dedc841c3aec90e3",
+      "blake3": "2e18005310982eb859d957eded7136fff3903d424d91330dd1f00cc1b5f56ebe"
+    },
+    {
+      "path": "tools",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tools/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 75,
+      "sha256": "06fdfcb3b344f9d65b26df85b1ab6c8960d065b14d706ca075ac4aeabb450aa0",
+      "blake3": "2134b34b3db9be0de6e3cddd13769a3eeaabad54b27b55616061da15af223aa0"
+    },
+    {
+      "path": "tools/brave_client.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2116,
+      "sha256": "24ff052256da79b25885db84eac272beff0f48f5d5894d91e76f964b51bc960a",
+      "blake3": "e42dee165f3c9671d9b63a40d30873a28aa6faf0167d74490320aff43e44d766"
+    },
+    {
+      "path": "tools/credit_card_tools.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11309,
+      "sha256": "b86bc33ed9e8e0da9f1773be05bc691be20908dbd8ef2511ab7d4f5cf7a3511d",
+      "blake3": "364790a4981c292ae54d7b7077262759cb048a030a6b19b4060a2c11573a7b63"
+    }
+  ]
+}
