@@ -22,16 +22,16 @@ The sandbox image installs integrity-locked npm artifacts for
 `@openai/codex` 0.141.0 and `@anthropic-ai/claude-code` 2.1.202. Codex declares
 Apache-2.0; Claude Code carries Anthropic's license referenced by its package.
 These tools and their licenses remain third-party material and are not
-relicensed by this repository's Apache-2.0 license. Version and integrity pins
-are recorded in `containers/agent-clis/package-lock.json`.
+relicensed by this repository's first-party project license. Version and
+integrity pins are recorded in `containers/agent-clis/package-lock.json`.
 
 ## Acquired skills and platform metadata
 
-The repository's Apache-2.0 license applies to this project's own code and does
-not relicense SkillJect, downloaded skills, their manifests, or their bundled
-contents. Skill authors and hosting platforms retain their applicable rights.
-Before redistributing or retaining an acquired corpus, review each artifact's
-license and the source platform's current terms.
+The repository's first-party project license does not relicense SkillJect,
+downloaded skills, their manifests, or their bundled contents. Skill authors
+and hosting platforms retain their applicable rights. Before redistributing or
+retaining an acquired corpus, review each artifact's license and the source
+platform's current terms.
 
 `data/platforms.csv` seeds ClawHub using its public API documentation and
 acceptable-use URL. Those external documents may change. A platform candidate

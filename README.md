@@ -9,6 +9,11 @@ and Dynamic Detection of Agent Skill Malware* ([arXiv:2607.02357v2](https://arxi
 It deliberately treats a detonation verdict as evidence from one bounded run,
 not proof that a skill is safe.
 
+This project's first-party code is source-available for noncommercial use under
+PolyForm Noncommercial 1.0.0. Commercial use requires a separate license; see
+[`LICENSING.md`](LICENSING.md). Third-party and acquired material retains its
+own terms.
+
 ## Data flow
 
 ```mermaid
@@ -634,3 +639,15 @@ Read `SECURITY.md` before enabling scheduled detonation. In particular:
 - review candidate platforms and their terms before enabling ingestion; and
 - remember that an untriggered malicious path is a dynamic-analysis false
   negative, not evidence of absence.
+
+## License
+
+First-party changes published after the final Apache-licensed snapshot are
+available under the [PolyForm Noncommercial License 1.0.0](LICENSE). This is a
+source-available license, not an OSI-approved open-source license. A separate
+written license is required for commercial use not permitted by PolyForm.
+
+The historical Apache-2.0 boundary, commercial licensing route, and exclusions
+for acquired skills and other third-party material are documented in
+[`LICENSING.md`](LICENSING.md), [`COMMERCIAL-LICENSE.md`](COMMERCIAL-LICENSE.md),
+and [`THIRD_PARTY.md`](THIRD_PARTY.md).
