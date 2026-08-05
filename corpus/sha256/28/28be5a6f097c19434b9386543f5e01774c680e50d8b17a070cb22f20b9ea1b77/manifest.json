@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:28be5a6f097c19434b9386543f5e01774c680e50d8b17a070cb22f20b9ea1b77",
+  "sha256": "28be5a6f097c19434b9386543f5e01774c680e50d8b17a070cb22f20b9ea1b77",
+  "blake3": "c31d934bfd862ac0b6fcc8e5dc461f81a4aae571a746346fa0a7740c70b8e40e",
+  "size_bytes": 197380,
+  "file_count": 14,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4029,
+      "sha256": "6b7ba619459d93c1f69a161ca4b0ceeb2c2e14af227995f6bced875dc7ea04d7",
+      "blake3": "faadffc8f61f2f17d99d4390c2156fbe6a614c2d05adb21459c76f7912889015"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21889,
+      "sha256": "59f7532d8755c3f21d64d4068d50fbac8bb1e24f31256138ce724cd72fdb87df",
+      "blake3": "78f9f606e911ef83316d0182dff53cca8f4df05e803b0d086d443b29f6e1267a"
+    },
+    {
+      "path": "examples",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/disk-health.sh",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 1119,
+      "sha256": "fe61a913dba32264bc43faf659a0d384a9bbec501d470bbda55a29c7f06c9631",
+      "blake3": "824a364d2375971dd8d67575e40271d216b395960888145157bfa13b8fae68f3"
+    },
+    {
+      "path": "examples/read-logs.sh",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 1513,
+      "sha256": "6e22cd0ece68bf91f941e8c7c18dd7f58954e68e21ad674bba4253e4dfc1fd35",
+      "blake3": "05bc4aa921d55f9890240fa3e8c265025479c342d10ba61feea8ac2f2150c9db"
+    },
+    {
+      "path": "load-env.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3258,
+      "sha256": "3d40db1c31b2cb3dd8b33d5522a81674ff613b4cd1689189437a531288ba5e11",
+      "blake3": "726989f5a033605e321ec2cb6890dab41369851bdfc3701def9de7877a910e10"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/api-reference.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21163,
+      "sha256": "ae7aaec6fc90046cf8bf09f26a86f651a9c94315958020ff19be86af8a35d31c",
+      "blake3": "b674cce6377693ab19176e13e3b380ae3403b41467cf6504fbe85273d5623b8b"
+    },
+    {
+      "path": "references/endpoints.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1652,
+      "sha256": "3fe1e9036b620cc3a93b2d871da030a626cd21f4874a41c65c5efa9eeaf0aa1e",
+      "blake3": "f6639d153321f89039f585cde53c1f3ddf029767f1760b8620777267335460e5"
+    },
+    {
+      "path": "references/introspection-schema.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 58355,
+      "sha256": "8cd6c22b6798a74f1733745e64233ba85d0944c391c5ed5baebebcbd5b1b4c75",
+      "blake3": "8b9ffcd949bfc55839d0b23ad1c409522b5790dea41933bf39384a7f36393d26"
+    },
+    {
+      "path": "references/quick-reference.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4779,
+      "sha256": "fb2c84582cbd769175f5bfbc13436bb5c24021f6fe2f67925d1454a9011fffc7",
+      "blake3": "0e909a6259b6751a5884ea6171233b6013eb1ae3d63d1bdb6d151b23a8d2d59b"
+    },
+    {
+      "path": "references/schema.graphql",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 58143,
+      "sha256": "b2803a2e577a80053a862961a63c034382faf771c021a1d28e40c5e9024bd24d",
+      "blake3": "b2f316856384a69d6c09b77faa870dc2fde69e9621d0bd786142edd502b5d06a"
+    },
+    {
+      "path": "references/troubleshooting.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3675,
+      "sha256": "b3dd352d70426be3ae589510e5e1ad81e71fb1993f113d5df40e1f83e46e551f",
+      "blake3": "0650b4439fd9cb8f42241e940495f9b7c97805fe310cfe15ab880d75c56533c0"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/dashboard.sh",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 11338,
+      "sha256": "84241b2cdbd1f12b368b65124abf46e7802652c8f155f1be875e7e5251662cd8",
+      "blake3": "5bfab31a63c6af9b416e56055bc503c829cba51378e37143102dade1e8bc3e20"
+    },
+    {
+      "path": "scripts/unraid-query.sh",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 4925,
+      "sha256": "fd2c7ac0e2fcedff972bc5f40322872e8865ddae10085f26d1f9c6caf78879c9",
+      "blake3": "17cb33e39caef9800a9549300294f0bf369caa94594a3351a2f89f4b7882a65c"
+    },
+    {
+      "path": "setup.sh",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 1542,
+      "sha256": "3077c30efdccdf339a0706f846bb2d617fd0117b0fe2ada69d0440b96d0eac81",
+      "blake3": "6b825dc43090722a394e330d6fa81041267c30f5e9c3eee76a0e571f9507c82d"
+    }
+  ]
+}

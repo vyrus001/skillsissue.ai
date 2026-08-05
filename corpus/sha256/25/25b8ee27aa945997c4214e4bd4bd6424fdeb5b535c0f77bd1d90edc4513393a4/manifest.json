@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:25b8ee27aa945997c4214e4bd4bd6424fdeb5b535c0f77bd1d90edc4513393a4",
+  "sha256": "25b8ee27aa945997c4214e4bd4bd6424fdeb5b535c0f77bd1d90edc4513393a4",
+  "blake3": "33cbb4307e90a0c6bab9d96116f758a4c5a25e8d6c0ad69eac0342983acd96a2",
+  "size_bytes": 48773,
+  "file_count": 16,
+  "entries": [
+    {
+      "path": "LICENSE.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10776,
+      "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9",
+      "blake3": "d3f11c251f0ef236f42928164f0570d66c7009b511a53e0fbc05d7f2a978ebe7"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7241,
+      "sha256": "d6120efc03ea0e80204f687801cfaec8efc4519a3430b68e13e4ebd8e1c69b52",
+      "blake3": "818b08de93ca3a7845339688eb6f1fe9ec2e7f15454d731d549afc72217a8196"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 299,
+      "sha256": "1a152d9e7e66b86100db33b8e6ff3327955bf107bb9e77044a1ad6dfb10d6e18",
+      "blake3": "4087980bc3e17cb5136837d5aed9b5b23e732ab272383f048b090ed7ca06ae14"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/speech-small.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 742,
+      "sha256": "b879fe9fc476f183e1c9bfd0e2883b8b2c28c708ca3d90f409bed051fe6a173e",
+      "blake3": "84fb3038188248c961f507f576efe143d44231367c78278e9fb0fa0a85a430e5"
+    },
+    {
+      "path": "assets/speech.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1234,
+      "sha256": "b5abb383bba63a309f73a4da1060b50b6c92b1b5f974f44b8f609b3da10112f9",
+      "blake3": "c34bb73377c5f332c85b0bdd8799a68a028b9f8c7d9124e898bd8f2fa5fc834b"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/accessibility.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 696,
+      "sha256": "34cd91bc6a3ef65c8da8997e312d163babcdfc3241f9e359418b3f5a76f15b76",
+      "blake3": "8896fc093e6a753ddd5da260f8e05c213d5f9986482f7128a4082e1bf32d6ff1"
+    },
+    {
+      "path": "references/audio-api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 902,
+      "sha256": "dba58cfc0d5e125cf1ac13875193950233aa948639b268ed7799ca17bca66bfe",
+      "blake3": "34cf8ee88e2477ea5f82cde34828c8ae7bcdf1d5d461a80595c677acf43da760"
+    },
+    {
+      "path": "references/cli.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3275,
+      "sha256": "77e6a0c01036ac0092cf37c3d5c88dc6800b223524c5b9c8920d10fc4f68e0cc",
+      "blake3": "a1bfdba8cfd0bcd2e68721ed555e7a8a6d8fce173b0e76a144d1f878ab43cbc9"
+    },
+    {
+      "path": "references/codex-network.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1148,
+      "sha256": "c956a51d3e67246cfb43982aa8c82065350fcce4ef7b94bd89e599c575c94d9c",
+      "blake3": "ce35f575b8bdc5d33cd19d5a3c1c8819aa1dd8577806714bea0a45e036ca31e9"
+    },
+    {
+      "path": "references/ivr.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 708,
+      "sha256": "2aaf225b7cea9277fe5413eb0360a845de035c00ea0d6f30348b5ce7138803fc",
+      "blake3": "425411a6ad26f8a30b180187b36c88b3d118fae37664583e3843a168715cde63"
+    },
+    {
+      "path": "references/narration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 671,
+      "sha256": "3e68829fe4a5a47c3d37cbe9a1ed95ff3cedf1b303ff02a10501e56ad5e7c74a",
+      "blake3": "fd3e514192a37c36bcbaab7776202f16d4248da31a20f48e36f5ede037e7545d"
+    },
+    {
+      "path": "references/prompting.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1553,
+      "sha256": "2adcb001813be04e56918eb0d34d9a45f9326aa0fb240526ae74a926522b6554",
+      "blake3": "4484ae22201a1d14543dd62d04a5ed7a66bb54ae4f34baecd0a36b55ce8c2f8a"
+    },
+    {
+      "path": "references/sample-prompts.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 991,
+      "sha256": "c14e1b1c526f2fe555ab2dc86c0e8aead33d38238d2bfcfbf9de0c18d28bde03",
+      "blake3": "67d813ee7db94ee9e066a0b377fc82298b9bcd0b7e2fcff6169d511307520c62"
+    },
+    {
+      "path": "references/voice-directions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2155,
+      "sha256": "5da0a4c59bdadb47d1795f51a9708b515fbf2901f0ca808cc5c66d83a336986d",
+      "blake3": "5af441b91a1087b76f2ddcbcd90f49204cd8ed8ddc011886475723b66afb05a5"
+    },
+    {
+      "path": "references/voiceover.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 790,
+      "sha256": "a4bb96c31c8be6a62d35a103f9d7fc700b8004df2efd10595d00b63f0c096486",
+      "blake3": "d0d6610371d4e8ac1ed5b05b162a3d38d2eefa38afd7055e5d7a70e3faf78373"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/text_to_speech.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15592,
+      "sha256": "0000014efdf1194512c017ffa0d0574ae65881f6a1340b7ed822053b6e3d3c44",
+      "blake3": "7e7da22f16fbfb2a2f021a39938562f10c6bf0c1ab86bb4a4181416a36525e7a"
+    }
+  ]
+}
