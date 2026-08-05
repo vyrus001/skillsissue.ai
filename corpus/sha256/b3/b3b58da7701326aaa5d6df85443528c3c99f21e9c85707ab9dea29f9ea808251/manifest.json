@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:b3b58da7701326aaa5d6df85443528c3c99f21e9c85707ab9dea29f9ea808251",
+  "sha256": "b3b58da7701326aaa5d6df85443528c3c99f21e9c85707ab9dea29f9ea808251",
+  "blake3": "dd3ce3abc4ab3cde358c33ca51f500928a38f1d256a13a5584397bc92b674609",
+  "size_bytes": 45844,
+  "file_count": 5,
+  "entries": [
+    {
+      "path": "LICENSE.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11357,
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "blake3": "f247daade87762f3df12331600dbd8a4820f7632474e66a3dc3c63644bb3eaaf"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3079,
+      "sha256": "8455a64e627d203fd7b43df64c83d8870cb98907aae21edce4ec8eeef651d850",
+      "blake3": "bd2caee6197138151485cccde767b8ef641e4f7add8ce67f2f551b406ed3abef"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/bundle-artifact.sh",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 1517,
+      "sha256": "abf0e480bf6585b56fab8526a407dfb7dc740812bddd70c636e1e8f3df5f9618",
+      "blake3": "691c4dbe283e733d26d1b50a9efa41ecdc938df3d673feefbf4c7af2ee284a43"
+    },
+    {
+      "path": "scripts/init-artifact.sh",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 9924,
+      "sha256": "355e5dd4382aaaee91f01f1627eaeab30b2676ffa8d9b3ec328a1ae450ebccaa",
+      "blake3": "4936e6d919dd4adad87f4cc6124086961ffc05ed8011b210622722ec995aef23"
+    },
+    {
+      "path": "scripts/shadcn-components.tar.gz",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19967,
+      "sha256": "1296f069e825de7933de7e8ac63672495cacce3f88f2dc45554dbcddbcbca60f",
+      "blake3": "fdb07a45163195bf32bb923825a743b54be2476ca055f70a07cf352f79a9875b"
+    }
+  ]
+}

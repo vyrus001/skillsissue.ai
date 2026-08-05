@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:3f75d71e5c03e002cad6858fe02a8460c9c129120bee48a90a3dbc1f9ae252fb",
+  "sha256": "3f75d71e5c03e002cad6858fe02a8460c9c129120bee48a90a3dbc1f9ae252fb",
+  "blake3": "e743bce5f1f07b791524aca7a2a828f5e52c11b97ced2beec05095dea53345cb",
+  "size_bytes": 114839,
+  "file_count": 12,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8170,
+      "sha256": "097872d45eace22bf1ab6ae9966dcdb215e47b76760ef0266b9469ecf4836d72",
+      "blake3": "ca6fbe80c8ab74b91e1ded75f1dc87e4349f684a57c2d9b7a16ef31a769ee796"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 248,
+      "sha256": "25649dc53ed30170fb2412e32a02e5d2d219b6fd835c603c7cbba78feedcdf99",
+      "blake3": "956631b77f70892e4a1bb9078bfa86bf24a969717a7e426232afe8fa36192f73"
+    },
+    {
+      "path": "evals",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/cases.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10070,
+      "sha256": "09ed086c1e50cd13920128703cd173eadffd2ac506afe0ee7fe6fa4eb21f41cc",
+      "blake3": "85e0eb9f0b6cc9e58c9ce3cf3d8c8ed25c13e6db91a43e1d47e065a37c4b83b3"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/ai-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3764,
+      "sha256": "2b0202e284676eef8556d3cc2d7b9ec2868a855b29c7842c2f5773d9bdb83483",
+      "blake3": "0b88b1f29ea1c0b642dd0893b6f10defd8e960eb261ed6c7f0912828e2e52409"
+    },
+    {
+      "path": "references/eval.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2857,
+      "sha256": "020016fd833f41b1146b59ccd245673c9b3880e925ac69b2b4f0fd6b3ac9ee69",
+      "blake3": "d705397077630eddafd5ddeeb6ff277437a443984acfacb11ac16a5244170ef3"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/lint_prose.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 46778,
+      "sha256": "234d5f12bfa41007ac0437ab227d30064108e6d48a2adb610f426c22317db99b",
+      "blake3": "d4637cb0acec187d48791af2960cc68bcbd1813bb1a03e6b9fb8f0a5c5c9f6cc"
+    },
+    {
+      "path": "scripts/run_evals.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 8256,
+      "sha256": "49e96210f715444ace9181f6a1331c81a072a49a56e1d1cd13d56b3cb7a85448",
+      "blake3": "5a7d86e85d839caea6356da63370349c74d6abdb492984bac212f7ca87ac37a6"
+    },
+    {
+      "path": "scripts/score_delta.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 13285,
+      "sha256": "2c0768bf6497710a1a8af563741ffa3aa1ce9afb427a371a478882f84d9af10e",
+      "blake3": "bfd48ecc1e781f8807ce90b01f1320df326550d17483fdb963ac5404991dd056"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/clean.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 183,
+      "sha256": "9b43d796074b50adb30993f23653f1a1e3722ec031356de6523e9cdf9ac7a044",
+      "blake3": "a81348d5651a5ebdb9d70d2bb7dd62a684bd43d250f52acf3952ddb939ba5b45"
+    },
+    {
+      "path": "tests/fixtures/slop.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 286,
+      "sha256": "641b86486b5ca0a8d81ab9cc48c765e580f6e555ab314f8cb881854a42561c2f",
+      "blake3": "5b0f961bf9d0f381815fe238dd39566a27e46143cb8548a94f339a0f9eb96411"
+    },
+    {
+      "path": "tests/test_lint_prose.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12738,
+      "sha256": "581ddb85a0f51a53d7ceaa084ae5c19398b0623e62f7a038edbd55a4b6bba44d",
+      "blake3": "1cbd7dc16e5f7b348768451d777c76eabd08f04db2d03c6e65632fa9a8aa2205"
+    },
+    {
+      "path": "tests/test_score_delta.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8204,
+      "sha256": "e8b10178a5f27fa025eea11631ac995ce0aeb609a0e70428fc3b34bccb36773c",
+      "blake3": "7cfb479002abd4986eaaf11e36a985addf87faaccc02fcc364f9d4c0a49b215e"
+    }
+  ]
+}
