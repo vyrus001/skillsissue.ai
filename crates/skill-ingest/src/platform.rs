@@ -10,6 +10,7 @@ pub enum AdapterKind {
     LocalDirectory,
     GitRepository,
     ClawhubApi,
+    SitemapCatalog,
 }
 
 impl AdapterKind {
@@ -19,6 +20,7 @@ impl AdapterKind {
             "git" | "git-repository" | "repository" | "github" | "github-archive"
             | "git-archive" => Ok(Self::GitRepository),
             "clawhub-api" => Ok(Self::ClawhubApi),
+            "catalog" | "sitemap-catalog" | "web-catalog" => Ok(Self::SitemapCatalog),
             other => bail!("unsupported ingestion adapter {other:?}"),
         }
     }

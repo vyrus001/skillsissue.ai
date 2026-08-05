@@ -1,0 +1,593 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:15667f4f4fb0b3903a0f4ec8070c5797c81781a76c32c1e998af3b577216f215",
+  "sha256": "15667f4f4fb0b3903a0f4ec8070c5797c81781a76c32c1e998af3b577216f215",
+  "blake3": "c41e1f001313cc72245f2feb13768b8498ff7616602935f4633210af2e85704c",
+  "size_bytes": 620130,
+  "file_count": 69,
+  "entries": [
+    {
+      "path": ".env.example",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6151,
+      "sha256": "204999b45e1e9d8935fbff535fbf9d1848eb412be02425b6aeb414c7d73f5d9e",
+      "blake3": "27e87725f6cf82682775b296fcb42d0a2834069428c511e9f83a043163dd561c"
+    },
+    {
+      "path": ".gitignore",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 408,
+      "sha256": "381444b384c4e8ee3fa8f9586ce5e489aa4ebc644352f837c680b2598cdfa2af",
+      "blake3": "c7bd8d1a9899dbe48739b311ed0aa58813a5f887b0401c8929883289fca46618"
+    },
+    {
+      "path": "DISCLAIMER.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3718,
+      "sha256": "025ded60028d899769771b1c540a1fe51a19265e820bb58c49b326c7cb910d63",
+      "blake3": "a8e4795bb4bee9815626e5e6939eb977c10330cc7741b1ad49afcd52883ff627"
+    },
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10758,
+      "sha256": "737e1ab73a3228edfe1d9f601b565e0a40825ff577a05b52f44ceceec257e3cd",
+      "blake3": "8ced23b0547f052182222d89b4bdb2be3a7b60dfda821168997cb65fe1ffae09"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27237,
+      "sha256": "6f269a8f66ef25957009f7d6bb9741be77f014499bf1f980cf97947b75973a4b",
+      "blake3": "2ae687a6a24900f9ab67c61c9b78ed3b51138de3c43f5d7ba7d2f7a6ab4e570a"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17921,
+      "sha256": "867039349b244d1f0417efeb7554602c04a52c0f343383e25cee07e41ef0a6dc",
+      "blake3": "ed037d54207b9aea8abbb95394497243aa67cb323dc32024ab9538d1efac5208"
+    },
+    {
+      "path": "pyproject.toml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 697,
+      "sha256": "631885b49d38ca4ad59b9558f141fa1e0b0dfe2fb530d1fc35a22c119301ca6a",
+      "blake3": "221324c5a1cba7eb60e4856a1710d15d6ea97474122be70785afa2d55cd2a204"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/api_reference.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8409,
+      "sha256": "68c826d128f9bfc3c4e409a4024c603dfbc02bd5c890822a083dd6dd87b533b9",
+      "blake3": "1004e584644e2fb1b267f607b964f09f0835fb104a80b22ec49edbb099002918"
+    },
+    {
+      "path": "references/llms_au.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7455,
+      "sha256": "f8f99e2bbeec52cd4a0f14582253e27ae5e24f6d6aea60e725218a640f8cbcbc",
+      "blake3": "6ca16bc84b456773ff75fc2a48a36e99b9c58498b60ac26e854d990951c1e7fe"
+    },
+    {
+      "path": "references/llms_br.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7458,
+      "sha256": "1e7b6c969730b64c33effdbecb0fddd872c27f5cca484a71b3d42d5e18b684b4",
+      "blake3": "ca964ac08a27e6e9bf098bf318ea35b206530acf0a0d2cf412c33877d6aa91ca"
+    },
+    {
+      "path": "references/llms_eu.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12437,
+      "sha256": "4d012b1c0821b77b49fefc989f9fd25593b1212a98135112ce122598bb2af715",
+      "blake3": "8226499f1fc36016604f06bbbde5e2694254c5f8f8febc2553390d00b9fc6ae4"
+    },
+    {
+      "path": "references/llms_hk.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1240,
+      "sha256": "c1e040df9d1ec42c040358674c35018a2ab61aaeace2ecbd68c099ed5d31029d",
+      "blake3": "c1c6f6198ed312e548bec926d54d969a10b4adbef8be54eaa8edb99e64735b09"
+    },
+    {
+      "path": "references/llms_jp.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1742,
+      "sha256": "372699d92d398ac61f705d01e0e818e1f33633555c06e7e2212742522b9cd74b",
+      "blake3": "551dc3089253fb118a6beb5041438548fc3446ce6af40d2288470c66fff92e2b"
+    },
+    {
+      "path": "references/llms_mx.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7607,
+      "sha256": "838059ff4ea65fd94539224cc0fcb2fb30c7a004351a910e9ff1bdf146a04735",
+      "blake3": "c1ce77dfc2b56a3d72677c784f2b2590a4e18f3e1c7cfe3aadb77332c8996d0c"
+    },
+    {
+      "path": "references/llms_my.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8012,
+      "sha256": "d84728063561cae8189fb517be06e57268154589222eb7f5f610436941e224b7",
+      "blake3": "287dee3bba22854b8a002000b20f834c86a30c25865e2705f4dc9152ed92cb7a"
+    },
+    {
+      "path": "references/llms_sg.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3371,
+      "sha256": "76109d600f09c5ffdcf5b73e9097e4485af8b276f41e2aed58859c8c0d3b340f",
+      "blake3": "8289162205766b59c1889ff0c6af72a89de0cdead078221bf082b9e497407492"
+    },
+    {
+      "path": "references/llms_th.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9248,
+      "sha256": "b6fd44d34e760ad6c4125d8fc959b4f9ee940f6bb367b3c94371b8dc55582bfd",
+      "blake3": "6f459c1cfdb3cf92a104645f4601c2ea4d7e4769b7ed545c47fcc08a0c5784f1"
+    },
+    {
+      "path": "references/llms_us.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2009,
+      "sha256": "45b8b2a791753184b928643da085761b8f76e8770039e6d4f46ea8ab047cffd5",
+      "blake3": "40b31b3d479913efc33c9f1e445b1495c3371dfa3a0a8fa632d5dce81ef84769"
+    },
+    {
+      "path": "references/llms_za.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8323,
+      "sha256": "261c3910c59f5b48fb8ceadafdaaeaa99739aece95924b9e1039ecbf2ce3bcee",
+      "blake3": "bc010189d577b9e53bcc309fd48f74d0db6334bf51477e8a469ec9ce209892c0"
+    },
+    {
+      "path": "references/skill_market_data.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19333,
+      "sha256": "754f6b22f50ead8fba15eb5ee07a6a7f4ee59f58cdfdd0f5327fa03814b55a38",
+      "blake3": "8977dcd9de303915ca1714835ad3ca1da0754bed9378e50c1e41299b62ad8880"
+    },
+    {
+      "path": "references/skill_trading.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25934,
+      "sha256": "2891e181760ad82fd0dacf46def64610e4a95a53c2e889ebc1dd5602cb3ee03c",
+      "blake3": "1e682a6f93d91e82d5b41c6d51256d2846db0f9d1ee45cb49b3282d575a75694"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 34,
+      "sha256": "f0790232241a900c2ec3d40c6c48a73b92b1d034e798033cf857a9d9548e8494",
+      "blake3": "576771c43f4eed60cb2d4a84ea92b06275ad94de7a40c74951e09012b018c1e5"
+    },
+    {
+      "path": "tests/test_account.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2611,
+      "sha256": "8211623054b89bd67fddd1ebd8443508293a3d52a535b0e7aa3c41458d435ef0",
+      "blake3": "1d858ce378cf29d1f6ff1819f457b41dc23196be6a35922582d19076f6add303"
+    },
+    {
+      "path": "tests/test_assets.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3095,
+      "sha256": "7aa8f850a3ecd5b517aa10d23756311ceb9903f3ccefe5c47816f97999082785",
+      "blake3": "7d9f2d2cfaa2c9528039d2824eda12ada25069d7f1c16d61d84d2a0cf36dd111"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1616,
+      "sha256": "5c51c9af1c3aca14542f15bc4c510acd0e7473886a42d2464ebe293aff2e3a87",
+      "blake3": "a2a2374b2e6409366a96ddaefb87f2dde30642b94b62740d47c83e98215da632"
+    },
+    {
+      "path": "tests/test_config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7106,
+      "sha256": "08f1a848ef27df0f63f3825b27ac2b32b18d106e394814453bdb7d1dd99d8c23",
+      "blake3": "149e667fb987c1f2158e5f507ae3b1bef4aa82a477dfc96bdb5f5f481bb95935"
+    },
+    {
+      "path": "tests/test_fundamentals.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16210,
+      "sha256": "16954fa8c5c1b77cc406d2e6d9d59dbc21e8b50ab7f6086a5a6ad6cd08ccc6c2",
+      "blake3": "3e12115bfcbcff87269c56642657c3ae275df718a7a4140c758b04bef7efac47"
+    },
+    {
+      "path": "tests/test_guards.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2213,
+      "sha256": "a307dfde038d7b6062628aa488edfed6975c0b0463e575b614901aa963ea60e2",
+      "blake3": "0fc061b36033f5dafdf793ec9dac5694833ea6271da592546aa2a485b67afb89"
+    },
+    {
+      "path": "tests/test_instrument.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10144,
+      "sha256": "e3f097d39a6bb7061764f9cabf1c8202d4af38cf98c37fcfe0464ad4cf3fd042",
+      "blake3": "954206a44ee80d4779817a19bdad9f0cb688daf29193046590204f1b690f11c8"
+    },
+    {
+      "path": "tests/test_order.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 913,
+      "sha256": "58345ce0a30959cf742c8ea09c8daf5776a78e5f19888697211b985490f8bacc",
+      "blake3": "ae06014865d8a74a5f72d11de7be74b2c43078c911725e9e1243fb85751f8557"
+    },
+    {
+      "path": "tests/test_region_config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6567,
+      "sha256": "a38d3a43c28f1da1e02d0ede1e420ee7c9af41426e13835c428981627e58bceb",
+      "blake3": "51f0eb9765201dd52522a4d97d100142c4f643b769f9e3d5ce0683717e8633a7"
+    },
+    {
+      "path": "tests/test_result.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2535,
+      "sha256": "15a071fbdb85e9346ffd2fd4df59304d6ccdedeb4129e6c5201e557d630c3c14",
+      "blake3": "0343509a833427d8a345d079956d20ae3d4ba8449b2dec4d24736e528f7ec0cf"
+    },
+    {
+      "path": "tests/test_screener.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4529,
+      "sha256": "e6dd82ec86d9cca4c7023a6ab7b86835731c24287ec8f4197ce495254392317e",
+      "blake3": "0d0b38fc866884df6d07b93231b43c11aca060165408d8cb388cbd562d2ebec9"
+    },
+    {
+      "path": "tests/test_stock_market_data.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7468,
+      "sha256": "d82b63644f7de67a8a42b75d2a2c04c30c2f54b89f65686dcf713646230d8cdf",
+      "blake3": "5a07f6800d4433f6604a0cbbf193bfab37aea7bfa1486b4a7c81910442cecff5"
+    },
+    {
+      "path": "tests/test_stock_order.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6973,
+      "sha256": "a81d488cb893e41e17b692efb9cc0fb951228c6358452aab3f34cf6133076c93",
+      "blake3": "2a1c229569ecbf9e41144b9c32d0032633fb9f6c9a3c25d6bc3339682fbded2b"
+    },
+    {
+      "path": "tests/test_watchlist.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5466,
+      "sha256": "b9ad9c95dfe6e293cc2eab28b2c6d40dd9b24f8451fc8fac52d3545e2dd1502e",
+      "blake3": "7762db6f52229f9a60f6449f929490e26b3187ecfd783de78b02848c40bc3b61"
+    },
+    {
+      "path": "webull_skill",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "webull_skill/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28,
+      "sha256": "176ae82739ea1a859f6a0fc0c2dfbb6292a0bdd0172613ed0c246069242f358f",
+      "blake3": "287ca21e4ce73cb457cae3ddc19b88b132817ffb1710859c6d35fc9675c5a67b"
+    },
+    {
+      "path": "webull_skill/audit.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5582,
+      "sha256": "e6f30dda46f088396f912cb612961bcd9570a0dcade482b6ca37a67f2d7b0ab7",
+      "blake3": "c10456d647ec085d2d5d801d5ec4a2c3e76046de06f834b08d4ca3bb6ed42b12"
+    },
+    {
+      "path": "webull_skill/cli.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 51078,
+      "sha256": "3a31eb9e94d9face8d73348e8d328f193d29abe969667304c07470cf447965e9",
+      "blake3": "09a959aaf9a7b80ec4f257debf70499943be77c3c6c1c1b6562e857d3c3550fa"
+    },
+    {
+      "path": "webull_skill/config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5414,
+      "sha256": "e5f4486c4aa40f69664a0aa3a24005afe82430522d211efdf6b7dd7ef3ae42e5",
+      "blake3": "6e179388b2c7b38a9e61e423c76818dcb38e9c8d051dae55600447712bb08254"
+    },
+    {
+      "path": "webull_skill/constants.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2749,
+      "sha256": "32d8224bbb6f6439d132513f1c4d36494e97b976d7e0eceb67d441d388a85e4b",
+      "blake3": "db6d61f87c48f629e5a58ef99763ba29a75d6faf1f5ccd90ab10a4617161c50a"
+    },
+    {
+      "path": "webull_skill/env_router.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8113,
+      "sha256": "8080b90f8a9cc20099afe4194c0ed9d16f7ac3bb700d2148e957d0407e085387",
+      "blake3": "66a8b2a4943c6aaa2016d8493299793ae11c995029456c82e5e82c81c418160c"
+    },
+    {
+      "path": "webull_skill/errors.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5468,
+      "sha256": "01f332de50b65b5f273415f0e492e0a35ae29a5b2eb39c3bc30b022bf04c1584",
+      "blake3": "ba0861c5f7d45bd8882d90974ad18d703e06630e59224a3cd1d7cf8f872c1f93"
+    },
+    {
+      "path": "webull_skill/formatters.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 72795,
+      "sha256": "872648760bc4dfa827d60693ab7b698f902a087ca7493782978777e505141ffd",
+      "blake3": "06ddafac77317923f77a2e904f831554b71294b74816ddd40ae73613d8071d13"
+    },
+    {
+      "path": "webull_skill/guards.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23119,
+      "sha256": "787ec00ab6ea54c68e0ab998892c8531ae68818739ca33f676886b33a6aa7932",
+      "blake3": "6438bc9c29aeb944e673340e9c16e5b08a2aa3fd8bd9c8f388b7640fe072ed2c"
+    },
+    {
+      "path": "webull_skill/market_data",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "webull_skill/market_data/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 180,
+      "sha256": "d1f545313d311007d4d57f435d496a032dff5041e75d0966a44266d95c289457",
+      "blake3": "85c58e643664ef134fa457ea9b0f52f949cbbafc6bad0d32ca2bc5957413cf48"
+    },
+    {
+      "path": "webull_skill/market_data/crypto.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2084,
+      "sha256": "9f68b9ca8bbb70dfa5ba9353c42f30a7b1584bd04cdcb8aba77cac8206cb6477",
+      "blake3": "48819507e6c746a07bf9fc0adfe223487026d10f70ff28765318aa127dbb50b4"
+    },
+    {
+      "path": "webull_skill/market_data/event.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3697,
+      "sha256": "ae88d2127c56fd575189e7fdd50911c8f7a828129e750f25997c643776127d64",
+      "blake3": "151601e4372bea21f4b8a09d8548935765bb43765cd056360243fc050723a69c"
+    },
+    {
+      "path": "webull_skill/market_data/fundamentals.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16963,
+      "sha256": "b0ac915db03e8593efa416c4088d5dd8ff63fe4576ada5a284666a40276068f2",
+      "blake3": "e56d3a951024b418a8775c95142a70f98c97bb08730e545afd8953e3a90de442"
+    },
+    {
+      "path": "webull_skill/market_data/futures.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4885,
+      "sha256": "39cd16a3da6e5c90dcd05316c6c37dffb4e1413ea32a61c3973eafbf7408d551",
+      "blake3": "19d5b012f9c565ae33f10cc247561551de5502030ba4244e9afe640c3c63db72"
+    },
+    {
+      "path": "webull_skill/market_data/option.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3203,
+      "sha256": "57b9f0f7e8019d070ab68cee2667815269170e5dd14d54c0abce980e84028b66",
+      "blake3": "17080b64e691c08002e35bba4522c10391d01dbdb8762c3513bc57b6e4b8635e"
+    },
+    {
+      "path": "webull_skill/market_data/screener.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8888,
+      "sha256": "10fb31cdc8a028c973264d00c1ff57a18bb2b2c000e7612d12c62af5dc3a2019",
+      "blake3": "eaa5ce37cd8f9e618cb3e9ceac701f552dc811bf9ef8a6d90d85e03a6db1d9b9"
+    },
+    {
+      "path": "webull_skill/market_data/stock.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9249,
+      "sha256": "336704a7a0fef66df34bc4dc4177653169755fc458bf3d5ce35dde1e46e50c59",
+      "blake3": "0af7b90aa314ed9d5ea0e664f1e7e0802d3a52df3933ea72d4542b48d19e8a65"
+    },
+    {
+      "path": "webull_skill/market_data/watchlist.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6247,
+      "sha256": "a4f9482fc7c5270654eea2ab64edb14d7cf896d1cbccaf5fcabe29d8bd42747f",
+      "blake3": "0af9c46564a71bc3400b5f15683d8bed7b0a8bbc6610a3058e7b932f7ffeca72"
+    },
+    {
+      "path": "webull_skill/region_config.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16227,
+      "sha256": "ff56a1100baf3bdce5db5522cd792a454d702f0bc896503a8174ccf7d5d9eda6",
+      "blake3": "90ef920e94912a66020c87bfa1142cc78e254f49bf4e19723d8020921fe1629c"
+    },
+    {
+      "path": "webull_skill/result.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3532,
+      "sha256": "8732fcff3ab492395ba8058eeee2a7b9d55fc98f4a269c1b7b952be2c8c44778",
+      "blake3": "9b2caa9a61c39a50bcc9c81bd5d67105beee03f77b8789057b3fe6a04d52d2a5"
+    },
+    {
+      "path": "webull_skill/risk_engine.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3233,
+      "sha256": "00bc193bc99be47c32adb2c4b6d3c5f47c9cc049b603adfca4e0c307287f5924",
+      "blake3": "b1ae8db5bfdb403df761392c8036228a1c2b0a0577696d0b395f80443e4155d7"
+    },
+    {
+      "path": "webull_skill/runtime.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 532,
+      "sha256": "72ea141a2143e0248615a968f56b633df88ee7929778d175b0654bd3b071c00c",
+      "blake3": "e968a657a514a661e010b7c7c72be48f8da57189f4824417e96ca8f3ba3fa2b6"
+    },
+    {
+      "path": "webull_skill/sdk_client.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8593,
+      "sha256": "fa02b1c12cb4a95288556e6c05cfbe98a35fb2ee95c258f9a8b499bf7b882c8d",
+      "blake3": "44bcb704c2155a087bf1723417da18800635fbe4be3482ae0382a666d5f0fe5a"
+    },
+    {
+      "path": "webull_skill/trading",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "webull_skill/trading/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 46,
+      "sha256": "51a5a1ee36e38aed503578279171293176f6d9a5e272f74ce3f6e05956e5f400",
+      "blake3": "8346fe9bbebcc58614956128bb58d5e3f0edd43094fb79c4c9a884f21d85d661"
+    },
+    {
+      "path": "webull_skill/trading/account.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7433,
+      "sha256": "b85e12dbdff5949d6c36668dc887042b2530783388dc3b00262ffcf6e57d2fa5",
+      "blake3": "84da25d689b702229a71bab366b95920689695b9aa6968cd842a07f035fa9b77"
+    },
+    {
+      "path": "webull_skill/trading/assets.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2931,
+      "sha256": "b314c629774633b9f357b1a9493947cc2ad9eb37916f7817045636be0556e09d",
+      "blake3": "3968da74b2c390ecaf843f2479f99ba48e3f844d3754fb4a867bd4e2d38501eb"
+    },
+    {
+      "path": "webull_skill/trading/crypto_order.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5118,
+      "sha256": "1a15b60a67c42ed972059ec5da3d6d5299b53b244b7ab75f55717b9117e675eb",
+      "blake3": "7186e790e0eddb9a9cd87beaa5c3343833f28110dd076a53c82d196d2e244688"
+    },
+    {
+      "path": "webull_skill/trading/event_order.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4723,
+      "sha256": "79379532eafbec593105968b9c4f7d7004ef6eba0831e860b695b77b9230f879",
+      "blake3": "2a74593e93f2bb65a0c46f0ff3975610d5489b1c4659e0fd32d1689a320ec432"
+    },
+    {
+      "path": "webull_skill/trading/futures_order.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8492,
+      "sha256": "d637d2a116431209e9ce09a51a1d5a77be8441eab694e9d621d44bb3d043b75f",
+      "blake3": "34a625f7733d6f4f6cbf41b23caf836c08dd9e2ba7db776ccf06ad1beadb6f15"
+    },
+    {
+      "path": "webull_skill/trading/instrument.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12366,
+      "sha256": "70692f2ae19cdbd780c76934b9660e619da3ff4d5404a44d3f32f41ad79851ae",
+      "blake3": "c0bcc67183d3fc275bde3d94b5d53cc81f98fcd4e768a51ad886557fe37b8009"
+    },
+    {
+      "path": "webull_skill/trading/option_order.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14772,
+      "sha256": "3a3e74e3e37b6d8740310f783b30000e658d8a23c8511f68a2a6e6f9ff1909c9",
+      "blake3": "0f19fa09a200b2e4df12b1d05ad4f4c2d7db89af60d9769e3164451d23469c4e"
+    },
+    {
+      "path": "webull_skill/trading/order.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4796,
+      "sha256": "eb9d80512cfd841c445449d437eeba33663148a357ca79a67b0cff3bdd78d68e",
+      "blake3": "f7f4a60afb1a8b3c30953be48359aa2cf4fc4f8849f2b04b68ca11d20d9bdf12"
+    },
+    {
+      "path": "webull_skill/trading/stock_order.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30646,
+      "sha256": "9e15aa889440a7a896fd473327ec9b2184a1e22ebb396093bb4edf2b5d3b89a7",
+      "blake3": "fde66f5911a3445abd88a776a9449948d2a9bb7f1ae88118ba6b9be7f374eee5"
+    }
+  ]
+}

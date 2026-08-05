@@ -1,0 +1,391 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:198eeb8e5d7a880fa7e6796cf6581a3f1229dd9d019a8885d0e93fbbcec54a44",
+  "sha256": "198eeb8e5d7a880fa7e6796cf6581a3f1229dd9d019a8885d0e93fbbcec54a44",
+  "blake3": "0405115e6a02528d94766a9d182e1eda1bbdb74208e1834aadd6a6bce43f8d06",
+  "size_bytes": 2006086,
+  "file_count": 43,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14809,
+      "sha256": "723506f8b608acec768aceaba447d698f5b67cf0fe816178a71ec45acb9358b2",
+      "blake3": "a24acbcabd29421f608c2cf6bea4772b800040fcab7fea11eaa11cca37247444"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 351,
+      "sha256": "4564f2acb1d3271d95080bc9a2a629d8fc22d6acaac4260e94ab6ce29598b2ea",
+      "blake3": "4f6bd6571bb32b331c3720c488c8e6ede830f2db1ff731ea907298ed6b48458f"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/brand",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/brand/icon.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 656,
+      "sha256": "fc688f508b99c16e5d28c5d552235a1d2db1bfaf981c4ff89b15ac802ff36020",
+      "blake3": "ff1b5d2a53fc75c5ce3719078e32d2c92ad4ba94c1c4676e45c0e73fdf0dfbf5"
+    },
+    {
+      "path": "assets/brand/logo.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 737,
+      "sha256": "4b6daf1634a9b5b4cbc11d3d552426bbce7ae6b3e6a7b788822374e77cd5d833",
+      "blake3": "8ab62d8cdc8d171d47a8d631a54764273251d441053d3cb06bff9a8d5b4eac0d"
+    },
+    {
+      "path": "assets/examples",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/examples/00-refine-canvas-strokes-overview.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 957672,
+      "sha256": "fe04b04d3a35f10cb1b89d16f08c87283dfc13ec78f2cd725fa3d9a9565b94c7",
+      "blake3": "dc0196daac45f11b678a5ed2e9ea190b09f8d344baf3c6b5902ad8c36869bee4"
+    },
+    {
+      "path": "assets/examples/01-stroke-cleanup-before-after.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 73252,
+      "sha256": "5c933e54adb09c8968ac3150a3a6e93713af12b7c342a4486de4f2d438e64f8d",
+      "blake3": "1ef7c720a2110938197d9b4af587e48dbd48ee75f7ffb12e1107dd800b6ae92e"
+    },
+    {
+      "path": "assets/examples/01-stroke-cleanup-before-after.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5845,
+      "sha256": "1dda190d7541a7d38ce489b04d3dc43348f7e0163d1481549dec5ca03b9edac6",
+      "blake3": "3c926e6ae387298164c4521c5effb0fb80b3579edf08672fdd054c22ef02076a"
+    },
+    {
+      "path": "assets/examples/02-geometry-snapping-before-after.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 79955,
+      "sha256": "b3d56390cea568ae98fd769cbad818977918614c50577c8e9356eb5a606f877e",
+      "blake3": "02cc1c44f3cb5efae65bc3313c698f16c6120918df7c138917bc91722f2e0555"
+    },
+    {
+      "path": "assets/examples/02-geometry-snapping-before-after.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3401,
+      "sha256": "97d7da3e662fd7e20eb06f6ca29c6ac4297d2d132c33e4605034da138158e166",
+      "blake3": "a9ee52619195f158393c5f14b0bcbd924469b53fbbfc45214ddab52a5497d106"
+    },
+    {
+      "path": "assets/examples/03-diagram-reconstruction-before-after.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 83696,
+      "sha256": "4032ba63edfdfcea643e99bbc1a066cc76cc1e3a988b455dfb0b2ae4939d550f",
+      "blake3": "f514ab9dd0590fe0f1156c8467acd16e48e90c487ca08f103c5570e8c9806260"
+    },
+    {
+      "path": "assets/examples/03-diagram-reconstruction-before-after.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3310,
+      "sha256": "af30da940cd5a31cb850e7499505d6b7f1edf083756fe0b53ff517e57dfde913",
+      "blake3": "ce78cd257e36aba74544e77a8cb795f8c43abb8d2581b2cf7149b0ee9e29c65a"
+    },
+    {
+      "path": "assets/examples/04-style-normalization-before-after.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 78879,
+      "sha256": "91bc5c1a3ea558e62bed5b0655e299e756ee86be773c3c844793fea44c445f98",
+      "blake3": "27225de6539aff2d67a9c13f713bea45eba3a5f8227edb7264004e105dd8ead1"
+    },
+    {
+      "path": "assets/examples/04-style-normalization-before-after.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3166,
+      "sha256": "8705c6faaa1fca819b387f0c9a6195d6d95df235dcc5af4d4987c8d2f02a2163",
+      "blake3": "a3849c70682b3674d0adbf4b39537f14cc38739cd6c2132ef260ca9ac770ab53"
+    },
+    {
+      "path": "assets/examples/05-handwriting-auto-before-after.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 109463,
+      "sha256": "9384e4d1c9b03c3b7b3fd04da65c7d794c31cef4851cc7dbb1f31a1c6088f493",
+      "blake3": "e718b7e0af917469a1fd3b2632d89818a0f25dfb8207ff1f195315c1c69c75d6"
+    },
+    {
+      "path": "assets/examples/05-handwriting-auto-before-after.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12686,
+      "sha256": "205349555777fad34f83eadb0faf4ed8bb336af28787090a75872ae7a7a9fe4d",
+      "blake3": "0c8f381f38bcf0b7187d6f736fd1f8d4eb762c4facd718863ebc18c4fe773956"
+    },
+    {
+      "path": "assets/examples/06-handwriting-font-guided-before-after.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 114832,
+      "sha256": "5b232c1b74548093cc40c6c7884441c15ab075f1be45e5996105599529cbeeab",
+      "blake3": "d7f76af61410bc1ad5b2a16be65468f422966ddd279ae6f298249650e7ae0b55"
+    },
+    {
+      "path": "assets/examples/06-handwriting-font-guided-before-after.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12700,
+      "sha256": "ae33046dfcafd01c853762a412223ca65558ac08c80bbceb4c89e2069bd7bf31",
+      "blake3": "8bfeea04aca5b86a131449a7d33d619029877b5402d8c16b3c27979841fe2a60"
+    },
+    {
+      "path": "assets/examples/07-handwriting-outline-before-after.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 106312,
+      "sha256": "043c58ab978f26baff98156925476eaa69b09f441c8f7580c22a911b432e9686",
+      "blake3": "3c99e1bbdd15539726f2753d09ba056d3db9c9d4136519f0c843fb7349a4664d"
+    },
+    {
+      "path": "assets/examples/07-handwriting-outline-before-after.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11943,
+      "sha256": "62c7077c47997ee9d1b965e046a3cb3a634bc4fd1c4b337052b5072c2e03e79b",
+      "blake3": "81a724ec4bb876f70cfb10975b9113d72c6014914c5812e3155d7ca98d94d3f9"
+    },
+    {
+      "path": "assets/examples/08-handwriting-modes-overview.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 140948,
+      "sha256": "d6a9a455eb844508e3dd368b212c0752c9bfa79bf6672fc2ffa8836d62ac66cd",
+      "blake3": "93c1add8094573bfa410dc1fd2f8c167c94fce250cb3469985049486297358cf"
+    },
+    {
+      "path": "assets/examples/08-handwriting-modes-overview.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16327,
+      "sha256": "b5a3a28a648b9d9639c1cc32261bc8349b7d864778c47a16222f1ddc66e61de8",
+      "blake3": "ce360c3cd0c317dfd9f8e7aea2cd4e0eba8761780e73a78cb7688148facb227e"
+    },
+    {
+      "path": "assets/examples/manifest.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1334,
+      "sha256": "8aaf01e43f5a53d611c0e6628bebd46587a83ad45ffcb19adcc8aa71b3af7f5b",
+      "blake3": "524edc2cfef5d2dff8eed883defbf216ba428eef0863af44113dba21d2c37dce"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/example-font-profile.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1330,
+      "sha256": "bd63addf875839766927a1613574c97071a724f1f44d3341258debdae6c63bb0",
+      "blake3": "3e7255f0286105639fffb38b9142e61815a6e8b96ac29d24f03dc2a1744b5020"
+    },
+    {
+      "path": "references/example-handwriting-input.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3316,
+      "sha256": "91f8429ec9f8496c7e434346cc59ce2e7f280053449dccd8ad1c889631836a55",
+      "blake3": "4440ea5d8c42f0604c828a758f95dc2b5082429106d99c60efbe6b485eeab8c8"
+    },
+    {
+      "path": "references/example-input.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1182,
+      "sha256": "449f902757aae6161a51b393e4f297395ef72a34a91abfe60ccbffb4adfd7ab7",
+      "blake3": "4d6d808e18b329a3fb296ad0c2635fa36d52a2915de3d8d4b0cb5c62f078bf9a"
+    },
+    {
+      "path": "references/example-patch.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1441,
+      "sha256": "dd55ce3c552ea887e28edbf8fea18ab0600f17fcedbbc27fadade19562e67f18",
+      "blake3": "f1ad21635da49aed1ec004098a871e95ae2a2b8295b32c1ffbde22bd0e0c0713"
+    },
+    {
+      "path": "references/font-guided-handwriting.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6685,
+      "sha256": "c42f7837bb59bde1b712071ea37de884090af0b83c72a5558e42b967e026a42b",
+      "blake3": "a3ab42769dbc8d55241737cd7aebf527125f5f997b140621e95516d2a970b327"
+    },
+    {
+      "path": "references/host-adapter-checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7493,
+      "sha256": "39b659a37896b2557d3e4145f50405e3802575c385b6d17994329cd78221ebf6",
+      "blake3": "64fc922567586853f3157c8b832597c92c46d6e576ca5fe2bbf04fa976e2123c"
+    },
+    {
+      "path": "references/integration-playbook.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8247,
+      "sha256": "92b8e7c5a2134b77e0dd3d9122245656dcd708912aa13421bb6c1edb7355673e",
+      "blake3": "ac889617c731c55ff7e89e37239ddd9c72c53e65b3afba163fee916bcbfeae5f"
+    },
+    {
+      "path": "references/model-prompts.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4712,
+      "sha256": "0c544f69150703671bfd94d3adfab8e2be0317b840e688cc210c3c6957912a52",
+      "blake3": "7ce91ab291ac91a5fcb8bf5111a1b82db24ff600a5b9c5990dd0a953a932f3d6"
+    },
+    {
+      "path": "references/quality-gates.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7810,
+      "sha256": "ef840a65bf6a41e2f6c90537b03a6e683e792f2afca3f038cce26de3a5b78616",
+      "blake3": "175bb99eea6a03c968970da7aacbe1f910d9da6879c9f02fb673baad3f086c23"
+    },
+    {
+      "path": "references/refinement-modes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8955,
+      "sha256": "4989d12452b5806ed40151e9c714b87107ba579cd48bc97257b9b33196485717",
+      "blake3": "fde884fec63098c51b1bb065d2d998ef991130d3f59031a84adbe00edffb4ed9"
+    },
+    {
+      "path": "references/stroke-contract.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9670,
+      "sha256": "afa1287de017bdfea44d2b27ea5d67120d5fc078a77a4fd13ce8d3e9cfb0397e",
+      "blake3": "0de04174493b9f20cc57c31704caae584d0738087152026d8dc028b63c5b5087"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/compare_self_test.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 2775,
+      "sha256": "fe4c5421a14f4d24b2ddcd5e1283fed4f807220402b00ef1fbc41e9820f94c19",
+      "blake3": "3ab10249539d2b9cdc536de395538493586df23c8818f0e7eb8a0b0eb82ba54a"
+    },
+    {
+      "path": "scripts/compare_stroke_patch.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 12247,
+      "sha256": "ad182ac3faa2e92c1cd1ae65d444d6ef0ca561bdd5e2029c41c1c04dd164ec18",
+      "blake3": "26273e6a35c0a0ce288dffcdacf0986e06bd1ad266d975c25cd722b33b0284c4"
+    },
+    {
+      "path": "scripts/extract_font_profile.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5795,
+      "sha256": "3866e148d640ef7e7bbb2d31a9bef8060df5b9a5b795a9e9adf098036546c545",
+      "blake3": "ec382532158f9321c755be1973da564b957e1be578d5004a93ea3aa943f9becd"
+    },
+    {
+      "path": "scripts/generate_handwriting_assets.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 15385,
+      "sha256": "de022b7d8c5b77ff39d3aaaf004ec0523b1b67fbdb59f62d5ae31a503b6571b7",
+      "blake3": "6f3cfe0f78caf1f9b119dd5dd4a2ff4c58e5be405d22f48da1ceaf36693106ec"
+    },
+    {
+      "path": "scripts/handwriting_refine.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 26310,
+      "sha256": "bb2665697f84f6a9dba814c6740f08661bfcc1054bdf6abfe3f387b32c176c34",
+      "blake3": "2e72f34e242492f39f9eeed99b216eea351a327b3bb5e2de086d5901c85a1768"
+    },
+    {
+      "path": "scripts/handwriting_self_test.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5806,
+      "sha256": "bb4cbfaf1ed3f7773735e94d4b99aad6a14b0528d6683b89e0777b3ea7fcda25",
+      "blake3": "849c47ecdb8e49126deab430a60304dfa28a5d7485020eeb088cc4969025bb5e"
+    },
+    {
+      "path": "scripts/refine_strokes.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 9454,
+      "sha256": "4aa40f528a2ef341faef6874dea8fd6d0f769931a140b2b5b9cb87161e1aca9d",
+      "blake3": "1abdc249b94a3bff15d645fd22b85296d2c1be58f4a3f2e41b59510b042ea897"
+    },
+    {
+      "path": "scripts/self_test.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 4582,
+      "sha256": "0c41cb7aec766b21919aa9aa177409165a2ca9715af59abe19e2c91a56ebaab1",
+      "blake3": "2ebaa897bf02cb295fa8268f17f76aead92fd97a8f2d30d3f1fe53217bcef6fa"
+    },
+    {
+      "path": "scripts/stroke_metrics.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 4940,
+      "sha256": "c23aa51f26e1f5eba6d00d4aefc113610a8d6e907b55e8c35b24df6a97e9f417",
+      "blake3": "caa2533d63abcfacd31df131994cc0b0d2e344d419514242603d750baf50bd66"
+    },
+    {
+      "path": "scripts/validate_contract.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 25677,
+      "sha256": "f9d1975e1bc3f259072af58a1b77c2fbb3cddacc5ae02a0aa8458a8fab77f912",
+      "blake3": "1ed8858d79639fbaf34630efe04b63087734026cbd09b6cb35a231ee332ae72e"
+    }
+  ]
+}

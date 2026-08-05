@@ -1,0 +1,2885 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:7ea81b37f7a3e902bb68626041d4fce54dac444ad680f70f5dea5c06246ac982",
+  "sha256": "7ea81b37f7a3e902bb68626041d4fce54dac444ad680f70f5dea5c06246ac982",
+  "blake3": "f960f945cf0b3791ab523c778bdc22c5d98cd43fbd8b4cc41265cde0a72dfa87",
+  "size_bytes": 1349323,
+  "file_count": 312,
+  "entries": [
+    {
+      "path": "LICENSE.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10776,
+      "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9",
+      "blake3": "d3f11c251f0ef236f42928164f0570d66c7009b511a53e0fbc05d7f2a978ebe7"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7377,
+      "sha256": "d7632537cf19be17cf33d2c696b9d9c2ea3ee51026030e9b203d5b9255e75b15",
+      "blake3": "a82adfd18499cdd908513488fa1f83a1032c0d6118e91aef1caebf6b67eca7cd"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 331,
+      "sha256": "6dbc46d5027859d1a0ecba153f192dceacc24e620961b6880d28a7ca6d82961a",
+      "blake3": "044ab93522529e5b8265c762f0f5b416d122e22937b34644bdf677a035afa286"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/cloudflare-small.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1221,
+      "sha256": "48f68d56ac6c83734e8aa64af35fa3f6a0613a9a2293158153db1402be104f17",
+      "blake3": "ba6432c04f119d1dcba3a839381b442e833f9d8c02f090b7aeed7dbaace5d83b"
+    },
+    {
+      "path": "assets/cloudflare.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1187,
+      "sha256": "ccef528d73dfe224cfb4817bcb7e15d63922421249d688031ff48c5eef2a2189",
+      "blake3": "082f3f0fb8f22900e18e2ee1542e4828c47180b212f78a99ae70366e8e51ec86"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/agents-sdk",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/agents-sdk/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2765,
+      "sha256": "fbe8e1611f991966dcde842d0281beb76e354e8196b19437ad8fdd672539f277",
+      "blake3": "716f756b9733650a91ad1a7b473b0ab34933a54b670210dda39ed025552e9f6f"
+    },
+    {
+      "path": "references/agents-sdk/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5862,
+      "sha256": "38f9799af72977ac6c344de172dfcc1c55a7a343d8e450786bde4672a30afe97",
+      "blake3": "8250bd8fc4ed8994fa08f8c721388894fb0a4d97a4ad849c7a6724c5560907ff"
+    },
+    {
+      "path": "references/agents-sdk/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3575,
+      "sha256": "85216db38cb5eb54889605ed89ca322a320bc3082c20da31a78a35c3dcc9f764",
+      "blake3": "58d085472c2d419c0973bcd7cc0885027a3b8411469e3dfdc587b0e17ba2cc8a"
+    },
+    {
+      "path": "references/agents-sdk/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5108,
+      "sha256": "01e857e317f073cf75909f4054bea3adebecb373799c5630fecd870c410a391b",
+      "blake3": "78a72817dbab291c8b0b15eb4c0924350b2892cae892909d24b8e27e519d45ab"
+    },
+    {
+      "path": "references/agents-sdk/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5595,
+      "sha256": "891353f30bba3a69c66cd43f4ac1a86884d8c6abc26420ddbc73e6cf65cafaac",
+      "blake3": "577cb558e12c223cd06b1a60efda7979281840f4337e57941827d36f9ca45a11"
+    },
+    {
+      "path": "references/ai-gateway",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/ai-gateway/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6308,
+      "sha256": "3d1edf888ad79bf599c6b21b66e0ba68c0473c5a2c60be1bf2e5a21b68623089",
+      "blake3": "afe46db9f10c7111e7bf912223e15c93e3761af91929db476c5b1c009f20f38c"
+    },
+    {
+      "path": "references/ai-gateway/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2954,
+      "sha256": "1135a774a42e059942ccb12d8ba514e6479d7f8f5f47400b4053f6da5984b532",
+      "blake3": "9715c92f631ce95cdca984b57fd24ce8952c16d3a90bd4af422da25abd0d4c69"
+    },
+    {
+      "path": "references/ai-gateway/dynamic-routing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1835,
+      "sha256": "56f3539a61bae2fda7d8a98c81ed14e820caf733f27e6cce2fffeeaf7a6c1db5",
+      "blake3": "27b64603aca07f7b8fa8fd08daa6c388b33443bd7ab509b894ae32c13875f115"
+    },
+    {
+      "path": "references/ai-gateway/features.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2726,
+      "sha256": "efbc7d2d4464c1aab4881f059589439e2979b9967568878c32f7cb3e72cc6ccf",
+      "blake3": "47d5a021a14c44a1369fa3f6662f1f5f88b89fef59224d4b5c3b0c4ebeb824cc"
+    },
+    {
+      "path": "references/ai-gateway/sdk-integration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2684,
+      "sha256": "3633951a1ea8f419d85059dfb98f23e830805f728b516d7d87d1fa11ef9d9101",
+      "blake3": "cab31cf1fa308aed280f897fb716431065e61ffecd7d76394bb890ae4e4d2212"
+    },
+    {
+      "path": "references/ai-gateway/troubleshooting.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2420,
+      "sha256": "c79d02ce7b9e6cb361f1700eff6e12149fc74547aad3438501863d8cd02b2a79",
+      "blake3": "1054686700fd54c32687764457b5d46c9d89f9b64cba5dda375c7b09d514f5b9"
+    },
+    {
+      "path": "references/ai-search",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/ai-search/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4521,
+      "sha256": "c8c484ab7723f38b649186e1c70f85a9b492c597cc513fe08876910b5406eff2",
+      "blake3": "da3fc163d265f0e70ed6b954d43c95f9b0ba2e447b27e6da1737d1af1b2c0652"
+    },
+    {
+      "path": "references/ai-search/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2519,
+      "sha256": "cff4ce1bee49988265f176fe5a0bdd69714a1b6e215a65662ddbf305f981d05f",
+      "blake3": "61dcbd7c672622d7bdbca3219291e415a0af852e2cbecc8215e1a048973017e3"
+    },
+    {
+      "path": "references/ai-search/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1760,
+      "sha256": "59af92d0c3b196bea13ac72e18b42db528721f8971c7d335b27951b77aa4ddb0",
+      "blake3": "ca2c790d8fd3a6957f85220da6b672d4a6ca9b4df0d99b8bcf7246e1b67092fe"
+    },
+    {
+      "path": "references/ai-search/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2135,
+      "sha256": "e548c0f2cba170e81dd3e9e15b7cf430eabd7e73770ed29589b90dc20c3bf452",
+      "blake3": "e4dca957294ae35431bba28a2b079a6a01ab4a88dd2c5c6001d69c50abe9e9aa"
+    },
+    {
+      "path": "references/ai-search/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2008,
+      "sha256": "1215875bf8a9e6317d31019a84a124aa7ba7e85bac10b92bc445d0ef7383d619",
+      "blake3": "47d4259aa57f904b7257947d4f9c06c838e5fb12c039790e2239f76c2dfe4488"
+    },
+    {
+      "path": "references/analytics-engine",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/analytics-engine/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3195,
+      "sha256": "123cb825f034688e3603b5a5fb6b372bbd9d82cabaa047bf787631ecb2026702",
+      "blake3": "4389a81acf44aee06a9825e1b3713344677576dcaa5e928f257d22dfba2e6188"
+    },
+    {
+      "path": "references/analytics-engine/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3161,
+      "sha256": "ae82c22e055e2edef7078286b7442763e19f70894b95fe310dd7c1709f9a572c",
+      "blake3": "9a2f1850ee7a1c97422773a2d34385a92abc550bde37f1f6cb36ab58c3ba4a13"
+    },
+    {
+      "path": "references/analytics-engine/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2361,
+      "sha256": "86112c2385fe4e44b4825f9962cfe3429e6681de9f051a50a1c70514f1b85131",
+      "blake3": "ca9d34d9a5bf6f106380b9dcc9ef81958b23d2d70dd680abd5de03f1ef1026ea"
+    },
+    {
+      "path": "references/analytics-engine/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2018,
+      "sha256": "08d11a06bc1cc955bdf4ade8d1a523b0e78157434d559169c4bc2d36f886667b",
+      "blake3": "aba6f020ab7f237bf7820990a84a08329296069cc2ca8c2c622f0b2a5487334a"
+    },
+    {
+      "path": "references/analytics-engine/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2312,
+      "sha256": "d294a7ee3ce2d58fbb8413eb6e58faf7af8f699cecc7480b955ceb31e87204b2",
+      "blake3": "38461a0457ab11d2eddf37cecfb95fe8bea8bc37dad1fa8a0b6b078aeafa259f"
+    },
+    {
+      "path": "references/api",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/api-shield",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/api-shield/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1796,
+      "sha256": "a032c7160b70c9a200e982bc457acd746760c2960e25b7554dfb315da98f71dc",
+      "blake3": "6ed48c6a1cd5185a07fa84dc0d258d660955ad0559fc911fbcf77f9090c1abc0"
+    },
+    {
+      "path": "references/api-shield/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3900,
+      "sha256": "2ac3f5be499c1047575dddae5fe10fd9ab93e153eec3bd3fae3e2add82275aaa",
+      "blake3": "5d1381962125dc27943d14c26b846909a053800319cc27a85ee30a723770f866"
+    },
+    {
+      "path": "references/api-shield/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5020,
+      "sha256": "79acd0a84bdeca4f45ef92d3772e9f403d15266210205700a7fccc313a084418",
+      "blake3": "ea6b46a3f0ec78d72036173c11d3b6ff8731e36dcab8c57b458bdc3d87929f92"
+    },
+    {
+      "path": "references/api-shield/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4946,
+      "sha256": "6941ecb164f0cd23432029e319cdfd7c999365eca6aa1a1df76b52bb59d565dd",
+      "blake3": "c91c7e9b95b582ab5909ec7ba848a56a126f21707f4df32ee066bfbff7c1b07d"
+    },
+    {
+      "path": "references/api-shield/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5844,
+      "sha256": "66f0e9bc0d7440d76368f3863b8009cfe80de3a61e91c76727a249e2eb192574",
+      "blake3": "ca1fc5478414d313cf0d5d979b9fd01eb413360e7cdb2bb15af1971cf33f01f0"
+    },
+    {
+      "path": "references/api/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2381,
+      "sha256": "7e5a0b6c299554eb58914d25a0fe98e016229d1c664cc9703e170e89b696a0a5",
+      "blake3": "a98f0f512629d8c1275b779600829efc4b4efd421c9c9a138fb1b0f3c261bd5c"
+    },
+    {
+      "path": "references/api/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4308,
+      "sha256": "847c33ce18c1a4ff210ce5db75db0694113fe5367bdba983b0e6f0d7dd2742b1",
+      "blake3": "1bc4c63a42351904be4c9aa27875e1047caa643455ed5b77e50406cd5a372402"
+    },
+    {
+      "path": "references/api/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3748,
+      "sha256": "6ea23fb895605fd2a2380580f7cd21ab39c51dde470067ed191fd387f6337cb4",
+      "blake3": "c318518ed3d23637dc1e820817841cbcd6246cb93537c9076a55d6f65f5aeee1"
+    },
+    {
+      "path": "references/api/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5390,
+      "sha256": "b721d8e28866f376ca8ac91d8f7f9fa35726f6378f83796baed13687f6eca6e2",
+      "blake3": "5d4b10777c51d325444d15dfe314d54b67b1e76f0ea8623b8e658c5f77201dd9"
+    },
+    {
+      "path": "references/api/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4639,
+      "sha256": "7ea6b294371bc04ffbf0a1fdc71a2e138f3303bfcdd85b91b1e29d0d53f80bc2",
+      "blake3": "ab87249ece0da8609226f3c024de30439a5b911843aeffa5e1ac984c03b9733c"
+    },
+    {
+      "path": "references/argo-smart-routing",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/argo-smart-routing/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4060,
+      "sha256": "405ab3a8878c32c95e12fb1c769f6cf79a597def8898b5e291d347a04c3e9052",
+      "blake3": "048b83eceff15ba16f75228df4ede54380ed3c7a0629343607741194a9f302a2"
+    },
+    {
+      "path": "references/argo-smart-routing/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6579,
+      "sha256": "8c3266518ed0f9f98aefd6702eaf7400c40b0de0f49cc4daa7ff6f763f7e7ede",
+      "blake3": "acd9753dff820f25de481677fe5bd7dae656de6c7a2311629aae49e80aabe496"
+    },
+    {
+      "path": "references/argo-smart-routing/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4457,
+      "sha256": "9cc0c9f4ce01828e0153baded0393f0569e9aceff2601c16aad71e12e2fa8a39",
+      "blake3": "6fd9f76d7c78e7fa65e5c932dbb4473fd941f64ca3ab7f78910c281ac584bd4f"
+    },
+    {
+      "path": "references/argo-smart-routing/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4327,
+      "sha256": "fc890c1e98c117ac8b6eb5ef39a62059732d9df2642700a8ad9fd2c877107fc7",
+      "blake3": "6a6028a728e20b338d8d25b13cb9bd6f0462e8cb08ab588d165479c6eebe4915"
+    },
+    {
+      "path": "references/argo-smart-routing/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3053,
+      "sha256": "8f0e0d9abdc17971afc802c23a04bf8780365031e5c4241cf084b0ad97c3707e",
+      "blake3": "deda54672eff79915d55a32fb285a934d7f8883a3e33fcf15bde72eba5d48707"
+    },
+    {
+      "path": "references/bindings",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/bindings/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4042,
+      "sha256": "5ba09af5a3ce0b8ea090f60b87a0660f56d6252e256a36eff86ec1dfcd8c69a0",
+      "blake3": "96906b4e7659ae741016b51c8fe5f11b2dd723ec1b37012feaf46857078ab6c5"
+    },
+    {
+      "path": "references/bindings/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5199,
+      "sha256": "d0567127790ea92ebba3570785363d1752eab1c9570aeda5c7885e8c104677c5",
+      "blake3": "b2653be3b2b26f3e71e1043bd1a2d393f7cbfa05b7cd43dcdc17a1ac40e66fc9"
+    },
+    {
+      "path": "references/bindings/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4496,
+      "sha256": "d52fdcaee45d9f7fa7279247e09d382f69b5fab60ba8257fdcf92d8b37e14b34",
+      "blake3": "0e258194bee224b04a53f2bb9dd766c4bf7361ec79935cb478884e321f77a6f7"
+    },
+    {
+      "path": "references/bindings/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6169,
+      "sha256": "f14c1ef1d9104df78642cda287ca6ba21e3ef954a6e71e33c7d4e47f75164c28",
+      "blake3": "936bcc1999783e1920927f9e927ba9b9eddda75f0a01badfd9b973ba392b2d3f"
+    },
+    {
+      "path": "references/bindings/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5058,
+      "sha256": "189274aa2bdf605781b59b105c347c689d320a09fb62f9ed300d1f64e93281f6",
+      "blake3": "c57f25ff0288fcbd5fee355871062e789b6b15e12a25f121a6cd6a09c53df6bb"
+    },
+    {
+      "path": "references/bot-management",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/bot-management/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3762,
+      "sha256": "4d50475aa586fb08cadbc7067d55b7ef1a6e5556bad3587b23e35ae37d541967",
+      "blake3": "c5ba02312ef79293b3cef8f44b47d44663752edeca70d1a38ee0c5283f94f1c0"
+    },
+    {
+      "path": "references/bot-management/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5803,
+      "sha256": "a00ceaea1f51f7536829b2f93323d0df5c8f6b7742bfbcf9fcbd489eb910c4e9",
+      "blake3": "f503a177628217959e099cef239ee8d4bd259136b5b0e78857b65dff9362059f"
+    },
+    {
+      "path": "references/bot-management/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5744,
+      "sha256": "361f709d6561c916b6082afa689ad3e69aa05f2cb4f9ed7bcbdfa62605b95c47",
+      "blake3": "c51c607252cd0d486579de02e23df66da6bb166ce5f868dc179a70e21ac11284"
+    },
+    {
+      "path": "references/bot-management/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5657,
+      "sha256": "d26a1b2dee0b92e6e2f4046067e0ba3f9e14f0b548b1d06537232d265e4cbb56",
+      "blake3": "4a2ca2c9071d445b66795c198b58134cfae433e7536c79cba33e0446eb4ff03c"
+    },
+    {
+      "path": "references/bot-management/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4970,
+      "sha256": "daeb6aa87d2c1fe00e7d3ba3ebcb5e782725a6a3e22edde56c03527d1eb1ba63",
+      "blake3": "d129d4c262d104ec414e328255250a83a1044c3db58ab756edefa6bf1a435510"
+    },
+    {
+      "path": "references/browser-rendering",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/browser-rendering/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3092,
+      "sha256": "a0c6e51afc6c19f2a892e3f144b9210f4fe067318ad2550e34ded538a9db9463",
+      "blake3": "5d7059ba88bb231b19e3b3dbea0ca33f2e2752200e7768049729d87179d2e2b0"
+    },
+    {
+      "path": "references/browser-rendering/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2976,
+      "sha256": "0f346bfc469d1deb6077523b6ea20f071975c5223267415b2b9398cc6ab566ae",
+      "blake3": "6e685ba65ebcd7f69bc7b041b8841fa710c9019b6ddbe5ff8fe78018f76d618c"
+    },
+    {
+      "path": "references/browser-rendering/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1802,
+      "sha256": "db9206a7f14bf13d5f8ade9875927662796016c52b0221b54c3e08238890b952",
+      "blake3": "0c72d0756e1b0a8839c00b5a3f4e81ed286f2b956206afa69815be797c7e1a69"
+    },
+    {
+      "path": "references/browser-rendering/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2520,
+      "sha256": "31c3e69294545b1f7f9aecc80c3809521efe3b8d4c36bbc47ba8a693a81460ea",
+      "blake3": "af48e9a79c1b425f3830570685ee7b0b7946175bd43ad7717a77021db6ecd955"
+    },
+    {
+      "path": "references/browser-rendering/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2647,
+      "sha256": "ed518864d14d821619b23d0a6e4fe0b39b64c8da98ad17d3da07b4b42d35c161",
+      "blake3": "737d99e559e7348b7afffe547739f25f841d95efbe68a729000f146e3a7f40f9"
+    },
+    {
+      "path": "references/c3",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/c3/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3352,
+      "sha256": "a29848e8c74b2a8055330461f2ffec6ccb14d5d61b97b8214195ee7787c70d20",
+      "blake3": "24723af7fb9f55d2cc06b1636d5b83ac0974ef704047b0c068ae1a8a7a43c51e"
+    },
+    {
+      "path": "references/c3/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2286,
+      "sha256": "1c5429d72d1f5d5dab6d21914f7eb8aded761a828b4190655a2d4a0be6b12592",
+      "blake3": "9fd5a64232693687114d9a5f2c6a2bc17d8636b7e84f517e9b4daee76f90f37f"
+    },
+    {
+      "path": "references/c3/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1637,
+      "sha256": "01e7f90dfbfce4d20a86a41b3ca882dab74d0b540ea07952da2f4ff1c6b6626c",
+      "blake3": "b19eaa1d45b4addd1298a26ddcfff3ecc85b242c78697af03546c6e9e9d68257"
+    },
+    {
+      "path": "references/c3/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2307,
+      "sha256": "4acfbc2572326cd0be2bdd76bc7c7fb629a68dabb7c98b3fc6bed234d13e72b0",
+      "blake3": "dbdd1c285d6c5181105e0b8b4a712d3701625bb87ab2cfd638f4afdbb4b03059"
+    },
+    {
+      "path": "references/c3/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2203,
+      "sha256": "592e533f9658678bfee0f5e7e65d9cfbf4a23ab4e47a3004543980643ce8826a",
+      "blake3": "fc52376222f9cabaaabdcc8cc51f6b9670234e839df92f29f7a3a6190ae5203c"
+    },
+    {
+      "path": "references/cache-reserve",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/cache-reserve/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5609,
+      "sha256": "90f848f9b142ddbfd911eea882b46bd45b5062efeda6b22e5be3d526c6155144",
+      "blake3": "f04515796e1239528bf53e0a1b72ea5a18e58868ebc21dc96ef0467b7c422ebc"
+    },
+    {
+      "path": "references/cache-reserve/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6018,
+      "sha256": "21b1448498e35b32fea54786ffa8dec6fff4ff597a3acfa10904ff459082207f",
+      "blake3": "2a033f211c6ade955650085d76172125906ea8aaa53de67d31666c8b32163471"
+    },
+    {
+      "path": "references/cache-reserve/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3660,
+      "sha256": "7a033bcbe69e1617d6df25d202c8ecf58fe40a1a06b91c7b71d9ac1964886869",
+      "blake3": "c8da463a3898ac2545eee9f70c1ba828aa4d0b03d25375e6e399b133f0c51eff"
+    },
+    {
+      "path": "references/cache-reserve/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5797,
+      "sha256": "3642800cd57f39fa3841021057a0ab6fb8bbcd8270b45b4acf33d6f1345e0f92",
+      "blake3": "28a2732284f7fca46fbc2c2cb1c1a0e125a01e1ec206184c2de687ccbc1337b9"
+    },
+    {
+      "path": "references/cache-reserve/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6265,
+      "sha256": "94b4739cfaa9aa8d805b5d820c5cfe2259ee9a108a574bf5fff8837655647dcb",
+      "blake3": "99ad99d47282a2ffad81a5a3315591bde82983c656a20ba171f4ee85351ad80a"
+    },
+    {
+      "path": "references/containers",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/containers/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3531,
+      "sha256": "84ac21e42da260e8a2a5cbf677b455a7a06e0585dcd56be49895c014a26ae998",
+      "blake3": "2f26906310621b625b8e05720f63fd6663d9e77786d2cb0e913cffe9fa9356e9"
+    },
+    {
+      "path": "references/containers/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4310,
+      "sha256": "d79640924c80decc91ef17011f021fd21fdb8dc97fb2e8dd81f735a06ecb0a1d",
+      "blake3": "bae33630c0c608e07c9a7f22250b5898c23dc490c9c5fe9ba256af2ec881838b"
+    },
+    {
+      "path": "references/containers/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5424,
+      "sha256": "00af782c2e2ab7c95cd4491d0269eddc12efcc541ec67a5692ab0b50bc7c6cdd",
+      "blake3": "847e3a16d4b3e6eee2f5ac003921af0681da82584da582c132f245229472bfba"
+    },
+    {
+      "path": "references/containers/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4485,
+      "sha256": "5707e264b73f62b30624e3ae14646d5fb7dd889a463376f3123a5424f2dd66d2",
+      "blake3": "a3909497c1dc4b7942290af712adb2348302e019e3460371bb7650acdf387625"
+    },
+    {
+      "path": "references/containers/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4925,
+      "sha256": "129853373101f0a96b3e7ccfe6d840ac93cc089fcfeb8d551fca0af81c74a904",
+      "blake3": "d6233e6f73d0444e9b1c0c4ec4ebaa936cf532738d2b7b5eb98db5c8c97ee24c"
+    },
+    {
+      "path": "references/cron-triggers",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/cron-triggers/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2949,
+      "sha256": "97cd7899f085cb1f28b10c7508062a3a614bccfe2e78ea8457d654ff0cc1be4f",
+      "blake3": "5bca0cd355ddb27a5ac20d587042aa9bd7a9b8bf0af0a9c6a779f8551cdbb240"
+    },
+    {
+      "path": "references/cron-triggers/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5866,
+      "sha256": "2768dedd364f5424f5a5b4e6ab579f5d8b9de8c5d7fb32924cee73404450c64c",
+      "blake3": "b84509517aa7caa03c383d6bb97e1bd5e798ef844e9351f782ecd736cfd4a768"
+    },
+    {
+      "path": "references/cron-triggers/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4250,
+      "sha256": "ef4548a7f8f80b1be2c41391a5aba2ce18ef0e02a96ec3b675bb84971dc383a0",
+      "blake3": "c7a40d10036579a62219e96e6199ca702aac2697bd4a25f75ea80f645292f4f1"
+    },
+    {
+      "path": "references/cron-triggers/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6316,
+      "sha256": "eb66b7b1186d07279cbf1a0b0a477898b32b04a5eca283aa9e8669ddca5e0bd2",
+      "blake3": "d292852994d2e1096772ec1b29cca1a2f3530063589606f448f6facd2f6ef6f9"
+    },
+    {
+      "path": "references/cron-triggers/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6980,
+      "sha256": "99e9e973fee96b3a1c9ff3a896546cc8a498f9831cb168e1cf4e4b4ecff38102",
+      "blake3": "40dce108d61a0c1e9cd681ede159ce00d066331202c350b0aa7a832d6865a0b5"
+    },
+    {
+      "path": "references/d1",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/d1/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4719,
+      "sha256": "61b28faa4348cc80cd1296bc562fcba8205a131e73c9dc19a7da32e5c4b5f724",
+      "blake3": "e8f1d6d376aec27521ba38068496e5f8c8e2fc081629b59d41d9c97cbeb797a9"
+    },
+    {
+      "path": "references/d1/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6806,
+      "sha256": "ea957b3260a43c46ab7845303ed34065655b4367683bf502c53b334e5fa4c776",
+      "blake3": "95a5d9b3f7bf5cedd1d1312245a0a906ef700be91aecc8c3e818c61dcc673f44"
+    },
+    {
+      "path": "references/d1/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5386,
+      "sha256": "06bc8baec2affc1d2cb12a0e2b3b3ea766527abd97c2ecf05460822f36feed2d",
+      "blake3": "b2ea858a4cd23b956aeb81f9a811e62ed55a3476c1605893e1bcb1c4cac6e77b"
+    },
+    {
+      "path": "references/d1/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4318,
+      "sha256": "1ffa594d0bdc7e02e64629c999f587119a5453a764bbf6ed69712ffc2c4c1f93",
+      "blake3": "f52aeb07880b5a359bcb351a266ba7092417e3903ca01378f7ab3167ffadc7ae"
+    },
+    {
+      "path": "references/d1/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7251,
+      "sha256": "2e548a1267c7efae89fbe77a3627d096b3d77a64af61d8e3f53d36d15d01e48b",
+      "blake3": "f6934e49834e76c82686ab295b8e339db1c18706902dffe7595abaaae25e3457"
+    },
+    {
+      "path": "references/ddos",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/ddos/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2054,
+      "sha256": "63018c3c2d25ce26a0f1b80dd60bd2d3c5193a26bf96979ef624030ab766c4a8",
+      "blake3": "fd62d76033bb1f7781d18b87fdebcc0b1af2df7b524f7c7bd2a966ff8702e3ce"
+    },
+    {
+      "path": "references/ddos/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4170,
+      "sha256": "eba158f9cca3ce70a07e5050a5586e3c1acd60f69e22069d9d02c8c91ad60cf5",
+      "blake3": "c13fc2d1039be54266cb17bd4a491036818b6371fbac431491aaeaaf7e101ced"
+    },
+    {
+      "path": "references/ddos/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3005,
+      "sha256": "0d0fae2b22edba2d40fddbbcec3f0c63651a25a0115e708edfc8b4e4c584c925",
+      "blake3": "61463065b899f8420484c383ee1e83a9165807b190803675392bc806ff1be18a"
+    },
+    {
+      "path": "references/ddos/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3912,
+      "sha256": "320f6d383fe22756ae19e3a79fb1c1a5d147d74a493b73eed6dd6644fb9fd1a0",
+      "blake3": "fc20dc5efe45f1fa6e801a12b2cc280db760417ccc8652f5249f814237a94958"
+    },
+    {
+      "path": "references/ddos/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5680,
+      "sha256": "546d722c64d8b1c14bc0a924b38eec24bcd3e639c25bbf424bb8cf73933ac306",
+      "blake3": "a131d4f0b26c79577945beb3209ad291f4956b89cfc865a5af3f92cf1aa735d3"
+    },
+    {
+      "path": "references/do-storage",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/do-storage/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2765,
+      "sha256": "2dd7fa0efc7db9a4edb0935b77a48973fe79978b693d29385db0403f1792154a",
+      "blake3": "59ed4915bfc2136180d690327c40b56766d234640515c87087a405c9ac598a6f"
+    },
+    {
+      "path": "references/do-storage/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3571,
+      "sha256": "d3a0957cca017ae837bcf891d34404a6faca40a9b4d9b4be26a3f6272c223622",
+      "blake3": "2550efbf740c076193982c47b8f7b9bf1ee987115629c379cd21e45c21448ea8"
+    },
+    {
+      "path": "references/do-storage/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2235,
+      "sha256": "b2c7ef2f41948280df468b8d1ed618486fb865ec8bd985706721f9debe472945",
+      "blake3": "f63cd14ca6523217154b487cf28cc041fd0a8d5d79fd3e7664d1c5dbc797743b"
+    },
+    {
+      "path": "references/do-storage/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5200,
+      "sha256": "82c019a3e36341d3d9113b9b30f0d2e6692a59fdd903ed00dce2f7774e6e4f5a",
+      "blake3": "e40af257e4cfc7ef41e01fb1c563dfc66a47aa4a6489d905aaafa961b3549c31"
+    },
+    {
+      "path": "references/do-storage/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5278,
+      "sha256": "a60c80f45d7b13b161a93b5c14771161cf95c4876224a699ba74816207de54ea",
+      "blake3": "7ab651508db09b1ebaa378114471ac568a67c687e5cb1cac992eca29b1132024"
+    },
+    {
+      "path": "references/do-storage/testing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4912,
+      "sha256": "035b05fed943b2322941d7bd713d4d0e3025f2e514a3ef00642fc53509133472",
+      "blake3": "b8f1f877deaee67a8275c7442a2754555dbe283cd8953796afa31d638e3e3f4d"
+    },
+    {
+      "path": "references/durable-objects",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/durable-objects/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6609,
+      "sha256": "eeaafe38e5f85b70d5d548735a62181e055121932f98625f7b12d8f364751f4a",
+      "blake3": "324fcdf341d1b589c9fd9950e500e1218c4a84d198fd3db944d12cfc761791a5"
+    },
+    {
+      "path": "references/durable-objects/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6142,
+      "sha256": "ada50c598680f4d1e50d3e0588a1a6c0f4875346e583e34b87956ededff12e22",
+      "blake3": "f2553543a4edf8caae8154544e794ddb4b40b0463bf096ad6c0e92ca13df2536"
+    },
+    {
+      "path": "references/durable-objects/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4266,
+      "sha256": "30486904f250952df8f11b7899f3ebedc46b7f9bb1c28d4695a3bf8acfb87375",
+      "blake3": "ec8dc7f28f2494099a972795e2137c2fc35eb03f2e9ac61347268cb5e8e11873"
+    },
+    {
+      "path": "references/durable-objects/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7318,
+      "sha256": "b7156d2d5415f3670698d2ccae91877852fbebf7868b66412497907901bf1661",
+      "blake3": "e5b4a0349f16108af610c6a08a55bb5aeb67b51e439c7d2c82403981e149c54a"
+    },
+    {
+      "path": "references/durable-objects/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6691,
+      "sha256": "e3ad270b7beaad53f700b4b5f49202ec7d9ea5c95bd22f963f2dc7a9272142a9",
+      "blake3": "6e86971725728550a87b18caee166816a470ae56022901d129f038da563d8bb0"
+    },
+    {
+      "path": "references/email-routing",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/email-routing/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3431,
+      "sha256": "4e28709e319f3912008a2887f9f3d62bdaa98ad9e52cc5ae139b8d220e825479",
+      "blake3": "37d891fe34b7dc7784df39eda800c86abd68ea75f6719cae2563e059da2ab367"
+    },
+    {
+      "path": "references/email-routing/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5311,
+      "sha256": "bb8355f4ef58ab1577982d1f6e399038538ec5f84e93071cd9f928b5a6832d36",
+      "blake3": "ee3dbd84474b316bc64ca7aa71a119a85aaa11454be92ea7fd03f135ffda6448"
+    },
+    {
+      "path": "references/email-routing/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3571,
+      "sha256": "a9a45e84286ffce8b67cd6a50e72a3a0f169f4414280fd94e5f33f9e9ac4ecd1",
+      "blake3": "9a7d26a66a550aded8cdfda831c10431be7c610a774fb7e6bd0c16cb88eb0c3d"
+    },
+    {
+      "path": "references/email-routing/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4106,
+      "sha256": "8298b63f8e644b5b9de02cf61f031e403c5a363901ec2b470b936ea57f390ea7",
+      "blake3": "2444fd992b6c2bfa480b7b65d93d93f575a8f25e1e2105d40932be71f8cb8fdd"
+    },
+    {
+      "path": "references/email-routing/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5480,
+      "sha256": "507bfca00d2b363d6168ec918fc75829bbf0145402aa3239916ba1bf7e92b6a3",
+      "blake3": "e76a22e0f982f87dc3eb668a621fe40bea3c4cb1ca325cf7f10dafd4ba2cf94c"
+    },
+    {
+      "path": "references/email-workers",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/email-workers/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5368,
+      "sha256": "a0bc3bf064ca3c2352e92a16bf81fbdc30691b4afac6503e2b212ee2f336efe4",
+      "blake3": "66f47d94fae7b89500f8fbca74b36776ab5cb0c985d657761352ca05f0346ce6"
+    },
+    {
+      "path": "references/email-workers/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6078,
+      "sha256": "5e4b0e68fcf88e3332b15a8f6ef22cf706953d51b38456cd0346348543f06754",
+      "blake3": "a1340324015a33a9d269d8955ea7bca0a93e0d6681cbd4e2705c39f3606e5ad2"
+    },
+    {
+      "path": "references/email-workers/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2719,
+      "sha256": "984d84d6842f4adda147cb783537ffd51ac887c331a0de3c100374c63c06d33e",
+      "blake3": "9cd4f03cdda958b20e6dd49703ba0563fe5f146074c66d5e2701c3fb1fe76e0c"
+    },
+    {
+      "path": "references/email-workers/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3041,
+      "sha256": "135434634be61d82d5567dc20e779e9a807693d9d83ba2a49184d62ec551cb76",
+      "blake3": "bf4824c757752cde052be65a77aa8576455c59149a988cda0ed2d102ad5c1227"
+    },
+    {
+      "path": "references/email-workers/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2785,
+      "sha256": "e8704f7beac19235631b246420c5ce730b054ccf899f43548366d70fe430737d",
+      "blake3": "65826aef201a673b03c109fe9417dff5b6f15e20cf56a99e3d2aa3e63e05f704"
+    },
+    {
+      "path": "references/hyperdrive",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/hyperdrive/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2918,
+      "sha256": "4d0e1a0e8366975d6ac0dcfd183e8b0a925f582c35917897aace568addff09f6",
+      "blake3": "5a52fe4720fde3589cb9356631c53d38352f0b4b687227f94fdd1cb7028ce15e"
+    },
+    {
+      "path": "references/hyperdrive/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3875,
+      "sha256": "7e7bb032dc6151ca8e3c30b278efa19d617362e9225f7a5f77a176585f10f7e5",
+      "blake3": "aa80bb1ad8b3c9aca80b0599900d34d57f4822d0cba781894df3c0827beeeff9"
+    },
+    {
+      "path": "references/hyperdrive/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3913,
+      "sha256": "9c66135e7d5ed7a0e4f6b1395b71387b62aa22166d7eb26ab7d918b1fb5b5e57",
+      "blake3": "77ab4c961aeb494e0220364393aba61d80a8c6f6d7fa62d594ab25aa9d2d33e7"
+    },
+    {
+      "path": "references/hyperdrive/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3926,
+      "sha256": "c0001867d043c37581bc1a0d0ea556b649d7522e965ab2eedd431b1f3b0ca56e",
+      "blake3": "4b83befc5e7dbfcf80d1559ce6c1b19c74450b405fd0be777a63a0701293170c"
+    },
+    {
+      "path": "references/hyperdrive/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5980,
+      "sha256": "e3bcdfb9c42df3ca1a84f175d727e918b638f28759fb5bd38fd3bcfdd21594ff",
+      "blake3": "4269a2322d9e06808b403d75af34e000d422061352c9096ab4cfbdc2e2304c8f"
+    },
+    {
+      "path": "references/images",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/images/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2900,
+      "sha256": "2df48cf4d8d5269c55a2c2e94ec331c576200db80cb33bdb3f08f104fee88676",
+      "blake3": "00c37a797c001f79f0928279c9e9ecdf9806659d545c88582cc950fde3c041e8"
+    },
+    {
+      "path": "references/images/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2574,
+      "sha256": "92c62bd77b133bf58287e93f12dced76725c0dc699b28ecad2acdae709ceea3c",
+      "blake3": "7aa312f64ad0bf2da4d367c720cdab5c2fbddbf4d9114fe4cb0db904efba82ae"
+    },
+    {
+      "path": "references/images/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4126,
+      "sha256": "e4c66bfcbf49b9c0cef84d66c7f8b49ce4520c92190661d13c409eaa0825c8f2",
+      "blake3": "565a0ffead13cdd09914a8c07aff2eb21d5d1c09e69038c0c30ad5e9346ed1f2"
+    },
+    {
+      "path": "references/images/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2490,
+      "sha256": "447ec285923c9ab4b29e56ec7ec0318f30a559c05c257d37b02f60e62971b9d2",
+      "blake3": "23322386b88db22d01245779e9ec28e64c6e688acfd92944bd223506045b66e8"
+    },
+    {
+      "path": "references/images/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3582,
+      "sha256": "b1cfebd7afdd7024e581e4a1002a304af0c00e630d4cd4623e97caae1c02fcd1",
+      "blake3": "5dc5d386c325e3e43584e72d4ece07ddd62a38a8fff2f4fb550ee115e4c390e3"
+    },
+    {
+      "path": "references/kv",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/kv/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2883,
+      "sha256": "c141ec2f48645a0f0884511baceee0265776075f3073aefbd199f3037b420681",
+      "blake3": "1323e9ec484c18ca74a86d4dc243f86bd3b0ed50e362b6c75694d2ad7709dbe9"
+    },
+    {
+      "path": "references/kv/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4327,
+      "sha256": "94a2fc711801bf91b2697d3690ca5b5f6c7732f22ec50965e1eb0eafed204ff4",
+      "blake3": "13af565eb990dde98b3cd8709afa9e3d1d431f729dba20e03ee7e19f85d52784"
+    },
+    {
+      "path": "references/kv/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3083,
+      "sha256": "59138344e7c23b43b360e0df44a23ee56253d013a4a1a9633c5b459b3d4ebac3",
+      "blake3": "c2c8b311e378543ea2f59f4c2bd15e5f8b847a8993344c08ddb60597c469f3fc"
+    },
+    {
+      "path": "references/kv/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4455,
+      "sha256": "60f1e7577a90acd2e44c65602b25f1f7cbb2cc6321c2fc501bf623484cb1115b",
+      "blake3": "763e721f46b73f337ab38bdf93e84b08e27dd9774bd6ed2dd530c6c38cb21cdf"
+    },
+    {
+      "path": "references/kv/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4740,
+      "sha256": "4fc5129467ba3e9820609512c3ce9ac0e2db5c125cae6c892c239ad273381754",
+      "blake3": "75b196c5b6077dd706d0fc85d56f6d003b3240c1e4f3970afd6c850e94bf4210"
+    },
+    {
+      "path": "references/miniflare",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/miniflare/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2976,
+      "sha256": "484f0edc585d46559ee0be2bc443da8c7e96d6cde31e2c18ea52a2ae6c73bb95",
+      "blake3": "0df687426bfcd689f5347d050bcdbc542e8daf6dc3d3da3c43cb0e5f7bbce51e"
+    },
+    {
+      "path": "references/miniflare/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4606,
+      "sha256": "468ea31044ec445b89fb54692335f26705ba10ee977f233afb075f340e8a77a2",
+      "blake3": "04908dde19cc761970d52c80c23551ea59f0593eae54704ad8f2dd0e60c96fbe"
+    },
+    {
+      "path": "references/miniflare/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3525,
+      "sha256": "54dce11b0189897aae54406b09bfe4f9da89293daafc33898b80ccdc728494f2",
+      "blake3": "617add725fac2bdbf7acf0891ed682145b06d893f2f6f1ea653c5eb42321fded"
+    },
+    {
+      "path": "references/miniflare/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3724,
+      "sha256": "eb42fd5887eccd3b8100a4be7c1ba4209d8e0f169ea080252c4b46d38c745f63",
+      "blake3": "abc1030f5489edb54e0a8a7370fd43249cd12305a62314abc8a7bf34b883a482"
+    },
+    {
+      "path": "references/miniflare/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4260,
+      "sha256": "3cde456ae68df13ddc6987df3c45c2440409ab7e2574e5e58b2c1f037f902af0",
+      "blake3": "27d37267c05b3b8909700e8511a5564b2c45353f67e4ab9a2106aad18ade2beb"
+    },
+    {
+      "path": "references/network-interconnect",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/network-interconnect/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3230,
+      "sha256": "00aa27f34cbe4277a1c79624a06bfe3ab8cf910e2c847eb5ba9c5206f1e12b3e",
+      "blake3": "fee80adc4fc79e397c97f1e135ce221c8ab231567bba8bade64c74bdd0890a7c"
+    },
+    {
+      "path": "references/network-interconnect/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5626,
+      "sha256": "a4785017781a4b469b1c3e5c94f520a50b89412092b65963dee44bcb6e00b868",
+      "blake3": "1920f3c6fcf429cfaa01dabd18bea147647f4b0ff7fe1fb584e2a3aea7dc38bc"
+    },
+    {
+      "path": "references/network-interconnect/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4257,
+      "sha256": "3edfa1d1642a0aed71121156acd7e4f76258b027b8f3758cbca68ab0ea5a1956",
+      "blake3": "13890ce9369e98baaea05ffbebed74093b3fd547fa8170d90d9844e98e22c906"
+    },
+    {
+      "path": "references/network-interconnect/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5554,
+      "sha256": "8444d367d9389661e040061c009011263c429b52b72a27f2fb4ff82ad261b7be",
+      "blake3": "e1829245e60fd4c636dc3e31fc946e5cec77a88595ffa3b76151b0f1f100e955"
+    },
+    {
+      "path": "references/network-interconnect/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4041,
+      "sha256": "e696a628f29643cb7955ed5d0607875188d462dcdff8a2758d287302d6b0fa1f",
+      "blake3": "8ef880a3eeef356d5b1c3665858cc6f59716748ed958b610e1e6e82531ac5abf"
+    },
+    {
+      "path": "references/observability",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/observability/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3887,
+      "sha256": "5b6085ff9ff70483e47af484f554ed6a0214886bfbb74add0a146d9454514635",
+      "blake3": "f19d274dfb6ba55565fda3a6e2d87115627c0f4d76f8273ca0ee97d11b872755"
+    },
+    {
+      "path": "references/observability/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3480,
+      "sha256": "0dd66198a6832b3de90b32fabfae0e89b9ad98921181bfa5d77cb31da2c309c5",
+      "blake3": "4b4c92615188e83d37e82a9e8351f874537466954dcf0a7e1aeace4d22d12354"
+    },
+    {
+      "path": "references/observability/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3584,
+      "sha256": "8a1b85928d8f146b57d8ef4c9b60f3ccd052e32a32b58b698da28a2483027960",
+      "blake3": "e0c7647a9815f709178e5df27e3402ed3248d48caefdf47dc3c1f3ea5b7255cd"
+    },
+    {
+      "path": "references/observability/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3755,
+      "sha256": "569bd59b08317bd6aa85621e7974650e3602a0cc5cbcd0e98dd503d9e879fb9f",
+      "blake3": "0aff3b19bba70e59fa0f65ec4fcf03d46a53b268c9e090129e6c565f7859b907"
+    },
+    {
+      "path": "references/observability/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2481,
+      "sha256": "df66dce8d14a5887e183dbc1831c3914cdfc731a854f1a12f6833da4b6fc05c7",
+      "blake3": "b74f680a661bec9cde9b8ed40292a30f567a8001b6f784619d80fb8082cf6cf6"
+    },
+    {
+      "path": "references/pages",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/pages-functions",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/pages-functions/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3322,
+      "sha256": "19474e50d4c3c5fda0184f62df8302aef0ba8a09999fc3111d8cb979aa280fd7",
+      "blake3": "d87990b0d45224bbe2e282f29bd1160840eb40f73e9d7c5be89273a3acbfa380"
+    },
+    {
+      "path": "references/pages-functions/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4677,
+      "sha256": "edf4ea412a1372e46a704a3c0b7b60d208722b0dbda106d04bab41ab48dda1da",
+      "blake3": "49430aafc2b0a821ed0060c77e9a70b3200ae21ed99ca93a30d8ee49d8ba55bf"
+    },
+    {
+      "path": "references/pages-functions/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3002,
+      "sha256": "adaf79d53ca4d46ebc1be695314bb67aa42a11f412d9b61a48a765c828dd0d94",
+      "blake3": "cf453d94d96d3e2020e30734e99dd347e46762610b7d2eaea47fc3ab09b8d9ce"
+    },
+    {
+      "path": "references/pages-functions/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3850,
+      "sha256": "c623392e07ba0b90d90a7b30408081f792e5c74faa8fbb7cf799adc4fd4d16b5",
+      "blake3": "8fcbc9aa1d09b3ccd4d6b46b54767b83f856d87601a5988d56f40f0754e87a09"
+    },
+    {
+      "path": "references/pages-functions/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4214,
+      "sha256": "35f462e5f5681bd317d66a62f7e297cd8395c406e9e52cdb05f8c5b17df6877c",
+      "blake3": "2604544d7d4627758a4c455c468d8051eb658a1a9cf7796dc3d50a155df17edb"
+    },
+    {
+      "path": "references/pages/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2834,
+      "sha256": "0b79f0e3bd7dd929d03de09ac7c35e006547c99763399f01b64436749085afe8",
+      "blake3": "8304a3a3e070fbce8b0c38128201f41c9b52c92fc86de92e120def4ce3855496"
+    },
+    {
+      "path": "references/pages/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5980,
+      "sha256": "90989f928df3e394e9bc9587ac4eda172bf3735a338a0b1f6edba4d6af3a2652",
+      "blake3": "cf16fea44d2c5d23646677c9f18087c69486a67230138d95fb5952c1425c3073"
+    },
+    {
+      "path": "references/pages/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5865,
+      "sha256": "98607a16fb561f374609bb638a5d05e94c55ebcad29cdec1058cd25800799b85",
+      "blake3": "9c20781db4729716e9e1097dfd3f0899c0249c852e06666f70921c00d513ea1a"
+    },
+    {
+      "path": "references/pages/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7998,
+      "sha256": "5c66190d3a5aaa5864044431811afc31524dec856442504a2bd5caa0640c4af2",
+      "blake3": "e28aded22e4a76e7dcbdc289145f6b7fecf82b071342a4d6c5605ea3eb8afd87"
+    },
+    {
+      "path": "references/pages/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5992,
+      "sha256": "5a527102ede2c5b01543f356b0edf2574472251439c08b257ebefa4753eee957",
+      "blake3": "96f8ed5cae09588edea477353fa1b470a75f45ac822898343f0a6fbf8cdc64e1"
+    },
+    {
+      "path": "references/pipelines",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/pipelines/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3400,
+      "sha256": "08dc858b6848abbe594e38be62965de409a7769b7f562d17806df9491de36313",
+      "blake3": "b0c7b2e8c5af5c7bf8866bd901f8e973c99724514e865a3102c63d579522557a"
+    },
+    {
+      "path": "references/pipelines/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5109,
+      "sha256": "1e2d758985524a1e9335a20508909ee73b087e5352c586ab2ddd8daac5f5b665",
+      "blake3": "bf849a16cc93a8765b0d19cfbc27d4e82070766a3b62f2ab899920b04b741b68"
+    },
+    {
+      "path": "references/pipelines/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2747,
+      "sha256": "2b838aaa75b3e304b586799bf07f66d878e1e6ef4911c6f4c0252c597ef2fb14",
+      "blake3": "b07500f68cdbbb5b2a0d59df7ca0beb1b216e3695fc0b1d8a0497f5a93968a09"
+    },
+    {
+      "path": "references/pipelines/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2427,
+      "sha256": "c227e49aba59e449ea3f5bb8751bc5c623287ea35f898db2deb873808d326e69",
+      "blake3": "d4306c6262042652e51c282c37e9099406d54406e06439ac88fded2251711a29"
+    },
+    {
+      "path": "references/pipelines/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2080,
+      "sha256": "75d05267912d6023aa850316401992131c2ae5ee5dcceea2682328cd4bec71a3",
+      "blake3": "39f77b156f90de6a227b9ba752d144c4ba849f414691ccace5f702d6378d8245"
+    },
+    {
+      "path": "references/pulumi",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/pulumi/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3231,
+      "sha256": "2803dd115110b5f4b8ac414fb78debbe06c3a653d57032aee2374f89eca4d2d5",
+      "blake3": "6594d50457221df0e105702fe4bc6bed0740dd90c4e88a0662e3f79d056d114d"
+    },
+    {
+      "path": "references/pulumi/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5761,
+      "sha256": "5e6459dbe3bcd802965fbc8467c54744671d5a9b3c600fececb2db314295797d",
+      "blake3": "bb9cf0610c46349d0a01f24d28d2c4c1123915d5cd5dd33ec016a38607e65906"
+    },
+    {
+      "path": "references/pulumi/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5657,
+      "sha256": "5c102d4eb4d16a1647b451af42599d6123f6f4f31e4390edd698ba6ad8154eb6",
+      "blake3": "819e385c4869a3164b7cd6149899c0994721b1a015642239f07c64425e27f84e"
+    },
+    {
+      "path": "references/pulumi/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6536,
+      "sha256": "f78cb1104200a53a2bd7c7807189fc59b59f6296c83f998054db1509ed3148ce",
+      "blake3": "a1a639243d3a16a9a94d242f20e8c86a68bb75667d10ea1e41f378dbd5f8ecb9"
+    },
+    {
+      "path": "references/pulumi/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6974,
+      "sha256": "975cd37cd6735d790624d042982a683f05f96dd6509f9da8ada7e78f8e645f2e",
+      "blake3": "ea31de47c70684cb2c70efd361f9dfd92af50cafbaa28e3beb49e9856d9a2f11"
+    },
+    {
+      "path": "references/queues",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/queues/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3058,
+      "sha256": "faa1106897e0f1b89a0b87040e14955f7594a48ef966d3ee88ece436cbef9359",
+      "blake3": "9e86984ac9519e1b002722678f8f0c9727f105d9bc7b0637f8b491619fbaa877"
+    },
+    {
+      "path": "references/queues/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5563,
+      "sha256": "ffe55706d2bcbb14f799d3254631c8b5e77a21534ce8831ddba7cbb325061e8c",
+      "blake3": "d6cedc089fa25a1b9b2c340f0c566490ca47d548ba0c883732c4ff9f49c1e01f"
+    },
+    {
+      "path": "references/queues/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3828,
+      "sha256": "f8730e15875faf99ff444ca6dc198d96a0ebbb2adde14163c1455e754f24197b",
+      "blake3": "258690e0dbd243c8b14b62d04a72834f9a46fbd00f0e9d8c11b97dc32cce7e5b"
+    },
+    {
+      "path": "references/queues/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7233,
+      "sha256": "a6adba9ddac675d2c4faa9c42d9aaba06e09a7802184aff22905d3ea135a92b1",
+      "blake3": "4a9974693c0e540f13362ecb5bc23e8fd1ed66991758a1ad6c5b5f0fd979042d"
+    },
+    {
+      "path": "references/queues/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5498,
+      "sha256": "4ce6cecea3ac1beeae91f5f3dca2fad88b4b65159abee4d56c12be8ec731c541",
+      "blake3": "660f577e296cd0ad4e4480bf004ebdf00badbfde40bd2b1d23fab73e30957bc5"
+    },
+    {
+      "path": "references/r2",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/r2-data-catalog",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/r2-data-catalog/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7105,
+      "sha256": "e1c0c6bfbdba3cfd2e9ab4d051cc88f947d8656e89d8912b998bfd7fcb80b762",
+      "blake3": "41fbc786c86072338eca4c96212c634059ec6f7d5d66d9e603aa6c6423eef9e4"
+    },
+    {
+      "path": "references/r2-data-catalog/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5991,
+      "sha256": "d5389cca0a4151ba3d400bbb587bdf437cfd8f863f183469ad8457e2133dd46b",
+      "blake3": "d040dbaa3a3828dc9d046b26b2f64231a417933b75c37630fb309fa96577c2c1"
+    },
+    {
+      "path": "references/r2-data-catalog/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5297,
+      "sha256": "4b6f9ede6a838e6d9f3da9dd06e3a637180ad0ef7e2063eb543eca3ff934c319",
+      "blake3": "c12da0a72ed110a6fd65e3a6f265a6f1795391c3565a78f96d317df6363b7521"
+    },
+    {
+      "path": "references/r2-data-catalog/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6126,
+      "sha256": "38cc280708c858e55991687da7a14f27e4f706195875d12cb788c91c0fa70223",
+      "blake3": "3d1fef6c7255e914525b1b221d3eaccd6049ecbd9ed377873e6532241f9c0b7a"
+    },
+    {
+      "path": "references/r2-data-catalog/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5883,
+      "sha256": "2b3a790749b2a3a31fbbf90c457de9aa05b2cf31ef4428acc6f6e545f80a907a",
+      "blake3": "f90cc68b77ac18a2b93fbb691e0ee517d23ef026f40904594bd4a6672f57e30a"
+    },
+    {
+      "path": "references/r2-sql",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/r2-sql/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5209,
+      "sha256": "2e131d74778370969ae905ccc904adee9e4d7ff8abfe7269ebee0a8beda90f36",
+      "blake3": "e8ffe358f9ffc7712a4b1e39075bfde1642877feacb04e228fdc9b552fc62e5e"
+    },
+    {
+      "path": "references/r2-sql/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4007,
+      "sha256": "1750e8f7b6ad5dbba86a05c186b6d8d67afd3674e75e4210c6500c4968c1cae1",
+      "blake3": "27ef677725009f0c14ec770e2e96819968e9a5571f451fd300915b72d25d7c65"
+    },
+    {
+      "path": "references/r2-sql/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3739,
+      "sha256": "c7f20114aad49340e78cf493404fecbe53a8c835b428f3c52900f37c82ba83da",
+      "blake3": "61ce8eed6eacfd73bcd09f94ff0d2627366c85924b7559375bfa72dc3cb4d925"
+    },
+    {
+      "path": "references/r2-sql/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6235,
+      "sha256": "9bc7ec882f2b04bdcf1c374b7e5ede67f47e7097b10d61c8b085aa4b35135efd",
+      "blake3": "6a0916b06bdb53744b3c3a93d58840d79fa25f3ed295f287276f21e5b6f540b2"
+    },
+    {
+      "path": "references/r2-sql/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6758,
+      "sha256": "bc836b21abaac340720968be103d607b9ee70e81c55505af02d849a8fd62a4c2",
+      "blake3": "4c44a0d8416cbe2e3edd584af433da0ffbff409943fa3f70962bed5cf2cd0c4f"
+    },
+    {
+      "path": "references/r2/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2825,
+      "sha256": "e7d0e772e34c8fd6fb1d2aadb6a2c07a6d30d8e04ea50ce9a2b8c638836a8bf0",
+      "blake3": "b05168667fdb3bf24b292b0413060a93fdc4450bc2a9483cfd6474cc1a56e67d"
+    },
+    {
+      "path": "references/r2/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5649,
+      "sha256": "d229e1d53595db452fb893ab5053d37781e782bd46f5ead3193599474abbba88",
+      "blake3": "64e126cf7162f353d42d643a4df644ba4bb0d8c9149b026bd85cedb2a7d94f13"
+    },
+    {
+      "path": "references/r2/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3654,
+      "sha256": "c2e3bb6047af5ca71e4e539a3dedaf9c62b7d41d4ef7f41c298495e9e9380fd3",
+      "blake3": "880fa53946cc7690f4da20538f1445b838fab557e9875b3535dae16d1957814a"
+    },
+    {
+      "path": "references/r2/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5048,
+      "sha256": "c9068fb874e3ce0244e11e04c99383f9ca4e314a176e782e3e2cbc3dcef9a0f8",
+      "blake3": "b4de07f25ac41ceb67c8a64a65e5d7a70e749ce441f3e664c5b76c63077a04e1"
+    },
+    {
+      "path": "references/r2/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5844,
+      "sha256": "fe0e4caa70e1f1a04d8559b56445b9db0cc51019d03a40a0ef996a1b5298698e",
+      "blake3": "bb392514da26ebbc4cae5a4678ac8bbd9e133ce6280a77138806925e2b5960bd"
+    },
+    {
+      "path": "references/realtime-sfu",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/realtime-sfu/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3078,
+      "sha256": "2c1a23b8c44198e95eabb9f8db96453db61d935f96292932e9a5d1feea31e98c",
+      "blake3": "6c2185b9f43e4a99148255dd4771b01be8ee49c5e0286c59e1d567504e461f4b"
+    },
+    {
+      "path": "references/realtime-sfu/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3768,
+      "sha256": "7c6c3d15d77976a87abcba5a8358c29c81e7dbeb15713cf5ccf71374e6017bfb",
+      "blake3": "d04ff5d6dce9ea27b8db8e65fe577f8d47ce9aa166b0dbd54eb334c60a20e471"
+    },
+    {
+      "path": "references/realtime-sfu/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3509,
+      "sha256": "6cee79842fdf8fc68b75951a8fa015cbd9276c7babe6e8753f654d3b112c3fb1",
+      "blake3": "af45348dd838c16241441441c68f62a246829ae6be192b3cb534c648b5a1cb31"
+    },
+    {
+      "path": "references/realtime-sfu/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4902,
+      "sha256": "9717fbbf38ea4a8adc51631fd093eefacd6d6c7c30a961e54a5d404fa206b259",
+      "blake3": "515178dd013f61be542a9dc4443b3d6478b1ae703fb15e7a09cbde1af4d73143"
+    },
+    {
+      "path": "references/realtime-sfu/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5403,
+      "sha256": "51a2b40afd609346a367dcf8a626e905dfe895b3309fcb53432290c3da93cf0e",
+      "blake3": "d7606eea9c240f304ac4bb6e2a116014bba55d8619504c91b9099a89005c9f12"
+    },
+    {
+      "path": "references/realtimekit",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/realtimekit/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4047,
+      "sha256": "190ecae4bb2ed00795cec6b59df4b0b3045cbc07d09b818abe398c239e97d531",
+      "blake3": "f31d06f712187e36bff12da579e6a1243989d463704b9ad6307948fa17d8fe55"
+    },
+    {
+      "path": "references/realtimekit/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8352,
+      "sha256": "37020e6102c6f4f080f430f3de20c83532930e59cdcaaee52752d1fe62190152",
+      "blake3": "aeac941e267f086bad986e4dac5f2f8bde786cf7852bcccd0cd29a0e50dae7f5"
+    },
+    {
+      "path": "references/realtimekit/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5192,
+      "sha256": "4d4ccf99fa72d8923df1eb3910eade99021cb77c5d9b4aa95310a01aeade0aaf",
+      "blake3": "7ae1fd8b8d1ab53bc32d2c28d01e1a14cf4ac50b310f77b50a007a37320754da"
+    },
+    {
+      "path": "references/realtimekit/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6883,
+      "sha256": "83cecda63bad4c55c4b375f0b83fd90bcdc9a15a257fc95809ab08fa4c102618",
+      "blake3": "70361865caed604374b9a23a5b88263c89ce7f37900c5237febae021b89d8e7b"
+    },
+    {
+      "path": "references/realtimekit/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7660,
+      "sha256": "2e02421351f5a7ad19887c38ccae65f14c8118956c6763c029072847036ebcd8",
+      "blake3": "190cf4267c0ecd3b0b1f86bd2ce086eed3ec9460336aa1951652e5ea8a69c714"
+    },
+    {
+      "path": "references/sandbox",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/sandbox/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3119,
+      "sha256": "daef5eaf1d88b2980c8d6053134e991d6b762c8969b3100a3ee4c5c79f43fa26",
+      "blake3": "82e7cd18340ed8a2a5a0bb0ca5f8f68f38a684513900a92cfefd3a5cb66310e4"
+    },
+    {
+      "path": "references/sandbox/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4972,
+      "sha256": "816b4a3b589a0403ec22b11eef5f68d5fe571661744f844f76f966d4e6724c8b",
+      "blake3": "413f78dff138cb5b65388ef1b4b768b6a1338706994df400e12b296c9f544c26"
+    },
+    {
+      "path": "references/sandbox/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3415,
+      "sha256": "71a892941829a103444fa5dc591da2c6a16ff25c24ace1cdc30e190068922ea4",
+      "blake3": "ac930a1ed7875309096ccbbdd999fe2042759c3db301d75472f0ca651fcc2f2c"
+    },
+    {
+      "path": "references/sandbox/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5456,
+      "sha256": "abca00f4f9b66ac7c34ed3ed6decf2b0cb5455e17b35d4316bee60446b4c52f9",
+      "blake3": "93c098cd43229910389b7327e5f3075037f5fbe62f34e7271f7f9a0571ebebc7"
+    },
+    {
+      "path": "references/sandbox/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5236,
+      "sha256": "85a3929971f06e5ebe3e8d93256fffd54231002ed5959dff0e78ca398f16de2d",
+      "blake3": "32b7a8ecdf0bc96e12150af1e6c132dee805a7b35b15efee33ec2f723379ea89"
+    },
+    {
+      "path": "references/secrets-store",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/secrets-store/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2215,
+      "sha256": "82c078e9d71d9bd28b2f23535f086e74bec7adad08e3cb6c289326a4a6e14550",
+      "blake3": "9e48bc95294ab68dc441283779fe804d039a1a0b011c048d2701fc436fe02c5b"
+    },
+    {
+      "path": "references/secrets-store/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4358,
+      "sha256": "d6453c2646c9b2a7fa74b9a63a7a6aa0707ceb499a06705bdda367cfe3e8a1fd",
+      "blake3": "6348fb14db95511b9bd9e8418669d8ab34fcca4004805f23917f682a3b83917f"
+    },
+    {
+      "path": "references/secrets-store/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3890,
+      "sha256": "a7cb7ba5afedecbd005217d6155d85e2800b9f5029bc49f16f15498fc99f17ba",
+      "blake3": "dfa0c48cff85731854cd7bf017eee04dadd2fdc3cced2dd9c7856e46bee7c486"
+    },
+    {
+      "path": "references/secrets-store/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3838,
+      "sha256": "572d2d0464d24d66c4720b52c57f6a3234335cfb2fd18308bba876b72229a296",
+      "blake3": "8871155daac080b1428be2224684e7f86128695f08d274f22c910182ca11ee4a"
+    },
+    {
+      "path": "references/secrets-store/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5660,
+      "sha256": "60f60f7ef93d50208629a2e630d24f4758b1b995eab146395fc639844829058a",
+      "blake3": "31579fdd344e90e54e9d0f22a6eaba5ceb85c87779320c7e899b6d9013eb5284"
+    },
+    {
+      "path": "references/smart-placement",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/smart-placement/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5024,
+      "sha256": "2a41285bae05a8772a6b52b292c28aa87bd4f65c6b984ba85e2733fec104567d",
+      "blake3": "ee08f9e7708c45932e0e4adc8eaaf90d5b8fbd3deef4f3a378bd6f0d6edc50a4"
+    },
+    {
+      "path": "references/smart-placement/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5559,
+      "sha256": "d3d8b440a7e362799d7b02dfc3ce348d7bbe51a760f4c6945f2d93bd82785774",
+      "blake3": "5bf13c3b5ff99654ea23ddd8b565d133e23df95583164ea9d238f6bb782ec32d"
+    },
+    {
+      "path": "references/smart-placement/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6119,
+      "sha256": "7d29937845c26f42ec568f4a98262bdbfe2e983c45e94c7c6376dda0ea67e856",
+      "blake3": "03f68de73a384b771fc50d6e0537482ee581be0e6019bac1a8ac088b9273d860"
+    },
+    {
+      "path": "references/smart-placement/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5637,
+      "sha256": "8e56c052e6b513b9ab565f0eaf0e7f84bca236dfc30bb77ec6715b70821a5b92",
+      "blake3": "6435a2346a64515e52aafbdc21996b0f8bbc93090e9dfa5738b9bf8718b9c335"
+    },
+    {
+      "path": "references/smart-placement/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5784,
+      "sha256": "693558fe87218c6ee1adca94ca3362eb9cce923e369559f7ff87dca1b9bc5047",
+      "blake3": "a8357ac6b0376752a9c281c3c05196f4c65d35031f1930200bce5a86ae6dde04"
+    },
+    {
+      "path": "references/snippets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/snippets/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3132,
+      "sha256": "4f66291949e5fb2a66e49a98b392c2d18057ff36ba74906feae3aeef94f9701f",
+      "blake3": "d7789eb39ed8043a82da39bc9f9de9ebe01c823ae00a5aedec04da2d8a258627"
+    },
+    {
+      "path": "references/snippets/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5133,
+      "sha256": "e76a59c5005ad537ea4ad83fab71365995717fb51938797a4dc29af324285755",
+      "blake3": "4171e9a473cc91a7437f302c1e8b3576dd019966f7f18d4b8e93507dcd97582a"
+    },
+    {
+      "path": "references/snippets/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6311,
+      "sha256": "836c6765b1ca807f46f1a13ca0d8f383fc6f6c4f8fc857a366156cde96ff74ef",
+      "blake3": "714353bc324c19d6851cf1e426f279084fb1a2e35de65adeeaaaf35ed229226b"
+    },
+    {
+      "path": "references/snippets/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2220,
+      "sha256": "301c7167f03075505498f1f6b5fe1c72a393065a8228f42c435fde9f1b694150",
+      "blake3": "0980d38f99699448ed263d4a3cd95b2a5ecc8cd1380043fc1d19341171f9f292"
+    },
+    {
+      "path": "references/snippets/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3346,
+      "sha256": "2b06454df89a837e16ae554769ad055e8de90d2c6bc19a81b4aeee0fc423029d",
+      "blake3": "29f3d7adba342efb599889fc8d9bde7bb3b1c114fc44de10accc32a6f191d154"
+    },
+    {
+      "path": "references/spectrum",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/spectrum/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2355,
+      "sha256": "6dfd516d6e54696accbe6bb499f4e70686061abd0afa192897b32d7fd0c3f32e",
+      "blake3": "52b172eb2557ff18b2ce77ae351ba69c79d114f331d6f49b7d96c76958d26acd"
+    },
+    {
+      "path": "references/spectrum/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4924,
+      "sha256": "bef098862434f4c8e253d718d3437091813e45c3bfaa5004e8e86d6ceb83beb2",
+      "blake3": "6b97e5ac521100fd023b28a31b2a47d15b0027a836c823fda20914c7c618b908"
+    },
+    {
+      "path": "references/spectrum/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4332,
+      "sha256": "2079f33dfe2ef2ed715927c95c2ba5389f5f426745597aef94e5885da5eec403",
+      "blake3": "6823f67ee7414c87144c8c65b1ee85727688f6c974ef308368000dedf6abf212"
+    },
+    {
+      "path": "references/spectrum/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3739,
+      "sha256": "cb07bb56c6c5e2b2f88380772cbaa25143d7f32cce69c8f5bbbb1e77d4fdd216",
+      "blake3": "54f9ad7dcc547a887673720d7fdcd5e3acd2a720c8141857647718a52e9fd91c"
+    },
+    {
+      "path": "references/spectrum/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4778,
+      "sha256": "087e7d9a1a1a308eb13614332df217137296501cf57082077f05bb3a1f2bf7b0",
+      "blake3": "02ece4a7c23258801b3be779854c6031476de7d9cee51dec4889bacba9ee0c76"
+    },
+    {
+      "path": "references/static-assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/static-assets/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2197,
+      "sha256": "ef31f6ca300cb5fb1f111a626f6d92ef2b5b48a3ed97c2203874c33a2f38c0e8",
+      "blake3": "33c256bf823a8f69d15832cff3832eb3532ef2ff214fdc03742cdc7b3ce06ae8"
+    },
+    {
+      "path": "references/static-assets/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4451,
+      "sha256": "619acb0a8d9732395316fc0beeed11e1a10557e08c639338ac92473cea1c5701",
+      "blake3": "3d459144c5ca493a94c165060f233f534c955d45947d06dd93a1c82e2de8d688"
+    },
+    {
+      "path": "references/static-assets/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4826,
+      "sha256": "c35204c02177893d0b8c5b9bf2341d7814ed9d1e8e2ca3fc7c87d05603e9ec50",
+      "blake3": "568eb46ad9145a410bccb646a167d9c0fffdae67ce55f385c98cfe784d5e52b3"
+    },
+    {
+      "path": "references/static-assets/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4127,
+      "sha256": "37b51d4f42e2a685934b7199dc62a0d8fd3d98c9dcf197ca5f5667aee01ea86d",
+      "blake3": "3dc3ae9ff54eef1eaa1b08234491edeb4501705570712e071783da26e549f528"
+    },
+    {
+      "path": "references/static-assets/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4895,
+      "sha256": "a9b508f7936d8edf7c63c65fb217d27f6aa555209a21e0a65eadf7a32d9ec9c4",
+      "blake3": "3eb13acd0c0ad8f804109761903b40daf0489646a8f3ca2fcd7437e600fea52a"
+    },
+    {
+      "path": "references/stream",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/stream/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3864,
+      "sha256": "ead31da7979689bffda222b1b1c20903fb1aca03301b208eff0b3682a422b6ab",
+      "blake3": "ebfeece34f2a89f184de4406e6748cf89d8c4932fec30fdaea7eabbbc3e294af"
+    },
+    {
+      "path": "references/stream/api-live.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5174,
+      "sha256": "7c384bb3ee0575f41bcc57cf1d7c6f37741e21de5d4ebb86ee4d1a05f6d671b0",
+      "blake3": "6a2e8a886dc918b003261f9d4bb778c9f7a804d41eaa0c9f2788487f4ddc3289"
+    },
+    {
+      "path": "references/stream/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5260,
+      "sha256": "5440838fb2fb329fe815aecde94709a3d32be08c917491355709314ff7e3d8f1",
+      "blake3": "3e58a7d3f18c163507e9f2d1bdb3b5f988419276c7bcefb7fefb4c2315e08719"
+    },
+    {
+      "path": "references/stream/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3222,
+      "sha256": "74c156e9c665e9d523bcd7c5d9a763339aba0356b1dc69d723ef6bab41a25328",
+      "blake3": "4e34265fdaab101f55c25dc618096806ba293b573c82f69d56acf7fe8de926db"
+    },
+    {
+      "path": "references/stream/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4308,
+      "sha256": "65ef0e0f81470833dea11179849d5bf78f695720286db5e5eebe7d8dcf77a1d4",
+      "blake3": "f26a1348ca599233ec1c1ce82c5b73b2aefdf8b2257c9dc4734b4f4d01f80633"
+    },
+    {
+      "path": "references/stream/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6394,
+      "sha256": "1a18c1989fb525c15167126f98246afa27766e701c86150cb60409759a3e08f4",
+      "blake3": "787dc4f62b8c73c2f5a96fb719e2307e4779ac076ae0364fffaba57a3ec05d6a"
+    },
+    {
+      "path": "references/tail-workers",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/tail-workers/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3020,
+      "sha256": "22776dd6348b07d2c7132ee4a52715f49bc61c1bb50d0af81e49281e44bb9799",
+      "blake3": "43ea8d315a7b3b040680d1297b15306f2b23ed3414a0d6099f970a13a13c2dca"
+    },
+    {
+      "path": "references/tail-workers/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5132,
+      "sha256": "d8349bfabdfac0d2cd8c911f2314c34ff1045b2a85b6d135cf4f4692940a94b3",
+      "blake3": "0d8e1c0be2207f1e613e624da072824cec2e298d6983bb1caa2cacf75b347d87"
+    },
+    {
+      "path": "references/tail-workers/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3474,
+      "sha256": "8efac4877ad572f631f78643712a9c1e151661d4efedd728ee23fe2877669845",
+      "blake3": "2ebdaa73a25d666ef83e5da282d072f6288d255310a14b87f7b22cb3b094273e"
+    },
+    {
+      "path": "references/tail-workers/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4595,
+      "sha256": "4ba9dc553f71ed2422a03c4fe8022aef313761227b88551e07b21496f0c68ac7",
+      "blake3": "65acc400b513a1e44153dfc256e205053683f730e88ea57a67178857108868c5"
+    },
+    {
+      "path": "references/tail-workers/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4034,
+      "sha256": "400bb20063049d802f9b9d97924810817234bba9a12d8fd5ff13e9f0913812e4",
+      "blake3": "9cfbdee3978cad9a6d81eecca699d9b5087570f4eceee59515e77eeade44634b"
+    },
+    {
+      "path": "references/terraform",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/terraform/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3680,
+      "sha256": "a7070aaa31c8e229b2ebfca6fe66bcf6ead9cdf1ef6d7b494a556080253ec073",
+      "blake3": "5dc962c5439ac8df5fa347a24963e36ab4c63db49b441f6cb086d9db6355fe48"
+    },
+    {
+      "path": "references/terraform/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4020,
+      "sha256": "5dc812c078d06454d801b0e126d50c48031c1a7b0ffef7ebf77a97cf7b41e768",
+      "blake3": "27138e9d5efbc4c0b4b86da2bbafe302eed75581368c3ec9ef0ee855d3a1043f"
+    },
+    {
+      "path": "references/terraform/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7577,
+      "sha256": "4d12cad256eaf2b021c1c19e7be29ef79e2d76183e387eefce2d4eb50b8d483e",
+      "blake3": "8ac97af4d6dc60e908e6c98659c34de84523dd8854f7c0d82973d0dabaf4d1ea"
+    },
+    {
+      "path": "references/terraform/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5268,
+      "sha256": "ede039589518cceb96d40c12b7e22aaf0fbb1a5ec4d806af57940dfcaf9da672",
+      "blake3": "ad5bb3321ea9144ba2bbb92158bc4918a5282211c92821d10a7d4eb899ce38bf"
+    },
+    {
+      "path": "references/terraform/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6640,
+      "sha256": "1c5d35e79bdfbb2bfce92b095dbdb4fb08923b651a8f8e40e6e70e2956e6ffef",
+      "blake3": "1f0b69eb3ae9a339fb7c84dbee505d9fde4220f546b9838e76ba6f588b37e632"
+    },
+    {
+      "path": "references/tunnel",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/tunnel/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3738,
+      "sha256": "1cbeda06e54ae97dc5db42721579e9b455cc1a2eec61f4756b3d4de29dddf2a0",
+      "blake3": "f8bd8e203e1e3354c27ac5c7669969b54f6dbb4f8a92bedd30a331ce7f5f8525"
+    },
+    {
+      "path": "references/tunnel/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4444,
+      "sha256": "698055870e668a0827b8bbb83d9016b093e22e4a95f4aabeaca7ef2e0d1e099f",
+      "blake3": "73640c92dc237e655261160a70b8f5739a8a9e49cfd02edae6d3bd4f0c889bb3"
+    },
+    {
+      "path": "references/tunnel/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3698,
+      "sha256": "41c67b8a19309f3d626f8ad94bc0d4748be63ad311c220c73f76faaabde461ec",
+      "blake3": "9388a556169230103330531ef6da6323f070d332d070e075cbb06062087dd4c1"
+    },
+    {
+      "path": "references/tunnel/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3933,
+      "sha256": "267e3fad1f1a328bec1786ce883f7d658ee328ee5e812c2a4ee61739b507c691",
+      "blake3": "ac29004e3ae056cbf615ef41b665ea661f40a998f9710d5fbf737b4e15bad8a5"
+    },
+    {
+      "path": "references/tunnel/networking.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3993,
+      "sha256": "99f51bcb065fdd62df94aa116f11effde03d81c4299f369770492346add235ca",
+      "blake3": "7a54f41abfec4970b5ef2bc19302cacc67eaff23286d4df13c073b733fcd6a92"
+    },
+    {
+      "path": "references/tunnel/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3853,
+      "sha256": "696d5fe99640934a94b6facb6e3198d93dc38bfac3c3324fd817e47f620bc40d",
+      "blake3": "0b8ac4bc1f80fb22f1a920113e71f2c3a02f1f18a22d5eef03705eaea7b3f40e"
+    },
+    {
+      "path": "references/turn",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/turn/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3693,
+      "sha256": "9b1e36931f40b1faf3c8f24f89acb12c4f4223de0afc83e6b8de636f4730d542",
+      "blake3": "15bcbb963ca8c8a58252234e024353bd73b0072c3f1fe9dd514e1f653dc37a45"
+    },
+    {
+      "path": "references/turn/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5220,
+      "sha256": "912ec9aa734843078db5ceb9c6732f3aa62778aa7ffb836b9798b46152f377ff",
+      "blake3": "fa371f2b5a6f45269b017ab0a73ae96e2ce4975a2a965bda56ab4b32983abcda"
+    },
+    {
+      "path": "references/turn/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4178,
+      "sha256": "8df0cf402a41dd2a8205b9fc94f868df48273ef9e85cf1ad690732ac1e2469b7",
+      "blake3": "5fb86a98346b65d0ae0e53ae359d125758e357306f901dba029bde17232e1f5c"
+    },
+    {
+      "path": "references/turn/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7020,
+      "sha256": "7135e3e6e0351bf85fcfd5a914fd499979e7e15540d155810be5bc710e5841d7",
+      "blake3": "ed1d414eb140160152a0f3061f80ca70c964b5c0c0e25ce15970b91d76dc9d36"
+    },
+    {
+      "path": "references/turn/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6189,
+      "sha256": "de0a2e64a0fe6456028cbd0cd8f29195cc8d4da0e8935746357587d5937aa636",
+      "blake3": "39a86f8a1fde8751ed7e644050d7b0530ed0c497897dddd331008bca8516bee5"
+    },
+    {
+      "path": "references/turnstile",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/turnstile/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3539,
+      "sha256": "137caa7c326b4f57fecaa6174179d140aae4e20770301ac9ee207fa0f5a2cffd",
+      "blake3": "bc010c6cd041fbb1b3d9233dba3ade93192c232cf2305b6dc2713ffb6f15ae8f"
+    },
+    {
+      "path": "references/turnstile/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6424,
+      "sha256": "8d9123ce63066a64d40c7da10ae3251dad64710f8122f3c57f826985d1474d27",
+      "blake3": "a49e0917c2d0be21e36362d3a2c995bb0f2c9911dcc9f233b3d9cd749f666216"
+    },
+    {
+      "path": "references/turnstile/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6719,
+      "sha256": "eac60f420fa7122c275c40e6b7a9a55a672c42027d56d5e187432a1653f221b1",
+      "blake3": "f9287700e7ed30391a2f2a3b91262d1f28949cfd9c0ee7ff4dd7cf37ae0edc69"
+    },
+    {
+      "path": "references/turnstile/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6276,
+      "sha256": "3166f9a79a6512310b84a7958dc911906395fd10e3540af7698083ec8e5d8286",
+      "blake3": "ad213b3f3813d89a1a065e512a8116d3010e70894b767d226c161e1535e6e334"
+    },
+    {
+      "path": "references/turnstile/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4677,
+      "sha256": "7d229cb935aaa187796a8667b4d9843c8585a7f90fa30ddc6999240960f12bd8",
+      "blake3": "76f9285fdff2917430eb3587e74ba2aa5f2cc80e44f37592a41b964de76d9bd5"
+    },
+    {
+      "path": "references/vectorize",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/vectorize/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4288,
+      "sha256": "badc6f6e66868e9eaf30e46babf9e5c060fe7e425ed62d29d17161677323b388",
+      "blake3": "60a7dee5fc4a74e585e9f592398139adcc8dcea638ee429224ce714b06a53803"
+    },
+    {
+      "path": "references/vectorize/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2375,
+      "sha256": "c0aab15c2d7fc72b875b26e9a96a32bb2f899bd64ff3db33107208aacbf7347b",
+      "blake3": "120c284ce593c022d50a42d093386a28c291b305f7db2419b8e53088ff741df4"
+    },
+    {
+      "path": "references/vectorize/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1986,
+      "sha256": "057eaef43f53e8bd71699ca17a3d296eb0c165ce1c1a304d71dea53ee9ab0908",
+      "blake3": "887664db31d1d9d67d7d3fa19b3dd8face1ab6001ac7b2b5806e02b6718adffa"
+    },
+    {
+      "path": "references/vectorize/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2157,
+      "sha256": "41368d07e71f80db6d649b07ed871b9ac463bcc8db8d53563e07d24634fd5633",
+      "blake3": "0545d5dbc7037663385f240c9141e7b2dd650eaffa9f21ca38fe6ebc9382836e"
+    },
+    {
+      "path": "references/vectorize/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2514,
+      "sha256": "dcc4227997e7a856444a701b9243a9a1c8d1cb38680429ac3047b761f85e71c3",
+      "blake3": "c4edded9287ed326e5c6d84926f966b6e3b9d7df23806a44726f0111bcff7658"
+    },
+    {
+      "path": "references/waf",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/waf/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3455,
+      "sha256": "dfcf0ff026f351637a2c7e9321740a24a87a3a5ee9698712677c2914b5d22163",
+      "blake3": "2f67e27ac85a94c2076d02b0e4ab762932c9480ce9f5ee20f41adc71fb0a8e6d"
+    },
+    {
+      "path": "references/waf/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5831,
+      "sha256": "d7f67e1a1ee4096edb8382fa04c610fc933593afb442cec3f2d5e76bf6a604fa",
+      "blake3": "f97f35c6a05ae763dfc14983ff61e370ea0ebd300991ad27682f3e2328155c50"
+    },
+    {
+      "path": "references/waf/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4765,
+      "sha256": "e4fb36ebccdb73eb8be9513d316a7294ab62a6ce355b7e09498a77af91cdb095",
+      "blake3": "4228232345aa55256d7dafe7bf22886e23314e0b91d50f80a275856209448eed"
+    },
+    {
+      "path": "references/waf/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6290,
+      "sha256": "d002f5d683577b734b6a1d787b96d04bff5ac47d454e720219ff58a9d850f4cb",
+      "blake3": "c1434a947b7639f2dda5de4627f9dd14ac0e81e0fd514aa9a245f8698452fde2"
+    },
+    {
+      "path": "references/waf/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5356,
+      "sha256": "8fc5fab71800154d1128725274bcfe1a59b3e667c2c0f841a96f643e5da89ba1",
+      "blake3": "9c000b205658a29adadf7125944b084681c735bde3e8be39f62f68fb1d8c6fea"
+    },
+    {
+      "path": "references/web-analytics",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/web-analytics/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5236,
+      "sha256": "bff5f576b9fc55ee7f3c448a7e5aff30e653bcc214d4040f476f392a69213218",
+      "blake3": "54b7ebd5b54fc6ce635f9a2d4633965492c1b078789ff8305b68536f76ebb8a9"
+    },
+    {
+      "path": "references/web-analytics/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2003,
+      "sha256": "82a7c2312b3d8d9852d14547ef7771616f0da3cdecaa146afbf6272b77976017",
+      "blake3": "e841c64f39c52f6612a82808cf8a30ae8aa5455d42d0928d6bdfc4a24520ba40"
+    },
+    {
+      "path": "references/web-analytics/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1999,
+      "sha256": "e81a0ac61dce03a4890b9950ba06662c16e4b9ddb4eecdff204221501cd8d6d5",
+      "blake3": "9c7a67f6407c1d2bd5937ec7568f48706bc11fe2f84f27d98aaa3048a2000e92"
+    },
+    {
+      "path": "references/web-analytics/integration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1772,
+      "sha256": "a0dbfd1a658252e25d7ffa86180c691c6976265526b36ab14ce9e4b469d95cba",
+      "blake3": "5c42c8b757836853af8cdab89f411100256d5efa160dd944da22bb24359cf357"
+    },
+    {
+      "path": "references/web-analytics/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2237,
+      "sha256": "6ccd1e334d260b968731f5f613ad28882bc199b72883e3254a52ded8d859f5a8",
+      "blake3": "9c1dd8bda9ada3d020a069fe847156ec2002afa31eae246783fff94506893839"
+    },
+    {
+      "path": "references/workerd",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/workerd/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2789,
+      "sha256": "daed9e582eff91b2c29dc77701c7c18a3d92fde0dc6883b2913df26094c0c597",
+      "blake3": "87991f6fd861c6901cca0ae14fd18800cd063a7e7227d8469221baa6f32eb570"
+    },
+    {
+      "path": "references/workerd/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4959,
+      "sha256": "7a6652e76e27424b0ce0d7393e1a04595460290d44e5ca937e3b0090a3b61166",
+      "blake3": "404c7ac92cf6339d86d4f9017b7e36f2a76c3d1c1a6e6ed9a826a167170fa7d2"
+    },
+    {
+      "path": "references/workerd/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5263,
+      "sha256": "656371e6aa55e315ea02e4304228f5c1151023f68af8058ad60984b90e00a9ad",
+      "blake3": "5640960a95437a25b3e65ff6889340e99c57e311271bd70455dd87bbd47e2fc9"
+    },
+    {
+      "path": "references/workerd/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4781,
+      "sha256": "ed3107537e54d440445408131b89db5f81f869902bade11cda7978f31234f74a",
+      "blake3": "2f6f1f808126e18b72b2c8e8c68687ddfa2bedad821817c3eed84713583679d8"
+    },
+    {
+      "path": "references/workerd/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4938,
+      "sha256": "dc293c43c732adf6e3edfeaf72510904c7e8d097ca26c8b168748dd3d57e4408",
+      "blake3": "9663d05ba469263620a850dea4099b0f409e1156ce128becc26a7e921f7c25b8"
+    },
+    {
+      "path": "references/workers",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/workers-ai",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/workers-ai/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6042,
+      "sha256": "e1f1fae0a795cbf975d4751e36f28a2b9eb48ad9cd10a9edf48cc9211581c241",
+      "blake3": "fa6c2ba2c09d49e5489343c43339274d779850291afc967d551034850b3f232a"
+    },
+    {
+      "path": "references/workers-ai/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2715,
+      "sha256": "2b6093736b90376cf9089726eddc580f77d9f719be5031a1552cd05a4f3e991c",
+      "blake3": "7d5bdf48568c9d223cd67d3c56f817d0b4792d2917fc854bfedaf90b2edec5f7"
+    },
+    {
+      "path": "references/workers-ai/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1989,
+      "sha256": "acfe8100a30a006b2b35ba9f81897130402825b062a087984258fa597ea8fa1a",
+      "blake3": "58e608e8de415e6275c4809ccbf6c08bb1c27c28724e5fc78e00259316b42ea4"
+    },
+    {
+      "path": "references/workers-ai/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2693,
+      "sha256": "10fe3b26750c2fc92ff6ccdefc1200352cdae88c573071cd7735d0a84ff925da",
+      "blake3": "16b7921f517f58c2cd4a8bffce22b67dbfbf2479c9334d247271c35576ea41e3"
+    },
+    {
+      "path": "references/workers-ai/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3063,
+      "sha256": "1ebfd949690bd1e8150435c1bd1bf7b5cd3e6ab35eec5442f7af8bf39ea80198",
+      "blake3": "7d5c72fa092171ffa266b38b560768ef22004d0689d362550780287c0a378207"
+    },
+    {
+      "path": "references/workers-for-platforms",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/workers-for-platforms/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3913,
+      "sha256": "8c1b123a124f0da9da6ee5944723f6a1fdf39bf753c8bbf5aae23aeab4de6000",
+      "blake3": "35ea5c4687fde7552cb966f839d5856fcacf01534d9576ffae952d7a47aca9f5"
+    },
+    {
+      "path": "references/workers-for-platforms/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5515,
+      "sha256": "6bc581bf87e21dd9764b88e7658b8cce841491943bd67b0ab8c37e1fcb2b9835",
+      "blake3": "25f043092afeff44d9c3ccffbf43bbc72d7d2c2dedc1e86d132e11e35f8a0852"
+    },
+    {
+      "path": "references/workers-for-platforms/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3892,
+      "sha256": "21e9034f5b014589e05e98eb5fa368e1c4fe4f287215c4b8f38ce12b95fd588a",
+      "blake3": "41e028bfd41c28ee310bde20531472a95cf854517e2dddb952aaf69596e090f8"
+    },
+    {
+      "path": "references/workers-for-platforms/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5440,
+      "sha256": "98904178ec81e30e0503ae512cedf76e0d8bdcc517009984b474a6008243e18f",
+      "blake3": "24e8c0a5e4d44decd4c2ce4b2805fadee64dc63e9bef2a848d7c3c0943fc0f8a"
+    },
+    {
+      "path": "references/workers-for-platforms/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5587,
+      "sha256": "08ea9e56309bf663fca61a9bb6e5115d23758fcde7112d482944ac510ae43643",
+      "blake3": "ba0ad2b43dec9a83d83dd5cad155d2e8ec850ae14704db5988a85409792f7684"
+    },
+    {
+      "path": "references/workers-playground",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/workers-playground/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4016,
+      "sha256": "5429f6fbb3300f1e190e8024ae8fd63f5e345ea22ecdaea4e405766351177496",
+      "blake3": "e98abf0a97fc60045bde93f773636478ec181644ea1e4bf3d63b0eaabefe0ae5"
+    },
+    {
+      "path": "references/workers-playground/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2224,
+      "sha256": "bf8f93589789b19c0834815dd498d09a0eaf526502d66691c4797b6c2906ad49",
+      "blake3": "6fb92e6f09a6cc7b29df9a2ee774a18e4f74856b8d3d65dfd117e0e07ef7f82c"
+    },
+    {
+      "path": "references/workers-playground/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4462,
+      "sha256": "eee7eeb85e60ee4a2b9d91f445448dc93c3d2875a80b35888f93847e990d128f",
+      "blake3": "b57cf608011052d6c74ee8ed83555496ca5264bb4803903f92d60ba77c9926a6"
+    },
+    {
+      "path": "references/workers-playground/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2019,
+      "sha256": "85e262f98373f1631dcef3f44a57b6d9e30f8e930e013dc8667fa5993bb6dfae",
+      "blake3": "1dbfc3c531cfe09c3e45636211438a89fbc8a10525b4ea5687be1264e5cb2a4e"
+    },
+    {
+      "path": "references/workers-playground/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3303,
+      "sha256": "c95d27741ecccbad12386ff4fa9dae6c8ff21438bf83f3edfd177ec156a8da69",
+      "blake3": "4cc39099355f3c5ae58e42af86ff2737f03b2d730fa5ca39b0ff6cd1a908abf4"
+    },
+    {
+      "path": "references/workers-vpc",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/workers-vpc/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5484,
+      "sha256": "6bfab65387d76709296161a0206a1a943f773374c1fb8fa435853693b16902df",
+      "blake3": "f524f4cda973b441bfb4454379bb8a6f7ce5fe1cf2713668e3d4fdb9033008ad"
+    },
+    {
+      "path": "references/workers-vpc/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5321,
+      "sha256": "60bae66d5674a5e54a0077168adfbc5c44a9c87050149381b119941bb4c45f41",
+      "blake3": "f7fa92814408f431da85ba12379fc260fc79d36478baa2500a0903f5b767328a"
+    },
+    {
+      "path": "references/workers-vpc/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3898,
+      "sha256": "0a3f90caf7b17158687c6f4ce5a6e2f292c19255eb2bf766d7eec96de926104b",
+      "blake3": "954f48883dc147a5e13e4cb5b959424f9c7dfa23a569a5537d81f82b7f0c50e2"
+    },
+    {
+      "path": "references/workers-vpc/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4477,
+      "sha256": "70e2d004800e75ccdbbdcc37623b97d9f5b4592183aae1421e21bad19e111d80",
+      "blake3": "4599e8a1beb58131064855e6fcf406e1a048e0fc87f6dd094a3875f990b49645"
+    },
+    {
+      "path": "references/workers-vpc/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6011,
+      "sha256": "87dc009bc45b057408dfbeaace374ff169295bba7d9d4d40fa973945848c9ecc",
+      "blake3": "905e0b6fd085ed099e46141e8a0fee5b5ab4ec25c0c22f8f6e081934479168ee"
+    },
+    {
+      "path": "references/workers/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3451,
+      "sha256": "4e00df1c6d64cd393c909430769c183b7027b4fe1db0c2dbb31090987baff14c",
+      "blake3": "e3b5d5b9ace5b797b98a8f56d0ae1ce19577233d74fa08becabeb4d66f84fe8d"
+    },
+    {
+      "path": "references/workers/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5158,
+      "sha256": "96dafb63543f3a52a791ba56b0c3fb45efd7bef5b31331ce520cb999b8956c8d",
+      "blake3": "aaf9d58db4e27f2236a3d06d82d1919accee901713469b67158e5f44f2f54be7"
+    },
+    {
+      "path": "references/workers/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4355,
+      "sha256": "76a1086028fbda8218306771af0c15c53774c40279c5a40a74057e6e9f2b10b4",
+      "blake3": "cb81a6bc5aa89e562c309f4497c491983fb343cc139249c3086d7132be4c3919"
+    },
+    {
+      "path": "references/workers/frameworks.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4276,
+      "sha256": "520538d460fa6a11360163e3ed0725d840946c776feb9e00bd0bafd9f1cff699",
+      "blake3": "eede802d27eae04a3d02b65a115b8fb79429bbcd791a7706bb4525184319ebc1"
+    },
+    {
+      "path": "references/workers/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4751,
+      "sha256": "f9430e9fe0462c5749fb6478f5d29eea18838d71bcb73366c9479ff865dc597f",
+      "blake3": "39e9c15d0de82e6b7be0605f64f046902518302ebf10f4c23dda685f0645f579"
+    },
+    {
+      "path": "references/workers/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5447,
+      "sha256": "f408d6db9c13ef192511b506b7f83b15df1a0e736c9d10215fcc1c0c0b3ba439",
+      "blake3": "a6cea9c8b3e502418ee9e26f630b01088e37439655d4ab79aa9bf629c435d765"
+    },
+    {
+      "path": "references/workflows",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/workflows/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2429,
+      "sha256": "c0a6be8e49bc081474ad24ec4c1f6ec190c2e431c2d30869e0b5a047b4a25c3f",
+      "blake3": "ac1f51dfcb49c40d0c8f43daee21b896f0c93ff3d4fdeb5206da5adf63a8ee8e"
+    },
+    {
+      "path": "references/workflows/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6423,
+      "sha256": "f9daa528ae883afcab07036e1b7c5e341b1b10d579fadaa782553243c41881ee",
+      "blake3": "d9f18399994b22aeb7a79f581a2e0e30aa5df23b4d44307a3474180f353e89cc"
+    },
+    {
+      "path": "references/workflows/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3707,
+      "sha256": "3701f2702b265c517668e24e2dd63417a277e7f601cb52623a9a4e1677553756",
+      "blake3": "f5287c34e15aec4de0ad40e99e7900cb478c1a49df5cb93d12445175bc893aeb"
+    },
+    {
+      "path": "references/workflows/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4649,
+      "sha256": "21ddf3bdb1987bfbdfc1796e49643bf0f2ef247ccf01a78c03f77e5dc50d695d",
+      "blake3": "881e6f6226579219c0f94632c5257ec1b9c93f15f531e2fa6d2f467c34547c28"
+    },
+    {
+      "path": "references/workflows/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6638,
+      "sha256": "eca20d1dadcf97e7a415603793aec1dbb3a252eb5abf27a35e0b99e242ebe593",
+      "blake3": "5fafa9e76c31df72345433f686f51292b620b8af075a645c4c8e7fa962ed8b33"
+    },
+    {
+      "path": "references/wrangler",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/wrangler/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4668,
+      "sha256": "a30d1890034e40e50a6f974a6dde4a8337293372aff91d4b79bbe4ecddc69e36",
+      "blake3": "222963ce7cbfa090d783f08108bdc6a392eac8e8d569e01fb2995d2b8e85f812"
+    },
+    {
+      "path": "references/wrangler/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4624,
+      "sha256": "0872bc513368c167efbf8bc16024140963f44fd2cdc8777cd615b15831997d53",
+      "blake3": "3eac0780404b1716ede06ada0e2135070a239a481ee7b062c35fa5f2371160ba"
+    },
+    {
+      "path": "references/wrangler/auth.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2169,
+      "sha256": "71ca6291023a9897c376ea03600f7095bc38b3ad5360cffefb4c9bd93f338fdf",
+      "blake3": "38947b7d2207e0bf078419e27b258860020f73e41c32323f93d4850c51269490"
+    },
+    {
+      "path": "references/wrangler/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4722,
+      "sha256": "a8e042ffe9e399167816920a58c8ce909b6cd784507615e3431729884e1334b2",
+      "blake3": "a4e1c97d07602eafe13a0f866e43079d44d7e1437efe93c285d6d9a05daff7b6"
+    },
+    {
+      "path": "references/wrangler/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5868,
+      "sha256": "bb24bd86adaacf3f1f2e359e6e02ee72e1342e6156ffa3bb8b6d25aa28aba5c6",
+      "blake3": "afc32b13c382b46334797f4cdae2c3710800656183da6ec7bdaddb425bc1e4e8"
+    },
+    {
+      "path": "references/wrangler/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4876,
+      "sha256": "eef3fa927fea3594313d72c0107b6552e65c0a86ad0324558d73e579bbd74772",
+      "blake3": "59aa089a4a78e484b490eaf7cdae82248fa87776e649110d7b6ad3f2d3e74171"
+    },
+    {
+      "path": "references/zaraz",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/zaraz/IMPLEMENTATION_SUMMARY.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3494,
+      "sha256": "eba1671fc4ba17fae19d1ff2d1b312d5042b5821e7a4dbc2f6367a4fa8bd5506",
+      "blake3": "0c59bfc84a163af9399ee5cb322e17eaf4351f158c73c9c65e56652c480f4959"
+    },
+    {
+      "path": "references/zaraz/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3909,
+      "sha256": "929bee8e3efffad15b1a2ee2e20ff87b5d89cc724b4f450f07f6ef15caf4b2f9",
+      "blake3": "05fbc0532b771749b0b11376d98f92e5a28c985d6984876c9601628e73b2e25f"
+    },
+    {
+      "path": "references/zaraz/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3197,
+      "sha256": "6b28a3e1525d46aad707b1bf4edd2739df9f48ae880f71a705448270b42f8b9e",
+      "blake3": "6dd22b92f6210afdaa0cf2431a7743c55ac70cd172b309edcffbce0f6d80ff79"
+    },
+    {
+      "path": "references/zaraz/configuration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1811,
+      "sha256": "6f3666ac64d1b36b4a708b3dea9d3b1d9679b34c58a00e3ca8e254edd602418a",
+      "blake3": "e573b533304eb01dc081abcda0862e33d8b5f16e2609ebcde08471cc60cb4aca"
+    },
+    {
+      "path": "references/zaraz/gotchas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2001,
+      "sha256": "30378f48fde6e866780466228a3e698005a9ce23a24188c8ed520195b03eac3e",
+      "blake3": "fd311fcc41a076b746cfa442965a69a547a883207f4152ed16d024f563d5e62b"
+    },
+    {
+      "path": "references/zaraz/patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2133,
+      "sha256": "2ea1d00fe81b1e881c00090fd18c96d8c78ebb41fcc55f540b68150320d90d17",
+      "blake3": "114f2aef28d0547b09113c015c7aad4a47594199bb64d05edfb1bdae1dfe62c7"
+    }
+  ]
+}

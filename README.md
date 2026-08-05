@@ -117,12 +117,21 @@ executing it, finds directories containing `SKILL.md`, applies traversal,
 symlink, special-file, depth, count, and byte limits, then creates a canonical
 tree identity.
 
-The seeded production adapter pages ClawHub's public
+The seeded production adapters page ClawHub's public
 `GET /api/v1/skills?sort=updated` catalog, downloads bounded hosted ZIPs, and
 supports its allowlisted, immutable public-GitHub handoff format. It never
 executes acquired content. Exact revision/path rejections are checkpointed in
 `data/ingest_rejections.csv`, so malformed early entries cannot starve later
 skills on the next poll.
+
+Declared sitemap and agent-feed catalogs are also supported. The catalog
+adapter traverses only the registered platform's same-origin skill indexes,
+rotates bounded windows between polls, and accepts either a same-origin
+`SKILL.md` download or a public GitHub repository/tree handoff. Response bytes,
+documents, detail pages, redirects, request rate, checkout size, and retained
+skill size are all bounded. The decisions for the August 2026 onboarding batch
+are recorded in
+[`docs/platform-onboarding-2026-08-05.md`](docs/platform-onboarding-2026-08-05.md).
 
 ClawHub is an external API and may drift. Before enabling the schedule, verify
 one catalog page and one download against its current

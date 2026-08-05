@@ -4,6 +4,7 @@
 //! copies data, validates paths and limits, computes canonical identities using
 //! `skills-core`, and updates repository-owned indexes.
 
+mod catalog;
 mod clawhub;
 pub mod cli;
 mod git;

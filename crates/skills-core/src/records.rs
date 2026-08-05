@@ -617,7 +617,7 @@ mod tests {
     }
 
     #[test]
-    fn repository_ledgers_have_the_versioned_schemas_and_clawhub_seed() {
+    fn repository_ledgers_have_versioned_schemas_and_supported_platforms() {
         assert_eq!(
             headers_from(include_str!("../../../data/skills.csv")),
             SKILLS_HEADERS
@@ -661,8 +661,28 @@ mod tests {
             .iter()
             .filter(|platform| platform.enabled && platform.status == "supported")
             .collect::<Vec<_>>();
-        assert_eq!(enabled_supported.len(), 1);
-        let clawhub = enabled_supported[0];
+        let mut enabled_ids = enabled_supported
+            .iter()
+            .map(|platform| platform.platform_id.as_str())
+            .collect::<Vec<_>>();
+        enabled_ids.sort_unstable();
+        for required in [
+            "ai-agents-directory",
+            "clawhub",
+            "hermes-agent",
+            "lobehub-skills",
+            "mcpservers-agent-skills",
+            "skillregistry",
+            "skills-sh",
+            "skillsllm",
+            "smithery-skills",
+        ] {
+            assert!(enabled_ids.binary_search(&required).is_ok());
+        }
+        let clawhub = enabled_supported
+            .iter()
+            .find(|platform| platform.platform_id == "clawhub")
+            .unwrap();
         assert_eq!(clawhub.platform_id, "clawhub");
         assert_eq!(clawhub.ingest_uri, "https://clawhub.ai");
         assert_eq!(clawhub.adapter, "clawhub_api");
@@ -671,8 +691,11 @@ mod tests {
         assert!(
             platforms
                 .iter()
-                .filter(|platform| platform.platform_id != "clawhub")
-                .all(|platform| !platform.enabled && platform.status == "candidate")
+                .filter(|platform| !enabled_ids.contains(&platform.platform_id.as_str()))
+                .all(|platform| {
+                    !platform.enabled
+                        && matches!(platform.status.as_str(), "candidate" | "disabled")
+                })
         );
     }
 }

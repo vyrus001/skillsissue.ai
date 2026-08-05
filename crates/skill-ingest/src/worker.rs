@@ -11,6 +11,7 @@ use skills_core::canonical::canonicalize_skill_tree;
 use skills_core::csv_store::read_csv_records;
 use skills_core::records::{DiscoveryRecord, SCHEMA_VERSION};
 
+use crate::catalog::{CatalogCandidate, CatalogSource};
 use crate::clawhub::{ClawhubCandidate, KnownDisposition};
 use crate::git::{GitCheckout, clone_read_only};
 use crate::platform::{AdapterKind, PlatformSource, load_enabled_platforms};
@@ -97,7 +98,8 @@ impl Worker {
             bail!("ingestion limit must be greater than zero");
         }
         let mut platforms = load_enabled_platforms(&self.repo_root.join("data/platforms.csv"))?;
-        rotate_for_sequence(&mut platforms, self.next_poll_sequence());
+        let poll_sequence = self.next_poll_sequence();
+        rotate_for_sequence(&mut platforms, poll_sequence);
         let known = KnownObservations::load(&self.repo_root, self.limits)?;
         let mut summary = IngestSummary::default();
         let platform_count = platforms.len();
@@ -110,6 +112,9 @@ impl Worker {
             let quota = fair_platform_quota(remaining, platform_count - index);
             let result = match platform.adapter {
                 AdapterKind::ClawhubApi => self.collect_clawhub(&platform, quota, &known),
+                AdapterKind::SitemapCatalog => {
+                    self.collect_catalog(&platform, quota, poll_sequence, &known)
+                }
                 AdapterKind::LocalDirectory | AdapterKind::GitRepository => {
                     self.acquire_platform(&platform).and_then(|source| {
                         self.collect_source(
@@ -256,10 +261,122 @@ impl Worker {
                     path_prefix: prefix,
                 })
             }
-            AdapterKind::ClawhubApi => {
-                bail!("ClawHub API sources are acquired through their catalog adapter")
+            AdapterKind::ClawhubApi | AdapterKind::SitemapCatalog => {
+                bail!("catalog sources are acquired through their catalog adapters")
             }
         }
+    }
+
+    fn collect_catalog(
+        &self,
+        platform: &PlatformSource,
+        limit: usize,
+        poll_sequence: u64,
+        known: &KnownObservations,
+    ) -> Result<Collected> {
+        validate_provenance_value("platform ID", &platform.platform_id, 128)?;
+        let probe_limit = limit.saturating_mul(4).clamp(4, 64);
+        let scan = crate::catalog::discover(
+            &platform.locator,
+            &platform.platform_id,
+            poll_sequence,
+            platform.rate_limit_per_minute,
+            probe_limit,
+        )?;
+        let mut collected = Collected::default();
+        collected.errors.extend(scan.errors);
+        for candidate in scan.candidates {
+            if collected.attempted >= limit
+                || collected.errors.len() >= MAX_TRANSIENT_PLATFORM_ERRORS
+            {
+                break;
+            }
+            let remaining = limit.saturating_sub(collected.attempted);
+            let result = match &candidate.source {
+                CatalogSource::GitHub(source) => {
+                    let checkout = clone_read_only(
+                        &source.repository_url,
+                        source.requested_revision.as_deref(),
+                    )
+                    .or_else(|error| {
+                        if source.requested_revision.is_some() {
+                            clone_read_only(&source.repository_url, None).with_context(|| {
+                                format!("requested revision failed first: {error:#}")
+                            })
+                        } else {
+                            Err(error)
+                        }
+                    });
+                    checkout.and_then(|checkout| {
+                        let (scan_root, provenance_prefix) = match &source.source_path {
+                            Some(path) => match safe_subdirectory(&checkout.root, path) {
+                                Ok(root) => (root, source.provenance_prefix.as_str()),
+                                Err(_) => (
+                                    checkout.root.clone(),
+                                    source.repository_provenance_prefix.as_str(),
+                                ),
+                            },
+                            None => (checkout.root.clone(), source.provenance_prefix.as_str()),
+                        };
+                        self.collect_source(
+                            &scan_root,
+                            &platform.platform_id,
+                            &candidate.detail_url,
+                            &checkout.revision,
+                            provenance_prefix,
+                            remaining,
+                            known,
+                            true,
+                        )
+                    })
+                }
+                CatalogSource::Markdown { markdown_url } => self.collect_catalog_markdown(
+                    platform,
+                    &candidate,
+                    markdown_url,
+                    remaining,
+                    known,
+                ),
+            };
+            match result {
+                Ok(child) => collected.absorb(child),
+                Err(error) => collected
+                    .errors
+                    .push(format!("catalog skill {}: {error:#}", candidate.detail_url)),
+            }
+        }
+        Ok(collected)
+    }
+
+    fn collect_catalog_markdown(
+        &self,
+        platform: &PlatformSource,
+        candidate: &CatalogCandidate,
+        markdown_url: &str,
+        limit: usize,
+        known: &KnownObservations,
+    ) -> Result<Collected> {
+        let bytes = crate::catalog::fetch_markdown(
+            markdown_url,
+            &candidate.detail_url,
+            platform.rate_limit_per_minute,
+            self.limits.max_bytes_per_skill,
+        )?;
+        let revision = format!("blake3:{}", blake3::hash(&bytes).to_hex());
+        let temp = tempfile::tempdir().context("stage catalog Markdown skill")?;
+        let skill_root = temp.path().join("skill");
+        fs::create_dir(&skill_root).context("create catalog skill directory")?;
+        fs::write(skill_root.join("SKILL.md"), bytes).context("stage catalog SKILL.md")?;
+        self.collect_source(
+            &skill_root,
+            &platform.platform_id,
+            &candidate.detail_url,
+            &revision,
+            &candidate.provenance_path,
+            limit,
+            known,
+            true,
+        )
     }
 
     fn collect_clawhub(
@@ -539,6 +656,24 @@ struct Collected {
     rejections: Vec<PendingRejection>,
     errors: Vec<String>,
     pending: Vec<PendingIngest>,
+}
+
+impl Collected {
+    fn absorb(&mut self, mut other: Self) {
+        self.attempted = self.attempted.saturating_add(other.attempted);
+        self.rejected = self.rejected.saturating_add(other.rejected);
+        self.skipped_known = self.skipped_known.saturating_add(other.skipped_known);
+        self.skipped_rejections = self
+            .skipped_rejections
+            .saturating_add(other.skipped_rejections);
+        self.staged_bytes = self.staged_bytes.saturating_add(other.staged_bytes);
+        self.staged_entries = self.staged_entries.saturating_add(other.staged_entries);
+        self.rejection_messages
+            .append(&mut other.rejection_messages);
+        self.rejections.append(&mut other.rejections);
+        self.errors.append(&mut other.errors);
+        self.pending.append(&mut other.pending);
+    }
 }
 
 impl Collected {
