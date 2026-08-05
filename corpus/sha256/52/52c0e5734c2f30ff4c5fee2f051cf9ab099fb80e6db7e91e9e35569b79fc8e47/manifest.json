@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:52c0e5734c2f30ff4c5fee2f051cf9ab099fb80e6db7e91e9e35569b79fc8e47",
+  "sha256": "52c0e5734c2f30ff4c5fee2f051cf9ab099fb80e6db7e91e9e35569b79fc8e47",
+  "blake3": "8187a8bae76a683dddc396eb8d9a17d653380c8f7dba6483ce77fdb302a9196a",
+  "size_bytes": 36473,
+  "file_count": 12,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4488,
+      "sha256": "d5ece4d437df91d5a1c8842e03b74fc35f6e00e08d5fb791595548dcfc0452d5",
+      "blake3": "85313f039bbb6e95fa688d5b629a827e62e479bd7d1308e8a4756578ad72bd90"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3192,
+      "sha256": "d629c1d7d7189b8ebaace2176e42f70f84595ac211e9e5a9f277357168e459af",
+      "blake3": "c85c8d0c33e7d4ff4431c06f6af6156d93845651e8449a5f10161a4a42d74515"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 130,
+      "sha256": "f1c01887650b894508382b1a4752caa12b5cc7af733c2c7226c14d8447b97119",
+      "blake3": "56bf05dac19e2f32227c607bdcce2a05087846024686721baf376090875f30c4"
+    },
+    {
+      "path": "asr_service",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "asr_service/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 296,
+      "sha256": "a5a2558551dd7508d780911347d93f9611b182538c56ecbfd7b67be1a3c6a655",
+      "blake3": "a6a0336da9b96bec55ba6225f0d36e09450acde25a92d615a4fac051263e4910"
+    },
+    {
+      "path": "asr_service/exceptions.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 174,
+      "sha256": "02f37418a605226e5f45094eefdfa32eb95ccba33af2a7c37375950d08170d82",
+      "blake3": "610fba733ca85171356187a048a867a3e80abfc7f572dd830761b60a84ae2b39"
+    },
+    {
+      "path": "asr_service/iff_manager.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2077,
+      "sha256": "f6fced153bc149cd355954cbc3e6490bf3e18ed8a734088c5419c82ab4b9a2e6",
+      "blake3": "fba6e7c947aa859d5946dfe93c911a93c5e09e10f6c17db11206a8443f45bad7"
+    },
+    {
+      "path": "asr_service/postprocessor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3512,
+      "sha256": "a607b15c36d740433adc4fed3b7969849c844c86ddd481947ffe824e03174145",
+      "blake3": "33ac43d28f76f496d8de48d1fc760f788bbc75cee270fe0d0477700ace41f69c"
+    },
+    {
+      "path": "asr_service/skill.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6250,
+      "sha256": "843254f6ab7f05f62aa1065442d198cf664c6897b6ce5b308fdbff4ab7355bfa",
+      "blake3": "c0ccb7a35238f9b9f706365ffea154828e6ea066c47558627c1c1f7a9ed6d31b"
+    },
+    {
+      "path": "config.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 303,
+      "sha256": "59d35e99f382557ae5df8faa5444d7a4a5b9878fa9c134c40459e98109abbabb",
+      "blake3": "67ed496f957a1a43afb9e9b07c2f22dbeb78542566887a7511bcadb33d1fb92c"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/asr_cli.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3797,
+      "sha256": "eca3c6a2e0d94820b5f2f6d8ebd43eb18ba00f7cd7f4c28e9826f8e8b7b6b3b2",
+      "blake3": "ce780faacdd715b6361c97954c72df8a8f4f0879e0e3f668da86280c5fb92358"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1991,
+      "sha256": "c0ed6aa90a904564653e4fc133bb8dc6c1b5d2c3fd7c1f2e38bf4e16b8922aee",
+      "blake3": "042a29188da5a388c520e1aafe60a260bf893206be23cb504901e586984a0431"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/test_skill.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10263,
+      "sha256": "c80c9fdca171bde9fbb109ff8b2bc003a55c3a789274ddecb6989c154c548fc6",
+      "blake3": "5f088f90dde3f4a69f550d19fd172640f4023b3aadf00d45350fab7e7420609c"
+    }
+  ]
+}
