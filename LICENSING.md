@@ -13,7 +13,7 @@ as **source-available**, not as OSI-approved open source.
 ## Historical Apache-2.0 release
 
 The repository snapshot and first-party contributions published through commit
-`238b2831431d6023011d4b6eb9f8fbfc7586bd6c` remain available under the Apache
+`8f43b220513c64d2846a8144398e2c6e0d878179` remain available under the Apache
 License 2.0. A copy is preserved at
 [`LICENSES/Apache-2.0.txt`](LICENSES/Apache-2.0.txt). That prior perpetual,
 irrevocable grant is not withdrawn by the current licensing policy.
