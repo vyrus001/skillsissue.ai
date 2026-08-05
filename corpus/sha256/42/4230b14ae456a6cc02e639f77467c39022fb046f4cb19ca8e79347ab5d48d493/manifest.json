@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:4230b14ae456a6cc02e639f77467c39022fb046f4cb19ca8e79347ab5d48d493",
+  "sha256": "4230b14ae456a6cc02e639f77467c39022fb046f4cb19ca8e79347ab5d48d493",
+  "blake3": "be2d6e58bda17ded3959848f47ee134be655fe1f9817a45fe9238fb0cc71f7a0",
+  "size_bytes": 133553,
+  "file_count": 11,
+  "entries": [
+    {
+      "path": "LICENSE.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10254,
+      "sha256": "7505b489cc8ad7f16ba08343184320f1583303cfacdb9121b9b756bc073df1ab",
+      "blake3": "7874d09b4e71dc3b62e7a0bde85afd4bf40b2b81400e0ca14aa42733b162399b"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10726,
+      "sha256": "6167bf1731e568b63110a8f27e987cfe386f44e64cd2d78d9080d5d7628a79c5",
+      "blake3": "6b81e8bdcb0795cd386c630a8a0a0d51ef63ca6bb0f282ac4cea6f834500ff1d"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/asm_schema_overview.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6110,
+      "sha256": "339dc491f567d58535dc7c3db1c4bef143eae53ba964dcaf1995f91c970fd37d",
+      "blake3": "ce4eef8fa50efe9d5bd17d77b98a44a5893caca4d71bde2679c48c17c5b94a6d"
+    },
+    {
+      "path": "references/field_classification_guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17665,
+      "sha256": "de83b5b6a0b16a3b3da2671efe94fb9535081154efdc55955caa3bfaf1bcd604",
+      "blake3": "056949e23cd8229d0483eb2030d14d7f940d20fa6582e5fac09af20078e13561"
+    },
+    {
+      "path": "references/flattening_guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7500,
+      "sha256": "4f3602b21e6fd6c3dd384a072b983470133d2b7abe5ec46da60a1ce8b7629aab",
+      "blake3": "c32c12c9045e4da5facf02ebb9307899a344ce0bc269acc3b7bca40314b2bd81"
+    },
+    {
+      "path": "references/supported_instruments.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5304,
+      "sha256": "eb9d30845eb05d8366d073883cd967a4ccc40eab18dfc1707c35a4100764c8bd",
+      "blake3": "85de4306b774f70847d90fd5a89868357158a38d7774ae6997051dab71c8fba0"
+    },
+    {
+      "path": "requirements.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 811,
+      "sha256": "21433e5a443ee926e059dd51ef4497a208bd2f4ae04f8585205375ca12d2510c",
+      "blake3": "25c2f11bd5b376ec62d864259c31ce47c09d9cb220fbaa03bfc50aa075d156d9"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/convert_to_asm.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17278,
+      "sha256": "ac7984666cd18a7a1767209b84dadf19a36b02006bd9390a9579e049814d3e53",
+      "blake3": "1381f2ee9aea3985dabc07c7f71cd8ebfcccdd21cf3631feeaf38712cb8d1803"
+    },
+    {
+      "path": "scripts/export_parser.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13847,
+      "sha256": "32467ff33bd588520d8a7a0acda12b2ec1b26d8058c6cd48c00ad44797a9d3b5",
+      "blake3": "16c61d8d92c5f86c2384836011ac0845b747f745e7f28e906226782c2a8c7595"
+    },
+    {
+      "path": "scripts/flatten_asm.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7339,
+      "sha256": "7ded9de71f82a88a3d9dedadb2713b5d33c9cb4d9a2014401dc6af35f90ef72d",
+      "blake3": "baf7252c116c97509802185522578b43fb0a7524e63a661af3c8983049518ce3"
+    },
+    {
+      "path": "scripts/validate_asm.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 36719,
+      "sha256": "bb06708d3d2376fdd5fcca1b189440d0d7a4044b4ac949f85aab69644386ccf7",
+      "blake3": "6196959a205c98ae1bb240432ac494b7579fa5a8b4250ecb74a7c70da7e6ec33"
+    }
+  ]
+}

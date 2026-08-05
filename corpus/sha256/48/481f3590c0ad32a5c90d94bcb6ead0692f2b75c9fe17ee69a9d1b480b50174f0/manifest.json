@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:481f3590c0ad32a5c90d94bcb6ead0692f2b75c9fe17ee69a9d1b480b50174f0",
+  "sha256": "481f3590c0ad32a5c90d94bcb6ead0692f2b75c9fe17ee69a9d1b480b50174f0",
+  "blake3": "8cba2d30e6b60a3895f00bec75ab9bde570002e553e8093831628edc3c5a6d52",
+  "size_bytes": 51996,
+  "file_count": 11,
+  "entries": [
+    {
+      "path": "LICENSE.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10776,
+      "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9",
+      "blake3": "d3f11c251f0ef236f42928164f0570d66c7009b511a53e0fbc05d7f2a978ebe7"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7754,
+      "sha256": "081935a6a163277537d46365f49d6b4a3cb40b4748347e7e88759c5927fa8cf5",
+      "blake3": "22253aa43b951f3acf5b5e9f55420576382bd6a4b8551603c78b4cf215efaa42"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 273,
+      "sha256": "f29638eb930e27d44846474620b0d817b4b77fb5d09caf27db269463ae45cfa8",
+      "blake3": "18cad0f7adaae400ebb0974b68a7b97b9be80c53bfbabcae899285ef4f02391a"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/screenshot-small.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1019,
+      "sha256": "b0ff24097dfcd889504fab312a0e20d1d79dde0745268647a8cc2471b4baf794",
+      "blake3": "4c8b6bf3c22f3a4c318b0e17fe82a63923142b731789e4f0871c38956b4e0dd4"
+    },
+    {
+      "path": "assets/screenshot.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 860,
+      "sha256": "4ff96a476f2a2ac4ca7b626f9d4b78a7aa8cce0219e0688c5f15355513b61b5b",
+      "blake3": "f417cbb3390aa3912c1b82ca749fc0e6efb7b4d1adf43413d89e73bd9473e007"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/ensure_macos_permissions.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1702,
+      "sha256": "9aa750f1e9592519d6c18b966fd65c1d4108c25bd3471ce625dfafd784856d7f",
+      "blake3": "0ff715bff893d446425057e9860a4f181c0fe9a3480fda6c3d12179c93c1eecc"
+    },
+    {
+      "path": "scripts/macos_display_info.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 482,
+      "sha256": "0969cfef9c9890c82cae5ad75a6cd40fd56d33b28f27347642ef5e837f18b042",
+      "blake3": "ff0dc65ce5a9e1c646a6e693a38c7b592fc31714fccedd2d9c75ebe9b755bb67"
+    },
+    {
+      "path": "scripts/macos_permissions.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 929,
+      "sha256": "cf110651350e50d600268f0a1a892ac8d662505474b4455cdfde2ac5b5f4aca6",
+      "blake3": "1b781cbccdb66aa4828f2aefc4fca9e5102d16d5bab3c3e14415ce6787209920"
+    },
+    {
+      "path": "scripts/macos_window_info.swift",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3595,
+      "sha256": "c7faff7913d6072284b7ef1e5d26c524ab861ad32afc0c066f24ba95ae3f3597",
+      "blake3": "b1106fd441d18e615cc5988b57e4b599859b224718e941c34c1c3a4ce2e5562f"
+    },
+    {
+      "path": "scripts/take_screenshot.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4947,
+      "sha256": "a31a2242e41fd1c5471651afbcced660f98fbc884f11e531218348f700a3f826",
+      "blake3": "7a07d3d338ff4802fafe70433a52b2b26f7563cd6d36acb1812cd4ee95bc12e6"
+    },
+    {
+      "path": "scripts/take_screenshot.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19659,
+      "sha256": "56eeabe2dac5d23915b9a0fb57a07431fad2d310c5444f60f71f09299899232b",
+      "blake3": "1bd15fdeb2b94144b446418dc2217643d7b78cf0f0b9177537f63423dc733cd1"
+    }
+  ]
+}

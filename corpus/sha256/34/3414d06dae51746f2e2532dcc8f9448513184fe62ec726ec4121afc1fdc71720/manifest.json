@@ -1,0 +1,569 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:3414d06dae51746f2e2532dcc8f9448513184fe62ec726ec4121afc1fdc71720",
+  "sha256": "3414d06dae51746f2e2532dcc8f9448513184fe62ec726ec4121afc1fdc71720",
+  "blake3": "6e9a7664639d355c25cc4cb53dfa50ee05cb560e1eed1eb8412744f4295b07a3",
+  "size_bytes": 628966,
+  "file_count": 60,
+  "entries": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10747,
+      "sha256": "eaeba6edfb0f93ffc81f3298f2e019b03a9baf4781dc8ff9257d72da8ad29e29",
+      "blake3": "0cd263ac22ed391ec32edb434beb6bd6e51b2b8bff278f81b6b8b4ff022cee87"
+    },
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1067,
+      "sha256": "9d60422fe9ca93a884bb2283fcb2f5b66bf0ff47a1656adb6c227da1f75f6d08",
+      "blake3": "34688b41d1de53f0f8973597da9a28aad61622e6e0b9c4c19ea4ffa570197147"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13804,
+      "sha256": "91af1665084fef060b0cbfbf5a304a3bb966ecd34a196fcbfa1f3bc0a95fef18",
+      "blake3": "1e3d6219f533087643bbbe3dc0c0205e5b0581156bff5ea1770ce94c7499d0c4"
+    },
+    {
+      "path": "README_CN.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12789,
+      "sha256": "141cc0983c9cd75c130fa6636633e11e4572cbdf642358c14f4181759e0c4972",
+      "blake3": "03d8a24f5c6d13df59dbb0afc336735fcbc329f1ea0a311e6fb166cdf8ad0f41"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10113,
+      "sha256": "7aa9eafeee6c0ecc08987247ea48abc5c02b8c72560ad9390ca50b56f536348d",
+      "blake3": "40a2726c263eddaa29cdfca4f219757c3f870946957abcdca483da1d419f2ac2"
+    },
+    {
+      "path": "evals",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/checks.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9081,
+      "sha256": "d517f5ccaf460543e69c35aa1b31566ac167781788dadf78c54b8ee4945dccda",
+      "blake3": "074f5e406b8fae7b87e633bab9a736c494ad7d12624242c112716be2d812117c"
+    },
+    {
+      "path": "init.ps1",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1930,
+      "sha256": "31a105f7c4a0f5d280530e290258f531a166e5b804d818d573282b97868b7629",
+      "blake3": "9cee8cb83575163a411c0d54e1309803f43ac4064daeba3e6950e0686345c9e5"
+    },
+    {
+      "path": "node_modules",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "node_modules/.package-lock.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1509,
+      "sha256": "be52b835b5daec3b981307ea79da842dad6cd98a8e92df88cee3c559135d34d1",
+      "blake3": "ab8c18c2bd0ca675a4d3fbde23134b52093b0650da668c53930a6365a071b459"
+    },
+    {
+      "path": "node_modules/@clack",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "node_modules/@clack/core",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "node_modules/@clack/core/CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4942,
+      "sha256": "c6f7c52535d0780c27c8ccaab9d7754fc8eee2c475918fe79313ee0f03ea42c7",
+      "blake3": "c515b5d28fe2851fbc9fb1a76f8ae42e206efced94016b03c62c6b7f7884670b"
+    },
+    {
+      "path": "node_modules/@clack/core/LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1062,
+      "sha256": "6b3c03752a3f3642f33f48a6a335451cde679660671997dfc5415a7f26d1b449",
+      "blake3": "29f9412cad2c924782c4476304c9aa84b5ab402713c504f20aff7a01acedf994"
+    },
+    {
+      "path": "node_modules/@clack/core/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 505,
+      "sha256": "04ffbf19bc63c9ae0f38141c3cab6b4114ae5784890ee34b1edc1d291c9932b5",
+      "blake3": "6cd9a3db18e0ba6e60aeb38b14ad5ea42bf9bc27f5f26ea2ad0bdd1c82d03eb1"
+    },
+    {
+      "path": "node_modules/@clack/core/dist",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "node_modules/@clack/core/dist/index.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 38199,
+      "sha256": "2bb88f5c56aca2b4c65e188f3259e71aeadb0a4e260669595c564375e0e94728",
+      "blake3": "bc116fb4424e43363f8f76561fa416c3d908ac84dcdb1e0da7f7527d56e61731"
+    },
+    {
+      "path": "node_modules/@clack/core/dist/index.cjs.map",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 95314,
+      "sha256": "8578d6b928b07baac87317ba8cfa527608946183d52a6356f051d1581efb14c8",
+      "blake3": "09d5a11adc8b6f29174a47e7c57b2fea7f2e2ece4e7c7828a7004f933ddf2980"
+    },
+    {
+      "path": "node_modules/@clack/core/dist/index.d.cts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5879,
+      "sha256": "75e0642a2d95c298737664af61df807ca77b8f60c81e1cc3d91639284ad8bf7d",
+      "blake3": "58e18efe138c6f6554f26c607e803564e469a8703cb555d8aff3055b6ff7cbca"
+    },
+    {
+      "path": "node_modules/@clack/core/dist/index.d.mts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5879,
+      "sha256": "75e0642a2d95c298737664af61df807ca77b8f60c81e1cc3d91639284ad8bf7d",
+      "blake3": "58e18efe138c6f6554f26c607e803564e469a8703cb555d8aff3055b6ff7cbca"
+    },
+    {
+      "path": "node_modules/@clack/core/dist/index.d.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5879,
+      "sha256": "75e0642a2d95c298737664af61df807ca77b8f60c81e1cc3d91639284ad8bf7d",
+      "blake3": "58e18efe138c6f6554f26c607e803564e469a8703cb555d8aff3055b6ff7cbca"
+    },
+    {
+      "path": "node_modules/@clack/core/dist/index.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 35967,
+      "sha256": "1dc22eaead0bf1538dde3bcd64bc7b5cfb8eaaf1b8e309baf0feca639be6afb1",
+      "blake3": "506b0b421b4f260c8f21e5cf7081ac8a82a08bc23d11637d3fb17b53808d4071"
+    },
+    {
+      "path": "node_modules/@clack/core/dist/index.mjs.map",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 95835,
+      "sha256": "b13dbcc5dd6f1942275c2ff987c5b9127420f14d84c46c7d9cfad84d18fb44ed",
+      "blake3": "1b9c3d454f26af69bb4cda76ffffc3a2207c645da576491b3d70a34d033fa5a6"
+    },
+    {
+      "path": "node_modules/@clack/core/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1244,
+      "sha256": "856662ae57014594ab584241462f947ce6e842bfdd6a7381aef78a776400febb",
+      "blake3": "1ce9c63aae68480f125a561a7c52ddefb0393c518d3ff4d92af45da25a89bb30"
+    },
+    {
+      "path": "node_modules/@clack/prompts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "node_modules/@clack/prompts/CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7687,
+      "sha256": "eed7ad8aa19adf4295aff975b9894224328a1ff74a97eb65ce773c45132a3000",
+      "blake3": "dfa985acd8cf4eabb1e34fdf392c9bc35b12ad1cf844008a2b040902e2c38b7b"
+    },
+    {
+      "path": "node_modules/@clack/prompts/LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1062,
+      "sha256": "6b3c03752a3f3642f33f48a6a335451cde679660671997dfc5415a7f26d1b449",
+      "blake3": "29f9412cad2c924782c4476304c9aa84b5ab402713c504f20aff7a01acedf994"
+    },
+    {
+      "path": "node_modules/@clack/prompts/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4713,
+      "sha256": "aa9fe43aea48ab66e9e20114e1f3abce6af68a3149c04e67f2c0fff2a403b15d",
+      "blake3": "a76212e807c727013f7fcb280893ae0e421a28493f19a107edecb0d54ee271dc"
+    },
+    {
+      "path": "node_modules/@clack/prompts/dist",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "node_modules/@clack/prompts/dist/index.cjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14209,
+      "sha256": "ac41d83d9bf79762c83b939113defc7bf5aa0a68c793d737af54a940d4ba6230",
+      "blake3": "ee3e4df3ee1d2493e1e7d49f28806f7d5b499d148974baa1c0ecd1f4c62f2017"
+    },
+    {
+      "path": "node_modules/@clack/prompts/dist/index.cjs.map",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 48938,
+      "sha256": "2787c5b7c135465c1ef6a7f4804dd6387e717b5ccfa92e9b1e8dd17c18b7ec12",
+      "blake3": "bc7aa80435d323a0591e3454033b6f5b7552a32eeb13735f94e32093a62cedfb"
+    },
+    {
+      "path": "node_modules/@clack/prompts/dist/index.d.cts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4933,
+      "sha256": "5b75f59a4ca59c0ba146cd872f731ce8764068cbce4f35cfcfe9f75aa2bc826d",
+      "blake3": "25e93e8cd29e90452f1844186f57da6340e2a615e924f055a3a1691f9e9a41c7"
+    },
+    {
+      "path": "node_modules/@clack/prompts/dist/index.d.mts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4933,
+      "sha256": "5b75f59a4ca59c0ba146cd872f731ce8764068cbce4f35cfcfe9f75aa2bc826d",
+      "blake3": "25e93e8cd29e90452f1844186f57da6340e2a615e924f055a3a1691f9e9a41c7"
+    },
+    {
+      "path": "node_modules/@clack/prompts/dist/index.d.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4933,
+      "sha256": "5b75f59a4ca59c0ba146cd872f731ce8764068cbce4f35cfcfe9f75aa2bc826d",
+      "blake3": "25e93e8cd29e90452f1844186f57da6340e2a615e924f055a3a1691f9e9a41c7"
+    },
+    {
+      "path": "node_modules/@clack/prompts/dist/index.mjs",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11865,
+      "sha256": "bd1ab4d19126da85f8c9d745bccddecd3274f186979803040475dd4b9a3a45ee",
+      "blake3": "2d147a28de30768c519f6791a32359d51c6afc9b423176793eec0b543b49f8d3"
+    },
+    {
+      "path": "node_modules/@clack/prompts/dist/index.mjs.map",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 49056,
+      "sha256": "0a22d3e0be16d7092baf07697efb88ddb8498d4873ba2c5e388a073e71d2fda9",
+      "blake3": "0965e8aaa69910b69743524f5c8d8c9d3d884d63497b92b7715211db19c464d9"
+    },
+    {
+      "path": "node_modules/@clack/prompts/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1242,
+      "sha256": "ed25b4c2ef84bc1eeb23c88ee30d0a7f7301f4b5995c53e42cc7298ef549038f",
+      "blake3": "b6a2ef25aca32eb450b21fe63451f1af6c8e54728b2e7ef831e29ee3b5bee88f"
+    },
+    {
+      "path": "node_modules/picocolors",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "node_modules/picocolors/LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 787,
+      "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750",
+      "blake3": "2aaf849e247bacda2a00f98fb32208c3ba67179d2d9506dfdf232b0a2cc482cf"
+    },
+    {
+      "path": "node_modules/picocolors/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 622,
+      "sha256": "5027b2836551ea0f91fa27b97335de905e24e1459d590eacfa45c0156962b70c",
+      "blake3": "799440f4920e7be8ecf3a27e5379dbeb71246e2b7b7fb49e5ed9a2c84548e923"
+    },
+    {
+      "path": "node_modules/picocolors/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 552,
+      "sha256": "ef2ac226c4811d312e12c64214c453878653e834482125ae475f27cea60de737",
+      "blake3": "6b455c64be8226cf93ab88bcc7c169f09477a5c33fca8964852ffe10828a2b47"
+    },
+    {
+      "path": "node_modules/picocolors/picocolors.browser.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 598,
+      "sha256": "a2e045ba16013e35c7045797ae940e3ea1c0e0ada13467bc73f7538690ea091a",
+      "blake3": "c036b81359ecb17d63f2164fcff2423e640e66c03d9b573dea6bdf2b1456257f"
+    },
+    {
+      "path": "node_modules/picocolors/picocolors.d.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 138,
+      "sha256": "8c5f0739f00f89f89b03a1fe6658c6d78000d7ebd7f556f0f8d6908fa679de35",
+      "blake3": "8632717af879783ee397a4e6f0c5b644ed38b9d82c31275b3c860530f0bb3710"
+    },
+    {
+      "path": "node_modules/picocolors/picocolors.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2663,
+      "sha256": "213bb870fcaad4def0215fe34fbb0f529836cc4d2462e02f14f1a49d09781625",
+      "blake3": "66a286cee589ee66e6ae83ca63043760017d1929cd158365ea829c525842cec1"
+    },
+    {
+      "path": "node_modules/picocolors/types.d.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1013,
+      "sha256": "590595c1230ebb7c43ebac51b2b2da956a719b213355b4358e2a6b16a8b5936c",
+      "blake3": "f79de04e07733d227d3428bdac0151dcf1d5224506ab75d6c431249bca6e6fb4"
+    },
+    {
+      "path": "node_modules/sisteransi",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "node_modules/sisteransi/license",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1079,
+      "sha256": "ade66f698fd417addc4d948a85ef33e8abb302daff6453feda18b191d250e54d",
+      "blake3": "5a354e200d42d1b2c05cc48a05d4149c2a226ed883f8d04a4a5fd5bb98509021"
+    },
+    {
+      "path": "node_modules/sisteransi/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 659,
+      "sha256": "4a17bc5c93db1b8f01d84708031339f3a22f39e60e1a92e089cde82f0bb48633",
+      "blake3": "ec134f2886ebd372b1b8a0ad7f442a357f2a77cdcb73d8bb96462962a9934a55"
+    },
+    {
+      "path": "node_modules/sisteransi/readme.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2587,
+      "sha256": "3f4e9124698b113202fa43705e2c019cc7b9258de49094b045ecb1194910719e",
+      "blake3": "16f08f028e73b0461e74655e7000127ae95e84f1e06fcc3eac71eeb414c10345"
+    },
+    {
+      "path": "node_modules/sisteransi/src",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "node_modules/sisteransi/src/index.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1361,
+      "sha256": "279f11bfe5f11e91eb935786d2251bcc55d4d61339177f3c5fe1fec18a4ca51f",
+      "blake3": "128f60e9afcc700d95982f5736e0f36a3e75c0812f46ac0c31c4d501fbb0caca"
+    },
+    {
+      "path": "node_modules/sisteransi/src/sisteransi.d.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1105,
+      "sha256": "b16cf6d7d309a6db2184b9eb97d6c9686bbc92cf8d335bc73c88ba5a8237429d",
+      "blake3": "49ac3f9ded97d1163016ce27ec1f9fd00f81c1ee77fb22902f2a39a4911bcf18"
+    },
+    {
+      "path": "package-lock.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1893,
+      "sha256": "8f34a06697beaf86df344b7f4f94135bc69b4f6fb1d95617bba7a8b25512530b",
+      "blake3": "a7b3767c4dd7aff5a05f66d777387b0ba98e0d206f2355c7dc62220f54109d7a"
+    },
+    {
+      "path": "package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1216,
+      "sha256": "5b1f5b608b41d5e92376b0e2dd3b78cefb2ac2653919f3a24b8428149f7abae2",
+      "blake3": "2a68570fbf814cb65129ce729ecb67570a3a52620bdcc51fc0716451601f87c6"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/black-box-epistemology.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11337,
+      "sha256": "ea5432557ddba6a03bd42a9dac7201f623ca3a11e29804ba02dc7b70da665b26",
+      "blake3": "3b3ac2db54fbc666831c7a8b128cdc2f916422493fe330dd371a1bc8c540d332"
+    },
+    {
+      "path": "references/bounded-control.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3556,
+      "sha256": "02b0a99e47e3d88979db9dd8ec90729a542c63a4da4ea145f28680fe360e5bf0",
+      "blake3": "edd9534549739ccbd4abcd257b5f51b68ed520ea2a93b41c7c7e48faa888b193"
+    },
+    {
+      "path": "references/closed-loop-workflow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5874,
+      "sha256": "af3cd606bf8b79a075e16b66fed9757788c049bcb706091deac04bb3f638bdf5",
+      "blake3": "30259c50b7d58ed5d5809f64aec1a1756559cf5c1722f5d6f556d1097e39e5df"
+    },
+    {
+      "path": "references/discrete-systems.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3729,
+      "sha256": "cfabae9ce5fe5140db7e761f80ff245ae5c19c8f05437b208676e78fcbd9d0d3",
+      "blake3": "3f3b84aed65bb69e3bedbd397f1f09c2952f03e06e3bc5cfa1c3536ed3fc2f98"
+    },
+    {
+      "path": "references/disturbance.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4216,
+      "sha256": "6d58aef6f4d29ea30a053f9e7e8a786c9a30f0af767369bfeb2394e595d5a62f",
+      "blake3": "96aa1a8fc4713b841aaca06e1193c3ca42b6d23997ddd3f2107bfa6bbb67843c"
+    },
+    {
+      "path": "references/information-and-control.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7959,
+      "sha256": "82becada0f3569496a7604d98ddbb3741b6c06cadd3945cb518634ba165f62d5",
+      "blake3": "5a932f032fd3d5634a7356ef73caff2be48260bad1ef2f792383a9cca6fc2e2f"
+    },
+    {
+      "path": "references/modeling.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3826,
+      "sha256": "c6c1118396cbd887901a7001946eec9f5090b20fb4514d2703e7627b959acc28",
+      "blake3": "7adebd43dd1ca48965fc43c9303487a9cc6b3b0ab2bc12a1b3897e598555df06"
+    },
+    {
+      "path": "references/multivariable.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4522,
+      "sha256": "6a81f35b18c1862061a888b9ae66100f80b3c17ebad82e7b429540f07c96d7a5",
+      "blake3": "d0e5a27d0fcd45fd008a3249b8d1d53a1ef49f3a177d0b37737de3d9249724ed"
+    },
+    {
+      "path": "references/original-text.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8832,
+      "sha256": "610130db9a07fc7f7f14aedb5cd40e1b632c4d05d6d70d379439c75214ecd065",
+      "blake3": "dd2e56482913a07010367c9a53d9d06de4a3c3cf98cc200eff0c410650423b6b"
+    },
+    {
+      "path": "references/possibility-space.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8087,
+      "sha256": "b5f7dad07ec6f6d698a0475a8eb59fbf37e75b9a861a00a5b0fd48d8a1972cbb",
+      "blake3": "517ff362e57ed8f15c92f39dd6176b0484af6f3ad396ef83be9c69b08afaebfe"
+    },
+    {
+      "path": "references/stability.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6910,
+      "sha256": "4bfe458df65593ece966596b79d1be4e1d99b7e686f42b78305409d171955343",
+      "blake3": "d11d36260be8aa360b699456683215a26094462d2dfede0332c43aa6e6ae3ab1"
+    },
+    {
+      "path": "references/state-and-control.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5129,
+      "sha256": "b1068ca25b2b8533055dca4b99f9fde1860b1cb0f71d07108cdcfffc06485e9a",
+      "blake3": "7201fce1c5c5f924584701b62fbceb12a0d2a02ff7b32f8a05ee7b92b84636bb"
+    },
+    {
+      "path": "references/system-evolution.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12029,
+      "sha256": "89a9654b1f56acb3e1fb4f59c1659a2bdcf2c7a6d8b2ae6071cecaaf4539fd89",
+      "blake3": "7860761baa6041eccb9fa87840b77bc44e72fbd31bd3bcfda5140200cced8609"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/install.js",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15465,
+      "sha256": "c5c1c9257a11ea5189dedfcadb97b66341d962212ad412aad43225f8e8e45951",
+      "blake3": "09d09b61bf9332a2267dea00156f94d3a954cf1e877c542a2848e7db69b291ab"
+    },
+    {
+      "path": "templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/change-proposal.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1968,
+      "sha256": "fd0ebd2ad4a1556cf7e2dda9dc978e5a411079fce148501949360817d03c7f6c",
+      "blake3": "195e5930c6d7e3bca06117f239e3c0228fe256f387ec6d7c657cd028ff9a0b25"
+    },
+    {
+      "path": "templates/debugging-checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3938,
+      "sha256": "c66f7db4d91be43dc5240063cf75997922fb1b1aa62ef052a12bf7ce85cba60b",
+      "blake3": "d7b0fb6ed1c52fe85e668aec6f744f749edb3eda0ec306156ec1cb4b7cffcf54"
+    }
+  ]
+}

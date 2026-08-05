@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:1ca7a049a5d9ae576a105cc9ce789557b9a9ce37e4bd666c815a2548d2fc65fb",
+  "sha256": "1ca7a049a5d9ae576a105cc9ce789557b9a9ce37e4bd666c815a2548d2fc65fb",
+  "blake3": "e67ce84ee26bf8b91e11226d59129f09b0d97f527cae2386f550dd1b6c9d7be4",
+  "size_bytes": 11563,
+  "file_count": 7,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3864,
+      "sha256": "c0c6e690d0f0c2042b17f94312a1a7285c90aa41789ca98287b3364a464f0e52",
+      "blake3": "74b922b61955b0ac87801b186471ca04570fd76dfac7fc8b85243fb0e7b9084b"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 139,
+      "sha256": "66295087939fc31b94ae3117bf1b7081108abe7bbf552676379e73bdc7295994",
+      "blake3": "ee2239205ce32ba7c41647673715ef929c5e093208fbfa25ed950b9330df9991"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/feishu-wiki-api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1235,
+      "sha256": "ce5fccfc7d1e90b4f2fe91fe1db416a4c45e64ba7dd1cf6ce7d924c95c3e65ce",
+      "blake3": "15bc415652cca559277e35e53ff44f4f52c9b1ce2c5600a9ed97690a59dbe4a4"
+    },
+    {
+      "path": "references/github-issue-template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 934,
+      "sha256": "8342e1cc823b0ba580b51f40773effbb4e6d88d4ccdc8e6fcecf0f71f0571353",
+      "blake3": "e765fb8962d8d97082d9d82923d81d4b0883dcb4286f32a785a66cc7cfd37ebe"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/build-issue-body.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1141,
+      "sha256": "a6c8438829e603f31990633f56c85e950a329d626e0d2b6a7ad2a3500534231b",
+      "blake3": "581dd28f5edd37a780ff194ada4b0b86eb5e6fffa1deb6ba1dc310ed112070d9"
+    },
+    {
+      "path": "scripts/create-github-issue.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1279,
+      "sha256": "0f3c829eb19d12fd06efe8bd4c2c4e0166ebc8b64df39b6b2ca3c7ab59a48033",
+      "blake3": "6d56d3157a2ecde22cc7ea2f8d418521ffb20caa3333476d4cebc3e3ca8a046b"
+    },
+    {
+      "path": "scripts/sync-feishu-wiki.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2971,
+      "sha256": "8127f0e5b5bb64fbbb428d06ac148ab74d28d1996e78d445c5df74d3a7a1a66f",
+      "blake3": "3faa927c35f44b302e294e493aa42ae4068bd905bd9b52897a84b9d3cb92c98d"
+    }
+  ]
+}

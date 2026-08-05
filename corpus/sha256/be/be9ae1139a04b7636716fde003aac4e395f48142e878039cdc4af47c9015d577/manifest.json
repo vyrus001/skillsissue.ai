@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:be9ae1139a04b7636716fde003aac4e395f48142e878039cdc4af47c9015d577",
+  "sha256": "be9ae1139a04b7636716fde003aac4e395f48142e878039cdc4af47c9015d577",
+  "blake3": "0c83eb0e8598ea106592ebd54b66988d9ee6f732cc89a44c563b3bafbe44fa99",
+  "size_bytes": 50530,
+  "file_count": 6,
+  "entries": [
+    {
+      "path": "LICENSE.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10254,
+      "sha256": "7505b489cc8ad7f16ba08343184320f1583303cfacdb9121b9b756bc073df1ab",
+      "blake3": "7874d09b4e71dc3b62e7a0bde85afd4bf40b2b81400e0ca14aa42733b162399b"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7980,
+      "sha256": "49cb573916deec6fcf6cc2cb1b573469cbc8c34b84326597ce2db22d0202393f",
+      "blake3": "d28dec1ad6da81a27b077798849280b377c8985e4eaeb5aa01e79efd5dbbf457"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/scverse_qc_guidelines.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7587,
+      "sha256": "a056c4d17d8d39aa9b034aff89e435c5d2371e66470853d3cdff978e34c6fc45",
+      "blake3": "07ad72703f096f09e4a005323f23650ec26b175604c8d9f14c24835ad05d7021"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/qc_analysis.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 9533,
+      "sha256": "dbcc2983cacaefffd2369bfae35342fedc22a1ff6415571055e0d9515a85e525",
+      "blake3": "9f44f9152156389bffb1849245e46b333bf8ee718e89cad9317df698a492b27c"
+    },
+    {
+      "path": "scripts/qc_core.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6675,
+      "sha256": "24fa2e13fed1b5cecff1f7ed8c5c594314426fd44d418d0526a00480a0c96352",
+      "blake3": "210fad1b424cacfe05f3a6e48238d0150698f736d445fe2caafa864cb94ac373"
+    },
+    {
+      "path": "scripts/qc_plotting.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8501,
+      "sha256": "12bf1a733540817fca963d42deca1b55cc3bd0b6ab26a34472ffd9d344e63c48",
+      "blake3": "91318ccbd31cc9c3c7734328a9809e04734571d7bcf89fc575b76172eafdb740"
+    }
+  ]
+}

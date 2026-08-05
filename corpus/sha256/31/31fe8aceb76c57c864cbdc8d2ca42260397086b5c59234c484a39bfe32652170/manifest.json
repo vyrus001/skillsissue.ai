@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:31fe8aceb76c57c864cbdc8d2ca42260397086b5c59234c484a39bfe32652170",
+  "sha256": "31fe8aceb76c57c864cbdc8d2ca42260397086b5c59234c484a39bfe32652170",
+  "blake3": "29920c8f914f5aea8efc86a78217b89ad2b66f1c30f9dca79ebf96c48ae28619",
+  "size_bytes": 77253,
+  "file_count": 23,
+  "entries": [
+    {
+      "path": "LICENSE.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1057,
+      "sha256": "0f377d9b2a1db642e4b0531ffa126e96d9bc6c085f8d9441f220fb25f723c6f8",
+      "blake3": "9e448bfedb84857fdde0484cf14e117a4e317452f530c00528e9ebca433f8d22"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3404,
+      "sha256": "e88a46da978cf6f088a788fa92ee736df699a355a72f41f14bdc258bf3ef57e7",
+      "blake3": "bdf0a54f926ef47ef30d3f76a3290ff47cdf2bb971829af34d8fdd2158fc7a59"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 497,
+      "sha256": "4b30833ad6a110f63a7809ee1f11f2154f2301f4ae845d0432208f386d97f3d3",
+      "blake3": "1231b9e387317f697dcd9339adf32d1c7a272cf6ccd2a4630db312bc5625fa4f"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/notion-small.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15777,
+      "sha256": "00f5e4b758cc5c3e36e783dca2fabfafd05169c2f2175063e56d2e1fb6a55f81",
+      "blake3": "34995bee0c8cd5a63756afb95e363c8b71d11d137e04446acee84f126031f4a7"
+    },
+    {
+      "path": "assets/notion.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8526,
+      "sha256": "5eef1e62d96a3d09bc9d18e4140486c22799145b017033bd0924c2c49d741cd4",
+      "blake3": "812b69f5cf1a5777f0de188abe1d4e0ca815b2a533315cc8bbd6e3e9b6ef32f4"
+    },
+    {
+      "path": "evaluations",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evaluations/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4254,
+      "sha256": "3b4e26d61cf17f9357e5a80f90da662f3d858294f69cad5e94c620bf1ce29455",
+      "blake3": "849e3b2df22a949f25912f1cabe3bc8f5954c35328bf3e29a39f89d18c0c1048"
+    },
+    {
+      "path": "evaluations/basic-research.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1731,
+      "sha256": "41077f0746f28d4e6a12d88c6c2a23ceb5590dc448df4ed8c1335165d0ac6bb9",
+      "blake3": "3d698482d37b8e1fe74ee500b59a1c7c197f51eb9d8810c3c51ec75e37e20fe5"
+    },
+    {
+      "path": "evaluations/research-to-database.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1681,
+      "sha256": "a442c3a60b864f98c2de80bc2e55176773fe31f87feab59b9d1bfd029966496d",
+      "blake3": "76df852d9eaccb00b7d50a4fa896bb65c62772e03e98e2bde7f89adfa3198a43"
+    },
+    {
+      "path": "examples",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "examples/competitor-analysis.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8213,
+      "sha256": "e51bf2f471d928c4c908f85c86fba81a1b42ceba468bb46024e33adf5c29e4ca",
+      "blake3": "fa9f4cd33ffaf5f163ae3931c19d678592fc5d846fb4b66c427211693924cfa2"
+    },
+    {
+      "path": "examples/market-research.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1899,
+      "sha256": "cb4ed96c9763fe2309354a40a7822c4770a7952909c01b890b3962e0e01adc4d",
+      "blake3": "d49c33a5ce8728163de048443dc798a74cc3c5d9717bb71c3309c62c75df5ba3"
+    },
+    {
+      "path": "examples/technical-investigation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6521,
+      "sha256": "2db3f3a1664e6bff4b196b0e96d76e8048fc641722f570cb156f36aed8e74d85",
+      "blake3": "10666482eb792802d831eee95c17ae8289a97c975200997722b467a2bb9eff47"
+    },
+    {
+      "path": "examples/trip-planning.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3789,
+      "sha256": "3e2f7f8fc31fb2244af76a09649b8ecf2691ef737398ddef66d5da6e515c350b",
+      "blake3": "a5952fe046c6a67c4ebfdba3cbefd43a50bfce1f276451e70db6c896b5b22825"
+    },
+    {
+      "path": "reference",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "reference/advanced-search.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4593,
+      "sha256": "f9c70a3b731ce76f35aee7caa53888cc8b22dadc17dd0f54cce95933a0cbbe91",
+      "blake3": "a964cd5929dd30dcd78cb8e296c377e5979734b0a7c4c23f05275eb98d521555"
+    },
+    {
+      "path": "reference/citations.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5152,
+      "sha256": "fc81043a5220a350ec17d818c43814f0a5fd466c6cbaaf732fc487d21833a5a6",
+      "blake3": "033463129b0effb4396550c2c54a11228bf7206b653515d93ba9992a19d24e59"
+    },
+    {
+      "path": "reference/comparison-format.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 870,
+      "sha256": "e80f6ca6573d5d776e24454df04b4a038498dcd2aa93d97edb4113cfdbd88851",
+      "blake3": "a51caff3277957b231e65121fa938b04dad215da8aadca3afebaa453269ded62"
+    },
+    {
+      "path": "reference/comparison-template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 911,
+      "sha256": "4c3af7b72a704beb22ab8741e97d26830421dbb5f489fdc53509fdcbe4000f2f",
+      "blake3": "ce5e72ec0e3144a3296cd1ea200ed223bc93e23f5baf7099d2157dab4e849c09"
+    },
+    {
+      "path": "reference/comprehensive-report-format.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1077,
+      "sha256": "956da824ce2e9c5a167dcca8322b18e29c0438ca91109f7e2cbede6785541979",
+      "blake3": "43b8cd92b444ac2604c4eb9c143a9e8937d1ff5c9e98217f92083f47a9c0ef37"
+    },
+    {
+      "path": "reference/comprehensive-report-template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1270,
+      "sha256": "043096d757ab5cb681c8e0abc3783663dbc5afe544012f8a9a230b0c31d62882",
+      "blake3": "5c99645b40803f21365ebc961e938d61dbb901e6e8502de85b09a62b5416987d"
+    },
+    {
+      "path": "reference/format-selection-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2798,
+      "sha256": "6280f5219e141b3e284fbe47e550a1bed1831de044eb0b1b145b43ac86f38133",
+      "blake3": "061f76f7f396e8ca43cd8196ae2b8d9d2adda7cd41166d06f38b9d19bd9b5924"
+    },
+    {
+      "path": "reference/quick-brief-format.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 767,
+      "sha256": "de02fca650fb676db4e2dd5772c9393b91fc9467edc2d4e33ca57df7ccd58d13",
+      "blake3": "81bed1a0b8b21e3dfb8027ce529a4cce399b18a2702dd2dbddb3edb52be01e52"
+    },
+    {
+      "path": "reference/quick-brief-template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 473,
+      "sha256": "280912ecdb1c1543038a883d6341587aa8afc8f699952b7449e314dbe68c9243",
+      "blake3": "bd233331bd0d900994e528fde79bb54afbe02bfe168ce0249e21941b3df0dbba"
+    },
+    {
+      "path": "reference/research-summary-format.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 841,
+      "sha256": "29308d84318a717c8f8550bbfaded1826d4f7372f658c68638380d6a2b58f89b",
+      "blake3": "31b03fe855481dd1653d9bb68ebcd86835fed1ae0ea8cfdf87ebc1f8f02a4002"
+    },
+    {
+      "path": "reference/research-summary-template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1152,
+      "sha256": "c1e704d6b28b4414fd8d37b07095859704e34ce92041fa872b15e53da15dfa2a",
+      "blake3": "db280491fb529bf2cc84f8bc9b393414ca47f860399185cb122c1a290b3f0da2"
+    }
+  ]
+}

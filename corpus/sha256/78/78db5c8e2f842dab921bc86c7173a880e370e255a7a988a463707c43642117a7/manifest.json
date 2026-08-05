@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:78db5c8e2f842dab921bc86c7173a880e370e255a7a988a463707c43642117a7",
+  "sha256": "78db5c8e2f842dab921bc86c7173a880e370e255a7a988a463707c43642117a7",
+  "blake3": "69dc7e875c82b2abeb2aae1564174d4723a9290fa0e7d2058a2d9916d8638445",
+  "size_bytes": 202238,
+  "file_count": 22,
+  "entries": [
+    {
+      "path": "LICENSE.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10254,
+      "sha256": "7505b489cc8ad7f16ba08343184320f1583303cfacdb9121b9b756bc073df1ab",
+      "blake3": "7874d09b4e71dc3b62e7a0bde85afd4bf40b2b81400e0ca14aa42733b162399b"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8828,
+      "sha256": "f30017df5d499427a701ec6cedfc5c9948ca3bd04ee1a2b6a585a29cd93ad0d7",
+      "blake3": "6c490158205897aff58e7934831a711df1efca0e997e09c9cd069c39b6859e58"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/geo-sra-acquisition.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14122,
+      "sha256": "85238c3bf2c43d2ca5ad8c4fb4418927ff3443bf8993813925a188a1c287d170",
+      "blake3": "29f3a6bbcfcfad11af2d1e22166a16bfe723eb9d0fdac667249d6b6d3b87dcb7"
+    },
+    {
+      "path": "references/installation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1816,
+      "sha256": "d214ad4508868ed9fd648ec625e633c2b7629df300a4953a4b89fc6010fa7577",
+      "blake3": "f7c2ea064fc6cb55e621ba2eeb950d252b909255705fb48a0fb717049323bd6c"
+    },
+    {
+      "path": "references/pipelines",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/pipelines/atacseq.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4181,
+      "sha256": "ca6ca22e409e78be3aa6f0e18de9c255fd5e9ac66c59d71ce214fc4a76849a1b",
+      "blake3": "a3f111e7dfb13af03e722aeaf6c05056a189368625bf7bf78b687bb9f0d45ce7"
+    },
+    {
+      "path": "references/pipelines/rnaseq.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3614,
+      "sha256": "c7b0c59b33d52b62d6ca2a476f1f45c849dc83923773f258a0731ba2b7b7c93a",
+      "blake3": "10893907d1d1bbf1d7535c0515ed3a9275194a2dbb68367b1c6a0001badd4191"
+    },
+    {
+      "path": "references/pipelines/sarek.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4018,
+      "sha256": "67fa5ee65022875b95e6181baa3eec67c572d0564d2aa7bb498d85551458c2fa",
+      "blake3": "fdbd179c1ce62c71ec0bff78c0d7960c9b8db6c31583e538d54c9a50d7c10924"
+    },
+    {
+      "path": "references/troubleshooting.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3368,
+      "sha256": "f49b6b48590170770d8e0eb69ee9894c3de04d779b0031d0515529f2e7c01450",
+      "blake3": "18c75ee7b6d96a6d3a247a9db98ba0ca81267042d44fca35c002f2bb0183a7da"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/check_environment.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14111,
+      "sha256": "ab259534959c86c4bcdb7a4a6d2eab1edf9d47de6e273c2a3ca0eb13e6b61604",
+      "blake3": "52c85f693d79a44939521856949fd1be35fd60743df16ee79318349ff3935fc2"
+    },
+    {
+      "path": "scripts/config",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/config/genomes.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3520,
+      "sha256": "940bd833b87542a25705668a3ba8f157ea25fcb698f654f2d410efd410fa4172",
+      "blake3": "136a82ed41a40b93bf79daad8787b5ec11f21a9fb83829857b9ea59016398fc6"
+    },
+    {
+      "path": "scripts/config/pipelines",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/config/pipelines/atacseq.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5158,
+      "sha256": "fb63a0f76fec6b71303e8a58bba8c4c38a56ee533784d438953fe5e394444158",
+      "blake3": "d67383e60e2e324c6f40956b6b0fed52d6c5d2f77705c90c1af0079da379ef3a"
+    },
+    {
+      "path": "scripts/config/pipelines/rnaseq.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4173,
+      "sha256": "8df7b123fc64328aa4b97d047b316cdbaf4622d89684dfd0b6aca5a5da263f5a",
+      "blake3": "6e123b1f0b9807fc97551878eebc04b283257ae9d52d629f6a04a9d1f43dfb7d"
+    },
+    {
+      "path": "scripts/config/pipelines/sarek.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6278,
+      "sha256": "03a904ab4a5f3de216200b60646f58faa37416d4bafda6289fcca91caf1c4f2f",
+      "blake3": "2e2f5b1698409e830155dca5e988f800215a3cabc2a92931152b9a579f31b9f6"
+    },
+    {
+      "path": "scripts/detect_data_type.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9953,
+      "sha256": "b69c0293c00f292b27e00b5d36629469e843e60f952d299ce85845fbf258314b",
+      "blake3": "d421df5558bf0bbd20e0be61ff7e3f7cc82102899cecd2343b9244506966dea8"
+    },
+    {
+      "path": "scripts/generate_samplesheet.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15440,
+      "sha256": "14a4acb03e08369ea9d73de872b20e3578bcd3eec7bbfa03c2df6adcf5eacbf1",
+      "blake3": "7b227a70329fa2e65700ba5680bb0014282e6f783e11dc1fa0fd2a6da0981736"
+    },
+    {
+      "path": "scripts/manage_genomes.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16718,
+      "sha256": "d27e36e0c442b081ef7e60d426c037967afec97e441e8fd7ae0a5e436b64e863",
+      "blake3": "008788ec040a220956b5044317748ece1b144a9eb5807ccda09ff235ed42bc6f"
+    },
+    {
+      "path": "scripts/sra_geo_fetch.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24982,
+      "sha256": "0bd4f292350b47b71e0048a223ca50ebdde0ced1f33d5661daf756c73d1b5a31",
+      "blake3": "dcb9c8cec960eed7884362644bceb4f56d90cdf2d191bd04099c1a9d3dfc277f"
+    },
+    {
+      "path": "scripts/utils",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/utils/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1788,
+      "sha256": "4ef421fc4ad6f13aafc0c34e8c92cf3463cebb0c9f7732d2b9ff876c5cd4d89c",
+      "blake3": "b5e21be01006c7413db70c20a4af3ca094f2aea8bbdac5560f79b9750320ef15"
+    },
+    {
+      "path": "scripts/utils/file_discovery.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5169,
+      "sha256": "3540e5411b1bf52e017a1636a127c4f52392f5e888e0ace47361e4c29e3ef380",
+      "blake3": "7cdb18406caa1f4b02909c0203ce1be7506ef6d44dbe99c26fbbcd17b87ff0c5"
+    },
+    {
+      "path": "scripts/utils/ncbi_utils.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28480,
+      "sha256": "bfed0a0570f3344036277867c3e69fb6136ae87040ed2640d5b62919a046cfc8",
+      "blake3": "9f3f3d0c321ca8f7d1262bd35c0ea4146d68f0f1f04264f73d3544b51017bdf9"
+    },
+    {
+      "path": "scripts/utils/sample_inference.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7848,
+      "sha256": "3f2dcebbc540fa76e9285dd247cb0d6922d4fbe2588b7f7b3ad7ac7ab82b63af",
+      "blake3": "09bfc565ba613bf2b63252bdfb7bf43f837d07672eb52c12b583cfe2842c72c8"
+    },
+    {
+      "path": "scripts/utils/validators.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8419,
+      "sha256": "2572671195244a3ac7e67a6ebe4c44bbd541fbaa1afe3ebab1f81a46b29feea1",
+      "blake3": "30ad9b44a40c464acc80a1babb6834bd8e10c73ba1b4181b7816e89c0f03fd60"
+    }
+  ]
+}
