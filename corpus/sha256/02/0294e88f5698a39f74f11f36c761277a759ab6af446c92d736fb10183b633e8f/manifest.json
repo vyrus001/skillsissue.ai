@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:0294e88f5698a39f74f11f36c761277a759ab6af446c92d736fb10183b633e8f",
+  "sha256": "0294e88f5698a39f74f11f36c761277a759ab6af446c92d736fb10183b633e8f",
+  "blake3": "e08670c7cd18bc44de0a7b3dcce24e99b1ec67f5c9e45f3cfd8d4ff54430263e",
+  "size_bytes": 53687,
+  "file_count": 5,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14010,
+      "sha256": "1c8901b3162f58f085329ebc249867865ef69944ae7ff5032e46eaf24dfbe7f8",
+      "blake3": "99c12dc4af1af3d43f7adbccd20d077f998ba239692ee1c0974f2f19e2b2370c"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18865,
+      "sha256": "4bdb409aee5e4f3bfd330cbd14efb6fadec47579b41f46d0efd7e018c0c34cb2",
+      "blake3": "64ef7fe4c95f221042a38ef3eda12f532aa1f5078e596042d8da1ad0c41310fe"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cql_search.sh",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 5846,
+      "sha256": "3134ed3e7747eebc2048d9de61c984fdcd4b481aa73283e5fe4404ae0e9f72b5",
+      "blake3": "0b34f50fc13ee2e4d2c186beccffb5dccb16e8a5e711ec5351d60ef08ca32d89"
+    },
+    {
+      "path": "scripts/read_page.sh",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 5026,
+      "sha256": "bd725a4f8d5f2fd44baab3cc3867beb11e95bc8d852b551290c029fe70bcb214",
+      "blake3": "1d80bedc330b6a8455226f5ad45a8e027b1dc7e67e908da2d482e5da0c638b05"
+    },
+    {
+      "path": "scripts/write_page.sh",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 9940,
+      "sha256": "2197075db35177a27a96a6dd84c1a74d5e4502d0b0d40c0198efd950fb52eaf6",
+      "blake3": "e536d84ec3ebc19a274f6c3605fdfe242b7f7f3d4b150b98ed7efd2b9ea82e6b"
+    }
+  ]
+}

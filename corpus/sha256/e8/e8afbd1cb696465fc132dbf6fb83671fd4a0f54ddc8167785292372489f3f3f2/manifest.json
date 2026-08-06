@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:e8afbd1cb696465fc132dbf6fb83671fd4a0f54ddc8167785292372489f3f3f2",
+  "sha256": "e8afbd1cb696465fc132dbf6fb83671fd4a0f54ddc8167785292372489f3f3f2",
+  "blake3": "54933a0fb321e27faf9bcedec76b934eba6713057a387e3caec021762c59076d",
+  "size_bytes": 37759,
+  "file_count": 7,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10353,
+      "sha256": "1d697712a6e196be24339b467d3b56eaac48506b707f946c42b8fa82d510b938",
+      "blake3": "a7b67303ef10abab64f8af223a1e27eec7db2de96670e49ff7b5da5101328210"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/__tests__",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/__tests__/workspace-write.test.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3684,
+      "sha256": "978597b8880f237461ccbfce54f6a5323fa811ac63169f6894ece895b246e502",
+      "blake3": "130967303e743b8d86ad9a79833a0f60253cffcb9c621bd87d6b07544587a89a"
+    },
+    {
+      "path": "scripts/materialize.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5556,
+      "sha256": "6e8198231b1e9abe4941bb7696ceac0939223009493f76d6a3b5ab7f92f885de",
+      "blake3": "75bc1f7c306a3fcca830af6ed49f436de2def8a2fdb3c49d700481e80865568a"
+    },
+    {
+      "path": "scripts/promote-file.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5869,
+      "sha256": "80effebf5661c2c31f992432f73eb17f70c04883a5a2843365d7d7b02cf40fe2",
+      "blake3": "2ad1d2074ecd1693176d2c0f3453cc707a3e8d701a8959154525ffdba5535e4c"
+    },
+    {
+      "path": "scripts/signed-download.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5071,
+      "sha256": "5fe91900b6bb87a6ece8f2eafcccece1092e2fa8c32b04b33b2541d851b98ef7",
+      "blake3": "150a0c3742a4d6c492620c830f8258c6a2d957e77588eddae25f187aa506f0c2"
+    },
+    {
+      "path": "scripts/signed-upload.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3667,
+      "sha256": "4f8719083d2dedce568de3e5319de104ec91d2be4791decb151cfacdea7ec22e",
+      "blake3": "d60c534949f6c7919ce232e9c04e0bfc3fa2829a7dfbc41e6368b8150e92036a"
+    },
+    {
+      "path": "scripts/workspace-write.ts",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3559,
+      "sha256": "21cab071b71df99db771891ab9a55e9497e97c1d6806194b34ac963516de9eaa",
+      "blake3": "0cc65c54a2408488c3060f4d5709c51f1c3064d432c97d3798d45b1521d9898a"
+    }
+  ]
+}
