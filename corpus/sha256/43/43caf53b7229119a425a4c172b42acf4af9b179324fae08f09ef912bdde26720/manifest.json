@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:43caf53b7229119a425a4c172b42acf4af9b179324fae08f09ef912bdde26720",
+  "sha256": "43caf53b7229119a425a4c172b42acf4af9b179324fae08f09ef912bdde26720",
+  "blake3": "1da1216f0248e56b26c9912a7412098bfe7aedc727537ca2351d2d83e891726a",
+  "size_bytes": 60488,
+  "file_count": 11,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22791,
+      "sha256": "5a77cc309e6284e85c986f3ff2d2c1eaa2fb9872ab3c3d3a47a2241b16a73c79",
+      "blake3": "4310a671057cc3ae1c0be711848da714363d4db8fc2298839f45705016618ed2"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 143,
+      "sha256": "a130835b60ec15844f7d3e1e0d82e01a23ae19fee2d1d7d067a7bf046784cafb",
+      "blake3": "3bc949189a65c3b7c1ecc5b76808230d4aa31ce12edccc883120afdef48d352e"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 413,
+      "sha256": "fc1361dabdbceb91852938c94e0da5ddd61464dc3fa536db305ab4a855dd75c3",
+      "blake3": "245e9982d514206845f7c96f61973621dd371acf867717278859fcd55167985f"
+    },
+    {
+      "path": "prompts.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2697,
+      "sha256": "0b9127aade340b6bb72cf7e2dc730a00c541d57cd7d86d25e2e2a017908abf98",
+      "blake3": "7bf9364ac47dce74700886aaefea0157c60416e19144c4193e27e689a95761c1"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/AUTHORING_WORKFLOW.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7555,
+      "sha256": "02ba1e4bd3816c062767a4862d68ee7d377cb6008b4dfd01dcdce34cb645c862",
+      "blake3": "8d8e48d8b7dcfc2a68b7f42db5f5396df7449a348fec89d70d424f498d028bc3"
+    },
+    {
+      "path": "references/DCC_TOOL_CONTRACTS.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6571,
+      "sha256": "f2b771864e3ed83e3a2fac08285b6ecd9e2e3de21a9af067d45b439dad0b9da1",
+      "blake3": "70a671c14d214ca234c79665c7b6a88e58d2c7bef1f4a1a7071c52171aa4d53b"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/create_skill.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7751,
+      "sha256": "d52599d44a8ac032bdc1fc727d6b953fc423b6c42c81d26d21c67df8859ad3da",
+      "blake3": "e4b2345835bc97ffafcbd7327163317c6f432303139bda9e4cf2f27be491e604"
+    },
+    {
+      "path": "scripts/skill_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1898,
+      "sha256": "d070586693a377bf3b6fb23e89dab3e8b276111475fb7598a0905960a585b2d9",
+      "blake3": "75e0107f91bf100e6bb4ab37302ce93fb0b22237f18888a334bc38a6de8d27f2"
+    },
+    {
+      "path": "scripts/validate_skill_dir.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4250,
+      "sha256": "ce4e317a2b72c7f4006593651f7cb564a9ab928ea9554926ffd00fd85811f9ed",
+      "blake3": "41327c7b264ef2802e4e7dc200e44168b7eda7e8aa871bada34128dea8c8aaf8"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2542,
+      "sha256": "68bb8d6b8d064afe52ab6c681b94d706e60aa003c7393a508768b49cd9dc367d",
+      "blake3": "18873d4a0fa6d1ff0e24e15d699c2f6366cee9ecf6f9a4e54cf743152897d77c"
+    },
+    {
+      "path": "tools.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3877,
+      "sha256": "08018b1d69b108c40f4f62fdf862b8c13d43ead5744d54359c72609c84d4479e",
+      "blake3": "4ffb32646855602adcce275c9e16d54af26b110363be4e14feff64756ca53f03"
+    }
+  ]
+}

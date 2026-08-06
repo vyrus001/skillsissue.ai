@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:71ad0adedf39ad1f052f2d52319e94076ceb4cda5835782dacafdf8b0394c123",
+  "sha256": "71ad0adedf39ad1f052f2d52319e94076ceb4cda5835782dacafdf8b0394c123",
+  "blake3": "a19fc9162c3d01c93c9ec56db3b6c7900a9c0c2bc0bfa021e1f06202cd074890",
+  "size_bytes": 197512,
+  "file_count": 25,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 45532,
+      "sha256": "66abd26f999e912d9729e3707edbdb944b7639347ce42e9f146e6b0af41db84e",
+      "blake3": "37dbeb51b9ecd31db2b8813f29cc61ceeb99531bdfb1eea68c3716a3c11240b7"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 143,
+      "sha256": "2e1eb8b951c1163edbc5654bb08e6e3d64f0ac40744f436c14dff4bffdf9ad56",
+      "blake3": "3a938d49a4f9808e9007f1edf639cd81653127a3f75180e9927917bb1e3f78b1"
+    },
+    {
+      "path": "adaptive.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14269,
+      "sha256": "10fcd7b569aba642bce9f6d07a8609dd8c889ef338f2e50edd550204a4357334",
+      "blake3": "44e5b5a419b4b9b0cf37d9bee886da52f2f72de1e568967e3f7c1d2cb3f93054"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/analyst_prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3775,
+      "sha256": "465fc7699852282819416e6ab24f0f09fe73dff852e778dc3cae476ba1637e7b",
+      "blake3": "cddbcdb4ad82fd241446327aa032be7f5d32f1ca1572667112449f7c5229e268"
+    },
+    {
+      "path": "agents/checker_prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7067,
+      "sha256": "bfd58ea957e0dce0d33a9036fd47052387ad7a24004e5f98f5098824f8115fc3",
+      "blake3": "529f6576720172adf06e385f184df452d43960127952b00554c03bc84255551a"
+    },
+    {
+      "path": "agents/checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5032,
+      "sha256": "cf42c24e2e6a83290ab429795a46938c856dd43d99834264e56db77198ce1982",
+      "blake3": "9b25becd06b1931cff7b244d61d7bcc32ba92f50ee164c259752961386b34cb2"
+    },
+    {
+      "path": "agents/deep_reader_prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6503,
+      "sha256": "20756d760f13248a5e0dac168accde318acfe2c32700f267ad4185dc6d7dead9",
+      "blake3": "4501a54f0f93f42c6efc04bc0e872c7be407a4fe177181cce18014b27d81925c"
+    },
+    {
+      "path": "agents/deep_searcher_prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12520,
+      "sha256": "c943807dac139dc2bf2d705295e78e475f169dfd29af20d4b81cb8935c2969e2",
+      "blake3": "24743f83a864a910ba508a3625183d5a183c2b0c731e0a7d648eab8cd37fd366"
+    },
+    {
+      "path": "agents/deep_writer_prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4339,
+      "sha256": "8764d764b70db293fd28a3a94cf8f5ae27156ce9e202d7cfc412cd02474e78a5",
+      "blake3": "e991649437267c7e2018226780e760d79c884d7f9e8201c7b533f62f29e1adc5"
+    },
+    {
+      "path": "agents/multi_checker_prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7990,
+      "sha256": "2378323fed2d48424d95ab94a7c1f03ac9573ecc15dc259d3c44a09ab12bcf25",
+      "blake3": "625a514a1ce0edcfed2aa296dc46eae424dac8e531a1722f19ecaecd44f1d0ae"
+    },
+    {
+      "path": "agents/searcher_prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20166,
+      "sha256": "d66f5889b275a6e71450c25b00f3fd0ba5c02ae97c22ed42902d9f9735791fb4",
+      "blake3": "ea9db0746410a781dbca2af4f12741edd3ac7746be8ea926984de15d751d7a80"
+    },
+    {
+      "path": "agents/sub_analyst_authority.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2280,
+      "sha256": "f90c75ba3272137fc35ca33e510a34c9c5eb84e5b7146783955ecdbbce74c85a",
+      "blake3": "6b4b39efaad7c223f3eb249f4ff8d022ebcf7c24e1cfda6fef942d7a9b680d07"
+    },
+    {
+      "path": "agents/sub_analyst_benchmark.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4536,
+      "sha256": "4c41c7abe502ccd69ef4b8c02b3d8c4d85472da097f86dbd0e8d86cb60879723",
+      "blake3": "7c2956da8d8d9a88e941240d825fb721ee0cedb0d9f306dce42070d967d290b9"
+    },
+    {
+      "path": "agents/sub_analyst_code.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1963,
+      "sha256": "4b4a893c462ef11cd28119c81014b53725fb2d06024803a3cd55b5ce66cf90dc",
+      "blake3": "38e0c7c7ef4d338a1ff4d9ca94419c662c5f7f010b3cf45cf477bec3fcd87fb2"
+    },
+    {
+      "path": "agents/sub_analyst_gap.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4174,
+      "sha256": "0cb1ae16bc8b97e6ab9da0b059e3e763f20c0ce44864d1284dc8724614d0369c",
+      "blake3": "2bf03002e3f2b5340a690ecadbb9018013c50a8645d04f74c976a3b1894fe763"
+    },
+    {
+      "path": "agents/synthesis_analyst_prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2230,
+      "sha256": "13ae340bcde145f154b626859f6717bbfc4cdadc0945f67f923ffdb625c1baf5",
+      "blake3": "09d655928519ea354597e2c0c7ccf6b17fb643870c84a093de63c74b7a325718"
+    },
+    {
+      "path": "agents/writer_prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5126,
+      "sha256": "6524b7ebd80a89f10ac0020d7d7a2670e932f9098d26b55134997ce6c0ad778b",
+      "blake3": "7c96b0ccd69bd72c7b90c3ac5d2030b088a2aaeed5cbd3951e6fc1e5fcab80a9"
+    },
+    {
+      "path": "config.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1455,
+      "sha256": "20460e4cb35d261197a809f9378d588b01b7c5ed59871ce53f5f49a7e2b70d7e",
+      "blake3": "8c6fbf444be93fd7909c69905fa7de2deda3652d0c58d0fd149a66c142bee8ff"
+    },
+    {
+      "path": "init.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11505,
+      "sha256": "40d9b59a5b4d7db49ebbe9bdd9ac9b7e973a179aba95d33720c93bbc3f66df9e",
+      "blake3": "ec47d917789644fa5e70bfafe5c78d822684cba73767bfb2d5252031ae46ee85"
+    },
+    {
+      "path": "keywords.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2825,
+      "sha256": "9d98e436fefccc5ed3f37a6ce50a0bdf1b40fd338db636684e6353171dec9fb2",
+      "blake3": "9147408f6d610be33ed5bfac950cf97a9b054f27a1c292ba1ef135a2aafbd797"
+    },
+    {
+      "path": "report_manager.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12864,
+      "sha256": "5beb5641a6f2b3c78b0f4934702a0db0d3ba8c5c3f0906e88d780fa91790321a",
+      "blake3": "e04d1c3a42ba3c47fb794168128f8b06ab07c214aa40a3b8927a429ef93aa260"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2380,
+      "sha256": "bf8b36085db68835b7f4560974ab8ec816ea8dadb53dc79fa52e056e0658daf2",
+      "blake3": "da99536a49651a2be311ffad63dcbc8bd5f506fc19570a256340abceb530b941"
+    },
+    {
+      "path": "templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/deep_report_template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6207,
+      "sha256": "6c055cfc6caf09048b8f0d3ccb3f8c4c0292937c8abbc1199355492299edd388",
+      "blake3": "d619291a551246ce042bbf8da10c0ff3e5c471e6512a5e55b3734e38ae04fba4"
+    },
+    {
+      "path": "templates/report_template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2924,
+      "sha256": "8acccf5f58320fbd3bfa6c91c8a8ffd524a9ad9fcd7a54efc4155e957199b446",
+      "blake3": "81b32a7331f8fbaef6c64edd8138acf30238fc2cbedaee26d0d346e2e08c275e"
+    },
+    {
+      "path": "tracker.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9707,
+      "sha256": "d59ec575c4993403b482ae66245267b17ef8460cd2a9396f0c850676fba382fa",
+      "blake3": "6b5249679ef290f85e33ad069b49f3e20d420dd50d41daeefbdce572ead5503c"
+    }
+  ]
+}

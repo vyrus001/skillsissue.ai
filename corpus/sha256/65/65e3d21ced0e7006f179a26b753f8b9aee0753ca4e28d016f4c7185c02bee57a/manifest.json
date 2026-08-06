@@ -1,0 +1,353 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:65e3d21ced0e7006f179a26b753f8b9aee0753ca4e28d016f4c7185c02bee57a",
+  "sha256": "65e3d21ced0e7006f179a26b753f8b9aee0753ca4e28d016f4c7185c02bee57a",
+  "blake3": "39b7e3468707943e01399445d1d9595ec7b34a47d693dff5d6b108a207db2d5d",
+  "size_bytes": 216777,
+  "file_count": 36,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6316,
+      "sha256": "9a1b8f1aeab205748ac2d30f07ab3031e24012b842d12a31139a5388ae001306",
+      "blake3": "634563289d43070778cffb9285000278ed6a73e8268edf8ec2c72c9690c3f4a2"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 135,
+      "sha256": "e2c98ae21082d6917e78544d784db96d95f9085c3d959390de6461833f9fb87d",
+      "blake3": "fafe9a660d606c6f7d354a8bd326e937ba294c405fabbea6684657b6facbe968"
+    },
+    {
+      "path": "reference",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "reference/cleanup",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "reference/cleanup/delete_stack.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2545,
+      "sha256": "c0ab4e2d26f24fe105d1ed9fa179bee73aa719eeb878c347fb2ef5b6ce2eb780",
+      "blake3": "0cd95b2b8b3fe38e4b7042cc9a742db6f041b1fe27804d7da8162d9d63239df2"
+    },
+    {
+      "path": "reference/deploy",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "reference/deploy/01_env_check.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3393,
+      "sha256": "f4edcd6314f4bfe0f8d435fc57260ae7af41f1ed44da6976e3cccee2617d4d8d",
+      "blake3": "a91fd2a912f75a00e47ff3b2ad830e5a3ba22ec8a1030684d86af67a14b5a113"
+    },
+    {
+      "path": "reference/deploy/02_git_clone.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1306,
+      "sha256": "83445a77bd01746f46fb5afbef70b466500180b68b019031b46d2b52247c8a7c",
+      "blake3": "b36a95e007441633c9ae65d5af9bc09ee0ade1ccb31a42e4b78892f15537ce44"
+    },
+    {
+      "path": "reference/deploy/03_analyze_project.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8262,
+      "sha256": "a75e26c8cdab9832daee4f65e733b07cb466f519e2827c14992751a95888bca7",
+      "blake3": "860e0e63c78db6d906cc51e1bbb63cd57d71080b6350de9955045c33feac6258"
+    },
+    {
+      "path": "reference/deploy/04_check_existing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1899,
+      "sha256": "537b12a12467e36570d3b835f65f719554be37673b98ce28c7a216d2496ea9ce",
+      "blake3": "aca961d33a12304dec87df54cee1f0203f8f3cbe7fa6df8b7305e893dc59977c"
+    },
+    {
+      "path": "reference/deploy/05_database.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1260,
+      "sha256": "c6e217dab8f16977b067ea2c60a9f89ec9c5eb66d7e1971f2996d8b8df52a030",
+      "blake3": "15ed9da33c042d95347e072ed5030af22f4050acee946ea863f1388bc88ea616"
+    },
+    {
+      "path": "reference/deploy/06_instance_type.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 941,
+      "sha256": "6f49d229c69c70f132f36e9007517029e2924ccc08139554098cd71b292ffc67",
+      "blake3": "941dacfd216bbcd99836445896b894b927bcaf0bb51e8891355d9d01dc90de76"
+    },
+    {
+      "path": "reference/deploy/07_generate_template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4178,
+      "sha256": "080c6546104cf594043f3a3f35a94d5cdcb664677a0e9e9d97dadf87715d0ea6",
+      "blake3": "f2dfc0cd5548ae5b33aa88ed3f81264e5f52a21728b61e1ff5ba7c82dc1681de"
+    },
+    {
+      "path": "reference/deploy/08_check_stock.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1472,
+      "sha256": "28a1a20b70af7f974f2d72554218ed5f34f61dae9a9cd927beb384f9e19e206c",
+      "blake3": "088bda89d8fc9678918637de89ee14ecc8a738a51cbc96c1b9d1f376893f2d7e"
+    },
+    {
+      "path": "reference/deploy/09_estimate_cost.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1968,
+      "sha256": "e04d0468b9a1aded5aadfa93a83b3c077870dc5f53b737264c5317973119fc8d",
+      "blake3": "5fc1f6cfdf2448897edc4a202654c7795b7ba88a4ede2acbcb71d1a9e25693c8"
+    },
+    {
+      "path": "reference/deploy/10_upload_artifacts.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3194,
+      "sha256": "281348a816e7ae7ffb617a4b60a468a57eb68343e3985a7cba7152e5e1afc36f",
+      "blake3": "4d64a143fcb39624272324b4b05efd6872145870aa37042bbe3d01c608ddd2a2"
+    },
+    {
+      "path": "reference/deploy/11_create_stack.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3534,
+      "sha256": "b4c8a84a37ff08e88154f22b3a31e7f0741b0260dd39e9d60a01ec4c99245ca9",
+      "blake3": "41f1e5ec9f2037c5c5557859bbb2d0aef15c012cdb589da61a700edd64345342"
+    },
+    {
+      "path": "reference/deploy/12_wait_stack.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4708,
+      "sha256": "c7c7cf85519c2ad9cc462b8304a7b6e46f195c38035d29a51ed30b6264182f2b",
+      "blake3": "8635d9bc5128a5aa85424573d2f4bcceca8bef106998f17dee30d9f5a8606c9f"
+    },
+    {
+      "path": "reference/deploy/13_record_state.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4360,
+      "sha256": "bf53bc470321238064aadb8b743ec1d9282e879cc9940b40d6705596b893d5fd",
+      "blake3": "2a0ec6f5704529a7e27c5c3c169c9514a319de68dcf5be22f5161b969fb7be14"
+    },
+    {
+      "path": "reference/hotfix",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "reference/hotfix/update_app.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3157,
+      "sha256": "e48aa2270b88febc5b0740e40417c80a135213d3477f7d02d133e91891653b5a",
+      "blake3": "8b0a2a4a49914135d6c66425140dc8fed6905de68401368facca813dccd2a5b2"
+    },
+    {
+      "path": "reference/hotfix/update_recipe.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5709,
+      "sha256": "4fb7c63f358ab9583a605b92fe76255456125b2f6cf52c4d87ba3459e7c9f521",
+      "blake3": "fb1e6c9bf9bd68372e3262882b841d3c1414f7216420c8ccd7466126638d5f0d"
+    },
+    {
+      "path": "reference/https",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "reference/https/https_setup.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15339,
+      "sha256": "9bafd5d76868a2114ac8536dbd88a6ea046184ca49a4a0f72fca866c1621f32f",
+      "blake3": "3b9048e5a3e2096f0f1bb067d4247d43931c38f5e898108e2698fffd3192f36a"
+    },
+    {
+      "path": "reference/rules",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "reference/rules/rule_error_handling.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7115,
+      "sha256": "736ae6be671c20d2fc6fccbcc75ea5db7765776cb13eb0dd6ff04bda02029d8d",
+      "blake3": "0bb8a5ffbff2019d0d3dcebf7ca8c229e8eb7389f293664182715e37587a7a9b"
+    },
+    {
+      "path": "reference/rules/rule_interaction.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14736,
+      "sha256": "7c7fd8b1eba9ff9a7294e9a73d176f829e87caa062483a848a0c97023b8e0ab7",
+      "blake3": "fce762cb5b328bb47c934a60ab89bf576158f7008993750d2075126dd6bde582"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/create_stack.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5300,
+      "sha256": "a77d26ae9f7f2da504be6bac71e3c94108afed22a5296a36dc696a3bc5876a7f",
+      "blake3": "6958e4369ac1fed648f379d48b73c28a76fbcae8fe932899bd3b28cdb555be20"
+    },
+    {
+      "path": "scripts/delete_stack.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6737,
+      "sha256": "13e60a52e1d99a2bb20dc5e09d2ab7f5fe4aea1e96f02957f8f0a81abe283f3d",
+      "blake3": "8db449475c641eb88fa9bcd360f5b5a37f9491bf8c0f2882d1e20e911ca5f6ee"
+    },
+    {
+      "path": "scripts/generate_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9135,
+      "sha256": "3f60619d3b83645209250b6a72a58ff0aef36d9b501a12f86c840550cfd64e18",
+      "blake3": "807760f33f05774339a12b7b0fbbe3fce9dbf44f9ae326ececb877257c270ac3"
+    },
+    {
+      "path": "scripts/record_state.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6680,
+      "sha256": "fc25fa2f05d7e9c25832e357910618bd1818be7f40f0292a8b5e2894a7d8fb6d",
+      "blake3": "b7d321f7dbf29e2d8815e3dd69050ee6bbabc297580835a9c5f0749a2618f66a"
+    },
+    {
+      "path": "scripts/setup_domain.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24601,
+      "sha256": "d05dd90d0e10f22317ff8fddfa3f07105004f1c0eacc765f8c8a442d3c250602",
+      "blake3": "28023cbc7813d488bfe263ad704571d5e8a7f20172bc9d12437f384e0b378c55"
+    },
+    {
+      "path": "scripts/update_app.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19384,
+      "sha256": "58a791fb7bf935b9174d6e5aa81cfd5eb60c80092cac64196361fedec4567ebf",
+      "blake3": "875fb3a2096ba2bb046bdc37185f02eb8259f91988af889ff1a8c147ebc8fb03"
+    },
+    {
+      "path": "scripts/upload_artifacts.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9832,
+      "sha256": "7500d04d7787bfff99728bc285c8c2ca8cbb487a61384ad44372295cfd0bc240",
+      "blake3": "0bc46ff61c52dfba393218ae686f2937a6dc8d3fc0b9795513ef2fa002809ea8"
+    },
+    {
+      "path": "scripts/wait_and_probe.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12309,
+      "sha256": "fe58bcb94a0641ced02374a64b07ee454f67bd6a0da9ae4984fe1252d2c0c758",
+      "blake3": "88e837d6e6d120c5a85c6b710418b1a4ca9155de5a7daa4dc5f5a39e087c404f"
+    },
+    {
+      "path": "templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/ros_single.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4197,
+      "sha256": "8bc68b897cc05ed2efa4471adbf3d06ff67afae59f11ed084aeb835579a25685",
+      "blake3": "41f2dd31041afb4800443f17b49a0c128c5e3479d4513e50b07c753de788fce2"
+    },
+    {
+      "path": "templates/ros_single_rds.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7721,
+      "sha256": "914d14f8e876c61f5a732aa16e1f2513f6bfd12efdb6407ad1fab6676af1c822",
+      "blake3": "a8f0ac7432e6ca62df8c16ddc4a78b6bdd5a2bd0c53953c396feacb8210ed9a4"
+    },
+    {
+      "path": "templates/userdata",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "templates/userdata/docker.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3537,
+      "sha256": "799f13e18d075ae97a81915e633c749dfedba232ebeade04b11af4e58a648b17",
+      "blake3": "7a36bbdead0ea893dff8e1f96a3fd65d1a82aa458ccf7e8b84de9d813faee52e"
+    },
+    {
+      "path": "templates/userdata/nginx_proxy.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1660,
+      "sha256": "d45883ddbf478359b237ac9a92401df7bfe77126fc21debd89a577f4964ee81e",
+      "blake3": "c2160e5263e8d78c8211584d2a75f6f11cb572d73b35c3e8afadcc48c966adbb"
+    },
+    {
+      "path": "templates/userdata/nginx_static.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1843,
+      "sha256": "1b987fcee2139f1483393c9f547f29af48ebe58e49aee32e23455b7e425578f2",
+      "blake3": "c0e60eae585c3a707194ef9ed18c07eb6df809e3df14eb34c651128fe891e443"
+    },
+    {
+      "path": "templates/userdata/nginx_static_proxy.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2313,
+      "sha256": "2e92ecdb08bb5a1055e3571e3ae92c5036e31c9c36f03356c0a1471f84423ace",
+      "blake3": "0630a714959c4ab63360c246c38a2696c0e4fc69811b94f3d73fed4f1605bf72"
+    },
+    {
+      "path": "templates/userdata/systemd.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6001,
+      "sha256": "448f74c33932f83a208b053d629fdf99d005b8745ba87870d74d241cfbf863fb",
+      "blake3": "0d0e474276819f9fbd04d759709738eae8ec772a4a51231787c4f07203c242d1"
+    }
+  ]
+}

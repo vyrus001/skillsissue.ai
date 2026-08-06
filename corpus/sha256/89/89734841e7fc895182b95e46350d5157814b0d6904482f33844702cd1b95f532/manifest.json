@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:89734841e7fc895182b95e46350d5157814b0d6904482f33844702cd1b95f532",
+  "sha256": "89734841e7fc895182b95e46350d5157814b0d6904482f33844702cd1b95f532",
+  "blake3": "69ad1e9b3710bb55091ee8496534ac072f67b1835b61d77579d407b6f2d89ecf",
+  "size_bytes": 113170,
+  "file_count": 12,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5046,
+      "sha256": "058dc0d508dfa48aafd2c32d0df04fea73f1101f6a2ba5c4ecc61fc717043794",
+      "blake3": "1af21b5a7f7d9becced39fde2d671dd9905cdf5cc354410c2af79b8eb59bdc5a"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 136,
+      "sha256": "a484f15ec8e455be92e83b511629f595c0e9ff6a436f246d54a654fcb9cd9e44",
+      "blake3": "37178a39ed5dca42f9729acbeb7ab276e9de777470a0fb6f64272d3833b96d66"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/AETHON_D9_BLUEPRINT.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2608,
+      "sha256": "193b2e3e421e77033cf22eac2b5191585f917a5ecba6249e5428a14efbf62c1f",
+      "blake3": "e86c839d07a8bc0abb6321fa1746deb83bf400ca1b4c0ac508a153fb8124c230"
+    },
+    {
+      "path": "references/SECURITY.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1737,
+      "sha256": "7b8ed8f3892ef1d7b7bbd0b42bebf8f031ec4d9282b3049df9a60e593515be15",
+      "blake3": "d2983164c9d55f65b5d258685a097f19e2e5ea32d87773e29524069490769698"
+    },
+    {
+      "path": "references/SKILLSPECTOR_AUDIT.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1134,
+      "sha256": "cd8aee74db2911b52ab476d05c0aebca68566c06f7820abe294afcdd83ea37bb",
+      "blake3": "53454f0f764e6b3a08e031a44dd318fe71275382fe949bb5951e91b85534903a"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/__pycache__",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/__pycache__/lygo_ops_detector.cpython-313.pyc",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 31335,
+      "sha256": "4e83450adb56177a531d03fc1b3a692f0c4a95644ffe13c1e0d53de58a04fed1",
+      "blake3": "065959e603e9f2d18f8d676e24e5d5675fa59f047f9d55ff7a5627044638c457"
+    },
+    {
+      "path": "scripts/eval_ops_detector.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9909,
+      "sha256": "c771a11e34d6fa83086d237ac3e1402b34ff05b4b9fcd99878f23ada7914ee5a",
+      "blake3": "89326c341a5d970257828b59ee8d910d70ae9e80dbaec71e9484e4ed5860af5b"
+    },
+    {
+      "path": "scripts/lygo_ops_detector.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 34392,
+      "sha256": "44643bc4bbf71008a1f5eb2d9220b0a30935495c2d8e126467971a61e75361f7",
+      "blake3": "0102c08e3ec2a5494fd92672a11f5a77aae6cc196da3da8c8c1eab46be7a3751"
+    },
+    {
+      "path": "scripts/self_check.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2793,
+      "sha256": "b41ece02615b794a08a0c67f80b2d4b092f60c82bea73455c8a8ba5297903e92",
+      "blake3": "3b6a781f432462f5f338c81e630f7f6f7d79d880ddfe3695aa7e871b3d7aa0f8"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3313,
+      "sha256": "643971f68d4795ab122b4687656007e6ae48ff483ad57c06e686587419449bb3",
+      "blake3": "391c6bf4393ebbf6485fe132390203fd286beb728208305cf5be365ec3be8d93"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/labeled_discourse_suite.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2826,
+      "sha256": "f838548ad833b978e64ba8442d0d486dc210af114613b5c075cf3e2fe1fa6d94",
+      "blake3": "eccbd1c07c3d1946f64c5231433ee2b71c5ac12895044a052c741b1f8ef48ef3"
+    },
+    {
+      "path": "tests/last_eval_report.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17941,
+      "sha256": "97a36f4429940a5c22719731e8b56efe6be172d9ea39bd261d466be98efa56aa",
+      "blake3": "87b8b8f3996eadc9bba7a8ad6a543f52ef315a0c111d3a90188675ea67a52304"
+    }
+  ]
+}
