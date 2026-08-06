@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:1281f4ca675801828aaaa1b3837a57bc0b8cda18a6118c071a4c38d85cfe22c5",
+  "sha256": "1281f4ca675801828aaaa1b3837a57bc0b8cda18a6118c071a4c38d85cfe22c5",
+  "blake3": "363aa984c6fbc8c62bc23c2031870e650a541300f57f7c1cf55b7fea59da815c",
+  "size_bytes": 60431,
+  "file_count": 6,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25109,
+      "sha256": "7d5d5a225594610600e75505d052daf5bdc330e84c8a58910d56d6c3d66510a4",
+      "blake3": "e6b50925ddf291947aecbb9231d41c92e10ebf78cc3700c943fc8f202097372a"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 301,
+      "sha256": "0992cf606b2680397e6aee60db3d39c62aa3d5773acaeefc2f4f1e18103537e9",
+      "blake3": "1badec17d42a48157aef84d8e223ddd29a9674ff6715e9b5c561eaa7b4dd55d4"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/evidence-capsule-v1.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4765,
+      "sha256": "b9e1f9208842e725289469d0976b3e65670a30ee7f69be6d799cf4ba2a19fadb",
+      "blake3": "c628c5f6d57df3a380372cfb9f72417a4c8db2b3152ed7172081c5fef19c6e9b"
+    },
+    {
+      "path": "references/evidence-capsule-v2.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8083,
+      "sha256": "e91ef78922e3a196e966a7e60ae53e4894617668887abf165b293d147fb88737",
+      "blake3": "85d1e94d4cb8916fcbbd1eb54bef0700bf1c53691c24ff3dea15d54fdac004d5"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/emit_evidence_bundle.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 17000,
+      "sha256": "30583170ed4764b9ee3a147bc6e02ebce5095600a292688b9411825404f9e13f",
+      "blake3": "e8d283ec087c5fa0a1f36d7bdb30eec99213e63756bc2f19dd3bec0b1cf57cfc"
+    },
+    {
+      "path": "scripts/render_patch.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 5173,
+      "sha256": "9e6b5c4b148e78171695ab964757e792d2a67b32517d08ad113df8de2da9cb38",
+      "blake3": "bb6d897527494c5b3835ff4b41578e9055104f089cc7eed38960f85271ba8365"
+    }
+  ]
+}

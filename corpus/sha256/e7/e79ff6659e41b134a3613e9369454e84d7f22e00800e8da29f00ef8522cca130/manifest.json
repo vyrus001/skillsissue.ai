@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:e79ff6659e41b134a3613e9369454e84d7f22e00800e8da29f00ef8522cca130",
+  "sha256": "e79ff6659e41b134a3613e9369454e84d7f22e00800e8da29f00ef8522cca130",
+  "blake3": "2cceae1ffb20c3d785d8d1c789939c569484f0cdb6f0b9a7e7b2eaaa7a1781d8",
+  "size_bytes": 329257,
+  "file_count": 13,
+  "entries": [
+    {
+      "path": "LICENSE.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1063,
+      "sha256": "c5c75ea9792e454a57ce2273aa2416b90235ea5e3ae1f8d38a993442b7b8944b",
+      "blake3": "083e4a417eaad1c3bd172d1e441044fd345f955ae9963311c91dee7fb7197526"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4544,
+      "sha256": "5a82d5a0ab594fde272d3619afcb53853d63f3dd4650d83cb102080d8999328c",
+      "blake3": "c576f34591637df310935626d1042da5bcdb795b2f5c2ede080ee1c52d0e9acb"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 186,
+      "sha256": "df8f17f4e1a7429ffddbe2d1cf871eaacb5cf7507e393ccc42e040bc49968ca8",
+      "blake3": "15c256f8ecb644cc4a8652ce8e28ebe32ff7b283f1a2490fa98b71670d943ba8"
+    },
+    {
+      "path": "index",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "index/plugins-index.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 271838,
+      "sha256": "0418c75b8147982ecdf710f4ff2128489d69d2a6491be738e6dfc9c7d6f82afb",
+      "blake3": "160e3630a7e9439f467259657f7672601e2b2935bbc8fce15bdb3947529d22ef"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/build_index.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9630,
+      "sha256": "0bac1ec58e691ea6ff40a7ba28d5186bf7b61a23c9dc86d7f38f592ba0acdbed",
+      "blake3": "b37651e1b2a947e802d9ca4f3a4fdfa586ce2803dbcfdcaf7a2a97c1620c75f1"
+    },
+    {
+      "path": "scripts/list_recent_plugins.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6436,
+      "sha256": "9ff9970355a9cc9809493167cf1177899bf65afd4972d7c5d4aa80cc7069f310",
+      "blake3": "45c79c86037d4327293fcc79d4a5ffb14a226f748aa837fc71f2d301ceb80fb1"
+    },
+    {
+      "path": "scripts/search_index.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8328,
+      "sha256": "d2187f260b144aa8aa73c97585371025aee41b114a73dec74add51c260942f46",
+      "blake3": "1babb04e0bdc3017cf855a0bd8cc0048c24ce52a28d1d7f9cda5e10c3d9f4a1a"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/openai-plugins-sample",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/openai-plugins-sample/plugins",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/openai-plugins-sample/plugins/alpha",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/openai-plugins-sample/plugins/alpha/.codex-plugin",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/openai-plugins-sample/plugins/alpha/.codex-plugin/plugin.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 602,
+      "sha256": "6c471de7efbb930b05872e9467d5c181a4a7a3f5f56dad5b27d6b4c62b79394c",
+      "blake3": "2e4d352851b4b592637400ecef18e3a4c0cdd5161db535026b07fee328ebd575"
+    },
+    {
+      "path": "tests/fixtures/openai-plugins-sample/plugins/beta",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/openai-plugins-sample/plugins/beta/.codex-plugin",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/openai-plugins-sample/plugins/beta/.codex-plugin/plugin.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 451,
+      "sha256": "e8d8adb19f61f71dadb32e3022124cee707bc26d976dc8bffc511eac68e68cf8",
+      "blake3": "8fa0b0a6a50e00139cba039f68becc6eab769510df0bd7f6cf2dc88f7d5fc86d"
+    },
+    {
+      "path": "tests/fixtures/openai-plugins-sample/plugins/plugin-eval",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/openai-plugins-sample/plugins/plugin-eval/fixtures",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/openai-plugins-sample/plugins/plugin-eval/fixtures/minimal-plugin",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/openai-plugins-sample/plugins/plugin-eval/fixtures/minimal-plugin/.codex-plugin",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/fixtures/openai-plugins-sample/plugins/plugin-eval/fixtures/minimal-plugin/.codex-plugin/plugin.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 389,
+      "sha256": "3df8efb2cf0cd403b03f78f4efa574a18904bdba12bab26909536e1910f6ff14",
+      "blake3": "693f7a0b41d3a9f81a38b00d63f6708bd2d193a76fcdee46294363f2dd54a97d"
+    },
+    {
+      "path": "tests/test_build_index.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12325,
+      "sha256": "af51190a193294a4b5165f87b1da7a78cc6a6cb89e6903835ce2900c5684aee7",
+      "blake3": "8d1b5a4ab1b382b3f85f17a76ff69b2f635b86e47b0323f976f415d4fbd91483"
+    },
+    {
+      "path": "tests/test_list_recent_plugins.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7220,
+      "sha256": "483d47df48e94b12ae3afee48f9d3ffcd4322d2fd4eca8a16addcd0ee306a411",
+      "blake3": "63d64ec7afd28471df4a84dd3d7407e5b551f54d6bd305f43244ac67c44a91de"
+    },
+    {
+      "path": "tests/test_search_index.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6245,
+      "sha256": "7476b269b610c143804f4d0148d9b22d90a1ff926e98364ac996a0434069d815",
+      "blake3": "4ba918b622ab2c89e0918351abd450f0c670e1918a694ea55ec5d8895a2f74c8"
+    }
+  ]
+}

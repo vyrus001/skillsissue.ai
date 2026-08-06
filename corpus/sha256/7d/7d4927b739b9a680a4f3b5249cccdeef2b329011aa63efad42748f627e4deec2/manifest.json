@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:7d4927b739b9a680a4f3b5249cccdeef2b329011aa63efad42748f627e4deec2",
+  "sha256": "7d4927b739b9a680a4f3b5249cccdeef2b329011aa63efad42748f627e4deec2",
+  "blake3": "17570c3a32cff7706ab8ee12515e4184939c73b98de9a7387c20319ce21381bf",
+  "size_bytes": 109907,
+  "file_count": 12,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9821,
+      "sha256": "c2602e0a1364e5e8ecc4ca2ed93af710acc79f5470aab28ef4e03bc237ac95f1",
+      "blake3": "fc6000b840b2f109cbaab391a7f2afbf245ec621789149dda8cc019c3fbf3168"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/brief.md.tmpl",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2109,
+      "sha256": "09e3963a3d57b15a62a71fce3141957b74a7a2da31c7a1028fd9b8387f63bebb",
+      "blake3": "6915ad243f56aefe1dff9762396e9d0bbbaa1597710af733f459955783053672"
+    },
+    {
+      "path": "assets/setup.sh.tmpl",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8286,
+      "sha256": "793b546117904e27961619b06cc28a58f96e9acf59431eb28f24d53495f0a625",
+      "blake3": "1d7e57859db20bdeeba76fa2d82270c22de80646528a54784433c227378fe3a0"
+    },
+    {
+      "path": "assets/soul.md.tmpl",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 631,
+      "sha256": "2ac94213e2115bfa78140f5ae688d4913551996581f31c5e9ad0666df61d71f9",
+      "blake3": "0050e135d93042c83e44aa1ecfc429f14d123390864b16de6a192ffad0547d68"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/examples.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10322,
+      "sha256": "9f23e017d9033e39faf1d3f24ca1e9e5e3216deaac44190a1ea693f969806f56",
+      "blake3": "3a9caccf376a589c844b41c7bdad10994c9cd592763acc40c873bbf16b4968e7"
+    },
+    {
+      "path": "references/intake.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7951,
+      "sha256": "8ecd661b4dd7fe2ceb88e4f8dcfa413999d667242cc752ed47676efaa33362bb",
+      "blake3": "5dddfa204a1e48e2c9047ccade4552a82c6a93174c8bc95b70db2c7f2202f010"
+    },
+    {
+      "path": "references/kanban-setup.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11270,
+      "sha256": "a68e39aa41343e9f91eafb0c8e558cc94d9e59a08a0826a665be443497cb518b",
+      "blake3": "ab1ae68979719bb55a5d72a19bd499639f1831ed106e5dc8a413ff8f0e46c8e3"
+    },
+    {
+      "path": "references/monitoring.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7463,
+      "sha256": "c1a23160ce32fdcadfcd04fb60b22f98405ec7f8338e43c88ba5776b81ad82b3",
+      "blake3": "8cabf8de6a7674b6fa5557046638e9b9cc0d5cf8b24d04946461dd3854a177df"
+    },
+    {
+      "path": "references/role-archetypes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12723,
+      "sha256": "6a79a5025066e9a90a0030d3e92e3dd77d3818e8d72986b9875da45da2b29e79",
+      "blake3": "a70c6989bac27cfda81be4cf3be1dd74d8d7ca2e0cc484ee222f981702bbfc2e"
+    },
+    {
+      "path": "references/tool-matrix.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13908,
+      "sha256": "dd9be94954a67fbdb020ac04b84c2f45cf1371c320ef2ae474d734a1bd6da509",
+      "blake3": "8bb167292bafe2fb80d5c78721ae784d053e39733527a0dd17d0a082fec1afff"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/bootstrap_pipeline.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 18671,
+      "sha256": "c8f5d1514f523dd48a9411d305bba8c842c6f6617a7c6238e404fe6fae13227b",
+      "blake3": "1d664f0fe10d92ea3d39287d146fb32f9ab53b05e7ce14ac68beee569df5e16c"
+    },
+    {
+      "path": "scripts/monitor.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 6752,
+      "sha256": "dea84ee9f92778b92b7f747ec458e1aeef003bf68d1ccab5c2172447a81e2954",
+      "blake3": "785cacb7f31aabf143ba3d18d4ff0bf13efd3cacea1a6fb7ac7fcdf8cd7ce57b"
+    }
+  ]
+}
