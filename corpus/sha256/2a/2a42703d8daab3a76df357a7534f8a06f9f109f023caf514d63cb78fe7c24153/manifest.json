@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:2a42703d8daab3a76df357a7534f8a06f9f109f023caf514d63cb78fe7c24153",
+  "sha256": "2a42703d8daab3a76df357a7534f8a06f9f109f023caf514d63cb78fe7c24153",
+  "blake3": "6acb460515758b3aea0ace3596b89bde2ec7f5ee8402e5163708eaac4b132476",
+  "size_bytes": 8598,
+  "file_count": 3,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3485,
+      "sha256": "25f7d9ee550752298014a83f2aa402f8015f9c4c781d70ac75bf6b043c0113f8",
+      "blake3": "9adf5225a539666ef59d66d4d323494d8202b5d9b9a87bb62a797f4e599d5a16"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/find-sessions.sh",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 2974,
+      "sha256": "0c3d974930b78a5207b7c9bfae1dd5ee9a18ee6bcb4f04f7b0af97952a726e82",
+      "blake3": "ec07c0b8010e117e9af310d6b100d8ed18da7e93c3f24684c337d5db42aef71f"
+    },
+    {
+      "path": "scripts/wait-for-text.sh",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 2139,
+      "sha256": "96bc42702f7353c32233c223d61dd11f2f99033267aeefac838aea8983a67735",
+      "blake3": "accffa0c24ca4fed23c9bcdc171378ead48fab4019cf1f4c87404c78c8acb03c"
+    }
+  ]
+}

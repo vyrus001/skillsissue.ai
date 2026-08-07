@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:92066d94a2d9df0b015a4eba86514c0c62304754772b81889228ccc8789b795d",
+  "sha256": "92066d94a2d9df0b015a4eba86514c0c62304754772b81889228ccc8789b795d",
+  "blake3": "1b86000b16a2ca8327bec66d5befa1ed689c7e834f0e34d1a4ade29937bbb37a",
+  "size_bytes": 130760,
+  "file_count": 23,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24836,
+      "sha256": "6dacf8fd0f493052eb3a1753a06be03e558c83f4be8623b6d9f2eac5a7a318ba",
+      "blake3": "22a1181c42d073f0e88e54c81105f942ff51157482b0042f9f3353c9eb38ace4"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 143,
+      "sha256": "a693b8386ab15cad61165637c6aa21dbec2b4c290ee25e92ca6e5addc341838c",
+      "blake3": "72f2a72220206bb1fd80442677e49c25f2599e6f7bec15455dcf575d3bdb6d7c"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/backend-firewalld.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2505,
+      "sha256": "508a1a51edecb7be9fd202136f080ac40fdf79e344fe5b2ffffba236b5b3354b",
+      "blake3": "da4e1e47cba2941cbd052d8c438fa97e5ff6433860fc7440bb0d65bcb863a479"
+    },
+    {
+      "path": "references/backend-iptables.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2294,
+      "sha256": "f4fb788611d2f108a384ad91f18218cb47658762635fa4e6318979e11d34df26",
+      "blake3": "39de65f5e4b2e18649ae4289d7b60807a897db7a901fe0c95fadbfdf5485d2ed"
+    },
+    {
+      "path": "references/backend-nftables.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2614,
+      "sha256": "2c64803550f0b6f7d1cbe8499ead1c0516001f5b8b303e95e6e730a1b54b2cc6",
+      "blake3": "b24dbade8049fdc2888e9d16485121db01dc9afdb36866e86df172e5ca57c788"
+    },
+    {
+      "path": "references/backend-ufw.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2130,
+      "sha256": "d75f1d7ce24f4470850db4bfa7d89f3d3094492ef69f9c193d43969299e422b4",
+      "blake3": "7944bd83369fc4d0c7b36cdeca0a3eb25b0c1669d9555deae954f853a9c78135"
+    },
+    {
+      "path": "references/compliance.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1281,
+      "sha256": "347b64836934fbb2d65cebef05578dfca98796688a9463cbaa334413567cb411",
+      "blake3": "766e907b93519224ddd8b3c8d1e3396dba9927fd8665352d2c92e3f55854a236"
+    },
+    {
+      "path": "references/declarative-policy.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15127,
+      "sha256": "973c5e0568c6362c6bd6d8b84d003acc9676440f1be57baba71996d8a836b95e",
+      "blake3": "aa23300502adb953f32fccf1cef59493dfc88df2dbccffc95c5a2dbe080558a8"
+    },
+    {
+      "path": "references/docker-hardening.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2578,
+      "sha256": "49a979ff62d578b7776b467731321c2af6d82ed7d8df6c0d7c5da9d752f6dfb7",
+      "blake3": "b6c1e421ddda4538cff8e43f794333df8b42229b5c6efbf9079446d3d30c4b72"
+    },
+    {
+      "path": "references/firewall-apply.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3473,
+      "sha256": "3d3dab7e2fda5c6f7c7cbd22b5bb25c18a8925175e75dbfde68248c2a1a96eeb",
+      "blake3": "d7affd921c17d26a167cc3e9d426fadd4fd6df0ddc464183f3eb5187dcb0360d"
+    },
+    {
+      "path": "references/k8s-policy.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2181,
+      "sha256": "8b94c5d7e973ef4a6cf73aaf37ea86ccf1f4e3933316d506ef74cfb6de8f05cf",
+      "blake3": "bcd2a2396315d0f9ed777df8ddf7f61f30e2d4f99d8d53e29c4f55ad5d16f2e9"
+    },
+    {
+      "path": "references/observability.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2299,
+      "sha256": "700b5882d81ed48f694d45d14155b834253a9491ff7ec310dfd24469c581015b",
+      "blake3": "36756f5391bcd41ada5f60267bec67b9934c6033c325965e8f02e74ef2865c7e"
+    },
+    {
+      "path": "references/policy-schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4066,
+      "sha256": "32f2b5227f6b5992ae57ec172e6bacafaed423dc57f3233a20548f3dbbbfe10c",
+      "blake3": "7a10af1b6e76ca70612ccba7c44178dc0d2e88e2e42ab68b0725ddd68722ba25"
+    },
+    {
+      "path": "references/recovery.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2031,
+      "sha256": "28bfa63c5cb00d2e22c448e385588cb50b5465d9e1afe1db6eddcec8b7f6a9a7",
+      "blake3": "509503fee8d14ff1b34c68dc3709eb050c104fe8718cd93efae6188d42d114d0"
+    },
+    {
+      "path": "references/remaining-improvements.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7873,
+      "sha256": "8d53f75ce8a0092688580049911c67a15ad9ab3b41a68c74ecf4d5dde284dfee",
+      "blake3": "05bccb3282ac4cfd9ff86f3517ece23a0aa1fcb5ecd161114530d2b337f72fac"
+    },
+    {
+      "path": "references/security-profiles.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11431,
+      "sha256": "df928117a444d4bb472b564eb2afac4928ed0ac6f8f4a70373e3e70bc0131799",
+      "blake3": "455a158c21f258e94ad9c6a544d06ab03858d7da35c3a093a17eb3253924e015"
+    },
+    {
+      "path": "references/special-environments.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6529,
+      "sha256": "be359af837f7e56d54e73424dcf68d6e8e03fd21ba327ad4b9c7056d9acaf278",
+      "blake3": "d573877b20b08f5a581073fdf2bb826738743e794f16029f9dd7d4b59429b539"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/audit-firewall.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12604,
+      "sha256": "c517ac7af8fa9466f8b941e3aacddc8a3e3a60ef17d5db69e3b997025a0aa571",
+      "blake3": "99a09f0673e4d6dbbe7e58fafcb230db1797531589856011e3e1fd3a2a91aecd"
+    },
+    {
+      "path": "scripts/container-port-audit.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3612,
+      "sha256": "8f24cd2a732342d216e582ab3704d8495663f6bad34e86d6e1a20635c9925209",
+      "blake3": "7bf7a87e2827aa1f9bb4c035eaf9f2b047f45b64373664fe87be5fdab5a26fa2"
+    },
+    {
+      "path": "scripts/firewall-apply.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6793,
+      "sha256": "e20b7e1ac38fe756a58c95d024221f9ca722b948414be57893cf28e0e4bf1005",
+      "blake3": "6bfbe7e445568e6a7cea6366f93d2398a8996a04ad67f7a65fc000076a0800d6"
+    },
+    {
+      "path": "scripts/firewall-plan.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6922,
+      "sha256": "0c7ff4d7a8a1ece63627ff8bd249b3f75955330d15812cf517b463b380e3fea2",
+      "blake3": "773d00a76ccf9c20da4e2ea31689247c75f0824eaf1e18d1231dd618eaaf3cdc"
+    },
+    {
+      "path": "scripts/firewall-verify.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4386,
+      "sha256": "ce747b11e98a828ed6ec734bd967780830f7afbf75dd7a3de4f67bb452d1b5f2",
+      "blake3": "b5e6c21fc8a229cc227acd158ca1ec167f989b5a3d754a0a5284a7f4c93434a0"
+    },
+    {
+      "path": "scripts/ip-consistency.sh",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3052,
+      "sha256": "d045345d7141896aca63d0430c8a2b6f9e43579261e167f970250fc3cc7499b5",
+      "blake3": "f44fe26d8a9747e4ca4e97bd0a3f6053ada1eb288950fbe1ff1412ed94db8b41"
+    }
+  ]
+}

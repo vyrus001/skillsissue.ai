@@ -1,0 +1,531 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:5582188fe4eb64296f16f024aedcc703ebb961bd68904a9c17d09cd2e5299ac0",
+  "sha256": "5582188fe4eb64296f16f024aedcc703ebb961bd68904a9c17d09cd2e5299ac0",
+  "blake3": "51c56215b4169209313113b4fd2ec0b6abd5a74b5434ff675ee32a75e3b4358b",
+  "size_bytes": 455831,
+  "file_count": 56,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1056,
+      "sha256": "1126322e2cc8d165adc4c792eeb195717de2bcc7b39be1ce77959d78e87ef685",
+      "blake3": "ece70013e26522442f1ec98ca7eaf18a955bda0e7f0fd92407d8a9c46c89c073"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2170,
+      "sha256": "4b0e6314cf2a407bc1142d1bac080e23f4eb3463c0e7229aff0330bdcfe1c604",
+      "blake3": "a5bd3b133e7eab255626259c9f68cf570eff9460c8bbcce0ffe5fab711501969"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16452,
+      "sha256": "1e2fbea13d4ca64e7c39dd4f823537d6de3d04a44ee9d79d4ddef9e7683ab86a",
+      "blake3": "0ded09cd0bd0bb7f1ebae9e612d24a35082166afda6280168bd842630da2200f"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/code-templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/code-templates/matlab",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/code-templates/matlab/evaluation",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/code-templates/matlab/evaluation/ahp_template.m",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 770,
+      "sha256": "4010a6207afa80a0f15e4bb391438c0830d8fbd66613b53fa61438f759976848",
+      "blake3": "b3486ac0cfb70b18cfce38590eba354ad8a52930c89d2e6a644b6f3621c9efa3"
+    },
+    {
+      "path": "references/code-templates/matlab/evaluation/topsis_template.m",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1115,
+      "sha256": "03131b7b3e2075843132903f219f5fb3822d4cd0db12b69308b8fc0acc908b0a",
+      "blake3": "5f72ad0b1ae7d4a8888ea3efd62d504a013b4e7aaddb8fc85b3a5ae4fd170f99"
+    },
+    {
+      "path": "references/code-templates/matlab/ml",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/code-templates/matlab/ml/random_forest_template.m",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1485,
+      "sha256": "f45439bdd9943d2374897c064a73bcdc5d920bc54462ecff9e70d7fa60ad7211",
+      "blake3": "9d383cfed237ac0968e75d36909ec43aa88f120a235acbcc9c95562234aadbe6"
+    },
+    {
+      "path": "references/code-templates/matlab/optimization",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/code-templates/matlab/optimization/ga_template.m",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4696,
+      "sha256": "1c6919e574e0c1bf419eb88f3a418f7d51ef5a12c6c201b982878e61a049aa0b",
+      "blake3": "c0b84533bc32ca060c2a20fba1e4e137ba78aaeb519b684302dbcee84fefb937"
+    },
+    {
+      "path": "references/code-templates/matlab/optimization/monte_carlo_template.m",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6145,
+      "sha256": "b4b30a2881400de0feac153a2f1d53f8a5d6e9701992ebdc96024d50613b6bcc",
+      "blake3": "d1e9488b84da5364ba1e86c8ad1329cd22c61fd53be77f55b767875d94ad67c5"
+    },
+    {
+      "path": "references/code-templates/matlab/optimization/pso_template.m",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2693,
+      "sha256": "b4e0315c9a8431755021fe850b239d117742714fedfab8485e89b69b1ef29e66",
+      "blake3": "188e2d2ccdbc54e11ad77ef4e2ff942d73b22041817a00db5b894ec99b204998"
+    },
+    {
+      "path": "references/code-templates/matlab/optimization/sa_template.m",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3840,
+      "sha256": "81fa9903b78536e2898e020d40524380c6e5cc80c7ae8df862e18f195970006e",
+      "blake3": "96394018eb061facf4b7a132914ce1077ba1338de9db89a9ac42ea6b2a6240a9"
+    },
+    {
+      "path": "references/code-templates/python",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/code-templates/python/evaluation",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/code-templates/python/evaluation/ahp_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2507,
+      "sha256": "dc4698e77ad78da44ac5888eae3195ac9479df1b681f5845241680eb7598501b",
+      "blake3": "c4abb7e48916b5cef7fa0490dd3bb14ebfa9448ebe5a3763275d86fa0815ddbd"
+    },
+    {
+      "path": "references/code-templates/python/evaluation/entropy_weight_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1882,
+      "sha256": "573b456e2bc781e7bc1eaa4ba4ad4e08252217648ef8e67264ce27709f41c9bd",
+      "blake3": "b4ed346417ae63a74b887fab4d44a19aa73225b990105098fb507bf814c9c0d0"
+    },
+    {
+      "path": "references/code-templates/python/evaluation/fuzzy_eval_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3534,
+      "sha256": "2eedd57fd81e8934b9fa5685188502c54280b6330cfa171686dca36b4321632b",
+      "blake3": "5f0a2939fcc95adc024cb4eaf3b12e19fbe782f83bba64b9f0dcd45e5e8bab5b"
+    },
+    {
+      "path": "references/code-templates/python/evaluation/grey_relational_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9851,
+      "sha256": "c5383b18dd0ecb161a13bc6dc08e3f592d29bc0c241661d047e9a4834bc2f62c",
+      "blake3": "e215a100c9be1f00bdca69bba8be133435622199249ac5cb8ea16eb2a966c1f4"
+    },
+    {
+      "path": "references/code-templates/python/evaluation/topsis_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3821,
+      "sha256": "17696154fe722925257093265ff9d85fb65fbce950cc3c34c989817186096be3",
+      "blake3": "c5f326b4eb5adc3466b4858e0d9bf9964613e57a8ce69abbbecc9699214a31b1"
+    },
+    {
+      "path": "references/code-templates/python/mechanistic",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/code-templates/python/mechanistic/food_web_ode_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10351,
+      "sha256": "cdd0c84114f69156741ff09accd3136805929d34dffb43cc42907fd55b92046b",
+      "blake3": "47eef98347911580270b95d213968b5efdd3208613aba41d8f72c4ac8686d83d"
+    },
+    {
+      "path": "references/code-templates/python/mechanistic/ode_solver_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13158,
+      "sha256": "8036fe75b28e8b6f47d2e2e192d014a73108a3c0b584b41f071ea379151af148",
+      "blake3": "f6bf0b2fa4fea49b0ea2408d36bd9204f469e644a918b0509675b93cd1e39f47"
+    },
+    {
+      "path": "references/code-templates/python/ml",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/code-templates/python/ml/anova_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12272,
+      "sha256": "2ab47a6d1bb5fa52bc9179b6c3ee6fa5b104c69d112ad88178e339c91044ce5e",
+      "blake3": "9a30b8b183d17f998288a01bd97e28346751e28e15bf1d90da2c10bc2ecd57b6"
+    },
+    {
+      "path": "references/code-templates/python/ml/gmm_em_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10399,
+      "sha256": "70d2c6381bdae3fe3dec0f4e0e58a48bf3ffbc99aeb2429afc03fd73ba8b93a0",
+      "blake3": "8400c78b268e5337d3a291ffda47da5992864100eec6873f63ff771837bcd430"
+    },
+    {
+      "path": "references/code-templates/python/ml/markov_chain_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8336,
+      "sha256": "f067503ad8d5b5c7ed0b321f542f953bd6b93a21f70fea45c0c27365e5b555fe",
+      "blake3": "7d614308883abd368741c0244214bd073e97f4216fd3e90e07c09809ce1fb8b8"
+    },
+    {
+      "path": "references/code-templates/python/ml/random_forest_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2254,
+      "sha256": "4153de10fba07626a2a9487ae9de7710fdf06ab7a494fa4acbe046230a9408bb",
+      "blake3": "9023963266d8ae946d6ce9a88033c61fbee7418cf1b6d0cc8702d57e6b94e921"
+    },
+    {
+      "path": "references/code-templates/python/ml/time_series_forecast_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13960,
+      "sha256": "9927fa087a9af2885d6bde27bf188d1c8ee153e4877abb7d38b673c66555a560",
+      "blake3": "ba482047eb4f6c92c6db56eb18a0a6ade3827c185b64f2dd3cb1b706147742db"
+    },
+    {
+      "path": "references/code-templates/python/ml/xgboost_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4741,
+      "sha256": "564f9a7921db61fc2ed76bf51784f4ca6d18abd58d84ba276f3d82891e0510ec",
+      "blake3": "738fdb6f1ed9e2d18e84ce1580bf74b4b25e99c1ac8a1d480859c45a8056420c"
+    },
+    {
+      "path": "references/code-templates/python/optimization",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/code-templates/python/optimization/cvar_robust_opt_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12116,
+      "sha256": "2b950ab52757072920f08da4bc10f13fb01fd072adec60a35299426c1de761c8",
+      "blake3": "0207beed75e44a6e9658188b929f36d71065f5695d1a2dc894fa678aae5ab4a5"
+    },
+    {
+      "path": "references/code-templates/python/optimization/ga_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7013,
+      "sha256": "88c934076c0e6759c6ee84692f90b76e30f579c51005c13845faf42de41f5df7",
+      "blake3": "92254053029c74113fbaa0b7d062841b4418b8af98dea8979e3b91648d908455"
+    },
+    {
+      "path": "references/code-templates/python/optimization/integer_programming_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7544,
+      "sha256": "bd5ad1e14bb989854f80d89f0a94262c3e5063fcb735d0b7d4cd6ef8f9a71f6f",
+      "blake3": "0e3db2b40e01b80d19f2aea769f76e3a85ddfe9ba7267d5090321f81cf8aa8d4"
+    },
+    {
+      "path": "references/code-templates/python/optimization/monte_carlo_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8055,
+      "sha256": "551364b54ae2ffcb69e1a554e85ad785e6af389b1ed49231ff72098210e9f59b",
+      "blake3": "6f1f4d2d3bb4467ef312a9efcbd6b3a213abbc57b781847fa7a0aa4ee8c8ca9d"
+    },
+    {
+      "path": "references/code-templates/python/optimization/network_flow_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10019,
+      "sha256": "0ed1a0c2e0250fd1757f0aaae4e540c2d6c71eeca39120662801ec22c85e8159",
+      "blake3": "af65d5320057ff6499ca76f54cc3327b30a4f1875697492f5c379054a92479ea"
+    },
+    {
+      "path": "references/code-templates/python/optimization/nsga2_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10831,
+      "sha256": "8f091aca511396c23c550d5dccdfc224e16d73cf5a9593df0dedd1b8479a549f",
+      "blake3": "c8ddd768f761a4a588a11a35af27c724436ebf1ef7bd77516f9205168cb29858"
+    },
+    {
+      "path": "references/code-templates/python/optimization/pso_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4011,
+      "sha256": "9a9f649e72d212ad41b688bb0d15c326d66d01616a9c97f04aead549f63d79de",
+      "blake3": "e92c59d2d1aa9ce269ec795de02fcfebbdac6ff7434ad13d9f5522b978c280ed"
+    },
+    {
+      "path": "references/code-templates/python/optimization/sa_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2754,
+      "sha256": "ab178de89cb02d9ce322853e78b7b5abee3957a41bdf76e8515180ef79f1418e",
+      "blake3": "d0b6fe4c33ad848e856a5333204880d668ed39162a81b232b936bbc938c333cb"
+    },
+    {
+      "path": "references/code-templates/python/optimization/system_dynamics_template.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8376,
+      "sha256": "6e92ca745f6d6de8c2a09603864c4cba2bccc8d8b0250103f3c2aa2f46bdaf67",
+      "blake3": "47155ef623688004bbc288ec0787807331271ea7afb5df3e1f46dda11df003d6"
+    },
+    {
+      "path": "references/cookbook-clustering.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7098,
+      "sha256": "fd0abfaf88eb9a6a4fb16545ef897bf44b54a5fc6f06a0097ca8524f84818617",
+      "blake3": "eeec170147f9f4914952295fc99de1fed3ff712c8214766f0d72c9e96d2d622d"
+    },
+    {
+      "path": "references/cookbook-evaluation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4504,
+      "sha256": "7f319757ea39291366f684223ae2f7619ff3a06cfeb75ebf0e2a2181561f8011",
+      "blake3": "47f21e59c603edfd581ab55fa13e9d6ac753deaca0353836994932addbb8f0dc"
+    },
+    {
+      "path": "references/cookbook-game-theory.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5415,
+      "sha256": "f7a3fe7d13675e8444d4e8bd83500c83551bd6d137bc6ff8cb5ffef92c227415",
+      "blake3": "5452480dc531f2ff0d353b0fbe752fb22927327d4df72b604b4f1c8dc001d096"
+    },
+    {
+      "path": "references/cookbook-mechanistic.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 33547,
+      "sha256": "b4a61b1ea51db79c1128d2f16a82c719e367cb176ae4eb9376a436b80d3440f6",
+      "blake3": "1fc9b41d2ddb5b3df0f6a2e05fb4532aef9f3365a3256119c7b8495989d3387b"
+    },
+    {
+      "path": "references/cookbook-ml.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7309,
+      "sha256": "5e63257c87034b2b3c826f3f312d741615b8d50d25ec0f3857aac170172138da",
+      "blake3": "a7f530a5439b1f6ac319c798a9807554ec030de7adda1b224c9c583c220e577a"
+    },
+    {
+      "path": "references/cookbook-network.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5941,
+      "sha256": "01e46674a8cd376fcd35b60d67b38127907846d583ee075af042aa6884999116",
+      "blake3": "ac554fe552bfd950fcce2ced1d234e8862c157fb871694abd218c0a2e0235593"
+    },
+    {
+      "path": "references/cookbook-optimization.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5648,
+      "sha256": "138e74b1ffdf4530ae7700f67e1b88a065d6d14bc1948e29c1384b66ebba8c07",
+      "blake3": "8c1ddea92ce4e77574ebd1900d844c5f5dfb9f4c31e01fabe630fac0100795a6"
+    },
+    {
+      "path": "references/cookbook-statistical.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19169,
+      "sha256": "7ed036d9536acaf02572733a12b37d8644cb73daf820943a573e6bf37ae709a5",
+      "blake3": "ce64e94ad87399ce0310ea1b644c9d4ac8aaf7c9fe1350f283b328de91684c8b"
+    },
+    {
+      "path": "references/mcm-specific-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4191,
+      "sha256": "e8a8cb8789260bca5667fe5b88b2a9eca59301517a3d5ab61fa09e1e90ae4eeb",
+      "blake3": "8325cf8579bbe3c1e8d7e43f591ea5f82946f9aea7679d258dcd54067fa39339"
+    },
+    {
+      "path": "references/model-selection-matrix.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15002,
+      "sha256": "adb18adcd4f1e64ba164ff223f465af14a333b84fd58ce7a77c995377da214e7",
+      "blake3": "93d7b159843281682b4de714a18bfa672837e1e3b2644c7582f5954dca7d94ec"
+    },
+    {
+      "path": "references/paper-bridge.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3738,
+      "sha256": "25494ea743f38fb27a2692ffdddc4602fd00b8a17489565d75ce34ec18348075",
+      "blake3": "9d93c152a2afe0559932a622e4a8c52d4d09dbe978fd393397f3011e22080bec"
+    },
+    {
+      "path": "references/playbooks",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/playbooks/playbook-data-insight.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15932,
+      "sha256": "d0d68f6347130286352634c2f1f61dd3fc319ab33439d79a654d09248b672ae3",
+      "blake3": "55cf95768e181e161d189d9acc5e3971355acc5ea93629357510d77d8183b1a1"
+    },
+    {
+      "path": "references/playbooks/playbook-evaluation-decision.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12571,
+      "sha256": "5f595abd6f7aaee588b056b11eca47b510e3edd91c8c667ff2c588390302aca1",
+      "blake3": "dbb2edf47d4ab07486884eea2b4c75d07d84a1792e6c71d558dd2dbfe35ed839"
+    },
+    {
+      "path": "references/playbooks/playbook-geometric-kinematics.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6407,
+      "sha256": "32665c52af13e4edd23cd243c29536b8e409baea166413d7f1b56393c28f9e79",
+      "blake3": "a78561597f19562562420f5adbc113061b14932d3a481fd06e50d59938e499ed"
+    },
+    {
+      "path": "references/playbooks/playbook-mcm-environmental.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5695,
+      "sha256": "9203fcf276ffcc5fb552fdd5cfff0aebe9a4e2c961269c690aabfe2bc7030fa3",
+      "blake3": "b59347c9cb36470ad716edf82f3d5b02eeec231249b15a70c40513eeac33e485"
+    },
+    {
+      "path": "references/playbooks/playbook-mcm-network.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10240,
+      "sha256": "b5547a292991576d83a481e5bd53ab4c939030269f3563e8f4502f32bac93bc3",
+      "blake3": "015ad1a5f64dcda27338472d49b432eb867c01662d0a31cc1fc74dd7d0f67308"
+    },
+    {
+      "path": "references/playbooks/playbook-mcm-policy.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5003,
+      "sha256": "84a9bbc5f89f6348ad7fb7794ec2e74a081fd58c9df9d865c40d5c84a036883c",
+      "blake3": "ac51abeeca1d1457ad6a9f5992fd9f59714dce20b94841b151e8d8caeeb40b33"
+    },
+    {
+      "path": "references/playbooks/playbook-ml-classification.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10387,
+      "sha256": "82d70306df501b854b309c5a1c4c57b456eec14ce680db37e81d114c368b25d9",
+      "blake3": "80d2c66e2195ea4957c2be79471488f05620e8a1db34f888d3d7b5dd80d259fd"
+    },
+    {
+      "path": "references/playbooks/playbook-ml-regression.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13416,
+      "sha256": "d96cf089afc68b5867a72c9c11902bb72904a38abdad1195299ee17b14215d30",
+      "blake3": "62fe9a88579156ff23f5f005e166591fdc75d44faa6d5c794b4ede8f5e805bf0"
+    },
+    {
+      "path": "references/playbooks/playbook-path-planning.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12359,
+      "sha256": "b74b9917f60f1ac045bf9d1c36238538e1b1197787c46a80c4372795cf3d64b3",
+      "blake3": "931bfad348bfcb4078d483cf4db7832b8e7581344e6baa382e4cfc4aeab3a5f4"
+    },
+    {
+      "path": "references/playbooks/playbook-physics-ode.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12084,
+      "sha256": "1d53a60c04fefe7496b132a94dd0c6502720880116371044d2efe2e7b14f608c",
+      "blake3": "c51d158c29f45e9614954a6dd47ae17d47e72968cee6269e4eb725955950679c"
+    },
+    {
+      "path": "references/playbooks/playbook-scheduling-opt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10801,
+      "sha256": "6531947d18d7d410f59b72799c00b281341525edeecd5938e7737fd8fbe5d90b",
+      "blake3": "55b7f97809fd04deee9d7d09735285c3c0677fa64f9610b2495508baf51da4de"
+    },
+    {
+      "path": "references/playbooks/playbook-strategy-game.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12811,
+      "sha256": "195e85c7ca393222a371e7b5476522e2c1ce3ddab001a3a7eca8a6571332ca73",
+      "blake3": "e36958b3037e2cc03cfb9c916049f3c3a5c9f9204e402bd346f44c867980ca7d"
+    },
+    {
+      "path": "references/problem-decomposition.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8356,
+      "sha256": "c77c4f86d2d562e012ceaa9bca44a6b16842d621e36db75b7e7973d57f852169",
+      "blake3": "4a7b5f6f2da083451c257ea538cf40a9fa4dc799665de9db58901c55fe756ee7"
+    }
+  ]
+}

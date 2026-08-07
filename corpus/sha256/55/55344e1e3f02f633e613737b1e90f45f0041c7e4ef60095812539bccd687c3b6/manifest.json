@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:55344e1e3f02f633e613737b1e90f45f0041c7e4ef60095812539bccd687c3b6",
+  "sha256": "55344e1e3f02f633e613737b1e90f45f0041c7e4ef60095812539bccd687c3b6",
+  "blake3": "e448a8962af1b98544dff9348e97ceb29e61598aedffac4c37a26d8a836ec559",
+  "size_bytes": 71164,
+  "file_count": 22,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7903,
+      "sha256": "994970dc26cb79019dbdb1cc0cbfedd26af62629539a8bc6eab426e215507720",
+      "blake3": "904016967df51b02ee98c73c85a722a6294c36e3f00380d27dce7d852309540b"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/audio_rules.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3910,
+      "sha256": "0056fa1072685fdc14ef1977e0c1262c332e30b9965b1cc6a4b64f9d45b2c447",
+      "blake3": "546016cf8f5369a6fc5a336ec6b1f3e536ffb875abc4ba008434d5c24a647f52"
+    },
+    {
+      "path": "references/diversity_rules.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5030,
+      "sha256": "9667ca6e4e3b98308107a15983e0b2d3dca3323f12333517aacc502d789ced1e",
+      "blake3": "4467cc477486a6d6aa174d104e47aa3b27690c43de71ee008e28229b499ee74e"
+    },
+    {
+      "path": "references/field_rules.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3941,
+      "sha256": "3230d87f3c80be73d47b11e3f709d0988b41132788ee179b14d51fb70d745881",
+      "blake3": "30b328a7fb527b5e264c19f2800e427765584d226126a8c64e6a9e2e6ea41563"
+    },
+    {
+      "path": "references/schema.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9307,
+      "sha256": "de85179ca3de0cab0402319575d2674868df64c230b5dcd751368b109190320d",
+      "blake3": "406d4a4adb7c48eb04e090df7214d05cc5138d37e41998e1fc539646dd161ddd"
+    },
+    {
+      "path": "references/tools.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1562,
+      "sha256": "7ce723ae5f2d870a550b22b9fd7964984bdaadb277b82812370f722c064221a5",
+      "blake3": "60d0ef8710a68acd20a298fd004c39636a40c6c739a2ee1e2e7ca1fd95a4a903"
+    },
+    {
+      "path": "references/visual_modes.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6806,
+      "sha256": "b261b149f5589391aec2aa6e3b628767919393baece1f9ff2f404b3b00e77f40",
+      "blake3": "9d5bbf7f227ad4af53b75e73f9b8346298c86c44282568d3850aede05a9ff1be"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/openrouter-embeddings",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/openrouter-embeddings/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2006,
+      "sha256": "2db68fd3909d3149e6d9cfbb6866c53be72d4a4a4fce84734b8bce5463e6ede2",
+      "blake3": "9f214a1fd27a033ddda509ea53b8de96301f60c08b96a178fa7155cacbd51958"
+    },
+    {
+      "path": "scripts/openrouter-embeddings/config.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 176,
+      "sha256": "14c4dbb252f5468e01eb3eb93ee3e8d63a8722fbc10b85ca878dc94a561ea42c",
+      "blake3": "84d6c3e8ad024e1df3d77f22473a76bb6684feb81e51ad31fcf6f0c6d71f4dfc"
+    },
+    {
+      "path": "scripts/openrouter-embeddings/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/openrouter-embeddings/scripts/embed.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3710,
+      "sha256": "edeb3d8ff56af9550317bd73ac143391ae244b0df4dd73e63a3c68536968a631",
+      "blake3": "e778c25670d4963e459e2b0cfdf06ddcdc6b88507986ae6d9ddab36f85246bae"
+    },
+    {
+      "path": "scripts/openrouter-image2video",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/openrouter-image2video/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3496,
+      "sha256": "884082219b1092d59ca17a9cb1bb33d0938a1918389764df1f7c5ee2acf1b350",
+      "blake3": "75c4140cdfe0ed0581e1291999450e0c425a41e6bb4b954bd90490226c99c04e"
+    },
+    {
+      "path": "scripts/openrouter-image2video/config.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 319,
+      "sha256": "b8102675d273912b7cc44acb33ccd9f5f372fd4a9866f6877f67bdabbafae8d9",
+      "blake3": "361fb324430e51f1eb3fe107e31608d3e903a59d1993b21a29e33a488567f2b3"
+    },
+    {
+      "path": "scripts/openrouter-image2video/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/openrouter-image2video/scripts/generate_video_from_image.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 5482,
+      "sha256": "61db898e738f0c29496a20f94c1141c521bc7235bb3e92724479669a7be0022b",
+      "blake3": "ee0d2897677024e05b76635d91c175e3d86b6fda6082ec5c789cfc6148d779d7"
+    },
+    {
+      "path": "scripts/openrouter-text2image",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/openrouter-text2image/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1429,
+      "sha256": "d94be8ea08acd79840a10ae2bcadbb7d7880c1b35b6c6a1206764c99bea3ab63",
+      "blake3": "1d00b8cc173afc2a6aa950a60fa5097914829bce5439193e8a8efbb80f6678e4"
+    },
+    {
+      "path": "scripts/openrouter-text2image/config.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 181,
+      "sha256": "0b11b97309efc33cfb056fb91eaca860eb24a26ef375fb347627a64f27f9a2a7",
+      "blake3": "634409aa36517f5fea51480de7427afdeee8198dfe94a4e0d93418508d6664f5"
+    },
+    {
+      "path": "scripts/openrouter-text2image/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/openrouter-text2image/scripts/generate_image.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3371,
+      "sha256": "939443a6a3f2faa5939adecc0e581656d930017a140c08e016d58501f8e12cff",
+      "blake3": "df683a3772cb4967be6e91aeb47664f387d3d41006359a4f48a3bef22678fcb7"
+    },
+    {
+      "path": "scripts/openrouter-text2music",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/openrouter-text2music/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1635,
+      "sha256": "f7bf8ecc5f3e1bacbaea2ef469b5682df181980370ab15b9305858686ac059c1",
+      "blake3": "b5fff231e2b16b4c746e9e4a40066707170c061006ebdfda2012ae098ba4c7b3"
+    },
+    {
+      "path": "scripts/openrouter-text2music/config.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 272,
+      "sha256": "214ea9f61752e552d1bdada590e1d9355ff6143d68d6a8919cb0eb428c315e71",
+      "blake3": "1e625d36ae88324766942d48be510efcda0cf251e07af1a9d08954ed6dcb7da7"
+    },
+    {
+      "path": "scripts/openrouter-text2music/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/openrouter-text2music/scripts/generate_music.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4215,
+      "sha256": "5b881d36fbb0e13779217558e44a389d71176eb3a487dd93d16642c8a22a8e3f",
+      "blake3": "786f42c134519b73e3625c8e896c2b9fde1296ff8ce79f58d4befa558fdd5ad2"
+    },
+    {
+      "path": "scripts/openrouter-text2video",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/openrouter-text2video/SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1974,
+      "sha256": "66cfe135b0f3d955de3e4ae28e3d91793e8d883fa9c61b7e7af6e45d43c08a92",
+      "blake3": "d7bced1b6302e4f481d856411b76f71cdea54d4c0b1137653e539e9b92c2bde8"
+    },
+    {
+      "path": "scripts/openrouter-text2video/config.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 321,
+      "sha256": "1e7d7ff63d3ae3590974d96a85d7e499e6ea63f75f9cf04a9ffe2236fd922397",
+      "blake3": "b6d422847e91633c36038e98c8101f427fd2ed2705698a7f570add8302f73920"
+    },
+    {
+      "path": "scripts/openrouter-text2video/scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/openrouter-text2video/scripts/generate_video.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4118,
+      "sha256": "f0e2a0ef203f79cca888e958e20b6e27066f42601fe535dbf6df0e830e2b5c31",
+      "blake3": "4e02ab6f87e92e4e547900853802475cfa129ad7fd119b7fc400eae32e408b55"
+    }
+  ]
+}

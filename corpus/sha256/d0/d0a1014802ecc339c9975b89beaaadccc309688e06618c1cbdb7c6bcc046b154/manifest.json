@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:d0a1014802ecc339c9975b89beaaadccc309688e06618c1cbdb7c6bcc046b154",
+  "sha256": "d0a1014802ecc339c9975b89beaaadccc309688e06618c1cbdb7c6bcc046b154",
+  "blake3": "e5aa2e9a08fe0a2c94d2c277e2205532cad306005d62c75e1a43d6ce781eab50",
+  "size_bytes": 9297,
+  "file_count": 3,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3496,
+      "sha256": "884082219b1092d59ca17a9cb1bb33d0938a1918389764df1f7c5ee2acf1b350",
+      "blake3": "75c4140cdfe0ed0581e1291999450e0c425a41e6bb4b954bd90490226c99c04e"
+    },
+    {
+      "path": "config.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 319,
+      "sha256": "b8102675d273912b7cc44acb33ccd9f5f372fd4a9866f6877f67bdabbafae8d9",
+      "blake3": "361fb324430e51f1eb3fe107e31608d3e903a59d1993b21a29e33a488567f2b3"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/generate_video_from_image.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 5482,
+      "sha256": "61db898e738f0c29496a20f94c1141c521bc7235bb3e92724479669a7be0022b",
+      "blake3": "ee0d2897677024e05b76635d91c175e3d86b6fda6082ec5c789cfc6148d779d7"
+    }
+  ]
+}
