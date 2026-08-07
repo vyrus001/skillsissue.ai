@@ -1,0 +1,691 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:a34097d87e02ad37062a40e7e73a9bd7e954aaef6a2f33f7a914b141b6dae6bd",
+  "sha256": "a34097d87e02ad37062a40e7e73a9bd7e954aaef6a2f33f7a914b141b6dae6bd",
+  "blake3": "f689cd096fc8825f1866b988f45ffb83274e8888202af5bd432ce597f7c560cf",
+  "size_bytes": 510778,
+  "file_count": 73,
+  "entries": [
+    {
+      "path": ".claude",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": ".claude-plugin",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": ".claude-plugin/marketplace.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 371,
+      "sha256": "ce8e4aa6549fad7c5e9170471e2e5031f26da51b3ef56e31507e77f8edbbf4ed",
+      "blake3": "46c1f9ccee14762225ac2e1cb239d257ff086c22f1c8b44a5322962785a62987"
+    },
+    {
+      "path": ".claude/settings.local.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 66,
+      "sha256": "2666cddb5efd27f97cebdffab9f3878d6910a49dcc6eb2b92dc2bf5a30977a5a",
+      "blake3": "3fd071e82cc6404a1c6fd7e315529a95a9792ddf1fa6fce4c47a283aee25f5d5"
+    },
+    {
+      "path": ".github",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": ".github/CODEOWNERS",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16,
+      "sha256": "a435d6c92a5961cd8d8ad3ae2fbb5e42ae77abf8003ce75106e712094b7cff53",
+      "blake3": "03e279031ee25815044cc1fba9689b8f08f1bb673fda6ea54ba5e90a543f469f"
+    },
+    {
+      "path": ".github/FUNDING.yml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23,
+      "sha256": "161107059f833b33ec84b8e1dab955b09d918f4132c840647af3fa18a37f479b",
+      "blake3": "2f55cc45068b48554f9da6e11f9f5b2b2ca26a3564153edad7ec609093cb0721"
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1007,
+      "sha256": "e63f77bf3cf3f8a6bb74515d4c4aaa19a4f575b228429af1b0a5e90d98868e71",
+      "blake3": "b0fb4d9e272be1765dda37333f73793877a6e0c65778749aee81f3c2d5f04463"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 346,
+      "sha256": "c17a47482fff48df02f7a9ee44ee10a3c0a41302290cdeb66d382f6e5d2903b7",
+      "blake3": "41f61fd9e024da089ce0a89fb52e61c46898c7c040ba32c448f4a2b8a4d874d0"
+    },
+    {
+      "path": ".github/workflows",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": ".github/workflows/deploy-docs.yml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1167,
+      "sha256": "0aeefed031a8a13979ff6a945f84feb99dd4b09e67c343991fab157751b2e112",
+      "blake3": "54eba1d04674f04d2fbc5bce88f4b4e0ab11ccdd095096e20d27fc174034b9b0"
+    },
+    {
+      "path": ".github/workflows/stale.yml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1444,
+      "sha256": "32e5e72a519233b2168c04a907fbb489e2ceb7b5cf3bb054b6a575bb06cdf57c",
+      "blake3": "8b2c80d7ddc834b4f9541a544573b004591674221fb30e021a8cb0e777a3149c"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2950,
+      "sha256": "076b42bf0b58c2892841d776925e463c540227dfe617debf6c9b730301dae7e6",
+      "blake3": "529d87f8be9713f6139502f7a3be08d1d02ff179c5c80bc9a87d460c79b6afa4"
+    },
+    {
+      "path": ".gitignore",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 27,
+      "sha256": "fca16cae5b0e32edfa6b55eaa32a98ffbf4a0c7d885fb585785fc83b6ea2d9c3",
+      "blake3": "7c95d3340547c86302065a6ad225f94756f0f922b6f6410debf1d7f24285deaa"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18,
+      "sha256": "b78c2fd3219bccc516bb1f978f7a00d9cbc24b48fb6f7798ead74eed4fa887d7",
+      "blake3": "b990ee948865460b01aee0e45795416bc19e2dd8188a5867e950cda371906c44"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 943,
+      "sha256": "9cf2fd3709005c0ea3a93ebcbe13fcd19b40cc0200662f8b7f5cf450897d0903",
+      "blake3": "6b49a676249f268a6106ac2b31b7c6be676e392aca06fbf253f60c8d193cf9b8"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1724,
+      "sha256": "457dcc96f95ac9154611daedd19865cc4091f84cdd63f6a36f76297733392aff",
+      "blake3": "668de980ad487a080a46476d56fd348e951595ec7c271bef9c37932826a2ecba"
+    },
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1102,
+      "sha256": "91a4167f37c7938e42348c78b085bb51fd6c356e6b9a8e81a59f91f06aeeb8ad",
+      "blake3": "8077b6cfb0a87ed4d99022e0bfdd5f011631f17a581eef733573da2597a31591"
+    },
+    {
+      "path": "PHILOSOPHY.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9811,
+      "sha256": "271e69aef2367da429eb99cf54ab5df41e5e39b8736f86f4a91d68c8c925dd35",
+      "blake3": "29faec0800feabfa493eeefc4dd787e18a8d84147b49f524bda853256818abe1"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23176,
+      "sha256": "5e1b228f4933982f49ad1d8c192e3366f9c7c3ee9cceba24418d45734a859fff",
+      "blake3": "aa71cb8713609cce978afdc3c7d821979ac31c1680057608365fb597bda2a95a"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3371,
+      "sha256": "bc4bcf686d013ea27a28cebbfd3c117dc1a66a64106a5303ccb247a1363fbe63",
+      "blake3": "740b56282dc2a415837ac7bb0178c5a86c3780464024468deb9d7e2475288ab7"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/logo.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 197908,
+      "sha256": "aca8012e11207aae37047c6034f0510c9a7f64dda94988962eb672a3dee06b9f",
+      "blake3": "a910abefa84d53123d34f949593e096a2ef519c1620cbc07307e6c0847d7af9b"
+    },
+    {
+      "path": "docs",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/.gitignore",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21,
+      "sha256": "ed7cfd5067c851a0c34005e8a460ad8d83df34e9a6d6cea725fd7717cc324700",
+      "blake3": "46a7f473a4b779f0c8a536aaee830f24a5cd9f9f74336ffc791dc919072bdcfe"
+    },
+    {
+      "path": "docs/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3356,
+      "sha256": "490c7388d1971a450534ab4207355886b07bdc124316748f97b638d960a511f1",
+      "blake3": "cb713704945fae78cf0a85679850e065a703905ab519b715dc40c6740d15dda3"
+    },
+    {
+      "path": "docs/SUMMARY.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1763,
+      "sha256": "3cc3e1927afaaf683ad713e42d9270dcb0922fe6212dc4bf60e0acf07bcf3534",
+      "blake3": "8cf7149885bc12311925eb5823b4ae92988c42474e23b74ac3089c648cb1bd2d"
+    },
+    {
+      "path": "docs/advanced",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/advanced/comparison.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3668,
+      "sha256": "d48eee1a7527bd57e576ce2b7d5bde55c2bb303e26a3c4baf1b76c067412b2c4",
+      "blake3": "269da5bb01d38c5ed265677a4f1c28fb6ad2e0d79198af433904cb0c2bcec7b4"
+    },
+    {
+      "path": "docs/advanced/token-efficiency.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3186,
+      "sha256": "e998c294302db49e5c69cb8234dd7808cca12d06a3ed00c484fe6da5e7e7b0a6",
+      "blake3": "cec84e88a8e985eb30476496b2994410ecdbf90824955f7c451d308ba791814e"
+    },
+    {
+      "path": "docs/architecture",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/architecture/backend-state-safety.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4641,
+      "sha256": "a6e9b92c8efcda1f58badfd22d7e1d021d278802f43756241fe810992b37c0ab",
+      "blake3": "e8fbfbd97b77cebed29bbabd44969ba4d9da3d90b7157146df9a0f2a4a789466"
+    },
+    {
+      "path": "docs/architecture/coding-standards.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3637,
+      "sha256": "0c9a1bad62b064f0922fcd265c2619ec5ccaef12fa15ee755e7b41bf871b5cf7",
+      "blake3": "9afba4dab98da9b1e7e63d33b79cb97e9662b5ce56ea08a9ba100dd6d9b3f68d"
+    },
+    {
+      "path": "docs/architecture/module-architecture.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3058,
+      "sha256": "ac3291a341b46d3339b03aba25312a86377759094a31b98f6986f6245a3f897c",
+      "blake3": "acaca91bcb35f4836830b29f100510ceb514ac00a95cc4d900fa30a9b564966c"
+    },
+    {
+      "path": "docs/architecture/structure-and-state.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2197,
+      "sha256": "ddd4be9aed9187361b3195e3e748e846eb396792095f60d0c9577e7882c75606",
+      "blake3": "6a76fceb8067647b2a0baf279a19f57b87394416b7ff104da500dd7a916088d2"
+    },
+    {
+      "path": "docs/book.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 660,
+      "sha256": "c2219c40609560a476e5f2eaf13a369335ad4068cc953e61ff41724e216a3938",
+      "blake3": "379109822e9fd0d001f25be0d3628e9ff33e67bc3d89ab3a3452fac0a948ffa5"
+    },
+    {
+      "path": "docs/changelog.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 837,
+      "sha256": "53f14a7168011e6c5ede18345690f7beec7fd318b5b29c0e2074fbbaedbb09f9",
+      "blake3": "7afad5481c620e3ab68697610137f8899a40d300acad0ced835f2d027a14dd67"
+    },
+    {
+      "path": "docs/contributing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2172,
+      "sha256": "44053b08a8df98e1355bfa8c99bb67a3eedb699a4b13d0ee5ababad294920791",
+      "blake3": "603ab5d52ad1924e4f3dacfb9427df2c43114d720185a99818badcfcb329eb69"
+    },
+    {
+      "path": "docs/core-concepts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/core-concepts/failure-modes.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4970,
+      "sha256": "369189334ec1f9a28a7c1f410d9bc9733a6780e27f2c89a03b10afdb55c7d888",
+      "blake3": "c8904ca98f5e4a947dcf15cf9dc2bb3923db36cd739883a2c0e3b362c22b68d0"
+    },
+    {
+      "path": "docs/core-concepts/philosophy.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6517,
+      "sha256": "9efdc8f6c79d277a489f8bc2e1de9706a21fb84b06992f291d0e4c0d4aeb1d86",
+      "blake3": "c95159545b3acf70c32e2cb94c2e29f1199c8d719556b1903d11c378740ce0bf"
+    },
+    {
+      "path": "docs/core-concepts/workflow.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5005,
+      "sha256": "de2c10c4f8dd458b4a01fb9ef771a8d93657b611e492d984b4963b3e22a317f1",
+      "blake3": "50fb3f0cb95113d4d52fea5b06d5b4a574f7f8fb55c4ab3c338d0e502ed8ac47"
+    },
+    {
+      "path": "docs/examples",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/examples/bad-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2748,
+      "sha256": "2e73eb9bcc1fbfcb7412a1d3d75e543c7b6c1f0459a938723a6350b1f5e53cb8",
+      "blake3": "8bf2ddbfc0c776d8e4a8707b6b2a7e1b09802d06d56e9f173d1928e8991cb323"
+    },
+    {
+      "path": "docs/examples/do-dont-checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3355,
+      "sha256": "f61b5eeaf74a42a28a938721e8f79fdfe7383abe652881ca240b7971b7e5d8c5",
+      "blake3": "01432ff7c6b48711ad0209bab7b8f86f08b24cb8ee8d51a856f523af9f43b1e2"
+    },
+    {
+      "path": "docs/examples/good-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3611,
+      "sha256": "096828678a1e92e12a3886e29dbd44f346167a9fce37162de72d13549b4c6ffc",
+      "blake3": "69ed5fd2305944f55ffd41009542654b14333d261ca558d14051542fe9ed9e26"
+    },
+    {
+      "path": "docs/examples/neutral-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1994,
+      "sha256": "454ce4bebd84c812e7f792a27da5fd970dfd37c6c6ab1771ce350c290528d3a3",
+      "blake3": "892512feb2fc45ce82f36d788eadb7c9cdd6a6d5a476fb580f414ac354bec00e"
+    },
+    {
+      "path": "docs/failure-modes",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/failure-modes/blast-radius.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2321,
+      "sha256": "a422ec6e46fd4ae56085f049ec1a248215f8ffbe82a5695de7b4b4aa6dab42f3",
+      "blake3": "b33abed419af848bce9187b072bb82eee4e195a9484d391affee08fb8eb5e823"
+    },
+    {
+      "path": "docs/failure-modes/ci-drift.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4016,
+      "sha256": "c14ea5ae6add344f523e040e0cbfb39252db735cb02c9b1ce7ccf4e9c89ec93c",
+      "blake3": "52ac597cf272f177cd1d97ed63ec5d0e5b6f1a74efeb98bd83687f3a41889c84"
+    },
+    {
+      "path": "docs/failure-modes/compliance-gates.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3511,
+      "sha256": "cca074aa4de9ccef6a7d334d605df9296b1382673b1013f20dcdab9029728681",
+      "blake3": "c6a9c6c376a445a5911ec74bfd4a174143ff917896521d4a402b9d2d1c5f4ce7"
+    },
+    {
+      "path": "docs/failure-modes/identity-churn.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4134,
+      "sha256": "8ebfec3b67a19f1d948846315c0eb64083b0792e249a0db78711400602f48c99",
+      "blake3": "62094026478b9176fec1abf5b4647225dd467f0dcdf9ccce6c2b099f9b8dcbf2"
+    },
+    {
+      "path": "docs/failure-modes/secret-exposure.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2960,
+      "sha256": "acb0ef4ae4f46cfb6cf490d95aac6d55920604c58737123a97ebf7f51ed3e873",
+      "blake3": "ac65cf87e5c53804558cbdefd6cec13f0807987fb1b3bef7edeac0355f1a4b8d"
+    },
+    {
+      "path": "docs/getting-started",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/getting-started/installation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4046,
+      "sha256": "b7e05a0c0aa6733936eeced02c9cf0a5412420dd9b94ae77d51053141a6cc597",
+      "blake3": "ba2572b3e36df447a141ff90bbde5ff8a9aace55495fcfaa48331b263aa940b9"
+    },
+    {
+      "path": "docs/getting-started/quick-start.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2466,
+      "sha256": "f2f2a2743f12a2206659bb1705fe1298b718ff75138a0b5bbe6c88bc68aaaa84",
+      "blake3": "6a467db0b97974e1a47a252bea750bcdabb25257546d966da5635094bdb8c57b"
+    },
+    {
+      "path": "docs/guides",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/guides/ci-delivery.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4945,
+      "sha256": "948451668e15b95dc0c271fec3a6ecf23236d60dc5eb520db8d374fad2c35fb4",
+      "blake3": "f782f0b3369714f63f8017137029477fd5dd88ed6c49a5642ee8d3f0bc7f0f3a"
+    },
+    {
+      "path": "docs/guides/migration-playbooks.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2787,
+      "sha256": "e7f2ea7edb2e3cbff6b3cbb63b01f94191c1d2112dd48ece3c22000ad64d13d1",
+      "blake3": "d4cbaea60ad3032ad303c9a8df655e2d9f6573acba2fb8587a808b16e6567acd"
+    },
+    {
+      "path": "docs/guides/quick-ops.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3584,
+      "sha256": "17c09b7da7ca2aeebcfec1e96330ddc410f0f251e32160d59cbd52c6e3334b3d",
+      "blake3": "a8703e86222bf5838c52f80f213d6b3f43f8b0d3a0b244eb517f74226cee5f0b"
+    },
+    {
+      "path": "docs/guides/security-governance.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2011,
+      "sha256": "4acfa7e85cb7ba006d8f1499d6caf73ed226a64abb0d9ff937c9c01c06464205",
+      "blake3": "c8f08a6a2c5425a8e8a6bc469526f9c824c35a522f14adff72acaa78c9546b54"
+    },
+    {
+      "path": "docs/guides/testing.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3609,
+      "sha256": "de6364e5b030bf9b8cceeff852827e6d253b60f34e51519a6ae09720bd2fd26b",
+      "blake3": "1b72b46a9c727108c09f601dde46d306b0f7b22fb50c5f96bd73f30c5220a8c1"
+    },
+    {
+      "path": "docs/integrations",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "docs/integrations/mcp-integration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1466,
+      "sha256": "2d8dd3ef07ee16b2ef9e2067a0d45dca3d7480c282bf59c2648a59db4608f35c",
+      "blake3": "3fe0568919313671cd0ab8094ecd3276f09e865b31d89d97f9e728ea49a43f03"
+    },
+    {
+      "path": "docs/package-lock.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 103677,
+      "sha256": "6d85d9056b5944a58c3119d4156f8cc1c153334c8883e0a10ea0c92a8e2c71f4",
+      "blake3": "d6d28b4afb31cd0b88a96ff94a6471cd884ea5b7dcd004de4f4fb68bfd39f5b1"
+    },
+    {
+      "path": "docs/package.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 323,
+      "sha256": "078912cff655766d066b649fb0cca2bb38ab51d563c64305c5dc623f98d80081",
+      "blake3": "8bbdd961ac40f4ea8958abd87225f39335b5c9ad4fd59f640dc2b57af2a5e7f8"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/blast-radius.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1834,
+      "sha256": "ff1cb2a25b16d195a0a4088c681b257bbf7d7220e8c248fc92bf124b94737106",
+      "blake3": "90803e4464afb7550567c00e6d6c1a5b895e7af26d79ed14c76576f9e7dc1871"
+    },
+    {
+      "path": "references/ci-delivery-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5084,
+      "sha256": "40a68fe330bed6d903bf61e26988737cb71eefc82caf29a6b3c46b6ecc68217e",
+      "blake3": "1d75e1225c0c11429e1a3b8980256409faf52d53d63ae7dd033fd100f1b4ed12"
+    },
+    {
+      "path": "references/ci-drift.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3649,
+      "sha256": "dfde76ef6ffbcc1c91c79c5b18a3a24cebbdca08d42144029c6f262c70b5d350",
+      "blake3": "03470c258b9c7cb45d3da470e965633f778591a34a06b615d6406e762cf3e00b"
+    },
+    {
+      "path": "references/coding-standards.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3600,
+      "sha256": "be12ff4cb1f6c6e9c9e8b70a039a6108cbab3d3f0695a2cb26ca45440daae049",
+      "blake3": "b55ad7bd281b72b5297839d9ac2449e73345a56cb5c1b1afe083f3556a5625ee"
+    },
+    {
+      "path": "references/compliance-gates.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3057,
+      "sha256": "e699aa876ad3270e45e99c9704d50673a921e22b9d3209a032dc1302c20d86a4",
+      "blake3": "1753e602553735253534e464e18fce6f98917ca31ee24a120bca88895c3ce96b"
+    },
+    {
+      "path": "references/conditional",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/conditional/backend-state-safety.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4821,
+      "sha256": "ae8ee27755b22eebf96f6334aa991ddacfa78e79d17b2f06f192c9f937dc51d5",
+      "blake3": "3c488036036922117fabaccbcbe06763831d70ae8d1e0694be9899772efc4357"
+    },
+    {
+      "path": "references/conditional/trusted-modules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4878,
+      "sha256": "d618f164c9b39bc217110c23f77094c283f158f2d2fca21786d37c2e60500ef6",
+      "blake3": "722eadb76a3d289b42287c02d6a12886c27062c278bbd271ecd702f1a23e7ab1"
+    },
+    {
+      "path": "references/do-dont-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3152,
+      "sha256": "8eff7fd8e69c00d0eb039f7bb61b737e26ddd66bf9e773a36c387a84188ea413",
+      "blake3": "fdb35045eec95411b52b339ada64794436d4463edcfa69667208f31983092ba4"
+    },
+    {
+      "path": "references/examples-bad.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2231,
+      "sha256": "0163fd3781df0fa70574a75589edd901b482bb9026ea44a4d10689d2f2b0137b",
+      "blake3": "3eaa6a13ca3c85cc9acf08f4dcf87e496dbc037c4ec3b7568769d4c5c5c9b26b"
+    },
+    {
+      "path": "references/examples-good.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3230,
+      "sha256": "13d137808a58d1cde509001bf301ad011673bf2ab470036599c7ff151decfbf4",
+      "blake3": "174cd18e10fa553cd7b31c9659062e03d72220880d34ca51c679743951c243e1"
+    },
+    {
+      "path": "references/examples-neutral.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1671,
+      "sha256": "43f6fb61f9e2add793fb401dfa733f07f20f0c7c96f6909aeacb56b477e4b8c8",
+      "blake3": "ba1f45332aca9f6c1c32cd273f373a0597f5db3f78042672f5a5396f96f822a5"
+    },
+    {
+      "path": "references/identity-churn.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3873,
+      "sha256": "ab0e5d92ea91fba56aed4d516c3f3d7bf3861f8daf6092fc78308e752436c21b",
+      "blake3": "7cc8cd798b9e89a261acf0687facac19548bdd5ecb6f34561ba883b55fd44cdb"
+    },
+    {
+      "path": "references/mcp-integration.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1401,
+      "sha256": "9508c11bc58b78caa9baf179681e8abf6567a18e250fdc7ed9777807081ffc10",
+      "blake3": "3d8f23e8a43d3ba6b6d2e6ab45fdde198e8230f53a962f7e34de988d47909c40"
+    },
+    {
+      "path": "references/migration-playbooks.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2609,
+      "sha256": "84085088c6b7a6b8a4879a18c8e47353944903ccf7bacf859b3fb10bb4ee5761",
+      "blake3": "6f4538eb0ea0ec0520f02d9ae6ca7192ae9eb584785898d458f1b266f781895e"
+    },
+    {
+      "path": "references/module-architecture.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2572,
+      "sha256": "1dfb3bbe0193f9cec5529c192cff6b4fecec35474ca2fd11effafbafc7cdd049",
+      "blake3": "23ebcb48dd815f2aa23469e4a52d1c5fc6616cb7d2e79bc40b2428f026dbbb5b"
+    },
+    {
+      "path": "references/quick-ops.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3948,
+      "sha256": "1a3a5db1d36245603e436c446c2b25ab5c1930a2f8354db2fa62dc770e070450",
+      "blake3": "f51a3009812d6705ee6a1e24f3a457ed5a78005c7efa576023c56f16f316b187"
+    },
+    {
+      "path": "references/secret-exposure.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2559,
+      "sha256": "4aa9457eb08539296dc0d1dd6ae6db781eb1c72673cb3c07194240b5620e212d",
+      "blake3": "37da1c80b583fd2c7f2d8e8cd7dee2d30ce669310c07ae3be4656363264572bb"
+    },
+    {
+      "path": "references/security-and-governance.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1710,
+      "sha256": "ff58b338aee5136b22a9a28a55b89fb89f5723f485368557951b778b991d8379",
+      "blake3": "d6868a72dbdcf8bcd48db5eb9ddfb93157b3497182beec50c277b8257a9ef8aa"
+    },
+    {
+      "path": "references/structure-and-state.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1941,
+      "sha256": "5833031be6c9db45f41f28ba7ef3ee77c3d225f94956190dd2e47c22426ef04a",
+      "blake3": "4b4152bf48fd11ce890e28e04663a1551e4ca99c4f44ba0add2a3a672a84609a"
+    },
+    {
+      "path": "references/testing-matrix.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3523,
+      "sha256": "2f8b280c52d236c77bc61215dc15a7801cd664cb5140ad2478d221931657fea0",
+      "blake3": "cf201cfa31a989769fbb8e576d8eb1852fb29aedf96260a38e16779ba502d8fb"
+    },
+    {
+      "path": "references/token-balance-rationale.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 713,
+      "sha256": "e2d341fb1c0d4112841e629b64fb0d095518cd9a5f71abac95f16bede8f36e60",
+      "blake3": "332f3172e0785582da3dc6a23b7ead2812988718fbe47d3e58efb8001db3fa08"
+    }
+  ]
+}
