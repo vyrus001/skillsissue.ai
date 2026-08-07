@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:74b9614687f027d65f90ae3bfe81d1ecf259340f59f4b4f5da4eb99797820f4c",
+  "sha256": "74b9614687f027d65f90ae3bfe81d1ecf259340f59f4b4f5da4eb99797820f4c",
+  "blake3": "e34557973949c9fd345bf79ed3b51702884b67b79a9cb81372cc687d58435445",
+  "size_bytes": 47043,
+  "file_count": 6,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1671,
+      "sha256": "dd4a9dd037343a94460e9c2f78801ed5ce2491f4bd4af6203626fff73fb5eeef",
+      "blake3": "d71d4d84c3d3891e5bbbb69c6e801ea313ccee995b0483ac8a2835902863cd50"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/methodology.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6741,
+      "sha256": "7ee624fc919123161c586544ea8b4114f3bd653b9427af467b596c5d47a22bea",
+      "blake3": "50a463016112c9ecba9de6365bfc3d941d92889dfc00fa0f801029d47e3c422d"
+    },
+    {
+      "path": "references/recoup-api.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6079,
+      "sha256": "c4b5486edb75a8a5077e5e3a8d3661348a283e19d099d42502ed3d0642b31c31",
+      "blake3": "dd0fd05505d96c77239e3d655557bfd7befd9dc7916cb21c74d301e002a1b006"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/build_report.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 12366,
+      "sha256": "e233d24230005bb5b01743d27462bd627dc3549b94ae181d1b124419869b5a48",
+      "blake3": "a6484302fb45d8c20dce9e028080f265b04658675cc6cb9397a4da05aa966c8f"
+    },
+    {
+      "path": "scripts/estimate.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 18876,
+      "sha256": "4189ca29c4518eb47ade6482225f98a91e060cc49d05f77208770b38ddda4116",
+      "blake3": "24690c12a998cbf3dd70e46a57f2f226b194f54bf5172a41cf8cf6e9951aaaa5"
+    },
+    {
+      "path": "scripts/fetch_album_tracks.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 1310,
+      "sha256": "15a2faf5fc5512c9c2f4f3d415f6c435128c4d587d3021b1482c225e5f953714",
+      "blake3": "e01735d569c7562375dc8ac82c88efaca50856f7653017f27cb63f9a2dde4759"
+    }
+  ]
+}
