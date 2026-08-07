@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:baac0727e65d5a710a60523ee38c2dd03939cfeedce43bff7107eb07918f4713",
+  "sha256": "baac0727e65d5a710a60523ee38c2dd03939cfeedce43bff7107eb07918f4713",
+  "blake3": "b58e29e5c5884f163cd567f41d9fde9f68b7b17a3bc18b29581a399c1913e8c8",
+  "size_bytes": 159804,
+  "file_count": 18,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21370,
+      "sha256": "d7e5e9bbbd05ce4f70633cfc83fb848d7fca9a9214bec1ea5aa1b08629d2e8a4",
+      "blake3": "a7965d5e9ddccccd6e33df7ed0218ba774575dff996b0e19a40802ab7a506bcd"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 141,
+      "sha256": "8b3e57acd366b2d01de1d215c68054e52047b262f3811e09d2009b469eb1864f",
+      "blake3": "11637cc8e2e81c69463ae66bddf839f16ba45dca84b261fd529b539ce3dcf600"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/scan-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4671,
+      "sha256": "b8e35e5b8c380e0ef6d2065aa1a69a90a260f3f093deb6648cefcaadd43513bf",
+      "blake3": "5d2d70d3a0bc0f1ce6c59a371df806d91e453e393af45c6698659c5f55e22ec2"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/audit.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 61005,
+      "sha256": "b433442e02916a03c4439ab1c5a07e2c91b21a00ccad383959a47220e9bab360",
+      "blake3": "d2de6f98caa4c302677f66106d0a81ed1c18af330b9cc367c3039fb02dd71836"
+    },
+    {
+      "path": "scripts/ci_templates",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/ci_templates/gitlab-ci.yml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 528,
+      "sha256": "ea16fa9eb713e2690ca310e38f82eb412cfb6a2c423faa138b914c578b37cc3a",
+      "blake3": "a9255711f99c24277144723af24752c9dc6b9fa21f8e4a040783d974d10c597e"
+    },
+    {
+      "path": "scripts/ci_templates/skill-scan.yml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2013,
+      "sha256": "796af89016b2a6658d696484ff247a7709a79d2867099376e25d4573a6ccfe8c",
+      "blake3": "e029bf5a35c9faf1f0032748a3ceaa7c2b4c82a0c7446983c9171c645f81e633"
+    },
+    {
+      "path": "scripts/global_exclude.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4170,
+      "sha256": "23fb6427a24f776fd113c94cac2991bb9e25781554728c2539a4205fe0f04a1d",
+      "blake3": "db9628ab509269728a7f17f3f52cb5c3532b11d486abb6f030e0fa366d78754e"
+    },
+    {
+      "path": "scripts/malicious_db.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11168,
+      "sha256": "b22acf820c61aaa76d143417b1f3ee06b2b6bc435fcb0ba3a26c7e302a7cc5b3",
+      "blake3": "77f362d4588d8936e29cff7f4139f1a889f398bfa99493f2be1b35fc7cd1bfa6"
+    },
+    {
+      "path": "scripts/sandbox",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/sandbox/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 954,
+      "sha256": "a08201d634c1a59a617ba85d40350d0259c50239b5665aeea6be9ba3166ec8ff",
+      "blake3": "f8171807b63e053def7b0b437ed7e84bf4e5119c7b452c40590fd820b9748454"
+    },
+    {
+      "path": "scripts/sandbox/backends",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/sandbox/backends/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1185,
+      "sha256": "377959ff452f870a22ffe619862c3f917bca7456278737e58765147e6faec540",
+      "blake3": "4ecaa7e376d6bdef47a914e6d09bff360b4ae26a88773ca63727c3902f9e81ce"
+    },
+    {
+      "path": "scripts/sandbox/backends/degraded.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 619,
+      "sha256": "0086951d0910516f4df0f23fcd5b04184d241ea782a31dd3f5620e49825b7592",
+      "blake3": "67eb28cb5b4823e0833fd4fe64dcb59f87e370340d509c5469785f750d3bd0e1"
+    },
+    {
+      "path": "scripts/sandbox/backends/docker_backend.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4178,
+      "sha256": "dc6c8f413e2d926f57ffb6f63d7f90db010d55a5edbe7d20b7b108e467ff0cb6",
+      "blake3": "d27bc14f08e56bde98cb2e9503a283bada67c5fd4d28c480de9bbf49aef535da"
+    },
+    {
+      "path": "scripts/sandbox/backends/winsandbox_backend.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3800,
+      "sha256": "be7d9d0ba18dc6284246eda08fe2b6a74c11c9c7695e50c0a35fc051b80430a7",
+      "blake3": "1febd9bc92ad26f6c91c9903199223a4159cf942802f51160772ef346bc95960"
+    },
+    {
+      "path": "scripts/sandbox/monitor.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4215,
+      "sha256": "13af20656e61f46980c8609eff4ad3a884b62be6737c1bb05fa664f4d77db299",
+      "blake3": "c5e37075392c4e8f98ad0a61c8371ea51ff53a3081d51bf402903112b9110d71"
+    },
+    {
+      "path": "scripts/sandbox/report.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 695,
+      "sha256": "fdb3e0361418d19964c4d53ffa11914b08068ec0766da98e973d9121d466c880",
+      "blake3": "4380a088d0bedd4148dccceb8661debe9b6481b2d3566941e8f97b7442af11d8"
+    },
+    {
+      "path": "scripts/sandbox/rules.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5375,
+      "sha256": "329bb8b66b67708ddbe8c8cc78858bfbce246720192d62c15e6d05fd6484c1dd",
+      "blake3": "a950c6957fbc1ce6ff58b2a034d188bbf2048cc875065f9d769e7953bee312c4"
+    },
+    {
+      "path": "scripts/sandbox/runner.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5028,
+      "sha256": "cd28269d1ee3c727c943ec493f4277008a101289624d6bb4351fea73b8c6b0b5",
+      "blake3": "515818910fc6c58661f200cee1cd7a36934b3cf569923f18f0b22a4bbc15c63e"
+    },
+    {
+      "path": "scripts/supply_chain.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28689,
+      "sha256": "2eb4b1b0a1e96415b4b6f154b842cfd57dfaffc389413383ee02a202036926f9",
+      "blake3": "47f5ff9c3592ca545e72f6bc9b040037c775a6efc8fdeb1c2a3eb854f2dcb7fd"
+    }
+  ]
+}

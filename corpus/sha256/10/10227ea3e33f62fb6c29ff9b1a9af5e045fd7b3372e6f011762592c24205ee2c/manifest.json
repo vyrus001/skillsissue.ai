@@ -1,0 +1,457 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:10227ea3e33f62fb6c29ff9b1a9af5e045fd7b3372e6f011762592c24205ee2c",
+  "sha256": "10227ea3e33f62fb6c29ff9b1a9af5e045fd7b3372e6f011762592c24205ee2c",
+  "blake3": "57e279f05daf882a8fb6710f117d90ea05e3e9f93f292d33a7a31f6aace9ec7f",
+  "size_bytes": 133107,
+  "file_count": 34,
+  "entries": [
+    {
+      "path": "BENCHMARK.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4293,
+      "sha256": "5d0f5a64a3137403e4e2d75f45edab4198819755039a116b9624b49878f957f0",
+      "blake3": "f196ad51906edd06ed03598f2c32c6321e95c63112b7daf76f8719aacd1162a1"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9404,
+      "sha256": "4b8d3851b7e84b6ffb8fc6d781f66cf340a0b6f994c9f8b88894f82f7caeb353",
+      "blake3": "601ceb351381a70baa9bf4c302c1447542b95fe18e1431daad5204b5dda88cab"
+    },
+    {
+      "path": "evals",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/evals.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16205,
+      "sha256": "e90d244e07d8ff9f3365962d33cf2f9be2e5ccf1f9baa50f5ebb18f5bae18b13",
+      "blake3": "d6915917a11339af1bd3e996f6044bb88262312bf33757bf9bb8570a0b61f887"
+    },
+    {
+      "path": "evals/files",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/cudf-apply-udf",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/cudf-apply-udf/code",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/cudf-apply-udf/code/generate_data.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1502,
+      "sha256": "19a52a475cd96a6afe1f98e9b99754e1566ebccb080473dd02440d87b42bf8f0",
+      "blake3": "21f20844fc98b482be61072a6b85f4ad11a87a2d318abeea2e3c4997f170f511"
+    },
+    {
+      "path": "evals/files/cudf-apply-udf/code/udf_pipeline.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5445,
+      "sha256": "c14dcd32a8e64ca35949ff7f673a9de7eea56df6dc8ba08303e3ad848201db0e",
+      "blake3": "6257f4363f73afd9f8101e8f54c30660c75793ae81885e018443185e76c796a4"
+    },
+    {
+      "path": "evals/files/cudf-csv-etl",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/cudf-csv-etl/code",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/cudf-csv-etl/code/etl_pipeline.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2711,
+      "sha256": "33211e81ad8bcfe07e82aa0751b219cd99d00a6a71d6c6be1ade6867dfbe1697",
+      "blake3": "04075df5e029e4964fe57c3339248879ee4ff4a66e63ac2915cfe425443adf39"
+    },
+    {
+      "path": "evals/files/cudf-csv-etl/code/generate_data.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1192,
+      "sha256": "9587257e7fb05699bb9e36baffa7434b4f3fa2bd95452dd6f4fcc64b623c9103",
+      "blake3": "528268dff6e4585d4e977cc33811ede303b7f7e6cef0bacb39ccc57aee720752"
+    },
+    {
+      "path": "evals/files/cudf-groupby-agg",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/cudf-groupby-agg/code",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/cudf-groupby-agg/code/generate_data.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1475,
+      "sha256": "1fd66abf7dcc9e241cbf5684a2bb732dde168f4289ef36af2dd2572fa47bd052",
+      "blake3": "270b28f017fe9af39df15ff06fe75854daf1f5649d32bfb5bdc4f792049bffee"
+    },
+    {
+      "path": "evals/files/cudf-groupby-agg/code/groupby_analysis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4448,
+      "sha256": "e9efa3a8f822c22b6ea770ce2d3738c46d3cf476c1efb6a51658882db5168e39",
+      "blake3": "c72f0fc75a513ed2036e412dcc04538073d89edb0d48d9f4bbf52ce3faf5fd8d"
+    },
+    {
+      "path": "evals/files/cudf-multi-join",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/cudf-multi-join/code",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/cudf-multi-join/code/generate_data.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2099,
+      "sha256": "36f4ad667bc007987aace7efe5f161d5d03d448d0d27ec9f701b720ac4099c26",
+      "blake3": "cea621dd171e22582ea5ffbc23dabf74018bfe487ae7915f118ee1145d12e482"
+    },
+    {
+      "path": "evals/files/cudf-multi-join/code/multi_join.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3708,
+      "sha256": "ef2851729bb1a75a8e9b3cdf6733fd1906b5b6219477c5c332c6b0d13e176574",
+      "blake3": "711d78449289f46891308026a32eb1605ec705fe4c6935ef1d04f64fa78e2709"
+    },
+    {
+      "path": "evals/files/cudf-native-stream-handoff-boundary",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/cudf-native-stream-handoff-boundary/NOTICE.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 344,
+      "sha256": "b9a7754a11185c13e424b24e30fadb67f407099c49788e4dd5b255709543ec3c",
+      "blake3": "69ea55894023d6e5eea3fc53d41aa62da838d17d92c1bdd5334dfa2c8280b6d1"
+    },
+    {
+      "path": "evals/files/cudf-native-stream-handoff-boundary/code",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/cudf-native-stream-handoff-boundary/code/run_smoke.sh",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 464,
+      "sha256": "3f1c10e3b07005bef8bb1003537177963f48cc5bc0ea82c91195d65e88c778ee",
+      "blake3": "08e5256d428ed7a035d9449c379975e5f71d1271e2c3032abaddfa6817faeff2"
+    },
+    {
+      "path": "evals/files/cudf-native-stream-handoff-boundary/code/threaded_handoff.cu",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4012,
+      "sha256": "3ddec672528a8f745cddc76c34e8fe8d3b6ea633c7ab22359b6e5122daedd25d",
+      "blake3": "5acf40d503ee189cb0ab59fda54220912f218f3525afe14969629476963d66a1"
+    },
+    {
+      "path": "evals/files/cudf-null-handling",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/cudf-null-handling/code",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/cudf-null-handling/code/generate_data.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2164,
+      "sha256": "531ce127d18ed52274be36671880b81a5f55b05b1573e144933bb6a49733261c",
+      "blake3": "6a4263b4c97e11b3f5fb8c033128743a15362859d887243c3f40b14e60a6c3dc"
+    },
+    {
+      "path": "evals/files/cudf-null-handling/code/null_pipeline.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4790,
+      "sha256": "eb3cb48aae523e6d046187845750f39de8ed4bee1a81d248df7a1e20b4f7259e",
+      "blake3": "09f5572ce837aa6b53e30f81470db84978710a19bacb7ba8232f238af055f95f"
+    },
+    {
+      "path": "evals/files/cudf-parquet-io",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/cudf-parquet-io/code",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/cudf-parquet-io/code/generate_data.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2055,
+      "sha256": "f978b7513645fb13e5402db37aa598a999d8e012b3feca3c9040c4fe6206c2cc",
+      "blake3": "a5e5e4d25a25652afde07e251b1177bb245901df71003d514e346e453fca46e0"
+    },
+    {
+      "path": "evals/files/cudf-parquet-io/code/parquet_pipeline.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4382,
+      "sha256": "2b7658aa26d7b2dd9ffa0580c3b3f65ee59f2a85e4c0ed1712de3faa444232b2",
+      "blake3": "d991b9386d49739caa810df793ff81c5eba278f2b3f6ea2b97a367bf9a91f938"
+    },
+    {
+      "path": "evals/files/cudf-pivot-melt",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/cudf-pivot-melt/code",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/cudf-pivot-melt/code/generate_data.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1483,
+      "sha256": "f89dd27abe64bc63b61937a67c761cc9968d13be9f7925f6f78befba47cd6463",
+      "blake3": "4421ec2d5c1f0c9b7c203f7a7fc1d8596e1a474e1217f46003c260503ae2af7d"
+    },
+    {
+      "path": "evals/files/cudf-pivot-melt/code/reshape_analysis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4714,
+      "sha256": "b21c251accd4299c8759b30faa086b0e854312acf4414e7d8f22625f4dcba324",
+      "blake3": "9e713d46510dac6fdf0198dc8719ce355e326cf7752708872e928ff273147d13"
+    },
+    {
+      "path": "evals/files/cudf-string-ops",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/cudf-string-ops/code",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/cudf-string-ops/code/clean_contacts.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3532,
+      "sha256": "bc3d937ce87f132c21644acdc6af6b432461a72db23abf1f7dfce0692c90ec3a",
+      "blake3": "bb8c42dc8faccdde21dc16f1d5a955fa439d9512b959a4eadbca4a0aeb28ab74"
+    },
+    {
+      "path": "evals/files/cudf-string-ops/code/generate_data.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2722,
+      "sha256": "78f439c434702eac46a35fa2be8552e3b6129920f2fd6baeaae908b2bedc446e",
+      "blake3": "552ad6e7effe653686131a5c7d623f833a0a743fa5f6c5d0cadf4f7bbf3b849c"
+    },
+    {
+      "path": "evals/files/cudf-timeseries-resample",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/cudf-timeseries-resample/code",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/cudf-timeseries-resample/code/generate_data.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1489,
+      "sha256": "cd586125f123c4ebace88ce51e9813dd9e786878e55554dc92302f07744b45af",
+      "blake3": "ee83890c9294d42e599b862e0c0002cb7b339ed2a0d8e8a331250edc060e1fb8"
+    },
+    {
+      "path": "evals/files/cudf-timeseries-resample/code/timeseries_analysis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4163,
+      "sha256": "1dac94d4a1670a2551d7f0e014a325599ce0fc1819b9b220af2e4132d911eab6",
+      "blake3": "7614355cac86e77c99bbb4a907de5570cd5d9eff4b0a0820982ad85fedb946fb"
+    },
+    {
+      "path": "evals/files/cudf-window-functions",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/cudf-window-functions/code",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/cudf-window-functions/code/generate_data.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1442,
+      "sha256": "976b74340408fa728dda79247f56e59920d692fc653ee799a3462c8583ce06c5",
+      "blake3": "416e5998e7da8f76f6fee9f098098361824213ca3d1e8eb145fda57bc8c83fe6"
+    },
+    {
+      "path": "evals/files/cudf-window-functions/code/window_analysis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5209,
+      "sha256": "1186d4424e8b5a95143568c628d7cd569b77195e17e7cf5190de726bf100c7e1",
+      "blake3": "6aa7b6adcbbbb05e8dc901236fdbca09a43aa56bea2d4ec5b600b9602c089ed9"
+    },
+    {
+      "path": "evals/files/negative-deep-learning-training",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/negative-deep-learning-training/code",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/negative-deep-learning-training/code/train.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1401,
+      "sha256": "c93cd985907859f4770c8fa49f11126fab3e666bbd412bd24b1552c041106e8d",
+      "blake3": "a1dde43426687263e175df238aadc99ed6b0dda4b459954c43a78eaa7a873187"
+    },
+    {
+      "path": "evals/files/source-cudf-null-fillna-semantics",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/source-cudf-null-fillna-semantics/NOTICE.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 342,
+      "sha256": "b8908475f19d61d02a62ed2c0a67cecfa09f381a93d10402e412c09a749dac41",
+      "blake3": "d9f60c2127cf865d2918eee5f45f645d79b69ce083666eeba3e01b67333bcbe6"
+    },
+    {
+      "path": "evals/files/source-cudf-null-fillna-semantics/code",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/files/source-cudf-null-fillna-semantics/code/null_cleanup.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1425,
+      "sha256": "3feb25bc3ebaedac857e6e7f0842a5b43fdc08436f254cff5b4b144777bf489e",
+      "blake3": "a0e210d626647265a4f0b6b67cf7a6a38427c97fde6b82d5d77c4abf081fdf50"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/api-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7035,
+      "sha256": "01400c73b21bb931b3229bbb3da2c90241ffd4544de6bb052b49103f4261b8d3",
+      "blake3": "19f637bd10e1cc45a68edd06df179e842d8c4cd39083463e5e23a59c735f4f87"
+    },
+    {
+      "path": "references/cudf-pandas-accelerator.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3699,
+      "sha256": "0c1ee7948b1d8191cd27dca17bb55e7b95442e3af477b5c343cc01814c352d3f",
+      "blake3": "f18da2170e9189d25faae32303dbed18f619a949c0cf52f78af03f2cce0a75fc"
+    },
+    {
+      "path": "references/dask-cudf-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7142,
+      "sha256": "8a889f318d1bf4f5e090cd79a9b2fe2b9ce4d2459cb9143322083aaaa4fcc72a",
+      "blake3": "29261184d8a9652378fc2e498fc6788edc634b884793ecc38fbefee45e6149cc"
+    },
+    {
+      "path": "skill-card.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4111,
+      "sha256": "e0833a679c6b489b013b567dc104fd60f565c3e3a0f32c122310d632b4b556a7",
+      "blake3": "a0d3f600afb4bfebf62a1d130dd0f090a8cc05ec85efdb77cffc90da578152be"
+    },
+    {
+      "path": "skill.oms.sig",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 12505,
+      "sha256": "e3c6a20a7f4b5e35be756a1123d1f475b3218f8051c2b765c5d65a8dfd768b60",
+      "blake3": "ff2ba272c4dfb0da4d690532a0d95998d0bbc6e98726d74b966547bd3c75bcfc"
+    }
+  ]
+}

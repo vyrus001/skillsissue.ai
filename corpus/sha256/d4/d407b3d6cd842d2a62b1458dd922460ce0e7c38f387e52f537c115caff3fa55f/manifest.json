@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:d407b3d6cd842d2a62b1458dd922460ce0e7c38f387e52f537c115caff3fa55f",
+  "sha256": "d407b3d6cd842d2a62b1458dd922460ce0e7c38f387e52f537c115caff3fa55f",
+  "blake3": "d9a553620e8b0ff6be0616bce7382ba08b74964876e4fef8fe014e1ee3664f5f",
+  "size_bytes": 240195,
+  "file_count": 13,
+  "entries": [
+    {
+      "path": "GAMELOOP.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10371,
+      "sha256": "3a7c489809b0da3853d0ef7a7cc918900cff975dd575e6848ccba425a50c37d4",
+      "blake3": "cb54d070f1136af6b506f1b0a127db62135a035f385542341c9e16fe7635cb53"
+    },
+    {
+      "path": "REFLECTION.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2901,
+      "sha256": "460d3b47c2e86c8552ec986b22f56575c8ea55267970f4c4071e49712429d0be",
+      "blake3": "69e2d5b9a3b9713ca6efb1b3adf7359456e0268456fb214c3b72ce319a17ea14"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18703,
+      "sha256": "83ae5dd392638ee05d30a9484d0dc32049a2d1e248c5b4c3648b5c827ce7fe42",
+      "blake3": "521d7ae8e681ba7601250ac8aba1e2b3b1483c1255730d4fd0651bbe2494d1fc"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 138,
+      "sha256": "4cb008dea85cd8353607f242bbfaf7698304ae904e1500557bdadf9b84e13b5d",
+      "blake3": "3f7bed4b57f5646a777a35510987b01d04b01c7d676e45b2e07af33388e1b481"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 346,
+      "sha256": "e44d04257ce26b29ee24b85981ef60fe2495b4b209a394aa0aae366afb861e5e",
+      "blake3": "3433fa690a67488d24649475382251c3206d4ab2820ac103331d2841dc66905e"
+    },
+    {
+      "path": "arena_api.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9288,
+      "sha256": "08cf69c638ea49b1ac2a414cf77eda9ea23d8ceecb70599e6f791455e98ba0b1",
+      "blake3": "25eefd5a5776bdb249cf21cc59e1e6553ac0b157f741872c49aa5253a2a068c8"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/clawarena-small.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2186,
+      "sha256": "4cff35a96b4187ca5d8ccca603a74c006381ee766c96e4b259797e98f34a6f1f",
+      "blake3": "a30d8e869d938bb2b5d73db2fae801d2fb45051a3be4fb84147313e082686590"
+    },
+    {
+      "path": "assets/clawarena.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2188,
+      "sha256": "b821edcdc19ad24d26fb35c0066f32502f3db7bd90d1c708f4639632dc13a799",
+      "blake3": "5eaed60fee13adb7c37f62543fb80f7836c86b9e22ec3c02de203ded38153365"
+    },
+    {
+      "path": "decision_context.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18528,
+      "sha256": "b012d04cf30506b3a185c61fe2b189ec9b241875b9ee820b35677aa09afc3777",
+      "blake3": "57fae3180f45e9833ddce1fe4e3f3196a6cf289c79c3fe094d6d3ac92118ebac"
+    },
+    {
+      "path": "decision_policy.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2846,
+      "sha256": "efde1cbb1021c3ecb5abfb9bc969d6f86a829a21a4bac3fb59f533b032735a7a",
+      "blake3": "744431178ba288c58b1092afd3830b83a7ae638076249e837e76de9c13910d0a"
+    },
+    {
+      "path": "setup_local_watcher.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32212,
+      "sha256": "d9a92046f52c2301b53c0fc0559b9de209d6f4c53072a43c7cab87d8c139edf9",
+      "blake3": "0a9e1f18369803d7e4595259b05eab99731684b9020c4fed875b79bf439bc8c4"
+    },
+    {
+      "path": "state_paths.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2839,
+      "sha256": "5b834c0e8efe267d147860d111478f9b2dfcf386c592ee0129ea89477e8e6d72",
+      "blake3": "1770de891f5761bc053b330f73cba3bed51b41a31f2cd6ce5005fb3fc079373d"
+    },
+    {
+      "path": "watcher.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 137649,
+      "sha256": "026b84eada9de873929cc8693a52fac2e5ce5fb4c0aec45cd4a46bd4c01e4a5a",
+      "blake3": "ee3fc5a643d720575a9c346f3d651a257570f72de75f3dea1906153d2da64c07"
+    }
+  ]
+}

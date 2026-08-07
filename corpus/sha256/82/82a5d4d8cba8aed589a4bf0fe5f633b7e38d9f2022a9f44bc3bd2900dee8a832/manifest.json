@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:82a5d4d8cba8aed589a4bf0fe5f633b7e38d9f2022a9f44bc3bd2900dee8a832",
+  "sha256": "82a5d4d8cba8aed589a4bf0fe5f633b7e38d9f2022a9f44bc3bd2900dee8a832",
+  "blake3": "cd177ceaa3796d01f07b62794110888afc47f2f91b936c2fdce29a3488eba01e",
+  "size_bytes": 27854,
+  "file_count": 7,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2060,
+      "sha256": "98d2743828e18aa1f9c2e8c1cd7630d4c227e335270745e7e02ae7cd2d29f2f9",
+      "blake3": "81a63b3277b8dd3c8b47549b5e3b7392f5e216785f7c3a658a03752fc0859471"
+    },
+    {
+      "path": "evals",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "evals/README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3997,
+      "sha256": "cda5dca4aa0a7a1d7600d700953cbbd5e9820c235e3c3cb87c4ac1dd77ef9389",
+      "blake3": "b051a26992ea37d14498a3599299407573e78623ecf3274bd0cdd557ae807877"
+    },
+    {
+      "path": "evals/baseline.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3005,
+      "sha256": "53201bdf32aa973fb9d6f03cce713c7a58e3834e1fc6df84035aba529eded12e",
+      "blake3": "5dfcf81109dfd3959fded577254b919670ed6ffa666ad053bed2de2c4200b48b"
+    },
+    {
+      "path": "evals/behavior-baseline.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1485,
+      "sha256": "4876435850d9980023008ea4f8e5c1b01012d929a00a7663a5ac91cd59530a02",
+      "blake3": "91d6f6eee199ef03feabedf1229730790f7591ad22351bd558a4add8b58b678d"
+    },
+    {
+      "path": "evals/behavior-eval.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7605,
+      "sha256": "803d24fd3682f8c2075a8f7cb818071640766cd9228f1f781c5cbfe4c71b1781",
+      "blake3": "a54cbb18abf54cc28e94509c4dc496c1ca06c16c605884782d2cd4c27fcaeb05"
+    },
+    {
+      "path": "evals/run_real_eval.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7834,
+      "sha256": "be39ac1b14f15321fabdf406669cce3ed9632245e7de8a01bd3d903efe1aec97",
+      "blake3": "add35057a3d9427dd9c109416eff62e0c10dcab24115a1e56abb0c61cce629b8"
+    },
+    {
+      "path": "evals/trigger-eval.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1868,
+      "sha256": "88f9b5937a20a9fe06a89d3f611a53db5be9ba4922f673b22ba2f49504b29748",
+      "blake3": "31f79b6595de7749e0af9dc3d57640aa69a6c5ba55b8230cf9816267f3bf246f"
+    }
+  ]
+}
