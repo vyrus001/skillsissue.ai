@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:8d04d23d87e98de3e3c0dc3b4afda47c358ae406808597d805334446c9986407",
+  "sha256": "8d04d23d87e98de3e3c0dc3b4afda47c358ae406808597d805334446c9986407",
+  "blake3": "97e3b7577bb0213753aee56d850e6c696fe50d9805920d4f53c49562331e8ce5",
+  "size_bytes": 63088,
+  "file_count": 6,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9273,
+      "sha256": "ca09b35bd1c4233f5b83739deda948c25b0dfd54c0f075d48d6885de7e973e4c",
+      "blake3": "ad3a58464e865bf8a33cac5d4e4b7b3eb30ddc89bd477f9f37b0b7f95d7a2fd1"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/cleanup-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5669,
+      "sha256": "240775c124954f2746753d8672f89f39e8e0d330ebd8cc948fbec70a8885547a",
+      "blake3": "383bac9c313f090c81532bd9ebf5cdf6aa7df8dd37876d7cb8cb3915b25ca9d3"
+    },
+    {
+      "path": "references/deduplication-rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7837,
+      "sha256": "11fab3834681ae42137b924a5c6d3501f8cee7031a228673e0bbea4fdd7f2d69",
+      "blake3": "7b25b938c9e11837fd0afa36ba7bfa0861f4b24b5dd5e6d4f990f48686662c3a"
+    },
+    {
+      "path": "references/misclassification-rules.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9949,
+      "sha256": "cc74af3764767faa8837ff488eaea3d0fc891df3cff3be0df044460c6cc2259b",
+      "blake3": "8bb43976a52f6c868bc3665be4413fae4688e0c814dabb1baae5f29a86be98e8"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/cleanup_memory.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 23788,
+      "sha256": "cb803195b00b01f405ef52ebaa5295adc682632c0db9bf613b226b7b7c06276d",
+      "blake3": "b49f7096667eb98b1721f64a30bf1138be73975090ab9fcac8208c7b8fce5c64"
+    },
+    {
+      "path": "scripts/update_index.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 6572,
+      "sha256": "f29d55516b17fb5bb05d2b90455eece2998c8d8fa0996f523befc19a2cbd29ac",
+      "blake3": "d0409465d08b7a904abfdafe3687271b2aa19438af46d731df6a3be42f1331f9"
+    }
+  ]
+}

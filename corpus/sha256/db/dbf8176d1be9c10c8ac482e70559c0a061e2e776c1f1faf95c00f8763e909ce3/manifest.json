@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:dbf8176d1be9c10c8ac482e70559c0a061e2e776c1f1faf95c00f8763e909ce3",
+  "sha256": "dbf8176d1be9c10c8ac482e70559c0a061e2e776c1f1faf95c00f8763e909ce3",
+  "blake3": "63635a4c05b0d9c8c03e97bd0ddd65fe988522705eb5e510d6a62744e63f3ed0",
+  "size_bytes": 70908,
+  "file_count": 13,
+  "entries": [
+    {
+      "path": "AGENTS.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32677,
+      "sha256": "3a92ef63035b82beb8ed997d86f0212fdcd9fdb3245c49b38315200b738092f0",
+      "blake3": "0b7736ce5947826ac9fddabdd28e15d68292dfc236f3d2daf0b776e13e0e2f2f"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1368,
+      "sha256": "e735b6eee8ba28edfb40dd0d0a789fab2945b0e66af0c91d51a2fd64dde5ab82",
+      "blake3": "f3b3f79a19572eee8acbd69b73d981316d474a6a353e3af7f98745d445330523"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4914,
+      "sha256": "9c6b082aea705c6d78bbeee49a6220587aeca4d5d8d5a40ba5dd6061afcd5062",
+      "blake3": "4c441cf1d79f110ad824a2883164676eb99ee2f4eabb06b3149942f64437f14b"
+    },
+    {
+      "path": "metadata.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 887,
+      "sha256": "e455117f3b4460daf39efd12066e9fe41ddd2fd97b31eb5a873a0e87edaf7770",
+      "blake3": "061345ec0c7abdd0242330b828b089d0a999241d72c4bec2da2638ef200e7005"
+    },
+    {
+      "path": "rules",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "rules/heuristic-full-scan.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2552,
+      "sha256": "7106356b2a4836a6f603b5fe0aa46ff658b3a1090c45f93b1bad4cff8361fb3a",
+      "blake3": "3872143cb5abd1b6aaa1f50098b8c63d5ead9330cc60799d60bc49ebaf6efa66"
+    },
+    {
+      "path": "rules/heuristic-hot-loop.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2535,
+      "sha256": "2680a0a6a6cbbddb686f3d4362c8943dbde051d6e1fa431a634f91669e68c633",
+      "blake3": "a03a3d585db5b5d6ae9ac4536044d8c9508dacb7907b45399a8fc198b229f251"
+    },
+    {
+      "path": "rules/heuristic-write-congestion.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3180,
+      "sha256": "673b63e095fefc72d06e48edc02b4022dcb3360377afcdcdc7b5d42da7df7973",
+      "blake3": "588db068d16f6ef4a3db1bf58ff4bb48181a53a17b274739b64c96ae22213d9e"
+    },
+    {
+      "path": "rules/openapi-discovery.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6174,
+      "sha256": "4569352acf06757f9af3a0b2c1f0b1245ef5cb9bfe7dbdeb9b3aae253119461d",
+      "blake3": "72cbb40db7f5ab904e950ccc5ad4fbee214891f0274a27ee1157dec3432516e5"
+    },
+    {
+      "path": "rules/output-template.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2710,
+      "sha256": "18cb72e6edf6f2301aab9381d51b798fa02cab8a79011c36ce19ecb16bdc7f50",
+      "blake3": "4aec4475c37c96c01e4ac4073e59a2a789a8f8aee97536457ecce3e178ed561e"
+    },
+    {
+      "path": "rules/prometheus-scrape.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3603,
+      "sha256": "0255a946155091c66f875eb3b5d0459683845cfa3acaa5cba9be3d226979f534",
+      "blake3": "787a934185d70e1dce69bd19a6d14f4573e03347edfe95e08121062e0078ca95"
+    },
+    {
+      "path": "rules/recommend-only.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1575,
+      "sha256": "91f436465d6010307f5cc0cbcc6feacd6d88fde98761e59ec6289dd64d1d8975",
+      "blake3": "1cdc268720cab3c91965db06a334aaf701e48487615cfb7be34da1cb5f8d454e"
+    },
+    {
+      "path": "rules/slow-query-patterns-fields.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5543,
+      "sha256": "8dc9b1168a8394dffe7b3e32e8210b7d7e17c000cd681a23b3f7945aeb41e332",
+      "blake3": "d0f5ae88ca905d6e7091586c8b6fe51911b3b5f9493bf335db1cd561b701e8d8"
+    },
+    {
+      "path": "rules/triage.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3190,
+      "sha256": "0f868a47b5e2e02a56546a617eb21191af50b459b5316b819e59f81db924e1d1",
+      "blake3": "5c0fbccf928d5f5fdf025f3785e49c0cab61a4c85772edadae48cf81e1aeb21b"
+    }
+  ]
+}

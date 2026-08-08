@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:a6bea64241df249c9755eaf7717776d1066eb09a33bde2267b55dcafdf4f0a33",
+  "sha256": "a6bea64241df249c9755eaf7717776d1066eb09a33bde2267b55dcafdf4f0a33",
+  "blake3": "492f7bcc00fe456c78b66fcedbdcb3d5be410a5e3dd0bac2e15515616804ffcc",
+  "size_bytes": 37562,
+  "file_count": 6,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17233,
+      "sha256": "531abf8f4bd14937880da1e8d4ea0c810e196709dcc50902aa76993c1c0e7324",
+      "blake3": "69ad9f8f7c33eb6c7798c1c80500d532bfd8c7c7eac3ea0acdaddb1555038cb4"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/output-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1816,
+      "sha256": "4e0d96fc1a9abfd65e4830a07a106905f3826a4bfbd8dbd7332a2ab532c57542",
+      "blake3": "2e3a6f2d64142f5b554bba53204597d5612e17974859b62b628c431e469796cc"
+    },
+    {
+      "path": "references/workflows.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 824,
+      "sha256": "69b909ddbd6729b137d3da8e5dcae4096b9375d425762aa799a16c5ef16b1588",
+      "blake3": "9e0100865b284433275a2c6d420272651c377acf9f159240f4dae9062707cea2"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/init_skill.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10878,
+      "sha256": "d18b7907a1c5959d9940604ebde72e17433cd096602f835e08c7d91da3a72b5b",
+      "blake3": "536c528b81e70e82ba6ae8901d221da0d1ef21117e0f0d4afa936c5b5763e85f"
+    },
+    {
+      "path": "scripts/package_skill.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3288,
+      "sha256": "b31fbcb3e362d5c5308e99255ff8e83cde3a513e0636953964a648494ca10931",
+      "blake3": "015d2b8e5bb16a64dc4b66eeca43691928adb1c96b4462364c9929f2795457a7"
+    },
+    {
+      "path": "scripts/quick_validate.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3523,
+      "sha256": "381ab2d3d1fd5ec32371016413063eff99d0d48c415747085c61517e967dbb87",
+      "blake3": "5f4bebedfa6c6b43bf6799f1fa1e285ed4b52867d5aec553da750b5aba590315"
+    }
+  ]
+}

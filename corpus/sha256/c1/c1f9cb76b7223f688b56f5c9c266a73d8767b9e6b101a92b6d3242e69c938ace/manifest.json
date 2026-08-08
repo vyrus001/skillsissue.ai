@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:c1f9cb76b7223f688b56f5c9c266a73d8767b9e6b101a92b6d3242e69c938ace",
+  "sha256": "c1f9cb76b7223f688b56f5c9c266a73d8767b9e6b101a92b6d3242e69c938ace",
+  "blake3": "bb36843495d3ecb3e232cf06213ce374a410bea719c4d26cc2f78c060c515dd3",
+  "size_bytes": 40331,
+  "file_count": 5,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8035,
+      "sha256": "e73d9ac95fcfd6ce5b5d7c69b98d511b24a675159e61c6e21fe47533e1f55d48",
+      "blake3": "e41fdab649c0072aca2f0985e0a3ba86a9a8b4b95437a95cb1ad9600a7c99296"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/scverse_qc_guidelines.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7587,
+      "sha256": "a056c4d17d8d39aa9b034aff89e435c5d2371e66470853d3cdff978e34c6fc45",
+      "blake3": "07ad72703f096f09e4a005323f23650ec26b175604c8d9f14c24835ad05d7021"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/qc_analysis.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9533,
+      "sha256": "dbcc2983cacaefffd2369bfae35342fedc22a1ff6415571055e0d9515a85e525",
+      "blake3": "9f44f9152156389bffb1849245e46b333bf8ee718e89cad9317df698a492b27c"
+    },
+    {
+      "path": "scripts/qc_core.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6675,
+      "sha256": "24fa2e13fed1b5cecff1f7ed8c5c594314426fd44d418d0526a00480a0c96352",
+      "blake3": "210fad1b424cacfe05f3a6e48238d0150698f736d445fe2caafa864cb94ac373"
+    },
+    {
+      "path": "scripts/qc_plotting.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8501,
+      "sha256": "12bf1a733540817fca963d42deca1b55cc3bd0b6ab26a34472ffd9d344e63c48",
+      "blake3": "91318ccbd31cc9c3c7734328a9809e04734571d7bcf89fc575b76172eafdb740"
+    }
+  ]
+}

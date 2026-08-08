@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:dbe6034f5bf28a8d621c439b2df71873e58796b0bcff688b8d58a2ceab2c8c96",
+  "sha256": "dbe6034f5bf28a8d621c439b2df71873e58796b0bcff688b8d58a2ceab2c8c96",
+  "blake3": "14dd4529b72d2667dd00111372f2cff0b283554b2e5d68d0e530f9b68eab35de",
+  "size_bytes": 68894,
+  "file_count": 12,
+  "entries": [
+    {
+      "path": "LICENSE.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1467,
+      "sha256": "79f6d8f5b427252fa3b1c11ecdbdb6bf610b944f7530b4de78f770f38741cfaa",
+      "blake3": "6975a6b8e18b2b94d350e8f53faa614bbad90fce7c87b682878eb2b76f7d9fcf"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11666,
+      "sha256": "c3fa855f7c550c0c1e7b884b10f4d8ea3c816c33eb1713b58aed0b8325fdcb2b",
+      "blake3": "1826bb0a4a4f995c114f21e15dc54e7492862837d5f0009a3bb11792618430fa"
+    },
+    {
+      "path": "forms.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9438,
+      "sha256": "0ab10e9095deb1c1f9f79eb04254589f55c1d16e095cb53191e03f9fc3184449",
+      "blake3": "79850a2c196205fbe34e4fca35e5cc2a4218c6ed9da67ccb4fd30a7bb1f516fc"
+    },
+    {
+      "path": "reference.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 16692,
+      "sha256": "03a5f964f8abecbbe156f363356e927e864d7ee964f1012c84ee1bfc8acbeb95",
+      "blake3": "66f803b4e8289659aeb0b755aaaa25b4ba168bec4cb04eb09e65aa951abf830f"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/check_bounding_boxes.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3139,
+      "sha256": "eb2a5f79c8aa10c57b5867e1f0fc75b52a68b1218442ef9d838dfb4b9eedc6f4",
+      "blake3": "a3bb164813d31498d8232d7d9d1cd4e093d25a466c42bc7cafedbf740aad7213"
+    },
+    {
+      "path": "scripts/check_bounding_boxes_test.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8818,
+      "sha256": "f95dca01a8b79aafd152511e9f7bf2bbcd606dde1be77d691f03a18624e002ca",
+      "blake3": "795eb5c4c1ecb1c7dd43e4d990bc06fcb565dfff8027f067d18817a6546da3c0"
+    },
+    {
+      "path": "scripts/check_fillable_fields.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 362,
+      "sha256": "250d5aa4e8451d6a83d17d3550c14e6c844ac347145f916ebf7980b118312b41",
+      "blake3": "40c9e819ac749bb5a07533db0a1e31bdacb1078b40aadab7be94d1a485b4e623"
+    },
+    {
+      "path": "scripts/convert_pdf_to_images.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1123,
+      "sha256": "095a0105a718af75ede309cb03f84a20c81d17f1727f7686fd4b294f1f40294f",
+      "blake3": "f6d2fbda785f4d22b2074bae7da10871651a2932ed064475f6e29dca2af955cf"
+    },
+    {
+      "path": "scripts/create_validation_image.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1603,
+      "sha256": "89675be66b48925d7b498eb9454521c78cf9e9ff188ebf094934b598550effe5",
+      "blake3": "a13806dd2e645662a66606bbd720ee5891441c8b83c37db33303b717a1cee921"
+    },
+    {
+      "path": "scripts/extract_form_field_info.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6127,
+      "sha256": "9db1a2720cf54223cdc4bf797080c70f4e0d27288d9f400e066c14524519021d",
+      "blake3": "db6e7a3dc0a292534bd73fa179fdfec001a79e6b7127a4417694bebb655dc062"
+    },
+    {
+      "path": "scripts/fill_fillable_fields.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4863,
+      "sha256": "65b3e41969707022283a313a4cf9696d31793cbe255dffe13370e75abda448a7",
+      "blake3": "76faf31a87176d0aee020bf91ba4b4146aa29882c454271f90ab6897028ee0dc"
+    },
+    {
+      "path": "scripts/fill_pdf_form_with_annotations.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3596,
+      "sha256": "599d6f307edb4ee6b837f21d0ea860c41c22246e270b45d6bc750c5b87c86ce0",
+      "blake3": "27691d74d6926f9a99a647026f737ec252aad2003e7f669d8ef07e62e1156444"
+    }
+  ]
+}

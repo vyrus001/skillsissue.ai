@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:08bf89d34e826f7c4c6b1ebf3e973f529b93fba8d896a61cfca2b22dfe962817",
+  "sha256": "08bf89d34e826f7c4c6b1ebf3e973f529b93fba8d896a61cfca2b22dfe962817",
+  "blake3": "b06f3a3a25c1ba3a046ffefb80fa4ad347acfe53a34b651d23c89d75ebc635f4",
+  "size_bytes": 57982,
+  "file_count": 7,
+  "entries": [
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14068,
+      "sha256": "c562e2b21b87311c6d91846e30d910717592196d79479241db08fa69d2ce2e13",
+      "blake3": "eb564716f559a78b7235e7046566d16dd0a4532cad3da6e653962b3ff921db10"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/classification-guide.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7175,
+      "sha256": "7cbbfd9f17029fbc0bd685a576bcc9cae2b6e60f3cb94554f62e6f87cb1534e6",
+      "blake3": "c9976f5a7bdef6fdb314327c5388a2584d017bdb5642277b54182a5a7b70b027"
+    },
+    {
+      "path": "references/data-schemas.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4993,
+      "sha256": "0c9ef065691424b85e15f19b7848b9ec715d97ef93266e16e632fd0991f5d1f9",
+      "blake3": "2519cc73cd3c7da6734b6a465ee48f2b644d22949379ab4271a835229a234678"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/add_memory.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 14533,
+      "sha256": "754777895252df8aa23114262bbd1e6101887eb1c5831b7bdf93427449bc1bf5",
+      "blake3": "fab4115f024104c0fe34e899edb8b280aeb849d0d90306e7e78365392a991c58"
+    },
+    {
+      "path": "scripts/init_memory.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 3594,
+      "sha256": "8ee95683d85dc4332062cf49eec24f274d5c52e81a357c553d020dd3b0809a31",
+      "blake3": "2b1d88b6496d82d800aa38d39267f6175d8d7fd9fd9f1df0374df49d9c8e07e7"
+    },
+    {
+      "path": "scripts/search_memory.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 7047,
+      "sha256": "9362dcdded48b29e6d785146df1348ddcd169158b2b4122ab195dbe0eb998a07",
+      "blake3": "8b305c84ab0ba3387a8796af3328ed9925adf6a407184fd5166420014e82db42"
+    },
+    {
+      "path": "scripts/update_index.py",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 6572,
+      "sha256": "f29d55516b17fb5bb05d2b90455eece2998c8d8fa0996f523befc19a2cbd29ac",
+      "blake3": "d0409465d08b7a904abfdafe3687271b2aa19438af46d731df6a3be42f1331f9"
+    }
+  ]
+}
