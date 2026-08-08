@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:4ebc08f26c2d1892e91ca072e9042e4b6ebb070bcda278a9d63a2cb2105a8217",
+  "sha256": "4ebc08f26c2d1892e91ca072e9042e4b6ebb070bcda278a9d63a2cb2105a8217",
+  "blake3": "204b7d15772dbe91bac70880c572b6c796b9e1cb0e06384867473506d94e2369",
+  "size_bytes": 30864,
+  "file_count": 12,
+  "entries": [
+    {
+      "path": "LICENSE.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10776,
+      "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9",
+      "blake3": "d3f11c251f0ef236f42928164f0570d66c7009b511a53e0fbc05d7f2a978ebe7"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4154,
+      "sha256": "62f102e8554b25716dccef0ffab4572d4e3eaf05ccc76562d33a065bc9c521fb",
+      "blake3": "60854f2f81e5a9100621f0c55e09c8edec2c129de44f45b5554e9cd4ec017282"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 325,
+      "sha256": "3a2d6a8f9ed10e18f6caa66aeb26a02305bc61f36fc4b333c904e02f9988fb9c",
+      "blake3": "db16e1cf9ce51c4e1ef3f384cbeede0a4258703b5df92650a62cf33495b1e40e"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/experiment-template.ipynb",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2570,
+      "sha256": "25f85914103cd84244e20ef378f59097479c72481cd18d3a931354d107c3f300",
+      "blake3": "4501432a6a1485d0ed41851a5411c2bd2f2ad495ccec1d0f4a2195492360df0b"
+    },
+    {
+      "path": "assets/jupyter-small.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1043,
+      "sha256": "a36bd27bef3775f111309241754b386db81e7d356f07672190e2fcb24478a250",
+      "blake3": "23f9bc3361a8f68b4ff5a2c14205734f424881357e722ce9d3b4fb97dc71c7b3"
+    },
+    {
+      "path": "assets/jupyter.png",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2713,
+      "sha256": "852fd5468885bb176d266d547e61684792332e44a88cfbc8cd07323937040ccb",
+      "blake3": "274475f6cd715a66384e7a53f2ee215655b07136219cb1e888294dfe4c0da2b8"
+    },
+    {
+      "path": "assets/tutorial-template.ipynb",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2490,
+      "sha256": "704a809c09c7c9e6e5c437860df95524412b50c58571a14204610d73e0744765",
+      "blake3": "5b66806a5a08a3536c6b016d3ecdb5efa7671802b71d25ce097b7ce3865b721e"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/experiment-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 699,
+      "sha256": "1ff9c04281c01e8e2209bde9f1fd910b8e4b620dd1f1f040e2101f1d88513a91",
+      "blake3": "11ed9c0b27b4c16d18dd48f8fe194de57bf4206d1debdded654933211481f5a5"
+    },
+    {
+      "path": "references/notebook-structure.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 751,
+      "sha256": "a85051a2e88fd3424bbed2636e952ec5f858e7efa4e076c28d62a8cc2cc9dc06",
+      "blake3": "93f26e86fd782b97ab869135f04e4cb8168c3dda1115958607f91def965a86a9"
+    },
+    {
+      "path": "references/quality-checklist.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 572,
+      "sha256": "ed01afe6ff47714d85935d11053b64c414772f02250fdc604e3fca65e5139136",
+      "blake3": "d469364fb9687bfb3a4a141702165a5699703e2a52eae4fbfdb9841e357af68a"
+    },
+    {
+      "path": "references/tutorial-patterns.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 685,
+      "sha256": "8c194bb640de2fb7747e3db87006ecec5219252d301f53670975dbb5310ff659",
+      "blake3": "b96a49499e192c26173bada71e879779932b2c1c49d22330cff60e26cd34287f"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/new_notebook.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4086,
+      "sha256": "a004e2ea3115edb24313928be0be6d1dc07e571d7ca6c1b24375f0569c616d2f",
+      "blake3": "a546b4d35a1877d88f8f22f64c7dd44e7ffa1c937f55e73cbbf7585b03509c28"
+    }
+  ]
+}

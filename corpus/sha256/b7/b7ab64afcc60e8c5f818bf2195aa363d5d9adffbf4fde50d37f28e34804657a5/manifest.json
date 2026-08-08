@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:b7ab64afcc60e8c5f818bf2195aa363d5d9adffbf4fde50d37f28e34804657a5",
+  "sha256": "b7ab64afcc60e8c5f818bf2195aa363d5d9adffbf4fde50d37f28e34804657a5",
+  "blake3": "3f639ac1e66592a8c7289d4e2167b9638ac289a9f71628d76a01c50b9245c2a7",
+  "size_bytes": 132652,
+  "file_count": 14,
+  "entries": [
+    {
+      "path": "LICENSE.txt",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10776,
+      "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9",
+      "blake3": "d3f11c251f0ef236f42928164f0570d66c7009b511a53e0fbc05d7f2a978ebe7"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 37296,
+      "sha256": "7ab0f01e8561085d1b494a6ca74abed766c655da8ec98284fb38a362c19d6871",
+      "blake3": "4340ccab36bd941f665464fcbcb3e8cab8fd67a9d064b5cf06d1d3a4ac5771e8"
+    },
+    {
+      "path": "agents",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "agents/openai.yaml",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 244,
+      "sha256": "b97c303df63c69a8857047bd87b8e681a2b7800138ede0d0b6aaac440d503d23",
+      "blake3": "4c6ea6fc44640b4f01d429bbc6d8de4562342224c9eed84a56f8ec41c897d20d"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/animation-rows.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1787,
+      "sha256": "5bdbb5693334a447128ed74af41981212d746bcbc21452671c21bdae8a39492f",
+      "blake3": "451f4990404671401302f0914cdbf275130a84252e5b233ccd2cd9547b62eca0"
+    },
+    {
+      "path": "references/codex-pet-contract.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 788,
+      "sha256": "ce9a9d2cef4d9cdb16c3ae53c106681d98b8ae3919a56fe74323f6f88a06f90d",
+      "blake3": "95176c91d26c88babe2fb228834c4961bf602bf1e77eb74f2c60d45b57c5c6d2"
+    },
+    {
+      "path": "references/qa-rubric.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4156,
+      "sha256": "f2eab6f7fb85dcde5c9d7ba1a7a4b0e371ab95aa61ca8cd7783cca67275a5cc7",
+      "blake3": "a1904441bc433a2f69c531c8014e10213a1faa164d18240ab415077795e39f72"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/compose_atlas.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5750,
+      "sha256": "a76d7c8b81033353004f5cafab8fa174c314f1d79158b69bc83a2f0bd6047fdf",
+      "blake3": "48935b49b867667c02d41ac83f087aedd567daa28c54b3b988bfdefae25745ea"
+    },
+    {
+      "path": "scripts/derive_running_left_from_running_right.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5159,
+      "sha256": "b3fc9b4a160ba39803a84ea61b7c4729ff8dc9e92bbc9399246350bffa04681f",
+      "blake3": "6fcf8b6257845242bf14e19f5cb071dd9b19bc23c8d3b026b2137935c2824541"
+    },
+    {
+      "path": "scripts/extract_strip_frames.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13935,
+      "sha256": "c9a251acf4532831b32c03d169b6c39ba891aa37ba65ea79e5d08dae297ea497",
+      "blake3": "8b0d9d3866e8b1c7180b6cae4feab54d807e22b830f998e231a4ae2f2b41238c"
+    },
+    {
+      "path": "scripts/inspect_frames.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8962,
+      "sha256": "f196917c645e910a0d594608fa43cfb043ed294a4c60dffdf3846061b65c53c7",
+      "blake3": "f7379f5df303efddf6a673ed35fc7fac0aea86bba1490f33f33be2d6112eb741"
+    },
+    {
+      "path": "scripts/make_contact_sheet.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2992,
+      "sha256": "28ab6f17909dd471ba6c9529b343fd9303ec9e35c551ceac23c98808224e701c",
+      "blake3": "9c56a83257421a3e1bb3308aa3e65188eb34999e20b29a497a9c859fc6f74fa8"
+    },
+    {
+      "path": "scripts/prepare_pet_run.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 32866,
+      "sha256": "200b19089148be7a0467cfb5224a7286c76bc7ca5634210eeb2e8112d2016711",
+      "blake3": "35ecddc578533dd3dccc6777131495873078c2d16c24f49884dc0511f0fa7379"
+    },
+    {
+      "path": "scripts/render_animation_previews.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2547,
+      "sha256": "911e8813e1b79b7f9da44fae8a667c044818e8c71f41eaa4b280e91c78cde61e",
+      "blake3": "15a78a6145d4e3ffd70d8bb288cb40b19bb0273f259bad8c35ac6487dab4323a"
+    },
+    {
+      "path": "scripts/validate_atlas.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5394,
+      "sha256": "649a9a242d171da032de0cab1744f11629db3a2c88253fd3215e1a1174c29465",
+      "blake3": "e393c522aa17359cde5c9074b45ae3eac36f0055bc15ce1d30e1811d6bd9d065"
+    }
+  ]
+}
