@@ -1,0 +1,447 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:6df133b930b8263d347446cb03ba9e48babe5804d71507c7207ec29b6c90ca1d",
+  "sha256": "6df133b930b8263d347446cb03ba9e48babe5804d71507c7207ec29b6c90ca1d",
+  "blake3": "0f9ec61bad7905f47bb237f13ed2fad888769d8f468d4b2b11b6be4383ed4879",
+  "size_bytes": 630890,
+  "file_count": 50,
+  "entries": [
+    {
+      "path": "AGENTS.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6758,
+      "sha256": "34aba138e9f6e3ce0a94d23d9edd0c8556b55ba2ae6a61d6c134c9d1f0cb9007",
+      "blake3": "14c47b2c9b798febd53d83075420b8feab6a6371fdd9caf3d494ac2a8cc8070e"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 15026,
+      "sha256": "7b0e43cb3e00ffd3f26d9794c0283ff043b9486c4136472dcf79851554618e2b",
+      "blake3": "8f08a29bd13c9aeeed716bf155d47707c9dcdba52a531bf83c1be94bcfabc42d"
+    },
+    {
+      "path": "LICENSE",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 1091,
+      "sha256": "09c796c44b3ac243cad3809a92e67cdf6f44fc5b66433d787a074fb131c47cb4",
+      "blake3": "32af1e18ed8a94599207223d396da903d9e37f8477b1068320a905b247c0e81a"
+    },
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20598,
+      "sha256": "9c059ee64555731b56d2640d3cc6a861458a1f103d86ecc8c1926abd8f6c1702",
+      "blake3": "a50403489be21181792bbdc9b50ccd4fc9302f3b058393eaf0e0ef745e225cec"
+    },
+    {
+      "path": "README_zh-CN.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19270,
+      "sha256": "811b581db68ce58250adcbf2205de3553c7a80c98efe7d7862a44cba91af05c2",
+      "blake3": "597d5dbaf002b1cc96dde481c1eb95262e4279deb0b1e29ff43a920ca0e1b87f"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 19753,
+      "sha256": "fc51b3c0145ea8a5314aa4a920511607b8bd8a82033739df7d46138a2008b3a5",
+      "blake3": "92050e19d329c9d28cc568b5eebe6345228e65f31e750c686ac8a2557c82b672"
+    },
+    {
+      "path": "_meta.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 130,
+      "sha256": "9bdf7b3e568d8746873e1506d82fe02171743daee72f1eda682718477c107af0",
+      "blake3": "79c385d9e2a96fa28516ccba06c083fd5696a431a60045c25d896b14c0091727"
+    },
+    {
+      "path": "adapters",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "adapters/__init__.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5621,
+      "sha256": "5556a7f3fe8fb837e6ac81fed5bf8d3226ef8dc6664a83eb9dab73f660e4837b",
+      "blake3": "46036585fdb291628afbe669dbea439d6eed71a596eeb210e6a57a857cc31ea2"
+    },
+    {
+      "path": "adapters/backend.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3608,
+      "sha256": "b6be3a4d55b81ff60710151d5dad15dad93eae3421222e98eff9d32fb8d6c6e5",
+      "blake3": "66fba0507999e3c88eec4d08132816a195320b920c27391304a03b59a760e791"
+    },
+    {
+      "path": "adapters/coze_token_embedded.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 6584,
+      "sha256": "d1a3ec1390a309caa2ae9eaa3718900a4b5a14ab205a548feb1c1d2659a83f7a",
+      "blake3": "d99b084f703d2999d401119787d635ce3292a6a0224118de53921963f0c31071"
+    },
+    {
+      "path": "adapters/data_context.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2538,
+      "sha256": "7bd557136f95b644cc546f84a5669170a8a4fb8ebe3e52a31719eaabf4abe6ce",
+      "blake3": "0b023b4dd9968125d82b6419b181ec72c7110ed7b44f0e0d8d52887401121d27"
+    },
+    {
+      "path": "adapters/qa_store.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2425,
+      "sha256": "3abcc4b1af58e12aeeb6873c965e4386815de1829986c81cd0e6d4c649a9f16a",
+      "blake3": "e2560470b6c3b32a67a349f7d1150830267545614a483f6e74aedf070d204eec"
+    },
+    {
+      "path": "adapters/refiner.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25767,
+      "sha256": "ff2d91ea8e848069d4ac0f9eafbbc6a62c041aec03553816e3b23db9383523cc",
+      "blake3": "67aed21602803c8c03807ecb6978936cadbb7f6040c081021af525700a9a69d2"
+    },
+    {
+      "path": "adapters/sanitize.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2177,
+      "sha256": "016e8922c28dec4f7ea966b7c60ff2982e83c12a22a850f9d57c2dd16fef39bd",
+      "blake3": "8602f6dc6d85b2b1d0a4e50b7028c4d8b3c4abce64c76e4f79a8c4c1629251bf"
+    },
+    {
+      "path": "assets",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "assets/icon.svg",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2980,
+      "sha256": "e4a2ec098cdd954de0660818c77cff6a2b107f944a89bbd93e6e996de42c3ad0",
+      "blake3": "9bbda702c80ac80d235acc175d8e4e0e4df414a59a43fad06874889eb54a7939"
+    },
+    {
+      "path": "config",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "config.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 732,
+      "sha256": "c765b502025a12c01c0ef205cccd950d4fc63f514d8ff8916e1856f15cafb75c",
+      "blake3": "35d749fc18b6713efdfb17fe960a32a74560d659205a54dd67d701db4380fcaf"
+    },
+    {
+      "path": "config/keys.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3228,
+      "sha256": "c2bef9493e20c59ff46b2c8d023ffea4b41389a78c7ba27d593ccb00d4a132e0",
+      "blake3": "796a2dfce9e27087f39cf043e087b86b118f22b2a2d88e0c353bd0d35201aa00"
+    },
+    {
+      "path": "knowledge",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "knowledge/prompts.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 20078,
+      "sha256": "84ee951d6a69da59ac0fe09fb85d9637e8fdf8aad230326fde0bdee70e87ea1e",
+      "blake3": "708c2637d2bfeaad635639c2fc0d9399e2c678af814d848ec71868bf69bf8883"
+    },
+    {
+      "path": "knowledge/ref-interaction-style.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 10544,
+      "sha256": "713afc1ddd3d14a1fc4c78f2e5f292300a4ac7c9282ed3833e8af04d19f76380",
+      "blake3": "31e7282ba7f3240942c454a3e52b49ad405014467f067eaabf48067c2558e982"
+    },
+    {
+      "path": "knowledge/ref-ops-contract.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 158,
+      "sha256": "5beaff1804a3b65b06ad4e4361eaa66973ccfe8ddfb3c66b8ff3a5f2231ef59c",
+      "blake3": "173a69fc304dc8482ff8ae04e18c2455b73aa876328212f4f8909442090b9bea"
+    },
+    {
+      "path": "knowledge/ref-ops-data.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 43883,
+      "sha256": "a9317ed6ee6cc584ef49b61f897c34c7d2cfeb8ec43b62a68caad1ec1d5a3788",
+      "blake3": "50af4358d68ccd7447b27b23e513659b1421222e4103753fc92202048e7f4fd2"
+    },
+    {
+      "path": "knowledge/ref-ops-design.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 24187,
+      "sha256": "d6f9ecc106614c75276e27b50f00268123bf94b18a48b2918499ae0e1bf3dbe2",
+      "blake3": "42cf0afabbe42df0cdc17ef788e76f88e7ad85ccf4c035d69c1127f6f411a22d"
+    },
+    {
+      "path": "knowledge/ref-ops-execution.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 21047,
+      "sha256": "d49dd8e40511b6102cac2453191bcbf15adacdcc3a368d389ac13fc94e7a8c98",
+      "blake3": "81be3366a7262be4d205c473934b3eae2a9559ba088fa6b22b2465e92882842c"
+    },
+    {
+      "path": "knowledge/ref-ops-gcp-site.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 43178,
+      "sha256": "1f6ed6fdb80a58c9cda15bc9a1de213015420490e7126d7197cbb7436e8f3eee",
+      "blake3": "4e69378c479a6c3271b8be3a2cbc6e99b8adefd26150daface01313f764f8e43"
+    },
+    {
+      "path": "knowledge/ref-ops-safety.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 22568,
+      "sha256": "c5d59172f591468fc281d1b348448ca513fe3830220e34d15489894c346c0fa7",
+      "blake3": "fb4bc59c02e6ddc5678aa94a64f5be33a4cb6c86c9d933d8029aabbe28f79cfd"
+    },
+    {
+      "path": "knowledge/ref-reg-cn.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 25428,
+      "sha256": "354c8f53711f52b1f71221c132446ba9c53da785dee6f703321c761d39f67bfa",
+      "blake3": "84fa92574647b6d51efbda7a75571aca808dc6f7171e113f4aacf136b6faf2ed"
+    },
+    {
+      "path": "knowledge/ref-reg-contract.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 158,
+      "sha256": "5beaff1804a3b65b06ad4e4361eaa66973ccfe8ddfb3c66b8ff3a5f2231ef59c",
+      "blake3": "173a69fc304dc8482ff8ae04e18c2455b73aa876328212f4f8909442090b9bea"
+    },
+    {
+      "path": "knowledge/ref-reg-gcp-version.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2096,
+      "sha256": "405e11ba63cba54dbb31ba87a9ad891ec3ac3d5b13dadee57138251d96db6f68",
+      "blake3": "750b26afa92ea9b80d1a65ec186f80af8a74c2896633c61bc96f29c116c7bc92"
+    },
+    {
+      "path": "knowledge/ref-reg-retrieval.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 67,
+      "sha256": "e41e2a96bce8ecb089d0860f2efb03cc18d15514a6f23706547f1ad799980808",
+      "blake3": "ef2d079e506904426c33e3ab4c27d4e1387514b585eb42d4da07920c3fddceac"
+    },
+    {
+      "path": "knowledge/ref-reg-safety.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14634,
+      "sha256": "0dc08967303a09b52aa3f19436bc13b2e742546a5fd457be25cee11469aa21db",
+      "blake3": "daaea021c778654fadcdee97697715a5b9d2d8b00d53168c4569c3251c3dcbd0"
+    },
+    {
+      "path": "knowledge/ref-reg-stats.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 17454,
+      "sha256": "acfabb04b69ab171f81485ec9096c44676aacf34997aeac2abd4bba74565b1ff",
+      "blake3": "f3fba072b26d27c20743867002afbf7b44f80716f7272e69866a3be4916c7ef9"
+    },
+    {
+      "path": "knowledge/ref-reg-submission.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 38101,
+      "sha256": "fe8864f76874074f71231796fbf6a6125f816b848e036647de4a23cdf6917147",
+      "blake3": "dfb71f1f4b9d9226783c83f860bb913bf3292bea01f236e1b1c448dca654342b"
+    },
+    {
+      "path": "knowledge/ref-regulatory-versions.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7845,
+      "sha256": "7e9cf137c8d936b91ab3364c2d1442f4e9ba15cc7adbc76d426394b862a4200e",
+      "blake3": "605e73eb0f23f8202800e72f72a83f35da02e68a8cae158071489c3da77cf425"
+    },
+    {
+      "path": "knowledge/reference-index.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8778,
+      "sha256": "2419b72fc9614929a54be0fd947a56be83ed4049e49ec9f2e1ad87dc09562080",
+      "blake3": "be2e3feffc2bf877081ddc1a5bb88e21ad776167738984fdbdc3b324924aecc2"
+    },
+    {
+      "path": "knowledge/system_prompt.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 39000,
+      "sha256": "5c92d3052fd75b70dd85350ca163b328feae7b9fef567cd13d01374f298ea2fd",
+      "blake3": "d393ba1a224cf09055d82fbc8c095fe93111e915d84026e0d58369b23e5caa68"
+    },
+    {
+      "path": "knowledge/term_aliases.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 18336,
+      "sha256": "9fbfc0339e81cf67d9705a87b330f206a6c9982e6e36062240e1132540218319",
+      "blake3": "044fedf7d69a40bb8249e00c307a2db330d7d8a3fe0d47e4abdc38d8f273bb89"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/search-sites.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9356,
+      "sha256": "7c9bd7ab4d26f625d97e755a718da8113b9ace5c14d3a5e72a59b07220a1230d",
+      "blake3": "e19c07126cdb981617e055702be6d8f8328bf5b34d9583c4d7ec7edd7b508677"
+    },
+    {
+      "path": "references/steps.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 13428,
+      "sha256": "911b5b7bbacc7aad54ad8d66009e1beb2330d57d810fcf4be951ec9dfa2d1a6d",
+      "blake3": "bf6b7daa02cfedc6674f9104c3bc036b4a4d5a53507e06f72da6709147c40139"
+    },
+    {
+      "path": "references/units.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8083,
+      "sha256": "fbd947ddcd8f37da6f6697dfa1c178add5f5cefcd0b1cad25b715567f7ad8c78",
+      "blake3": "594faaaae64dfc62692285c24963f830e373063df1b558a8a3d388313c070f40"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/check_deps.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5589,
+      "sha256": "dcac1b385277b475c700f754c2140a09e096794d1b96d2f8fccc543ba838c6c8",
+      "blake3": "982426924fb0a18cde6c27302bb5401fb73450fb5528ea97f49becb5789cf2a3"
+    },
+    {
+      "path": "scripts/generate_term_aliases.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 11347,
+      "sha256": "de3a737a42ac36128048de3f06b56586ab48a8304c2bba8c224aa5490ca23377",
+      "blake3": "edc1f2d2c5fa3deddf57c075d18ecec21ca7cc32a64f705f6a447ac23dbea84e"
+    },
+    {
+      "path": "scripts/i18n.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 30343,
+      "sha256": "01b0a07d711da07d1acad6c3d0d0e97b5ba901e9e7887fe6d914857bbb98d869",
+      "blake3": "dfad72f6ff168431c736c71b56b2b8f99533b223d11cf980fdf622db52de5986"
+    },
+    {
+      "path": "scripts/menu.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8514,
+      "sha256": "ba5494013401769113d75b505cd60d8cedc3180260be7ab0d2a273dcbec57306",
+      "blake3": "6e0552264a52ff6ae9e2a5a69f500e7e5596f4be357bd6b0923991a876974d29"
+    },
+    {
+      "path": "scripts/menu.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 9354,
+      "sha256": "e4215bedc77abedcb1cf8ea71a7f544c797313e35d3e4865575c7093ec71b942",
+      "blake3": "2d4609d5bcf747851b018f235450257d7350e0c1e5a2c68eef931a9324693423"
+    },
+    {
+      "path": "scripts/refine_answer.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 14220,
+      "sha256": "a5d5f001c5aa1cbe015347492743a74b629f89982cde0972ac2e986778141cd8",
+      "blake3": "8ba783812e1d41783a100adb6ae25661e3cbbc89a55cfc5a550071fa0be6abbd"
+    },
+    {
+      "path": "scripts/run_refined.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 4778,
+      "sha256": "ec3c130d7eb9cb12573fb27164a916308682916445e2b5afed93ad45d60243f0",
+      "blake3": "586d6d63779a373b5408f8e1d1d118612f3afddd8e52924905e48b2ece3ffc1e"
+    },
+    {
+      "path": "scripts/search_refs.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5683,
+      "sha256": "2a5bbb9b628774ce4ca84751c0f4a88a10deed52707e9e12e7c27f68d62075eb",
+      "blake3": "d47544f145d298600e4a08cde23cb463f26e7409ee465d2ac39eccf50085a59d"
+    },
+    {
+      "path": "scripts/switch_lang.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2095,
+      "sha256": "60c79bc8758d66fdc5ea635e219a2cd40cc54c117cbfe1ea1fa34280fa6e74fc",
+      "blake3": "3dbffb7ab0357a38599d0327cadd28a93442298d47b9617daec4df0f53c68a3b"
+    },
+    {
+      "path": "scripts/update_reference_index.py",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3523,
+      "sha256": "b17a4fcddca2178d140dd3bb72caf145fe97c2171a17aff459f0ff52932b7838",
+      "blake3": "d39f8033182f8c8a010cd947381b648452eecc45e71a8aa1d1e9421d12b19955"
+    },
+    {
+      "path": "scripts/workflows.json",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 8751,
+      "sha256": "c6806e5ba212be844edde16a40c2e725968f646a8dccf9e9d8deffafbc35bda0",
+      "blake3": "00a925da78a32d8e43e77fd53d56e442fca63a7d98827d5df117bc4dd48446d9"
+    }
+  ]
+}

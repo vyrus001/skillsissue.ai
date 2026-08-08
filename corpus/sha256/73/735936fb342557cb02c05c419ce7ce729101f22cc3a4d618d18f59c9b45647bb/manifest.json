@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "canonicalization_version": 1,
+  "skill_id": "sha256:v1:735936fb342557cb02c05c419ce7ce729101f22cc3a4d618d18f59c9b45647bb",
+  "sha256": "735936fb342557cb02c05c419ce7ce729101f22cc3a4d618d18f59c9b45647bb",
+  "blake3": "0984ca093a264fef7b91f6ee4675a4507a2647f9087d76244cb95679eb116c41",
+  "size_bytes": 90244,
+  "file_count": 13,
+  "entries": [
+    {
+      "path": "README.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3757,
+      "sha256": "e5c50413b3db0fc2e1bf5ae0147b093f36ed9a66567c5e39f6bd93b2c972f440",
+      "blake3": "7b61cf4d1d0bff110294483ae63433b12268d03b3de3acccedd1fb85043a0f4d"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 28708,
+      "sha256": "0d8df415c594c96ca5a4d393b70681d95d92365465e0eb14af3ab2eaa76d800b",
+      "blake3": "1e172714e7d3e8b7701a466c7d52d7e1e83a29683a664057474ac0435d73e648"
+    },
+    {
+      "path": "references",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "references/astro.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5929,
+      "sha256": "6e2faeba9bf9ad24c062c6a723dc37c74644e5843dd7a06164999240e83d7a96",
+      "blake3": "171f860eabdb3d17790e8de516a13e72a028930f979099083e84976d7843d0c7"
+    },
+    {
+      "path": "references/hugo.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 3852,
+      "sha256": "5bc91dca7264de9bcb163d4c8e21a20d64afcad7becdd69926f9c7a09d1bb05c",
+      "blake3": "6aeadbbe1d6350e1349b3fed610e96bc73280909b9bfcb21c1e01f0eee7058df"
+    },
+    {
+      "path": "references/nextjs-app.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 7643,
+      "sha256": "a8e10a569937efd076c3f32f37b48a8083c8c52918c9aa309b770d35d5a03273",
+      "blake3": "f519dc0e264d45c074b239f9b3c5ec8fc9906fc9f90656ea4548070772ec25df"
+    },
+    {
+      "path": "references/nextjs-pages.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2737,
+      "sha256": "f6fa729155fa682f6c77b157cbb75492caf172f7451bcc889bc417441a3f02a5",
+      "blake3": "f7febfed47213abd105e80d53ce588841489d3b4bff1cc4c3583c5aaec0a8bc1"
+    },
+    {
+      "path": "references/sveltekit.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5513,
+      "sha256": "da8dbe10014a0a94d25c51e80010ffd4fb5f0719caa7226c42b9dacb3ae8933a",
+      "blake3": "c80777ea5677c62bca546f93f9b5e096d41695de1e0950443bf4fcee5134e479"
+    },
+    {
+      "path": "references/vanilla-html.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 5756,
+      "sha256": "bb01ca94b0e942c0e329c2fcaf50d0c5ff846f1ae166aa6d654d4c962d48fa9d",
+      "blake3": "23be9fa5bc55bd8d619c159324ee53120bd44600a527b899dd027c324a8a1c9f"
+    },
+    {
+      "path": "scripts",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "scripts/auth-probe.sh",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 11270,
+      "sha256": "a54d7ab1f6e6ac98a6aeb45498d7bb3568d173669d2d3a7c6a08b56ed2c20182",
+      "blake3": "56f7415b59ebc6e2a2a4f5d3472dbd79fedf0cebb7055a69cbd2be793ac873f9"
+    },
+    {
+      "path": "scripts/persist-skill.sh",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 3576,
+      "sha256": "4fea0bcda9fded16dd63f77dad196474d3c15c1fe93ac4718b50517fa834330c",
+      "blake3": "7341d287f3c4aa3473fb7fce8768051aca4e2cbe07db5f3d5126bf8f954c727f"
+    },
+    {
+      "path": "scripts/validate.sh",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 4438,
+      "sha256": "45af59068104650ac8b247cf2059d985fa17960d9c2f3d867287fc296771de81",
+      "blake3": "66708b5d71f39cbf603db583f80403e6e54c445498f2cf3612ec475f44125063"
+    },
+    {
+      "path": "scripts/widget-create.sh",
+      "kind": "file",
+      "executable": true,
+      "size_bytes": 4149,
+      "sha256": "ebc3ef13ef99f4f6f93400ce66ffc3848c1913aac0cb0876470c6378cf1d9fed",
+      "blake3": "300db739cf8026546074af30ce54d35b5dfd91abc4e5bd82b98279429fdf47cc"
+    },
+    {
+      "path": "tests",
+      "kind": "directory",
+      "executable": false,
+      "size_bytes": 0
+    },
+    {
+      "path": "tests/validation.md",
+      "kind": "file",
+      "executable": false,
+      "size_bytes": 2916,
+      "sha256": "e92fedb23a709b104877733365162bddb2d2be7c8a25c1dec9483bbedddae46f",
+      "blake3": "095f1ae42e678934efc2049b409624b9bebf5c090e5eefaf91a8b58129f63410"
+    }
+  ]
+}
